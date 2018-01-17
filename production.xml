@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+    <entry key="vehicle.with.device.by.imei.store">vehileWithDeviceByImeiStore</entry>
+    <entry key="vehiclewithdevice.topic">vehicleWithDevice</entry>
+
+    <entry key="device.manager.ignore.comnad">false</entry>
+    <entry key="vehicle.manager.ignore.comnad">false</entry>
+
+    <entry key="vts.update.topic">vtsUpdateTopic</entry>
+
+    <entry key="email.topic">emailstopic</entry>
+    <entry key="sharedvehicle.topic">sharedvehicle</entry>
+    <entry key="existingcustomers.topic">existingcustomers</entry>
+    <entry key="inviteduser.topic">invitedusers</entry>
+    <entry key="vehicleshare.topic">vehicleshare</entry>
+    <entry key="vehicleshare.appname">vehicle_share_app</entry>
+    <entry key="bootstrap.servers">broker.kafka:9092</entry>
+    <entry key="schemaregistry">http://schemas.kafka</entry>
+    <entry key="customer.topic">customer</entry>
+    <entry key="command.topic">command</entry>
+    <entry key="device.topic">device</entry>
+    <entry key="vehicle.topic">vehicle</entry>
+    <entry key="commandresult.topic">commandresult</entry>
+    <entry key="vehicleCustomerShare.topic">vehicleCustomerShare</entry>
+    <entry key="positions.topic">positionsTopic</entry>
+    <entry key="vehicle.statusData.topic">vehicleStatusData</entry>
+    <entry key="deviceData.topic">deviceDataTopic</entry>
+    <entry key="rawpositions.topic">rawPositions</entry>
+    <entry key= "processedPositions.topic">processedPositions</entry>
+    <entry key="deviceDataByRemoteAddress.state">deviceDataByRemoteAddressStateStore</entry>
+    <entry key="lastprocessedpositions.state">lastProcessedPositionsStateStore</entry>
+
+    <entry key="devicestate.topic">devicestate</entry>
+    <entry key="command.manager.appname">command-manager</entry>
+    <entry key="customer.manager.appname">customer-manager</entry>
+    <entry key="device.manager.appname">device-manager</entry>
+    <entry key="vehicleShare.manager.appname">vehicleShare-manager</entry>
+    <entry key="position.processor.appname">positions-processor</entry>
+    <entry key="vehicle.manager.appname">vehicle-manager</entry>
+    <entry key="customer.by.uuid.store">customerByUuidStore</entry>
+    <entry key="customer.by.email.store">customerByEmailStore</entry>
+    <entry key="customer.by.mobile.store">customerByMobileStore</entry>
+    <entry key="device.by.uuid.store">deviceByUuidStore</entry>
+    <entry key="device.by.imei.store">deviceByImeiStore</entry>
+    <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
+    <entry key="vehicle.by.registration.store">vehicleByRegistrationStore</entry>
+    <entry key="vehicle.by.imei.store">vehicleByImeiStore</entry>
+    <entry key="old.position.cache.store">oldPositionCacheStore</entry>
+    <entry key="application.server.config">localhost:2223</entry>
+    <entry key="auto.offset.reset.config">earliest</entry>
+    <entry key="commit.interval.auto.config">500</entry>
+    <entry key="commander.host.ip">http://0.0.0.0/</entry>
+    <entry key="commander.host.port">2222</entry>
+    <entry key="position.processor.querablestate.host">0.0.0.0</entry>
+    <entry key="position.processor.querablestate.port">2220</entry>
+    <entry key="overspeed.threshold">50</entry>
+    <entry key="unexpectedspeed.threshold">150</entry>
+
+    <!--time to say t disconnected in minutes -->
+    <entry key="max.difference.device.time">10</entry>
+    <!--millis-->
+    <entry key="position.transformer.punctuate.time">60000</entry>
+    <!--minutes-->
+    <entry key="offline.timeout">2</entry>
+    <entry key="model.class">device#com.fretron.Model.Device#device.topic customer#com.fretron.Model.Customer#customer.topic vehicle#com.fretron.Model.Vehicle#vehicle.topic vShare#com.fretron.Model.VehicleShare#vehicleshare.topic trip.create#com.fretron.Model.Trip#trip.topic trip.update#com.fretron.Model.Trip#trip.topic user#com.fretron.Model.UserTripCommands#user.generated.command.topic trip.tracker.create#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.tracker.update#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.manual.create#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.manual.update#com.fretron.Model.TrackerTrip#tracker.trip.topic shipment#com.fretron.Model.Shipment#shiment.topic usermgm#com.fretron.Model.User#user.topic organisation#com.fretron.Model.Organisation#organisation.topic</entry>
+
+    <entry key="salesorder.topic">salesorderTopic</entry>
+    <entry key="salesenquiry.topic">salesenquiryTopic</entry>
+    <entry key="bid.topic">bidTopic</entry>
+    <entry key="acceptoffer.topic">acceptofferTopic</entry>
+    <entry key="trip.topic">tripTopic</entry>
+    <entry key="vehicletripstate.topic">vehicletripstateTopic</entry>
+    <entry key="loadedposition.topic">loadedpositionTopic</entry>
+    <entry key="vehicletripState.by.vehicle.store">vehicleTripStateByVehicleStore</entry>
+    <entry key="activetrip.by.vehicle.store">activeTripByVehicleStore</entry>
+    <entry key="plannedtrip.by.vehicle.store">plannedTripByVehicleStore</entry>
+    <entry key="vehicle.by.deviceId.store">vehicleByDeviceIdStore</entry>
+    <entry key="activetrip.topic">activetripTopic</entry>
+    <entry key="plannedtrip.topic">plannedtripTopic</entry>
+
+    <entry key="environment">production</entry>
+
+
+    <entry key="new.position.processor.appid">positions-processor-13</entry>
+    <!-- millis : 5 min : 5* 60 *1000 -->
+    <entry key="gps.state.min.time">300000</entry>
+
+    <!-- millis : 2 min : 2 * 60 * 1000 = 120000 -->
+    <entry key="gps.state.moving.min.time">120000</entry>
+
+    <!-- millis : 5 min : 5 * 60 * 1000 = 300000 -->
+    <entry key="rebuild.state.min.time">300000</entry>
+
+    <entry key="gps.state.punctuate.time">300000</entry>
+    <!-- 60 * 60 *1000 = 60 minute-->
+    <entry key="gps.state.disconnected.threshold">3600000</entry>
+    <entry key = "state.min.record.required">2</entry>
+    <entry key="liteposition.topic">liteposition</entry>
+
+    <!-- millis : 5 min : 5 * 60 * 1000 = 300000 -->
+    <entry key="gps.state.stopped.threshold">300000</entry>
+
+    <entry key="vehicle.gps.state">vehicleGpsStateStore</entry>
+    <entry key="vehicle.ongoing.temporary.gps.state">temVehicleGpsStateStore</entry>
+
+
+    <entry key = "position.processor.database.name">kafka-sink-mongo</entry>
+    <entry key = "position.processor.database.ip">mongo.mean</entry>
+    <entry key = "position.processor.database.port">27017</entry>
+    <entry key = "vehicle.gps.state.collectionName">vehiclegpsstatetopic</entry>
+
+    <!-- speed in km/hour -->
+    <entry key="stop.speed.threshold">3</entry>
+    <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
+    <entry key="google.geocoding.api.key">AIzaSyBC34SD8O3hpE3TAUgh1G-LTxHQRR1Vz0g</entry>
+    <entry key="google.direction.api.key">AIzaSyAiKyto-33wx4RvJw7kplHqSdyacUseGZw</entry>
+
+    <entry key = "min.avoidable.disconnection.distance">1000</entry>
+
+    <entry key="geocoder">fretron</entry>
+
+    <entry key="signup.url.prefix">http://fleet.fretron.com/userSignup</entry>
+    <entry key="dashboard.url.prefix">http://fleet.fretron.com/dashboard</entry>
+
+
+    <entry key="hour.gps.state.store">hourWiseStateStore</entry>
+
+    <!--trip -->
+    <entry key="trip.response.state.store">tripresponsestatestore</entry>
+    <entry key="stop.time.threshold">1800000</entry>
+    <entry key="user.generated.command.topic">usergeneratedcommand</entry>
+    <entry key="user.ignore.command.topic">userignorecommand</entry>
+    <entry key="boundry.position.state.store">boundrypositionstatestore</entry>
+    <entry key="vtsevent.topic">vtsevent</entry>
+    <entry key="tripevent.topic">tripeventz</entry>
+    <entry key="vts.topic">vts</entry>
+    <entry key="trip.suspended.topic">suspendedtriptopic</entry>
+    <entry key="trip.generated.event.topic">tripGeneratedEventTopic</entry>
+
+    <entry key="trip.event.actions.store">tripeventactionsstore</entry>
+    <entry key="vehicle.trip.state.store">vehicletripstatestore</entry>
+    <entry key="actions.state.store">actionstatestore</entry>
+    <entry key="trip.state.store">tripstatestore</entry>
+    <entry key="vehicle.gps.state.store">vehiclegpsstatestore</entry>
+    <entry key="gps.events.topic">gpsMovementEventTopic</entry>
+
+    <entry key="trip.manager.appname">trip-manager-06</entry>
+    <entry key="trip.related.event.input.topic">tripRelatedEventInputTopic</entry>
+    <entry key="trim.store.punctuate.time">storeTrimPunctuateTime</entry>
+    <entry key="last.punctuate.time.state.store">lastPunctuateTimeStore</entry>
+    <entry key="trip.log.retention.timeperiod">432000000</entry>
+    <entry key="trip.log.cleanup.time.period">86400000</entry>
+    <entry key="vts.update.topic">vtsUpdateTopic</entry>
+
+
+    <entry key="geocoder.url">http://query-server.mean:8094/address</entry>
+
+    <entry key="latest.command.topic">latestcommand</entry>
+    <entry key="registry.manager.appId">registrymanager-test-03</entry>
+
+    <!--===========================Tracker Related Configs=========================-->
+    <entry key="tracker.trip.topic">trackertriptopic</entry>
+    <entry key="tracker.trip.by.tracker.trip.store">trackertripbytripstore</entry>
+    <entry key="vts.by.tracker.trip.store">vtsbytrackertripstore</entry>
+    <entry key="tracker.trip.store">trackertripstore</entry>
+    <entry key="tracker.manager.appname">tracker-manager-01</entry>
+    <entry key="tracker.vehicle.gps.state.store">trackervehiclegpsstore</entry>
+    <entry key="tracker.boundry.position.state.store">trackerboundrypositionstore</entry>
+    <entry key="tracker.event.actions.store">trackereventactionstore</entry>
+    <entry key="tracker.vehicle.trip.state.store">trackervehicletripstatestore</entry>
+    <entry key="tracker.trip.related.event.input.topic">trackertriprelatedinputtopic</entry>
+
+    <entry key="tracker.vts.update.topic">trackervtsUpdateTopic</entry>
+
+    <entry key="tracker.vtsevent.topic">trackervtsevent</entry>
+    <entry key="tracker.tripevent.topic">trackertripeventz</entry>
+    <entry key="tracker.vts.topic">trackervts</entry>
+
+    <!-- ==================  -->
+    <entry key="evaluate.time">3600000</entry>
+    <entry key="hour.wise.state.processor.appid">hourWiseState</entry>
+    <entry key="vehicle.hour.log">hourWiseGpsStore</entry>
+    <entry key="hour.mov.topic">hourMovTopic</entry>
+    <entry key="latest.vehicle.mov.log">latestVehicleMovStore</entry>
+    <!-- ==================  -->
+    <!--Registry Manager-->
+
+    <!-- =================== -->
+    <entry key="alert.manager.app.id">alertManager-01</entry>
+    <entry key="alert.topic">alerts</entry>
+    <entry key="device.event.manager.appid">deviceManager</entry>
+    <entry key="device.power.event.topic">deviceEvent</entry>
+    <!-- =================== -->
+
+    <!-- =================== -->
+    <entry key="user.manager.app.id">userManager-01</entry>
+    <entry key="user.topic">user</entry>
+
+    <!-- =================== -->
+    <entry key="organisation.manager.app.id">organisationManager</entry>
+    <entry key="organisation.topic">organisation</entry>
+    <entry key="organisationbyuser.topic">organisationbyuser</entry>
+
+    <!-- =================== -->
+    <entry key="trip.tamplate.manager.app.id">tripTamplate</entry>
+    <entry key="trip.tamplate.topic">triptamplate</entry>
+
+    <entry key="org.group.topic">orggroup</entry>
+    <entry key="org.group.manager.app.id">organisationGroupManager</entry>
+    <entry key="usersbyorganisation.topic">usersbyorganisation</entry>
+    <entry key="organisationsbyuser.topic">organisationsbyuser</entry>
+
+    <entry key="orguseracl.topic">orguseracl</entry>
+
+    <!-- =================== -->
+    <entry key="kafka.topic.partition">5</entry>
+    <entry key="kafka.topic.replication.factor">3</entry>
+    <entry key="kafkatopics.app.ip">http://0.0.0.0</entry>
+    <entry key="kafkatopics.app.port">8089</entry>
+    <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
+
+    <!-- =================== -->
+
+    <!--=========================-->
+    <!--Ip and Ports-->
+
+    <entry key="user.manager.service.url">http://user-manager.streams:8099</entry>
+    <entry key="user.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="user.manager.restservice.port">8099</entry>
+
+    <entry key="organization.manager.service.url">http://org-manager.streams:8086</entry>
+    <entry key="organization.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="organization.manager.restservice.port">8086</entry>
+
+    <entry key="triptemplate.manager.service.url">http://trip-manager.streams:8088</entry>
+    <entry key="triptemplate.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="triptemplate.manager.restservice.port">8088</entry>
+
+
+    <entry key="group.manager.service.url">http://org-manager.streams:8085</entry>
+    <entry key="group.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="group.manager.restservice.port">8085</entry>
+
+    <entry key="registry.manager.service.url">http://registry-manager.streams:8087</entry>
+    <entry key="registry.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="registry.manager.restservice.port">8087</entry>
+
+    <entry key="redis.server.ip">redis.mean</entry>
+    <entry key="mongodb.server.ip">mongo.mean</entry>
+    <entry key="mongodb.database.name">kafka-sink-mongo</entry>
+    <entry key="mongodb.server.port">27017</entry>
+
+
+    <entry key="position.processor.service.url">http://position-processor.streams:2121</entry>
+    <entry key="position.processor.restservice.ip">http://0.0.0.0</entry>
+    <entry key="position.processor.restservice.port">2121</entry>
+
+    <entry key="trip.manager.new.service.url">http://trip-manager.streams:2123</entry>
+    <entry key="trip.manager.new.restservice.ip">http://0.0.0.0</entry>
+    <entry key="trip.manager.new.restservice.port">2123</entry>
+
+    <entry key="shipment.manager.service.url">http://shipment-manager.streams:2124</entry>
+    <entry key="shipment.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="shipment.manager.restservice.port">2124</entry>
+
+    <entry key="manual.tracking.manager.service.url">http://shipment-manager.streams:2126</entry>
+    <entry key="manual.tracking.manager.restservice.ip">0.0.0.0</entry>
+    <entry key="manual.tracking.manager.restservice.port">2126</entry>
+
+    <entry key="tracker.manager.service.url">http://tracker-manager.streams:2125</entry>
+    <entry key="tracker.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="tracker.manager.restservice.port">2125</entry>
+    <!--=========================-->
+
+    <entry key="query.server.service.url">http://query-server.mean:8094</entry>
+    <!--<entry key="query.server.service.ip">http://0.0.0.0</entry>-->
+    <!--<entry key="query.server.service.port">8094</entry>-->
+
+    <entry key="vehicle.state.mongodb.host">mongo.mean</entry>
+    <entry key="vehicle.state.mongodb.port">27017</entry>
+    <entry key="vehicle.state.mongodb.name">kafka-sink-mongo</entry>
+
+    <entry key="gps.log.mongo.server.ip">mongo.mean</entry>
+    <entry key="trip.mongo.server.ip">mongo.mean</entry>
+    <entry key="gps.log.mongo.server.port">27017</entry>
+    <entry key="trip.mongo.server.port">27017</entry>
+    <entry key="gps.log.mongo.db.name">kafka-sink-mongo</entry>
+    <entry key="trip.mongo.db.name">trip</entry>
+    <!--=================================-->
+    <entry key="freight.location.topic">freightlocationtopic</entry>
+    <entry key="freight.location.db.name">freightlocations</entry>
+    <entry key="freight.location.all.collection.name">allfreightlocations</entry>
+    <entry key="freight.location.fav.collection.name">favfreightlocations</entry>
+    <entry key="freight.location.recent.collection.name">recentfreightlocations</entry>
+    <entry key="freight.manager.service.port">8090</entry>
+
+    <!--========================================-->
+
+    <!--============================================-->
+    <!--Shipment Manager-->
+    <entry key="shipment.manager.appname">shipment-manager</entry>
+    <entry key="shiment.topic">shipmentTopic</entry>
+
+    <entry key="shiment.by.shipment.id.store">shipmentByShipmentIdStore</entry>
+    <entry key="manually.added.shipment.status.topic">manuallyAddedShipmentStatusTopic</entry>
+    <entry key="manully.added.shipment.state.store">manuallyAddedShipmentStopStore</entry>
+    <entry key="shipmentId.by.imei.store">shipmentIdByImeiStore</entry>
+    <entry key="vehicle.by.vehicleId.store.for.shipment">vehicleByVehicleIdStoreForShipment</entry>
+
+    <entry key="shiment.added.stop.topic">shipmentAddedStopTopic</entry>
+    <entry key="added.shiment.tracking.state.topic">addedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.tracking.state.store">shipmenttrackingStateStore</entry>
+    <entry key="shipment.by.tripid.state.store">shipmentByTripidStateStore</entry>
+    <entry key="shipment.tracking.request.topic">shipmentTrackingRequestTopic</entry>
+    <entry key="updated.shiment.tracking.state.topic">updatedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.state.updated.topic">shipmentStateUpdatedTopic</entry>
+    <entry key="shipment.command.handler.app.name">shipment-comman-handler-app</entry>
+
+
+    <entry key="shipment.related.event.topic">shipmentRelatedEventTopic</entry>
+    <entry key="shipment.oldtonew.stream.app.name">shipment-old-to-new-stream-app</entry>
+    <!--Shipment Manager-->
+
+    <!--=============================================-->
+    <!--   Manual Tracking -->
+    <entry key="manual.tracking.app.name">manualtriptracking</entry>
+    <entry key="manual.trip.event.topic">manualTripEventTopic</entry>
+    <entry key="manual.trip.vts.topic">manualTripVtsTopic</entry>
+    <!--   Manual Tracking -->
+    <!--================================================-->
+
+    <!--=================================-->
+    <entry key="fretron.god.user.secret">fretron@god@user</entry>
+    <entry key="fretron.god.fo">FRETRON_GOD_FO</entry>
+    <entry key="fretron.god.transporter">FRETRON_GOD_TRANSPORTER</entry>
+    <entry key="fretron.god.shipper">FRETRON_GOD_SHIPPER</entry>
+    <entry key="fretron.god.fo.agent">FRETRON_GOD_FO_AGENT</entry>
+
+    <!--========================================-->
+    <entry key="driver.topic">drivertopic</entry>
+    <entry key="driver.db.name">registry</entry>
+    <entry key="driver.db.host">mongo.mean</entry>
+    <entry key="driver.db.port">27017</entry>
+    <entry key="driver.db.collection.name">driver</entry>
+
+    <entry key="vehicle.db.name">registry</entry>
+    <entry key="vehicle.db.host">mongo.mean</entry>
+    <entry key="vehicle.db.port">27017</entry>
+    <entry key="vehicle.db.collection.name">vehicle</entry>
+    <entry key="group.db.collection.name">groups</entry>
+
+    <entry key="device.db.name">registry</entry>
+    <entry key="device.db.host">mongo.mean</entry>
+    <entry key="device.db.port">27017</entry>
+    <entry key="device.db.collection.name">device</entry>
+
+    <entry key="organisation.db.name">registry</entry>
+    <entry key="organisation.db.host">mongo.mean</entry>
+    <entry key="organisation.db.port">27017</entry>
+    <entry key="organisation.db.collection.name">organisation</entry>
+    <entry key="user.db.collection.name">usercollection</entry>
+
+    <entry key="user.org.db.name">user</entry>
+    <entry key="user.org.db.host">mongo.mean</entry>
+    <entry key="user.org.db.port">27017</entry>
+    <entry key="user.org.db.collection.name">userorg</entry>
+
+    <entry key="user.db.name">user</entry>
+    <entry key="user.db.host">mongo.mean</entry>
+    <entry key="user.db.port">27017</entry>
+
+    <entry key="trip.revisted.appname">revisitedtrip-06</entry>
+
+    <!-- Tracemate Manager -->
+
+    <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
+    <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
+    <entry key="integration.manager.app.id">integration-manager</entry>
+
+    <entry key = "integration.manager.restservices.ip">http://0.0.0.0</entry>
+    <entry key = "integration.manager.restservices.port">8083</entry>
+
+
+    <entry key="integration.manager.mongodb.server.ip">mongo.mean</entry>
+    <entry key="integration.manager.mongodb.server.port">27017</entry>
+    <entry key="integration.manager.mongodb.server.database">thirdPartyIntegration</entry>
+    <entry key="mongodb.server.integration.job.collection.name">integratedJobs</entry>
+    <entry key="mongodb.server.response.collection.name">executedEventsResponse</entry>
+
+    <entry key="tatafleetman.getToken">https://tatafleetman.microlise.com/Live/mobile/index.php/mobilityservices/index/users/getToken/xml</entry>
+    <entry key="tatafleetman.track.vehicle">https://tatafleetman.microlise.com/Live/mobile/index.php/mobilityservices/index/listViews/getfleetdata/xl/</entry>
+
+    <entry key="etrans.login.url">http://mobileapps.ev5.in/eTransVTSMllWebService/datasharing/Report/BirdsEyeView</entry>
+
+
+    <!--  120 sec = 2 min  -->
+    <entry key="integration.job.schedule.time">120</entry>
+
+
+    <entry key ="integrations.roosterInfo.api.url">http://apis.fretron.com/integrations/</entry>
+    <entry key ="integrations.webhook.api.url">http://apis.fretron.com/integrations/webhook/</entry>
+
+
+
+
+</properties>
