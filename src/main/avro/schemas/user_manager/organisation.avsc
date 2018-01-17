@@ -1,0 +1,42 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Organisation",
+  "fields": [
+
+  {
+          "name": "uuid",
+           "type": ["null" , "string"],
+           "default" : null
+  },
+   {
+            "name": "orgId",
+             "type": ["null" , "string"],
+             "default" : null
+    },
+  {
+        "name": "organisationName",
+         "type": ["null" , "string"],
+         "default" : null
+   },
+
+    {
+        "name": "type",
+        "type": {
+          "type": "enum",
+          "name": "OrganisationType",
+              "symbols": [
+               "FLEET_OWNER",
+              "TRANSPORTER",
+              "FLEET_OWNER_AGENT"
+               ]
+       }
+    },
+     {
+            "name": "addedBy",
+             "type": ["null" , "string"],
+             "default" : null
+       }
+  ]
+
+  }

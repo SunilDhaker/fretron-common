@@ -1,0 +1,900 @@
+[
+
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "VehicleTripState",
+		"fields": [{
+				"name": "deviceImei",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "state",
+				"type": [
+					"null",
+					{
+						"type": "enum",
+						"name": "VehicleState",
+						"symbols": [
+							"WaitingForLoad",
+							"EnrouteForPickUp",
+							"AtPickUpPoint",
+							"EnrouteForDestination",
+							"AtDestination"
+						]
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "tripId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "startTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "endTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "uuid",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "latitude",
+				"type": ["null", "double"],
+				"default": null
+			},
+			{
+				"name": "longitude",
+				"type": ["null", "double"],
+				"default": null
+			},
+			{
+				"name": "address",
+				"type": ["null", "string"],
+				"default": null
+			}
+		]
+	},
+
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "UserTripCommands",
+		"fields": [{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "type",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "tripId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "startTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "endTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "deviceImei",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "locationInfo",
+				"type": [
+					"null",
+					"com.fretron.Model.LitePosition"
+				],
+				"default": null
+			},
+			{
+				"name": "vehicleStateInfo",
+				"type": [
+					"null",
+					"com.fretron.Model.VehicleTripState"
+				],
+				"default": null
+			}
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "FreightLocation",
+		"fields": [{
+				"name": "name",
+				"type": "string",
+				"default": null
+			},
+			{
+				"name": "geofence",
+				"type": [
+					"null",
+					"com.fretron.Model.Geofence"
+				],
+				"default": null
+			},
+			{
+				"name": "material",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "string"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "address",
+				"type": ["null", "string"],
+				"default": null
+			},
+			{
+				"name": "uuid",
+				"type": ["null", "string"],
+				"default": null
+			},
+			{
+				"name": "orgId",
+				"type": ["null", "string"],
+				"default": null
+			},
+			{
+
+				"name": "favouriteOf",
+				"type": ["null",
+					{
+						"type": "array",
+						"items": "string"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "type",
+				"type": [
+					"null",
+					{
+						"type": "enum",
+						"name": "FreightLocType",
+						"symbols": [
+							"Private",
+							"Public"
+						]
+					}
+				],
+				"default": null
+			}
+
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "Lane",
+		"fields": [{
+				"name": "sources",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.FreightLocation"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "destination",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.FreightLocation"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "material",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "string"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "baseSource",
+				"type": [
+					"null",
+					"com.fretron.Model.FreightLocation"
+				],
+				"default": null
+			},
+			{
+				"name": "baseDestination",
+				"type": [
+					"null",
+					"com.fretron.Model.FreightLocation"
+				],
+				"default": null
+			},
+			{
+				"name": "baseMaterial",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "baseRate",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+			{
+				"name": "sourceOffSet",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "double"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "destinationOffSet",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "double"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "materialOffSet",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "double"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "baseTransitDays",
+				"type": [
+					"null",
+					"int"
+				],
+				"default": null
+			}
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "TripLocation",
+		"fields": [{
+				"name": "freightLocation",
+				"type": [
+					"null",
+					"com.fretron.Model.FreightLocation"
+				],
+				"default": null
+			},
+			{
+				"name": "fromTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "tillTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+                "name": "firstGpsLogId",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "lastGpsLogId",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+             },
+             {
+             				"name": "ignoredVehicleGpsLogs",
+             				"type": [
+             					"null",
+             					{
+             						"type": "array",
+             						"items": "string"
+             					}
+             				],
+             				"default": null
+             			}
+		]
+	},
+
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "Trip",
+		"fields": [{
+				"name": "distance",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+			{
+				"name": "quantityOfMaterial",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+			{
+				"name": "unitOfQuantity",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "driverName",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "driverMobNumber",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "remarks",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "origin",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.TripLocation"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "destination",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.TripLocation"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "material",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "tripId",
+				"type": ["null", "string"],
+				"default": null
+			},
+
+			{
+				"name": "actualStartTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "actualEndTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "plannedStartTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "plannedEndTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			},
+			{
+				"name": "lane",
+				"type": [
+					"null",
+					"com.fretron.Model.Lane"
+				],
+				"default": null
+			},
+			{
+				"name": "tripState",
+				"type": [
+					"null",
+					{
+						"type": "enum",
+						"name": "TripState",
+						"symbols": [
+							"Created",
+							"Started",
+							"Completed"
+						]
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "deviceImei",
+				"type": ["null", "string"],
+				"default": null
+			},
+			{
+				"name": "shipmentId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "trackingType",
+				"type": [
+					"null",
+					"com.fretron.Model.TrackingType"
+				],
+				"default": null
+			}
+
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "GPSEvent",
+		"fields": [{
+				"name": "type",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "payload",
+				"type": [
+					"null",
+					"com.fretron.Model.VehicleGpsState"
+				],
+				"default": null
+			}
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "BoundryPositionGpsState",
+		"fields": [{
+				"name": "pickUpPoints",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.VehicleGpsState"
+					}
+				],
+				"default": null
+			},
+			{
+				"name": "deliveryPoints",
+				"type": [
+					"null",
+					{
+						"type": "array",
+						"items": "com.fretron.Model.VehicleGpsState"
+					}
+				],
+				"default": null
+			}
+		]
+	},
+
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "AllTrips",
+		"fields": [{
+			"name": "trips",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.Trip"
+				}
+			],
+			"default": null
+		}]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "Actions",
+		"fields": [{
+				"name": "oldState",
+				"type": ["null", "com.fretron.Model.VehicleTripState"],
+				"default": null
+			},
+			{
+				"name": "newState",
+				"type": ["null", "com.fretron.Model.VehicleTripState"],
+				"default": null
+			},
+			{
+                "name": "eventStartTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis"
+            },
+            {
+                "name": "causedBy",
+                "type": [
+                    "null",
+                    "string"
+                ]
+            }
+		]
+	},
+	{
+	        "namespace": "com.fretron.Model",
+    		"type": "record",
+    		"name": "VtsActionCache",
+    		"fields": [{
+    				"name": "key",
+    				"type": ["null", "string"],
+    				"default": null
+    			},
+    			{
+    				"name": "cache",
+    				"type":  [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": "Actions"
+                                }
+                            ],
+    				"default": null
+    			}
+    		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "VehicleTripStateEvents",
+		"fields": [{
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"name": "tripId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "eventTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis"
+			}
+		]
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "TripDashboardResponseObject",
+		"fields": [{
+				"name": "latitude",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+
+			{
+				"name": "longitude",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+			{
+				"name": "gpsState",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "gpsStateDuration",
+				"type": [
+					"null",
+					"long"
+				],
+				"default": null,
+				"logicalType": "timestamp-millis"
+
+			},
+			{
+				"name": "speed",
+				"type": [
+					"null",
+					"double"
+				],
+				"default": null
+			},
+
+			{
+				"name": "tripStartTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"default": null,
+				"logicalType": "timestamp-millis"
+			},
+
+			{
+				"name": "tripEndTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"default": null,
+				"logicalType": "timestamp-millis"
+			},
+
+			{
+				"name": "vts",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+
+			{
+				"name": "tripStartLocation",
+				"type": [
+					"null",
+					"com.fretron.Model.FreightLocation"
+				],
+				"default": null
+			},
+
+			{
+				"name": "tripEndLocation",
+				"type": [
+					"null",
+					"com.fretron.Model.FreightLocation"
+				],
+				"default": null
+			},
+
+
+			{
+				"name": "vtsDuration",
+				"type": [
+					"null",
+					"long"
+				],
+				"default": null,
+				"logicalType": "timestamp-millis"
+			},
+
+			{
+				"name": "address",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			}
+
+		]
+
+	},
+	{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "UserIgnoreCommand",
+		"fields": [{
+				"name": "vehicleId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+
+			{
+				"name": "type",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "tripId",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			}
+		]
+	}
+]

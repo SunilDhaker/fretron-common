@@ -1,0 +1,144 @@
+
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "IntegrationJob",
+  "fields": [
+    {
+      "name": "id",
+      "type":"string",
+      "default" : null
+    },
+    {
+       "name": "url",
+       "type":"string",
+       "default" : null
+    },
+    {
+       "name": "queryParameters",
+        "type": ["null" , "string"],
+        "default" : null
+     },
+     {
+         "name": "headers",
+          "type":  ["null" , "string"],
+          "default" : null
+      },
+
+       {
+             "name": "orgId",
+             "type":"string",
+             "default" : null
+        },
+
+      {
+           "name": "requestMethod",
+            "type": {
+                      "type": "enum",
+                      "name": "RequestMethod",
+                      "symbols": [
+                        "GET",
+                        "POST",
+                        "PUT"
+                      ]
+                    }
+      },
+
+      {
+                 "name": "type",
+                 "type":["null" , "string"],
+                 "default" : null
+         },
+
+      {
+              "name": "creationTime",
+              "type": [
+                "null",
+                "long"
+              ]
+       },
+
+        {
+            "name": "scheduleTime",
+             "type": [
+                       "null",
+                       "long"
+                     ]
+        },
+
+         {
+              "name": "lastScheduleTime",
+               "type": [
+                        "null",
+                        "long"
+                      ]
+          },
+
+          {
+                "name": "selectedVechiles",
+                 "type": [
+                            "null",
+                            "string"
+                                ]
+           },
+
+           {
+                "name": "totalVechiles",
+                 "type": [
+                              "null",
+                               "string"
+                         ]
+            },
+
+
+
+           {
+              "name": "isActive",
+               "type": "boolean"
+            },
+
+            {
+               "name": "isWebhookActive",
+               "type": "boolean"
+            },
+
+      {
+            "name": "mapper",
+            "type": {
+              "namespace": "com.fretron.Model",
+              "type": "record",
+              "name": "Mapper",
+              "fields": [
+
+                {
+                  "name": "longitude",
+                  "type":["null" , "string"],
+                  "default" : null
+                },
+                {
+                   "name": "latitude",
+                   "type":["null" , "string"],
+                   "default" : null
+                },
+                {
+                    "name": "speed",
+                    "type":["null" , "string"],
+                    "default" : null
+                },
+
+                {
+                     "name": "imei",
+                     "type":["null" , "string"],
+                     "default" : null
+                 }
+              ]
+            }
+     },
+
+     {
+        "name": "eventType",
+         "type":  ["null" , "string"],
+           "default" : null
+         }
+  ]
+}

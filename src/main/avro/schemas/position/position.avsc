@@ -1,0 +1,181 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Position",
+    "fields": [
+      {
+        "name": "id",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "attributes",
+        "type": {
+          "namespace": "com.fretron.Model",
+          "type": "record",
+          "name": "Attributes",
+          "fields": [
+            {
+              "name": "battery",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "ip",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "distance",
+              "type": [
+                "null",
+                "double"
+              ]
+            },
+            {
+              "name": "totalDistance",
+              "type": [
+                "null",
+                "double"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "deviceId",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "imei",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "protocol",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "serverTime",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "deviceTime",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "fixTime",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "outdated",
+        "type": "boolean"
+      },
+      {
+        "name": "valid",
+        "type": "boolean"
+      },
+      {
+        "name": "latitude",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "longitude",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "altitude",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "speed",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "course",
+        "type": [
+          "null",
+          "double"
+        ]
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "accuracy",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "network",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "movemetState",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "totalDistance",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  }
+]

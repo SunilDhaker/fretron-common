@@ -1,0 +1,172 @@
+[
+  {
+    "namespace" : "com.fretron.Model",
+    "type"   : "record",
+    "name"   : "CustomerVehicle",
+    "fields" : [
+      {"name" : "email", "type" : "string"},
+      {"name" : "vehicleId", "type" : "string"},
+      {"name" : "from","type":["null","long"]},
+      {"name" : "to","type":["null","long"]},
+      {"name" : "AccessLevel","type":{"type":"enum","name":"AccessLevel","symbols":["DASHBOARD","REPORTS","TRIPS"]}}
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "SingleCustomerVehicleList",
+    "fields": [
+      {
+        "name": "sharedByCustomer",
+        "type":"string"
+      },
+      {
+        "name": "sharedWith",
+        "type" : "string"
+      },
+      {
+        "name": "vehicleList",
+        "type": {"type" : "array", "items":"string"}
+      },
+
+      {
+        "name": "validFrom",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "validTill",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "accessLevel",
+        "type": "com.fretron.Model.AccessLevel"
+      }
+    ]
+  },
+
+  {
+    "namespace" : "com.fretron.Model",
+    "type"      : "record",
+    "name"      : "EmailForExistingCustomers",
+    "fields"    : [
+      {"name" : "emailAddress","type":"string"},
+      {"name" : "emailFormat", "type":"string"},
+      {"name" : "token", "type":"string"}
+    ]
+  },
+  {
+    "namespace" : "com.fretron.Model",
+    "type"      : "record",
+    "name"      : "EmailForNonExistingCUstomers",
+    "fields"    : [
+      {"name" : "emailAddress","type":"string"},
+      {"name" : "emailFormat", "type":"string"},
+      {"name" : "token", "type":"string"}
+    ]
+  },
+  {
+    "namespace" : "com.fretron.Model",
+    "type"      : "record",
+    "name"      : "SharedVehicle",
+    "fields"    : [
+      {"name" : "vehicleId", "type":"string"},
+      {"name" : "sharedWithEmail", "type":"string"},
+
+      {"name" : "validFrom","type": [
+        "null",
+        "long"
+      ],
+        "logicalType": "timestamp-millis",
+        "default": null},
+
+      {"name" : "validTill","type": [
+        "null",
+        "long"
+      ],
+        "logicalType": "timestamp-millis",
+        "default": null},
+
+      {"name" :"accessLevel","type":"string","default":"DASHBOARD"},
+      {"name" : "sharedByCustomer","type":"string"},
+      {"name" : "sharedToCustomer","type":["null" , "string"] , "default" : null}
+    ]
+
+  },
+
+  {
+    "namespace" : "com.fretron.Model",
+    "type"      : "record",
+    "name"      : "UserToken",
+    "fields"    : [
+      {"name" : "customerEmail", "type":"string"},
+      {"name" : "token", "type":"string"}
+    ]
+
+  },
+
+  {
+  "type": "record",
+  "name": "VehicleShare",
+  "namespace": "com.fretron.Model",
+  "fields":
+  [
+      {
+        "name": "sharedByCustomer",
+        "type": "string"
+      },
+      {
+          "name": "sharedWith",
+          "type":
+           {
+              "type": "array",
+              "items":"string"
+          }
+      },
+      {
+          "name": "vehicleList",
+          "type":
+          {
+              "type": "array",
+              "items":"string"
+
+          }
+      },
+      {
+          "name": "validFrom",
+          "type":
+          [
+              "null",
+              "long"
+          ],
+          "default": null,
+          "logicalType": "timestamp-millis"
+      },
+      {
+          "name": "validTill",
+          "type":
+          [
+              "null",
+              "long"
+          ],
+          "default": null,
+          "logicalType": "timestamp-millis"
+      },
+      {
+          "name": "accessLevel",
+          "type": "com.fretron.Model.AccessLevel"
+
+      }
+  ]
+  }
+
+]

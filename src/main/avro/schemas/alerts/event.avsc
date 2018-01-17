@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Event",
+  "fields": [
+    {
+      "name": "vehicleId",
+      "type": ["null" , "string"]
+    },
+    {
+      "name": "eventData",
+      "type": "bytes"
+    },
+    {
+      "name": "eventTopic",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": ["null" , "long"]
+    }
+  ]
+}

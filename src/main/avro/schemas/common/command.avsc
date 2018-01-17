@@ -1,0 +1,436 @@
+[
+{
+         "namespace": "com.fretron.Model",
+         "type": "record",
+         "name": "Vehicle",
+         "fields": [
+           {
+             "name": "customerId",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "vehicleType",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "vehicleModel",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "vehicleMake",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "vtsDeviceId",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "vehicleRegistrationNumber",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "uuid",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "associatedWith",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default" : null
+           },
+           {
+             "name": "isDeleted",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default" : null
+           },
+           {
+             "name": "createTime",
+             "type": [
+               "null",
+               "long"
+             ],
+             "logicalType": "timestamp-millis",
+             "default": null
+           },
+           {
+             "name": "updateTime",
+             "type": [
+               "null",
+               "long"
+             ],
+             "logicalType": "timestamp-millis",
+             "default": null
+           },
+           {
+            "name":"groups",
+            "type":[
+                "null",
+                {"type" : "array", "items":"string"}
+            ],
+            "default":null
+           },
+           {
+               "name":"orgId",
+               "type":[
+                    "null",
+                    "string"
+               ] ,
+               "default":null
+           },
+           {
+               "name":"sharedWith",
+               "type":["null",{"type" : "array", "items":"string"}],
+               "default":null
+           },
+           {
+              "name":"driverId",
+              "type":[
+                   "null",
+                   "string"
+              ] ,
+              "default":null
+           }
+
+         ]
+       },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Device",
+    "fields": [
+      {
+        "name": "imei",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "mobileNumber",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "manufacturerName",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "isAssociated",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default" : null
+      },
+      {
+        "name": "isDeleted",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default" : null
+      },
+      {
+        "name": "createTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+             {
+               "name": "updateTime",
+               "type": [
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+             },
+            {
+             "name":"groups",
+             "type":[
+                 "null",
+                 {"type" : "array", "items":"string"}
+             ],
+             "default":null
+            },
+            {
+                "name":"orgId",
+                "type":[
+                     "null",
+                     "string"
+                ] ,
+                "default":null
+            },
+            {
+                "name":"status",
+                "type":["null","string"],
+                "default":null
+            },
+            {
+                "name":"sharedWith",
+                "type":["null",{"type" : "array", "items":"string"}],
+                "default":null
+            }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Customer",
+    "fields": [
+      {
+        "name": "contactPersonName",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "emailAddress",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "mobileNumber",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "organizationName",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "organizationBillingAddress",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "organizationShippingAddress",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "typeOfCustomer",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "isDeleted",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "createTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "updateTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CommandOfDevice",
+    "fields": [
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "device",
+        "type": "com.fretron.Model.Device"
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "statusCode",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "errorMessage",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CommandOfCustomer",
+    "fields": [
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "customer",
+        "type": "com.fretron.Model.Customer"
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "statusCode",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "errorMessage",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+      "namespace": "com.fretron.Model",
+      "type": "record",
+      "name": "CommandOfVehicle",
+      "fields": [
+        {
+          "name": "type",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "vehicle",
+          "type": "com.fretron.Model.Vehicle"
+        },
+        {
+          "name": "startTime",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+        {
+          "name": "statusCode",
+          "type": [
+            "null",
+            "int"
+          ]
+        },
+        {
+          "name": "errorMessage",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name":"oldVehcile",
+          "type":["null","com.fretron.Model.Vehicle"],
+          "default":null
+        }
+      ]
+    }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "namespace":"com.fretron.Model",
+    "type":"record",
+    "name":"DeviceEvent",
+    "fields": [
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      }, {
+        "name": "vehicleId",
+        "type": [
+          "null",
+          "string"
+        ]
+      }, {
+        "name": "value",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "time",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    ]
+
+  }
+]

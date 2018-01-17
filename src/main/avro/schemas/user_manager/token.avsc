@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Token",
+  "fields": [
+
+  {
+           "name": "uuid",
+            "type": ["null" , "string"],
+            "default" : null
+   },
+    {
+         "name": "provider",
+         "type": ["null" , "string"],
+          "default" : null
+     },
+      {
+              "name": "token",
+              "type": ["null" , "string"],
+               "default" : null
+      }
+  ]
+  }

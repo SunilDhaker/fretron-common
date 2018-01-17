@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Incident",
+  "fields": [
+    {
+      "name": "type",
+      "type": ["null" , "string"]
+    },
+    {
+      "name": "eventData",
+      "type": "bytes"
+    },
+    {
+      "name": "eventTopic",
+      "type": "string"
+    },
+    {
+      "name": "alert",
+      "type": ["null" , "com.fretron.Model.Alert"]
+    }
+  ]
+}

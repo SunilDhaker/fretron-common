@@ -1,0 +1,291 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "name": "SalesEnquiry",
+    "type": "record",
+    "fields": [
+      {
+        "name": "sourceLoc",
+        "type": "com.fretron.Model.Location"
+      },
+      {
+        "name": "destination",
+        "type": "com.fretron.Model.Location"
+      },
+      {
+        "name": "salesEnquiryID",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          {
+            "type": "enum",
+            "name": "EnquiryStatus",
+            "symbols": [
+              "Pending",
+              "Completed",
+              "CarriedForward",
+              "Canceled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "material",
+        "type": "string"
+      },
+      {
+        "name": "offerRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "numberOFLoads",
+        "type": "int"
+      },
+      {
+        "name": "endTime",
+        "type": [
+          "null",
+          "long"
+        ]
+      },
+      {
+        "name": "remainingLoad",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "name": "AcceptOffer",
+    "type": "record",
+    "fields": [
+      {
+        "name": "salesEnquiryID",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": "string"
+      },
+      {
+        "name": "offerRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "fleetOwnerID",
+        "type": "string"
+      },
+      {
+        "name": "noOfVehicle",
+        "type": "int"
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "name": "BidOffer",
+    "type": "record",
+    "fields": [
+      {
+        "name": "salesEnquiryID",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": {
+          "type": "enum",
+          "name": "BidStatus",
+          "symbols": [
+            "Pending",
+            "Accepted",
+            "Rejected",
+            "Expired"
+          ]
+        }
+      },
+      {
+        "name": "offerRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "fleetOwnerID",
+        "type": "string"
+      },
+      {
+        "name": "counterRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "bidRate",
+        "type": "int"
+      },
+      {
+        "name": "noOfVehicle",
+        "type": "int"
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "name": "SalesOrder",
+    "type": "record",
+    "fields": [
+      {
+        "name": "salesEnquiryID",
+        "type": "string"
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "offerRate",
+        "type": "int"
+      },
+      {
+        "name": "fleetOwnerID",
+        "type": "string"
+      },
+      {
+        "name": "counterRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "bidRate",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CommandOfBidOffer",
+    "fields": [
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "bid",
+        "type": "com.fretron.Model.BidOffer"
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "statusCode",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "errorMessage",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CommandOfAcceptOffer",
+    "fields": [
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "acceptOffer",
+        "type": "com.fretron.Model.AcceptOffer"
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "statusCode",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "errorMessage",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+   {
+        "type": "enum",
+        "name": "TrackingType",
+        "namespace": "com.fretron.Model",
+       "symbols":[
+        "Tracker",
+                           "Trip",
+                           "Manual"
+       ]
+   },
+
+{
+     "type": "record",
+     "name": "Location",
+     "namespace": "com.fretron.Model",
+     "fields": [
+       {
+         "name": "latitude",
+         "type": "double"
+       },
+       {
+         "name": "longitude",
+         "type": "double"
+       }
+     ]
+   },
+   {
+        "type": "record",
+        "name": "Circle",
+        "namespace": "com.fretron.Model",
+       "fields":[
+        {
+            "name":"center",
+            "type":"com.fretron.Model.Location"
+        },
+        {
+           "name":"radius",
+           "type":"double"
+        }
+       ]
+   },
+   {
+       "namespace": "com.fretron.Model",
+       "type": "record",
+       "name": "Command",
+       "fields": [
+         {
+           "name": "type",
+           "type": "string"
+         },
+         {
+           "name": "data",
+           "type": "bytes"
+         },
+         {
+           "name": "id",
+           "type": "string"
+         },
+         {
+           "name": "statusCode",
+           "type": [
+             "null",
+             "int"
+           ]
+         },
+         {
+           "name": "errorMessage",
+           "type": [
+             "null",
+             "string"
+           ]
+         },
+         {
+           "name": "startTime",
+           "type": [
+             "null",
+             "long"
+           ],
+           "logicalType": "timestamp-millis",
+           "default": null
+         },
+         {
+           "name": "processTime",
+           "type": [
+             "null",
+             "long"
+           ],
+           "logicalType": "timestamp-millis",
+           "default": null
+         }
+       ]
+     },
+       {
+           "namespace": "com.fretron.Model",
+           "type": "record",
+           "name": "Geofence",
+           "fields":[
+             {
+                 "name":"center",
+                 "type":"com.fretron.Model.Location"
+             },
+             {
+                 "name":"boundry",
+                 "type": ["null",{"type" : "array", "items":"com.fretron.Model.Location"}],
+                 "default":null
+             },
+             {
+                 "name":"circle",
+                 "type":[
+                        "null",
+                        "com.fretron.Model.Circle"
+                 ],
+                 "default":null
+             },
+             {
+                "name":"type",
+                "type":[
+                         "null",
+                         {
+                           "type": "enum",
+                           "name": "GeofenceType",
+                           "symbols": [
+                             "Proximity",
+                             "Polygon"
+                           ]
+                         }
+                       ],
+                 "default":null
+             }
+           ]
+        },
+
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Reducible",
+    "fields":[
+      {
+        "name":"store",
+        "type":["null" , "string"]
+      },
+       {
+        "name":"value",
+        "type":["null" , "bytes"]
+      },
+      {
+        "name":"key",
+        "type":["null" , "string"]
+      },
+      {
+        "name":"valueType",
+        "type":["null" ,"string"]
+      },
+      {
+        "name":"action",
+        "type":"string"
+      },
+       {
+        "name":"schemaTopic",
+        "type":["null" , "string"]
+      }
+    ]
+  },
+  {
+      "namespace": "com.fretron.Model",
+      "type": "record",
+      "name": "Driver",
+      "fields":[
+        {
+          "name":"name",
+          "type":["null" , "string"],
+          "default":null
+        },
+        {
+                  "name":"mobileNumber",
+                  "type":["null" , "string"],
+                  "default":null
+         },
+                 {
+                  "name":"uuid",
+                  "type":["null" , "string"],
+                  "default":null
+                 },
+        {
+         "name":"orgId",
+         "type":["null" , "string"],
+         "default":null
+        },
+         {
+           "name":"dlNumber",
+           "type":["null" , "string"],
+           "default":null
+         },
+         {
+           "name": "dlExpiryTime",
+           "type": [
+             "null",
+             "long"
+           ],
+           "logicalType": "timestamp-millis",
+           "default": null
+         }
+
+      ]
+    }
+ ]

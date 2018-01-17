@@ -1,0 +1,69 @@
+
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "ExecutedEventResponse",
+  "fields": [
+     {
+        "name": "successiveFailureCount",
+        "type": [
+                "null",
+                "int"
+              ],
+        "default" : null
+     },
+
+      {
+             "name": "totalSuccessCount",
+             "type": [
+                     "null",
+                     "int"
+                   ],
+             "default" : null
+      },
+     {
+         "name": "successiveSuccessCount",
+          "type": [
+                    "null",
+                    "int"
+                  ],
+          "default" : null
+     },
+    {
+       "name": "jobId",
+       "type":"string",
+       "default" : null
+    },
+    {
+       "name": "recordsReceived",
+        "type": ["null" , "string"],
+        "default" : null
+    },
+
+    {
+         "name": "selectedRecords",
+          "type": ["null" , "string"],
+           "default" : null
+     },
+    {
+       "name": "recordsForwarded",
+        "type": ["null" , "string"],
+        "default" : null
+     },
+    {
+        "name": "updateTime",
+        "type": [
+                  "null",
+                  "long"
+                ]
+    },
+    {
+       "name": "lastSuccessTime",
+        "type": [
+                   "null",
+                    "long"
+                ]
+        }
+
+  ]
+}

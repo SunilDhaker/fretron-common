@@ -1,0 +1,38 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "PositionCache",
+    "fields": [
+      {
+          "name": "flag",
+                  "type": [
+                             "null",
+                             "string"
+                 ]
+      },
+      {
+        "name": "time",
+        "type": [
+          "null",
+          "long"
+        ]
+      },
+      {
+        "name": "imei",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+           "name": "positions",
+            "type": {
+                   "type": "array",
+                    "items": "com.fretron.Model.LitePosition"
+              }
+      }
+
+    ]
+  }
+]

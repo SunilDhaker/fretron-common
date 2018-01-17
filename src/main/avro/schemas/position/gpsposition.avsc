@@ -1,0 +1,169 @@
+ [
+
+  {
+    "type": "record",
+    "name": "LitePosition",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      },
+      {
+        "name": "speed",
+        "type": "double"
+      },
+      {
+        "name": "time",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "imei",
+        "type": "string"
+      },
+      {
+        "name": "vehicleId",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "lngLat",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "double"
+          }
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "VehicleGpsState",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name":"isManuallyAdded",
+         "type":"boolean",
+        "default":false
+      },
+      {
+        "name":"isIgnore",
+        "type":"boolean",
+        "default":false
+      },
+      {
+        "name": "startTime",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "endTime",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "startLocation",
+        "type": "com.fretron.Model.LitePosition"
+      },
+      {
+        "name": "endLocation",
+        "type": "com.fretron.Model.LitePosition"
+      },
+      {
+        "name": "sigmasq",
+        "type": "double"
+      },
+      {
+        "name": "mean",
+        "type": "com.fretron.Model.LitePosition"
+      },
+      {
+        "name": "totalDistance",
+        "type": "double"
+      },
+      {
+        "name": "totalTime",
+        "type": "long"
+      },
+      {
+        "name": "averageOfSpeed",
+        "type": "double"
+      },
+      {
+        "name": "averageSpeeds",
+        "type": "double"
+      },
+      {
+        "name": "numberOfRecord",
+        "type": "int"
+      },
+      {
+        "name": "imei",
+        "type": "string"
+      },
+      {
+        "name": "vehicleId",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "state",
+        "type": [
+          "null",
+          {
+            "type": "enum",
+            "name": "GPSState",
+            "symbols": [
+              "Stopped",
+              "Moving",
+              "Overspeeding",
+              "Disconnected",
+              "Unknown"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "encodedPolyline",
+        "type": "string"
+      },
+      {
+        "name": "eventType",
+        "type": ["null" ,"string"],
+        "default" : null
+      }
+    ]
+  }
+
+  ]
