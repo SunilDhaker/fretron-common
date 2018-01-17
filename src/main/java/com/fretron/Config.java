@@ -11,18 +11,30 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Properties;
+import java.util.Set;
 
 
 public class Config {
 
+    public Config(){
+
+    }
+
     private final Properties properties = new Properties();
 
     public void load(String file) throws IOException {
+
         try (InputStream inputStream = new FileInputStream(file)) {
-            properties.loadFromXML(inputStream);
+            Properties pTemp  =new Properties();
+            pTemp.loadFromXML(inputStream);
+            for(Object a : pTemp.keySet()){
+                properties.put(a , pTemp.get(a));
+            }
         }
     }
+
 
     public boolean hasKey(String key) {
         return properties.containsKey(key) ;
