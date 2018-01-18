@@ -27,16 +27,11 @@
 
     <!--===============Position-processor topics ================-->
     <entry key="positions.topic">positionsTopic</entry>
-
-    <entry key="vehicle.statusData.topic">vehicleStatusData</entry>
-    <entry key="deviceData.topic">deviceDataTopic</entry>
-    <entry key="rawpositions.topic">rawPositions</entry>
     <entry key= "processedPositions.topic">processedPositions</entry>
-    <entry key="devicestate.topic">devicestate</entry>
-    <entry key="loadedposition.topic">loadedpositionTopic</entry>
     <entry key="liteposition.topic">liteposition</entry>
     <entry key="gps.events.topic">gpsMovementEventTopic</entry>
     <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
+    <entry key="devicestate.topic">devicestate</entry>
 
     <!--===============Sales-order topics========================-->
     <entry key="salesorder.topic">salesorderTopic</entry>

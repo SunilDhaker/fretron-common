@@ -14,6 +14,18 @@
        "type":"string",
        "default" : null
     },
+
+    {
+        "name": "userName",
+           "type":["null" , "string"],
+           "default" : null
+    },
+
+    { "name": "password",
+      "type":["null" , "string"],
+        "default" : null
+     },
+
     {
        "name": "queryParameters",
         "type": ["null" , "string"],
