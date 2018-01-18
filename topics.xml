@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+
+    <!--==============Common topics=================-->
+    <entry key="command.topic">command</entry>
+    <entry key="commandresult.topic">commandresult</entry>
+
+    <!--============Vehicle Shareing and Email ==============-->
+    <entry key="email.topic">emailstopic</entry>
+    <entry key="sharedvehicle.topic">sharedvehicle</entry>
+    <entry key="existingcustomers.topic">existingcustomers</entry>
+    <entry key="inviteduser.topic">invitedusers</entry>
+    <entry key="vehicleshare.topic">vehicleshare</entry>
+    <entry key="vehicleCustomerShare.topic">vehicleCustomerShare</entry>
+
+    <!--===============Registry-Manager topic====================-->
+    <entry key="customer.topic">customer</entry>
+    <entry key="device.topic">device</entry>
+    <entry key="vehicle.topic">vehicle</entry>
+    <entry key="driver.topic">drivertopic</entry>
+
+    <entry key="latest.command.topic">latestcommand</entry>
+    <entry key="vehiclewithdevice.topic">vehicleWithDevice</entry>
+
+    <!--===============Position-processor topics ================-->
+    <entry key="positions.topic">positionsTopic</entry>
+
+    <entry key="vehicle.statusData.topic">vehicleStatusData</entry>
+    <entry key="deviceData.topic">deviceDataTopic</entry>
+    <entry key="rawpositions.topic">rawPositions</entry>
+    <entry key= "processedPositions.topic">processedPositions</entry>
+    <entry key="devicestate.topic">devicestate</entry>
+    <entry key="loadedposition.topic">loadedpositionTopic</entry>
+    <entry key="liteposition.topic">liteposition</entry>
+    <entry key="gps.events.topic">gpsMovementEventTopic</entry>
+    <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
+
+    <!--===============Sales-order topics========================-->
+    <entry key="salesorder.topic">salesorderTopic</entry>
+    <entry key="salesenquiry.topic">salesenquiryTopic</entry>
+    <entry key="bid.topic">bidTopic</entry>
+    <entry key="acceptoffer.topic">acceptofferTopic</entry>
+
+    <!--===================Trip-Manager topics======================-->
+    <entry key="trip.topic">tripTopic</entry>
+    <entry key="trip.tamplate.topic">triptamplate</entry>
+
+    <entry key="user.ignore.command.topic">userignorecommand</entry>
+    <entry key="user.generated.command.topic">usergeneratedcommand</entry>
+
+    <entry key="vehicletripstate.topic">vehicletripstateTopic</entry>
+    <entry key="vtsevent.topic">vtsevent</entry>
+    <entry key="tripevent.topic">tripeventz</entry>
+    <entry key="vts.topic">vts</entry>
+    <entry key="trip.suspended.topic">suspendedtriptopic</entry>
+    <entry key="trip.generated.event.topic">tripGeneratedEventTopic</entry>
+    <entry key="vts.update.topic">vtsUpdateTopic</entry>
+    <entry key="trip.related.event.input.topic">tripRelatedEventInputTopic</entry>
+    <entry key="vts.update.topic">vtsUpdateTopic</entry>
+
+    <entry key="activetrip.topic">activetripTopic</entry>
+    <entry key="plannedtrip.topic">plannedtripTopic</entry>
+
+    <entry key="tracker.trip.related.event.input.topic">trackertriprelatedinputtopic</entry>
+    <entry key="tracker.vts.update.topic">trackervtsUpdateTopic</entry>
+    <entry key="tracker.vtsevent.topic">trackervtsevent</entry>
+    <entry key="tracker.tripevent.topic">trackertripeventz</entry>
+    <entry key="tracker.vts.topic">trackervts</entry>
+
+    <!--================Shipment-Manager topics===================-->
+    <entry key="shiment.topic">shipmentTopic</entry>
+    <entry key="tracker.trip.topic">trackertriptopic</entry>
+
+
+    <entry key="shiment.added.stop.topic">shipmentAddedStopTopic</entry>
+    <entry key="added.shiment.tracking.state.topic">addedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.tracking.request.topic">shipmentTrackingRequestTopic</entry>
+    <entry key="updated.shiment.tracking.state.topic">updatedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.state.updated.topic">shipmentStateUpdatedTopic</entry>
+    <entry key="shipment.related.event.topic">shipmentRelatedEventTopic</entry>
+
+    <entry key="manually.added.shipment.status.topic">manuallyAddedShipmentStatusTopic</entry>
+    <entry key="manual.trip.event.topic">manualTripEventTopic</entry>
+    <entry key="manual.trip.vts.topic">manualTripVtsTopic</entry>
+
+    <!--===============Hour-wise -topics=====================-->
+    <entry key="hour.mov.topic">hourMovTopic</entry>
+
+    <!--================User-Manger-topics==================-->
+    <entry key="user.topic">user</entry>
+
+    <!--================Alert-Manager topics============================-->
+    <entry key="alert.topic">alerts</entry>
+    <entry key="device.power.event.topic">deviceEvent</entry>
+
+    <!--=================Org-Manager topics================================-->
+    <entry key="organisation.topic">organisation</entry>
+    <entry key="orguseracl.topic">orguseracl</entry>
+    <entry key="org.group.topic">orggroup</entry>
+
+    <entry key="organisationbyuser.topic">organisationbyuser</entry>
+    <entry key="usersbyorganisation.topic">usersbyorganisation</entry>
+    <entry key="organisationsbyuser.topic">organisationsbyuser</entry>
+
+    <!--================Freight-Location Manager topics =====================-->
+    <entry key="freight.location.topic">freightlocationtopic</entry>
+
+    <!--===============TPI -Manager topics=====================-->
+    <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
+    <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
+
+</properties>
