@@ -108,7 +108,7 @@
 
 
     <entry key = "position.processor.database.name">kafka-sink-mongo</entry>
-    <entry key = "position.processor.database.ip">mongo.mean</entry>
+    <entry key = "position.processor.database.ip">mongo-gps.database</entry>
     <entry key = "position.processor.database.port">27017</entry>
     <entry key = "vehicle.gps.state.collectionName">vehiclegpsstatetopic</entry>
 
@@ -279,12 +279,12 @@
     <!--<entry key="query.server.service.ip">http://0.0.0.0</entry>-->
     <!--<entry key="query.server.service.port">8094</entry>-->
 
-    <entry key="vehicle.state.mongodb.host">mongo.mean</entry>
+    <entry key="vehicle.state.mongodb.host">mongo-registry.databases</entry>
     <entry key="vehicle.state.mongodb.port">27017</entry>
     <entry key="vehicle.state.mongodb.name">kafka-sink-mongo</entry>
 
-    <entry key="gps.log.mongo.server.ip">mongo.mean</entry>
-    <entry key="trip.mongo.server.ip">mongo.mean</entry>
+    <entry key="gps.log.mongo.server.ip">mongo-registry.databases</entry>
+    <entry key="trip.mongo.server.ip">mongo-registry.databases</entry>
     <entry key="gps.log.mongo.server.port">27017</entry>
     <entry key="trip.mongo.server.port">27017</entry>
     <entry key="gps.log.mongo.db.name">kafka-sink-mongo</entry>
@@ -342,34 +342,34 @@
     <!--========================================-->
     <entry key="driver.topic">drivertopic</entry>
     <entry key="driver.db.name">registry</entry>
-    <entry key="driver.db.host">mongo.mean</entry>
+    <entry key="driver.db.host">mongo-registry.databases</entry>
     <entry key="driver.db.port">27017</entry>
     <entry key="driver.db.collection.name">driver</entry>
 
     <entry key="vehicle.db.name">registry</entry>
-    <entry key="vehicle.db.host">mongo.mean</entry>
+    <entry key="vehicle.db.host">mongo-registry.databases</entry>
     <entry key="vehicle.db.port">27017</entry>
     <entry key="vehicle.db.collection.name">vehicle</entry>
     <entry key="group.db.collection.name">groups</entry>
 
     <entry key="device.db.name">registry</entry>
-    <entry key="device.db.host">mongo.mean</entry>
+    <entry key="device.db.host">mongo-registry.databases</entry>
     <entry key="device.db.port">27017</entry>
     <entry key="device.db.collection.name">device</entry>
 
     <entry key="organisation.db.name">registry</entry>
-    <entry key="organisation.db.host">mongo.mean</entry>
+    <entry key="organisation.db.host">mongo-registry.databases</entry>
     <entry key="organisation.db.port">27017</entry>
     <entry key="organisation.db.collection.name">organisation</entry>
     <entry key="user.db.collection.name">usercollection</entry>
 
     <entry key="user.org.db.name">user</entry>
-    <entry key="user.org.db.host">mongo.mean</entry>
+    <entry key="user.org.db.host">mongo-registry.databases</entry>
     <entry key="user.org.db.port">27017</entry>
     <entry key="user.org.db.collection.name">userorg</entry>
 
     <entry key="user.db.name">user</entry>
-    <entry key="user.db.host">mongo.mean</entry>
+    <entry key="user.db.host">mongo-registry.databases</entry>
     <entry key="user.db.port">27017</entry>
 
     <entry key="trip.revisted.appname">revisitedtrip-06</entry>
@@ -384,7 +384,7 @@
     <entry key = "integration.manager.restservices.port">8083</entry>
 
 
-    <entry key="integration.manager.mongodb.server.ip">mongo.mean</entry>
+    <entry key="integration.manager.mongodb.server.ip">mongo-registry.databases</entry>
     <entry key="integration.manager.mongodb.server.port">27017</entry>
     <entry key="integration.manager.mongodb.server.database">thirdPartyIntegration</entry>
     <entry key="mongodb.server.integration.job.collection.name">integratedJobs</entry>
