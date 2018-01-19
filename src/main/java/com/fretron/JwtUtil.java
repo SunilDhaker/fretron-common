@@ -105,9 +105,9 @@ public class JwtUtil {
         if(serverManager.isConnected()){
             String userID =    serverManager.getValueForKey(token);
             if(userID == null){
-                System.out.println("redis connected but -- token not found -- retuning null user id");
+                System.out.println("redis connected but -- token not found --  null user id ,, will return user id by manually verifying");
             }
-            return  userID;
+            return getFromToken(token,"userId");
         }else {
             System.out.println("redis not connected -- verifying token manually");
             return  getFromToken(token , "userId");
