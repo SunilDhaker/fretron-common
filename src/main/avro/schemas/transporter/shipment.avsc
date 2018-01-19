@@ -461,7 +461,23 @@
                         "string"
                     ],
                     "default":null
-                  }
+                  },
+                  {
+                     "name":"startLocation",
+                     "type":[
+                       "null",
+                       "com.fretron.Model.TripLocation"
+                     ],
+                     "default":null
+                 },
+                 {
+                    "name":"endLocation",
+                    "type":[
+                      "null",
+                      "com.fretron.Model.TripLocation"
+                    ],
+                    "default":null
+                 }
            ]
       },
       {
