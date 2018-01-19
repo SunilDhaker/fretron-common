@@ -16,7 +16,7 @@ public class RedisServerManager {
         if(jedis == null ){
             this.host = host;
             jedis = new Jedis(host);
-            System.out.println("Connection to Redis server sucessfully");
+            System.out.println("Connection to Redis server sucessfully "+jedis.ping());
         }
     }
 
@@ -43,13 +43,13 @@ public class RedisServerManager {
     public boolean isConnected(){
         boolean isConnected =  jedis.isConnected();
 
-        if(isConnected == false){
-            System.out.println("not connected to redis,, trying to reconnect");
-            closeConnection();
-            jedis =  new Jedis(host);
-            System.out.println("Now connection establised "+jedis.ping());
-            return jedis.isConnected();
-        }
+//        if(isConnected == false){
+//            System.out.println("not connected to redis,, trying to reconnect");
+//            closeConnection();
+//            jedis =  new Jedis(host);
+//            System.out.println("Now connection establised "+jedis.ping());
+//            return jedis.isConnected();
+//        }
         return isConnected;
     }
 
