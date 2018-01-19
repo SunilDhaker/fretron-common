@@ -10,11 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4091526381608661117L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IntegrationJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"queryParameters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"headers\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"requestMethod\",\"type\":{\"type\":\"enum\",\"name\":\"RequestMethod\",\"symbols\":[\"GET\",\"POST\",\"PUT\"]}},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastScheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"selectedVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isActive\",\"type\":\"boolean\"},{\"name\":\"isWebhookActive\",\"type\":\"boolean\"},{\"name\":\"mapper\",\"type\":{\"type\":\"record\",\"name\":\"Mapper\",\"fields\":[{\"name\":\"longitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1605103823609098056L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IntegrationJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queryParameters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"headers\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"requestMethod\",\"type\":{\"type\":\"enum\",\"name\":\"RequestMethod\",\"symbols\":[\"GET\",\"POST\",\"PUT\"]}},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastScheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"selectedVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isActive\",\"type\":\"boolean\"},{\"name\":\"isWebhookActive\",\"type\":\"boolean\"},{\"name\":\"mapper\",\"type\":{\"type\":\"record\",\"name\":\"Mapper\",\"fields\":[{\"name\":\"longitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String id;
   @Deprecated public java.lang.String url;
+  @Deprecated public java.lang.String userName;
+  @Deprecated public java.lang.String password;
   @Deprecated public java.lang.String queryParameters;
   @Deprecated public java.lang.String headers;
   @Deprecated public java.lang.String orgId;
@@ -41,6 +43,8 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
    * All-args constructor.
    * @param id The new value for id
    * @param url The new value for url
+   * @param userName The new value for userName
+   * @param password The new value for password
    * @param queryParameters The new value for queryParameters
    * @param headers The new value for headers
    * @param orgId The new value for orgId
@@ -56,9 +60,11 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
    * @param mapper The new value for mapper
    * @param eventType The new value for eventType
    */
-  public IntegrationJob(java.lang.String id, java.lang.String url, java.lang.String queryParameters, java.lang.String headers, java.lang.String orgId, com.fretron.Model.RequestMethod requestMethod, java.lang.String type, java.lang.Long creationTime, java.lang.Long scheduleTime, java.lang.Long lastScheduleTime, java.lang.String selectedVechiles, java.lang.String totalVechiles, java.lang.Boolean isActive, java.lang.Boolean isWebhookActive, com.fretron.Model.Mapper mapper, java.lang.String eventType) {
+  public IntegrationJob(java.lang.String id, java.lang.String url, java.lang.String userName, java.lang.String password, java.lang.String queryParameters, java.lang.String headers, java.lang.String orgId, com.fretron.Model.RequestMethod requestMethod, java.lang.String type, java.lang.Long creationTime, java.lang.Long scheduleTime, java.lang.Long lastScheduleTime, java.lang.String selectedVechiles, java.lang.String totalVechiles, java.lang.Boolean isActive, java.lang.Boolean isWebhookActive, com.fretron.Model.Mapper mapper, java.lang.String eventType) {
     this.id = id;
     this.url = url;
+    this.userName = userName;
+    this.password = password;
     this.queryParameters = queryParameters;
     this.headers = headers;
     this.orgId = orgId;
@@ -81,20 +87,22 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     switch (field$) {
     case 0: return id;
     case 1: return url;
-    case 2: return queryParameters;
-    case 3: return headers;
-    case 4: return orgId;
-    case 5: return requestMethod;
-    case 6: return type;
-    case 7: return creationTime;
-    case 8: return scheduleTime;
-    case 9: return lastScheduleTime;
-    case 10: return selectedVechiles;
-    case 11: return totalVechiles;
-    case 12: return isActive;
-    case 13: return isWebhookActive;
-    case 14: return mapper;
-    case 15: return eventType;
+    case 2: return userName;
+    case 3: return password;
+    case 4: return queryParameters;
+    case 5: return headers;
+    case 6: return orgId;
+    case 7: return requestMethod;
+    case 8: return type;
+    case 9: return creationTime;
+    case 10: return scheduleTime;
+    case 11: return lastScheduleTime;
+    case 12: return selectedVechiles;
+    case 13: return totalVechiles;
+    case 14: return isActive;
+    case 15: return isWebhookActive;
+    case 16: return mapper;
+    case 17: return eventType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -105,20 +113,22 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     switch (field$) {
     case 0: id = (java.lang.String)value$; break;
     case 1: url = (java.lang.String)value$; break;
-    case 2: queryParameters = (java.lang.String)value$; break;
-    case 3: headers = (java.lang.String)value$; break;
-    case 4: orgId = (java.lang.String)value$; break;
-    case 5: requestMethod = (com.fretron.Model.RequestMethod)value$; break;
-    case 6: type = (java.lang.String)value$; break;
-    case 7: creationTime = (java.lang.Long)value$; break;
-    case 8: scheduleTime = (java.lang.Long)value$; break;
-    case 9: lastScheduleTime = (java.lang.Long)value$; break;
-    case 10: selectedVechiles = (java.lang.String)value$; break;
-    case 11: totalVechiles = (java.lang.String)value$; break;
-    case 12: isActive = (java.lang.Boolean)value$; break;
-    case 13: isWebhookActive = (java.lang.Boolean)value$; break;
-    case 14: mapper = (com.fretron.Model.Mapper)value$; break;
-    case 15: eventType = (java.lang.String)value$; break;
+    case 2: userName = (java.lang.String)value$; break;
+    case 3: password = (java.lang.String)value$; break;
+    case 4: queryParameters = (java.lang.String)value$; break;
+    case 5: headers = (java.lang.String)value$; break;
+    case 6: orgId = (java.lang.String)value$; break;
+    case 7: requestMethod = (com.fretron.Model.RequestMethod)value$; break;
+    case 8: type = (java.lang.String)value$; break;
+    case 9: creationTime = (java.lang.Long)value$; break;
+    case 10: scheduleTime = (java.lang.Long)value$; break;
+    case 11: lastScheduleTime = (java.lang.Long)value$; break;
+    case 12: selectedVechiles = (java.lang.String)value$; break;
+    case 13: totalVechiles = (java.lang.String)value$; break;
+    case 14: isActive = (java.lang.Boolean)value$; break;
+    case 15: isWebhookActive = (java.lang.Boolean)value$; break;
+    case 16: mapper = (com.fretron.Model.Mapper)value$; break;
+    case 17: eventType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -153,6 +163,38 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
    */
   public void setUrl(java.lang.String value) {
     this.url = value;
+  }
+
+  /**
+   * Gets the value of the 'userName' field.
+   * @return The value of the 'userName' field.
+   */
+  public java.lang.String getUserName() {
+    return userName;
+  }
+
+  /**
+   * Sets the value of the 'userName' field.
+   * @param value the value to set.
+   */
+  public void setUserName(java.lang.String value) {
+    this.userName = value;
+  }
+
+  /**
+   * Gets the value of the 'password' field.
+   * @return The value of the 'password' field.
+   */
+  public java.lang.String getPassword() {
+    return password;
+  }
+
+  /**
+   * Sets the value of the 'password' field.
+   * @param value the value to set.
+   */
+  public void setPassword(java.lang.String value) {
+    this.password = value;
   }
 
   /**
@@ -413,6 +455,8 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
 
     private java.lang.String id;
     private java.lang.String url;
+    private java.lang.String userName;
+    private java.lang.String password;
     private java.lang.String queryParameters;
     private java.lang.String headers;
     private java.lang.String orgId;
@@ -448,64 +492,72 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
         this.url = data().deepCopy(fields()[1].schema(), other.url);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.queryParameters)) {
-        this.queryParameters = data().deepCopy(fields()[2].schema(), other.queryParameters);
+      if (isValidValue(fields()[2], other.userName)) {
+        this.userName = data().deepCopy(fields()[2].schema(), other.userName);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.headers)) {
-        this.headers = data().deepCopy(fields()[3].schema(), other.headers);
+      if (isValidValue(fields()[3], other.password)) {
+        this.password = data().deepCopy(fields()[3].schema(), other.password);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[4].schema(), other.orgId);
+      if (isValidValue(fields()[4], other.queryParameters)) {
+        this.queryParameters = data().deepCopy(fields()[4].schema(), other.queryParameters);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.requestMethod)) {
-        this.requestMethod = data().deepCopy(fields()[5].schema(), other.requestMethod);
+      if (isValidValue(fields()[5], other.headers)) {
+        this.headers = data().deepCopy(fields()[5].schema(), other.headers);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.type)) {
-        this.type = data().deepCopy(fields()[6].schema(), other.type);
+      if (isValidValue(fields()[6], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[6].schema(), other.orgId);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.creationTime)) {
-        this.creationTime = data().deepCopy(fields()[7].schema(), other.creationTime);
+      if (isValidValue(fields()[7], other.requestMethod)) {
+        this.requestMethod = data().deepCopy(fields()[7].schema(), other.requestMethod);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.scheduleTime)) {
-        this.scheduleTime = data().deepCopy(fields()[8].schema(), other.scheduleTime);
+      if (isValidValue(fields()[8], other.type)) {
+        this.type = data().deepCopy(fields()[8].schema(), other.type);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.lastScheduleTime)) {
-        this.lastScheduleTime = data().deepCopy(fields()[9].schema(), other.lastScheduleTime);
+      if (isValidValue(fields()[9], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[9].schema(), other.creationTime);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.selectedVechiles)) {
-        this.selectedVechiles = data().deepCopy(fields()[10].schema(), other.selectedVechiles);
+      if (isValidValue(fields()[10], other.scheduleTime)) {
+        this.scheduleTime = data().deepCopy(fields()[10].schema(), other.scheduleTime);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.totalVechiles)) {
-        this.totalVechiles = data().deepCopy(fields()[11].schema(), other.totalVechiles);
+      if (isValidValue(fields()[11], other.lastScheduleTime)) {
+        this.lastScheduleTime = data().deepCopy(fields()[11].schema(), other.lastScheduleTime);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.isActive)) {
-        this.isActive = data().deepCopy(fields()[12].schema(), other.isActive);
+      if (isValidValue(fields()[12], other.selectedVechiles)) {
+        this.selectedVechiles = data().deepCopy(fields()[12].schema(), other.selectedVechiles);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.isWebhookActive)) {
-        this.isWebhookActive = data().deepCopy(fields()[13].schema(), other.isWebhookActive);
+      if (isValidValue(fields()[13], other.totalVechiles)) {
+        this.totalVechiles = data().deepCopy(fields()[13].schema(), other.totalVechiles);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.mapper)) {
-        this.mapper = data().deepCopy(fields()[14].schema(), other.mapper);
+      if (isValidValue(fields()[14], other.isActive)) {
+        this.isActive = data().deepCopy(fields()[14].schema(), other.isActive);
         fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isWebhookActive)) {
+        this.isWebhookActive = data().deepCopy(fields()[15].schema(), other.isWebhookActive);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.mapper)) {
+        this.mapper = data().deepCopy(fields()[16].schema(), other.mapper);
+        fieldSetFlags()[16] = true;
       }
       if (other.hasMapperBuilder()) {
         this.mapperBuilder = com.fretron.Model.Mapper.newBuilder(other.getMapperBuilder());
       }
-      if (isValidValue(fields()[15], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[15].schema(), other.eventType);
-        fieldSetFlags()[15] = true;
+      if (isValidValue(fields()[17], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[17].schema(), other.eventType);
+        fieldSetFlags()[17] = true;
       }
     }
 
@@ -523,62 +575,70 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
         this.url = data().deepCopy(fields()[1].schema(), other.url);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.queryParameters)) {
-        this.queryParameters = data().deepCopy(fields()[2].schema(), other.queryParameters);
+      if (isValidValue(fields()[2], other.userName)) {
+        this.userName = data().deepCopy(fields()[2].schema(), other.userName);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.headers)) {
-        this.headers = data().deepCopy(fields()[3].schema(), other.headers);
+      if (isValidValue(fields()[3], other.password)) {
+        this.password = data().deepCopy(fields()[3].schema(), other.password);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[4].schema(), other.orgId);
+      if (isValidValue(fields()[4], other.queryParameters)) {
+        this.queryParameters = data().deepCopy(fields()[4].schema(), other.queryParameters);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.requestMethod)) {
-        this.requestMethod = data().deepCopy(fields()[5].schema(), other.requestMethod);
+      if (isValidValue(fields()[5], other.headers)) {
+        this.headers = data().deepCopy(fields()[5].schema(), other.headers);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.type)) {
-        this.type = data().deepCopy(fields()[6].schema(), other.type);
+      if (isValidValue(fields()[6], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[6].schema(), other.orgId);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.creationTime)) {
-        this.creationTime = data().deepCopy(fields()[7].schema(), other.creationTime);
+      if (isValidValue(fields()[7], other.requestMethod)) {
+        this.requestMethod = data().deepCopy(fields()[7].schema(), other.requestMethod);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.scheduleTime)) {
-        this.scheduleTime = data().deepCopy(fields()[8].schema(), other.scheduleTime);
+      if (isValidValue(fields()[8], other.type)) {
+        this.type = data().deepCopy(fields()[8].schema(), other.type);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.lastScheduleTime)) {
-        this.lastScheduleTime = data().deepCopy(fields()[9].schema(), other.lastScheduleTime);
+      if (isValidValue(fields()[9], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[9].schema(), other.creationTime);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.selectedVechiles)) {
-        this.selectedVechiles = data().deepCopy(fields()[10].schema(), other.selectedVechiles);
+      if (isValidValue(fields()[10], other.scheduleTime)) {
+        this.scheduleTime = data().deepCopy(fields()[10].schema(), other.scheduleTime);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.totalVechiles)) {
-        this.totalVechiles = data().deepCopy(fields()[11].schema(), other.totalVechiles);
+      if (isValidValue(fields()[11], other.lastScheduleTime)) {
+        this.lastScheduleTime = data().deepCopy(fields()[11].schema(), other.lastScheduleTime);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.isActive)) {
-        this.isActive = data().deepCopy(fields()[12].schema(), other.isActive);
+      if (isValidValue(fields()[12], other.selectedVechiles)) {
+        this.selectedVechiles = data().deepCopy(fields()[12].schema(), other.selectedVechiles);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.isWebhookActive)) {
-        this.isWebhookActive = data().deepCopy(fields()[13].schema(), other.isWebhookActive);
+      if (isValidValue(fields()[13], other.totalVechiles)) {
+        this.totalVechiles = data().deepCopy(fields()[13].schema(), other.totalVechiles);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.mapper)) {
-        this.mapper = data().deepCopy(fields()[14].schema(), other.mapper);
+      if (isValidValue(fields()[14], other.isActive)) {
+        this.isActive = data().deepCopy(fields()[14].schema(), other.isActive);
         fieldSetFlags()[14] = true;
       }
-      this.mapperBuilder = null;
-      if (isValidValue(fields()[15], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[15].schema(), other.eventType);
+      if (isValidValue(fields()[15], other.isWebhookActive)) {
+        this.isWebhookActive = data().deepCopy(fields()[15].schema(), other.isWebhookActive);
         fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.mapper)) {
+        this.mapper = data().deepCopy(fields()[16].schema(), other.mapper);
+        fieldSetFlags()[16] = true;
+      }
+      this.mapperBuilder = null;
+      if (isValidValue(fields()[17], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[17].schema(), other.eventType);
+        fieldSetFlags()[17] = true;
       }
     }
 
@@ -661,6 +721,84 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     }
 
     /**
+      * Gets the value of the 'userName' field.
+      * @return The value.
+      */
+    public java.lang.String getUserName() {
+      return userName;
+    }
+
+    /**
+      * Sets the value of the 'userName' field.
+      * @param value The value of 'userName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder setUserName(java.lang.String value) {
+      validate(fields()[2], value);
+      this.userName = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'userName' field has been set.
+      * @return True if the 'userName' field has been set, false otherwise.
+      */
+    public boolean hasUserName() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'userName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder clearUserName() {
+      userName = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'password' field.
+      * @return The value.
+      */
+    public java.lang.String getPassword() {
+      return password;
+    }
+
+    /**
+      * Sets the value of the 'password' field.
+      * @param value The value of 'password'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder setPassword(java.lang.String value) {
+      validate(fields()[3], value);
+      this.password = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'password' field has been set.
+      * @return True if the 'password' field has been set, false otherwise.
+      */
+    public boolean hasPassword() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'password' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder clearPassword() {
+      password = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'queryParameters' field.
       * @return The value.
       */
@@ -674,9 +812,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setQueryParameters(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[4], value);
       this.queryParameters = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -685,7 +823,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'queryParameters' field has been set, false otherwise.
       */
     public boolean hasQueryParameters() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[4];
     }
 
 
@@ -695,7 +833,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearQueryParameters() {
       queryParameters = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -713,9 +851,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setHeaders(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[5], value);
       this.headers = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -724,7 +862,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'headers' field has been set, false otherwise.
       */
     public boolean hasHeaders() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[5];
     }
 
 
@@ -734,7 +872,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearHeaders() {
       headers = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -752,9 +890,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setOrgId(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[6], value);
       this.orgId = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -763,7 +901,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[6];
     }
 
 
@@ -773,7 +911,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -791,9 +929,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setRequestMethod(com.fretron.Model.RequestMethod value) {
-      validate(fields()[5], value);
+      validate(fields()[7], value);
       this.requestMethod = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -802,7 +940,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'requestMethod' field has been set, false otherwise.
       */
     public boolean hasRequestMethod() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[7];
     }
 
 
@@ -812,7 +950,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearRequestMethod() {
       requestMethod = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -830,9 +968,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setType(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[8], value);
       this.type = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -841,7 +979,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'type' field has been set, false otherwise.
       */
     public boolean hasType() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[8];
     }
 
 
@@ -851,7 +989,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearType() {
       type = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -869,9 +1007,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setCreationTime(java.lang.Long value) {
-      validate(fields()[7], value);
+      validate(fields()[9], value);
       this.creationTime = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -880,7 +1018,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'creationTime' field has been set, false otherwise.
       */
     public boolean hasCreationTime() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[9];
     }
 
 
@@ -890,7 +1028,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearCreationTime() {
       creationTime = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -908,9 +1046,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setScheduleTime(java.lang.Long value) {
-      validate(fields()[8], value);
+      validate(fields()[10], value);
       this.scheduleTime = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -919,7 +1057,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'scheduleTime' field has been set, false otherwise.
       */
     public boolean hasScheduleTime() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[10];
     }
 
 
@@ -929,7 +1067,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearScheduleTime() {
       scheduleTime = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -947,9 +1085,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setLastScheduleTime(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[11], value);
       this.lastScheduleTime = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -958,7 +1096,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'lastScheduleTime' field has been set, false otherwise.
       */
     public boolean hasLastScheduleTime() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[11];
     }
 
 
@@ -968,7 +1106,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearLastScheduleTime() {
       lastScheduleTime = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -986,9 +1124,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setSelectedVechiles(java.lang.String value) {
-      validate(fields()[10], value);
+      validate(fields()[12], value);
       this.selectedVechiles = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -997,7 +1135,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'selectedVechiles' field has been set, false otherwise.
       */
     public boolean hasSelectedVechiles() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1007,7 +1145,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearSelectedVechiles() {
       selectedVechiles = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1025,9 +1163,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setTotalVechiles(java.lang.String value) {
-      validate(fields()[11], value);
+      validate(fields()[13], value);
       this.totalVechiles = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1036,7 +1174,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'totalVechiles' field has been set, false otherwise.
       */
     public boolean hasTotalVechiles() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1046,7 +1184,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearTotalVechiles() {
       totalVechiles = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1064,9 +1202,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setIsActive(boolean value) {
-      validate(fields()[12], value);
+      validate(fields()[14], value);
       this.isActive = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1075,7 +1213,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'isActive' field has been set, false otherwise.
       */
     public boolean hasIsActive() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1084,7 +1222,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder clearIsActive() {
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1102,9 +1240,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setIsWebhookActive(boolean value) {
-      validate(fields()[13], value);
+      validate(fields()[15], value);
       this.isWebhookActive = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1113,7 +1251,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'isWebhookActive' field has been set, false otherwise.
       */
     public boolean hasIsWebhookActive() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1122,7 +1260,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder clearIsWebhookActive() {
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1140,10 +1278,10 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setMapper(com.fretron.Model.Mapper value) {
-      validate(fields()[14], value);
+      validate(fields()[16], value);
       this.mapperBuilder = null;
       this.mapper = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1152,7 +1290,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'mapper' field has been set, false otherwise.
       */
     public boolean hasMapper() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[16];
     }
 
     /**
@@ -1196,7 +1334,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     public com.fretron.Model.IntegrationJob.Builder clearMapper() {
       mapper = null;
       mapperBuilder = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1214,9 +1352,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.IntegrationJob.Builder setEventType(java.lang.String value) {
-      validate(fields()[15], value);
+      validate(fields()[17], value);
       this.eventType = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1225,7 +1363,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'eventType' field has been set, false otherwise.
       */
     public boolean hasEventType() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1235,7 +1373,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.IntegrationJob.Builder clearEventType() {
       eventType = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1245,24 +1383,26 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
         IntegrationJob record = new IntegrationJob();
         record.id = fieldSetFlags()[0] ? this.id : (java.lang.String) defaultValue(fields()[0]);
         record.url = fieldSetFlags()[1] ? this.url : (java.lang.String) defaultValue(fields()[1]);
-        record.queryParameters = fieldSetFlags()[2] ? this.queryParameters : (java.lang.String) defaultValue(fields()[2]);
-        record.headers = fieldSetFlags()[3] ? this.headers : (java.lang.String) defaultValue(fields()[3]);
-        record.orgId = fieldSetFlags()[4] ? this.orgId : (java.lang.String) defaultValue(fields()[4]);
-        record.requestMethod = fieldSetFlags()[5] ? this.requestMethod : (com.fretron.Model.RequestMethod) defaultValue(fields()[5]);
-        record.type = fieldSetFlags()[6] ? this.type : (java.lang.String) defaultValue(fields()[6]);
-        record.creationTime = fieldSetFlags()[7] ? this.creationTime : (java.lang.Long) defaultValue(fields()[7]);
-        record.scheduleTime = fieldSetFlags()[8] ? this.scheduleTime : (java.lang.Long) defaultValue(fields()[8]);
-        record.lastScheduleTime = fieldSetFlags()[9] ? this.lastScheduleTime : (java.lang.Long) defaultValue(fields()[9]);
-        record.selectedVechiles = fieldSetFlags()[10] ? this.selectedVechiles : (java.lang.String) defaultValue(fields()[10]);
-        record.totalVechiles = fieldSetFlags()[11] ? this.totalVechiles : (java.lang.String) defaultValue(fields()[11]);
-        record.isActive = fieldSetFlags()[12] ? this.isActive : (java.lang.Boolean) defaultValue(fields()[12]);
-        record.isWebhookActive = fieldSetFlags()[13] ? this.isWebhookActive : (java.lang.Boolean) defaultValue(fields()[13]);
+        record.userName = fieldSetFlags()[2] ? this.userName : (java.lang.String) defaultValue(fields()[2]);
+        record.password = fieldSetFlags()[3] ? this.password : (java.lang.String) defaultValue(fields()[3]);
+        record.queryParameters = fieldSetFlags()[4] ? this.queryParameters : (java.lang.String) defaultValue(fields()[4]);
+        record.headers = fieldSetFlags()[5] ? this.headers : (java.lang.String) defaultValue(fields()[5]);
+        record.orgId = fieldSetFlags()[6] ? this.orgId : (java.lang.String) defaultValue(fields()[6]);
+        record.requestMethod = fieldSetFlags()[7] ? this.requestMethod : (com.fretron.Model.RequestMethod) defaultValue(fields()[7]);
+        record.type = fieldSetFlags()[8] ? this.type : (java.lang.String) defaultValue(fields()[8]);
+        record.creationTime = fieldSetFlags()[9] ? this.creationTime : (java.lang.Long) defaultValue(fields()[9]);
+        record.scheduleTime = fieldSetFlags()[10] ? this.scheduleTime : (java.lang.Long) defaultValue(fields()[10]);
+        record.lastScheduleTime = fieldSetFlags()[11] ? this.lastScheduleTime : (java.lang.Long) defaultValue(fields()[11]);
+        record.selectedVechiles = fieldSetFlags()[12] ? this.selectedVechiles : (java.lang.String) defaultValue(fields()[12]);
+        record.totalVechiles = fieldSetFlags()[13] ? this.totalVechiles : (java.lang.String) defaultValue(fields()[13]);
+        record.isActive = fieldSetFlags()[14] ? this.isActive : (java.lang.Boolean) defaultValue(fields()[14]);
+        record.isWebhookActive = fieldSetFlags()[15] ? this.isWebhookActive : (java.lang.Boolean) defaultValue(fields()[15]);
         if (mapperBuilder != null) {
           record.mapper = this.mapperBuilder.build();
         } else {
-          record.mapper = fieldSetFlags()[14] ? this.mapper : (com.fretron.Model.Mapper) defaultValue(fields()[14]);
+          record.mapper = fieldSetFlags()[16] ? this.mapper : (com.fretron.Model.Mapper) defaultValue(fields()[16]);
         }
-        record.eventType = fieldSetFlags()[15] ? this.eventType : (java.lang.String) defaultValue(fields()[15]);
+        record.eventType = fieldSetFlags()[17] ? this.eventType : (java.lang.String) defaultValue(fields()[17]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
