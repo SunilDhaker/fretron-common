@@ -84,7 +84,7 @@
     <entry key="environment">production</entry>
 
 
-    <entry key="new.position.processor.appid">positions-processor-03</entry>
+    <entry key="new.position.processor.appid">positions-processor-13</entry>
     <!-- millis : 5 min : 5* 60 *1000 -->
     <entry key="gps.state.min.time">300000</entry>
 
@@ -159,9 +159,9 @@
     <entry key="geocoder.url">http://query-server.mean:8094/address</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
-    <entry key="registry.manager.appId">registrymanager-test-21</entry>
+    <entry key="registry.manager.appId">registrymanager-test-03</entry>
 
-<!--===========================Tracker Related Configs=========================-->
+    <!--===========================Tracker Related Configs=========================-->
     <entry key="tracker.trip.topic">trackertriptopic</entry>
     <entry key="tracker.trip.by.tracker.trip.store">trackertripbytripstore</entry>
     <entry key="vts.by.tracker.trip.store">vtsbytrackertripstore</entry>
@@ -196,11 +196,11 @@
     <!-- =================== -->
 
     <!-- =================== -->
-    <entry key="user.manager.app.id">userManager-03</entry>
+    <entry key="user.manager.app.id">userManager-01</entry>
     <entry key="user.topic">user</entry>
 
     <!-- =================== -->
-    <entry key="organisation.manager.app.id">organisationManager-06</entry>
+    <entry key="organisation.manager.app.id">organisationManager</entry>
     <entry key="organisation.topic">organisation</entry>
     <entry key="organisationbyuser.topic">organisationbyuser</entry>
 
@@ -209,7 +209,7 @@
     <entry key="trip.tamplate.topic">triptamplate</entry>
 
     <entry key="org.group.topic">orggroup</entry>
-    <entry key="org.group.manager.app.id">organisationGroupManager-03</entry>
+    <entry key="org.group.manager.app.id">organisationGroupManager</entry>
     <entry key="usersbyorganisation.topic">usersbyorganisation</entry>
     <entry key="organisationsbyuser.topic">organisationsbyuser</entry>
 
@@ -217,7 +217,7 @@
 
     <!-- =================== -->
     <entry key="kafka.topic.partition">5</entry>
-    <entry key="kafka.topic.replication.factor">1</entry>
+    <entry key="kafka.topic.replication.factor">3</entry>
     <entry key="kafkatopics.app.ip">http://0.0.0.0</entry>
     <entry key="kafkatopics.app.port">8089</entry>
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
@@ -248,8 +248,8 @@
     <entry key="registry.manager.restservice.ip">http://0.0.0.0</entry>
     <entry key="registry.manager.restservice.port">8087</entry>
 
-    <entry key="redis.server.ip">redis.mean</entry>
-    <entry key="mongodb.server.ip">mongo.mean</entry>
+    <entry key="redis.server.ip">redis.databases</entry>
+    <entry key="mongodb.server.ip">mongo-registry.databases</entry>
     <entry key="mongodb.database.name">kafka-sink-mongo</entry>
     <entry key="mongodb.server.port">27017</entry>
 
@@ -283,7 +283,7 @@
     <entry key="vehicle.state.mongodb.port">27017</entry>
     <entry key="vehicle.state.mongodb.name">kafka-sink-mongo</entry>
 
-    <entry key="gps.log.mongo.server.ip">mongo-registry.databases</entry>
+    <entry key="gps.log.mongo.server.ip">mongo-gps.databases</entry>
     <entry key="trip.mongo.server.ip">mongo-registry.databases</entry>
     <entry key="gps.log.mongo.server.port">27017</entry>
     <entry key="trip.mongo.server.port">27017</entry>
@@ -361,7 +361,7 @@
     <entry key="organisation.db.host">mongo-registry.databases</entry>
     <entry key="organisation.db.port">27017</entry>
     <entry key="organisation.db.collection.name">organisation</entry>
-    <entry key="user.db.collection.name">user</entry>
+    <entry key="user.db.collection.name">usercollection</entry>
 
     <entry key="user.org.db.name">user</entry>
     <entry key="user.org.db.host">mongo-registry.databases</entry>

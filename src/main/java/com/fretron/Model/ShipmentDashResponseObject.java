@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentDashResponseObject extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6208397375617785700L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentDashResponseObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"endLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vts\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"shipmentNoExtended\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedTripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -4897736801420632428L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentDashResponseObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"endLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentLocationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vts\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"shipmentNoExtended\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedTripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripLocation\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"endLocation\",\"type\":[\"null\",\"TripLocation\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double latitude;
   @Deprecated public java.lang.Double longitude;
@@ -27,6 +27,8 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
   @Deprecated public java.lang.String shipmentId;
   @Deprecated public java.lang.Long plannedStartTime;
   @Deprecated public java.lang.String assosiatedTripId;
+  @Deprecated public com.fretron.Model.TripLocation startLocation;
+  @Deprecated public com.fretron.Model.TripLocation endLocation;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +53,10 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
    * @param shipmentId The new value for shipmentId
    * @param plannedStartTime The new value for plannedStartTime
    * @param assosiatedTripId The new value for assosiatedTripId
+   * @param startLocation The new value for startLocation
+   * @param endLocation The new value for endLocation
    */
-  public ShipmentDashResponseObject(java.lang.Double latitude, java.lang.Double longitude, java.lang.String startLocationName, java.lang.String endLocationName, java.lang.String vehicleRegistrationNumber, java.lang.String shipmentState, java.lang.String currentLocationName, java.lang.String trackingType, java.lang.String vts, java.lang.Integer shipmentNo, java.lang.String shipmentNoExtended, java.lang.String shipmentId, java.lang.Long plannedStartTime, java.lang.String assosiatedTripId) {
+  public ShipmentDashResponseObject(java.lang.Double latitude, java.lang.Double longitude, java.lang.String startLocationName, java.lang.String endLocationName, java.lang.String vehicleRegistrationNumber, java.lang.String shipmentState, java.lang.String currentLocationName, java.lang.String trackingType, java.lang.String vts, java.lang.Integer shipmentNo, java.lang.String shipmentNoExtended, java.lang.String shipmentId, java.lang.Long plannedStartTime, java.lang.String assosiatedTripId, com.fretron.Model.TripLocation startLocation, com.fretron.Model.TripLocation endLocation) {
     this.latitude = latitude;
     this.longitude = longitude;
     this.startLocationName = startLocationName;
@@ -67,6 +71,8 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
     this.shipmentId = shipmentId;
     this.plannedStartTime = plannedStartTime;
     this.assosiatedTripId = assosiatedTripId;
+    this.startLocation = startLocation;
+    this.endLocation = endLocation;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +93,8 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
     case 11: return shipmentId;
     case 12: return plannedStartTime;
     case 13: return assosiatedTripId;
+    case 14: return startLocation;
+    case 15: return endLocation;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +117,8 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
     case 11: shipmentId = (java.lang.String)value$; break;
     case 12: plannedStartTime = (java.lang.Long)value$; break;
     case 13: assosiatedTripId = (java.lang.String)value$; break;
+    case 14: startLocation = (com.fretron.Model.TripLocation)value$; break;
+    case 15: endLocation = (com.fretron.Model.TripLocation)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +348,38 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
   }
 
   /**
+   * Gets the value of the 'startLocation' field.
+   * @return The value of the 'startLocation' field.
+   */
+  public com.fretron.Model.TripLocation getStartLocation() {
+    return startLocation;
+  }
+
+  /**
+   * Sets the value of the 'startLocation' field.
+   * @param value the value to set.
+   */
+  public void setStartLocation(com.fretron.Model.TripLocation value) {
+    this.startLocation = value;
+  }
+
+  /**
+   * Gets the value of the 'endLocation' field.
+   * @return The value of the 'endLocation' field.
+   */
+  public com.fretron.Model.TripLocation getEndLocation() {
+    return endLocation;
+  }
+
+  /**
+   * Sets the value of the 'endLocation' field.
+   * @param value the value to set.
+   */
+  public void setEndLocation(com.fretron.Model.TripLocation value) {
+    this.endLocation = value;
+  }
+
+  /**
    * Creates a new ShipmentDashResponseObject RecordBuilder.
    * @return A new ShipmentDashResponseObject RecordBuilder
    */
@@ -383,6 +425,10 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
     private java.lang.String shipmentId;
     private java.lang.Long plannedStartTime;
     private java.lang.String assosiatedTripId;
+    private com.fretron.Model.TripLocation startLocation;
+    private com.fretron.Model.TripLocation.Builder startLocationBuilder;
+    private com.fretron.Model.TripLocation endLocation;
+    private com.fretron.Model.TripLocation.Builder endLocationBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +497,20 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
         this.assosiatedTripId = data().deepCopy(fields()[13].schema(), other.assosiatedTripId);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.startLocation)) {
+        this.startLocation = data().deepCopy(fields()[14].schema(), other.startLocation);
+        fieldSetFlags()[14] = true;
+      }
+      if (other.hasStartLocationBuilder()) {
+        this.startLocationBuilder = com.fretron.Model.TripLocation.newBuilder(other.getStartLocationBuilder());
+      }
+      if (isValidValue(fields()[15], other.endLocation)) {
+        this.endLocation = data().deepCopy(fields()[15].schema(), other.endLocation);
+        fieldSetFlags()[15] = true;
+      }
+      if (other.hasEndLocationBuilder()) {
+        this.endLocationBuilder = com.fretron.Model.TripLocation.newBuilder(other.getEndLocationBuilder());
+      }
     }
 
     /**
@@ -515,6 +575,16 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
         this.assosiatedTripId = data().deepCopy(fields()[13].schema(), other.assosiatedTripId);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.startLocation)) {
+        this.startLocation = data().deepCopy(fields()[14].schema(), other.startLocation);
+        fieldSetFlags()[14] = true;
+      }
+      this.startLocationBuilder = null;
+      if (isValidValue(fields()[15], other.endLocation)) {
+        this.endLocation = data().deepCopy(fields()[15].schema(), other.endLocation);
+        fieldSetFlags()[15] = true;
+      }
+      this.endLocationBuilder = null;
     }
 
     /**
@@ -1063,6 +1133,154 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
       return this;
     }
 
+    /**
+      * Gets the value of the 'startLocation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.TripLocation getStartLocation() {
+      return startLocation;
+    }
+
+    /**
+      * Sets the value of the 'startLocation' field.
+      * @param value The value of 'startLocation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder setStartLocation(com.fretron.Model.TripLocation value) {
+      validate(fields()[14], value);
+      this.startLocationBuilder = null;
+      this.startLocation = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'startLocation' field has been set.
+      * @return True if the 'startLocation' field has been set, false otherwise.
+      */
+    public boolean hasStartLocation() {
+      return fieldSetFlags()[14];
+    }
+
+    /**
+     * Gets the Builder instance for the 'startLocation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripLocation.Builder getStartLocationBuilder() {
+      if (startLocationBuilder == null) {
+        if (hasStartLocation()) {
+          setStartLocationBuilder(com.fretron.Model.TripLocation.newBuilder(startLocation));
+        } else {
+          setStartLocationBuilder(com.fretron.Model.TripLocation.newBuilder());
+        }
+      }
+      return startLocationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'startLocation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder setStartLocationBuilder(com.fretron.Model.TripLocation.Builder value) {
+      clearStartLocation();
+      startLocationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'startLocation' field has an active Builder instance
+     * @return True if the 'startLocation' field has an active Builder instance
+     */
+    public boolean hasStartLocationBuilder() {
+      return startLocationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'startLocation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder clearStartLocation() {
+      startLocation = null;
+      startLocationBuilder = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'endLocation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.TripLocation getEndLocation() {
+      return endLocation;
+    }
+
+    /**
+      * Sets the value of the 'endLocation' field.
+      * @param value The value of 'endLocation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder setEndLocation(com.fretron.Model.TripLocation value) {
+      validate(fields()[15], value);
+      this.endLocationBuilder = null;
+      this.endLocation = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'endLocation' field has been set.
+      * @return True if the 'endLocation' field has been set, false otherwise.
+      */
+    public boolean hasEndLocation() {
+      return fieldSetFlags()[15];
+    }
+
+    /**
+     * Gets the Builder instance for the 'endLocation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripLocation.Builder getEndLocationBuilder() {
+      if (endLocationBuilder == null) {
+        if (hasEndLocation()) {
+          setEndLocationBuilder(com.fretron.Model.TripLocation.newBuilder(endLocation));
+        } else {
+          setEndLocationBuilder(com.fretron.Model.TripLocation.newBuilder());
+        }
+      }
+      return endLocationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'endLocation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder setEndLocationBuilder(com.fretron.Model.TripLocation.Builder value) {
+      clearEndLocation();
+      endLocationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'endLocation' field has an active Builder instance
+     * @return True if the 'endLocation' field has an active Builder instance
+     */
+    public boolean hasEndLocationBuilder() {
+      return endLocationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'endLocation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentDashResponseObject.Builder clearEndLocation() {
+      endLocation = null;
+      endLocationBuilder = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public ShipmentDashResponseObject build() {
       try {
@@ -1081,6 +1299,16 @@ public class ShipmentDashResponseObject extends org.apache.avro.specific.Specifi
         record.shipmentId = fieldSetFlags()[11] ? this.shipmentId : (java.lang.String) defaultValue(fields()[11]);
         record.plannedStartTime = fieldSetFlags()[12] ? this.plannedStartTime : (java.lang.Long) defaultValue(fields()[12]);
         record.assosiatedTripId = fieldSetFlags()[13] ? this.assosiatedTripId : (java.lang.String) defaultValue(fields()[13]);
+        if (startLocationBuilder != null) {
+          record.startLocation = this.startLocationBuilder.build();
+        } else {
+          record.startLocation = fieldSetFlags()[14] ? this.startLocation : (com.fretron.Model.TripLocation) defaultValue(fields()[14]);
+        }
+        if (endLocationBuilder != null) {
+          record.endLocation = this.endLocationBuilder.build();
+        } else {
+          record.endLocation = fieldSetFlags()[15] ? this.endLocation : (com.fretron.Model.TripLocation) defaultValue(fields()[15]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
