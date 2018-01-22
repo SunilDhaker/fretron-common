@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+    <!--==============Commander====================-->
+    <entry key="commander.host.ip">http://0.0.0.0/</entry>
+    <entry key="commander.host.port">2222</entry>
+
+    <!-- =========User-Manager========== -->
+    <entry key="user.manager.service.url">http://user-manager.streams:8099</entry>
+    <entry key="user.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="user.manager.restservice.port">8099</entry>
+
+    <!-- =========Org-Manager========== -->
+    <entry key="organization.manager.service.url">http://org-manager.streams:8086</entry>
+    <entry key="organization.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="organization.manager.restservice.port">8086</entry>
+
+    <entry key="group.manager.service.url">http://org-manager.streams:8085</entry>
+    <entry key="group.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="group.manager.restservice.port">8085</entry>
+
+    <!-- =========Trip-Manager========== -->
+    <entry key="trip.manager.new.service.url">http://trip-manager.streams:2123</entry>
+    <entry key="trip.manager.new.restservice.ip">http://0.0.0.0</entry>
+    <entry key="trip.manager.new.restservice.port">2123</entry>
+
+    <entry key="triptemplate.manager.service.url">http://trip-manager.streams:8088</entry>
+    <entry key="triptemplate.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="triptemplate.manager.restservice.port">8088</entry>
+
+    <entry key="tracker.manager.service.url">http://tracker-manager.streams:2125</entry>
+    <entry key="tracker.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="tracker.manager.restservice.port">2125</entry>
+
+    <!-- =========Registry-Manager========== -->
+    <entry key="registry.manager.service.url">http://registry-manager.streams:8087</entry>
+    <entry key="registry.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="registry.manager.restservice.port">8087</entry>
+
+    <!-- =========Position-Processor========== -->
+    <entry key="position.processor.service.url">http://position-processor.streams:2121</entry>
+    <entry key="position.processor.restservice.ip">http://0.0.0.0</entry>
+    <entry key="position.processor.restservice.port">2121</entry>
+
+    <entry key="position.processor.querablestate.host">0.0.0.0</entry>
+    <entry key="position.processor.querablestate.port">2220</entry>
+
+    <!-- =========Shipment-Manager========== -->
+    <entry key="shipment.manager.service.url">http://shipment-manager.streams:2124</entry>
+    <entry key="shipment.manager.restservice.ip">http://0.0.0.0</entry>
+    <entry key="shipment.manager.restservice.port">2124</entry>
+
+    <entry key="manual.tracking.manager.service.url">http://shipment-manager.streams:2126</entry>
+    <entry key="manual.tracking.manager.restservice.ip">0.0.0.0</entry>
+    <entry key="manual.tracking.manager.restservice.port">2126</entry>
+
+    <!--===============TPI-Manger==============-->
+    <entry key = "integration.manager.restservices.ip">http://0.0.0.0</entry>
+    <entry key = "integration.manager.restservices.port">8083</entry>
+
+    <!--===========Freight-Location===============-->
+    <entry key="freight.manager.service.port">8090</entry>
+
+    <!-- ==========kafka-topic-manager========= -->
+    <entry key="kafka.topic.partition">5</entry>
+    <entry key="kafka.topic.replication.factor">1</entry>
+    <entry key="kafkatopics.app.ip">http://0.0.0.0</entry>
+    <entry key="kafkatopics.app.port">8089</entry>
+    <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
+
+
+    <!-- =========RedisServer And Mongo -Manager========== -->
+    <entry key="redis.server.ip">redis.mean</entry>
+    <entry key="mongodb.server.ip">mongo.mean</entry>
+    <entry key="mongodb.database.name">kafka-sink-mongo</entry>
+    <entry key="mongodb.server.port">27017</entry>
+
+    <entry key="query.server.service.url">http://query-server.mean:8094</entry>
+    <!--<entry key="query.server.service.ip">http://0.0.0.0</entry>-->
+    <!--<entry key="query.server.service.port">8094</entry>-->
+
+    <!--========================================Serice URL ,, Ports And IP=============================================-->
+
+</properties>

@@ -4,6 +4,19 @@
 
 <properties>
 
+    <!--============Kafka -Configs =============-->
+    <entry key="bootstrap.servers">broker.kafka:9092</entry>
+    <entry key="schemaregistry">http://schemas.kafka</entry>
+    <entry key="commit.interval.auto.config">500</entry>
+    <entry key="auto.offset.reset.config">earliest</entry>
+
+    <!--==============ADMIN Config===================-->
+    <entry key="fretron.god.user.secret">fretron@god@user</entry>
+    <entry key="fretron.god.fo">FRETRON_GOD_FO</entry>
+    <entry key="fretron.god.transporter">FRETRON_GOD_TRANSPORTER</entry>
+    <entry key="fretron.god.shipper">FRETRON_GOD_SHIPPER</entry>
+    <entry key="fretron.god.fo.agent">FRETRON_GOD_FO_AGENT</entry>
+
     <!--==============Common topics=================-->
     <entry key="command.topic">command</entry>
     <entry key="commandresult.topic">commandresult</entry>
@@ -13,7 +26,6 @@
     <entry key="sharedvehicle.topic">sharedvehicle</entry>
     <entry key="existingcustomers.topic">existingcustomers</entry>
     <entry key="inviteduser.topic">invitedusers</entry>
-    <entry key="vehicleshare.topic">vehicleshare</entry>
     <entry key="vehicleCustomerShare.topic">vehicleCustomerShare</entry>
 
     <!--===============Registry-Manager topic====================-->
@@ -21,6 +33,7 @@
     <entry key="device.topic">device</entry>
     <entry key="vehicle.topic">vehicle</entry>
     <entry key="driver.topic">drivertopic</entry>
+    <entry key="vehicleshare.topic">vehicleshare</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
     <entry key="vehiclewithdevice.topic">vehicleWithDevice</entry>
@@ -32,6 +45,11 @@
     <entry key="gps.events.topic">gpsMovementEventTopic</entry>
     <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
     <entry key="devicestate.topic">devicestate</entry>
+    <entry key="vehicle.statusData.topic">vehicleStatusData</entry>
+    <entry key="deviceData.topic">deviceDataTopic</entry>
+    <entry key="rawpositions.topic">rawPositions</entry>
+    <entry key="loadedposition.topic">loadedpositionTopic</entry>
+
 
     <!--===============Sales-order topics========================-->
     <entry key="salesorder.topic">salesorderTopic</entry>
