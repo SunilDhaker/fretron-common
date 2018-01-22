@@ -72,10 +72,11 @@
 
 
     <!-- =========RedisServer And Mongo -Manager========== -->
-    <entry key="redis.server.ip">redis.mean</entry>
+    <entry key="redis.server.ip">redis.databases</entry>
     <entry key="mongodb.server.ip">mongo-registry.databases</entry>
     <entry key="mongodb.database.name">kafka-sink-mongo</entry>
     <entry key="mongodb.server.port">27017</entry>
+
 
     <entry key="query.server.service.url">http://query-server.mean:8094</entry>
     <!--<entry key="query.server.service.ip">http://0.0.0.0</entry>-->
