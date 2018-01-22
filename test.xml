@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+
+    <!--=====================not Sure ,, may be not usable now =========================-->
+
+    <!--<entry key="activetrip.by.vehicle.store">activeTripByVehicleStore</entry>-->
+    <!--<entry key="plannedtrip.by.vehicle.store">plannedTripByVehicleStore</entry>-->
+    <!--<entry key="model.class">device#com.fretron.Model.Device#device.topic customer#com.fretron.Model.Customer#customer.topic vehicle#com.fretron.Model.Vehicle#vehicle.topic vShare#com.fretron.Model.VehicleShare#vehicleshare.topic trip.create#com.fretron.Model.Trip#trip.topic trip.update#com.fretron.Model.Trip#trip.topic user#com.fretron.Model.UserTripCommands#user.generated.command.topic trip.tracker.create#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.tracker.update#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.manual.create#com.fretron.Model.TrackerTrip#tracker.trip.topic trip.manual.update#com.fretron.Model.TrackerTrip#tracker.trip.topic shipment#com.fretron.Model.Shipment#shiment.topic usermgm#com.fretron.Model.User#user.topic organisation#com.fretron.Model.Organisation#organisation.topic</entry>-->
+
+    <entry key="devicestate.topic">devicestate</entry>
+    <entry key="vehiclewithdevice.topic">vehicleWithDevice</entry>
+
+    <entry key="vehicle.by.deviceId.store">vehicleByDeviceIdStore</entry>
+    <entry key="customer.by.uuid.store">customerByUuidStore</entry>
+    <entry key="customer.by.email.store">customerByEmailStore</entry>
+    <entry key="customer.by.mobile.store">customerByMobileStore</entry>
+    <entry key="device.by.uuid.store">deviceByUuidStore</entry>
+    <entry key="device.by.imei.store">deviceByImeiStore</entry>
+    <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
+    <entry key="vehicle.by.registration.store">vehicleByRegistrationStore</entry>
+    <entry key="vehicle.by.imei.store">vehicleByImeiStore</entry>
+    <entry key="vehicle.with.device.by.imei.store">vehileWithDeviceByImeiStore</entry>
+
+    <entry key="environment">production</entry>
+    <entry key="vehicle.manager.appname">vehicle-manager</entry>
+
+    <entry key="device.manager.ignore.comnad">false</entry>
+    <entry key="vehicle.manager.ignore.comnad">false</entry>
+
+
+    <!--=========================Vehicle share and Email============================-->
+
+
+    <!--==============sales Order -manager=============================    -->
+
+    <!--======================Position-Processor=============================-->
+
+    <entry key="deviceDataByRemoteAddress.state">deviceDataByRemoteAddressStateStore</entry>
+    <entry key="lastprocessedpositions.state">lastProcessedPositionsStateStore</entry>
+
+    <!-- 5 mint-->
+    <entry key="gps.state.min.time">300000</entry>
+    <!-- 2 min -->
+    <entry key="gps.state.moving.min.time">120000</entry>
+    <!-- 5 min  -->
+    <entry key="rebuild.state.min.time">300000</entry>
+    <entry key="gps.state.punctuate.time">300000</entry>
+    <!--60 minute-->
+    <entry key="gps.state.disconnected.threshold">3600000</entry>
+    <entry key = "state.min.record.required">2</entry>
+    <!-- 5 min  -->
+    <entry key="gps.state.stopped.threshold">300000</entry>
+    <entry key="vehicle.gps.state">vehicleGpsStateStore</entry>
+    <entry key="vehicle.ongoing.temporary.gps.state">temVehicleGpsStateStore</entry>
+    <!-- speed in km/hour -->
+    <entry key="overspeed.threshold">50</entry>
+    <entry key="unexpectedspeed.threshold">150</entry>
+    <!--time to say t disconnected in minutes -->
+    <entry key="max.difference.device.time">10</entry>
+    <!--millis-->
+    <entry key="position.transformer.punctuate.time">60000</entry>
+    <!--minutes-->
+    <entry key="offline.timeout">2</entry>
+    <entry key="stop.speed.threshold">3</entry>
+    <entry key="google.geocoding.api.key">AIzaSyBC34SD8O3hpE3TAUgh1G-LTxHQRR1Vz0g</entry>
+    <entry key="google.direction.api.key">AIzaSyAiKyto-33wx4RvJw7kplHqSdyacUseGZw</entry>
+    <entry key = "min.avoidable.disconnection.distance">1000</entry>
+
+
+    <entry key="old.position.cache.store">oldPositionCacheStore</entry>
+    <entry key="geocoder">fretron</entry>
+    <entry key="signup.url.prefix">http://fleet.fretron.com/userSignup</entry>
+    <entry key="dashboard.url.prefix">http://fleet.fretron.com/dashboard</entry>
+
+    <!--===================Registry-Manager=======================-->
+
+    <!--============================Trip-Manager================================-->
+
+    <entry key="vehicletripState.by.vehicle.store">vehicleTripStateByVehicleStore</entry>
+    <entry key="boundry.position.state.store">boundrypositionstatestore</entry>
+    <entry key="trip.event.actions.store">tripeventactionsstore</entry>
+    <entry key="vehicle.trip.state.store">vehicletripstatestore</entry>
+    <entry key="actions.state.store">actionstatestore</entry>
+    <entry key="trip.state.store">tripstatestore</entry>
+    <entry key="vehicle.gps.state.store">vehiclegpsstatestore</entry>
+    <entry key="trip.response.state.store">tripresponsestatestore</entry>
+    <entry key="last.punctuate.time.state.store">lastPunctuateTimeStore</entry>
+
+    <entry key="stop.time.threshold">1800000</entry>
+    <entry key="trim.store.punctuate.time">storeTrimPunctuateTime</entry>
+    <entry key="trip.log.retention.timeperiod">432000000</entry>
+    <entry key="trip.log.cleanup.time.period">86400000</entry>
+
+
+<!--===========================Tracker Manager=========================-->
+
+    <entry key="tracker.trip.by.tracker.trip.store">trackertripbytripstore</entry>
+    <entry key="vts.by.tracker.trip.store">vtsbytrackertripstore</entry>
+    <entry key="tracker.trip.store">trackertripstore</entry>
+    <entry key="tracker.vehicle.gps.state.store">trackervehiclegpsstore</entry>
+    <entry key="tracker.boundry.position.state.store">trackerboundrypositionstore</entry>
+    <entry key="tracker.event.actions.store">trackereventactionstore</entry>
+    <entry key="tracker.vehicle.trip.state.store">trackervehicletripstatestore</entry>
+
+    <!-- ===========Hour-Wise Movement =======  -->
+    <entry key="evaluate.time">3600000</entry>
+    <entry key="vehicle.hour.log">hourWiseGpsStore</entry>
+    <entry key="latest.vehicle.mov.log">latestVehicleMovStore</entry>
+    <entry key="hour.gps.state.store">hourWiseStateStore</entry>
+
+    <!-- ==============================Alert-Manager======== -->
+
+    <!-- =====================User-Manager========================= -->
+
+    <!--===================Organisation-Manger==============================-->
+
+
+    <!--=========================Tracemate Manager===================================-->
+
+    <entry key="tatafleetman.getToken">https://tatafleetman.microlise.com/Live/mobile/index.php/mobilityservices/index/users/getToken/xml</entry>
+    <entry key="tatafleetman.track.vehicle">https://tatafleetman.microlise.com/Live/mobile/index.php/mobilityservices/index/listViews/getfleetdata/xl/</entry>
+    <entry key="etrans.login.url">http://mobileapps.ev5.in/eTransVTSMllWebService/datasharing/Report/BirdsEyeView</entry>
+    <entry key="integration.job.schedule.time">120</entry>
+    <entry key ="integrations.roosterInfo.api.url">http://apis.fretron.com/integrations/</entry>
+    <entry key ="integrations.webhook.api.url">http://apis.fretron.com/integrations/webhook/</entry>
+
+    <!--=====================Shipment Manager=======================-->
+    <entry key="shiment.topic">shipmentTopic</entry>
+    <entry key="tracker.trip.topic">trackertriptopic</entry>
+
+    <entry key="manually.added.shipment.status.topic">manuallyAddedShipmentStatusTopic</entry>
+    <entry key="shiment.added.stop.topic">shipmentAddedStopTopic</entry>
+    <entry key="added.shiment.tracking.state.topic">addedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.tracking.request.topic">shipmentTrackingRequestTopic</entry>
+    <entry key="updated.shiment.tracking.state.topic">updatedShipmentTrackingStateTopic</entry>
+    <entry key="shipment.state.updated.topic">shipmentStateUpdatedTopic</entry>
+    <entry key="manual.trip.event.topic">manualTripEventTopic</entry>
+    <entry key="manual.trip.vts.topic">manualTripVtsTopic</entry>
+    <entry key="shipment.related.event.topic">shipmentRelatedEventTopic</entry>
+
+    <entry key="shipment.command.handler.app.name">shipment-comman-handler-app</entry>
+    <entry key="shipment.tracking.state.store">shipmenttrackingStateStore</entry>
+    <entry key="shiment.by.shipment.id.store">shipmentByShipmentIdStore</entry>
+    <entry key="shipment.by.tripid.state.store">shipmentByTripidStateStore</entry>
+    <entry key="shipment.oldtonew.stream.app.name">shipment-old-to-new-stream-app</entry>
+    <entry key="manully.added.shipment.state.store">manuallyAddedShipmentStopStore</entry>
+    <entry key="shipmentId.by.imei.store">shipmentIdByImeiStore</entry>
+    <entry key="vehicle.by.vehicleId.store.for.shipment">vehicleByVehicleIdStoreForShipment</entry>
+
+
+
+    <!--=====================================Application-Names=====================================================    -->
+    <entry key="manual.tracking.app.name">manualtriptracking</entry>
+    <entry key="shipment.manager.appname">shipment-manager</entry>
+    <entry key="trip.revisted.appname">revisitedtrip-06</entry>
+    <entry key="org.group.manager.app.id">organisationGroupManager-03</entry>
+    <entry key="trip.tamplate.manager.app.id">tripTamplate</entry>
+    <entry key="organisation.manager.app.id">organisationManager-06</entry>
+    <entry key="user.manager.app.id">userManager-03</entry>
+    <entry key="alert.manager.app.id">alertManager-01</entry>
+    <entry key="trip.manager.appname">trip-manager-06</entry>
+    <entry key="vehicleshare.appname">vehicle_share_app</entry>
+    <entry key="integration.manager.app.id">integration-manager</entry>
+    <entry key="registry.manager.appId">registrymanager-test-21</entry>
+    <entry key="hour.wise.state.processor.appid">hourWiseState</entry>
+    <entry key="tracker.manager.appname">tracker-manager-01</entry>
+    <entry key="new.position.processor.appid">positions-processor-03</entry>
+    <entry key="device.event.manager.appid">deviceManager</entry>
+
+
+    <entry key="command.manager.appname">command-manager</entry>
+    <entry key="customer.manager.appname">customer-manager</entry>
+    <entry key="device.manager.appname">device-manager</entry>
+    <entry key="vehicleShare.manager.appname">vehicleShare-manager</entry>
+    <entry key="position.processor.appname">positions-processor</entry>
+
+
+    <!--=============================DATABASE-CONFIGS=================================-->
+
+    <!--=======Registry-Manager========-->
+    <entry key="driver.topic">drivertopic</entry>
+    <entry key="driver.db.name">registry</entry>
+    <entry key="driver.db.host">mongo-registry.databases</entry>
+    <entry key="driver.db.port">27017</entry>
+    <entry key="driver.db.collection.name">driver</entry>
+
+    <entry key="vehicle.db.name">registry</entry>
+    <entry key="vehicle.db.host">mongo-registry.databases</entry>
+    <entry key="vehicle.db.port">27017</entry>
+    <entry key="vehicle.db.collection.name">vehicle</entry>
+    <entry key="group.db.collection.name">groups</entry>
+
+    <entry key="device.db.name">registry</entry>
+    <entry key="device.db.host">mongo-registry.databases</entry>
+    <entry key="device.db.port">27017</entry>
+    <entry key="device.db.collection.name">device</entry>
+
+    <!--=======Organisation-Manager========-->
+    <entry key="organisation.db.name">registry</entry>
+    <entry key="organisation.db.host">mongo-registry.databases</entry>
+    <entry key="organisation.db.port">27017</entry>
+    <entry key="organisation.db.collection.name">organisation</entry>
+    <entry key="user.db.collection.name">user</entry>
+
+    <!--=======User-Manager========-->
+    <entry key="user.org.db.name">user</entry>
+    <entry key="user.org.db.host">mongo-registry.databases</entry>
+    <entry key="user.org.db.port">27017</entry>
+    <entry key="user.org.db.collection.name">userorg</entry>
+
+    <entry key="user.db.name">user</entry>
+    <entry key="user.db.host">mongo-registry.databases</entry>
+    <entry key="user.db.port">27017</entry>
+
+    <!--=======TPI-Manager========-->
+    <entry key="integration.manager.mongodb.server.ip">mongo-registry.databases</entry>
+    <entry key="integration.manager.mongodb.server.port">27017</entry>
+    <entry key="integration.manager.mongodb.server.database">thirdPartyIntegration</entry>
+    <entry key="mongodb.server.integration.job.collection.name">integratedJobs</entry>
+    <entry key="mongodb.server.response.collection.name">executedEventsResponse</entry>
+
+    <!--=======Position-processor ========-->
+    <entry key = "position.processor.database.name">kafka-sink-mongo</entry>
+    <entry key = "position.processor.database.ip">mongo-gps.database</entry>
+    <entry key = "position.processor.database.port">27017</entry>
+    <entry key = "vehicle.gps.state.collectionName">vehiclegpsstatetopic</entry>
+
+    <!--=======Trip-Manager========-->
+    <entry key="vehicle.state.mongodb.host">mongo-registry.databases</entry>
+    <entry key="vehicle.state.mongodb.port">27017</entry>
+    <entry key="vehicle.state.mongodb.name">kafka-sink-mongo</entry>
+
+    <entry key="gps.log.mongo.server.ip">mongo-registry.databases</entry>
+    <entry key="trip.mongo.server.ip">mongo-registry.databases</entry>
+    <entry key="gps.log.mongo.server.port">27017</entry>
+    <entry key="trip.mongo.server.port">27017</entry>
+    <entry key="gps.log.mongo.db.name">kafka-sink-mongo</entry>
+    <entry key="trip.mongo.db.name">trip</entry>
+
+    <!--==============Freight-Location-Manger===================-->
+    <entry key="freight.location.topic">freightlocationtopic</entry>
+    <entry key="freight.location.db.name">freightlocations</entry>
+    <entry key="freight.location.all.collection.name">allfreightlocations</entry>
+    <entry key="freight.location.fav.collection.name">favfreightlocations</entry>
+    <entry key="freight.location.recent.collection.name">recentfreightlocations</entry>
+
+    <!--=======================================-->
+    <entry key="geocoder.url">http://query-server.mean:8094/address</entry>
+
+    <!--=============================DATABASE-CONFIGS=================================-->
+    <!--====END====-->
+
+
+</properties>
