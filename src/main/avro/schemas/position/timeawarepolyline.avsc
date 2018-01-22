@@ -1,0 +1,24 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "TimeAwarePolyline",
+    "fields": [
+      {
+         "name": "polyline",
+         "type": [ "null", "string"],
+         "default" : null
+      },
+      {
+          "name": "compressedPolyline",
+          "type": [ "null", "string"],
+           "default" : null
+      },
+      {
+        "name": "lastPoint",
+        "type": "com.fretron.Model.PointAtTime"
+      }
+
+    ]
+  }
+]
