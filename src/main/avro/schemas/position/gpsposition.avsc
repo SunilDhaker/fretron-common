@@ -17,6 +17,12 @@
         "name": "speed",
         "type": "double"
       },
+
+      {
+         "name": "course",
+          "type": [ "null", "double"],
+          "default" : null
+      },
       {
         "name": "time",
         "type": [
@@ -157,6 +163,10 @@
       {
         "name": "encodedPolyline",
         "type": "string"
+      },
+      {
+          "name": "timeAwarePolyline",
+           "type": "com.fretron.Model.TimeAwarePolyline"
       },
       {
         "name": "eventType",

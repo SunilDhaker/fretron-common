@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1641227088850977567L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4867475709542892679L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timeAwarePolyline\",\"type\":{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}}]}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public boolean isManuallyAdded;
   @Deprecated public boolean isIgnore;
@@ -31,6 +31,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.lang.String uuid;
   @Deprecated public com.fretron.Model.GPSState state;
   @Deprecated public java.lang.String encodedPolyline;
+  @Deprecated public com.fretron.Model.TimeAwarePolyline timeAwarePolyline;
   @Deprecated public java.lang.String eventType;
 
   /**
@@ -60,9 +61,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    * @param uuid The new value for uuid
    * @param state The new value for state
    * @param encodedPolyline The new value for encodedPolyline
+   * @param timeAwarePolyline The new value for timeAwarePolyline
    * @param eventType The new value for eventType
    */
-  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, java.lang.String eventType) {
+  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.lang.String eventType) {
     this.isManuallyAdded = isManuallyAdded;
     this.isIgnore = isIgnore;
     this.startTime = startTime;
@@ -81,6 +83,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     this.uuid = uuid;
     this.state = state;
     this.encodedPolyline = encodedPolyline;
+    this.timeAwarePolyline = timeAwarePolyline;
     this.eventType = eventType;
   }
 
@@ -106,7 +109,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 15: return uuid;
     case 16: return state;
     case 17: return encodedPolyline;
-    case 18: return eventType;
+    case 18: return timeAwarePolyline;
+    case 19: return eventType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -133,7 +137,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 15: uuid = (java.lang.String)value$; break;
     case 16: state = (com.fretron.Model.GPSState)value$; break;
     case 17: encodedPolyline = (java.lang.String)value$; break;
-    case 18: eventType = (java.lang.String)value$; break;
+    case 18: timeAwarePolyline = (com.fretron.Model.TimeAwarePolyline)value$; break;
+    case 19: eventType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -427,6 +432,22 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'timeAwarePolyline' field.
+   * @return The value of the 'timeAwarePolyline' field.
+   */
+  public com.fretron.Model.TimeAwarePolyline getTimeAwarePolyline() {
+    return timeAwarePolyline;
+  }
+
+  /**
+   * Sets the value of the 'timeAwarePolyline' field.
+   * @param value the value to set.
+   */
+  public void setTimeAwarePolyline(com.fretron.Model.TimeAwarePolyline value) {
+    this.timeAwarePolyline = value;
+  }
+
+  /**
    * Gets the value of the 'eventType' field.
    * @return The value of the 'eventType' field.
    */
@@ -495,6 +516,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.String uuid;
     private com.fretron.Model.GPSState state;
     private java.lang.String encodedPolyline;
+    private com.fretron.Model.TimeAwarePolyline timeAwarePolyline;
+    private com.fretron.Model.TimeAwarePolyline.Builder timeAwarePolylineBuilder;
     private java.lang.String eventType;
 
     /** Creates a new Builder */
@@ -589,9 +612,16 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.encodedPolyline = data().deepCopy(fields()[17].schema(), other.encodedPolyline);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[18].schema(), other.eventType);
+      if (isValidValue(fields()[18], other.timeAwarePolyline)) {
+        this.timeAwarePolyline = data().deepCopy(fields()[18].schema(), other.timeAwarePolyline);
         fieldSetFlags()[18] = true;
+      }
+      if (other.hasTimeAwarePolylineBuilder()) {
+        this.timeAwarePolylineBuilder = com.fretron.Model.TimeAwarePolyline.newBuilder(other.getTimeAwarePolylineBuilder());
+      }
+      if (isValidValue(fields()[19], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[19].schema(), other.eventType);
+        fieldSetFlags()[19] = true;
       }
     }
 
@@ -676,9 +706,14 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.encodedPolyline = data().deepCopy(fields()[17].schema(), other.encodedPolyline);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[18].schema(), other.eventType);
+      if (isValidValue(fields()[18], other.timeAwarePolyline)) {
+        this.timeAwarePolyline = data().deepCopy(fields()[18].schema(), other.timeAwarePolyline);
         fieldSetFlags()[18] = true;
+      }
+      this.timeAwarePolylineBuilder = null;
+      if (isValidValue(fields()[19], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[19].schema(), other.eventType);
+        fieldSetFlags()[19] = true;
       }
     }
 
@@ -1480,6 +1515,80 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'timeAwarePolyline' field.
+      * @return The value.
+      */
+    public com.fretron.Model.TimeAwarePolyline getTimeAwarePolyline() {
+      return timeAwarePolyline;
+    }
+
+    /**
+      * Sets the value of the 'timeAwarePolyline' field.
+      * @param value The value of 'timeAwarePolyline'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setTimeAwarePolyline(com.fretron.Model.TimeAwarePolyline value) {
+      validate(fields()[18], value);
+      this.timeAwarePolylineBuilder = null;
+      this.timeAwarePolyline = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'timeAwarePolyline' field has been set.
+      * @return True if the 'timeAwarePolyline' field has been set, false otherwise.
+      */
+    public boolean hasTimeAwarePolyline() {
+      return fieldSetFlags()[18];
+    }
+
+    /**
+     * Gets the Builder instance for the 'timeAwarePolyline' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.TimeAwarePolyline.Builder getTimeAwarePolylineBuilder() {
+      if (timeAwarePolylineBuilder == null) {
+        if (hasTimeAwarePolyline()) {
+          setTimeAwarePolylineBuilder(com.fretron.Model.TimeAwarePolyline.newBuilder(timeAwarePolyline));
+        } else {
+          setTimeAwarePolylineBuilder(com.fretron.Model.TimeAwarePolyline.newBuilder());
+        }
+      }
+      return timeAwarePolylineBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'timeAwarePolyline' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.VehicleGpsState.Builder setTimeAwarePolylineBuilder(com.fretron.Model.TimeAwarePolyline.Builder value) {
+      clearTimeAwarePolyline();
+      timeAwarePolylineBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'timeAwarePolyline' field has an active Builder instance
+     * @return True if the 'timeAwarePolyline' field has an active Builder instance
+     */
+    public boolean hasTimeAwarePolylineBuilder() {
+      return timeAwarePolylineBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'timeAwarePolyline' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearTimeAwarePolyline() {
+      timeAwarePolyline = null;
+      timeAwarePolylineBuilder = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'eventType' field.
       * @return The value.
       */
@@ -1493,9 +1602,9 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.VehicleGpsState.Builder setEventType(java.lang.String value) {
-      validate(fields()[18], value);
+      validate(fields()[19], value);
       this.eventType = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1504,7 +1613,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'eventType' field has been set, false otherwise.
       */
     public boolean hasEventType() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1514,7 +1623,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.VehicleGpsState.Builder clearEventType() {
       eventType = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1552,7 +1661,12 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         record.uuid = fieldSetFlags()[15] ? this.uuid : (java.lang.String) defaultValue(fields()[15]);
         record.state = fieldSetFlags()[16] ? this.state : (com.fretron.Model.GPSState) defaultValue(fields()[16]);
         record.encodedPolyline = fieldSetFlags()[17] ? this.encodedPolyline : (java.lang.String) defaultValue(fields()[17]);
-        record.eventType = fieldSetFlags()[18] ? this.eventType : (java.lang.String) defaultValue(fields()[18]);
+        if (timeAwarePolylineBuilder != null) {
+          record.timeAwarePolyline = this.timeAwarePolylineBuilder.build();
+        } else {
+          record.timeAwarePolyline = fieldSetFlags()[18] ? this.timeAwarePolyline : (com.fretron.Model.TimeAwarePolyline) defaultValue(fields()[18]);
+        }
+        record.eventType = fieldSetFlags()[19] ? this.eventType : (java.lang.String) defaultValue(fields()[19]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
