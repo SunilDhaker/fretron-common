@@ -13,7 +13,7 @@ public class ClusteringUtils {
 
 	public static LitePosition calculateMean(List<LitePosition> positions){
 
-		LitePosition meanPosition = new LitePosition(0d,0d,0d,0l,"","" , null , null);
+		LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,0l,"","" , null , null);
 		if(positions.size() > 0){
 			for (LitePosition p : positions) {
 				meanPosition.latitude = meanPosition.latitude +p.latitude;
@@ -58,7 +58,7 @@ public class ClusteringUtils {
 	{
 
 
-		LitePosition newMean =new LitePosition(0d,0d,0d,0l,"","" , null , null);
+		LitePosition newMean =new LitePosition(0d,0d,0d,0d,0l,"","" , null , null);
 		newMean.latitude = (n1 * mean1.latitude + n2 * mean2.latitude) / (n1 + n2);
 		newMean.longitude = (n1 * mean1.longitude + n2 * mean2.longitude) / (n1 + n2);
 
