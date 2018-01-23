@@ -99,7 +99,7 @@ public class Constants {
 
     public static final java.lang.String KEY_GEOCODER = "geocoder";
     public static final String KEY_FRETRON_GEOCODER_URL = "geocoder.url";
-    public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.appid";
+    public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.app.id";
     public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
     public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "new.position.processor.appid";
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
@@ -107,6 +107,13 @@ public class Constants {
     public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
     public static java.lang.String KEY_DASHBOARD_PREFIX = "dashboard.url.prefix";
     public  static java.lang.String KEY_MIN_AVOIDABLE_DISSCONNECTION_DISTANCE = "min.avoidable.disconnection.distance";
+
+
+  // Alert Related Constants
+
+
+    public static String KEY_ALERT_MANAGER_APP_IP = "alert.manager.restservice.ip";
+    public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
 
 
 
