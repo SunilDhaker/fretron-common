@@ -62,10 +62,7 @@
     <entry key="freight.manager.service.port">8090</entry>
 
     <!-- ==========kafka-topic-manager========= -->
-    <entry key="kafka.topic.partition">5</entry>
-    <entry key="kafka.topic.replication.factor">1</entry>
-    <entry key="kafkatopics.app.ip">http://0.0.0.0</entry>
-    <entry key="kafkatopics.app.port">8089</entry>
+
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
 
 
