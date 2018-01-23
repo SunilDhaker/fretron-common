@@ -44,10 +44,10 @@ public class Constants {
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
     //position related
 
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_NAME = "position.processor.database.name";
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_PORT = "position.processor.database.port";
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.processor.database.ip";
-    public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "vehicle.gps.state.collectionName";
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_NAME = "position.db.name";
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_PORT = "position.db.port";
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.db.ip";
+    public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "position.db.state.collectionName";
 
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
