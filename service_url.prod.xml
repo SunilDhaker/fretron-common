@@ -23,8 +23,6 @@
 
     <!-- =========Trip-Manager========== -->
     <entry key="trip.manager.new.service.url">http://trip-manager.streams:2123</entry>
-    <entry key="trip.manager.new.restservice.ip">http://0.0.0.0</entry>
-    <entry key="trip.manager.new.restservice.port">2123</entry>
 
     <entry key="triptemplate.manager.service.url">http://trip-manager.streams:8088</entry>
     <entry key="triptemplate.manager.restservice.ip">http://0.0.0.0</entry>

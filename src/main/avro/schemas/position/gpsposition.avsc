@@ -166,7 +166,8 @@
       },
       {
           "name": "timeAwarePolyline",
-           "type": "com.fretron.Model.TimeAwarePolyline"
+           "type": ["null","com.fretron.Model.TimeAwarePolyline"],
+           "default":null
       },
       {
         "name": "eventType",
