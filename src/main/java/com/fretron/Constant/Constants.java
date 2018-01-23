@@ -37,31 +37,93 @@ public class Constants {
     public final static  String KEY_CUSTOMER_TOPIC = "customer.topic";
     public final static  String KEY_COMMAND_TOPIC = "command.topic";
     public final static  String KEY_VEHICLE_SHARE_TOPIC = "vehicleshare.topic";
-    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
+
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
+
+
+
+    /*
+    *****************************************************************************************************
+    *                                    POSITION-RELATED
+    * **************************************************************************************************
+     */
+
+
+    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
+
+
+    //topics
+    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
+    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
-    //position related
-
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_NAME = "position.db.name";
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_PORT = "position.db.port";
-    public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.db.ip";
-    public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "position.db.state.collectionName";
-
+    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
-    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+
+
+    //states
+    public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
+    public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
+
+
+
+    //database
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_NAME = "position.processor.database.name";
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_PORT = "position.processor.database.port";
+    public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.processor.database.ip";
+    public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "vehicle.gps.state.collectionName";
+
+
+
     public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STATE = "deviceDataByRemoteAddress.state";
-    public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STATE = "lastprocessedpositions.state";
+
+
+
+    public static final String MIN_STATE_TIME = "gps.state.min.time";
+    public static final String  MIN_REBUILD_STATE_TIME = "rebuild.state.min.time";
+    public static final String KEY_MIN_RECORD_REQUIRED = "state.min.record.required";
+    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
+    public static final java.lang.String GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
+
+    public static final java.lang.String KEY_LATEST_VEHICLE_GPS_STATE = "vehicle.gps.state";
+
+    public static final java.lang.String STOP_SPEED_THRESHOLD = "stop.speed.threshold";
+
+    public static final java.lang.String KEY_DISCONNECTED_THRESHOLD = "gps.state.disconnected.threshold";
+    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
+
+    public static final java.lang.String KEY_GEOCODER = "geocoder";
+    public static final String KEY_FRETRON_GEOCODER_URL = "geocoder.url";
+    public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.app.id";
+    public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
+    public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "new.position.processor.appid";
+    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
+    public static java.lang.String KEY_GOOGLE_DIRECTION_API_KEY = "google.direction.api.key";
+    public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
+    public static java.lang.String KEY_DASHBOARD_PREFIX = "dashboard.url.prefix";
+    public  static java.lang.String KEY_MIN_AVOIDABLE_DISSCONNECTION_DISTANCE = "min.avoidable.disconnection.distance";
+
+
+  // Alert Related Constants
+
+
+    public static String KEY_ALERT_MANAGER_APP_IP = "alert.manager.restservice.ip";
+    public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
+
+
+
 
 
 
     public final static  String KEY_DEVIE_STATE_TOPIC = "devicestate.topic";
     public final static  String KEY_CUSTOMER_APP_ID = "customer.manager.appname";
     public final static  String KEY_DEVICE_APP_ID = "device.manager.appname";
-    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
+
     public final static  String KEY_VEHICLE_APP_ID = "vehicle.manager.appname";
     public final static  String KEY_VEHICLE_SHARE_APP_ID = "vehicleShare.manager.appname";
     public final static  String KEY_CUSTOMER_UUID_STORE="customer.by.uuid.store";
@@ -72,7 +134,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_UUID_STORE="vehicle.by.uuid.store";
     public final static  String KEY_VEHICLE_REGISTRATION_STORE="vehicle.by.registration.store";
     public final static  String KEY_VEHICLE_IMEI_STORE="vehicle.by.imei.store";
-    public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
+
     public final static  String KEY_APPLICATION_SERVER="application.server.config";
     public final static  String KEY_AUTO_OFFSET_RESET_CONFIG="auto.offset.reset.config";
     //    public final static  int KEY_COMMIT_INTERVAL_AUTO_CONFIG="commit.interval.auto.config";
@@ -111,29 +173,6 @@ public class Constants {
 //    public final static String KEY_VEHICLE_BY_DEVICE_ID_STORE = "vehicle.by.deviceId.store";
 
     public final static String KEY_ENVIRNOMNET = "environment";
-    public static final String MIN_STATE_TIME = "gps.state.min.time";
-    public static final String  MIN_REBUILD_STATE_TIME = "rebuild.state.min.time";
-    public static final String KEY_MIN_RECORD_REQUIRED = "state.min.record.required";
-    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
-    public static final java.lang.String GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
-    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-    public static final java.lang.String KEY_LATEST_VEHICLE_GPS_STATE = "vehicle.gps.state";
-    public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
-    public static final java.lang.String STOP_SPEED_THRESHOLD = "stop.speed.threshold";
-    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
-    public static final java.lang.String KEY_DISCONNECTED_THRESHOLD = "gps.state.disconnected.threshold";
-    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
-
-    public static final java.lang.String KEY_GEOCODER = "geocoder";
-    public static final String KEY_FRETRON_GEOCODER_URL = "geocoder.url";
-    public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.appid";
-    public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
-    public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "new.position.processor.appid";
-    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
-    public static java.lang.String KEY_GOOGLE_DIRECTION_API_KEY = "google.direction.api.key";
-    public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
-    public static java.lang.String KEY_DASHBOARD_PREFIX = "dashboard.url.prefix";
-    public  static java.lang.String KEY_MIN_AVOIDABLE_DISSCONNECTION_DISTANCE = "min.avoidable.disconnection.distance";
 
 
 
