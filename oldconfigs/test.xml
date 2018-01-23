@@ -167,8 +167,8 @@
     <entry key="registry.manager.appId">registrymanager-test-21</entry>
     <entry key="hour.wise.state.processor.appid">hourWiseState</entry>
     <entry key="tracker.manager.appname">tracker-manager-01</entry>
-    <entry key="new.position.processor.appid">positions-processor-03</entry>
-    <entry key="device.event.manager.appid">deviceManager</entry>
+
+
 
 
     <entry key="command.manager.appname">command-manager</entry>
