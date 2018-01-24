@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Command extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 9180977790738980470L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Command\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"data\",\"type\":\"bytes\"},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"errorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"processTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4909651459046885424L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Command\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"data\",\"type\":\"bytes\"},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"errorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"processTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
   @Deprecated public java.nio.ByteBuffer data;
@@ -21,7 +21,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long processTime;
   @Deprecated public java.lang.String topic;
-  @Deprecated public java.lang.String value;
+  @Deprecated public java.lang.String valueType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -40,9 +40,9 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param startTime The new value for startTime
    * @param processTime The new value for processTime
    * @param topic The new value for topic
-   * @param value The new value for value
+   * @param valueType The new value for valueType
    */
-  public Command(java.lang.String type, java.nio.ByteBuffer data, java.lang.String id, java.lang.Integer statusCode, java.lang.String errorMessage, java.lang.Long startTime, java.lang.Long processTime, java.lang.String topic, java.lang.String value) {
+  public Command(java.lang.String type, java.nio.ByteBuffer data, java.lang.String id, java.lang.Integer statusCode, java.lang.String errorMessage, java.lang.Long startTime, java.lang.Long processTime, java.lang.String topic, java.lang.String valueType) {
     this.type = type;
     this.data = data;
     this.id = id;
@@ -51,7 +51,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     this.startTime = startTime;
     this.processTime = processTime;
     this.topic = topic;
-    this.value = value;
+    this.valueType = valueType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -66,7 +66,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     case 5: return startTime;
     case 6: return processTime;
     case 7: return topic;
-    case 8: return value;
+    case 8: return valueType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -83,7 +83,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     case 5: startTime = (java.lang.Long)value$; break;
     case 6: processTime = (java.lang.Long)value$; break;
     case 7: topic = (java.lang.String)value$; break;
-    case 8: value = (java.lang.String)value$; break;
+    case 8: valueType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -217,19 +217,19 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
-   * Gets the value of the 'value' field.
-   * @return The value of the 'value' field.
+   * Gets the value of the 'valueType' field.
+   * @return The value of the 'valueType' field.
    */
-  public java.lang.String getValue() {
-    return value;
+  public java.lang.String getValueType() {
+    return valueType;
   }
 
   /**
-   * Sets the value of the 'value' field.
+   * Sets the value of the 'valueType' field.
    * @param value the value to set.
    */
-  public void setValue(java.lang.String value) {
-    this.value = value;
+  public void setValueType(java.lang.String value) {
+    this.valueType = value;
   }
 
   /**
@@ -272,7 +272,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.Long startTime;
     private java.lang.Long processTime;
     private java.lang.String topic;
-    private java.lang.String value;
+    private java.lang.String valueType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -317,8 +317,8 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
         this.topic = data().deepCopy(fields()[7].schema(), other.topic);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.value)) {
-        this.value = data().deepCopy(fields()[8].schema(), other.value);
+      if (isValidValue(fields()[8], other.valueType)) {
+        this.valueType = data().deepCopy(fields()[8].schema(), other.valueType);
         fieldSetFlags()[8] = true;
       }
     }
@@ -361,8 +361,8 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
         this.topic = data().deepCopy(fields()[7].schema(), other.topic);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.value)) {
-        this.value = data().deepCopy(fields()[8].schema(), other.value);
+      if (isValidValue(fields()[8], other.valueType)) {
+        this.valueType = data().deepCopy(fields()[8].schema(), other.valueType);
         fieldSetFlags()[8] = true;
       }
     }
@@ -680,40 +680,40 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     }
 
     /**
-      * Gets the value of the 'value' field.
+      * Gets the value of the 'valueType' field.
       * @return The value.
       */
-    public java.lang.String getValue() {
-      return value;
+    public java.lang.String getValueType() {
+      return valueType;
     }
 
     /**
-      * Sets the value of the 'value' field.
-      * @param value The value of 'value'.
+      * Sets the value of the 'valueType' field.
+      * @param value The value of 'valueType'.
       * @return This builder.
       */
-    public com.fretron.Model.Command.Builder setValue(java.lang.String value) {
+    public com.fretron.Model.Command.Builder setValueType(java.lang.String value) {
       validate(fields()[8], value);
-      this.value = value;
+      this.valueType = value;
       fieldSetFlags()[8] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'value' field has been set.
-      * @return True if the 'value' field has been set, false otherwise.
+      * Checks whether the 'valueType' field has been set.
+      * @return True if the 'valueType' field has been set, false otherwise.
       */
-    public boolean hasValue() {
+    public boolean hasValueType() {
       return fieldSetFlags()[8];
     }
 
 
     /**
-      * Clears the value of the 'value' field.
+      * Clears the value of the 'valueType' field.
       * @return This builder.
       */
-    public com.fretron.Model.Command.Builder clearValue() {
-      value = null;
+    public com.fretron.Model.Command.Builder clearValueType() {
+      valueType = null;
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -730,7 +730,7 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
         record.startTime = fieldSetFlags()[5] ? this.startTime : (java.lang.Long) defaultValue(fields()[5]);
         record.processTime = fieldSetFlags()[6] ? this.processTime : (java.lang.Long) defaultValue(fields()[6]);
         record.topic = fieldSetFlags()[7] ? this.topic : (java.lang.String) defaultValue(fields()[7]);
-        record.value = fieldSetFlags()[8] ? this.value : (java.lang.String) defaultValue(fields()[8]);
+        record.valueType = fieldSetFlags()[8] ? this.valueType : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

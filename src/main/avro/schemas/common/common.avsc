@@ -95,7 +95,7 @@
             "default":null
          },
          {
-             "name": "value",
+             "name": "valueType",
              "type": ["null","string"],
              "default":null
          }
