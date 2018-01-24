@@ -88,6 +88,16 @@
            ],
            "logicalType": "timestamp-millis",
            "default": null
+         },
+         {
+            "name": "topic",
+            "type": ["null","string"],
+            "default":null
+         },
+         {
+             "name": "value",
+             "type": ["null","string"],
+             "default":null
          }
        ]
      },
