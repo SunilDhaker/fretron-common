@@ -123,7 +123,7 @@ public class OnlinePolylineEncoder {
 		int dlng = lnge5 - lastlnge5;
 		long dtime = newLocationTime - lastPoint.getTimestamp();
 
-		if (dlat != 0 || dlng != 0 || dtime != 0){
+		if (dlat != 0 || dlng != 0){
 
 			String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
 
@@ -185,7 +185,7 @@ public class OnlinePolylineEncoder {
 		long dtime = timestamp - lastTimestamp;
 
 
-		if (dlng != 0 || dlat != 0 || dtime != 0){
+		if (dlng != 0 || dlat != 0){
 
 			String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
 
