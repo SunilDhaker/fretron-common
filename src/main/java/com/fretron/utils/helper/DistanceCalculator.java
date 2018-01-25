@@ -56,4 +56,9 @@ public final class DistanceCalculator {
         return 2 * area / d1;
     }
 
+
+    // Function to convert kmph to mph
+   public static Double kmphTomph(Double kmph)
+    { return 0.6214 * kmph;
+    }
 }
