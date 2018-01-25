@@ -128,4 +128,7 @@
     <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
     <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
 
+    <!-- ===================org group manager id=======-->
+    <entry key="org.group.manager.app.id">organisationGroupManager</entry>
+
 </properties>
