@@ -94,6 +94,34 @@ public class JwtUtil {
 
         return  null;
     }
+    public static String getEmailFromToken(String token){
+        try {
+
+            // todo check  if token exist or not
+
+            Claims claims = Jwts.parser()
+                    .setSigningKey("abcabcabcabc")
+                    .parseClaimsJws(token).getBody();
+
+            return (String) claims.get("email");
+
+        } catch (ExpiredJwtException e) {
+            e.printStackTrace();
+        } catch (UnsupportedJwtException e) {
+            e.printStackTrace();
+        } catch (MalformedJwtException e) {
+            e.printStackTrace();
+        } catch (SignatureException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return  null;
+    }
 
     public static String getUserIdForToken(String token) {
 
