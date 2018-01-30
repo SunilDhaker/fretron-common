@@ -27,7 +27,7 @@ public class HttpRequestHepler {
         HttpPost post = new HttpPost(uri);
         post.setHeader("Content-Type", "application/json");
         if(authToken!=null){
-            post.setHeader("Authorization",authToken);
+            post.setHeader("Authorization","Bearer "+authToken);
         }
         StringEntity se = null;
         try {
