@@ -861,6 +861,14 @@
 					"string"
 				],
 				"default": null
+			},
+			{
+			    "name":"totalDistance",
+			    "type":[
+			        "null",
+			        "double"
+			    ],
+			    "default":null
 			}
 
 		]

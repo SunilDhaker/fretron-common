@@ -2,6 +2,7 @@ package com.fretron;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -43,6 +44,32 @@ public class HttpRequestHepler {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+
+        return entity;
+    }
+
+
+    public static HttpEntity makeGetRequest(String uri, String authToken ){
+        HttpResponse response = null;
+        HttpEntity entity = null;
+        final HttpParams httpParams = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+
+        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
+        HttpGet post = new HttpGet(uri);
+        post.setHeader("Content-Type", "application/json");
+        if(authToken!=null){
+            post.setHeader("Authorization","Bearer "+authToken);
+        }
+        StringEntity se = null;
+
+            try {
+                response = httpClient.execute(post);
+                entity = response.getEntity();
+            } catch (IOException e) {
+                Logger.getGlobal().log(Level.WARNING,"Connection expection: "+e.getMessage());
+            }
+
 
         return entity;
     }
