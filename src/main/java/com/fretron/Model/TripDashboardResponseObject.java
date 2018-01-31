@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripDashboardResponseObject extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5906240250427701177L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripDashboardResponseObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"gpsState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStateDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vts\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripStartLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"tripEndLocation\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"vtsDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 394174525582038311L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripDashboardResponseObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"gpsState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStateDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vts\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripStartLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"tripEndLocation\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"vtsDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double latitude;
   @Deprecated public java.lang.Double longitude;
@@ -26,6 +26,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
   @Deprecated public java.lang.Long vtsDuration;
   @Deprecated public java.lang.String address;
   @Deprecated public java.lang.String vehicleId;
+  @Deprecated public java.lang.Double totalDistance;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,8 +50,9 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
    * @param vtsDuration The new value for vtsDuration
    * @param address The new value for address
    * @param vehicleId The new value for vehicleId
+   * @param totalDistance The new value for totalDistance
    */
-  public TripDashboardResponseObject(java.lang.Double latitude, java.lang.Double longitude, java.lang.String gpsState, java.lang.Long gpsStateDuration, java.lang.Double speed, java.lang.Long tripStartTime, java.lang.Long tripEndTime, java.lang.String vts, com.fretron.Model.FreightLocation tripStartLocation, com.fretron.Model.FreightLocation tripEndLocation, java.lang.Long vtsDuration, java.lang.String address, java.lang.String vehicleId) {
+  public TripDashboardResponseObject(java.lang.Double latitude, java.lang.Double longitude, java.lang.String gpsState, java.lang.Long gpsStateDuration, java.lang.Double speed, java.lang.Long tripStartTime, java.lang.Long tripEndTime, java.lang.String vts, com.fretron.Model.FreightLocation tripStartLocation, com.fretron.Model.FreightLocation tripEndLocation, java.lang.Long vtsDuration, java.lang.String address, java.lang.String vehicleId, java.lang.Double totalDistance) {
     this.latitude = latitude;
     this.longitude = longitude;
     this.gpsState = gpsState;
@@ -64,6 +66,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
     this.vtsDuration = vtsDuration;
     this.address = address;
     this.vehicleId = vehicleId;
+    this.totalDistance = totalDistance;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -83,6 +86,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
     case 10: return vtsDuration;
     case 11: return address;
     case 12: return vehicleId;
+    case 13: return totalDistance;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -104,6 +108,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
     case 10: vtsDuration = (java.lang.Long)value$; break;
     case 11: address = (java.lang.String)value$; break;
     case 12: vehicleId = (java.lang.String)value$; break;
+    case 13: totalDistance = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -317,6 +322,22 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
   }
 
   /**
+   * Gets the value of the 'totalDistance' field.
+   * @return The value of the 'totalDistance' field.
+   */
+  public java.lang.Double getTotalDistance() {
+    return totalDistance;
+  }
+
+  /**
+   * Sets the value of the 'totalDistance' field.
+   * @param value the value to set.
+   */
+  public void setTotalDistance(java.lang.Double value) {
+    this.totalDistance = value;
+  }
+
+  /**
    * Creates a new TripDashboardResponseObject RecordBuilder.
    * @return A new TripDashboardResponseObject RecordBuilder
    */
@@ -363,6 +384,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
     private java.lang.Long vtsDuration;
     private java.lang.String address;
     private java.lang.String vehicleId;
+    private java.lang.Double totalDistance;
 
     /** Creates a new Builder */
     private Builder() {
@@ -433,6 +455,10 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
         this.vehicleId = data().deepCopy(fields()[12].schema(), other.vehicleId);
         fieldSetFlags()[12] = true;
       }
+      if (isValidValue(fields()[13], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[13].schema(), other.totalDistance);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -494,6 +520,10 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
       if (isValidValue(fields()[12], other.vehicleId)) {
         this.vehicleId = data().deepCopy(fields()[12].schema(), other.vehicleId);
         fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[13].schema(), other.totalDistance);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -1074,6 +1104,45 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
       return this;
     }
 
+    /**
+      * Gets the value of the 'totalDistance' field.
+      * @return The value.
+      */
+    public java.lang.Double getTotalDistance() {
+      return totalDistance;
+    }
+
+    /**
+      * Sets the value of the 'totalDistance' field.
+      * @param value The value of 'totalDistance'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripDashboardResponseObject.Builder setTotalDistance(java.lang.Double value) {
+      validate(fields()[13], value);
+      this.totalDistance = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'totalDistance' field has been set.
+      * @return True if the 'totalDistance' field has been set, false otherwise.
+      */
+    public boolean hasTotalDistance() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'totalDistance' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripDashboardResponseObject.Builder clearTotalDistance() {
+      totalDistance = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public TripDashboardResponseObject build() {
       try {
@@ -1099,6 +1168,7 @@ public class TripDashboardResponseObject extends org.apache.avro.specific.Specif
         record.vtsDuration = fieldSetFlags()[10] ? this.vtsDuration : (java.lang.Long) defaultValue(fields()[10]);
         record.address = fieldSetFlags()[11] ? this.address : (java.lang.String) defaultValue(fields()[11]);
         record.vehicleId = fieldSetFlags()[12] ? this.vehicleId : (java.lang.String) defaultValue(fields()[12]);
+        record.totalDistance = fieldSetFlags()[13] ? this.totalDistance : (java.lang.Double) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
