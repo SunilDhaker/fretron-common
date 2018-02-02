@@ -17,7 +17,6 @@ import java.util.logging.Logger;
 
 public class HttpRequestHepler {
 
-
     public static HttpEntity makePostRequest(String uri, Object requestObject , String authToken ){
         HttpResponse response = null;
         HttpEntity entity = null;
