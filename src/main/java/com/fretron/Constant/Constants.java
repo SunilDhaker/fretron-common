@@ -60,9 +60,7 @@ public class Constants {
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
-    public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
-    public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
-    public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
+
 
 
     //states
@@ -77,10 +75,6 @@ public class Constants {
     public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.processor.database.ip";
     public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "vehicle.gps.state.collectionName";
 
-
-
-    public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STATE = "deviceDataByRemoteAddress.state";
-    public final static String KEY_LAST_PROCESSED_POSITIONS_STATE = "lastprocessedpositions.state";
 
 
 
@@ -420,6 +414,25 @@ public class Constants {
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
     public final  static String KEY_ROOSTER_INTEGRATION_API_URL = "integrations.roosterInfo.api.url";
+
+
+
+    //******************************Protocol-producer*****************************************************
+    public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
+    public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
+
+
+    public final  static String KEY_PROTOCOL_TIMEZONE = "protocolTimezoneOffsetKey";
+    public final static String KEY_DEVICE_IMEI = "deviceIMEIKEY";
+
+    public final static String KEY_PROTOCOL_NAME = "protocol.name";
+
+    public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
+    public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
+    public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STORE = "deviceDataByRemoteAddress.store";
+    public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
+    public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
+    public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
 
 
 
