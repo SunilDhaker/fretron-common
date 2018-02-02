@@ -417,6 +417,7 @@ public class Constants {
 
 
 
+
     //******************************Protocol-producer*****************************************************
     public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
@@ -433,8 +434,6 @@ public class Constants {
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
-
-
 
     private Constants(){
 

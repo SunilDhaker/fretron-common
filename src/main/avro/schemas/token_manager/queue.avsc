@@ -20,7 +20,7 @@
       "default":null
     },
     {
-      "name":"isGPSEnable",
+      "name":"isGPSMandatory",
       "type":"boolean",
       "default":false
     },
@@ -39,6 +39,14 @@
         "string"
       ],
       "default":null
+    },
+    {
+      "name":"status",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":"suspended"
     }
   ]
 }

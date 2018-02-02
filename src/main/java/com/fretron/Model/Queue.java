@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Queue extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3402690459404552060L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Queue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isGPSEnable\",\"type\":\"boolean\",\"default\":false},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2627531324056172097L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Queue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isGPSMandatory\",\"type\":\"boolean\",\"default\":false},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"suspended\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
-  @Deprecated public boolean isGPSEnable;
+  @Deprecated public boolean isGPSMandatory;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String description;
+  @Deprecated public java.lang.String status;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -30,16 +31,18 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
    * All-args constructor.
    * @param uuid The new value for uuid
    * @param name The new value for name
-   * @param isGPSEnable The new value for isGPSEnable
+   * @param isGPSMandatory The new value for isGPSMandatory
    * @param orgId The new value for orgId
    * @param description The new value for description
+   * @param status The new value for status
    */
-  public Queue(java.lang.String uuid, java.lang.String name, java.lang.Boolean isGPSEnable, java.lang.String orgId, java.lang.String description) {
+  public Queue(java.lang.String uuid, java.lang.String name, java.lang.Boolean isGPSMandatory, java.lang.String orgId, java.lang.String description, java.lang.String status) {
     this.uuid = uuid;
     this.name = name;
-    this.isGPSEnable = isGPSEnable;
+    this.isGPSMandatory = isGPSMandatory;
     this.orgId = orgId;
     this.description = description;
+    this.status = status;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -48,9 +51,10 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     switch (field$) {
     case 0: return uuid;
     case 1: return name;
-    case 2: return isGPSEnable;
+    case 2: return isGPSMandatory;
     case 3: return orgId;
     case 4: return description;
+    case 5: return status;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -61,9 +65,10 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
     case 1: name = (java.lang.String)value$; break;
-    case 2: isGPSEnable = (java.lang.Boolean)value$; break;
+    case 2: isGPSMandatory = (java.lang.Boolean)value$; break;
     case 3: orgId = (java.lang.String)value$; break;
     case 4: description = (java.lang.String)value$; break;
+    case 5: status = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -101,19 +106,19 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
-   * Gets the value of the 'isGPSEnable' field.
-   * @return The value of the 'isGPSEnable' field.
+   * Gets the value of the 'isGPSMandatory' field.
+   * @return The value of the 'isGPSMandatory' field.
    */
-  public java.lang.Boolean getIsGPSEnable() {
-    return isGPSEnable;
+  public java.lang.Boolean getIsGPSMandatory() {
+    return isGPSMandatory;
   }
 
   /**
-   * Sets the value of the 'isGPSEnable' field.
+   * Sets the value of the 'isGPSMandatory' field.
    * @param value the value to set.
    */
-  public void setIsGPSEnable(java.lang.Boolean value) {
-    this.isGPSEnable = value;
+  public void setIsGPSMandatory(java.lang.Boolean value) {
+    this.isGPSMandatory = value;
   }
 
   /**
@@ -146,6 +151,22 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
    */
   public void setDescription(java.lang.String value) {
     this.description = value;
+  }
+
+  /**
+   * Gets the value of the 'status' field.
+   * @return The value of the 'status' field.
+   */
+  public java.lang.String getStatus() {
+    return status;
+  }
+
+  /**
+   * Sets the value of the 'status' field.
+   * @param value the value to set.
+   */
+  public void setStatus(java.lang.String value) {
+    this.status = value;
   }
 
   /**
@@ -182,9 +203,10 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
 
     private java.lang.String uuid;
     private java.lang.String name;
-    private boolean isGPSEnable;
+    private boolean isGPSMandatory;
     private java.lang.String orgId;
     private java.lang.String description;
+    private java.lang.String status;
 
     /** Creates a new Builder */
     private Builder() {
@@ -205,8 +227,8 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
         this.name = data().deepCopy(fields()[1].schema(), other.name);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.isGPSEnable)) {
-        this.isGPSEnable = data().deepCopy(fields()[2].schema(), other.isGPSEnable);
+      if (isValidValue(fields()[2], other.isGPSMandatory)) {
+        this.isGPSMandatory = data().deepCopy(fields()[2].schema(), other.isGPSMandatory);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.orgId)) {
@@ -216,6 +238,10 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
       if (isValidValue(fields()[4], other.description)) {
         this.description = data().deepCopy(fields()[4].schema(), other.description);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.status)) {
+        this.status = data().deepCopy(fields()[5].schema(), other.status);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -233,8 +259,8 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
         this.name = data().deepCopy(fields()[1].schema(), other.name);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.isGPSEnable)) {
-        this.isGPSEnable = data().deepCopy(fields()[2].schema(), other.isGPSEnable);
+      if (isValidValue(fields()[2], other.isGPSMandatory)) {
+        this.isGPSMandatory = data().deepCopy(fields()[2].schema(), other.isGPSMandatory);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.orgId)) {
@@ -244,6 +270,10 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
       if (isValidValue(fields()[4], other.description)) {
         this.description = data().deepCopy(fields()[4].schema(), other.description);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.status)) {
+        this.status = data().deepCopy(fields()[5].schema(), other.status);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -326,39 +356,39 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     }
 
     /**
-      * Gets the value of the 'isGPSEnable' field.
+      * Gets the value of the 'isGPSMandatory' field.
       * @return The value.
       */
-    public java.lang.Boolean getIsGPSEnable() {
-      return isGPSEnable;
+    public java.lang.Boolean getIsGPSMandatory() {
+      return isGPSMandatory;
     }
 
     /**
-      * Sets the value of the 'isGPSEnable' field.
-      * @param value The value of 'isGPSEnable'.
+      * Sets the value of the 'isGPSMandatory' field.
+      * @param value The value of 'isGPSMandatory'.
       * @return This builder.
       */
-    public com.fretron.Model.Queue.Builder setIsGPSEnable(boolean value) {
+    public com.fretron.Model.Queue.Builder setIsGPSMandatory(boolean value) {
       validate(fields()[2], value);
-      this.isGPSEnable = value;
+      this.isGPSMandatory = value;
       fieldSetFlags()[2] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'isGPSEnable' field has been set.
-      * @return True if the 'isGPSEnable' field has been set, false otherwise.
+      * Checks whether the 'isGPSMandatory' field has been set.
+      * @return True if the 'isGPSMandatory' field has been set, false otherwise.
       */
-    public boolean hasIsGPSEnable() {
+    public boolean hasIsGPSMandatory() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'isGPSEnable' field.
+      * Clears the value of the 'isGPSMandatory' field.
       * @return This builder.
       */
-    public com.fretron.Model.Queue.Builder clearIsGPSEnable() {
+    public com.fretron.Model.Queue.Builder clearIsGPSMandatory() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -441,15 +471,55 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
       return this;
     }
 
+    /**
+      * Gets the value of the 'status' field.
+      * @return The value.
+      */
+    public java.lang.String getStatus() {
+      return status;
+    }
+
+    /**
+      * Sets the value of the 'status' field.
+      * @param value The value of 'status'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Queue.Builder setStatus(java.lang.String value) {
+      validate(fields()[5], value);
+      this.status = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'status' field has been set.
+      * @return True if the 'status' field has been set, false otherwise.
+      */
+    public boolean hasStatus() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'status' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Queue.Builder clearStatus() {
+      status = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public Queue build() {
       try {
         Queue record = new Queue();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.name = fieldSetFlags()[1] ? this.name : (java.lang.String) defaultValue(fields()[1]);
-        record.isGPSEnable = fieldSetFlags()[2] ? this.isGPSEnable : (java.lang.Boolean) defaultValue(fields()[2]);
+        record.isGPSMandatory = fieldSetFlags()[2] ? this.isGPSMandatory : (java.lang.Boolean) defaultValue(fields()[2]);
         record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
         record.description = fieldSetFlags()[4] ? this.description : (java.lang.String) defaultValue(fields()[4]);
+        record.status = fieldSetFlags()[5] ? this.status : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
