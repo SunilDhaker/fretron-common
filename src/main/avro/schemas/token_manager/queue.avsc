@@ -1,0 +1,44 @@
+{
+  "name":"Queue",
+  "namespace":"com.fretron.Model",
+  "type":"record",
+  "fields":[
+    {
+      "name":"uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name":"name",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"isGPSEnable",
+      "type":"boolean",
+      "default":false
+    },
+    {
+      "name":"orgId",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"description",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    }
+  ]
+}
