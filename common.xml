@@ -134,4 +134,9 @@
     <!-- ===================org group manager id=======-->
     <entry key="org.group.manager.app.id">organisationGroupManager</entry>
 
+    <!--===============Token Manager -topics=====================-->
+    <entry key="queue.tokon.topic">queuetokentopic</entry>
+    <entry key="queue.topic">queuetopic</entry>
+
+
 </properties>
