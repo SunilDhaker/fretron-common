@@ -438,7 +438,7 @@ public class Constants {
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
     public final static String KEY_QUEUE_TOPIC="queue.topic";
-    public final static String KEY_QUEUE_TOKNE_TOPIC="queue.token.topic";
+    public final static String KEY_QUEUE_TOKEN_TOPIC="queue.token.topic";
 
     public final static String QUEUE_IP = "queue.ip";
     public final static String QUEUE_PORT = "queue.port";
