@@ -435,6 +435,23 @@ public class Constants {
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
 
+    //**********************Token Manager ******************************************************************************/
+    public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
+    public final static String KEY_QUEUE_TOPIC="queue.topic";
+    public final static String KEY_QUEUE_TOKNE_TOPIC="queue.token.topic";
+
+    public final static String QUEUE_IP = "queue.ip";
+    public final static String QUEUE_PORT = "queue.port";
+
+    public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
+    public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
+
+    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.db.name";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.db.host";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.db.port";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_COLLECTION_NAME="token.manager.app.id";
+
+
     private Constants(){
 
     }
