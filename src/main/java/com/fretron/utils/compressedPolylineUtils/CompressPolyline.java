@@ -35,4 +35,25 @@ public class CompressPolyline {
            }
            return  SeriesReducer.reduce(dataList, Constants.ep);
        }
+
+
+
+       public TimeAwarePolyline compress(TimeAwarePolyline polylineObj){
+             String unComPolyline = polylineObj.getPolyline();
+             String unComPolyline2 = unComPolyline.replaceAll("\\\\","\\\\\\\\");
+           List<PointAtTime> unComPoints= (new PolylineDecoder()).decodeTimeAwarePolyline(unComPolyline2);
+
+           List<com.fretron.utils.compressedPolylineUtils.reducer.Point> reducedSeries = getCompressedPointList(unComPoints);
+
+           TimeAwarePolyline timeAwarePolyline3 = extendTimeAwarePolyline(new TimeAwarePolyline("" ,"" ,new PointAtTime(0l,0d,0d)),reducedSeries.get(0).getX(),reducedSeries.get(0).getX(),reducedSeries.get(0).getT());
+
+           	int i;
+           for( i=1;i<reducedSeries.size();i++){
+               timeAwarePolyline3 =extendTimeAwarePolyline(timeAwarePolyline3 ,reducedSeries.get(i).getX() , reducedSeries.get(i).getY()  , reducedSeries.get(i).getT() );
+           }
+          // timeAwarePolyline3 =extendTimeAwarePolyline(timeAwarePolyline3 ,reducedSeries.get(i).getX() , reducedSeries.get(i).getY()  , reducedSeries.get(i).getT() );
+           polylineObj.setPolyline(timeAwarePolyline3.getPolyline());
+
+           return  polylineObj;
+       }
 }
