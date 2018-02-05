@@ -21,8 +21,11 @@
     },
     {
       "name":"isGPSMandatory",
-      "type":"boolean",
-      "default":false
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
     },
     {
       "name":"orgId",
