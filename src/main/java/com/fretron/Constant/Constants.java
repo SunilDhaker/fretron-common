@@ -415,7 +415,7 @@ public class Constants {
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
     public final  static String KEY_ROOSTER_INTEGRATION_API_URL = "integrations.roosterInfo.api.url";
 
-
+     public final static double ep = 0.0001;
 
 
     //******************************Protocol-producer*****************************************************
