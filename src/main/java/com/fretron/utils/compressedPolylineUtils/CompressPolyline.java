@@ -22,39 +22,42 @@ import java.util.Map;
 import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.*;
 
 public class CompressPolyline {
-       public List<com.fretron.utils.compressedPolylineUtils.reducer.Point> getCompressedPointList(List<PointAtTime> points){
 
-           List<com.fretron.utils.compressedPolylineUtils.reducer.Point> dataList= new ArrayList<>(Arrays.asList());
+    public List<com.fretron.utils.compressedPolylineUtils.reducer.Point> getCompressedPointList(List<PointAtTime> points){
 
-           for(int i=0;i< points.size();i++){
+        List<com.fretron.utils.compressedPolylineUtils.reducer.Point> dataList= new ArrayList<>(Arrays.asList());
 
-               com.fretron.utils.compressedPolylineUtils.reducer.Point x = p(points.get(i).getLatitude(),points.get(i).getLongitude(),points.get(i).getTimestamp());
+        for(int i=0;i< points.size();i++){
 
-               dataList.addAll(Arrays.asList(x));
+            com.fretron.utils.compressedPolylineUtils.reducer.Point x = p(points.get(i).getLatitude(),points.get(i).getLongitude(),points.get(i).getTimestamp());
 
-           }
-           return  SeriesReducer.reduce(dataList, Constants.ep);
-       }
+            dataList.addAll(Arrays.asList(x));
+
+        }
+        return  SeriesReducer.reduce(dataList, Constants.ep);
+    }
 
 
 
-       public TimeAwarePolyline compress(TimeAwarePolyline polylineObj){
-             String polyline = polylineObj.getPolyline();
-             polyline = polyline.replaceAll("\\","\\\\");
+    public TimeAwarePolyline compress(TimeAwarePolyline polylineObj){
 
-           List<PointAtTime> unComPoints= (new PolylineDecoder()).decodeTimeAwarePolyline(polyline);
+        String polyline = polylineObj.getPolyline();
+        polyline = polyline.replace("\\","\\\\");
 
-           List<com.fretron.utils.compressedPolylineUtils.reducer.Point> reducedSeries = getCompressedPointList(unComPoints);
+        List<PointAtTime> points = (new PolylineDecoder()).decodeTimeAwarePolyline(polyline);
 
-           TimeAwarePolyline timeAwarePolyline = extendTimeAwarePolyline(new TimeAwarePolyline("" ,"" ,new PointAtTime(0l,0d,0d)),reducedSeries.get(0).getX(),reducedSeries.get(0).getX(),reducedSeries.get(0).getT());
+        List<com.fretron.utils.compressedPolylineUtils.reducer.Point> compressedPointList = getCompressedPointList(points);
 
-           	int i;
-           for( i=1;i<reducedSeries.size();i++){
-               timeAwarePolyline =extendTimeAwarePolyline(timeAwarePolyline ,reducedSeries.get(i).getX() , reducedSeries.get(i).getY()  , reducedSeries.get(i).getT() );
-           }
-          // timeAwarePolyline3 =extendTimeAwarePolyline(timeAwarePolyline3 ,reducedSeries.get(i).getX() , reducedSeries.get(i).getY()  , reducedSeries.get(i).getT() );
-           polylineObj.setPolyline(timeAwarePolyline.getPolyline());
+        TimeAwarePolyline timeAwarePolyline = extendTimeAwarePolyline(new TimeAwarePolyline("" ,"" ,new PointAtTime(0l,0d,0d)),compressedPointList.get(0).getX(),compressedPointList.get(0).getX(),compressedPointList.get(0).getT());
 
-           return  polylineObj;
-       }
+
+        for( int index = 1 ;index < compressedPointList.size();index++){
+
+            timeAwarePolyline =extendTimeAwarePolyline(timeAwarePolyline ,compressedPointList.get(index).getX() , compressedPointList.get(index).getY()  , compressedPointList.get(index).getT() );
+        }
+
+        polylineObj.setPolyline(timeAwarePolyline.getPolyline());
+
+        return  polylineObj;
+    }
 }
