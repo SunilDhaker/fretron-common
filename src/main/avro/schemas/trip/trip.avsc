@@ -159,7 +159,15 @@
 					"com.fretron.Model.VehicleTripState"
 				],
 				"default": null
-			}
+			},
+			{
+            				"name": "vgs",
+            				"type": [
+            					"null",
+            					"com.fretron.Model.VehicleGpsState"
+            				],
+            				"default": null
+            }
 		]
 	},
 	{
