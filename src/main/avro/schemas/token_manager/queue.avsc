@@ -49,7 +49,7 @@
         "null",
         "string"
       ],
-      "default":"suspended"
+      "default":null
     }
   ]
 }
