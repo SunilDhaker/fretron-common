@@ -598,7 +598,18 @@
             					"string"
             				],
             				"default": null
-            			}
+            			},
+                        {
+                            "name": "expectedDestinations",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": "com.fretron.Model.FreightLocation"
+                                }
+                            ],
+                            "default": null
+                        }
 
 		]
 	},
@@ -920,5 +931,23 @@
 				"default": null
 			}
 		]
-	}
+	},
+     	{
+         		"namespace": "com.fretron.Model",
+         		"type": "record",
+         		"name": "ExpectedDestinationFL",
+         		"fields": [
+         		{
+                 				"name": "expectedDestination",
+                 				"type": [
+                 					"null",
+                 					{
+                 						"type": "array",
+                 						"items": "com.fretron.Model.FreightLocation"
+                 					}
+                 				],
+                 				"default": null
+                 			}
+         		]
+         }
 ]

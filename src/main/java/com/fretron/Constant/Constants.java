@@ -180,6 +180,7 @@ public class Constants {
 
     public static final java.lang.String KEY_GPS_EVENT_TOPIC = "gps.events.topic";
     public static final java.lang.String KEY_TRIP_RELATED_EVENT_INPUT_TOPIC = "trip.related.event.input.topic";
+    public static final java.lang.String EXPECTED_DESTINATION_TOPIC = "expected.destination.topic";
 
 
 

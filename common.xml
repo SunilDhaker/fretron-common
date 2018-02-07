@@ -79,7 +79,7 @@
     <entry key="vts.update.topic">vtsUpdateTopic</entry>
     <entry key="trip.related.event.input.topic">tripRelatedEventInputTopic</entry>
     <entry key="vts.update.topic">vtsUpdateTopic</entry>
-
+    <entry key="expected.destination.topic">expectedDestinationTopic</entry>
     <entry key="activetrip.topic">activetripTopic</entry>
     <entry key="plannedtrip.topic">plannedtripTopic</entry>
 
