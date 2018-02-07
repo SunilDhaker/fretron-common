@@ -442,13 +442,6 @@ public class Constants {
     public final static String KEY_QUEUE_TOPIC="queue.topic";
     public final static String KEY_QUEUE_TOKEN_TOPIC="queue.tokon.topic";
 
-    public final static String KEY_QUEUE_MANAGER_APP_ID = "queue.manager.app.id";
-
-    public final static String QUEUE_IP = "queue.ip";
-    public final static String QUEUE_PORT = "queue.port";
-    public final static String TOKEN_IP = "token.ip";
-    public final static String TOKEN_PORT = "token.port";
-
     public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
     public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
 

@@ -37,20 +37,22 @@ public class PolylineCompressor {
 
             String polyline = polylineObj.getPolyline();
 
-            polyline = polyline.replace("\\","\\\\");
+            if (polyline != null) {
 
-            List<Point> points = decoder.decodeTimeAwarePolylineForCompression(polyline);
+                List<Point> points = decoder.decodeTimeAwarePolylineForCompression(polyline);
 
-            List<Point> compressedPointList = getCompressedPointList(points);
+                List<Point> compressedPointList = getCompressedPointList(points);
 
-              TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("" ,"" ,new PointAtTime(0l,0d,0d)),compressedPointList.get(0).getX(),compressedPointList.get(0).getX(),compressedPointList.get(0).getT());
+                TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("", "", new PointAtTime(0l, 0d, 0d)), compressedPointList.get(0).getX(), compressedPointList.get(0).getX(), compressedPointList.get(0).getT());
 
-            for( int index = 1 ;index < compressedPointList.size();index++){
+                for (int index = 1; index < compressedPointList.size(); index++) {
 
-                compressedPolylineObj = extendTimeAwarePolyline(compressedPolylineObj ,compressedPointList.get(index).getX() , compressedPointList.get(index).getY()  , compressedPointList.get(index).getT() );
+                    compressedPolylineObj = extendTimeAwarePolyline(compressedPolylineObj, compressedPointList.get(index).getX(), compressedPointList.get(index).getY(), compressedPointList.get(index).getT());
+                }
+
+                return compressedPolylineObj;
+
             }
-
-            return compressedPolylineObj;
 
         } catch (Exception e) {
             e.printStackTrace();
