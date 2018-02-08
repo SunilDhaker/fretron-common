@@ -26,6 +26,11 @@
               ]
             },
             {
+               "name": "alarm",
+                "type": [ "null", "string"],
+                "default" : null
+            },
+            {
               "name": "ip",
               "type": [
                 "null",

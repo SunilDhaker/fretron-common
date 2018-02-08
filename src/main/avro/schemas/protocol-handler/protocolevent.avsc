@@ -1,0 +1,24 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ProtocolEvent",
+    "fields": [
+      {
+         "name": "type",
+         "type": [ "null", "string"],
+         "default" : null
+      },
+      {
+          "name": "data",
+          "type": [ "null", "bytes"],
+           "default" : null
+      },
+      {
+        "name": "time",
+        "type": [ "null", "long"],
+         "default" : null
+      }
+    ]
+  }
+]

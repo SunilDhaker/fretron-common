@@ -51,10 +51,14 @@
     <entry key="loadedposition.topic">loadedpositionTopic</entry>
 
 
-    <!--===============protocol-producer topics ================-->
+    <!--===============protocol-handler topics ================-->
     <entry key="deviceData.topic">deviceDataTopic</entry>
     <entry key="vehicle.statusData.topic">vehicleStatusData</entry>
     <entry key="rawpositions.topic">rawPositions</entry>
+    <entry key="protocol.events.topic">protocolEvents</entry>
+    <entry key="device.session.topic">deviceSession</entry>
+
+
 
 
     <!--===============Sales-order topics========================-->
