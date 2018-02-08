@@ -180,6 +180,7 @@ public class Constants {
 
     public static final java.lang.String KEY_GPS_EVENT_TOPIC = "gps.events.topic";
     public static final java.lang.String KEY_TRIP_RELATED_EVENT_INPUT_TOPIC = "trip.related.event.input.topic";
+    public static final java.lang.String EXPECTED_DESTINATION_TOPIC = "expected.destination.topic";
 
 
 
@@ -415,6 +416,7 @@ public class Constants {
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
     public final  static String KEY_ROOSTER_INTEGRATION_API_URL = "integrations.roosterInfo.api.url";
 
+     public final static double ep = 0.0001;
 
 
     //******************************Protocol-producer*****************************************************
@@ -435,6 +437,21 @@ public class Constants {
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
+
+    //**********************Token Manager ******************************************************************************/
+    public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
+
+    public final static String KEY_QUEUE_TOPIC="queue.topic";
+    public final static String KEY_QUEUE_TOKEN_TOPIC="queue.tokon.topic";
+
+    public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
+    public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
+
+    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.db.name";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.db.host";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.db.port";
+    public final static String KEY_TOKEN_MONGODB_COLLECTION_NAME="token.db.collection.name";
+    public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
 
 
 

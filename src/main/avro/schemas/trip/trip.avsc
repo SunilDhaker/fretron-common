@@ -159,7 +159,15 @@
 					"com.fretron.Model.VehicleTripState"
 				],
 				"default": null
-			}
+			},
+			{
+            				"name": "vgs",
+            				"type": [
+            					"null",
+            					"com.fretron.Model.VehicleGpsState"
+            				],
+            				"default": null
+            }
 		]
 	},
 	{
@@ -582,7 +590,26 @@
 					"com.fretron.Model.TrackingType"
 				],
 				"default": null
-			}
+			},
+						{
+            				"name": "orgId",
+            				"type": [
+            					"null",
+            					"string"
+            				],
+            				"default": null
+            			},
+                        {
+                            "name": "expectedDestinations",
+                            "type": [
+                                "null",
+                                {
+                                    "type": "array",
+                                    "items": "com.fretron.Model.FreightLocation"
+                                }
+                            ],
+                            "default": null
+                        }
 
 		]
 	},
@@ -904,5 +931,23 @@
 				"default": null
 			}
 		]
-	}
+	},
+     	{
+         		"namespace": "com.fretron.Model",
+         		"type": "record",
+         		"name": "ExpectedDestinationFL",
+         		"fields": [
+         		{
+                 				"name": "expectedDestination",
+                 				"type": [
+                 					"null",
+                 					{
+                 						"type": "array",
+                 						"items": "com.fretron.Model.FreightLocation"
+                 					}
+                 				],
+                 				"default": null
+                 			}
+         		]
+         }
 ]

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2696800700334729942L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserTripCommands\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"locationInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}],\"default\":null},{\"name\":\"vehicleStateInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleTripState\",\"fields\":[{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 4555674291566220722L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserTripCommands\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"locationInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}],\"default\":null},{\"name\":\"vehicleStateInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleTripState\",\"fields\":[{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"vgs\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":\"LitePosition\"},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}}]}],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String vehicleId;
   @Deprecated public java.lang.String type;
@@ -21,6 +21,7 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
   @Deprecated public java.lang.String deviceImei;
   @Deprecated public com.fretron.Model.LitePosition locationInfo;
   @Deprecated public com.fretron.Model.VehicleTripState vehicleStateInfo;
+  @Deprecated public com.fretron.Model.VehicleGpsState vgs;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +40,9 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
    * @param deviceImei The new value for deviceImei
    * @param locationInfo The new value for locationInfo
    * @param vehicleStateInfo The new value for vehicleStateInfo
+   * @param vgs The new value for vgs
    */
-  public UserTripCommands(java.lang.String vehicleId, java.lang.String type, java.lang.String tripId, java.lang.Long startTime, java.lang.Long endTime, java.lang.String deviceImei, com.fretron.Model.LitePosition locationInfo, com.fretron.Model.VehicleTripState vehicleStateInfo) {
+  public UserTripCommands(java.lang.String vehicleId, java.lang.String type, java.lang.String tripId, java.lang.Long startTime, java.lang.Long endTime, java.lang.String deviceImei, com.fretron.Model.LitePosition locationInfo, com.fretron.Model.VehicleTripState vehicleStateInfo, com.fretron.Model.VehicleGpsState vgs) {
     this.vehicleId = vehicleId;
     this.type = type;
     this.tripId = tripId;
@@ -49,6 +51,7 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
     this.deviceImei = deviceImei;
     this.locationInfo = locationInfo;
     this.vehicleStateInfo = vehicleStateInfo;
+    this.vgs = vgs;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +66,7 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
     case 5: return deviceImei;
     case 6: return locationInfo;
     case 7: return vehicleStateInfo;
+    case 8: return vgs;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +83,7 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
     case 5: deviceImei = (java.lang.String)value$; break;
     case 6: locationInfo = (com.fretron.Model.LitePosition)value$; break;
     case 7: vehicleStateInfo = (com.fretron.Model.VehicleTripState)value$; break;
+    case 8: vgs = (com.fretron.Model.VehicleGpsState)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +217,22 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
   }
 
   /**
+   * Gets the value of the 'vgs' field.
+   * @return The value of the 'vgs' field.
+   */
+  public com.fretron.Model.VehicleGpsState getVgs() {
+    return vgs;
+  }
+
+  /**
+   * Sets the value of the 'vgs' field.
+   * @param value the value to set.
+   */
+  public void setVgs(com.fretron.Model.VehicleGpsState value) {
+    this.vgs = value;
+  }
+
+  /**
    * Creates a new UserTripCommands RecordBuilder.
    * @return A new UserTripCommands RecordBuilder
    */
@@ -253,6 +274,8 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
     private com.fretron.Model.LitePosition.Builder locationInfoBuilder;
     private com.fretron.Model.VehicleTripState vehicleStateInfo;
     private com.fretron.Model.VehicleTripState.Builder vehicleStateInfoBuilder;
+    private com.fretron.Model.VehicleGpsState vgs;
+    private com.fretron.Model.VehicleGpsState.Builder vgsBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -303,6 +326,13 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
       if (other.hasVehicleStateInfoBuilder()) {
         this.vehicleStateInfoBuilder = com.fretron.Model.VehicleTripState.newBuilder(other.getVehicleStateInfoBuilder());
       }
+      if (isValidValue(fields()[8], other.vgs)) {
+        this.vgs = data().deepCopy(fields()[8].schema(), other.vgs);
+        fieldSetFlags()[8] = true;
+      }
+      if (other.hasVgsBuilder()) {
+        this.vgsBuilder = com.fretron.Model.VehicleGpsState.newBuilder(other.getVgsBuilder());
+      }
     }
 
     /**
@@ -345,6 +375,11 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
         fieldSetFlags()[7] = true;
       }
       this.vehicleStateInfoBuilder = null;
+      if (isValidValue(fields()[8], other.vgs)) {
+        this.vgs = data().deepCopy(fields()[8].schema(), other.vgs);
+        fieldSetFlags()[8] = true;
+      }
+      this.vgsBuilder = null;
     }
 
     /**
@@ -729,6 +764,80 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'vgs' field.
+      * @return The value.
+      */
+    public com.fretron.Model.VehicleGpsState getVgs() {
+      return vgs;
+    }
+
+    /**
+      * Sets the value of the 'vgs' field.
+      * @param value The value of 'vgs'.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserTripCommands.Builder setVgs(com.fretron.Model.VehicleGpsState value) {
+      validate(fields()[8], value);
+      this.vgsBuilder = null;
+      this.vgs = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vgs' field has been set.
+      * @return True if the 'vgs' field has been set, false otherwise.
+      */
+    public boolean hasVgs() {
+      return fieldSetFlags()[8];
+    }
+
+    /**
+     * Gets the Builder instance for the 'vgs' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.VehicleGpsState.Builder getVgsBuilder() {
+      if (vgsBuilder == null) {
+        if (hasVgs()) {
+          setVgsBuilder(com.fretron.Model.VehicleGpsState.newBuilder(vgs));
+        } else {
+          setVgsBuilder(com.fretron.Model.VehicleGpsState.newBuilder());
+        }
+      }
+      return vgsBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'vgs' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.UserTripCommands.Builder setVgsBuilder(com.fretron.Model.VehicleGpsState.Builder value) {
+      clearVgs();
+      vgsBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'vgs' field has an active Builder instance
+     * @return True if the 'vgs' field has an active Builder instance
+     */
+    public boolean hasVgsBuilder() {
+      return vgsBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'vgs' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserTripCommands.Builder clearVgs() {
+      vgs = null;
+      vgsBuilder = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public UserTripCommands build() {
       try {
@@ -748,6 +857,11 @@ public class UserTripCommands extends org.apache.avro.specific.SpecificRecordBas
           record.vehicleStateInfo = this.vehicleStateInfoBuilder.build();
         } else {
           record.vehicleStateInfo = fieldSetFlags()[7] ? this.vehicleStateInfo : (com.fretron.Model.VehicleTripState) defaultValue(fields()[7]);
+        }
+        if (vgsBuilder != null) {
+          record.vgs = this.vgsBuilder.build();
+        } else {
+          record.vgs = fieldSetFlags()[8] ? this.vgs : (com.fretron.Model.VehicleGpsState) defaultValue(fields()[8]);
         }
         return record;
       } catch (Exception e) {

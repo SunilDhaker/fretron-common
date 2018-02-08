@@ -20,9 +20,12 @@
       "default":null
     },
     {
-      "name":"isGPSEnable",
-      "type":"boolean",
-      "default":false
+      "name":"isGPSMandatory",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
     },
     {
       "name":"orgId",
@@ -34,6 +37,14 @@
     },
     {
       "name":"description",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"status",
       "type":[
         "null",
         "string"
