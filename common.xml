@@ -138,5 +138,7 @@
     <entry key="queue.tokon.topic">queuetokentopic</entry>
     <entry key="queue.topic">queuetopic</entry>
 
+    <!-- ================ token manager app id ======= -->
+    <entry key="token.manager.app.id">tokenmanager</entry>
 
 </properties>

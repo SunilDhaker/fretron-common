@@ -60,6 +60,15 @@
         "string"
       ],
       "default":"requested"
+    },
+    {
+      "name": "calledTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     }
   ]
 }
