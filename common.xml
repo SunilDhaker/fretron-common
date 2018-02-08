@@ -7,11 +7,12 @@
     <!--============Kafka -Configs =============-->
     <entry key="bootstrap.servers">broker.kafka:9092</entry>
     <entry key="schemaregistry">http://schemas.kafka</entry>
+    <entry key="application.server.config">localhost:2223</entry>
     <entry key="commit.interval.auto.config">500</entry>
     <entry key="auto.offset.reset.config">earliest</entry>
-    <entry key="application.server.config">localhost:2223</entry>
     <entry key="kafka.topic.partition">5</entry>
     <entry key="kafka.topic.replication.factor">3</entry>
+
 
     <!--==============ADMIN Config===================-->
     <entry key="fretron.god.user.secret">fretron@god@user</entry>

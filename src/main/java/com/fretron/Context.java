@@ -5,7 +5,10 @@ package com.fretron;
  */
 
 
+import com.fretron.Constant.Constants;
+
 import java.io.IOException;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -47,6 +50,37 @@ public final class Context {
                 Logger.getGlobal().log(Level.WARNING, "Some execption while loading property file "+e.getMessage());
             }
         }
+
+        setSystemEnvironmentVariables(config);
+    }
+
+
+    public static void setSystemEnvironmentVariables(Config config){
+
+        if (config == null) config = new Config();
+
+        System.out.println("\n\n Environment Variables \n\n");
+
+        Map<String ,String> map = System.getenv();
+        if (!map.isEmpty()){
+            if (map.containsKey(Constants.KEY_KAFKA_METADATA_SERVICE_IP) && config.hasKey(Constants.KEY_APPLICATION_SERVER)){
+
+                String url = config.getString(Constants.KEY_APPLICATION_SERVER);
+                String [] params = url.split(":");
+                params[0] = map.getOrDefault(Constants.KEY_KAFKA_METADATA_SERVICE_IP ,params[0]);
+                url = params[0] + ":" + params[1];
+                config.put(Constants.KEY_APPLICATION_SERVER ,url);
+            }
+
+            for (Map.Entry<String, String> entry : map.entrySet()){
+                config.put(entry.getKey() ,entry.getValue());
+                System.out.println(entry.getKey() + " : "+entry.getValue());
+            }
+
+        }
+
+
+
     }
 
     public static String getEnvironmnet(){

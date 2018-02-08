@@ -5,6 +5,9 @@ package com.fretron.Constant;
  */
 public class Constants {
 
+
+
+    public final static String KEY_KAFKA_METADATA_SERVICE_IP = "kafka.metadata.service.ip";
     public final static String KEY_VTS_UPDATE_TOPIC= "vts.update.topic";
     public final static String KEY_TRIP_LOG_RETENTION_TIMEPERIOD= "trip.log.retention.timeperiod";
     public final static String KEY_TRIP_LOG_CLEANUP_TIME= "trip.log.cleanup.time.period";
