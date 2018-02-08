@@ -62,15 +62,6 @@ public final class Context {
         System.out.println("\n\n Environment Variables \n\n");
 
         Map<String ,String> map = System.getenv();
-        if (!map.isEmpty()){
-            if (map.containsKey(Constants.KEY_KAFKA_METADATA_SERVICE_IP) && config.hasKey(Constants.KEY_APPLICATION_SERVER)){
-
-                String url = config.getString(Constants.KEY_APPLICATION_SERVER);
-                String [] params = url.split(":");
-                params[0] = map.getOrDefault(Constants.KEY_KAFKA_METADATA_SERVICE_IP ,params[0]);
-                url = params[0] + ":" + params[1];
-                config.put(Constants.KEY_APPLICATION_SERVER ,url);
-            }
 
             for (Map.Entry<String, String> entry : map.entrySet()){
                 config.put(entry.getKey() ,entry.getValue());
@@ -81,7 +72,7 @@ public final class Context {
 
 
 
-    }
+
 
     public static String getEnvironmnet(){
         if(getConfig().getString("environment") != null){
