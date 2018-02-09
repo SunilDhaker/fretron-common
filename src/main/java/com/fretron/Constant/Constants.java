@@ -130,7 +130,7 @@ public class Constants {
     public final static  String KEY_DEVICE_IMEI_STORE="device.by.imei.store";
     public final static  String KEY_VEHICLE_UUID_STORE="vehicle.by.uuid.store";
     public final static  String KEY_VEHICLE_REGISTRATION_STORE="vehicle.by.registration.store";
-    public final static  String KEY_VEHICLE_IMEI_STORE="vehicle.by.imei.store";
+    public final static  String KEY_VEHICLE_IMEI_STORE="vehicle.by.imei";
 
     public final static  String KEY_APPLICATION_SERVER="application.server.config";
     public final static  String KEY_AUTO_OFFSET_RESET_CONFIG="auto.offset.reset.config";

@@ -50,6 +50,7 @@
     <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
     <entry key="devicestate.topic">devicestate</entry>
     <entry key="loadedposition.topic">loadedpositionTopic</entry>
+    <entry key="vehicle.by.imei">vehicleByImei</entry>
 
 
     <!--===============protocol-handler topics ================-->
