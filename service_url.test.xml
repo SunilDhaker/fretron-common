@@ -80,9 +80,9 @@
     <!--<entry key="query.server.service.port">8094</entry>-->
 
     <!-- ======== Token manager-->
+    <entry key="token.manager.service.url">http://token-manager.streams:7090</entry>
     <entry key="token.manager.restservice.ip">http://0.0.0.0</entry>
     <entry key="token.manager.restservice.port">7090</entry>
-    <entry key="token.manager.app.id">tokenmanager</entry>
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
 
