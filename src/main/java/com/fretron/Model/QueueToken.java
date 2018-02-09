@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class QueueToken extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2326631846016444106L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QueueToken\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tokenNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expireTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":\"requested\"},{\"name\":\"calledTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -1243709209323002019L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QueueToken\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tokenNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expireTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"calledTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Long issueTime;
@@ -21,6 +21,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.Long expireTime;
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.Long calledTime;
+  @Deprecated public java.lang.String vehicleRegistrationNumber;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +40,9 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
    * @param expireTime The new value for expireTime
    * @param status The new value for status
    * @param calledTime The new value for calledTime
+   * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
    */
-  public QueueToken(java.lang.String uuid, java.lang.Long issueTime, java.lang.String tokenNumber, java.lang.String queueId, java.lang.String vehicleId, java.lang.Long expireTime, java.lang.String status, java.lang.Long calledTime) {
+  public QueueToken(java.lang.String uuid, java.lang.Long issueTime, java.lang.String tokenNumber, java.lang.String queueId, java.lang.String vehicleId, java.lang.Long expireTime, java.lang.String status, java.lang.Long calledTime, java.lang.String vehicleRegistrationNumber) {
     this.uuid = uuid;
     this.issueTime = issueTime;
     this.tokenNumber = tokenNumber;
@@ -49,6 +51,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     this.expireTime = expireTime;
     this.status = status;
     this.calledTime = calledTime;
+    this.vehicleRegistrationNumber = vehicleRegistrationNumber;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +66,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     case 5: return expireTime;
     case 6: return status;
     case 7: return calledTime;
+    case 8: return vehicleRegistrationNumber;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +83,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     case 5: expireTime = (java.lang.Long)value$; break;
     case 6: status = (java.lang.String)value$; break;
     case 7: calledTime = (java.lang.Long)value$; break;
+    case 8: vehicleRegistrationNumber = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +217,22 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'vehicleRegistrationNumber' field.
+   * @return The value of the 'vehicleRegistrationNumber' field.
+   */
+  public java.lang.String getVehicleRegistrationNumber() {
+    return vehicleRegistrationNumber;
+  }
+
+  /**
+   * Sets the value of the 'vehicleRegistrationNumber' field.
+   * @param value the value to set.
+   */
+  public void setVehicleRegistrationNumber(java.lang.String value) {
+    this.vehicleRegistrationNumber = value;
+  }
+
+  /**
    * Creates a new QueueToken RecordBuilder.
    * @return A new QueueToken RecordBuilder
    */
@@ -251,6 +272,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.Long expireTime;
     private java.lang.String status;
     private java.lang.Long calledTime;
+    private java.lang.String vehicleRegistrationNumber;
 
     /** Creates a new Builder */
     private Builder() {
@@ -295,6 +317,10 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
         this.calledTime = data().deepCopy(fields()[7].schema(), other.calledTime);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[8].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -334,6 +360,10 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[7], other.calledTime)) {
         this.calledTime = data().deepCopy(fields()[7].schema(), other.calledTime);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[8].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -649,6 +679,45 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'vehicleRegistrationNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleRegistrationNumber() {
+      return vehicleRegistrationNumber;
+    }
+
+    /**
+      * Sets the value of the 'vehicleRegistrationNumber' field.
+      * @param value The value of 'vehicleRegistrationNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.QueueToken.Builder setVehicleRegistrationNumber(java.lang.String value) {
+      validate(fields()[8], value);
+      this.vehicleRegistrationNumber = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleRegistrationNumber' field has been set.
+      * @return True if the 'vehicleRegistrationNumber' field has been set, false otherwise.
+      */
+    public boolean hasVehicleRegistrationNumber() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleRegistrationNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.QueueToken.Builder clearVehicleRegistrationNumber() {
+      vehicleRegistrationNumber = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public QueueToken build() {
       try {
@@ -661,6 +730,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
         record.expireTime = fieldSetFlags()[5] ? this.expireTime : (java.lang.Long) defaultValue(fields()[5]);
         record.status = fieldSetFlags()[6] ? this.status : (java.lang.String) defaultValue(fields()[6]);
         record.calledTime = fieldSetFlags()[7] ? this.calledTime : (java.lang.Long) defaultValue(fields()[7]);
+        record.vehicleRegistrationNumber = fieldSetFlags()[8] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -59,7 +59,7 @@
         "null",
         "string"
       ],
-      "default":"requested"
+      "default":null
     },
     {
       "name": "calledTime",
@@ -69,6 +69,14 @@
       ],
       "logicalType": "timestamp-millis",
       "default": null
+    },
+    {
+      "name":"vehicleRegistrationNumber",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
     }
   ]
 }
