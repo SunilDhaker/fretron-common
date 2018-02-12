@@ -10,10 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Attributes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1430305073767253120L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]}]}");
+  private static final long serialVersionUID = -5971316817845655656L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String battery;
+  @Deprecated public java.lang.String alarm;
   @Deprecated public java.lang.String ip;
   @Deprecated public java.lang.Double distance;
   @Deprecated public java.lang.Double totalDistance;
@@ -28,12 +29,14 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   /**
    * All-args constructor.
    * @param battery The new value for battery
+   * @param alarm The new value for alarm
    * @param ip The new value for ip
    * @param distance The new value for distance
    * @param totalDistance The new value for totalDistance
    */
-  public Attributes(java.lang.String battery, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance) {
+  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance) {
     this.battery = battery;
+    this.alarm = alarm;
     this.ip = ip;
     this.distance = distance;
     this.totalDistance = totalDistance;
@@ -44,9 +47,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return battery;
-    case 1: return ip;
-    case 2: return distance;
-    case 3: return totalDistance;
+    case 1: return alarm;
+    case 2: return ip;
+    case 3: return distance;
+    case 4: return totalDistance;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -56,9 +60,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: battery = (java.lang.String)value$; break;
-    case 1: ip = (java.lang.String)value$; break;
-    case 2: distance = (java.lang.Double)value$; break;
-    case 3: totalDistance = (java.lang.Double)value$; break;
+    case 1: alarm = (java.lang.String)value$; break;
+    case 2: ip = (java.lang.String)value$; break;
+    case 3: distance = (java.lang.Double)value$; break;
+    case 4: totalDistance = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -77,6 +82,22 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
    */
   public void setBattery(java.lang.String value) {
     this.battery = value;
+  }
+
+  /**
+   * Gets the value of the 'alarm' field.
+   * @return The value of the 'alarm' field.
+   */
+  public java.lang.String getAlarm() {
+    return alarm;
+  }
+
+  /**
+   * Sets the value of the 'alarm' field.
+   * @param value the value to set.
+   */
+  public void setAlarm(java.lang.String value) {
+    this.alarm = value;
   }
 
   /**
@@ -160,6 +181,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     implements org.apache.avro.data.RecordBuilder<Attributes> {
 
     private java.lang.String battery;
+    private java.lang.String alarm;
     private java.lang.String ip;
     private java.lang.Double distance;
     private java.lang.Double totalDistance;
@@ -179,17 +201,21 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         this.battery = data().deepCopy(fields()[0].schema(), other.battery);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.ip)) {
-        this.ip = data().deepCopy(fields()[1].schema(), other.ip);
+      if (isValidValue(fields()[1], other.alarm)) {
+        this.alarm = data().deepCopy(fields()[1].schema(), other.alarm);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.distance)) {
-        this.distance = data().deepCopy(fields()[2].schema(), other.distance);
+      if (isValidValue(fields()[2], other.ip)) {
+        this.ip = data().deepCopy(fields()[2].schema(), other.ip);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.totalDistance)) {
-        this.totalDistance = data().deepCopy(fields()[3].schema(), other.totalDistance);
+      if (isValidValue(fields()[3], other.distance)) {
+        this.distance = data().deepCopy(fields()[3].schema(), other.distance);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[4].schema(), other.totalDistance);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -203,17 +229,21 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         this.battery = data().deepCopy(fields()[0].schema(), other.battery);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.ip)) {
-        this.ip = data().deepCopy(fields()[1].schema(), other.ip);
+      if (isValidValue(fields()[1], other.alarm)) {
+        this.alarm = data().deepCopy(fields()[1].schema(), other.alarm);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.distance)) {
-        this.distance = data().deepCopy(fields()[2].schema(), other.distance);
+      if (isValidValue(fields()[2], other.ip)) {
+        this.ip = data().deepCopy(fields()[2].schema(), other.ip);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.totalDistance)) {
-        this.totalDistance = data().deepCopy(fields()[3].schema(), other.totalDistance);
+      if (isValidValue(fields()[3], other.distance)) {
+        this.distance = data().deepCopy(fields()[3].schema(), other.distance);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[4].schema(), other.totalDistance);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -257,6 +287,45 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     }
 
     /**
+      * Gets the value of the 'alarm' field.
+      * @return The value.
+      */
+    public java.lang.String getAlarm() {
+      return alarm;
+    }
+
+    /**
+      * Sets the value of the 'alarm' field.
+      * @param value The value of 'alarm'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setAlarm(java.lang.String value) {
+      validate(fields()[1], value);
+      this.alarm = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'alarm' field has been set.
+      * @return True if the 'alarm' field has been set, false otherwise.
+      */
+    public boolean hasAlarm() {
+      return fieldSetFlags()[1];
+    }
+
+
+    /**
+      * Clears the value of the 'alarm' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearAlarm() {
+      alarm = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'ip' field.
       * @return The value.
       */
@@ -270,9 +339,9 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.Attributes.Builder setIp(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.ip = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -281,7 +350,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'ip' field has been set, false otherwise.
       */
     public boolean hasIp() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -291,7 +360,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.Attributes.Builder clearIp() {
       ip = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -309,9 +378,9 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.Attributes.Builder setDistance(java.lang.Double value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.distance = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -320,7 +389,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'distance' field has been set, false otherwise.
       */
     public boolean hasDistance() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -330,7 +399,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.Attributes.Builder clearDistance() {
       distance = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -348,9 +417,9 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.Attributes.Builder setTotalDistance(java.lang.Double value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.totalDistance = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -359,7 +428,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'totalDistance' field has been set, false otherwise.
       */
     public boolean hasTotalDistance() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -369,7 +438,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.Attributes.Builder clearTotalDistance() {
       totalDistance = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -378,9 +447,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       try {
         Attributes record = new Attributes();
         record.battery = fieldSetFlags()[0] ? this.battery : (java.lang.String) defaultValue(fields()[0]);
-        record.ip = fieldSetFlags()[1] ? this.ip : (java.lang.String) defaultValue(fields()[1]);
-        record.distance = fieldSetFlags()[2] ? this.distance : (java.lang.Double) defaultValue(fields()[2]);
-        record.totalDistance = fieldSetFlags()[3] ? this.totalDistance : (java.lang.Double) defaultValue(fields()[3]);
+        record.alarm = fieldSetFlags()[1] ? this.alarm : (java.lang.String) defaultValue(fields()[1]);
+        record.ip = fieldSetFlags()[2] ? this.ip : (java.lang.String) defaultValue(fields()[2]);
+        record.distance = fieldSetFlags()[3] ? this.distance : (java.lang.Double) defaultValue(fields()[3]);
+        record.totalDistance = fieldSetFlags()[4] ? this.totalDistance : (java.lang.Double) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

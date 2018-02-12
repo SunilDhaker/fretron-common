@@ -5,6 +5,9 @@ package com.fretron.Constant;
  */
 public class Constants {
 
+
+
+    public final static String KEY_KAFKA_METADATA_SERVICE_IP = "kafka.metadata.service.ip";
     public final static String KEY_VTS_UPDATE_TOPIC= "vts.update.topic";
     public final static String KEY_TRIP_LOG_RETENTION_TIMEPERIOD= "trip.log.retention.timeperiod";
     public final static String KEY_TRIP_LOG_CLEANUP_TIME= "trip.log.cleanup.time.period";
@@ -130,7 +133,7 @@ public class Constants {
     public final static  String KEY_DEVICE_IMEI_STORE="device.by.imei.store";
     public final static  String KEY_VEHICLE_UUID_STORE="vehicle.by.uuid.store";
     public final static  String KEY_VEHICLE_REGISTRATION_STORE="vehicle.by.registration.store";
-    public final static  String KEY_VEHICLE_IMEI_STORE="vehicle.by.imei.store";
+    public final static  String KEY_VEHICLE_IMEI_STORE="vehicle.by.imei";
 
     public final static  String KEY_APPLICATION_SERVER="application.server.config";
     public final static  String KEY_AUTO_OFFSET_RESET_CONFIG="auto.offset.reset.config";
@@ -435,12 +438,16 @@ public class Constants {
 
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
+    public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
+    public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
     public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STORE = "deviceDataByRemoteAddress.store";
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
+    public final static String KEY_PROTOCOL_HANDLER_APP_HOST = "protocol.handler.app.rest.host";
+    public final static String KEY_PROTOCOL_HANDLER_APP_PORT = "protocol.handler.app.rest.port";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
