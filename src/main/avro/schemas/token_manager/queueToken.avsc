@@ -136,7 +136,7 @@
       "default":null
     },
     {
-      "name":"OwnerNumber",
+      "name":"ownerNumber",
       "type":[
         "null",
         "string"

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class QueueToken extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6467617710092563364L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QueueToken\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"cancelTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tokenNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ownerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"brokerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expireTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"calledTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"brokerNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"OwnerNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastTrip\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LastTrip\",\"fields\":[{\"name\":\"consignor\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignee\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rate\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -3264242883920047671L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QueueToken\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"cancelTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tokenNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ownerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"brokerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expireTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"calledTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"brokerNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ownerNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastTrip\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LastTrip\",\"fields\":[{\"name\":\"consignor\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignee\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rate\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Long issueTime;
@@ -29,7 +29,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.String vehicleRegistrationNumber;
   @Deprecated public java.lang.String driverNumber;
   @Deprecated public java.lang.String brokerNumber;
-  @Deprecated public java.lang.String OwnerNumber;
+  @Deprecated public java.lang.String ownerNumber;
   @Deprecated public com.fretron.Model.LastTrip lastTrip;
 
   /**
@@ -57,10 +57,10 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
    * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
    * @param driverNumber The new value for driverNumber
    * @param brokerNumber The new value for brokerNumber
-   * @param OwnerNumber The new value for OwnerNumber
+   * @param ownerNumber The new value for ownerNumber
    * @param lastTrip The new value for lastTrip
    */
-  public QueueToken(java.lang.String uuid, java.lang.Long issueTime, java.lang.Long cancelTime, java.lang.String tokenNumber, java.lang.String organisationName, java.lang.String ownerName, java.lang.String driverName, java.lang.String brokerName, java.lang.String queueId, java.lang.String vehicleId, java.lang.Long expireTime, java.lang.String status, java.lang.Long calledTime, java.lang.String vehicleRegistrationNumber, java.lang.String driverNumber, java.lang.String brokerNumber, java.lang.String OwnerNumber, com.fretron.Model.LastTrip lastTrip) {
+  public QueueToken(java.lang.String uuid, java.lang.Long issueTime, java.lang.Long cancelTime, java.lang.String tokenNumber, java.lang.String organisationName, java.lang.String ownerName, java.lang.String driverName, java.lang.String brokerName, java.lang.String queueId, java.lang.String vehicleId, java.lang.Long expireTime, java.lang.String status, java.lang.Long calledTime, java.lang.String vehicleRegistrationNumber, java.lang.String driverNumber, java.lang.String brokerNumber, java.lang.String ownerNumber, com.fretron.Model.LastTrip lastTrip) {
     this.uuid = uuid;
     this.issueTime = issueTime;
     this.cancelTime = cancelTime;
@@ -77,7 +77,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     this.vehicleRegistrationNumber = vehicleRegistrationNumber;
     this.driverNumber = driverNumber;
     this.brokerNumber = brokerNumber;
-    this.OwnerNumber = OwnerNumber;
+    this.ownerNumber = ownerNumber;
     this.lastTrip = lastTrip;
   }
 
@@ -101,7 +101,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     case 13: return vehicleRegistrationNumber;
     case 14: return driverNumber;
     case 15: return brokerNumber;
-    case 16: return OwnerNumber;
+    case 16: return ownerNumber;
     case 17: return lastTrip;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -127,7 +127,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     case 13: vehicleRegistrationNumber = (java.lang.String)value$; break;
     case 14: driverNumber = (java.lang.String)value$; break;
     case 15: brokerNumber = (java.lang.String)value$; break;
-    case 16: OwnerNumber = (java.lang.String)value$; break;
+    case 16: ownerNumber = (java.lang.String)value$; break;
     case 17: lastTrip = (com.fretron.Model.LastTrip)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -390,19 +390,19 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
-   * Gets the value of the 'OwnerNumber' field.
-   * @return The value of the 'OwnerNumber' field.
+   * Gets the value of the 'ownerNumber' field.
+   * @return The value of the 'ownerNumber' field.
    */
   public java.lang.String getOwnerNumber() {
-    return OwnerNumber;
+    return ownerNumber;
   }
 
   /**
-   * Sets the value of the 'OwnerNumber' field.
+   * Sets the value of the 'ownerNumber' field.
    * @param value the value to set.
    */
   public void setOwnerNumber(java.lang.String value) {
-    this.OwnerNumber = value;
+    this.ownerNumber = value;
   }
 
   /**
@@ -469,7 +469,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String vehicleRegistrationNumber;
     private java.lang.String driverNumber;
     private java.lang.String brokerNumber;
-    private java.lang.String OwnerNumber;
+    private java.lang.String ownerNumber;
     private com.fretron.Model.LastTrip lastTrip;
     private com.fretron.Model.LastTrip.Builder lastTripBuilder;
 
@@ -548,8 +548,8 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
         this.brokerNumber = data().deepCopy(fields()[15].schema(), other.brokerNumber);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.OwnerNumber)) {
-        this.OwnerNumber = data().deepCopy(fields()[16].schema(), other.OwnerNumber);
+      if (isValidValue(fields()[16], other.ownerNumber)) {
+        this.ownerNumber = data().deepCopy(fields()[16].schema(), other.ownerNumber);
         fieldSetFlags()[16] = true;
       }
       if (isValidValue(fields()[17], other.lastTrip)) {
@@ -631,8 +631,8 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
         this.brokerNumber = data().deepCopy(fields()[15].schema(), other.brokerNumber);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.OwnerNumber)) {
-        this.OwnerNumber = data().deepCopy(fields()[16].schema(), other.OwnerNumber);
+      if (isValidValue(fields()[16], other.ownerNumber)) {
+        this.ownerNumber = data().deepCopy(fields()[16].schema(), other.ownerNumber);
         fieldSetFlags()[16] = true;
       }
       if (isValidValue(fields()[17], other.lastTrip)) {
@@ -1267,28 +1267,28 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
     }
 
     /**
-      * Gets the value of the 'OwnerNumber' field.
+      * Gets the value of the 'ownerNumber' field.
       * @return The value.
       */
     public java.lang.String getOwnerNumber() {
-      return OwnerNumber;
+      return ownerNumber;
     }
 
     /**
-      * Sets the value of the 'OwnerNumber' field.
-      * @param value The value of 'OwnerNumber'.
+      * Sets the value of the 'ownerNumber' field.
+      * @param value The value of 'ownerNumber'.
       * @return This builder.
       */
     public com.fretron.Model.QueueToken.Builder setOwnerNumber(java.lang.String value) {
       validate(fields()[16], value);
-      this.OwnerNumber = value;
+      this.ownerNumber = value;
       fieldSetFlags()[16] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'OwnerNumber' field has been set.
-      * @return True if the 'OwnerNumber' field has been set, false otherwise.
+      * Checks whether the 'ownerNumber' field has been set.
+      * @return True if the 'ownerNumber' field has been set, false otherwise.
       */
     public boolean hasOwnerNumber() {
       return fieldSetFlags()[16];
@@ -1296,11 +1296,11 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
 
 
     /**
-      * Clears the value of the 'OwnerNumber' field.
+      * Clears the value of the 'ownerNumber' field.
       * @return This builder.
       */
     public com.fretron.Model.QueueToken.Builder clearOwnerNumber() {
-      OwnerNumber = null;
+      ownerNumber = null;
       fieldSetFlags()[16] = false;
       return this;
     }
@@ -1399,7 +1399,7 @@ public class QueueToken extends org.apache.avro.specific.SpecificRecordBase impl
         record.vehicleRegistrationNumber = fieldSetFlags()[13] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[13]);
         record.driverNumber = fieldSetFlags()[14] ? this.driverNumber : (java.lang.String) defaultValue(fields()[14]);
         record.brokerNumber = fieldSetFlags()[15] ? this.brokerNumber : (java.lang.String) defaultValue(fields()[15]);
-        record.OwnerNumber = fieldSetFlags()[16] ? this.OwnerNumber : (java.lang.String) defaultValue(fields()[16]);
+        record.ownerNumber = fieldSetFlags()[16] ? this.ownerNumber : (java.lang.String) defaultValue(fields()[16]);
         if (lastTripBuilder != null) {
           record.lastTrip = this.lastTripBuilder.build();
         } else {
