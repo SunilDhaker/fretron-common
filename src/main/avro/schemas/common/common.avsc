@@ -98,6 +98,11 @@
              "name": "valueType",
              "type": ["null","string"],
              "default":null
+         },
+         {
+             "name": "generatedBy",
+             "type": ["null","string"],
+             "default":null
          }
        ]
      },

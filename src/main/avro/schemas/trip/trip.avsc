@@ -410,7 +410,25 @@
              					}
              				],
              				"default": null
-             			}
+             			},
+
+             {
+                    "name": "updatedBy",
+                    "type": [
+                        "null",
+                        "string"
+                    ],
+                    "default": null
+             },
+             {
+                    "name": "updatedAt",
+                    "type": [
+                        "null",
+                        "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+                    "default": null
+             }
 		]
 	},
 
