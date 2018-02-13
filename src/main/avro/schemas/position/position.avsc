@@ -104,6 +104,11 @@
         ]
       },
       {
+        "name": "decoder",
+        "type": [ "null", "string"],
+        "default" : null
+      },
+      {
         "name": "outdated",
         "type": "boolean"
       },
