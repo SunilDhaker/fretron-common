@@ -50,6 +50,14 @@
         "string"
       ],
       "default":null
+    },
+    {
+      "name":"freightLocation",
+      "type":[
+        "null",
+        "com.fretron.Model.FreightLocation"
+      ],
+      "default":null
     }
   ]
 }
