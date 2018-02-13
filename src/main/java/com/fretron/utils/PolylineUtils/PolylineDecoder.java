@@ -234,7 +234,7 @@ public class PolylineDecoder {
 			int dlng = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
 			lng += dlng;
 
-			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d , 0l ,"","" , null , null);
+			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d ,"" , 0l ,"","" , null , null);
 			track.add(p);
 		}
 		return track;
@@ -290,7 +290,7 @@ public class PolylineDecoder {
 
 			long dtime =  ((lresult & 1) != 0 ? ~(lresult >> 1) : (lresult >> 1));
 			time += dtime;
-			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d , time ,"","" , null , null);
+			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d,"" , time ,"","" , null , null);
 			track.add(p);
 		}
 		return track;
