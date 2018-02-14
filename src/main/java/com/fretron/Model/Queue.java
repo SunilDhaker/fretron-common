@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Queue extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5507774983965178190L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Queue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isGPSMandatory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -7277998007340872288L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Queue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isGPSMandatory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -19,6 +19,7 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String description;
   @Deprecated public java.lang.String status;
+  @Deprecated public com.fretron.Model.FreightLocation freightLocation;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
    * @param orgId The new value for orgId
    * @param description The new value for description
    * @param status The new value for status
+   * @param freightLocation The new value for freightLocation
    */
-  public Queue(java.lang.String uuid, java.lang.String name, java.lang.String isGPSMandatory, java.lang.String orgId, java.lang.String description, java.lang.String status) {
+  public Queue(java.lang.String uuid, java.lang.String name, java.lang.String isGPSMandatory, java.lang.String orgId, java.lang.String description, java.lang.String status, com.fretron.Model.FreightLocation freightLocation) {
     this.uuid = uuid;
     this.name = name;
     this.isGPSMandatory = isGPSMandatory;
     this.orgId = orgId;
     this.description = description;
     this.status = status;
+    this.freightLocation = freightLocation;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     case 3: return orgId;
     case 4: return description;
     case 5: return status;
+    case 6: return freightLocation;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     case 3: orgId = (java.lang.String)value$; break;
     case 4: description = (java.lang.String)value$; break;
     case 5: status = (java.lang.String)value$; break;
+    case 6: freightLocation = (com.fretron.Model.FreightLocation)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
+   * Gets the value of the 'freightLocation' field.
+   * @return The value of the 'freightLocation' field.
+   */
+  public com.fretron.Model.FreightLocation getFreightLocation() {
+    return freightLocation;
+  }
+
+  /**
+   * Sets the value of the 'freightLocation' field.
+   * @param value the value to set.
+   */
+  public void setFreightLocation(com.fretron.Model.FreightLocation value) {
+    this.freightLocation = value;
+  }
+
+  /**
    * Creates a new Queue RecordBuilder.
    * @return A new Queue RecordBuilder
    */
@@ -207,6 +228,8 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
     private java.lang.String orgId;
     private java.lang.String description;
     private java.lang.String status;
+    private com.fretron.Model.FreightLocation freightLocation;
+    private com.fretron.Model.FreightLocation.Builder freightLocationBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +266,13 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
         this.status = data().deepCopy(fields()[5].schema(), other.status);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.freightLocation)) {
+        this.freightLocation = data().deepCopy(fields()[6].schema(), other.freightLocation);
+        fieldSetFlags()[6] = true;
+      }
+      if (other.hasFreightLocationBuilder()) {
+        this.freightLocationBuilder = com.fretron.Model.FreightLocation.newBuilder(other.getFreightLocationBuilder());
+      }
     }
 
     /**
@@ -275,6 +305,11 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
         this.status = data().deepCopy(fields()[5].schema(), other.status);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.freightLocation)) {
+        this.freightLocation = data().deepCopy(fields()[6].schema(), other.freightLocation);
+        fieldSetFlags()[6] = true;
+      }
+      this.freightLocationBuilder = null;
     }
 
     /**
@@ -511,6 +546,80 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
       return this;
     }
 
+    /**
+      * Gets the value of the 'freightLocation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.FreightLocation getFreightLocation() {
+      return freightLocation;
+    }
+
+    /**
+      * Sets the value of the 'freightLocation' field.
+      * @param value The value of 'freightLocation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Queue.Builder setFreightLocation(com.fretron.Model.FreightLocation value) {
+      validate(fields()[6], value);
+      this.freightLocationBuilder = null;
+      this.freightLocation = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'freightLocation' field has been set.
+      * @return True if the 'freightLocation' field has been set, false otherwise.
+      */
+    public boolean hasFreightLocation() {
+      return fieldSetFlags()[6];
+    }
+
+    /**
+     * Gets the Builder instance for the 'freightLocation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.FreightLocation.Builder getFreightLocationBuilder() {
+      if (freightLocationBuilder == null) {
+        if (hasFreightLocation()) {
+          setFreightLocationBuilder(com.fretron.Model.FreightLocation.newBuilder(freightLocation));
+        } else {
+          setFreightLocationBuilder(com.fretron.Model.FreightLocation.newBuilder());
+        }
+      }
+      return freightLocationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'freightLocation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Queue.Builder setFreightLocationBuilder(com.fretron.Model.FreightLocation.Builder value) {
+      clearFreightLocation();
+      freightLocationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'freightLocation' field has an active Builder instance
+     * @return True if the 'freightLocation' field has an active Builder instance
+     */
+    public boolean hasFreightLocationBuilder() {
+      return freightLocationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'freightLocation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Queue.Builder clearFreightLocation() {
+      freightLocation = null;
+      freightLocationBuilder = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Queue build() {
       try {
@@ -521,6 +630,11 @@ public class Queue extends org.apache.avro.specific.SpecificRecordBase implement
         record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
         record.description = fieldSetFlags()[4] ? this.description : (java.lang.String) defaultValue(fields()[4]);
         record.status = fieldSetFlags()[5] ? this.status : (java.lang.String) defaultValue(fields()[5]);
+        if (freightLocationBuilder != null) {
+          record.freightLocation = this.freightLocationBuilder.build();
+        } else {
+          record.freightLocation = fieldSetFlags()[6] ? this.freightLocation : (com.fretron.Model.FreightLocation) defaultValue(fields()[6]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
