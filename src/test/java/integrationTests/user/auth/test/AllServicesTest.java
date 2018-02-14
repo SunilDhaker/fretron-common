@@ -40,9 +40,10 @@ public class AllServicesTest {
         httpClient = new DefaultHttpClient();
     }
     @Test
-    public void allServicesTest() {
+    public boolean allServicesTest() {
         loginTest(mobileNummber);
         Assert.assertTrue(flag);
+        return flag;
     }
     private void loginTest(String mobNo){
         httpClient = new DefaultHttpClient();

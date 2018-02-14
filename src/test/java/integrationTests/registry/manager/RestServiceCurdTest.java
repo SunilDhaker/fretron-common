@@ -16,6 +16,8 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -74,13 +76,14 @@ public class RestServiceCurdTest {
     //GET URIS
     final String getDriverUrl =  baseUrl + "/registry/driver/getList";
     final String getDriverWithUuidUrl =  baseUrl + "/registry/driver/get/";
-    final String jsondataPath="/home/umesh/fretron-registry-manager/src/test/java/com/fretron/";
+    String jsondataPath="fretron-common/src/test/java/integrationTests/registry/manager/";
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     boolean shouldProceed =  true;
-    String mobileNumer = "98"+randomAlphaNumeric(8);
+    public String mobileNumer = "98"+randomAlphaNumeric(8);
     String updatedVehicleType = "Taurus 15MT";
     String manufacturerName = randomAlphaNumeric(6);
+
 
     StringEntity stringEntity = null;
 
@@ -99,10 +102,17 @@ public class RestServiceCurdTest {
     ObjectMapper mapper = new ObjectMapper();
 
     @Test
-    public void startTest() throws InterruptedException {
+    public boolean startTest() throws InterruptedException {
+
+
+        Path currentRelativePath = Paths.get(jsondataPath);
+        jsondataPath  = currentRelativePath.toAbsolutePath().toString();
+        jsondataPath = jsondataPath+"/";
+        System.out.println("Current relative path is: " + jsondataPath);
         signUpAndLoginUser();
 
         assert shouldProceed;
+        return shouldProceed;
     }
 
     public static String randomAlphaNumeric(int count) {
@@ -120,11 +130,11 @@ public class RestServiceCurdTest {
 
         String userData = "{\n" +
                 "\t\"loginType\":\"fretron\",\n" +
-                "\t\"mobileNumber\":\"8510068475\"\n" +
+                "\t\"mobileNumber\":\"999999999\"\n" +
                 "}\n";
 
         JSONObject userObject = new JSONObject(userData);
-        userObject.put("mobileNumber",userMobile);
+        userObject.put("mobileNumber","9999999999");
 
         HttpEntity responseEntity = HttpRequestHepler.makePostRequest(signInUrl,userObject,null);
 
@@ -155,7 +165,7 @@ public class RestServiceCurdTest {
                     "}";
 
             JSONObject signUpObject = new JSONObject(signUpdata);
-            signUpObject.put("mobileNumber",userMobile);
+            signUpObject.put("mobileNumber","9999999999");
             signUpObject.put("email",email);
             signUpObject.put("otp",otp);
 
@@ -165,6 +175,10 @@ public class RestServiceCurdTest {
 
                     String responseString = EntityUtils.toString(responseEntity2);
                     JSONObject customerResponse = new JSONObject(responseString);
+
+
+
+
                     firstToken = customerResponse.getString("token");
 
                 } catch (IOException e) {
@@ -190,6 +204,7 @@ public class RestServiceCurdTest {
         Organisation[] orgArr = null;
         ArrayList<Organisation> orgArrList = new ArrayList<>() ;
         try {
+
              orgArr = mapper.readValue(new File(jsondataPath+"orgdata.json"), Organisation[].class);
              orgArrList = new ArrayList(Arrays.asList(orgArr));
 

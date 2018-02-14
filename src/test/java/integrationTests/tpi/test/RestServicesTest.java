@@ -17,6 +17,7 @@ public class RestServicesTest {
     String email =  randomAlphaNumeric(8)+"@gmail.com";
     String otp = null;
     final String baseUrl = "http://192.168.0.153";
+   public boolean isAllTestPass = false;
 
     final String signInUrl = baseUrl + "/user/login/forany";
     final String signUpUrl = baseUrl + "/user/create";
@@ -591,6 +592,8 @@ public class RestServicesTest {
         if (shouldProceed){
 
             System.out.println("All is Well :-D ");
+
+             isAllTestPass = true;
 
         }
 

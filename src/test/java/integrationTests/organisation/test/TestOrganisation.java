@@ -13,13 +13,23 @@ import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.IOException;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class TestOrganisation {
+
+    String mobile;
+
+    public TestOrganisation(String mobile){
+        this.mobile = mobile;
+        System.out.println(mobile);
+    }
 
     private final String baseIP = "http://192.168.0.153";
 
@@ -35,7 +45,7 @@ public class TestOrganisation {
    private final String createGroupPath = baseIP + "/group/create";
    private final String shareGroupPath = baseIP + "/group/share";
    private final String deleteGroupPath = baseIP + "/group/delete";
-   private final String removeSharedGroupPath = baseIP + "group/remove/shared";
+   private final String removeSharedGroupPath = baseIP + "/group/remove/shared";
 
    private final String getOrgPath = baseIP + "/organisation/organizations";
    private String getOrgFromOrgIdPath = baseIP+"/organisation/getbyid/";
@@ -58,6 +68,7 @@ public class TestOrganisation {
    private String orgId_1 = null;
 
    private String orgId_2 = null;
+    private String orgId_3 = null;
 
    public String addedBy = null;
    public String groupId = null;
@@ -79,7 +90,7 @@ public class TestOrganisation {
    }
 
     @Test
-    public void startTest() throws IOException, InterruptedException {
+    public boolean startTest() throws IOException, InterruptedException {
 
 //create org, login user, add userOrgacl, get users
 //        login();
@@ -137,6 +148,7 @@ public class TestOrganisation {
 //        if(authenticateUser())
 //             getOrgDetails();
         assert assertThat;
+        return assertThat;
     }
 
     private boolean login() {
@@ -157,9 +169,8 @@ public class TestOrganisation {
                 String responseString = EntityUtils.toString(entity);
                 JSONObject jsonObject = new JSONObject(responseString);
                 if (jsonObject.has("otp"))
-
+                   System.out.println("login successfully");
                     otp = jsonObject.getString("otp");
-                System.out.println("login");
                 assertThat = true;
             } else {
                System.out.println("login failed");
@@ -195,12 +206,12 @@ public class TestOrganisation {
            if(successStatus==200) {
                if (json.has("token"))
                    token = json.getString("token");
-               System.out.println("authenticate");
                assertThat = true;
                return true;
            }
        }
        System.out.println("authentication failed");
+       assertThat = false;
        return false;
    }
 
@@ -220,13 +231,19 @@ public class TestOrganisation {
        json.put("type","FLEET_OWNER");
 
        JSONObject json1 = new JSONObject();
-       json.put("orgId","TEST002_"+tStamp);
-       json.put("organisationName","TESTORG_2_"+tStamp);
-       json.put("type","FLEET_OWNER");
+       json1.put("orgId","TEST002_"+tStamp);
+       json1.put("organisationName","TESTORG_2_"+tStamp);
+       json1.put("type","FLEET_OWNER");
+
+       JSONObject json2 = new JSONObject();
+       json2.put("orgId","TEST003_"+tStamp);
+       json2.put("organisationName","TESTORG_3_"+tStamp);
+       json2.put("type","FLEET_OWNER");
 
        JSONArray array = new JSONArray();
        array.put(json);
        array.put(json1);
+       array.put(json2);
 
        for(int i=0; i<array.length(); i++) {
            HttpClient client = new DefaultHttpClient();
@@ -246,13 +263,20 @@ public class TestOrganisation {
 
                if (jsonObject.getInt("status") == 200) {
                    if (jsonObject.has("organisation.created")) {
-                       System.out.println("org create");
                        if (orgId_1 == null){
                            orgId_1 = jsonObject.getJSONObject("organisation.created").getString("uuid");
                            addedBy = jsonObject.getJSONObject("organisation.created").getString("addedBy");
+                           System.out.println("organisation created -- > "+orgId_1);
                    }
-                       else
+                       else if(orgId_2==null){
                            orgId_2 = jsonObject.getJSONObject("organisation.created").getString("uuid");
+                           System.out.println("organisation created -- > "+orgId_2);
+                       }
+
+                       else {
+                           orgId_3 = jsonObject.getJSONObject("organisation.created").getString("uuid");
+                           System.out.println("organisation created -- > "+orgId_3);
+                       }
 
                        assertThat = true;
                    }
@@ -264,7 +288,13 @@ public class TestOrganisation {
                }
            }
        }
-        return false;
+      if(orgId_1 != null && orgId_2!=null) {
+           assertThat = true;
+          return true;
+      }
+
+       assertThat = false;
+       return false;
    }
 
    private boolean getMembers() throws IOException, InterruptedException {
@@ -283,8 +313,8 @@ public class TestOrganisation {
            JSONArray jsonArray = new JSONArray(str);
 
            if(jsonArray.length()>0) {
+               System.out.println("members obtained");
                assertThat = true;
-               System.out.println("get member");
                return true;
            }
        } else {
@@ -321,7 +351,7 @@ public class TestOrganisation {
             JSONObject jsonObject1 = new JSONObject(str);
 
             if(jsonObject1.getInt("status")==200) {
-                System.out.println("add user acl");
+                System.out.println("user acl success");
                 assertThat = true;
                 return true;
             }
@@ -364,7 +394,8 @@ public class TestOrganisation {
             if(jsonObject1.getInt("status")==200) {
                 if(jsonObject1.has("organisationGroup"))
                     groupId = jsonObject1.getJSONObject("organisationGroup").getString("uuid");
-                System.out.println("group created");
+
+                System.out.println("group created --> " + groupId);
                 assertThat = true;
                 return true;
             }
@@ -400,7 +431,8 @@ public class TestOrganisation {
             JSONObject jsonObject1 = new JSONObject(str);
 
             if(jsonObject1.getInt("status")==200) {
-                System.out.println("group shared");
+
+                System.out.println("group shared with --> " +orgId_2);
                 assertThat = true;
                 return true;
             }
@@ -492,7 +524,7 @@ public class TestOrganisation {
            if(jsonObject1.has("list")) {
               JSONArray jsonArray = jsonObject1.getJSONArray("list");
               if(jsonArray.length()>0) {
-                  System.out.println("get detail");
+                  System.out.println("details of org obtained --> " + orgId_1);
                   assertThat = true;
                   return true;
               }
@@ -522,7 +554,7 @@ public class TestOrganisation {
            JSONObject jsonObject = new JSONObject(json);
 
            if( jsonObject.has("list")) {
-               System.out.println("get group");
+               System.out.println("group list obtained");
                assertThat = true;
                return true;
            }
@@ -564,9 +596,11 @@ public class TestOrganisation {
            JSONObject jsonObject1 = new JSONObject(json);
 
            if(jsonObject1.has("status")) {
-               System.out.println("create vehicle");
                vehicleId = jsonObject1.getString("vehicleId");
+               System.out.println("vehicle created --> " +vehicleId);
                assertThat = true;
+
+               return true;
            }
        }
        System.out.println("failed to create vehicle");
@@ -596,10 +630,10 @@ public class TestOrganisation {
        Thread.sleep(1000);
 
        if(response.getStatusLine().getStatusCode()==200) {
-           System.out.println("add vehicle");
            String json = EntityUtils.toString(response.getEntity());
 
            if(new JSONObject(json).getInt("status")==200) {
+               System.out.println("vehicle added to go --> "+groupId);
                assertThat = true;
                return true;
            }
@@ -629,7 +663,6 @@ public class TestOrganisation {
            JSONObject jsonObject = new JSONObject(json);
 
            if(jsonObject.getInt("status")==200) {
-               System.out.println("switch org");
               tokens.add(jsonObject.getString("token"));
                assertThat = true;
                return true;
@@ -660,8 +693,8 @@ public class TestOrganisation {
        JSONArray array = new JSONArray(json);
 
        if(array.length()==1) {
+           System.out.println("vehicle list obtained of sw org");
            assertThat = true;
-           System.out.println("vehicle list");
 
            return true;
          }
@@ -675,6 +708,8 @@ public class TestOrganisation {
    private boolean deleteOrg() throws IOException, InterruptedException {
        Thread.sleep(1000);
        JSONObject json = new JSONObject();
+       json.put("orgId","TEST001");
+       json.put("type","FLEET_OWNER");
        json.put("uuid",orgId_2);
 
        HttpClient client = new DefaultHttpClient();
@@ -708,8 +743,10 @@ public class TestOrganisation {
    private boolean updateOrg() throws IOException, InterruptedException {
        Thread.sleep(1000);
        JSONObject json = new JSONObject();
+       json.put("orgId","TEST001");
+       json.put("type","FLEET_OWNER");
        json.put("uuid",orgId_2);
-       json.put("organisationName","updatedName_"+timeStamp);
+
        HttpClient client = new DefaultHttpClient();
        HttpPost httpPost = new HttpPost(updateOrgpath);
 
@@ -724,13 +761,13 @@ public class TestOrganisation {
 
            JSONObject jsonObject = new JSONObject(str);
 
-           if(jsonObject.getInt("status")==200)     {
-                  System.out.println("organisation updated");
+           if(jsonObject.getInt("status")==400 && jsonObject.getString("error").equalsIgnoreCase("organisation id already associated with other organisation"))     {
+                  System.out.println("organisation update api worked");
                    assertThat = true;
                    return true;
                }
             else {
-               System.out.println("organisation deletion failed");
+               System.out.println("organisation update failed");
                assertThat = false;
            }
        }
