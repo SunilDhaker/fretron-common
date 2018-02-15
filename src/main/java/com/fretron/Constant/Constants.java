@@ -439,6 +439,7 @@ public class Constants {
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
     public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
+    public final static String KEY_LOGIN_EVENT_TOPIC = "login.event.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
     public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";

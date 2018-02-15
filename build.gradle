@@ -32,6 +32,7 @@ dependencies {
     compile "org.json:json:20170516"
     compile "io.jsonwebtoken:jjwt:0.6.0"
     compile "org.mongodb:mongo-java-driver:3.5.0"
+    compile group: 'junit', name: 'junit', version:'4.12'
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1'
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1', classifier:'tests'
 //    testCompile group: 'org.apache.kafka', name: 'kafka_2.11', version:'0.10.2.1'
@@ -82,6 +83,7 @@ dependencies {
     compile group: 'com.ning', name: 'async-http-client', version:'1.9.40'
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.1.1'
     compile group: 'org.mockito', name: 'mockito-core', version:'2.7.14'
+    compile group: 'junit', name: 'junit', version:'4.12'
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1'
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1', classifier:'tests'
 //    testCompile group: 'org.apache.kafka', name: 'kafka_2.11', version:'0.10.2.1'

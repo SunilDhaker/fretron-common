@@ -23,7 +23,7 @@
       {
        "name":"isExpire",
        "type":["null","boolean"],
-       "default":false
+       "default": null
       }
     ]
   }
