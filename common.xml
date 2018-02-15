@@ -59,6 +59,8 @@
     <entry key="rawpositions.topic">rawPositions</entry>
     <entry key="protocol.events.topic">protocolEvents</entry>
     <entry key="device.session.topic">deviceSession</entry>
+    <entry key="login.event.topic">loginEvents</entry>
+
 
 
 
