@@ -20,7 +20,7 @@
       "default":null
     },
     {
-      "name":"vlrNumber",
+      "name":"uuid",
       "type":[
         "null",
         "string"
