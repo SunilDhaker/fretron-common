@@ -12,6 +12,14 @@
       "default":null
     },
     {
+      "name":"vlrNumber",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
       "name":"consignorName",
       "type":[
         "null",
