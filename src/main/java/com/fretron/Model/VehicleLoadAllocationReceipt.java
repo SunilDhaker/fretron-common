@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1159908894750177661L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleLoadAllocationReceipt\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"tokenUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignorName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gatedInTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = 289232285919883781L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleLoadAllocationReceipt\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"tokenUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignorName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gatedInTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String tokenUuid;
   @Deprecated public java.lang.String consignorName;
   @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.Long gatedInTime;
 
   /**
@@ -30,12 +31,14 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
    * @param tokenUuid The new value for tokenUuid
    * @param consignorName The new value for consignorName
    * @param uuid The new value for uuid
+   * @param orgId The new value for orgId
    * @param gatedInTime The new value for gatedInTime
    */
-  public VehicleLoadAllocationReceipt(java.lang.String tokenUuid, java.lang.String consignorName, java.lang.String uuid, java.lang.Long gatedInTime) {
+  public VehicleLoadAllocationReceipt(java.lang.String tokenUuid, java.lang.String consignorName, java.lang.String uuid, java.lang.String orgId, java.lang.Long gatedInTime) {
     this.tokenUuid = tokenUuid;
     this.consignorName = consignorName;
     this.uuid = uuid;
+    this.orgId = orgId;
     this.gatedInTime = gatedInTime;
   }
 
@@ -46,7 +49,8 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
     case 0: return tokenUuid;
     case 1: return consignorName;
     case 2: return uuid;
-    case 3: return gatedInTime;
+    case 3: return orgId;
+    case 4: return gatedInTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -58,7 +62,8 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
     case 0: tokenUuid = (java.lang.String)value$; break;
     case 1: consignorName = (java.lang.String)value$; break;
     case 2: uuid = (java.lang.String)value$; break;
-    case 3: gatedInTime = (java.lang.Long)value$; break;
+    case 3: orgId = (java.lang.String)value$; break;
+    case 4: gatedInTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -112,6 +117,22 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
   }
 
   /**
+   * Gets the value of the 'orgId' field.
+   * @return The value of the 'orgId' field.
+   */
+  public java.lang.String getOrgId() {
+    return orgId;
+  }
+
+  /**
+   * Sets the value of the 'orgId' field.
+   * @param value the value to set.
+   */
+  public void setOrgId(java.lang.String value) {
+    this.orgId = value;
+  }
+
+  /**
    * Gets the value of the 'gatedInTime' field.
    * @return The value of the 'gatedInTime' field.
    */
@@ -162,6 +183,7 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
     private java.lang.String tokenUuid;
     private java.lang.String consignorName;
     private java.lang.String uuid;
+    private java.lang.String orgId;
     private java.lang.Long gatedInTime;
 
     /** Creates a new Builder */
@@ -187,9 +209,13 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
         this.uuid = data().deepCopy(fields()[2].schema(), other.uuid);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.gatedInTime)) {
-        this.gatedInTime = data().deepCopy(fields()[3].schema(), other.gatedInTime);
+      if (isValidValue(fields()[3], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.gatedInTime)) {
+        this.gatedInTime = data().deepCopy(fields()[4].schema(), other.gatedInTime);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -211,9 +237,13 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
         this.uuid = data().deepCopy(fields()[2].schema(), other.uuid);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.gatedInTime)) {
-        this.gatedInTime = data().deepCopy(fields()[3].schema(), other.gatedInTime);
+      if (isValidValue(fields()[3], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.gatedInTime)) {
+        this.gatedInTime = data().deepCopy(fields()[4].schema(), other.gatedInTime);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -335,6 +365,45 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
     }
 
     /**
+      * Gets the value of the 'orgId' field.
+      * @return The value.
+      */
+    public java.lang.String getOrgId() {
+      return orgId;
+    }
+
+    /**
+      * Sets the value of the 'orgId' field.
+      * @param value The value of 'orgId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleLoadAllocationReceipt.Builder setOrgId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.orgId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'orgId' field has been set.
+      * @return True if the 'orgId' field has been set, false otherwise.
+      */
+    public boolean hasOrgId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'orgId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleLoadAllocationReceipt.Builder clearOrgId() {
+      orgId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'gatedInTime' field.
       * @return The value.
       */
@@ -348,9 +417,9 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadAllocationReceipt.Builder setGatedInTime(java.lang.Long value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.gatedInTime = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -359,7 +428,7 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
       * @return True if the 'gatedInTime' field has been set, false otherwise.
       */
     public boolean hasGatedInTime() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -369,7 +438,7 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
       */
     public com.fretron.Model.VehicleLoadAllocationReceipt.Builder clearGatedInTime() {
       gatedInTime = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -380,7 +449,8 @@ public class VehicleLoadAllocationReceipt extends org.apache.avro.specific.Speci
         record.tokenUuid = fieldSetFlags()[0] ? this.tokenUuid : (java.lang.String) defaultValue(fields()[0]);
         record.consignorName = fieldSetFlags()[1] ? this.consignorName : (java.lang.String) defaultValue(fields()[1]);
         record.uuid = fieldSetFlags()[2] ? this.uuid : (java.lang.String) defaultValue(fields()[2]);
-        record.gatedInTime = fieldSetFlags()[3] ? this.gatedInTime : (java.lang.Long) defaultValue(fields()[3]);
+        record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
+        record.gatedInTime = fieldSetFlags()[4] ? this.gatedInTime : (java.lang.Long) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
