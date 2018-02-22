@@ -159,6 +159,14 @@
           ],
           "logicalType": "timestamp-millis",
           "default": null
-        }
+        },
+        {
+              "name": "orgId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
   ]
 }
