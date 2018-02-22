@@ -44,6 +44,9 @@ public class Constants {
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
+    public final static  String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
+    public final static  String MAXIMUM_CONSIERABLE_DIST = "maximum.considerable.distance";
+    public final static  String MINIMUM_TIME_DIFF = "minimum.time.difference";
 
 
 
@@ -305,6 +308,9 @@ public class Constants {
 
     public static final String TRIPTEMP_APP_IP = "triptemplate.manager.restservice.ip";
     public static final String TRIPTEMP_APP_PORT = "triptemplate.manager.restservice.port";
+
+    public static final String UTURN_PREDICTOR_APP_IP = "uturn.detector.restservice.ip";
+    public static final String UTURN_PREDICTOR_APP_PORT = "uturn.detector.restservice.port";
 
     public static final String USER_APP_IP = "user.manager.restservice.ip";
     public static final String USER_APP_PORT = "user.manager.restservice.port";
