@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5626465357540188626L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ProtocolEvent\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"data\",\"type\":[\"null\",\"bytes\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null}]}");
+  private static final long serialVersionUID = -7907331258333315020L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ProtocolEvent\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"data\",\"type\":[\"null\",\"bytes\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
   @Deprecated public java.nio.ByteBuffer data;
   @Deprecated public java.lang.Long time;
+  @Deprecated public java.lang.String protocol;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
    * @param type The new value for type
    * @param data The new value for data
    * @param time The new value for time
+   * @param protocol The new value for protocol
    */
-  public ProtocolEvent(java.lang.String type, java.nio.ByteBuffer data, java.lang.Long time) {
+  public ProtocolEvent(java.lang.String type, java.nio.ByteBuffer data, java.lang.Long time, java.lang.String protocol) {
     this.type = type;
     this.data = data;
     this.time = time;
+    this.protocol = protocol;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
     case 0: return type;
     case 1: return data;
     case 2: return time;
+    case 3: return protocol;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
     case 0: type = (java.lang.String)value$; break;
     case 1: data = (java.nio.ByteBuffer)value$; break;
     case 2: time = (java.lang.Long)value$; break;
+    case 3: protocol = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'protocol' field.
+   * @return The value of the 'protocol' field.
+   */
+  public java.lang.String getProtocol() {
+    return protocol;
+  }
+
+  /**
+   * Sets the value of the 'protocol' field.
+   * @param value the value to set.
+   */
+  public void setProtocol(java.lang.String value) {
+    this.protocol = value;
+  }
+
+  /**
    * Creates a new ProtocolEvent RecordBuilder.
    * @return A new ProtocolEvent RecordBuilder
    */
@@ -141,6 +162,7 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String type;
     private java.nio.ByteBuffer data;
     private java.lang.Long time;
+    private java.lang.String protocol;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
         this.time = data().deepCopy(fields()[2].schema(), other.time);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.protocol)) {
+        this.protocol = data().deepCopy(fields()[3].schema(), other.protocol);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[2], other.time)) {
         this.time = data().deepCopy(fields()[2].schema(), other.time);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.protocol)) {
+        this.protocol = data().deepCopy(fields()[3].schema(), other.protocol);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'protocol' field.
+      * @return The value.
+      */
+    public java.lang.String getProtocol() {
+      return protocol;
+    }
+
+    /**
+      * Sets the value of the 'protocol' field.
+      * @param value The value of 'protocol'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ProtocolEvent.Builder setProtocol(java.lang.String value) {
+      validate(fields()[3], value);
+      this.protocol = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'protocol' field has been set.
+      * @return True if the 'protocol' field has been set, false otherwise.
+      */
+    public boolean hasProtocol() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'protocol' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ProtocolEvent.Builder clearProtocol() {
+      protocol = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public ProtocolEvent build() {
       try {
@@ -311,6 +380,7 @@ public class ProtocolEvent extends org.apache.avro.specific.SpecificRecordBase i
         record.type = fieldSetFlags()[0] ? this.type : (java.lang.String) defaultValue(fields()[0]);
         record.data = fieldSetFlags()[1] ? this.data : (java.nio.ByteBuffer) defaultValue(fields()[1]);
         record.time = fieldSetFlags()[2] ? this.time : (java.lang.Long) defaultValue(fields()[2]);
+        record.protocol = fieldSetFlags()[3] ? this.protocol : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

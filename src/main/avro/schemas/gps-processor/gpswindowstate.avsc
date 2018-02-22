@@ -24,6 +24,11 @@
       "type": "long",
       "logicalType": "timestamp-millis",
       "default":null
+    },
+    {
+          "name": "isDirty",
+          "type": "boolean",
+          "default":false
     }
   ]
 }
