@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LitePosition extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -465817978431830409L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1094838376767164592L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public double latitude;
   @Deprecated public double longitude;
   @Deprecated public double speed;
   @Deprecated public java.lang.Double course;
+  @Deprecated public java.lang.String decoder;
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String vehicleId;
@@ -36,17 +37,19 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
    * @param longitude The new value for longitude
    * @param speed The new value for speed
    * @param course The new value for course
+   * @param decoder The new value for decoder
    * @param time The new value for time
    * @param imei The new value for imei
    * @param vehicleId The new value for vehicleId
    * @param address The new value for address
    * @param lngLat The new value for lngLat
    */
-  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat) {
+  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.String decoder, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat) {
     this.latitude = latitude;
     this.longitude = longitude;
     this.speed = speed;
     this.course = course;
+    this.decoder = decoder;
     this.time = time;
     this.imei = imei;
     this.vehicleId = vehicleId;
@@ -62,11 +65,12 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 1: return longitude;
     case 2: return speed;
     case 3: return course;
-    case 4: return time;
-    case 5: return imei;
-    case 6: return vehicleId;
-    case 7: return address;
-    case 8: return lngLat;
+    case 4: return decoder;
+    case 5: return time;
+    case 6: return imei;
+    case 7: return vehicleId;
+    case 8: return address;
+    case 9: return lngLat;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,11 +83,12 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 1: longitude = (java.lang.Double)value$; break;
     case 2: speed = (java.lang.Double)value$; break;
     case 3: course = (java.lang.Double)value$; break;
-    case 4: time = (java.lang.Long)value$; break;
-    case 5: imei = (java.lang.String)value$; break;
-    case 6: vehicleId = (java.lang.String)value$; break;
-    case 7: address = (java.lang.String)value$; break;
-    case 8: lngLat = (java.util.List<java.lang.Double>)value$; break;
+    case 4: decoder = (java.lang.String)value$; break;
+    case 5: time = (java.lang.Long)value$; break;
+    case 6: imei = (java.lang.String)value$; break;
+    case 7: vehicleId = (java.lang.String)value$; break;
+    case 8: address = (java.lang.String)value$; break;
+    case 9: lngLat = (java.util.List<java.lang.Double>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -150,6 +155,22 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
    */
   public void setCourse(java.lang.Double value) {
     this.course = value;
+  }
+
+  /**
+   * Gets the value of the 'decoder' field.
+   * @return The value of the 'decoder' field.
+   */
+  public java.lang.String getDecoder() {
+    return decoder;
+  }
+
+  /**
+   * Sets the value of the 'decoder' field.
+   * @param value the value to set.
+   */
+  public void setDecoder(java.lang.String value) {
+    this.decoder = value;
   }
 
   /**
@@ -268,6 +289,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     private double longitude;
     private double speed;
     private java.lang.Double course;
+    private java.lang.String decoder;
     private java.lang.Long time;
     private java.lang.String imei;
     private java.lang.String vehicleId;
@@ -301,25 +323,29 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         this.course = data().deepCopy(fields()[3].schema(), other.course);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.time)) {
-        this.time = data().deepCopy(fields()[4].schema(), other.time);
+      if (isValidValue(fields()[4], other.decoder)) {
+        this.decoder = data().deepCopy(fields()[4].schema(), other.decoder);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.imei)) {
-        this.imei = data().deepCopy(fields()[5].schema(), other.imei);
+      if (isValidValue(fields()[5], other.time)) {
+        this.time = data().deepCopy(fields()[5].schema(), other.time);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[6].schema(), other.vehicleId);
+      if (isValidValue(fields()[6], other.imei)) {
+        this.imei = data().deepCopy(fields()[6].schema(), other.imei);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.address)) {
-        this.address = data().deepCopy(fields()[7].schema(), other.address);
+      if (isValidValue(fields()[7], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[7].schema(), other.vehicleId);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.lngLat)) {
-        this.lngLat = data().deepCopy(fields()[8].schema(), other.lngLat);
+      if (isValidValue(fields()[8], other.address)) {
+        this.address = data().deepCopy(fields()[8].schema(), other.address);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.lngLat)) {
+        this.lngLat = data().deepCopy(fields()[9].schema(), other.lngLat);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -345,25 +371,29 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         this.course = data().deepCopy(fields()[3].schema(), other.course);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.time)) {
-        this.time = data().deepCopy(fields()[4].schema(), other.time);
+      if (isValidValue(fields()[4], other.decoder)) {
+        this.decoder = data().deepCopy(fields()[4].schema(), other.decoder);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.imei)) {
-        this.imei = data().deepCopy(fields()[5].schema(), other.imei);
+      if (isValidValue(fields()[5], other.time)) {
+        this.time = data().deepCopy(fields()[5].schema(), other.time);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[6].schema(), other.vehicleId);
+      if (isValidValue(fields()[6], other.imei)) {
+        this.imei = data().deepCopy(fields()[6].schema(), other.imei);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.address)) {
-        this.address = data().deepCopy(fields()[7].schema(), other.address);
+      if (isValidValue(fields()[7], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[7].schema(), other.vehicleId);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.lngLat)) {
-        this.lngLat = data().deepCopy(fields()[8].schema(), other.lngLat);
+      if (isValidValue(fields()[8], other.address)) {
+        this.address = data().deepCopy(fields()[8].schema(), other.address);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.lngLat)) {
+        this.lngLat = data().deepCopy(fields()[9].schema(), other.lngLat);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -521,6 +551,45 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     }
 
     /**
+      * Gets the value of the 'decoder' field.
+      * @return The value.
+      */
+    public java.lang.String getDecoder() {
+      return decoder;
+    }
+
+    /**
+      * Sets the value of the 'decoder' field.
+      * @param value The value of 'decoder'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder setDecoder(java.lang.String value) {
+      validate(fields()[4], value);
+      this.decoder = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'decoder' field has been set.
+      * @return True if the 'decoder' field has been set, false otherwise.
+      */
+    public boolean hasDecoder() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'decoder' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder clearDecoder() {
+      decoder = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'time' field.
       * @return The value.
       */
@@ -534,9 +603,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.LitePosition.Builder setTime(java.lang.Long value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.time = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -545,7 +614,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'time' field has been set, false otherwise.
       */
     public boolean hasTime() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -555,7 +624,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.LitePosition.Builder clearTime() {
       time = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -573,9 +642,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.LitePosition.Builder setImei(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.imei = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -584,7 +653,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'imei' field has been set, false otherwise.
       */
     public boolean hasImei() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -594,7 +663,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.LitePosition.Builder clearImei() {
       imei = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -612,9 +681,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.LitePosition.Builder setVehicleId(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.vehicleId = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -623,7 +692,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'vehicleId' field has been set, false otherwise.
       */
     public boolean hasVehicleId() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -633,7 +702,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.LitePosition.Builder clearVehicleId() {
       vehicleId = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -651,9 +720,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.LitePosition.Builder setAddress(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.address = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -662,7 +731,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'address' field has been set, false otherwise.
       */
     public boolean hasAddress() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -672,7 +741,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.LitePosition.Builder clearAddress() {
       address = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -690,9 +759,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.LitePosition.Builder setLngLat(java.util.List<java.lang.Double> value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.lngLat = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -701,7 +770,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lngLat' field has been set, false otherwise.
       */
     public boolean hasLngLat() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -711,7 +780,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.LitePosition.Builder clearLngLat() {
       lngLat = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -723,11 +792,12 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         record.longitude = fieldSetFlags()[1] ? this.longitude : (java.lang.Double) defaultValue(fields()[1]);
         record.speed = fieldSetFlags()[2] ? this.speed : (java.lang.Double) defaultValue(fields()[2]);
         record.course = fieldSetFlags()[3] ? this.course : (java.lang.Double) defaultValue(fields()[3]);
-        record.time = fieldSetFlags()[4] ? this.time : (java.lang.Long) defaultValue(fields()[4]);
-        record.imei = fieldSetFlags()[5] ? this.imei : (java.lang.String) defaultValue(fields()[5]);
-        record.vehicleId = fieldSetFlags()[6] ? this.vehicleId : (java.lang.String) defaultValue(fields()[6]);
-        record.address = fieldSetFlags()[7] ? this.address : (java.lang.String) defaultValue(fields()[7]);
-        record.lngLat = fieldSetFlags()[8] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[8]);
+        record.decoder = fieldSetFlags()[4] ? this.decoder : (java.lang.String) defaultValue(fields()[4]);
+        record.time = fieldSetFlags()[5] ? this.time : (java.lang.Long) defaultValue(fields()[5]);
+        record.imei = fieldSetFlags()[6] ? this.imei : (java.lang.String) defaultValue(fields()[6]);
+        record.vehicleId = fieldSetFlags()[7] ? this.vehicleId : (java.lang.String) defaultValue(fields()[7]);
+        record.address = fieldSetFlags()[8] ? this.address : (java.lang.String) defaultValue(fields()[8]);
+        record.lngLat = fieldSetFlags()[9] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
