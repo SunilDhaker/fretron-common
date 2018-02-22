@@ -21,6 +21,24 @@
       "default": null
     },
     {
+      "name": "cancelTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "originalIssueTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
       "name": "tokenNumber",
       "type": [
         "null",
