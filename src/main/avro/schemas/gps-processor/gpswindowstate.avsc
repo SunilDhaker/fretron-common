@@ -1,0 +1,29 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "GpsWindowState",
+  "fields": [
+    {
+      "name": "vehicleGpsState",
+      "type": [
+        "null",
+        "com.fretron.Model.VehicleGpsState"
+      ],
+      "default":null
+    },
+    {
+      "name": "previousPoints",
+      "type": {
+        "type":"array",
+        "items":"com.fretron.Model.PointAtTime"
+      },
+      "default":null
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "logicalType": "timestamp-millis",
+      "default":null
+    }
+  ]
+}
