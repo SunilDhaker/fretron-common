@@ -52,10 +52,20 @@ public class Constants {
 
     /*
     *****************************************************************************************************
-    *                                    POSITION-RELATED
+    *                                    Position-Processor-Revisited
     * **************************************************************************************************
      */
 
+    public final static  String KEY_POSITION_TOPIC = "positions.topic";
+    public final static  String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.disconnection.status.topic";
+
+
+
+    /*
+     *****************************************************************************************************
+     *                                    Position-Processor-Revisited
+     * **************************************************************************************************
+     */
 
     public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
 
@@ -63,7 +73,7 @@ public class Constants {
     //topics
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-    public final static  String KEY_POSITION_TOPIC = "positions.topic";
+
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
 
