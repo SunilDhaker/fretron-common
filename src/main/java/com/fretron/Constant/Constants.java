@@ -88,6 +88,10 @@ public class Constants {
 
 
 
+    public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STATE = "deviceDataByRemoteAddress.state";
+    public final static String KEY_LAST_PROCESSED_POSITIONS_STATE = "lastprocessedpositions.state";
+
+
 
     public static final String MIN_STATE_TIME = "gps.state.min.time";
     public static final String  MIN_REBUILD_STATE_TIME = "rebuild.state.min.time";
