@@ -24,11 +24,6 @@
           "default" : null
       },
       {
-         "name": "decoder",
-         "type": [ "null", "string"],
-          "default" : null
-      },
-      {
         "name": "time",
         "type": [
           "null",

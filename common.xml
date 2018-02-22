@@ -51,6 +51,8 @@
     <entry key="devicestate.topic">devicestate</entry>
     <entry key="loadedposition.topic">loadedpositionTopic</entry>
     <entry key="vehicle.by.imei">vehicleByImei</entry>
+    <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
+
 
 
     <!--===============protocol-handler topics ================-->
@@ -59,8 +61,6 @@
     <entry key="rawpositions.topic">rawPositions</entry>
     <entry key="protocol.events.topic">protocolEvents</entry>
     <entry key="device.session.topic">deviceSession</entry>
-    <entry key="login.event.topic">loginEvents</entry>
-
 
 
 
@@ -145,7 +145,6 @@
     <!--===============Token Manager -topics=====================-->
     <entry key="queue.tokon.topic">queuetokentopic</entry>
     <entry key="queue.topic">queuetopic</entry>
-    <entry key="vlr.topic">vlrtopic</entry>
 
     <!-- ================ token manager app id ======= -->
     <entry key="token.manager.app.id">tokenManager</entry>

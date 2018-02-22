@@ -18,11 +18,6 @@
         "name": "time",
         "type": [ "null", "long"],
          "default" : null
-      },
-      {
-        "name": "protocol",
-         "type": [ "null", "string"],
-         "default" : null
       }
     ]
   }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Command extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1717343232468509582L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Command\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"data\",\"type\":\"bytes\"},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"errorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"processTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"generatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4909651459046885424L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Command\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"data\",\"type\":\"bytes\"},{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"errorMessage\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"processTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"topic\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
   @Deprecated public java.nio.ByteBuffer data;
@@ -22,7 +22,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.Long processTime;
   @Deprecated public java.lang.String topic;
   @Deprecated public java.lang.String valueType;
-  @Deprecated public java.lang.String generatedBy;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -42,9 +41,8 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param processTime The new value for processTime
    * @param topic The new value for topic
    * @param valueType The new value for valueType
-   * @param generatedBy The new value for generatedBy
    */
-  public Command(java.lang.String type, java.nio.ByteBuffer data, java.lang.String id, java.lang.Integer statusCode, java.lang.String errorMessage, java.lang.Long startTime, java.lang.Long processTime, java.lang.String topic, java.lang.String valueType, java.lang.String generatedBy) {
+  public Command(java.lang.String type, java.nio.ByteBuffer data, java.lang.String id, java.lang.Integer statusCode, java.lang.String errorMessage, java.lang.Long startTime, java.lang.Long processTime, java.lang.String topic, java.lang.String valueType) {
     this.type = type;
     this.data = data;
     this.id = id;
@@ -54,7 +52,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     this.processTime = processTime;
     this.topic = topic;
     this.valueType = valueType;
-    this.generatedBy = generatedBy;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -70,7 +67,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     case 6: return processTime;
     case 7: return topic;
     case 8: return valueType;
-    case 9: return generatedBy;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -88,7 +84,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     case 6: processTime = (java.lang.Long)value$; break;
     case 7: topic = (java.lang.String)value$; break;
     case 8: valueType = (java.lang.String)value$; break;
-    case 9: generatedBy = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -238,22 +233,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
-   * Gets the value of the 'generatedBy' field.
-   * @return The value of the 'generatedBy' field.
-   */
-  public java.lang.String getGeneratedBy() {
-    return generatedBy;
-  }
-
-  /**
-   * Sets the value of the 'generatedBy' field.
-   * @param value the value to set.
-   */
-  public void setGeneratedBy(java.lang.String value) {
-    this.generatedBy = value;
-  }
-
-  /**
    * Creates a new Command RecordBuilder.
    * @return A new Command RecordBuilder
    */
@@ -294,7 +273,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.Long processTime;
     private java.lang.String topic;
     private java.lang.String valueType;
-    private java.lang.String generatedBy;
 
     /** Creates a new Builder */
     private Builder() {
@@ -343,10 +321,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
         this.valueType = data().deepCopy(fields()[8].schema(), other.valueType);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.generatedBy)) {
-        this.generatedBy = data().deepCopy(fields()[9].schema(), other.generatedBy);
-        fieldSetFlags()[9] = true;
-      }
     }
 
     /**
@@ -390,10 +364,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[8], other.valueType)) {
         this.valueType = data().deepCopy(fields()[8].schema(), other.valueType);
         fieldSetFlags()[8] = true;
-      }
-      if (isValidValue(fields()[9], other.generatedBy)) {
-        this.generatedBy = data().deepCopy(fields()[9].schema(), other.generatedBy);
-        fieldSetFlags()[9] = true;
       }
     }
 
@@ -748,45 +718,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
-    /**
-      * Gets the value of the 'generatedBy' field.
-      * @return The value.
-      */
-    public java.lang.String getGeneratedBy() {
-      return generatedBy;
-    }
-
-    /**
-      * Sets the value of the 'generatedBy' field.
-      * @param value The value of 'generatedBy'.
-      * @return This builder.
-      */
-    public com.fretron.Model.Command.Builder setGeneratedBy(java.lang.String value) {
-      validate(fields()[9], value);
-      this.generatedBy = value;
-      fieldSetFlags()[9] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'generatedBy' field has been set.
-      * @return True if the 'generatedBy' field has been set, false otherwise.
-      */
-    public boolean hasGeneratedBy() {
-      return fieldSetFlags()[9];
-    }
-
-
-    /**
-      * Clears the value of the 'generatedBy' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.Command.Builder clearGeneratedBy() {
-      generatedBy = null;
-      fieldSetFlags()[9] = false;
-      return this;
-    }
-
     @Override
     public Command build() {
       try {
@@ -800,7 +731,6 @@ public class Command extends org.apache.avro.specific.SpecificRecordBase impleme
         record.processTime = fieldSetFlags()[6] ? this.processTime : (java.lang.Long) defaultValue(fields()[6]);
         record.topic = fieldSetFlags()[7] ? this.topic : (java.lang.String) defaultValue(fields()[7]);
         record.valueType = fieldSetFlags()[8] ? this.valueType : (java.lang.String) defaultValue(fields()[8]);
-        record.generatedBy = fieldSetFlags()[9] ? this.generatedBy : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

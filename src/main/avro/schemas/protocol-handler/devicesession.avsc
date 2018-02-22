@@ -16,14 +16,8 @@
       },
       {
         "name": "timeZoneOffset",
-        "type": ["null", "int"],
+        "type": [ "null", "int"],
          "default" : null
-      },
-
-      {
-       "name":"isExpire",
-       "type":["null","boolean"],
-       "default": null
       }
     ]
   }

@@ -44,28 +44,15 @@ public class Constants {
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
-    public final static  String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
-    public final static  String MAXIMUM_CONSIERABLE_DIST = "maximum.considerable.distance";
-    public final static  String MINIMUM_TIME_DIFF = "minimum.time.difference";
 
 
 
     /*
     *****************************************************************************************************
-    *                                    Position-Processor-Revisited
+    *                                    POSITION-RELATED
     * **************************************************************************************************
      */
 
-    public final static  String KEY_POSITION_TOPIC = "positions.topic";
-    public final static  String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.disconnection.status.topic";
-
-
-
-    /*
-     *****************************************************************************************************
-     *                                    Position-Processor-Revisited
-     * **************************************************************************************************
-     */
 
     public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
 
@@ -73,15 +60,20 @@ public class Constants {
     //topics
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-
+    public final static  String KEY_POSITION_TOPIC = "positions.topic";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
 
 
 
     //states
     public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
     public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
+
+    public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
+    public static  final String KEY_DEVICE_DISCONNECTION_THRESHOLD = "device.disconnection.threshold";
+
 
 
 
@@ -314,9 +306,6 @@ public class Constants {
     public static final String TRIPTEMP_APP_IP = "triptemplate.manager.restservice.ip";
     public static final String TRIPTEMP_APP_PORT = "triptemplate.manager.restservice.port";
 
-    public static final String UTURN_PREDICTOR_APP_IP = "uturn.detector.restservice.ip";
-    public static final String UTURN_PREDICTOR_APP_PORT = "uturn.detector.restservice.port";
-
     public static final String USER_APP_IP = "user.manager.restservice.ip";
     public static final String USER_APP_PORT = "user.manager.restservice.port";
     public static final String MONGO_DB_IP = "mongodb.server.ip";
@@ -449,7 +438,6 @@ public class Constants {
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
     public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
-    public final static String KEY_LOGIN_EVENT_TOPIC = "login.event.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
     public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
@@ -457,26 +445,23 @@ public class Constants {
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
-    public final static String KEY_PROTOCOL_HANDLER_APP_HOST = "protocol.handler.app.rest.host";
-    public final static String KEY_PROTOCOL_HANDLER_APP_PORT = "protocol.handler.app.rest.port";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
 
     public final static String KEY_QUEUE_TOPIC="queue.topic";
     public final static String KEY_QUEUE_TOKEN_TOPIC="queue.tokon.topic";
-    public final static String KEY_VLR_TOPIC="vlr.topic";
 
     public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
     public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
 
-    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.manager.db.name";
-    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.manager.db.host";
-    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.manager.db.port";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.db.name";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.db.host";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.db.port";
     public final static String KEY_TOKEN_MONGODB_COLLECTION_NAME="token.db.collection.name";
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
 
-    public final static String KEY_VLR_MONGODB_COLLECTION_NAME = "vlr.db.collection.name";
+
 
     private Constants(){
 

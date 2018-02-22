@@ -410,25 +410,7 @@
              					}
              				],
              				"default": null
-             			},
-
-             {
-                    "name": "updatedBy",
-                    "type": [
-                        "null",
-                        "string"
-                    ],
-                    "default": null
-             },
-             {
-                    "name": "updatedAt",
-                    "type": [
-                        "null",
-                        "long"
-                    ],
-                    "logicalType": "timestamp-millis",
-                    "default": null
-             }
+             			}
 		]
 	},
 
@@ -627,21 +609,8 @@
                                 }
                             ],
                             "default": null
-                        },
-                        {
-                            "name": "reprocessTill",
-                            "type": [
-                                "null",
-                                "long"
-                            ],
-                            "logicalType": "timestamp-millis",
-                            "default": null
-                        },
-                        {
-                           "name":"sharedWith",
-                           "type":["null",{"type" : "array", "items":"string"}],
-                           "default":null
                         }
+
 		]
 	},
 	{

@@ -10,13 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3140530291484690270L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"remoteAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeZoneOffset\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isExpire\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -1255789681924640363L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"remoteAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeZoneOffset\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String remoteAddress;
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.Integer timeZoneOffset;
-  @Deprecated public java.lang.Boolean isExpire;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -30,13 +29,11 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
    * @param remoteAddress The new value for remoteAddress
    * @param imei The new value for imei
    * @param timeZoneOffset The new value for timeZoneOffset
-   * @param isExpire The new value for isExpire
    */
-  public DeviceSession(java.lang.String remoteAddress, java.lang.String imei, java.lang.Integer timeZoneOffset, java.lang.Boolean isExpire) {
+  public DeviceSession(java.lang.String remoteAddress, java.lang.String imei, java.lang.Integer timeZoneOffset) {
     this.remoteAddress = remoteAddress;
     this.imei = imei;
     this.timeZoneOffset = timeZoneOffset;
-    this.isExpire = isExpire;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -46,7 +43,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     case 0: return remoteAddress;
     case 1: return imei;
     case 2: return timeZoneOffset;
-    case 3: return isExpire;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -58,7 +54,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     case 0: remoteAddress = (java.lang.String)value$; break;
     case 1: imei = (java.lang.String)value$; break;
     case 2: timeZoneOffset = (java.lang.Integer)value$; break;
-    case 3: isExpire = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -112,22 +107,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
-   * Gets the value of the 'isExpire' field.
-   * @return The value of the 'isExpire' field.
-   */
-  public java.lang.Boolean getIsExpire() {
-    return isExpire;
-  }
-
-  /**
-   * Sets the value of the 'isExpire' field.
-   * @param value the value to set.
-   */
-  public void setIsExpire(java.lang.Boolean value) {
-    this.isExpire = value;
-  }
-
-  /**
    * Creates a new DeviceSession RecordBuilder.
    * @return A new DeviceSession RecordBuilder
    */
@@ -162,7 +141,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String remoteAddress;
     private java.lang.String imei;
     private java.lang.Integer timeZoneOffset;
-    private java.lang.Boolean isExpire;
 
     /** Creates a new Builder */
     private Builder() {
@@ -187,10 +165,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
         this.timeZoneOffset = data().deepCopy(fields()[2].schema(), other.timeZoneOffset);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.isExpire)) {
-        this.isExpire = data().deepCopy(fields()[3].schema(), other.isExpire);
-        fieldSetFlags()[3] = true;
-      }
     }
 
     /**
@@ -210,10 +184,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[2], other.timeZoneOffset)) {
         this.timeZoneOffset = data().deepCopy(fields()[2].schema(), other.timeZoneOffset);
         fieldSetFlags()[2] = true;
-      }
-      if (isValidValue(fields()[3], other.isExpire)) {
-        this.isExpire = data().deepCopy(fields()[3].schema(), other.isExpire);
-        fieldSetFlags()[3] = true;
       }
     }
 
@@ -334,45 +304,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
-    /**
-      * Gets the value of the 'isExpire' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getIsExpire() {
-      return isExpire;
-    }
-
-    /**
-      * Sets the value of the 'isExpire' field.
-      * @param value The value of 'isExpire'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DeviceSession.Builder setIsExpire(java.lang.Boolean value) {
-      validate(fields()[3], value);
-      this.isExpire = value;
-      fieldSetFlags()[3] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'isExpire' field has been set.
-      * @return True if the 'isExpire' field has been set, false otherwise.
-      */
-    public boolean hasIsExpire() {
-      return fieldSetFlags()[3];
-    }
-
-
-    /**
-      * Clears the value of the 'isExpire' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DeviceSession.Builder clearIsExpire() {
-      isExpire = null;
-      fieldSetFlags()[3] = false;
-      return this;
-    }
-
     @Override
     public DeviceSession build() {
       try {
@@ -380,7 +311,6 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
         record.remoteAddress = fieldSetFlags()[0] ? this.remoteAddress : (java.lang.String) defaultValue(fields()[0]);
         record.imei = fieldSetFlags()[1] ? this.imei : (java.lang.String) defaultValue(fields()[1]);
         record.timeZoneOffset = fieldSetFlags()[2] ? this.timeZoneOffset : (java.lang.Integer) defaultValue(fields()[2]);
-        record.isExpire = fieldSetFlags()[3] ? this.isExpire : (java.lang.Boolean) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Position extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1615310224910093238L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Position\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"int\"]},{\"name\":\"attributes\",\"type\":{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]}]}},{\"name\":\"deviceId\",\"type\":[\"null\",\"int\"]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"serverTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"deviceTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"fixTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"outdated\",\"type\":\"boolean\"},{\"name\":\"valid\",\"type\":\"boolean\"},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"altitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"speed\",\"type\":[\"null\",\"double\"]},{\"name\":\"course\",\"type\":[\"null\",\"double\"]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"accuracy\",\"type\":[\"null\",\"int\"]},{\"name\":\"network\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"movemetState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalDistance\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
+  private static final long serialVersionUID = -6850939443117968332L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Position\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"int\"]},{\"name\":\"attributes\",\"type\":{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]}]}},{\"name\":\"deviceId\",\"type\":[\"null\",\"int\"]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"serverTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"deviceTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"fixTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"outdated\",\"type\":\"boolean\"},{\"name\":\"valid\",\"type\":\"boolean\"},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"altitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"speed\",\"type\":[\"null\",\"double\"]},{\"name\":\"course\",\"type\":[\"null\",\"double\"]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"accuracy\",\"type\":[\"null\",\"int\"]},{\"name\":\"network\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"movemetState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalDistance\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Integer id;
   @Deprecated public com.fretron.Model.Attributes attributes;
@@ -22,7 +22,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String serverTime;
   @Deprecated public java.lang.Double deviceTime;
   @Deprecated public java.lang.Double fixTime;
-  @Deprecated public java.lang.String decoder;
   @Deprecated public boolean outdated;
   @Deprecated public boolean valid;
   @Deprecated public java.lang.Double latitude;
@@ -54,7 +53,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
    * @param serverTime The new value for serverTime
    * @param deviceTime The new value for deviceTime
    * @param fixTime The new value for fixTime
-   * @param decoder The new value for decoder
    * @param outdated The new value for outdated
    * @param valid The new value for valid
    * @param latitude The new value for latitude
@@ -68,7 +66,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
    * @param movemetState The new value for movemetState
    * @param totalDistance The new value for totalDistance
    */
-  public Position(java.lang.Integer id, com.fretron.Model.Attributes attributes, java.lang.Integer deviceId, java.lang.String type, java.lang.String imei, java.lang.String protocol, java.lang.String serverTime, java.lang.Double deviceTime, java.lang.Double fixTime, java.lang.String decoder, java.lang.Boolean outdated, java.lang.Boolean valid, java.lang.Double latitude, java.lang.Double longitude, java.lang.Double altitude, java.lang.Double speed, java.lang.Double course, java.lang.String address, java.lang.Integer accuracy, java.lang.String network, java.lang.String movemetState, java.lang.String totalDistance) {
+  public Position(java.lang.Integer id, com.fretron.Model.Attributes attributes, java.lang.Integer deviceId, java.lang.String type, java.lang.String imei, java.lang.String protocol, java.lang.String serverTime, java.lang.Double deviceTime, java.lang.Double fixTime, java.lang.Boolean outdated, java.lang.Boolean valid, java.lang.Double latitude, java.lang.Double longitude, java.lang.Double altitude, java.lang.Double speed, java.lang.Double course, java.lang.String address, java.lang.Integer accuracy, java.lang.String network, java.lang.String movemetState, java.lang.String totalDistance) {
     this.id = id;
     this.attributes = attributes;
     this.deviceId = deviceId;
@@ -78,7 +76,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     this.serverTime = serverTime;
     this.deviceTime = deviceTime;
     this.fixTime = fixTime;
-    this.decoder = decoder;
     this.outdated = outdated;
     this.valid = valid;
     this.latitude = latitude;
@@ -106,19 +103,18 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     case 6: return serverTime;
     case 7: return deviceTime;
     case 8: return fixTime;
-    case 9: return decoder;
-    case 10: return outdated;
-    case 11: return valid;
-    case 12: return latitude;
-    case 13: return longitude;
-    case 14: return altitude;
-    case 15: return speed;
-    case 16: return course;
-    case 17: return address;
-    case 18: return accuracy;
-    case 19: return network;
-    case 20: return movemetState;
-    case 21: return totalDistance;
+    case 9: return outdated;
+    case 10: return valid;
+    case 11: return latitude;
+    case 12: return longitude;
+    case 13: return altitude;
+    case 14: return speed;
+    case 15: return course;
+    case 16: return address;
+    case 17: return accuracy;
+    case 18: return network;
+    case 19: return movemetState;
+    case 20: return totalDistance;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -136,19 +132,18 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     case 6: serverTime = (java.lang.String)value$; break;
     case 7: deviceTime = (java.lang.Double)value$; break;
     case 8: fixTime = (java.lang.Double)value$; break;
-    case 9: decoder = (java.lang.String)value$; break;
-    case 10: outdated = (java.lang.Boolean)value$; break;
-    case 11: valid = (java.lang.Boolean)value$; break;
-    case 12: latitude = (java.lang.Double)value$; break;
-    case 13: longitude = (java.lang.Double)value$; break;
-    case 14: altitude = (java.lang.Double)value$; break;
-    case 15: speed = (java.lang.Double)value$; break;
-    case 16: course = (java.lang.Double)value$; break;
-    case 17: address = (java.lang.String)value$; break;
-    case 18: accuracy = (java.lang.Integer)value$; break;
-    case 19: network = (java.lang.String)value$; break;
-    case 20: movemetState = (java.lang.String)value$; break;
-    case 21: totalDistance = (java.lang.String)value$; break;
+    case 9: outdated = (java.lang.Boolean)value$; break;
+    case 10: valid = (java.lang.Boolean)value$; break;
+    case 11: latitude = (java.lang.Double)value$; break;
+    case 12: longitude = (java.lang.Double)value$; break;
+    case 13: altitude = (java.lang.Double)value$; break;
+    case 14: speed = (java.lang.Double)value$; break;
+    case 15: course = (java.lang.Double)value$; break;
+    case 16: address = (java.lang.String)value$; break;
+    case 17: accuracy = (java.lang.Integer)value$; break;
+    case 18: network = (java.lang.String)value$; break;
+    case 19: movemetState = (java.lang.String)value$; break;
+    case 20: totalDistance = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -295,22 +290,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
    */
   public void setFixTime(java.lang.Double value) {
     this.fixTime = value;
-  }
-
-  /**
-   * Gets the value of the 'decoder' field.
-   * @return The value of the 'decoder' field.
-   */
-  public java.lang.String getDecoder() {
-    return decoder;
-  }
-
-  /**
-   * Sets the value of the 'decoder' field.
-   * @param value the value to set.
-   */
-  public void setDecoder(java.lang.String value) {
-    this.decoder = value;
   }
 
   /**
@@ -547,7 +526,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String serverTime;
     private java.lang.Double deviceTime;
     private java.lang.Double fixTime;
-    private java.lang.String decoder;
     private boolean outdated;
     private boolean valid;
     private java.lang.Double latitude;
@@ -611,57 +589,53 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         this.fixTime = data().deepCopy(fields()[8].schema(), other.fixTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.decoder)) {
-        this.decoder = data().deepCopy(fields()[9].schema(), other.decoder);
+      if (isValidValue(fields()[9], other.outdated)) {
+        this.outdated = data().deepCopy(fields()[9].schema(), other.outdated);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.outdated)) {
-        this.outdated = data().deepCopy(fields()[10].schema(), other.outdated);
+      if (isValidValue(fields()[10], other.valid)) {
+        this.valid = data().deepCopy(fields()[10].schema(), other.valid);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.valid)) {
-        this.valid = data().deepCopy(fields()[11].schema(), other.valid);
+      if (isValidValue(fields()[11], other.latitude)) {
+        this.latitude = data().deepCopy(fields()[11].schema(), other.latitude);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.latitude)) {
-        this.latitude = data().deepCopy(fields()[12].schema(), other.latitude);
+      if (isValidValue(fields()[12], other.longitude)) {
+        this.longitude = data().deepCopy(fields()[12].schema(), other.longitude);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.longitude)) {
-        this.longitude = data().deepCopy(fields()[13].schema(), other.longitude);
+      if (isValidValue(fields()[13], other.altitude)) {
+        this.altitude = data().deepCopy(fields()[13].schema(), other.altitude);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.altitude)) {
-        this.altitude = data().deepCopy(fields()[14].schema(), other.altitude);
+      if (isValidValue(fields()[14], other.speed)) {
+        this.speed = data().deepCopy(fields()[14].schema(), other.speed);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.speed)) {
-        this.speed = data().deepCopy(fields()[15].schema(), other.speed);
+      if (isValidValue(fields()[15], other.course)) {
+        this.course = data().deepCopy(fields()[15].schema(), other.course);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.course)) {
-        this.course = data().deepCopy(fields()[16].schema(), other.course);
+      if (isValidValue(fields()[16], other.address)) {
+        this.address = data().deepCopy(fields()[16].schema(), other.address);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.address)) {
-        this.address = data().deepCopy(fields()[17].schema(), other.address);
+      if (isValidValue(fields()[17], other.accuracy)) {
+        this.accuracy = data().deepCopy(fields()[17].schema(), other.accuracy);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.accuracy)) {
-        this.accuracy = data().deepCopy(fields()[18].schema(), other.accuracy);
+      if (isValidValue(fields()[18], other.network)) {
+        this.network = data().deepCopy(fields()[18].schema(), other.network);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.network)) {
-        this.network = data().deepCopy(fields()[19].schema(), other.network);
+      if (isValidValue(fields()[19], other.movemetState)) {
+        this.movemetState = data().deepCopy(fields()[19].schema(), other.movemetState);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.movemetState)) {
-        this.movemetState = data().deepCopy(fields()[20].schema(), other.movemetState);
+      if (isValidValue(fields()[20], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[20].schema(), other.totalDistance);
         fieldSetFlags()[20] = true;
-      }
-      if (isValidValue(fields()[21], other.totalDistance)) {
-        this.totalDistance = data().deepCopy(fields()[21].schema(), other.totalDistance);
-        fieldSetFlags()[21] = true;
       }
     }
 
@@ -708,57 +682,53 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         this.fixTime = data().deepCopy(fields()[8].schema(), other.fixTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.decoder)) {
-        this.decoder = data().deepCopy(fields()[9].schema(), other.decoder);
+      if (isValidValue(fields()[9], other.outdated)) {
+        this.outdated = data().deepCopy(fields()[9].schema(), other.outdated);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.outdated)) {
-        this.outdated = data().deepCopy(fields()[10].schema(), other.outdated);
+      if (isValidValue(fields()[10], other.valid)) {
+        this.valid = data().deepCopy(fields()[10].schema(), other.valid);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.valid)) {
-        this.valid = data().deepCopy(fields()[11].schema(), other.valid);
+      if (isValidValue(fields()[11], other.latitude)) {
+        this.latitude = data().deepCopy(fields()[11].schema(), other.latitude);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.latitude)) {
-        this.latitude = data().deepCopy(fields()[12].schema(), other.latitude);
+      if (isValidValue(fields()[12], other.longitude)) {
+        this.longitude = data().deepCopy(fields()[12].schema(), other.longitude);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.longitude)) {
-        this.longitude = data().deepCopy(fields()[13].schema(), other.longitude);
+      if (isValidValue(fields()[13], other.altitude)) {
+        this.altitude = data().deepCopy(fields()[13].schema(), other.altitude);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.altitude)) {
-        this.altitude = data().deepCopy(fields()[14].schema(), other.altitude);
+      if (isValidValue(fields()[14], other.speed)) {
+        this.speed = data().deepCopy(fields()[14].schema(), other.speed);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.speed)) {
-        this.speed = data().deepCopy(fields()[15].schema(), other.speed);
+      if (isValidValue(fields()[15], other.course)) {
+        this.course = data().deepCopy(fields()[15].schema(), other.course);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.course)) {
-        this.course = data().deepCopy(fields()[16].schema(), other.course);
+      if (isValidValue(fields()[16], other.address)) {
+        this.address = data().deepCopy(fields()[16].schema(), other.address);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.address)) {
-        this.address = data().deepCopy(fields()[17].schema(), other.address);
+      if (isValidValue(fields()[17], other.accuracy)) {
+        this.accuracy = data().deepCopy(fields()[17].schema(), other.accuracy);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.accuracy)) {
-        this.accuracy = data().deepCopy(fields()[18].schema(), other.accuracy);
+      if (isValidValue(fields()[18], other.network)) {
+        this.network = data().deepCopy(fields()[18].schema(), other.network);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.network)) {
-        this.network = data().deepCopy(fields()[19].schema(), other.network);
+      if (isValidValue(fields()[19], other.movemetState)) {
+        this.movemetState = data().deepCopy(fields()[19].schema(), other.movemetState);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.movemetState)) {
-        this.movemetState = data().deepCopy(fields()[20].schema(), other.movemetState);
+      if (isValidValue(fields()[20], other.totalDistance)) {
+        this.totalDistance = data().deepCopy(fields()[20].schema(), other.totalDistance);
         fieldSetFlags()[20] = true;
-      }
-      if (isValidValue(fields()[21], other.totalDistance)) {
-        this.totalDistance = data().deepCopy(fields()[21].schema(), other.totalDistance);
-        fieldSetFlags()[21] = true;
       }
     }
 
@@ -1149,45 +1119,6 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'decoder' field.
-      * @return The value.
-      */
-    public java.lang.String getDecoder() {
-      return decoder;
-    }
-
-    /**
-      * Sets the value of the 'decoder' field.
-      * @param value The value of 'decoder'.
-      * @return This builder.
-      */
-    public com.fretron.Model.Position.Builder setDecoder(java.lang.String value) {
-      validate(fields()[9], value);
-      this.decoder = value;
-      fieldSetFlags()[9] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'decoder' field has been set.
-      * @return True if the 'decoder' field has been set, false otherwise.
-      */
-    public boolean hasDecoder() {
-      return fieldSetFlags()[9];
-    }
-
-
-    /**
-      * Clears the value of the 'decoder' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.Position.Builder clearDecoder() {
-      decoder = null;
-      fieldSetFlags()[9] = false;
-      return this;
-    }
-
-    /**
       * Gets the value of the 'outdated' field.
       * @return The value.
       */
@@ -1201,9 +1132,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setOutdated(boolean value) {
-      validate(fields()[10], value);
+      validate(fields()[9], value);
       this.outdated = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -1212,7 +1143,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'outdated' field has been set, false otherwise.
       */
     public boolean hasOutdated() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[9];
     }
 
 
@@ -1221,7 +1152,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder clearOutdated() {
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -1239,9 +1170,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setValid(boolean value) {
-      validate(fields()[11], value);
+      validate(fields()[10], value);
       this.valid = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1250,7 +1181,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'valid' field has been set, false otherwise.
       */
     public boolean hasValid() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1259,7 +1190,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder clearValid() {
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1277,9 +1208,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setLatitude(java.lang.Double value) {
-      validate(fields()[12], value);
+      validate(fields()[11], value);
       this.latitude = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1288,7 +1219,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'latitude' field has been set, false otherwise.
       */
     public boolean hasLatitude() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1298,7 +1229,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearLatitude() {
       latitude = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1316,9 +1247,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setLongitude(java.lang.Double value) {
-      validate(fields()[13], value);
+      validate(fields()[12], value);
       this.longitude = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1327,7 +1258,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'longitude' field has been set, false otherwise.
       */
     public boolean hasLongitude() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1337,7 +1268,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearLongitude() {
       longitude = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1355,9 +1286,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setAltitude(java.lang.Double value) {
-      validate(fields()[14], value);
+      validate(fields()[13], value);
       this.altitude = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1366,7 +1297,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'altitude' field has been set, false otherwise.
       */
     public boolean hasAltitude() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1376,7 +1307,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearAltitude() {
       altitude = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1394,9 +1325,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setSpeed(java.lang.Double value) {
-      validate(fields()[15], value);
+      validate(fields()[14], value);
       this.speed = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1405,7 +1336,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'speed' field has been set, false otherwise.
       */
     public boolean hasSpeed() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1415,7 +1346,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearSpeed() {
       speed = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1433,9 +1364,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setCourse(java.lang.Double value) {
-      validate(fields()[16], value);
+      validate(fields()[15], value);
       this.course = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1444,7 +1375,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'course' field has been set, false otherwise.
       */
     public boolean hasCourse() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1454,7 +1385,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearCourse() {
       course = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1472,9 +1403,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setAddress(java.lang.String value) {
-      validate(fields()[17], value);
+      validate(fields()[16], value);
       this.address = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1483,7 +1414,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'address' field has been set, false otherwise.
       */
     public boolean hasAddress() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1493,7 +1424,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearAddress() {
       address = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1511,9 +1442,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setAccuracy(java.lang.Integer value) {
-      validate(fields()[18], value);
+      validate(fields()[17], value);
       this.accuracy = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1522,7 +1453,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'accuracy' field has been set, false otherwise.
       */
     public boolean hasAccuracy() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1532,7 +1463,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearAccuracy() {
       accuracy = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1550,9 +1481,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setNetwork(java.lang.String value) {
-      validate(fields()[19], value);
+      validate(fields()[18], value);
       this.network = value;
-      fieldSetFlags()[19] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1561,7 +1492,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'network' field has been set, false otherwise.
       */
     public boolean hasNetwork() {
-      return fieldSetFlags()[19];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1571,7 +1502,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearNetwork() {
       network = null;
-      fieldSetFlags()[19] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1589,9 +1520,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setMovemetState(java.lang.String value) {
-      validate(fields()[20], value);
+      validate(fields()[19], value);
       this.movemetState = value;
-      fieldSetFlags()[20] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1600,7 +1531,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'movemetState' field has been set, false otherwise.
       */
     public boolean hasMovemetState() {
-      return fieldSetFlags()[20];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1610,7 +1541,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearMovemetState() {
       movemetState = null;
-      fieldSetFlags()[20] = false;
+      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1628,9 +1559,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Position.Builder setTotalDistance(java.lang.String value) {
-      validate(fields()[21], value);
+      validate(fields()[20], value);
       this.totalDistance = value;
-      fieldSetFlags()[21] = true;
+      fieldSetFlags()[20] = true;
       return this;
     }
 
@@ -1639,7 +1570,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'totalDistance' field has been set, false otherwise.
       */
     public boolean hasTotalDistance() {
-      return fieldSetFlags()[21];
+      return fieldSetFlags()[20];
     }
 
 
@@ -1649,7 +1580,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Position.Builder clearTotalDistance() {
       totalDistance = null;
-      fieldSetFlags()[21] = false;
+      fieldSetFlags()[20] = false;
       return this;
     }
 
@@ -1670,19 +1601,18 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         record.serverTime = fieldSetFlags()[6] ? this.serverTime : (java.lang.String) defaultValue(fields()[6]);
         record.deviceTime = fieldSetFlags()[7] ? this.deviceTime : (java.lang.Double) defaultValue(fields()[7]);
         record.fixTime = fieldSetFlags()[8] ? this.fixTime : (java.lang.Double) defaultValue(fields()[8]);
-        record.decoder = fieldSetFlags()[9] ? this.decoder : (java.lang.String) defaultValue(fields()[9]);
-        record.outdated = fieldSetFlags()[10] ? this.outdated : (java.lang.Boolean) defaultValue(fields()[10]);
-        record.valid = fieldSetFlags()[11] ? this.valid : (java.lang.Boolean) defaultValue(fields()[11]);
-        record.latitude = fieldSetFlags()[12] ? this.latitude : (java.lang.Double) defaultValue(fields()[12]);
-        record.longitude = fieldSetFlags()[13] ? this.longitude : (java.lang.Double) defaultValue(fields()[13]);
-        record.altitude = fieldSetFlags()[14] ? this.altitude : (java.lang.Double) defaultValue(fields()[14]);
-        record.speed = fieldSetFlags()[15] ? this.speed : (java.lang.Double) defaultValue(fields()[15]);
-        record.course = fieldSetFlags()[16] ? this.course : (java.lang.Double) defaultValue(fields()[16]);
-        record.address = fieldSetFlags()[17] ? this.address : (java.lang.String) defaultValue(fields()[17]);
-        record.accuracy = fieldSetFlags()[18] ? this.accuracy : (java.lang.Integer) defaultValue(fields()[18]);
-        record.network = fieldSetFlags()[19] ? this.network : (java.lang.String) defaultValue(fields()[19]);
-        record.movemetState = fieldSetFlags()[20] ? this.movemetState : (java.lang.String) defaultValue(fields()[20]);
-        record.totalDistance = fieldSetFlags()[21] ? this.totalDistance : (java.lang.String) defaultValue(fields()[21]);
+        record.outdated = fieldSetFlags()[9] ? this.outdated : (java.lang.Boolean) defaultValue(fields()[9]);
+        record.valid = fieldSetFlags()[10] ? this.valid : (java.lang.Boolean) defaultValue(fields()[10]);
+        record.latitude = fieldSetFlags()[11] ? this.latitude : (java.lang.Double) defaultValue(fields()[11]);
+        record.longitude = fieldSetFlags()[12] ? this.longitude : (java.lang.Double) defaultValue(fields()[12]);
+        record.altitude = fieldSetFlags()[13] ? this.altitude : (java.lang.Double) defaultValue(fields()[13]);
+        record.speed = fieldSetFlags()[14] ? this.speed : (java.lang.Double) defaultValue(fields()[14]);
+        record.course = fieldSetFlags()[15] ? this.course : (java.lang.Double) defaultValue(fields()[15]);
+        record.address = fieldSetFlags()[16] ? this.address : (java.lang.String) defaultValue(fields()[16]);
+        record.accuracy = fieldSetFlags()[17] ? this.accuracy : (java.lang.Integer) defaultValue(fields()[17]);
+        record.network = fieldSetFlags()[18] ? this.network : (java.lang.String) defaultValue(fields()[18]);
+        record.movemetState = fieldSetFlags()[19] ? this.movemetState : (java.lang.String) defaultValue(fields()[19]);
+        record.totalDistance = fieldSetFlags()[20] ? this.totalDistance : (java.lang.String) defaultValue(fields()[20]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
