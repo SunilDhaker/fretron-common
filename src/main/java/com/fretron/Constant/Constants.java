@@ -457,6 +457,7 @@ public class Constants {
 
     public final static String KEY_QUEUE_TOPIC="queue.topic";
     public final static String KEY_QUEUE_TOKEN_TOPIC="queue.tokon.topic";
+    public final static String KEY_VLR_TOPIC="vlr.topic";
 
     public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
     public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
@@ -466,7 +467,7 @@ public class Constants {
     public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.db.port";
     public final static String KEY_TOKEN_MONGODB_COLLECTION_NAME="token.db.collection.name";
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
-
+    public final static String KEY_VLR_MONGODB_COLLECTION_NAME="vlr.db.collection.name";
 
 
     private Constants(){

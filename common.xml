@@ -145,6 +145,7 @@
     <!--===============Token Manager -topics=====================-->
     <entry key="queue.tokon.topic">queuetokentopic</entry>
     <entry key="queue.topic">queuetopic</entry>
+    <entry key="vlr.topic">vlrtopic</entry>
 
     <!-- ================ token manager app id ======= -->
     <entry key="token.manager.app.id">tokenManager</entry>

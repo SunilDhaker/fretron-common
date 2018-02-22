@@ -47,6 +47,22 @@
       "default": null
     },
     {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "organisationName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "queueId",
       "type": [
         "null",
