@@ -161,12 +161,20 @@
           "default": null
         },
         {
-              "name": "orgId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            }
+          "name": "orgId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name":"description",
+          "type":[
+            "null",
+            "string"
+          ],
+          "default":null
+        }
   ]
 }
