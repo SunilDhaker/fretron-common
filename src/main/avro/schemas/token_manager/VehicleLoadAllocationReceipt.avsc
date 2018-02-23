@@ -51,6 +51,21 @@
       ],
       "logicalType": "timestamp-millis",
       "default": null
-    }
+    },{
+        "name":"shipmentId",
+        "type":[
+          "null",
+          "string"
+        ],
+        "default":null
+      },
+     {
+       "name":"status",
+       "type":[
+         "null",
+         "string"
+       ],
+       "default":null
+     }
   ]
 }
