@@ -12,16 +12,16 @@
       "default":null
     },
     {
-      "name": "previousPoints",
+      "name": "previousLocations",
       "type": {
         "type":"array",
-        "items":"com.fretron.Model.PointAtTime"
+        "items":"com.fretron.Model.LitePosition"
       },
       "default":null
     },
     {
       "name": "lastUpdatedTime",
-      "type": "long",
+      "type":  ["null","long"],
       "logicalType": "timestamp-millis",
       "default":null
     },
@@ -34,6 +34,19 @@
         "name": "isCurrentWindow",
         "type": "boolean",
         "default":false
+    },
+    {
+       "name": "isSessionDirty",
+       "type": "boolean",
+       "default":false
+    },
+    {
+     "name": "lastWindowEndTime",
+      "type": ["null","long"],
+      "logicalType": "timestamp-millis",
+      "default":null
+
     }
+
   ]
 }
