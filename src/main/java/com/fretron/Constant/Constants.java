@@ -75,7 +75,7 @@ public class Constants {
     public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
 
     public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
-    public static  final String KEY_DEVICE_DISCONNECTION_THRESHOLD = "device.disconnection.threshold";
+    public static  final String KEY_DISCONNECTION_THRESHOLD = "disconnection.threshold";
 
 
 

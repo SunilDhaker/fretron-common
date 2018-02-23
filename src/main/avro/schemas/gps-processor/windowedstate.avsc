@@ -1,7 +1,7 @@
 {
   "namespace": "com.fretron.Model",
   "type": "record",
-  "name": "GpsWindowState",
+  "name": "WindowedState",
   "fields": [
     {
       "name": "vehicleGpsState",
@@ -20,7 +20,7 @@
       "default":null
     },
     {
-      "name": "timestamp",
+      "name": "lastUpdatedTime",
       "type": "long",
       "logicalType": "timestamp-millis",
       "default":null
@@ -29,6 +29,11 @@
           "name": "isDirty",
           "type": "boolean",
           "default":false
+    } ,
+    {
+        "name": "isCurrentWindow",
+        "type": "boolean",
+        "default":false
     }
   ]
 }
