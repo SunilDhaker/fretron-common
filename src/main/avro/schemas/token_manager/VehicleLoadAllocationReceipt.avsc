@@ -66,6 +66,15 @@
          "string"
        ],
        "default":null
+     },
+     {
+       "name":"createTime",
+       "type":[
+         "null",
+         "long"
+       ],
+       "logicalType": "timestamp-millis",
+       "default": null
      }
   ]
 }
