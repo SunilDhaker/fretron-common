@@ -1,0 +1,44 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "WindowedState",
+  "fields": [
+    {
+      "name": "vehicleGpsState",
+      "type": [
+        "null",
+        "com.fretron.Model.VehicleGpsState"
+      ],
+      "default":null
+    },
+    {
+      "name": "lastUpdatedTime",
+      "type":  ["null","long"],
+      "logicalType": "timestamp-millis",
+      "default":null
+    },
+    {
+          "name": "isDirty",
+          "type": "boolean",
+          "default":false
+    } ,
+    {
+        "name": "isCurrentWindow",
+        "type": "boolean",
+        "default":false
+    },
+    {
+       "name": "isSessionDirty",
+       "type": "boolean",
+       "default":false
+    },
+    {
+     "name": "lastWindowEndTime",
+      "type": ["null","long"],
+      "logicalType": "timestamp-millis",
+      "default":null
+
+    }
+
+  ]
+}

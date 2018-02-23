@@ -21,7 +21,48 @@
       "default": null
     },
     {
+      "name": "cancelTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
       "name": "tokenNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "organisationName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ownerName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "driverName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "brokerName",
       "type": [
         "null",
         "string"
@@ -77,6 +118,63 @@
         "string"
       ],
       "default":null
-    }
+    },
+    {
+      "name":"driverNumber",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"brokerNumber",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"ownerNumber",
+      "type":[
+        "null",
+        "string"
+      ],
+      "default":null
+    },
+    {
+      "name":"lastTrip",
+      "type":[
+        "null",
+        "com.fretron.Model.LastTrip"
+      ],
+      "default":null
+    },
+        {
+          "name": "originalIssueTime",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+        {
+          "name": "orgId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name":"description",
+          "type":[
+            "null",
+            "string"
+          ],
+          "default":null
+        }
   ]
 }
