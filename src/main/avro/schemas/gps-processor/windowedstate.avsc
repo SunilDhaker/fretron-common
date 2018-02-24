@@ -22,6 +22,12 @@
           "type": "boolean",
           "default":false
     } ,
+
+    {
+       "name": "isMature",
+        "type": "boolean",
+        "default":false
+    },
     {
         "name": "isCurrentWindow",
         "type": "boolean",
