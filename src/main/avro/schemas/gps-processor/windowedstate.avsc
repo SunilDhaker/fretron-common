@@ -38,6 +38,13 @@
       "logicalType": "timestamp-millis",
       "default":null
 
+    },
+    {
+       "name": "windowTime",
+        "type": ["null","long"],
+        "logicalType": "timestamp-millis",
+         "default":null
+
     }
 
   ]
