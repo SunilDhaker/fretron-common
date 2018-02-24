@@ -642,14 +642,36 @@
                            "type":["null",{"type" : "array", "items":"string"}],
                            "default":null
                         },
-                        						{
-                                    				"name": "liveliness",
-                                    				"type": [
-                                    					"null",
-                                    					"string"
-                                    				],
-                                    				"default": null
-                                    			}
+                        {
+                            "name": "liveliness",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        },
+                        {
+                          "name":"isOffTrack",
+                          "type":"boolean",
+                          "default":false
+                        },
+                        {
+                        "name": "offTrackSince",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "logicalType": "timestamp-millis",
+                        "default": null
+                        },
+                        {
+                            "name": "expectedSystemResolution",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        }
 		]
 	},
 	{
