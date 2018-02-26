@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class WindowedState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6560081130814353642L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WindowedState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isMature\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isCurrentWindow\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isSessionDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastWindowEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"windowTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -1798962337759770768L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WindowedState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isMature\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isCurrentWindow\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isSessionDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastWindowEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"windowTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"litePositions\",\"type\":{\"type\":\"array\",\"items\":\"LitePosition\"},\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.VehicleGpsState vehicleGpsState;
   @Deprecated public java.lang.Long lastUpdatedTime;
@@ -21,6 +21,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public boolean isSessionDirty;
   @Deprecated public java.lang.Long lastWindowEndTime;
   @Deprecated public java.lang.Long windowTime;
+  @Deprecated public java.util.List<com.fretron.Model.LitePosition> litePositions;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +40,9 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
    * @param isSessionDirty The new value for isSessionDirty
    * @param lastWindowEndTime The new value for lastWindowEndTime
    * @param windowTime The new value for windowTime
+   * @param litePositions The new value for litePositions
    */
-  public WindowedState(com.fretron.Model.VehicleGpsState vehicleGpsState, java.lang.Long lastUpdatedTime, java.lang.Boolean isDirty, java.lang.Boolean isMature, java.lang.Boolean isCurrentWindow, java.lang.Boolean isSessionDirty, java.lang.Long lastWindowEndTime, java.lang.Long windowTime) {
+  public WindowedState(com.fretron.Model.VehicleGpsState vehicleGpsState, java.lang.Long lastUpdatedTime, java.lang.Boolean isDirty, java.lang.Boolean isMature, java.lang.Boolean isCurrentWindow, java.lang.Boolean isSessionDirty, java.lang.Long lastWindowEndTime, java.lang.Long windowTime, java.util.List<com.fretron.Model.LitePosition> litePositions) {
     this.vehicleGpsState = vehicleGpsState;
     this.lastUpdatedTime = lastUpdatedTime;
     this.isDirty = isDirty;
@@ -49,6 +51,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     this.isSessionDirty = isSessionDirty;
     this.lastWindowEndTime = lastWindowEndTime;
     this.windowTime = windowTime;
+    this.litePositions = litePositions;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +66,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     case 5: return isSessionDirty;
     case 6: return lastWindowEndTime;
     case 7: return windowTime;
+    case 8: return litePositions;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +83,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     case 5: isSessionDirty = (java.lang.Boolean)value$; break;
     case 6: lastWindowEndTime = (java.lang.Long)value$; break;
     case 7: windowTime = (java.lang.Long)value$; break;
+    case 8: litePositions = (java.util.List<com.fretron.Model.LitePosition>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +217,22 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'litePositions' field.
+   * @return The value of the 'litePositions' field.
+   */
+  public java.util.List<com.fretron.Model.LitePosition> getLitePositions() {
+    return litePositions;
+  }
+
+  /**
+   * Sets the value of the 'litePositions' field.
+   * @param value the value to set.
+   */
+  public void setLitePositions(java.util.List<com.fretron.Model.LitePosition> value) {
+    this.litePositions = value;
+  }
+
+  /**
    * Creates a new WindowedState RecordBuilder.
    * @return A new WindowedState RecordBuilder
    */
@@ -252,6 +273,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     private boolean isSessionDirty;
     private java.lang.Long lastWindowEndTime;
     private java.lang.Long windowTime;
+    private java.util.List<com.fretron.Model.LitePosition> litePositions;
 
     /** Creates a new Builder */
     private Builder() {
@@ -299,6 +321,10 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
         this.windowTime = data().deepCopy(fields()[7].schema(), other.windowTime);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.litePositions)) {
+        this.litePositions = data().deepCopy(fields()[8].schema(), other.litePositions);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -339,6 +365,10 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[7], other.windowTime)) {
         this.windowTime = data().deepCopy(fields()[7].schema(), other.windowTime);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.litePositions)) {
+        this.litePositions = data().deepCopy(fields()[8].schema(), other.litePositions);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -685,6 +715,45 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'litePositions' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.LitePosition> getLitePositions() {
+      return litePositions;
+    }
+
+    /**
+      * Sets the value of the 'litePositions' field.
+      * @param value The value of 'litePositions'.
+      * @return This builder.
+      */
+    public com.fretron.Model.WindowedState.Builder setLitePositions(java.util.List<com.fretron.Model.LitePosition> value) {
+      validate(fields()[8], value);
+      this.litePositions = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'litePositions' field has been set.
+      * @return True if the 'litePositions' field has been set, false otherwise.
+      */
+    public boolean hasLitePositions() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'litePositions' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.WindowedState.Builder clearLitePositions() {
+      litePositions = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public WindowedState build() {
       try {
@@ -701,6 +770,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
         record.isSessionDirty = fieldSetFlags()[5] ? this.isSessionDirty : (java.lang.Boolean) defaultValue(fields()[5]);
         record.lastWindowEndTime = fieldSetFlags()[6] ? this.lastWindowEndTime : (java.lang.Long) defaultValue(fields()[6]);
         record.windowTime = fieldSetFlags()[7] ? this.windowTime : (java.lang.Long) defaultValue(fields()[7]);
+        record.litePositions = fieldSetFlags()[8] ? this.litePositions : (java.util.List<com.fretron.Model.LitePosition>) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
