@@ -58,7 +58,6 @@
         "type":"array",
         "items":"com.fretron.Model.LitePosition"
       },
-      "logicalType": "timestamp-millis",
       "default":null
     }
   ]
