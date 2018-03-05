@@ -211,7 +211,16 @@
                    "string"
                 ],
                 "default":null
-            }
+            },
+                     {
+                            "name":"currentTrackingState",
+                            "type":[
+                              "null",
+                              "com.fretron.Model.VehicleState"
+                            ],
+                            "default":null
+                     }
+
     ]
   },
 
