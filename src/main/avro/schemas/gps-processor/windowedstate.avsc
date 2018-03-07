@@ -39,6 +39,16 @@
        "default":false
     },
     {
+      "name": "isFirst",
+       "type": "boolean",
+       "default":false
+    },
+    {
+       "name": "isExpire",
+        "type": "boolean",
+        "default":false
+    },
+    {
      "name": "lastWindowEndTime",
       "type": ["null","long"],
       "logicalType": "timestamp-millis",

@@ -35,7 +35,7 @@ public final class Context {
         return config;
     }
 
-    public static void init(String[] arguments) throws Exception {
+    public static void init(String[] arguments) {
 
         if(config == null){
             config = new Config();

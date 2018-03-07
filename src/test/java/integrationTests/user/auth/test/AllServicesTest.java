@@ -296,8 +296,8 @@ public class AllServicesTest {
                     System.out.println(token);
                     System.out.println(token2);
 
-                };
-               flag=true;
+                }
+                flag=true;
             }
             else{
                 flag=false;

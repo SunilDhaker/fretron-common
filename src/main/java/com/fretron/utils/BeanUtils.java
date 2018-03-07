@@ -13,8 +13,7 @@ import java.lang.reflect.Method;
 
 public class BeanUtils {
 
-	public static void copy(Object dest, Object source) throws Exception,
-			InvocationTargetException {
+	public static void copy(Object dest, Object source) throws Exception {
 		BeanInfo beanInfo = Introspector.getBeanInfo(source.getClass());
 		PropertyDescriptor[] pdList = beanInfo.getPropertyDescriptors();
 		for (PropertyDescriptor pd : pdList) {

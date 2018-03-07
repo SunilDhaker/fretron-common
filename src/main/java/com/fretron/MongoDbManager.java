@@ -79,12 +79,7 @@ public class MongoDbManager {
             try {
                 MongoDatabase db = instanceMap.get(host+"#"+port+"#"+dbName).database;
                 MongoIterable<String> iterator =  db.listCollectionNames();
-                if (  iterator.iterator().hasNext()) {
-                    isConnected = true;
-                }
-                else{
-                    isConnected = false;
-                }
+                isConnected = iterator.iterator().hasNext();
             } catch (Exception e) {
                 isConnected = false;
             }

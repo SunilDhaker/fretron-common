@@ -96,9 +96,7 @@ public class OnlinePolylineEncoder {
 
 		lineString = lineString +  (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString());
 		return lineString;
-	};
-
-
+	}
 
 
 	/**
@@ -137,8 +135,7 @@ public class OnlinePolylineEncoder {
 		}
 
 		return polylineObj;
-	};
-
+	}
 
 
 	public static String extendPolyline(String lineString , LitePosition lastPos, LitePosition nextPos){
@@ -238,7 +235,7 @@ public class OnlinePolylineEncoder {
 		List<PointAtTime> points  = (new PolylineDecoder()).decodeTimeAwarePolyline(polylineObj2.getPolyline());
 
 		for(PointAtTime point : points){
-			polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());;
+			polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
 		}
 		return polylineObj1;
 	}
@@ -368,7 +365,7 @@ public class OnlinePolylineEncoder {
 	}
 
 
-	public static TimeAwarePolyline extendTimeAwarePolylineUsingPositions(ArrayList<LitePosition> list){
+	public static TimeAwarePolyline extendTimeAwarePolylineUsingPositions(List<LitePosition> list){
 
 		TimeAwarePolyline polyline = null;
 

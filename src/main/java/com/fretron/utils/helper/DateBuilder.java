@@ -124,7 +124,7 @@ public class DateBuilder {
     }
 
 
-    public Date getLocalDate(Date date ,TimeZone timeOffset) throws Exception{
+    public Date getLocalDate(Date date ,TimeZone timeOffset) {
 
         return new Date(date.getTime() + timeOffset.getRawOffset());
 
