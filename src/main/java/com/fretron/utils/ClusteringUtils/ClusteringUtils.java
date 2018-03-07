@@ -23,10 +23,10 @@ public class ClusteringUtils {
 			meanPosition.longitude = meanPosition.longitude / positions.size() ;
 		}
 		return meanPosition;
-	};
+	}
 
 
-	public static double calculateVariance(List<LitePosition> positions){
+    public static double calculateVariance(List<LitePosition> positions){
 
 		double variance = 0 ;
 		LitePosition meanPosition  = calculateMean(positions);

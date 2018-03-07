@@ -17,11 +17,9 @@ public class GeoSpecial {
 
 
 	public static boolean onSegment(Location p, Location q, Location r) {
-		if (q.latitude <= Math.max(p.latitude, r.latitude) && q.latitude >= Math.min(p.latitude, r.latitude)
-				&& q.longitude <= Math.max(p.longitude, r.longitude) && q.longitude >= Math.min(p.longitude, r.longitude))
-			return true;
-		return false;
-	}
+        return q.latitude <= Math.max(p.latitude, r.latitude) && q.latitude >= Math.min(p.latitude, r.latitude)
+                && q.longitude <= Math.max(p.longitude, r.longitude) && q.longitude >= Math.min(p.longitude, r.longitude);
+    }
 
 	public static int orientation(Location p, Location q, Location r) {
 		double val = (q.longitude - p.longitude) * (r.latitude - q.latitude) - (q.latitude - p.latitude) * (r.longitude - q.longitude);
@@ -50,11 +48,9 @@ public class GeoSpecial {
 		if (o3 == 0 && onSegment(p2, p1, q2))
 			return true;
 
-		if (o4 == 0 && onSegment(p2, q1, q2))
-			return true;
+        return o4 == 0 && onSegment(p2, q1, q2);
 
-		return false;
-	}
+    }
 
 	public static boolean isInside(Location polygon[], int n, Location p) {
 		double INF = 10000;
@@ -75,7 +71,7 @@ public class GeoSpecial {
 			i = next;
 		} while (i != 0);
 
-		return (count & 1) == 1 ? true : false;
+		return (count & 1) == 1;
 	}
 
 	public static boolean isInside(ArrayList<Location> polygon, Location p) {
