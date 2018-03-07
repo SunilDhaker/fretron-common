@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4275620037067615046L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightLocation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}");
+  private static final long serialVersionUID = 7671540420740880419L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightLocation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public com.fretron.Model.Geofence geofence;
@@ -21,6 +21,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.util.List<java.lang.String> favouriteOf;
   @Deprecated public com.fretron.Model.FreightLocType type;
+  @Deprecated public java.lang.Boolean isDeleted;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +40,9 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
    * @param orgId The new value for orgId
    * @param favouriteOf The new value for favouriteOf
    * @param type The new value for type
+   * @param isDeleted The new value for isDeleted
    */
-  public FreightLocation(java.lang.String name, com.fretron.Model.Geofence geofence, java.util.List<java.lang.String> material, java.lang.String address, java.lang.String uuid, java.lang.String orgId, java.util.List<java.lang.String> favouriteOf, com.fretron.Model.FreightLocType type) {
+  public FreightLocation(java.lang.String name, com.fretron.Model.Geofence geofence, java.util.List<java.lang.String> material, java.lang.String address, java.lang.String uuid, java.lang.String orgId, java.util.List<java.lang.String> favouriteOf, com.fretron.Model.FreightLocType type, java.lang.Boolean isDeleted) {
     this.name = name;
     this.geofence = geofence;
     this.material = material;
@@ -49,6 +51,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
     this.orgId = orgId;
     this.favouriteOf = favouriteOf;
     this.type = type;
+    this.isDeleted = isDeleted;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +66,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
     case 5: return orgId;
     case 6: return favouriteOf;
     case 7: return type;
+    case 8: return isDeleted;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +83,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
     case 5: orgId = (java.lang.String)value$; break;
     case 6: favouriteOf = (java.util.List<java.lang.String>)value$; break;
     case 7: type = (com.fretron.Model.FreightLocType)value$; break;
+    case 8: isDeleted = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +217,22 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'isDeleted' field.
+   * @return The value of the 'isDeleted' field.
+   */
+  public java.lang.Boolean getIsDeleted() {
+    return isDeleted;
+  }
+
+  /**
+   * Sets the value of the 'isDeleted' field.
+   * @param value the value to set.
+   */
+  public void setIsDeleted(java.lang.Boolean value) {
+    this.isDeleted = value;
+  }
+
+  /**
    * Creates a new FreightLocation RecordBuilder.
    * @return A new FreightLocation RecordBuilder
    */
@@ -252,6 +273,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.String orgId;
     private java.util.List<java.lang.String> favouriteOf;
     private com.fretron.Model.FreightLocType type;
+    private java.lang.Boolean isDeleted;
 
     /** Creates a new Builder */
     private Builder() {
@@ -299,6 +321,10 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
         this.type = data().deepCopy(fields()[7].schema(), other.type);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.isDeleted)) {
+        this.isDeleted = data().deepCopy(fields()[8].schema(), other.isDeleted);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -339,6 +365,10 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
       if (isValidValue(fields()[7], other.type)) {
         this.type = data().deepCopy(fields()[7].schema(), other.type);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.isDeleted)) {
+        this.isDeleted = data().deepCopy(fields()[8].schema(), other.isDeleted);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -689,6 +719,45 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'isDeleted' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsDeleted() {
+      return isDeleted;
+    }
+
+    /**
+      * Sets the value of the 'isDeleted' field.
+      * @param value The value of 'isDeleted'.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightLocation.Builder setIsDeleted(java.lang.Boolean value) {
+      validate(fields()[8], value);
+      this.isDeleted = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isDeleted' field has been set.
+      * @return True if the 'isDeleted' field has been set, false otherwise.
+      */
+    public boolean hasIsDeleted() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'isDeleted' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightLocation.Builder clearIsDeleted() {
+      isDeleted = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public FreightLocation build() {
       try {
@@ -705,6 +774,7 @@ public class FreightLocation extends org.apache.avro.specific.SpecificRecordBase
         record.orgId = fieldSetFlags()[5] ? this.orgId : (java.lang.String) defaultValue(fields()[5]);
         record.favouriteOf = fieldSetFlags()[6] ? this.favouriteOf : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
         record.type = fieldSetFlags()[7] ? this.type : (com.fretron.Model.FreightLocType) defaultValue(fields()[7]);
+        record.isDeleted = fieldSetFlags()[8] ? this.isDeleted : (java.lang.Boolean) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
