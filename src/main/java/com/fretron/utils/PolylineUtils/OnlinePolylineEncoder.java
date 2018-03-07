@@ -368,7 +368,7 @@ public class OnlinePolylineEncoder {
 	}
 
 
-	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<LitePosition> list){
+	public static TimeAwarePolyline extendTimeAwarePolylineUsingPositions(ArrayList<LitePosition> list){
 
 		TimeAwarePolyline polyline = null;
 
