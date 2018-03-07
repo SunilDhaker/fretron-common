@@ -346,7 +346,7 @@ public class OnlinePolylineEncoder {
 
 
 
-	public TimeAwarePolyline extendTimeAwarePolyline(ArrayList<PointAtTime> list){
+	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<PointAtTime> list){
 
 		TimeAwarePolyline polyline = null;
 
@@ -368,7 +368,7 @@ public class OnlinePolylineEncoder {
 
 
 
-	public String convertToGeoPolyline(TimeAwarePolyline timeAwarePolyline){
+	public static String convertToGeoPolyline(TimeAwarePolyline timeAwarePolyline){
 
 		String polyline = "";
 		PolylineDecoder decoder = new PolylineDecoder();
