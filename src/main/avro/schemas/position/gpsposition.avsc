@@ -172,7 +172,8 @@
       },
       {
         "name": "encodedPolyline",
-        "type": "string"
+        "type": ["null" ,"string"],
+         "default":null
       },
       {
           "name": "timeAwarePolyline",
