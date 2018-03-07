@@ -282,9 +282,10 @@ public class OnlinePolylineEncoder {
 
 	public static TimeAwarePolyline mergePolylineWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,String polyline ,long newLocationTime){
 
-		if (polyline.length() == 0 || polylineObj != null){
+		if (polyline.length() == 0 || polylineObj == null){
 			return polylineObj;
 		}
+
 
 		long lastPointTimestamp = polylineObj.getLastPoint().getTimestamp();
 
@@ -358,6 +359,27 @@ public class OnlinePolylineEncoder {
 			while (it.hasNext()){
 				PointAtTime point = it.next();
 				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
+			}
+
+		}
+
+
+		return polyline;
+	}
+
+
+	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<LitePosition> list){
+
+		TimeAwarePolyline polyline = null;
+
+		if (list.size() > 0){
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false);
+
+			Iterator<LitePosition> it = list.iterator();
+
+			while (it.hasNext()){
+				LitePosition point = it.next();
+				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTime());
 			}
 
 		}
