@@ -376,6 +376,11 @@ public class Constants {
 
     //======================================================
 
+    public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
+    public static final String SHIPMENT_DB_NAME = "shipment.db.name";
+    public static final String SHIPMENT_DB_PORT = "shipment.db.port";
+    public static final String SHIPMENT_DB_HOST = "shipment.db.host";
+
     public static final String KEY_DRIVER_TOPIC = "driver.topic";
     public static final String DRIVER_DB_NAME = "driver.db.name";
     public static final String DRIVER_DB_HOST = "driver.db.host";
