@@ -480,6 +480,14 @@ public class Constants {
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
     public final static String KEY_VLR_MONGODB_COLLECTION_NAME="vlr.db.collection.name";
 
+    //========================DASHBOARD_MANAGER=================
+
+    public static final String KEY_DASHBOARD_MANAGER_APP_ID = "dashboard.manager.app.id";
+    public static final String KEY_VEHICLE_ACCESSIBLE_DB_NAME ="vehicle.accessible.db.name";
+    public static final String DASHBOARD_APP_IP = "dashboard.manager.restservice.ip";
+    public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
+    public static final String DASHBOARD_TOPIC = "dashboard.topic";
+
 
     private Constants(){
 
