@@ -487,7 +487,7 @@ public class Constants {
     public static final String DASHBOARD_APP_IP = "dashboard.manager.restservice.ip";
     public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
-
+    public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
 
     private Constants(){
 
