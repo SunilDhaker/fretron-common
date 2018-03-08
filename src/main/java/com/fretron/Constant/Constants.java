@@ -434,6 +434,8 @@ public class Constants {
 
     public final static String KEY_TF_TOKEN_API_URL = "tatafleetman.getToken";
     public  final static String KEY_TF_TRACK_VEHICLE_API_URL = "tatafleetman.track.vehicle";
+    public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
+
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
@@ -478,6 +480,14 @@ public class Constants {
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
     public final static String KEY_VLR_MONGODB_COLLECTION_NAME="vlr.db.collection.name";
 
+    //========================DASHBOARD_MANAGER=================
+
+    public static final String KEY_DASHBOARD_MANAGER_APP_ID = "dashboard.manager.app.id";
+    public static final String KEY_VEHICLE_ACCESSIBLE_DB_NAME ="vehicle.accessible.db.name";
+    public static final String DASHBOARD_APP_IP = "dashboard.manager.restservice.ip";
+    public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
+    public static final String DASHBOARD_TOPIC = "dashboard.topic";
+    public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
 
     private Constants(){
 
