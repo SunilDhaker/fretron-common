@@ -1,0 +1,81 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "DeviceStatus",
+    "fields": [
+      {
+        "name": "deviceId",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "protocol",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+
+      {
+         "name": "batteryLevelEvent",
+          "type": ["null","com.fretron.Model.DeviceEvent"],
+           "default":null
+       },
+       {
+           "name": "lowBatteryEvent",
+           "type": ["null","com.fretron.Model.DeviceEvent"],
+           "default":null
+       },
+
+       {
+           "name": "powerCutEvent",
+            "type": ["null","com.fretron.Model.DeviceEvent"],
+            "default":null
+       },
+
+       {
+           "name": "vibrationEvent",
+           "type": ["null","com.fretron.Model.DeviceEvent"],
+            "default":null
+       },
+      {
+        "name": "lastUpdateTime",
+        "type": [
+          "null",
+          "long"
+        ]
+      },
+      {
+              "name": "lastDisconnectionTime",
+              "type": [
+                "null",
+                "long"
+              ]
+      },
+      {
+              "name": "lastDisconnectionDuration",
+              "type": [
+                "null",
+                "long"
+              ]
+       },
+      {
+        "name": "isConnected",
+        "type": "boolean"
+      },
+
+      {
+        "name": "disconnectionReason",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+
+
+    ]
+  }
+]

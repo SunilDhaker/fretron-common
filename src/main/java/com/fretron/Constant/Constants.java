@@ -66,12 +66,17 @@ public class Constants {
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
 
 
 
     //states
     public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
     public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
+
+    public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
+    public static  final String KEY_DISCONNECTION_THRESHOLD = "disconnection.threshold";
+
 
 
 
@@ -81,6 +86,10 @@ public class Constants {
     public final static  String KEY_POSITION_PROCESSOR_DATABASE_IP = "position.processor.database.ip";
     public final static  String KEY_VEHICLE_GPS_STATE_COLLECTION_NAME = "vehicle.gps.state.collectionName";
 
+
+
+    public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STATE = "deviceDataByRemoteAddress.state";
+    public final static String KEY_LAST_PROCESSED_POSITIONS_STATE = "lastprocessedpositions.state";
 
 
 
@@ -367,6 +376,11 @@ public class Constants {
 
     //======================================================
 
+    public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
+    public static final String SHIPMENT_DB_NAME = "shipment.db.name";
+    public static final String SHIPMENT_DB_PORT = "shipment.db.port";
+    public static final String SHIPMENT_DB_HOST = "shipment.db.host";
+
     public static final String KEY_DRIVER_TOPIC = "driver.topic";
     public static final String DRIVER_DB_NAME = "driver.db.name";
     public static final String DRIVER_DB_HOST = "driver.db.host";
@@ -448,24 +462,23 @@ public class Constants {
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
-    public final static String KEY_PROTOCOL_HANDLER_APP_HOST = "protocol.handler.app.rest.host";
-    public final static String KEY_PROTOCOL_HANDLER_APP_PORT = "protocol.handler.app.rest.port";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
 
     public final static String KEY_QUEUE_TOPIC="queue.topic";
     public final static String KEY_QUEUE_TOKEN_TOPIC="queue.tokon.topic";
+    public final static String KEY_VLR_TOPIC="vlr.topic";
 
     public final static String KEY_TOKEN_MANAGER_IP="token.manager.restservice.ip";
     public final static String KEY_TOKEN_MANAGER_PORT="token.manager.restservice.port";
 
-    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.db.name";
-    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.db.host";
-    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.db.port";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_NAME="token.manager.db.name";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_HOST="token.manager.db.host";
+    public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.manager.db.port";
     public final static String KEY_TOKEN_MONGODB_COLLECTION_NAME="token.db.collection.name";
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
-
+    public final static String KEY_VLR_MONGODB_COLLECTION_NAME="vlr.db.collection.name";
 
 
     private Constants(){

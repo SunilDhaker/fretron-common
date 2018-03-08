@@ -31,8 +31,10 @@ public class HttpRequestHepler {
         }
         StringEntity se = null;
         try {
-            se = new StringEntity(requestObject.toString());
-            post.setEntity(se);
+            if (requestObject!=null) {
+                se = new StringEntity(requestObject.toString());
+                post.setEntity(se);
+            }
 
             try {
                 response = httpClient.execute(post);

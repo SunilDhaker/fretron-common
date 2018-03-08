@@ -34,9 +34,6 @@
     <entry key="tracker.manager.restservice.ip">http://0.0.0.0</entry>
     <entry key="tracker.manager.restservice.port">2125</entry>
 
-    <entry key="uturn.detector.restservice.ip">http://trip-manager.streams:2123</entry>
-    <entry key="uturn.detector.restservice.port">http://trip-manager.streams:2123</entry>
-
     <!-- =========Registry-Manager========== -->
     <entry key="registry.manager.service.url">http://registry-manager.streams:8087</entry>
     <entry key="registry.manager.restservice.ip">http://0.0.0.0</entry>

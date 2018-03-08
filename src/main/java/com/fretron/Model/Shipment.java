@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Shipment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3834142084694413597L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Shipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripLocation\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}],\"default\":null},{\"name\":\"endLocation\",\"type\":[\"null\",\"TripLocation\"],\"default\":null},{\"name\":\"planedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"planedEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TrackingType\",\"symbols\":[\"Tracker\",\"Trip\",\"Manual\"]}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"shipmentState\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TripState\",\"symbols\":[\"Created\",\"Started\",\"Completed\"]}],\"default\":null},{\"name\":\"actualStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"shipmentNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"vehicleRegistrationNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"assosiatedTripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"deafult\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"shipmentNoExtended\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5949075480606664001L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Shipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripLocation\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}],\"default\":null},{\"name\":\"endLocation\",\"type\":[\"null\",\"TripLocation\"],\"default\":null},{\"name\":\"planedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"planedEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TrackingType\",\"symbols\":[\"Tracker\",\"Trip\",\"Manual\"]}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"shipmentState\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TripState\",\"symbols\":[\"Created\",\"Started\",\"Completed\"]}],\"default\":null},{\"name\":\"actualStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"shipmentNo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"vehicleRegistrationNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"assosiatedTripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"deafult\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"shipmentNoExtended\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"consignmentDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentTrackingState\",\"type\":[\"null\",\"VehicleState\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.TripLocation startLocation;
   @Deprecated public com.fretron.Model.TripLocation endLocation;
@@ -33,6 +33,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.util.List<java.lang.String> sharedWith;
   @Deprecated public java.lang.String shipmentNoExtended;
+  @Deprecated public java.lang.Long shipmentDate;
+  @Deprecated public java.lang.Long consignmentDate;
+  @Deprecated public java.lang.Long invoiceDate;
+  @Deprecated public java.lang.String invoiceNumber;
+  @Deprecated public java.lang.String valueOfGoods;
+  @Deprecated public com.fretron.Model.VehicleState currentTrackingState;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -63,8 +69,14 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
    * @param orgId The new value for orgId
    * @param sharedWith The new value for sharedWith
    * @param shipmentNoExtended The new value for shipmentNoExtended
+   * @param shipmentDate The new value for shipmentDate
+   * @param consignmentDate The new value for consignmentDate
+   * @param invoiceDate The new value for invoiceDate
+   * @param invoiceNumber The new value for invoiceNumber
+   * @param valueOfGoods The new value for valueOfGoods
+   * @param currentTrackingState The new value for currentTrackingState
    */
-  public Shipment(com.fretron.Model.TripLocation startLocation, com.fretron.Model.TripLocation endLocation, java.lang.Long planedStartTime, java.lang.Long planedEndTime, java.lang.String deviceImei, java.lang.String vehicleId, com.fretron.Model.TrackingType trackingType, java.lang.String shipmentId, com.fretron.Model.VehicleState status, com.fretron.Model.TripState shipmentState, java.lang.Long actualStartTime, java.lang.Long actualEndTime, java.lang.Integer shipmentNo, java.lang.String vehicleRegistrationNo, java.lang.String driverName, java.lang.String mobileNo, java.lang.String assosiatedTripId, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String shipmentNoExtended) {
+  public Shipment(com.fretron.Model.TripLocation startLocation, com.fretron.Model.TripLocation endLocation, java.lang.Long planedStartTime, java.lang.Long planedEndTime, java.lang.String deviceImei, java.lang.String vehicleId, com.fretron.Model.TrackingType trackingType, java.lang.String shipmentId, com.fretron.Model.VehicleState status, com.fretron.Model.TripState shipmentState, java.lang.Long actualStartTime, java.lang.Long actualEndTime, java.lang.Integer shipmentNo, java.lang.String vehicleRegistrationNo, java.lang.String driverName, java.lang.String mobileNo, java.lang.String assosiatedTripId, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String shipmentNoExtended, java.lang.Long shipmentDate, java.lang.Long consignmentDate, java.lang.Long invoiceDate, java.lang.String invoiceNumber, java.lang.String valueOfGoods, com.fretron.Model.VehicleState currentTrackingState) {
     this.startLocation = startLocation;
     this.endLocation = endLocation;
     this.planedStartTime = planedStartTime;
@@ -85,6 +97,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
     this.orgId = orgId;
     this.sharedWith = sharedWith;
     this.shipmentNoExtended = shipmentNoExtended;
+    this.shipmentDate = shipmentDate;
+    this.consignmentDate = consignmentDate;
+    this.invoiceDate = invoiceDate;
+    this.invoiceNumber = invoiceNumber;
+    this.valueOfGoods = valueOfGoods;
+    this.currentTrackingState = currentTrackingState;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -111,6 +129,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
     case 17: return orgId;
     case 18: return sharedWith;
     case 19: return shipmentNoExtended;
+    case 20: return shipmentDate;
+    case 21: return consignmentDate;
+    case 22: return invoiceDate;
+    case 23: return invoiceNumber;
+    case 24: return valueOfGoods;
+    case 25: return currentTrackingState;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -139,6 +163,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
     case 17: orgId = (java.lang.String)value$; break;
     case 18: sharedWith = (java.util.List<java.lang.String>)value$; break;
     case 19: shipmentNoExtended = (java.lang.String)value$; break;
+    case 20: shipmentDate = (java.lang.Long)value$; break;
+    case 21: consignmentDate = (java.lang.Long)value$; break;
+    case 22: invoiceDate = (java.lang.Long)value$; break;
+    case 23: invoiceNumber = (java.lang.String)value$; break;
+    case 24: valueOfGoods = (java.lang.String)value$; break;
+    case 25: currentTrackingState = (com.fretron.Model.VehicleState)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -464,6 +494,102 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'shipmentDate' field.
+   * @return The value of the 'shipmentDate' field.
+   */
+  public java.lang.Long getShipmentDate() {
+    return shipmentDate;
+  }
+
+  /**
+   * Sets the value of the 'shipmentDate' field.
+   * @param value the value to set.
+   */
+  public void setShipmentDate(java.lang.Long value) {
+    this.shipmentDate = value;
+  }
+
+  /**
+   * Gets the value of the 'consignmentDate' field.
+   * @return The value of the 'consignmentDate' field.
+   */
+  public java.lang.Long getConsignmentDate() {
+    return consignmentDate;
+  }
+
+  /**
+   * Sets the value of the 'consignmentDate' field.
+   * @param value the value to set.
+   */
+  public void setConsignmentDate(java.lang.Long value) {
+    this.consignmentDate = value;
+  }
+
+  /**
+   * Gets the value of the 'invoiceDate' field.
+   * @return The value of the 'invoiceDate' field.
+   */
+  public java.lang.Long getInvoiceDate() {
+    return invoiceDate;
+  }
+
+  /**
+   * Sets the value of the 'invoiceDate' field.
+   * @param value the value to set.
+   */
+  public void setInvoiceDate(java.lang.Long value) {
+    this.invoiceDate = value;
+  }
+
+  /**
+   * Gets the value of the 'invoiceNumber' field.
+   * @return The value of the 'invoiceNumber' field.
+   */
+  public java.lang.String getInvoiceNumber() {
+    return invoiceNumber;
+  }
+
+  /**
+   * Sets the value of the 'invoiceNumber' field.
+   * @param value the value to set.
+   */
+  public void setInvoiceNumber(java.lang.String value) {
+    this.invoiceNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'valueOfGoods' field.
+   * @return The value of the 'valueOfGoods' field.
+   */
+  public java.lang.String getValueOfGoods() {
+    return valueOfGoods;
+  }
+
+  /**
+   * Sets the value of the 'valueOfGoods' field.
+   * @param value the value to set.
+   */
+  public void setValueOfGoods(java.lang.String value) {
+    this.valueOfGoods = value;
+  }
+
+  /**
+   * Gets the value of the 'currentTrackingState' field.
+   * @return The value of the 'currentTrackingState' field.
+   */
+  public com.fretron.Model.VehicleState getCurrentTrackingState() {
+    return currentTrackingState;
+  }
+
+  /**
+   * Sets the value of the 'currentTrackingState' field.
+   * @param value the value to set.
+   */
+  public void setCurrentTrackingState(com.fretron.Model.VehicleState value) {
+    this.currentTrackingState = value;
+  }
+
+  /**
    * Creates a new Shipment RecordBuilder.
    * @return A new Shipment RecordBuilder
    */
@@ -517,6 +643,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String orgId;
     private java.util.List<java.lang.String> sharedWith;
     private java.lang.String shipmentNoExtended;
+    private java.lang.Long shipmentDate;
+    private java.lang.Long consignmentDate;
+    private java.lang.Long invoiceDate;
+    private java.lang.String invoiceNumber;
+    private java.lang.String valueOfGoods;
+    private com.fretron.Model.VehicleState currentTrackingState;
 
     /** Creates a new Builder */
     private Builder() {
@@ -615,6 +747,30 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
         this.shipmentNoExtended = data().deepCopy(fields()[19].schema(), other.shipmentNoExtended);
         fieldSetFlags()[19] = true;
       }
+      if (isValidValue(fields()[20], other.shipmentDate)) {
+        this.shipmentDate = data().deepCopy(fields()[20].schema(), other.shipmentDate);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.consignmentDate)) {
+        this.consignmentDate = data().deepCopy(fields()[21].schema(), other.consignmentDate);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.invoiceDate)) {
+        this.invoiceDate = data().deepCopy(fields()[22].schema(), other.invoiceDate);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.invoiceNumber)) {
+        this.invoiceNumber = data().deepCopy(fields()[23].schema(), other.invoiceNumber);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.valueOfGoods)) {
+        this.valueOfGoods = data().deepCopy(fields()[24].schema(), other.valueOfGoods);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.currentTrackingState)) {
+        this.currentTrackingState = data().deepCopy(fields()[25].schema(), other.currentTrackingState);
+        fieldSetFlags()[25] = true;
+      }
     }
 
     /**
@@ -704,6 +860,30 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[19], other.shipmentNoExtended)) {
         this.shipmentNoExtended = data().deepCopy(fields()[19].schema(), other.shipmentNoExtended);
         fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.shipmentDate)) {
+        this.shipmentDate = data().deepCopy(fields()[20].schema(), other.shipmentDate);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.consignmentDate)) {
+        this.consignmentDate = data().deepCopy(fields()[21].schema(), other.consignmentDate);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.invoiceDate)) {
+        this.invoiceDate = data().deepCopy(fields()[22].schema(), other.invoiceDate);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.invoiceNumber)) {
+        this.invoiceNumber = data().deepCopy(fields()[23].schema(), other.invoiceNumber);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.valueOfGoods)) {
+        this.valueOfGoods = data().deepCopy(fields()[24].schema(), other.valueOfGoods);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.currentTrackingState)) {
+        this.currentTrackingState = data().deepCopy(fields()[25].schema(), other.currentTrackingState);
+        fieldSetFlags()[25] = true;
       }
     }
 
@@ -1557,6 +1737,240 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'shipmentDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getShipmentDate() {
+      return shipmentDate;
+    }
+
+    /**
+      * Sets the value of the 'shipmentDate' field.
+      * @param value The value of 'shipmentDate'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setShipmentDate(java.lang.Long value) {
+      validate(fields()[20], value);
+      this.shipmentDate = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'shipmentDate' field has been set.
+      * @return True if the 'shipmentDate' field has been set, false otherwise.
+      */
+    public boolean hasShipmentDate() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'shipmentDate' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearShipmentDate() {
+      shipmentDate = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'consignmentDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getConsignmentDate() {
+      return consignmentDate;
+    }
+
+    /**
+      * Sets the value of the 'consignmentDate' field.
+      * @param value The value of 'consignmentDate'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setConsignmentDate(java.lang.Long value) {
+      validate(fields()[21], value);
+      this.consignmentDate = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'consignmentDate' field has been set.
+      * @return True if the 'consignmentDate' field has been set, false otherwise.
+      */
+    public boolean hasConsignmentDate() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'consignmentDate' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearConsignmentDate() {
+      consignmentDate = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'invoiceDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getInvoiceDate() {
+      return invoiceDate;
+    }
+
+    /**
+      * Sets the value of the 'invoiceDate' field.
+      * @param value The value of 'invoiceDate'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setInvoiceDate(java.lang.Long value) {
+      validate(fields()[22], value);
+      this.invoiceDate = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'invoiceDate' field has been set.
+      * @return True if the 'invoiceDate' field has been set, false otherwise.
+      */
+    public boolean hasInvoiceDate() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'invoiceDate' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearInvoiceDate() {
+      invoiceDate = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'invoiceNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getInvoiceNumber() {
+      return invoiceNumber;
+    }
+
+    /**
+      * Sets the value of the 'invoiceNumber' field.
+      * @param value The value of 'invoiceNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setInvoiceNumber(java.lang.String value) {
+      validate(fields()[23], value);
+      this.invoiceNumber = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'invoiceNumber' field has been set.
+      * @return True if the 'invoiceNumber' field has been set, false otherwise.
+      */
+    public boolean hasInvoiceNumber() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'invoiceNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearInvoiceNumber() {
+      invoiceNumber = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'valueOfGoods' field.
+      * @return The value.
+      */
+    public java.lang.String getValueOfGoods() {
+      return valueOfGoods;
+    }
+
+    /**
+      * Sets the value of the 'valueOfGoods' field.
+      * @param value The value of 'valueOfGoods'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setValueOfGoods(java.lang.String value) {
+      validate(fields()[24], value);
+      this.valueOfGoods = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'valueOfGoods' field has been set.
+      * @return True if the 'valueOfGoods' field has been set, false otherwise.
+      */
+    public boolean hasValueOfGoods() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'valueOfGoods' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearValueOfGoods() {
+      valueOfGoods = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'currentTrackingState' field.
+      * @return The value.
+      */
+    public com.fretron.Model.VehicleState getCurrentTrackingState() {
+      return currentTrackingState;
+    }
+
+    /**
+      * Sets the value of the 'currentTrackingState' field.
+      * @param value The value of 'currentTrackingState'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder setCurrentTrackingState(com.fretron.Model.VehicleState value) {
+      validate(fields()[25], value);
+      this.currentTrackingState = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currentTrackingState' field has been set.
+      * @return True if the 'currentTrackingState' field has been set, false otherwise.
+      */
+    public boolean hasCurrentTrackingState() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'currentTrackingState' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Shipment.Builder clearCurrentTrackingState() {
+      currentTrackingState = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
     @Override
     public Shipment build() {
       try {
@@ -1589,6 +2003,12 @@ public class Shipment extends org.apache.avro.specific.SpecificRecordBase implem
         record.orgId = fieldSetFlags()[17] ? this.orgId : (java.lang.String) defaultValue(fields()[17]);
         record.sharedWith = fieldSetFlags()[18] ? this.sharedWith : (java.util.List<java.lang.String>) defaultValue(fields()[18]);
         record.shipmentNoExtended = fieldSetFlags()[19] ? this.shipmentNoExtended : (java.lang.String) defaultValue(fields()[19]);
+        record.shipmentDate = fieldSetFlags()[20] ? this.shipmentDate : (java.lang.Long) defaultValue(fields()[20]);
+        record.consignmentDate = fieldSetFlags()[21] ? this.consignmentDate : (java.lang.Long) defaultValue(fields()[21]);
+        record.invoiceDate = fieldSetFlags()[22] ? this.invoiceDate : (java.lang.Long) defaultValue(fields()[22]);
+        record.invoiceNumber = fieldSetFlags()[23] ? this.invoiceNumber : (java.lang.String) defaultValue(fields()[23]);
+        record.valueOfGoods = fieldSetFlags()[24] ? this.valueOfGoods : (java.lang.String) defaultValue(fields()[24]);
+        record.currentTrackingState = fieldSetFlags()[25] ? this.currentTrackingState : (com.fretron.Model.VehicleState) defaultValue(fields()[25]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
