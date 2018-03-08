@@ -136,7 +136,8 @@ public final class DirectionPolylineUtil {
                 JSONArray steps = legs.getJSONArray(STEPS_KEY);
 
                 for (int step = 0; step < steps.length(); step++) {
-                    String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY).getString(POINTS_KEY);
+
+                     String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY).getString(POINTS_KEY);
                      points = mergePolylines(points.toString(),extendedPolyLine);
 
                 }

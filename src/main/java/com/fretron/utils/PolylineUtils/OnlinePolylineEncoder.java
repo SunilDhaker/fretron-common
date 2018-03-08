@@ -275,6 +275,30 @@ public class OnlinePolylineEncoder {
 	}
 
 
+	public static TimeAwarePolyline mergePointsWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,List<Point> points ,long newLocationTime){
+
+		if (points.size() == 0 || polylineObj == null){
+			return polylineObj;
+		}
+
+		long lastPointTimestamp = polylineObj.getLastPoint().getTimestamp();
+
+		long timeDiff = newLocationTime - lastPointTimestamp;
+
+			long deltaTime = timeDiff / points.size();
+			long nextLocationTime = lastPointTimestamp + deltaTime;
+
+			for (Point point: points) {
+				polylineObj = extendTimeAwarePolyline(polylineObj ,point.getLat() ,point.getLng() ,nextLocationTime);
+				nextLocationTime += deltaTime;
+			}
+
+
+
+		return  polylineObj;
+
+	}
+
 
 
 	public static TimeAwarePolyline mergePolylineWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,String polyline ,long newLocationTime){
