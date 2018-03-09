@@ -289,6 +289,7 @@ public class OnlinePolylineEncoder {
 			long nextLocationTime = lastPointTimestamp + deltaTime;
 
 			for (Point point: points) {
+
 				polylineObj = extendTimeAwarePolyline(polylineObj ,point.getLat() ,point.getLng() ,nextLocationTime);
 				nextLocationTime += deltaTime;
 			}

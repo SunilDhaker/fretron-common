@@ -1,6 +1,7 @@
 package com.fretron.utils.ClusteringUtils;
 
 import com.fretron.Model.LitePosition;
+import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.utils.PolylineUtils.PolylineDecoder;
 
 import java.util.List;
@@ -43,6 +44,15 @@ public class ClusteringUtils {
 			}
 		}
 		return variance;
+	}
+
+
+
+	public static MeanVariance forTimeAwarePolyline(TimeAwarePolyline polyline){
+		List<LitePosition> points = (new PolylineDecoder()).decodeTimeAwarePolylineInPositions(polyline.getPolyline());
+		LitePosition meanPosition = calculateMean(points);
+		double varience = calculateVariance(points, meanPosition);
+		return (new MeanVariance(meanPosition , varience));
 	}
 
 
