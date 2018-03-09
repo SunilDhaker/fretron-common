@@ -52,6 +52,9 @@
     <entry key="loadedposition.topic">loadedpositionTopic</entry>
     <entry key="vehicle.by.imei">vehicleByImei</entry>
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
+    <entry key="gps.state.topic">gpsStates</entry>
+
+
 
 
 
