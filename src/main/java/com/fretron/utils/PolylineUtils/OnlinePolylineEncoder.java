@@ -132,6 +132,7 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(newLat);
 			lastPoint.setLongitude(newLng);
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 		return polylineObj;
@@ -193,6 +194,7 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(nextPos.getLatitude());
 			lastPoint.setLongitude(nextPos.getLongitude());
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 
@@ -396,7 +398,7 @@ public class OnlinePolylineEncoder {
 		TimeAwarePolyline polyline = null;
 
 		if (list.size() > 0){
-			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false);
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
 
 			Iterator<PointAtTime> it = list.iterator();
 
@@ -417,7 +419,7 @@ public class OnlinePolylineEncoder {
 		TimeAwarePolyline polyline = null;
 
 		if (list.size() > 0){
-			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false);
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
 
 			Iterator<LitePosition> it = list.iterator();
 

@@ -70,6 +70,10 @@ public class Constants {
     public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
     public static final String WINDOW_RETENTION_TIME = "window.retention.time";
     public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
+    public static final String PROBABLE_MINIMUM_RECORDS = "probable.minimum.records";
+    public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
+    public static final String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+
 
 
 
