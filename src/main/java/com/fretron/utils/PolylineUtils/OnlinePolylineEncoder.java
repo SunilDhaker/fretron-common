@@ -369,6 +369,28 @@ public class OnlinePolylineEncoder {
 
 
 
+
+	public static String extendPolyline(Point[] list){
+
+
+		String p = "";
+		if (list.length > 0){
+
+			double l = 0;
+			double la = 0.0 ;
+
+			for (int i = 0 ; i< list.length ; i++){
+			 p = extendPolyline(p , l ,la ,list[i].getLat() ,list[i].getLng() );
+			 l = list[i].getLat();
+			 la = list[i].getLng();
+			}
+		}
+
+
+		return p;
+	}
+
+
 	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<PointAtTime> list){
 
 		TimeAwarePolyline polyline = null;

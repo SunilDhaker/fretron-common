@@ -61,7 +61,7 @@ public final class DirectionPolylineUtil {
 
     private String getGoogleDirectionLocationAPIURL(String statrLocation, String endLocation) {
         //API_KEY = Context.getConfig().getString(Constants.KEY_GOOGLE_DIRECTION_API_KEY);
-        return API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY;
+        return API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY+ "&mode=walking";
     }
 
 
