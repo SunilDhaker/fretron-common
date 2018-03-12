@@ -42,23 +42,19 @@ public final class DirectionPolylineUtil {
     // false : For Detailed Points String
     public static Boolean isOverview = false;
     private  static Double distance;
-    public static DirectionPolylineUtil sharedInstance = new DirectionPolylineUtil();
 
-    private DirectionPolylineUtil() {
-
-    }
 
 
 //https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood4&key=AIzaSyBs7T9fTwzqLFJpJv35xToAbJKwLC3OOfo
 
-    private String getApiUrl(String statrLocation, String endLocation ,Boolean isDrivingMode) {
+    private static String getApiUrl(String statrLocation, String endLocation ,Boolean isDrivingMode) {
         //driving by default
         return (isDrivingMode) ? API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY :
                 API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY + "&mode=walking";
     }
 
 
-    public HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation ,Boolean isDrivingMode) throws Exception {
+    public static HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation ,Boolean isDrivingMode) throws Exception {
 
         DefaultHttpClient httpClient = new DefaultHttpClient();
         String apiURL = getApiUrl(startLocation, endLocation ,isDrivingMode);
@@ -76,7 +72,7 @@ public final class DirectionPolylineUtil {
     }
 
 
-    private HashMap<String ,Object> getOverviewPointsString(JSONObject jsonObject) {
+    private static HashMap<String ,Object> getOverviewPointsString(JSONObject jsonObject) {
 
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         Double totalDistance = 0.0;
@@ -108,7 +104,7 @@ public final class DirectionPolylineUtil {
     }
 
 
-    private  HashMap<String ,Object> getDetailedPointsString(JSONObject jsonObject){
+    private  static HashMap<String ,Object> getDetailedPointsString(JSONObject jsonObject){
 
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         String points = new String();
