@@ -59,13 +59,13 @@ public final class Context {
 
         if (config == null) config = new Config();
 
-        System.out.println("\n\n Environment Variables \n\n");
+     //   System.out.println("\n\n Environment Variables \n\n");
 
         Map<String ,String> map = System.getenv();
 
             for (Map.Entry<String, String> entry : map.entrySet()){
                 config.put(entry.getKey() ,entry.getValue());
-                System.out.println(entry.getKey() + " : "+entry.getValue());
+             //   System.out.println(entry.getKey() + " : "+entry.getValue());
             }
 
         }
