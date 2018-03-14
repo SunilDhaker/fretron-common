@@ -30,7 +30,13 @@
                  "name": "vtsState",
                   "type": ["null" , "com.fretron.Model.VehicleTripState"],
                   "default" : null
-      }
+      },
+
+      {
+                       "name": "updatedAt",
+                        "type": ["null" , "long"],
+                        "default" : null
+       }
 
   ]
 

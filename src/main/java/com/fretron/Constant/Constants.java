@@ -509,6 +509,11 @@ public class Constants {
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
 
+    //==================TRIP-MIS===============================
+
+    public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
+
+
     private Constants(){
 
     }
