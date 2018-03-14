@@ -129,6 +129,8 @@ public class Constants {
     public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.app.id";
     public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
     public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "position.processor.app.id";
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
     public static java.lang.String KEY_GOOGLE_DIRECTION_API_KEY = "google.direction.api.key";
     public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
