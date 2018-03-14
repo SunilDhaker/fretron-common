@@ -42,33 +42,22 @@ public final class DirectionPolylineUtil {
     // false : For Detailed Points String
     public static Boolean isOverview = false;
     private  static Double distance;
-    public static DirectionPolylineUtil sharedInstance = new DirectionPolylineUtil();
 
-    private DirectionPolylineUtil() {
-//        try {
-//            String[] arr = new String[1];
-//            arr[0] = "C:\\Users\\Mohit\\Downloads\\Fretron-JAVA\\Fretron-JAVA\\FretronJava\\dev2.xml";
-//            Context.init(arr);
-//        }catch (Exception e){
-//
-//            e.printStackTrace();
-//            System.out.println("Inialization file not found");
-//        }
-    }
 
 
 //https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood4&key=AIzaSyBs7T9fTwzqLFJpJv35xToAbJKwLC3OOfo
 
-    private String getGoogleDirectionLocationAPIURL(String statrLocation, String endLocation) {
-        //API_KEY = Context.getConfig().getString(Constants.KEY_GOOGLE_DIRECTION_API_KEY);
-        return API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY;
+    private static String getApiUrl(String statrLocation, String endLocation ,Boolean isDrivingMode) {
+        //driving by default
+        return (isDrivingMode) ? API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY :
+                API_URL + "origin=" + statrLocation + "&destination=" + endLocation + "&key=" + API_KEY + "&mode=walking";
     }
 
 
-    public HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation) throws Exception {
+    public static HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation ,Boolean isDrivingMode) throws Exception {
 
         DefaultHttpClient httpClient = new DefaultHttpClient();
-        String apiURL = getGoogleDirectionLocationAPIURL(startLocation, endLocation);
+        String apiURL = getApiUrl(startLocation, endLocation ,isDrivingMode);
         HttpGet get = new HttpGet(apiURL);
         HttpResponse response = httpClient.execute(get);
         HttpEntity entity = response.getEntity();
@@ -83,7 +72,7 @@ public final class DirectionPolylineUtil {
     }
 
 
-    private HashMap<String ,Object> getOverviewPointsString(JSONObject jsonObject) {
+    private static HashMap<String ,Object> getOverviewPointsString(JSONObject jsonObject) {
 
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         Double totalDistance = 0.0;
@@ -115,7 +104,7 @@ public final class DirectionPolylineUtil {
     }
 
 
-    private  HashMap<String ,Object> getDetailedPointsString(JSONObject jsonObject){
+    private  static HashMap<String ,Object> getDetailedPointsString(JSONObject jsonObject){
 
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         String points = new String();
@@ -153,6 +142,7 @@ public final class DirectionPolylineUtil {
 
       return null;
     }
+
 
 
 

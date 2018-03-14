@@ -23,6 +23,11 @@
          "name":"isAssumed",
          "type":"boolean",
           "default": false
+      },
+      {
+        "name": "totalPoints",
+        "type": [ "null", "int"],
+        "default" : null
       }
 
     ]

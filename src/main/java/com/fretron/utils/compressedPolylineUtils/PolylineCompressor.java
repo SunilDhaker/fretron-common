@@ -43,7 +43,7 @@ public class PolylineCompressor {
 
                 List<Point> compressedPointList = getCompressedPointList(points);
 
-                TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("", "", new PointAtTime(0l, 0d, 0d) ,polylineObj.getIsAssumed()), compressedPointList.get(0).getX(), compressedPointList.get(0).getY(), compressedPointList.get(0).getT());
+                TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("", "", new PointAtTime(0l, 0d, 0d) ,polylineObj.getIsAssumed(),1), compressedPointList.get(0).getX(), compressedPointList.get(0).getY(), compressedPointList.get(0).getT());
 
                 for (int index = 1; index < compressedPointList.size(); index++) {
 

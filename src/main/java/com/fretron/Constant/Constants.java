@@ -52,9 +52,35 @@ public class Constants {
 
     /*
     *****************************************************************************************************
-    *                                    POSITION-RELATED
+    *                                   GPS-Processor Configs
     * **************************************************************************************************
      */
+
+    public final static  String KEY_POSITION_TOPIC = "positions.topic";
+    public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
+    public static final java.lang.String KEY_GPS_STATE_TOPIC = "gps.state.topic";
+
+
+    public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
+    public static  final String KEY_DISCONNECTION_THRESHOLD = "disconnection.threshold";
+    public static  final String KEY_GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
+    public static  final String KEY_JUMP_POINT_SPEED_THRESHOLD = "jump.point.speed.threshold";
+    public static  final  String KEY_MIN_WINDOW_TIME = "minimum.window.time";
+    public static  final String MIN_STOPPED_STATE_TIME = "gps.stopped.state.min.time";
+    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
+    public static final String WINDOW_RETENTION_TIME = "window.retention.time";
+    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
+    public static final String PROBABLE_MINIMUM_RECORDS = "probable.minimum.records";
+    public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
+    public static final String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+
+
+
+
+
+
+    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+
 
 
     public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
@@ -63,19 +89,13 @@ public class Constants {
     //topics
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-    public final static  String KEY_POSITION_TOPIC = "positions.topic";
-    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
-    public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
 
 
 
     //states
     public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
     public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
-
-    public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
-    public static  final String KEY_DISCONNECTION_THRESHOLD = "disconnection.threshold";
 
 
 
@@ -96,7 +116,6 @@ public class Constants {
     public static final String MIN_STATE_TIME = "gps.state.min.time";
     public static final String  MIN_REBUILD_STATE_TIME = "rebuild.state.min.time";
     public static final String KEY_MIN_RECORD_REQUIRED = "state.min.record.required";
-    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
     public static final java.lang.String GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
 
     public static final java.lang.String KEY_LATEST_VEHICLE_GPS_STATE = "vehicle.gps.state";
@@ -104,7 +123,6 @@ public class Constants {
     public static final java.lang.String STOP_SPEED_THRESHOLD = "stop.speed.threshold";
 
     public static final java.lang.String KEY_DISCONNECTED_THRESHOLD = "gps.state.disconnected.threshold";
-    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
 
     public static final java.lang.String KEY_GEOCODER = "geocoder";
     public static final String KEY_FRETRON_GEOCODER_URL = "geocoder.url";
@@ -488,6 +506,11 @@ public class Constants {
     public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
+
+    //==================TRIP-MIS===============================
+
+    public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
+
 
     private Constants(){
 

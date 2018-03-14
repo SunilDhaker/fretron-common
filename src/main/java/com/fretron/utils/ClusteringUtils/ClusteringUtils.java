@@ -51,8 +51,8 @@ public class ClusteringUtils {
 	public static MeanVariance forTimeAwarePolyline(TimeAwarePolyline polyline){
 		List<LitePosition> points = (new PolylineDecoder()).decodeTimeAwarePolylineInPositions(polyline.getPolyline());
 		LitePosition meanPosition = calculateMean(points);
-		double varience = calculateVariance(points, meanPosition);
-		return (new MeanVariance(meanPosition , varience));
+		double variance = calculateVariance(points, meanPosition);
+		return (new MeanVariance(meanPosition , variance));
 	}
 
 
@@ -75,9 +75,9 @@ public class ClusteringUtils {
 		double d1 = distance(mean1 , newMean);
 		double d2 = distance(mean2 , newMean);
 
-		double newVarience = ((n1 * ( variance1 + (d1*d1))) + (n2 * ( variance2 + (d2*d2))))/(n1 + n2) ;
+		double newVariance = ((n1 * ( variance1 + (d1*d1))) + (n2 * ( variance2 + (d2*d2))))/(n1 + n2) ;
 
-		return new MeanVariance(newMean , newVarience);
+		return new MeanVariance(newMean , newVariance);
 	}
 
 	public static class MeanVariance{

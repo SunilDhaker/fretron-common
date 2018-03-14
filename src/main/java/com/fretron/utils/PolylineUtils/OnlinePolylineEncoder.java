@@ -132,6 +132,7 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(newLat);
 			lastPoint.setLongitude(newLng);
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 		return polylineObj;
@@ -193,6 +194,7 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(nextPos.getLatitude());
 			lastPoint.setLongitude(nextPos.getLongitude());
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 
@@ -275,18 +277,17 @@ public class OnlinePolylineEncoder {
 	}
 
 
-	public static TimeAwarePolyline mergePointsWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,List<Point> points ,long newLocationTime){
+	public static TimeAwarePolyline insertPointsIn(TimeAwarePolyline polylineObj ,List<Point> points ,long from ,long to){
 
 		if (points.size() == 0 || polylineObj == null){
 			return polylineObj;
 		}
 
-		long lastPointTimestamp = polylineObj.getLastPoint().getTimestamp();
 
-		long timeDiff = newLocationTime - lastPointTimestamp;
+		long timeDiff = to - from;
 
 			long deltaTime = timeDiff / points.size();
-			long nextLocationTime = lastPointTimestamp + deltaTime;
+			long nextLocationTime = from + deltaTime;
 
 			for (Point point: points) {
 
@@ -369,12 +370,34 @@ public class OnlinePolylineEncoder {
 
 
 
+
+	public static String extendPolyline(Point[] list){
+
+
+		String p = "";
+		if (list.length > 0){
+
+			double l = 0;
+			double la = 0.0 ;
+
+			for (int i = 0 ; i< list.length ; i++){
+			 p = extendPolyline(p , l ,la ,list[i].getLat() ,list[i].getLng() );
+			 l = list[i].getLat();
+			 la = list[i].getLng();
+			}
+		}
+
+
+		return p;
+	}
+
+
 	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<PointAtTime> list){
 
 		TimeAwarePolyline polyline = null;
 
 		if (list.size() > 0){
-			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false);
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
 
 			Iterator<PointAtTime> it = list.iterator();
 
@@ -395,7 +418,7 @@ public class OnlinePolylineEncoder {
 		TimeAwarePolyline polyline = null;
 
 		if (list.size() > 0){
-			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false);
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
 
 			Iterator<LitePosition> it = list.iterator();
 

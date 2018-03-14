@@ -17,6 +17,8 @@
 package com.fretron.utils.helper;
 
 import com.fretron.Model.LitePosition;
+import com.fretron.Model.PointAtTime;
+import com.fretron.utils.PolylineUtils.Point;
 
 public final class DistanceCalculator {
 
@@ -38,6 +40,10 @@ public final class DistanceCalculator {
 
     public static double distance(LitePosition from , LitePosition to) {
        return distance(from.latitude , from.longitude , to.latitude , to.longitude);
+    }
+
+    public static double distance(PointAtTime from , PointAtTime to){
+        return distance(from.getLatitude() ,from.getLongitude() ,to.getLatitude() ,to.getLongitude());
     }
 
     public static double distanceToLine(
