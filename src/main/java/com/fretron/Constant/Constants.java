@@ -514,6 +514,9 @@ public class Constants {
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
 
 
+    public static final String TRIP_UPLOAD_JOB_DB_NAME = "trip.upload.job.db.name";
+    public static final String TRIP_UPLOAD_JOB_COLLECTION_NAME = "trip.upload.job.collection.name";
+    public static final String UPLOADED_TRIPS_COLLECTION_NAME = "uploaded.trips.collection.name";
     private Constants(){
 
     }
