@@ -235,7 +235,6 @@ public class OnlinePolylineEncoder {
 	public static TimeAwarePolyline mergeTimeAwarePolylines(TimeAwarePolyline polylineObj1 , TimeAwarePolyline polylineObj2){
 
 		List<PointAtTime> points  = (new PolylineDecoder()).decodeTimeAwarePolyline(polylineObj2.getPolyline());
-
 		for(PointAtTime point : points){
 			polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
 		}
@@ -408,6 +407,20 @@ public class OnlinePolylineEncoder {
 
 		}
 
+
+		return polyline;
+	}
+
+
+	public static TimeAwarePolyline extendTimeAwarePolylineWithPoints(TimeAwarePolyline polyline ,List<PointAtTime> list){
+		if (list.size() > 0){
+			Iterator<PointAtTime> it = list.iterator();
+			while (it.hasNext()){
+				PointAtTime point = it.next();
+				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
+			}
+
+		}
 
 		return polyline;
 	}
