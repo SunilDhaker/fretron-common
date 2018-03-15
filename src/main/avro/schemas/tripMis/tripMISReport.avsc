@@ -127,7 +127,7 @@
              "name":"groups",
              "type":[
                  "null",
-                 {"type" : "array", "items":"string"}
+                 "string"
              ],
              "default":null
             },
