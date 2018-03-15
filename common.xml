@@ -53,6 +53,8 @@
     <entry key="vehicle.by.imei">vehicleByImei</entry>
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
     <entry key="gps.state.topic">gpsStates</entry>
+    <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
+
 
 
 

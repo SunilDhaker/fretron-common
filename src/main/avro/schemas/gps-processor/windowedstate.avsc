@@ -69,6 +69,11 @@
         "items":"com.fretron.Model.LitePosition"
       },
       "default":null
+    } ,
+    {
+       "name": "isFillingEnabled",
+        "type": "boolean",
+         "default":false
     }
   ]
 }

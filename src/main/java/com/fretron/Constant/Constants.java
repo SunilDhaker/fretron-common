@@ -82,9 +82,12 @@ public class Constants {
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
+    public static java.lang.String KEY_VEHICLE_ROUTE_FILLER_TOPIC = "vehicle.route.filler.topic";
 
 
 
+
+ /******************************Vehicle-Route-Manager************************************************/
 
 
 
