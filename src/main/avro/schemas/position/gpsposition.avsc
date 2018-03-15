@@ -66,6 +66,11 @@
           }
         ],
         "default": null
+      },
+      {
+          "name": "isFillingEnabled",
+         "type": "boolean",
+         "default":false
       }
     ]
   },
