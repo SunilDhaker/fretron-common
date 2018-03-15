@@ -516,6 +516,7 @@ public class Constants {
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
+    public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
 
 
     private Constants(){

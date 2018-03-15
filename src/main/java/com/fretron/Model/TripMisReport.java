@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6303228301378204409L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -4526993850136021504L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -25,6 +25,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.Double endLongitude;
   @Deprecated public java.lang.String tripState;
   @Deprecated public java.lang.String tripId;
+  @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleType;
   @Deprecated public java.lang.String driverId;
   @Deprecated public java.lang.String orgId;
@@ -53,6 +54,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param endLongitude The new value for endLongitude
    * @param tripState The new value for tripState
    * @param tripId The new value for tripId
+   * @param uuid The new value for uuid
    * @param vehicleType The new value for vehicleType
    * @param driverId The new value for driverId
    * @param orgId The new value for orgId
@@ -60,7 +62,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param vehicleId The new value for vehicleId
    * @param imei The new value for imei
    */
-  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.util.List<java.lang.String> groups, java.lang.String vehicleId, java.lang.String imei) {
+  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.util.List<java.lang.String> groups, java.lang.String vehicleId, java.lang.String imei) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.movedDistance = movedDistance;
@@ -73,6 +75,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     this.endLongitude = endLongitude;
     this.tripState = tripState;
     this.tripId = tripId;
+    this.uuid = uuid;
     this.vehicleType = vehicleType;
     this.driverId = driverId;
     this.orgId = orgId;
@@ -97,12 +100,13 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 9: return endLongitude;
     case 10: return tripState;
     case 11: return tripId;
-    case 12: return vehicleType;
-    case 13: return driverId;
-    case 14: return orgId;
-    case 15: return groups;
-    case 16: return vehicleId;
-    case 17: return imei;
+    case 12: return uuid;
+    case 13: return vehicleType;
+    case 14: return driverId;
+    case 15: return orgId;
+    case 16: return groups;
+    case 17: return vehicleId;
+    case 18: return imei;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -123,12 +127,13 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 9: endLongitude = (java.lang.Double)value$; break;
     case 10: tripState = (java.lang.String)value$; break;
     case 11: tripId = (java.lang.String)value$; break;
-    case 12: vehicleType = (java.lang.String)value$; break;
-    case 13: driverId = (java.lang.String)value$; break;
-    case 14: orgId = (java.lang.String)value$; break;
-    case 15: groups = (java.util.List<java.lang.String>)value$; break;
-    case 16: vehicleId = (java.lang.String)value$; break;
-    case 17: imei = (java.lang.String)value$; break;
+    case 12: uuid = (java.lang.String)value$; break;
+    case 13: vehicleType = (java.lang.String)value$; break;
+    case 14: driverId = (java.lang.String)value$; break;
+    case 15: orgId = (java.lang.String)value$; break;
+    case 16: groups = (java.util.List<java.lang.String>)value$; break;
+    case 17: vehicleId = (java.lang.String)value$; break;
+    case 18: imei = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -326,6 +331,22 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
    * Gets the value of the 'vehicleType' field.
    * @return The value of the 'vehicleType' field.
    */
@@ -465,6 +486,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.Double endLongitude;
     private java.lang.String tripState;
     private java.lang.String tripId;
+    private java.lang.String uuid;
     private java.lang.String vehicleType;
     private java.lang.String driverId;
     private java.lang.String orgId;
@@ -531,29 +553,33 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.tripId = data().deepCopy(fields()[11].schema(), other.tripId);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.vehicleType)) {
-        this.vehicleType = data().deepCopy(fields()[12].schema(), other.vehicleType);
+      if (isValidValue(fields()[12], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[12].schema(), other.uuid);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.driverId)) {
-        this.driverId = data().deepCopy(fields()[13].schema(), other.driverId);
+      if (isValidValue(fields()[13], other.vehicleType)) {
+        this.vehicleType = data().deepCopy(fields()[13].schema(), other.vehicleType);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[14].schema(), other.orgId);
+      if (isValidValue(fields()[14], other.driverId)) {
+        this.driverId = data().deepCopy(fields()[14].schema(), other.driverId);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.groups)) {
-        this.groups = data().deepCopy(fields()[15].schema(), other.groups);
+      if (isValidValue(fields()[15], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[15].schema(), other.orgId);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[16].schema(), other.vehicleId);
+      if (isValidValue(fields()[16], other.groups)) {
+        this.groups = data().deepCopy(fields()[16].schema(), other.groups);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.imei)) {
-        this.imei = data().deepCopy(fields()[17].schema(), other.imei);
+      if (isValidValue(fields()[17], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[17].schema(), other.vehicleId);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.imei)) {
+        this.imei = data().deepCopy(fields()[18].schema(), other.imei);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -611,29 +637,33 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.tripId = data().deepCopy(fields()[11].schema(), other.tripId);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.vehicleType)) {
-        this.vehicleType = data().deepCopy(fields()[12].schema(), other.vehicleType);
+      if (isValidValue(fields()[12], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[12].schema(), other.uuid);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.driverId)) {
-        this.driverId = data().deepCopy(fields()[13].schema(), other.driverId);
+      if (isValidValue(fields()[13], other.vehicleType)) {
+        this.vehicleType = data().deepCopy(fields()[13].schema(), other.vehicleType);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[14].schema(), other.orgId);
+      if (isValidValue(fields()[14], other.driverId)) {
+        this.driverId = data().deepCopy(fields()[14].schema(), other.driverId);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.groups)) {
-        this.groups = data().deepCopy(fields()[15].schema(), other.groups);
+      if (isValidValue(fields()[15], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[15].schema(), other.orgId);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[16].schema(), other.vehicleId);
+      if (isValidValue(fields()[16], other.groups)) {
+        this.groups = data().deepCopy(fields()[16].schema(), other.groups);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.imei)) {
-        this.imei = data().deepCopy(fields()[17].schema(), other.imei);
+      if (isValidValue(fields()[17], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[17].schema(), other.vehicleId);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.imei)) {
+        this.imei = data().deepCopy(fields()[18].schema(), other.imei);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1106,6 +1136,45 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setUuid(java.lang.String value) {
+      validate(fields()[12], value);
+      this.uuid = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'vehicleType' field.
       * @return The value.
       */
@@ -1119,9 +1188,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setVehicleType(java.lang.String value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.vehicleType = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1130,7 +1199,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'vehicleType' field has been set, false otherwise.
       */
     public boolean hasVehicleType() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1140,7 +1209,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearVehicleType() {
       vehicleType = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1158,9 +1227,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setDriverId(java.lang.String value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.driverId = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1169,7 +1238,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'driverId' field has been set, false otherwise.
       */
     public boolean hasDriverId() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1179,7 +1248,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearDriverId() {
       driverId = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1197,9 +1266,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setOrgId(java.lang.String value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.orgId = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1208,7 +1277,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1218,7 +1287,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1236,9 +1305,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setGroups(java.util.List<java.lang.String> value) {
-      validate(fields()[15], value);
+      validate(fields()[16], value);
       this.groups = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1247,7 +1316,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'groups' field has been set, false otherwise.
       */
     public boolean hasGroups() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1257,7 +1326,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearGroups() {
       groups = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1275,9 +1344,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setVehicleId(java.lang.String value) {
-      validate(fields()[16], value);
+      validate(fields()[17], value);
       this.vehicleId = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1286,7 +1355,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'vehicleId' field has been set, false otherwise.
       */
     public boolean hasVehicleId() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1296,7 +1365,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearVehicleId() {
       vehicleId = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1314,9 +1383,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.TripMisReport.Builder setImei(java.lang.String value) {
-      validate(fields()[17], value);
+      validate(fields()[18], value);
       this.imei = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1325,7 +1394,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'imei' field has been set, false otherwise.
       */
     public boolean hasImei() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1335,7 +1404,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.TripMisReport.Builder clearImei() {
       imei = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1355,12 +1424,13 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         record.endLongitude = fieldSetFlags()[9] ? this.endLongitude : (java.lang.Double) defaultValue(fields()[9]);
         record.tripState = fieldSetFlags()[10] ? this.tripState : (java.lang.String) defaultValue(fields()[10]);
         record.tripId = fieldSetFlags()[11] ? this.tripId : (java.lang.String) defaultValue(fields()[11]);
-        record.vehicleType = fieldSetFlags()[12] ? this.vehicleType : (java.lang.String) defaultValue(fields()[12]);
-        record.driverId = fieldSetFlags()[13] ? this.driverId : (java.lang.String) defaultValue(fields()[13]);
-        record.orgId = fieldSetFlags()[14] ? this.orgId : (java.lang.String) defaultValue(fields()[14]);
-        record.groups = fieldSetFlags()[15] ? this.groups : (java.util.List<java.lang.String>) defaultValue(fields()[15]);
-        record.vehicleId = fieldSetFlags()[16] ? this.vehicleId : (java.lang.String) defaultValue(fields()[16]);
-        record.imei = fieldSetFlags()[17] ? this.imei : (java.lang.String) defaultValue(fields()[17]);
+        record.uuid = fieldSetFlags()[12] ? this.uuid : (java.lang.String) defaultValue(fields()[12]);
+        record.vehicleType = fieldSetFlags()[13] ? this.vehicleType : (java.lang.String) defaultValue(fields()[13]);
+        record.driverId = fieldSetFlags()[14] ? this.driverId : (java.lang.String) defaultValue(fields()[14]);
+        record.orgId = fieldSetFlags()[15] ? this.orgId : (java.lang.String) defaultValue(fields()[15]);
+        record.groups = fieldSetFlags()[16] ? this.groups : (java.util.List<java.lang.String>) defaultValue(fields()[16]);
+        record.vehicleId = fieldSetFlags()[17] ? this.vehicleId : (java.lang.String) defaultValue(fields()[17]);
+        record.imei = fieldSetFlags()[18] ? this.imei : (java.lang.String) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

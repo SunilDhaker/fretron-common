@@ -153,4 +153,10 @@
     <!-- ================ token manager app id ======= -->
     <entry key="token.manager.app.id">tokenManager</entry>
 
+    <!-- ================ trip-mis app id ======= -->
+    <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
+    <entry key="trip.mis.report.app.id">trip-mis-report</entry>
+    <entry key="tripmis.topic">tripmistopic</entry>
+
+
 </properties>
