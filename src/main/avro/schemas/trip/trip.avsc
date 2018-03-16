@@ -676,6 +676,15 @@
                                 "string"
                             ],
                             "default": null
+                        },
+                        {
+                            "name": "createdAt",
+                            "type": [
+                                "null",
+                                "long"
+                            ],
+                            "logicalType": "timestamp-millis",
+                            "default": null
                         }
 		]
 	},

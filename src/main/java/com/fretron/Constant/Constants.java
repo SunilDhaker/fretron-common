@@ -59,6 +59,9 @@ public class Constants {
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
     public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
     public static final java.lang.String KEY_GPS_STATE_TOPIC = "gps.state.topic";
+    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
+    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
+    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
 
 
     public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
@@ -72,24 +75,28 @@ public class Constants {
     public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
     public static final String PROBABLE_MINIMUM_RECORDS = "probable.minimum.records";
     public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
-    public static final String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+    public static final java.lang.String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+
+
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
+    public static java.lang.String KEY_VEHICLE_ROUTE_FILLER_TOPIC = "vehicle.route.filler.topic";
 
 
 
 
-
-
-    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+ /******************************Vehicle-Route-Manager************************************************/
 
 
 
-    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
 
 
     //topics
-    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
-    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
+    public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+
 
 
 
@@ -129,7 +136,7 @@ public class Constants {
     public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.app.id";
     public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
     public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "position.processor.app.id";
-    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
+
     public static java.lang.String KEY_GOOGLE_DIRECTION_API_KEY = "google.direction.api.key";
     public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
     public static java.lang.String KEY_DASHBOARD_PREFIX = "dashboard.url.prefix";
@@ -381,6 +388,8 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
+
     //=========================================
 
 
@@ -507,6 +516,14 @@ public class Constants {
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
     public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
+
+    //==================TRIP-MIS===============================
+
+    public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
+    public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
+    public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
+
 
     private Constants(){
 
