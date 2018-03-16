@@ -506,6 +506,7 @@ public class Constants {
     public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
+    public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
 
     private Constants(){
 
