@@ -146,6 +146,32 @@
                    "string"
               ] ,
               "default":null
+          },
+           {
+                "name":"clusterId",
+                "type":[
+                     "null",
+                     "string"
+                ] ,
+                "default":null
+            },
+            {
+              "name":"clusterType",
+              "type":[
+                   "null",
+                   "string"
+              ] ,
+              "default":null
+           }
+           ,
+           {
+             "name":"clusterName",
+             "type":[
+                  "null",
+                  "string"
+             ] ,
+             "default":null
           }
+
 		]
 	}
