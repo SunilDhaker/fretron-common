@@ -520,6 +520,8 @@ public class Constants {
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
     public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
+    public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
 
     private Constants(){
