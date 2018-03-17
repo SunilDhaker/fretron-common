@@ -57,6 +57,7 @@ public class Constants {
      */
 
     public final static  String KEY_POSITION_TOPIC = "positions.topic";
+    public final static  String KEY_TPI_POSITION_TOPIC = "tpi.positions.topic";
     public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
     public static final java.lang.String KEY_GPS_STATE_TOPIC = "gps.state.topic";
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
@@ -76,6 +77,7 @@ public class Constants {
     public static final String PROBABLE_MINIMUM_RECORDS = "probable.minimum.records";
     public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
     public static final java.lang.String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+    public static final java.lang.String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
