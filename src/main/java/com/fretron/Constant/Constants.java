@@ -527,6 +527,9 @@ public class Constants {
     public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
 
+   public static final String TRIP_UPLOAD_JOB_COLLECTION_NAME = "trip.upload.job.collection.name";
+   public static final String UPLOADED_TRIPS_COLLECTION_NAME = "uploaded.trips.collection.name";
+
     private Constants(){
 
     }
