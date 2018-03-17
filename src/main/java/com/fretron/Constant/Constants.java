@@ -428,7 +428,7 @@ public class Constants {
      public final static double ep = 0.0001;
 
 
-    //******************************Protocol-producer*****************************************************
+    //******************************Protocol-eventproducer*****************************************************
     public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
 

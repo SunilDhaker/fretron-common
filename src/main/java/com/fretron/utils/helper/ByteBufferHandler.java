@@ -63,6 +63,7 @@ public class ByteBufferHandler {
         return ((long) bb.getInt() & 0xffffffffL);
     }
 
+
     public void putUnsignedInt(ByteBuffer bb, long value) {
         bb.putInt((int) (value & 0xffffffffL));
     }
@@ -86,6 +87,15 @@ public class ByteBufferHandler {
         return null;
     }
 
+   public byte [] get(ByteBuffer buffer ,int from ,int length){
+        if (buffer.hasArray()){
+            final byte[] array = buffer.array();
+            final int arrayOffset = buffer.arrayOffset();
+            return Arrays.copyOfRange(array, arrayOffset + buffer.position(),
+                    arrayOffset + length);
+        }
+        return null;
+   }
 
     public ByteBuffer readBytes(ByteBuffer buffer ,int index){
         if (buffer.remaining() >= index && buffer.hasArray()){
@@ -95,6 +105,9 @@ public class ByteBufferHandler {
         }
         return null;
     }
+
+
+
 
 
 
