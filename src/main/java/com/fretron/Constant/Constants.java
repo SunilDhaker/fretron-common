@@ -473,7 +473,7 @@ public class Constants {
      public final static double ep = 0.0001;
 
 
-    //******************************Protocol-producer*****************************************************
+    //******************************Protocol-eventproducer*****************************************************
     public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
 
@@ -517,11 +517,14 @@ public class Constants {
     public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
+    public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
 
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
     public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
+    public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
 
     private Constants(){

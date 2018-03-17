@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 229427510406018587L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5456039193185384752L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -32,6 +32,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String groups;
   @Deprecated public java.lang.String vehicleId;
   @Deprecated public java.lang.String imei;
+  @Deprecated public java.lang.String clusterId;
+  @Deprecated public java.lang.String clusterType;
+  @Deprecated public java.lang.String clusterName;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +64,11 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param groups The new value for groups
    * @param vehicleId The new value for vehicleId
    * @param imei The new value for imei
+   * @param clusterId The new value for clusterId
+   * @param clusterType The new value for clusterType
+   * @param clusterName The new value for clusterName
    */
-  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei) {
+  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.movedDistance = movedDistance;
@@ -82,6 +88,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     this.groups = groups;
     this.vehicleId = vehicleId;
     this.imei = imei;
+    this.clusterId = clusterId;
+    this.clusterType = clusterType;
+    this.clusterName = clusterName;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +116,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 16: return groups;
     case 17: return vehicleId;
     case 18: return imei;
+    case 19: return clusterId;
+    case 20: return clusterType;
+    case 21: return clusterName;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +146,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 16: groups = (java.lang.String)value$; break;
     case 17: vehicleId = (java.lang.String)value$; break;
     case 18: imei = (java.lang.String)value$; break;
+    case 19: clusterId = (java.lang.String)value$; break;
+    case 20: clusterType = (java.lang.String)value$; break;
+    case 21: clusterName = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +458,54 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'clusterId' field.
+   * @return The value of the 'clusterId' field.
+   */
+  public java.lang.String getClusterId() {
+    return clusterId;
+  }
+
+  /**
+   * Sets the value of the 'clusterId' field.
+   * @param value the value to set.
+   */
+  public void setClusterId(java.lang.String value) {
+    this.clusterId = value;
+  }
+
+  /**
+   * Gets the value of the 'clusterType' field.
+   * @return The value of the 'clusterType' field.
+   */
+  public java.lang.String getClusterType() {
+    return clusterType;
+  }
+
+  /**
+   * Sets the value of the 'clusterType' field.
+   * @param value the value to set.
+   */
+  public void setClusterType(java.lang.String value) {
+    this.clusterType = value;
+  }
+
+  /**
+   * Gets the value of the 'clusterName' field.
+   * @return The value of the 'clusterName' field.
+   */
+  public java.lang.String getClusterName() {
+    return clusterName;
+  }
+
+  /**
+   * Sets the value of the 'clusterName' field.
+   * @param value the value to set.
+   */
+  public void setClusterName(java.lang.String value) {
+    this.clusterName = value;
+  }
+
+  /**
    * Creates a new TripMisReport RecordBuilder.
    * @return A new TripMisReport RecordBuilder
    */
@@ -493,6 +556,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String groups;
     private java.lang.String vehicleId;
     private java.lang.String imei;
+    private java.lang.String clusterId;
+    private java.lang.String clusterType;
+    private java.lang.String clusterName;
 
     /** Creates a new Builder */
     private Builder() {
@@ -581,6 +647,18 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.imei = data().deepCopy(fields()[18].schema(), other.imei);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.clusterId)) {
+        this.clusterId = data().deepCopy(fields()[19].schema(), other.clusterId);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.clusterType)) {
+        this.clusterType = data().deepCopy(fields()[20].schema(), other.clusterType);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.clusterName)) {
+        this.clusterName = data().deepCopy(fields()[21].schema(), other.clusterName);
+        fieldSetFlags()[21] = true;
+      }
     }
 
     /**
@@ -664,6 +742,18 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[18], other.imei)) {
         this.imei = data().deepCopy(fields()[18].schema(), other.imei);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.clusterId)) {
+        this.clusterId = data().deepCopy(fields()[19].schema(), other.clusterId);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.clusterType)) {
+        this.clusterType = data().deepCopy(fields()[20].schema(), other.clusterType);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.clusterName)) {
+        this.clusterName = data().deepCopy(fields()[21].schema(), other.clusterName);
+        fieldSetFlags()[21] = true;
       }
     }
 
@@ -1408,6 +1498,123 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'clusterId' field.
+      * @return The value.
+      */
+    public java.lang.String getClusterId() {
+      return clusterId;
+    }
+
+    /**
+      * Sets the value of the 'clusterId' field.
+      * @param value The value of 'clusterId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setClusterId(java.lang.String value) {
+      validate(fields()[19], value);
+      this.clusterId = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusterId' field has been set.
+      * @return True if the 'clusterId' field has been set, false otherwise.
+      */
+    public boolean hasClusterId() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'clusterId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearClusterId() {
+      clusterId = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'clusterType' field.
+      * @return The value.
+      */
+    public java.lang.String getClusterType() {
+      return clusterType;
+    }
+
+    /**
+      * Sets the value of the 'clusterType' field.
+      * @param value The value of 'clusterType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setClusterType(java.lang.String value) {
+      validate(fields()[20], value);
+      this.clusterType = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusterType' field has been set.
+      * @return True if the 'clusterType' field has been set, false otherwise.
+      */
+    public boolean hasClusterType() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'clusterType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearClusterType() {
+      clusterType = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'clusterName' field.
+      * @return The value.
+      */
+    public java.lang.String getClusterName() {
+      return clusterName;
+    }
+
+    /**
+      * Sets the value of the 'clusterName' field.
+      * @param value The value of 'clusterName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setClusterName(java.lang.String value) {
+      validate(fields()[21], value);
+      this.clusterName = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusterName' field has been set.
+      * @return True if the 'clusterName' field has been set, false otherwise.
+      */
+    public boolean hasClusterName() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'clusterName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearClusterName() {
+      clusterName = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
     @Override
     public TripMisReport build() {
       try {
@@ -1431,6 +1638,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         record.groups = fieldSetFlags()[16] ? this.groups : (java.lang.String) defaultValue(fields()[16]);
         record.vehicleId = fieldSetFlags()[17] ? this.vehicleId : (java.lang.String) defaultValue(fields()[17]);
         record.imei = fieldSetFlags()[18] ? this.imei : (java.lang.String) defaultValue(fields()[18]);
+        record.clusterId = fieldSetFlags()[19] ? this.clusterId : (java.lang.String) defaultValue(fields()[19]);
+        record.clusterType = fieldSetFlags()[20] ? this.clusterType : (java.lang.String) defaultValue(fields()[20]);
+        record.clusterName = fieldSetFlags()[21] ? this.clusterName : (java.lang.String) defaultValue(fields()[21]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
