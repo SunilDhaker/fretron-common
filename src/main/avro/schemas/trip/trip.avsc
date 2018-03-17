@@ -1,5 +1,49 @@
 [
-
+{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "TripUploadJob",
+		"fields": [{
+				"name": "orgId",
+				"type": "string",
+				"default": null
+			},
+			{
+				"name": "jobId",
+				"type": ["null", "string"],
+				"default": null
+			},
+            {
+                "name": "creationTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+			{
+				"name": "totalTripCount",
+				"type": ["null", "int"],
+				"default": null
+			},
+			{
+				"name": "processingStatus",
+				"type": ["null", "string"],
+				"default": null
+			},
+			{
+                "name": "processedTripCount",
+                "type": ["null", "int"],
+                "default": null
+            },
+            {
+                "name": "filePath",
+                "type": ["null", "string"],
+                "default": null
+            }
+		]
+	},
 	{
 		"namespace": "com.fretron.Model",
 		"type": "record",
