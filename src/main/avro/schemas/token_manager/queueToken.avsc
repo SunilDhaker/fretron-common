@@ -103,14 +103,6 @@
       "default":null
     },
     {
-      "name":"description",
-      "type":[
-        "null",
-        "string"
-      ],
-      "default":null
-    },
-    {
       "name": "calledTime",
       "type": [
         "null",
@@ -152,20 +144,37 @@
       "default":null
     },
     {
-      "name":"orgId",
-      "type":[
-        "null",
-        "string"
-      ],
-      "default":null
-    },
-    {
       "name":"lastTrip",
       "type":[
         "null",
         "com.fretron.Model.LastTrip"
       ],
       "default":null
-    }
+    },
+        {
+          "name": "originalIssueTime",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+        {
+          "name": "orgId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name":"description",
+          "type":[
+            "null",
+            "string"
+          ],
+          "default":null
+        }
   ]
 }

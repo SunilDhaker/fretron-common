@@ -1,0 +1,34 @@
+  {
+    "namespace":"com.fretron.Model",
+    "type":"record",
+    "name":"DeviceConnectionState",
+    "fields": [
+      {
+        "name": "imei",
+        "type":"string"
+      },
+      {
+        "name": "lastBatteryValue",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "lastLowBattery",
+        "type": "long",
+         "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "lastPowerCut",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "time",
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    ]
+
+  }

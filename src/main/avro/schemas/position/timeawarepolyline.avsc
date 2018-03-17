@@ -17,6 +17,17 @@
       {
         "name": "lastPoint",
         "type": "com.fretron.Model.PointAtTime"
+      },
+
+      {
+         "name":"isAssumed",
+         "type":"boolean",
+          "default": false
+      },
+      {
+        "name": "totalPoints",
+        "type": [ "null", "int"],
+        "default" : null
       }
 
     ]

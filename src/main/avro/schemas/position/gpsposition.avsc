@@ -66,6 +66,11 @@
           }
         ],
         "default": null
+      },
+      {
+          "name": "isFillingEnabled",
+         "type": "boolean",
+         "default":false
       }
     ]
   },
@@ -131,6 +136,11 @@
         "type": "int"
       },
       {
+        "name": "lateArrivedRecordsCount",
+         "type": ["null","int"],
+         "default" : null
+      },
+      {
         "name": "imei",
         "type": "string"
       },
@@ -167,12 +177,25 @@
       },
       {
         "name": "encodedPolyline",
-        "type": "string"
+        "type": ["null" ,"string"],
+         "default":null
       },
       {
           "name": "timeAwarePolyline",
            "type": ["null","com.fretron.Model.TimeAwarePolyline"],
            "default":null
+      },
+
+      {
+         "name": "polylineSegments",
+          "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "com.fretron.Model.TimeAwarePolyline"
+                }
+              ],
+        "default": null
       },
       {
         "name": "eventType",

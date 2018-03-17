@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LitePosition extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1094838376767164592L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8807514978753623622L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public double latitude;
   @Deprecated public double longitude;
@@ -23,6 +23,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String vehicleId;
   @Deprecated public java.lang.String address;
   @Deprecated public java.util.List<java.lang.Double> lngLat;
+  @Deprecated public boolean isFillingEnabled;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
    * @param vehicleId The new value for vehicleId
    * @param address The new value for address
    * @param lngLat The new value for lngLat
+   * @param isFillingEnabled The new value for isFillingEnabled
    */
-  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.String decoder, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat) {
+  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.String decoder, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat, java.lang.Boolean isFillingEnabled) {
     this.latitude = latitude;
     this.longitude = longitude;
     this.speed = speed;
@@ -55,6 +57,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     this.vehicleId = vehicleId;
     this.address = address;
     this.lngLat = lngLat;
+    this.isFillingEnabled = isFillingEnabled;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 7: return vehicleId;
     case 8: return address;
     case 9: return lngLat;
+    case 10: return isFillingEnabled;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 7: vehicleId = (java.lang.String)value$; break;
     case 8: address = (java.lang.String)value$; break;
     case 9: lngLat = (java.util.List<java.lang.Double>)value$; break;
+    case 10: isFillingEnabled = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'isFillingEnabled' field.
+   * @return The value of the 'isFillingEnabled' field.
+   */
+  public java.lang.Boolean getIsFillingEnabled() {
+    return isFillingEnabled;
+  }
+
+  /**
+   * Sets the value of the 'isFillingEnabled' field.
+   * @param value the value to set.
+   */
+  public void setIsFillingEnabled(java.lang.Boolean value) {
+    this.isFillingEnabled = value;
+  }
+
+  /**
    * Creates a new LitePosition RecordBuilder.
    * @return A new LitePosition RecordBuilder
    */
@@ -295,6 +316,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String vehicleId;
     private java.lang.String address;
     private java.util.List<java.lang.Double> lngLat;
+    private boolean isFillingEnabled;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +369,10 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         this.lngLat = data().deepCopy(fields()[9].schema(), other.lngLat);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.isFillingEnabled)) {
+        this.isFillingEnabled = data().deepCopy(fields()[10].schema(), other.isFillingEnabled);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -394,6 +420,10 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[9], other.lngLat)) {
         this.lngLat = data().deepCopy(fields()[9].schema(), other.lngLat);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.isFillingEnabled)) {
+        this.isFillingEnabled = data().deepCopy(fields()[10].schema(), other.isFillingEnabled);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -784,6 +814,44 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'isFillingEnabled' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsFillingEnabled() {
+      return isFillingEnabled;
+    }
+
+    /**
+      * Sets the value of the 'isFillingEnabled' field.
+      * @param value The value of 'isFillingEnabled'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder setIsFillingEnabled(boolean value) {
+      validate(fields()[10], value);
+      this.isFillingEnabled = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isFillingEnabled' field has been set.
+      * @return True if the 'isFillingEnabled' field has been set, false otherwise.
+      */
+    public boolean hasIsFillingEnabled() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'isFillingEnabled' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder clearIsFillingEnabled() {
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public LitePosition build() {
       try {
@@ -798,6 +866,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         record.vehicleId = fieldSetFlags()[7] ? this.vehicleId : (java.lang.String) defaultValue(fields()[7]);
         record.address = fieldSetFlags()[8] ? this.address : (java.lang.String) defaultValue(fields()[8]);
         record.lngLat = fieldSetFlags()[9] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[9]);
+        record.isFillingEnabled = fieldSetFlags()[10] ? this.isFillingEnabled : (java.lang.Boolean) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

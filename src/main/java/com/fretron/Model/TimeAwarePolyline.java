@@ -10,12 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6166805746212534172L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}}]}");
+  private static final long serialVersionUID = 2480702520270829669L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String polyline;
   @Deprecated public java.lang.String compressedPolyline;
   @Deprecated public com.fretron.Model.PointAtTime lastPoint;
+  @Deprecated public boolean isAssumed;
+  @Deprecated public java.lang.Integer totalPoints;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +31,15 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
    * @param polyline The new value for polyline
    * @param compressedPolyline The new value for compressedPolyline
    * @param lastPoint The new value for lastPoint
+   * @param isAssumed The new value for isAssumed
+   * @param totalPoints The new value for totalPoints
    */
-  public TimeAwarePolyline(java.lang.String polyline, java.lang.String compressedPolyline, com.fretron.Model.PointAtTime lastPoint) {
+  public TimeAwarePolyline(java.lang.String polyline, java.lang.String compressedPolyline, com.fretron.Model.PointAtTime lastPoint, java.lang.Boolean isAssumed, java.lang.Integer totalPoints) {
     this.polyline = polyline;
     this.compressedPolyline = compressedPolyline;
     this.lastPoint = lastPoint;
+    this.isAssumed = isAssumed;
+    this.totalPoints = totalPoints;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +49,8 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
     case 0: return polyline;
     case 1: return compressedPolyline;
     case 2: return lastPoint;
+    case 3: return isAssumed;
+    case 4: return totalPoints;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +62,8 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
     case 0: polyline = (java.lang.String)value$; break;
     case 1: compressedPolyline = (java.lang.String)value$; break;
     case 2: lastPoint = (com.fretron.Model.PointAtTime)value$; break;
+    case 3: isAssumed = (java.lang.Boolean)value$; break;
+    case 4: totalPoints = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +117,38 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'isAssumed' field.
+   * @return The value of the 'isAssumed' field.
+   */
+  public java.lang.Boolean getIsAssumed() {
+    return isAssumed;
+  }
+
+  /**
+   * Sets the value of the 'isAssumed' field.
+   * @param value the value to set.
+   */
+  public void setIsAssumed(java.lang.Boolean value) {
+    this.isAssumed = value;
+  }
+
+  /**
+   * Gets the value of the 'totalPoints' field.
+   * @return The value of the 'totalPoints' field.
+   */
+  public java.lang.Integer getTotalPoints() {
+    return totalPoints;
+  }
+
+  /**
+   * Sets the value of the 'totalPoints' field.
+   * @param value the value to set.
+   */
+  public void setTotalPoints(java.lang.Integer value) {
+    this.totalPoints = value;
+  }
+
+  /**
    * Creates a new TimeAwarePolyline RecordBuilder.
    * @return A new TimeAwarePolyline RecordBuilder
    */
@@ -142,6 +184,8 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.String compressedPolyline;
     private com.fretron.Model.PointAtTime lastPoint;
     private com.fretron.Model.PointAtTime.Builder lastPointBuilder;
+    private boolean isAssumed;
+    private java.lang.Integer totalPoints;
 
     /** Creates a new Builder */
     private Builder() {
@@ -169,6 +213,14 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
       if (other.hasLastPointBuilder()) {
         this.lastPointBuilder = com.fretron.Model.PointAtTime.newBuilder(other.getLastPointBuilder());
       }
+      if (isValidValue(fields()[3], other.isAssumed)) {
+        this.isAssumed = data().deepCopy(fields()[3].schema(), other.isAssumed);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.totalPoints)) {
+        this.totalPoints = data().deepCopy(fields()[4].schema(), other.totalPoints);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -190,6 +242,14 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
         fieldSetFlags()[2] = true;
       }
       this.lastPointBuilder = null;
+      if (isValidValue(fields()[3], other.isAssumed)) {
+        this.isAssumed = data().deepCopy(fields()[3].schema(), other.isAssumed);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.totalPoints)) {
+        this.totalPoints = data().deepCopy(fields()[4].schema(), other.totalPoints);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -344,6 +404,83 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'isAssumed' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsAssumed() {
+      return isAssumed;
+    }
+
+    /**
+      * Sets the value of the 'isAssumed' field.
+      * @param value The value of 'isAssumed'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TimeAwarePolyline.Builder setIsAssumed(boolean value) {
+      validate(fields()[3], value);
+      this.isAssumed = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isAssumed' field has been set.
+      * @return True if the 'isAssumed' field has been set, false otherwise.
+      */
+    public boolean hasIsAssumed() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'isAssumed' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TimeAwarePolyline.Builder clearIsAssumed() {
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'totalPoints' field.
+      * @return The value.
+      */
+    public java.lang.Integer getTotalPoints() {
+      return totalPoints;
+    }
+
+    /**
+      * Sets the value of the 'totalPoints' field.
+      * @param value The value of 'totalPoints'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TimeAwarePolyline.Builder setTotalPoints(java.lang.Integer value) {
+      validate(fields()[4], value);
+      this.totalPoints = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'totalPoints' field has been set.
+      * @return True if the 'totalPoints' field has been set, false otherwise.
+      */
+    public boolean hasTotalPoints() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'totalPoints' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TimeAwarePolyline.Builder clearTotalPoints() {
+      totalPoints = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public TimeAwarePolyline build() {
       try {
@@ -355,6 +492,8 @@ public class TimeAwarePolyline extends org.apache.avro.specific.SpecificRecordBa
         } else {
           record.lastPoint = fieldSetFlags()[2] ? this.lastPoint : (com.fretron.Model.PointAtTime) defaultValue(fields()[2]);
         }
+        record.isAssumed = fieldSetFlags()[3] ? this.isAssumed : (java.lang.Boolean) defaultValue(fields()[3]);
+        record.totalPoints = fieldSetFlags()[4] ? this.totalPoints : (java.lang.Integer) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

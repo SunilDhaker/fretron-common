@@ -52,26 +52,58 @@ public class Constants {
 
     /*
     *****************************************************************************************************
-    *                                    POSITION-RELATED
+    *                                   GPS-Processor Configs
     * **************************************************************************************************
      */
 
+    public final static  String KEY_POSITION_TOPIC = "positions.topic";
+    public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
+    public static final java.lang.String KEY_GPS_STATE_TOPIC = "gps.state.topic";
+    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
+    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
+    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
 
-    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
+
+    public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
+    public static  final String KEY_DISCONNECTION_THRESHOLD = "disconnection.threshold";
+    public static  final String KEY_GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
+    public static  final String KEY_JUMP_POINT_SPEED_THRESHOLD = "jump.point.speed.threshold";
+    public static  final  String KEY_MIN_WINDOW_TIME = "minimum.window.time";
+    public static  final String MIN_STOPPED_STATE_TIME = "gps.stopped.state.min.time";
+    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
+    public static final String WINDOW_RETENTION_TIME = "window.retention.time";
+    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
+    public static final String PROBABLE_MINIMUM_RECORDS = "probable.minimum.records";
+    public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
+    public static final java.lang.String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
+
+
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
+    public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
+    public static java.lang.String KEY_VEHICLE_ROUTE_FILLER_TOPIC = "vehicle.route.filler.topic";
+
+
+
+
+ /******************************Vehicle-Route-Manager************************************************/
+
+
+
 
 
     //topics
-    public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
-    public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
-    public final static  String KEY_POSITION_TOPIC = "positions.topic";
+    public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
-    public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+
 
 
 
     //states
     public static final java.lang.String KEY_ONGOING_TEMPORARY_VEHICEL_GPS_STATE = "vehicle.ongoing.temporary.gps.state";
     public final static  String KEY_OLD_Position_Cache_State_Store ="old.position.cache.store";
+
 
 
 
@@ -83,11 +115,14 @@ public class Constants {
 
 
 
+    public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STATE = "deviceDataByRemoteAddress.state";
+    public final static String KEY_LAST_PROCESSED_POSITIONS_STATE = "lastprocessedpositions.state";
+
+
 
     public static final String MIN_STATE_TIME = "gps.state.min.time";
     public static final String  MIN_REBUILD_STATE_TIME = "rebuild.state.min.time";
     public static final String KEY_MIN_RECORD_REQUIRED = "state.min.record.required";
-    public static final String MIN_MOVING_STATE_TIME = "gps.state.moving.min.time";
     public static final java.lang.String GPS_STATE_PUNCTUATE_TIME = "gps.state.punctuate.time";
 
     public static final java.lang.String KEY_LATEST_VEHICLE_GPS_STATE = "vehicle.gps.state";
@@ -95,14 +130,13 @@ public class Constants {
     public static final java.lang.String STOP_SPEED_THRESHOLD = "stop.speed.threshold";
 
     public static final java.lang.String KEY_DISCONNECTED_THRESHOLD = "gps.state.disconnected.threshold";
-    public static final java.lang.String KEY_STOPPED_THRESHOLD = "gps.state.stopped.threshold";
 
     public static final java.lang.String KEY_GEOCODER = "geocoder";
     public static final String KEY_FRETRON_GEOCODER_URL = "geocoder.url";
     public static final String KEY_DEVICE_EVENT_MANGER = "device.event.manager.app.id";
     public static final String KEY_DEVICE_EVENT_TOPIC = "device.power.event.topic";
     public static java.lang.String KEY_NEW_POSITION_PROCESSER_APP_ID = "position.processor.app.id";
-    public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
+
     public static java.lang.String KEY_GOOGLE_DIRECTION_API_KEY = "google.direction.api.key";
     public static java.lang.String KEY_SIGNUP_PREFIX = "signup.url.prefix";
     public static java.lang.String KEY_DASHBOARD_PREFIX = "dashboard.url.prefix";
@@ -354,6 +388,8 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
+
     //=========================================
 
 
@@ -366,6 +402,11 @@ public class Constants {
 
 
     //======================================================
+
+    public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
+    public static final String SHIPMENT_DB_NAME = "shipment.db.name";
+    public static final String SHIPMENT_DB_PORT = "shipment.db.port";
+    public static final String SHIPMENT_DB_HOST = "shipment.db.host";
 
     public static final String KEY_DRIVER_TOPIC = "driver.topic";
     public static final String DRIVER_DB_NAME = "driver.db.name";
@@ -420,6 +461,8 @@ public class Constants {
 
     public final static String KEY_TF_TOKEN_API_URL = "tatafleetman.getToken";
     public  final static String KEY_TF_TRACK_VEHICLE_API_URL = "tatafleetman.track.vehicle";
+    public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
+
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
@@ -439,7 +482,6 @@ public class Constants {
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
     public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
-    public final static String KEY_LOGIN_EVENT_TOPIC = "login.event.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
     public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
@@ -447,8 +489,6 @@ public class Constants {
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
     public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
-    public final static String KEY_PROTOCOL_HANDLER_APP_HOST = "protocol.handler.app.rest.host";
-    public final static String KEY_PROTOCOL_HANDLER_APP_PORT = "protocol.handler.app.rest.port";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
@@ -465,8 +505,25 @@ public class Constants {
     public final static String KEY_TOKEN_MANAGER_MONGODB_PORT="token.manager.db.port";
     public final static String KEY_TOKEN_MONGODB_COLLECTION_NAME="token.db.collection.name";
     public final static String KEY_QUEUE_MONGODB_COLLECTION_NAME="queue.db.collection.name";
+    public final static String KEY_VLR_MONGODB_COLLECTION_NAME="vlr.db.collection.name";
 
-    public final static String KEY_VLR_MONGODB_COLLECTION_NAME = "vlr.db.collection.name";
+    //========================DASHBOARD_MANAGER=================
+
+    public static final String KEY_DASHBOARD_MANAGER_APP_ID = "dashboard.manager.app.id";
+    public static final String KEY_VEHICLE_ACCESSIBLE_DB_NAME ="vehicle.accessible.db.name";
+    public static final String DASHBOARD_APP_IP = "dashboard.manager.restservice.ip";
+    public static final String DASHBOARD_APP_PORT = "dashbaord.manager.restservice.port";
+    public static final String DASHBOARD_TOPIC = "dashboard.topic";
+    public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
+    public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
+
+    //==================TRIP-MIS===============================
+
+    public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
+    public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
+    public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
+
 
     private Constants(){
 

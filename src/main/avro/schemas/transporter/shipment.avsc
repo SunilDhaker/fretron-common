@@ -168,7 +168,59 @@
                    "string"
                 ],
                 "default":null
-           }
+           },
+           {
+               "name":"shipmentDate",
+               "type":[
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+            },
+            {
+               "name":"consignmentDate",
+               "type":[
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+            },
+            {
+               "name":"invoiceDate",
+               "type":[
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+            },
+            {
+               "name":"invoiceNumber",
+               "type":[
+                   "null",
+                   "string"
+                ],
+                "default":null
+            },
+            {
+               "name":"valueOfGoods",
+               "type":[
+                   "null",
+                   "string"
+                ],
+                "default":null
+            },
+                     {
+                            "name":"currentTrackingState",
+                            "type":[
+                              "null",
+                              "com.fretron.Model.VehicleState"
+                            ],
+                            "default":null
+                     }
+
     ]
   },
 

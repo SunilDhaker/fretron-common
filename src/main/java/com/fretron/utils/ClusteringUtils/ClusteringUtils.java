@@ -1,6 +1,7 @@
 package com.fretron.utils.ClusteringUtils;
 
 import com.fretron.Model.LitePosition;
+import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.utils.PolylineUtils.PolylineDecoder;
 
 import java.util.List;
@@ -13,7 +14,7 @@ public class ClusteringUtils {
 
 	public static LitePosition calculateMean(List<LitePosition> positions){
 
-		LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"","" , null , null);
+		LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"" , "" , null,null ,false);
 		if(positions.size() > 0){
 			for (LitePosition p : positions) {
 				meanPosition.latitude = meanPosition.latitude +p.latitude;
@@ -23,10 +24,10 @@ public class ClusteringUtils {
 			meanPosition.longitude = meanPosition.longitude / positions.size() ;
 		}
 		return meanPosition;
-	};
+	}
 
 
-	public static double calculateVariance(List<LitePosition> positions){
+    public static double calculateVariance(List<LitePosition> positions){
 
 		double variance = 0 ;
 		LitePosition meanPosition  = calculateMean(positions);
@@ -46,6 +47,15 @@ public class ClusteringUtils {
 	}
 
 
+
+	public static MeanVariance forTimeAwarePolyline(TimeAwarePolyline polyline){
+		List<LitePosition> points = (new PolylineDecoder()).decodeTimeAwarePolylineInPositions(polyline.getPolyline());
+		LitePosition meanPosition = calculateMean(points);
+		double variance = calculateVariance(points, meanPosition);
+		return (new MeanVariance(meanPosition , variance));
+	}
+
+
 	public static MeanVariance forPolyline(String encodedPolyline){
 
 		List<LitePosition> points = (new PolylineDecoder()).decodeInPositions(encodedPolyline);
@@ -58,16 +68,16 @@ public class ClusteringUtils {
 	{
 
 
-		LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"","" , null , null);
+		LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"" , "" , null,null ,false);
 		newMean.latitude = (n1 * mean1.latitude + n2 * mean2.latitude) / (n1 + n2);
 		newMean.longitude = (n1 * mean1.longitude + n2 * mean2.longitude) / (n1 + n2);
 
 		double d1 = distance(mean1 , newMean);
 		double d2 = distance(mean2 , newMean);
 
-		double newVarience = ((n1 * ( variance1 + (d1*d1))) + (n2 * ( variance2 + (d2*d2))))/(n1 + n2) ;
+		double newVariance = ((n1 * ( variance1 + (d1*d1))) + (n2 * ( variance2 + (d2*d2))))/(n1 + n2) ;
 
-		return new MeanVariance(newMean , newVarience);
+		return new MeanVariance(newMean , newVariance);
 	}
 
 	public static class MeanVariance{

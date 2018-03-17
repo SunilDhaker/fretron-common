@@ -9,6 +9,8 @@ import com.fretron.Model.LitePosition;
 import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.Model.PointAtTime;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -94,9 +96,7 @@ public class OnlinePolylineEncoder {
 
 		lineString = lineString +  (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString());
 		return lineString;
-	};
-
-
+	}
 
 
 	/**
@@ -132,11 +132,11 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(newLat);
 			lastPoint.setLongitude(newLng);
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 		return polylineObj;
-	};
-
+	}
 
 
 	public static String extendPolyline(String lineString , LitePosition lastPos, LitePosition nextPos){
@@ -194,6 +194,7 @@ public class OnlinePolylineEncoder {
 			lastPoint.setLatitude(nextPos.getLatitude());
 			lastPoint.setLongitude(nextPos.getLongitude());
 			polylineObj.setLastPoint(lastPoint);
+			polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 		}
 
 
@@ -234,9 +235,8 @@ public class OnlinePolylineEncoder {
 	public static TimeAwarePolyline mergeTimeAwarePolylines(TimeAwarePolyline polylineObj1 , TimeAwarePolyline polylineObj2){
 
 		List<PointAtTime> points  = (new PolylineDecoder()).decodeTimeAwarePolyline(polylineObj2.getPolyline());
-
 		for(PointAtTime point : points){
-			polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());;
+			polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
 		}
 		return polylineObj1;
 	}
@@ -276,6 +276,62 @@ public class OnlinePolylineEncoder {
 	}
 
 
+	public static TimeAwarePolyline insertPointsIn(TimeAwarePolyline polylineObj ,List<Point> points ,long from ,long to){
+
+		if (points.size() == 0 || polylineObj == null){
+			return polylineObj;
+		}
+
+
+		long timeDiff = to - from;
+
+			long deltaTime = timeDiff / points.size();
+			long nextLocationTime = from + deltaTime;
+
+			for (Point point: points) {
+
+				polylineObj = extendTimeAwarePolyline(polylineObj ,point.getLat() ,point.getLng() ,nextLocationTime);
+				nextLocationTime += deltaTime;
+			}
+
+
+
+		return  polylineObj;
+
+	}
+
+
+
+	public static TimeAwarePolyline mergePolylineWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,String polyline ,long newLocationTime){
+
+		if (polyline.length() == 0 || polylineObj == null){
+			return polylineObj;
+		}
+
+
+		long lastPointTimestamp = polylineObj.getLastPoint().getTimestamp();
+
+		long timeDiff = newLocationTime - lastPointTimestamp;
+		List<Point> npoints = new PolylineDecoder().decode(polyline);
+
+		if (npoints.size() > 0){
+
+			long deltaTime = timeDiff / npoints.size();
+			long nextLocationTime = lastPointTimestamp + deltaTime;
+
+			for (Point point: npoints) {
+				polylineObj = extendTimeAwarePolyline(polylineObj ,point.getLat() ,point.getLng() ,nextLocationTime);
+				nextLocationTime += deltaTime;
+			}
+
+		}
+
+		return  polylineObj;
+
+	}
+
+
+
 
 //	/**
 //	 * Merge two given polyline
@@ -312,31 +368,106 @@ public class OnlinePolylineEncoder {
 //	}
 
 
-	public static TimeAwarePolyline mergePolylineWithTimeAwarePolyline(TimeAwarePolyline polylineObj ,String polyline ,long newLocationTime){
 
-		if (polyline.length() == 0 || polylineObj != null){
-			return polylineObj;
+
+	public static String extendPolyline(Point[] list){
+
+
+		String p = "";
+		if (list.length > 0){
+
+			double l = 0;
+			double la = 0.0 ;
+
+			for (int i = 0 ; i< list.length ; i++){
+			 p = extendPolyline(p , l ,la ,list[i].getLat() ,list[i].getLng() );
+			 l = list[i].getLat();
+			 la = list[i].getLng();
+			}
 		}
 
-		long lastPointTimestamp = polylineObj.getLastPoint().getTimestamp();
 
-		long timeDiff = newLocationTime - lastPointTimestamp;
-		List<Point> npoints = new PolylineDecoder().decode(polyline);
+		return p;
+	}
 
-		if (npoints.size() > 0){
 
-			long deltaTime = timeDiff / npoints.size();
-			long nextLocationTime = lastPointTimestamp + deltaTime;
+	public static TimeAwarePolyline extendTimeAwarePolyline(ArrayList<PointAtTime> list){
 
-			for (Point point: npoints) {
-				polylineObj = extendTimeAwarePolyline(polylineObj ,point.getLat() ,point.getLng() ,nextLocationTime);
-				nextLocationTime += deltaTime;
+		TimeAwarePolyline polyline = null;
+
+		if (list.size() > 0){
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
+
+			Iterator<PointAtTime> it = list.iterator();
+
+			while (it.hasNext()){
+				PointAtTime point = it.next();
+				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
 			}
 
 		}
 
-		return  polylineObj;
 
+		return polyline;
+	}
+
+
+	public static TimeAwarePolyline extendTimeAwarePolylineWithPoints(TimeAwarePolyline polyline ,List<PointAtTime> list){
+		if (list.size() > 0){
+			Iterator<PointAtTime> it = list.iterator();
+			while (it.hasNext()){
+				PointAtTime point = it.next();
+				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
+			}
+
+		}
+
+		return polyline;
+	}
+
+
+	public static TimeAwarePolyline extendTimeAwarePolylineUsingPositions(List<LitePosition> list){
+
+		TimeAwarePolyline polyline = null;
+
+		if (list.size() > 0){
+			polyline = new TimeAwarePolyline("","",new PointAtTime(0l,0d,0d),false,0);
+
+			Iterator<LitePosition> it = list.iterator();
+
+			while (it.hasNext()){
+				LitePosition point = it.next();
+				polyline = extendTimeAwarePolyline(polyline ,point.getLatitude() ,point.getLongitude() ,point.getTime());
+			}
+
+		}
+
+
+		return polyline;
+	}
+
+
+
+	public static String convertToGeoPolyline(TimeAwarePolyline timeAwarePolyline){
+
+		String polyline = "";
+		PolylineDecoder decoder = new PolylineDecoder();
+
+	     List<PointAtTime> list = decoder.decodeTimeAwarePolyline(timeAwarePolyline.getPolyline());
+		 Iterator<PointAtTime> it =  list.iterator();
+		 double lastLat = 0;
+		 double lastLng = 0;
+
+		 while (it.hasNext()){
+
+		 	PointAtTime point = it.next();
+		 	polyline = extendPolyline(polyline ,lastLat ,lastLng,point.getLatitude() ,point.getLongitude());
+
+		 	lastLat = point.getLatitude();
+		 	lastLng = point.getLongitude();
+		 }
+
+		return polyline;
 	}
 
 

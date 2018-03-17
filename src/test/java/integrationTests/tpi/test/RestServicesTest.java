@@ -344,7 +344,7 @@ public class RestServicesTest {
 
 
 
-    public Boolean scheduleJob(JSONObject requestObj) throws Exception{
+    public Boolean scheduleJob(JSONObject requestObj) {
 
         HttpEntity responseEntity =  HttpRequestHepler.makePostRequest(scheduleJobUrl,requestObj,token);
 
