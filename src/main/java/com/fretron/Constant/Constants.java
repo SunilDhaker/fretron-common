@@ -474,21 +474,24 @@ public class Constants {
     //******************************Protocol-eventproducer*****************************************************
     public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
+    public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
+   public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
+   public final static String KEY_CONCOX_PROCESSED_POSITIONS_TOPIC = "concox.processed.positions.topic";
 
 
-    public final  static String KEY_PROTOCOL_TIMEZONE = "protocolTimezoneOffsetKey";
+
+
+   public final  static String KEY_PROTOCOL_TIMEZONE = "protocolTimezoneOffsetKey";
     public final static String KEY_DEVICE_IMEI = "deviceIMEIKEY";
 
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
     public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
-    public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
     public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STORE = "deviceDataByRemoteAddress.store";
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
-    public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
