@@ -28,7 +28,7 @@ import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.mergePolylin
 
 public final class DirectionPolylineUtil {
 
-    private  static String API_KEY = "AIzaSyAiKyto-33wx4RvJw7kplHqSdyacUseGZw";
+    private  static String API_KEY = "AIzaSyAiKyto-33wx4RvJw7kplHqSdyacUseGZw0";
     private  static String API_URL = "https://maps.googleapis.com/maps/api/directions/json?";
     private  static String ROUTES_KEY = "routes";
     private  static String OVERVIEW_POLYLINE = "overview_polyline";
