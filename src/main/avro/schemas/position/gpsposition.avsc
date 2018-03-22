@@ -198,6 +198,11 @@
         "default": null
       },
       {
+        "name": "recalculatedDistance",
+        "type": ["null","double"],
+        "default": null
+      },
+      {
         "name": "eventType",
         "type": ["null" ,"string"],
         "default" : null
