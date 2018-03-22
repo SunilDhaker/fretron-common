@@ -43,9 +43,19 @@
                 "default": null
             },
             {
-               "name": "totalDeletedTrips",
+               "name": "discardedTripsByUser",
                "type": ["null", "int"],
                "default": null
+            },
+            {
+                "name": "discardedTripsBySystem",
+                "type": ["null", "int"],
+                "default": null
+            },
+            {
+                "name": "markedCompletedTripsCount",
+                "type": ["null", "int"],
+                "default": null
             }
 		]
 	},
