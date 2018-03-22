@@ -41,6 +41,11 @@
                 "name": "filePath",
                 "type": ["null", "string"],
                 "default": null
+            },
+            {
+               "name": "totalDeletedTrips",
+               "type": ["null", "int"],
+               "default": null
             }
 		]
 	},
