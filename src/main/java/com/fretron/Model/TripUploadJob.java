@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 633425369749685173L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripUploadJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"jobId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"totalTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"processingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processedTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"filePath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2663108721514037148L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripUploadJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"jobId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"totalTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"processingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processedTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"filePath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"discardedTripsByUser\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"discardedTripsBySystem\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"markedCompletedTripsCount\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String jobId;
@@ -20,6 +20,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String processingStatus;
   @Deprecated public java.lang.Integer processedTripCount;
   @Deprecated public java.lang.String filePath;
+  @Deprecated public java.lang.Integer discardedTripsByUser;
+  @Deprecated public java.lang.Integer discardedTripsBySystem;
+  @Deprecated public java.lang.Integer markedCompletedTripsCount;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +40,11 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
    * @param processingStatus The new value for processingStatus
    * @param processedTripCount The new value for processedTripCount
    * @param filePath The new value for filePath
+   * @param discardedTripsByUser The new value for discardedTripsByUser
+   * @param discardedTripsBySystem The new value for discardedTripsBySystem
+   * @param markedCompletedTripsCount The new value for markedCompletedTripsCount
    */
-  public TripUploadJob(java.lang.String orgId, java.lang.String jobId, java.lang.Long creationTime, java.lang.Integer totalTripCount, java.lang.String processingStatus, java.lang.Integer processedTripCount, java.lang.String filePath) {
+  public TripUploadJob(java.lang.String orgId, java.lang.String jobId, java.lang.Long creationTime, java.lang.Integer totalTripCount, java.lang.String processingStatus, java.lang.Integer processedTripCount, java.lang.String filePath, java.lang.Integer discardedTripsByUser, java.lang.Integer discardedTripsBySystem, java.lang.Integer markedCompletedTripsCount) {
     this.orgId = orgId;
     this.jobId = jobId;
     this.creationTime = creationTime;
@@ -46,6 +52,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     this.processingStatus = processingStatus;
     this.processedTripCount = processedTripCount;
     this.filePath = filePath;
+    this.discardedTripsByUser = discardedTripsByUser;
+    this.discardedTripsBySystem = discardedTripsBySystem;
+    this.markedCompletedTripsCount = markedCompletedTripsCount;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +68,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     case 4: return processingStatus;
     case 5: return processedTripCount;
     case 6: return filePath;
+    case 7: return discardedTripsByUser;
+    case 8: return discardedTripsBySystem;
+    case 9: return markedCompletedTripsCount;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +86,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     case 4: processingStatus = (java.lang.String)value$; break;
     case 5: processedTripCount = (java.lang.Integer)value$; break;
     case 6: filePath = (java.lang.String)value$; break;
+    case 7: discardedTripsByUser = (java.lang.Integer)value$; break;
+    case 8: discardedTripsBySystem = (java.lang.Integer)value$; break;
+    case 9: markedCompletedTripsCount = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +206,54 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'discardedTripsByUser' field.
+   * @return The value of the 'discardedTripsByUser' field.
+   */
+  public java.lang.Integer getDiscardedTripsByUser() {
+    return discardedTripsByUser;
+  }
+
+  /**
+   * Sets the value of the 'discardedTripsByUser' field.
+   * @param value the value to set.
+   */
+  public void setDiscardedTripsByUser(java.lang.Integer value) {
+    this.discardedTripsByUser = value;
+  }
+
+  /**
+   * Gets the value of the 'discardedTripsBySystem' field.
+   * @return The value of the 'discardedTripsBySystem' field.
+   */
+  public java.lang.Integer getDiscardedTripsBySystem() {
+    return discardedTripsBySystem;
+  }
+
+  /**
+   * Sets the value of the 'discardedTripsBySystem' field.
+   * @param value the value to set.
+   */
+  public void setDiscardedTripsBySystem(java.lang.Integer value) {
+    this.discardedTripsBySystem = value;
+  }
+
+  /**
+   * Gets the value of the 'markedCompletedTripsCount' field.
+   * @return The value of the 'markedCompletedTripsCount' field.
+   */
+  public java.lang.Integer getMarkedCompletedTripsCount() {
+    return markedCompletedTripsCount;
+  }
+
+  /**
+   * Sets the value of the 'markedCompletedTripsCount' field.
+   * @param value the value to set.
+   */
+  public void setMarkedCompletedTripsCount(java.lang.Integer value) {
+    this.markedCompletedTripsCount = value;
+  }
+
+  /**
    * Creates a new TripUploadJob RecordBuilder.
    * @return A new TripUploadJob RecordBuilder
    */
@@ -229,6 +292,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String processingStatus;
     private java.lang.Integer processedTripCount;
     private java.lang.String filePath;
+    private java.lang.Integer discardedTripsByUser;
+    private java.lang.Integer discardedTripsBySystem;
+    private java.lang.Integer markedCompletedTripsCount;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +335,18 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
         this.filePath = data().deepCopy(fields()[6].schema(), other.filePath);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.discardedTripsByUser)) {
+        this.discardedTripsByUser = data().deepCopy(fields()[7].schema(), other.discardedTripsByUser);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.discardedTripsBySystem)) {
+        this.discardedTripsBySystem = data().deepCopy(fields()[8].schema(), other.discardedTripsBySystem);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.markedCompletedTripsCount)) {
+        this.markedCompletedTripsCount = data().deepCopy(fields()[9].schema(), other.markedCompletedTripsCount);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -304,6 +382,18 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[6], other.filePath)) {
         this.filePath = data().deepCopy(fields()[6].schema(), other.filePath);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.discardedTripsByUser)) {
+        this.discardedTripsByUser = data().deepCopy(fields()[7].schema(), other.discardedTripsByUser);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.discardedTripsBySystem)) {
+        this.discardedTripsBySystem = data().deepCopy(fields()[8].schema(), other.discardedTripsBySystem);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.markedCompletedTripsCount)) {
+        this.markedCompletedTripsCount = data().deepCopy(fields()[9].schema(), other.markedCompletedTripsCount);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -580,6 +670,123 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'discardedTripsByUser' field.
+      * @return The value.
+      */
+    public java.lang.Integer getDiscardedTripsByUser() {
+      return discardedTripsByUser;
+    }
+
+    /**
+      * Sets the value of the 'discardedTripsByUser' field.
+      * @param value The value of 'discardedTripsByUser'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder setDiscardedTripsByUser(java.lang.Integer value) {
+      validate(fields()[7], value);
+      this.discardedTripsByUser = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'discardedTripsByUser' field has been set.
+      * @return True if the 'discardedTripsByUser' field has been set, false otherwise.
+      */
+    public boolean hasDiscardedTripsByUser() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'discardedTripsByUser' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder clearDiscardedTripsByUser() {
+      discardedTripsByUser = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'discardedTripsBySystem' field.
+      * @return The value.
+      */
+    public java.lang.Integer getDiscardedTripsBySystem() {
+      return discardedTripsBySystem;
+    }
+
+    /**
+      * Sets the value of the 'discardedTripsBySystem' field.
+      * @param value The value of 'discardedTripsBySystem'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder setDiscardedTripsBySystem(java.lang.Integer value) {
+      validate(fields()[8], value);
+      this.discardedTripsBySystem = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'discardedTripsBySystem' field has been set.
+      * @return True if the 'discardedTripsBySystem' field has been set, false otherwise.
+      */
+    public boolean hasDiscardedTripsBySystem() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'discardedTripsBySystem' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder clearDiscardedTripsBySystem() {
+      discardedTripsBySystem = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'markedCompletedTripsCount' field.
+      * @return The value.
+      */
+    public java.lang.Integer getMarkedCompletedTripsCount() {
+      return markedCompletedTripsCount;
+    }
+
+    /**
+      * Sets the value of the 'markedCompletedTripsCount' field.
+      * @param value The value of 'markedCompletedTripsCount'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder setMarkedCompletedTripsCount(java.lang.Integer value) {
+      validate(fields()[9], value);
+      this.markedCompletedTripsCount = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'markedCompletedTripsCount' field has been set.
+      * @return True if the 'markedCompletedTripsCount' field has been set, false otherwise.
+      */
+    public boolean hasMarkedCompletedTripsCount() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'markedCompletedTripsCount' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder clearMarkedCompletedTripsCount() {
+      markedCompletedTripsCount = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public TripUploadJob build() {
       try {
@@ -591,6 +798,9 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
         record.processingStatus = fieldSetFlags()[4] ? this.processingStatus : (java.lang.String) defaultValue(fields()[4]);
         record.processedTripCount = fieldSetFlags()[5] ? this.processedTripCount : (java.lang.Integer) defaultValue(fields()[5]);
         record.filePath = fieldSetFlags()[6] ? this.filePath : (java.lang.String) defaultValue(fields()[6]);
+        record.discardedTripsByUser = fieldSetFlags()[7] ? this.discardedTripsByUser : (java.lang.Integer) defaultValue(fields()[7]);
+        record.discardedTripsBySystem = fieldSetFlags()[8] ? this.discardedTripsBySystem : (java.lang.Integer) defaultValue(fields()[8]);
+        record.markedCompletedTripsCount = fieldSetFlags()[9] ? this.markedCompletedTripsCount : (java.lang.Integer) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -41,6 +41,21 @@
                 "name": "filePath",
                 "type": ["null", "string"],
                 "default": null
+            },
+            {
+               "name": "discardedTripsByUser",
+               "type": ["null", "int"],
+               "default": null
+            },
+            {
+                "name": "discardedTripsBySystem",
+                "type": ["null", "int"],
+                "default": null
+            },
+            {
+                "name": "markedCompletedTripsCount",
+                "type": ["null", "int"],
+                "default": null
             }
 		]
 	},

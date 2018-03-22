@@ -324,6 +324,10 @@ public class Constants {
     public static final String FR_LOC_ALL_COLLECTION_NAME = "freight.location.all.collection.name";
     public static final String FR_LOC_FAV_COLLECTION_NAME = "freight.location.fav.collection.name";
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
+            //*************NEW**************//
+    public static final String GEOFENCE_MANAGER_SERVICE_PORT = "geofence.service.port";
+    public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
+    public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
 
     //=======================IP AND PORTS ===============
 
