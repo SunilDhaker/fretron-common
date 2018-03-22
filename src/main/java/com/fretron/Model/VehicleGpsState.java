@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4998475687044165810L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5710813252998412785L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public boolean isManuallyAdded;
   @Deprecated public boolean isIgnore;
@@ -34,6 +34,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.lang.String encodedPolyline;
   @Deprecated public com.fretron.Model.TimeAwarePolyline timeAwarePolyline;
   @Deprecated public java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments;
+  @Deprecated public java.lang.Double recalculatedDistance;
   @Deprecated public java.lang.String eventType;
 
   /**
@@ -66,9 +67,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    * @param encodedPolyline The new value for encodedPolyline
    * @param timeAwarePolyline The new value for timeAwarePolyline
    * @param polylineSegments The new value for polylineSegments
+   * @param recalculatedDistance The new value for recalculatedDistance
    * @param eventType The new value for eventType
    */
-  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.String eventType) {
+  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.String eventType) {
     this.isManuallyAdded = isManuallyAdded;
     this.isIgnore = isIgnore;
     this.startTime = startTime;
@@ -90,6 +92,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     this.encodedPolyline = encodedPolyline;
     this.timeAwarePolyline = timeAwarePolyline;
     this.polylineSegments = polylineSegments;
+    this.recalculatedDistance = recalculatedDistance;
     this.eventType = eventType;
   }
 
@@ -118,7 +121,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 18: return encodedPolyline;
     case 19: return timeAwarePolyline;
     case 20: return polylineSegments;
-    case 21: return eventType;
+    case 21: return recalculatedDistance;
+    case 22: return eventType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -148,7 +152,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 18: encodedPolyline = (java.lang.String)value$; break;
     case 19: timeAwarePolyline = (com.fretron.Model.TimeAwarePolyline)value$; break;
     case 20: polylineSegments = (java.util.List<com.fretron.Model.TimeAwarePolyline>)value$; break;
-    case 21: eventType = (java.lang.String)value$; break;
+    case 21: recalculatedDistance = (java.lang.Double)value$; break;
+    case 22: eventType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -490,6 +495,22 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'recalculatedDistance' field.
+   * @return The value of the 'recalculatedDistance' field.
+   */
+  public java.lang.Double getRecalculatedDistance() {
+    return recalculatedDistance;
+  }
+
+  /**
+   * Sets the value of the 'recalculatedDistance' field.
+   * @param value the value to set.
+   */
+  public void setRecalculatedDistance(java.lang.Double value) {
+    this.recalculatedDistance = value;
+  }
+
+  /**
    * Gets the value of the 'eventType' field.
    * @return The value of the 'eventType' field.
    */
@@ -562,6 +583,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     private com.fretron.Model.TimeAwarePolyline timeAwarePolyline;
     private com.fretron.Model.TimeAwarePolyline.Builder timeAwarePolylineBuilder;
     private java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments;
+    private java.lang.Double recalculatedDistance;
     private java.lang.String eventType;
 
     /** Creates a new Builder */
@@ -671,9 +693,13 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.polylineSegments = data().deepCopy(fields()[20].schema(), other.polylineSegments);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[21].schema(), other.eventType);
+      if (isValidValue(fields()[21], other.recalculatedDistance)) {
+        this.recalculatedDistance = data().deepCopy(fields()[21].schema(), other.recalculatedDistance);
         fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[22].schema(), other.eventType);
+        fieldSetFlags()[22] = true;
       }
     }
 
@@ -771,9 +797,13 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.polylineSegments = data().deepCopy(fields()[20].schema(), other.polylineSegments);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[21].schema(), other.eventType);
+      if (isValidValue(fields()[21], other.recalculatedDistance)) {
+        this.recalculatedDistance = data().deepCopy(fields()[21].schema(), other.recalculatedDistance);
         fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[22].schema(), other.eventType);
+        fieldSetFlags()[22] = true;
       }
     }
 
@@ -1727,6 +1757,45 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'recalculatedDistance' field.
+      * @return The value.
+      */
+    public java.lang.Double getRecalculatedDistance() {
+      return recalculatedDistance;
+    }
+
+    /**
+      * Sets the value of the 'recalculatedDistance' field.
+      * @param value The value of 'recalculatedDistance'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setRecalculatedDistance(java.lang.Double value) {
+      validate(fields()[21], value);
+      this.recalculatedDistance = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'recalculatedDistance' field has been set.
+      * @return True if the 'recalculatedDistance' field has been set, false otherwise.
+      */
+    public boolean hasRecalculatedDistance() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'recalculatedDistance' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearRecalculatedDistance() {
+      recalculatedDistance = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'eventType' field.
       * @return The value.
       */
@@ -1740,9 +1809,9 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.VehicleGpsState.Builder setEventType(java.lang.String value) {
-      validate(fields()[21], value);
+      validate(fields()[22], value);
       this.eventType = value;
-      fieldSetFlags()[21] = true;
+      fieldSetFlags()[22] = true;
       return this;
     }
 
@@ -1751,7 +1820,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'eventType' field has been set, false otherwise.
       */
     public boolean hasEventType() {
-      return fieldSetFlags()[21];
+      return fieldSetFlags()[22];
     }
 
 
@@ -1761,7 +1830,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.VehicleGpsState.Builder clearEventType() {
       eventType = null;
-      fieldSetFlags()[21] = false;
+      fieldSetFlags()[22] = false;
       return this;
     }
 
@@ -1806,7 +1875,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
           record.timeAwarePolyline = fieldSetFlags()[19] ? this.timeAwarePolyline : (com.fretron.Model.TimeAwarePolyline) defaultValue(fields()[19]);
         }
         record.polylineSegments = fieldSetFlags()[20] ? this.polylineSegments : (java.util.List<com.fretron.Model.TimeAwarePolyline>) defaultValue(fields()[20]);
-        record.eventType = fieldSetFlags()[21] ? this.eventType : (java.lang.String) defaultValue(fields()[21]);
+        record.recalculatedDistance = fieldSetFlags()[21] ? this.recalculatedDistance : (java.lang.Double) defaultValue(fields()[21]);
+        record.eventType = fieldSetFlags()[22] ? this.eventType : (java.lang.String) defaultValue(fields()[22]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

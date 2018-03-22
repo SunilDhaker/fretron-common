@@ -1,0 +1,156 @@
+[
+    {
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "Properties",
+		"fields": [{
+				"name": "catagory",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "name",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			},
+			{
+				"name": "level",
+				"type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+			},
+			{
+				"name": "customeFields",
+				"type": [
+					"null",
+					"string"
+				],
+				"default": null
+			}
+		]
+	},
+	{
+        "namespace": "com.fretron.Model",
+        "type": "record",
+        "name": "Geometry",
+        "fields": [{
+                "name": "type",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "coordinate",
+                "type":[
+                "null",
+                    {
+                    "type": "array",
+                    "items": {
+                        "type":"array",
+                        "items":{
+                            "type":"array",
+                            "items":"double"
+                            }
+                        }
+                    }
+
+                ],
+                "default": null
+            }
+        ]
+    },
+    {
+        "namespace": "com.fretron.Model",
+        "type": "record",
+        "name": "MetaData",
+        "fields": [{
+                "name": "clazz",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "addedBy",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "source",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "accessibility",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            }
+        ]
+    },
+    {
+        "namespace": "com.fretron.Model",
+        "type": "record",
+        "name": "GeoJsonFence",
+        "fields": [{
+                "name": "uuid",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "type",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "properties",
+                "type": [
+                        "null",
+                        "com.fretron.Model.Properties"
+                    ],
+                "default": null
+            },
+            {
+                "name": "geometry",
+                "type": [
+                    "null",
+                    "com.fretron.Model.Geometry"
+                ],
+                "default": null
+            },
+            {
+                "name": "metadata",
+                "type": [
+                    "null",
+                    "com.fretron.Model.MetaData"
+                ],
+                "default": null
+            }
+        ]
+    }
+]
