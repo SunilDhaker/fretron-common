@@ -50,7 +50,7 @@
                 "default": null
             },
             {
-                "name": "coordinate",
+                "name": "coordinates",
                 "type":[
                 "null",
                     {

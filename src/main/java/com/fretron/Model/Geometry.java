@@ -10,11 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Geometry extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1749332298307222205L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Geometry\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
+  private static final long serialVersionUID = 5233255660004430396L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Geometry\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
-  @Deprecated public java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinate;
+  @Deprecated public java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinates;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -26,11 +26,11 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
   /**
    * All-args constructor.
    * @param type The new value for type
-   * @param coordinate The new value for coordinate
+   * @param coordinates The new value for coordinates
    */
-  public Geometry(java.lang.String type, java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinate) {
+  public Geometry(java.lang.String type, java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinates) {
     this.type = type;
-    this.coordinate = coordinate;
+    this.coordinates = coordinates;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -38,7 +38,7 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return type;
-    case 1: return coordinate;
+    case 1: return coordinates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -48,7 +48,7 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: type = (java.lang.String)value$; break;
-    case 1: coordinate = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
+    case 1: coordinates = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -70,19 +70,19 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Gets the value of the 'coordinate' field.
-   * @return The value of the 'coordinate' field.
+   * Gets the value of the 'coordinates' field.
+   * @return The value of the 'coordinates' field.
    */
-  public java.util.List<java.util.List<java.util.List<java.lang.Double>>> getCoordinate() {
-    return coordinate;
+  public java.util.List<java.util.List<java.util.List<java.lang.Double>>> getCoordinates() {
+    return coordinates;
   }
 
   /**
-   * Sets the value of the 'coordinate' field.
+   * Sets the value of the 'coordinates' field.
    * @param value the value to set.
    */
-  public void setCoordinate(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
-    this.coordinate = value;
+  public void setCoordinates(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
+    this.coordinates = value;
   }
 
   /**
@@ -118,7 +118,7 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
     implements org.apache.avro.data.RecordBuilder<Geometry> {
 
     private java.lang.String type;
-    private java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinate;
+    private java.util.List<java.util.List<java.util.List<java.lang.Double>>> coordinates;
 
     /** Creates a new Builder */
     private Builder() {
@@ -135,8 +135,8 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
         this.type = data().deepCopy(fields()[0].schema(), other.type);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.coordinate)) {
-        this.coordinate = data().deepCopy(fields()[1].schema(), other.coordinate);
+      if (isValidValue(fields()[1], other.coordinates)) {
+        this.coordinates = data().deepCopy(fields()[1].schema(), other.coordinates);
         fieldSetFlags()[1] = true;
       }
     }
@@ -151,8 +151,8 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
         this.type = data().deepCopy(fields()[0].schema(), other.type);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.coordinate)) {
-        this.coordinate = data().deepCopy(fields()[1].schema(), other.coordinate);
+      if (isValidValue(fields()[1], other.coordinates)) {
+        this.coordinates = data().deepCopy(fields()[1].schema(), other.coordinates);
         fieldSetFlags()[1] = true;
       }
     }
@@ -197,40 +197,40 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'coordinate' field.
+      * Gets the value of the 'coordinates' field.
       * @return The value.
       */
-    public java.util.List<java.util.List<java.util.List<java.lang.Double>>> getCoordinate() {
-      return coordinate;
+    public java.util.List<java.util.List<java.util.List<java.lang.Double>>> getCoordinates() {
+      return coordinates;
     }
 
     /**
-      * Sets the value of the 'coordinate' field.
-      * @param value The value of 'coordinate'.
+      * Sets the value of the 'coordinates' field.
+      * @param value The value of 'coordinates'.
       * @return This builder.
       */
-    public com.fretron.Model.Geometry.Builder setCoordinate(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
+    public com.fretron.Model.Geometry.Builder setCoordinates(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
       validate(fields()[1], value);
-      this.coordinate = value;
+      this.coordinates = value;
       fieldSetFlags()[1] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'coordinate' field has been set.
-      * @return True if the 'coordinate' field has been set, false otherwise.
+      * Checks whether the 'coordinates' field has been set.
+      * @return True if the 'coordinates' field has been set, false otherwise.
       */
-    public boolean hasCoordinate() {
+    public boolean hasCoordinates() {
       return fieldSetFlags()[1];
     }
 
 
     /**
-      * Clears the value of the 'coordinate' field.
+      * Clears the value of the 'coordinates' field.
       * @return This builder.
       */
-    public com.fretron.Model.Geometry.Builder clearCoordinate() {
-      coordinate = null;
+    public com.fretron.Model.Geometry.Builder clearCoordinates() {
+      coordinates = null;
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -240,7 +240,7 @@ public class Geometry extends org.apache.avro.specific.SpecificRecordBase implem
       try {
         Geometry record = new Geometry();
         record.type = fieldSetFlags()[0] ? this.type : (java.lang.String) defaultValue(fields()[0]);
-        record.coordinate = fieldSetFlags()[1] ? this.coordinate : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[1]);
+        record.coordinates = fieldSetFlags()[1] ? this.coordinates : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[1]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
