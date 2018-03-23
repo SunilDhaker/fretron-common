@@ -78,6 +78,7 @@ public class Constants {
     public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
     public static final java.lang.String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
     public static final java.lang.String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
+    public static final java.lang.String KEY_MAP_MATCHING_API_JUMP_THRESHOLD = "match.map.api.max.accepted.jump";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
