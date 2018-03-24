@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class WindowedState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3547970649054134131L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WindowedState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isMature\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isCurrentWindow\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isSessionDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isFirst\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isExpire\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastWindowEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"windowTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"litePositions\",\"type\":{\"type\":\"array\",\"items\":\"LitePosition\"},\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"numberOfJumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"maxJump\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 1888894775394075719L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WindowedState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicleGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isMature\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isCurrentWindow\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isSessionDirty\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isFirst\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isExpire\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastWindowEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"windowTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"litePositions\",\"type\":{\"type\":\"array\",\"items\":\"LitePosition\"},\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"numberOfJumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"maxJump\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastForwardedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.VehicleGpsState vehicleGpsState;
   @Deprecated public java.lang.Long lastUpdatedTime;
@@ -27,6 +27,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public boolean isFillingEnabled;
   @Deprecated public java.lang.Integer numberOfJumps;
   @Deprecated public java.lang.Double maxJump;
+  @Deprecated public java.lang.Long lastForwardedTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +52,9 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
    * @param isFillingEnabled The new value for isFillingEnabled
    * @param numberOfJumps The new value for numberOfJumps
    * @param maxJump The new value for maxJump
+   * @param lastForwardedTime The new value for lastForwardedTime
    */
-  public WindowedState(com.fretron.Model.VehicleGpsState vehicleGpsState, java.lang.Long lastUpdatedTime, java.lang.Boolean isDirty, java.lang.Boolean isMature, java.lang.Boolean isCurrentWindow, java.lang.Boolean isSessionDirty, java.lang.Boolean isFirst, java.lang.Boolean isExpire, java.lang.Long lastWindowEndTime, java.lang.Long windowTime, java.util.List<com.fretron.Model.LitePosition> litePositions, java.lang.Boolean isFillingEnabled, java.lang.Integer numberOfJumps, java.lang.Double maxJump) {
+  public WindowedState(com.fretron.Model.VehicleGpsState vehicleGpsState, java.lang.Long lastUpdatedTime, java.lang.Boolean isDirty, java.lang.Boolean isMature, java.lang.Boolean isCurrentWindow, java.lang.Boolean isSessionDirty, java.lang.Boolean isFirst, java.lang.Boolean isExpire, java.lang.Long lastWindowEndTime, java.lang.Long windowTime, java.util.List<com.fretron.Model.LitePosition> litePositions, java.lang.Boolean isFillingEnabled, java.lang.Integer numberOfJumps, java.lang.Double maxJump, java.lang.Long lastForwardedTime) {
     this.vehicleGpsState = vehicleGpsState;
     this.lastUpdatedTime = lastUpdatedTime;
     this.isDirty = isDirty;
@@ -67,6 +69,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     this.isFillingEnabled = isFillingEnabled;
     this.numberOfJumps = numberOfJumps;
     this.maxJump = maxJump;
+    this.lastForwardedTime = lastForwardedTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +90,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     case 11: return isFillingEnabled;
     case 12: return numberOfJumps;
     case 13: return maxJump;
+    case 14: return lastForwardedTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +113,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     case 11: isFillingEnabled = (java.lang.Boolean)value$; break;
     case 12: numberOfJumps = (java.lang.Integer)value$; break;
     case 13: maxJump = (java.lang.Double)value$; break;
+    case 14: lastForwardedTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +343,22 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'lastForwardedTime' field.
+   * @return The value of the 'lastForwardedTime' field.
+   */
+  public java.lang.Long getLastForwardedTime() {
+    return lastForwardedTime;
+  }
+
+  /**
+   * Sets the value of the 'lastForwardedTime' field.
+   * @param value the value to set.
+   */
+  public void setLastForwardedTime(java.lang.Long value) {
+    this.lastForwardedTime = value;
+  }
+
+  /**
    * Creates a new WindowedState RecordBuilder.
    * @return A new WindowedState RecordBuilder
    */
@@ -384,6 +405,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
     private boolean isFillingEnabled;
     private java.lang.Integer numberOfJumps;
     private java.lang.Double maxJump;
+    private java.lang.Long lastForwardedTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -455,6 +477,10 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
         this.maxJump = data().deepCopy(fields()[13].schema(), other.maxJump);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.lastForwardedTime)) {
+        this.lastForwardedTime = data().deepCopy(fields()[14].schema(), other.lastForwardedTime);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -519,6 +545,10 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[13], other.maxJump)) {
         this.maxJump = data().deepCopy(fields()[13].schema(), other.maxJump);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.lastForwardedTime)) {
+        this.lastForwardedTime = data().deepCopy(fields()[14].schema(), other.lastForwardedTime);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -1096,6 +1126,45 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'lastForwardedTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getLastForwardedTime() {
+      return lastForwardedTime;
+    }
+
+    /**
+      * Sets the value of the 'lastForwardedTime' field.
+      * @param value The value of 'lastForwardedTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.WindowedState.Builder setLastForwardedTime(java.lang.Long value) {
+      validate(fields()[14], value);
+      this.lastForwardedTime = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastForwardedTime' field has been set.
+      * @return True if the 'lastForwardedTime' field has been set, false otherwise.
+      */
+    public boolean hasLastForwardedTime() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'lastForwardedTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.WindowedState.Builder clearLastForwardedTime() {
+      lastForwardedTime = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public WindowedState build() {
       try {
@@ -1118,6 +1187,7 @@ public class WindowedState extends org.apache.avro.specific.SpecificRecordBase i
         record.isFillingEnabled = fieldSetFlags()[11] ? this.isFillingEnabled : (java.lang.Boolean) defaultValue(fields()[11]);
         record.numberOfJumps = fieldSetFlags()[12] ? this.numberOfJumps : (java.lang.Integer) defaultValue(fields()[12]);
         record.maxJump = fieldSetFlags()[13] ? this.maxJump : (java.lang.Double) defaultValue(fields()[13]);
+        record.lastForwardedTime = fieldSetFlags()[14] ? this.lastForwardedTime : (java.lang.Long) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
