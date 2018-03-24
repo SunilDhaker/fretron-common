@@ -90,7 +90,7 @@
       "name": "lastForwardedTime",
        "type": ["null","long"],
        "logicalType": "timestamp-millis",
-        "default":0
+        "default":null
 
     }
   ]
