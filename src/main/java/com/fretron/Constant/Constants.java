@@ -540,6 +540,11 @@ public class Constants {
 
    public static final String TRIP_UPLOAD_JOB_COLLECTION_NAME = "trip.upload.job.collection.name";
    public static final String UPLOADED_TRIPS_COLLECTION_NAME = "uploaded.trips.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_NAME = "city.geofence.db.name";
+    public static final String CITY_WISE_GEOFENCE_COLLECTION_NAME = "city.geofence.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
+    public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
+    public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
 
     private Constants(){
 
