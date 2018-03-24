@@ -85,6 +85,13 @@
           "name": "maxJump",
           "type":  ["null","double"],
           "default":null
+    },
+    {
+      "name": "lastForwardedTime",
+       "type": ["null","long"],
+       "logicalType": "timestamp-millis",
+        "default":0
+
     }
   ]
 }
