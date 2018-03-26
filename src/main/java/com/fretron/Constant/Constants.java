@@ -78,6 +78,8 @@ public class Constants {
     public static final String PROBABLE_MINIMUM_TIME_THRESHOLD = "probable.minimum.time.threshold";
     public static final java.lang.String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
     public static final java.lang.String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
+    public static final java.lang.String KEY_MAP_MATCHING_API_JUMP_THRESHOLD = "match.map.api.max.accepted.jump";
+    public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
@@ -323,6 +325,12 @@ public class Constants {
     public static final String FR_LOC_ALL_COLLECTION_NAME = "freight.location.all.collection.name";
     public static final String FR_LOC_FAV_COLLECTION_NAME = "freight.location.fav.collection.name";
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
+            //*************NEW**************//
+    public static final String GEOFENCE_MANAGER_SERVICE_PORT = "geofence.service.port";
+    public static final String ADMIN_BOUNDARY_MANAGER_SERVICE_PORT = "adminboundary.service.port";
+    public static final String ADMIN_GEOFENCE_DB_NAME = "admin.geofence.db.name";
+    public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
+    public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
 
     //=======================IP AND PORTS ===============
 
@@ -478,21 +486,24 @@ public class Constants {
     //******************************Protocol-eventproducer*****************************************************
     public final static  String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     public final static  String KEY_TRACKER_SERVER_PORT = "tracker.server.port";
+    public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
+   public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
+   public final static String KEY_CONCOX_PROCESSED_POSITIONS_TOPIC = "concox.processed.positions.topic";
 
 
-    public final  static String KEY_PROTOCOL_TIMEZONE = "protocolTimezoneOffsetKey";
+
+
+   public final  static String KEY_PROTOCOL_TIMEZONE = "protocolTimezoneOffsetKey";
     public final static String KEY_DEVICE_IMEI = "deviceIMEIKEY";
 
     public final static String KEY_PROTOCOL_NAME = "protocol.name";
 
     public final static String KEY_DEVICE_SESSION_TOPIC = "device.session.topic";
     public final static String KEY_DEVICE_DATA_TOPIC = "deviceData.topic";
-    public final static String KEY_PROTOCOL_EVENT_TOPIC = "protocol.events.topic";
     public final static String KEY_VEHICLE_STATUS_DATA_TOPIC = "vehicle.statusData.topic";
     public final static String KEY_DEVICE_DATA_BY_REMOTE_ADDRESS_STORE = "deviceDataByRemoteAddress.store";
     public final static String KEY_RAW_POSITIONS_TOPIC = "rawpositions.topic";
     public final static String KEY_LAST_PROCESSED_POSITIONS_STORE = "lastprocessedpositions.store";
-    public final static  String KEY_PROTOCOL_HANDLER_APP_ID = "protocol.handler.appname";
 
     //**********************Token Manager ******************************************************************************/
     public final static String KEY_TOKEN_MANAGER_APP_ID = "token.manager.app.id";
@@ -528,6 +539,14 @@ public class Constants {
     public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
     public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
+
+   public static final String TRIP_UPLOAD_JOB_COLLECTION_NAME = "trip.upload.job.collection.name";
+   public static final String UPLOADED_TRIPS_COLLECTION_NAME = "uploaded.trips.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_NAME = "city.geofence.db.name";
+    public static final String CITY_WISE_GEOFENCE_COLLECTION_NAME = "city.geofence.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
+    public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
+    public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
 
     private Constants(){
 

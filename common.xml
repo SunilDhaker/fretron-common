@@ -46,6 +46,7 @@
     <entry key="positions.topic">positionsTopic</entry>
     <entry key="tpi.positions.topic">tpiPositionsTopic</entry>
     <entry key= "processedPositions.topic">processedPositions</entry>
+    <entry key= "concox.processed.positions.topic">concoxProcessedPositions</entry>
     <entry key="liteposition.topic">liteposition</entry>
     <entry key="gps.events.topic">gpsMovementEventTopic</entry>
     <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>

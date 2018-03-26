@@ -40,15 +40,29 @@ public class MongoDbManager {
 //        }
 //        return instance;
 
-        String mapKey = host+"#"+port+"#"+databaseName;
+        String mapKey;
+        if (databaseName!=null) {
+            mapKey = host+"#"+port+"#"+databaseName;
+        } else {
+            mapKey = host+"#"+port;
+        }
         if(instanceMap!=null){
             if(instanceMap.get(mapKey)==null){
-                instanceMap.put(mapKey,new MongoDbManager(host,port,databaseName));
+                if (databaseName!=null) {
+                    instanceMap.put(mapKey,new MongoDbManager(host,port,databaseName));
+                }
+                else{
+                    instanceMap.put(mapKey,new MongoDbManager(host,port));
+                }
             }
             return instanceMap.get(mapKey);
         }
         else{
-            return new MongoDbManager(host,port,databaseName);
+            if (databaseName!=null) {
+                return new MongoDbManager(host,port,databaseName);
+            } else {
+                return new MongoDbManager(host,port);
+            }
         }
     }
 
@@ -62,6 +76,16 @@ public class MongoDbManager {
         instanceMap.put(instanceMapKey,this);
         client = new MongoClient(host  , port);
         database = client.getDatabase(databaseName);
+    }
+
+    private MongoDbManager(String host, int port ){
+        String instanceMapKey = host+"#"+port;
+        System.out.println("Mongo manager instance created for :: "+ instanceMapKey);
+        if(instanceMap == null) {
+            instanceMap = new HashMap<>();
+        }
+        instanceMap.put(instanceMapKey,this);
+        client = new MongoClient(host  , port);
     }
 
     public MongoCollection<Document>  getCollectionFromDb(String databaseName, String collectionName){

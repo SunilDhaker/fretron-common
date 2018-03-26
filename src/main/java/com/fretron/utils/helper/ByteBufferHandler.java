@@ -87,12 +87,20 @@ public class ByteBufferHandler {
         return null;
     }
 
+    /**
+     *
+     * @param buffer
+     * @param from starting index
+     * @param length starting index + length
+     * @return
+     * @throws Exception ArrayIndexOutOfBoundsException
+     */
    public byte [] get(ByteBuffer buffer ,int from ,int length){
         if (buffer.hasArray()){
             final byte[] array = buffer.array();
             final int arrayOffset = buffer.arrayOffset();
-            return Arrays.copyOfRange(array, arrayOffset + buffer.position(),
-                    arrayOffset + length);
+            return Arrays.copyOfRange(array, arrayOffset +from,
+                    arrayOffset+from + length);
         }
         return null;
    }

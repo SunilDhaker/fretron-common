@@ -1,3 +1,4 @@
+
 {
   "namespace": "com.fretron.Model",
   "type": "record",
@@ -74,6 +75,23 @@
        "name": "isFillingEnabled",
         "type": "boolean",
          "default":false
+    },
+    {
+          "name": "numberOfJumps",
+          "type":  ["null","int"],
+          "default":null
+    },
+    {
+          "name": "maxJump",
+          "type":  ["null","double"],
+          "default":null
+    },
+    {
+      "name": "lastForwardedTime",
+       "type": ["null","long"],
+       "logicalType": "timestamp-millis",
+        "default":null
+
     }
   ]
 }
