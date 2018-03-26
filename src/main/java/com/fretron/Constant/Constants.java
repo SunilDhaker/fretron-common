@@ -464,6 +464,8 @@ public class Constants {
     public final static String KEY_TF_TOKEN_API_URL = "tatafleetman.getToken";
     public  final static String KEY_TF_TRACK_VEHICLE_API_URL = "tatafleetman.track.vehicle";
     public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
+    public  final static String KEY_TRUCK_SUVIDHA_API_URL = "truck.suvidha.api.url";
+
 
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
