@@ -48,12 +48,21 @@ public class MongoDbManager {
         }
         if(instanceMap!=null){
             if(instanceMap.get(mapKey)==null){
-                instanceMap.put(mapKey,new MongoDbManager(host,port,databaseName));
+                if (databaseName!=null) {
+                    instanceMap.put(mapKey,new MongoDbManager(host,port,databaseName));
+                }
+                else{
+                    instanceMap.put(mapKey,new MongoDbManager(host,port));
+                }
             }
             return instanceMap.get(mapKey);
         }
         else{
-            return new MongoDbManager(host,port,databaseName);
+            if (databaseName!=null) {
+                return new MongoDbManager(host,port,databaseName);
+            } else {
+                return new MongoDbManager(host,port);
+            }
         }
     }
 
