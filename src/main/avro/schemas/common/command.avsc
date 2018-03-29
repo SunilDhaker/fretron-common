@@ -2,6 +2,60 @@
 {
          "namespace": "com.fretron.Model",
          "type": "record",
+         "name": "Document",
+         "fields": [
+           {
+             "name": "docId",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "isExpirable",
+             "type": [
+               "null",
+               "boolean"
+             ]
+           },
+           {
+             "name": "expireDate",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+           },
+           {
+             "name": "resourceType",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+           {
+             "name": "resourceId",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+           {
+             "name": "docPath",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           }
+         ]
+       },
+{
+         "namespace": "com.fretron.Model",
+         "type": "record",
          "name": "Vehicle",
          "fields": [
            {
@@ -115,6 +169,30 @@
                    "string"
               ] ,
               "default":null
+           },
+           {
+                "name":"attachedDocs",
+                "type":[
+                    "null",
+                    {"type" : "array", "items":"com.fretron.Model.Document"}
+                ],
+                "default":null
+           },
+           {
+              "name":"source",
+              "type":[
+                   "null",
+                   "string"
+              ] ,
+              "default":null
+           },
+           {
+             "name":"isTrackingEnabled",
+             "type":[
+                  "null",
+                  "boolean"
+             ],
+             "default":null
            }
 
          ]
