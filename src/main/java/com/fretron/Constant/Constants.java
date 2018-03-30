@@ -474,8 +474,8 @@ public class Constants {
     public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
     public  final static String KEY_TRUCK_SUVIDHA_API_URL = "truck.suvidha.api.url";
     public  final static String KEY_ALLEY_TRACK_POINT_API_URL = "alley.track.point.api.url";
-
-
+    public  final static String KEY_ETRANS_SOLUTIONS_LOGIN_SESSION_API_URL = "etrans.solutions.login.session.api.url";
+    public  final static String KEY_ETRANS_SOLUTIONS_VEHICLE_TRACKING_API_URL = "etrans.solutions.vehicle.tracking.api.url";
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
