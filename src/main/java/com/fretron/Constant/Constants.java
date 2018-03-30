@@ -80,6 +80,8 @@ public class Constants {
     public static final java.lang.String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
     public static final java.lang.String KEY_MAP_MATCHING_API_JUMP_THRESHOLD = "match.map.api.max.accepted.jump";
     public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
+    public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
+    public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
