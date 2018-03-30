@@ -60,7 +60,7 @@ dependencies {
     compile "redis.clients:jedis:2.9.0"
     compile "org.json:json:20170516"
     compile "io.jsonwebtoken:jjwt:0.6.0"
-    compile "org.mongodb:mongofilter-java-driver:3.5.0"
+    compile "org.mongodb:mongo-java-driver:3.5.0"
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1'
 //    testCompile group: 'io.confluent', name: 'kafka-schema-registry', version:'3.2.1', classifier:'tests'
 //    testCompile group: 'org.apache.kafka', name: 'kafka_2.11', version:'0.10.2.1'
