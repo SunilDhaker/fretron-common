@@ -214,7 +214,7 @@
       },
       {
         "name":"isDisconnected",
-         "type": ["null","boolean"],
+         "type": "boolean",
          "default":false
       },
       {
