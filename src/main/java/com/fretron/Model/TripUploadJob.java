@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2663108721514037148L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripUploadJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"jobId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"totalTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"processingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processedTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"filePath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"discardedTripsByUser\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"discardedTripsBySystem\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"markedCompletedTripsCount\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
+  private static final long serialVersionUID = -1926127797082564491L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripUploadJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"jobId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"totalTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"processingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processedTripCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"filePath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"discardedTripsByUser\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"discardedTripsBySystem\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"markedCompletedTripsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"totalUniqueFl\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"markedFl\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String jobId;
@@ -23,6 +23,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.Integer discardedTripsByUser;
   @Deprecated public java.lang.Integer discardedTripsBySystem;
   @Deprecated public java.lang.Integer markedCompletedTripsCount;
+  @Deprecated public java.lang.Integer totalUniqueFl;
+  @Deprecated public java.lang.Integer markedFl;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +45,10 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
    * @param discardedTripsByUser The new value for discardedTripsByUser
    * @param discardedTripsBySystem The new value for discardedTripsBySystem
    * @param markedCompletedTripsCount The new value for markedCompletedTripsCount
+   * @param totalUniqueFl The new value for totalUniqueFl
+   * @param markedFl The new value for markedFl
    */
-  public TripUploadJob(java.lang.String orgId, java.lang.String jobId, java.lang.Long creationTime, java.lang.Integer totalTripCount, java.lang.String processingStatus, java.lang.Integer processedTripCount, java.lang.String filePath, java.lang.Integer discardedTripsByUser, java.lang.Integer discardedTripsBySystem, java.lang.Integer markedCompletedTripsCount) {
+  public TripUploadJob(java.lang.String orgId, java.lang.String jobId, java.lang.Long creationTime, java.lang.Integer totalTripCount, java.lang.String processingStatus, java.lang.Integer processedTripCount, java.lang.String filePath, java.lang.Integer discardedTripsByUser, java.lang.Integer discardedTripsBySystem, java.lang.Integer markedCompletedTripsCount, java.lang.Integer totalUniqueFl, java.lang.Integer markedFl) {
     this.orgId = orgId;
     this.jobId = jobId;
     this.creationTime = creationTime;
@@ -55,6 +59,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     this.discardedTripsByUser = discardedTripsByUser;
     this.discardedTripsBySystem = discardedTripsBySystem;
     this.markedCompletedTripsCount = markedCompletedTripsCount;
+    this.totalUniqueFl = totalUniqueFl;
+    this.markedFl = markedFl;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +77,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     case 7: return discardedTripsByUser;
     case 8: return discardedTripsBySystem;
     case 9: return markedCompletedTripsCount;
+    case 10: return totalUniqueFl;
+    case 11: return markedFl;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +97,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     case 7: discardedTripsByUser = (java.lang.Integer)value$; break;
     case 8: discardedTripsBySystem = (java.lang.Integer)value$; break;
     case 9: markedCompletedTripsCount = (java.lang.Integer)value$; break;
+    case 10: totalUniqueFl = (java.lang.Integer)value$; break;
+    case 11: markedFl = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +264,38 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'totalUniqueFl' field.
+   * @return The value of the 'totalUniqueFl' field.
+   */
+  public java.lang.Integer getTotalUniqueFl() {
+    return totalUniqueFl;
+  }
+
+  /**
+   * Sets the value of the 'totalUniqueFl' field.
+   * @param value the value to set.
+   */
+  public void setTotalUniqueFl(java.lang.Integer value) {
+    this.totalUniqueFl = value;
+  }
+
+  /**
+   * Gets the value of the 'markedFl' field.
+   * @return The value of the 'markedFl' field.
+   */
+  public java.lang.Integer getMarkedFl() {
+    return markedFl;
+  }
+
+  /**
+   * Sets the value of the 'markedFl' field.
+   * @param value the value to set.
+   */
+  public void setMarkedFl(java.lang.Integer value) {
+    this.markedFl = value;
+  }
+
+  /**
    * Creates a new TripUploadJob RecordBuilder.
    * @return A new TripUploadJob RecordBuilder
    */
@@ -295,6 +337,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.Integer discardedTripsByUser;
     private java.lang.Integer discardedTripsBySystem;
     private java.lang.Integer markedCompletedTripsCount;
+    private java.lang.Integer totalUniqueFl;
+    private java.lang.Integer markedFl;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +391,14 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
         this.markedCompletedTripsCount = data().deepCopy(fields()[9].schema(), other.markedCompletedTripsCount);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.totalUniqueFl)) {
+        this.totalUniqueFl = data().deepCopy(fields()[10].schema(), other.totalUniqueFl);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.markedFl)) {
+        this.markedFl = data().deepCopy(fields()[11].schema(), other.markedFl);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -394,6 +446,14 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[9], other.markedCompletedTripsCount)) {
         this.markedCompletedTripsCount = data().deepCopy(fields()[9].schema(), other.markedCompletedTripsCount);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.totalUniqueFl)) {
+        this.totalUniqueFl = data().deepCopy(fields()[10].schema(), other.totalUniqueFl);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.markedFl)) {
+        this.markedFl = data().deepCopy(fields()[11].schema(), other.markedFl);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -787,6 +847,84 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'totalUniqueFl' field.
+      * @return The value.
+      */
+    public java.lang.Integer getTotalUniqueFl() {
+      return totalUniqueFl;
+    }
+
+    /**
+      * Sets the value of the 'totalUniqueFl' field.
+      * @param value The value of 'totalUniqueFl'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder setTotalUniqueFl(java.lang.Integer value) {
+      validate(fields()[10], value);
+      this.totalUniqueFl = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'totalUniqueFl' field has been set.
+      * @return True if the 'totalUniqueFl' field has been set, false otherwise.
+      */
+    public boolean hasTotalUniqueFl() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'totalUniqueFl' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder clearTotalUniqueFl() {
+      totalUniqueFl = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'markedFl' field.
+      * @return The value.
+      */
+    public java.lang.Integer getMarkedFl() {
+      return markedFl;
+    }
+
+    /**
+      * Sets the value of the 'markedFl' field.
+      * @param value The value of 'markedFl'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder setMarkedFl(java.lang.Integer value) {
+      validate(fields()[11], value);
+      this.markedFl = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'markedFl' field has been set.
+      * @return True if the 'markedFl' field has been set, false otherwise.
+      */
+    public boolean hasMarkedFl() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'markedFl' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripUploadJob.Builder clearMarkedFl() {
+      markedFl = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public TripUploadJob build() {
       try {
@@ -801,6 +939,8 @@ public class TripUploadJob extends org.apache.avro.specific.SpecificRecordBase i
         record.discardedTripsByUser = fieldSetFlags()[7] ? this.discardedTripsByUser : (java.lang.Integer) defaultValue(fields()[7]);
         record.discardedTripsBySystem = fieldSetFlags()[8] ? this.discardedTripsBySystem : (java.lang.Integer) defaultValue(fields()[8]);
         record.markedCompletedTripsCount = fieldSetFlags()[9] ? this.markedCompletedTripsCount : (java.lang.Integer) defaultValue(fields()[9]);
+        record.totalUniqueFl = fieldSetFlags()[10] ? this.totalUniqueFl : (java.lang.Integer) defaultValue(fields()[10]);
+        record.markedFl = fieldSetFlags()[11] ? this.markedFl : (java.lang.Integer) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

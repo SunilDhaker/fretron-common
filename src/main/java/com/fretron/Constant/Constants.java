@@ -398,7 +398,7 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
-    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongofilter.collection.name";
 
     //=========================================
 
@@ -472,7 +472,10 @@ public class Constants {
     public final static String KEY_TF_TOKEN_API_URL = "tatafleetman.getToken";
     public  final static String KEY_TF_TRACK_VEHICLE_API_URL = "tatafleetman.track.vehicle";
     public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
-
+    public  final static String KEY_TRUCK_SUVIDHA_API_URL = "truck.suvidha.api.url";
+    public  final static String KEY_ALLEY_TRACK_POINT_API_URL = "alley.track.point.api.url";
+    public  final static String KEY_ETRANS_SOLUTIONS_LOGIN_SESSION_API_URL = "etrans.solutions.login.session.api.url";
+    public  final static String KEY_ETRANS_SOLUTIONS_VEHICLE_TRACKING_API_URL = "etrans.solutions.vehicle.tracking.api.url";
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
@@ -540,6 +543,11 @@ public class Constants {
 
    public static final String TRIP_UPLOAD_JOB_COLLECTION_NAME = "trip.upload.job.collection.name";
    public static final String UPLOADED_TRIPS_COLLECTION_NAME = "uploaded.trips.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_NAME = "city.geofence.db.name";
+    public static final String CITY_WISE_GEOFENCE_COLLECTION_NAME = "city.geofence.collection.name";
+    public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
+    public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
+    public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
 
     private Constants(){
 

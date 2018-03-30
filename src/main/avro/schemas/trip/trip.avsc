@@ -2,6 +2,52 @@
 {
 		"namespace": "com.fretron.Model",
 		"type": "record",
+		"name": "UniqueFl",
+		"fields": [{
+				"name": "flName",
+				"type": "string",
+				"default": null
+			},
+			{
+				"name": "originCount",
+				"type": ["null", "int"],
+				"default": null
+			},
+            {
+                "name": "destinationCount",
+                 "type": ["null", "int"],
+                "default": null
+            },
+			{
+				"name": "cityGeofence",
+				"type": ["null", "com.fretron.Model.Geofence"],
+				"default": null
+			},
+			{
+				"name": "googleLocation",
+				"type": ["null", "com.fretron.Model.Location"],
+				"default": null
+			},
+			{
+                "name": "jobId",
+                "type": ["null", "string"],
+                "default": null
+            },
+            {
+                "name": "userMarkedBoundry",
+                "type": ["null", "com.fretron.Model.Geofence"],
+                "default": null
+            },
+            {
+               "name": "totalCount",
+               "type": ["null", "int"],
+               "default": null
+            }
+		]
+	},
+{
+		"namespace": "com.fretron.Model",
+		"type": "record",
 		"name": "TripUploadJob",
 		"fields": [{
 				"name": "orgId",
@@ -54,6 +100,16 @@
             },
             {
                 "name": "markedCompletedTripsCount",
+                "type": ["null", "int"],
+                "default": null
+            },
+            {
+                "name": "totalUniqueFl",
+                "type": ["null", "int"],
+                "default": null
+            },
+            {
+                "name": "markedFl",
                 "type": ["null", "int"],
                 "default": null
             }
