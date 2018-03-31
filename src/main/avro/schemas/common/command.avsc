@@ -5,7 +5,7 @@
          "name": "Document",
          "fields": [
            {
-             "name": "docId",
+             "name": "uuid",
              "type": [
                "null",
                "string"
@@ -50,7 +50,23 @@
                "string"
              ],
              "default":null
-           }
+           },
+          {
+            "name": "downloadUrl",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default":null
+          },
+            {
+              "name": "orgId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default":null
+            }
          ]
        },
 {
@@ -174,7 +190,7 @@
                 "name":"attachedDocs",
                 "type":[
                     "null",
-                    {"type" : "array", "items":"com.fretron.Model.Document"}
+                    {"type" : "array", "items":"string"}
                 ],
                 "default":null
            },

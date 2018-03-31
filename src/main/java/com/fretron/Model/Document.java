@@ -10,15 +10,17 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Document extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 9211382114880832013L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"docId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -128436922636268349L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public java.lang.String docId;
+  @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Boolean isExpirable;
   @Deprecated public java.lang.Long expireDate;
   @Deprecated public java.lang.String resourceType;
   @Deprecated public java.lang.String resourceId;
   @Deprecated public java.lang.String docPath;
+  @Deprecated public java.lang.String downloadUrl;
+  @Deprecated public java.lang.String orgId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,32 +31,38 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
 
   /**
    * All-args constructor.
-   * @param docId The new value for docId
+   * @param uuid The new value for uuid
    * @param isExpirable The new value for isExpirable
    * @param expireDate The new value for expireDate
    * @param resourceType The new value for resourceType
    * @param resourceId The new value for resourceId
    * @param docPath The new value for docPath
+   * @param downloadUrl The new value for downloadUrl
+   * @param orgId The new value for orgId
    */
-  public Document(java.lang.String docId, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath) {
-    this.docId = docId;
+  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId) {
+    this.uuid = uuid;
     this.isExpirable = isExpirable;
     this.expireDate = expireDate;
     this.resourceType = resourceType;
     this.resourceId = resourceId;
     this.docPath = docPath;
+    this.downloadUrl = downloadUrl;
+    this.orgId = orgId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return docId;
+    case 0: return uuid;
     case 1: return isExpirable;
     case 2: return expireDate;
     case 3: return resourceType;
     case 4: return resourceId;
     case 5: return docPath;
+    case 6: return downloadUrl;
+    case 7: return orgId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -63,30 +71,32 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: docId = (java.lang.String)value$; break;
+    case 0: uuid = (java.lang.String)value$; break;
     case 1: isExpirable = (java.lang.Boolean)value$; break;
     case 2: expireDate = (java.lang.Long)value$; break;
     case 3: resourceType = (java.lang.String)value$; break;
     case 4: resourceId = (java.lang.String)value$; break;
     case 5: docPath = (java.lang.String)value$; break;
+    case 6: downloadUrl = (java.lang.String)value$; break;
+    case 7: orgId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
 
   /**
-   * Gets the value of the 'docId' field.
-   * @return The value of the 'docId' field.
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
    */
-  public java.lang.String getDocId() {
-    return docId;
+  public java.lang.String getUuid() {
+    return uuid;
   }
 
   /**
-   * Sets the value of the 'docId' field.
+   * Sets the value of the 'uuid' field.
    * @param value the value to set.
    */
-  public void setDocId(java.lang.String value) {
-    this.docId = value;
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
   }
 
   /**
@@ -170,6 +180,38 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'downloadUrl' field.
+   * @return The value of the 'downloadUrl' field.
+   */
+  public java.lang.String getDownloadUrl() {
+    return downloadUrl;
+  }
+
+  /**
+   * Sets the value of the 'downloadUrl' field.
+   * @param value the value to set.
+   */
+  public void setDownloadUrl(java.lang.String value) {
+    this.downloadUrl = value;
+  }
+
+  /**
+   * Gets the value of the 'orgId' field.
+   * @return The value of the 'orgId' field.
+   */
+  public java.lang.String getOrgId() {
+    return orgId;
+  }
+
+  /**
+   * Sets the value of the 'orgId' field.
+   * @param value the value to set.
+   */
+  public void setOrgId(java.lang.String value) {
+    this.orgId = value;
+  }
+
+  /**
    * Creates a new Document RecordBuilder.
    * @return A new Document RecordBuilder
    */
@@ -201,12 +243,14 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Document>
     implements org.apache.avro.data.RecordBuilder<Document> {
 
-    private java.lang.String docId;
+    private java.lang.String uuid;
     private java.lang.Boolean isExpirable;
     private java.lang.Long expireDate;
     private java.lang.String resourceType;
     private java.lang.String resourceId;
     private java.lang.String docPath;
+    private java.lang.String downloadUrl;
+    private java.lang.String orgId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -219,8 +263,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
      */
     private Builder(com.fretron.Model.Document.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.docId)) {
-        this.docId = data().deepCopy(fields()[0].schema(), other.docId);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.isExpirable)) {
@@ -242,6 +286,14 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[5], other.docPath)) {
         this.docPath = data().deepCopy(fields()[5].schema(), other.docPath);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.downloadUrl)) {
+        this.downloadUrl = data().deepCopy(fields()[6].schema(), other.downloadUrl);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -251,8 +303,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
      */
     private Builder(com.fretron.Model.Document other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.docId)) {
-        this.docId = data().deepCopy(fields()[0].schema(), other.docId);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.isExpirable)) {
@@ -275,43 +327,51 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         this.docPath = data().deepCopy(fields()[5].schema(), other.docPath);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.downloadUrl)) {
+        this.downloadUrl = data().deepCopy(fields()[6].schema(), other.downloadUrl);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
-      * Gets the value of the 'docId' field.
+      * Gets the value of the 'uuid' field.
       * @return The value.
       */
-    public java.lang.String getDocId() {
-      return docId;
+    public java.lang.String getUuid() {
+      return uuid;
     }
 
     /**
-      * Sets the value of the 'docId' field.
-      * @param value The value of 'docId'.
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
       * @return This builder.
       */
-    public com.fretron.Model.Document.Builder setDocId(java.lang.String value) {
+    public com.fretron.Model.Document.Builder setUuid(java.lang.String value) {
       validate(fields()[0], value);
-      this.docId = value;
+      this.uuid = value;
       fieldSetFlags()[0] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'docId' field has been set.
-      * @return True if the 'docId' field has been set, false otherwise.
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
       */
-    public boolean hasDocId() {
+    public boolean hasUuid() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'docId' field.
+      * Clears the value of the 'uuid' field.
       * @return This builder.
       */
-    public com.fretron.Model.Document.Builder clearDocId() {
-      docId = null;
+    public com.fretron.Model.Document.Builder clearUuid() {
+      uuid = null;
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -511,16 +571,96 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'downloadUrl' field.
+      * @return The value.
+      */
+    public java.lang.String getDownloadUrl() {
+      return downloadUrl;
+    }
+
+    /**
+      * Sets the value of the 'downloadUrl' field.
+      * @param value The value of 'downloadUrl'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setDownloadUrl(java.lang.String value) {
+      validate(fields()[6], value);
+      this.downloadUrl = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'downloadUrl' field has been set.
+      * @return True if the 'downloadUrl' field has been set, false otherwise.
+      */
+    public boolean hasDownloadUrl() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'downloadUrl' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearDownloadUrl() {
+      downloadUrl = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'orgId' field.
+      * @return The value.
+      */
+    public java.lang.String getOrgId() {
+      return orgId;
+    }
+
+    /**
+      * Sets the value of the 'orgId' field.
+      * @param value The value of 'orgId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setOrgId(java.lang.String value) {
+      validate(fields()[7], value);
+      this.orgId = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'orgId' field has been set.
+      * @return True if the 'orgId' field has been set, false otherwise.
+      */
+    public boolean hasOrgId() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'orgId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearOrgId() {
+      orgId = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public Document build() {
       try {
         Document record = new Document();
-        record.docId = fieldSetFlags()[0] ? this.docId : (java.lang.String) defaultValue(fields()[0]);
+        record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.isExpirable = fieldSetFlags()[1] ? this.isExpirable : (java.lang.Boolean) defaultValue(fields()[1]);
         record.expireDate = fieldSetFlags()[2] ? this.expireDate : (java.lang.Long) defaultValue(fields()[2]);
         record.resourceType = fieldSetFlags()[3] ? this.resourceType : (java.lang.String) defaultValue(fields()[3]);
         record.resourceId = fieldSetFlags()[4] ? this.resourceId : (java.lang.String) defaultValue(fields()[4]);
         record.docPath = fieldSetFlags()[5] ? this.docPath : (java.lang.String) defaultValue(fields()[5]);
+        record.downloadUrl = fieldSetFlags()[6] ? this.downloadUrl : (java.lang.String) defaultValue(fields()[6]);
+        record.orgId = fieldSetFlags()[7] ? this.orgId : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

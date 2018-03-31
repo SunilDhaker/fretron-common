@@ -215,8 +215,15 @@
            ],
            "logicalType": "timestamp-millis",
            "default": null
-         }
-
+         },
+           {
+                "name":"attachedDocs",
+                "type":[
+                    "null",
+                    {"type" : "array", "items":"string"}
+                ],
+                "default":null
+           }
       ]
     }
  ]

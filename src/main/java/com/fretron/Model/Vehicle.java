@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Vehicle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6589054656809500710L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"docId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 4744566997694031072L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String customerId;
   @Deprecated public java.lang.String vehicleType;
@@ -28,7 +28,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.util.List<java.lang.String> sharedWith;
   @Deprecated public java.lang.String driverId;
-  @Deprecated public java.util.List<com.fretron.Model.Document> attachedDocs;
+  @Deprecated public java.util.List<java.lang.String> attachedDocs;
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.Boolean isTrackingEnabled;
 
@@ -60,7 +60,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param source The new value for source
    * @param isTrackingEnabled The new value for isTrackingEnabled
    */
-  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<com.fretron.Model.Document> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled) {
+  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled) {
     this.customerId = customerId;
     this.vehicleType = vehicleType;
     this.vehicleModel = vehicleModel;
@@ -126,7 +126,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 12: orgId = (java.lang.String)value$; break;
     case 13: sharedWith = (java.util.List<java.lang.String>)value$; break;
     case 14: driverId = (java.lang.String)value$; break;
-    case 15: attachedDocs = (java.util.List<com.fretron.Model.Document>)value$; break;
+    case 15: attachedDocs = (java.util.List<java.lang.String>)value$; break;
     case 16: source = (java.lang.String)value$; break;
     case 17: isTrackingEnabled = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
@@ -377,7 +377,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * Gets the value of the 'attachedDocs' field.
    * @return The value of the 'attachedDocs' field.
    */
-  public java.util.List<com.fretron.Model.Document> getAttachedDocs() {
+  public java.util.List<java.lang.String> getAttachedDocs() {
     return attachedDocs;
   }
 
@@ -385,7 +385,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * Sets the value of the 'attachedDocs' field.
    * @param value the value to set.
    */
-  public void setAttachedDocs(java.util.List<com.fretron.Model.Document> value) {
+  public void setAttachedDocs(java.util.List<java.lang.String> value) {
     this.attachedDocs = value;
   }
 
@@ -468,7 +468,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String orgId;
     private java.util.List<java.lang.String> sharedWith;
     private java.lang.String driverId;
-    private java.util.List<com.fretron.Model.Document> attachedDocs;
+    private java.util.List<java.lang.String> attachedDocs;
     private java.lang.String source;
     private java.lang.Boolean isTrackingEnabled;
 
@@ -1226,7 +1226,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Gets the value of the 'attachedDocs' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.Document> getAttachedDocs() {
+    public java.util.List<java.lang.String> getAttachedDocs() {
       return attachedDocs;
     }
 
@@ -1235,7 +1235,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'attachedDocs'.
       * @return This builder.
       */
-    public com.fretron.Model.Vehicle.Builder setAttachedDocs(java.util.List<com.fretron.Model.Document> value) {
+    public com.fretron.Model.Vehicle.Builder setAttachedDocs(java.util.List<java.lang.String> value) {
       validate(fields()[15], value);
       this.attachedDocs = value;
       fieldSetFlags()[15] = true;
@@ -1358,7 +1358,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         record.orgId = fieldSetFlags()[12] ? this.orgId : (java.lang.String) defaultValue(fields()[12]);
         record.sharedWith = fieldSetFlags()[13] ? this.sharedWith : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
         record.driverId = fieldSetFlags()[14] ? this.driverId : (java.lang.String) defaultValue(fields()[14]);
-        record.attachedDocs = fieldSetFlags()[15] ? this.attachedDocs : (java.util.List<com.fretron.Model.Document>) defaultValue(fields()[15]);
+        record.attachedDocs = fieldSetFlags()[15] ? this.attachedDocs : (java.util.List<java.lang.String>) defaultValue(fields()[15]);
         record.source = fieldSetFlags()[16] ? this.source : (java.lang.String) defaultValue(fields()[16]);
         record.isTrackingEnabled = fieldSetFlags()[17] ? this.isTrackingEnabled : (java.lang.Boolean) defaultValue(fields()[17]);
         return record;
