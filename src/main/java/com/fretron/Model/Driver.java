@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Driver extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3711492075387068672L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -1227843398266008840L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
@@ -19,6 +19,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String dlNumber;
   @Deprecated public java.lang.Long dlExpiryTime;
+  @Deprecated public java.util.List<java.lang.String> attachedDocs;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param orgId The new value for orgId
    * @param dlNumber The new value for dlNumber
    * @param dlExpiryTime The new value for dlExpiryTime
+   * @param attachedDocs The new value for attachedDocs
    */
-  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime) {
+  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.uuid = uuid;
     this.orgId = orgId;
     this.dlNumber = dlNumber;
     this.dlExpiryTime = dlExpiryTime;
+    this.attachedDocs = attachedDocs;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 3: return orgId;
     case 4: return dlNumber;
     case 5: return dlExpiryTime;
+    case 6: return attachedDocs;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 3: orgId = (java.lang.String)value$; break;
     case 4: dlNumber = (java.lang.String)value$; break;
     case 5: dlExpiryTime = (java.lang.Long)value$; break;
+    case 6: attachedDocs = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'attachedDocs' field.
+   * @return The value of the 'attachedDocs' field.
+   */
+  public java.util.List<java.lang.String> getAttachedDocs() {
+    return attachedDocs;
+  }
+
+  /**
+   * Sets the value of the 'attachedDocs' field.
+   * @param value the value to set.
+   */
+  public void setAttachedDocs(java.util.List<java.lang.String> value) {
+    this.attachedDocs = value;
+  }
+
+  /**
    * Creates a new Driver RecordBuilder.
    * @return A new Driver RecordBuilder
    */
@@ -207,6 +228,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String orgId;
     private java.lang.String dlNumber;
     private java.lang.Long dlExpiryTime;
+    private java.util.List<java.lang.String> attachedDocs;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         this.dlExpiryTime = data().deepCopy(fields()[5].schema(), other.dlExpiryTime);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.attachedDocs)) {
+        this.attachedDocs = data().deepCopy(fields()[6].schema(), other.attachedDocs);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       if (isValidValue(fields()[5], other.dlExpiryTime)) {
         this.dlExpiryTime = data().deepCopy(fields()[5].schema(), other.dlExpiryTime);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.attachedDocs)) {
+        this.attachedDocs = data().deepCopy(fields()[6].schema(), other.attachedDocs);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'attachedDocs' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAttachedDocs() {
+      return attachedDocs;
+    }
+
+    /**
+      * Sets the value of the 'attachedDocs' field.
+      * @param value The value of 'attachedDocs'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setAttachedDocs(java.util.List<java.lang.String> value) {
+      validate(fields()[6], value);
+      this.attachedDocs = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attachedDocs' field has been set.
+      * @return True if the 'attachedDocs' field has been set, false otherwise.
+      */
+    public boolean hasAttachedDocs() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'attachedDocs' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearAttachedDocs() {
+      attachedDocs = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Driver build() {
       try {
@@ -521,6 +590,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
         record.dlNumber = fieldSetFlags()[4] ? this.dlNumber : (java.lang.String) defaultValue(fields()[4]);
         record.dlExpiryTime = fieldSetFlags()[5] ? this.dlExpiryTime : (java.lang.Long) defaultValue(fields()[5]);
+        record.attachedDocs = fieldSetFlags()[6] ? this.attachedDocs : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

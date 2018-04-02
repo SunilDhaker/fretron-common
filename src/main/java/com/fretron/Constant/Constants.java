@@ -437,6 +437,12 @@ public class Constants {
     public static final String DEVICE_DB_PORT = "device.db.port";
     public static final String DEVICE_DB_COLLECTION_NAME = "device.db.collection.name";
 
+    public static final String KEY_DOCUMENT_TOPIC = "document.topic";
+    public static final String DOCUMENT_DB_NAME = "document.db.name";
+    public static final String DOCUMENT_DB_HOST = "document.db.host";
+    public static final String DOCUMENT_DB_PORT = "document.db.port";
+    public static final String DOCUMENT_DB_COLLECTION_NAME = "document.db.collection.name";
+
     public static final String ORGANISATION_DB_NAME = "organisation.db.name";
     public static final String ORGANISATION_DB_HOST = "organisation.db.host";
     public static final String ORGANISATION_DB_PORT = "organisation.db.port";
