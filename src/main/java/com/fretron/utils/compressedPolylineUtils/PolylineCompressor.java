@@ -24,7 +24,6 @@ public class PolylineCompressor {
 
 
     public List<Point> getCompressedPointList(List<Point> points){
-
         return  SeriesReducer.reduce(points, Constants.ep);
 
     }
