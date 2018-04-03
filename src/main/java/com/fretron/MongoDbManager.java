@@ -96,12 +96,28 @@ public class MongoDbManager {
         return  database.getCollection(collectionName);
     }
 
+    public MongoDatabase getDatabaseFor(String dbName) {
+        return this.getDatabaseFor(dbName);
+    }
 
     public static boolean isMongoServerConnected(String host, int port, String dbName){
         boolean isConnected =  false;
         if(instanceMap!=null){
             try {
                 MongoDatabase db = instanceMap.get(host+"#"+port+"#"+dbName).database;
+                MongoIterable<String> iterator =  db.listCollectionNames();
+                isConnected = iterator.iterator().hasNext();
+            } catch (Exception e) {
+                isConnected = false;
+            }
+        }
+        return isConnected;
+    }
+    public static boolean checkIfMongoServerConnected(String host, int port, String dbName){
+        boolean isConnected =  false;
+        if(instanceMap!=null){
+            try {
+                MongoDatabase db = instanceMap.get(host+"#"+port).getDatabaseFor(dbName);
                 MongoIterable<String> iterator =  db.listCollectionNames();
                 isConnected = iterator.iterator().hasNext();
             } catch (Exception e) {
