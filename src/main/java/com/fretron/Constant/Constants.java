@@ -80,6 +80,8 @@ public class Constants {
     public static final java.lang.String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
     public static final java.lang.String KEY_MAP_MATCHING_API_JUMP_THRESHOLD = "match.map.api.max.accepted.jump";
     public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
+    public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
+    public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
@@ -398,7 +400,7 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
-    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongofilter.collection.name";
 
     //=========================================
 
@@ -434,6 +436,12 @@ public class Constants {
     public static final String DEVICE_DB_HOST = "device.db.host";
     public static final String DEVICE_DB_PORT = "device.db.port";
     public static final String DEVICE_DB_COLLECTION_NAME = "device.db.collection.name";
+
+    public static final String KEY_DOCUMENT_TOPIC = "document.topic";
+    public static final String DOCUMENT_DB_NAME = "document.db.name";
+    public static final String DOCUMENT_DB_HOST = "document.db.host";
+    public static final String DOCUMENT_DB_PORT = "document.db.port";
+    public static final String DOCUMENT_DB_COLLECTION_NAME = "document.db.collection.name";
 
     public static final String ORGANISATION_DB_NAME = "organisation.db.name";
     public static final String ORGANISATION_DB_HOST = "organisation.db.host";
@@ -474,8 +482,8 @@ public class Constants {
     public  final static String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
     public  final static String KEY_TRUCK_SUVIDHA_API_URL = "truck.suvidha.api.url";
     public  final static String KEY_ALLEY_TRACK_POINT_API_URL = "alley.track.point.api.url";
-
-
+    public  final static String KEY_ETRANS_SOLUTIONS_LOGIN_SESSION_API_URL = "etrans.solutions.login.session.api.url";
+    public  final static String KEY_ETRANS_SOLUTIONS_VEHICLE_TRACKING_API_URL = "etrans.solutions.vehicle.tracking.api.url";
     public final static String KEY_JOB_SCHEDULE_TIME = "integration.job.schedule.time";
     public final static String KEY_ETRANS_API_URL = "etrans.login.url";
     public final  static String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
