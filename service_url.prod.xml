@@ -60,6 +60,8 @@
 
     <!--===========Freight-Location===============-->
     <entry key="freight.manager.service.port">8090</entry>
+    <entry key="geofence.service.port">9090</entry>
+
 
     <!-- ==========kafka-topic-manager========= -->
 
