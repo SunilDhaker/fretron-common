@@ -123,17 +123,14 @@ public class OnlinePolylineEncoder {
         int dlng = lnge5 - lastlnge5;
         long dtime = newLocationTime - lastPoint.getTimestamp();
 
-        if (dlat != 0 || dlng != 0){
+        String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
+        polylineObj.setPolyline(polylineObj.getPolyline() + extendedPolyline);
+        lastPoint.setTimestamp(newLocationTime);
+        lastPoint.setLatitude(newLat);
+        lastPoint.setLongitude(newLng);
+        polylineObj.setLastPoint(lastPoint);
+        polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
 
-            String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
-
-            polylineObj.setPolyline(polylineObj.getPolyline() + extendedPolyline);
-            lastPoint.setTimestamp(newLocationTime);
-            lastPoint.setLatitude(newLat);
-            lastPoint.setLongitude(newLng);
-            polylineObj.setLastPoint(lastPoint);
-            polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
-        }
 
         return polylineObj;
     }
@@ -162,7 +159,6 @@ public class OnlinePolylineEncoder {
     public static TimeAwarePolyline extendTimeAwarePolyline(TimeAwarePolyline polylineObj ,LitePosition nextPos){
         if (polylineObj == null) return polylineObj;
         PointAtTime lastPoint = polylineObj.getLastPoint();
-
         int lastlate5 = floor1e5(lastPoint.getLatitude());
         int lastlnge5 = floor1e5(lastPoint.getLongitude());
         int late5 = floor1e5(nextPos.getLatitude());
@@ -174,15 +170,14 @@ public class OnlinePolylineEncoder {
         int dlng = lnge5 - lastlnge5;
         long dtime = timestamp - lastTimestamp;
 
-        if (dlng != 0 || dlat != 0){
-            String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
-            polylineObj.setPolyline(polylineObj.getPolyline() + extendedPolyline);
-            lastPoint.setTimestamp(nextPos.getTime());
-            lastPoint.setLatitude(nextPos.getLatitude());
-            lastPoint.setLongitude(nextPos.getLongitude());
-            polylineObj.setLastPoint(lastPoint);
-            polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
-        }
+        String extendedPolyline = (encodeSignedNumber(dlat).toString() + encodeSignedNumber(dlng).toString()) + encodeSignedNumber(dtime).toString() ;
+        polylineObj.setPolyline(polylineObj.getPolyline() + extendedPolyline);
+        lastPoint.setTimestamp(nextPos.getTime());
+        lastPoint.setLatitude(nextPos.getLatitude());
+        lastPoint.setLongitude(nextPos.getLongitude());
+        polylineObj.setLastPoint(lastPoint);
+        polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
+
 
         return polylineObj;
     }
