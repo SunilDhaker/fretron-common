@@ -443,6 +443,12 @@ public class Constants {
     public static final String DOCUMENT_DB_PORT = "document.db.port";
     public static final String DOCUMENT_DB_COLLECTION_NAME = "document.db.collection.name";
 
+    public static final String KEY_BP_TOPIC = "buisness.partner.topic";
+    public static final String BPARTNER_DB_NAME = "buisness.partner.db.name";
+    public static final String BPARTNER_DB_HOST = "buisness.partner.db.host";
+    public static final String BPARTNER_DB_PORT = "buisness.partner.db.port";
+    public static final String BPARTNER_DB_COLLECTION_NAME = "buisness.partner.db.collection.name";
+
     public static final String ORGANISATION_DB_NAME = "organisation.db.name";
     public static final String ORGANISATION_DB_HOST = "organisation.db.host";
     public static final String ORGANISATION_DB_PORT = "organisation.db.port";
