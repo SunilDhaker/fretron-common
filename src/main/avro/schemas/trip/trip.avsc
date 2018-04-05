@@ -487,6 +487,14 @@
 				"default": null
 			},
 			{
+            				"name": "fretronPlace",
+            				"type": [
+            					"null",
+            					"com.fretron.Model.GeoJsonFence"
+            				],
+            				"default": null
+            },
+			{
 				"name": "fromTime",
 				"type": [
 					"null",
@@ -504,6 +512,24 @@
 				"logicalType": "timestamp-millis",
 				"default": null
 			},
+			{
+                "name": "userGivenFromTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "userGivenTillTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
 			{
                 "name": "firstGpsLogId",
                 "type": [
@@ -729,78 +755,94 @@
 				],
 				"default": null
 			},
-						{
-            				"name": "orgId",
-            				"type": [
-            					"null",
-            					"string"
-            				],
-            				"default": null
-            			},
-                        {
-                            "name": "expectedDestinations",
-                            "type": [
-                                "null",
-                                {
-                                    "type": "array",
-                                    "items": "com.fretron.Model.FreightLocation"
-                                }
-                            ],
-                            "default": null
-                        },
-                        {
-                            "name": "reprocessTill",
-                            "type": [
-                                "null",
-                                "long"
-                            ],
-                            "logicalType": "timestamp-millis",
-                            "default": null
-                        },
-                        {
-                           "name":"sharedWith",
-                           "type":["null",{"type" : "array", "items":"string"}],
-                           "default":null
-                        },
-                        {
-                            "name": "liveliness",
-                            "type": [
-                                "null",
-                                "string"
-                            ],
-                            "default": null
-                        },
-                        {
-                          "name":"isOffTrack",
-                          "type":"boolean",
-                          "default":false
-                        },
-                        {
-                        "name": "offTrackSince",
-                        "type": [
-                            "null",
-                            "long"
-                        ],
-                        "logicalType": "timestamp-millis",
-                        "default": null
-                        },
-                        {
-                            "name": "expectedSystemResolution",
-                            "type": [
-                                "null",
-                                "string"
-                            ],
-                            "default": null
-                        },
-                        {
-                            "name": "createdAt",
-                            "type": [
-                                "null",
-                                "long"
-                            ],
-                            "logicalType": "timestamp-millis",
-                            "default": null
-                        }
+            {
+                "name": "orgId",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "expectedDestinations",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": "com.fretron.Model.FreightLocation"
+                    }
+                ],
+                "default": null
+            },
+            {
+                "name": "reprocessTill",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+               "name":"sharedWith",
+               "type":["null",{"type" : "array", "items":"string"}],
+               "default":null
+            },
+            {
+                "name": "liveliness",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+              "name":"isOffTrack",
+              "type":"boolean",
+              "default":false
+            },
+            {
+            "name": "offTrackSince",
+            "type": [
+                "null",
+                "long"
+            ],
+            "logicalType": "timestamp-millis",
+            "default": null
+            },
+            {
+                "name": "expectedSystemResolution",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+            {
+                "name": "createdAt",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "originPlace",
+                "type": [
+                    "null",
+                    "com.fretron.Model.TripLocation"
+                ],
+                "default": null
+            },
+            {
+                "name": "destinationPlace",
+                "type": [
+                    "null",
+                    "com.fretron.Model.TripLocation"
+                ],
+                "default": null
+            }
 		]
 	},
 	{
