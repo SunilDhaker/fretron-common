@@ -171,7 +171,15 @@
                   "string"
              ] ,
              "default":null
-          }
+          },
+                      {
+                        "name":"vgsId",
+                        "type":[
+                             "null",
+                             "string"
+                        ] ,
+                        "default":null
+                     }
 
 		]
 	}

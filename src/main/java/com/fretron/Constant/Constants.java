@@ -400,7 +400,7 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
-    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongofilter.collection.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
 
     //=========================================
 

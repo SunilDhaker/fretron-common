@@ -310,7 +310,13 @@
                 "name":"isSuspended",
                 "type":["null","boolean"],
                 "default":null
+            },
+            {
+            "name":"type",
+            "type":["null","string"],
+            "default":null
             }
+
     ]
   },
   {
