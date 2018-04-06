@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripLocation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5166277533921577918L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripLocation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"fretronPlace\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenFromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenTillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -6551226242722821888L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripLocation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"fretronPlace\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"buisnessPartner\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",\"GeoJsonFence\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenFromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenTillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.FreightLocation freightLocation;
   @Deprecated public com.fretron.Model.GeoJsonFence fretronPlace;
+  @Deprecated public com.fretron.Model.BuisnessPartner buisnessPartner;
   @Deprecated public java.lang.Long fromTime;
   @Deprecated public java.lang.Long tillTime;
   @Deprecated public java.lang.Long userGivenFromTime;
@@ -36,6 +37,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
    * All-args constructor.
    * @param freightLocation The new value for freightLocation
    * @param fretronPlace The new value for fretronPlace
+   * @param buisnessPartner The new value for buisnessPartner
    * @param fromTime The new value for fromTime
    * @param tillTime The new value for tillTime
    * @param userGivenFromTime The new value for userGivenFromTime
@@ -46,9 +48,10 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
    * @param updatedBy The new value for updatedBy
    * @param updatedAt The new value for updatedAt
    */
-  public TripLocation(com.fretron.Model.FreightLocation freightLocation, com.fretron.Model.GeoJsonFence fretronPlace, java.lang.Long fromTime, java.lang.Long tillTime, java.lang.Long userGivenFromTime, java.lang.Long userGivenTillTime, java.lang.String firstGpsLogId, java.lang.String lastGpsLogId, java.util.List<java.lang.String> ignoredVehicleGpsLogs, java.lang.String updatedBy, java.lang.Long updatedAt) {
+  public TripLocation(com.fretron.Model.FreightLocation freightLocation, com.fretron.Model.GeoJsonFence fretronPlace, com.fretron.Model.BuisnessPartner buisnessPartner, java.lang.Long fromTime, java.lang.Long tillTime, java.lang.Long userGivenFromTime, java.lang.Long userGivenTillTime, java.lang.String firstGpsLogId, java.lang.String lastGpsLogId, java.util.List<java.lang.String> ignoredVehicleGpsLogs, java.lang.String updatedBy, java.lang.Long updatedAt) {
     this.freightLocation = freightLocation;
     this.fretronPlace = fretronPlace;
+    this.buisnessPartner = buisnessPartner;
     this.fromTime = fromTime;
     this.tillTime = tillTime;
     this.userGivenFromTime = userGivenFromTime;
@@ -66,15 +69,16 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: return freightLocation;
     case 1: return fretronPlace;
-    case 2: return fromTime;
-    case 3: return tillTime;
-    case 4: return userGivenFromTime;
-    case 5: return userGivenTillTime;
-    case 6: return firstGpsLogId;
-    case 7: return lastGpsLogId;
-    case 8: return ignoredVehicleGpsLogs;
-    case 9: return updatedBy;
-    case 10: return updatedAt;
+    case 2: return buisnessPartner;
+    case 3: return fromTime;
+    case 4: return tillTime;
+    case 5: return userGivenFromTime;
+    case 6: return userGivenTillTime;
+    case 7: return firstGpsLogId;
+    case 8: return lastGpsLogId;
+    case 9: return ignoredVehicleGpsLogs;
+    case 10: return updatedBy;
+    case 11: return updatedAt;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -85,15 +89,16 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: freightLocation = (com.fretron.Model.FreightLocation)value$; break;
     case 1: fretronPlace = (com.fretron.Model.GeoJsonFence)value$; break;
-    case 2: fromTime = (java.lang.Long)value$; break;
-    case 3: tillTime = (java.lang.Long)value$; break;
-    case 4: userGivenFromTime = (java.lang.Long)value$; break;
-    case 5: userGivenTillTime = (java.lang.Long)value$; break;
-    case 6: firstGpsLogId = (java.lang.String)value$; break;
-    case 7: lastGpsLogId = (java.lang.String)value$; break;
-    case 8: ignoredVehicleGpsLogs = (java.util.List<java.lang.String>)value$; break;
-    case 9: updatedBy = (java.lang.String)value$; break;
-    case 10: updatedAt = (java.lang.Long)value$; break;
+    case 2: buisnessPartner = (com.fretron.Model.BuisnessPartner)value$; break;
+    case 3: fromTime = (java.lang.Long)value$; break;
+    case 4: tillTime = (java.lang.Long)value$; break;
+    case 5: userGivenFromTime = (java.lang.Long)value$; break;
+    case 6: userGivenTillTime = (java.lang.Long)value$; break;
+    case 7: firstGpsLogId = (java.lang.String)value$; break;
+    case 8: lastGpsLogId = (java.lang.String)value$; break;
+    case 9: ignoredVehicleGpsLogs = (java.util.List<java.lang.String>)value$; break;
+    case 10: updatedBy = (java.lang.String)value$; break;
+    case 11: updatedAt = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
    */
   public void setFretronPlace(com.fretron.Model.GeoJsonFence value) {
     this.fretronPlace = value;
+  }
+
+  /**
+   * Gets the value of the 'buisnessPartner' field.
+   * @return The value of the 'buisnessPartner' field.
+   */
+  public com.fretron.Model.BuisnessPartner getBuisnessPartner() {
+    return buisnessPartner;
+  }
+
+  /**
+   * Sets the value of the 'buisnessPartner' field.
+   * @param value the value to set.
+   */
+  public void setBuisnessPartner(com.fretron.Model.BuisnessPartner value) {
+    this.buisnessPartner = value;
   }
 
   /**
@@ -310,6 +331,8 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
     private com.fretron.Model.FreightLocation.Builder freightLocationBuilder;
     private com.fretron.Model.GeoJsonFence fretronPlace;
     private com.fretron.Model.GeoJsonFence.Builder fretronPlaceBuilder;
+    private com.fretron.Model.BuisnessPartner buisnessPartner;
+    private com.fretron.Model.BuisnessPartner.Builder buisnessPartnerBuilder;
     private java.lang.Long fromTime;
     private java.lang.Long tillTime;
     private java.lang.Long userGivenFromTime;
@@ -345,41 +368,48 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       if (other.hasFretronPlaceBuilder()) {
         this.fretronPlaceBuilder = com.fretron.Model.GeoJsonFence.newBuilder(other.getFretronPlaceBuilder());
       }
-      if (isValidValue(fields()[2], other.fromTime)) {
-        this.fromTime = data().deepCopy(fields()[2].schema(), other.fromTime);
+      if (isValidValue(fields()[2], other.buisnessPartner)) {
+        this.buisnessPartner = data().deepCopy(fields()[2].schema(), other.buisnessPartner);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.tillTime)) {
-        this.tillTime = data().deepCopy(fields()[3].schema(), other.tillTime);
+      if (other.hasBuisnessPartnerBuilder()) {
+        this.buisnessPartnerBuilder = com.fretron.Model.BuisnessPartner.newBuilder(other.getBuisnessPartnerBuilder());
+      }
+      if (isValidValue(fields()[3], other.fromTime)) {
+        this.fromTime = data().deepCopy(fields()[3].schema(), other.fromTime);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.userGivenFromTime)) {
-        this.userGivenFromTime = data().deepCopy(fields()[4].schema(), other.userGivenFromTime);
+      if (isValidValue(fields()[4], other.tillTime)) {
+        this.tillTime = data().deepCopy(fields()[4].schema(), other.tillTime);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.userGivenTillTime)) {
-        this.userGivenTillTime = data().deepCopy(fields()[5].schema(), other.userGivenTillTime);
+      if (isValidValue(fields()[5], other.userGivenFromTime)) {
+        this.userGivenFromTime = data().deepCopy(fields()[5].schema(), other.userGivenFromTime);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.firstGpsLogId)) {
-        this.firstGpsLogId = data().deepCopy(fields()[6].schema(), other.firstGpsLogId);
+      if (isValidValue(fields()[6], other.userGivenTillTime)) {
+        this.userGivenTillTime = data().deepCopy(fields()[6].schema(), other.userGivenTillTime);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.lastGpsLogId)) {
-        this.lastGpsLogId = data().deepCopy(fields()[7].schema(), other.lastGpsLogId);
+      if (isValidValue(fields()[7], other.firstGpsLogId)) {
+        this.firstGpsLogId = data().deepCopy(fields()[7].schema(), other.firstGpsLogId);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.ignoredVehicleGpsLogs)) {
-        this.ignoredVehicleGpsLogs = data().deepCopy(fields()[8].schema(), other.ignoredVehicleGpsLogs);
+      if (isValidValue(fields()[8], other.lastGpsLogId)) {
+        this.lastGpsLogId = data().deepCopy(fields()[8].schema(), other.lastGpsLogId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.updatedBy)) {
-        this.updatedBy = data().deepCopy(fields()[9].schema(), other.updatedBy);
+      if (isValidValue(fields()[9], other.ignoredVehicleGpsLogs)) {
+        this.ignoredVehicleGpsLogs = data().deepCopy(fields()[9].schema(), other.ignoredVehicleGpsLogs);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.updatedAt)) {
-        this.updatedAt = data().deepCopy(fields()[10].schema(), other.updatedAt);
+      if (isValidValue(fields()[10], other.updatedBy)) {
+        this.updatedBy = data().deepCopy(fields()[10].schema(), other.updatedBy);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.updatedAt)) {
+        this.updatedAt = data().deepCopy(fields()[11].schema(), other.updatedAt);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -399,41 +429,46 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
         fieldSetFlags()[1] = true;
       }
       this.fretronPlaceBuilder = null;
-      if (isValidValue(fields()[2], other.fromTime)) {
-        this.fromTime = data().deepCopy(fields()[2].schema(), other.fromTime);
+      if (isValidValue(fields()[2], other.buisnessPartner)) {
+        this.buisnessPartner = data().deepCopy(fields()[2].schema(), other.buisnessPartner);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.tillTime)) {
-        this.tillTime = data().deepCopy(fields()[3].schema(), other.tillTime);
+      this.buisnessPartnerBuilder = null;
+      if (isValidValue(fields()[3], other.fromTime)) {
+        this.fromTime = data().deepCopy(fields()[3].schema(), other.fromTime);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.userGivenFromTime)) {
-        this.userGivenFromTime = data().deepCopy(fields()[4].schema(), other.userGivenFromTime);
+      if (isValidValue(fields()[4], other.tillTime)) {
+        this.tillTime = data().deepCopy(fields()[4].schema(), other.tillTime);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.userGivenTillTime)) {
-        this.userGivenTillTime = data().deepCopy(fields()[5].schema(), other.userGivenTillTime);
+      if (isValidValue(fields()[5], other.userGivenFromTime)) {
+        this.userGivenFromTime = data().deepCopy(fields()[5].schema(), other.userGivenFromTime);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.firstGpsLogId)) {
-        this.firstGpsLogId = data().deepCopy(fields()[6].schema(), other.firstGpsLogId);
+      if (isValidValue(fields()[6], other.userGivenTillTime)) {
+        this.userGivenTillTime = data().deepCopy(fields()[6].schema(), other.userGivenTillTime);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.lastGpsLogId)) {
-        this.lastGpsLogId = data().deepCopy(fields()[7].schema(), other.lastGpsLogId);
+      if (isValidValue(fields()[7], other.firstGpsLogId)) {
+        this.firstGpsLogId = data().deepCopy(fields()[7].schema(), other.firstGpsLogId);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.ignoredVehicleGpsLogs)) {
-        this.ignoredVehicleGpsLogs = data().deepCopy(fields()[8].schema(), other.ignoredVehicleGpsLogs);
+      if (isValidValue(fields()[8], other.lastGpsLogId)) {
+        this.lastGpsLogId = data().deepCopy(fields()[8].schema(), other.lastGpsLogId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.updatedBy)) {
-        this.updatedBy = data().deepCopy(fields()[9].schema(), other.updatedBy);
+      if (isValidValue(fields()[9], other.ignoredVehicleGpsLogs)) {
+        this.ignoredVehicleGpsLogs = data().deepCopy(fields()[9].schema(), other.ignoredVehicleGpsLogs);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.updatedAt)) {
-        this.updatedAt = data().deepCopy(fields()[10].schema(), other.updatedAt);
+      if (isValidValue(fields()[10], other.updatedBy)) {
+        this.updatedBy = data().deepCopy(fields()[10].schema(), other.updatedBy);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.updatedAt)) {
+        this.updatedAt = data().deepCopy(fields()[11].schema(), other.updatedAt);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -586,6 +621,80 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
     }
 
     /**
+      * Gets the value of the 'buisnessPartner' field.
+      * @return The value.
+      */
+    public com.fretron.Model.BuisnessPartner getBuisnessPartner() {
+      return buisnessPartner;
+    }
+
+    /**
+      * Sets the value of the 'buisnessPartner' field.
+      * @param value The value of 'buisnessPartner'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripLocation.Builder setBuisnessPartner(com.fretron.Model.BuisnessPartner value) {
+      validate(fields()[2], value);
+      this.buisnessPartnerBuilder = null;
+      this.buisnessPartner = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'buisnessPartner' field has been set.
+      * @return True if the 'buisnessPartner' field has been set, false otherwise.
+      */
+    public boolean hasBuisnessPartner() {
+      return fieldSetFlags()[2];
+    }
+
+    /**
+     * Gets the Builder instance for the 'buisnessPartner' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.BuisnessPartner.Builder getBuisnessPartnerBuilder() {
+      if (buisnessPartnerBuilder == null) {
+        if (hasBuisnessPartner()) {
+          setBuisnessPartnerBuilder(com.fretron.Model.BuisnessPartner.newBuilder(buisnessPartner));
+        } else {
+          setBuisnessPartnerBuilder(com.fretron.Model.BuisnessPartner.newBuilder());
+        }
+      }
+      return buisnessPartnerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'buisnessPartner' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripLocation.Builder setBuisnessPartnerBuilder(com.fretron.Model.BuisnessPartner.Builder value) {
+      clearBuisnessPartner();
+      buisnessPartnerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'buisnessPartner' field has an active Builder instance
+     * @return True if the 'buisnessPartner' field has an active Builder instance
+     */
+    public boolean hasBuisnessPartnerBuilder() {
+      return buisnessPartnerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'buisnessPartner' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripLocation.Builder clearBuisnessPartner() {
+      buisnessPartner = null;
+      buisnessPartnerBuilder = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'fromTime' field.
       * @return The value.
       */
@@ -599,9 +708,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setFromTime(java.lang.Long value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.fromTime = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -610,7 +719,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'fromTime' field has been set, false otherwise.
       */
     public boolean hasFromTime() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -620,7 +729,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearFromTime() {
       fromTime = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -638,9 +747,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setTillTime(java.lang.Long value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.tillTime = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -649,7 +758,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'tillTime' field has been set, false otherwise.
       */
     public boolean hasTillTime() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -659,7 +768,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearTillTime() {
       tillTime = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -677,9 +786,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setUserGivenFromTime(java.lang.Long value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.userGivenFromTime = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -688,7 +797,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'userGivenFromTime' field has been set, false otherwise.
       */
     public boolean hasUserGivenFromTime() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -698,7 +807,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearUserGivenFromTime() {
       userGivenFromTime = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -716,9 +825,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setUserGivenTillTime(java.lang.Long value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.userGivenTillTime = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -727,7 +836,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'userGivenTillTime' field has been set, false otherwise.
       */
     public boolean hasUserGivenTillTime() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -737,7 +846,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearUserGivenTillTime() {
       userGivenTillTime = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -755,9 +864,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setFirstGpsLogId(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.firstGpsLogId = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -766,7 +875,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'firstGpsLogId' field has been set, false otherwise.
       */
     public boolean hasFirstGpsLogId() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -776,7 +885,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearFirstGpsLogId() {
       firstGpsLogId = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -794,9 +903,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setLastGpsLogId(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.lastGpsLogId = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -805,7 +914,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastGpsLogId' field has been set, false otherwise.
       */
     public boolean hasLastGpsLogId() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -815,7 +924,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearLastGpsLogId() {
       lastGpsLogId = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -833,9 +942,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setIgnoredVehicleGpsLogs(java.util.List<java.lang.String> value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.ignoredVehicleGpsLogs = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -844,7 +953,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'ignoredVehicleGpsLogs' field has been set, false otherwise.
       */
     public boolean hasIgnoredVehicleGpsLogs() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -854,7 +963,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearIgnoredVehicleGpsLogs() {
       ignoredVehicleGpsLogs = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -872,9 +981,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setUpdatedBy(java.lang.String value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.updatedBy = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -883,7 +992,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'updatedBy' field has been set, false otherwise.
       */
     public boolean hasUpdatedBy() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -893,7 +1002,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearUpdatedBy() {
       updatedBy = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -911,9 +1020,9 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.TripLocation.Builder setUpdatedAt(java.lang.Long value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.updatedAt = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -922,7 +1031,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'updatedAt' field has been set, false otherwise.
       */
     public boolean hasUpdatedAt() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -932,7 +1041,7 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.TripLocation.Builder clearUpdatedAt() {
       updatedAt = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -950,15 +1059,20 @@ public class TripLocation extends org.apache.avro.specific.SpecificRecordBase im
         } else {
           record.fretronPlace = fieldSetFlags()[1] ? this.fretronPlace : (com.fretron.Model.GeoJsonFence) defaultValue(fields()[1]);
         }
-        record.fromTime = fieldSetFlags()[2] ? this.fromTime : (java.lang.Long) defaultValue(fields()[2]);
-        record.tillTime = fieldSetFlags()[3] ? this.tillTime : (java.lang.Long) defaultValue(fields()[3]);
-        record.userGivenFromTime = fieldSetFlags()[4] ? this.userGivenFromTime : (java.lang.Long) defaultValue(fields()[4]);
-        record.userGivenTillTime = fieldSetFlags()[5] ? this.userGivenTillTime : (java.lang.Long) defaultValue(fields()[5]);
-        record.firstGpsLogId = fieldSetFlags()[6] ? this.firstGpsLogId : (java.lang.String) defaultValue(fields()[6]);
-        record.lastGpsLogId = fieldSetFlags()[7] ? this.lastGpsLogId : (java.lang.String) defaultValue(fields()[7]);
-        record.ignoredVehicleGpsLogs = fieldSetFlags()[8] ? this.ignoredVehicleGpsLogs : (java.util.List<java.lang.String>) defaultValue(fields()[8]);
-        record.updatedBy = fieldSetFlags()[9] ? this.updatedBy : (java.lang.String) defaultValue(fields()[9]);
-        record.updatedAt = fieldSetFlags()[10] ? this.updatedAt : (java.lang.Long) defaultValue(fields()[10]);
+        if (buisnessPartnerBuilder != null) {
+          record.buisnessPartner = this.buisnessPartnerBuilder.build();
+        } else {
+          record.buisnessPartner = fieldSetFlags()[2] ? this.buisnessPartner : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[2]);
+        }
+        record.fromTime = fieldSetFlags()[3] ? this.fromTime : (java.lang.Long) defaultValue(fields()[3]);
+        record.tillTime = fieldSetFlags()[4] ? this.tillTime : (java.lang.Long) defaultValue(fields()[4]);
+        record.userGivenFromTime = fieldSetFlags()[5] ? this.userGivenFromTime : (java.lang.Long) defaultValue(fields()[5]);
+        record.userGivenTillTime = fieldSetFlags()[6] ? this.userGivenTillTime : (java.lang.Long) defaultValue(fields()[6]);
+        record.firstGpsLogId = fieldSetFlags()[7] ? this.firstGpsLogId : (java.lang.String) defaultValue(fields()[7]);
+        record.lastGpsLogId = fieldSetFlags()[8] ? this.lastGpsLogId : (java.lang.String) defaultValue(fields()[8]);
+        record.ignoredVehicleGpsLogs = fieldSetFlags()[9] ? this.ignoredVehicleGpsLogs : (java.util.List<java.lang.String>) defaultValue(fields()[9]);
+        record.updatedBy = fieldSetFlags()[10] ? this.updatedBy : (java.lang.String) defaultValue(fields()[10]);
+        record.updatedAt = fieldSetFlags()[11] ? this.updatedAt : (java.lang.Long) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
