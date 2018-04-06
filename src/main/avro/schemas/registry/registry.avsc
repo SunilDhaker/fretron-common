@@ -70,7 +70,16 @@
                 "name":"contacts",
                 "type": ["null",{"type" : "array", "items":"com.fretron.Model.Contact"}],
                 "default":null
-            }
+            },
+
+             {
+                "name": "location",
+                "type": [
+                  "null",
+                  "com.fretron.Model.Location"
+                ],
+                "default":null
+             }
          ]
       }
  ]
