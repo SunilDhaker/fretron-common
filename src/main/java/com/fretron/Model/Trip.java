@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Trip extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4680395429854968838L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Trip\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"quantityOfMaterial\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"unitOfQuantity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverMobNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TripLocation\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"fretronPlace\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenFromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenTillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TripLocation\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"actualStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lane\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Lane\",\"fields\":[{\"name\":\"sources\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"baseSource\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"baseDestination\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"baseMaterial\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"baseRate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"sourceOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"destinationOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"materialOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"baseTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TripState\",\"symbols\":[\"Created\",\"Started\",\"Completed\"]}],\"default\":null},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TrackingType\",\"symbols\":[\"Tracker\",\"Trip\",\"Manual\"]}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expectedDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"reprocessTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"liveliness\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOffTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"offTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSystemResolution\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"originPlace\",\"type\":[\"null\",\"TripLocation\"],\"default\":null},{\"name\":\"destinationPlace\",\"type\":[\"null\",\"TripLocation\"],\"default\":null}]}");
+  private static final long serialVersionUID = -4845325783603503151L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Trip\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"quantityOfMaterial\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"unitOfQuantity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverMobNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TripLocation\",\"fields\":[{\"name\":\"freightLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FreightLocation\",\"fields\":[{\"name\":\"name\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"geofence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geofence\",\"fields\":[{\"name\":\"center\",\"type\":{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}},{\"name\":\"boundry\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Location\"}],\"default\":null},{\"name\":\"circle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Circle\",\"fields\":[{\"name\":\"center\",\"type\":\"Location\"},{\"name\":\"radius\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GeofenceType\",\"symbols\":[\"Proximity\",\"Polygon\"]}],\"default\":null}]}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"favouriteOf\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"FreightLocType\",\"symbols\":[\"Private\",\"Public\"]}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"fretronPlace\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"fromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenFromTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenTillTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"firstGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsLogId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ignoredVehicleGpsLogs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TripLocation\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"actualStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lane\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Lane\",\"fields\":[{\"name\":\"sources\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"baseSource\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"baseDestination\",\"type\":[\"null\",\"FreightLocation\"],\"default\":null},{\"name\":\"baseMaterial\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"baseRate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"sourceOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"destinationOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"materialOffSet\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"baseTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TripState\",\"symbols\":[\"Created\",\"Started\",\"Completed\"]}],\"default\":null},{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"TrackingType\",\"symbols\":[\"Tracker\",\"Trip\",\"Manual\"]}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expectedDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"FreightLocation\"}],\"default\":null},{\"name\":\"reprocessTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"liveliness\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOffTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"offTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSystemResolution\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"originPlace\",\"type\":[\"null\",\"TripLocation\"],\"default\":null},{\"name\":\"destinationPlace\",\"type\":[\"null\",\"TripLocation\"],\"default\":null},{\"name\":\"userGivenActualStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userGivenActualEndTime\",","\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double distance;
   @Deprecated public java.lang.Double quantityOfMaterial;
@@ -44,6 +44,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
   @Deprecated public java.lang.Long createdAt;
   @Deprecated public com.fretron.Model.TripLocation originPlace;
   @Deprecated public com.fretron.Model.TripLocation destinationPlace;
+  @Deprecated public java.lang.Long userGivenActualStartTime;
+  @Deprecated public java.lang.Long userGivenActualEndTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -85,8 +87,10 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
    * @param createdAt The new value for createdAt
    * @param originPlace The new value for originPlace
    * @param destinationPlace The new value for destinationPlace
+   * @param userGivenActualStartTime The new value for userGivenActualStartTime
+   * @param userGivenActualEndTime The new value for userGivenActualEndTime
    */
-  public Trip(java.lang.Double distance, java.lang.Double quantityOfMaterial, java.lang.String unitOfQuantity, java.lang.String driverName, java.lang.String driverMobNumber, java.lang.String remarks, java.lang.String vehicleId, java.util.List<com.fretron.Model.TripLocation> origin, java.util.List<com.fretron.Model.TripLocation> destination, java.lang.String material, java.lang.String tripId, java.lang.Long actualStartTime, java.lang.Long actualEndTime, java.lang.Long plannedStartTime, java.lang.Long plannedEndTime, com.fretron.Model.Lane lane, com.fretron.Model.TripState tripState, java.lang.String deviceImei, java.lang.String shipmentId, com.fretron.Model.TrackingType trackingType, java.lang.String orgId, java.util.List<com.fretron.Model.FreightLocation> expectedDestinations, java.lang.Long reprocessTill, java.util.List<java.lang.String> sharedWith, java.lang.String liveliness, java.lang.Boolean isOffTrack, java.lang.Long offTrackSince, java.lang.String expectedSystemResolution, java.lang.Long createdAt, com.fretron.Model.TripLocation originPlace, com.fretron.Model.TripLocation destinationPlace) {
+  public Trip(java.lang.Double distance, java.lang.Double quantityOfMaterial, java.lang.String unitOfQuantity, java.lang.String driverName, java.lang.String driverMobNumber, java.lang.String remarks, java.lang.String vehicleId, java.util.List<com.fretron.Model.TripLocation> origin, java.util.List<com.fretron.Model.TripLocation> destination, java.lang.String material, java.lang.String tripId, java.lang.Long actualStartTime, java.lang.Long actualEndTime, java.lang.Long plannedStartTime, java.lang.Long plannedEndTime, com.fretron.Model.Lane lane, com.fretron.Model.TripState tripState, java.lang.String deviceImei, java.lang.String shipmentId, com.fretron.Model.TrackingType trackingType, java.lang.String orgId, java.util.List<com.fretron.Model.FreightLocation> expectedDestinations, java.lang.Long reprocessTill, java.util.List<java.lang.String> sharedWith, java.lang.String liveliness, java.lang.Boolean isOffTrack, java.lang.Long offTrackSince, java.lang.String expectedSystemResolution, java.lang.Long createdAt, com.fretron.Model.TripLocation originPlace, com.fretron.Model.TripLocation destinationPlace, java.lang.Long userGivenActualStartTime, java.lang.Long userGivenActualEndTime) {
     this.distance = distance;
     this.quantityOfMaterial = quantityOfMaterial;
     this.unitOfQuantity = unitOfQuantity;
@@ -118,6 +122,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
     this.createdAt = createdAt;
     this.originPlace = originPlace;
     this.destinationPlace = destinationPlace;
+    this.userGivenActualStartTime = userGivenActualStartTime;
+    this.userGivenActualEndTime = userGivenActualEndTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -155,6 +161,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
     case 28: return createdAt;
     case 29: return originPlace;
     case 30: return destinationPlace;
+    case 31: return userGivenActualStartTime;
+    case 32: return userGivenActualEndTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -194,6 +202,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
     case 28: createdAt = (java.lang.Long)value$; break;
     case 29: originPlace = (com.fretron.Model.TripLocation)value$; break;
     case 30: destinationPlace = (com.fretron.Model.TripLocation)value$; break;
+    case 31: userGivenActualStartTime = (java.lang.Long)value$; break;
+    case 32: userGivenActualEndTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -695,6 +705,38 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   /**
+   * Gets the value of the 'userGivenActualStartTime' field.
+   * @return The value of the 'userGivenActualStartTime' field.
+   */
+  public java.lang.Long getUserGivenActualStartTime() {
+    return userGivenActualStartTime;
+  }
+
+  /**
+   * Sets the value of the 'userGivenActualStartTime' field.
+   * @param value the value to set.
+   */
+  public void setUserGivenActualStartTime(java.lang.Long value) {
+    this.userGivenActualStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'userGivenActualEndTime' field.
+   * @return The value of the 'userGivenActualEndTime' field.
+   */
+  public java.lang.Long getUserGivenActualEndTime() {
+    return userGivenActualEndTime;
+  }
+
+  /**
+   * Sets the value of the 'userGivenActualEndTime' field.
+   * @param value the value to set.
+   */
+  public void setUserGivenActualEndTime(java.lang.Long value) {
+    this.userGivenActualEndTime = value;
+  }
+
+  /**
    * Creates a new Trip RecordBuilder.
    * @return A new Trip RecordBuilder
    */
@@ -760,6 +802,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
     private com.fretron.Model.TripLocation.Builder originPlaceBuilder;
     private com.fretron.Model.TripLocation destinationPlace;
     private com.fretron.Model.TripLocation.Builder destinationPlaceBuilder;
+    private java.lang.Long userGivenActualStartTime;
+    private java.lang.Long userGivenActualEndTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -905,6 +949,14 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
       if (other.hasDestinationPlaceBuilder()) {
         this.destinationPlaceBuilder = com.fretron.Model.TripLocation.newBuilder(other.getDestinationPlaceBuilder());
       }
+      if (isValidValue(fields()[31], other.userGivenActualStartTime)) {
+        this.userGivenActualStartTime = data().deepCopy(fields()[31].schema(), other.userGivenActualStartTime);
+        fieldSetFlags()[31] = true;
+      }
+      if (isValidValue(fields()[32], other.userGivenActualEndTime)) {
+        this.userGivenActualEndTime = data().deepCopy(fields()[32].schema(), other.userGivenActualEndTime);
+        fieldSetFlags()[32] = true;
+      }
     }
 
     /**
@@ -1040,6 +1092,14 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
         fieldSetFlags()[30] = true;
       }
       this.destinationPlaceBuilder = null;
+      if (isValidValue(fields()[31], other.userGivenActualStartTime)) {
+        this.userGivenActualStartTime = data().deepCopy(fields()[31].schema(), other.userGivenActualStartTime);
+        fieldSetFlags()[31] = true;
+      }
+      if (isValidValue(fields()[32], other.userGivenActualEndTime)) {
+        this.userGivenActualEndTime = data().deepCopy(fields()[32].schema(), other.userGivenActualEndTime);
+        fieldSetFlags()[32] = true;
+      }
     }
 
     /**
@@ -2355,6 +2415,84 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
       return this;
     }
 
+    /**
+      * Gets the value of the 'userGivenActualStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getUserGivenActualStartTime() {
+      return userGivenActualStartTime;
+    }
+
+    /**
+      * Sets the value of the 'userGivenActualStartTime' field.
+      * @param value The value of 'userGivenActualStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Trip.Builder setUserGivenActualStartTime(java.lang.Long value) {
+      validate(fields()[31], value);
+      this.userGivenActualStartTime = value;
+      fieldSetFlags()[31] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'userGivenActualStartTime' field has been set.
+      * @return True if the 'userGivenActualStartTime' field has been set, false otherwise.
+      */
+    public boolean hasUserGivenActualStartTime() {
+      return fieldSetFlags()[31];
+    }
+
+
+    /**
+      * Clears the value of the 'userGivenActualStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Trip.Builder clearUserGivenActualStartTime() {
+      userGivenActualStartTime = null;
+      fieldSetFlags()[31] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'userGivenActualEndTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getUserGivenActualEndTime() {
+      return userGivenActualEndTime;
+    }
+
+    /**
+      * Sets the value of the 'userGivenActualEndTime' field.
+      * @param value The value of 'userGivenActualEndTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Trip.Builder setUserGivenActualEndTime(java.lang.Long value) {
+      validate(fields()[32], value);
+      this.userGivenActualEndTime = value;
+      fieldSetFlags()[32] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'userGivenActualEndTime' field has been set.
+      * @return True if the 'userGivenActualEndTime' field has been set, false otherwise.
+      */
+    public boolean hasUserGivenActualEndTime() {
+      return fieldSetFlags()[32];
+    }
+
+
+    /**
+      * Clears the value of the 'userGivenActualEndTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Trip.Builder clearUserGivenActualEndTime() {
+      userGivenActualEndTime = null;
+      fieldSetFlags()[32] = false;
+      return this;
+    }
+
     @Override
     public Trip build() {
       try {
@@ -2402,6 +2540,8 @@ public class Trip extends org.apache.avro.specific.SpecificRecordBase implements
         } else {
           record.destinationPlace = fieldSetFlags()[30] ? this.destinationPlace : (com.fretron.Model.TripLocation) defaultValue(fields()[30]);
         }
+        record.userGivenActualStartTime = fieldSetFlags()[31] ? this.userGivenActualStartTime : (java.lang.Long) defaultValue(fields()[31]);
+        record.userGivenActualEndTime = fieldSetFlags()[32] ? this.userGivenActualEndTime : (java.lang.Long) defaultValue(fields()[32]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
