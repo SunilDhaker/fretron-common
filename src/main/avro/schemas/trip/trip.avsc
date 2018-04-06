@@ -842,6 +842,24 @@
                     "com.fretron.Model.TripLocation"
                 ],
                 "default": null
+            },
+            {
+                "name": "userGivenActualStartTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "userGivenActualEndTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
             }
 		]
 	},
