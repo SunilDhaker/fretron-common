@@ -48,6 +48,14 @@
           "long"
         ]
       },
+       {
+              "name": "lastPositionDeviceTime",
+              "type": [
+                "null",
+                "long"
+              ],
+               "default":null
+      },
       {
               "name": "lastDisconnectionTime",
               "type": [
