@@ -177,8 +177,6 @@ public class OnlinePolylineEncoder {
         lastPoint.setLongitude(nextPos.getLongitude());
         polylineObj.setLastPoint(lastPoint);
         polylineObj.setTotalPoints(polylineObj.getTotalPoints()+1);
-
-
         return polylineObj;
     }
 

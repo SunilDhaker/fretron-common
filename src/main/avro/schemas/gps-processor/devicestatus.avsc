@@ -57,6 +57,14 @@
                "default":null
       },
       {
+         "name": "lastPositionServerTime",
+          "type": [
+                      "null",
+                      "long"
+                    ],
+            "default":null
+      },
+      {
               "name": "lastDisconnectionTime",
               "type": [
                 "null",
