@@ -10,14 +10,25 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Attributes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5971316817845655656L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]}]}");
+  private static final long serialVersionUID = 2790812001793770106L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String battery;
   @Deprecated public java.lang.String alarm;
   @Deprecated public java.lang.String ip;
   @Deprecated public java.lang.Double distance;
   @Deprecated public java.lang.Double totalDistance;
+  @Deprecated public boolean isCharge;
+  @Deprecated public boolean ignition;
+  @Deprecated public boolean isOilElectricityConnected;
+  @Deprecated public boolean isGpsTrackingOn;
+  @Deprecated public java.lang.Integer acc;
+  @Deprecated public java.lang.Integer satellitesGpsQualityInfo;
+  @Deprecated public java.lang.String uploadReason;
+  @Deprecated public java.lang.String uploadMode;
+  @Deprecated public java.lang.String signalStrength;
+  @Deprecated public java.lang.String commandResult;
+  @Deprecated public java.lang.Integer serialNumber;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +44,35 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
    * @param ip The new value for ip
    * @param distance The new value for distance
    * @param totalDistance The new value for totalDistance
+   * @param isCharge The new value for isCharge
+   * @param ignition The new value for ignition
+   * @param isOilElectricityConnected The new value for isOilElectricityConnected
+   * @param isGpsTrackingOn The new value for isGpsTrackingOn
+   * @param acc The new value for acc
+   * @param satellitesGpsQualityInfo The new value for satellitesGpsQualityInfo
+   * @param uploadReason The new value for uploadReason
+   * @param uploadMode The new value for uploadMode
+   * @param signalStrength The new value for signalStrength
+   * @param commandResult The new value for commandResult
+   * @param serialNumber The new value for serialNumber
    */
-  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance) {
+  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance, java.lang.Boolean isCharge, java.lang.Boolean ignition, java.lang.Boolean isOilElectricityConnected, java.lang.Boolean isGpsTrackingOn, java.lang.Integer acc, java.lang.Integer satellitesGpsQualityInfo, java.lang.String uploadReason, java.lang.String uploadMode, java.lang.String signalStrength, java.lang.String commandResult, java.lang.Integer serialNumber) {
     this.battery = battery;
     this.alarm = alarm;
     this.ip = ip;
     this.distance = distance;
     this.totalDistance = totalDistance;
+    this.isCharge = isCharge;
+    this.ignition = ignition;
+    this.isOilElectricityConnected = isOilElectricityConnected;
+    this.isGpsTrackingOn = isGpsTrackingOn;
+    this.acc = acc;
+    this.satellitesGpsQualityInfo = satellitesGpsQualityInfo;
+    this.uploadReason = uploadReason;
+    this.uploadMode = uploadMode;
+    this.signalStrength = signalStrength;
+    this.commandResult = commandResult;
+    this.serialNumber = serialNumber;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +84,17 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 2: return ip;
     case 3: return distance;
     case 4: return totalDistance;
+    case 5: return isCharge;
+    case 6: return ignition;
+    case 7: return isOilElectricityConnected;
+    case 8: return isGpsTrackingOn;
+    case 9: return acc;
+    case 10: return satellitesGpsQualityInfo;
+    case 11: return uploadReason;
+    case 12: return uploadMode;
+    case 13: return signalStrength;
+    case 14: return commandResult;
+    case 15: return serialNumber;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +108,17 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 2: ip = (java.lang.String)value$; break;
     case 3: distance = (java.lang.Double)value$; break;
     case 4: totalDistance = (java.lang.Double)value$; break;
+    case 5: isCharge = (java.lang.Boolean)value$; break;
+    case 6: ignition = (java.lang.Boolean)value$; break;
+    case 7: isOilElectricityConnected = (java.lang.Boolean)value$; break;
+    case 8: isGpsTrackingOn = (java.lang.Boolean)value$; break;
+    case 9: acc = (java.lang.Integer)value$; break;
+    case 10: satellitesGpsQualityInfo = (java.lang.Integer)value$; break;
+    case 11: uploadReason = (java.lang.String)value$; break;
+    case 12: uploadMode = (java.lang.String)value$; break;
+    case 13: signalStrength = (java.lang.String)value$; break;
+    case 14: commandResult = (java.lang.String)value$; break;
+    case 15: serialNumber = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +204,182 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'isCharge' field.
+   * @return The value of the 'isCharge' field.
+   */
+  public java.lang.Boolean getIsCharge() {
+    return isCharge;
+  }
+
+  /**
+   * Sets the value of the 'isCharge' field.
+   * @param value the value to set.
+   */
+  public void setIsCharge(java.lang.Boolean value) {
+    this.isCharge = value;
+  }
+
+  /**
+   * Gets the value of the 'ignition' field.
+   * @return The value of the 'ignition' field.
+   */
+  public java.lang.Boolean getIgnition() {
+    return ignition;
+  }
+
+  /**
+   * Sets the value of the 'ignition' field.
+   * @param value the value to set.
+   */
+  public void setIgnition(java.lang.Boolean value) {
+    this.ignition = value;
+  }
+
+  /**
+   * Gets the value of the 'isOilElectricityConnected' field.
+   * @return The value of the 'isOilElectricityConnected' field.
+   */
+  public java.lang.Boolean getIsOilElectricityConnected() {
+    return isOilElectricityConnected;
+  }
+
+  /**
+   * Sets the value of the 'isOilElectricityConnected' field.
+   * @param value the value to set.
+   */
+  public void setIsOilElectricityConnected(java.lang.Boolean value) {
+    this.isOilElectricityConnected = value;
+  }
+
+  /**
+   * Gets the value of the 'isGpsTrackingOn' field.
+   * @return The value of the 'isGpsTrackingOn' field.
+   */
+  public java.lang.Boolean getIsGpsTrackingOn() {
+    return isGpsTrackingOn;
+  }
+
+  /**
+   * Sets the value of the 'isGpsTrackingOn' field.
+   * @param value the value to set.
+   */
+  public void setIsGpsTrackingOn(java.lang.Boolean value) {
+    this.isGpsTrackingOn = value;
+  }
+
+  /**
+   * Gets the value of the 'acc' field.
+   * @return The value of the 'acc' field.
+   */
+  public java.lang.Integer getAcc() {
+    return acc;
+  }
+
+  /**
+   * Sets the value of the 'acc' field.
+   * @param value the value to set.
+   */
+  public void setAcc(java.lang.Integer value) {
+    this.acc = value;
+  }
+
+  /**
+   * Gets the value of the 'satellitesGpsQualityInfo' field.
+   * @return The value of the 'satellitesGpsQualityInfo' field.
+   */
+  public java.lang.Integer getSatellitesGpsQualityInfo() {
+    return satellitesGpsQualityInfo;
+  }
+
+  /**
+   * Sets the value of the 'satellitesGpsQualityInfo' field.
+   * @param value the value to set.
+   */
+  public void setSatellitesGpsQualityInfo(java.lang.Integer value) {
+    this.satellitesGpsQualityInfo = value;
+  }
+
+  /**
+   * Gets the value of the 'uploadReason' field.
+   * @return The value of the 'uploadReason' field.
+   */
+  public java.lang.String getUploadReason() {
+    return uploadReason;
+  }
+
+  /**
+   * Sets the value of the 'uploadReason' field.
+   * @param value the value to set.
+   */
+  public void setUploadReason(java.lang.String value) {
+    this.uploadReason = value;
+  }
+
+  /**
+   * Gets the value of the 'uploadMode' field.
+   * @return The value of the 'uploadMode' field.
+   */
+  public java.lang.String getUploadMode() {
+    return uploadMode;
+  }
+
+  /**
+   * Sets the value of the 'uploadMode' field.
+   * @param value the value to set.
+   */
+  public void setUploadMode(java.lang.String value) {
+    this.uploadMode = value;
+  }
+
+  /**
+   * Gets the value of the 'signalStrength' field.
+   * @return The value of the 'signalStrength' field.
+   */
+  public java.lang.String getSignalStrength() {
+    return signalStrength;
+  }
+
+  /**
+   * Sets the value of the 'signalStrength' field.
+   * @param value the value to set.
+   */
+  public void setSignalStrength(java.lang.String value) {
+    this.signalStrength = value;
+  }
+
+  /**
+   * Gets the value of the 'commandResult' field.
+   * @return The value of the 'commandResult' field.
+   */
+  public java.lang.String getCommandResult() {
+    return commandResult;
+  }
+
+  /**
+   * Sets the value of the 'commandResult' field.
+   * @param value the value to set.
+   */
+  public void setCommandResult(java.lang.String value) {
+    this.commandResult = value;
+  }
+
+  /**
+   * Gets the value of the 'serialNumber' field.
+   * @return The value of the 'serialNumber' field.
+   */
+  public java.lang.Integer getSerialNumber() {
+    return serialNumber;
+  }
+
+  /**
+   * Sets the value of the 'serialNumber' field.
+   * @param value the value to set.
+   */
+  public void setSerialNumber(java.lang.Integer value) {
+    this.serialNumber = value;
+  }
+
+  /**
    * Creates a new Attributes RecordBuilder.
    * @return A new Attributes RecordBuilder
    */
@@ -185,6 +416,17 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String ip;
     private java.lang.Double distance;
     private java.lang.Double totalDistance;
+    private boolean isCharge;
+    private boolean ignition;
+    private boolean isOilElectricityConnected;
+    private boolean isGpsTrackingOn;
+    private java.lang.Integer acc;
+    private java.lang.Integer satellitesGpsQualityInfo;
+    private java.lang.String uploadReason;
+    private java.lang.String uploadMode;
+    private java.lang.String signalStrength;
+    private java.lang.String commandResult;
+    private java.lang.Integer serialNumber;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +459,50 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         this.totalDistance = data().deepCopy(fields()[4].schema(), other.totalDistance);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.isCharge)) {
+        this.isCharge = data().deepCopy(fields()[5].schema(), other.isCharge);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.ignition)) {
+        this.ignition = data().deepCopy(fields()[6].schema(), other.ignition);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.isOilElectricityConnected)) {
+        this.isOilElectricityConnected = data().deepCopy(fields()[7].schema(), other.isOilElectricityConnected);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.isGpsTrackingOn)) {
+        this.isGpsTrackingOn = data().deepCopy(fields()[8].schema(), other.isGpsTrackingOn);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.acc)) {
+        this.acc = data().deepCopy(fields()[9].schema(), other.acc);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.satellitesGpsQualityInfo)) {
+        this.satellitesGpsQualityInfo = data().deepCopy(fields()[10].schema(), other.satellitesGpsQualityInfo);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.uploadReason)) {
+        this.uploadReason = data().deepCopy(fields()[11].schema(), other.uploadReason);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.uploadMode)) {
+        this.uploadMode = data().deepCopy(fields()[12].schema(), other.uploadMode);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.signalStrength)) {
+        this.signalStrength = data().deepCopy(fields()[13].schema(), other.signalStrength);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.commandResult)) {
+        this.commandResult = data().deepCopy(fields()[14].schema(), other.commandResult);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.serialNumber)) {
+        this.serialNumber = data().deepCopy(fields()[15].schema(), other.serialNumber);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -244,6 +530,50 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[4], other.totalDistance)) {
         this.totalDistance = data().deepCopy(fields()[4].schema(), other.totalDistance);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.isCharge)) {
+        this.isCharge = data().deepCopy(fields()[5].schema(), other.isCharge);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.ignition)) {
+        this.ignition = data().deepCopy(fields()[6].schema(), other.ignition);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.isOilElectricityConnected)) {
+        this.isOilElectricityConnected = data().deepCopy(fields()[7].schema(), other.isOilElectricityConnected);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.isGpsTrackingOn)) {
+        this.isGpsTrackingOn = data().deepCopy(fields()[8].schema(), other.isGpsTrackingOn);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.acc)) {
+        this.acc = data().deepCopy(fields()[9].schema(), other.acc);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.satellitesGpsQualityInfo)) {
+        this.satellitesGpsQualityInfo = data().deepCopy(fields()[10].schema(), other.satellitesGpsQualityInfo);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.uploadReason)) {
+        this.uploadReason = data().deepCopy(fields()[11].schema(), other.uploadReason);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.uploadMode)) {
+        this.uploadMode = data().deepCopy(fields()[12].schema(), other.uploadMode);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.signalStrength)) {
+        this.signalStrength = data().deepCopy(fields()[13].schema(), other.signalStrength);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.commandResult)) {
+        this.commandResult = data().deepCopy(fields()[14].schema(), other.commandResult);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.serialNumber)) {
+        this.serialNumber = data().deepCopy(fields()[15].schema(), other.serialNumber);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -442,6 +772,431 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'isCharge' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsCharge() {
+      return isCharge;
+    }
+
+    /**
+      * Sets the value of the 'isCharge' field.
+      * @param value The value of 'isCharge'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setIsCharge(boolean value) {
+      validate(fields()[5], value);
+      this.isCharge = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isCharge' field has been set.
+      * @return True if the 'isCharge' field has been set, false otherwise.
+      */
+    public boolean hasIsCharge() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'isCharge' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearIsCharge() {
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'ignition' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIgnition() {
+      return ignition;
+    }
+
+    /**
+      * Sets the value of the 'ignition' field.
+      * @param value The value of 'ignition'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setIgnition(boolean value) {
+      validate(fields()[6], value);
+      this.ignition = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'ignition' field has been set.
+      * @return True if the 'ignition' field has been set, false otherwise.
+      */
+    public boolean hasIgnition() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'ignition' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearIgnition() {
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isOilElectricityConnected' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsOilElectricityConnected() {
+      return isOilElectricityConnected;
+    }
+
+    /**
+      * Sets the value of the 'isOilElectricityConnected' field.
+      * @param value The value of 'isOilElectricityConnected'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setIsOilElectricityConnected(boolean value) {
+      validate(fields()[7], value);
+      this.isOilElectricityConnected = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isOilElectricityConnected' field has been set.
+      * @return True if the 'isOilElectricityConnected' field has been set, false otherwise.
+      */
+    public boolean hasIsOilElectricityConnected() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'isOilElectricityConnected' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearIsOilElectricityConnected() {
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isGpsTrackingOn' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsGpsTrackingOn() {
+      return isGpsTrackingOn;
+    }
+
+    /**
+      * Sets the value of the 'isGpsTrackingOn' field.
+      * @param value The value of 'isGpsTrackingOn'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setIsGpsTrackingOn(boolean value) {
+      validate(fields()[8], value);
+      this.isGpsTrackingOn = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isGpsTrackingOn' field has been set.
+      * @return True if the 'isGpsTrackingOn' field has been set, false otherwise.
+      */
+    public boolean hasIsGpsTrackingOn() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'isGpsTrackingOn' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearIsGpsTrackingOn() {
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'acc' field.
+      * @return The value.
+      */
+    public java.lang.Integer getAcc() {
+      return acc;
+    }
+
+    /**
+      * Sets the value of the 'acc' field.
+      * @param value The value of 'acc'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setAcc(java.lang.Integer value) {
+      validate(fields()[9], value);
+      this.acc = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'acc' field has been set.
+      * @return True if the 'acc' field has been set, false otherwise.
+      */
+    public boolean hasAcc() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'acc' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearAcc() {
+      acc = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'satellitesGpsQualityInfo' field.
+      * @return The value.
+      */
+    public java.lang.Integer getSatellitesGpsQualityInfo() {
+      return satellitesGpsQualityInfo;
+    }
+
+    /**
+      * Sets the value of the 'satellitesGpsQualityInfo' field.
+      * @param value The value of 'satellitesGpsQualityInfo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setSatellitesGpsQualityInfo(java.lang.Integer value) {
+      validate(fields()[10], value);
+      this.satellitesGpsQualityInfo = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'satellitesGpsQualityInfo' field has been set.
+      * @return True if the 'satellitesGpsQualityInfo' field has been set, false otherwise.
+      */
+    public boolean hasSatellitesGpsQualityInfo() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'satellitesGpsQualityInfo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearSatellitesGpsQualityInfo() {
+      satellitesGpsQualityInfo = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'uploadReason' field.
+      * @return The value.
+      */
+    public java.lang.String getUploadReason() {
+      return uploadReason;
+    }
+
+    /**
+      * Sets the value of the 'uploadReason' field.
+      * @param value The value of 'uploadReason'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setUploadReason(java.lang.String value) {
+      validate(fields()[11], value);
+      this.uploadReason = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uploadReason' field has been set.
+      * @return True if the 'uploadReason' field has been set, false otherwise.
+      */
+    public boolean hasUploadReason() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'uploadReason' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearUploadReason() {
+      uploadReason = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'uploadMode' field.
+      * @return The value.
+      */
+    public java.lang.String getUploadMode() {
+      return uploadMode;
+    }
+
+    /**
+      * Sets the value of the 'uploadMode' field.
+      * @param value The value of 'uploadMode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setUploadMode(java.lang.String value) {
+      validate(fields()[12], value);
+      this.uploadMode = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uploadMode' field has been set.
+      * @return True if the 'uploadMode' field has been set, false otherwise.
+      */
+    public boolean hasUploadMode() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'uploadMode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearUploadMode() {
+      uploadMode = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'signalStrength' field.
+      * @return The value.
+      */
+    public java.lang.String getSignalStrength() {
+      return signalStrength;
+    }
+
+    /**
+      * Sets the value of the 'signalStrength' field.
+      * @param value The value of 'signalStrength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setSignalStrength(java.lang.String value) {
+      validate(fields()[13], value);
+      this.signalStrength = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'signalStrength' field has been set.
+      * @return True if the 'signalStrength' field has been set, false otherwise.
+      */
+    public boolean hasSignalStrength() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'signalStrength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearSignalStrength() {
+      signalStrength = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'commandResult' field.
+      * @return The value.
+      */
+    public java.lang.String getCommandResult() {
+      return commandResult;
+    }
+
+    /**
+      * Sets the value of the 'commandResult' field.
+      * @param value The value of 'commandResult'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setCommandResult(java.lang.String value) {
+      validate(fields()[14], value);
+      this.commandResult = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'commandResult' field has been set.
+      * @return True if the 'commandResult' field has been set, false otherwise.
+      */
+    public boolean hasCommandResult() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'commandResult' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearCommandResult() {
+      commandResult = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'serialNumber' field.
+      * @return The value.
+      */
+    public java.lang.Integer getSerialNumber() {
+      return serialNumber;
+    }
+
+    /**
+      * Sets the value of the 'serialNumber' field.
+      * @param value The value of 'serialNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setSerialNumber(java.lang.Integer value) {
+      validate(fields()[15], value);
+      this.serialNumber = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'serialNumber' field has been set.
+      * @return True if the 'serialNumber' field has been set, false otherwise.
+      */
+    public boolean hasSerialNumber() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'serialNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearSerialNumber() {
+      serialNumber = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public Attributes build() {
       try {
@@ -451,6 +1206,17 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         record.ip = fieldSetFlags()[2] ? this.ip : (java.lang.String) defaultValue(fields()[2]);
         record.distance = fieldSetFlags()[3] ? this.distance : (java.lang.Double) defaultValue(fields()[3]);
         record.totalDistance = fieldSetFlags()[4] ? this.totalDistance : (java.lang.Double) defaultValue(fields()[4]);
+        record.isCharge = fieldSetFlags()[5] ? this.isCharge : (java.lang.Boolean) defaultValue(fields()[5]);
+        record.ignition = fieldSetFlags()[6] ? this.ignition : (java.lang.Boolean) defaultValue(fields()[6]);
+        record.isOilElectricityConnected = fieldSetFlags()[7] ? this.isOilElectricityConnected : (java.lang.Boolean) defaultValue(fields()[7]);
+        record.isGpsTrackingOn = fieldSetFlags()[8] ? this.isGpsTrackingOn : (java.lang.Boolean) defaultValue(fields()[8]);
+        record.acc = fieldSetFlags()[9] ? this.acc : (java.lang.Integer) defaultValue(fields()[9]);
+        record.satellitesGpsQualityInfo = fieldSetFlags()[10] ? this.satellitesGpsQualityInfo : (java.lang.Integer) defaultValue(fields()[10]);
+        record.uploadReason = fieldSetFlags()[11] ? this.uploadReason : (java.lang.String) defaultValue(fields()[11]);
+        record.uploadMode = fieldSetFlags()[12] ? this.uploadMode : (java.lang.String) defaultValue(fields()[12]);
+        record.signalStrength = fieldSetFlags()[13] ? this.signalStrength : (java.lang.String) defaultValue(fields()[13]);
+        record.commandResult = fieldSetFlags()[14] ? this.commandResult : (java.lang.String) defaultValue(fields()[14]);
+        record.serialNumber = fieldSetFlags()[15] ? this.serialNumber : (java.lang.Integer) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

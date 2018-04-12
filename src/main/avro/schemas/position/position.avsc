@@ -50,7 +50,64 @@
                 "null",
                 "double"
               ]
-            }
+            },
+            {
+              "name":"isCharge",
+               "type":"boolean",
+               "default": false
+            },
+            {
+               "name":"ignition",
+                "type":"boolean",
+                "default": false
+            },
+            {
+                "name":"isOilElectricityConnected",
+                 "type":"boolean",
+                 "default": false
+            },
+            {
+                 "name":"isGpsTrackingOn",
+                  "type":"boolean",
+                  "default": false
+            },
+            {
+                "name":"acc",
+                "type": ["null","int"],
+                 "default" : null
+            },
+            {
+              "name": "satellitesGpsQualityInfo",
+               "type": ["null","int"],
+               "default" : null
+            },
+            {
+              "name": "uploadReason",
+              "type": ["null","string"],
+               "default" : null
+           },
+           {
+              "name": "uploadMode",
+               "type": ["null","string"],
+               "default" : null
+           },
+           {
+             "name": "signalStrength",
+             "type": ["null","string"],
+             "default" : null
+           },
+           {
+             "name": "commandResult",
+              "type": ["null","string"],
+               "default" : null
+           },
+           {
+              "name": "serialNumber",
+               "type": ["null","int"],
+               "default" : null
+           }
+
+
           ]
         }
       },
