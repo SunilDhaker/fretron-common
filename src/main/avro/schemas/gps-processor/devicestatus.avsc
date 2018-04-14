@@ -97,6 +97,14 @@
                 "string"
               ],
               "default":null
+      },
+      {
+       "name": "batteryStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default":null
       }
 
     ]
