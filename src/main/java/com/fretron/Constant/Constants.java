@@ -540,6 +540,8 @@ public class Constants {
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
     public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
+    public final static String KEY_DASHBOARD_SOCKET_HOST =  "socket.server.host";
+    public final static String KEY_DASHBOARD_SOCKET_PORT =  "socket.server.port";
 
     //==================TRIP-MIS===============================
 
