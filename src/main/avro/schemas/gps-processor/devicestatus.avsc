@@ -105,6 +105,22 @@
           "string"
         ],
         "default":null
+      },
+      {
+      "name": "lastGpsPacketDeviceTime",
+       "type": [
+                      "null",
+                      "long"
+             ],
+       "default":null
+      },
+      {
+      "name": "lastGpsPacketServerTime",
+       "type": [
+                      "null",
+                      "long"
+             ],
+       "default":null
       }
 
     ]
