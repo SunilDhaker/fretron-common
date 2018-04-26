@@ -543,7 +543,8 @@ public class Constants {
     public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
     public final static String KEY_DASHBOARD_SOCKET_HOST =  "socket.server.host";
     public final static String KEY_DASHBOARD_SOCKET_PORT =  "socket.server.port";
-
+    public final static String KEY_VGS_CHANGELOG_TOPIC = "vgs.changelog.topic";
+    public final static String GET_DEVIECE_STATUS_URL = "device.status.url";
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
