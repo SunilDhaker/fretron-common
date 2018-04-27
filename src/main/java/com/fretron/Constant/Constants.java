@@ -336,6 +336,11 @@ public class Constants {
     public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
 
+    public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
+    public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
+    public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+
+
     //=======================IP AND PORTS ===============
 
     public static final String REGISTRY_SERVICE_URL = "registry.manager.service.url";
