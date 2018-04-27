@@ -82,6 +82,7 @@ public class Constants {
     public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
+    public static final java.lang.String KEY_LATEST_GPS_STATE_SERVICE_URL = "latest.gps.state.service.url";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
@@ -405,7 +406,7 @@ public class Constants {
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
     public static final String TRIP_MONGO_DBNAME = "trip.mongo.db.name";
-    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongofilter.collection.name";
+    public static final String TRIP_MONGO_COLLECTION_NAME = "trip.mongo.collection.name";
 
     //=========================================
 
@@ -545,7 +546,10 @@ public class Constants {
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
     public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
-
+    public final static String KEY_DASHBOARD_SOCKET_HOST =  "socket.server.host";
+    public final static String KEY_DASHBOARD_SOCKET_PORT =  "socket.server.port";
+    public final static String KEY_VGS_CHANGELOG_TOPIC = "vgs.changelog.topic";
+    public final static String GET_DEVIECE_STATUS_URL = "device.status.url";
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
