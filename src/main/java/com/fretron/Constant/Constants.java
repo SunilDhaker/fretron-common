@@ -155,7 +155,8 @@ public class Constants {
 
     public static String KEY_ALERT_MANAGER_APP_IP = "alert.manager.restservice.ip";
     public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
-
+    public static String KEY_STATE_DETECTOR_APP_NAME = "state.detector.app.name";
+    public static String STATE_FENCE_API_URL = "state.fence.api.url";
 
 
 
@@ -335,6 +336,11 @@ public class Constants {
     public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
 
+    public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
+    public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
+    public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+
+
     //=======================IP AND PORTS ===============
 
     public static final String REGISTRY_SERVICE_URL = "registry.manager.service.url";
@@ -465,6 +471,7 @@ public class Constants {
     public static final String KEY_INTEGRATION_MANAGER_APP_ID = "integration.manager.app.id";
     public static final String KEY_JOB_EVENTS_TOPIC = "integration.job.events.topic";
     public static final String KEY_JOB_EXECUTION_EVENTS_TOPIC = "integration.job.execution.topic";
+    public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
 
