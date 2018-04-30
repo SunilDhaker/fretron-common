@@ -456,6 +456,7 @@ public class Constants {
     public static final String KEY_INTEGRATION_MANAGER_APP_ID = "integration.manager.app.id";
     public static final String KEY_JOB_EVENTS_TOPIC = "integration.job.events.topic";
     public static final String KEY_JOB_EXECUTION_EVENTS_TOPIC = "integration.job.execution.topic";
+    public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
 
