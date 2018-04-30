@@ -203,10 +203,30 @@
         "default": null
       },
       {
+         "name": "odoMeter",
+          "type": ["null","double"],
+          "default": null
+      },
+      {
+         "name": "lastOdoMeterReading",
+          "type": ["null","double"],
+          "default": null
+      },
+      {
+        "name":"isDisconnected",
+         "type": "boolean",
+         "default":false
+      },
+      {
         "name": "eventType",
         "type": ["null" ,"string"],
         "default" : null
-      }
+      },
+      {
+         "name": "batteryStatus",
+          "type": ["null" ,"string"],
+          "default" : null
+         }
     ]
   }
 

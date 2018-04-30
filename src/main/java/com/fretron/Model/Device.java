@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Device extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5469990268684987613L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -1288661925417208968L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String mobileNumber;
@@ -25,6 +25,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String status;
   @Deprecated public java.util.List<java.lang.String> sharedWith;
+  @Deprecated public java.lang.Boolean isSuspended;
+  @Deprecated public java.lang.String type;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +49,10 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param orgId The new value for orgId
    * @param status The new value for status
    * @param sharedWith The new value for sharedWith
+   * @param isSuspended The new value for isSuspended
+   * @param type The new value for type
    */
-  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith) {
+  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type) {
     this.imei = imei;
     this.mobileNumber = mobileNumber;
     this.manufacturerName = manufacturerName;
@@ -61,6 +65,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     this.orgId = orgId;
     this.status = status;
     this.sharedWith = sharedWith;
+    this.isSuspended = isSuspended;
+    this.type = type;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +85,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 9: return orgId;
     case 10: return status;
     case 11: return sharedWith;
+    case 12: return isSuspended;
+    case 13: return type;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +107,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 9: orgId = (java.lang.String)value$; break;
     case 10: status = (java.lang.String)value$; break;
     case 11: sharedWith = (java.util.List<java.lang.String>)value$; break;
+    case 12: isSuspended = (java.lang.Boolean)value$; break;
+    case 13: type = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +306,38 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'isSuspended' field.
+   * @return The value of the 'isSuspended' field.
+   */
+  public java.lang.Boolean getIsSuspended() {
+    return isSuspended;
+  }
+
+  /**
+   * Sets the value of the 'isSuspended' field.
+   * @param value the value to set.
+   */
+  public void setIsSuspended(java.lang.Boolean value) {
+    this.isSuspended = value;
+  }
+
+  /**
+   * Gets the value of the 'type' field.
+   * @return The value of the 'type' field.
+   */
+  public java.lang.String getType() {
+    return type;
+  }
+
+  /**
+   * Sets the value of the 'type' field.
+   * @param value the value to set.
+   */
+  public void setType(java.lang.String value) {
+    this.type = value;
+  }
+
+  /**
    * Creates a new Device RecordBuilder.
    * @return A new Device RecordBuilder
    */
@@ -339,6 +381,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String orgId;
     private java.lang.String status;
     private java.util.List<java.lang.String> sharedWith;
+    private java.lang.Boolean isSuspended;
+    private java.lang.String type;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +443,14 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.sharedWith = data().deepCopy(fields()[11].schema(), other.sharedWith);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.isSuspended)) {
+        this.isSuspended = data().deepCopy(fields()[12].schema(), other.isSuspended);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.type)) {
+        this.type = data().deepCopy(fields()[13].schema(), other.type);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -454,6 +506,14 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       if (isValidValue(fields()[11], other.sharedWith)) {
         this.sharedWith = data().deepCopy(fields()[11].schema(), other.sharedWith);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.isSuspended)) {
+        this.isSuspended = data().deepCopy(fields()[12].schema(), other.isSuspended);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.type)) {
+        this.type = data().deepCopy(fields()[13].schema(), other.type);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -925,6 +985,84 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'isSuspended' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsSuspended() {
+      return isSuspended;
+    }
+
+    /**
+      * Sets the value of the 'isSuspended' field.
+      * @param value The value of 'isSuspended'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setIsSuspended(java.lang.Boolean value) {
+      validate(fields()[12], value);
+      this.isSuspended = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isSuspended' field has been set.
+      * @return True if the 'isSuspended' field has been set, false otherwise.
+      */
+    public boolean hasIsSuspended() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'isSuspended' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearIsSuspended() {
+      isSuspended = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'type' field.
+      * @return The value.
+      */
+    public java.lang.String getType() {
+      return type;
+    }
+
+    /**
+      * Sets the value of the 'type' field.
+      * @param value The value of 'type'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setType(java.lang.String value) {
+      validate(fields()[13], value);
+      this.type = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'type' field has been set.
+      * @return True if the 'type' field has been set, false otherwise.
+      */
+    public boolean hasType() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'type' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearType() {
+      type = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public Device build() {
       try {
@@ -941,6 +1079,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         record.orgId = fieldSetFlags()[9] ? this.orgId : (java.lang.String) defaultValue(fields()[9]);
         record.status = fieldSetFlags()[10] ? this.status : (java.lang.String) defaultValue(fields()[10]);
         record.sharedWith = fieldSetFlags()[11] ? this.sharedWith : (java.util.List<java.lang.String>) defaultValue(fields()[11]);
+        record.isSuspended = fieldSetFlags()[12] ? this.isSuspended : (java.lang.Boolean) defaultValue(fields()[12]);
+        record.type = fieldSetFlags()[13] ? this.type : (java.lang.String) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

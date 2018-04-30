@@ -2,6 +2,76 @@
 {
          "namespace": "com.fretron.Model",
          "type": "record",
+         "name": "Document",
+         "fields": [
+           {
+             "name": "uuid",
+             "type": [
+               "null",
+               "string"
+             ]
+           },
+           {
+             "name": "isExpirable",
+             "type": [
+               "null",
+               "boolean"
+             ]
+           },
+           {
+             "name": "expireDate",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+           },
+           {
+             "name": "resourceType",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+           {
+             "name": "resourceId",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+           {
+             "name": "docPath",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+          {
+            "name": "downloadUrl",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default":null
+          },
+            {
+              "name": "orgId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default":null
+            }
+         ]
+       },
+{
+         "namespace": "com.fretron.Model",
+         "type": "record",
          "name": "Vehicle",
          "fields": [
            {
@@ -115,6 +185,30 @@
                    "string"
               ] ,
               "default":null
+           },
+           {
+                "name":"attachedDocs",
+                "type":[
+                    "null",
+                    {"type" : "array", "items":"string"}
+                ],
+                "default":null
+           },
+           {
+              "name":"source",
+              "type":[
+                   "null",
+                   "string"
+              ] ,
+              "default":null
+           },
+           {
+             "name":"isTrackingEnabled",
+             "type":[
+                  "null",
+                  "boolean"
+             ],
+             "default":null
            }
 
          ]
@@ -211,7 +305,18 @@
                 "name":"sharedWith",
                 "type":["null",{"type" : "array", "items":"string"}],
                 "default":null
+            },
+            {
+                "name":"isSuspended",
+                "type":["null","boolean"],
+                "default":null
+            },
+            {
+            "name":"type",
+            "type":["null","string"],
+            "default":null
             }
+
     ]
   },
   {

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5710813252998412785L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2800774756172121845L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public boolean isManuallyAdded;
   @Deprecated public boolean isIgnore;
@@ -35,7 +35,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public com.fretron.Model.TimeAwarePolyline timeAwarePolyline;
   @Deprecated public java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments;
   @Deprecated public java.lang.Double recalculatedDistance;
+  @Deprecated public java.lang.Double odoMeter;
+  @Deprecated public java.lang.Double lastOdoMeterReading;
+  @Deprecated public boolean isDisconnected;
   @Deprecated public java.lang.String eventType;
+  @Deprecated public java.lang.String batteryStatus;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -68,9 +72,13 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    * @param timeAwarePolyline The new value for timeAwarePolyline
    * @param polylineSegments The new value for polylineSegments
    * @param recalculatedDistance The new value for recalculatedDistance
+   * @param odoMeter The new value for odoMeter
+   * @param lastOdoMeterReading The new value for lastOdoMeterReading
+   * @param isDisconnected The new value for isDisconnected
    * @param eventType The new value for eventType
+   * @param batteryStatus The new value for batteryStatus
    */
-  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.String eventType) {
+  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.Double odoMeter, java.lang.Double lastOdoMeterReading, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.String batteryStatus) {
     this.isManuallyAdded = isManuallyAdded;
     this.isIgnore = isIgnore;
     this.startTime = startTime;
@@ -93,7 +101,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     this.timeAwarePolyline = timeAwarePolyline;
     this.polylineSegments = polylineSegments;
     this.recalculatedDistance = recalculatedDistance;
+    this.odoMeter = odoMeter;
+    this.lastOdoMeterReading = lastOdoMeterReading;
+    this.isDisconnected = isDisconnected;
     this.eventType = eventType;
+    this.batteryStatus = batteryStatus;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -122,7 +134,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 19: return timeAwarePolyline;
     case 20: return polylineSegments;
     case 21: return recalculatedDistance;
-    case 22: return eventType;
+    case 22: return odoMeter;
+    case 23: return lastOdoMeterReading;
+    case 24: return isDisconnected;
+    case 25: return eventType;
+    case 26: return batteryStatus;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -153,7 +169,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 19: timeAwarePolyline = (com.fretron.Model.TimeAwarePolyline)value$; break;
     case 20: polylineSegments = (java.util.List<com.fretron.Model.TimeAwarePolyline>)value$; break;
     case 21: recalculatedDistance = (java.lang.Double)value$; break;
-    case 22: eventType = (java.lang.String)value$; break;
+    case 22: odoMeter = (java.lang.Double)value$; break;
+    case 23: lastOdoMeterReading = (java.lang.Double)value$; break;
+    case 24: isDisconnected = (java.lang.Boolean)value$; break;
+    case 25: eventType = (java.lang.String)value$; break;
+    case 26: batteryStatus = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -511,6 +531,54 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'odoMeter' field.
+   * @return The value of the 'odoMeter' field.
+   */
+  public java.lang.Double getOdoMeter() {
+    return odoMeter;
+  }
+
+  /**
+   * Sets the value of the 'odoMeter' field.
+   * @param value the value to set.
+   */
+  public void setOdoMeter(java.lang.Double value) {
+    this.odoMeter = value;
+  }
+
+  /**
+   * Gets the value of the 'lastOdoMeterReading' field.
+   * @return The value of the 'lastOdoMeterReading' field.
+   */
+  public java.lang.Double getLastOdoMeterReading() {
+    return lastOdoMeterReading;
+  }
+
+  /**
+   * Sets the value of the 'lastOdoMeterReading' field.
+   * @param value the value to set.
+   */
+  public void setLastOdoMeterReading(java.lang.Double value) {
+    this.lastOdoMeterReading = value;
+  }
+
+  /**
+   * Gets the value of the 'isDisconnected' field.
+   * @return The value of the 'isDisconnected' field.
+   */
+  public java.lang.Boolean getIsDisconnected() {
+    return isDisconnected;
+  }
+
+  /**
+   * Sets the value of the 'isDisconnected' field.
+   * @param value the value to set.
+   */
+  public void setIsDisconnected(java.lang.Boolean value) {
+    this.isDisconnected = value;
+  }
+
+  /**
    * Gets the value of the 'eventType' field.
    * @return The value of the 'eventType' field.
    */
@@ -524,6 +592,22 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    */
   public void setEventType(java.lang.String value) {
     this.eventType = value;
+  }
+
+  /**
+   * Gets the value of the 'batteryStatus' field.
+   * @return The value of the 'batteryStatus' field.
+   */
+  public java.lang.String getBatteryStatus() {
+    return batteryStatus;
+  }
+
+  /**
+   * Sets the value of the 'batteryStatus' field.
+   * @param value the value to set.
+   */
+  public void setBatteryStatus(java.lang.String value) {
+    this.batteryStatus = value;
   }
 
   /**
@@ -584,7 +668,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     private com.fretron.Model.TimeAwarePolyline.Builder timeAwarePolylineBuilder;
     private java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments;
     private java.lang.Double recalculatedDistance;
+    private java.lang.Double odoMeter;
+    private java.lang.Double lastOdoMeterReading;
+    private boolean isDisconnected;
     private java.lang.String eventType;
+    private java.lang.String batteryStatus;
 
     /** Creates a new Builder */
     private Builder() {
@@ -697,9 +785,25 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.recalculatedDistance = data().deepCopy(fields()[21].schema(), other.recalculatedDistance);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[22].schema(), other.eventType);
+      if (isValidValue(fields()[22], other.odoMeter)) {
+        this.odoMeter = data().deepCopy(fields()[22].schema(), other.odoMeter);
         fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.lastOdoMeterReading)) {
+        this.lastOdoMeterReading = data().deepCopy(fields()[23].schema(), other.lastOdoMeterReading);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.isDisconnected)) {
+        this.isDisconnected = data().deepCopy(fields()[24].schema(), other.isDisconnected);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[25].schema(), other.eventType);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.batteryStatus)) {
+        this.batteryStatus = data().deepCopy(fields()[26].schema(), other.batteryStatus);
+        fieldSetFlags()[26] = true;
       }
     }
 
@@ -801,9 +905,25 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.recalculatedDistance = data().deepCopy(fields()[21].schema(), other.recalculatedDistance);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.eventType)) {
-        this.eventType = data().deepCopy(fields()[22].schema(), other.eventType);
+      if (isValidValue(fields()[22], other.odoMeter)) {
+        this.odoMeter = data().deepCopy(fields()[22].schema(), other.odoMeter);
         fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.lastOdoMeterReading)) {
+        this.lastOdoMeterReading = data().deepCopy(fields()[23].schema(), other.lastOdoMeterReading);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.isDisconnected)) {
+        this.isDisconnected = data().deepCopy(fields()[24].schema(), other.isDisconnected);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.eventType)) {
+        this.eventType = data().deepCopy(fields()[25].schema(), other.eventType);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.batteryStatus)) {
+        this.batteryStatus = data().deepCopy(fields()[26].schema(), other.batteryStatus);
+        fieldSetFlags()[26] = true;
       }
     }
 
@@ -1796,6 +1916,122 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'odoMeter' field.
+      * @return The value.
+      */
+    public java.lang.Double getOdoMeter() {
+      return odoMeter;
+    }
+
+    /**
+      * Sets the value of the 'odoMeter' field.
+      * @param value The value of 'odoMeter'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setOdoMeter(java.lang.Double value) {
+      validate(fields()[22], value);
+      this.odoMeter = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'odoMeter' field has been set.
+      * @return True if the 'odoMeter' field has been set, false otherwise.
+      */
+    public boolean hasOdoMeter() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'odoMeter' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearOdoMeter() {
+      odoMeter = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'lastOdoMeterReading' field.
+      * @return The value.
+      */
+    public java.lang.Double getLastOdoMeterReading() {
+      return lastOdoMeterReading;
+    }
+
+    /**
+      * Sets the value of the 'lastOdoMeterReading' field.
+      * @param value The value of 'lastOdoMeterReading'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setLastOdoMeterReading(java.lang.Double value) {
+      validate(fields()[23], value);
+      this.lastOdoMeterReading = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastOdoMeterReading' field has been set.
+      * @return True if the 'lastOdoMeterReading' field has been set, false otherwise.
+      */
+    public boolean hasLastOdoMeterReading() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'lastOdoMeterReading' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearLastOdoMeterReading() {
+      lastOdoMeterReading = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isDisconnected' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsDisconnected() {
+      return isDisconnected;
+    }
+
+    /**
+      * Sets the value of the 'isDisconnected' field.
+      * @param value The value of 'isDisconnected'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setIsDisconnected(boolean value) {
+      validate(fields()[24], value);
+      this.isDisconnected = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isDisconnected' field has been set.
+      * @return True if the 'isDisconnected' field has been set, false otherwise.
+      */
+    public boolean hasIsDisconnected() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'isDisconnected' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearIsDisconnected() {
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'eventType' field.
       * @return The value.
       */
@@ -1809,9 +2045,9 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.VehicleGpsState.Builder setEventType(java.lang.String value) {
-      validate(fields()[22], value);
+      validate(fields()[25], value);
       this.eventType = value;
-      fieldSetFlags()[22] = true;
+      fieldSetFlags()[25] = true;
       return this;
     }
 
@@ -1820,7 +2056,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'eventType' field has been set, false otherwise.
       */
     public boolean hasEventType() {
-      return fieldSetFlags()[22];
+      return fieldSetFlags()[25];
     }
 
 
@@ -1830,7 +2066,46 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.VehicleGpsState.Builder clearEventType() {
       eventType = null;
-      fieldSetFlags()[22] = false;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'batteryStatus' field.
+      * @return The value.
+      */
+    public java.lang.String getBatteryStatus() {
+      return batteryStatus;
+    }
+
+    /**
+      * Sets the value of the 'batteryStatus' field.
+      * @param value The value of 'batteryStatus'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setBatteryStatus(java.lang.String value) {
+      validate(fields()[26], value);
+      this.batteryStatus = value;
+      fieldSetFlags()[26] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'batteryStatus' field has been set.
+      * @return True if the 'batteryStatus' field has been set, false otherwise.
+      */
+    public boolean hasBatteryStatus() {
+      return fieldSetFlags()[26];
+    }
+
+
+    /**
+      * Clears the value of the 'batteryStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearBatteryStatus() {
+      batteryStatus = null;
+      fieldSetFlags()[26] = false;
       return this;
     }
 
@@ -1876,7 +2151,11 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         }
         record.polylineSegments = fieldSetFlags()[20] ? this.polylineSegments : (java.util.List<com.fretron.Model.TimeAwarePolyline>) defaultValue(fields()[20]);
         record.recalculatedDistance = fieldSetFlags()[21] ? this.recalculatedDistance : (java.lang.Double) defaultValue(fields()[21]);
-        record.eventType = fieldSetFlags()[22] ? this.eventType : (java.lang.String) defaultValue(fields()[22]);
+        record.odoMeter = fieldSetFlags()[22] ? this.odoMeter : (java.lang.Double) defaultValue(fields()[22]);
+        record.lastOdoMeterReading = fieldSetFlags()[23] ? this.lastOdoMeterReading : (java.lang.Double) defaultValue(fields()[23]);
+        record.isDisconnected = fieldSetFlags()[24] ? this.isDisconnected : (java.lang.Boolean) defaultValue(fields()[24]);
+        record.eventType = fieldSetFlags()[25] ? this.eventType : (java.lang.String) defaultValue(fields()[25]);
+        record.batteryStatus = fieldSetFlags()[26] ? this.batteryStatus : (java.lang.String) defaultValue(fields()[26]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
