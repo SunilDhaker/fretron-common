@@ -23,7 +23,12 @@
                 "name":"coordinate",
                 "type":["null","com.fretron.Model.Location"],
                 "default":null
-    }
+    },
+    {
+              "name": "uuid",
+              "type": ["null" , "string"],
+              "default":null
+     }
   ]
 },
 {
@@ -49,6 +54,16 @@
        ],
        "logicalType": "timestamp-millis",
        "default": null
+    },
+    {
+          "name": "vehicleId",
+          "type": ["null","string"],
+          "default":null
+    },
+    {
+              "name": "info",
+              "type": ["null","string"],
+              "default":null
     }
   ]
 }

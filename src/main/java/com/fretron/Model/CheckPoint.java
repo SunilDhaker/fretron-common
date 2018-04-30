@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5474619212831502732L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 7110534253433998331L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.String orgId;
   @Deprecated public com.fretron.Model.Location coordinate;
+  @Deprecated public java.lang.String uuid;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
    * @param type The new value for type
    * @param orgId The new value for orgId
    * @param coordinate The new value for coordinate
+   * @param uuid The new value for uuid
    */
-  public CheckPoint(java.lang.String name, java.lang.String type, java.lang.String orgId, com.fretron.Model.Location coordinate) {
+  public CheckPoint(java.lang.String name, java.lang.String type, java.lang.String orgId, com.fretron.Model.Location coordinate, java.lang.String uuid) {
     this.name = name;
     this.type = type;
     this.orgId = orgId;
     this.coordinate = coordinate;
+    this.uuid = uuid;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     case 1: return type;
     case 2: return orgId;
     case 3: return coordinate;
+    case 4: return uuid;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     case 1: type = (java.lang.String)value$; break;
     case 2: orgId = (java.lang.String)value$; break;
     case 3: coordinate = (com.fretron.Model.Location)value$; break;
+    case 4: uuid = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
    * Creates a new CheckPoint RecordBuilder.
    * @return A new CheckPoint RecordBuilder
    */
@@ -164,6 +185,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String orgId;
     private com.fretron.Model.Location coordinate;
     private com.fretron.Model.Location.Builder coordinateBuilder;
+    private java.lang.String uuid;
 
     /** Creates a new Builder */
     private Builder() {
@@ -195,6 +217,10 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
       if (other.hasCoordinateBuilder()) {
         this.coordinateBuilder = com.fretron.Model.Location.newBuilder(other.getCoordinateBuilder());
       }
+      if (isValidValue(fields()[4], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[4].schema(), other.uuid);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -220,6 +246,10 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
         fieldSetFlags()[3] = true;
       }
       this.coordinateBuilder = null;
+      if (isValidValue(fields()[4], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[4].schema(), other.uuid);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -413,6 +443,45 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPoint.Builder setUuid(java.lang.String value) {
+      validate(fields()[4], value);
+      this.uuid = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPoint.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public CheckPoint build() {
       try {
@@ -425,6 +494,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
         } else {
           record.coordinate = fieldSetFlags()[3] ? this.coordinate : (com.fretron.Model.Location) defaultValue(fields()[3]);
         }
+        record.uuid = fieldSetFlags()[4] ? this.uuid : (java.lang.String) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -10,12 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5208181868926133408L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPointEvent\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"checkPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"CheckPoint\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = 4505766490732270690L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPointEvent\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"checkPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"CheckPoint\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"info\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.CheckPoint checkPoint;
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.Long eventTime;
+  @Deprecated public java.lang.String vehicleId;
+  @Deprecated public java.lang.String info;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +31,15 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
    * @param checkPoint The new value for checkPoint
    * @param type The new value for type
    * @param eventTime The new value for eventTime
+   * @param vehicleId The new value for vehicleId
+   * @param info The new value for info
    */
-  public CheckPointEvent(com.fretron.Model.CheckPoint checkPoint, java.lang.String type, java.lang.Long eventTime) {
+  public CheckPointEvent(com.fretron.Model.CheckPoint checkPoint, java.lang.String type, java.lang.Long eventTime, java.lang.String vehicleId, java.lang.String info) {
     this.checkPoint = checkPoint;
     this.type = type;
     this.eventTime = eventTime;
+    this.vehicleId = vehicleId;
+    this.info = info;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +49,8 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
     case 0: return checkPoint;
     case 1: return type;
     case 2: return eventTime;
+    case 3: return vehicleId;
+    case 4: return info;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +62,8 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
     case 0: checkPoint = (com.fretron.Model.CheckPoint)value$; break;
     case 1: type = (java.lang.String)value$; break;
     case 2: eventTime = (java.lang.Long)value$; break;
+    case 3: vehicleId = (java.lang.String)value$; break;
+    case 4: info = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +117,38 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'vehicleId' field.
+   * @return The value of the 'vehicleId' field.
+   */
+  public java.lang.String getVehicleId() {
+    return vehicleId;
+  }
+
+  /**
+   * Sets the value of the 'vehicleId' field.
+   * @param value the value to set.
+   */
+  public void setVehicleId(java.lang.String value) {
+    this.vehicleId = value;
+  }
+
+  /**
+   * Gets the value of the 'info' field.
+   * @return The value of the 'info' field.
+   */
+  public java.lang.String getInfo() {
+    return info;
+  }
+
+  /**
+   * Sets the value of the 'info' field.
+   * @param value the value to set.
+   */
+  public void setInfo(java.lang.String value) {
+    this.info = value;
+  }
+
+  /**
    * Creates a new CheckPointEvent RecordBuilder.
    * @return A new CheckPointEvent RecordBuilder
    */
@@ -142,6 +184,8 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
     private com.fretron.Model.CheckPoint.Builder checkPointBuilder;
     private java.lang.String type;
     private java.lang.Long eventTime;
+    private java.lang.String vehicleId;
+    private java.lang.String info;
 
     /** Creates a new Builder */
     private Builder() {
@@ -169,6 +213,14 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
         this.eventTime = data().deepCopy(fields()[2].schema(), other.eventTime);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[3].schema(), other.vehicleId);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.info)) {
+        this.info = data().deepCopy(fields()[4].schema(), other.info);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -189,6 +241,14 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
       if (isValidValue(fields()[2], other.eventTime)) {
         this.eventTime = data().deepCopy(fields()[2].schema(), other.eventTime);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[3].schema(), other.vehicleId);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.info)) {
+        this.info = data().deepCopy(fields()[4].schema(), other.info);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -344,6 +404,84 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'vehicleId' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleId() {
+      return vehicleId;
+    }
+
+    /**
+      * Sets the value of the 'vehicleId' field.
+      * @param value The value of 'vehicleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPointEvent.Builder setVehicleId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.vehicleId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleId' field has been set.
+      * @return True if the 'vehicleId' field has been set, false otherwise.
+      */
+    public boolean hasVehicleId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPointEvent.Builder clearVehicleId() {
+      vehicleId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'info' field.
+      * @return The value.
+      */
+    public java.lang.String getInfo() {
+      return info;
+    }
+
+    /**
+      * Sets the value of the 'info' field.
+      * @param value The value of 'info'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPointEvent.Builder setInfo(java.lang.String value) {
+      validate(fields()[4], value);
+      this.info = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'info' field has been set.
+      * @return True if the 'info' field has been set, false otherwise.
+      */
+    public boolean hasInfo() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'info' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPointEvent.Builder clearInfo() {
+      info = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public CheckPointEvent build() {
       try {
@@ -355,6 +493,8 @@ public class CheckPointEvent extends org.apache.avro.specific.SpecificRecordBase
         }
         record.type = fieldSetFlags()[1] ? this.type : (java.lang.String) defaultValue(fields()[1]);
         record.eventTime = fieldSetFlags()[2] ? this.eventTime : (java.lang.Long) defaultValue(fields()[2]);
+        record.vehicleId = fieldSetFlags()[3] ? this.vehicleId : (java.lang.String) defaultValue(fields()[3]);
+        record.info = fieldSetFlags()[4] ? this.info : (java.lang.String) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
