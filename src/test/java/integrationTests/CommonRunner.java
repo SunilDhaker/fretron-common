@@ -18,7 +18,6 @@ public class CommonRunner {
     static String mobileNo;
    static int pass=0,fail=0;
 
-
     public static void main(String[] args) {
 
         RestServiceCurdTest restServiceCurdTest = new RestServiceCurdTest();
