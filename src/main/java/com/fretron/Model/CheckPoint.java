@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7110534253433998331L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4311355479106413873L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinate\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessiblity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.String orgId;
   @Deprecated public com.fretron.Model.Location coordinate;
   @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.String accessiblity;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
    * @param orgId The new value for orgId
    * @param coordinate The new value for coordinate
    * @param uuid The new value for uuid
+   * @param accessiblity The new value for accessiblity
    */
-  public CheckPoint(java.lang.String name, java.lang.String type, java.lang.String orgId, com.fretron.Model.Location coordinate, java.lang.String uuid) {
+  public CheckPoint(java.lang.String name, java.lang.String type, java.lang.String orgId, com.fretron.Model.Location coordinate, java.lang.String uuid, java.lang.String accessiblity) {
     this.name = name;
     this.type = type;
     this.orgId = orgId;
     this.coordinate = coordinate;
     this.uuid = uuid;
+    this.accessiblity = accessiblity;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     case 2: return orgId;
     case 3: return coordinate;
     case 4: return uuid;
+    case 5: return accessiblity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     case 2: orgId = (java.lang.String)value$; break;
     case 3: coordinate = (com.fretron.Model.Location)value$; break;
     case 4: uuid = (java.lang.String)value$; break;
+    case 5: accessiblity = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'accessiblity' field.
+   * @return The value of the 'accessiblity' field.
+   */
+  public java.lang.String getAccessiblity() {
+    return accessiblity;
+  }
+
+  /**
+   * Sets the value of the 'accessiblity' field.
+   * @param value the value to set.
+   */
+  public void setAccessiblity(java.lang.String value) {
+    this.accessiblity = value;
+  }
+
+  /**
    * Creates a new CheckPoint RecordBuilder.
    * @return A new CheckPoint RecordBuilder
    */
@@ -186,6 +207,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
     private com.fretron.Model.Location coordinate;
     private com.fretron.Model.Location.Builder coordinateBuilder;
     private java.lang.String uuid;
+    private java.lang.String accessiblity;
 
     /** Creates a new Builder */
     private Builder() {
@@ -221,6 +243,10 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
         this.uuid = data().deepCopy(fields()[4].schema(), other.uuid);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.accessiblity)) {
+        this.accessiblity = data().deepCopy(fields()[5].schema(), other.accessiblity);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -249,6 +275,10 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[4], other.uuid)) {
         this.uuid = data().deepCopy(fields()[4].schema(), other.uuid);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.accessiblity)) {
+        this.accessiblity = data().deepCopy(fields()[5].schema(), other.accessiblity);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -482,6 +512,45 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'accessiblity' field.
+      * @return The value.
+      */
+    public java.lang.String getAccessiblity() {
+      return accessiblity;
+    }
+
+    /**
+      * Sets the value of the 'accessiblity' field.
+      * @param value The value of 'accessiblity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPoint.Builder setAccessiblity(java.lang.String value) {
+      validate(fields()[5], value);
+      this.accessiblity = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'accessiblity' field has been set.
+      * @return True if the 'accessiblity' field has been set, false otherwise.
+      */
+    public boolean hasAccessiblity() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'accessiblity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckPoint.Builder clearAccessiblity() {
+      accessiblity = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public CheckPoint build() {
       try {
@@ -495,6 +564,7 @@ public class CheckPoint extends org.apache.avro.specific.SpecificRecordBase impl
           record.coordinate = fieldSetFlags()[3] ? this.coordinate : (com.fretron.Model.Location) defaultValue(fields()[3]);
         }
         record.uuid = fieldSetFlags()[4] ? this.uuid : (java.lang.String) defaultValue(fields()[4]);
+        record.accessiblity = fieldSetFlags()[5] ? this.accessiblity : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
