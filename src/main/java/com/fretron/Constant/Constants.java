@@ -162,6 +162,7 @@ public class Constants {
     public static String CHECK_POINT_EVENT_TOPIC = "check.point.event.topic";
     public static String CHECK_POINT_MANAGER_IP = "check.point.manager.ip";
     public static String CHECK_POINT_MANAGER_PORT = "check.point.manager.port";
+    public static String INDIAN_STATE_TOPIC = "indian.state.topic";
 
 
 

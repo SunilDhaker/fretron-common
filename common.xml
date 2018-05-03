@@ -132,7 +132,7 @@
     <entry key="device.power.event.topic">deviceEvent</entry>
     <entry key="check.point.topic">checkPoint</entry>
     <entry key="check.point.event.topic">checkPointEvent</entry>
-
+    <entry key="indian.state.topic">indianStateTopic</entry>
     <!--=================Org-Manager topics================================-->
     <entry key="organisation.topic">organisation</entry>
     <entry key="orguseracl.topic">orguseracl</entry>
