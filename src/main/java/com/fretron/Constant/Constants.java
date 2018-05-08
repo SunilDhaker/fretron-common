@@ -569,6 +569,26 @@ public class Constants {
     public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
 
+
+
+
+    /*
+     *****************************************************************************************************
+     *                                   vehicle-activity-manager-configs
+     * **************************************************************************************************
+     */
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+
+
+
+
+
     private Constants(){
 
     }

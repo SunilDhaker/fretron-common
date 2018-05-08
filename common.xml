@@ -164,5 +164,6 @@
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
 
+    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 
 </properties>
