@@ -1,0 +1,91 @@
+[
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CheckPoint",
+  "fields": [
+    {
+        "name": "name",
+        "type": ["null","string"],
+        "default":null
+    },
+    {
+      "name": "type",
+      "type": ["null","string"],
+      "default":null
+    },
+    {
+          "name": "orgId",
+          "type": ["null" , "string"],
+          "default":null
+    },
+    {
+                "name":"coordinate",
+                "type":["null","com.fretron.Model.Location"],
+                "default":null
+    },
+    {
+              "name": "uuid",
+              "type": ["null" , "string"],
+              "default":null
+    },
+     {
+           "name": "accessiblity",
+           "type": ["null","string"],
+           "default":null
+     }
+  ]
+},
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CheckPointEvent",
+  "fields": [
+    {
+        "name": "checkPoint",
+        "type": ["null","com.fretron.Model.CheckPoint"],
+        "default":null
+    },
+    {
+      "name": "type",
+      "type": ["null","string"],
+      "default":null
+    },
+    {
+      "name": "eventTime",
+       "type": [
+         "null",
+         "long"
+       ],
+       "logicalType": "timestamp-millis",
+       "default": null
+    },
+    {
+          "name": "vehicleId",
+          "type": ["null","string"],
+          "default":null
+    },
+    {
+              "name": "info",
+              "type": ["null","string"],
+              "default":null
+    }
+  ]
+},
+
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "GroupedCheckPoint",
+  "fields": [
+                    {"name":"checkPoints",
+                    "type":[
+                        "null",
+                        {"type" : "array", "items":"com.fretron.Model.CheckPoint"}
+                    ],
+                    "default":null
+                    }
+  ]
+}
+
+]

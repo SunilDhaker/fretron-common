@@ -157,6 +157,12 @@ public class Constants {
     public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
     public static String KEY_STATE_DETECTOR_APP_NAME = "state.detector.app.name";
     public static String STATE_FENCE_API_URL = "state.fence.api.url";
+    public static String KEY_CHECKPOINT_APP_NAME = "check.point.manager.app.name";
+    public static String CHECK_POINT_TOPIC = "check.point.topic";
+    public static String CHECK_POINT_EVENT_TOPIC = "check.point.event.topic";
+    public static String CHECK_POINT_MANAGER_IP = "check.point.manager.ip";
+    public static String CHECK_POINT_MANAGER_PORT = "check.point.manager.port";
+    public static String INDIAN_STATE_TOPIC = "indian.state.topic";
 
 
 
