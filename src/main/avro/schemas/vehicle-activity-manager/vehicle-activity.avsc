@@ -66,6 +66,11 @@
          "default":false
     },
     {
+       "name": "isFirstActivity",
+        "type": "boolean",
+        "default":false
+    },
+    {
        "name": "lastUpdatedTime",
         "type":  ["null","long"],
          "logicalType": "timestamp-millis",

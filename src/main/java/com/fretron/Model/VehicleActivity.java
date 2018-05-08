@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7800256260177030515L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleActivity\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activityDescriptor\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activityType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"gpsStates\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"tripStatus\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"VehicleTripState\",\"fields\":[{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"alerts\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Alert\",\"fields\":[{\"name\":\"alertEventTopic\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"conditions\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"AlertCondition\",\"fields\":[{\"name\":\"field\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"windowSize\",\"type\":\"long\",\"default\":0},{\"name\":\"fieldType\",\"type\":{\"type\":\"enum\",\"name\":\"AlertFieldType\",\"symbols\":[\"PRIMITIVE\",\"CALCULATED\",\"AGGREGATE\"]}},{\"name\":\"value\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"valueType\",\"type\":{\"type\":\"enum\",\"name\":\"AlertParamValueType\",\"symbols\":[\"INT\",\"LONG\",\"DOUBLE\",\"STRING\",\"INT_RANGE\",\"LONG_RANGE\",\"DOUBLE_RANGE\",\"LOCATION_PROXIMITY\",\"LOCATION_GEOFENCE\"]}},{\"name\":\"operator\",\"type\":{\"type\":\"enum\",\"name\":\"AlertOperator\",\"symbols\":[\"IS\",\"IN\",\"NIN\",\"GT\",\"GTE\",\"LT\",\"LTE\",\"EQ\",\"REGEX\"]}}]}}},{\"name\":\"actions\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"AlertAction\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"AlertActionType\",\"symbols\":[\"SMS\",\"EMAIL\"]}},{\"name\":\"valueTemplate\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"recipient\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}}},{\"name\":\"vehicles\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}},{\"name\":\"snoozeTime\",\"type\":[\"null\",\"long\"],\"default\":0},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"isLatestActivity\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"event\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8301792190502435151L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleActivity\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activityDescriptor\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activityType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"gpsStates\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"tripStatus\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"VehicleTripState\",\"fields\":[{\"name\":\"deviceImei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"VehicleState\",\"symbols\":[\"WaitingForLoad\",\"EnrouteForPickUp\",\"AtPickUpPoint\",\"EnrouteForDestination\",\"AtDestination\"]}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"alerts\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Alert\",\"fields\":[{\"name\":\"alertEventTopic\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"conditions\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"AlertCondition\",\"fields\":[{\"name\":\"field\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"windowSize\",\"type\":\"long\",\"default\":0},{\"name\":\"fieldType\",\"type\":{\"type\":\"enum\",\"name\":\"AlertFieldType\",\"symbols\":[\"PRIMITIVE\",\"CALCULATED\",\"AGGREGATE\"]}},{\"name\":\"value\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"valueType\",\"type\":{\"type\":\"enum\",\"name\":\"AlertParamValueType\",\"symbols\":[\"INT\",\"LONG\",\"DOUBLE\",\"STRING\",\"INT_RANGE\",\"LONG_RANGE\",\"DOUBLE_RANGE\",\"LOCATION_PROXIMITY\",\"LOCATION_GEOFENCE\"]}},{\"name\":\"operator\",\"type\":{\"type\":\"enum\",\"name\":\"AlertOperator\",\"symbols\":[\"IS\",\"IN\",\"NIN\",\"GT\",\"GTE\",\"LT\",\"LTE\",\"EQ\",\"REGEX\"]}}]}}},{\"name\":\"actions\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"AlertAction\",\"fields\":[{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"AlertActionType\",\"symbols\":[\"SMS\",\"EMAIL\"]}},{\"name\":\"valueTemplate\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"recipient\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}}},{\"name\":\"vehicles\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}},{\"name\":\"snoozeTime\",\"type\":[\"null\",\"long\"],\"default\":0},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},\"default\":null},{\"name\":\"isLatestActivity\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isFirstActivity\",\"type\":\"boolean\",\"default\":false},{\"name\":\"lastUpdatedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"event\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -23,6 +23,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.util.List<com.fretron.Model.VehicleTripState> tripStatus;
   @Deprecated public java.util.List<com.fretron.Model.Alert> alerts;
   @Deprecated public boolean isLatestActivity;
+  @Deprecated public boolean isFirstActivity;
   @Deprecated public java.lang.Long lastUpdatedTime;
   @Deprecated public java.lang.String event;
 
@@ -45,10 +46,11 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
    * @param tripStatus The new value for tripStatus
    * @param alerts The new value for alerts
    * @param isLatestActivity The new value for isLatestActivity
+   * @param isFirstActivity The new value for isFirstActivity
    * @param lastUpdatedTime The new value for lastUpdatedTime
    * @param event The new value for event
    */
-  public VehicleActivity(java.lang.String uuid, java.lang.String vehicleId, java.lang.String activityDescriptor, java.lang.String activityType, java.lang.Long startTime, java.lang.Long endTime, java.util.List<com.fretron.Model.VehicleGpsState> gpsStates, java.util.List<com.fretron.Model.VehicleTripState> tripStatus, java.util.List<com.fretron.Model.Alert> alerts, java.lang.Boolean isLatestActivity, java.lang.Long lastUpdatedTime, java.lang.String event) {
+  public VehicleActivity(java.lang.String uuid, java.lang.String vehicleId, java.lang.String activityDescriptor, java.lang.String activityType, java.lang.Long startTime, java.lang.Long endTime, java.util.List<com.fretron.Model.VehicleGpsState> gpsStates, java.util.List<com.fretron.Model.VehicleTripState> tripStatus, java.util.List<com.fretron.Model.Alert> alerts, java.lang.Boolean isLatestActivity, java.lang.Boolean isFirstActivity, java.lang.Long lastUpdatedTime, java.lang.String event) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.activityDescriptor = activityDescriptor;
@@ -59,6 +61,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
     this.tripStatus = tripStatus;
     this.alerts = alerts;
     this.isLatestActivity = isLatestActivity;
+    this.isFirstActivity = isFirstActivity;
     this.lastUpdatedTime = lastUpdatedTime;
     this.event = event;
   }
@@ -77,8 +80,9 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
     case 7: return tripStatus;
     case 8: return alerts;
     case 9: return isLatestActivity;
-    case 10: return lastUpdatedTime;
-    case 11: return event;
+    case 10: return isFirstActivity;
+    case 11: return lastUpdatedTime;
+    case 12: return event;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -97,8 +101,9 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
     case 7: tripStatus = (java.util.List<com.fretron.Model.VehicleTripState>)value$; break;
     case 8: alerts = (java.util.List<com.fretron.Model.Alert>)value$; break;
     case 9: isLatestActivity = (java.lang.Boolean)value$; break;
-    case 10: lastUpdatedTime = (java.lang.Long)value$; break;
-    case 11: event = (java.lang.String)value$; break;
+    case 10: isFirstActivity = (java.lang.Boolean)value$; break;
+    case 11: lastUpdatedTime = (java.lang.Long)value$; break;
+    case 12: event = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -264,6 +269,22 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'isFirstActivity' field.
+   * @return The value of the 'isFirstActivity' field.
+   */
+  public java.lang.Boolean getIsFirstActivity() {
+    return isFirstActivity;
+  }
+
+  /**
+   * Sets the value of the 'isFirstActivity' field.
+   * @param value the value to set.
+   */
+  public void setIsFirstActivity(java.lang.Boolean value) {
+    this.isFirstActivity = value;
+  }
+
+  /**
    * Gets the value of the 'lastUpdatedTime' field.
    * @return The value of the 'lastUpdatedTime' field.
    */
@@ -337,6 +358,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
     private java.util.List<com.fretron.Model.VehicleTripState> tripStatus;
     private java.util.List<com.fretron.Model.Alert> alerts;
     private boolean isLatestActivity;
+    private boolean isFirstActivity;
     private java.lang.Long lastUpdatedTime;
     private java.lang.String event;
 
@@ -391,13 +413,17 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
         this.isLatestActivity = data().deepCopy(fields()[9].schema(), other.isLatestActivity);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.lastUpdatedTime)) {
-        this.lastUpdatedTime = data().deepCopy(fields()[10].schema(), other.lastUpdatedTime);
+      if (isValidValue(fields()[10], other.isFirstActivity)) {
+        this.isFirstActivity = data().deepCopy(fields()[10].schema(), other.isFirstActivity);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.event)) {
-        this.event = data().deepCopy(fields()[11].schema(), other.event);
+      if (isValidValue(fields()[11], other.lastUpdatedTime)) {
+        this.lastUpdatedTime = data().deepCopy(fields()[11].schema(), other.lastUpdatedTime);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.event)) {
+        this.event = data().deepCopy(fields()[12].schema(), other.event);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -447,13 +473,17 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
         this.isLatestActivity = data().deepCopy(fields()[9].schema(), other.isLatestActivity);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.lastUpdatedTime)) {
-        this.lastUpdatedTime = data().deepCopy(fields()[10].schema(), other.lastUpdatedTime);
+      if (isValidValue(fields()[10], other.isFirstActivity)) {
+        this.isFirstActivity = data().deepCopy(fields()[10].schema(), other.isFirstActivity);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.event)) {
-        this.event = data().deepCopy(fields()[11].schema(), other.event);
+      if (isValidValue(fields()[11], other.lastUpdatedTime)) {
+        this.lastUpdatedTime = data().deepCopy(fields()[11].schema(), other.lastUpdatedTime);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.event)) {
+        this.event = data().deepCopy(fields()[12].schema(), other.event);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -847,6 +877,44 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'isFirstActivity' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsFirstActivity() {
+      return isFirstActivity;
+    }
+
+    /**
+      * Sets the value of the 'isFirstActivity' field.
+      * @param value The value of 'isFirstActivity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleActivity.Builder setIsFirstActivity(boolean value) {
+      validate(fields()[10], value);
+      this.isFirstActivity = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isFirstActivity' field has been set.
+      * @return True if the 'isFirstActivity' field has been set, false otherwise.
+      */
+    public boolean hasIsFirstActivity() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'isFirstActivity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleActivity.Builder clearIsFirstActivity() {
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'lastUpdatedTime' field.
       * @return The value.
       */
@@ -860,9 +928,9 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.VehicleActivity.Builder setLastUpdatedTime(java.lang.Long value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.lastUpdatedTime = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -871,7 +939,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'lastUpdatedTime' field has been set, false otherwise.
       */
     public boolean hasLastUpdatedTime() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -881,7 +949,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.VehicleActivity.Builder clearLastUpdatedTime() {
       lastUpdatedTime = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -899,9 +967,9 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.VehicleActivity.Builder setEvent(java.lang.String value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.event = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -910,7 +978,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'event' field has been set, false otherwise.
       */
     public boolean hasEvent() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -920,7 +988,7 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.VehicleActivity.Builder clearEvent() {
       event = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -938,8 +1006,9 @@ public class VehicleActivity extends org.apache.avro.specific.SpecificRecordBase
         record.tripStatus = fieldSetFlags()[7] ? this.tripStatus : (java.util.List<com.fretron.Model.VehicleTripState>) defaultValue(fields()[7]);
         record.alerts = fieldSetFlags()[8] ? this.alerts : (java.util.List<com.fretron.Model.Alert>) defaultValue(fields()[8]);
         record.isLatestActivity = fieldSetFlags()[9] ? this.isLatestActivity : (java.lang.Boolean) defaultValue(fields()[9]);
-        record.lastUpdatedTime = fieldSetFlags()[10] ? this.lastUpdatedTime : (java.lang.Long) defaultValue(fields()[10]);
-        record.event = fieldSetFlags()[11] ? this.event : (java.lang.String) defaultValue(fields()[11]);
+        record.isFirstActivity = fieldSetFlags()[10] ? this.isFirstActivity : (java.lang.Boolean) defaultValue(fields()[10]);
+        record.lastUpdatedTime = fieldSetFlags()[11] ? this.lastUpdatedTime : (java.lang.Long) defaultValue(fields()[11]);
+        record.event = fieldSetFlags()[12] ? this.event : (java.lang.String) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
