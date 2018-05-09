@@ -124,8 +124,8 @@
       },
       {
               "name": "isIgnitionOn",
-              "type": ["null","boolean"],
-              "default":null
+              "type": "boolean"
+
       }
 
     ]
