@@ -9,10 +9,16 @@ import java.util.Arrays;
 public class ByteBufferHandler {
 
     private static final char[] HEXDUMP_TABLE = new char[256 * 4];
+    private static  ByteBufferHandler instance ;
 
-    public ByteBufferHandler(){
-
+    public static  ByteBufferHandler getInstance(){
+        if (instance == null){
+            instance = new ByteBufferHandler();
+        }
+        return instance;
     }
+
+    private ByteBufferHandler(){}
 
 
     static {
