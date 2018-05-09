@@ -130,7 +130,9 @@
     <!--================Alert-Manager topics============================-->
     <entry key="alert.topic">alerts</entry>
     <entry key="device.power.event.topic">deviceEvent</entry>
-
+    <entry key="check.point.topic">checkPoint</entry>
+    <entry key="check.point.event.topic">checkPointEvent</entry>
+    <entry key="indian.state.topic">indianStateTopic</entry>
     <!--=================Org-Manager topics================================-->
     <entry key="organisation.topic">organisation</entry>
     <entry key="orguseracl.topic">orguseracl</entry>
@@ -146,6 +148,7 @@
     <!--===============TPI -Manager topics=====================-->
     <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
     <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
+    <entry key="integration.job.raw.response.topic">jobRawResponseTopic</entry>
 
     <!-- ===================org group manager id=======-->
     <entry key="org.group.manager.app.id">organisationGroupManager</entry>
@@ -163,5 +166,6 @@
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
 
+    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 
 </properties>

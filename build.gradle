@@ -73,7 +73,21 @@ dependencies {
 }
 
 
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Common',
+                'Implementation-Version': version,
+                'Main-Class': 'integrationTests.CommonRunner'
+    }
+    baseName = project.name + '-all'
+    from sourceSets.test.output
 
+    //collect all dependencies
+    from { configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
+
+}
 
 task renewAvro << {
     delete "src/main/java/com/fretron/Model"

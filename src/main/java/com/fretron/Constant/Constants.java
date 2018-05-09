@@ -82,6 +82,7 @@ public class Constants {
     public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
+    public static final java.lang.String KEY_LATEST_GPS_STATE_SERVICE_URL = "latest.gps.state.service.url";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
@@ -154,7 +155,14 @@ public class Constants {
 
     public static String KEY_ALERT_MANAGER_APP_IP = "alert.manager.restservice.ip";
     public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
-
+    public static String KEY_STATE_DETECTOR_APP_NAME = "state.detector.app.name";
+    public static String STATE_FENCE_API_URL = "state.fence.api.url";
+    public static String KEY_CHECKPOINT_APP_NAME = "check.point.manager.app.name";
+    public static String CHECK_POINT_TOPIC = "check.point.topic";
+    public static String CHECK_POINT_EVENT_TOPIC = "check.point.event.topic";
+    public static String CHECK_POINT_MANAGER_IP = "check.point.manager.ip";
+    public static String CHECK_POINT_MANAGER_PORT = "check.point.manager.port";
+    public static String INDIAN_STATE_TOPIC = "indian.state.topic";
 
 
 
@@ -334,6 +342,11 @@ public class Constants {
     public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
 
+    public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
+    public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
+    public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+
+
     //=======================IP AND PORTS ===============
 
     public static final String REGISTRY_SERVICE_URL = "registry.manager.service.url";
@@ -464,6 +477,7 @@ public class Constants {
     public static final String KEY_INTEGRATION_MANAGER_APP_ID = "integration.manager.app.id";
     public static final String KEY_JOB_EVENTS_TOPIC = "integration.job.events.topic";
     public static final String KEY_JOB_EXECUTION_EVENTS_TOPIC = "integration.job.execution.topic";
+    public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
 
@@ -540,7 +554,11 @@ public class Constants {
     public static final String DASHBOARD_TOPIC = "dashboard.topic";
     public final static String KEY_VEHICLE_ACCESSIBLE_COLLECTION ="vehicle.accessible.db.collection.name";
     public final static String KEY_DASHBOARD_STATE_STORE_BY_UUID = "dashboard.state.store";
-
+    public final static String KEY_DASHBOARD_SOCKET_HOST =  "socket.server.host";
+    public final static String KEY_DASHBOARD_SOCKET_PORT =  "socket.server.port";
+    public final static String KEY_VGS_CHANGELOG_TOPIC = "vgs.changelog.topic";
+    public final static String GET_DEVIECE_STATUS_URL = "device.status.url";
+    public final static String GET_VILLAGE_NAME_URL = "get.village.name.url";
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
@@ -556,6 +574,26 @@ public class Constants {
     public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
     public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
+
+
+
+
+    /*
+     *****************************************************************************************************
+     *                                   vehicle-activity-manager-configs
+     * **************************************************************************************************
+     */
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+
+
+
+
 
     private Constants(){
 
