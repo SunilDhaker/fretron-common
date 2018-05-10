@@ -121,15 +121,6 @@
                       "long"
              ],
        "default":null
-      },
-      {
-              "name": "isIgnitionOn",
-              "type":[
-                                "null",
-                                "boolean"
-                           ],
-               "default":null
-
       }
 
     ]
