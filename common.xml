@@ -38,6 +38,7 @@
     <entry key="vehicle.topic">vehicle</entry>
     <entry key="driver.topic">drivertopic</entry>
     <entry key="document.topic">documenttopic</entry>
+    <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
@@ -133,6 +134,8 @@
     <entry key="check.point.topic">checkPoint</entry>
     <entry key="check.point.event.topic">checkPointEvent</entry>
     <entry key="indian.state.topic">indianStateTopic</entry>
+    <entry key="alert.incident.topic">alertIncidentTopic</entry>
+
     <!--=================Org-Manager topics================================-->
     <entry key="organisation.topic">organisation</entry>
     <entry key="orguseracl.topic">orguseracl</entry>
