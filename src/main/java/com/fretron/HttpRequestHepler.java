@@ -46,6 +46,9 @@ public class HttpRequestHepler {
             } catch (IOException e) {
                 Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
             }
+            finally {
+                httpClient.getConnectionManager().shutdown();
+            }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -74,7 +77,9 @@ public class HttpRequestHepler {
             } catch (IOException e) {
                 Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
             }
-
+            finally {
+                httpClient.getConnectionManager().shutdown();
+            }
 
         return entity;
     }
@@ -100,6 +105,9 @@ public class HttpRequestHepler {
                 entity = response.getEntity();
             } catch (IOException e) {
                 Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
+            }
+            finally {
+                httpClient.getConnectionManager().shutdown();
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
