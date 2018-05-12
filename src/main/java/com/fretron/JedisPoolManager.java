@@ -21,8 +21,9 @@ public class JedisPoolManager {
     }
 
     private JedisPoolManager(String host){
-        JedisPoolConfig poolConfig = buildPoolConfig();
-        jedisPool = new JedisPool(poolConfig, host);
+//        JedisPoolConfig poolConfig = buildPoolConfig();
+//        jedisPool = new JedisPool(poolConfig, host);
+        jedisPool = Redis.getPoolInstance();
         instance = this;
     }
 
