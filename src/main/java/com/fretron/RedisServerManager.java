@@ -1,5 +1,6 @@
 package com.fretron;
 
+import com.fretron.Constant.Constants;
 import redis.clients.jedis.Jedis;
 
 import java.util.List;
@@ -128,12 +129,12 @@ public class RedisServerManager {
         return value;
     }
 
-    public boolean isRedisServerConnected() {
+    public static  boolean isRedisServerConnected() {
         boolean isConnected = false;
         Jedis jedis = null;
 
         try {
-            jedis = poolManager.getJedisInstance();
+            jedis = JedisPoolManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP)).getJedisInstance();
             isConnected = jedis.isConnected();
         } catch (Exception e) {
             Logger.getGlobal().log(Level.WARNING, "ERROR IN CHECKING CONNECTION WITH JEDIS-- " + e.getMessage());
