@@ -47,6 +47,10 @@
     <entry key="position.processor.querablestate.host">0.0.0.0</entry>
     <entry key="position.processor.querablestate.port">2220</entry>
 
+    <entry key="gps.processor.service.url">http://gp.streams:2121</entry>
+    <entry key="gps.processor.restservice.ip">http://0.0.0.0</entry>
+    <entry key="gps.processor.restservice.port">2121</entry>
+
     <!-- =========Shipment-Manager========== -->
     <entry key="shipment.manager.service.url">http://shipment-manager.streams:2124</entry>
     <entry key="shipment.manager.restservice.ip">http://0.0.0.0</entry>

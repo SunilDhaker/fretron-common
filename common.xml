@@ -38,6 +38,7 @@
     <entry key="vehicle.topic">vehicle</entry>
     <entry key="driver.topic">drivertopic</entry>
     <entry key="document.topic">documenttopic</entry>
+    <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
@@ -168,5 +169,6 @@
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
 
+    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 
 </properties>

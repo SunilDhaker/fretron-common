@@ -42,6 +42,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_SHARE_TOPIC = "vehicleshare.topic";
 
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
+    public final static  String KEY_BP_TOPIC = "buisness.partner.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
     public final static  String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
@@ -83,6 +84,8 @@ public class Constants {
     public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
     public static final java.lang.String KEY_LATEST_GPS_STATE_SERVICE_URL = "latest.gps.state.service.url";
+    public static final java.lang.String KEY_LATEST_LOCATION_SERVICE_URL = "latest.position.service.url";
+    public static final java.lang.String KEY_GPS_PROCESSOR_SERVICE_URL = "gps.processor.service.url";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
@@ -451,6 +454,11 @@ public class Constants {
     public static final String DEVICE_DB_PORT = "device.db.port";
     public static final String DEVICE_DB_COLLECTION_NAME = "device.db.collection.name";
 
+    public static final String BPARTNER_DB_NAME = "buisness.partner.db.name";
+    public static final String BPARTNER_DB_HOST = "buisness.partner.db.host";
+    public static final String BPARTNER_DB_PORT = "buisness.partner.db.port";
+    public static final String BPARTNER_DB_COLLECTION_NAME = "buisness.partner.db.collection.name";
+
     public static final String KEY_DOCUMENT_TOPIC = "document.topic";
     public static final String DOCUMENT_DB_NAME = "document.db.name";
     public static final String DOCUMENT_DB_HOST = "document.db.host";
@@ -575,6 +583,26 @@ public class Constants {
     public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
     public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
+
+
+
+
+    /*
+     *****************************************************************************************************
+     *                                   vehicle-activity-manager-configs
+     * **************************************************************************************************
+     */
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+
+
+
+
 
     private Constants(){
 
