@@ -43,4 +43,6 @@ public class JedisPoolManager {
     public Jedis getJedisInstance(){
         return jedisPool.getResource();
     }
+
 }
+
