@@ -120,6 +120,7 @@ public class RedisServerManager {
             jedis = poolManager.getJedisInstance();
             value = jedis.get(key);
         } catch (Exception e) {
+            e.printStackTrace();
             Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
         } finally {
             if (jedis != null) {

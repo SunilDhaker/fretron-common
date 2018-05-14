@@ -79,6 +79,7 @@ public class Redis {
         int active = jedisPool.getNumActive();
         int idle = jedisPool.getNumIdle();
         int total = active + idle;
+
         String log = String.format(
                 "JedisPool: Active=%d, Idle=%d, Waiters=%d, total=%d, maxTotal=%d, minIdle=%d, maxIdle=%d",
                 active,

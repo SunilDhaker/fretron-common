@@ -158,6 +158,7 @@ public class JwtUtil {
                 System.out.println("redis connected but -- token not found --  null user id ,, will return user id by manually verifying");
             }
             else{
+                System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
             return getFromToken(token,"userId");

@@ -41,7 +41,8 @@ public class JedisPoolManager {
         poolConfig.setBlockWhenExhausted(true);
         return poolConfig;
     }
+
     public Jedis getJedisInstance(){
-        return jedisPool.getResource();
+        return Redis.getPoolInstance().getResource();
     }
 }
