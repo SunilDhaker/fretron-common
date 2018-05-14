@@ -198,7 +198,31 @@
                }
              ],
              "default": null
-           }
+         },
+         {
+             "name": "vehicleRegistrationNumber",
+             "type": [
+                 "null",
+                 "string"
+             ],
+             "default": null
+         },
+         {
+              "name": "vehicleModel",
+              "type": [
+                  "null",
+                  "string"
+              ],
+              "default": null
+         },
+         {
+               "name": "source",
+               "type": [
+                   "null",
+                   "string"
+               ],
+               "default": null
+          }
 
 		]
 	}
