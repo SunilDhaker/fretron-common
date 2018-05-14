@@ -137,8 +137,8 @@ public class JwtUtil {
                 System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
-//            return getFromToken(token,"userId");
-            return userID;
+            return getFromToken(token,"userId");
+//            return userID;
 
         }else {
             System.out.println("redis not connected -- verifying token manually");
@@ -160,8 +160,8 @@ public class JwtUtil {
                 System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
-//            return getFromToken(token,"userId");
-            return userID;
+            return getFromToken(token,"userId");
+//            return userID;
         }else {
             System.out.println("redis not connected -- verifying token manually");
             return  getFromToken(token , "userId");
