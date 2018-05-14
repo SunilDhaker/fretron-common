@@ -12,6 +12,90 @@ import java.util.logging.Logger;
  */
 public class RedisServerManager {
 
+    private JedisPoolManager poolManager;
+    private static RedisServerManager instance ;
+
+    private RedisServerManager() {
+         poolManager = JedisPoolManager.getInstance();
+    }
+
+    public static RedisServerManager getInstance(String host){
+        if(instance == null){
+            Redis.initializeSettings(host,6379,null,5000,2000);
+            return new RedisServerManager();
+        }
+        else{
+            return instance;
+        }
+    }
+
+    public void saveInfo(String key, String value) {
+        Jedis jedis = null;
+        try {
+            jedis = poolManager.getJedisInstance();
+            jedis.set(key, value);
+        } catch (Exception e) {
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN SET KEY-VALUE JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+    }
+
+    public String getValueForKey(String key) {
+        Jedis jedis = null;
+        String value = null;
+        try {
+            jedis = poolManager.getJedisInstance();
+            value = jedis.get(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+        return value;
+    }
+
+    public static  boolean isRedisServerConnected() {
+        boolean isConnected = false;
+        Jedis jedis = null;
+
+        try {
+            jedis = JedisPoolManager.getInstance().getJedisInstance();
+            isConnected = jedis.isConnected();
+        } catch (Exception e) {
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN CHECKING CONNECTION WITH JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+        return isConnected;
+    }
+
+    public void deleteKey(String key) {
+        Jedis jedis = null;
+        try {
+            jedis = poolManager.getJedisInstance();
+            jedis.del(key);
+        } catch (Exception e) {
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN DELETE KEY FROM JEDIS--  " + e.getMessage());
+        }
+        finally {
+            if(jedis!=null){
+                jedis.close();
+            }
+        }
+    }
+
+    public boolean isConnected(){
+        return poolManager.isConnected();
+    }
+
 
 //    static Jedis jedis ;
 //    private String host ;
@@ -92,79 +176,5 @@ public class RedisServerManager {
 //        }
 //        return isConnected;
 //    }
-
-
-    private JedisPoolManager poolManager;
-
-    public RedisServerManager(String host) {
-        poolManager = JedisPoolManager.getInstance(host);
-    }
-
-    public void saveInfo(String key, String value) {
-        Jedis jedis = null;
-        try {
-            jedis = poolManager.getJedisInstance();
-            jedis.set(key, value);
-        } catch (Exception e) {
-            Logger.getGlobal().log(Level.WARNING, "ERROR IN SET KEY-VALUE JEDIS-- " + e.getMessage());
-        } finally {
-            if (jedis != null) {
-                jedis.close();
-            }
-        }
-    }
-
-    public String getValueForKey(String key) {
-        Jedis jedis = null;
-        String value = null;
-        try {
-            jedis = poolManager.getJedisInstance();
-            value = jedis.get(key);
-        } catch (Exception e) {
-            e.printStackTrace();
-            Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
-        } finally {
-            if (jedis != null) {
-                jedis.close();
-            }
-        }
-        return value;
-    }
-
-    public static  boolean isRedisServerConnected() {
-        boolean isConnected = false;
-        Jedis jedis = null;
-
-        try {
-            jedis = JedisPoolManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP)).getJedisInstance();
-            isConnected = jedis.isConnected();
-        } catch (Exception e) {
-            Logger.getGlobal().log(Level.WARNING, "ERROR IN CHECKING CONNECTION WITH JEDIS-- " + e.getMessage());
-        } finally {
-            if (jedis != null) {
-                jedis.close();
-            }
-        }
-        return isConnected;
-    }
-
-    public void deleteKey(String key) {
-        Jedis jedis = null;
-        try {
-            jedis = poolManager.getJedisInstance();
-            jedis.del(key);
-        } catch (Exception e) {
-            Logger.getGlobal().log(Level.WARNING, "ERROR IN DELETE KEY FROM JEDIS--  " + e.getMessage());
-        }
-        finally {
-            if(jedis!=null){
-                jedis.close();
-            }
-        }
-    }
-
-    public boolean isConnected(){
-        return true;
-    }
 
 }

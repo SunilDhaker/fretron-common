@@ -125,10 +125,8 @@ public class JwtUtil {
 
     public static String getUserIdForToken(String token) {
 
-//            return getFromToken(token,"userId");
-        RedisServerManager serverManager=null;
 
-             serverManager = new RedisServerManager(Context.getProp(Constants.REDIS_SERVER_IP));
+        RedisServerManager  serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
 
         if(serverManager.isConnected()){
             String userID =    serverManager.getValueForKey(token);
@@ -136,6 +134,7 @@ public class JwtUtil {
                 System.out.println("redis connected but -- token not found --  null user id ,, will return user id by manually verifying");
             }
             else{
+                System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
             return getFromToken(token,"userId");
@@ -146,11 +145,9 @@ public class JwtUtil {
 
     }
     public static String getUserIdForTokenV2(String token) {
-//            return  getFromToken(token , "userId");
 
-        RedisServerManager serverManager=null;
 
-        serverManager = new RedisServerManager(Context.getProp(Constants.REDIS_SERVER_IP));
+        RedisServerManager serverManager =  RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
 
         if(serverManager.isConnected()){
             String userID =    serverManager.getValueForKey(token);
