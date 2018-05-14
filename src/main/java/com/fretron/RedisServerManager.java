@@ -93,6 +93,7 @@ public class RedisServerManager {
 //        return isConnected;
 //    }
 
+
     private JedisPoolManager poolManager;
 
     public RedisServerManager(String host) {
