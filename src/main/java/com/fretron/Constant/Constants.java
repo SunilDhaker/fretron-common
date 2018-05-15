@@ -413,6 +413,8 @@ public class Constants {
     public static final String GPS_LOG_MONGO_HOST = "gps.log.mongo.server.ip";
     public static final String GPS_LOG_MONGO_PORT = "gps.log.mongo.server.port";
     public static final String GPS_LOG_MONGO_DBNAME = "gps.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_DB_NAME= "vehicle.activity.log.db";
+    public static final String VEHICLE_ACTIVITY_COLLECTION_NAME = "vehicle.hourwise.movement.activity.collaction";
 
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
