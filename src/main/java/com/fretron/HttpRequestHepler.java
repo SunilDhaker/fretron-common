@@ -129,6 +129,32 @@ public class HttpRequestHepler {
 
     }
 
+    public static HttpEntity makeGetRequestWithTimeOut(String uri, String authToken ,int timeOut){
+        HttpResponse response = null;
+        HttpEntity entity = null;
+        final HttpParams httpParams = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(httpParams, timeOut);
+
+        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
+        HttpGet post = new HttpGet(uri);
+        post.setHeader("Content-Type", "application/json");
+        if(authToken!=null){
+            post.setHeader("Authorization","Bearer "+authToken);
+        }
+        StringEntity se = null;
+
+        try {
+            response = httpClient.execute(post);
+            entity = response.getEntity();
+        } catch (IOException e) {
+            Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
+        }
+        finally {
+            httpClient.getConnectionManager().shutdown();
+        }
+
+        return entity;
+    }
 
 
 }
