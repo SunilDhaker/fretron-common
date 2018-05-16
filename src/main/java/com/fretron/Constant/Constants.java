@@ -603,7 +603,8 @@ public class Constants {
     public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
 
 
-
+    public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
+    public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
 
 
     private Constants(){
