@@ -172,14 +172,57 @@
              ] ,
              "default":null
           },
-                      {
-                        "name":"vgsId",
-                        "type":[
-                             "null",
-                             "string"
-                        ] ,
-                        "default":null
-                     }
+          {
+            "name":"vgsId",
+            "type":[
+                 "null",
+                 "string"
+            ] ,
+            "default":null
+         },
+          {
+             "name":"organisationName",
+             "type":[
+                  "null",
+                  "string"
+             ] ,
+             "default":null
+         },
+         {
+             "name": "lngLat",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "double"
+               }
+             ],
+             "default": null
+         },
+         {
+             "name": "vehicleRegistrationNumber",
+             "type": [
+                 "null",
+                 "string"
+             ],
+             "default": null
+         },
+         {
+              "name": "vehicleModel",
+              "type": [
+                  "null",
+                  "string"
+              ],
+              "default": null
+         },
+         {
+               "name": "source",
+               "type": [
+                   "null",
+                   "string"
+               ],
+               "default": null
+          }
 
 		]
 	}

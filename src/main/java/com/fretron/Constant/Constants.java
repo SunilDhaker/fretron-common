@@ -42,6 +42,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_SHARE_TOPIC = "vehicleshare.topic";
 
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
+    public final static  String KEY_BP_TOPIC = "buisness.partner.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
     public final static  String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
@@ -165,6 +166,7 @@ public class Constants {
     public static String CHECK_POINT_MANAGER_IP = "check.point.manager.ip";
     public static String CHECK_POINT_MANAGER_PORT = "check.point.manager.port";
     public static String INDIAN_STATE_TOPIC = "indian.state.topic";
+    public static String ALERT_INCIDENT_TOPIC = "alert.incident.topic";
 
 
 
@@ -411,6 +413,8 @@ public class Constants {
     public static final String GPS_LOG_MONGO_HOST = "gps.log.mongo.server.ip";
     public static final String GPS_LOG_MONGO_PORT = "gps.log.mongo.server.port";
     public static final String GPS_LOG_MONGO_DBNAME = "gps.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_DB_NAME= "vehicle.activity.log.db";
+    public static final String VEHICLE_ACTIVITY_COLLECTION_NAME = "vehicle.hourwise.movement.activity.collaction";
 
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
@@ -451,6 +455,11 @@ public class Constants {
     public static final String DEVICE_DB_HOST = "device.db.host";
     public static final String DEVICE_DB_PORT = "device.db.port";
     public static final String DEVICE_DB_COLLECTION_NAME = "device.db.collection.name";
+
+    public static final String BPARTNER_DB_NAME = "buisness.partner.db.name";
+    public static final String BPARTNER_DB_HOST = "buisness.partner.db.host";
+    public static final String BPARTNER_DB_PORT = "buisness.partner.db.port";
+    public static final String BPARTNER_DB_COLLECTION_NAME = "buisness.partner.db.collection.name";
 
     public static final String KEY_DOCUMENT_TOPIC = "document.topic";
     public static final String DOCUMENT_DB_NAME = "document.db.name";
