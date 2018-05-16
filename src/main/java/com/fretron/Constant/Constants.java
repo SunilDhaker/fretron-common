@@ -89,6 +89,7 @@ public class Constants {
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+    public static java.lang.String KEY_DEVICE_STATE_MANAGER_APP_ID = "device.state.manager.app.id";
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
