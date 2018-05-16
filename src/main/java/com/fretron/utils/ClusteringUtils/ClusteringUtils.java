@@ -12,23 +12,34 @@ import static com.fretron.utils.helper.DistanceCalculator.distance;
  */
 public class ClusteringUtils {
 
-	public static LitePosition calculateMean(List<LitePosition> positions){
+    public static class MeanVariance{
+        public LitePosition mean ;
+        public double variance ;
 
-		LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
+        public MeanVariance(LitePosition mean , double variance){
+            this.mean = mean;
+            this.variance = variance;
+        }
+    }
+
+
+    public static LitePosition calculateMean(List<LitePosition> positions){
+        LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
 		if(positions.size() > 0){
 			for (LitePosition p : positions) {
 				meanPosition.latitude = meanPosition.latitude +p.latitude;
 				meanPosition.longitude = meanPosition.longitude +p.longitude;
+				meanPosition.time = meanPosition.time + p.getTime();
 			}
 			meanPosition.latitude = meanPosition.latitude / positions.size() ;
 			meanPosition.longitude = meanPosition.longitude / positions.size() ;
+			meanPosition.time = meanPosition.time / positions.size();
 		}
 		return meanPosition;
 	}
 
     public static double calculateVariance(List<LitePosition> positions){
-
-		double variance = 0 ;
+        double variance = 0 ;
 		LitePosition meanPosition  = calculateMean(positions);
 		return calculateVariance(positions,meanPosition);
 	}
@@ -56,43 +67,27 @@ public class ClusteringUtils {
 
 
 	public static MeanVariance forPolyline(String encodedPolyline){
-
-		List<LitePosition> points = (new PolylineDecoder()).decodeInPositions(encodedPolyline);
+	    List<LitePosition> points = (new PolylineDecoder()).decodeInPositions(encodedPolyline);
 		LitePosition meanPosition = calculateMean(points);
 		double varience = calculateVariance(points, meanPosition);
 		return (new MeanVariance(meanPosition , varience));
 	}
 
 	public static MeanVariance merge(LitePosition mean1 , double variance1 , int n1 , LitePosition mean2 , double variance2 , int n2)
-	{
-		LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
+	{ LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
 		newMean.latitude = (n1 * mean1.latitude + n2 * mean2.latitude) / (n1 + n2);
 		newMean.longitude = (n1 * mean1.longitude + n2 * mean2.longitude) / (n1 + n2);
-
 		double d1 = distance(mean1 , newMean);
 		double d2 = distance(mean2 , newMean);
-
 		double newVariance = ((n1 * ( variance1 + (d1*d1))) + (n2 * ( variance2 + (d2*d2))))/(n1 + n2) ;
-
 		return new MeanVariance(newMean , newVariance);
 	}
 
-	public static class MeanVariance{
-
-		public LitePosition mean ;
-		public double variance ;
-
-		public MeanVariance(LitePosition mean , double variance){
-			this.mean = mean;
-			this.variance = variance;
-		}
-	}
 
 
 	//course == heading == altitude
 	public static double getHeading(double lat1, double lon1, double lat2, double lon2){
-
-		double longitude1 = lon1;
+        double longitude1 = lon1;
 		double longitude2 = lon2;
 		double latitude1 = Math.toRadians(lat1);
 		double latitude2 = Math.toRadians(lat2);

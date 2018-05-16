@@ -18,7 +18,11 @@
           "string"
         ]
       },
-
+      {
+         "name": "attributes",
+         "type": ["null","com.fretron.Model.Attributes"],
+         "default":null
+      },
       {
          "name": "batteryLevelEvent",
           "type": ["null","com.fretron.Model.DeviceEvent"],
