@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6012433781124621346L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceStatus\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"deviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"batteryLevelEvent\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"DeviceEvent\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}]}],\"default\":null},{\"name\":\"lowBatteryEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"powerCutEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"vibrationEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastPositionDeviceTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastPositionServerTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastDisconnectionTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastDisconnectionDuration\",\"type\":[\"null\",\"long\"]},{\"name\":\"isConnected\",\"type\":\"boolean\"},{\"name\":\"disconnectionReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsPacketDeviceTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastGpsPacketServerTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isIgnitionOn\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 3629663141077190797L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceStatus\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"deviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"batteryLevelEvent\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"DeviceEvent\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}]}],\"default\":null},{\"name\":\"lowBatteryEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"powerCutEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"vibrationEvent\",\"type\":[\"null\",\"DeviceEvent\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastPositionDeviceTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastPositionServerTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastDisconnectionTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastDisconnectionDuration\",\"type\":[\"null\",\"long\"]},{\"name\":\"isConnected\",\"type\":\"boolean\"},{\"name\":\"disconnectionReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastGpsPacketDeviceTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lastGpsPacketServerTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isIgnitionOn\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String deviceId;
   @Deprecated public java.lang.String protocol;
+  @Deprecated public com.fretron.Model.Attributes attributes;
   @Deprecated public com.fretron.Model.DeviceEvent batteryLevelEvent;
   @Deprecated public com.fretron.Model.DeviceEvent lowBatteryEvent;
   @Deprecated public com.fretron.Model.DeviceEvent powerCutEvent;
@@ -43,6 +44,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
    * All-args constructor.
    * @param deviceId The new value for deviceId
    * @param protocol The new value for protocol
+   * @param attributes The new value for attributes
    * @param batteryLevelEvent The new value for batteryLevelEvent
    * @param lowBatteryEvent The new value for lowBatteryEvent
    * @param powerCutEvent The new value for powerCutEvent
@@ -60,9 +62,10 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
    * @param lastGpsPacketServerTime The new value for lastGpsPacketServerTime
    * @param isIgnitionOn The new value for isIgnitionOn
    */
-  public DeviceStatus(java.lang.String deviceId, java.lang.String protocol, com.fretron.Model.DeviceEvent batteryLevelEvent, com.fretron.Model.DeviceEvent lowBatteryEvent, com.fretron.Model.DeviceEvent powerCutEvent, com.fretron.Model.DeviceEvent vibrationEvent, java.lang.Long lastUpdateTime, java.lang.Long lastPositionDeviceTime, java.lang.Long lastPositionServerTime, java.lang.Long lastDisconnectionTime, java.lang.Long lastDisconnectionDuration, java.lang.Boolean isConnected, java.lang.String disconnectionReason, java.lang.String vehicleId, java.lang.String batteryStatus, java.lang.Long lastGpsPacketDeviceTime, java.lang.Long lastGpsPacketServerTime, java.lang.Boolean isIgnitionOn) {
+  public DeviceStatus(java.lang.String deviceId, java.lang.String protocol, com.fretron.Model.Attributes attributes, com.fretron.Model.DeviceEvent batteryLevelEvent, com.fretron.Model.DeviceEvent lowBatteryEvent, com.fretron.Model.DeviceEvent powerCutEvent, com.fretron.Model.DeviceEvent vibrationEvent, java.lang.Long lastUpdateTime, java.lang.Long lastPositionDeviceTime, java.lang.Long lastPositionServerTime, java.lang.Long lastDisconnectionTime, java.lang.Long lastDisconnectionDuration, java.lang.Boolean isConnected, java.lang.String disconnectionReason, java.lang.String vehicleId, java.lang.String batteryStatus, java.lang.Long lastGpsPacketDeviceTime, java.lang.Long lastGpsPacketServerTime, java.lang.Boolean isIgnitionOn) {
     this.deviceId = deviceId;
     this.protocol = protocol;
+    this.attributes = attributes;
     this.batteryLevelEvent = batteryLevelEvent;
     this.lowBatteryEvent = lowBatteryEvent;
     this.powerCutEvent = powerCutEvent;
@@ -87,22 +90,23 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: return deviceId;
     case 1: return protocol;
-    case 2: return batteryLevelEvent;
-    case 3: return lowBatteryEvent;
-    case 4: return powerCutEvent;
-    case 5: return vibrationEvent;
-    case 6: return lastUpdateTime;
-    case 7: return lastPositionDeviceTime;
-    case 8: return lastPositionServerTime;
-    case 9: return lastDisconnectionTime;
-    case 10: return lastDisconnectionDuration;
-    case 11: return isConnected;
-    case 12: return disconnectionReason;
-    case 13: return vehicleId;
-    case 14: return batteryStatus;
-    case 15: return lastGpsPacketDeviceTime;
-    case 16: return lastGpsPacketServerTime;
-    case 17: return isIgnitionOn;
+    case 2: return attributes;
+    case 3: return batteryLevelEvent;
+    case 4: return lowBatteryEvent;
+    case 5: return powerCutEvent;
+    case 6: return vibrationEvent;
+    case 7: return lastUpdateTime;
+    case 8: return lastPositionDeviceTime;
+    case 9: return lastPositionServerTime;
+    case 10: return lastDisconnectionTime;
+    case 11: return lastDisconnectionDuration;
+    case 12: return isConnected;
+    case 13: return disconnectionReason;
+    case 14: return vehicleId;
+    case 15: return batteryStatus;
+    case 16: return lastGpsPacketDeviceTime;
+    case 17: return lastGpsPacketServerTime;
+    case 18: return isIgnitionOn;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -113,22 +117,23 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: deviceId = (java.lang.String)value$; break;
     case 1: protocol = (java.lang.String)value$; break;
-    case 2: batteryLevelEvent = (com.fretron.Model.DeviceEvent)value$; break;
-    case 3: lowBatteryEvent = (com.fretron.Model.DeviceEvent)value$; break;
-    case 4: powerCutEvent = (com.fretron.Model.DeviceEvent)value$; break;
-    case 5: vibrationEvent = (com.fretron.Model.DeviceEvent)value$; break;
-    case 6: lastUpdateTime = (java.lang.Long)value$; break;
-    case 7: lastPositionDeviceTime = (java.lang.Long)value$; break;
-    case 8: lastPositionServerTime = (java.lang.Long)value$; break;
-    case 9: lastDisconnectionTime = (java.lang.Long)value$; break;
-    case 10: lastDisconnectionDuration = (java.lang.Long)value$; break;
-    case 11: isConnected = (java.lang.Boolean)value$; break;
-    case 12: disconnectionReason = (java.lang.String)value$; break;
-    case 13: vehicleId = (java.lang.String)value$; break;
-    case 14: batteryStatus = (java.lang.String)value$; break;
-    case 15: lastGpsPacketDeviceTime = (java.lang.Long)value$; break;
-    case 16: lastGpsPacketServerTime = (java.lang.Long)value$; break;
-    case 17: isIgnitionOn = (java.lang.Boolean)value$; break;
+    case 2: attributes = (com.fretron.Model.Attributes)value$; break;
+    case 3: batteryLevelEvent = (com.fretron.Model.DeviceEvent)value$; break;
+    case 4: lowBatteryEvent = (com.fretron.Model.DeviceEvent)value$; break;
+    case 5: powerCutEvent = (com.fretron.Model.DeviceEvent)value$; break;
+    case 6: vibrationEvent = (com.fretron.Model.DeviceEvent)value$; break;
+    case 7: lastUpdateTime = (java.lang.Long)value$; break;
+    case 8: lastPositionDeviceTime = (java.lang.Long)value$; break;
+    case 9: lastPositionServerTime = (java.lang.Long)value$; break;
+    case 10: lastDisconnectionTime = (java.lang.Long)value$; break;
+    case 11: lastDisconnectionDuration = (java.lang.Long)value$; break;
+    case 12: isConnected = (java.lang.Boolean)value$; break;
+    case 13: disconnectionReason = (java.lang.String)value$; break;
+    case 14: vehicleId = (java.lang.String)value$; break;
+    case 15: batteryStatus = (java.lang.String)value$; break;
+    case 16: lastGpsPacketDeviceTime = (java.lang.Long)value$; break;
+    case 17: lastGpsPacketServerTime = (java.lang.Long)value$; break;
+    case 18: isIgnitionOn = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -163,6 +168,22 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
    */
   public void setProtocol(java.lang.String value) {
     this.protocol = value;
+  }
+
+  /**
+   * Gets the value of the 'attributes' field.
+   * @return The value of the 'attributes' field.
+   */
+  public com.fretron.Model.Attributes getAttributes() {
+    return attributes;
+  }
+
+  /**
+   * Sets the value of the 'attributes' field.
+   * @param value the value to set.
+   */
+  public void setAttributes(com.fretron.Model.Attributes value) {
+    this.attributes = value;
   }
 
   /**
@@ -455,6 +476,8 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
 
     private java.lang.String deviceId;
     private java.lang.String protocol;
+    private com.fretron.Model.Attributes attributes;
+    private com.fretron.Model.Attributes.Builder attributesBuilder;
     private com.fretron.Model.DeviceEvent batteryLevelEvent;
     private com.fretron.Model.DeviceEvent.Builder batteryLevelEventBuilder;
     private com.fretron.Model.DeviceEvent lowBatteryEvent;
@@ -495,81 +518,88 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
         this.protocol = data().deepCopy(fields()[1].schema(), other.protocol);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.batteryLevelEvent)) {
-        this.batteryLevelEvent = data().deepCopy(fields()[2].schema(), other.batteryLevelEvent);
+      if (isValidValue(fields()[2], other.attributes)) {
+        this.attributes = data().deepCopy(fields()[2].schema(), other.attributes);
         fieldSetFlags()[2] = true;
+      }
+      if (other.hasAttributesBuilder()) {
+        this.attributesBuilder = com.fretron.Model.Attributes.newBuilder(other.getAttributesBuilder());
+      }
+      if (isValidValue(fields()[3], other.batteryLevelEvent)) {
+        this.batteryLevelEvent = data().deepCopy(fields()[3].schema(), other.batteryLevelEvent);
+        fieldSetFlags()[3] = true;
       }
       if (other.hasBatteryLevelEventBuilder()) {
         this.batteryLevelEventBuilder = com.fretron.Model.DeviceEvent.newBuilder(other.getBatteryLevelEventBuilder());
       }
-      if (isValidValue(fields()[3], other.lowBatteryEvent)) {
-        this.lowBatteryEvent = data().deepCopy(fields()[3].schema(), other.lowBatteryEvent);
-        fieldSetFlags()[3] = true;
+      if (isValidValue(fields()[4], other.lowBatteryEvent)) {
+        this.lowBatteryEvent = data().deepCopy(fields()[4].schema(), other.lowBatteryEvent);
+        fieldSetFlags()[4] = true;
       }
       if (other.hasLowBatteryEventBuilder()) {
         this.lowBatteryEventBuilder = com.fretron.Model.DeviceEvent.newBuilder(other.getLowBatteryEventBuilder());
       }
-      if (isValidValue(fields()[4], other.powerCutEvent)) {
-        this.powerCutEvent = data().deepCopy(fields()[4].schema(), other.powerCutEvent);
-        fieldSetFlags()[4] = true;
+      if (isValidValue(fields()[5], other.powerCutEvent)) {
+        this.powerCutEvent = data().deepCopy(fields()[5].schema(), other.powerCutEvent);
+        fieldSetFlags()[5] = true;
       }
       if (other.hasPowerCutEventBuilder()) {
         this.powerCutEventBuilder = com.fretron.Model.DeviceEvent.newBuilder(other.getPowerCutEventBuilder());
       }
-      if (isValidValue(fields()[5], other.vibrationEvent)) {
-        this.vibrationEvent = data().deepCopy(fields()[5].schema(), other.vibrationEvent);
-        fieldSetFlags()[5] = true;
+      if (isValidValue(fields()[6], other.vibrationEvent)) {
+        this.vibrationEvent = data().deepCopy(fields()[6].schema(), other.vibrationEvent);
+        fieldSetFlags()[6] = true;
       }
       if (other.hasVibrationEventBuilder()) {
         this.vibrationEventBuilder = com.fretron.Model.DeviceEvent.newBuilder(other.getVibrationEventBuilder());
       }
-      if (isValidValue(fields()[6], other.lastUpdateTime)) {
-        this.lastUpdateTime = data().deepCopy(fields()[6].schema(), other.lastUpdateTime);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.lastPositionDeviceTime)) {
-        this.lastPositionDeviceTime = data().deepCopy(fields()[7].schema(), other.lastPositionDeviceTime);
+      if (isValidValue(fields()[7], other.lastUpdateTime)) {
+        this.lastUpdateTime = data().deepCopy(fields()[7].schema(), other.lastUpdateTime);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.lastPositionServerTime)) {
-        this.lastPositionServerTime = data().deepCopy(fields()[8].schema(), other.lastPositionServerTime);
+      if (isValidValue(fields()[8], other.lastPositionDeviceTime)) {
+        this.lastPositionDeviceTime = data().deepCopy(fields()[8].schema(), other.lastPositionDeviceTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.lastDisconnectionTime)) {
-        this.lastDisconnectionTime = data().deepCopy(fields()[9].schema(), other.lastDisconnectionTime);
+      if (isValidValue(fields()[9], other.lastPositionServerTime)) {
+        this.lastPositionServerTime = data().deepCopy(fields()[9].schema(), other.lastPositionServerTime);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.lastDisconnectionDuration)) {
-        this.lastDisconnectionDuration = data().deepCopy(fields()[10].schema(), other.lastDisconnectionDuration);
+      if (isValidValue(fields()[10], other.lastDisconnectionTime)) {
+        this.lastDisconnectionTime = data().deepCopy(fields()[10].schema(), other.lastDisconnectionTime);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.isConnected)) {
-        this.isConnected = data().deepCopy(fields()[11].schema(), other.isConnected);
+      if (isValidValue(fields()[11], other.lastDisconnectionDuration)) {
+        this.lastDisconnectionDuration = data().deepCopy(fields()[11].schema(), other.lastDisconnectionDuration);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.disconnectionReason)) {
-        this.disconnectionReason = data().deepCopy(fields()[12].schema(), other.disconnectionReason);
+      if (isValidValue(fields()[12], other.isConnected)) {
+        this.isConnected = data().deepCopy(fields()[12].schema(), other.isConnected);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[13].schema(), other.vehicleId);
+      if (isValidValue(fields()[13], other.disconnectionReason)) {
+        this.disconnectionReason = data().deepCopy(fields()[13].schema(), other.disconnectionReason);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.batteryStatus)) {
-        this.batteryStatus = data().deepCopy(fields()[14].schema(), other.batteryStatus);
+      if (isValidValue(fields()[14], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.lastGpsPacketDeviceTime)) {
-        this.lastGpsPacketDeviceTime = data().deepCopy(fields()[15].schema(), other.lastGpsPacketDeviceTime);
+      if (isValidValue(fields()[15], other.batteryStatus)) {
+        this.batteryStatus = data().deepCopy(fields()[15].schema(), other.batteryStatus);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.lastGpsPacketServerTime)) {
-        this.lastGpsPacketServerTime = data().deepCopy(fields()[16].schema(), other.lastGpsPacketServerTime);
+      if (isValidValue(fields()[16], other.lastGpsPacketDeviceTime)) {
+        this.lastGpsPacketDeviceTime = data().deepCopy(fields()[16].schema(), other.lastGpsPacketDeviceTime);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.isIgnitionOn)) {
-        this.isIgnitionOn = data().deepCopy(fields()[17].schema(), other.isIgnitionOn);
+      if (isValidValue(fields()[17], other.lastGpsPacketServerTime)) {
+        this.lastGpsPacketServerTime = data().deepCopy(fields()[17].schema(), other.lastGpsPacketServerTime);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.isIgnitionOn)) {
+        this.isIgnitionOn = data().deepCopy(fields()[18].schema(), other.isIgnitionOn);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -587,73 +617,78 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
         this.protocol = data().deepCopy(fields()[1].schema(), other.protocol);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.batteryLevelEvent)) {
-        this.batteryLevelEvent = data().deepCopy(fields()[2].schema(), other.batteryLevelEvent);
+      if (isValidValue(fields()[2], other.attributes)) {
+        this.attributes = data().deepCopy(fields()[2].schema(), other.attributes);
         fieldSetFlags()[2] = true;
       }
-      this.batteryLevelEventBuilder = null;
-      if (isValidValue(fields()[3], other.lowBatteryEvent)) {
-        this.lowBatteryEvent = data().deepCopy(fields()[3].schema(), other.lowBatteryEvent);
+      this.attributesBuilder = null;
+      if (isValidValue(fields()[3], other.batteryLevelEvent)) {
+        this.batteryLevelEvent = data().deepCopy(fields()[3].schema(), other.batteryLevelEvent);
         fieldSetFlags()[3] = true;
       }
-      this.lowBatteryEventBuilder = null;
-      if (isValidValue(fields()[4], other.powerCutEvent)) {
-        this.powerCutEvent = data().deepCopy(fields()[4].schema(), other.powerCutEvent);
+      this.batteryLevelEventBuilder = null;
+      if (isValidValue(fields()[4], other.lowBatteryEvent)) {
+        this.lowBatteryEvent = data().deepCopy(fields()[4].schema(), other.lowBatteryEvent);
         fieldSetFlags()[4] = true;
       }
-      this.powerCutEventBuilder = null;
-      if (isValidValue(fields()[5], other.vibrationEvent)) {
-        this.vibrationEvent = data().deepCopy(fields()[5].schema(), other.vibrationEvent);
+      this.lowBatteryEventBuilder = null;
+      if (isValidValue(fields()[5], other.powerCutEvent)) {
+        this.powerCutEvent = data().deepCopy(fields()[5].schema(), other.powerCutEvent);
         fieldSetFlags()[5] = true;
       }
-      this.vibrationEventBuilder = null;
-      if (isValidValue(fields()[6], other.lastUpdateTime)) {
-        this.lastUpdateTime = data().deepCopy(fields()[6].schema(), other.lastUpdateTime);
+      this.powerCutEventBuilder = null;
+      if (isValidValue(fields()[6], other.vibrationEvent)) {
+        this.vibrationEvent = data().deepCopy(fields()[6].schema(), other.vibrationEvent);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.lastPositionDeviceTime)) {
-        this.lastPositionDeviceTime = data().deepCopy(fields()[7].schema(), other.lastPositionDeviceTime);
+      this.vibrationEventBuilder = null;
+      if (isValidValue(fields()[7], other.lastUpdateTime)) {
+        this.lastUpdateTime = data().deepCopy(fields()[7].schema(), other.lastUpdateTime);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.lastPositionServerTime)) {
-        this.lastPositionServerTime = data().deepCopy(fields()[8].schema(), other.lastPositionServerTime);
+      if (isValidValue(fields()[8], other.lastPositionDeviceTime)) {
+        this.lastPositionDeviceTime = data().deepCopy(fields()[8].schema(), other.lastPositionDeviceTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.lastDisconnectionTime)) {
-        this.lastDisconnectionTime = data().deepCopy(fields()[9].schema(), other.lastDisconnectionTime);
+      if (isValidValue(fields()[9], other.lastPositionServerTime)) {
+        this.lastPositionServerTime = data().deepCopy(fields()[9].schema(), other.lastPositionServerTime);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.lastDisconnectionDuration)) {
-        this.lastDisconnectionDuration = data().deepCopy(fields()[10].schema(), other.lastDisconnectionDuration);
+      if (isValidValue(fields()[10], other.lastDisconnectionTime)) {
+        this.lastDisconnectionTime = data().deepCopy(fields()[10].schema(), other.lastDisconnectionTime);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.isConnected)) {
-        this.isConnected = data().deepCopy(fields()[11].schema(), other.isConnected);
+      if (isValidValue(fields()[11], other.lastDisconnectionDuration)) {
+        this.lastDisconnectionDuration = data().deepCopy(fields()[11].schema(), other.lastDisconnectionDuration);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.disconnectionReason)) {
-        this.disconnectionReason = data().deepCopy(fields()[12].schema(), other.disconnectionReason);
+      if (isValidValue(fields()[12], other.isConnected)) {
+        this.isConnected = data().deepCopy(fields()[12].schema(), other.isConnected);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.vehicleId)) {
-        this.vehicleId = data().deepCopy(fields()[13].schema(), other.vehicleId);
+      if (isValidValue(fields()[13], other.disconnectionReason)) {
+        this.disconnectionReason = data().deepCopy(fields()[13].schema(), other.disconnectionReason);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.batteryStatus)) {
-        this.batteryStatus = data().deepCopy(fields()[14].schema(), other.batteryStatus);
+      if (isValidValue(fields()[14], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.lastGpsPacketDeviceTime)) {
-        this.lastGpsPacketDeviceTime = data().deepCopy(fields()[15].schema(), other.lastGpsPacketDeviceTime);
+      if (isValidValue(fields()[15], other.batteryStatus)) {
+        this.batteryStatus = data().deepCopy(fields()[15].schema(), other.batteryStatus);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.lastGpsPacketServerTime)) {
-        this.lastGpsPacketServerTime = data().deepCopy(fields()[16].schema(), other.lastGpsPacketServerTime);
+      if (isValidValue(fields()[16], other.lastGpsPacketDeviceTime)) {
+        this.lastGpsPacketDeviceTime = data().deepCopy(fields()[16].schema(), other.lastGpsPacketDeviceTime);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.isIgnitionOn)) {
-        this.isIgnitionOn = data().deepCopy(fields()[17].schema(), other.isIgnitionOn);
+      if (isValidValue(fields()[17], other.lastGpsPacketServerTime)) {
+        this.lastGpsPacketServerTime = data().deepCopy(fields()[17].schema(), other.lastGpsPacketServerTime);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.isIgnitionOn)) {
+        this.isIgnitionOn = data().deepCopy(fields()[18].schema(), other.isIgnitionOn);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -736,6 +771,80 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     }
 
     /**
+      * Gets the value of the 'attributes' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Attributes getAttributes() {
+      return attributes;
+    }
+
+    /**
+      * Sets the value of the 'attributes' field.
+      * @param value The value of 'attributes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceStatus.Builder setAttributes(com.fretron.Model.Attributes value) {
+      validate(fields()[2], value);
+      this.attributesBuilder = null;
+      this.attributes = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attributes' field has been set.
+      * @return True if the 'attributes' field has been set, false otherwise.
+      */
+    public boolean hasAttributes() {
+      return fieldSetFlags()[2];
+    }
+
+    /**
+     * Gets the Builder instance for the 'attributes' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Attributes.Builder getAttributesBuilder() {
+      if (attributesBuilder == null) {
+        if (hasAttributes()) {
+          setAttributesBuilder(com.fretron.Model.Attributes.newBuilder(attributes));
+        } else {
+          setAttributesBuilder(com.fretron.Model.Attributes.newBuilder());
+        }
+      }
+      return attributesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'attributes' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.DeviceStatus.Builder setAttributesBuilder(com.fretron.Model.Attributes.Builder value) {
+      clearAttributes();
+      attributesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'attributes' field has an active Builder instance
+     * @return True if the 'attributes' field has an active Builder instance
+     */
+    public boolean hasAttributesBuilder() {
+      return attributesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'attributes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceStatus.Builder clearAttributes() {
+      attributes = null;
+      attributesBuilder = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'batteryLevelEvent' field.
       * @return The value.
       */
@@ -749,10 +858,10 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setBatteryLevelEvent(com.fretron.Model.DeviceEvent value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.batteryLevelEventBuilder = null;
       this.batteryLevelEvent = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -761,7 +870,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'batteryLevelEvent' field has been set, false otherwise.
       */
     public boolean hasBatteryLevelEvent() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
     /**
@@ -805,7 +914,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     public com.fretron.Model.DeviceStatus.Builder clearBatteryLevelEvent() {
       batteryLevelEvent = null;
       batteryLevelEventBuilder = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -823,10 +932,10 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLowBatteryEvent(com.fretron.Model.DeviceEvent value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.lowBatteryEventBuilder = null;
       this.lowBatteryEvent = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -835,7 +944,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lowBatteryEvent' field has been set, false otherwise.
       */
     public boolean hasLowBatteryEvent() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
     /**
@@ -879,7 +988,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     public com.fretron.Model.DeviceStatus.Builder clearLowBatteryEvent() {
       lowBatteryEvent = null;
       lowBatteryEventBuilder = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -897,10 +1006,10 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setPowerCutEvent(com.fretron.Model.DeviceEvent value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.powerCutEventBuilder = null;
       this.powerCutEvent = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -909,7 +1018,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'powerCutEvent' field has been set, false otherwise.
       */
     public boolean hasPowerCutEvent() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
     /**
@@ -953,7 +1062,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     public com.fretron.Model.DeviceStatus.Builder clearPowerCutEvent() {
       powerCutEvent = null;
       powerCutEventBuilder = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -971,10 +1080,10 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setVibrationEvent(com.fretron.Model.DeviceEvent value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.vibrationEventBuilder = null;
       this.vibrationEvent = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -983,7 +1092,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'vibrationEvent' field has been set, false otherwise.
       */
     public boolean hasVibrationEvent() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
     /**
@@ -1027,7 +1136,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
     public com.fretron.Model.DeviceStatus.Builder clearVibrationEvent() {
       vibrationEvent = null;
       vibrationEventBuilder = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -1045,9 +1154,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastUpdateTime(java.lang.Long value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.lastUpdateTime = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -1056,7 +1165,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastUpdateTime' field has been set, false otherwise.
       */
     public boolean hasLastUpdateTime() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -1066,7 +1175,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastUpdateTime() {
       lastUpdateTime = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -1084,9 +1193,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastPositionDeviceTime(java.lang.Long value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.lastPositionDeviceTime = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -1095,7 +1204,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastPositionDeviceTime' field has been set, false otherwise.
       */
     public boolean hasLastPositionDeviceTime() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -1105,7 +1214,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastPositionDeviceTime() {
       lastPositionDeviceTime = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -1123,9 +1232,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastPositionServerTime(java.lang.Long value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.lastPositionServerTime = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -1134,7 +1243,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastPositionServerTime' field has been set, false otherwise.
       */
     public boolean hasLastPositionServerTime() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -1144,7 +1253,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastPositionServerTime() {
       lastPositionServerTime = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -1162,9 +1271,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastDisconnectionTime(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.lastDisconnectionTime = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1173,7 +1282,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastDisconnectionTime' field has been set, false otherwise.
       */
     public boolean hasLastDisconnectionTime() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1183,7 +1292,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastDisconnectionTime() {
       lastDisconnectionTime = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1201,9 +1310,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastDisconnectionDuration(java.lang.Long value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.lastDisconnectionDuration = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1212,7 +1321,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastDisconnectionDuration' field has been set, false otherwise.
       */
     public boolean hasLastDisconnectionDuration() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1222,7 +1331,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastDisconnectionDuration() {
       lastDisconnectionDuration = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1240,9 +1349,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setIsConnected(boolean value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.isConnected = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1251,7 +1360,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'isConnected' field has been set, false otherwise.
       */
     public boolean hasIsConnected() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1260,7 +1369,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder clearIsConnected() {
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1278,9 +1387,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setDisconnectionReason(java.lang.String value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.disconnectionReason = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1289,7 +1398,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'disconnectionReason' field has been set, false otherwise.
       */
     public boolean hasDisconnectionReason() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1299,7 +1408,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearDisconnectionReason() {
       disconnectionReason = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1317,9 +1426,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setVehicleId(java.lang.String value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.vehicleId = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1328,7 +1437,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'vehicleId' field has been set, false otherwise.
       */
     public boolean hasVehicleId() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1338,7 +1447,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearVehicleId() {
       vehicleId = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1356,9 +1465,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setBatteryStatus(java.lang.String value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.batteryStatus = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1367,7 +1476,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'batteryStatus' field has been set, false otherwise.
       */
     public boolean hasBatteryStatus() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1377,7 +1486,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearBatteryStatus() {
       batteryStatus = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1395,9 +1504,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastGpsPacketDeviceTime(java.lang.Long value) {
-      validate(fields()[15], value);
+      validate(fields()[16], value);
       this.lastGpsPacketDeviceTime = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1406,7 +1515,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastGpsPacketDeviceTime' field has been set, false otherwise.
       */
     public boolean hasLastGpsPacketDeviceTime() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1416,7 +1525,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastGpsPacketDeviceTime() {
       lastGpsPacketDeviceTime = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1434,9 +1543,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setLastGpsPacketServerTime(java.lang.Long value) {
-      validate(fields()[16], value);
+      validate(fields()[17], value);
       this.lastGpsPacketServerTime = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1445,7 +1554,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'lastGpsPacketServerTime' field has been set, false otherwise.
       */
     public boolean hasLastGpsPacketServerTime() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1455,7 +1564,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearLastGpsPacketServerTime() {
       lastGpsPacketServerTime = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1473,9 +1582,9 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return This builder.
       */
     public com.fretron.Model.DeviceStatus.Builder setIsIgnitionOn(java.lang.Boolean value) {
-      validate(fields()[17], value);
+      validate(fields()[18], value);
       this.isIgnitionOn = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1484,7 +1593,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       * @return True if the 'isIgnitionOn' field has been set, false otherwise.
       */
     public boolean hasIsIgnitionOn() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1494,7 +1603,7 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
       */
     public com.fretron.Model.DeviceStatus.Builder clearIsIgnitionOn() {
       isIgnitionOn = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1504,38 +1613,43 @@ public class DeviceStatus extends org.apache.avro.specific.SpecificRecordBase im
         DeviceStatus record = new DeviceStatus();
         record.deviceId = fieldSetFlags()[0] ? this.deviceId : (java.lang.String) defaultValue(fields()[0]);
         record.protocol = fieldSetFlags()[1] ? this.protocol : (java.lang.String) defaultValue(fields()[1]);
+        if (attributesBuilder != null) {
+          record.attributes = this.attributesBuilder.build();
+        } else {
+          record.attributes = fieldSetFlags()[2] ? this.attributes : (com.fretron.Model.Attributes) defaultValue(fields()[2]);
+        }
         if (batteryLevelEventBuilder != null) {
           record.batteryLevelEvent = this.batteryLevelEventBuilder.build();
         } else {
-          record.batteryLevelEvent = fieldSetFlags()[2] ? this.batteryLevelEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[2]);
+          record.batteryLevelEvent = fieldSetFlags()[3] ? this.batteryLevelEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[3]);
         }
         if (lowBatteryEventBuilder != null) {
           record.lowBatteryEvent = this.lowBatteryEventBuilder.build();
         } else {
-          record.lowBatteryEvent = fieldSetFlags()[3] ? this.lowBatteryEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[3]);
+          record.lowBatteryEvent = fieldSetFlags()[4] ? this.lowBatteryEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[4]);
         }
         if (powerCutEventBuilder != null) {
           record.powerCutEvent = this.powerCutEventBuilder.build();
         } else {
-          record.powerCutEvent = fieldSetFlags()[4] ? this.powerCutEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[4]);
+          record.powerCutEvent = fieldSetFlags()[5] ? this.powerCutEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[5]);
         }
         if (vibrationEventBuilder != null) {
           record.vibrationEvent = this.vibrationEventBuilder.build();
         } else {
-          record.vibrationEvent = fieldSetFlags()[5] ? this.vibrationEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[5]);
+          record.vibrationEvent = fieldSetFlags()[6] ? this.vibrationEvent : (com.fretron.Model.DeviceEvent) defaultValue(fields()[6]);
         }
-        record.lastUpdateTime = fieldSetFlags()[6] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[6]);
-        record.lastPositionDeviceTime = fieldSetFlags()[7] ? this.lastPositionDeviceTime : (java.lang.Long) defaultValue(fields()[7]);
-        record.lastPositionServerTime = fieldSetFlags()[8] ? this.lastPositionServerTime : (java.lang.Long) defaultValue(fields()[8]);
-        record.lastDisconnectionTime = fieldSetFlags()[9] ? this.lastDisconnectionTime : (java.lang.Long) defaultValue(fields()[9]);
-        record.lastDisconnectionDuration = fieldSetFlags()[10] ? this.lastDisconnectionDuration : (java.lang.Long) defaultValue(fields()[10]);
-        record.isConnected = fieldSetFlags()[11] ? this.isConnected : (java.lang.Boolean) defaultValue(fields()[11]);
-        record.disconnectionReason = fieldSetFlags()[12] ? this.disconnectionReason : (java.lang.String) defaultValue(fields()[12]);
-        record.vehicleId = fieldSetFlags()[13] ? this.vehicleId : (java.lang.String) defaultValue(fields()[13]);
-        record.batteryStatus = fieldSetFlags()[14] ? this.batteryStatus : (java.lang.String) defaultValue(fields()[14]);
-        record.lastGpsPacketDeviceTime = fieldSetFlags()[15] ? this.lastGpsPacketDeviceTime : (java.lang.Long) defaultValue(fields()[15]);
-        record.lastGpsPacketServerTime = fieldSetFlags()[16] ? this.lastGpsPacketServerTime : (java.lang.Long) defaultValue(fields()[16]);
-        record.isIgnitionOn = fieldSetFlags()[17] ? this.isIgnitionOn : (java.lang.Boolean) defaultValue(fields()[17]);
+        record.lastUpdateTime = fieldSetFlags()[7] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[7]);
+        record.lastPositionDeviceTime = fieldSetFlags()[8] ? this.lastPositionDeviceTime : (java.lang.Long) defaultValue(fields()[8]);
+        record.lastPositionServerTime = fieldSetFlags()[9] ? this.lastPositionServerTime : (java.lang.Long) defaultValue(fields()[9]);
+        record.lastDisconnectionTime = fieldSetFlags()[10] ? this.lastDisconnectionTime : (java.lang.Long) defaultValue(fields()[10]);
+        record.lastDisconnectionDuration = fieldSetFlags()[11] ? this.lastDisconnectionDuration : (java.lang.Long) defaultValue(fields()[11]);
+        record.isConnected = fieldSetFlags()[12] ? this.isConnected : (java.lang.Boolean) defaultValue(fields()[12]);
+        record.disconnectionReason = fieldSetFlags()[13] ? this.disconnectionReason : (java.lang.String) defaultValue(fields()[13]);
+        record.vehicleId = fieldSetFlags()[14] ? this.vehicleId : (java.lang.String) defaultValue(fields()[14]);
+        record.batteryStatus = fieldSetFlags()[15] ? this.batteryStatus : (java.lang.String) defaultValue(fields()[15]);
+        record.lastGpsPacketDeviceTime = fieldSetFlags()[16] ? this.lastGpsPacketDeviceTime : (java.lang.Long) defaultValue(fields()[16]);
+        record.lastGpsPacketServerTime = fieldSetFlags()[17] ? this.lastGpsPacketServerTime : (java.lang.Long) defaultValue(fields()[17]);
+        record.isIgnitionOn = fieldSetFlags()[18] ? this.isIgnitionOn : (java.lang.Boolean) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
