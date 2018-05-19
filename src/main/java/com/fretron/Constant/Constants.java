@@ -292,6 +292,7 @@ public class Constants {
     public final static String REGISTRY_MANAGER_APPID= "registry.manager.appId";
     public final static String LATEST_COMMAND_TOPIC= "latest.command.topic";
     public static java.lang.String KEY_COMMAND_TYPE = "filter";
+    public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
 
     //========================================
     public static final String KEY_HOUR_WISE_STATE_PROCESSORE_APP_ID = "hour.wise.state.processor.appid";
