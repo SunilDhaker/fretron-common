@@ -1,0 +1,29 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Odometer",
+    "fields": [
+      {
+         "name": "globalMeter",
+         "type": ["null","double"],
+         "default" : null
+      },
+      {
+         "name": "tripMeter",
+          "type": ["null","double"],
+          "default" : null
+      },
+      {
+         "name": "lastUpdateTime",
+          "type": ["null","long"],
+          "default" : null
+      },
+      {
+         "name": "isGlobalMeterManuallyCalibrated",
+         "type": ["null","boolean"],
+         "default" : null
+      }
+    ]
+  }
+]
