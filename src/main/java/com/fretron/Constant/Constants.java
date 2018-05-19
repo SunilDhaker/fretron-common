@@ -232,6 +232,8 @@ public class Constants {
     public final static String REGISTRY_MANAGER_APPID= "registry.manager.appId";
     public final static String LATEST_COMMAND_TOPIC= "latest.command.topic";
     public static java.lang.String KEY_COMMAND_TYPE = "filter";
+    public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
+
 
     //========================================
     public static final String KEY_HOUR_WISE_STATE_PROCESSORE_APP_ID = "hour.wise.state.processor.appid";
@@ -248,6 +250,8 @@ public class Constants {
     //=========================USER_MANAGER================
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
+    public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+
 
     //========================ORGANISATION_MANAGER=================
 
@@ -256,6 +260,8 @@ public class Constants {
     public static final String KEY_USERS_BY_ORGANISATION_TOPIC = "usersbyorganisation.topic";
     public static final String KEY_ORGANISAIONS_BY_USER_TOPIC = "organisationsbyuser.topic";
     public static final String KEY_ORG_USER_ACL_TOPIC = "orguseracl.topic";
+    public static final String KEY_COMMAND_TO_ORGANISATION_APP_ID = "commandresult.to.organisation.appid";
+
 
     //==========================TRIP_TEMPLATE_MANAGER===============
 
