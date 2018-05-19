@@ -23,6 +23,11 @@
          "name": "isGlobalMeterManuallyCalibrated",
          "type": ["null","boolean"],
          "default" : null
+      },
+      {
+         "name": "isInTrip",
+          "type": ["null","boolean"],
+          "default" : null
       }
     ]
   }
