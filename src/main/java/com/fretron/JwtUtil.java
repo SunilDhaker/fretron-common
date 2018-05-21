@@ -131,13 +131,15 @@ public class JwtUtil {
         if(serverManager.isConnected()){
             String userID =    serverManager.getValueForKey(token);
             if(userID == null){
-                System.out.println("redis connected but -- token not found --  null user id ,, will return user id by manually verifying");
+                System.out.println("redis connected but -- token not found --  null user id "+token);
             }
             else{
                 System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
             return getFromToken(token,"userId");
+//            return userID;
+
         }else {
             System.out.println("redis not connected -- verifying token manually");
             return  getFromToken(token , "userId");
@@ -152,13 +154,14 @@ public class JwtUtil {
         if(serverManager.isConnected()){
             String userID =    serverManager.getValueForKey(token);
             if(userID == null){
-                System.out.println("redis connected but -- token not found --  null user id ,, will return user id by manually verifying");
+                System.out.println("redis connected but -- token not found --  null user id "+token);
             }
             else{
                 System.out.println("USER ID FOUND IN REDIS ");
                 return userID;
             }
             return getFromToken(token,"userId");
+//            return userID;
         }else {
             System.out.println("redis not connected -- verifying token manually");
             return  getFromToken(token , "userId");
