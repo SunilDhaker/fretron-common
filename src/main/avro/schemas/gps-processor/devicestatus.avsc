@@ -133,7 +133,13 @@
                             "boolean"
                    ],
              "default":null
-            }
+      },
+      {
+         "name": "location",
+          "type": ["null" ,"com.fretron.Model.LitePosition"],
+          "default":null
+      }
+
     ]
   }
 ]
