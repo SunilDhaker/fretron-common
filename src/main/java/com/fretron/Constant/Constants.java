@@ -480,6 +480,11 @@ public class Constants {
     public static final String USER_DB_HOST = "user.db.host";
     public static final String USER_DB_PORT = "user.db.port";
 
+    public static final String PASSWORD_DB_NAME = "password.db.name";
+    public static final String PASSWORD_DB_HOST = "password.db.host";
+    public static final String PASSWORD_DB_PORT = "password.db.port";
+    public static final String PASSWORD_COLLECTION_NAME = "password.db.collection.name";
+
     public static final String ALERT_MONGODB_NAME = "alert.mongo.db.name" ;
     //========================================= TracementManager========================================
 
