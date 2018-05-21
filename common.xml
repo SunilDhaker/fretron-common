@@ -168,6 +168,7 @@
     <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
+    <entry key="vgsmis.topic">vgsmistopic</entry>
 
     <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 
