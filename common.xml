@@ -58,9 +58,7 @@
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
     <entry key="gps.state.topic">gpsStates</entry>
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
-
-
-
+    <entry key="device.state.manager.app.id">device-state-manager</entry>
 
 
 
@@ -168,6 +166,7 @@
     <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
+    <entry key="vgsmis.topic">vgsmistopic</entry>
 
     <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 

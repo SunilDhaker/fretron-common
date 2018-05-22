@@ -12,6 +12,7 @@
     <entry key="user.manager.restservice.ip">http://0.0.0.0</entry>
     <entry key="user.manager.restservice.port">8099</entry>
 
+
     <!-- =========Org-Manager========== -->
     <entry key="organization.manager.service.url">http://org-manager.streams:8086</entry>
     <entry key="organization.manager.restservice.ip">http://0.0.0.0</entry>
@@ -90,5 +91,7 @@
     <entry key="token.manager.restservice.port">7090</entry>
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
-
+    <!--===============TRIP-MIS==============-->
+    <entry key = "trip.mis.restservices.ip">http://0.0.0.0</entry>
+    <entry key = "trip.mis.restservices.port">7887</entry>
 </properties>

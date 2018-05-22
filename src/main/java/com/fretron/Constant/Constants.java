@@ -89,6 +89,7 @@ public class Constants {
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+    public static java.lang.String KEY_DEVICE_STATE_MANAGER_APP_ID = "device.state.manager.app.id";
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
@@ -291,6 +292,8 @@ public class Constants {
     public final static String REGISTRY_MANAGER_APPID= "registry.manager.appId";
     public final static String LATEST_COMMAND_TOPIC= "latest.command.topic";
     public static java.lang.String KEY_COMMAND_TYPE = "filter";
+    public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
+
 
     //========================================
     public static final String KEY_HOUR_WISE_STATE_PROCESSORE_APP_ID = "hour.wise.state.processor.appid";
@@ -307,6 +310,8 @@ public class Constants {
     //=========================USER_MANAGER================
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
+    public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+
 
     //========================ORGANISATION_MANAGER=================
 
@@ -315,6 +320,8 @@ public class Constants {
     public static final String KEY_USERS_BY_ORGANISATION_TOPIC = "usersbyorganisation.topic";
     public static final String KEY_ORGANISAIONS_BY_USER_TOPIC = "organisationsbyuser.topic";
     public static final String KEY_ORG_USER_ACL_TOPIC = "orguseracl.topic";
+    public static final String KEY_COMMAND_TO_ORGANISATION_APP_ID = "commandresult.to.organisation.appid";
+
 
     //==========================TRIP_TEMPLATE_MANAGER===============
 
@@ -413,6 +420,10 @@ public class Constants {
     public static final String GPS_LOG_MONGO_HOST = "gps.log.mongo.server.ip";
     public static final String GPS_LOG_MONGO_PORT = "gps.log.mongo.server.port";
     public static final String GPS_LOG_MONGO_DBNAME = "gps.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_DB_NAME= "vehicle.activity.log.db";
+    public static final String VEHICLE_ACTIVITY_COLLECTION_NAME = "vehicle.hourwise.movement.activity.collaction";
+    public static final String GPS_MIS_COLLECTION_NAME = "gps.mis.collaction";
+
 
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
@@ -572,6 +583,8 @@ public class Constants {
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
     public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String KEY_VGS_MIS_TOPIC="vgsmis.topic";
+
     public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
     public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
@@ -601,7 +614,8 @@ public class Constants {
     public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
 
 
-
+    public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
+    public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
 
 
     private Constants(){
