@@ -71,6 +71,11 @@
           "name": "isFillingEnabled",
          "type": "boolean",
          "default":false
+      },
+      {
+        "name": "odometer",
+         "type": ["null","com.fretron.Model.Odometer"],
+          "default":null
       }
     ]
   },

@@ -10,14 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Odometer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8032892235167112743L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"globalMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isGlobalMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isInTrip\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -3908036262072511958L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"globalMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isGlobalMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double globalMeter;
-  @Deprecated public java.lang.Double tripMeter;
   @Deprecated public java.lang.Long lastUpdateTime;
   @Deprecated public java.lang.Boolean isGlobalMeterManuallyCalibrated;
-  @Deprecated public java.lang.Boolean isInTrip;
+  @Deprecated public java.lang.Long lastCalibrationTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,17 +28,15 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   /**
    * All-args constructor.
    * @param globalMeter The new value for globalMeter
-   * @param tripMeter The new value for tripMeter
    * @param lastUpdateTime The new value for lastUpdateTime
    * @param isGlobalMeterManuallyCalibrated The new value for isGlobalMeterManuallyCalibrated
-   * @param isInTrip The new value for isInTrip
+   * @param lastCalibrationTime The new value for lastCalibrationTime
    */
-  public Odometer(java.lang.Double globalMeter, java.lang.Double tripMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isGlobalMeterManuallyCalibrated, java.lang.Boolean isInTrip) {
+  public Odometer(java.lang.Double globalMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isGlobalMeterManuallyCalibrated, java.lang.Long lastCalibrationTime) {
     this.globalMeter = globalMeter;
-    this.tripMeter = tripMeter;
     this.lastUpdateTime = lastUpdateTime;
     this.isGlobalMeterManuallyCalibrated = isGlobalMeterManuallyCalibrated;
-    this.isInTrip = isInTrip;
+    this.lastCalibrationTime = lastCalibrationTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,10 +44,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return globalMeter;
-    case 1: return tripMeter;
-    case 2: return lastUpdateTime;
-    case 3: return isGlobalMeterManuallyCalibrated;
-    case 4: return isInTrip;
+    case 1: return lastUpdateTime;
+    case 2: return isGlobalMeterManuallyCalibrated;
+    case 3: return lastCalibrationTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -60,10 +56,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: globalMeter = (java.lang.Double)value$; break;
-    case 1: tripMeter = (java.lang.Double)value$; break;
-    case 2: lastUpdateTime = (java.lang.Long)value$; break;
-    case 3: isGlobalMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
-    case 4: isInTrip = (java.lang.Boolean)value$; break;
+    case 1: lastUpdateTime = (java.lang.Long)value$; break;
+    case 2: isGlobalMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
+    case 3: lastCalibrationTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -82,22 +77,6 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
    */
   public void setGlobalMeter(java.lang.Double value) {
     this.globalMeter = value;
-  }
-
-  /**
-   * Gets the value of the 'tripMeter' field.
-   * @return The value of the 'tripMeter' field.
-   */
-  public java.lang.Double getTripMeter() {
-    return tripMeter;
-  }
-
-  /**
-   * Sets the value of the 'tripMeter' field.
-   * @param value the value to set.
-   */
-  public void setTripMeter(java.lang.Double value) {
-    this.tripMeter = value;
   }
 
   /**
@@ -133,19 +112,19 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Gets the value of the 'isInTrip' field.
-   * @return The value of the 'isInTrip' field.
+   * Gets the value of the 'lastCalibrationTime' field.
+   * @return The value of the 'lastCalibrationTime' field.
    */
-  public java.lang.Boolean getIsInTrip() {
-    return isInTrip;
+  public java.lang.Long getLastCalibrationTime() {
+    return lastCalibrationTime;
   }
 
   /**
-   * Sets the value of the 'isInTrip' field.
+   * Sets the value of the 'lastCalibrationTime' field.
    * @param value the value to set.
    */
-  public void setIsInTrip(java.lang.Boolean value) {
-    this.isInTrip = value;
+  public void setLastCalibrationTime(java.lang.Long value) {
+    this.lastCalibrationTime = value;
   }
 
   /**
@@ -181,10 +160,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     implements org.apache.avro.data.RecordBuilder<Odometer> {
 
     private java.lang.Double globalMeter;
-    private java.lang.Double tripMeter;
     private java.lang.Long lastUpdateTime;
     private java.lang.Boolean isGlobalMeterManuallyCalibrated;
-    private java.lang.Boolean isInTrip;
+    private java.lang.Long lastCalibrationTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -201,21 +179,17 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         this.globalMeter = data().deepCopy(fields()[0].schema(), other.globalMeter);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.tripMeter)) {
-        this.tripMeter = data().deepCopy(fields()[1].schema(), other.tripMeter);
+      if (isValidValue(fields()[1], other.lastUpdateTime)) {
+        this.lastUpdateTime = data().deepCopy(fields()[1].schema(), other.lastUpdateTime);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.lastUpdateTime)) {
-        this.lastUpdateTime = data().deepCopy(fields()[2].schema(), other.lastUpdateTime);
+      if (isValidValue(fields()[2], other.isGlobalMeterManuallyCalibrated)) {
+        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isGlobalMeterManuallyCalibrated);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.isGlobalMeterManuallyCalibrated)) {
-        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[3].schema(), other.isGlobalMeterManuallyCalibrated);
+      if (isValidValue(fields()[3], other.lastCalibrationTime)) {
+        this.lastCalibrationTime = data().deepCopy(fields()[3].schema(), other.lastCalibrationTime);
         fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.isInTrip)) {
-        this.isInTrip = data().deepCopy(fields()[4].schema(), other.isInTrip);
-        fieldSetFlags()[4] = true;
       }
     }
 
@@ -229,21 +203,17 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         this.globalMeter = data().deepCopy(fields()[0].schema(), other.globalMeter);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.tripMeter)) {
-        this.tripMeter = data().deepCopy(fields()[1].schema(), other.tripMeter);
+      if (isValidValue(fields()[1], other.lastUpdateTime)) {
+        this.lastUpdateTime = data().deepCopy(fields()[1].schema(), other.lastUpdateTime);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.lastUpdateTime)) {
-        this.lastUpdateTime = data().deepCopy(fields()[2].schema(), other.lastUpdateTime);
+      if (isValidValue(fields()[2], other.isGlobalMeterManuallyCalibrated)) {
+        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isGlobalMeterManuallyCalibrated);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.isGlobalMeterManuallyCalibrated)) {
-        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[3].schema(), other.isGlobalMeterManuallyCalibrated);
+      if (isValidValue(fields()[3], other.lastCalibrationTime)) {
+        this.lastCalibrationTime = data().deepCopy(fields()[3].schema(), other.lastCalibrationTime);
         fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.isInTrip)) {
-        this.isInTrip = data().deepCopy(fields()[4].schema(), other.isInTrip);
-        fieldSetFlags()[4] = true;
       }
     }
 
@@ -287,45 +257,6 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'tripMeter' field.
-      * @return The value.
-      */
-    public java.lang.Double getTripMeter() {
-      return tripMeter;
-    }
-
-    /**
-      * Sets the value of the 'tripMeter' field.
-      * @param value The value of 'tripMeter'.
-      * @return This builder.
-      */
-    public com.fretron.Model.Odometer.Builder setTripMeter(java.lang.Double value) {
-      validate(fields()[1], value);
-      this.tripMeter = value;
-      fieldSetFlags()[1] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'tripMeter' field has been set.
-      * @return True if the 'tripMeter' field has been set, false otherwise.
-      */
-    public boolean hasTripMeter() {
-      return fieldSetFlags()[1];
-    }
-
-
-    /**
-      * Clears the value of the 'tripMeter' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.Odometer.Builder clearTripMeter() {
-      tripMeter = null;
-      fieldSetFlags()[1] = false;
-      return this;
-    }
-
-    /**
       * Gets the value of the 'lastUpdateTime' field.
       * @return The value.
       */
@@ -339,9 +270,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Odometer.Builder setLastUpdateTime(java.lang.Long value) {
-      validate(fields()[2], value);
+      validate(fields()[1], value);
       this.lastUpdateTime = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[1] = true;
       return this;
     }
 
@@ -350,7 +281,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'lastUpdateTime' field has been set, false otherwise.
       */
     public boolean hasLastUpdateTime() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[1];
     }
 
 
@@ -360,7 +291,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Odometer.Builder clearLastUpdateTime() {
       lastUpdateTime = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -378,9 +309,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Odometer.Builder setIsGlobalMeterManuallyCalibrated(java.lang.Boolean value) {
-      validate(fields()[3], value);
+      validate(fields()[2], value);
       this.isGlobalMeterManuallyCalibrated = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -389,7 +320,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'isGlobalMeterManuallyCalibrated' field has been set, false otherwise.
       */
     public boolean hasIsGlobalMeterManuallyCalibrated() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[2];
     }
 
 
@@ -399,46 +330,46 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Odometer.Builder clearIsGlobalMeterManuallyCalibrated() {
       isGlobalMeterManuallyCalibrated = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'isInTrip' field.
+      * Gets the value of the 'lastCalibrationTime' field.
       * @return The value.
       */
-    public java.lang.Boolean getIsInTrip() {
-      return isInTrip;
+    public java.lang.Long getLastCalibrationTime() {
+      return lastCalibrationTime;
     }
 
     /**
-      * Sets the value of the 'isInTrip' field.
-      * @param value The value of 'isInTrip'.
+      * Sets the value of the 'lastCalibrationTime' field.
+      * @param value The value of 'lastCalibrationTime'.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder setIsInTrip(java.lang.Boolean value) {
-      validate(fields()[4], value);
-      this.isInTrip = value;
-      fieldSetFlags()[4] = true;
+    public com.fretron.Model.Odometer.Builder setLastCalibrationTime(java.lang.Long value) {
+      validate(fields()[3], value);
+      this.lastCalibrationTime = value;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'isInTrip' field has been set.
-      * @return True if the 'isInTrip' field has been set, false otherwise.
+      * Checks whether the 'lastCalibrationTime' field has been set.
+      * @return True if the 'lastCalibrationTime' field has been set, false otherwise.
       */
-    public boolean hasIsInTrip() {
-      return fieldSetFlags()[4];
+    public boolean hasLastCalibrationTime() {
+      return fieldSetFlags()[3];
     }
 
 
     /**
-      * Clears the value of the 'isInTrip' field.
+      * Clears the value of the 'lastCalibrationTime' field.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder clearIsInTrip() {
-      isInTrip = null;
-      fieldSetFlags()[4] = false;
+    public com.fretron.Model.Odometer.Builder clearLastCalibrationTime() {
+      lastCalibrationTime = null;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -447,10 +378,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       try {
         Odometer record = new Odometer();
         record.globalMeter = fieldSetFlags()[0] ? this.globalMeter : (java.lang.Double) defaultValue(fields()[0]);
-        record.tripMeter = fieldSetFlags()[1] ? this.tripMeter : (java.lang.Double) defaultValue(fields()[1]);
-        record.lastUpdateTime = fieldSetFlags()[2] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[2]);
-        record.isGlobalMeterManuallyCalibrated = fieldSetFlags()[3] ? this.isGlobalMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[3]);
-        record.isInTrip = fieldSetFlags()[4] ? this.isInTrip : (java.lang.Boolean) defaultValue(fields()[4]);
+        record.lastUpdateTime = fieldSetFlags()[1] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[1]);
+        record.isGlobalMeterManuallyCalibrated = fieldSetFlags()[2] ? this.isGlobalMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[2]);
+        record.lastCalibrationTime = fieldSetFlags()[3] ? this.lastCalibrationTime : (java.lang.Long) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -10,13 +10,9 @@
          "default" : null
       },
       {
-         "name": "tripMeter",
-          "type": ["null","double"],
-          "default" : null
-      },
-      {
          "name": "lastUpdateTime",
           "type": ["null","long"],
+          "logicalType": "timestamp-millis",
           "default" : null
       },
       {
@@ -25,9 +21,10 @@
          "default" : null
       },
       {
-         "name": "isInTrip",
-          "type": ["null","boolean"],
-          "default" : null
+        "name": "lastCalibrationTime",
+         "type": ["null","long"],
+         "logicalType": "timestamp-millis",
+         "default" : null
       }
     ]
   }
