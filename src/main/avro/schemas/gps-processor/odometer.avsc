@@ -25,6 +25,11 @@
          "type": ["null","long"],
          "logicalType": "timestamp-millis",
          "default" : null
+      },
+      {
+        "name": "hardwareReading",
+         "type": ["null","double"],
+         "default" : null
       }
     ]
   }

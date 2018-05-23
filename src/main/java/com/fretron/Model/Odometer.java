@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Odometer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3908036262072511958L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"globalMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isGlobalMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -6165284857369899179L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"globalMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isGlobalMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double globalMeter;
   @Deprecated public java.lang.Long lastUpdateTime;
   @Deprecated public java.lang.Boolean isGlobalMeterManuallyCalibrated;
   @Deprecated public java.lang.Long lastCalibrationTime;
+  @Deprecated public java.lang.Double hardwareReading;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
    * @param lastUpdateTime The new value for lastUpdateTime
    * @param isGlobalMeterManuallyCalibrated The new value for isGlobalMeterManuallyCalibrated
    * @param lastCalibrationTime The new value for lastCalibrationTime
+   * @param hardwareReading The new value for hardwareReading
    */
-  public Odometer(java.lang.Double globalMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isGlobalMeterManuallyCalibrated, java.lang.Long lastCalibrationTime) {
+  public Odometer(java.lang.Double globalMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isGlobalMeterManuallyCalibrated, java.lang.Long lastCalibrationTime, java.lang.Double hardwareReading) {
     this.globalMeter = globalMeter;
     this.lastUpdateTime = lastUpdateTime;
     this.isGlobalMeterManuallyCalibrated = isGlobalMeterManuallyCalibrated;
     this.lastCalibrationTime = lastCalibrationTime;
+    this.hardwareReading = hardwareReading;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: return lastUpdateTime;
     case 2: return isGlobalMeterManuallyCalibrated;
     case 3: return lastCalibrationTime;
+    case 4: return hardwareReading;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: lastUpdateTime = (java.lang.Long)value$; break;
     case 2: isGlobalMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
     case 3: lastCalibrationTime = (java.lang.Long)value$; break;
+    case 4: hardwareReading = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'hardwareReading' field.
+   * @return The value of the 'hardwareReading' field.
+   */
+  public java.lang.Double getHardwareReading() {
+    return hardwareReading;
+  }
+
+  /**
+   * Sets the value of the 'hardwareReading' field.
+   * @param value the value to set.
+   */
+  public void setHardwareReading(java.lang.Double value) {
+    this.hardwareReading = value;
+  }
+
+  /**
    * Creates a new Odometer RecordBuilder.
    * @return A new Odometer RecordBuilder
    */
@@ -163,6 +184,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.Long lastUpdateTime;
     private java.lang.Boolean isGlobalMeterManuallyCalibrated;
     private java.lang.Long lastCalibrationTime;
+    private java.lang.Double hardwareReading;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +213,10 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         this.lastCalibrationTime = data().deepCopy(fields()[3].schema(), other.lastCalibrationTime);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.hardwareReading)) {
+        this.hardwareReading = data().deepCopy(fields()[4].schema(), other.hardwareReading);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -214,6 +240,10 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[3], other.lastCalibrationTime)) {
         this.lastCalibrationTime = data().deepCopy(fields()[3].schema(), other.lastCalibrationTime);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.hardwareReading)) {
+        this.hardwareReading = data().deepCopy(fields()[4].schema(), other.hardwareReading);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -373,6 +403,45 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'hardwareReading' field.
+      * @return The value.
+      */
+    public java.lang.Double getHardwareReading() {
+      return hardwareReading;
+    }
+
+    /**
+      * Sets the value of the 'hardwareReading' field.
+      * @param value The value of 'hardwareReading'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Odometer.Builder setHardwareReading(java.lang.Double value) {
+      validate(fields()[4], value);
+      this.hardwareReading = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'hardwareReading' field has been set.
+      * @return True if the 'hardwareReading' field has been set, false otherwise.
+      */
+    public boolean hasHardwareReading() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'hardwareReading' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Odometer.Builder clearHardwareReading() {
+      hardwareReading = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public Odometer build() {
       try {
@@ -381,6 +450,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         record.lastUpdateTime = fieldSetFlags()[1] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[1]);
         record.isGlobalMeterManuallyCalibrated = fieldSetFlags()[2] ? this.isGlobalMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[2]);
         record.lastCalibrationTime = fieldSetFlags()[3] ? this.lastCalibrationTime : (java.lang.Long) defaultValue(fields()[3]);
+        record.hardwareReading = fieldSetFlags()[4] ? this.hardwareReading : (java.lang.Double) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
