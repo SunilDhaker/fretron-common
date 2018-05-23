@@ -96,7 +96,25 @@ public class RedisServerManager {
         return poolManager.isConnected();
     }
 
-
+    public Boolean tokenExist(String key) {
+        Jedis jedis = null;
+        boolean exist = false;
+        try {
+            jedis = poolManager.getJedisInstance();
+            String value  = jedis.get(key);
+            if(value!=null){
+                exist =  true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+        return exist;
+    }
 //    static Jedis jedis ;
 //    private String host ;
 //    public RedisServerManager(String host)  {
