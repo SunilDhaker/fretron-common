@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Odometer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5862395343710033482L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -147806379498770525L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double softwareMeter;
   @Deprecated public java.lang.Long lastUpdateTime;
   @Deprecated public java.lang.Boolean isSoftwareMeterManuallyCalibrated;
   @Deprecated public java.lang.Long lastCalibrationTime;
   @Deprecated public java.lang.Double hardwareReading;
+  @Deprecated public java.lang.Double hardwareDistance;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
    * @param isSoftwareMeterManuallyCalibrated The new value for isSoftwareMeterManuallyCalibrated
    * @param lastCalibrationTime The new value for lastCalibrationTime
    * @param hardwareReading The new value for hardwareReading
+   * @param hardwareDistance The new value for hardwareDistance
    */
-  public Odometer(java.lang.Double softwareMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isSoftwareMeterManuallyCalibrated, java.lang.Long lastCalibrationTime, java.lang.Double hardwareReading) {
+  public Odometer(java.lang.Double softwareMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isSoftwareMeterManuallyCalibrated, java.lang.Long lastCalibrationTime, java.lang.Double hardwareReading, java.lang.Double hardwareDistance) {
     this.softwareMeter = softwareMeter;
     this.lastUpdateTime = lastUpdateTime;
     this.isSoftwareMeterManuallyCalibrated = isSoftwareMeterManuallyCalibrated;
     this.lastCalibrationTime = lastCalibrationTime;
     this.hardwareReading = hardwareReading;
+    this.hardwareDistance = hardwareDistance;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     case 2: return isSoftwareMeterManuallyCalibrated;
     case 3: return lastCalibrationTime;
     case 4: return hardwareReading;
+    case 5: return hardwareDistance;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     case 2: isSoftwareMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
     case 3: lastCalibrationTime = (java.lang.Long)value$; break;
     case 4: hardwareReading = (java.lang.Double)value$; break;
+    case 5: hardwareDistance = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'hardwareDistance' field.
+   * @return The value of the 'hardwareDistance' field.
+   */
+  public java.lang.Double getHardwareDistance() {
+    return hardwareDistance;
+  }
+
+  /**
+   * Sets the value of the 'hardwareDistance' field.
+   * @param value the value to set.
+   */
+  public void setHardwareDistance(java.lang.Double value) {
+    this.hardwareDistance = value;
+  }
+
+  /**
    * Creates a new Odometer RecordBuilder.
    * @return A new Odometer RecordBuilder
    */
@@ -185,6 +206,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.Boolean isSoftwareMeterManuallyCalibrated;
     private java.lang.Long lastCalibrationTime;
     private java.lang.Double hardwareReading;
+    private java.lang.Double hardwareDistance;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +239,10 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         this.hardwareReading = data().deepCopy(fields()[4].schema(), other.hardwareReading);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.hardwareDistance)) {
+        this.hardwareDistance = data().deepCopy(fields()[5].schema(), other.hardwareDistance);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -244,6 +270,10 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[4], other.hardwareReading)) {
         this.hardwareReading = data().deepCopy(fields()[4].schema(), other.hardwareReading);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.hardwareDistance)) {
+        this.hardwareDistance = data().deepCopy(fields()[5].schema(), other.hardwareDistance);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -442,6 +472,45 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'hardwareDistance' field.
+      * @return The value.
+      */
+    public java.lang.Double getHardwareDistance() {
+      return hardwareDistance;
+    }
+
+    /**
+      * Sets the value of the 'hardwareDistance' field.
+      * @param value The value of 'hardwareDistance'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Odometer.Builder setHardwareDistance(java.lang.Double value) {
+      validate(fields()[5], value);
+      this.hardwareDistance = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'hardwareDistance' field has been set.
+      * @return True if the 'hardwareDistance' field has been set, false otherwise.
+      */
+    public boolean hasHardwareDistance() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'hardwareDistance' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Odometer.Builder clearHardwareDistance() {
+      hardwareDistance = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public Odometer build() {
       try {
@@ -451,6 +520,7 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
         record.isSoftwareMeterManuallyCalibrated = fieldSetFlags()[2] ? this.isSoftwareMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[2]);
         record.lastCalibrationTime = fieldSetFlags()[3] ? this.lastCalibrationTime : (java.lang.Long) defaultValue(fields()[3]);
         record.hardwareReading = fieldSetFlags()[4] ? this.hardwareReading : (java.lang.Double) defaultValue(fields()[4]);
+        record.hardwareDistance = fieldSetFlags()[5] ? this.hardwareDistance : (java.lang.Double) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

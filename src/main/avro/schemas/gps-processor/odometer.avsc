@@ -30,7 +30,13 @@
         "name": "hardwareReading",
          "type": ["null","double"],
          "default" : null
+      },
+      {
+         "name": "hardwareDistance",
+         "type": ["null","double"],
+         "default" : null
       }
+
     ]
   }
 ]
