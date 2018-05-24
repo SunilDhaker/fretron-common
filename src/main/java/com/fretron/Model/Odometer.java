@@ -10,12 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Odometer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6165284857369899179L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"globalMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isGlobalMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -5862395343710033482L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Odometer\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public java.lang.Double globalMeter;
+  @Deprecated public java.lang.Double softwareMeter;
   @Deprecated public java.lang.Long lastUpdateTime;
-  @Deprecated public java.lang.Boolean isGlobalMeterManuallyCalibrated;
+  @Deprecated public java.lang.Boolean isSoftwareMeterManuallyCalibrated;
   @Deprecated public java.lang.Long lastCalibrationTime;
   @Deprecated public java.lang.Double hardwareReading;
 
@@ -28,16 +28,16 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
 
   /**
    * All-args constructor.
-   * @param globalMeter The new value for globalMeter
+   * @param softwareMeter The new value for softwareMeter
    * @param lastUpdateTime The new value for lastUpdateTime
-   * @param isGlobalMeterManuallyCalibrated The new value for isGlobalMeterManuallyCalibrated
+   * @param isSoftwareMeterManuallyCalibrated The new value for isSoftwareMeterManuallyCalibrated
    * @param lastCalibrationTime The new value for lastCalibrationTime
    * @param hardwareReading The new value for hardwareReading
    */
-  public Odometer(java.lang.Double globalMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isGlobalMeterManuallyCalibrated, java.lang.Long lastCalibrationTime, java.lang.Double hardwareReading) {
-    this.globalMeter = globalMeter;
+  public Odometer(java.lang.Double softwareMeter, java.lang.Long lastUpdateTime, java.lang.Boolean isSoftwareMeterManuallyCalibrated, java.lang.Long lastCalibrationTime, java.lang.Double hardwareReading) {
+    this.softwareMeter = softwareMeter;
     this.lastUpdateTime = lastUpdateTime;
-    this.isGlobalMeterManuallyCalibrated = isGlobalMeterManuallyCalibrated;
+    this.isSoftwareMeterManuallyCalibrated = isSoftwareMeterManuallyCalibrated;
     this.lastCalibrationTime = lastCalibrationTime;
     this.hardwareReading = hardwareReading;
   }
@@ -46,9 +46,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return globalMeter;
+    case 0: return softwareMeter;
     case 1: return lastUpdateTime;
-    case 2: return isGlobalMeterManuallyCalibrated;
+    case 2: return isSoftwareMeterManuallyCalibrated;
     case 3: return lastCalibrationTime;
     case 4: return hardwareReading;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
@@ -59,9 +59,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: globalMeter = (java.lang.Double)value$; break;
+    case 0: softwareMeter = (java.lang.Double)value$; break;
     case 1: lastUpdateTime = (java.lang.Long)value$; break;
-    case 2: isGlobalMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
+    case 2: isSoftwareMeterManuallyCalibrated = (java.lang.Boolean)value$; break;
     case 3: lastCalibrationTime = (java.lang.Long)value$; break;
     case 4: hardwareReading = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
@@ -69,19 +69,19 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Gets the value of the 'globalMeter' field.
-   * @return The value of the 'globalMeter' field.
+   * Gets the value of the 'softwareMeter' field.
+   * @return The value of the 'softwareMeter' field.
    */
-  public java.lang.Double getGlobalMeter() {
-    return globalMeter;
+  public java.lang.Double getSoftwareMeter() {
+    return softwareMeter;
   }
 
   /**
-   * Sets the value of the 'globalMeter' field.
+   * Sets the value of the 'softwareMeter' field.
    * @param value the value to set.
    */
-  public void setGlobalMeter(java.lang.Double value) {
-    this.globalMeter = value;
+  public void setSoftwareMeter(java.lang.Double value) {
+    this.softwareMeter = value;
   }
 
   /**
@@ -101,19 +101,19 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Gets the value of the 'isGlobalMeterManuallyCalibrated' field.
-   * @return The value of the 'isGlobalMeterManuallyCalibrated' field.
+   * Gets the value of the 'isSoftwareMeterManuallyCalibrated' field.
+   * @return The value of the 'isSoftwareMeterManuallyCalibrated' field.
    */
-  public java.lang.Boolean getIsGlobalMeterManuallyCalibrated() {
-    return isGlobalMeterManuallyCalibrated;
+  public java.lang.Boolean getIsSoftwareMeterManuallyCalibrated() {
+    return isSoftwareMeterManuallyCalibrated;
   }
 
   /**
-   * Sets the value of the 'isGlobalMeterManuallyCalibrated' field.
+   * Sets the value of the 'isSoftwareMeterManuallyCalibrated' field.
    * @param value the value to set.
    */
-  public void setIsGlobalMeterManuallyCalibrated(java.lang.Boolean value) {
-    this.isGlobalMeterManuallyCalibrated = value;
+  public void setIsSoftwareMeterManuallyCalibrated(java.lang.Boolean value) {
+    this.isSoftwareMeterManuallyCalibrated = value;
   }
 
   /**
@@ -180,9 +180,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Odometer>
     implements org.apache.avro.data.RecordBuilder<Odometer> {
 
-    private java.lang.Double globalMeter;
+    private java.lang.Double softwareMeter;
     private java.lang.Long lastUpdateTime;
-    private java.lang.Boolean isGlobalMeterManuallyCalibrated;
+    private java.lang.Boolean isSoftwareMeterManuallyCalibrated;
     private java.lang.Long lastCalibrationTime;
     private java.lang.Double hardwareReading;
 
@@ -197,16 +197,16 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
      */
     private Builder(com.fretron.Model.Odometer.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.globalMeter)) {
-        this.globalMeter = data().deepCopy(fields()[0].schema(), other.globalMeter);
+      if (isValidValue(fields()[0], other.softwareMeter)) {
+        this.softwareMeter = data().deepCopy(fields()[0].schema(), other.softwareMeter);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.lastUpdateTime)) {
         this.lastUpdateTime = data().deepCopy(fields()[1].schema(), other.lastUpdateTime);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.isGlobalMeterManuallyCalibrated)) {
-        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isGlobalMeterManuallyCalibrated);
+      if (isValidValue(fields()[2], other.isSoftwareMeterManuallyCalibrated)) {
+        this.isSoftwareMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isSoftwareMeterManuallyCalibrated);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.lastCalibrationTime)) {
@@ -225,16 +225,16 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
      */
     private Builder(com.fretron.Model.Odometer other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.globalMeter)) {
-        this.globalMeter = data().deepCopy(fields()[0].schema(), other.globalMeter);
+      if (isValidValue(fields()[0], other.softwareMeter)) {
+        this.softwareMeter = data().deepCopy(fields()[0].schema(), other.softwareMeter);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.lastUpdateTime)) {
         this.lastUpdateTime = data().deepCopy(fields()[1].schema(), other.lastUpdateTime);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.isGlobalMeterManuallyCalibrated)) {
-        this.isGlobalMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isGlobalMeterManuallyCalibrated);
+      if (isValidValue(fields()[2], other.isSoftwareMeterManuallyCalibrated)) {
+        this.isSoftwareMeterManuallyCalibrated = data().deepCopy(fields()[2].schema(), other.isSoftwareMeterManuallyCalibrated);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.lastCalibrationTime)) {
@@ -248,40 +248,40 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'globalMeter' field.
+      * Gets the value of the 'softwareMeter' field.
       * @return The value.
       */
-    public java.lang.Double getGlobalMeter() {
-      return globalMeter;
+    public java.lang.Double getSoftwareMeter() {
+      return softwareMeter;
     }
 
     /**
-      * Sets the value of the 'globalMeter' field.
-      * @param value The value of 'globalMeter'.
+      * Sets the value of the 'softwareMeter' field.
+      * @param value The value of 'softwareMeter'.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder setGlobalMeter(java.lang.Double value) {
+    public com.fretron.Model.Odometer.Builder setSoftwareMeter(java.lang.Double value) {
       validate(fields()[0], value);
-      this.globalMeter = value;
+      this.softwareMeter = value;
       fieldSetFlags()[0] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'globalMeter' field has been set.
-      * @return True if the 'globalMeter' field has been set, false otherwise.
+      * Checks whether the 'softwareMeter' field has been set.
+      * @return True if the 'softwareMeter' field has been set, false otherwise.
       */
-    public boolean hasGlobalMeter() {
+    public boolean hasSoftwareMeter() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'globalMeter' field.
+      * Clears the value of the 'softwareMeter' field.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder clearGlobalMeter() {
-      globalMeter = null;
+    public com.fretron.Model.Odometer.Builder clearSoftwareMeter() {
+      softwareMeter = null;
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -326,40 +326,40 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'isGlobalMeterManuallyCalibrated' field.
+      * Gets the value of the 'isSoftwareMeterManuallyCalibrated' field.
       * @return The value.
       */
-    public java.lang.Boolean getIsGlobalMeterManuallyCalibrated() {
-      return isGlobalMeterManuallyCalibrated;
+    public java.lang.Boolean getIsSoftwareMeterManuallyCalibrated() {
+      return isSoftwareMeterManuallyCalibrated;
     }
 
     /**
-      * Sets the value of the 'isGlobalMeterManuallyCalibrated' field.
-      * @param value The value of 'isGlobalMeterManuallyCalibrated'.
+      * Sets the value of the 'isSoftwareMeterManuallyCalibrated' field.
+      * @param value The value of 'isSoftwareMeterManuallyCalibrated'.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder setIsGlobalMeterManuallyCalibrated(java.lang.Boolean value) {
+    public com.fretron.Model.Odometer.Builder setIsSoftwareMeterManuallyCalibrated(java.lang.Boolean value) {
       validate(fields()[2], value);
-      this.isGlobalMeterManuallyCalibrated = value;
+      this.isSoftwareMeterManuallyCalibrated = value;
       fieldSetFlags()[2] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'isGlobalMeterManuallyCalibrated' field has been set.
-      * @return True if the 'isGlobalMeterManuallyCalibrated' field has been set, false otherwise.
+      * Checks whether the 'isSoftwareMeterManuallyCalibrated' field has been set.
+      * @return True if the 'isSoftwareMeterManuallyCalibrated' field has been set, false otherwise.
       */
-    public boolean hasIsGlobalMeterManuallyCalibrated() {
+    public boolean hasIsSoftwareMeterManuallyCalibrated() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'isGlobalMeterManuallyCalibrated' field.
+      * Clears the value of the 'isSoftwareMeterManuallyCalibrated' field.
       * @return This builder.
       */
-    public com.fretron.Model.Odometer.Builder clearIsGlobalMeterManuallyCalibrated() {
-      isGlobalMeterManuallyCalibrated = null;
+    public com.fretron.Model.Odometer.Builder clearIsSoftwareMeterManuallyCalibrated() {
+      isSoftwareMeterManuallyCalibrated = null;
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -446,9 +446,9 @@ public class Odometer extends org.apache.avro.specific.SpecificRecordBase implem
     public Odometer build() {
       try {
         Odometer record = new Odometer();
-        record.globalMeter = fieldSetFlags()[0] ? this.globalMeter : (java.lang.Double) defaultValue(fields()[0]);
+        record.softwareMeter = fieldSetFlags()[0] ? this.softwareMeter : (java.lang.Double) defaultValue(fields()[0]);
         record.lastUpdateTime = fieldSetFlags()[1] ? this.lastUpdateTime : (java.lang.Long) defaultValue(fields()[1]);
-        record.isGlobalMeterManuallyCalibrated = fieldSetFlags()[2] ? this.isGlobalMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[2]);
+        record.isSoftwareMeterManuallyCalibrated = fieldSetFlags()[2] ? this.isSoftwareMeterManuallyCalibrated : (java.lang.Boolean) defaultValue(fields()[2]);
         record.lastCalibrationTime = fieldSetFlags()[3] ? this.lastCalibrationTime : (java.lang.Long) defaultValue(fields()[3]);
         record.hardwareReading = fieldSetFlags()[4] ? this.hardwareReading : (java.lang.Double) defaultValue(fields()[4]);
         return record;

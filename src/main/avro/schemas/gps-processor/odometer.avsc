@@ -5,7 +5,7 @@
     "name": "Odometer",
     "fields": [
       {
-         "name": "globalMeter",
+         "name": "softwareMeter",
          "type": ["null","double"],
          "default" : null
       },
@@ -16,7 +16,7 @@
           "default" : null
       },
       {
-         "name": "isGlobalMeterManuallyCalibrated",
+         "name": "isSoftwareMeterManuallyCalibrated",
          "type": ["null","boolean"],
          "default" : null
       },
