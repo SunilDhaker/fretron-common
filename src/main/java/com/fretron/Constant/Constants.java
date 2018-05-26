@@ -107,6 +107,8 @@ public class Constants {
     //topics
     public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+    public static final java.lang.String KEY_ODOMETER_CALIBRATION_TOPIC = "odometer.calibration.topic";
+
 
 
 

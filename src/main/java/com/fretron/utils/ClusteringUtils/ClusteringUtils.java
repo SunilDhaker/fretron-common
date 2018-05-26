@@ -24,7 +24,7 @@ public class ClusteringUtils {
 
 
     public static LitePosition calculateMean(List<LitePosition> positions){
-        LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
+        LitePosition meanPosition = new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false ,null);
 		if(positions.size() > 0){
 			for (LitePosition p : positions) {
 				meanPosition.latitude = meanPosition.latitude +p.latitude;
@@ -74,7 +74,7 @@ public class ClusteringUtils {
 	}
 
 	public static MeanVariance merge(LitePosition mean1 , double variance1 , int n1 , LitePosition mean2 , double variance2 , int n2)
-	{ LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false);
+	{ LitePosition newMean =new LitePosition(0d,0d,0d,0d,"",0l,"" , null , null,null ,false ,null);
 		newMean.latitude = (n1 * mean1.latitude + n2 * mean2.latitude) / (n1 + n2);
 		newMean.longitude = (n1 * mean1.longitude + n2 * mean2.longitude) / (n1 + n2);
 		double d1 = distance(mean1 , newMean);

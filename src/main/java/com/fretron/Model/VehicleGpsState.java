@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2800774756172121845L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 9138589197435814707L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastStateOdometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null},{\"name\":\"odometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public boolean isManuallyAdded;
   @Deprecated public boolean isIgnore;
@@ -40,6 +40,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public boolean isDisconnected;
   @Deprecated public java.lang.String eventType;
   @Deprecated public java.lang.String batteryStatus;
+  @Deprecated public com.fretron.Model.Odometer lastStateOdometer;
+  @Deprecated public com.fretron.Model.Odometer odometer;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -77,8 +79,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    * @param isDisconnected The new value for isDisconnected
    * @param eventType The new value for eventType
    * @param batteryStatus The new value for batteryStatus
+   * @param lastStateOdometer The new value for lastStateOdometer
+   * @param odometer The new value for odometer
    */
-  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.Double odoMeter, java.lang.Double lastOdoMeterReading, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.String batteryStatus) {
+  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.Double odoMeter, java.lang.Double lastOdoMeterReading, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.String batteryStatus, com.fretron.Model.Odometer lastStateOdometer, com.fretron.Model.Odometer odometer) {
     this.isManuallyAdded = isManuallyAdded;
     this.isIgnore = isIgnore;
     this.startTime = startTime;
@@ -106,6 +110,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     this.isDisconnected = isDisconnected;
     this.eventType = eventType;
     this.batteryStatus = batteryStatus;
+    this.lastStateOdometer = lastStateOdometer;
+    this.odometer = odometer;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -139,6 +145,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 24: return isDisconnected;
     case 25: return eventType;
     case 26: return batteryStatus;
+    case 27: return lastStateOdometer;
+    case 28: return odometer;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -174,6 +182,8 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 24: isDisconnected = (java.lang.Boolean)value$; break;
     case 25: eventType = (java.lang.String)value$; break;
     case 26: batteryStatus = (java.lang.String)value$; break;
+    case 27: lastStateOdometer = (com.fretron.Model.Odometer)value$; break;
+    case 28: odometer = (com.fretron.Model.Odometer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -611,6 +621,38 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'lastStateOdometer' field.
+   * @return The value of the 'lastStateOdometer' field.
+   */
+  public com.fretron.Model.Odometer getLastStateOdometer() {
+    return lastStateOdometer;
+  }
+
+  /**
+   * Sets the value of the 'lastStateOdometer' field.
+   * @param value the value to set.
+   */
+  public void setLastStateOdometer(com.fretron.Model.Odometer value) {
+    this.lastStateOdometer = value;
+  }
+
+  /**
+   * Gets the value of the 'odometer' field.
+   * @return The value of the 'odometer' field.
+   */
+  public com.fretron.Model.Odometer getOdometer() {
+    return odometer;
+  }
+
+  /**
+   * Sets the value of the 'odometer' field.
+   * @param value the value to set.
+   */
+  public void setOdometer(com.fretron.Model.Odometer value) {
+    this.odometer = value;
+  }
+
+  /**
    * Creates a new VehicleGpsState RecordBuilder.
    * @return A new VehicleGpsState RecordBuilder
    */
@@ -673,6 +715,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     private boolean isDisconnected;
     private java.lang.String eventType;
     private java.lang.String batteryStatus;
+    private com.fretron.Model.Odometer lastStateOdometer;
+    private com.fretron.Model.Odometer.Builder lastStateOdometerBuilder;
+    private com.fretron.Model.Odometer odometer;
+    private com.fretron.Model.Odometer.Builder odometerBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -805,6 +851,20 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.batteryStatus = data().deepCopy(fields()[26].schema(), other.batteryStatus);
         fieldSetFlags()[26] = true;
       }
+      if (isValidValue(fields()[27], other.lastStateOdometer)) {
+        this.lastStateOdometer = data().deepCopy(fields()[27].schema(), other.lastStateOdometer);
+        fieldSetFlags()[27] = true;
+      }
+      if (other.hasLastStateOdometerBuilder()) {
+        this.lastStateOdometerBuilder = com.fretron.Model.Odometer.newBuilder(other.getLastStateOdometerBuilder());
+      }
+      if (isValidValue(fields()[28], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[28].schema(), other.odometer);
+        fieldSetFlags()[28] = true;
+      }
+      if (other.hasOdometerBuilder()) {
+        this.odometerBuilder = com.fretron.Model.Odometer.newBuilder(other.getOdometerBuilder());
+      }
     }
 
     /**
@@ -925,6 +985,16 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         this.batteryStatus = data().deepCopy(fields()[26].schema(), other.batteryStatus);
         fieldSetFlags()[26] = true;
       }
+      if (isValidValue(fields()[27], other.lastStateOdometer)) {
+        this.lastStateOdometer = data().deepCopy(fields()[27].schema(), other.lastStateOdometer);
+        fieldSetFlags()[27] = true;
+      }
+      this.lastStateOdometerBuilder = null;
+      if (isValidValue(fields()[28], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[28].schema(), other.odometer);
+        fieldSetFlags()[28] = true;
+      }
+      this.odometerBuilder = null;
     }
 
     /**
@@ -2109,6 +2179,154 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'lastStateOdometer' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Odometer getLastStateOdometer() {
+      return lastStateOdometer;
+    }
+
+    /**
+      * Sets the value of the 'lastStateOdometer' field.
+      * @param value The value of 'lastStateOdometer'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setLastStateOdometer(com.fretron.Model.Odometer value) {
+      validate(fields()[27], value);
+      this.lastStateOdometerBuilder = null;
+      this.lastStateOdometer = value;
+      fieldSetFlags()[27] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastStateOdometer' field has been set.
+      * @return True if the 'lastStateOdometer' field has been set, false otherwise.
+      */
+    public boolean hasLastStateOdometer() {
+      return fieldSetFlags()[27];
+    }
+
+    /**
+     * Gets the Builder instance for the 'lastStateOdometer' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Odometer.Builder getLastStateOdometerBuilder() {
+      if (lastStateOdometerBuilder == null) {
+        if (hasLastStateOdometer()) {
+          setLastStateOdometerBuilder(com.fretron.Model.Odometer.newBuilder(lastStateOdometer));
+        } else {
+          setLastStateOdometerBuilder(com.fretron.Model.Odometer.newBuilder());
+        }
+      }
+      return lastStateOdometerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'lastStateOdometer' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.VehicleGpsState.Builder setLastStateOdometerBuilder(com.fretron.Model.Odometer.Builder value) {
+      clearLastStateOdometer();
+      lastStateOdometerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'lastStateOdometer' field has an active Builder instance
+     * @return True if the 'lastStateOdometer' field has an active Builder instance
+     */
+    public boolean hasLastStateOdometerBuilder() {
+      return lastStateOdometerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'lastStateOdometer' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearLastStateOdometer() {
+      lastStateOdometer = null;
+      lastStateOdometerBuilder = null;
+      fieldSetFlags()[27] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'odometer' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Odometer getOdometer() {
+      return odometer;
+    }
+
+    /**
+      * Sets the value of the 'odometer' field.
+      * @param value The value of 'odometer'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setOdometer(com.fretron.Model.Odometer value) {
+      validate(fields()[28], value);
+      this.odometerBuilder = null;
+      this.odometer = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'odometer' field has been set.
+      * @return True if the 'odometer' field has been set, false otherwise.
+      */
+    public boolean hasOdometer() {
+      return fieldSetFlags()[28];
+    }
+
+    /**
+     * Gets the Builder instance for the 'odometer' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Odometer.Builder getOdometerBuilder() {
+      if (odometerBuilder == null) {
+        if (hasOdometer()) {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder(odometer));
+        } else {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder());
+        }
+      }
+      return odometerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'odometer' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.VehicleGpsState.Builder setOdometerBuilder(com.fretron.Model.Odometer.Builder value) {
+      clearOdometer();
+      odometerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'odometer' field has an active Builder instance
+     * @return True if the 'odometer' field has an active Builder instance
+     */
+    public boolean hasOdometerBuilder() {
+      return odometerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'odometer' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearOdometer() {
+      odometer = null;
+      odometerBuilder = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
     @Override
     public VehicleGpsState build() {
       try {
@@ -2156,6 +2374,16 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         record.isDisconnected = fieldSetFlags()[24] ? this.isDisconnected : (java.lang.Boolean) defaultValue(fields()[24]);
         record.eventType = fieldSetFlags()[25] ? this.eventType : (java.lang.String) defaultValue(fields()[25]);
         record.batteryStatus = fieldSetFlags()[26] ? this.batteryStatus : (java.lang.String) defaultValue(fields()[26]);
+        if (lastStateOdometerBuilder != null) {
+          record.lastStateOdometer = this.lastStateOdometerBuilder.build();
+        } else {
+          record.lastStateOdometer = fieldSetFlags()[27] ? this.lastStateOdometer : (com.fretron.Model.Odometer) defaultValue(fields()[27]);
+        }
+        if (odometerBuilder != null) {
+          record.odometer = this.odometerBuilder.build();
+        } else {
+          record.odometer = fieldSetFlags()[28] ? this.odometer : (com.fretron.Model.Odometer) defaultValue(fields()[28]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
