@@ -4,6 +4,9 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 import javax.net.ssl.*;
+import java.util.logging.Logger;
+
+import static java.util.logging.Level.INFO;
 
 public class Redis {
     private static Object staticLock = new Object();
@@ -22,6 +25,7 @@ public class Redis {
         Redis.password = password;
         Redis.connectTimeout = connectTimeout;
         Redis.operationTimeout = operationTimeout;
+        Logger.getGlobal().log(INFO, "Redis Server initialization on host "+host +" and port "+port);
     }
 
     // MAKE SURE to call the initializeSettings method first
