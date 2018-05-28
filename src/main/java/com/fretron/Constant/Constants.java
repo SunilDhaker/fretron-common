@@ -64,6 +64,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_DEVICE_STATE_SESSION_TOPIC= "device.state.session.topic";
 
 
     public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
