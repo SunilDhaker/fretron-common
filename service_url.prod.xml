@@ -70,7 +70,6 @@
 
 
     <!-- ==========kafka-topic-manager========= -->
-
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
 
 
