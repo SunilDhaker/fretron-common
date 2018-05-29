@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4519422277640924837L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceStateSessions\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"EndLngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6995195745055201319L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceStateSessions\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"endLngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String type;
@@ -21,7 +21,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
   @Deprecated public java.util.List<java.lang.Double> lngLat;
-  @Deprecated public java.util.List<java.lang.Double> EndLngLat;
+  @Deprecated public java.util.List<java.lang.Double> endLngLat;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -40,9 +40,9 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
    * @param startTime The new value for startTime
    * @param endTime The new value for endTime
    * @param lngLat The new value for lngLat
-   * @param EndLngLat The new value for EndLngLat
+   * @param endLngLat The new value for endLngLat
    */
-  public DeviceStateSessions(java.lang.String uuid, java.lang.String type, java.lang.String state, java.lang.String imei, java.lang.String vehicleId, java.lang.Long startTime, java.lang.Long endTime, java.util.List<java.lang.Double> lngLat, java.util.List<java.lang.Double> EndLngLat) {
+  public DeviceStateSessions(java.lang.String uuid, java.lang.String type, java.lang.String state, java.lang.String imei, java.lang.String vehicleId, java.lang.Long startTime, java.lang.Long endTime, java.util.List<java.lang.Double> lngLat, java.util.List<java.lang.Double> endLngLat) {
     this.uuid = uuid;
     this.type = type;
     this.state = state;
@@ -51,7 +51,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
     this.startTime = startTime;
     this.endTime = endTime;
     this.lngLat = lngLat;
-    this.EndLngLat = EndLngLat;
+    this.endLngLat = endLngLat;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -66,7 +66,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
     case 5: return startTime;
     case 6: return endTime;
     case 7: return lngLat;
-    case 8: return EndLngLat;
+    case 8: return endLngLat;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -83,7 +83,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
     case 5: startTime = (java.lang.Long)value$; break;
     case 6: endTime = (java.lang.Long)value$; break;
     case 7: lngLat = (java.util.List<java.lang.Double>)value$; break;
-    case 8: EndLngLat = (java.util.List<java.lang.Double>)value$; break;
+    case 8: endLngLat = (java.util.List<java.lang.Double>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -217,19 +217,19 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
-   * Gets the value of the 'EndLngLat' field.
-   * @return The value of the 'EndLngLat' field.
+   * Gets the value of the 'endLngLat' field.
+   * @return The value of the 'endLngLat' field.
    */
   public java.util.List<java.lang.Double> getEndLngLat() {
-    return EndLngLat;
+    return endLngLat;
   }
 
   /**
-   * Sets the value of the 'EndLngLat' field.
+   * Sets the value of the 'endLngLat' field.
    * @param value the value to set.
    */
   public void setEndLngLat(java.util.List<java.lang.Double> value) {
-    this.EndLngLat = value;
+    this.endLngLat = value;
   }
 
   /**
@@ -272,7 +272,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
     private java.lang.Long startTime;
     private java.lang.Long endTime;
     private java.util.List<java.lang.Double> lngLat;
-    private java.util.List<java.lang.Double> EndLngLat;
+    private java.util.List<java.lang.Double> endLngLat;
 
     /** Creates a new Builder */
     private Builder() {
@@ -317,8 +317,8 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
         this.lngLat = data().deepCopy(fields()[7].schema(), other.lngLat);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.EndLngLat)) {
-        this.EndLngLat = data().deepCopy(fields()[8].schema(), other.EndLngLat);
+      if (isValidValue(fields()[8], other.endLngLat)) {
+        this.endLngLat = data().deepCopy(fields()[8].schema(), other.endLngLat);
         fieldSetFlags()[8] = true;
       }
     }
@@ -361,8 +361,8 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
         this.lngLat = data().deepCopy(fields()[7].schema(), other.lngLat);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.EndLngLat)) {
-        this.EndLngLat = data().deepCopy(fields()[8].schema(), other.EndLngLat);
+      if (isValidValue(fields()[8], other.endLngLat)) {
+        this.endLngLat = data().deepCopy(fields()[8].schema(), other.endLngLat);
         fieldSetFlags()[8] = true;
       }
     }
@@ -680,28 +680,28 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
     }
 
     /**
-      * Gets the value of the 'EndLngLat' field.
+      * Gets the value of the 'endLngLat' field.
       * @return The value.
       */
     public java.util.List<java.lang.Double> getEndLngLat() {
-      return EndLngLat;
+      return endLngLat;
     }
 
     /**
-      * Sets the value of the 'EndLngLat' field.
-      * @param value The value of 'EndLngLat'.
+      * Sets the value of the 'endLngLat' field.
+      * @param value The value of 'endLngLat'.
       * @return This builder.
       */
     public com.fretron.Model.DeviceStateSessions.Builder setEndLngLat(java.util.List<java.lang.Double> value) {
       validate(fields()[8], value);
-      this.EndLngLat = value;
+      this.endLngLat = value;
       fieldSetFlags()[8] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'EndLngLat' field has been set.
-      * @return True if the 'EndLngLat' field has been set, false otherwise.
+      * Checks whether the 'endLngLat' field has been set.
+      * @return True if the 'endLngLat' field has been set, false otherwise.
       */
     public boolean hasEndLngLat() {
       return fieldSetFlags()[8];
@@ -709,11 +709,11 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
 
 
     /**
-      * Clears the value of the 'EndLngLat' field.
+      * Clears the value of the 'endLngLat' field.
       * @return This builder.
       */
     public com.fretron.Model.DeviceStateSessions.Builder clearEndLngLat() {
-      EndLngLat = null;
+      endLngLat = null;
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -730,7 +730,7 @@ public class DeviceStateSessions extends org.apache.avro.specific.SpecificRecord
         record.startTime = fieldSetFlags()[5] ? this.startTime : (java.lang.Long) defaultValue(fields()[5]);
         record.endTime = fieldSetFlags()[6] ? this.endTime : (java.lang.Long) defaultValue(fields()[6]);
         record.lngLat = fieldSetFlags()[7] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[7]);
-        record.EndLngLat = fieldSetFlags()[8] ? this.EndLngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[8]);
+        record.endLngLat = fieldSetFlags()[8] ? this.endLngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

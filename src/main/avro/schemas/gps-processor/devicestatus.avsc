@@ -210,7 +210,7 @@
           "default": null
         },
         {
-          "name": "EndLngLat",
+          "name": "endLngLat",
           "type": [
             "null",
             {
