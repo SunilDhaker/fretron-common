@@ -71,6 +71,11 @@
           "name": "isFillingEnabled",
          "type": "boolean",
          "default":false
+      },
+      {
+        "name": "odometer",
+         "type": ["null","com.fretron.Model.Odometer"],
+          "default":null
       }
     ]
   },
@@ -226,7 +231,17 @@
          "name": "batteryStatus",
           "type": ["null" ,"string"],
           "default" : null
-         }
+      },
+      {
+         "name": "lastStateOdometer",
+         "type": ["null","com.fretron.Model.Odometer"],
+          "default":null
+      },
+      {
+        "name": "odometer",
+         "type": ["null","com.fretron.Model.Odometer"],
+        "default":null
+     }
     ]
   }
 

@@ -57,14 +57,29 @@
                "default": false
             },
             {
+               "name":"chargingValue",
+               "type":["null","int"],
+               "default": null
+            },
+            {
                "name":"ignition",
                 "type":"boolean",
                 "default": false
             },
             {
+               "name":"ignitionValue",
+               "type":["null","int"],
+               "default": null
+            },
+            {
                 "name":"isOilElectricityConnected",
                  "type":"boolean",
                  "default": false
+            },
+            {
+               "name":"oilElectricityValue",
+               "type":["null","int"],
+               "default": null
             },
             {
                  "name":"isGpsTrackingOn",
