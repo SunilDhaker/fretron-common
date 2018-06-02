@@ -170,5 +170,7 @@
     <entry key="vgsmis.topic">vgsmistopic</entry>
 
     <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
+    <entry key="db.reprocess.states.query.topic">dbReprocessStatesQueryTopic</entry>
+    <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
 </properties>

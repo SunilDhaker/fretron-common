@@ -609,7 +609,6 @@ public class Constants {
      * **************************************************************************************************
      */
     public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
-    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
     public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
     public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
     public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
@@ -619,6 +618,20 @@ public class Constants {
 
     public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
     public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
+
+
+    /*
+     *****************************************************************************************************
+     *                                   name-not-decide-yet-manager-configs
+     * **************************************************************************************************
+     */
+    public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static java.lang.String KEY_DB_REPROCESS_STATES_QUERY_TOPIC = "db.reprocess.states.query.topic";
+    public static java.lang.String KEY_REPROCESSED_GPS_STATES_TOPIC = "reprocessed.gps.states.topic";
+    public static java.lang.String KEY_CLASSIFIER_PUNCTUATE_TIME= "classifier.punctuate.time";
+    public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
+
 
 
     private Constants(){
