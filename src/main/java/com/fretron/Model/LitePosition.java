@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LitePosition extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8807514978753623622L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = -9115140217321194990L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LitePosition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public double latitude;
   @Deprecated public double longitude;
@@ -24,6 +24,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String address;
   @Deprecated public java.util.List<java.lang.Double> lngLat;
   @Deprecated public boolean isFillingEnabled;
+  @Deprecated public com.fretron.Model.Odometer odometer;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
    * @param address The new value for address
    * @param lngLat The new value for lngLat
    * @param isFillingEnabled The new value for isFillingEnabled
+   * @param odometer The new value for odometer
    */
-  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.String decoder, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat, java.lang.Boolean isFillingEnabled) {
+  public LitePosition(java.lang.Double latitude, java.lang.Double longitude, java.lang.Double speed, java.lang.Double course, java.lang.String decoder, java.lang.Long time, java.lang.String imei, java.lang.String vehicleId, java.lang.String address, java.util.List<java.lang.Double> lngLat, java.lang.Boolean isFillingEnabled, com.fretron.Model.Odometer odometer) {
     this.latitude = latitude;
     this.longitude = longitude;
     this.speed = speed;
@@ -58,6 +60,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     this.address = address;
     this.lngLat = lngLat;
     this.isFillingEnabled = isFillingEnabled;
+    this.odometer = odometer;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 8: return address;
     case 9: return lngLat;
     case 10: return isFillingEnabled;
+    case 11: return odometer;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     case 8: address = (java.lang.String)value$; break;
     case 9: lngLat = (java.util.List<java.lang.Double>)value$; break;
     case 10: isFillingEnabled = (java.lang.Boolean)value$; break;
+    case 11: odometer = (com.fretron.Model.Odometer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'odometer' field.
+   * @return The value of the 'odometer' field.
+   */
+  public com.fretron.Model.Odometer getOdometer() {
+    return odometer;
+  }
+
+  /**
+   * Sets the value of the 'odometer' field.
+   * @param value the value to set.
+   */
+  public void setOdometer(com.fretron.Model.Odometer value) {
+    this.odometer = value;
+  }
+
+  /**
    * Creates a new LitePosition RecordBuilder.
    * @return A new LitePosition RecordBuilder
    */
@@ -317,6 +338,8 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String address;
     private java.util.List<java.lang.Double> lngLat;
     private boolean isFillingEnabled;
+    private com.fretron.Model.Odometer odometer;
+    private com.fretron.Model.Odometer.Builder odometerBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +396,13 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         this.isFillingEnabled = data().deepCopy(fields()[10].schema(), other.isFillingEnabled);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[11].schema(), other.odometer);
+        fieldSetFlags()[11] = true;
+      }
+      if (other.hasOdometerBuilder()) {
+        this.odometerBuilder = com.fretron.Model.Odometer.newBuilder(other.getOdometerBuilder());
+      }
     }
 
     /**
@@ -425,6 +455,11 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         this.isFillingEnabled = data().deepCopy(fields()[10].schema(), other.isFillingEnabled);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[11].schema(), other.odometer);
+        fieldSetFlags()[11] = true;
+      }
+      this.odometerBuilder = null;
     }
 
     /**
@@ -852,6 +887,80 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'odometer' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Odometer getOdometer() {
+      return odometer;
+    }
+
+    /**
+      * Sets the value of the 'odometer' field.
+      * @param value The value of 'odometer'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder setOdometer(com.fretron.Model.Odometer value) {
+      validate(fields()[11], value);
+      this.odometerBuilder = null;
+      this.odometer = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'odometer' field has been set.
+      * @return True if the 'odometer' field has been set, false otherwise.
+      */
+    public boolean hasOdometer() {
+      return fieldSetFlags()[11];
+    }
+
+    /**
+     * Gets the Builder instance for the 'odometer' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Odometer.Builder getOdometerBuilder() {
+      if (odometerBuilder == null) {
+        if (hasOdometer()) {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder(odometer));
+        } else {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder());
+        }
+      }
+      return odometerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'odometer' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.LitePosition.Builder setOdometerBuilder(com.fretron.Model.Odometer.Builder value) {
+      clearOdometer();
+      odometerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'odometer' field has an active Builder instance
+     * @return True if the 'odometer' field has an active Builder instance
+     */
+    public boolean hasOdometerBuilder() {
+      return odometerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'odometer' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LitePosition.Builder clearOdometer() {
+      odometer = null;
+      odometerBuilder = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public LitePosition build() {
       try {
@@ -867,6 +976,11 @@ public class LitePosition extends org.apache.avro.specific.SpecificRecordBase im
         record.address = fieldSetFlags()[8] ? this.address : (java.lang.String) defaultValue(fields()[8]);
         record.lngLat = fieldSetFlags()[9] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[9]);
         record.isFillingEnabled = fieldSetFlags()[10] ? this.isFillingEnabled : (java.lang.Boolean) defaultValue(fields()[10]);
+        if (odometerBuilder != null) {
+          record.odometer = this.odometerBuilder.build();
+        } else {
+          record.odometer = fieldSetFlags()[11] ? this.odometer : (com.fretron.Model.Odometer) defaultValue(fields()[11]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

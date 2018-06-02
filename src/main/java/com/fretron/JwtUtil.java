@@ -142,4 +142,9 @@ public class JwtUtil {
         }
 
     }
+    public static String getUserIdForTokenV2(String token) {
+            return  getFromToken(token , "userId");
+
+    }
+
 }

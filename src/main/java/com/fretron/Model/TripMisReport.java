@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5966217387412374272L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8784973120691816886L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -36,6 +36,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String clusterType;
   @Deprecated public java.lang.String clusterName;
   @Deprecated public java.lang.String vgsId;
+  @Deprecated public java.lang.String organisationName;
+  @Deprecated public java.util.List<java.lang.Double> lngLat;
+  @Deprecated public java.lang.String vehicleRegistrationNumber;
+  @Deprecated public java.lang.String vehicleModel;
+  @Deprecated public java.lang.String source;
+  @Deprecated public java.util.List<com.fretron.Model.Properties> clusters;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -69,8 +75,14 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param clusterType The new value for clusterType
    * @param clusterName The new value for clusterName
    * @param vgsId The new value for vgsId
+   * @param organisationName The new value for organisationName
+   * @param lngLat The new value for lngLat
+   * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
+   * @param vehicleModel The new value for vehicleModel
+   * @param source The new value for source
+   * @param clusters The new value for clusters
    */
-  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId) {
+  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId, java.lang.String organisationName, java.util.List<java.lang.Double> lngLat, java.lang.String vehicleRegistrationNumber, java.lang.String vehicleModel, java.lang.String source, java.util.List<com.fretron.Model.Properties> clusters) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.movedDistance = movedDistance;
@@ -94,6 +106,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     this.clusterType = clusterType;
     this.clusterName = clusterName;
     this.vgsId = vgsId;
+    this.organisationName = organisationName;
+    this.lngLat = lngLat;
+    this.vehicleRegistrationNumber = vehicleRegistrationNumber;
+    this.vehicleModel = vehicleModel;
+    this.source = source;
+    this.clusters = clusters;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -123,6 +141,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 20: return clusterType;
     case 21: return clusterName;
     case 22: return vgsId;
+    case 23: return organisationName;
+    case 24: return lngLat;
+    case 25: return vehicleRegistrationNumber;
+    case 26: return vehicleModel;
+    case 27: return source;
+    case 28: return clusters;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -154,6 +178,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 20: clusterType = (java.lang.String)value$; break;
     case 21: clusterName = (java.lang.String)value$; break;
     case 22: vgsId = (java.lang.String)value$; break;
+    case 23: organisationName = (java.lang.String)value$; break;
+    case 24: lngLat = (java.util.List<java.lang.Double>)value$; break;
+    case 25: vehicleRegistrationNumber = (java.lang.String)value$; break;
+    case 26: vehicleModel = (java.lang.String)value$; break;
+    case 27: source = (java.lang.String)value$; break;
+    case 28: clusters = (java.util.List<com.fretron.Model.Properties>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -527,6 +557,102 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'organisationName' field.
+   * @return The value of the 'organisationName' field.
+   */
+  public java.lang.String getOrganisationName() {
+    return organisationName;
+  }
+
+  /**
+   * Sets the value of the 'organisationName' field.
+   * @param value the value to set.
+   */
+  public void setOrganisationName(java.lang.String value) {
+    this.organisationName = value;
+  }
+
+  /**
+   * Gets the value of the 'lngLat' field.
+   * @return The value of the 'lngLat' field.
+   */
+  public java.util.List<java.lang.Double> getLngLat() {
+    return lngLat;
+  }
+
+  /**
+   * Sets the value of the 'lngLat' field.
+   * @param value the value to set.
+   */
+  public void setLngLat(java.util.List<java.lang.Double> value) {
+    this.lngLat = value;
+  }
+
+  /**
+   * Gets the value of the 'vehicleRegistrationNumber' field.
+   * @return The value of the 'vehicleRegistrationNumber' field.
+   */
+  public java.lang.String getVehicleRegistrationNumber() {
+    return vehicleRegistrationNumber;
+  }
+
+  /**
+   * Sets the value of the 'vehicleRegistrationNumber' field.
+   * @param value the value to set.
+   */
+  public void setVehicleRegistrationNumber(java.lang.String value) {
+    this.vehicleRegistrationNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'vehicleModel' field.
+   * @return The value of the 'vehicleModel' field.
+   */
+  public java.lang.String getVehicleModel() {
+    return vehicleModel;
+  }
+
+  /**
+   * Sets the value of the 'vehicleModel' field.
+   * @param value the value to set.
+   */
+  public void setVehicleModel(java.lang.String value) {
+    this.vehicleModel = value;
+  }
+
+  /**
+   * Gets the value of the 'source' field.
+   * @return The value of the 'source' field.
+   */
+  public java.lang.String getSource() {
+    return source;
+  }
+
+  /**
+   * Sets the value of the 'source' field.
+   * @param value the value to set.
+   */
+  public void setSource(java.lang.String value) {
+    this.source = value;
+  }
+
+  /**
+   * Gets the value of the 'clusters' field.
+   * @return The value of the 'clusters' field.
+   */
+  public java.util.List<com.fretron.Model.Properties> getClusters() {
+    return clusters;
+  }
+
+  /**
+   * Sets the value of the 'clusters' field.
+   * @param value the value to set.
+   */
+  public void setClusters(java.util.List<com.fretron.Model.Properties> value) {
+    this.clusters = value;
+  }
+
+  /**
    * Creates a new TripMisReport RecordBuilder.
    * @return A new TripMisReport RecordBuilder
    */
@@ -581,6 +707,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String clusterType;
     private java.lang.String clusterName;
     private java.lang.String vgsId;
+    private java.lang.String organisationName;
+    private java.util.List<java.lang.Double> lngLat;
+    private java.lang.String vehicleRegistrationNumber;
+    private java.lang.String vehicleModel;
+    private java.lang.String source;
+    private java.util.List<com.fretron.Model.Properties> clusters;
 
     /** Creates a new Builder */
     private Builder() {
@@ -685,6 +817,30 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.vgsId = data().deepCopy(fields()[22].schema(), other.vgsId);
         fieldSetFlags()[22] = true;
       }
+      if (isValidValue(fields()[23], other.organisationName)) {
+        this.organisationName = data().deepCopy(fields()[23].schema(), other.organisationName);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.lngLat)) {
+        this.lngLat = data().deepCopy(fields()[24].schema(), other.lngLat);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[25].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.vehicleModel)) {
+        this.vehicleModel = data().deepCopy(fields()[26].schema(), other.vehicleModel);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.source)) {
+        this.source = data().deepCopy(fields()[27].schema(), other.source);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
+        fieldSetFlags()[28] = true;
+      }
     }
 
     /**
@@ -784,6 +940,30 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[22], other.vgsId)) {
         this.vgsId = data().deepCopy(fields()[22].schema(), other.vgsId);
         fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.organisationName)) {
+        this.organisationName = data().deepCopy(fields()[23].schema(), other.organisationName);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.lngLat)) {
+        this.lngLat = data().deepCopy(fields()[24].schema(), other.lngLat);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[25].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.vehicleModel)) {
+        this.vehicleModel = data().deepCopy(fields()[26].schema(), other.vehicleModel);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.source)) {
+        this.source = data().deepCopy(fields()[27].schema(), other.source);
+        fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
+        fieldSetFlags()[28] = true;
       }
     }
 
@@ -1684,6 +1864,240 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'organisationName' field.
+      * @return The value.
+      */
+    public java.lang.String getOrganisationName() {
+      return organisationName;
+    }
+
+    /**
+      * Sets the value of the 'organisationName' field.
+      * @param value The value of 'organisationName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setOrganisationName(java.lang.String value) {
+      validate(fields()[23], value);
+      this.organisationName = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'organisationName' field has been set.
+      * @return True if the 'organisationName' field has been set, false otherwise.
+      */
+    public boolean hasOrganisationName() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'organisationName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearOrganisationName() {
+      organisationName = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'lngLat' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.Double> getLngLat() {
+      return lngLat;
+    }
+
+    /**
+      * Sets the value of the 'lngLat' field.
+      * @param value The value of 'lngLat'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setLngLat(java.util.List<java.lang.Double> value) {
+      validate(fields()[24], value);
+      this.lngLat = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lngLat' field has been set.
+      * @return True if the 'lngLat' field has been set, false otherwise.
+      */
+    public boolean hasLngLat() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'lngLat' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearLngLat() {
+      lngLat = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'vehicleRegistrationNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleRegistrationNumber() {
+      return vehicleRegistrationNumber;
+    }
+
+    /**
+      * Sets the value of the 'vehicleRegistrationNumber' field.
+      * @param value The value of 'vehicleRegistrationNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setVehicleRegistrationNumber(java.lang.String value) {
+      validate(fields()[25], value);
+      this.vehicleRegistrationNumber = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleRegistrationNumber' field has been set.
+      * @return True if the 'vehicleRegistrationNumber' field has been set, false otherwise.
+      */
+    public boolean hasVehicleRegistrationNumber() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleRegistrationNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearVehicleRegistrationNumber() {
+      vehicleRegistrationNumber = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'vehicleModel' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleModel() {
+      return vehicleModel;
+    }
+
+    /**
+      * Sets the value of the 'vehicleModel' field.
+      * @param value The value of 'vehicleModel'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setVehicleModel(java.lang.String value) {
+      validate(fields()[26], value);
+      this.vehicleModel = value;
+      fieldSetFlags()[26] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleModel' field has been set.
+      * @return True if the 'vehicleModel' field has been set, false otherwise.
+      */
+    public boolean hasVehicleModel() {
+      return fieldSetFlags()[26];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleModel' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearVehicleModel() {
+      vehicleModel = null;
+      fieldSetFlags()[26] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'source' field.
+      * @return The value.
+      */
+    public java.lang.String getSource() {
+      return source;
+    }
+
+    /**
+      * Sets the value of the 'source' field.
+      * @param value The value of 'source'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setSource(java.lang.String value) {
+      validate(fields()[27], value);
+      this.source = value;
+      fieldSetFlags()[27] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'source' field has been set.
+      * @return True if the 'source' field has been set, false otherwise.
+      */
+    public boolean hasSource() {
+      return fieldSetFlags()[27];
+    }
+
+
+    /**
+      * Clears the value of the 'source' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearSource() {
+      source = null;
+      fieldSetFlags()[27] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'clusters' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.Properties> getClusters() {
+      return clusters;
+    }
+
+    /**
+      * Sets the value of the 'clusters' field.
+      * @param value The value of 'clusters'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setClusters(java.util.List<com.fretron.Model.Properties> value) {
+      validate(fields()[28], value);
+      this.clusters = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusters' field has been set.
+      * @return True if the 'clusters' field has been set, false otherwise.
+      */
+    public boolean hasClusters() {
+      return fieldSetFlags()[28];
+    }
+
+
+    /**
+      * Clears the value of the 'clusters' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearClusters() {
+      clusters = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
     @Override
     public TripMisReport build() {
       try {
@@ -1711,6 +2125,12 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         record.clusterType = fieldSetFlags()[20] ? this.clusterType : (java.lang.String) defaultValue(fields()[20]);
         record.clusterName = fieldSetFlags()[21] ? this.clusterName : (java.lang.String) defaultValue(fields()[21]);
         record.vgsId = fieldSetFlags()[22] ? this.vgsId : (java.lang.String) defaultValue(fields()[22]);
+        record.organisationName = fieldSetFlags()[23] ? this.organisationName : (java.lang.String) defaultValue(fields()[23]);
+        record.lngLat = fieldSetFlags()[24] ? this.lngLat : (java.util.List<java.lang.Double>) defaultValue(fields()[24]);
+        record.vehicleRegistrationNumber = fieldSetFlags()[25] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[25]);
+        record.vehicleModel = fieldSetFlags()[26] ? this.vehicleModel : (java.lang.String) defaultValue(fields()[26]);
+        record.source = fieldSetFlags()[27] ? this.source : (java.lang.String) defaultValue(fields()[27]);
+        record.clusters = fieldSetFlags()[28] ? this.clusters : (java.util.List<com.fretron.Model.Properties>) defaultValue(fields()[28]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

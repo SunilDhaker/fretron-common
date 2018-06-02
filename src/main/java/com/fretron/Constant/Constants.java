@@ -42,6 +42,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_SHARE_TOPIC = "vehicleshare.topic";
 
     public final static  String KEY_DEVICE_TOPIC = "device.topic";
+    public final static  String KEY_BP_TOPIC = "buisness.partner.topic";
     public final static  String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public final static  String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
     public final static  String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
@@ -63,6 +64,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_DEVICE_STATE_SESSION_TOPIC= "device.state.session.topic";
 
 
     public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
@@ -83,9 +85,12 @@ public class Constants {
     public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD  = "disconnected.moving.distance.threshold";
     public static final java.lang.String KEY_LATEST_GPS_STATE_SERVICE_URL = "latest.gps.state.service.url";
+    public static final java.lang.String KEY_LATEST_LOCATION_SERVICE_URL = "latest.position.service.url";
+    public static final java.lang.String KEY_GPS_PROCESSOR_SERVICE_URL = "gps.processor.service.url";
 
 
     public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
+    public static java.lang.String KEY_DEVICE_STATE_MANAGER_APP_ID = "device.state.manager.app.id";
     public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
     public static java.lang.String KEY_GPS_PROCESSOR_APP_PORT = "gps.processor.rest.service.port";
@@ -103,6 +108,8 @@ public class Constants {
     //topics
     public final static  String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
     public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
+    public static final java.lang.String KEY_ODOMETER_CALIBRATION_TOPIC = "odometer.calibration.topic";
+
 
 
 
@@ -155,7 +162,15 @@ public class Constants {
 
     public static String KEY_ALERT_MANAGER_APP_IP = "alert.manager.restservice.ip";
     public static String KEY_ALERT_MANAGER_APP_PORT = "alert.manager.restservice.port";
-
+    public static String KEY_STATE_DETECTOR_APP_NAME = "state.detector.app.name";
+    public static String STATE_FENCE_API_URL = "state.fence.api.url";
+    public static String KEY_CHECKPOINT_APP_NAME = "check.point.manager.app.name";
+    public static String CHECK_POINT_TOPIC = "check.point.topic";
+    public static String CHECK_POINT_EVENT_TOPIC = "check.point.event.topic";
+    public static String CHECK_POINT_MANAGER_IP = "check.point.manager.ip";
+    public static String CHECK_POINT_MANAGER_PORT = "check.point.manager.port";
+    public static String INDIAN_STATE_TOPIC = "indian.state.topic";
+    public static String ALERT_INCIDENT_TOPIC = "alert.incident.topic";
 
 
 
@@ -280,6 +295,8 @@ public class Constants {
     public final static String REGISTRY_MANAGER_APPID= "registry.manager.appId";
     public final static String LATEST_COMMAND_TOPIC= "latest.command.topic";
     public static java.lang.String KEY_COMMAND_TYPE = "filter";
+    public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
+
 
     //========================================
     public static final String KEY_HOUR_WISE_STATE_PROCESSORE_APP_ID = "hour.wise.state.processor.appid";
@@ -296,6 +313,8 @@ public class Constants {
     //=========================USER_MANAGER================
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
+    public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+
 
     //========================ORGANISATION_MANAGER=================
 
@@ -304,6 +323,8 @@ public class Constants {
     public static final String KEY_USERS_BY_ORGANISATION_TOPIC = "usersbyorganisation.topic";
     public static final String KEY_ORGANISAIONS_BY_USER_TOPIC = "organisationsbyuser.topic";
     public static final String KEY_ORG_USER_ACL_TOPIC = "orguseracl.topic";
+    public static final String KEY_COMMAND_TO_ORGANISATION_APP_ID = "commandresult.to.organisation.appid";
+
 
     //==========================TRIP_TEMPLATE_MANAGER===============
 
@@ -399,6 +420,10 @@ public class Constants {
     public static final String GPS_LOG_MONGO_HOST = "gps.log.mongo.server.ip";
     public static final String GPS_LOG_MONGO_PORT = "gps.log.mongo.server.port";
     public static final String GPS_LOG_MONGO_DBNAME = "gps.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_DB_NAME= "vehicle.activity.log.db";
+    public static final String VEHICLE_ACTIVITY_COLLECTION_NAME = "vehicle.hourwise.movement.activity.collaction";
+    public static final String GPS_MIS_COLLECTION_NAME = "gps.mis.collaction";
+
 
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
@@ -440,6 +465,11 @@ public class Constants {
     public static final String DEVICE_DB_PORT = "device.db.port";
     public static final String DEVICE_DB_COLLECTION_NAME = "device.db.collection.name";
 
+    public static final String BPARTNER_DB_NAME = "buisness.partner.db.name";
+    public static final String BPARTNER_DB_HOST = "buisness.partner.db.host";
+    public static final String BPARTNER_DB_PORT = "buisness.partner.db.port";
+    public static final String BPARTNER_DB_COLLECTION_NAME = "buisness.partner.db.collection.name";
+
     public static final String KEY_DOCUMENT_TOPIC = "document.topic";
     public static final String DOCUMENT_DB_NAME = "document.db.name";
     public static final String DOCUMENT_DB_HOST = "document.db.host";
@@ -467,6 +497,7 @@ public class Constants {
     public static final String KEY_INTEGRATION_MANAGER_APP_ID = "integration.manager.app.id";
     public static final String KEY_JOB_EVENTS_TOPIC = "integration.job.events.topic";
     public static final String KEY_JOB_EXECUTION_EVENTS_TOPIC = "integration.job.execution.topic";
+    public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
 
@@ -547,10 +578,13 @@ public class Constants {
     public final static String KEY_DASHBOARD_SOCKET_PORT =  "socket.server.port";
     public final static String KEY_VGS_CHANGELOG_TOPIC = "vgs.changelog.topic";
     public final static String GET_DEVIECE_STATUS_URL = "device.status.url";
+    public final static String GET_VILLAGE_NAME_URL = "get.village.name.url";
     //==================TRIP-MIS===============================
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
     public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String KEY_VGS_MIS_TOPIC="vgsmis.topic";
+
     public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
     public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
@@ -562,6 +596,27 @@ public class Constants {
     public static final String CITY_WISE_GEOFENCE_DB_HOST = "city.geofence.db.host";
     public static final String CITY_WISE_GEOFENCE_DB_PORT= "city.geofence.db.port";
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
+
+
+
+
+    /*
+     *****************************************************************************************************
+     *                                   vehicle-activity-manager-configs
+     * **************************************************************************************************
+     */
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+
+
+    public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
+    public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
+
 
     private Constants(){
 

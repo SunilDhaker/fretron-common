@@ -1,0 +1,85 @@
+ [
+     {
+          "namespace": "com.fretron.Model",
+          "type": "record",
+          "name": "Contact",
+          "fields": [
+            {
+              "name": "name",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "mobileNumber",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default":null
+            },
+             {
+               "name": "address",
+               "type": [
+                 "null",
+                 "string"
+               ],
+               "default":null
+             }
+          ]
+        },
+     {
+         "namespace": "com.fretron.Model",
+         "type": "record",
+         "name": "BuisnessPartner",
+         "fields": [
+           {
+             "name": "uuid",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+           {
+             "name": "name",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+            {
+              "name": "orgId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default":null
+            },
+            {
+                "name":"geoFence",
+                "type":[
+                    "null",
+                    "com.fretron.Model.GeoJsonFence"
+                ],
+                "default":null
+            },
+            {
+                "name":"contacts",
+                "type": ["null",{"type" : "array", "items":"com.fretron.Model.Contact"}],
+                "default":null
+            },
+
+             {
+                "name": "location",
+                "type": [
+                  "null",
+                  "com.fretron.Model.Location"
+                ],
+                "default":null
+             }
+         ]
+      }
+ ]

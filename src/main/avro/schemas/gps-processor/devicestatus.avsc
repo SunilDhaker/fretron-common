@@ -18,7 +18,11 @@
           "string"
         ]
       },
-
+      {
+         "name": "attributes",
+         "type": ["null","com.fretron.Model.Attributes"],
+         "default":null
+      },
       {
          "name": "batteryLevelEvent",
           "type": ["null","com.fretron.Model.DeviceEvent"],
@@ -121,8 +125,102 @@
                       "long"
              ],
        "default":null
+      },
+      {
+            "name": "isIgnitionOn",
+             "type": [
+                            "null",
+                            "boolean"
+                   ],
+             "default":null
+      },
+      {
+         "name": "location",
+          "type": ["null" ,"com.fretron.Model.LitePosition"],
+          "default":null
       }
 
     ]
-  }
+  },
+  {
+      "namespace": "com.fretron.Model",
+      "type": "record",
+      "name": "DeviceStateSessions",
+      "fields": [
+        {
+          "name": "uuid",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+          "name": "type",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        {
+            "name": "state",
+            "type": [
+              "null",
+              "string"
+            ]
+        },
+        {
+              "name": "imei",
+              "type": [
+                "null",
+                "string"
+              ]
+        },
+        {
+               "name": "vehicleId",
+               "type": [
+                 "null",
+                 "string"
+               ]
+        },
+        {
+          "name": "startTime",
+          "type": [
+            "null",
+            "long"
+          ],
+          "default":null
+        },
+         {
+                "name": "endTime",
+                "type": [
+                  "null",
+                  "long"
+                ],
+                 "default":null
+        },
+        {
+          "name": "lngLat",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "double"
+            }
+          ],
+          "default": null
+        },
+        {
+          "name": "endLngLat",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "double"
+            }
+          ],
+          "default": null
+        }
+
+      ]
+    }
 ]

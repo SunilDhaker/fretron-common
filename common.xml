@@ -38,6 +38,7 @@
     <entry key="vehicle.topic">vehicle</entry>
     <entry key="driver.topic">drivertopic</entry>
     <entry key="document.topic">documenttopic</entry>
+    <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
@@ -57,10 +58,9 @@
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
     <entry key="gps.state.topic">gpsStates</entry>
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
-
-
-
-
+    <entry key="odometer.calibration.topic">odoMeterCalibrationTopic</entry>
+    <entry key="device.state.manager.app.id">device-state-manager</entry>
+    <entry key="device.state.session.topic">deviceStateSessionTopic</entry>
 
 
     <!--===============protocol-handler topics ================-->
@@ -130,6 +130,10 @@
     <!--================Alert-Manager topics============================-->
     <entry key="alert.topic">alerts</entry>
     <entry key="device.power.event.topic">deviceEvent</entry>
+    <entry key="check.point.topic">checkPoint</entry>
+    <entry key="check.point.event.topic">checkPointEvent</entry>
+    <entry key="indian.state.topic">indianStateTopic</entry>
+    <entry key="alert.incident.topic">alertIncidentTopic</entry>
 
     <!--=================Org-Manager topics================================-->
     <entry key="organisation.topic">organisation</entry>
@@ -146,6 +150,7 @@
     <!--===============TPI -Manager topics=====================-->
     <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
     <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
+    <entry key="integration.job.raw.response.topic">jobRawResponseTopic</entry>
 
     <!-- ===================org group manager id=======-->
     <entry key="org.group.manager.app.id">organisationGroupManager</entry>
@@ -162,6 +167,8 @@
     <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
+    <entry key="vgsmis.topic">vgsmistopic</entry>
 
+    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
 
 </properties>
