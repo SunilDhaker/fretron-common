@@ -169,7 +169,7 @@
     <entry key="tripmis.topic">tripmistopic</entry>
     <entry key="vgsmis.topic">vgsmistopic</entry>
 
-    <entry key="vehicle.activity.topic">vehicleGpsActivityTopic</entry>
+    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
     <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
     <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
