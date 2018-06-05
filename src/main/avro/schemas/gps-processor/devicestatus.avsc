@@ -208,6 +208,17 @@
             }
           ],
           "default": null
+        },
+        {
+          "name": "endLngLat",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "double"
+            }
+          ],
+          "default": null
         }
 
       ]

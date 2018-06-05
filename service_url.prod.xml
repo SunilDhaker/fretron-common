@@ -70,8 +70,7 @@
 
 
     <!-- ==========kafka-topic-manager========= -->
-
-    <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
+    <entry key="kafka.topic.create.service.url">http://kafkatopic-manager.streams:8089/topic/create</entry>
 
 
     <!-- =========RedisServer And Mongo -Manager========== -->

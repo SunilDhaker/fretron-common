@@ -64,6 +64,7 @@ public class Constants {
     public final static  String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
     public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
+    public final static String KEY_DEVICE_STATE_SESSION_TOPIC= "device.state.session.topic";
 
 
     public static  final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
@@ -294,6 +295,8 @@ public class Constants {
     public final static String REGISTRY_MANAGER_APPID= "registry.manager.appId";
     public final static String LATEST_COMMAND_TOPIC= "latest.command.topic";
     public static java.lang.String KEY_COMMAND_TYPE = "filter";
+    public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
+
 
     //========================================
     public static final String KEY_HOUR_WISE_STATE_PROCESSORE_APP_ID = "hour.wise.state.processor.appid";
@@ -310,6 +313,8 @@ public class Constants {
     //=========================USER_MANAGER================
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
+    public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+
 
     //========================ORGANISATION_MANAGER=================
 
@@ -318,6 +323,8 @@ public class Constants {
     public static final String KEY_USERS_BY_ORGANISATION_TOPIC = "usersbyorganisation.topic";
     public static final String KEY_ORGANISAIONS_BY_USER_TOPIC = "organisationsbyuser.topic";
     public static final String KEY_ORG_USER_ACL_TOPIC = "orguseracl.topic";
+    public static final String KEY_COMMAND_TO_ORGANISATION_APP_ID = "commandresult.to.organisation.appid";
+
 
     //==========================TRIP_TEMPLATE_MANAGER===============
 
@@ -343,12 +350,9 @@ public class Constants {
     public static final String FR_LOC_FAV_COLLECTION_NAME = "freight.location.fav.collection.name";
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
             //*************NEW**************//
-    public static final String GEOFENCE_MANAGER_SERVICE_PORT = "geofence.service.port";
-    public static final String ADMIN_BOUNDARY_MANAGER_SERVICE_PORT = "adminboundary.service.port";
-    public static final String ADMIN_GEOFENCE_DB_NAME = "admin.geofence.db.name";
-    public static final String GEOFENCE_COLLECTION_NAME = "geofence.collection.name";
-    public static final String ADMIN_BOUNDARY_COLLECTION_NAME = "admin.boundary.collection.name";
-
+    public static final String PLACES_MANAGER_SERVICE_PORT = "geofence.service.port";
+    public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
+    public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
     public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
     public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
@@ -418,6 +422,8 @@ public class Constants {
     public static final String GPS_LOG_MONGO_DBNAME = "gps.log.mongo.db.name";
     public static final String VEHICLE_ACTIVITY_DB_NAME= "vehicle.activity.log.db";
     public static final String VEHICLE_ACTIVITY_COLLECTION_NAME = "vehicle.hourwise.movement.activity.collaction";
+    public static final String GPS_MIS_COLLECTION_NAME = "gps.mis.collaction";
+
 
     public static final String TRIP_MONGO_HOST = "trip.mongo.server.ip";
     public static final String TRIP_MONGO_PORT = "trip.mongo.server.port";
@@ -577,6 +583,8 @@ public class Constants {
 
     public static final String KEY_TRIP_MIS_REPORT_APP_ID="trip.mis.report.app.id";
     public static final String KEY_TRIP_MIS_TOPIC="tripmis.topic";
+    public static final String KEY_VGS_MIS_TOPIC="vgsmis.topic";
+
     public static final String STOP_CLASSIFIER_DB_NAME = "stop.classifier.db.name";
     public static final String STOP_CLASSIFIER_COLLECTION_NAME = "stop.classifier.collection.name";
 
@@ -598,7 +606,6 @@ public class Constants {
      * **************************************************************************************************
      */
     public static java.lang.String KEY_VEHICLE_ACTIVITY_MANAGER_APP_ID = "vehicle.activity.manager.app.id";
-    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
     public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
     public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
     public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
@@ -608,6 +615,20 @@ public class Constants {
 
     public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
     public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
+
+
+    /*
+     *****************************************************************************************************
+     *                                   name-not-decide-yet-manager-configs
+     * **************************************************************************************************
+     */
+    public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
+    public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
+    public static java.lang.String KEY_REPROCESS_STATES_QUERY_TOPIC = "reprocess.states.query.topic";
+    public static java.lang.String KEY_REPROCESSED_GPS_STATES_TOPIC = "reprocessed.gps.states.topic";
+    public static java.lang.String KEY_CLASSIFIER_PUNCTUATE_TIME= "classifier.punctuate.time";
+    public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
+
 
 
     private Constants(){

@@ -10,8 +10,8 @@
     <entry key="application.server.config">localhost:2223</entry>
     <entry key="commit.interval.auto.config">500</entry>
     <entry key="auto.offset.reset.config">earliest</entry>
-    <entry key="kafka.topic.partition">5</entry>
-    <entry key="kafka.topic.replication.factor">3</entry>
+    <entry key="kafka.topic.partition">20</entry>
+    <entry key="kafka.topic.replication.factor">2</entry>
 
 
     <!--==============ADMIN Config===================-->
@@ -60,7 +60,7 @@
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
     <entry key="odometer.calibration.topic">odoMeterCalibrationTopic</entry>
     <entry key="device.state.manager.app.id">device-state-manager</entry>
-
+    <entry key="device.state.session.topic">deviceStateSessionTopic</entry>
 
 
     <!--===============protocol-handler topics ================-->
@@ -167,7 +167,10 @@
     <entry key="vehicle.by.uuid.store">vehicleByUuidStore</entry>
     <entry key="trip.mis.report.app.id">trip-mis-report</entry>
     <entry key="tripmis.topic">tripmistopic</entry>
+    <entry key="vgsmis.topic">vgsmistopic</entry>
 
     <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
+    <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
+    <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
 </properties>

@@ -153,7 +153,7 @@ public class HttpRequestHepler {
     }
 
 
-    public static HttpEntity makePostRequest(String uri, Object requestObject , HashMap<String ,String> headers ,int requestTimeout){
+    public static String makePostRequest(String uri, Object requestObject , HashMap<String ,String> headers ,int requestTimeout){
         HttpResponse response;
         HttpEntity entity = null;
         final HttpParams httpParams = new BasicHttpParams();
@@ -162,6 +162,7 @@ public class HttpRequestHepler {
         HttpPost post = new HttpPost(uri);
         addHeaders(post ,headers);
         StringEntity se;
+        String dataString = null;
         try {
             if (requestObject!=null) {
                 se = new StringEntity(requestObject.toString());
@@ -171,6 +172,8 @@ public class HttpRequestHepler {
             try {
                 response = httpClient.execute(post);
                 entity = response.getEntity();
+                dataString =  EntityUtils.toString(entity);
+
             } catch (IOException e) {
                 Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
             }
@@ -181,7 +184,7 @@ public class HttpRequestHepler {
             e.printStackTrace();
         }
 
-        return entity;
+        return dataString;
     }
 
 

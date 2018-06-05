@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -189071529858059917L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8784973120691816886L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -41,6 +41,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String vehicleRegistrationNumber;
   @Deprecated public java.lang.String vehicleModel;
   @Deprecated public java.lang.String source;
+  @Deprecated public java.util.List<com.fretron.Model.Properties> clusters;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -79,8 +80,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
    * @param vehicleModel The new value for vehicleModel
    * @param source The new value for source
+   * @param clusters The new value for clusters
    */
-  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId, java.lang.String organisationName, java.util.List<java.lang.Double> lngLat, java.lang.String vehicleRegistrationNumber, java.lang.String vehicleModel, java.lang.String source) {
+  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId, java.lang.String organisationName, java.util.List<java.lang.Double> lngLat, java.lang.String vehicleRegistrationNumber, java.lang.String vehicleModel, java.lang.String source, java.util.List<com.fretron.Model.Properties> clusters) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.movedDistance = movedDistance;
@@ -109,6 +111,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     this.vehicleRegistrationNumber = vehicleRegistrationNumber;
     this.vehicleModel = vehicleModel;
     this.source = source;
+    this.clusters = clusters;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -143,6 +146,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 25: return vehicleRegistrationNumber;
     case 26: return vehicleModel;
     case 27: return source;
+    case 28: return clusters;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -179,6 +183,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 25: vehicleRegistrationNumber = (java.lang.String)value$; break;
     case 26: vehicleModel = (java.lang.String)value$; break;
     case 27: source = (java.lang.String)value$; break;
+    case 28: clusters = (java.util.List<com.fretron.Model.Properties>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -632,6 +637,22 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'clusters' field.
+   * @return The value of the 'clusters' field.
+   */
+  public java.util.List<com.fretron.Model.Properties> getClusters() {
+    return clusters;
+  }
+
+  /**
+   * Sets the value of the 'clusters' field.
+   * @param value the value to set.
+   */
+  public void setClusters(java.util.List<com.fretron.Model.Properties> value) {
+    this.clusters = value;
+  }
+
+  /**
    * Creates a new TripMisReport RecordBuilder.
    * @return A new TripMisReport RecordBuilder
    */
@@ -691,6 +712,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String vehicleRegistrationNumber;
     private java.lang.String vehicleModel;
     private java.lang.String source;
+    private java.util.List<com.fretron.Model.Properties> clusters;
 
     /** Creates a new Builder */
     private Builder() {
@@ -815,6 +837,10 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.source = data().deepCopy(fields()[27].schema(), other.source);
         fieldSetFlags()[27] = true;
       }
+      if (isValidValue(fields()[28], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
+        fieldSetFlags()[28] = true;
+      }
     }
 
     /**
@@ -934,6 +960,10 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[27], other.source)) {
         this.source = data().deepCopy(fields()[27].schema(), other.source);
         fieldSetFlags()[27] = true;
+      }
+      if (isValidValue(fields()[28], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
+        fieldSetFlags()[28] = true;
       }
     }
 
@@ -2029,6 +2059,45 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'clusters' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.Properties> getClusters() {
+      return clusters;
+    }
+
+    /**
+      * Sets the value of the 'clusters' field.
+      * @param value The value of 'clusters'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setClusters(java.util.List<com.fretron.Model.Properties> value) {
+      validate(fields()[28], value);
+      this.clusters = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusters' field has been set.
+      * @return True if the 'clusters' field has been set, false otherwise.
+      */
+    public boolean hasClusters() {
+      return fieldSetFlags()[28];
+    }
+
+
+    /**
+      * Clears the value of the 'clusters' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearClusters() {
+      clusters = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
     @Override
     public TripMisReport build() {
       try {
@@ -2061,6 +2130,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         record.vehicleRegistrationNumber = fieldSetFlags()[25] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[25]);
         record.vehicleModel = fieldSetFlags()[26] ? this.vehicleModel : (java.lang.String) defaultValue(fields()[26]);
         record.source = fieldSetFlags()[27] ? this.source : (java.lang.String) defaultValue(fields()[27]);
+        record.clusters = fieldSetFlags()[28] ? this.clusters : (java.util.List<com.fretron.Model.Properties>) defaultValue(fields()[28]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

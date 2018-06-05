@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 9138589197435814707L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastStateOdometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null},{\"name\":\"odometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null}]}");
+  private static final long serialVersionUID = -7938014939679933823L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"isManuallyAdded\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isIgnore\",\"type\":\"boolean\",\"default\":false},{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"sigmasq\",\"type\":\"double\"},{\"name\":\"mean\",\"type\":\"LitePosition\"},{\"name\":\"totalDistance\",\"type\":\"double\"},{\"name\":\"totalTime\",\"type\":\"long\"},{\"name\":\"averageOfSpeed\",\"type\":\"double\"},{\"name\":\"averageSpeeds\",\"type\":\"double\"},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"lateArrivedRecordsCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"encodedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeAwarePolyline\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TimeAwarePolyline\",\"fields\":[{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"compressedPolyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastPoint\",\"type\":{\"type\":\"record\",\"name\":\"PointAtTime\",\"fields\":[{\"name\":\"timestamp\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"],\"default\":null}]}},{\"name\":\"isAssumed\",\"type\":\"boolean\",\"default\":false},{\"name\":\"totalPoints\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"polylineSegments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"TimeAwarePolyline\"}],\"default\":null},{\"name\":\"recalculatedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"odoMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastOdoMeterReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"batteryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastStateOdometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null},{\"name\":\"odometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null},{\"name\":\"clusters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public boolean isManuallyAdded;
   @Deprecated public boolean isIgnore;
@@ -42,6 +42,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.lang.String batteryStatus;
   @Deprecated public com.fretron.Model.Odometer lastStateOdometer;
   @Deprecated public com.fretron.Model.Odometer odometer;
+  @Deprecated public java.util.List<com.fretron.Model.Properties> clusters;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -81,8 +82,9 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
    * @param batteryStatus The new value for batteryStatus
    * @param lastStateOdometer The new value for lastStateOdometer
    * @param odometer The new value for odometer
+   * @param clusters The new value for clusters
    */
-  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.Double odoMeter, java.lang.Double lastOdoMeterReading, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.String batteryStatus, com.fretron.Model.Odometer lastStateOdometer, com.fretron.Model.Odometer odometer) {
+  public VehicleGpsState(java.lang.Boolean isManuallyAdded, java.lang.Boolean isIgnore, java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, java.lang.Double sigmasq, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageOfSpeed, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.Integer lateArrivedRecordsCount, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.String encodedPolyline, com.fretron.Model.TimeAwarePolyline timeAwarePolyline, java.util.List<com.fretron.Model.TimeAwarePolyline> polylineSegments, java.lang.Double recalculatedDistance, java.lang.Double odoMeter, java.lang.Double lastOdoMeterReading, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.String batteryStatus, com.fretron.Model.Odometer lastStateOdometer, com.fretron.Model.Odometer odometer, java.util.List<com.fretron.Model.Properties> clusters) {
     this.isManuallyAdded = isManuallyAdded;
     this.isIgnore = isIgnore;
     this.startTime = startTime;
@@ -112,6 +114,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     this.batteryStatus = batteryStatus;
     this.lastStateOdometer = lastStateOdometer;
     this.odometer = odometer;
+    this.clusters = clusters;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -147,6 +150,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 26: return batteryStatus;
     case 27: return lastStateOdometer;
     case 28: return odometer;
+    case 29: return clusters;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -184,6 +188,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     case 26: batteryStatus = (java.lang.String)value$; break;
     case 27: lastStateOdometer = (com.fretron.Model.Odometer)value$; break;
     case 28: odometer = (com.fretron.Model.Odometer)value$; break;
+    case 29: clusters = (java.util.List<com.fretron.Model.Properties>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -653,6 +658,22 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'clusters' field.
+   * @return The value of the 'clusters' field.
+   */
+  public java.util.List<com.fretron.Model.Properties> getClusters() {
+    return clusters;
+  }
+
+  /**
+   * Sets the value of the 'clusters' field.
+   * @param value the value to set.
+   */
+  public void setClusters(java.util.List<com.fretron.Model.Properties> value) {
+    this.clusters = value;
+  }
+
+  /**
    * Creates a new VehicleGpsState RecordBuilder.
    * @return A new VehicleGpsState RecordBuilder
    */
@@ -719,6 +740,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
     private com.fretron.Model.Odometer.Builder lastStateOdometerBuilder;
     private com.fretron.Model.Odometer odometer;
     private com.fretron.Model.Odometer.Builder odometerBuilder;
+    private java.util.List<com.fretron.Model.Properties> clusters;
 
     /** Creates a new Builder */
     private Builder() {
@@ -865,6 +887,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       if (other.hasOdometerBuilder()) {
         this.odometerBuilder = com.fretron.Model.Odometer.newBuilder(other.getOdometerBuilder());
       }
+      if (isValidValue(fields()[29], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[29].schema(), other.clusters);
+        fieldSetFlags()[29] = true;
+      }
     }
 
     /**
@@ -995,6 +1021,10 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         fieldSetFlags()[28] = true;
       }
       this.odometerBuilder = null;
+      if (isValidValue(fields()[29], other.clusters)) {
+        this.clusters = data().deepCopy(fields()[29].schema(), other.clusters);
+        fieldSetFlags()[29] = true;
+      }
     }
 
     /**
@@ -2327,6 +2357,45 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'clusters' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.Properties> getClusters() {
+      return clusters;
+    }
+
+    /**
+      * Sets the value of the 'clusters' field.
+      * @param value The value of 'clusters'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder setClusters(java.util.List<com.fretron.Model.Properties> value) {
+      validate(fields()[29], value);
+      this.clusters = value;
+      fieldSetFlags()[29] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clusters' field has been set.
+      * @return True if the 'clusters' field has been set, false otherwise.
+      */
+    public boolean hasClusters() {
+      return fieldSetFlags()[29];
+    }
+
+
+    /**
+      * Clears the value of the 'clusters' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleGpsState.Builder clearClusters() {
+      clusters = null;
+      fieldSetFlags()[29] = false;
+      return this;
+    }
+
     @Override
     public VehicleGpsState build() {
       try {
@@ -2384,6 +2453,7 @@ public class VehicleGpsState extends org.apache.avro.specific.SpecificRecordBase
         } else {
           record.odometer = fieldSetFlags()[28] ? this.odometer : (com.fretron.Model.Odometer) defaultValue(fields()[28]);
         }
+        record.clusters = fieldSetFlags()[29] ? this.clusters : (java.util.List<com.fretron.Model.Properties>) defaultValue(fields()[29]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
