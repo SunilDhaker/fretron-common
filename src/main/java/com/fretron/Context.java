@@ -6,6 +6,7 @@ package com.fretron;
 
 
 import com.fretron.Constant.Constants;
+import com.fretron.Logger.Log;
 
 import java.io.IOException;
 import java.util.Map;
@@ -24,10 +25,13 @@ public final class Context {
     }
 
     private static Config config;
+    private static boolean loggerEnabled;
+    public static boolean isLoggerEnabled() {
+        return loggerEnabled;
+    }
 
 
     public static String getProp(String prop){
-
         return getConfig().getString(prop);
     }
 
@@ -50,6 +54,17 @@ public final class Context {
                 Logger.getGlobal().log(Level.WARNING, "Some execption while loading property file "+e.getMessage());
             }
         }
+
+        loggerEnabled = config.getBoolean("logger.enable");
+        if (loggerEnabled) {
+            try {
+                Log.setupLogger(config);
+            } catch (IOException e) {
+                Logger.getGlobal().log(Level.WARNING ,"Some exception while setup logging tool.");
+                e.printStackTrace();
+            }
+        }
+
 
         setSystemEnvironmentVariables(config);
     }
