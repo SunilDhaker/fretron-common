@@ -17,13 +17,12 @@ package com.fretron.utils.Geocoders;
 
 import com.fretron.Constant.Constants;
 import com.fretron.Context;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
+import java.io.IOException;
 import javax.json.Json;
-import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
-import java.io.IOException;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
 
 public class FretronCachedGeocode extends JsonGeocoder {
 

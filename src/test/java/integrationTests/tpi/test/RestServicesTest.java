@@ -2,14 +2,13 @@ package integrationTests.tpi.test;
 
 import com.fretron.HttpRequestHepler;
 import com.fretron.utils.SmsService;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.apache.http.HttpEntity;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class RestServicesTest {
 

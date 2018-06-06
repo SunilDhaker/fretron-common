@@ -1,16 +1,15 @@
 package com.fretron.utils.compressedPolylineUtils;
 
 
+import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.extendTimeAwarePolyline;
+
 import com.fretron.Constant.Constants;
 import com.fretron.Model.PointAtTime;
 import com.fretron.Model.TimeAwarePolyline;
+import com.fretron.utils.PolylineUtils.PolylineDecoder;
 import com.fretron.utils.compressedPolylineUtils.reducer.Point;
 import com.fretron.utils.compressedPolylineUtils.reducer.SeriesReducer;
-import com.fretron.utils.PolylineUtils.PolylineDecoder;
 import java.util.List;
-
-
-import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.*;
 
 public class PolylineCompressor {
 

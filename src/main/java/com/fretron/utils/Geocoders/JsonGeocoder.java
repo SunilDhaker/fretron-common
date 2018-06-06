@@ -19,18 +19,17 @@ package com.fretron.utils.Geocoders;
 import com.ning.http.client.AsyncCompletionHandler;
 import com.ning.http.client.AsyncHttpClient;
 import com.ning.http.client.Response;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
 import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonReader;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
 
 public abstract class JsonGeocoder implements Geocoder {
 

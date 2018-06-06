@@ -5,24 +5,16 @@ package com.fretron.utils.GoogleDirectionPolylineUtil;
  */
 
 
+import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.mergePolylines;
 
-import com.fretron.Constant.Constants;
-import com.fretron.Context;
+import java.util.HashMap;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
-
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.HashMap;
-
-import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.mergePolylines;
 
 
 
