@@ -15,10 +15,9 @@
  */
 package com.fretron.utils.helper;
 
+import java.nio.charset.StandardCharsets;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBufferIndexFinder;
-
-import java.nio.charset.StandardCharsets;
 
 public class StringFinder implements ChannelBufferIndexFinder {
 

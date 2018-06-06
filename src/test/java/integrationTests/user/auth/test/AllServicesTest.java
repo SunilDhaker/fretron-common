@@ -1,5 +1,7 @@
 package integrationTests.user.auth.test;
+
 import com.fretron.JwtUtil;
+import java.io.IOException;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -11,8 +13,6 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.io.IOException;
 
 public class AllServicesTest {
     private static final String BASE_IP_USER="http://192.168.0.153/user";
