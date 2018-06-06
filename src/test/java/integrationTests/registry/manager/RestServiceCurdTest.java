@@ -1,18 +1,11 @@
 package integrationTests.registry.manager;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fretron.HttpRequestHepler;
 import com.fretron.JwtUtil;
 import com.fretron.Model.Driver;
 import com.fretron.Model.Organisation;
 import com.fretron.utils.SmsService;
-import org.apache.http.HttpEntity;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.junit.Test;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URLEncoder;
@@ -22,6 +15,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.logging.Level;
+import org.apache.http.HttpEntity;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.junit.Test;
 
 public class RestServiceCurdTest {
 
