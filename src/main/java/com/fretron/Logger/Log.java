@@ -16,8 +16,6 @@
 package com.fretron.Logger;
 
 import com.fretron.Config;
-import org.apache.log4j.*;
-import org.apache.log4j.varia.NullAppender;
 
 
 import java.io.IOException;
@@ -26,6 +24,9 @@ import java.lang.management.MemoryMXBean;
 import java.lang.management.OperatingSystemMXBean;
 import java.lang.management.RuntimeMXBean;
 import java.nio.charset.Charset;
+import org.apache.log4j.*;
+import org.apache.log4j.varia.NullAppender;
+
 
 public final class Log {
     private Log() { }
