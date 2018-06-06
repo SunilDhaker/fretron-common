@@ -18,7 +18,12 @@ package com.fretron.Logger;
 import com.fretron.Config;
 import org.apache.log4j.*;
 import org.apache.log4j.varia.NullAppender;
-
+import org.apache.log4j.Logger;
+import org.apache.logging.log4j.core.Filter;
+import org.apache.logging.log4j.core.LoggerContext;
+import org.apache.logging.log4j.core.config.AppenderRef;
+import org.apache.logging.log4j.core.config.Configuration;
+import org.apache.logging.log4j.core.config.LoggerConfig;
 
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
@@ -39,9 +44,30 @@ public final class Log {
         return Log.class.getPackage().getImplementationVersion();
     }
 
+//    public static void setupV2(){
+//        LoggerContext context= (LoggerContext) org.apache.logging.log4j.LogManager.getContext();
+//        Configuration config= context.getConfiguration();
+//
+//        org.apache.logging.log4j.core.layout.PatternLayout layout= org.apache.logging.log4j.core.layout.PatternLayout.createDefaultLayout();
+//        org.apache.logging.log4j.core.Appender appender= org.apache.logging.log4j.core.appender.ConsoleAppender.createDefaultAppenderForLayout(layout);
+//        appender.start();
+//        AppenderRef ref= AppenderRef.createAppenderRef("CONSOLE_APPENDER",null, null);
+//        AppenderRef[] refs = new AppenderRef[] {ref};
+//        LoggerConfig loggerConfig= LoggerConfig.createLogger(true , org.apache.logging.log4j.Level.ALL ,);
+//        loggerConfig.addAppender(appender,null,null);
+//
+//        config.addAppender(appender);
+//        config.addLogger("com", loggerConfig);
+//        context.updateLoggers(config);
+//
+//        Logger logger=LogManager.getContext().getLogger("com");
+//        logger.info("HELLO_WORLD");
+//
+//    }
+
       public static void setupLogger(Config config) throws IOException {
 
-        Layout layout = new PatternLayout("%d{" + DATE_FORMAT + "} %5p: - %m%n");
+          PatternLayout layout = new PatternLayout("%d{" + DATE_FORMAT + "} %5p: - %m%n");
 
         //file appender write logs in a file
         RollingFileAppender appender = new RollingFileAppender(layout ,config.getString("logger.file") ,true);
@@ -55,6 +81,7 @@ public final class Log {
         LogManager.resetConfiguration();
         LogManager.getRootLogger().addAppender(new NullAppender());
         logger = Logger.getLogger(LOGGER_NAME);
+
         logger.addAppender(appender);
         logger.addAppender(consoleAppender);
         logger.setLevel(Level.toLevel(config.getString("logger.level"), Level.ALL));
