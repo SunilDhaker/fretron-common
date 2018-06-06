@@ -241,7 +241,19 @@
         "name": "odometer",
          "type": ["null","com.fretron.Model.Odometer"],
         "default":null
+     },
+     {
+        "name": "clusters",
+               "type": [
+                     "null",
+                     {
+                       "type": "array",
+                       "items": "com.fretron.Model.Properties"
+                     }
+                   ],
+             "default": null
      }
+
     ]
   }
 

@@ -1,12 +1,10 @@
 package com.fretron;
 
-import com.fretron.Model.ShipmentTrackingState;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import org.bson.Document;
-
 import java.util.HashMap;
+import org.bson.Document;
 
 /**
  * Created by PalodRohit on 12/26/2017.

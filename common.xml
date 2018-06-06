@@ -10,8 +10,8 @@
     <entry key="application.server.config">localhost:2223</entry>
     <entry key="commit.interval.auto.config">500</entry>
     <entry key="auto.offset.reset.config">earliest</entry>
-    <entry key="kafka.topic.partition">5</entry>
-    <entry key="kafka.topic.replication.factor">3</entry>
+    <entry key="kafka.topic.partition">20</entry>
+    <entry key="kafka.topic.replication.factor">2</entry>
 
 
     <!--==============ADMIN Config===================-->
@@ -170,5 +170,7 @@
     <entry key="vgsmis.topic">vgsmistopic</entry>
 
     <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
+    <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
+    <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
 </properties>

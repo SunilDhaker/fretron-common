@@ -2,8 +2,6 @@ package com.fretron.utils;
 
 import com.fretron.Model.Geofence;
 import com.fretron.Model.Location;
-import com.fretron.Model.VehicleGpsState;
-
 import java.util.ArrayList;
 
 /**
