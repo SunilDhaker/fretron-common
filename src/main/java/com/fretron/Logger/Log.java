@@ -61,14 +61,14 @@ public final class Log {
 //        appender.start();
 //        AppenderRef ref= AppenderRef.createAppenderRef("CONSOLE_APPENDER",null, null);
 //        AppenderRef[] refs = new AppenderRef[] {ref};
-//        LoggerConfig loggerConfig= LoggerConfig.createLogger(true , org.apache.logging.log4j.Level.ALL ,);
+//        LoggerConfig loggerConfig= LoggerConfig.createLogger(true , org.apache.logging.log4j.Level.ALL ,LOGGER_NAME ,null,refs,null,config ,null);
 //        loggerConfig.addAppender(appender,null,null);
 //
 //        config.addAppender(appender);
 //        config.addLogger("com", loggerConfig);
 //        context.updateLoggers(config);
 //
-//        Logger logger=LogManager.getContext().getLogger("com");
+//        Logger logger= org.apache.logging.log4j.LogManager.getContext().getLogger("com");
 //        logger.info("HELLO_WORLD");
 //
 //    }
@@ -174,10 +174,14 @@ public final class Log {
 
 
     public static void debug(String msg) {
-        getLogger().debug(msg);
+        Logger l = getLogger();
+        if (l.isDebugEnabled()){ l.debug(msg);
+        }
     }
     public static void debug(Class clazz ,String msg){
-        getLogger().debug(clazz.getName() + "    " + msg);
+        Logger l = getLogger();
+        if (l.isDebugEnabled()){ l.debug(clazz.getName() + "    " + msg);
+        }
     }
 
 
