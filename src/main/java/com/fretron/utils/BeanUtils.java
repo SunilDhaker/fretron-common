@@ -2,13 +2,9 @@ package com.fretron.utils;
 
 
 import com.fretron.Model.Device;
-import com.fretron.Model.Vehicle;
-
 import java.beans.BeanInfo;
-import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class BeanUtils {

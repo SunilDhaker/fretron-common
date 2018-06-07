@@ -1,11 +1,11 @@
 package com.fretron.utils.ClusteringUtils;
 
+import static com.fretron.utils.helper.DistanceCalculator.distance;
+
 import com.fretron.Model.LitePosition;
 import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.utils.PolylineUtils.PolylineDecoder;
-
 import java.util.List;
-import static com.fretron.utils.helper.DistanceCalculator.distance;
 
 /**
  * Created by sdhaker on 21/07/17.

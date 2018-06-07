@@ -18,7 +18,6 @@ package com.fretron.utils.helper;
 
 import com.fretron.Model.LitePosition;
 import com.fretron.Model.PointAtTime;
-import com.fretron.utils.PolylineUtils.Point;
 
 public final class DistanceCalculator {
 
