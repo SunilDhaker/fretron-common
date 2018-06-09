@@ -25,7 +25,6 @@ public class Redis {
         Redis.password = password;
         Redis.connectTimeout = connectTimeout;
         Redis.operationTimeout = operationTimeout;
-        Logger.getGlobal().log(INFO, "Redis Server initialization on host "+host +" and port "+port);
     }
 
     // MAKE SURE to call the initializeSettings method first
