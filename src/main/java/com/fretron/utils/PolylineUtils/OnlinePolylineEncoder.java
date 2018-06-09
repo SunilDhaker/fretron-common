@@ -6,9 +6,8 @@ package com.fretron.utils.PolylineUtils;
 
 
 import com.fretron.Model.LitePosition;
-import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.Model.PointAtTime;
-
+import com.fretron.Model.TimeAwarePolyline;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
