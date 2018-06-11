@@ -331,6 +331,7 @@ public class Constants {
 
     public static final String KEY_TRIP_TEMPLATE_MANAGER_APP_ID = "trip.tamplate.manager.app.id";
     public static final String KEY_TRIP_TEMPLATE_TOPIC = "trip.tamplate.topic";
+    public static final String IS_SINGLE_INSTANCE = "is.single.instance";
 
     //========================ORGANISATION_GROUP_MANAGER=================
 
