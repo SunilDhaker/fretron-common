@@ -91,7 +91,7 @@ public final class Log {
         logger = Logger.getLogger(LOGGER_NAME);
 
         logger.addAppender(appender);
-//        logger.addAppender(consoleAppender);
+        logger.addAppender(consoleAppender);
         logger.setLevel(Level.toLevel(config.getString("logger.level"), Level.ALL));
         Log.logSystemInfo();
 
