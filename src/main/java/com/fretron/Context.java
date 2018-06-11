@@ -55,12 +55,12 @@ public final class Context {
 
         loggerEnabled = config.getBoolean("logger.enable");
         if (loggerEnabled) {
-            try {
-                Log.setupLogger(config);
-            } catch (IOException e) {
-                Logger.getGlobal().log(Level.WARNING ,"Some exception while setup logging tool.");
-                e.printStackTrace();
-            }
+//            try {
+//                Log.setupLogger(config);
+//            } catch (IOException e) {
+//                Logger.getGlobal().log(Level.WARNING ,"Some exception while setup logging tool.");
+//                e.printStackTrace();
+//            }
         }
 
 
