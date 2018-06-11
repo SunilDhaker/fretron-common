@@ -148,7 +148,7 @@
     <entry key="freight.location.topic">freightlocationtopic</entry>
 
     <!--===============TPI -Manager topics=====================-->
-    <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
+    <entry key = "integration.job.events.topic">integratedJobsEventTopic</entry>
     <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
     <entry key="integration.job.raw.response.topic">jobRawResponseTopic</entry>
 
