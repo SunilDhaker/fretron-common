@@ -4,10 +4,6 @@ import integrationTests.organisation.test.TestOrganisation;
 import integrationTests.registry.manager.RestServiceCurdTest;
 import integrationTests.tpi.test.RestServicesTest;
 import integrationTests.user.auth.test.AllServicesTest;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.logging.Logger;
 
 /**

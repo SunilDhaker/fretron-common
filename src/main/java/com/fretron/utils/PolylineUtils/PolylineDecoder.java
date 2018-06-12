@@ -4,12 +4,13 @@ package com.fretron.utils.PolylineUtils;
  * Created by sdhaker on 21/07/17.
  */
 
+import static com.fretron.utils.compressedPolylineUtils.reducer.PointImpl.p;
+
 import com.fretron.Model.LitePosition;
+import com.fretron.Model.PointAtTime;
 import com.fretron.utils.compressedPolylineUtils.reducer.Point;
 import java.util.ArrayList;
 import java.util.List;
-import com.fretron.Model.PointAtTime;
-import static com.fretron.utils.compressedPolylineUtils.reducer.PointImpl.p;
 
 /**
  * Port to Java of Mark McClures Javascript OnlinePolylineEncoder :

@@ -20,6 +20,14 @@
 				"default": null
 			},
 			{
+                "name": "address",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            },
+			{
 				"name": "level",
 				"type": [
                     "null",

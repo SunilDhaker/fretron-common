@@ -217,6 +217,7 @@ public class Constants {
     public final static  String KEY_BID_TOPIC = "bid.topic";
     public final static String KEY_ACCEPTOFFER_TOPIC = "acceptoffer.topic";
     public final static String KEY_TRIP_TOPIC = "trip.topic";
+    public final static String KEY_TRIP_COLLECTION_NAME = "trip.collection.name";
 //    public final static String KEY_VEHICLE_TRIP_STATE_TOPIC = "vehicletripstate.topic";
 //    public final static String KEY_LOADED_POSITION_TOPIC = "loadedposition.topic";
 //    public final static String KEY_ACTIVE_TRIP_TOPIC = "activetrip.topic";
@@ -330,6 +331,7 @@ public class Constants {
 
     public static final String KEY_TRIP_TEMPLATE_MANAGER_APP_ID = "trip.tamplate.manager.app.id";
     public static final String KEY_TRIP_TEMPLATE_TOPIC = "trip.tamplate.topic";
+    public static final String IS_SINGLE_INSTANCE = "is.single.instance";
 
     //========================ORGANISATION_GROUP_MANAGER=================
 

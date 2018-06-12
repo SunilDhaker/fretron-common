@@ -1,10 +1,9 @@
 package com.fretron;
 
-import redis.clients.jedis.Jedis;
-
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import redis.clients.jedis.Jedis;
 
 /**
  * Created by PalodRohit on 11/14/2017.
