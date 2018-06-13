@@ -208,6 +208,7 @@ public class JwtUtil {
         CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
         client.start();
         HttpGet request = new HttpGet(Context.getProp(Constants.USER_MANAGER_SERVICE_URL)+"/user/session?token="+token+"&userId="+userId);
+//        HttpGet request = new HttpGet("http://192.168.0.93:8099"+"/user/session?token="+token+"&userId="+userId);
 
         try {
             client.execute(request, new FutureCallback<HttpResponse>() {
@@ -229,7 +230,7 @@ public class JwtUtil {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            client.close();
+
         }
 
         System.out.println("ok");
