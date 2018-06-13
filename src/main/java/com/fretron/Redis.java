@@ -34,7 +34,7 @@ public class Redis {
                 if (pool == null) { // don't re-initialize if another thread beat us to it.
                     JedisPoolConfig poolConfig = getPoolConfig();
                     boolean useSsl = port == 6380 ? true : false;
-                    int db = 1;
+                    int db = 2;
                     String clientName = "MyClientName"; // null means use default
                     SSLSocketFactory sslSocketFactory = null; // null means use default
                     SSLParameters sslParameters = null; // null means use default

@@ -207,7 +207,7 @@ public class JwtUtil {
         }
         CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
         client.start();
-        HttpGet request = new HttpGet("http://192.168.0.153/integrations/all/jobByJobIdStore");
+        HttpGet request = new HttpGet(Context.getProp(Constants.USER_MANAGER_SERVICE_URL)+"/user/session?token="+token+"&userId="+userId);
 
         try {
             client.execute(request, new FutureCallback<HttpResponse>() {
