@@ -214,10 +214,13 @@ public class OnlinePolylineEncoder {
      * @return
      */
     public static TimeAwarePolyline mergeTimeAwarePolylines(TimeAwarePolyline polylineObj1 , TimeAwarePolyline polylineObj2){
-        List<PointAtTime> points  = (new PolylineDecoder()).decodeTimeAwarePolyline(polylineObj2.getPolyline());
-        for(PointAtTime point : points){
-            polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
-        }
+        if (polylineObj1 != null && polylineObj2 != null){
+            List<PointAtTime> points  = (new PolylineDecoder()).decodeTimeAwarePolyline(polylineObj2.getPolyline());
+            for(PointAtTime point : points){
+                polylineObj1 = extendTimeAwarePolyline(polylineObj1 ,point.getLatitude() ,point.getLongitude() ,point.getTimestamp());
+            }
+        }else if (polylineObj1 == null && polylineObj2 != null) return polylineObj2;
+
         return polylineObj1;
     }
 

@@ -149,7 +149,7 @@
     <entry key="place.topic">placetopic</entry>
 
     <!--===============TPI -Manager topics=====================-->
-    <entry key = "integration.job.events.topic">integratedJobsEvents</entry>
+    <entry key = "integration.job.events.topic">integratedJobsEventTopic</entry>
     <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
     <entry key="integration.job.raw.response.topic">jobRawResponseTopic</entry>
 
@@ -170,7 +170,7 @@
     <entry key="tripmis.topic">tripmistopic</entry>
     <entry key="vgsmis.topic">vgsmistopic</entry>
 
-    <entry key="vehicle.activity.topic">vehicleActivityTopic</entry>
+    <entry key="vehicle.activity.topic">vehicleMovementActivityTopic</entry>
     <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
     <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 

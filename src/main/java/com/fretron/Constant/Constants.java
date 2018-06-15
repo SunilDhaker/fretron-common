@@ -331,6 +331,7 @@ public class Constants {
 
     public static final String KEY_TRIP_TEMPLATE_MANAGER_APP_ID = "trip.tamplate.manager.app.id";
     public static final String KEY_TRIP_TEMPLATE_TOPIC = "trip.tamplate.topic";
+    public static final String IS_SINGLE_INSTANCE = "is.single.instance";
 
     //========================ORGANISATION_GROUP_MANAGER=================
 
@@ -502,6 +503,7 @@ public class Constants {
     public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
+    public static final String KEY_TPI_SINKTASK_APP_ID = "tpi.sink.task.manager.app.id";
 
 
 

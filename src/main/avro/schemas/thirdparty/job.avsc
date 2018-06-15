@@ -1,5 +1,5 @@
 
-{
+[{
   "namespace": "com.fretron.Model",
   "type": "record",
   "name": "IntegrationJob",
@@ -153,4 +153,57 @@
            "default" : null
          }
   ]
+},
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "TpiDataPacket",
+  "fields": [
+    {
+      "name": "vehicle",
+      "type":["null","com.fretron.Model.Vehicle"],
+      "default" : null
+    },
+    {
+      "name": "device",
+      "type":["null","com.fretron.Model.Device"],
+      "default" : null
+    },
+        {
+          "name": "position",
+          "type":["null","com.fretron.Model.Position"],
+          "default" : null
+        }
+
+   ]
+},
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "JobExecutionResult",
+  "fields": [
+    {
+      "name": "status",
+      "type":["null","int"],
+      "default" : null
+    },
+    {
+        "name":"error",
+        "type":["null","string"],
+        "default":null
+    },
+    {
+     "name": "response",
+     				"type": [
+     					"null",
+     					{
+     						"type": "array",
+     						"items": "com.fretron.Model.TpiDataPacket"
+     					}
+     				],
+     				"default": null
+    }
+
+   ]
 }
+]
