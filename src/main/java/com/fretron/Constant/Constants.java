@@ -352,7 +352,8 @@ public class Constants {
     public static final String FR_LOC_ALL_COLLECTION_NAME = "freight.location.all.collection.name";
     public static final String FR_LOC_FAV_COLLECTION_NAME = "freight.location.fav.collection.name";
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
-            //*************NEW**************//
+            //*************NEW**************//public static final String FRIGHT_LOCATION_TOPIC = "freight.location.topic";
+    public static final String PLACES_TOPIC = "place.topic";
     public static final String PLACES_MANAGER_SERVICE_PORT = "geofence.service.port";
     public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
     public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
