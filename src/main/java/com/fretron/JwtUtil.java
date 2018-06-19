@@ -76,20 +76,15 @@ public class JwtUtil {
 
     public static String getOrgIdFromToken(String token) {
         try {
-//            if (checkIfGod(token)) {
-//                return getFromToken(token, "orgId");
-//            }
-//            else {
-                if (checkIfTokenExist(token)) {
-                    return getFromToken(token, "orgId");
-                }
-                else {
-                    Log.debug("TOKEN NOT FOUND IN REDIS -- "+token);
-                    return null;
-                }
-//            }
+            if (checkIfTokenExist(token)) {
+                return getFromToken(token, "orgId");
+            } else {
+                Log.debug("TOKEN NOT FOUND IN REDIS -- " + token);
+                return null;
+            }
 
         } catch (Exception e) {
+            Log.error(e.getMessage());
             e.printStackTrace();
         }
 
@@ -98,39 +93,34 @@ public class JwtUtil {
 
     public static String getEmailFromToken(String token) {
         try {
-//            if (checkIfGod(token)) {
-//                return getFromToken(token, "email");
-//            }
-//            else {
-                if (checkIfTokenExist(token)) {
-                    return getFromToken(token, "email");
-                }
-                else {
-                    Log.debug("TOKEN NOT FOUND IN REDIS -- "+token);
-                    return null;
-                }
-//            }
+
+            if (checkIfTokenExist(token)) {
+                return getFromToken(token, "email");
+            } else {
+                Log.debug("TOKEN NOT FOUND IN REDIS -- " + token);
+                return null;
+            }
 
         } catch (Exception e) {
+            Log.error(e.getMessage());
             e.printStackTrace();
         }
 
         return null;
     }
 
-    public static boolean checkIfTokenExist(String token){
-         RedisServerManager serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
+    public static boolean checkIfTokenExist(String token) {
+        RedisServerManager serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
 
         if (serverManager.isConnected()) {
-            if(serverManager.tokenExist(token)){
+            if (serverManager.tokenExist(token)) {
                 return true;
-            }
-            else{
-                Logger.getGlobal().log(Level.WARNING, "REDIS CONNECTED BUT TOKEN NOT FOUND -- " + token);
+            } else {
+                Log.warning("REDIS CONNECTED BUT TOKEN NOT FOUND -- " + token);
                 System.out.println();
             }
         } else {
-            Logger.getGlobal().log(Level.WARNING, "REDIS  NOT  CONNECTED WHILE CHECKING FOR TOKEN -- " + token);
+            Log.warning("REDIS  NOT  CONNECTED WHILE CHECKING FOR TOKEN -- " + token);
             System.out.println();
         }
         return false;
@@ -138,25 +128,20 @@ public class JwtUtil {
 
     public static String getUserIdForToken(String token) {
 
-//        if (checkIfGod(token)) {
-//            return getFromToken(token, "userId");
-//        } else {
-            RedisServerManager serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
-            if (serverManager.isConnected()) {
-                String userID = serverManager.getValueForKey(token);
-                if (userID == null) {
-                    Log.debug("TOKEN NOT FOUND IN REDIS -- "+token);
+        RedisServerManager serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
+        if (serverManager.isConnected()) {
+            String userID = serverManager.getValueForKey(token);
+            if (userID == null) {
+                Log.debug("TOKEN NOT FOUND IN REDIS -- " + token);
 
-                } else {
-                    System.out.println("USER ID FOUND IN REDIS");
-                }
-                return userID;
             } else {
-                Logger.getGlobal().log(Level.WARNING, "REDIS  NOT  CONNECTED WHILE GETTING USER ID FROM TOKEN -- " + token);
-                System.out.println();
-                return getFromToken(token, "userId");
+                Log.info("USER ID FOUND IN REDIS");
             }
-//        }
+            return userID;
+        } else {
+            Log.warning("REDIS  NOT  CONNECTED WHILE GETTING USER ID FROM TOKEN -- " + token);
+            return getFromToken(token, "userId");
+        }
     }
 
     public static String getUserIdForTokenV2(String token) {
@@ -164,42 +149,41 @@ public class JwtUtil {
         if (serverManager.isConnected()) {
             String userID = serverManager.getValueForKey(token);
             if (userID == null) {
-                Log.debug("TOKEN NOT FOUND IN REDIS -- "+token);
+                Log.debug("TOKEN NOT FOUND IN REDIS -- " + token);
             } else {
-                System.out.println("USER ID FOUND IN REDIS ");
+                Log.info("USER ID FOUND IN REDIS ");
             }
             return userID;
         } else {
-            Logger.getGlobal().log(Level.WARNING, "REDIS  NOT  CONNECTED WHILE GETTING USER ID FROM TOKEN -- " + token);
-            System.out.println();
+            Log.warning("REDIS  NOT  CONNECTED WHILE GETTING USER ID FROM TOKEN -- " + token);
             return getFromToken(token, "userId");
         }
     }
 
-    public static  void makeHttpCallToUserManager(String token , String userId) throws Exception{
-        if(userId == null){
+    public static void makeHttpCallToUserManager(String token, String userId) throws Exception {
+        if (userId == null) {
             userId = getFromToken(token, "userId");
         }
         CloseableHttpAsyncClient client = HttpAsyncClients.createDefault();
         client.start();
-        HttpGet request = new HttpGet(Context.getProp(Constants.USER_MANAGER_SERVICE_URL)+"/user/session?token="+token+"&userId="+userId);
+        HttpGet request = new HttpGet(Context.getProp(Constants.USER_MANAGER_SERVICE_URL) + "/user/session?token=" + token + "&userId=" + userId);
 //        HttpGet request = new HttpGet("http://192.168.0.93:8099"+"/user/session?token="+token+"&userId="+userId);
 
         try {
             client.execute(request, new FutureCallback<HttpResponse>() {
                 @Override
                 public void completed(HttpResponse result) {
-                    System.out.println("Completed saving token --API");
+                    Log.info("Completed saving token --API FOR SESSION");
                 }
 
                 @Override
                 public void failed(Exception ex) {
-                    System.out.println("Failed saving token --API");
+                    Log.warning("Failed saving token --API FOR SESSION");
                 }
 
                 @Override
                 public void cancelled() {
-                    System.out.println("cancelled --API");
+                    Log.warning("cancelled --API FOR SESSION");
                 }
             });
         } catch (Exception e) {
@@ -207,14 +191,12 @@ public class JwtUtil {
         } finally {
 
         }
-
-        System.out.println("ok");
     }
 
-    private static void saveToRedis(String key, String value){
+    private static void saveToRedis(String key, String value) {
 
         RedisServerManager serverManager = RedisServerManager.getInstance(Context.getProp(Constants.REDIS_SERVER_IP));
-        serverManager.saveInfo(key,value);
+        serverManager.saveInfo(key, value);
     }
 
 }
