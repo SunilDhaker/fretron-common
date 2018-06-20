@@ -640,6 +640,22 @@ public class Constants {
     public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
 
 
+    /**
+     *  VEHICLE TRIP CONSTANTS
+     */
+
+    public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
+    public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
+
+    public static final String VEHICLE_TRIP_DB_NAME ="vehicle.trip.db.name";
+    public static final String VEHICLE_TRIP_DB_HOST ="vehicle.trip.db.host";
+    public static final String VEHICLE_TRIP_DB_PORT ="vehicle.trip.db.port";
+
+    public static final String VEHICLE_TRIP_POINT_COLLECTION_NAME ="vehicle.trip.point.collection.name";
+
+    public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";
+    public static final String VEHICLE_TRIP_APP_PORT = "vehicle.trip.manager.restservice.port";
+
 
     private Constants(){
 

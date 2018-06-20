@@ -30,6 +30,7 @@
 				"type": ["null", "com.fretron.Model.Place"],
 				"default": null
 			}
+
 		]
 	}
 ]
