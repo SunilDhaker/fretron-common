@@ -1,0 +1,35 @@
+
+[
+{
+		"namespace": "com.fretron.Model",
+		"type": "record",
+		"name": "TripPoint",
+		"fields": [
+		    {
+				"name": "uuid",
+				"type": ["null","string"],
+				"default": null
+			},
+			{
+                "name": "vehicleId",
+                "type": ["null","string"],
+                "default": null
+            },
+			{
+				"name": "purpose",
+				"type": ["null", "string"],
+				"default": null
+			},
+            {
+                "name": "sequenceId",
+                 "type": ["null", "double"],
+                "default": null
+            },
+			{
+				"name": "place",
+				"type": ["null", "com.fretron.Model.Place"],
+				"default": null
+			}
+		]
+	}
+]
