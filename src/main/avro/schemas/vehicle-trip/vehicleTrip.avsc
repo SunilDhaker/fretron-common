@@ -29,6 +29,11 @@
 				"name": "place",
 				"type": ["null", "com.fretron.Model.Place"],
 				"default": null
+			},
+			{
+			    "name":"status",
+			    "type":["null","string"],
+			    "default":null
 			}
 
 		]
