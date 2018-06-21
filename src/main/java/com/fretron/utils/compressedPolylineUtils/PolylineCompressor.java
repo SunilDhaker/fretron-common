@@ -12,32 +12,33 @@ import com.fretron.utils.compressedPolylineUtils.reducer.SeriesReducer;
 import java.util.List;
 
 public class PolylineCompressor {
-
     private PolylineDecoder decoder;
+    private static PolylineCompressor instance;
 
-    public PolylineCompressor(){
+    private PolylineCompressor(){
+        decoder =  PolylineDecoder.getInstance();
+    }
 
-        decoder = new PolylineDecoder();
+    public static PolylineCompressor getCompressor(){
+        if (instance == null){ instance = new PolylineCompressor(); }
+        return instance;
     }
 
 
-
-    public List<Point> getCompressedPointList(List<Point> points){
+    private List<Point> getCompressedPointList(List<Point> points){
         return  SeriesReducer.reduce(points, Constants.ep);
 
     }
 
 
-
     public TimeAwarePolyline compress(TimeAwarePolyline polylineObj){
-
         try {
             String polyline = polylineObj.getPolyline();
             if (polyline != null) {
                 List<Point> points = decoder.decodeTimeAwarePolylineForCompression(polyline);
                 if (points.size() > 0) {
                     List<Point> compressedPointList = getCompressedPointList(points);
-                    TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("", "", new PointAtTime(0l, 0d, 0d), polylineObj.getIsAssumed(), 1), compressedPointList.get(0).getX(), compressedPointList.get(0).getY(), compressedPointList.get(0).getT());
+                    TimeAwarePolyline compressedPolylineObj = extendTimeAwarePolyline(new TimeAwarePolyline("", "", new PointAtTime(0L, 0d, 0d), polylineObj.getIsAssumed(), 1), compressedPointList.get(0).getX(), compressedPointList.get(0).getY(), compressedPointList.get(0).getT());
                     for (int index = 1; index < compressedPointList.size(); index++) {
                         compressedPolylineObj = extendTimeAwarePolyline(compressedPolylineObj, compressedPointList.get(index).getX(), compressedPointList.get(index).getY(), compressedPointList.get(index).getT());
                     }

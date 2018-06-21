@@ -18,8 +18,15 @@ import java.util.List;
  */
 
 public class PolylineDecoder {
-	private static final double DEFAULT_PRECISION = 1E5;
+    private static PolylineDecoder instance;
+    private static final double DEFAULT_PRECISION = 1E5;
 
+    private PolylineDecoder(){}
+
+    public static PolylineDecoder getInstance(){
+      if (instance == null){ instance = new PolylineDecoder();}
+      return instance;
+    }
 
 	public List<com.fretron.utils.PolylineUtils.Point> decode(String encoded) {
 		return decode(encoded, DEFAULT_PRECISION);
