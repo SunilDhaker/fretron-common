@@ -6,6 +6,7 @@ package com.fretron.utils.PolylineUtils;
 
 import static com.fretron.utils.compressedPolylineUtils.reducer.PointImpl.p;
 
+import com.fretron.Logger.Log;
 import com.fretron.Model.LitePosition;
 import com.fretron.Model.PointAtTime;
 import com.fretron.utils.compressedPolylineUtils.reducer.Point;
@@ -21,7 +22,10 @@ public class PolylineDecoder {
     private static PolylineDecoder instance;
     private static final double DEFAULT_PRECISION = 1E5;
 
-    private PolylineDecoder(){}
+    private PolylineDecoder(){
+        Log.info(PolylineDecoder.class ,"constructor called.");
+
+    }
 
     public static PolylineDecoder getInstance(){
       if (instance == null){ instance = new PolylineDecoder();}

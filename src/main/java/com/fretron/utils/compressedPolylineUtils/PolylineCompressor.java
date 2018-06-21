@@ -4,6 +4,7 @@ package com.fretron.utils.compressedPolylineUtils;
 import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.extendTimeAwarePolyline;
 
 import com.fretron.Constant.Constants;
+import com.fretron.Logger.Log;
 import com.fretron.Model.PointAtTime;
 import com.fretron.Model.TimeAwarePolyline;
 import com.fretron.utils.PolylineUtils.PolylineDecoder;
@@ -16,6 +17,7 @@ public class PolylineCompressor {
     private static PolylineCompressor instance;
 
     private PolylineCompressor(){
+        Log.info(PolylineCompressor.class ,"constructor called.");
         decoder =  PolylineDecoder.getInstance();
     }
 
