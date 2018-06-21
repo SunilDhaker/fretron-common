@@ -24,7 +24,6 @@ public class PolylineDecoder {
 
     private PolylineDecoder(){
         Log.info(PolylineDecoder.class ,"constructor called.");
-
     }
 
     public static PolylineDecoder getInstance(){

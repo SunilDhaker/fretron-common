@@ -174,4 +174,10 @@
     <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
     <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
+
+    <entry key="logger.enable">true</entry>
+    <entry key="logger.file">log4j-position-processor.log</entry>
+    <!--OFF / FATAL / ERROR / WARN / INFO / DEBUG / TRACE / ALL-->
+    <entry key="logger.level">INFO</entry>
+
 </properties>
