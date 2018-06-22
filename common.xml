@@ -174,4 +174,7 @@
     <entry key="reprocess.states.query.topic">reprocessStatesQueryTopic</entry>
     <entry key="reprocessed.gps.states.topic">reprocessedGpsStatesTopic</entry>
 
+    <!-- ================-vehicle-trip-manager =============== -->
+    <entry key="trip.point.topic">tripPointTopic</entry>
+
 </properties>
