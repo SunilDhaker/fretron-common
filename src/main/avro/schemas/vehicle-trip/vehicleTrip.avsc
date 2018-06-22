@@ -34,7 +34,17 @@
 			    "name":"status",
 			    "type":["null","string"],
 			    "default":null
-			}
+			},
+			{
+                "name":"eta",
+                "type":["null","long"],
+                "default":null
+            },
+            {
+                "name":"remainingDistance",
+                "type":["null","double"],
+                "default":null
+            }
 
 		]
 	}

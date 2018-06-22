@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4787787719190457422L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -6874355488398980637L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -19,6 +19,8 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.Double sequenceId;
   @Deprecated public com.fretron.Model.Place place;
   @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.Long eta;
+  @Deprecated public java.lang.Double remainingDistance;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +37,18 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param sequenceId The new value for sequenceId
    * @param place The new value for place
    * @param status The new value for status
+   * @param eta The new value for eta
+   * @param remainingDistance The new value for remainingDistance
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.purpose = purpose;
     this.sequenceId = sequenceId;
     this.place = place;
     this.status = status;
+    this.eta = eta;
+    this.remainingDistance = remainingDistance;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +61,8 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 3: return sequenceId;
     case 4: return place;
     case 5: return status;
+    case 6: return eta;
+    case 7: return remainingDistance;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +77,8 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 3: sequenceId = (java.lang.Double)value$; break;
     case 4: place = (com.fretron.Model.Place)value$; break;
     case 5: status = (java.lang.String)value$; break;
+    case 6: eta = (java.lang.Long)value$; break;
+    case 7: remainingDistance = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +180,38 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'eta' field.
+   * @return The value of the 'eta' field.
+   */
+  public java.lang.Long getEta() {
+    return eta;
+  }
+
+  /**
+   * Sets the value of the 'eta' field.
+   * @param value the value to set.
+   */
+  public void setEta(java.lang.Long value) {
+    this.eta = value;
+  }
+
+  /**
+   * Gets the value of the 'remainingDistance' field.
+   * @return The value of the 'remainingDistance' field.
+   */
+  public java.lang.Double getRemainingDistance() {
+    return remainingDistance;
+  }
+
+  /**
+   * Sets the value of the 'remainingDistance' field.
+   * @param value the value to set.
+   */
+  public void setRemainingDistance(java.lang.Double value) {
+    this.remainingDistance = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -208,6 +250,8 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private com.fretron.Model.Place place;
     private com.fretron.Model.Place.Builder placeBuilder;
     private java.lang.String status;
+    private java.lang.Long eta;
+    private java.lang.Double remainingDistance;
 
     /** Creates a new Builder */
     private Builder() {
@@ -247,6 +291,14 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.status = data().deepCopy(fields()[5].schema(), other.status);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.eta)) {
+        this.eta = data().deepCopy(fields()[6].schema(), other.eta);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.remainingDistance)) {
+        this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -279,6 +331,14 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[5], other.status)) {
         this.status = data().deepCopy(fields()[5].schema(), other.status);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.eta)) {
+        this.eta = data().deepCopy(fields()[6].schema(), other.eta);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.remainingDistance)) {
+        this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -551,6 +611,84 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'eta' field.
+      * @return The value.
+      */
+    public java.lang.Long getEta() {
+      return eta;
+    }
+
+    /**
+      * Sets the value of the 'eta' field.
+      * @param value The value of 'eta'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setEta(java.lang.Long value) {
+      validate(fields()[6], value);
+      this.eta = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'eta' field has been set.
+      * @return True if the 'eta' field has been set, false otherwise.
+      */
+    public boolean hasEta() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'eta' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearEta() {
+      eta = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'remainingDistance' field.
+      * @return The value.
+      */
+    public java.lang.Double getRemainingDistance() {
+      return remainingDistance;
+    }
+
+    /**
+      * Sets the value of the 'remainingDistance' field.
+      * @param value The value of 'remainingDistance'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setRemainingDistance(java.lang.Double value) {
+      validate(fields()[7], value);
+      this.remainingDistance = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'remainingDistance' field has been set.
+      * @return True if the 'remainingDistance' field has been set, false otherwise.
+      */
+    public boolean hasRemainingDistance() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'remainingDistance' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearRemainingDistance() {
+      remainingDistance = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public TripPoint build() {
       try {
@@ -565,6 +703,8 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
           record.place = fieldSetFlags()[4] ? this.place : (com.fretron.Model.Place) defaultValue(fields()[4]);
         }
         record.status = fieldSetFlags()[5] ? this.status : (java.lang.String) defaultValue(fields()[5]);
+        record.eta = fieldSetFlags()[6] ? this.eta : (java.lang.Long) defaultValue(fields()[6]);
+        record.remainingDistance = fieldSetFlags()[7] ? this.remainingDistance : (java.lang.Double) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
