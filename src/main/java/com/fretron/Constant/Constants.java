@@ -634,8 +634,7 @@ public class Constants {
      */
     public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
     public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
-    public static java.lang.String KEY_REPROCESS_STATES_QUERY_TOPIC = "reprocess.states.query.topic";
-    public static java.lang.String KEY_REPROCESSED_GPS_STATES_TOPIC = "reprocessed.gps.states.topic";
+    public static java.lang.String KEY_GPS_STATES_REPROCESS_QUERY_TOPIC= "gps.states.reprocess.query.topic";
     public static java.lang.String KEY_CLASSIFIER_PUNCTUATE_TIME= "classifier.punctuate.time";
     public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
 
