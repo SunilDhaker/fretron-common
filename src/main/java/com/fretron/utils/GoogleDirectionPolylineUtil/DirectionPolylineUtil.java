@@ -4,12 +4,9 @@ package com.fretron.utils.GoogleDirectionPolylineUtil;
  * Created by Mohit on 23-11-2017.
  */
 
-
-import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.mergePolylines;
-
 import java.util.HashMap;
-
 import com.fretron.Logger.Log;
+import com.fretron.utils.PolylineUtils.OnlinePolylineEncoder;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -107,7 +104,7 @@ public final class DirectionPolylineUtil {
                     JSONArray steps = legs.getJSONArray(STEPS_KEY);
                     for (int step = 0; step < steps.length(); step++) {
                          String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY).getString(POINTS_KEY);
-                         points = mergePolylines(points.toString(),extendedPolyLine);
+                         points = OnlinePolylineEncoder.INSTANCE.mergePolylines(points.toString(),extendedPolyLine);
                     }
                 }
                 map.put(DISTANCE_KEY,totalDistance);
