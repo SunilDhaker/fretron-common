@@ -1,14 +1,17 @@
 package com.fretron.utils.PolylineUtils
 
+import com.fretron.Logger.Log
 import com.fretron.Model.LitePosition
 import com.fretron.Model.PointAtTime
 import com.fretron.Model.TimeAwarePolyline
 import java.util.*
 
 object OnlinePolylineEncoder {
-  
-    private val decoder = PolylineDecoder.getInstance()
 
+    init {
+        Log.info("polyline encoder init called.")
+    }
+    private val decoder = PolylineDecoder.getInstance()
     private fun floor1e5(coordinate: Double): Int {
         return Math.floor(coordinate * 1e5).toInt()
     }
