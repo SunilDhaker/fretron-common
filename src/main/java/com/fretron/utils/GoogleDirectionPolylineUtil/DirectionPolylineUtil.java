@@ -33,6 +33,7 @@ public final class DirectionPolylineUtil {
     // false : For Detailed Points String
     public static Boolean isOverview = false;
     private  static Double distance;
+    private static DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
 
@@ -46,8 +47,6 @@ public final class DirectionPolylineUtil {
 
 
     public static HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation ,Boolean isDrivingMode) throws Exception {
-
-        DefaultHttpClient httpClient = new DefaultHttpClient();
         String apiURL = getApiUrl(startLocation, endLocation ,isDrivingMode);
         HttpGet get = new HttpGet(apiURL);
         HttpResponse response = httpClient.execute(get);
@@ -119,8 +118,6 @@ public final class DirectionPolylineUtil {
 
         return null;
     }
-
-
 
 
 
