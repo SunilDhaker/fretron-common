@@ -655,6 +655,13 @@ public class Constants {
     public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";
     public static final String VEHICLE_TRIP_APP_PORT = "vehicle.trip.manager.restservice.port";
 
+    /*
+    Elastic Search Manager Config
+     */
+
+    public static String ELASTIC_SEARCH_URL = "elastic.search.url";
+    public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
+    public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
 
     private Constants(){
 
