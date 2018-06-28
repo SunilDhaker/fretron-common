@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6874355488398980637L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 8078507410747533471L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -21,6 +21,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.Long eta;
   @Deprecated public java.lang.Double remainingDistance;
+  @Deprecated public java.lang.Long plannedArrival;
+  @Deprecated public java.lang.Long plannedDeparture;
+  @Deprecated public java.lang.Long actualArrival;
+  @Deprecated public java.lang.Long actualDeparture;
+  @Deprecated public java.util.List<java.lang.String> assosiatedShipmentsId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +44,13 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param status The new value for status
    * @param eta The new value for eta
    * @param remainingDistance The new value for remainingDistance
+   * @param plannedArrival The new value for plannedArrival
+   * @param plannedDeparture The new value for plannedDeparture
+   * @param actualArrival The new value for actualArrival
+   * @param actualDeparture The new value for actualDeparture
+   * @param assosiatedShipmentsId The new value for assosiatedShipmentsId
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.purpose = purpose;
@@ -49,6 +59,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     this.status = status;
     this.eta = eta;
     this.remainingDistance = remainingDistance;
+    this.plannedArrival = plannedArrival;
+    this.plannedDeparture = plannedDeparture;
+    this.actualArrival = actualArrival;
+    this.actualDeparture = actualDeparture;
+    this.assosiatedShipmentsId = assosiatedShipmentsId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +78,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 5: return status;
     case 6: return eta;
     case 7: return remainingDistance;
+    case 8: return plannedArrival;
+    case 9: return plannedDeparture;
+    case 10: return actualArrival;
+    case 11: return actualDeparture;
+    case 12: return assosiatedShipmentsId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +99,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 5: status = (java.lang.String)value$; break;
     case 6: eta = (java.lang.Long)value$; break;
     case 7: remainingDistance = (java.lang.Double)value$; break;
+    case 8: plannedArrival = (java.lang.Long)value$; break;
+    case 9: plannedDeparture = (java.lang.Long)value$; break;
+    case 10: actualArrival = (java.lang.Long)value$; break;
+    case 11: actualDeparture = (java.lang.Long)value$; break;
+    case 12: assosiatedShipmentsId = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +237,86 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'plannedArrival' field.
+   * @return The value of the 'plannedArrival' field.
+   */
+  public java.lang.Long getPlannedArrival() {
+    return plannedArrival;
+  }
+
+  /**
+   * Sets the value of the 'plannedArrival' field.
+   * @param value the value to set.
+   */
+  public void setPlannedArrival(java.lang.Long value) {
+    this.plannedArrival = value;
+  }
+
+  /**
+   * Gets the value of the 'plannedDeparture' field.
+   * @return The value of the 'plannedDeparture' field.
+   */
+  public java.lang.Long getPlannedDeparture() {
+    return plannedDeparture;
+  }
+
+  /**
+   * Sets the value of the 'plannedDeparture' field.
+   * @param value the value to set.
+   */
+  public void setPlannedDeparture(java.lang.Long value) {
+    this.plannedDeparture = value;
+  }
+
+  /**
+   * Gets the value of the 'actualArrival' field.
+   * @return The value of the 'actualArrival' field.
+   */
+  public java.lang.Long getActualArrival() {
+    return actualArrival;
+  }
+
+  /**
+   * Sets the value of the 'actualArrival' field.
+   * @param value the value to set.
+   */
+  public void setActualArrival(java.lang.Long value) {
+    this.actualArrival = value;
+  }
+
+  /**
+   * Gets the value of the 'actualDeparture' field.
+   * @return The value of the 'actualDeparture' field.
+   */
+  public java.lang.Long getActualDeparture() {
+    return actualDeparture;
+  }
+
+  /**
+   * Sets the value of the 'actualDeparture' field.
+   * @param value the value to set.
+   */
+  public void setActualDeparture(java.lang.Long value) {
+    this.actualDeparture = value;
+  }
+
+  /**
+   * Gets the value of the 'assosiatedShipmentsId' field.
+   * @return The value of the 'assosiatedShipmentsId' field.
+   */
+  public java.util.List<java.lang.String> getAssosiatedShipmentsId() {
+    return assosiatedShipmentsId;
+  }
+
+  /**
+   * Sets the value of the 'assosiatedShipmentsId' field.
+   * @param value the value to set.
+   */
+  public void setAssosiatedShipmentsId(java.util.List<java.lang.String> value) {
+    this.assosiatedShipmentsId = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -252,6 +357,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String status;
     private java.lang.Long eta;
     private java.lang.Double remainingDistance;
+    private java.lang.Long plannedArrival;
+    private java.lang.Long plannedDeparture;
+    private java.lang.Long actualArrival;
+    private java.lang.Long actualDeparture;
+    private java.util.List<java.lang.String> assosiatedShipmentsId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -299,6 +409,26 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.plannedArrival)) {
+        this.plannedArrival = data().deepCopy(fields()[8].schema(), other.plannedArrival);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.plannedDeparture)) {
+        this.plannedDeparture = data().deepCopy(fields()[9].schema(), other.plannedDeparture);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.actualArrival)) {
+        this.actualArrival = data().deepCopy(fields()[10].schema(), other.actualArrival);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.actualDeparture)) {
+        this.actualDeparture = data().deepCopy(fields()[11].schema(), other.actualDeparture);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.assosiatedShipmentsId)) {
+        this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -339,6 +469,26 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[7], other.remainingDistance)) {
         this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.plannedArrival)) {
+        this.plannedArrival = data().deepCopy(fields()[8].schema(), other.plannedArrival);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.plannedDeparture)) {
+        this.plannedDeparture = data().deepCopy(fields()[9].schema(), other.plannedDeparture);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.actualArrival)) {
+        this.actualArrival = data().deepCopy(fields()[10].schema(), other.actualArrival);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.actualDeparture)) {
+        this.actualDeparture = data().deepCopy(fields()[11].schema(), other.actualDeparture);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.assosiatedShipmentsId)) {
+        this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -689,6 +839,201 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'plannedArrival' field.
+      * @return The value.
+      */
+    public java.lang.Long getPlannedArrival() {
+      return plannedArrival;
+    }
+
+    /**
+      * Sets the value of the 'plannedArrival' field.
+      * @param value The value of 'plannedArrival'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setPlannedArrival(java.lang.Long value) {
+      validate(fields()[8], value);
+      this.plannedArrival = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'plannedArrival' field has been set.
+      * @return True if the 'plannedArrival' field has been set, false otherwise.
+      */
+    public boolean hasPlannedArrival() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'plannedArrival' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearPlannedArrival() {
+      plannedArrival = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'plannedDeparture' field.
+      * @return The value.
+      */
+    public java.lang.Long getPlannedDeparture() {
+      return plannedDeparture;
+    }
+
+    /**
+      * Sets the value of the 'plannedDeparture' field.
+      * @param value The value of 'plannedDeparture'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setPlannedDeparture(java.lang.Long value) {
+      validate(fields()[9], value);
+      this.plannedDeparture = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'plannedDeparture' field has been set.
+      * @return True if the 'plannedDeparture' field has been set, false otherwise.
+      */
+    public boolean hasPlannedDeparture() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'plannedDeparture' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearPlannedDeparture() {
+      plannedDeparture = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualArrival' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualArrival() {
+      return actualArrival;
+    }
+
+    /**
+      * Sets the value of the 'actualArrival' field.
+      * @param value The value of 'actualArrival'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setActualArrival(java.lang.Long value) {
+      validate(fields()[10], value);
+      this.actualArrival = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualArrival' field has been set.
+      * @return True if the 'actualArrival' field has been set, false otherwise.
+      */
+    public boolean hasActualArrival() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'actualArrival' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearActualArrival() {
+      actualArrival = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualDeparture' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualDeparture() {
+      return actualDeparture;
+    }
+
+    /**
+      * Sets the value of the 'actualDeparture' field.
+      * @param value The value of 'actualDeparture'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setActualDeparture(java.lang.Long value) {
+      validate(fields()[11], value);
+      this.actualDeparture = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualDeparture' field has been set.
+      * @return True if the 'actualDeparture' field has been set, false otherwise.
+      */
+    public boolean hasActualDeparture() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'actualDeparture' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearActualDeparture() {
+      actualDeparture = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'assosiatedShipmentsId' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAssosiatedShipmentsId() {
+      return assosiatedShipmentsId;
+    }
+
+    /**
+      * Sets the value of the 'assosiatedShipmentsId' field.
+      * @param value The value of 'assosiatedShipmentsId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setAssosiatedShipmentsId(java.util.List<java.lang.String> value) {
+      validate(fields()[12], value);
+      this.assosiatedShipmentsId = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'assosiatedShipmentsId' field has been set.
+      * @return True if the 'assosiatedShipmentsId' field has been set, false otherwise.
+      */
+    public boolean hasAssosiatedShipmentsId() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'assosiatedShipmentsId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearAssosiatedShipmentsId() {
+      assosiatedShipmentsId = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public TripPoint build() {
       try {
@@ -705,6 +1050,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         record.status = fieldSetFlags()[5] ? this.status : (java.lang.String) defaultValue(fields()[5]);
         record.eta = fieldSetFlags()[6] ? this.eta : (java.lang.Long) defaultValue(fields()[6]);
         record.remainingDistance = fieldSetFlags()[7] ? this.remainingDistance : (java.lang.Double) defaultValue(fields()[7]);
+        record.plannedArrival = fieldSetFlags()[8] ? this.plannedArrival : (java.lang.Long) defaultValue(fields()[8]);
+        record.plannedDeparture = fieldSetFlags()[9] ? this.plannedDeparture : (java.lang.Long) defaultValue(fields()[9]);
+        record.actualArrival = fieldSetFlags()[10] ? this.actualArrival : (java.lang.Long) defaultValue(fields()[10]);
+        record.actualDeparture = fieldSetFlags()[11] ? this.actualDeparture : (java.lang.Long) defaultValue(fields()[11]);
+        record.assosiatedShipmentsId = fieldSetFlags()[12] ? this.assosiatedShipmentsId : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
