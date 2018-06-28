@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Properties;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 
 
@@ -28,6 +30,14 @@ public class Config {
     HttpRequestHepler helper = HttpRequestHepler.getInstance();
     String res = helper.makePostRequest(creatUrl, jsonObject.toString()).readEntity(String.class);
     System.out.println(res);
+    try {
+      JSONObject response = new JSONObject(res);
+      if(response.getInt("statusCode")==200){
+        return 200;
+      }
+    } catch (JSONException e) {
+      e.printStackTrace();
+    }
     return 0;
 
   }
@@ -42,7 +52,14 @@ public class Config {
     HttpRequestHepler helper = HttpRequestHepler.getInstance();
     String res = helper.makePostRequest(creatUrl, jsonObject.toString()).readEntity(String.class);
     System.out.println(res);
-
+    try {
+      JSONObject response = new JSONObject(res);
+      if(response.getInt("statusCode")==200){
+        return 200;
+      }
+    } catch (JSONException e) {
+      e.printStackTrace();
+    }
     return 0;
 
   }
