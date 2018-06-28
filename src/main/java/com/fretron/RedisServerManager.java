@@ -117,12 +117,12 @@ public class RedisServerManager {
         return exist;
     }
 
-    public void saveInfo(String key, String value , int dbIndex) {
+    public void saveInfo(String key, Object value , int dbIndex) {
         Jedis jedis = null;
         try {
             jedis = poolManager.getJedisInstance();
             jedis.select(dbIndex);
-            jedis.set(key, value);
+            jedis.set(key, value.toString());
         } catch (Exception e) {
             Logger.getGlobal().log(Level.WARNING, "ERROR IN SET KEY-VALUE JEDIS-- " + e.getMessage());
         } finally {
