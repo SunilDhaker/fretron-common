@@ -4,10 +4,9 @@ package com.fretron.utils.GoogleDirectionPolylineUtil;
  * Created by Mohit on 23-11-2017.
  */
 
-
-import static com.fretron.utils.PolylineUtils.OnlinePolylineEncoder.mergePolylines;
-
 import java.util.HashMap;
+import com.fretron.Logger.Log;
+import com.fretron.utils.PolylineUtils.OnlinePolylineEncoder;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -20,7 +19,7 @@ import org.json.JSONObject;
 
 public final class DirectionPolylineUtil {
 
-    private  static String API_KEY = "AIzaSyAiKyto-33wx4RvJw7kplHqSdyacUseGZw";
+    private  static String API_KEY = "AIzaSyAXzrHVcJfIySc6zQRcZfxAHq08kSrUGr8";
     private  static String API_URL = "https://maps.googleapis.com/maps/api/directions/json?";
     private  static String ROUTES_KEY = "routes";
     private  static String OVERVIEW_POLYLINE = "overview_polyline";
@@ -34,6 +33,7 @@ public final class DirectionPolylineUtil {
     // false : For Detailed Points String
     public static Boolean isOverview = false;
     private  static Double distance;
+    private static DefaultHttpClient httpClient = new DefaultHttpClient();
 
 
 
@@ -47,14 +47,11 @@ public final class DirectionPolylineUtil {
 
 
     public static HashMap<String ,Object> getDirectionPolyLinePoints(String startLocation, String endLocation ,Boolean isDrivingMode) throws Exception {
-
-        DefaultHttpClient httpClient = new DefaultHttpClient();
         String apiURL = getApiUrl(startLocation, endLocation ,isDrivingMode);
         HttpGet get = new HttpGet(apiURL);
         HttpResponse response = httpClient.execute(get);
         HttpEntity entity = response.getEntity();
         String responseString = EntityUtils.toString(entity);
-
         JSONObject jsonObject = new JSONObject(responseString);
 
         distance = 0.0;
@@ -65,30 +62,26 @@ public final class DirectionPolylineUtil {
 
 
     private static HashMap<String ,Object> getOverviewPointsString(JSONObject jsonObject) {
-
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         Double totalDistance = 0.0;
+        if (jsonObject.has(ROUTES_KEY)) {
+            JSONArray routes = jsonObject.getJSONArray(ROUTES_KEY);
+            if (routes.length() > 0){
+                JSONObject route = routes.getJSONObject(0);
+                JSONObject overviewPolyline = route.getJSONObject(OVERVIEW_POLYLINE);
 
-
-        JSONArray routes = jsonObject.getJSONArray(ROUTES_KEY);
-
-        if (routes.length() > 0){
-
-            JSONObject route = routes.getJSONObject(0);
-            JSONObject overviewPolyline = route.getJSONObject(OVERVIEW_POLYLINE);
-
-            for (int index = 0 ; index < route.getJSONArray(LEGS_KEY).length() ; index++) {
-
-                JSONObject legs = route.getJSONArray(LEGS_KEY).getJSONObject(index);
-
-                totalDistance += legs.getJSONObject(DISTANCE_KEY).getDouble("value");
-
+                for (int index = 0 ; index < route.getJSONArray(LEGS_KEY).length() ; index++) {
+                    JSONObject legs = route.getJSONArray(LEGS_KEY).getJSONObject(index);
+                    totalDistance += legs.getJSONObject(DISTANCE_KEY).getDouble("value");
+                }
+                map.put(DISTANCE_KEY,totalDistance);
+                map.put(POLYLINE_KEY, overviewPolyline.getString(POINTS_KEY));
+                return map;
+            }else{
+                Log.info("direction api failed.response "+jsonObject.toString());
             }
-
-
-            map.put(DISTANCE_KEY,totalDistance);
-            map.put(POLYLINE_KEY, overviewPolyline.getString(POINTS_KEY));
-            return map;
+        }else{
+            Log.info("direction api failed.response "+jsonObject.toString());
         }
 
         return null;
@@ -97,45 +90,34 @@ public final class DirectionPolylineUtil {
 
 
     private  static HashMap<String ,Object> getDetailedPointsString(JSONObject jsonObject){
-
         HashMap<String ,Object> map = new HashMap<String ,Object>();
         String points = new String();
         Double totalDistance = 0.0;
-
-
-        JSONArray routes = jsonObject.getJSONArray(ROUTES_KEY);
-        if (routes.length() > 0) {
-
-            JSONObject route = routes.getJSONObject(0);
-
-            for (int index = 0 ; index < route.getJSONArray(LEGS_KEY).length() ; index++){
-
-                JSONObject legs = route.getJSONArray(LEGS_KEY).getJSONObject(index);
-
-                totalDistance += legs.getJSONObject(DISTANCE_KEY).getDouble("value");
-
-                JSONArray steps = legs.getJSONArray(STEPS_KEY);
-
-                for (int step = 0; step < steps.length(); step++) {
-
-                     String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY).getString(POINTS_KEY);
-                     points = mergePolylines(points.toString(),extendedPolyLine);
-
+        if (jsonObject.has(ROUTES_KEY)) {
+            JSONArray routes = jsonObject.getJSONArray(ROUTES_KEY);
+            if (routes.length() > 0) {
+                JSONObject route = routes.getJSONObject(0);
+                for (int index = 0 ; index < route.getJSONArray(LEGS_KEY).length() ; index++){
+                    JSONObject legs = route.getJSONArray(LEGS_KEY).getJSONObject(index);
+                    totalDistance += legs.getJSONObject(DISTANCE_KEY).getDouble("value");
+                    JSONArray steps = legs.getJSONArray(STEPS_KEY);
+                    for (int step = 0; step < steps.length(); step++) {
+                         String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY).getString(POINTS_KEY);
+                         points = OnlinePolylineEncoder.INSTANCE.mergePolylines(points.toString(),extendedPolyLine);
+                    }
                 }
-
+                map.put(DISTANCE_KEY,totalDistance);
+                map.put(POLYLINE_KEY,points);
+                return map;
+            }else{
+                Log.info("direction api failed.response "+jsonObject.toString());
             }
-
-            map.put(DISTANCE_KEY,totalDistance);
-            map.put(POLYLINE_KEY,points);
-
-            return map;
-
+        }else{
+            Log.info("direction api failed.response "+jsonObject.toString());
         }
 
-      return null;
+        return null;
     }
-
-
 
 
 

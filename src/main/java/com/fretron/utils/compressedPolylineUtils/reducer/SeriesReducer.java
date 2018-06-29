@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SeriesReducer {
-
     /**
      * Reduces number of points in given series using Ramer-Douglas-Peucker algorithm.
      * 

@@ -6,6 +6,7 @@ package com.fretron.utils.PolylineUtils;
 
 import static com.fretron.utils.compressedPolylineUtils.reducer.PointImpl.p;
 
+import com.fretron.Logger.Log;
 import com.fretron.Model.LitePosition;
 import com.fretron.Model.PointAtTime;
 import com.fretron.utils.compressedPolylineUtils.reducer.Point;
@@ -18,11 +19,24 @@ import java.util.List;
  */
 
 public class PolylineDecoder {
-	private static final double DEFAULT_PRECISION = 1E5;
+    private static PolylineDecoder instance;
+    private static final double DEFAULT_PRECISION = 1E5;
 
+    private PolylineDecoder(){
+        Log.info(PolylineDecoder.class ,"constructor called.");
+    }
+
+    public static PolylineDecoder getInstance(){
+      if (instance == null){ instance = new PolylineDecoder();}
+      return instance;
+    }
 
 	public List<com.fretron.utils.PolylineUtils.Point> decode(String encoded) {
 		return decode(encoded, DEFAULT_PRECISION);
+	}
+
+	public List<LitePosition> decodeWithTime(String encoded ,Long startTime ,Long delta) {
+		return decodeInPositionsWithTime(encoded,startTime ,delta, DEFAULT_PRECISION);
 	}
 
 	public List<PointAtTime> decodeTimeAwarePolyline(String encoded) {
@@ -236,6 +250,49 @@ public class PolylineDecoder {
 			lng += dlng;
 
 			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d , "",0l ,"" , "" , null,null ,false ,null);
+			track.add(p);
+		}
+		return track;
+	}
+
+
+
+	/**
+	 * Precision should be something like 1E5 or 1E6. For OSRM routes found precision was 1E6, not the original default
+	 * 1E5.
+	 *
+	 * @param encoded
+	 * @param precision
+	 * @return
+	 */
+	public List<LitePosition> decodeInPositionsWithTime(String encoded ,Long startTime ,Long delta, double precision) {
+		List<LitePosition> track = new ArrayList<LitePosition>();
+		int index = 0;
+		int lat = 0, lng = 0;
+		long time = 0L;
+
+		while (index < encoded.length()){
+			int b, shift = 0, result = 0;
+			do {
+				b = encoded.charAt(index++) - 63;
+				result |= (b & 0x1f) << shift;
+				shift += 5;
+			} while (b >= 0x20);
+			int dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+			lat += dlat;
+
+			shift = 0;
+			result = 0;
+			do {
+				b = encoded.charAt(index++) - 63;
+				result |= (b & 0x1f) << shift;
+				shift += 5;
+			} while (b >= 0x20);
+			int dlng = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+			lng += dlng;
+
+			time = (time == 0L) ? startTime : (time + delta);
+			LitePosition p = new LitePosition((double) lat / precision, (double) lng / precision , 0d,0d , "",time ,"" , "" , null,null ,false ,null);
 			track.add(p);
 		}
 		return track;

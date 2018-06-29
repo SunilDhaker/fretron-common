@@ -12,6 +12,8 @@ import java.util.List;
  */
 public class ClusteringUtils {
 
+    private static PolylineDecoder decoder = PolylineDecoder.getInstance();
+
     public static class MeanVariance{
         public LitePosition mean ;
         public double variance ;
@@ -19,6 +21,7 @@ public class ClusteringUtils {
         public MeanVariance(LitePosition mean , double variance){
             this.mean = mean;
             this.variance = variance;
+
         }
     }
 
@@ -59,7 +62,7 @@ public class ClusteringUtils {
 
 
 	public static MeanVariance forTimeAwarePolyline(TimeAwarePolyline polyline){
-		List<LitePosition> points = (new PolylineDecoder()).decodeTimeAwarePolylineInPositions(polyline.getPolyline());
+		List<LitePosition> points = decoder.decodeTimeAwarePolylineInPositions(polyline.getPolyline());
 		LitePosition meanPosition = calculateMean(points);
 		double variance = calculateVariance(points, meanPosition);
 		return (new MeanVariance(meanPosition , variance));
@@ -67,7 +70,7 @@ public class ClusteringUtils {
 
 
 	public static MeanVariance forPolyline(String encodedPolyline){
-	    List<LitePosition> points = (new PolylineDecoder()).decodeInPositions(encodedPolyline);
+	    List<LitePosition> points = decoder.decodeInPositions(encodedPolyline);
 		LitePosition meanPosition = calculateMean(points);
 		double varience = calculateVariance(points, meanPosition);
 		return (new MeanVariance(meanPosition , varience));

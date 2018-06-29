@@ -217,6 +217,7 @@ public class Constants {
     public final static  String KEY_BID_TOPIC = "bid.topic";
     public final static String KEY_ACCEPTOFFER_TOPIC = "acceptoffer.topic";
     public final static String KEY_TRIP_TOPIC = "trip.topic";
+    public final static String KEY_TRIP_COLLECTION_NAME = "trip.collection.name";
 //    public final static String KEY_VEHICLE_TRIP_STATE_TOPIC = "vehicletripstate.topic";
 //    public final static String KEY_LOADED_POSITION_TOPIC = "loadedposition.topic";
 //    public final static String KEY_ACTIVE_TRIP_TOPIC = "activetrip.topic";
@@ -314,6 +315,7 @@ public class Constants {
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
     public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+    public static final String USER_MANAGER_SERVICE_URL = "user.manager.service.url";
 
 
     //========================ORGANISATION_MANAGER=================
@@ -330,6 +332,7 @@ public class Constants {
 
     public static final String KEY_TRIP_TEMPLATE_MANAGER_APP_ID = "trip.tamplate.manager.app.id";
     public static final String KEY_TRIP_TEMPLATE_TOPIC = "trip.tamplate.topic";
+    public static final String IS_SINGLE_INSTANCE = "is.single.instance";
 
     //========================ORGANISATION_GROUP_MANAGER=================
 
@@ -349,7 +352,8 @@ public class Constants {
     public static final String FR_LOC_ALL_COLLECTION_NAME = "freight.location.all.collection.name";
     public static final String FR_LOC_FAV_COLLECTION_NAME = "freight.location.fav.collection.name";
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
-            //*************NEW**************//
+            //*************NEW**************//public static final String FRIGHT_LOCATION_TOPIC = "freight.location.topic";
+    public static final String PLACES_TOPIC = "place.topic";
     public static final String PLACES_MANAGER_SERVICE_PORT = "geofence.service.port";
     public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
     public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
@@ -491,6 +495,11 @@ public class Constants {
     public static final String USER_DB_HOST = "user.db.host";
     public static final String USER_DB_PORT = "user.db.port";
 
+    public static final String PASSWORD_DB_NAME = "password.db.name";
+    public static final String PASSWORD_DB_HOST = "password.db.host";
+    public static final String PASSWORD_DB_PORT = "password.db.port";
+    public static final String PASSWORD_COLLECTION_NAME = "password.db.collection.name";
+
     public static final String ALERT_MONGODB_NAME = "alert.mongo.db.name" ;
     //========================================= TracementManager========================================
 
@@ -500,6 +509,7 @@ public class Constants {
     public static final String KEY_JOB_RAW_RESPONSE_TOPIC = "integration.job.raw.response.topic";
     public static final String KEY_INTEGRATION_MANAGER_IP = "integration.manager.restservices.ip";
     public static final String KEY_INTEGRATION_MANAGER_PORT = "integration.manager.restservices.port";
+    public static final String KEY_TPI_SINKTASK_APP_ID = "tpi.sink.task.manager.app.id";
 
 
 
@@ -624,12 +634,34 @@ public class Constants {
      */
     public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
     public static java.lang.String KEY_VEHICLE_ACTIVITY_TOPIC = "vehicle.activity.topic";
-    public static java.lang.String KEY_REPROCESS_STATES_QUERY_TOPIC = "reprocess.states.query.topic";
-    public static java.lang.String KEY_REPROCESSED_GPS_STATES_TOPIC = "reprocessed.gps.states.topic";
+    public static java.lang.String KEY_GPS_STATES_REPROCESS_QUERY_TOPIC= "gps.states.reprocess.query.topic";
     public static java.lang.String KEY_CLASSIFIER_PUNCTUATE_TIME= "classifier.punctuate.time";
     public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
 
 
+    /**
+     *  VEHICLE TRIP CONSTANTS
+     */
+
+    public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
+    public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
+
+    public static final String VEHICLE_TRIP_DB_NAME ="vehicle.trip.db.name";
+    public static final String VEHICLE_TRIP_DB_HOST ="vehicle.trip.db.host";
+    public static final String VEHICLE_TRIP_DB_PORT ="vehicle.trip.db.port";
+
+    public static final String VEHICLE_TRIP_POINT_COLLECTION_NAME ="vehicle.trip.point.collection.name";
+
+    public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";
+    public static final String VEHICLE_TRIP_APP_PORT = "vehicle.trip.manager.restservice.port";
+
+    /*
+    Elastic Search Manager Config
+     */
+
+    public static String ELASTIC_SEARCH_URL = "elastic.search.url";
+    public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
+    public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
 
     private Constants(){
 
