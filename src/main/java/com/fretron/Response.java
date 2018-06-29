@@ -1,6 +1,8 @@
 package com.fretron;
 
 
+import org.apache.avro.specific.SpecificRecord;
+
 public class Response<T> {
 
   int code ;
@@ -22,9 +24,9 @@ public class Response<T> {
   }
 
 
-  public static <T> Response<T> error(String message){
+  public static  Response error(String message){
 
-    return new Response<T>(400 , message , null);
+    return new Response<SpecificRecord>(400 , message , null);
   }
 
 
