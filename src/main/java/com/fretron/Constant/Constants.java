@@ -471,6 +471,7 @@ public class Constants {
   public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
   public static final String KEY_TRIP_POINT_EVENT_TOPIC = "trip.point.event.topic";
   public static final String VGS_BY_VEHICLE_ID_TOPIC = "vgs.by.vid.topic";
+  public static final String COMMAND_RESULT_COPARTTION_TOPIC = "commad.result.copartition.topic";
 
 
   //==================TRIP-MIS===============================
