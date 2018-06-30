@@ -464,10 +464,15 @@ public class Constants {
    */
 
   public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
-  public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
   public static final String VEHICLE_TRIP_DB_NAME = "vehicle.trip.db.name";
   public static final String VEHICLE_TRIP_DB_HOST = "vehicle.trip.db.host";
   public static final String VEHICLE_TRIP_DB_PORT = "vehicle.trip.db.port";
+
+  public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
+  public static final String KEY_TRIP_POINT_EVENT_TOPIC = "trip.point.event.topic";
+  public static final String VGS_BY_VEHICLE_ID_TOPIC = "vgs.by.vid.topic";
+
+
   //==================TRIP-MIS===============================
   public static final String VEHICLE_TRIP_POINT_COLLECTION_NAME = "vehicle.trip.point.collection.name";
   public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";

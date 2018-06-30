@@ -181,5 +181,7 @@
 
     <!-- ================-vehicle-trip-manager =============== -->
     <entry key="trip.point.topic">tripPointTopic</entry>
+    <entry key="trip.point.event.topic">tripPointEventTopic</entry>
+    <entry key="vgs.by.vid.topic">vehicleGpsStateByVidTopic</entry>
 
 </properties>
