@@ -315,6 +315,7 @@ public class Constants {
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
     public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
+    public static final String USER_MANAGER_SERVICE_URL = "user.manager.service.url";
 
 
     //========================ORGANISATION_MANAGER=================
@@ -494,6 +495,11 @@ public class Constants {
     public static final String USER_DB_HOST = "user.db.host";
     public static final String USER_DB_PORT = "user.db.port";
 
+    public static final String PASSWORD_DB_NAME = "password.db.name";
+    public static final String PASSWORD_DB_HOST = "password.db.host";
+    public static final String PASSWORD_DB_PORT = "password.db.port";
+    public static final String PASSWORD_COLLECTION_NAME = "password.db.collection.name";
+
     public static final String ALERT_MONGODB_NAME = "alert.mongo.db.name" ;
     //========================================= TracementManager========================================
 
@@ -633,6 +639,29 @@ public class Constants {
     public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
 
 
+    /**
+     *  VEHICLE TRIP CONSTANTS
+     */
+
+    public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
+    public static final String KEY_TRIP_POINT_TOPIC = "trip.point.topic";
+
+    public static final String VEHICLE_TRIP_DB_NAME ="vehicle.trip.db.name";
+    public static final String VEHICLE_TRIP_DB_HOST ="vehicle.trip.db.host";
+    public static final String VEHICLE_TRIP_DB_PORT ="vehicle.trip.db.port";
+
+    public static final String VEHICLE_TRIP_POINT_COLLECTION_NAME ="vehicle.trip.point.collection.name";
+
+    public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";
+    public static final String VEHICLE_TRIP_APP_PORT = "vehicle.trip.manager.restservice.port";
+
+    /*
+    Elastic Search Manager Config
+     */
+
+    public static String ELASTIC_SEARCH_URL = "elastic.search.url";
+    public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
+    public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
 
     private Constants(){
 

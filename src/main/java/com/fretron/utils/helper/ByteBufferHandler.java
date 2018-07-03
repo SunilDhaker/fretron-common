@@ -103,8 +103,8 @@ public class ByteBufferHandler {
      */
    public byte [] get(ByteBuffer buffer ,int from ,int length){
         if (buffer.hasArray()){
-            final byte[] array = buffer.array();
-            final int arrayOffset = buffer.arrayOffset();
+             byte[] array = buffer.array();
+             int arrayOffset = buffer.arrayOffset();
             return Arrays.copyOfRange(array, arrayOffset +from,
                     arrayOffset+from + length);
         }
@@ -119,8 +119,6 @@ public class ByteBufferHandler {
         }
         return null;
     }
-
-
 
 
 
@@ -160,10 +158,6 @@ public class ByteBufferHandler {
 
         return new String(buf);
     }
-
-
-
-
 
 
 

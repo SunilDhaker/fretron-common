@@ -179,4 +179,7 @@
     <!--OFF / FATAL / ERROR / WARN / INFO / DEBUG / TRACE / ALL-->
     <entry key="logger.level">INFO</entry>
 
+    <!-- ================-vehicle-trip-manager =============== -->
+    <entry key="trip.point.topic">tripPointTopic</entry>
+
 </properties>

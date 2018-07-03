@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Properties extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8115939947599359005L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2613577326307807190L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String catagory;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String address;
+  @Deprecated public java.lang.String placeId;
   @Deprecated public java.lang.String level;
   @Deprecated public java.lang.String customeFields;
 
@@ -31,13 +32,15 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
    * @param catagory The new value for catagory
    * @param name The new value for name
    * @param address The new value for address
+   * @param placeId The new value for placeId
    * @param level The new value for level
    * @param customeFields The new value for customeFields
    */
-  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String level, java.lang.String customeFields) {
+  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String placeId, java.lang.String level, java.lang.String customeFields) {
     this.catagory = catagory;
     this.name = name;
     this.address = address;
+    this.placeId = placeId;
     this.level = level;
     this.customeFields = customeFields;
   }
@@ -49,8 +52,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 0: return catagory;
     case 1: return name;
     case 2: return address;
-    case 3: return level;
-    case 4: return customeFields;
+    case 3: return placeId;
+    case 4: return level;
+    case 5: return customeFields;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -62,8 +66,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 0: catagory = (java.lang.String)value$; break;
     case 1: name = (java.lang.String)value$; break;
     case 2: address = (java.lang.String)value$; break;
-    case 3: level = (java.lang.String)value$; break;
-    case 4: customeFields = (java.lang.String)value$; break;
+    case 3: placeId = (java.lang.String)value$; break;
+    case 4: level = (java.lang.String)value$; break;
+    case 5: customeFields = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -114,6 +119,22 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
    */
   public void setAddress(java.lang.String value) {
     this.address = value;
+  }
+
+  /**
+   * Gets the value of the 'placeId' field.
+   * @return The value of the 'placeId' field.
+   */
+  public java.lang.String getPlaceId() {
+    return placeId;
+  }
+
+  /**
+   * Sets the value of the 'placeId' field.
+   * @param value the value to set.
+   */
+  public void setPlaceId(java.lang.String value) {
+    this.placeId = value;
   }
 
   /**
@@ -183,6 +204,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String catagory;
     private java.lang.String name;
     private java.lang.String address;
+    private java.lang.String placeId;
     private java.lang.String level;
     private java.lang.String customeFields;
 
@@ -209,13 +231,17 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         this.address = data().deepCopy(fields()[2].schema(), other.address);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.level)) {
-        this.level = data().deepCopy(fields()[3].schema(), other.level);
+      if (isValidValue(fields()[3], other.placeId)) {
+        this.placeId = data().deepCopy(fields()[3].schema(), other.placeId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.customeFields)) {
-        this.customeFields = data().deepCopy(fields()[4].schema(), other.customeFields);
+      if (isValidValue(fields()[4], other.level)) {
+        this.level = data().deepCopy(fields()[4].schema(), other.level);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.customeFields)) {
+        this.customeFields = data().deepCopy(fields()[5].schema(), other.customeFields);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -237,13 +263,17 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         this.address = data().deepCopy(fields()[2].schema(), other.address);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.level)) {
-        this.level = data().deepCopy(fields()[3].schema(), other.level);
+      if (isValidValue(fields()[3], other.placeId)) {
+        this.placeId = data().deepCopy(fields()[3].schema(), other.placeId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.customeFields)) {
-        this.customeFields = data().deepCopy(fields()[4].schema(), other.customeFields);
+      if (isValidValue(fields()[4], other.level)) {
+        this.level = data().deepCopy(fields()[4].schema(), other.level);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.customeFields)) {
+        this.customeFields = data().deepCopy(fields()[5].schema(), other.customeFields);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -365,6 +395,45 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     }
 
     /**
+      * Gets the value of the 'placeId' field.
+      * @return The value.
+      */
+    public java.lang.String getPlaceId() {
+      return placeId;
+    }
+
+    /**
+      * Sets the value of the 'placeId' field.
+      * @param value The value of 'placeId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder setPlaceId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.placeId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'placeId' field has been set.
+      * @return True if the 'placeId' field has been set, false otherwise.
+      */
+    public boolean hasPlaceId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'placeId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder clearPlaceId() {
+      placeId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'level' field.
       * @return The value.
       */
@@ -378,9 +447,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.Properties.Builder setLevel(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.level = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -389,7 +458,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'level' field has been set, false otherwise.
       */
     public boolean hasLevel() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -399,7 +468,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.Properties.Builder clearLevel() {
       level = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -417,9 +486,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.Properties.Builder setCustomeFields(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.customeFields = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -428,7 +497,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'customeFields' field has been set, false otherwise.
       */
     public boolean hasCustomeFields() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -438,7 +507,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.Properties.Builder clearCustomeFields() {
       customeFields = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -449,8 +518,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         record.catagory = fieldSetFlags()[0] ? this.catagory : (java.lang.String) defaultValue(fields()[0]);
         record.name = fieldSetFlags()[1] ? this.name : (java.lang.String) defaultValue(fields()[1]);
         record.address = fieldSetFlags()[2] ? this.address : (java.lang.String) defaultValue(fields()[2]);
-        record.level = fieldSetFlags()[3] ? this.level : (java.lang.String) defaultValue(fields()[3]);
-        record.customeFields = fieldSetFlags()[4] ? this.customeFields : (java.lang.String) defaultValue(fields()[4]);
+        record.placeId = fieldSetFlags()[3] ? this.placeId : (java.lang.String) defaultValue(fields()[3]);
+        record.level = fieldSetFlags()[4] ? this.level : (java.lang.String) defaultValue(fields()[4]);
+        record.customeFields = fieldSetFlags()[5] ? this.customeFields : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
