@@ -637,6 +637,8 @@ public class Constants {
     public static java.lang.String KEY_GPS_STATES_REPROCESS_QUERY_TOPIC= "gps.states.reprocess.query.topic";
     public static java.lang.String KEY_CLASSIFIER_PUNCTUATE_TIME= "classifier.punctuate.time";
     public static java.lang.String KEY_UPDATED_RECORDS_FLUSH_LIMIT = "updated.record.flush.limit.threshold";
+    public static java.lang.String KEY_UTURN_MAX_ALLOWED_TIME_DEPTH= "uturn.max.allowed.time.depth";
+    public static java.lang.String KEY_UTURN_MIN_DISTANCE_THRESHOLD = "uturn.min.distance.threshold";
 
 
     /**
