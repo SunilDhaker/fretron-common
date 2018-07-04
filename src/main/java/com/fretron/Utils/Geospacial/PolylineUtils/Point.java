@@ -12,7 +12,7 @@ import java.util.List;
  * Simple geographical point represented by a couple of doubles. Google's GeoPoint is a couple of
  * micro-degrees represented by integers.
  */
-public class Point implements Serializable {
+public class Point implements Serializable , com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.Point {
 
   private static final long serialVersionUID = 1L;
   private final double lat;
@@ -83,5 +83,19 @@ public class Point implements Serializable {
     return hash;
   }
 
+  @Override
+  public double getX() {
+    return lat;
+  }
+
+  @Override
+  public double getY() {
+    return lng;
+  }
+
+  @Override
+  public long getT() {
+    return 0;
+  }
 }
 
