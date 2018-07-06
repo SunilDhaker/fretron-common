@@ -447,6 +447,8 @@ public class Constants {
   public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
 
   //========================DASHBOARD_MANAGER=================
+  public static final String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
+
   public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
   public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
   public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
