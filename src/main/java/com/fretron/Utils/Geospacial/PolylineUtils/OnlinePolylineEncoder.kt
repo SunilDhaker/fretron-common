@@ -73,7 +73,10 @@ object OnlinePolylineEncoder {
     }
 
 
-    fun extendTimeAwarePolyline(polylineObj: TimeAwarePolyline?, newLat: Double, newLng: Double, newLocationTime: Long): TimeAwarePolyline? {
+    fun extendTimeAwarePolyline(polylineObj: TimeAwarePolyline?,
+        newLat: Double,
+        newLng: Double,
+        newLocationTime: Long): TimeAwarePolyline? {
         if (polylineObj == null) {
             return null
         }
@@ -151,12 +154,16 @@ object OnlinePolylineEncoder {
     }
 
 
-    fun mergeTimeAwarePolylines(polylineObj1: TimeAwarePolyline?, polylineObj2: TimeAwarePolyline?): TimeAwarePolyline? {
+    fun mergeTimeAwarePolylines(polylineObj1: TimeAwarePolyline?,
+        polylineObj2: TimeAwarePolyline?): TimeAwarePolyline? {
         var timeAwarePolyline = polylineObj1
         if (timeAwarePolyline != null && polylineObj2 != null) {
             val points = decoder.decodeTimeAwarePolyline(polylineObj2.getPolyline())
             for (point in points) {
-                timeAwarePolyline = extendTimeAwarePolyline(timeAwarePolyline, point.getLatitude()!!, point.getLongitude()!!, point.getTimestamp()!!)
+                timeAwarePolyline = extendTimeAwarePolyline(timeAwarePolyline,
+                    point.getLatitude()!!,
+                    point.getLongitude()!!,
+                    point.getTimestamp()!!)
             }
         } else if (timeAwarePolyline == null && polylineObj2 != null) return polylineObj2
 
@@ -194,7 +201,9 @@ object OnlinePolylineEncoder {
         return timeAwarePolyline
     }
 
-    fun mergePolylineWithTimeAwarePolyline(polylineObj: TimeAwarePolyline?, polyline: String, newLocationTime: Long): TimeAwarePolyline? {
+    fun mergePolylineWithTimeAwarePolyline(polylineObj: TimeAwarePolyline?,
+        polyline: String,
+        newLocationTime: Long): TimeAwarePolyline? {
         var timeAwarePolyline = polylineObj
         if (polyline.isEmpty() || timeAwarePolyline == null) return timeAwarePolyline
         val lastPointTimestamp = timeAwarePolyline.getLastPoint().getTimestamp()
@@ -233,7 +242,10 @@ object OnlinePolylineEncoder {
         if (list.size > 0) {
             polyline = TimeAwarePolyline("", "", PointAtTime(0L, 0.0, 0.0), false, 0)
             for (point in list) {
-                polyline = extendTimeAwarePolyline(polyline, point.getLatitude()!!, point.getLongitude()!!, point.getTimestamp()!!)
+                polyline = extendTimeAwarePolyline(polyline,
+                    point.getLatitude()!!,
+                    point.getLongitude()!!,
+                    point.getTimestamp()!!)
             }
         }
         return polyline
@@ -259,7 +271,10 @@ object OnlinePolylineEncoder {
         var timeAwarePolyline = polyline
         if (list.isNotEmpty()) {
             for (point in list) {
-                timeAwarePolyline = extendTimeAwarePolyline(timeAwarePolyline, point.getLatitude(), point.getLongitude(), point.getTimestamp())
+                timeAwarePolyline = extendTimeAwarePolyline(timeAwarePolyline,
+                    point.getLatitude(),
+                    point.getLongitude(),
+                    point.getTimestamp())
             }
         }
         return timeAwarePolyline
@@ -271,7 +286,8 @@ object OnlinePolylineEncoder {
         if (list.isNotEmpty()) {
             polyline = TimeAwarePolyline("", "", PointAtTime(0L, 0.0, 0.0), false, 0)
             for (point in list) {
-                polyline = extendTimeAwarePolyline(polyline, point.getLatitude()!!, point.getLongitude()!!, point.getTime()!!)
+                polyline =
+                    extendTimeAwarePolyline(polyline, point.getLatitude()!!, point.getLongitude()!!, point.getTime()!!)
             }
         }
         return polyline

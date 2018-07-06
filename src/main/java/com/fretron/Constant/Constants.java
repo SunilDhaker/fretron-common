@@ -55,8 +55,9 @@ public class Constants {
     *                                   GPS-Processor Configs
     * **************************************************************************************************
      */
+    public static java.lang.String KEY_POSITION_PROCESSOR_APP_ID = "position.processor.app.id";
 
-  public final static String KEY_POSITION_TOPIC = "positions.topic";
+    public final static String KEY_POSITION_TOPIC = "positions.topic";
   public final static String KEY_TPI_POSITION_TOPIC = "tpi.positions.topic";
   public final static String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
   public static final java.lang.String KEY_GPS_STATE_TOPIC = "gps.state.topic";
@@ -64,6 +65,7 @@ public class Constants {
   public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
   public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
   public final static String KEY_DEVICE_STATE_SESSION_TOPIC = "device.state.session.topic";
+  public final static String KEY_SNAP_TO_ROAD_CONFIG_TOPIC = "snap.to.road.config.topic";
 
 
   public static final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
@@ -83,13 +85,14 @@ public class Constants {
   public static final java.lang.String KEY_MAP_MATCHING_URL = "map.match.api.url";
   public static final java.lang.String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
   public static final java.lang.String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD = "disconnected.moving.distance.threshold";
-  public static final java.lang.String KEY_LATEST_GPS_STATE_SERVICE_URL = "latest.gps.state.service.url";
+  public static final java.lang.String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
+
   public static final java.lang.String KEY_LATEST_LOCATION_SERVICE_URL = "latest.position.service.url";
   public static final java.lang.String KEY_GPS_PROCESSOR_SERVICE_URL = "gps.processor.service.url";
   /******************************Vehicle-Route-Manager************************************************/
 
   //topics
-  public final static String KEY_POSITION_PROCESSER_APP_ID = "position.processor.appname";
+  public final static String KEY_POSITION_PROCESSER_APP_ID = "gps.processor.app.id";
   public static final java.lang.String KEY_VEHICLE_GPS_STATE_TOPIC = "vehiclegps.state.topic";
   public static final java.lang.String KEY_ODOMETER_CALIBRATION_TOPIC = "odometer.calibration.topic";
   //states
@@ -478,7 +481,6 @@ public class Constants {
   public static final String VEHICLE_TRIP_POINT_COLLECTION_NAME = "vehicle.trip.point.collection.name";
   public static final String VEHICLE_TRIP_APP_IP = "vehicle.trip.manager.restservice.ip";
   public static final String VEHICLE_TRIP_APP_PORT = "vehicle.trip.manager.restservice.port";
-  public static java.lang.String KEY_GPS_PROCESSOR_APP_ID = "gps.processor.app.id";
   public static java.lang.String KEY_DEVICE_STATE_MANAGER_APP_ID = "device.state.manager.app.id";
   public static java.lang.String KET_GOOGLE_GEOCODING_API_KEY = "google.geocoding.api.key";
   public static java.lang.String KEY_GPS_PROCESSOR_APP_IP = "gps.processor.rest.service.ip";
