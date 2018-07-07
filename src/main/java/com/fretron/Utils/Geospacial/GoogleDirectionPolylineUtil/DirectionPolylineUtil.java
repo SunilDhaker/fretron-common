@@ -104,7 +104,7 @@ public final class DirectionPolylineUtil {
             String extendedPolyLine = steps.getJSONObject(step).getJSONObject(POLYLINE_KEY)
                 .getString(POINTS_KEY);
             points = OnlinePolylineEncoder.INSTANCE
-                .mergePolylines(points.toString(), extendedPolyLine);
+                .mergePolylines(points, extendedPolyLine);
           }
         }
         map.put(DISTANCE_KEY, totalDistance);

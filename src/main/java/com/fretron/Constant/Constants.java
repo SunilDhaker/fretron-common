@@ -65,7 +65,7 @@ public class Constants {
   public static final java.lang.String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
   public final static String KEY_PROCESSED_POSITIONS_TOPIC = "processedPositions.topic";
   public final static String KEY_DEVICE_STATE_SESSION_TOPIC = "device.state.session.topic";
-  public final static String KEY_SNAP_TO_ROAD_CONFIG_TOPIC = "snap.to.road.config.topic";
+  public final static String KEY_MAP_MATCH_CONFIG_TOPIC = "map.matching.config.topic";
 
 
   public static final String KEY_DEVICE_STATUS_PUNCTUATE_TIME = "device.status.punctuate.time";
