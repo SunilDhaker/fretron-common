@@ -50,9 +50,9 @@ public class Constants {
 
 
     /*
-     *****************************************************************************************************
-     *                                   GPS-Processor Configs
-     * **************************************************************************************************
+    *****************************************************************************************************
+    *                                   GPS-Processor Configs
+    * **************************************************************************************************
      */
     public static final String KEY_POSITION_PROCESSOR_APP_ID = "position.processor.app.id";
 
@@ -84,7 +84,6 @@ public class Constants {
     public static final String KEY_MAP_MATCHING_URL = "map.match.api.url";
     public static final String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD = "disconnected.moving.distance.threshold";
-    public static final String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
 
     public static final String KEY_LATEST_LOCATION_SERVICE_URL = "latest.position.service.url";
     public static final String KEY_GPS_PROCESSOR_SERVICE_URL = "gps.processor.service.url";
@@ -448,22 +447,24 @@ public class Constants {
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
     public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
 
-    //========================DASHBOARD_MANAGER=================
-    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
-    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
-    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
-    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
-    public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
-    public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
-    /*
-     *****************************************************************************************************
-     *                                   name-not-decide-yet-manager-configs
-     * **************************************************************************************************
-     */
-    public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
-    /**
-     * VEHICLE TRIP CONSTANTS
-     */
+  //========================DASHBOARD_MANAGER=================
+  public static final String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
+
+  public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+  public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+  public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+  public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+  public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
+  public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
+  /*
+   *****************************************************************************************************
+   *                                   name-not-decide-yet-manager-configs
+   * **************************************************************************************************
+   */
+  public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
+  /**
+   * VEHICLE TRIP CONSTANTS
+   */
 
     public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
     public static final String VEHICLE_TRIP_DB_NAME = "vehicle.trip.db.name";
