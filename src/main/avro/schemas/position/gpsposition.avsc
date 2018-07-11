@@ -252,6 +252,11 @@
                      }
                    ],
              "default": null
+     },
+     {
+          "name": "hasUTurn",
+         "type": ["null" ,"boolean"],
+          "default":null
      }
 
     ]
