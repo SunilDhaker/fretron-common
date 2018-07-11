@@ -58,6 +58,7 @@
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
     <entry key="gps.state.topic">gpsStates</entry>
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
+    <entry key="map.matching.config.topic">vehicleRouteFiller</entry>
     <entry key="odometer.calibration.topic">odoMeterCalibrationTopic</entry>
     <entry key="device.state.manager.app.id">device-state-manager</entry>
     <entry key="device.state.session.topic">deviceStateSessionTopic</entry>
@@ -184,5 +185,7 @@
     <entry key="trip.point.event.topic">tripPointEventsTopic</entry>
     <entry key="vgs.by.vid.topic">vehicleGpsStateByVidTopic</entry>
     <entry key="commad.result.copartition.topic">commandresultcoparttiontopic</entry>
+    <entry key="geocoder">fretron</entry>
+
 
 </properties>
