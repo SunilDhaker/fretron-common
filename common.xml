@@ -58,7 +58,7 @@
     <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
     <entry key="gps.state.topic">gpsStates</entry>
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
-    <entry key="map.matching.config.topic">vehicleRouteFiller</entry>
+    <entry key="map.matching.config.topic">vehicleMapMatchingConfig</entry>
     <entry key="odometer.calibration.topic">odoMeterCalibrationTopic</entry>
     <entry key="device.state.manager.app.id">device-state-manager</entry>
     <entry key="device.state.session.topic">deviceStateSessionTopic</entry>
