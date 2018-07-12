@@ -52,7 +52,7 @@ public final class DirectionPolylineUtil {
     HttpEntity entity = response.getEntity();
     String responseString = EntityUtils.toString(entity);
     JSONObject jsonObject = new JSONObject(responseString);
-
+    httpClient.getConnectionManager().shutdown();
     distance = 0.0;
 
     return (isOverview) ? getOverviewPointsString(jsonObject) : getDetailedPointsString(jsonObject);
