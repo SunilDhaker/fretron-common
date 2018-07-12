@@ -182,7 +182,7 @@
 
     <!-- ================-vehicle-trip-manager =============== -->
     <entry key="trip.point.topic">tripPointTopic</entry>
-    <entry key="trip.point.event.topic">tripPointEventTopic</entry>
+    <entry key="trip.point.event.topic">tripPointEventsTopic</entry>
     <entry key="vgs.by.vid.topic">vehicleGpsStateByVidTopic</entry>
     <entry key="commad.result.copartition.topic">commandresultcoparttiontopic</entry>
     <entry key="geocoder">fretron</entry>
