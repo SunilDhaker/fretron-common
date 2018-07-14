@@ -81,7 +81,7 @@ public class Constants {
     public static final String PROBABLE_MINIMUM_DISTANCE_THRESHOLD = "probable.minimum.distance.threshold";
     public static final String KEY_WINDOW_SETTLEMENT_JUMP_THRESHOLD = "window.settlement.jump.threshold";
     public static final String KEY_MAP_MATCHING_API_JUMP_THRESHOLD = "match.map.api.max.accepted.jump";
-    public static final String KEY_MAP_MATCHING_URL = "map.match.api.url";
+    public static final String KEY_MAP_MATCHING_API_URL = "map.match.api.url";
     public static final String KEY_DISCONNECTED_MOVING_TIME_THRESHOLD = "disconnected.moving.time.threshold";
     public static final String KEY_DISCONNECTED_MOVING_DISTANCE_THRESHOLD = "disconnected.moving.distance.threshold";
 
