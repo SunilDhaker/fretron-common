@@ -17,16 +17,16 @@ package com.fretron.Utils.Geospacial.Geocoders;
 
 import com.fretron.Constant.Constants;
 import com.fretron.Context;
-import java.io.IOException;
-import javax.json.Json;
+import org.glassfish.jersey.client.ClientProperties;
+import org.json.JSONException;
+import org.json.JSONObject;
 import javax.json.JsonObject;
-import javax.json.JsonReader;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 public class FretronCachedGeocode extends JsonGeocoder {
 
-  public FretronCachedGeocode(String url, String key, int cacheSize) {
+  public FretronCachedGeocode(String url, int cacheSize) {
     super(formatUrl(url), cacheSize);
   }
 
@@ -42,17 +42,22 @@ public class FretronCachedGeocode extends JsonGeocoder {
   @Override
   public String getAddressSync(
       final AddressFormat format, final double latitude,
-      final double longitude) throws IOException {
+      final double longitude) {
+      Response response = httpClient
+          .target(String.format(url, latitude, longitude))
+          .property(ClientProperties.CONNECT_TIMEOUT, 3000)
+          .request(MediaType.APPLICATION_JSON_TYPE)
+          .get();
 
-    HttpGet getReq = new HttpGet(String.format(url, latitude, longitude));
-    HttpResponse response = httpClient.execute(getReq);
+      if (response.getStatus()< 300) {
+          try {
+              String responseString = response.readEntity(String.class);
+              JSONObject json = new JSONObject(responseString);
+              return json.getString("address");
+          } catch (JSONException ignored) {
 
-    if (response.getStatusLine().getStatusCode() < 300) {
-      try (JsonReader reader = Json.createReader(response.getEntity().getContent())) {
-        String address = parseAddress2(reader.readObject());
-        return address;
+          }
       }
-    }
     return null;
   }
 
@@ -61,11 +66,5 @@ public class FretronCachedGeocode extends JsonGeocoder {
     return null;
   }
 
-  public String parseAddress2(JsonObject json) {
-    try {
-      return json.getString("address");
-    } catch (Exception e) {
-      return null;
-    }
-  }
+
 }

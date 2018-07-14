@@ -16,59 +16,68 @@
 package com.fretron.Utils.Geospacial.Geocoders;
 
 
+import com.fretron.Logger.Log;
+import org.glassfish.jersey.client.ClientProperties;
+
+import javax.json.JsonObject;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonReader;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 
 public abstract class JsonGeocoder implements Geocoder {
 
-  public final String url;
-  DefaultHttpClient httpClient;
-  private Map<Map.Entry<Double, Double>, String> cache;
+    public final String url;
+    Client httpClient;
+    private Map<Map.Entry<Double, Double>, String> cache;
 
-  public JsonGeocoder(String url, final int cacheSize) {
-    this.url = url;
-    if (cacheSize > 0) {
-      this.cache = Collections
-          .synchronizedMap(new LinkedHashMap<Map.Entry<Double, Double>, String>() {
-            @Override
-            protected boolean removeEldestEntry(Map.Entry eldest) {
-              return size() > cacheSize;
-            }
-          });
-    }
-    httpClient = new DefaultHttpClient();
-  }
-
-  @Override
-  public String getAddressSync(
-      final AddressFormat format, final double latitude,
-      final double longitude) throws IOException {
-
-    HttpGet getReq = new HttpGet(String.format(url, latitude, longitude));
-    HttpResponse response = httpClient.execute(getReq);
-
-    if (response.getStatusLine().getStatusCode() < 300) {
-      try (JsonReader reader = Json.createReader(response.getEntity().getContent())) {
-        Address address = parseAddress(reader.readObject());
-        if (address != null) {
-          return format.format(address);
-        } else {
-          return null;
+    public JsonGeocoder(String url, final int cacheSize) {
+        this.url = url;
+        if (cacheSize > 0) {
+            this.cache = Collections
+                .synchronizedMap(new LinkedHashMap<Map.Entry<Double, Double>, String>() {
+                    @Override
+                    protected boolean removeEldestEntry(Map.Entry eldest) {
+                        return size() > cacheSize;
+                    }
+                });
         }
-      }
+        httpClient = ClientBuilder.newBuilder().build();
+        Log.info("json decoder http-Client initialized");
     }
-    return null;
-  }
+
+    @Override
+    public String getAddressSync(
+        final AddressFormat format, final double latitude,
+        final double longitude) throws IOException {
+
+        Response response = httpClient
+            .target(String.format(url, latitude, longitude))
+            .property(ClientProperties.CONNECT_TIMEOUT, 3000)
+            .request(MediaType.APPLICATION_JSON_TYPE)
+            .get();
+
+        try {
+            if (response.getStatus() < 300) {
+                Address address = parseAddress(response.readEntity(JsonObject.class));
+                if (address != null) {
+                    return format.format(address);
+                } else {
+                    return null;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 
 
-  public abstract Address parseAddress(JsonObject json);
+    public abstract Address parseAddress(JsonObject json);
 
 }
