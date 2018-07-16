@@ -47,7 +47,7 @@ public abstract class JsonGeocoder implements Geocoder {
                 });
         }
         httpClient = ClientBuilder.newBuilder().build();
-        Log.info("json decoder http-Client initialized");
+        Log.info("json geo-coder http-Client initialized");
     }
 
     @Override

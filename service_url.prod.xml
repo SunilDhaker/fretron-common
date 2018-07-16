@@ -94,6 +94,6 @@
     <entry key = "trip.mis.restservices.ip">http://0.0.0.0</entry>
     <entry key = "trip.mis.restservices.port">7887</entry>
 
-    <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
+    <entry key = "dashboard.manager.service.url">http://dashboard-manager.streams:2127</entry>
 
 </properties>
