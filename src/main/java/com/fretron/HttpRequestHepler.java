@@ -76,7 +76,6 @@ public class HttpRequestHepler {
   }
 
   public Response makePostRequest(String uri, Object requestObject) {
-
     return client
         .target(uri)
         .request(MediaType.APPLICATION_JSON)
