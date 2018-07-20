@@ -55,13 +55,12 @@ public abstract class JsonGeocoder implements Geocoder {
         final AddressFormat format, final double latitude,
         final double longitude) throws IOException {
 
-        Response response = httpClient
-            .target(String.format(url, latitude, longitude))
-            .property(ClientProperties.CONNECT_TIMEOUT, 3000)
-            .request(MediaType.APPLICATION_JSON_TYPE)
-            .get();
-
         try {
+            Response response = httpClient
+                .target(String.format(url, latitude, longitude))
+                .property(ClientProperties.READ_TIMEOUT, 500)
+                .request(MediaType.APPLICATION_JSON_TYPE)
+                .get();
             if (response.getStatus() < 300) {
                 Address address = parseAddress(response.readEntity(JsonObject.class));
                 if (address != null) {
@@ -71,7 +70,8 @@ public abstract class JsonGeocoder implements Geocoder {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+           Log.error(JsonGeocoder.class ,Log.exceptionStack(e));
+           throw new IOException("connection timeout");
         }
 
         return null;
