@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8078507410747533471L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -944489202177154858L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -26,6 +26,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.Long actualArrival;
   @Deprecated public java.lang.Long actualDeparture;
   @Deprecated public java.util.List<java.lang.String> assosiatedShipmentsId;
+  @Deprecated public java.lang.Long creationTime;
+  @Deprecated public java.lang.Long outOfTrackSince;
+  @Deprecated public boolean isOutOfTrack;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,8 +52,11 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param actualArrival The new value for actualArrival
    * @param actualDeparture The new value for actualDeparture
    * @param assosiatedShipmentsId The new value for assosiatedShipmentsId
+   * @param creationTime The new value for creationTime
+   * @param outOfTrackSince The new value for outOfTrackSince
+   * @param isOutOfTrack The new value for isOutOfTrack
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.purpose = purpose;
@@ -64,6 +70,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     this.actualArrival = actualArrival;
     this.actualDeparture = actualDeparture;
     this.assosiatedShipmentsId = assosiatedShipmentsId;
+    this.creationTime = creationTime;
+    this.outOfTrackSince = outOfTrackSince;
+    this.isOutOfTrack = isOutOfTrack;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -83,6 +92,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 10: return actualArrival;
     case 11: return actualDeparture;
     case 12: return assosiatedShipmentsId;
+    case 13: return creationTime;
+    case 14: return outOfTrackSince;
+    case 15: return isOutOfTrack;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -104,6 +116,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 10: actualArrival = (java.lang.Long)value$; break;
     case 11: actualDeparture = (java.lang.Long)value$; break;
     case 12: assosiatedShipmentsId = (java.util.List<java.lang.String>)value$; break;
+    case 13: creationTime = (java.lang.Long)value$; break;
+    case 14: outOfTrackSince = (java.lang.Long)value$; break;
+    case 15: isOutOfTrack = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -317,6 +332,54 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'creationTime' field.
+   * @return The value of the 'creationTime' field.
+   */
+  public java.lang.Long getCreationTime() {
+    return creationTime;
+  }
+
+  /**
+   * Sets the value of the 'creationTime' field.
+   * @param value the value to set.
+   */
+  public void setCreationTime(java.lang.Long value) {
+    this.creationTime = value;
+  }
+
+  /**
+   * Gets the value of the 'outOfTrackSince' field.
+   * @return The value of the 'outOfTrackSince' field.
+   */
+  public java.lang.Long getOutOfTrackSince() {
+    return outOfTrackSince;
+  }
+
+  /**
+   * Sets the value of the 'outOfTrackSince' field.
+   * @param value the value to set.
+   */
+  public void setOutOfTrackSince(java.lang.Long value) {
+    this.outOfTrackSince = value;
+  }
+
+  /**
+   * Gets the value of the 'isOutOfTrack' field.
+   * @return The value of the 'isOutOfTrack' field.
+   */
+  public java.lang.Boolean getIsOutOfTrack() {
+    return isOutOfTrack;
+  }
+
+  /**
+   * Sets the value of the 'isOutOfTrack' field.
+   * @param value the value to set.
+   */
+  public void setIsOutOfTrack(java.lang.Boolean value) {
+    this.isOutOfTrack = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -362,6 +425,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.Long actualArrival;
     private java.lang.Long actualDeparture;
     private java.util.List<java.lang.String> assosiatedShipmentsId;
+    private java.lang.Long creationTime;
+    private java.lang.Long outOfTrackSince;
+    private boolean isOutOfTrack;
 
     /** Creates a new Builder */
     private Builder() {
@@ -429,6 +495,18 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
         fieldSetFlags()[12] = true;
       }
+      if (isValidValue(fields()[13], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[13].schema(), other.creationTime);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.outOfTrackSince)) {
+        this.outOfTrackSince = data().deepCopy(fields()[14].schema(), other.outOfTrackSince);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isOutOfTrack)) {
+        this.isOutOfTrack = data().deepCopy(fields()[15].schema(), other.isOutOfTrack);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -489,6 +567,18 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[12], other.assosiatedShipmentsId)) {
         this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
         fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[13].schema(), other.creationTime);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.outOfTrackSince)) {
+        this.outOfTrackSince = data().deepCopy(fields()[14].schema(), other.outOfTrackSince);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isOutOfTrack)) {
+        this.isOutOfTrack = data().deepCopy(fields()[15].schema(), other.isOutOfTrack);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -1034,6 +1124,122 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'creationTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getCreationTime() {
+      return creationTime;
+    }
+
+    /**
+      * Sets the value of the 'creationTime' field.
+      * @param value The value of 'creationTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setCreationTime(java.lang.Long value) {
+      validate(fields()[13], value);
+      this.creationTime = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'creationTime' field has been set.
+      * @return True if the 'creationTime' field has been set, false otherwise.
+      */
+    public boolean hasCreationTime() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'creationTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearCreationTime() {
+      creationTime = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'outOfTrackSince' field.
+      * @return The value.
+      */
+    public java.lang.Long getOutOfTrackSince() {
+      return outOfTrackSince;
+    }
+
+    /**
+      * Sets the value of the 'outOfTrackSince' field.
+      * @param value The value of 'outOfTrackSince'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setOutOfTrackSince(java.lang.Long value) {
+      validate(fields()[14], value);
+      this.outOfTrackSince = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'outOfTrackSince' field has been set.
+      * @return True if the 'outOfTrackSince' field has been set, false otherwise.
+      */
+    public boolean hasOutOfTrackSince() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'outOfTrackSince' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearOutOfTrackSince() {
+      outOfTrackSince = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isOutOfTrack' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsOutOfTrack() {
+      return isOutOfTrack;
+    }
+
+    /**
+      * Sets the value of the 'isOutOfTrack' field.
+      * @param value The value of 'isOutOfTrack'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setIsOutOfTrack(boolean value) {
+      validate(fields()[15], value);
+      this.isOutOfTrack = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isOutOfTrack' field has been set.
+      * @return True if the 'isOutOfTrack' field has been set, false otherwise.
+      */
+    public boolean hasIsOutOfTrack() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'isOutOfTrack' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearIsOutOfTrack() {
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public TripPoint build() {
       try {
@@ -1055,6 +1261,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         record.actualArrival = fieldSetFlags()[10] ? this.actualArrival : (java.lang.Long) defaultValue(fields()[10]);
         record.actualDeparture = fieldSetFlags()[11] ? this.actualDeparture : (java.lang.Long) defaultValue(fields()[11]);
         record.assosiatedShipmentsId = fieldSetFlags()[12] ? this.assosiatedShipmentsId : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        record.creationTime = fieldSetFlags()[13] ? this.creationTime : (java.lang.Long) defaultValue(fields()[13]);
+        record.outOfTrackSince = fieldSetFlags()[14] ? this.outOfTrackSince : (java.lang.Long) defaultValue(fields()[14]);
+        record.isOutOfTrack = fieldSetFlags()[15] ? this.isOutOfTrack : (java.lang.Boolean) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

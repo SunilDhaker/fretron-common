@@ -91,9 +91,30 @@
                     }
                 ],
                 "default": null
+            },
+            {
+                "name": "creationTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "outOfTrackSince",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "isOutOfTrack",
+                "type": "boolean",
+                "default": false
             }
-
-
 		]
 	}
 ]
