@@ -114,6 +114,11 @@
                 "name": "isOutOfTrack",
                 "type": "boolean",
                 "default": false
+            },
+            {
+                "name": "isAutoCompleted",
+                "type": "boolean",
+                "default": false
             }
 		]
 	}
