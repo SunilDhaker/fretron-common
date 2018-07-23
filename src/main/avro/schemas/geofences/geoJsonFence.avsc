@@ -120,6 +120,14 @@
                     "string"
                 ],
                 "default": null
+            },
+            {
+                "name":"isFavorite",
+                "type":[
+                    "null",
+                    {"type" : "array", "items":"string"}
+                ],
+                "default":null
             }
         ]
     },
