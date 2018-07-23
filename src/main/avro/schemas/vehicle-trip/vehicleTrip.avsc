@@ -119,6 +119,16 @@
                 "name": "isAutoCompleted",
                 "type": "boolean",
                 "default": false
+            },
+            {
+                "name":"coveredDistance",
+                "type":["null","double"],
+                "default":null
+            },
+            {
+                "name":"purposedDistance",
+                "type":["null","double"],
+                "default":null
             }
 		]
 	}
