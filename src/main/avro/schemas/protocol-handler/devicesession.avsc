@@ -24,6 +24,11 @@
        "name":"isExpire",
        "type":["null","boolean"],
        "default": null
+      },
+      {
+          "name": "startTime",
+           "type": [ "null", "long"],
+            "default" : null
       }
     ]
   }
