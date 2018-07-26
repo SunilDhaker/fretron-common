@@ -523,6 +523,9 @@ public class Constants {
     public static final String ELASTIC_SEARCH_URL = "elastic.search.url";
     public static final String ELASTIC_SEARCH_PORT = "elastic.search.port";
     public static final String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
+    public static final String ELASTIC_SEARCH_SERVICE_URL = "elastic.search.service.url";
+
+
 
     private Constants() {
 

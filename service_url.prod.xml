@@ -97,4 +97,9 @@
     <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
     <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
 
+
+    <!-- -->
+    <entry key = "elastic.search.service.url">http://reporting-server.mean:8080</entry>
+
+
 </properties>
