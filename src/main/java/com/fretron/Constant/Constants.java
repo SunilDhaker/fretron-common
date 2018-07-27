@@ -670,6 +670,10 @@ public class Constants {
     public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
     public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
 
+    public static String PLACE_RESYNC_TOPIC = "places.resync.topic";
+    public static String ELASTIC_SEARCH_MANAGER_IP = "elastic.serach.manager.ip";
+    public static String ELASTIC_SEARCH_MANAGER_PORT = "elastic.serach.manager.port";
+
     private Constants(){
 
     }
