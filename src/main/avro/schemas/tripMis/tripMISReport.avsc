@@ -234,7 +234,17 @@
                   }
                 ],
                 "default": null
-            }
-
+            },
+            {
+              "name": "tripPoints",
+               "type": [
+                     "null",
+                     {
+                       "type": "array",
+                       "items": "com.fretron.Model.TripPoint"
+                     }
+                   ],
+             "default": null
+             }
 		]
 	}

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6391248521818336392L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 4076196042055891712L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripMisReport\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stopTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"movingTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"disconnectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"startLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLatitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"endLongitude\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusterName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vgsId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clusters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tripPoints\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -42,6 +42,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String vehicleModel;
   @Deprecated public java.lang.String source;
   @Deprecated public java.util.List<com.fretron.Model.Properties> clusters;
+  @Deprecated public java.util.List<com.fretron.Model.TripPoint> tripPoints;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -81,8 +82,9 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
    * @param vehicleModel The new value for vehicleModel
    * @param source The new value for source
    * @param clusters The new value for clusters
+   * @param tripPoints The new value for tripPoints
    */
-  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId, java.lang.String organisationName, java.util.List<java.lang.Double> lngLat, java.lang.String vehicleRegistrationNumber, java.lang.String vehicleModel, java.lang.String source, java.util.List<com.fretron.Model.Properties> clusters) {
+  public TripMisReport(java.lang.Long startTime, java.lang.Long endTime, java.lang.Double movedDistance, java.lang.Long stopTime, java.lang.Long movingTime, java.lang.Long disconnectedTime, java.lang.Double startLatitude, java.lang.Double startLongitude, java.lang.Double endLatitude, java.lang.Double endLongitude, java.lang.String tripState, java.lang.String tripId, java.lang.String uuid, java.lang.String vehicleType, java.lang.String driverId, java.lang.String orgId, java.lang.String groups, java.lang.String vehicleId, java.lang.String imei, java.lang.String clusterId, java.lang.String clusterType, java.lang.String clusterName, java.lang.String vgsId, java.lang.String organisationName, java.util.List<java.lang.Double> lngLat, java.lang.String vehicleRegistrationNumber, java.lang.String vehicleModel, java.lang.String source, java.util.List<com.fretron.Model.Properties> clusters, java.util.List<com.fretron.Model.TripPoint> tripPoints) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.movedDistance = movedDistance;
@@ -112,6 +114,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     this.vehicleModel = vehicleModel;
     this.source = source;
     this.clusters = clusters;
+    this.tripPoints = tripPoints;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -147,6 +150,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 26: return vehicleModel;
     case 27: return source;
     case 28: return clusters;
+    case 29: return tripPoints;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -184,6 +188,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     case 26: vehicleModel = (java.lang.String)value$; break;
     case 27: source = (java.lang.String)value$; break;
     case 28: clusters = (java.util.List<com.fretron.Model.Properties>)value$; break;
+    case 29: tripPoints = (java.util.List<com.fretron.Model.TripPoint>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -653,6 +658,22 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'tripPoints' field.
+   * @return The value of the 'tripPoints' field.
+   */
+  public java.util.List<com.fretron.Model.TripPoint> getTripPoints() {
+    return tripPoints;
+  }
+
+  /**
+   * Sets the value of the 'tripPoints' field.
+   * @param value the value to set.
+   */
+  public void setTripPoints(java.util.List<com.fretron.Model.TripPoint> value) {
+    this.tripPoints = value;
+  }
+
+  /**
    * Creates a new TripMisReport RecordBuilder.
    * @return A new TripMisReport RecordBuilder
    */
@@ -713,6 +734,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String vehicleModel;
     private java.lang.String source;
     private java.util.List<com.fretron.Model.Properties> clusters;
+    private java.util.List<com.fretron.Model.TripPoint> tripPoints;
 
     /** Creates a new Builder */
     private Builder() {
@@ -841,6 +863,10 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
         fieldSetFlags()[28] = true;
       }
+      if (isValidValue(fields()[29], other.tripPoints)) {
+        this.tripPoints = data().deepCopy(fields()[29].schema(), other.tripPoints);
+        fieldSetFlags()[29] = true;
+      }
     }
 
     /**
@@ -964,6 +990,10 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[28], other.clusters)) {
         this.clusters = data().deepCopy(fields()[28].schema(), other.clusters);
         fieldSetFlags()[28] = true;
+      }
+      if (isValidValue(fields()[29], other.tripPoints)) {
+        this.tripPoints = data().deepCopy(fields()[29].schema(), other.tripPoints);
+        fieldSetFlags()[29] = true;
       }
     }
 
@@ -2098,6 +2128,45 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'tripPoints' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.TripPoint> getTripPoints() {
+      return tripPoints;
+    }
+
+    /**
+      * Sets the value of the 'tripPoints' field.
+      * @param value The value of 'tripPoints'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder setTripPoints(java.util.List<com.fretron.Model.TripPoint> value) {
+      validate(fields()[29], value);
+      this.tripPoints = value;
+      fieldSetFlags()[29] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'tripPoints' field has been set.
+      * @return True if the 'tripPoints' field has been set, false otherwise.
+      */
+    public boolean hasTripPoints() {
+      return fieldSetFlags()[29];
+    }
+
+
+    /**
+      * Clears the value of the 'tripPoints' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripMisReport.Builder clearTripPoints() {
+      tripPoints = null;
+      fieldSetFlags()[29] = false;
+      return this;
+    }
+
     @Override
     public TripMisReport build() {
       try {
@@ -2131,6 +2200,7 @@ public class TripMisReport extends org.apache.avro.specific.SpecificRecordBase i
         record.vehicleModel = fieldSetFlags()[26] ? this.vehicleModel : (java.lang.String) defaultValue(fields()[26]);
         record.source = fieldSetFlags()[27] ? this.source : (java.lang.String) defaultValue(fields()[27]);
         record.clusters = fieldSetFlags()[28] ? this.clusters : (java.util.List<com.fretron.Model.Properties>) defaultValue(fields()[28]);
+        record.tripPoints = fieldSetFlags()[29] ? this.tripPoints : (java.util.List<com.fretron.Model.TripPoint>) defaultValue(fields()[29]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
