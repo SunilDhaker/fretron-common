@@ -174,38 +174,10 @@ public class Constants {
     //============================================================
     //Shipment Constants
     public static final String KEY_SHIPMENT_MANAGER_NEW_APP_ID = "shipment.manager.appname";
-    public static final String SHIPMENT_COMANDER_APP_NAME = "shipment.command.handler.app.name";
-    public static final String SHIPMENT_OLDTONEWSTREAM_APP = "shipment.oldtonew.stream.app.name";
-    //    public static final String KEY_VEHICLE_TRIP_STATE_TOPIC = "vehicletripstate.topic";
-//    public static final String KEY_LOADED_POSITION_TOPIC = "loadedposition.topic";
-//    public static final String KEY_ACTIVE_TRIP_TOPIC = "activetrip.topic";
-//    public static final String KEY_PLANNED_TRIP_TOPIC = "plannedtrip.topic";
-//
-//
-//    public static final String KEY_VEHICLESATE_BY_VEHICLE_STORE = "vehicletripState.by.vehicle.store";
-//    public static final String KEY_ACTIVE_TRIP_BY_VEHICLE_STORE = "activetrip.by.vehicle.store";
-//    public static final String KEY_PLANNED_TRIP_BY_VEHICLE_STORE = "plannedtrip.by.vehicle.store";
-//    public static final String KEY_VEHICLE_BY_DEVICE_ID_STORE = "vehicle.by.deviceId.store";
-    public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
-    public static final String KEY_SHIPMENT_STOPAGE_TOPIC = "shiment.added.stop.topic";
-    public static final String KEY_ADDED_SHIPMENT_TRACKING_STATE_TOPIC = "added.shiment.tracking.state.topic";
-    public static final String KEY_UPDATED_SHIPMENT_TRACKING_STATE_TOPIC = "updated.shiment.tracking.state.topic";
     public static final String SHIPMENT_TRACKING_REQUEST_TOPIC = "shipment.tracking.request.topic";
-    public static final String KEY_SHIPMENT_STATE_UPDATED_TOPIC = "shipment.state.updated.topic";
-    public static final String SHIPMENT_REALTED_EVENT_TOPIC = "shipment.related.event.topic";
+    public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
 
-    //    ======================================================
-    // Tracker Related Constants
-    public static final String SHIPMENT_TRACKING_STATE_STORE = "shipment.tracking.state.store";
-    public static final String SHIPMENT_BY_TRIPID_STORE = "shipment.by.tripid.state.store";
-    public static final String SHIPMENT_BY_SHIPMENT_ID_STORE = "shiment.by.shipment.id.store";
-    public static final String MANUALLY_ADDED_SHIPMENT_STOP_STORE = "manully.added.shipment.state.store";
-    public static final String VEHICLE_BY_VEHICLE_ID_STORE = "vehicle.by.vehicleId.store.for.shipment";
-    public static final String SHIPMENT_BY_IMEI_STORE = "shipmentId.by.imei.store";
     //=========================================
-    public static final String MANUAL_TRACKING_APP_NAME = "manual.tracking.app.name";
-    public static final String MANUAL_TRIP_EVENTS_TOPIC = "manual.trip.event.topic";
-    public static final String MANUAL_TRIP_VTS_TOPIC = "manual.trip.vts.topic";
     public static final String REGISTRY_MANAGER_APPID = "registry.manager.appId";
     public static final String LATEST_COMMAND_TOPIC = "latest.command.topic";
     public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
@@ -321,6 +293,7 @@ public class Constants {
     public static final String FRETRON_GOD_SHIP = "fretron.god.shipper";
     public static final String FRETRON_GOD_FO_AGENT = "fretron.god.fo.agent";
     public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
+    public static final String SHIPMENT_TRACKING_REQUEST_COLLECTION_NAME = "shipment.tracking.request.collection.name";
     public static final String SHIPMENT_DB_NAME = "shipment.db.name";
     public static final String SHIPMENT_DB_PORT = "shipment.db.port";
     public static final String SHIPMENT_DB_HOST = "shipment.db.host";

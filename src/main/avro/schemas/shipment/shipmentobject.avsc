@@ -1,0 +1,102 @@
+[
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentObject",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "consigners",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.BuisnessPartner"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "consignees",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.BuisnessPartner"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.TripPoint"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "broker",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "transporter",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.Vehicle"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleOwnerInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.Organisation"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingState",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  }
+]
