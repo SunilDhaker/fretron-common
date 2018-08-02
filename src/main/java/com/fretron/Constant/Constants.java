@@ -439,6 +439,8 @@ public class Constants {
    * VEHICLE TRIP CONSTANTS
    */
 
+    public static final String VEHICLE_TRIP_SERVICE_URL = "vehicle.trip.manager.service.url";
+
     public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
     public static final String VEHICLE_TRIP_DB_NAME = "vehicle.trip.db.name";
     public static final String VEHICLE_TRIP_DB_HOST = "vehicle.trip.db.host";
