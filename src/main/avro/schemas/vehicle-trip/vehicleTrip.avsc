@@ -91,9 +91,45 @@
                     }
                 ],
                 "default": null
+            },
+            {
+                "name": "creationTime",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "outOfTrackSince",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "isOutOfTrack",
+                "type": "boolean",
+                "default": false
+            },
+            {
+                "name": "isAutoCompleted",
+                "type": "boolean",
+                "default": false
+            },
+            {
+                "name":"coveredDistance",
+                "type":["null","double"],
+                "default":null
+            },
+            {
+                "name":"purposedDistance",
+                "type":["null","double"],
+                "default":null
             }
-
-
 		]
 	}
 ]

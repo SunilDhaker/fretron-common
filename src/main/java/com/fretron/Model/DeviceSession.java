@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3140530291484690270L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"remoteAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeZoneOffset\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isExpire\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 6901377704779139024L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"remoteAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeZoneOffset\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isExpire\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String remoteAddress;
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.Integer timeZoneOffset;
   @Deprecated public java.lang.Boolean isExpire;
+  @Deprecated public java.lang.Long startTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
    * @param imei The new value for imei
    * @param timeZoneOffset The new value for timeZoneOffset
    * @param isExpire The new value for isExpire
+   * @param startTime The new value for startTime
    */
-  public DeviceSession(java.lang.String remoteAddress, java.lang.String imei, java.lang.Integer timeZoneOffset, java.lang.Boolean isExpire) {
+  public DeviceSession(java.lang.String remoteAddress, java.lang.String imei, java.lang.Integer timeZoneOffset, java.lang.Boolean isExpire, java.lang.Long startTime) {
     this.remoteAddress = remoteAddress;
     this.imei = imei;
     this.timeZoneOffset = timeZoneOffset;
     this.isExpire = isExpire;
+    this.startTime = startTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     case 1: return imei;
     case 2: return timeZoneOffset;
     case 3: return isExpire;
+    case 4: return startTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     case 1: imei = (java.lang.String)value$; break;
     case 2: timeZoneOffset = (java.lang.Integer)value$; break;
     case 3: isExpire = (java.lang.Boolean)value$; break;
+    case 4: startTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'startTime' field.
+   * @return The value of the 'startTime' field.
+   */
+  public java.lang.Long getStartTime() {
+    return startTime;
+  }
+
+  /**
+   * Sets the value of the 'startTime' field.
+   * @param value the value to set.
+   */
+  public void setStartTime(java.lang.Long value) {
+    this.startTime = value;
+  }
+
+  /**
    * Creates a new DeviceSession RecordBuilder.
    * @return A new DeviceSession RecordBuilder
    */
@@ -163,6 +184,7 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String imei;
     private java.lang.Integer timeZoneOffset;
     private java.lang.Boolean isExpire;
+    private java.lang.Long startTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +213,10 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
         this.isExpire = data().deepCopy(fields()[3].schema(), other.isExpire);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.startTime)) {
+        this.startTime = data().deepCopy(fields()[4].schema(), other.startTime);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -214,6 +240,10 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[3], other.isExpire)) {
         this.isExpire = data().deepCopy(fields()[3].schema(), other.isExpire);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.startTime)) {
+        this.startTime = data().deepCopy(fields()[4].schema(), other.startTime);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -373,6 +403,45 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'startTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getStartTime() {
+      return startTime;
+    }
+
+    /**
+      * Sets the value of the 'startTime' field.
+      * @param value The value of 'startTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceSession.Builder setStartTime(java.lang.Long value) {
+      validate(fields()[4], value);
+      this.startTime = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'startTime' field has been set.
+      * @return True if the 'startTime' field has been set, false otherwise.
+      */
+    public boolean hasStartTime() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'startTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceSession.Builder clearStartTime() {
+      startTime = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public DeviceSession build() {
       try {
@@ -381,6 +450,7 @@ public class DeviceSession extends org.apache.avro.specific.SpecificRecordBase i
         record.imei = fieldSetFlags()[1] ? this.imei : (java.lang.String) defaultValue(fields()[1]);
         record.timeZoneOffset = fieldSetFlags()[2] ? this.timeZoneOffset : (java.lang.Integer) defaultValue(fields()[2]);
         record.isExpire = fieldSetFlags()[3] ? this.isExpire : (java.lang.Boolean) defaultValue(fields()[3]);
+        record.startTime = fieldSetFlags()[4] ? this.startTime : (java.lang.Long) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

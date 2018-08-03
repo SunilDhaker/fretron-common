@@ -6,7 +6,7 @@ package com.fretron.Constant;
 public class Constants {
 
 
-    public static final String KEY_KAFKA_METADATA_SERVICE_IP = "kafka.metadata.service.ip";
+    public static final String KEY_KAFKA_METADATA_SERVICE_IP = "stream.metadata.service.ip";
     public static final String KEY_VTS_UPDATE_TOPIC = "vts.update.topic";
     public static final String KEY_TRIP_LOG_RETENTION_TIMEPERIOD = "trip.log.retention.timeperiod";
     public static final String KEY_TRIP_LOG_CLEANUP_TIME = "trip.log.cleanup.time.period";
@@ -475,6 +475,7 @@ public class Constants {
     public static final String KEY_TRIP_POINT_EVENT_TOPIC = "trip.point.event.topic";
     public static final String VGS_BY_VEHICLE_ID_TOPIC = "vgs.by.vid.topic";
     public static final String COMMAND_RESULT_COPARTTION_TOPIC = "commad.result.copartition.topic";
+    public static final String REPORTS_SERVICE_URL = "reports.service.url";
 
 
     //==================TRIP-MIS===============================
@@ -519,9 +520,13 @@ public class Constants {
     /*
     Elastic Search Manager Config
      */
-    public static final String ELASTIC_SEARCH_URL = "elastic.search.url";
-    public static final String ELASTIC_SEARCH_PORT = "elastic.search.port";
-    public static final String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
+    public static String ELASTIC_SEARCH_URL = "elastic.search.url";
+    public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
+    public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
+
+    public static String PLACE_RESYNC_TOPIC = "places.resync.topic";
+    public static String ELASTIC_SEARCH_MANAGER_IP = "elastic.serach.manager.ip";
+    public static String ELASTIC_SEARCH_MANAGER_PORT = "elastic.serach.manager.port";
 
     private Constants() {
 
