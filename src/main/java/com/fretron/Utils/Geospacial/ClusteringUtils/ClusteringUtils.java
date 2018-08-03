@@ -46,8 +46,7 @@ public class ClusteringUtils {
         return calculateVariance(positions, meanPosition);
     }
 
-    public static double calculateVariance(List<LitePosition> positions, LitePosition mean) {
-
+      static double calculateVariance(List<LitePosition> positions, LitePosition mean) {
         double variance = 0;
         if (positions.size() > 1) {
             for (LitePosition p : positions) {
@@ -63,6 +62,13 @@ public class ClusteringUtils {
         LitePosition meanPosition = calculateMean(points);
         double variance = calculateVariance(points, meanPosition);
         return (new MeanVariance(meanPosition, variance));
+    }
+
+    public static MeanVariance forPositions(List<LitePosition> positions){
+        LitePosition meanPosition = calculateMean(positions);
+        double variance = calculateVariance(positions, meanPosition);
+        return (new MeanVariance(meanPosition, variance));
+
     }
 
     public static MeanVariance forPolyline(String encodedPolyline) {
