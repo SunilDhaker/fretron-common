@@ -42,18 +42,10 @@
         "default": null
       },
       {
-        "name": "broker",
+        "name": "deviceInfo",
         "type": [
           "null",
-          "com.fretron.Model.BuisnessPartner"
-        ],
-        "default": null
-      },
-      {
-        "name": "transporter",
-        "type": [
-          "null",
-          "com.fretron.Model.BuisnessPartner"
+          "com.fretron.Model.Device"
         ],
         "default": null
       },
