@@ -28,6 +28,26 @@
         "name": "time",
         "type": "long",
         "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "attributes",
+         "type": ["null","com.fretron.Model.Attributes"],
+         "default":null
+      },
+      {
+        "name": "duration",
+        "type": "long",
+        "default" : null
+      },
+      {
+        "name": "speed",
+         "type": ["null","double"],
+         "default" : null
+      },
+      {
+         "name": "speedBand",
+          "type": ["null","string"],
+           "default" : null
       }
     ]
 

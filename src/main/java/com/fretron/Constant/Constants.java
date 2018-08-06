@@ -58,7 +58,6 @@ public class Constants {
 
     public static final String KEY_POSITION_TOPIC = "positions.topic";
     public static final String KEY_TPI_POSITION_TOPIC = "tpi.positions.topic";
-    public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
     public static final String KEY_GPS_STATE_TOPIC = "gps.state.topic";
     public static final String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
@@ -527,6 +526,15 @@ public class Constants {
     public static String PLACE_RESYNC_TOPIC = "places.resync.topic";
     public static String ELASTIC_SEARCH_MANAGER_IP = "elastic.serach.manager.ip";
     public static String ELASTIC_SEARCH_MANAGER_PORT = "elastic.serach.manager.port";
+
+     /*
+    Device Connection State Manager Config
+     */
+     public static final String DEVICE_CONNECTION_MANAGER_APP_ID = "device.connection.manager.application.id";
+     public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
+    public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_IP = "device.connection.manager.rest.service.ip";
+    public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
+
 
     private Constants() {
 
