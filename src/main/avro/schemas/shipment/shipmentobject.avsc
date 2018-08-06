@@ -2,6 +2,25 @@
   {
     "namespace": "com.fretron.Model",
     "type": "record",
+    "name": "ShipmentStage",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "tripPoint",
+        "type": [
+          "null",
+          "com.fretron.Model.TripPoint"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
     "name": "ShipmentObject",
     "fields": [
       {
@@ -36,7 +55,7 @@
           "null",
           {
             "type": "array",
-            "items": "com.fretron.Model.TripPoint"
+            "items": "com.fretron.Model.ShipmentStage"
           }
         ],
         "default": null
@@ -114,7 +133,7 @@
           "null",
           {
             "type": "array",
-            "items": "com.fretron.Model.TripPoint"
+            "items": "com.fretron.Model.ShipmentStage"
           }
         ],
         "default": null
