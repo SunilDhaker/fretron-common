@@ -1,9 +1,8 @@
 package com.fretron;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
-import org.junit.runner.RunWith;
+
+import static org.junit.Assert.assertTrue;
 
 public class HttpRequestHeplerTest {
 

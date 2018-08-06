@@ -4,14 +4,15 @@ package com.fretron.Utils.Geospacial.PolylineUtils;
  * Created by sdhaker on 21/07/17.
  */
 
-import static com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.PointImpl.p;
-
 import com.fretron.Logger.Log;
 import com.fretron.Model.LitePosition;
 import com.fretron.Model.PointAtTime;
 import com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.Point;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.PointImpl.p;
 
 /**
  * Port to Java of Mark McClures Javascript OnlinePolylineEncoder : http://facstaff.unca.edu/mcmcclur/GoogleMaps/EncodePolyline/decode.js
