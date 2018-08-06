@@ -2,6 +2,7 @@ package com.fretron.Utils.Geospacial;
 
 import com.fretron.Model.Geofence;
 import com.fretron.Model.Location;
+
 import java.util.ArrayList;
 
 /**

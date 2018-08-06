@@ -2,6 +2,7 @@ package com.fretron.Utils;
 
 
 import com.fretron.Model.Device;
+
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
