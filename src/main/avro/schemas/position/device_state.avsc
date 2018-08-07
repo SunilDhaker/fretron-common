@@ -36,14 +36,15 @@
       },
       {
         "name": "duration",
-        "type": "long",
+        "type": ["null" ,"long"],
         "default" : null
       },
       {
-        "name": "speed",
-         "type": ["null","double"],
-         "default" : null
-      },
+         "name": "sessionStartTime",
+         "type": ["null" ,"long"],
+         "logicalType": "timestamp-millis",
+          "default" : null
+       },
       {
          "name": "speedBand",
           "type": ["null","string"],

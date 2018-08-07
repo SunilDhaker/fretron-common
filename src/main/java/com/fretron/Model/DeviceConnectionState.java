@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceConnectionState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3908698185651505026L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"duration\",\"type\":\"long\",\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"speedBand\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8538953825407004311L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"sessionStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speedBand\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String lastBatteryValue;
@@ -19,8 +19,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
   @Deprecated public long lastPowerCut;
   @Deprecated public long time;
   @Deprecated public com.fretron.Model.Attributes attributes;
-  @Deprecated public long duration;
-  @Deprecated public java.lang.Double speed;
+  @Deprecated public java.lang.Long duration;
+  @Deprecated public java.lang.Long sessionStartTime;
   @Deprecated public java.lang.String speedBand;
 
   /**
@@ -39,10 +39,10 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
    * @param time The new value for time
    * @param attributes The new value for attributes
    * @param duration The new value for duration
-   * @param speed The new value for speed
+   * @param sessionStartTime The new value for sessionStartTime
    * @param speedBand The new value for speedBand
    */
-  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time, com.fretron.Model.Attributes attributes, java.lang.Long duration, java.lang.Double speed, java.lang.String speedBand) {
+  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time, com.fretron.Model.Attributes attributes, java.lang.Long duration, java.lang.Long sessionStartTime, java.lang.String speedBand) {
     this.imei = imei;
     this.lastBatteryValue = lastBatteryValue;
     this.lastLowBattery = lastLowBattery;
@@ -50,7 +50,7 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     this.time = time;
     this.attributes = attributes;
     this.duration = duration;
-    this.speed = speed;
+    this.sessionStartTime = sessionStartTime;
     this.speedBand = speedBand;
   }
 
@@ -65,7 +65,7 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 4: return time;
     case 5: return attributes;
     case 6: return duration;
-    case 7: return speed;
+    case 7: return sessionStartTime;
     case 8: return speedBand;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -82,7 +82,7 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 4: time = (java.lang.Long)value$; break;
     case 5: attributes = (com.fretron.Model.Attributes)value$; break;
     case 6: duration = (java.lang.Long)value$; break;
-    case 7: speed = (java.lang.Double)value$; break;
+    case 7: sessionStartTime = (java.lang.Long)value$; break;
     case 8: speedBand = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -201,19 +201,19 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
   }
 
   /**
-   * Gets the value of the 'speed' field.
-   * @return The value of the 'speed' field.
+   * Gets the value of the 'sessionStartTime' field.
+   * @return The value of the 'sessionStartTime' field.
    */
-  public java.lang.Double getSpeed() {
-    return speed;
+  public java.lang.Long getSessionStartTime() {
+    return sessionStartTime;
   }
 
   /**
-   * Sets the value of the 'speed' field.
+   * Sets the value of the 'sessionStartTime' field.
    * @param value the value to set.
    */
-  public void setSpeed(java.lang.Double value) {
-    this.speed = value;
+  public void setSessionStartTime(java.lang.Long value) {
+    this.sessionStartTime = value;
   }
 
   /**
@@ -271,8 +271,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     private long time;
     private com.fretron.Model.Attributes attributes;
     private com.fretron.Model.Attributes.Builder attributesBuilder;
-    private long duration;
-    private java.lang.Double speed;
+    private java.lang.Long duration;
+    private java.lang.Long sessionStartTime;
     private java.lang.String speedBand;
 
     /** Creates a new Builder */
@@ -317,8 +317,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         this.duration = data().deepCopy(fields()[6].schema(), other.duration);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.speed)) {
-        this.speed = data().deepCopy(fields()[7].schema(), other.speed);
+      if (isValidValue(fields()[7], other.sessionStartTime)) {
+        this.sessionStartTime = data().deepCopy(fields()[7].schema(), other.sessionStartTime);
         fieldSetFlags()[7] = true;
       }
       if (isValidValue(fields()[8], other.speedBand)) {
@@ -362,8 +362,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         this.duration = data().deepCopy(fields()[6].schema(), other.duration);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.speed)) {
-        this.speed = data().deepCopy(fields()[7].schema(), other.speed);
+      if (isValidValue(fields()[7], other.sessionStartTime)) {
+        this.sessionStartTime = data().deepCopy(fields()[7].schema(), other.sessionStartTime);
         fieldSetFlags()[7] = true;
       }
       if (isValidValue(fields()[8], other.speedBand)) {
@@ -651,7 +651,7 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'duration'.
       * @return This builder.
       */
-    public com.fretron.Model.DeviceConnectionState.Builder setDuration(long value) {
+    public com.fretron.Model.DeviceConnectionState.Builder setDuration(java.lang.Long value) {
       validate(fields()[6], value);
       this.duration = value;
       fieldSetFlags()[6] = true;
@@ -672,45 +672,46 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
       * @return This builder.
       */
     public com.fretron.Model.DeviceConnectionState.Builder clearDuration() {
+      duration = null;
       fieldSetFlags()[6] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'speed' field.
+      * Gets the value of the 'sessionStartTime' field.
       * @return The value.
       */
-    public java.lang.Double getSpeed() {
-      return speed;
+    public java.lang.Long getSessionStartTime() {
+      return sessionStartTime;
     }
 
     /**
-      * Sets the value of the 'speed' field.
-      * @param value The value of 'speed'.
+      * Sets the value of the 'sessionStartTime' field.
+      * @param value The value of 'sessionStartTime'.
       * @return This builder.
       */
-    public com.fretron.Model.DeviceConnectionState.Builder setSpeed(java.lang.Double value) {
+    public com.fretron.Model.DeviceConnectionState.Builder setSessionStartTime(java.lang.Long value) {
       validate(fields()[7], value);
-      this.speed = value;
+      this.sessionStartTime = value;
       fieldSetFlags()[7] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'speed' field has been set.
-      * @return True if the 'speed' field has been set, false otherwise.
+      * Checks whether the 'sessionStartTime' field has been set.
+      * @return True if the 'sessionStartTime' field has been set, false otherwise.
       */
-    public boolean hasSpeed() {
+    public boolean hasSessionStartTime() {
       return fieldSetFlags()[7];
     }
 
 
     /**
-      * Clears the value of the 'speed' field.
+      * Clears the value of the 'sessionStartTime' field.
       * @return This builder.
       */
-    public com.fretron.Model.DeviceConnectionState.Builder clearSpeed() {
-      speed = null;
+    public com.fretron.Model.DeviceConnectionState.Builder clearSessionStartTime() {
+      sessionStartTime = null;
       fieldSetFlags()[7] = false;
       return this;
     }
@@ -769,7 +770,7 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
           record.attributes = fieldSetFlags()[5] ? this.attributes : (com.fretron.Model.Attributes) defaultValue(fields()[5]);
         }
         record.duration = fieldSetFlags()[6] ? this.duration : (java.lang.Long) defaultValue(fields()[6]);
-        record.speed = fieldSetFlags()[7] ? this.speed : (java.lang.Double) defaultValue(fields()[7]);
+        record.sessionStartTime = fieldSetFlags()[7] ? this.sessionStartTime : (java.lang.Long) defaultValue(fields()[7]);
         record.speedBand = fieldSetFlags()[8] ? this.speedBand : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
