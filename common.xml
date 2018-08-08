@@ -55,7 +55,7 @@
     <entry key="devicestate.topic">devicestate</entry>
     <entry key="loadedposition.topic">loadedpositionTopic</entry>
     <entry key="vehicle.by.imei">vehicleByImei</entry>
-    <entry key="device.connection.status.topic">deviceConnectionStatus</entry>
+    <entry key="device.connection.status.topic">deviceConnectionStatusTopic</entry>
     <entry key="gps.state.topic">gpsStates</entry>
     <entry key="vehicle.route.filler.topic">vehicleRouteFiller</entry>
     <entry key="map.matching.config.topic">vehicleRouteFiller</entry>
