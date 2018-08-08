@@ -17,12 +17,14 @@ package com.fretron.utils.Geocoders;
 
 import com.fretron.Constant.Constants;
 import com.fretron.Context;
-import java.io.IOException;
 import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.JsonReader;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 
 public class FretronCachedGeocode extends JsonGeocoder {
 
@@ -42,7 +44,7 @@ public class FretronCachedGeocode extends JsonGeocoder {
     @Override
     public String getAddressSync (
             final AddressFormat format, final double latitude,
-            final double longitude) throws IOException {
+            final double longitude) throws Exception {
 
         HttpGet getReq = new HttpGet(String.format(url, latitude, longitude));
         HttpResponse response =  httpClient.execute(getReq);

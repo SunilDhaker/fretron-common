@@ -28,6 +28,6 @@ public interface Geocoder {
     }
 
     void getAddress(AddressFormat format, double latitude, double longitude, ReverseGeocoderCallback callback);
-    String getAddressSync(AddressFormat format, double latitude, double longitude) throws IOException;
+    String getAddressSync(AddressFormat format, double latitude, double longitude) throws Exception;
 
 }

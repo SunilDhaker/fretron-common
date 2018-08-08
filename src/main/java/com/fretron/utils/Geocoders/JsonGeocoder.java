@@ -30,6 +30,9 @@ import javax.json.JsonReader;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 
 public abstract class JsonGeocoder implements Geocoder {
 
@@ -51,13 +54,16 @@ public abstract class JsonGeocoder implements Geocoder {
             });
         }
         myClient = new AsyncHttpClient();
-        httpClient = new DefaultHttpClient();
+
+        final HttpParams httpParams = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+        httpClient = new DefaultHttpClient(httpParams);
     }
 
     @Override
     public String getAddressSync (
             final AddressFormat format, final double latitude,
-            final double longitude) throws IOException {
+            final double longitude) throws Exception {
 
         HttpGet getReq = new HttpGet(String.format(url, latitude, longitude));
         HttpResponse response =  httpClient.execute(getReq);
