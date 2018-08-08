@@ -49,7 +49,18 @@
          "name": "speedBand",
           "type": ["null","string"],
            "default" : null
-      }
+      },
+      {
+             "name": "activeAlarms",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "string"
+               }
+             ],
+             "default": null
+        }
     ]
 
   }
