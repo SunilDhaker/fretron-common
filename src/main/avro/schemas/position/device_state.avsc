@@ -65,7 +65,19 @@
            "name": "speed",
             "type": ["null","double"],
              "default" : null
+        },
+        {
+                     "name": "forwardReasons",
+                     "type": [
+                       "null",
+                       {
+                         "type": "array",
+                         "items": "string"
+                       }
+                     ],
+                     "default": null
         }
+
     ]
 
   }
