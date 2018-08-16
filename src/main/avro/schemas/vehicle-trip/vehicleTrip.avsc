@@ -44,7 +44,55 @@
                 "name":"remainingDistance",
                 "type":["null","double"],
                 "default":null
+            },
+            {
+                "name": "plannedArrival",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "plannedDeparture",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "actualArrival",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "actualDeparture",
+                "type": [
+                    "null",
+                    "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+                "name": "assosiatedShipmentsId",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": "string"
+                    }
+                ],
+                "default": null
             }
+
 
 		]
 	}
