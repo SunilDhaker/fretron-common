@@ -68,10 +68,7 @@
             },
             {
                 "name":"place",
-                "type":[
-                    "null",
-                    "com.fretron.Model.Place"
-                ],
+                "type": ["null",{"type" : "array", "items":"com.fretron.Model.Place"}],
                 "default":null
             },
             {
