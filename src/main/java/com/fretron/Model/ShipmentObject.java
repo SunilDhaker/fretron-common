@@ -10,19 +10,19 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 320980267795481525L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"consigners\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignees\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"trackingStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ShipmentStage\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"deviceInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Device\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"vehicleInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Vehicle\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDe","leted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"vehicleOwnerInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Organisation\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3511866553264325519L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentObject\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"consignments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Consignment\",\"fields\":[{\"name\":\"consigner\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"secondaryNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"consignee\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"salesOffice\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Contact\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"billingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billToParty\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"loadInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LoadInfo\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"loadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"deliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"invoiceNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"poNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"workOrderNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"equipments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Equipment\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"inventoryNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"shipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ShipmentStage\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"","plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"resourcePickup\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceDropOff\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentPickUps\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentDelivered\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"shipmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transportationMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentTrackingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fleetInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"FleetInfo\",\"fields\":[{\"name\":\"vehicle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Vehicle\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"driver\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Driver\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"fleetType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fleetOwner\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"trackingMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
-  @Deprecated public java.util.List<com.fretron.Model.BuisnessPartner> consigners;
-  @Deprecated public java.util.List<com.fretron.Model.BuisnessPartner> consignees;
-  @Deprecated public java.util.List<com.fretron.Model.ShipmentStage> trackingStages;
-  @Deprecated public com.fretron.Model.Device deviceInfo;
-  @Deprecated public com.fretron.Model.Vehicle vehicleInfo;
-  @Deprecated public com.fretron.Model.Organisation vehicleOwnerInfo;
+  @Deprecated public java.util.List<com.fretron.Model.Consignment> consignments;
+  @Deprecated public java.util.List<com.fretron.Model.Equipment> equipments;
+  @Deprecated public java.util.List<com.fretron.Model.ShipmentStage> shipmentStages;
+  @Deprecated public java.lang.String shipmentType;
+  @Deprecated public java.lang.String transportationMode;
+  @Deprecated public java.lang.String shipmentStatus;
+  @Deprecated public java.lang.String shipmentTrackingStatus;
+  @Deprecated public com.fretron.Model.FleetInfo fleetInfo;
   @Deprecated public java.lang.String orgId;
-  @Deprecated public java.lang.String trackingType;
-  @Deprecated public java.lang.String trackingState;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -34,27 +34,27 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
   /**
    * All-args constructor.
    * @param uuid The new value for uuid
-   * @param consigners The new value for consigners
-   * @param consignees The new value for consignees
-   * @param trackingStages The new value for trackingStages
-   * @param deviceInfo The new value for deviceInfo
-   * @param vehicleInfo The new value for vehicleInfo
-   * @param vehicleOwnerInfo The new value for vehicleOwnerInfo
+   * @param consignments The new value for consignments
+   * @param equipments The new value for equipments
+   * @param shipmentStages The new value for shipmentStages
+   * @param shipmentType The new value for shipmentType
+   * @param transportationMode The new value for transportationMode
+   * @param shipmentStatus The new value for shipmentStatus
+   * @param shipmentTrackingStatus The new value for shipmentTrackingStatus
+   * @param fleetInfo The new value for fleetInfo
    * @param orgId The new value for orgId
-   * @param trackingType The new value for trackingType
-   * @param trackingState The new value for trackingState
    */
-  public ShipmentObject(java.lang.String uuid, java.util.List<com.fretron.Model.BuisnessPartner> consigners, java.util.List<com.fretron.Model.BuisnessPartner> consignees, java.util.List<com.fretron.Model.ShipmentStage> trackingStages, com.fretron.Model.Device deviceInfo, com.fretron.Model.Vehicle vehicleInfo, com.fretron.Model.Organisation vehicleOwnerInfo, java.lang.String orgId, java.lang.String trackingType, java.lang.String trackingState) {
+  public ShipmentObject(java.lang.String uuid, java.util.List<com.fretron.Model.Consignment> consignments, java.util.List<com.fretron.Model.Equipment> equipments, java.util.List<com.fretron.Model.ShipmentStage> shipmentStages, java.lang.String shipmentType, java.lang.String transportationMode, java.lang.String shipmentStatus, java.lang.String shipmentTrackingStatus, com.fretron.Model.FleetInfo fleetInfo, java.lang.String orgId) {
     this.uuid = uuid;
-    this.consigners = consigners;
-    this.consignees = consignees;
-    this.trackingStages = trackingStages;
-    this.deviceInfo = deviceInfo;
-    this.vehicleInfo = vehicleInfo;
-    this.vehicleOwnerInfo = vehicleOwnerInfo;
+    this.consignments = consignments;
+    this.equipments = equipments;
+    this.shipmentStages = shipmentStages;
+    this.shipmentType = shipmentType;
+    this.transportationMode = transportationMode;
+    this.shipmentStatus = shipmentStatus;
+    this.shipmentTrackingStatus = shipmentTrackingStatus;
+    this.fleetInfo = fleetInfo;
     this.orgId = orgId;
-    this.trackingType = trackingType;
-    this.trackingState = trackingState;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -62,15 +62,15 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return uuid;
-    case 1: return consigners;
-    case 2: return consignees;
-    case 3: return trackingStages;
-    case 4: return deviceInfo;
-    case 5: return vehicleInfo;
-    case 6: return vehicleOwnerInfo;
-    case 7: return orgId;
-    case 8: return trackingType;
-    case 9: return trackingState;
+    case 1: return consignments;
+    case 2: return equipments;
+    case 3: return shipmentStages;
+    case 4: return shipmentType;
+    case 5: return transportationMode;
+    case 6: return shipmentStatus;
+    case 7: return shipmentTrackingStatus;
+    case 8: return fleetInfo;
+    case 9: return orgId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -80,15 +80,15 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
-    case 1: consigners = (java.util.List<com.fretron.Model.BuisnessPartner>)value$; break;
-    case 2: consignees = (java.util.List<com.fretron.Model.BuisnessPartner>)value$; break;
-    case 3: trackingStages = (java.util.List<com.fretron.Model.ShipmentStage>)value$; break;
-    case 4: deviceInfo = (com.fretron.Model.Device)value$; break;
-    case 5: vehicleInfo = (com.fretron.Model.Vehicle)value$; break;
-    case 6: vehicleOwnerInfo = (com.fretron.Model.Organisation)value$; break;
-    case 7: orgId = (java.lang.String)value$; break;
-    case 8: trackingType = (java.lang.String)value$; break;
-    case 9: trackingState = (java.lang.String)value$; break;
+    case 1: consignments = (java.util.List<com.fretron.Model.Consignment>)value$; break;
+    case 2: equipments = (java.util.List<com.fretron.Model.Equipment>)value$; break;
+    case 3: shipmentStages = (java.util.List<com.fretron.Model.ShipmentStage>)value$; break;
+    case 4: shipmentType = (java.lang.String)value$; break;
+    case 5: transportationMode = (java.lang.String)value$; break;
+    case 6: shipmentStatus = (java.lang.String)value$; break;
+    case 7: shipmentTrackingStatus = (java.lang.String)value$; break;
+    case 8: fleetInfo = (com.fretron.Model.FleetInfo)value$; break;
+    case 9: orgId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -110,99 +110,131 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
-   * Gets the value of the 'consigners' field.
-   * @return The value of the 'consigners' field.
+   * Gets the value of the 'consignments' field.
+   * @return The value of the 'consignments' field.
    */
-  public java.util.List<com.fretron.Model.BuisnessPartner> getConsigners() {
-    return consigners;
+  public java.util.List<com.fretron.Model.Consignment> getConsignments() {
+    return consignments;
   }
 
   /**
-   * Sets the value of the 'consigners' field.
+   * Sets the value of the 'consignments' field.
    * @param value the value to set.
    */
-  public void setConsigners(java.util.List<com.fretron.Model.BuisnessPartner> value) {
-    this.consigners = value;
+  public void setConsignments(java.util.List<com.fretron.Model.Consignment> value) {
+    this.consignments = value;
   }
 
   /**
-   * Gets the value of the 'consignees' field.
-   * @return The value of the 'consignees' field.
+   * Gets the value of the 'equipments' field.
+   * @return The value of the 'equipments' field.
    */
-  public java.util.List<com.fretron.Model.BuisnessPartner> getConsignees() {
-    return consignees;
+  public java.util.List<com.fretron.Model.Equipment> getEquipments() {
+    return equipments;
   }
 
   /**
-   * Sets the value of the 'consignees' field.
+   * Sets the value of the 'equipments' field.
    * @param value the value to set.
    */
-  public void setConsignees(java.util.List<com.fretron.Model.BuisnessPartner> value) {
-    this.consignees = value;
+  public void setEquipments(java.util.List<com.fretron.Model.Equipment> value) {
+    this.equipments = value;
   }
 
   /**
-   * Gets the value of the 'trackingStages' field.
-   * @return The value of the 'trackingStages' field.
+   * Gets the value of the 'shipmentStages' field.
+   * @return The value of the 'shipmentStages' field.
    */
-  public java.util.List<com.fretron.Model.ShipmentStage> getTrackingStages() {
-    return trackingStages;
+  public java.util.List<com.fretron.Model.ShipmentStage> getShipmentStages() {
+    return shipmentStages;
   }
 
   /**
-   * Sets the value of the 'trackingStages' field.
+   * Sets the value of the 'shipmentStages' field.
    * @param value the value to set.
    */
-  public void setTrackingStages(java.util.List<com.fretron.Model.ShipmentStage> value) {
-    this.trackingStages = value;
+  public void setShipmentStages(java.util.List<com.fretron.Model.ShipmentStage> value) {
+    this.shipmentStages = value;
   }
 
   /**
-   * Gets the value of the 'deviceInfo' field.
-   * @return The value of the 'deviceInfo' field.
+   * Gets the value of the 'shipmentType' field.
+   * @return The value of the 'shipmentType' field.
    */
-  public com.fretron.Model.Device getDeviceInfo() {
-    return deviceInfo;
+  public java.lang.String getShipmentType() {
+    return shipmentType;
   }
 
   /**
-   * Sets the value of the 'deviceInfo' field.
+   * Sets the value of the 'shipmentType' field.
    * @param value the value to set.
    */
-  public void setDeviceInfo(com.fretron.Model.Device value) {
-    this.deviceInfo = value;
+  public void setShipmentType(java.lang.String value) {
+    this.shipmentType = value;
   }
 
   /**
-   * Gets the value of the 'vehicleInfo' field.
-   * @return The value of the 'vehicleInfo' field.
+   * Gets the value of the 'transportationMode' field.
+   * @return The value of the 'transportationMode' field.
    */
-  public com.fretron.Model.Vehicle getVehicleInfo() {
-    return vehicleInfo;
+  public java.lang.String getTransportationMode() {
+    return transportationMode;
   }
 
   /**
-   * Sets the value of the 'vehicleInfo' field.
+   * Sets the value of the 'transportationMode' field.
    * @param value the value to set.
    */
-  public void setVehicleInfo(com.fretron.Model.Vehicle value) {
-    this.vehicleInfo = value;
+  public void setTransportationMode(java.lang.String value) {
+    this.transportationMode = value;
   }
 
   /**
-   * Gets the value of the 'vehicleOwnerInfo' field.
-   * @return The value of the 'vehicleOwnerInfo' field.
+   * Gets the value of the 'shipmentStatus' field.
+   * @return The value of the 'shipmentStatus' field.
    */
-  public com.fretron.Model.Organisation getVehicleOwnerInfo() {
-    return vehicleOwnerInfo;
+  public java.lang.String getShipmentStatus() {
+    return shipmentStatus;
   }
 
   /**
-   * Sets the value of the 'vehicleOwnerInfo' field.
+   * Sets the value of the 'shipmentStatus' field.
    * @param value the value to set.
    */
-  public void setVehicleOwnerInfo(com.fretron.Model.Organisation value) {
-    this.vehicleOwnerInfo = value;
+  public void setShipmentStatus(java.lang.String value) {
+    this.shipmentStatus = value;
+  }
+
+  /**
+   * Gets the value of the 'shipmentTrackingStatus' field.
+   * @return The value of the 'shipmentTrackingStatus' field.
+   */
+  public java.lang.String getShipmentTrackingStatus() {
+    return shipmentTrackingStatus;
+  }
+
+  /**
+   * Sets the value of the 'shipmentTrackingStatus' field.
+   * @param value the value to set.
+   */
+  public void setShipmentTrackingStatus(java.lang.String value) {
+    this.shipmentTrackingStatus = value;
+  }
+
+  /**
+   * Gets the value of the 'fleetInfo' field.
+   * @return The value of the 'fleetInfo' field.
+   */
+  public com.fretron.Model.FleetInfo getFleetInfo() {
+    return fleetInfo;
+  }
+
+  /**
+   * Sets the value of the 'fleetInfo' field.
+   * @param value the value to set.
+   */
+  public void setFleetInfo(com.fretron.Model.FleetInfo value) {
+    this.fleetInfo = value;
   }
 
   /**
@@ -219,38 +251,6 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
    */
   public void setOrgId(java.lang.String value) {
     this.orgId = value;
-  }
-
-  /**
-   * Gets the value of the 'trackingType' field.
-   * @return The value of the 'trackingType' field.
-   */
-  public java.lang.String getTrackingType() {
-    return trackingType;
-  }
-
-  /**
-   * Sets the value of the 'trackingType' field.
-   * @param value the value to set.
-   */
-  public void setTrackingType(java.lang.String value) {
-    this.trackingType = value;
-  }
-
-  /**
-   * Gets the value of the 'trackingState' field.
-   * @return The value of the 'trackingState' field.
-   */
-  public java.lang.String getTrackingState() {
-    return trackingState;
-  }
-
-  /**
-   * Sets the value of the 'trackingState' field.
-   * @param value the value to set.
-   */
-  public void setTrackingState(java.lang.String value) {
-    this.trackingState = value;
   }
 
   /**
@@ -286,18 +286,16 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
     implements org.apache.avro.data.RecordBuilder<ShipmentObject> {
 
     private java.lang.String uuid;
-    private java.util.List<com.fretron.Model.BuisnessPartner> consigners;
-    private java.util.List<com.fretron.Model.BuisnessPartner> consignees;
-    private java.util.List<com.fretron.Model.ShipmentStage> trackingStages;
-    private com.fretron.Model.Device deviceInfo;
-    private com.fretron.Model.Device.Builder deviceInfoBuilder;
-    private com.fretron.Model.Vehicle vehicleInfo;
-    private com.fretron.Model.Vehicle.Builder vehicleInfoBuilder;
-    private com.fretron.Model.Organisation vehicleOwnerInfo;
-    private com.fretron.Model.Organisation.Builder vehicleOwnerInfoBuilder;
+    private java.util.List<com.fretron.Model.Consignment> consignments;
+    private java.util.List<com.fretron.Model.Equipment> equipments;
+    private java.util.List<com.fretron.Model.ShipmentStage> shipmentStages;
+    private java.lang.String shipmentType;
+    private java.lang.String transportationMode;
+    private java.lang.String shipmentStatus;
+    private java.lang.String shipmentTrackingStatus;
+    private com.fretron.Model.FleetInfo fleetInfo;
+    private com.fretron.Model.FleetInfo.Builder fleetInfoBuilder;
     private java.lang.String orgId;
-    private java.lang.String trackingType;
-    private java.lang.String trackingState;
 
     /** Creates a new Builder */
     private Builder() {
@@ -314,49 +312,43 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.consigners)) {
-        this.consigners = data().deepCopy(fields()[1].schema(), other.consigners);
+      if (isValidValue(fields()[1], other.consignments)) {
+        this.consignments = data().deepCopy(fields()[1].schema(), other.consignments);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.consignees)) {
-        this.consignees = data().deepCopy(fields()[2].schema(), other.consignees);
+      if (isValidValue(fields()[2], other.equipments)) {
+        this.equipments = data().deepCopy(fields()[2].schema(), other.equipments);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.trackingStages)) {
-        this.trackingStages = data().deepCopy(fields()[3].schema(), other.trackingStages);
+      if (isValidValue(fields()[3], other.shipmentStages)) {
+        this.shipmentStages = data().deepCopy(fields()[3].schema(), other.shipmentStages);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.deviceInfo)) {
-        this.deviceInfo = data().deepCopy(fields()[4].schema(), other.deviceInfo);
+      if (isValidValue(fields()[4], other.shipmentType)) {
+        this.shipmentType = data().deepCopy(fields()[4].schema(), other.shipmentType);
         fieldSetFlags()[4] = true;
       }
-      if (other.hasDeviceInfoBuilder()) {
-        this.deviceInfoBuilder = com.fretron.Model.Device.newBuilder(other.getDeviceInfoBuilder());
-      }
-      if (isValidValue(fields()[5], other.vehicleInfo)) {
-        this.vehicleInfo = data().deepCopy(fields()[5].schema(), other.vehicleInfo);
+      if (isValidValue(fields()[5], other.transportationMode)) {
+        this.transportationMode = data().deepCopy(fields()[5].schema(), other.transportationMode);
         fieldSetFlags()[5] = true;
       }
-      if (other.hasVehicleInfoBuilder()) {
-        this.vehicleInfoBuilder = com.fretron.Model.Vehicle.newBuilder(other.getVehicleInfoBuilder());
-      }
-      if (isValidValue(fields()[6], other.vehicleOwnerInfo)) {
-        this.vehicleOwnerInfo = data().deepCopy(fields()[6].schema(), other.vehicleOwnerInfo);
+      if (isValidValue(fields()[6], other.shipmentStatus)) {
+        this.shipmentStatus = data().deepCopy(fields()[6].schema(), other.shipmentStatus);
         fieldSetFlags()[6] = true;
       }
-      if (other.hasVehicleOwnerInfoBuilder()) {
-        this.vehicleOwnerInfoBuilder = com.fretron.Model.Organisation.newBuilder(other.getVehicleOwnerInfoBuilder());
-      }
-      if (isValidValue(fields()[7], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
+      if (isValidValue(fields()[7], other.shipmentTrackingStatus)) {
+        this.shipmentTrackingStatus = data().deepCopy(fields()[7].schema(), other.shipmentTrackingStatus);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.trackingType)) {
-        this.trackingType = data().deepCopy(fields()[8].schema(), other.trackingType);
+      if (isValidValue(fields()[8], other.fleetInfo)) {
+        this.fleetInfo = data().deepCopy(fields()[8].schema(), other.fleetInfo);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.trackingState)) {
-        this.trackingState = data().deepCopy(fields()[9].schema(), other.trackingState);
+      if (other.hasFleetInfoBuilder()) {
+        this.fleetInfoBuilder = com.fretron.Model.FleetInfo.newBuilder(other.getFleetInfoBuilder());
+      }
+      if (isValidValue(fields()[9], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
         fieldSetFlags()[9] = true;
       }
     }
@@ -371,43 +363,41 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.consigners)) {
-        this.consigners = data().deepCopy(fields()[1].schema(), other.consigners);
+      if (isValidValue(fields()[1], other.consignments)) {
+        this.consignments = data().deepCopy(fields()[1].schema(), other.consignments);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.consignees)) {
-        this.consignees = data().deepCopy(fields()[2].schema(), other.consignees);
+      if (isValidValue(fields()[2], other.equipments)) {
+        this.equipments = data().deepCopy(fields()[2].schema(), other.equipments);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.trackingStages)) {
-        this.trackingStages = data().deepCopy(fields()[3].schema(), other.trackingStages);
+      if (isValidValue(fields()[3], other.shipmentStages)) {
+        this.shipmentStages = data().deepCopy(fields()[3].schema(), other.shipmentStages);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.deviceInfo)) {
-        this.deviceInfo = data().deepCopy(fields()[4].schema(), other.deviceInfo);
+      if (isValidValue(fields()[4], other.shipmentType)) {
+        this.shipmentType = data().deepCopy(fields()[4].schema(), other.shipmentType);
         fieldSetFlags()[4] = true;
       }
-      this.deviceInfoBuilder = null;
-      if (isValidValue(fields()[5], other.vehicleInfo)) {
-        this.vehicleInfo = data().deepCopy(fields()[5].schema(), other.vehicleInfo);
+      if (isValidValue(fields()[5], other.transportationMode)) {
+        this.transportationMode = data().deepCopy(fields()[5].schema(), other.transportationMode);
         fieldSetFlags()[5] = true;
       }
-      this.vehicleInfoBuilder = null;
-      if (isValidValue(fields()[6], other.vehicleOwnerInfo)) {
-        this.vehicleOwnerInfo = data().deepCopy(fields()[6].schema(), other.vehicleOwnerInfo);
+      if (isValidValue(fields()[6], other.shipmentStatus)) {
+        this.shipmentStatus = data().deepCopy(fields()[6].schema(), other.shipmentStatus);
         fieldSetFlags()[6] = true;
       }
-      this.vehicleOwnerInfoBuilder = null;
-      if (isValidValue(fields()[7], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
+      if (isValidValue(fields()[7], other.shipmentTrackingStatus)) {
+        this.shipmentTrackingStatus = data().deepCopy(fields()[7].schema(), other.shipmentTrackingStatus);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.trackingType)) {
-        this.trackingType = data().deepCopy(fields()[8].schema(), other.trackingType);
+      if (isValidValue(fields()[8], other.fleetInfo)) {
+        this.fleetInfo = data().deepCopy(fields()[8].schema(), other.fleetInfo);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.trackingState)) {
-        this.trackingState = data().deepCopy(fields()[9].schema(), other.trackingState);
+      this.fleetInfoBuilder = null;
+      if (isValidValue(fields()[9], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
         fieldSetFlags()[9] = true;
       }
     }
@@ -452,341 +442,349 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
     }
 
     /**
-      * Gets the value of the 'consigners' field.
+      * Gets the value of the 'consignments' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.BuisnessPartner> getConsigners() {
-      return consigners;
+    public java.util.List<com.fretron.Model.Consignment> getConsignments() {
+      return consignments;
     }
 
     /**
-      * Sets the value of the 'consigners' field.
-      * @param value The value of 'consigners'.
+      * Sets the value of the 'consignments' field.
+      * @param value The value of 'consignments'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setConsigners(java.util.List<com.fretron.Model.BuisnessPartner> value) {
+    public com.fretron.Model.ShipmentObject.Builder setConsignments(java.util.List<com.fretron.Model.Consignment> value) {
       validate(fields()[1], value);
-      this.consigners = value;
+      this.consignments = value;
       fieldSetFlags()[1] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'consigners' field has been set.
-      * @return True if the 'consigners' field has been set, false otherwise.
+      * Checks whether the 'consignments' field has been set.
+      * @return True if the 'consignments' field has been set, false otherwise.
       */
-    public boolean hasConsigners() {
+    public boolean hasConsignments() {
       return fieldSetFlags()[1];
     }
 
 
     /**
-      * Clears the value of the 'consigners' field.
+      * Clears the value of the 'consignments' field.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearConsigners() {
-      consigners = null;
+    public com.fretron.Model.ShipmentObject.Builder clearConsignments() {
+      consignments = null;
       fieldSetFlags()[1] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'consignees' field.
+      * Gets the value of the 'equipments' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.BuisnessPartner> getConsignees() {
-      return consignees;
+    public java.util.List<com.fretron.Model.Equipment> getEquipments() {
+      return equipments;
     }
 
     /**
-      * Sets the value of the 'consignees' field.
-      * @param value The value of 'consignees'.
+      * Sets the value of the 'equipments' field.
+      * @param value The value of 'equipments'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setConsignees(java.util.List<com.fretron.Model.BuisnessPartner> value) {
+    public com.fretron.Model.ShipmentObject.Builder setEquipments(java.util.List<com.fretron.Model.Equipment> value) {
       validate(fields()[2], value);
-      this.consignees = value;
+      this.equipments = value;
       fieldSetFlags()[2] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'consignees' field has been set.
-      * @return True if the 'consignees' field has been set, false otherwise.
+      * Checks whether the 'equipments' field has been set.
+      * @return True if the 'equipments' field has been set, false otherwise.
       */
-    public boolean hasConsignees() {
+    public boolean hasEquipments() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'consignees' field.
+      * Clears the value of the 'equipments' field.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearConsignees() {
-      consignees = null;
+    public com.fretron.Model.ShipmentObject.Builder clearEquipments() {
+      equipments = null;
       fieldSetFlags()[2] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'trackingStages' field.
+      * Gets the value of the 'shipmentStages' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.ShipmentStage> getTrackingStages() {
-      return trackingStages;
+    public java.util.List<com.fretron.Model.ShipmentStage> getShipmentStages() {
+      return shipmentStages;
     }
 
     /**
-      * Sets the value of the 'trackingStages' field.
-      * @param value The value of 'trackingStages'.
+      * Sets the value of the 'shipmentStages' field.
+      * @param value The value of 'shipmentStages'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setTrackingStages(java.util.List<com.fretron.Model.ShipmentStage> value) {
+    public com.fretron.Model.ShipmentObject.Builder setShipmentStages(java.util.List<com.fretron.Model.ShipmentStage> value) {
       validate(fields()[3], value);
-      this.trackingStages = value;
+      this.shipmentStages = value;
       fieldSetFlags()[3] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'trackingStages' field has been set.
-      * @return True if the 'trackingStages' field has been set, false otherwise.
+      * Checks whether the 'shipmentStages' field has been set.
+      * @return True if the 'shipmentStages' field has been set, false otherwise.
       */
-    public boolean hasTrackingStages() {
+    public boolean hasShipmentStages() {
       return fieldSetFlags()[3];
     }
 
 
     /**
-      * Clears the value of the 'trackingStages' field.
+      * Clears the value of the 'shipmentStages' field.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearTrackingStages() {
-      trackingStages = null;
+    public com.fretron.Model.ShipmentObject.Builder clearShipmentStages() {
+      shipmentStages = null;
       fieldSetFlags()[3] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'deviceInfo' field.
+      * Gets the value of the 'shipmentType' field.
       * @return The value.
       */
-    public com.fretron.Model.Device getDeviceInfo() {
-      return deviceInfo;
+    public java.lang.String getShipmentType() {
+      return shipmentType;
     }
 
     /**
-      * Sets the value of the 'deviceInfo' field.
-      * @param value The value of 'deviceInfo'.
+      * Sets the value of the 'shipmentType' field.
+      * @param value The value of 'shipmentType'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setDeviceInfo(com.fretron.Model.Device value) {
+    public com.fretron.Model.ShipmentObject.Builder setShipmentType(java.lang.String value) {
       validate(fields()[4], value);
-      this.deviceInfoBuilder = null;
-      this.deviceInfo = value;
+      this.shipmentType = value;
       fieldSetFlags()[4] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'deviceInfo' field has been set.
-      * @return True if the 'deviceInfo' field has been set, false otherwise.
+      * Checks whether the 'shipmentType' field has been set.
+      * @return True if the 'shipmentType' field has been set, false otherwise.
       */
-    public boolean hasDeviceInfo() {
+    public boolean hasShipmentType() {
       return fieldSetFlags()[4];
     }
 
-    /**
-     * Gets the Builder instance for the 'deviceInfo' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.Device.Builder getDeviceInfoBuilder() {
-      if (deviceInfoBuilder == null) {
-        if (hasDeviceInfo()) {
-          setDeviceInfoBuilder(com.fretron.Model.Device.newBuilder(deviceInfo));
-        } else {
-          setDeviceInfoBuilder(com.fretron.Model.Device.newBuilder());
-        }
-      }
-      return deviceInfoBuilder;
-    }
 
     /**
-     * Sets the Builder instance for the 'deviceInfo' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.ShipmentObject.Builder setDeviceInfoBuilder(com.fretron.Model.Device.Builder value) {
-      clearDeviceInfo();
-      deviceInfoBuilder = value;
-      return this;
-    }
-
-    /**
-     * Checks whether the 'deviceInfo' field has an active Builder instance
-     * @return True if the 'deviceInfo' field has an active Builder instance
-     */
-    public boolean hasDeviceInfoBuilder() {
-      return deviceInfoBuilder != null;
-    }
-
-    /**
-      * Clears the value of the 'deviceInfo' field.
+      * Clears the value of the 'shipmentType' field.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearDeviceInfo() {
-      deviceInfo = null;
-      deviceInfoBuilder = null;
+    public com.fretron.Model.ShipmentObject.Builder clearShipmentType() {
+      shipmentType = null;
       fieldSetFlags()[4] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'vehicleInfo' field.
+      * Gets the value of the 'transportationMode' field.
       * @return The value.
       */
-    public com.fretron.Model.Vehicle getVehicleInfo() {
-      return vehicleInfo;
+    public java.lang.String getTransportationMode() {
+      return transportationMode;
     }
 
     /**
-      * Sets the value of the 'vehicleInfo' field.
-      * @param value The value of 'vehicleInfo'.
+      * Sets the value of the 'transportationMode' field.
+      * @param value The value of 'transportationMode'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setVehicleInfo(com.fretron.Model.Vehicle value) {
+    public com.fretron.Model.ShipmentObject.Builder setTransportationMode(java.lang.String value) {
       validate(fields()[5], value);
-      this.vehicleInfoBuilder = null;
-      this.vehicleInfo = value;
+      this.transportationMode = value;
       fieldSetFlags()[5] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'vehicleInfo' field has been set.
-      * @return True if the 'vehicleInfo' field has been set, false otherwise.
+      * Checks whether the 'transportationMode' field has been set.
+      * @return True if the 'transportationMode' field has been set, false otherwise.
       */
-    public boolean hasVehicleInfo() {
+    public boolean hasTransportationMode() {
       return fieldSetFlags()[5];
     }
 
-    /**
-     * Gets the Builder instance for the 'vehicleInfo' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.Vehicle.Builder getVehicleInfoBuilder() {
-      if (vehicleInfoBuilder == null) {
-        if (hasVehicleInfo()) {
-          setVehicleInfoBuilder(com.fretron.Model.Vehicle.newBuilder(vehicleInfo));
-        } else {
-          setVehicleInfoBuilder(com.fretron.Model.Vehicle.newBuilder());
-        }
-      }
-      return vehicleInfoBuilder;
-    }
 
     /**
-     * Sets the Builder instance for the 'vehicleInfo' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.ShipmentObject.Builder setVehicleInfoBuilder(com.fretron.Model.Vehicle.Builder value) {
-      clearVehicleInfo();
-      vehicleInfoBuilder = value;
-      return this;
-    }
-
-    /**
-     * Checks whether the 'vehicleInfo' field has an active Builder instance
-     * @return True if the 'vehicleInfo' field has an active Builder instance
-     */
-    public boolean hasVehicleInfoBuilder() {
-      return vehicleInfoBuilder != null;
-    }
-
-    /**
-      * Clears the value of the 'vehicleInfo' field.
+      * Clears the value of the 'transportationMode' field.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearVehicleInfo() {
-      vehicleInfo = null;
-      vehicleInfoBuilder = null;
+    public com.fretron.Model.ShipmentObject.Builder clearTransportationMode() {
+      transportationMode = null;
       fieldSetFlags()[5] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'vehicleOwnerInfo' field.
+      * Gets the value of the 'shipmentStatus' field.
       * @return The value.
       */
-    public com.fretron.Model.Organisation getVehicleOwnerInfo() {
-      return vehicleOwnerInfo;
+    public java.lang.String getShipmentStatus() {
+      return shipmentStatus;
     }
 
     /**
-      * Sets the value of the 'vehicleOwnerInfo' field.
-      * @param value The value of 'vehicleOwnerInfo'.
+      * Sets the value of the 'shipmentStatus' field.
+      * @param value The value of 'shipmentStatus'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder setVehicleOwnerInfo(com.fretron.Model.Organisation value) {
+    public com.fretron.Model.ShipmentObject.Builder setShipmentStatus(java.lang.String value) {
       validate(fields()[6], value);
-      this.vehicleOwnerInfoBuilder = null;
-      this.vehicleOwnerInfo = value;
+      this.shipmentStatus = value;
       fieldSetFlags()[6] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'vehicleOwnerInfo' field has been set.
-      * @return True if the 'vehicleOwnerInfo' field has been set, false otherwise.
+      * Checks whether the 'shipmentStatus' field has been set.
+      * @return True if the 'shipmentStatus' field has been set, false otherwise.
       */
-    public boolean hasVehicleOwnerInfo() {
+    public boolean hasShipmentStatus() {
       return fieldSetFlags()[6];
     }
 
-    /**
-     * Gets the Builder instance for the 'vehicleOwnerInfo' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.Organisation.Builder getVehicleOwnerInfoBuilder() {
-      if (vehicleOwnerInfoBuilder == null) {
-        if (hasVehicleOwnerInfo()) {
-          setVehicleOwnerInfoBuilder(com.fretron.Model.Organisation.newBuilder(vehicleOwnerInfo));
-        } else {
-          setVehicleOwnerInfoBuilder(com.fretron.Model.Organisation.newBuilder());
-        }
-      }
-      return vehicleOwnerInfoBuilder;
-    }
 
     /**
-     * Sets the Builder instance for the 'vehicleOwnerInfo' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.ShipmentObject.Builder setVehicleOwnerInfoBuilder(com.fretron.Model.Organisation.Builder value) {
-      clearVehicleOwnerInfo();
-      vehicleOwnerInfoBuilder = value;
+      * Clears the value of the 'shipmentStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentObject.Builder clearShipmentStatus() {
+      shipmentStatus = null;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
     /**
-     * Checks whether the 'vehicleOwnerInfo' field has an active Builder instance
-     * @return True if the 'vehicleOwnerInfo' field has an active Builder instance
-     */
-    public boolean hasVehicleOwnerInfoBuilder() {
-      return vehicleOwnerInfoBuilder != null;
+      * Gets the value of the 'shipmentTrackingStatus' field.
+      * @return The value.
+      */
+    public java.lang.String getShipmentTrackingStatus() {
+      return shipmentTrackingStatus;
     }
 
     /**
-      * Clears the value of the 'vehicleOwnerInfo' field.
+      * Sets the value of the 'shipmentTrackingStatus' field.
+      * @param value The value of 'shipmentTrackingStatus'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentObject.Builder clearVehicleOwnerInfo() {
-      vehicleOwnerInfo = null;
-      vehicleOwnerInfoBuilder = null;
-      fieldSetFlags()[6] = false;
+    public com.fretron.Model.ShipmentObject.Builder setShipmentTrackingStatus(java.lang.String value) {
+      validate(fields()[7], value);
+      this.shipmentTrackingStatus = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'shipmentTrackingStatus' field has been set.
+      * @return True if the 'shipmentTrackingStatus' field has been set, false otherwise.
+      */
+    public boolean hasShipmentTrackingStatus() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'shipmentTrackingStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentObject.Builder clearShipmentTrackingStatus() {
+      shipmentTrackingStatus = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'fleetInfo' field.
+      * @return The value.
+      */
+    public com.fretron.Model.FleetInfo getFleetInfo() {
+      return fleetInfo;
+    }
+
+    /**
+      * Sets the value of the 'fleetInfo' field.
+      * @param value The value of 'fleetInfo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentObject.Builder setFleetInfo(com.fretron.Model.FleetInfo value) {
+      validate(fields()[8], value);
+      this.fleetInfoBuilder = null;
+      this.fleetInfo = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'fleetInfo' field has been set.
+      * @return True if the 'fleetInfo' field has been set, false otherwise.
+      */
+    public boolean hasFleetInfo() {
+      return fieldSetFlags()[8];
+    }
+
+    /**
+     * Gets the Builder instance for the 'fleetInfo' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.FleetInfo.Builder getFleetInfoBuilder() {
+      if (fleetInfoBuilder == null) {
+        if (hasFleetInfo()) {
+          setFleetInfoBuilder(com.fretron.Model.FleetInfo.newBuilder(fleetInfo));
+        } else {
+          setFleetInfoBuilder(com.fretron.Model.FleetInfo.newBuilder());
+        }
+      }
+      return fleetInfoBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'fleetInfo' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ShipmentObject.Builder setFleetInfoBuilder(com.fretron.Model.FleetInfo.Builder value) {
+      clearFleetInfo();
+      fleetInfoBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'fleetInfo' field has an active Builder instance
+     * @return True if the 'fleetInfo' field has an active Builder instance
+     */
+    public boolean hasFleetInfoBuilder() {
+      return fleetInfoBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'fleetInfo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentObject.Builder clearFleetInfo() {
+      fleetInfo = null;
+      fleetInfoBuilder = null;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -804,9 +802,9 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ShipmentObject.Builder setOrgId(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[9], value);
       this.orgId = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -815,7 +813,7 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[9];
     }
 
 
@@ -825,84 +823,6 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ShipmentObject.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[7] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'trackingType' field.
-      * @return The value.
-      */
-    public java.lang.String getTrackingType() {
-      return trackingType;
-    }
-
-    /**
-      * Sets the value of the 'trackingType' field.
-      * @param value The value of 'trackingType'.
-      * @return This builder.
-      */
-    public com.fretron.Model.ShipmentObject.Builder setTrackingType(java.lang.String value) {
-      validate(fields()[8], value);
-      this.trackingType = value;
-      fieldSetFlags()[8] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'trackingType' field has been set.
-      * @return True if the 'trackingType' field has been set, false otherwise.
-      */
-    public boolean hasTrackingType() {
-      return fieldSetFlags()[8];
-    }
-
-
-    /**
-      * Clears the value of the 'trackingType' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.ShipmentObject.Builder clearTrackingType() {
-      trackingType = null;
-      fieldSetFlags()[8] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'trackingState' field.
-      * @return The value.
-      */
-    public java.lang.String getTrackingState() {
-      return trackingState;
-    }
-
-    /**
-      * Sets the value of the 'trackingState' field.
-      * @param value The value of 'trackingState'.
-      * @return This builder.
-      */
-    public com.fretron.Model.ShipmentObject.Builder setTrackingState(java.lang.String value) {
-      validate(fields()[9], value);
-      this.trackingState = value;
-      fieldSetFlags()[9] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'trackingState' field has been set.
-      * @return True if the 'trackingState' field has been set, false otherwise.
-      */
-    public boolean hasTrackingState() {
-      return fieldSetFlags()[9];
-    }
-
-
-    /**
-      * Clears the value of the 'trackingState' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.ShipmentObject.Builder clearTrackingState() {
-      trackingState = null;
       fieldSetFlags()[9] = false;
       return this;
     }
@@ -912,27 +832,19 @@ public class ShipmentObject extends org.apache.avro.specific.SpecificRecordBase 
       try {
         ShipmentObject record = new ShipmentObject();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
-        record.consigners = fieldSetFlags()[1] ? this.consigners : (java.util.List<com.fretron.Model.BuisnessPartner>) defaultValue(fields()[1]);
-        record.consignees = fieldSetFlags()[2] ? this.consignees : (java.util.List<com.fretron.Model.BuisnessPartner>) defaultValue(fields()[2]);
-        record.trackingStages = fieldSetFlags()[3] ? this.trackingStages : (java.util.List<com.fretron.Model.ShipmentStage>) defaultValue(fields()[3]);
-        if (deviceInfoBuilder != null) {
-          record.deviceInfo = this.deviceInfoBuilder.build();
+        record.consignments = fieldSetFlags()[1] ? this.consignments : (java.util.List<com.fretron.Model.Consignment>) defaultValue(fields()[1]);
+        record.equipments = fieldSetFlags()[2] ? this.equipments : (java.util.List<com.fretron.Model.Equipment>) defaultValue(fields()[2]);
+        record.shipmentStages = fieldSetFlags()[3] ? this.shipmentStages : (java.util.List<com.fretron.Model.ShipmentStage>) defaultValue(fields()[3]);
+        record.shipmentType = fieldSetFlags()[4] ? this.shipmentType : (java.lang.String) defaultValue(fields()[4]);
+        record.transportationMode = fieldSetFlags()[5] ? this.transportationMode : (java.lang.String) defaultValue(fields()[5]);
+        record.shipmentStatus = fieldSetFlags()[6] ? this.shipmentStatus : (java.lang.String) defaultValue(fields()[6]);
+        record.shipmentTrackingStatus = fieldSetFlags()[7] ? this.shipmentTrackingStatus : (java.lang.String) defaultValue(fields()[7]);
+        if (fleetInfoBuilder != null) {
+          record.fleetInfo = this.fleetInfoBuilder.build();
         } else {
-          record.deviceInfo = fieldSetFlags()[4] ? this.deviceInfo : (com.fretron.Model.Device) defaultValue(fields()[4]);
+          record.fleetInfo = fieldSetFlags()[8] ? this.fleetInfo : (com.fretron.Model.FleetInfo) defaultValue(fields()[8]);
         }
-        if (vehicleInfoBuilder != null) {
-          record.vehicleInfo = this.vehicleInfoBuilder.build();
-        } else {
-          record.vehicleInfo = fieldSetFlags()[5] ? this.vehicleInfo : (com.fretron.Model.Vehicle) defaultValue(fields()[5]);
-        }
-        if (vehicleOwnerInfoBuilder != null) {
-          record.vehicleOwnerInfo = this.vehicleOwnerInfoBuilder.build();
-        } else {
-          record.vehicleOwnerInfo = fieldSetFlags()[6] ? this.vehicleOwnerInfo : (com.fretron.Model.Organisation) defaultValue(fields()[6]);
-        }
-        record.orgId = fieldSetFlags()[7] ? this.orgId : (java.lang.String) defaultValue(fields()[7]);
-        record.trackingType = fieldSetFlags()[8] ? this.trackingType : (java.lang.String) defaultValue(fields()[8]);
-        record.trackingState = fieldSetFlags()[9] ? this.trackingState : (java.lang.String) defaultValue(fields()[9]);
+        record.orgId = fieldSetFlags()[9] ? this.orgId : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

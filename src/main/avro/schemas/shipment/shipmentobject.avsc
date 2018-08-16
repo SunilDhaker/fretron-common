@@ -2,6 +2,214 @@
   {
     "namespace": "com.fretron.Model",
     "type": "record",
+    "name": "FleetInfo",
+    "fields": [
+      {
+        "name": "vehicle",
+        "type": [
+          "null",
+          "com.fretron.Model.Vehicle"
+        ],
+        "default": null
+      },
+      {
+        "name": "driver",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Driver"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetOwner",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingMode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "LoadInfo",
+    "fields": [
+      {
+        "name": "measurmentType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "unitOfMeasurment",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "plannedQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "loadedQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "deliveredQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "shortage",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "frieghtDeductableQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "claimQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Consignment",
+    "fields": [
+      {
+        "name": "consigner",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignee",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "salesOffice",
+        "type": [
+          "null",
+          "com.fretron.Model.OrgOffice"
+        ],
+        "default": null
+      },
+      {
+        "name": "billingType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "billToParty",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "loadInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.LoadInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "invoiceNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignmentNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "poNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "workOrderNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
     "name": "ShipmentStage",
     "fields": [
       {
@@ -15,96 +223,48 @@
           "com.fretron.Model.TripPoint"
         ],
         "default": null
-      }
-    ]
-  },
-  {
-    "namespace": "com.fretron.Model",
-    "type": "record",
-    "name": "ShipmentObject",
-    "fields": [
-      {
-        "name": "uuid",
-        "type": "string"
       },
       {
-        "name": "consigners",
+        "name": "resourcePickup",
         "type": [
           "null",
           {
             "type": "array",
-            "items": "com.fretron.Model.BuisnessPartner"
+            "items": "string"
           }
         ],
         "default": null
       },
       {
-        "name": "consignees",
+        "name": "resourceDropOff",
         "type": [
           "null",
           {
             "type": "array",
-            "items": "com.fretron.Model.BuisnessPartner"
+            "items": "string"
           }
         ],
         "default": null
       },
       {
-        "name": "trackingStages",
+        "name": "consignmentPickUps",
         "type": [
           "null",
           {
             "type": "array",
-            "items": "com.fretron.Model.ShipmentStage"
+            "items": "string"
           }
         ],
         "default": null
       },
       {
-        "name": "deviceInfo",
+        "name": "consignmentDelivered",
         "type": [
           "null",
-          "com.fretron.Model.Device"
-        ],
-        "default": null
-      },
-      {
-        "name": "vehicleInfo",
-        "type": [
-          "null",
-          "com.fretron.Model.Vehicle"
-        ],
-        "default": null
-      },
-      {
-        "name": "vehicleOwnerInfo",
-        "type": [
-          "null",
-          "com.fretron.Model.Organisation"
-        ],
-        "default": null
-      },
-      {
-        "name": "orgId",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "trackingType",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "trackingState",
-        "type": [
-          "null",
-          "string"
+          {
+            "type": "array",
+            "items": "string"
+          }
         ],
         "default": null
       }
@@ -170,6 +330,99 @@
         ],
         "default": null
       }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentObject",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "consignments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Consignment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "equipments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Equipment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ShipmentStage"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "transportationMode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentTrackingStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.FleetInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+
     ]
   }
 ]
