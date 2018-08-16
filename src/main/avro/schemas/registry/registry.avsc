@@ -67,6 +67,14 @@
                 "default":null
             },
             {
+                "name":"place",
+                "type":[
+                    "null",
+                    "com.fretron.Model.Place"
+                ],
+                "default":null
+            },
+            {
                 "name":"contacts",
                 "type": ["null",{"type" : "array", "items":"com.fretron.Model.Contact"}],
                 "default":null
