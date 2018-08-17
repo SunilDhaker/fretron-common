@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8176454243707059940L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2142547828404988535L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public java.lang.String fretronId;
   @Deprecated public com.fretron.Model.GeoJsonFence geoFence;
   @Deprecated public java.util.List<com.fretron.Model.Place> places;
   @Deprecated public java.util.List<com.fretron.Model.Contact> contacts;
@@ -34,16 +35,18 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
    * @param uuid The new value for uuid
    * @param name The new value for name
    * @param orgId The new value for orgId
+   * @param fretronId The new value for fretronId
    * @param geoFence The new value for geoFence
    * @param places The new value for places
    * @param contacts The new value for contacts
    * @param location The new value for location
    * @param type The new value for type
    */
-  public BuisnessPartner(java.lang.String uuid, java.lang.String name, java.lang.String orgId, com.fretron.Model.GeoJsonFence geoFence, java.util.List<com.fretron.Model.Place> places, java.util.List<com.fretron.Model.Contact> contacts, com.fretron.Model.Location location, java.lang.String type) {
+  public BuisnessPartner(java.lang.String uuid, java.lang.String name, java.lang.String orgId, java.lang.String fretronId, com.fretron.Model.GeoJsonFence geoFence, java.util.List<com.fretron.Model.Place> places, java.util.List<com.fretron.Model.Contact> contacts, com.fretron.Model.Location location, java.lang.String type) {
     this.uuid = uuid;
     this.name = name;
     this.orgId = orgId;
+    this.fretronId = fretronId;
     this.geoFence = geoFence;
     this.places = places;
     this.contacts = contacts;
@@ -58,11 +61,12 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     case 0: return uuid;
     case 1: return name;
     case 2: return orgId;
-    case 3: return geoFence;
-    case 4: return places;
-    case 5: return contacts;
-    case 6: return location;
-    case 7: return type;
+    case 3: return fretronId;
+    case 4: return geoFence;
+    case 5: return places;
+    case 6: return contacts;
+    case 7: return location;
+    case 8: return type;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,11 +78,12 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     case 0: uuid = (java.lang.String)value$; break;
     case 1: name = (java.lang.String)value$; break;
     case 2: orgId = (java.lang.String)value$; break;
-    case 3: geoFence = (com.fretron.Model.GeoJsonFence)value$; break;
-    case 4: places = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 5: contacts = (java.util.List<com.fretron.Model.Contact>)value$; break;
-    case 6: location = (com.fretron.Model.Location)value$; break;
-    case 7: type = (java.lang.String)value$; break;
+    case 3: fretronId = (java.lang.String)value$; break;
+    case 4: geoFence = (com.fretron.Model.GeoJsonFence)value$; break;
+    case 5: places = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 6: contacts = (java.util.List<com.fretron.Model.Contact>)value$; break;
+    case 7: location = (com.fretron.Model.Location)value$; break;
+    case 8: type = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +134,22 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
    */
   public void setOrgId(java.lang.String value) {
     this.orgId = value;
+  }
+
+  /**
+   * Gets the value of the 'fretronId' field.
+   * @return The value of the 'fretronId' field.
+   */
+  public java.lang.String getFretronId() {
+    return fretronId;
+  }
+
+  /**
+   * Sets the value of the 'fretronId' field.
+   * @param value the value to set.
+   */
+  public void setFretronId(java.lang.String value) {
+    this.fretronId = value;
   }
 
   /**
@@ -246,6 +267,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.String uuid;
     private java.lang.String name;
     private java.lang.String orgId;
+    private java.lang.String fretronId;
     private com.fretron.Model.GeoJsonFence geoFence;
     private com.fretron.Model.GeoJsonFence.Builder geoFenceBuilder;
     private java.util.List<com.fretron.Model.Place> places;
@@ -277,31 +299,35 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
         this.orgId = data().deepCopy(fields()[2].schema(), other.orgId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.geoFence)) {
-        this.geoFence = data().deepCopy(fields()[3].schema(), other.geoFence);
+      if (isValidValue(fields()[3], other.fretronId)) {
+        this.fretronId = data().deepCopy(fields()[3].schema(), other.fretronId);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.geoFence)) {
+        this.geoFence = data().deepCopy(fields()[4].schema(), other.geoFence);
+        fieldSetFlags()[4] = true;
       }
       if (other.hasGeoFenceBuilder()) {
         this.geoFenceBuilder = com.fretron.Model.GeoJsonFence.newBuilder(other.getGeoFenceBuilder());
       }
-      if (isValidValue(fields()[4], other.places)) {
-        this.places = data().deepCopy(fields()[4].schema(), other.places);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.contacts)) {
-        this.contacts = data().deepCopy(fields()[5].schema(), other.contacts);
+      if (isValidValue(fields()[5], other.places)) {
+        this.places = data().deepCopy(fields()[5].schema(), other.places);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.location)) {
-        this.location = data().deepCopy(fields()[6].schema(), other.location);
+      if (isValidValue(fields()[6], other.contacts)) {
+        this.contacts = data().deepCopy(fields()[6].schema(), other.contacts);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.location)) {
+        this.location = data().deepCopy(fields()[7].schema(), other.location);
+        fieldSetFlags()[7] = true;
       }
       if (other.hasLocationBuilder()) {
         this.locationBuilder = com.fretron.Model.Location.newBuilder(other.getLocationBuilder());
       }
-      if (isValidValue(fields()[7], other.type)) {
-        this.type = data().deepCopy(fields()[7].schema(), other.type);
-        fieldSetFlags()[7] = true;
+      if (isValidValue(fields()[8], other.type)) {
+        this.type = data().deepCopy(fields()[8].schema(), other.type);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -323,27 +349,31 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
         this.orgId = data().deepCopy(fields()[2].schema(), other.orgId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.geoFence)) {
-        this.geoFence = data().deepCopy(fields()[3].schema(), other.geoFence);
+      if (isValidValue(fields()[3], other.fretronId)) {
+        this.fretronId = data().deepCopy(fields()[3].schema(), other.fretronId);
         fieldSetFlags()[3] = true;
       }
-      this.geoFenceBuilder = null;
-      if (isValidValue(fields()[4], other.places)) {
-        this.places = data().deepCopy(fields()[4].schema(), other.places);
+      if (isValidValue(fields()[4], other.geoFence)) {
+        this.geoFence = data().deepCopy(fields()[4].schema(), other.geoFence);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.contacts)) {
-        this.contacts = data().deepCopy(fields()[5].schema(), other.contacts);
+      this.geoFenceBuilder = null;
+      if (isValidValue(fields()[5], other.places)) {
+        this.places = data().deepCopy(fields()[5].schema(), other.places);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.location)) {
-        this.location = data().deepCopy(fields()[6].schema(), other.location);
+      if (isValidValue(fields()[6], other.contacts)) {
+        this.contacts = data().deepCopy(fields()[6].schema(), other.contacts);
         fieldSetFlags()[6] = true;
       }
-      this.locationBuilder = null;
-      if (isValidValue(fields()[7], other.type)) {
-        this.type = data().deepCopy(fields()[7].schema(), other.type);
+      if (isValidValue(fields()[7], other.location)) {
+        this.location = data().deepCopy(fields()[7].schema(), other.location);
         fieldSetFlags()[7] = true;
+      }
+      this.locationBuilder = null;
+      if (isValidValue(fields()[8], other.type)) {
+        this.type = data().deepCopy(fields()[8].schema(), other.type);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -465,6 +495,45 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
+      * Gets the value of the 'fretronId' field.
+      * @return The value.
+      */
+    public java.lang.String getFretronId() {
+      return fretronId;
+    }
+
+    /**
+      * Sets the value of the 'fretronId' field.
+      * @param value The value of 'fretronId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.BuisnessPartner.Builder setFretronId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.fretronId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'fretronId' field has been set.
+      * @return True if the 'fretronId' field has been set, false otherwise.
+      */
+    public boolean hasFretronId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'fretronId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.BuisnessPartner.Builder clearFretronId() {
+      fretronId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'geoFence' field.
       * @return The value.
       */
@@ -478,10 +547,10 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.BuisnessPartner.Builder setGeoFence(com.fretron.Model.GeoJsonFence value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.geoFenceBuilder = null;
       this.geoFence = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -490,7 +559,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'geoFence' field has been set, false otherwise.
       */
     public boolean hasGeoFence() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
     /**
@@ -534,7 +603,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     public com.fretron.Model.BuisnessPartner.Builder clearGeoFence() {
       geoFence = null;
       geoFenceBuilder = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -552,9 +621,9 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.BuisnessPartner.Builder setPlaces(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.places = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -563,7 +632,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'places' field has been set, false otherwise.
       */
     public boolean hasPlaces() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -573,7 +642,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.BuisnessPartner.Builder clearPlaces() {
       places = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -591,9 +660,9 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.BuisnessPartner.Builder setContacts(java.util.List<com.fretron.Model.Contact> value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.contacts = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -602,7 +671,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'contacts' field has been set, false otherwise.
       */
     public boolean hasContacts() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -612,7 +681,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.BuisnessPartner.Builder clearContacts() {
       contacts = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -630,10 +699,10 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.BuisnessPartner.Builder setLocation(com.fretron.Model.Location value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.locationBuilder = null;
       this.location = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -642,7 +711,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'location' field has been set, false otherwise.
       */
     public boolean hasLocation() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
     /**
@@ -686,7 +755,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     public com.fretron.Model.BuisnessPartner.Builder clearLocation() {
       location = null;
       locationBuilder = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -704,9 +773,9 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return This builder.
       */
     public com.fretron.Model.BuisnessPartner.Builder setType(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.type = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -715,7 +784,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       * @return True if the 'type' field has been set, false otherwise.
       */
     public boolean hasType() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -725,7 +794,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       */
     public com.fretron.Model.BuisnessPartner.Builder clearType() {
       type = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -736,19 +805,20 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.name = fieldSetFlags()[1] ? this.name : (java.lang.String) defaultValue(fields()[1]);
         record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);
+        record.fretronId = fieldSetFlags()[3] ? this.fretronId : (java.lang.String) defaultValue(fields()[3]);
         if (geoFenceBuilder != null) {
           record.geoFence = this.geoFenceBuilder.build();
         } else {
-          record.geoFence = fieldSetFlags()[3] ? this.geoFence : (com.fretron.Model.GeoJsonFence) defaultValue(fields()[3]);
+          record.geoFence = fieldSetFlags()[4] ? this.geoFence : (com.fretron.Model.GeoJsonFence) defaultValue(fields()[4]);
         }
-        record.places = fieldSetFlags()[4] ? this.places : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[4]);
-        record.contacts = fieldSetFlags()[5] ? this.contacts : (java.util.List<com.fretron.Model.Contact>) defaultValue(fields()[5]);
+        record.places = fieldSetFlags()[5] ? this.places : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[5]);
+        record.contacts = fieldSetFlags()[6] ? this.contacts : (java.util.List<com.fretron.Model.Contact>) defaultValue(fields()[6]);
         if (locationBuilder != null) {
           record.location = this.locationBuilder.build();
         } else {
-          record.location = fieldSetFlags()[6] ? this.location : (com.fretron.Model.Location) defaultValue(fields()[6]);
+          record.location = fieldSetFlags()[7] ? this.location : (com.fretron.Model.Location) defaultValue(fields()[7]);
         }
-        record.type = fieldSetFlags()[7] ? this.type : (java.lang.String) defaultValue(fields()[7]);
+        record.type = fieldSetFlags()[8] ? this.type : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
