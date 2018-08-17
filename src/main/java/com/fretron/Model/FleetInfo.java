@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8335250654762115561L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FleetInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Vehicle\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"driver\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Driver\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"fleetType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fleetOwner\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"secondaryNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"trackingMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 3841162427060381951L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FleetInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"vehicle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Vehicle\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"driver\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Driver\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"device\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Device\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"fleetType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fleetOwner\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"trackingMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.Vehicle vehicle;
   @Deprecated public java.util.List<com.fretron.Model.Driver> driver;
+  @Deprecated public com.fretron.Model.Device device;
   @Deprecated public java.lang.String fleetType;
   @Deprecated public com.fretron.Model.BuisnessPartner fleetOwner;
   @Deprecated public java.lang.String trackingMode;
@@ -30,13 +31,15 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
    * All-args constructor.
    * @param vehicle The new value for vehicle
    * @param driver The new value for driver
+   * @param device The new value for device
    * @param fleetType The new value for fleetType
    * @param fleetOwner The new value for fleetOwner
    * @param trackingMode The new value for trackingMode
    */
-  public FleetInfo(com.fretron.Model.Vehicle vehicle, java.util.List<com.fretron.Model.Driver> driver, java.lang.String fleetType, com.fretron.Model.BuisnessPartner fleetOwner, java.lang.String trackingMode) {
+  public FleetInfo(com.fretron.Model.Vehicle vehicle, java.util.List<com.fretron.Model.Driver> driver, com.fretron.Model.Device device, java.lang.String fleetType, com.fretron.Model.BuisnessPartner fleetOwner, java.lang.String trackingMode) {
     this.vehicle = vehicle;
     this.driver = driver;
+    this.device = device;
     this.fleetType = fleetType;
     this.fleetOwner = fleetOwner;
     this.trackingMode = trackingMode;
@@ -48,9 +51,10 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: return vehicle;
     case 1: return driver;
-    case 2: return fleetType;
-    case 3: return fleetOwner;
-    case 4: return trackingMode;
+    case 2: return device;
+    case 3: return fleetType;
+    case 4: return fleetOwner;
+    case 5: return trackingMode;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -61,9 +65,10 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: vehicle = (com.fretron.Model.Vehicle)value$; break;
     case 1: driver = (java.util.List<com.fretron.Model.Driver>)value$; break;
-    case 2: fleetType = (java.lang.String)value$; break;
-    case 3: fleetOwner = (com.fretron.Model.BuisnessPartner)value$; break;
-    case 4: trackingMode = (java.lang.String)value$; break;
+    case 2: device = (com.fretron.Model.Device)value$; break;
+    case 3: fleetType = (java.lang.String)value$; break;
+    case 4: fleetOwner = (com.fretron.Model.BuisnessPartner)value$; break;
+    case 5: trackingMode = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -98,6 +103,22 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
    */
   public void setDriver(java.util.List<com.fretron.Model.Driver> value) {
     this.driver = value;
+  }
+
+  /**
+   * Gets the value of the 'device' field.
+   * @return The value of the 'device' field.
+   */
+  public com.fretron.Model.Device getDevice() {
+    return device;
+  }
+
+  /**
+   * Sets the value of the 'device' field.
+   * @param value the value to set.
+   */
+  public void setDevice(com.fretron.Model.Device value) {
+    this.device = value;
   }
 
   /**
@@ -183,6 +204,8 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
     private com.fretron.Model.Vehicle vehicle;
     private com.fretron.Model.Vehicle.Builder vehicleBuilder;
     private java.util.List<com.fretron.Model.Driver> driver;
+    private com.fretron.Model.Device device;
+    private com.fretron.Model.Device.Builder deviceBuilder;
     private java.lang.String fleetType;
     private com.fretron.Model.BuisnessPartner fleetOwner;
     private com.fretron.Model.BuisnessPartner.Builder fleetOwnerBuilder;
@@ -210,20 +233,27 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
         this.driver = data().deepCopy(fields()[1].schema(), other.driver);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.fleetType)) {
-        this.fleetType = data().deepCopy(fields()[2].schema(), other.fleetType);
+      if (isValidValue(fields()[2], other.device)) {
+        this.device = data().deepCopy(fields()[2].schema(), other.device);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.fleetOwner)) {
-        this.fleetOwner = data().deepCopy(fields()[3].schema(), other.fleetOwner);
+      if (other.hasDeviceBuilder()) {
+        this.deviceBuilder = com.fretron.Model.Device.newBuilder(other.getDeviceBuilder());
+      }
+      if (isValidValue(fields()[3], other.fleetType)) {
+        this.fleetType = data().deepCopy(fields()[3].schema(), other.fleetType);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.fleetOwner)) {
+        this.fleetOwner = data().deepCopy(fields()[4].schema(), other.fleetOwner);
+        fieldSetFlags()[4] = true;
       }
       if (other.hasFleetOwnerBuilder()) {
         this.fleetOwnerBuilder = com.fretron.Model.BuisnessPartner.newBuilder(other.getFleetOwnerBuilder());
       }
-      if (isValidValue(fields()[4], other.trackingMode)) {
-        this.trackingMode = data().deepCopy(fields()[4].schema(), other.trackingMode);
-        fieldSetFlags()[4] = true;
+      if (isValidValue(fields()[5], other.trackingMode)) {
+        this.trackingMode = data().deepCopy(fields()[5].schema(), other.trackingMode);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -242,18 +272,23 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
         this.driver = data().deepCopy(fields()[1].schema(), other.driver);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.fleetType)) {
-        this.fleetType = data().deepCopy(fields()[2].schema(), other.fleetType);
+      if (isValidValue(fields()[2], other.device)) {
+        this.device = data().deepCopy(fields()[2].schema(), other.device);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.fleetOwner)) {
-        this.fleetOwner = data().deepCopy(fields()[3].schema(), other.fleetOwner);
+      this.deviceBuilder = null;
+      if (isValidValue(fields()[3], other.fleetType)) {
+        this.fleetType = data().deepCopy(fields()[3].schema(), other.fleetType);
         fieldSetFlags()[3] = true;
       }
-      this.fleetOwnerBuilder = null;
-      if (isValidValue(fields()[4], other.trackingMode)) {
-        this.trackingMode = data().deepCopy(fields()[4].schema(), other.trackingMode);
+      if (isValidValue(fields()[4], other.fleetOwner)) {
+        this.fleetOwner = data().deepCopy(fields()[4].schema(), other.fleetOwner);
         fieldSetFlags()[4] = true;
+      }
+      this.fleetOwnerBuilder = null;
+      if (isValidValue(fields()[5], other.trackingMode)) {
+        this.trackingMode = data().deepCopy(fields()[5].schema(), other.trackingMode);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -371,6 +406,80 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'device' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Device getDevice() {
+      return device;
+    }
+
+    /**
+      * Sets the value of the 'device' field.
+      * @param value The value of 'device'.
+      * @return This builder.
+      */
+    public com.fretron.Model.FleetInfo.Builder setDevice(com.fretron.Model.Device value) {
+      validate(fields()[2], value);
+      this.deviceBuilder = null;
+      this.device = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'device' field has been set.
+      * @return True if the 'device' field has been set, false otherwise.
+      */
+    public boolean hasDevice() {
+      return fieldSetFlags()[2];
+    }
+
+    /**
+     * Gets the Builder instance for the 'device' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Device.Builder getDeviceBuilder() {
+      if (deviceBuilder == null) {
+        if (hasDevice()) {
+          setDeviceBuilder(com.fretron.Model.Device.newBuilder(device));
+        } else {
+          setDeviceBuilder(com.fretron.Model.Device.newBuilder());
+        }
+      }
+      return deviceBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'device' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.FleetInfo.Builder setDeviceBuilder(com.fretron.Model.Device.Builder value) {
+      clearDevice();
+      deviceBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'device' field has an active Builder instance
+     * @return True if the 'device' field has an active Builder instance
+     */
+    public boolean hasDeviceBuilder() {
+      return deviceBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'device' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.FleetInfo.Builder clearDevice() {
+      device = null;
+      deviceBuilder = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'fleetType' field.
       * @return The value.
       */
@@ -384,9 +493,9 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.FleetInfo.Builder setFleetType(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.fleetType = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -395,7 +504,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'fleetType' field has been set, false otherwise.
       */
     public boolean hasFleetType() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -405,7 +514,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.FleetInfo.Builder clearFleetType() {
       fleetType = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -423,10 +532,10 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.FleetInfo.Builder setFleetOwner(com.fretron.Model.BuisnessPartner value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.fleetOwnerBuilder = null;
       this.fleetOwner = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -435,7 +544,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'fleetOwner' field has been set, false otherwise.
       */
     public boolean hasFleetOwner() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
     /**
@@ -479,7 +588,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.FleetInfo.Builder clearFleetOwner() {
       fleetOwner = null;
       fleetOwnerBuilder = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -497,9 +606,9 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.FleetInfo.Builder setTrackingMode(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.trackingMode = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -508,7 +617,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'trackingMode' field has been set, false otherwise.
       */
     public boolean hasTrackingMode() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -518,7 +627,7 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.FleetInfo.Builder clearTrackingMode() {
       trackingMode = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -532,13 +641,18 @@ public class FleetInfo extends org.apache.avro.specific.SpecificRecordBase imple
           record.vehicle = fieldSetFlags()[0] ? this.vehicle : (com.fretron.Model.Vehicle) defaultValue(fields()[0]);
         }
         record.driver = fieldSetFlags()[1] ? this.driver : (java.util.List<com.fretron.Model.Driver>) defaultValue(fields()[1]);
-        record.fleetType = fieldSetFlags()[2] ? this.fleetType : (java.lang.String) defaultValue(fields()[2]);
+        if (deviceBuilder != null) {
+          record.device = this.deviceBuilder.build();
+        } else {
+          record.device = fieldSetFlags()[2] ? this.device : (com.fretron.Model.Device) defaultValue(fields()[2]);
+        }
+        record.fleetType = fieldSetFlags()[3] ? this.fleetType : (java.lang.String) defaultValue(fields()[3]);
         if (fleetOwnerBuilder != null) {
           record.fleetOwner = this.fleetOwnerBuilder.build();
         } else {
-          record.fleetOwner = fieldSetFlags()[3] ? this.fleetOwner : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[3]);
+          record.fleetOwner = fieldSetFlags()[4] ? this.fleetOwner : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[4]);
         }
-        record.trackingMode = fieldSetFlags()[4] ? this.trackingMode : (java.lang.String) defaultValue(fields()[4]);
+        record.trackingMode = fieldSetFlags()[5] ? this.trackingMode : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

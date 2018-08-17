@@ -10,14 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Contact extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5080602946114544531L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contact\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"secondaryNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 181712063090225176L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contact\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String address;
   @Deprecated public java.util.List<java.lang.String> emails;
-  @Deprecated public java.util.List<java.lang.String> secondaryNumbers;
+  @Deprecated public java.util.List<java.lang.String> mobileNumbers;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -32,14 +32,14 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param mobileNumber The new value for mobileNumber
    * @param address The new value for address
    * @param emails The new value for emails
-   * @param secondaryNumbers The new value for secondaryNumbers
+   * @param mobileNumbers The new value for mobileNumbers
    */
-  public Contact(java.lang.String name, java.lang.String mobileNumber, java.lang.String address, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> secondaryNumbers) {
+  public Contact(java.lang.String name, java.lang.String mobileNumber, java.lang.String address, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.address = address;
     this.emails = emails;
-    this.secondaryNumbers = secondaryNumbers;
+    this.mobileNumbers = mobileNumbers;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -50,7 +50,7 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     case 1: return mobileNumber;
     case 2: return address;
     case 3: return emails;
-    case 4: return secondaryNumbers;
+    case 4: return mobileNumbers;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -63,7 +63,7 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     case 1: mobileNumber = (java.lang.String)value$; break;
     case 2: address = (java.lang.String)value$; break;
     case 3: emails = (java.util.List<java.lang.String>)value$; break;
-    case 4: secondaryNumbers = (java.util.List<java.lang.String>)value$; break;
+    case 4: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -133,19 +133,19 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
-   * Gets the value of the 'secondaryNumbers' field.
-   * @return The value of the 'secondaryNumbers' field.
+   * Gets the value of the 'mobileNumbers' field.
+   * @return The value of the 'mobileNumbers' field.
    */
-  public java.util.List<java.lang.String> getSecondaryNumbers() {
-    return secondaryNumbers;
+  public java.util.List<java.lang.String> getMobileNumbers() {
+    return mobileNumbers;
   }
 
   /**
-   * Sets the value of the 'secondaryNumbers' field.
+   * Sets the value of the 'mobileNumbers' field.
    * @param value the value to set.
    */
-  public void setSecondaryNumbers(java.util.List<java.lang.String> value) {
-    this.secondaryNumbers = value;
+  public void setMobileNumbers(java.util.List<java.lang.String> value) {
+    this.mobileNumbers = value;
   }
 
   /**
@@ -184,7 +184,7 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String mobileNumber;
     private java.lang.String address;
     private java.util.List<java.lang.String> emails;
-    private java.util.List<java.lang.String> secondaryNumbers;
+    private java.util.List<java.lang.String> mobileNumbers;
 
     /** Creates a new Builder */
     private Builder() {
@@ -213,8 +213,8 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
         this.emails = data().deepCopy(fields()[3].schema(), other.emails);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.secondaryNumbers)) {
-        this.secondaryNumbers = data().deepCopy(fields()[4].schema(), other.secondaryNumbers);
+      if (isValidValue(fields()[4], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[4].schema(), other.mobileNumbers);
         fieldSetFlags()[4] = true;
       }
     }
@@ -241,8 +241,8 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
         this.emails = data().deepCopy(fields()[3].schema(), other.emails);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.secondaryNumbers)) {
-        this.secondaryNumbers = data().deepCopy(fields()[4].schema(), other.secondaryNumbers);
+      if (isValidValue(fields()[4], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[4].schema(), other.mobileNumbers);
         fieldSetFlags()[4] = true;
       }
     }
@@ -404,40 +404,40 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     }
 
     /**
-      * Gets the value of the 'secondaryNumbers' field.
+      * Gets the value of the 'mobileNumbers' field.
       * @return The value.
       */
-    public java.util.List<java.lang.String> getSecondaryNumbers() {
-      return secondaryNumbers;
+    public java.util.List<java.lang.String> getMobileNumbers() {
+      return mobileNumbers;
     }
 
     /**
-      * Sets the value of the 'secondaryNumbers' field.
-      * @param value The value of 'secondaryNumbers'.
+      * Sets the value of the 'mobileNumbers' field.
+      * @param value The value of 'mobileNumbers'.
       * @return This builder.
       */
-    public com.fretron.Model.Contact.Builder setSecondaryNumbers(java.util.List<java.lang.String> value) {
+    public com.fretron.Model.Contact.Builder setMobileNumbers(java.util.List<java.lang.String> value) {
       validate(fields()[4], value);
-      this.secondaryNumbers = value;
+      this.mobileNumbers = value;
       fieldSetFlags()[4] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'secondaryNumbers' field has been set.
-      * @return True if the 'secondaryNumbers' field has been set, false otherwise.
+      * Checks whether the 'mobileNumbers' field has been set.
+      * @return True if the 'mobileNumbers' field has been set, false otherwise.
       */
-    public boolean hasSecondaryNumbers() {
+    public boolean hasMobileNumbers() {
       return fieldSetFlags()[4];
     }
 
 
     /**
-      * Clears the value of the 'secondaryNumbers' field.
+      * Clears the value of the 'mobileNumbers' field.
       * @return This builder.
       */
-    public com.fretron.Model.Contact.Builder clearSecondaryNumbers() {
-      secondaryNumbers = null;
+    public com.fretron.Model.Contact.Builder clearMobileNumbers() {
+      mobileNumbers = null;
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -450,7 +450,7 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
         record.mobileNumber = fieldSetFlags()[1] ? this.mobileNumber : (java.lang.String) defaultValue(fields()[1]);
         record.address = fieldSetFlags()[2] ? this.address : (java.lang.String) defaultValue(fields()[2]);
         record.emails = fieldSetFlags()[3] ? this.emails : (java.util.List<java.lang.String>) defaultValue(fields()[3]);
-        record.secondaryNumbers = fieldSetFlags()[4] ? this.secondaryNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
+        record.mobileNumbers = fieldSetFlags()[4] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

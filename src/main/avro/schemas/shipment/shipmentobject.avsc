@@ -24,6 +24,14 @@
         "default": null
       },
       {
+        "name": "device",
+        "type": [
+          "null",
+          "com.fretron.Model.Device"
+        ],
+        "default": null
+      },
+      {
         "name": "fleetType",
         "type": [
           "null",
@@ -126,6 +134,19 @@
     "name": "Consignment",
     "fields": [
       {
+        "name": "uuid",
+        "type":"string",
+        "default": null
+      },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+      {
         "name": "consigner",
         "type": [
           "null",
@@ -225,6 +246,14 @@
         "default": null
       },
       {
+        "name": "place",
+        "type": [
+          "null",
+          "com.fretron.Model.Place"
+        ],
+        "default": null
+      },
+      {
         "name": "resourcePickup",
         "type": [
           "null",
@@ -265,6 +294,14 @@
             "type": "array",
             "items": "string"
           }
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
         ],
         "default": null
       }

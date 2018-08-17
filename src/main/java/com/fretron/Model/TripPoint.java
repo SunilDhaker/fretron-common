@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5742214278714908764L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 7984515343412902369L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -32,6 +32,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public boolean isAutoCompleted;
   @Deprecated public java.lang.Double coveredDistance;
   @Deprecated public java.lang.Double purposedDistance;
+  @Deprecated public java.util.List<java.lang.String> forShipmentStages;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +62,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param isAutoCompleted The new value for isAutoCompleted
    * @param coveredDistance The new value for coveredDistance
    * @param purposedDistance The new value for purposedDistance
+   * @param forShipmentStages The new value for forShipmentStages
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance, java.util.List<java.lang.String> forShipmentStages) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.purpose = purpose;
@@ -82,6 +84,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     this.isAutoCompleted = isAutoCompleted;
     this.coveredDistance = coveredDistance;
     this.purposedDistance = purposedDistance;
+    this.forShipmentStages = forShipmentStages;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +110,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 16: return isAutoCompleted;
     case 17: return coveredDistance;
     case 18: return purposedDistance;
+    case 19: return forShipmentStages;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +138,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 16: isAutoCompleted = (java.lang.Boolean)value$; break;
     case 17: coveredDistance = (java.lang.Double)value$; break;
     case 18: purposedDistance = (java.lang.Double)value$; break;
+    case 19: forShipmentStages = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +448,22 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'forShipmentStages' field.
+   * @return The value of the 'forShipmentStages' field.
+   */
+  public java.util.List<java.lang.String> getForShipmentStages() {
+    return forShipmentStages;
+  }
+
+  /**
+   * Sets the value of the 'forShipmentStages' field.
+   * @param value the value to set.
+   */
+  public void setForShipmentStages(java.util.List<java.lang.String> value) {
+    this.forShipmentStages = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -494,6 +515,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private boolean isAutoCompleted;
     private java.lang.Double coveredDistance;
     private java.lang.Double purposedDistance;
+    private java.util.List<java.lang.String> forShipmentStages;
 
     /** Creates a new Builder */
     private Builder() {
@@ -585,6 +607,10 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.purposedDistance = data().deepCopy(fields()[18].schema(), other.purposedDistance);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.forShipmentStages)) {
+        this.forShipmentStages = data().deepCopy(fields()[19].schema(), other.forShipmentStages);
+        fieldSetFlags()[19] = true;
+      }
     }
 
     /**
@@ -669,6 +695,10 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[18], other.purposedDistance)) {
         this.purposedDistance = data().deepCopy(fields()[18].schema(), other.purposedDistance);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.forShipmentStages)) {
+        this.forShipmentStages = data().deepCopy(fields()[19].schema(), other.forShipmentStages);
+        fieldSetFlags()[19] = true;
       }
     }
 
@@ -1446,6 +1476,45 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'forShipmentStages' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getForShipmentStages() {
+      return forShipmentStages;
+    }
+
+    /**
+      * Sets the value of the 'forShipmentStages' field.
+      * @param value The value of 'forShipmentStages'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setForShipmentStages(java.util.List<java.lang.String> value) {
+      validate(fields()[19], value);
+      this.forShipmentStages = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'forShipmentStages' field has been set.
+      * @return True if the 'forShipmentStages' field has been set, false otherwise.
+      */
+    public boolean hasForShipmentStages() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'forShipmentStages' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearForShipmentStages() {
+      forShipmentStages = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
     @Override
     public TripPoint build() {
       try {
@@ -1473,6 +1542,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         record.isAutoCompleted = fieldSetFlags()[16] ? this.isAutoCompleted : (java.lang.Boolean) defaultValue(fields()[16]);
         record.coveredDistance = fieldSetFlags()[17] ? this.coveredDistance : (java.lang.Double) defaultValue(fields()[17]);
         record.purposedDistance = fieldSetFlags()[18] ? this.purposedDistance : (java.lang.Double) defaultValue(fields()[18]);
+        record.forShipmentStages = fieldSetFlags()[19] ? this.forShipmentStages : (java.util.List<java.lang.String>) defaultValue(fields()[19]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

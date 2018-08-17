@@ -33,7 +33,7 @@
                  "default":null
              },
              {
-                  "name":"secondaryNumbers",
+                  "name":"mobileNumbers",
                   "type": ["null",{"type" : "array", "items":"string"}],
                   "default":null
               }
