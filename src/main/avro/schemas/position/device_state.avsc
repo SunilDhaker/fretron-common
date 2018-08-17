@@ -28,7 +28,56 @@
         "name": "time",
         "type": "long",
         "logicalType": "timestamp-millis"
-      }
+      },
+      {
+        "name": "attributes",
+         "type": ["null","com.fretron.Model.Attributes"],
+         "default":null
+      },
+      {
+        "name": "duration",
+        "type": ["null" ,"long"],
+        "default" : null
+      },
+      {
+         "name": "sessionStartTime",
+         "type": ["null" ,"long"],
+         "logicalType": "timestamp-millis",
+          "default" : null
+       },
+      {
+         "name": "speedBand",
+          "type": ["null","string"],
+           "default" : null
+      },
+      {
+             "name": "activeAlarms",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "string"
+               }
+             ],
+             "default": null
+        },
+        {
+           "name": "speed",
+            "type": ["null","double"],
+             "default" : null
+        },
+        {
+                     "name": "forwardReasons",
+                     "type": [
+                       "null",
+                       {
+                         "type": "array",
+                         "items": "string"
+                       }
+                     ],
+                     "default": null
+        }
+
     ]
 
   }

@@ -1,6 +1,7 @@
 package com.fretron;
 
-import java.util.HashMap;
+import org.glassfish.jersey.client.ClientProperties;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -8,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
-import org.glassfish.jersey.client.ClientProperties;
+import java.util.HashMap;
 
 @Deprecated
 /**
