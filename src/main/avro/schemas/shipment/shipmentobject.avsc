@@ -237,6 +237,24 @@
         "name": "uuid",
         "type": "string"
       },
+    {
+        "name": "arrivalTime",
+        "type": [
+            "null",
+            "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+    },
+    {
+        "name": "departureTime",
+        "type": [
+            "null",
+            "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+    },
       {
         "name": "tripPoint",
         "type": [

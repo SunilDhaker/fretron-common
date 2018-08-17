@@ -10,10 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3227707070387310065L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentStage\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"resourcePickup\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceDropOff\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentPickUps\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentDelivered\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 3675634226111937727L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentStage\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"arrivalTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"departureTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"resourcePickup\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceDropOff\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentPickUps\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentDelivered\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.Long arrivalTime;
+  @Deprecated public java.lang.Long departureTime;
   @Deprecated public com.fretron.Model.TripPoint tripPoint;
   @Deprecated public com.fretron.Model.Place place;
   @Deprecated public java.util.List<java.lang.String> resourcePickup;
@@ -32,6 +34,8 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
   /**
    * All-args constructor.
    * @param uuid The new value for uuid
+   * @param arrivalTime The new value for arrivalTime
+   * @param departureTime The new value for departureTime
    * @param tripPoint The new value for tripPoint
    * @param place The new value for place
    * @param resourcePickup The new value for resourcePickup
@@ -40,8 +44,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
    * @param consignmentDelivered The new value for consignmentDelivered
    * @param status The new value for status
    */
-  public ShipmentStage(java.lang.String uuid, com.fretron.Model.TripPoint tripPoint, com.fretron.Model.Place place, java.util.List<java.lang.String> resourcePickup, java.util.List<java.lang.String> resourceDropOff, java.util.List<java.lang.String> consignmentPickUps, java.util.List<java.lang.String> consignmentDelivered, java.lang.String status) {
+  public ShipmentStage(java.lang.String uuid, java.lang.Long arrivalTime, java.lang.Long departureTime, com.fretron.Model.TripPoint tripPoint, com.fretron.Model.Place place, java.util.List<java.lang.String> resourcePickup, java.util.List<java.lang.String> resourceDropOff, java.util.List<java.lang.String> consignmentPickUps, java.util.List<java.lang.String> consignmentDelivered, java.lang.String status) {
     this.uuid = uuid;
+    this.arrivalTime = arrivalTime;
+    this.departureTime = departureTime;
     this.tripPoint = tripPoint;
     this.place = place;
     this.resourcePickup = resourcePickup;
@@ -56,13 +62,15 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return uuid;
-    case 1: return tripPoint;
-    case 2: return place;
-    case 3: return resourcePickup;
-    case 4: return resourceDropOff;
-    case 5: return consignmentPickUps;
-    case 6: return consignmentDelivered;
-    case 7: return status;
+    case 1: return arrivalTime;
+    case 2: return departureTime;
+    case 3: return tripPoint;
+    case 4: return place;
+    case 5: return resourcePickup;
+    case 6: return resourceDropOff;
+    case 7: return consignmentPickUps;
+    case 8: return consignmentDelivered;
+    case 9: return status;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -72,13 +80,15 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
-    case 1: tripPoint = (com.fretron.Model.TripPoint)value$; break;
-    case 2: place = (com.fretron.Model.Place)value$; break;
-    case 3: resourcePickup = (java.util.List<java.lang.String>)value$; break;
-    case 4: resourceDropOff = (java.util.List<java.lang.String>)value$; break;
-    case 5: consignmentPickUps = (java.util.List<java.lang.String>)value$; break;
-    case 6: consignmentDelivered = (java.util.List<java.lang.String>)value$; break;
-    case 7: status = (java.lang.String)value$; break;
+    case 1: arrivalTime = (java.lang.Long)value$; break;
+    case 2: departureTime = (java.lang.Long)value$; break;
+    case 3: tripPoint = (com.fretron.Model.TripPoint)value$; break;
+    case 4: place = (com.fretron.Model.Place)value$; break;
+    case 5: resourcePickup = (java.util.List<java.lang.String>)value$; break;
+    case 6: resourceDropOff = (java.util.List<java.lang.String>)value$; break;
+    case 7: consignmentPickUps = (java.util.List<java.lang.String>)value$; break;
+    case 8: consignmentDelivered = (java.util.List<java.lang.String>)value$; break;
+    case 9: status = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -97,6 +107,38 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
    */
   public void setUuid(java.lang.String value) {
     this.uuid = value;
+  }
+
+  /**
+   * Gets the value of the 'arrivalTime' field.
+   * @return The value of the 'arrivalTime' field.
+   */
+  public java.lang.Long getArrivalTime() {
+    return arrivalTime;
+  }
+
+  /**
+   * Sets the value of the 'arrivalTime' field.
+   * @param value the value to set.
+   */
+  public void setArrivalTime(java.lang.Long value) {
+    this.arrivalTime = value;
+  }
+
+  /**
+   * Gets the value of the 'departureTime' field.
+   * @return The value of the 'departureTime' field.
+   */
+  public java.lang.Long getDepartureTime() {
+    return departureTime;
+  }
+
+  /**
+   * Sets the value of the 'departureTime' field.
+   * @param value the value to set.
+   */
+  public void setDepartureTime(java.lang.Long value) {
+    this.departureTime = value;
   }
 
   /**
@@ -244,6 +286,8 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     implements org.apache.avro.data.RecordBuilder<ShipmentStage> {
 
     private java.lang.String uuid;
+    private java.lang.Long arrivalTime;
+    private java.lang.Long departureTime;
     private com.fretron.Model.TripPoint tripPoint;
     private com.fretron.Model.TripPoint.Builder tripPointBuilder;
     private com.fretron.Model.Place place;
@@ -269,39 +313,47 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.tripPoint)) {
-        this.tripPoint = data().deepCopy(fields()[1].schema(), other.tripPoint);
+      if (isValidValue(fields()[1], other.arrivalTime)) {
+        this.arrivalTime = data().deepCopy(fields()[1].schema(), other.arrivalTime);
         fieldSetFlags()[1] = true;
+      }
+      if (isValidValue(fields()[2], other.departureTime)) {
+        this.departureTime = data().deepCopy(fields()[2].schema(), other.departureTime);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.tripPoint)) {
+        this.tripPoint = data().deepCopy(fields()[3].schema(), other.tripPoint);
+        fieldSetFlags()[3] = true;
       }
       if (other.hasTripPointBuilder()) {
         this.tripPointBuilder = com.fretron.Model.TripPoint.newBuilder(other.getTripPointBuilder());
       }
-      if (isValidValue(fields()[2], other.place)) {
-        this.place = data().deepCopy(fields()[2].schema(), other.place);
-        fieldSetFlags()[2] = true;
+      if (isValidValue(fields()[4], other.place)) {
+        this.place = data().deepCopy(fields()[4].schema(), other.place);
+        fieldSetFlags()[4] = true;
       }
       if (other.hasPlaceBuilder()) {
         this.placeBuilder = com.fretron.Model.Place.newBuilder(other.getPlaceBuilder());
       }
-      if (isValidValue(fields()[3], other.resourcePickup)) {
-        this.resourcePickup = data().deepCopy(fields()[3].schema(), other.resourcePickup);
-        fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.resourceDropOff)) {
-        this.resourceDropOff = data().deepCopy(fields()[4].schema(), other.resourceDropOff);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.consignmentPickUps)) {
-        this.consignmentPickUps = data().deepCopy(fields()[5].schema(), other.consignmentPickUps);
+      if (isValidValue(fields()[5], other.resourcePickup)) {
+        this.resourcePickup = data().deepCopy(fields()[5].schema(), other.resourcePickup);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.consignmentDelivered)) {
-        this.consignmentDelivered = data().deepCopy(fields()[6].schema(), other.consignmentDelivered);
+      if (isValidValue(fields()[6], other.resourceDropOff)) {
+        this.resourceDropOff = data().deepCopy(fields()[6].schema(), other.resourceDropOff);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.status)) {
-        this.status = data().deepCopy(fields()[7].schema(), other.status);
+      if (isValidValue(fields()[7], other.consignmentPickUps)) {
+        this.consignmentPickUps = data().deepCopy(fields()[7].schema(), other.consignmentPickUps);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.consignmentDelivered)) {
+        this.consignmentDelivered = data().deepCopy(fields()[8].schema(), other.consignmentDelivered);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.status)) {
+        this.status = data().deepCopy(fields()[9].schema(), other.status);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -315,35 +367,43 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.tripPoint)) {
-        this.tripPoint = data().deepCopy(fields()[1].schema(), other.tripPoint);
+      if (isValidValue(fields()[1], other.arrivalTime)) {
+        this.arrivalTime = data().deepCopy(fields()[1].schema(), other.arrivalTime);
         fieldSetFlags()[1] = true;
       }
-      this.tripPointBuilder = null;
-      if (isValidValue(fields()[2], other.place)) {
-        this.place = data().deepCopy(fields()[2].schema(), other.place);
+      if (isValidValue(fields()[2], other.departureTime)) {
+        this.departureTime = data().deepCopy(fields()[2].schema(), other.departureTime);
         fieldSetFlags()[2] = true;
       }
-      this.placeBuilder = null;
-      if (isValidValue(fields()[3], other.resourcePickup)) {
-        this.resourcePickup = data().deepCopy(fields()[3].schema(), other.resourcePickup);
+      if (isValidValue(fields()[3], other.tripPoint)) {
+        this.tripPoint = data().deepCopy(fields()[3].schema(), other.tripPoint);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.resourceDropOff)) {
-        this.resourceDropOff = data().deepCopy(fields()[4].schema(), other.resourceDropOff);
+      this.tripPointBuilder = null;
+      if (isValidValue(fields()[4], other.place)) {
+        this.place = data().deepCopy(fields()[4].schema(), other.place);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.consignmentPickUps)) {
-        this.consignmentPickUps = data().deepCopy(fields()[5].schema(), other.consignmentPickUps);
+      this.placeBuilder = null;
+      if (isValidValue(fields()[5], other.resourcePickup)) {
+        this.resourcePickup = data().deepCopy(fields()[5].schema(), other.resourcePickup);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.consignmentDelivered)) {
-        this.consignmentDelivered = data().deepCopy(fields()[6].schema(), other.consignmentDelivered);
+      if (isValidValue(fields()[6], other.resourceDropOff)) {
+        this.resourceDropOff = data().deepCopy(fields()[6].schema(), other.resourceDropOff);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.status)) {
-        this.status = data().deepCopy(fields()[7].schema(), other.status);
+      if (isValidValue(fields()[7], other.consignmentPickUps)) {
+        this.consignmentPickUps = data().deepCopy(fields()[7].schema(), other.consignmentPickUps);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.consignmentDelivered)) {
+        this.consignmentDelivered = data().deepCopy(fields()[8].schema(), other.consignmentDelivered);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.status)) {
+        this.status = data().deepCopy(fields()[9].schema(), other.status);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -387,6 +447,84 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
+      * Gets the value of the 'arrivalTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getArrivalTime() {
+      return arrivalTime;
+    }
+
+    /**
+      * Sets the value of the 'arrivalTime' field.
+      * @param value The value of 'arrivalTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setArrivalTime(java.lang.Long value) {
+      validate(fields()[1], value);
+      this.arrivalTime = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'arrivalTime' field has been set.
+      * @return True if the 'arrivalTime' field has been set, false otherwise.
+      */
+    public boolean hasArrivalTime() {
+      return fieldSetFlags()[1];
+    }
+
+
+    /**
+      * Clears the value of the 'arrivalTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearArrivalTime() {
+      arrivalTime = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'departureTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getDepartureTime() {
+      return departureTime;
+    }
+
+    /**
+      * Sets the value of the 'departureTime' field.
+      * @param value The value of 'departureTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setDepartureTime(java.lang.Long value) {
+      validate(fields()[2], value);
+      this.departureTime = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'departureTime' field has been set.
+      * @return True if the 'departureTime' field has been set, false otherwise.
+      */
+    public boolean hasDepartureTime() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'departureTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearDepartureTime() {
+      departureTime = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'tripPoint' field.
       * @return The value.
       */
@@ -400,10 +538,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setTripPoint(com.fretron.Model.TripPoint value) {
-      validate(fields()[1], value);
+      validate(fields()[3], value);
       this.tripPointBuilder = null;
       this.tripPoint = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -412,7 +550,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'tripPoint' field has been set, false otherwise.
       */
     public boolean hasTripPoint() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[3];
     }
 
     /**
@@ -456,7 +594,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     public com.fretron.Model.ShipmentStage.Builder clearTripPoint() {
       tripPoint = null;
       tripPointBuilder = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -474,10 +612,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setPlace(com.fretron.Model.Place value) {
-      validate(fields()[2], value);
+      validate(fields()[4], value);
       this.placeBuilder = null;
       this.place = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -486,7 +624,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'place' field has been set, false otherwise.
       */
     public boolean hasPlace() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[4];
     }
 
     /**
@@ -530,7 +668,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     public com.fretron.Model.ShipmentStage.Builder clearPlace() {
       place = null;
       placeBuilder = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -548,9 +686,9 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setResourcePickup(java.util.List<java.lang.String> value) {
-      validate(fields()[3], value);
+      validate(fields()[5], value);
       this.resourcePickup = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -559,7 +697,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'resourcePickup' field has been set, false otherwise.
       */
     public boolean hasResourcePickup() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[5];
     }
 
 
@@ -569,7 +707,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.ShipmentStage.Builder clearResourcePickup() {
       resourcePickup = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -587,9 +725,9 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setResourceDropOff(java.util.List<java.lang.String> value) {
-      validate(fields()[4], value);
+      validate(fields()[6], value);
       this.resourceDropOff = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -598,7 +736,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'resourceDropOff' field has been set, false otherwise.
       */
     public boolean hasResourceDropOff() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[6];
     }
 
 
@@ -608,7 +746,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.ShipmentStage.Builder clearResourceDropOff() {
       resourceDropOff = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -626,9 +764,9 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setConsignmentPickUps(java.util.List<java.lang.String> value) {
-      validate(fields()[5], value);
+      validate(fields()[7], value);
       this.consignmentPickUps = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -637,7 +775,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'consignmentPickUps' field has been set, false otherwise.
       */
     public boolean hasConsignmentPickUps() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[7];
     }
 
 
@@ -647,7 +785,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.ShipmentStage.Builder clearConsignmentPickUps() {
       consignmentPickUps = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -665,9 +803,9 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setConsignmentDelivered(java.util.List<java.lang.String> value) {
-      validate(fields()[6], value);
+      validate(fields()[8], value);
       this.consignmentDelivered = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -676,7 +814,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'consignmentDelivered' field has been set, false otherwise.
       */
     public boolean hasConsignmentDelivered() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[8];
     }
 
 
@@ -686,7 +824,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.ShipmentStage.Builder clearConsignmentDelivered() {
       consignmentDelivered = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -704,9 +842,9 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.ShipmentStage.Builder setStatus(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[9], value);
       this.status = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -715,7 +853,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'status' field has been set, false otherwise.
       */
     public boolean hasStatus() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[9];
     }
 
 
@@ -725,7 +863,7 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.ShipmentStage.Builder clearStatus() {
       status = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -734,21 +872,23 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       try {
         ShipmentStage record = new ShipmentStage();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
+        record.arrivalTime = fieldSetFlags()[1] ? this.arrivalTime : (java.lang.Long) defaultValue(fields()[1]);
+        record.departureTime = fieldSetFlags()[2] ? this.departureTime : (java.lang.Long) defaultValue(fields()[2]);
         if (tripPointBuilder != null) {
           record.tripPoint = this.tripPointBuilder.build();
         } else {
-          record.tripPoint = fieldSetFlags()[1] ? this.tripPoint : (com.fretron.Model.TripPoint) defaultValue(fields()[1]);
+          record.tripPoint = fieldSetFlags()[3] ? this.tripPoint : (com.fretron.Model.TripPoint) defaultValue(fields()[3]);
         }
         if (placeBuilder != null) {
           record.place = this.placeBuilder.build();
         } else {
-          record.place = fieldSetFlags()[2] ? this.place : (com.fretron.Model.Place) defaultValue(fields()[2]);
+          record.place = fieldSetFlags()[4] ? this.place : (com.fretron.Model.Place) defaultValue(fields()[4]);
         }
-        record.resourcePickup = fieldSetFlags()[3] ? this.resourcePickup : (java.util.List<java.lang.String>) defaultValue(fields()[3]);
-        record.resourceDropOff = fieldSetFlags()[4] ? this.resourceDropOff : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
-        record.consignmentPickUps = fieldSetFlags()[5] ? this.consignmentPickUps : (java.util.List<java.lang.String>) defaultValue(fields()[5]);
-        record.consignmentDelivered = fieldSetFlags()[6] ? this.consignmentDelivered : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
-        record.status = fieldSetFlags()[7] ? this.status : (java.lang.String) defaultValue(fields()[7]);
+        record.resourcePickup = fieldSetFlags()[5] ? this.resourcePickup : (java.util.List<java.lang.String>) defaultValue(fields()[5]);
+        record.resourceDropOff = fieldSetFlags()[6] ? this.resourceDropOff : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
+        record.consignmentPickUps = fieldSetFlags()[7] ? this.consignmentPickUps : (java.util.List<java.lang.String>) defaultValue(fields()[7]);
+        record.consignmentDelivered = fieldSetFlags()[8] ? this.consignmentDelivered : (java.util.List<java.lang.String>) defaultValue(fields()[8]);
+        record.status = fieldSetFlags()[9] ? this.status : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
