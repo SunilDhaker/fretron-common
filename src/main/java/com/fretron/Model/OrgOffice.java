@@ -10,11 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8747700325881339227L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 504558493188042823L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String _id;
-  @Deprecated public com.fretron.Model.Location geoLocation;
+  @Deprecated public java.util.List<java.lang.Double> geoLocation;
   @Deprecated public java.util.List<java.lang.String> type;
   @Deprecated public java.util.List<com.fretron.Model.Contact> contacts;
   @Deprecated public java.lang.String orgId;
@@ -38,7 +38,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
    * @param address The new value for address
    * @param updatedBy The new value for updatedBy
    */
-  public OrgOffice(java.lang.String _id, com.fretron.Model.Location geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy) {
+  public OrgOffice(java.lang.String _id, java.util.List<java.lang.Double> geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy) {
     this._id = _id;
     this.geoLocation = geoLocation;
     this.type = type;
@@ -68,7 +68,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: _id = (java.lang.String)value$; break;
-    case 1: geoLocation = (com.fretron.Model.Location)value$; break;
+    case 1: geoLocation = (java.util.List<java.lang.Double>)value$; break;
     case 2: type = (java.util.List<java.lang.String>)value$; break;
     case 3: contacts = (java.util.List<com.fretron.Model.Contact>)value$; break;
     case 4: orgId = (java.lang.String)value$; break;
@@ -98,7 +98,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
    * Gets the value of the 'geoLocation' field.
    * @return The value of the 'geoLocation' field.
    */
-  public com.fretron.Model.Location getGeoLocation() {
+  public java.util.List<java.lang.Double> getGeoLocation() {
     return geoLocation;
   }
 
@@ -106,7 +106,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
    * Sets the value of the 'geoLocation' field.
    * @param value the value to set.
    */
-  public void setGeoLocation(com.fretron.Model.Location value) {
+  public void setGeoLocation(java.util.List<java.lang.Double> value) {
     this.geoLocation = value;
   }
 
@@ -223,8 +223,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     implements org.apache.avro.data.RecordBuilder<OrgOffice> {
 
     private java.lang.String _id;
-    private com.fretron.Model.Location geoLocation;
-    private com.fretron.Model.Location.Builder geoLocationBuilder;
+    private java.util.List<java.lang.Double> geoLocation;
     private java.util.List<java.lang.String> type;
     private java.util.List<com.fretron.Model.Contact> contacts;
     private java.lang.String orgId;
@@ -249,9 +248,6 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[1], other.geoLocation)) {
         this.geoLocation = data().deepCopy(fields()[1].schema(), other.geoLocation);
         fieldSetFlags()[1] = true;
-      }
-      if (other.hasGeoLocationBuilder()) {
-        this.geoLocationBuilder = com.fretron.Model.Location.newBuilder(other.getGeoLocationBuilder());
       }
       if (isValidValue(fields()[2], other.type)) {
         this.type = data().deepCopy(fields()[2].schema(), other.type);
@@ -289,7 +285,6 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
         this.geoLocation = data().deepCopy(fields()[1].schema(), other.geoLocation);
         fieldSetFlags()[1] = true;
       }
-      this.geoLocationBuilder = null;
       if (isValidValue(fields()[2], other.type)) {
         this.type = data().deepCopy(fields()[2].schema(), other.type);
         fieldSetFlags()[2] = true;
@@ -355,7 +350,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       * Gets the value of the 'geoLocation' field.
       * @return The value.
       */
-    public com.fretron.Model.Location getGeoLocation() {
+    public java.util.List<java.lang.Double> getGeoLocation() {
       return geoLocation;
     }
 
@@ -364,9 +359,8 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       * @param value The value of 'geoLocation'.
       * @return This builder.
       */
-    public com.fretron.Model.OrgOffice.Builder setGeoLocation(com.fretron.Model.Location value) {
+    public com.fretron.Model.OrgOffice.Builder setGeoLocation(java.util.List<java.lang.Double> value) {
       validate(fields()[1], value);
-      this.geoLocationBuilder = null;
       this.geoLocation = value;
       fieldSetFlags()[1] = true;
       return this;
@@ -380,39 +374,6 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       return fieldSetFlags()[1];
     }
 
-    /**
-     * Gets the Builder instance for the 'geoLocation' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.Location.Builder getGeoLocationBuilder() {
-      if (geoLocationBuilder == null) {
-        if (hasGeoLocation()) {
-          setGeoLocationBuilder(com.fretron.Model.Location.newBuilder(geoLocation));
-        } else {
-          setGeoLocationBuilder(com.fretron.Model.Location.newBuilder());
-        }
-      }
-      return geoLocationBuilder;
-    }
-
-    /**
-     * Sets the Builder instance for the 'geoLocation' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.OrgOffice.Builder setGeoLocationBuilder(com.fretron.Model.Location.Builder value) {
-      clearGeoLocation();
-      geoLocationBuilder = value;
-      return this;
-    }
-
-    /**
-     * Checks whether the 'geoLocation' field has an active Builder instance
-     * @return True if the 'geoLocation' field has an active Builder instance
-     */
-    public boolean hasGeoLocationBuilder() {
-      return geoLocationBuilder != null;
-    }
 
     /**
       * Clears the value of the 'geoLocation' field.
@@ -420,7 +381,6 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.OrgOffice.Builder clearGeoLocation() {
       geoLocation = null;
-      geoLocationBuilder = null;
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -625,11 +585,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       try {
         OrgOffice record = new OrgOffice();
         record._id = fieldSetFlags()[0] ? this._id : (java.lang.String) defaultValue(fields()[0]);
-        if (geoLocationBuilder != null) {
-          record.geoLocation = this.geoLocationBuilder.build();
-        } else {
-          record.geoLocation = fieldSetFlags()[1] ? this.geoLocation : (com.fretron.Model.Location) defaultValue(fields()[1]);
-        }
+        record.geoLocation = fieldSetFlags()[1] ? this.geoLocation : (java.util.List<java.lang.Double>) defaultValue(fields()[1]);
         record.type = fieldSetFlags()[2] ? this.type : (java.util.List<java.lang.String>) defaultValue(fields()[2]);
         record.contacts = fieldSetFlags()[3] ? this.contacts : (java.util.List<com.fretron.Model.Contact>) defaultValue(fields()[3]);
         record.orgId = fieldSetFlags()[4] ? this.orgId : (java.lang.String) defaultValue(fields()[4]);

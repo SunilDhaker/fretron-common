@@ -171,9 +171,12 @@
             {
               "name": "geoLocation",
               "type": [
-                "null",
-                "com.fretron.Model.Location"
-              ],
+                  "null",
+                  {
+                    "type": "array",
+                    "items": "double"
+                  }
+                ],
               "default": null
             },
             {
