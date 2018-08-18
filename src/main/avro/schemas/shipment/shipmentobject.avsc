@@ -16,10 +16,7 @@
         "name": "driver",
         "type": [
           "null",
-          {
-            "type": "array",
-            "items": "com.fretron.Model.Driver"
-          }
+          "com.fretron.Model.Driver"
         ],
         "default": null
       },

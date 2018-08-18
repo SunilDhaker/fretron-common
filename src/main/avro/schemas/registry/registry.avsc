@@ -1,230 +1,266 @@
- [
-     {
-          "namespace": "com.fretron.Model",
-          "type": "record",
-          "name": "Contact",
-          "fields": [
-            {
-              "name": "name",
-              "type": [
-                "null",
-                "string"
-              ]
-            },
-            {
-              "name": "mobileNumber",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default":null
-            },
-             {
-               "name": "address",
-               "type": [
-                 "null",
-                 "string"
-               ],
-               "default":null
-             },
-             {
-                 "name":"emails",
-                 "type": ["null",{"type" : "array", "items":"string"}],
-                 "default":null
-             },
-             {
-                  "name":"mobileNumbers",
-                  "type": ["null",{"type" : "array", "items":"string"}],
-                  "default":null
-              }
-          ]
-        },
-     {
-         "namespace": "com.fretron.Model",
-         "type": "record",
-         "name": "BuisnessPartner",
-         "fields": [
-           {
-             "name": "uuid",
-             "type": [
-               "null",
-               "string"
-             ],
-             "default":null
-           },
-           {
-             "name": "name",
-             "type": [
-               "null",
-               "string"
-             ],
-             "default":null
-           },
-            {
-              "name": "orgId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default":null
-            },
-            {
-                "name":"geoFence",
-                "type":[
-                    "null",
-                    "com.fretron.Model.GeoJsonFence"
-                ],
-                "default":null
-            },
-            {
-                "name":"contacts",
-                "type": ["null",{"type" : "array", "items":"com.fretron.Model.Contact"}],
-                "default":null
-            },
-
-             {
-                "name": "location",
-                "type": [
-                  "null",
-                  "com.fretron.Model.Location"
-                ],
-                "default":null
-             },
-             {
-               "name": "type",
-               "type": [
-                 "null",
-                 "string"
-               ],
-               "default":null
-             }
-         ]
+[
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Contact",
+    "fields": [
+      {
+        "name": "name",
+        "type": [
+          "null",
+          "string"
+        ]
       },
-        {
-          "namespace": "com.fretron.Model",
-          "type": "record",
-          "name": "Equipment",
-          "fields": [
-            {
-              "name": "_id",
-              "type": "string"
-            },
-            {
-              "name": "inventoryNo",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "type",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "catagory",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "name",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "orgId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "updatedBy",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            }
-          ]
-        },
-        {
-          "namespace": "com.fretron.Model",
-          "type": "record",
-          "name": "OrgOffice",
-          "fields": [
-            {
-              "name": "_id",
-              "type": "string"
-            },
-            {
-              "name": "geoLocation",
-              "type": [
-                  "null",
-                  {
-                    "type": "array",
-                    "items": "double"
-                  }
-                ],
-              "default": null
-            },
-            {
-              "name": "type",
-              "type": [
-                "null",
-                {
-                  "type": "array",
-                  "items": "string"
-                }
-              ],
-              "default": null
-            },
-            {
-              "name": "contacts",
-              "type": [
-                "null",
-                {
-                  "type": "array",
-                  "items": "com.fretron.Model.Contact"
-                }
-              ],
-              "default": null
-            },
-            {
-              "name": "orgId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "address",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-              "name": "updatedBy",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            }
-          ]
-        }
- ]
+      {
+        "name": "mobileNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "emails",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "mobileNumbers",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "BuisnessPartner",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "name",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fretronId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "geoFence",
+        "type": [
+          "null",
+          "com.fretron.Model.GeoJsonFence"
+        ],
+        "default": null
+      },
+      {
+        "name": "places",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Place"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "contacts",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Contact"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "location",
+        "type": [
+          "null",
+          "com.fretron.Model.Location"
+        ],
+        "default": null
+      },
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Equipment",
+    "fields": [
+      {
+        "name": "_id",
+        "type": "string"
+      },
+      {
+        "name": "inventoryNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "catagory",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "name",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "updatedBy",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "OrgOffice",
+    "fields": [
+      {
+        "name": "_id",
+        "type": "string"
+      },
+      {
+        "name": "geoLocation",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "double"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "type",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "contacts",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Contact"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "updatedBy",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  }
+]
