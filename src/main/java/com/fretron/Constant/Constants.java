@@ -175,6 +175,7 @@ public class Constants {
     public static final String KEY_SHIPMENT_MANAGER_NEW_APP_ID = "shipment.manager.appname";
     public static final String SHIPMENT_TRACKING_REQUEST_TOPIC = "shipment.tracking.request.topic";
     public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
+    public static final String KEY_CONSIGNMENT_TOPIC = "consignment.topic";
 
     //=========================================
     public static final String REGISTRY_MANAGER_APPID = "registry.manager.appId";

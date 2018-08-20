@@ -109,7 +109,7 @@
     <!--================Shipment-Manager topics===================-->
     <entry key="shiment.topic">shipments</entry>
     <entry key="shipment.tracking.request.topic">trackingRequestTopic</entry>
-
+    <entry key="consignment.topic">consignmentTopic</entry>
     <!--===============Hour-wise -topics=====================-->
     <entry key="hour.mov.topic">hourMovTopic</entry>
 
