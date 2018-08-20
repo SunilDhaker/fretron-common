@@ -16,6 +16,11 @@
                 "default": null
             },
 			{
+                "name": "imei",
+                "type": ["null","string"],
+                "default": null
+            },
+			{
 				"name": "purpose",
 				"type": ["null", "string"],
 				"default": null
