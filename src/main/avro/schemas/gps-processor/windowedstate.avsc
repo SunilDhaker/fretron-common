@@ -92,6 +92,14 @@
        "logicalType": "timestamp-millis",
         "default":null
 
+    },
+    {
+          "name": "insertionBuffer",
+          "type": {
+            "type":"array",
+            "items":"com.fretron.Model.LitePosition"
+          },
+          "default":null
     }
   ]
 }

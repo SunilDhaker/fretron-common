@@ -16,6 +16,13 @@ public class ClusteringUtils {
 
     private static PolylineDecoder decoder = PolylineDecoder.getInstance();
 
+    public static LitePosition updateMean(LitePosition lastMean ,LitePosition endLocation ,int numberOfRecords){
+        lastMean.setLatitude((lastMean.getLatitude() + endLocation.getLatitude()/numberOfRecords));
+        lastMean.setLongitude((lastMean.getLongitude() + endLocation.getLongitude()/numberOfRecords));
+        lastMean.setTime((lastMean.getTime() + endLocation.getTime()/numberOfRecords));
+        return lastMean;
+    }
+
     public static LitePosition calculateMean(List<LitePosition> positions) {
         LitePosition meanPosition = LitePosition.newBuilder()
             .setLatitude(0d)
