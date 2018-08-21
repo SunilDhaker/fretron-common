@@ -57,16 +57,8 @@
   {
     "namespace": "com.fretron.Model",
     "type": "record",
-    "name": "LoadInfo",
+    "name": "Measurement",
     "fields": [
-        {
-              "name": "material",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
       {
         "name": "measurmentType",
         "type": [
@@ -84,7 +76,7 @@
         "default": null
       },
       {
-        "name": "plannedQuantity",
+        "name": "plannedLoadQuantity",
         "type": [
           "null",
           "double"
@@ -92,7 +84,7 @@
         "default": null
       },
       {
-        "name": "loadedQuantity",
+        "name": "actualLoadedQuantity",
         "type": [
           "null",
           "double"
@@ -100,7 +92,31 @@
         "default": null
       },
       {
-        "name": "deliveredQuantity",
+        "name": "netQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "grossQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "standardQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "actualDeliveredQuantity",
         "type": [
           "null",
           "double"
@@ -130,6 +146,56 @@
           "double"
         ],
         "default": null
+      },
+      {
+        "name": "temperature",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "density",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "moisture",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "LoadInfo",
+    "fields": [
+      {
+        "name": "material",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "measurements",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Measurement"
+          }
+        ],
+        "default": null
       }
     ]
   },
@@ -140,11 +206,11 @@
     "fields": [
       {
         "name": "uuid",
-        "type":"string",
+        "type": "string",
         "default": null
       },
       {
-        "name": "assosiatedShipments",
+        "name": "associatedShipments",
         "type": [
           "null",
           {
@@ -154,30 +220,30 @@
         ],
         "default": null
       },
-    {
-      "name": "activeShipment",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "orgId",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "status",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
+      {
+        "name": "activeShipment",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
       {
         "name": "consigner",
         "type": [
@@ -269,24 +335,24 @@
         "name": "uuid",
         "type": "string"
       },
-    {
+      {
         "name": "arrivalTime",
         "type": [
-            "null",
-            "long"
+          "null",
+          "long"
         ],
         "logicalType": "timestamp-millis",
         "default": null
-    },
-    {
+      },
+      {
         "name": "departureTime",
         "type": [
-            "null",
-            "long"
+          "null",
+          "long"
         ],
         "logicalType": "timestamp-millis",
         "default": null
-    },
+      },
       {
         "name": "tripPoint",
         "type": [
@@ -509,7 +575,6 @@
         ],
         "default": null
       }
-
     ]
   }
 ]

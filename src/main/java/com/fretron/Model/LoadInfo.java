@@ -10,18 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7377027394120427470L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"loadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"deliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 1124298014514912668L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String material;
-  @Deprecated public java.lang.String measurmentType;
-  @Deprecated public java.lang.String unitOfMeasurment;
-  @Deprecated public java.lang.Double plannedQuantity;
-  @Deprecated public java.lang.Double loadedQuantity;
-  @Deprecated public java.lang.Double deliveredQuantity;
-  @Deprecated public java.lang.Double shortage;
-  @Deprecated public java.lang.Double frieghtDeductableQuantity;
-  @Deprecated public java.lang.Double claimQuantity;
+  @Deprecated public java.util.List<com.fretron.Model.Measurement> measurements;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,25 +26,11 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   /**
    * All-args constructor.
    * @param material The new value for material
-   * @param measurmentType The new value for measurmentType
-   * @param unitOfMeasurment The new value for unitOfMeasurment
-   * @param plannedQuantity The new value for plannedQuantity
-   * @param loadedQuantity The new value for loadedQuantity
-   * @param deliveredQuantity The new value for deliveredQuantity
-   * @param shortage The new value for shortage
-   * @param frieghtDeductableQuantity The new value for frieghtDeductableQuantity
-   * @param claimQuantity The new value for claimQuantity
+   * @param measurements The new value for measurements
    */
-  public LoadInfo(java.lang.String material, java.lang.String measurmentType, java.lang.String unitOfMeasurment, java.lang.Double plannedQuantity, java.lang.Double loadedQuantity, java.lang.Double deliveredQuantity, java.lang.Double shortage, java.lang.Double frieghtDeductableQuantity, java.lang.Double claimQuantity) {
+  public LoadInfo(java.lang.String material, java.util.List<com.fretron.Model.Measurement> measurements) {
     this.material = material;
-    this.measurmentType = measurmentType;
-    this.unitOfMeasurment = unitOfMeasurment;
-    this.plannedQuantity = plannedQuantity;
-    this.loadedQuantity = loadedQuantity;
-    this.deliveredQuantity = deliveredQuantity;
-    this.shortage = shortage;
-    this.frieghtDeductableQuantity = frieghtDeductableQuantity;
-    this.claimQuantity = claimQuantity;
+    this.measurements = measurements;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,14 +38,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return material;
-    case 1: return measurmentType;
-    case 2: return unitOfMeasurment;
-    case 3: return plannedQuantity;
-    case 4: return loadedQuantity;
-    case 5: return deliveredQuantity;
-    case 6: return shortage;
-    case 7: return frieghtDeductableQuantity;
-    case 8: return claimQuantity;
+    case 1: return measurements;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -76,14 +48,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: material = (java.lang.String)value$; break;
-    case 1: measurmentType = (java.lang.String)value$; break;
-    case 2: unitOfMeasurment = (java.lang.String)value$; break;
-    case 3: plannedQuantity = (java.lang.Double)value$; break;
-    case 4: loadedQuantity = (java.lang.Double)value$; break;
-    case 5: deliveredQuantity = (java.lang.Double)value$; break;
-    case 6: shortage = (java.lang.Double)value$; break;
-    case 7: frieghtDeductableQuantity = (java.lang.Double)value$; break;
-    case 8: claimQuantity = (java.lang.Double)value$; break;
+    case 1: measurements = (java.util.List<com.fretron.Model.Measurement>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -105,131 +70,19 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
-   * Gets the value of the 'measurmentType' field.
-   * @return The value of the 'measurmentType' field.
+   * Gets the value of the 'measurements' field.
+   * @return The value of the 'measurements' field.
    */
-  public java.lang.String getMeasurmentType() {
-    return measurmentType;
+  public java.util.List<com.fretron.Model.Measurement> getMeasurements() {
+    return measurements;
   }
 
   /**
-   * Sets the value of the 'measurmentType' field.
+   * Sets the value of the 'measurements' field.
    * @param value the value to set.
    */
-  public void setMeasurmentType(java.lang.String value) {
-    this.measurmentType = value;
-  }
-
-  /**
-   * Gets the value of the 'unitOfMeasurment' field.
-   * @return The value of the 'unitOfMeasurment' field.
-   */
-  public java.lang.String getUnitOfMeasurment() {
-    return unitOfMeasurment;
-  }
-
-  /**
-   * Sets the value of the 'unitOfMeasurment' field.
-   * @param value the value to set.
-   */
-  public void setUnitOfMeasurment(java.lang.String value) {
-    this.unitOfMeasurment = value;
-  }
-
-  /**
-   * Gets the value of the 'plannedQuantity' field.
-   * @return The value of the 'plannedQuantity' field.
-   */
-  public java.lang.Double getPlannedQuantity() {
-    return plannedQuantity;
-  }
-
-  /**
-   * Sets the value of the 'plannedQuantity' field.
-   * @param value the value to set.
-   */
-  public void setPlannedQuantity(java.lang.Double value) {
-    this.plannedQuantity = value;
-  }
-
-  /**
-   * Gets the value of the 'loadedQuantity' field.
-   * @return The value of the 'loadedQuantity' field.
-   */
-  public java.lang.Double getLoadedQuantity() {
-    return loadedQuantity;
-  }
-
-  /**
-   * Sets the value of the 'loadedQuantity' field.
-   * @param value the value to set.
-   */
-  public void setLoadedQuantity(java.lang.Double value) {
-    this.loadedQuantity = value;
-  }
-
-  /**
-   * Gets the value of the 'deliveredQuantity' field.
-   * @return The value of the 'deliveredQuantity' field.
-   */
-  public java.lang.Double getDeliveredQuantity() {
-    return deliveredQuantity;
-  }
-
-  /**
-   * Sets the value of the 'deliveredQuantity' field.
-   * @param value the value to set.
-   */
-  public void setDeliveredQuantity(java.lang.Double value) {
-    this.deliveredQuantity = value;
-  }
-
-  /**
-   * Gets the value of the 'shortage' field.
-   * @return The value of the 'shortage' field.
-   */
-  public java.lang.Double getShortage() {
-    return shortage;
-  }
-
-  /**
-   * Sets the value of the 'shortage' field.
-   * @param value the value to set.
-   */
-  public void setShortage(java.lang.Double value) {
-    this.shortage = value;
-  }
-
-  /**
-   * Gets the value of the 'frieghtDeductableQuantity' field.
-   * @return The value of the 'frieghtDeductableQuantity' field.
-   */
-  public java.lang.Double getFrieghtDeductableQuantity() {
-    return frieghtDeductableQuantity;
-  }
-
-  /**
-   * Sets the value of the 'frieghtDeductableQuantity' field.
-   * @param value the value to set.
-   */
-  public void setFrieghtDeductableQuantity(java.lang.Double value) {
-    this.frieghtDeductableQuantity = value;
-  }
-
-  /**
-   * Gets the value of the 'claimQuantity' field.
-   * @return The value of the 'claimQuantity' field.
-   */
-  public java.lang.Double getClaimQuantity() {
-    return claimQuantity;
-  }
-
-  /**
-   * Sets the value of the 'claimQuantity' field.
-   * @param value the value to set.
-   */
-  public void setClaimQuantity(java.lang.Double value) {
-    this.claimQuantity = value;
+  public void setMeasurements(java.util.List<com.fretron.Model.Measurement> value) {
+    this.measurements = value;
   }
 
   /**
@@ -265,14 +118,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     implements org.apache.avro.data.RecordBuilder<LoadInfo> {
 
     private java.lang.String material;
-    private java.lang.String measurmentType;
-    private java.lang.String unitOfMeasurment;
-    private java.lang.Double plannedQuantity;
-    private java.lang.Double loadedQuantity;
-    private java.lang.Double deliveredQuantity;
-    private java.lang.Double shortage;
-    private java.lang.Double frieghtDeductableQuantity;
-    private java.lang.Double claimQuantity;
+    private java.util.List<com.fretron.Model.Measurement> measurements;
 
     /** Creates a new Builder */
     private Builder() {
@@ -289,37 +135,9 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         this.material = data().deepCopy(fields()[0].schema(), other.material);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.measurmentType)) {
-        this.measurmentType = data().deepCopy(fields()[1].schema(), other.measurmentType);
+      if (isValidValue(fields()[1], other.measurements)) {
+        this.measurements = data().deepCopy(fields()[1].schema(), other.measurements);
         fieldSetFlags()[1] = true;
-      }
-      if (isValidValue(fields()[2], other.unitOfMeasurment)) {
-        this.unitOfMeasurment = data().deepCopy(fields()[2].schema(), other.unitOfMeasurment);
-        fieldSetFlags()[2] = true;
-      }
-      if (isValidValue(fields()[3], other.plannedQuantity)) {
-        this.plannedQuantity = data().deepCopy(fields()[3].schema(), other.plannedQuantity);
-        fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.loadedQuantity)) {
-        this.loadedQuantity = data().deepCopy(fields()[4].schema(), other.loadedQuantity);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.deliveredQuantity)) {
-        this.deliveredQuantity = data().deepCopy(fields()[5].schema(), other.deliveredQuantity);
-        fieldSetFlags()[5] = true;
-      }
-      if (isValidValue(fields()[6], other.shortage)) {
-        this.shortage = data().deepCopy(fields()[6].schema(), other.shortage);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.frieghtDeductableQuantity)) {
-        this.frieghtDeductableQuantity = data().deepCopy(fields()[7].schema(), other.frieghtDeductableQuantity);
-        fieldSetFlags()[7] = true;
-      }
-      if (isValidValue(fields()[8], other.claimQuantity)) {
-        this.claimQuantity = data().deepCopy(fields()[8].schema(), other.claimQuantity);
-        fieldSetFlags()[8] = true;
       }
     }
 
@@ -333,37 +151,9 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         this.material = data().deepCopy(fields()[0].schema(), other.material);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.measurmentType)) {
-        this.measurmentType = data().deepCopy(fields()[1].schema(), other.measurmentType);
+      if (isValidValue(fields()[1], other.measurements)) {
+        this.measurements = data().deepCopy(fields()[1].schema(), other.measurements);
         fieldSetFlags()[1] = true;
-      }
-      if (isValidValue(fields()[2], other.unitOfMeasurment)) {
-        this.unitOfMeasurment = data().deepCopy(fields()[2].schema(), other.unitOfMeasurment);
-        fieldSetFlags()[2] = true;
-      }
-      if (isValidValue(fields()[3], other.plannedQuantity)) {
-        this.plannedQuantity = data().deepCopy(fields()[3].schema(), other.plannedQuantity);
-        fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.loadedQuantity)) {
-        this.loadedQuantity = data().deepCopy(fields()[4].schema(), other.loadedQuantity);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.deliveredQuantity)) {
-        this.deliveredQuantity = data().deepCopy(fields()[5].schema(), other.deliveredQuantity);
-        fieldSetFlags()[5] = true;
-      }
-      if (isValidValue(fields()[6], other.shortage)) {
-        this.shortage = data().deepCopy(fields()[6].schema(), other.shortage);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.frieghtDeductableQuantity)) {
-        this.frieghtDeductableQuantity = data().deepCopy(fields()[7].schema(), other.frieghtDeductableQuantity);
-        fieldSetFlags()[7] = true;
-      }
-      if (isValidValue(fields()[8], other.claimQuantity)) {
-        this.claimQuantity = data().deepCopy(fields()[8].schema(), other.claimQuantity);
-        fieldSetFlags()[8] = true;
       }
     }
 
@@ -407,314 +197,41 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
-      * Gets the value of the 'measurmentType' field.
+      * Gets the value of the 'measurements' field.
       * @return The value.
       */
-    public java.lang.String getMeasurmentType() {
-      return measurmentType;
+    public java.util.List<com.fretron.Model.Measurement> getMeasurements() {
+      return measurements;
     }
 
     /**
-      * Sets the value of the 'measurmentType' field.
-      * @param value The value of 'measurmentType'.
+      * Sets the value of the 'measurements' field.
+      * @param value The value of 'measurements'.
       * @return This builder.
       */
-    public com.fretron.Model.LoadInfo.Builder setMeasurmentType(java.lang.String value) {
+    public com.fretron.Model.LoadInfo.Builder setMeasurements(java.util.List<com.fretron.Model.Measurement> value) {
       validate(fields()[1], value);
-      this.measurmentType = value;
+      this.measurements = value;
       fieldSetFlags()[1] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'measurmentType' field has been set.
-      * @return True if the 'measurmentType' field has been set, false otherwise.
+      * Checks whether the 'measurements' field has been set.
+      * @return True if the 'measurements' field has been set, false otherwise.
       */
-    public boolean hasMeasurmentType() {
+    public boolean hasMeasurements() {
       return fieldSetFlags()[1];
     }
 
 
     /**
-      * Clears the value of the 'measurmentType' field.
+      * Clears the value of the 'measurements' field.
       * @return This builder.
       */
-    public com.fretron.Model.LoadInfo.Builder clearMeasurmentType() {
-      measurmentType = null;
+    public com.fretron.Model.LoadInfo.Builder clearMeasurements() {
+      measurements = null;
       fieldSetFlags()[1] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'unitOfMeasurment' field.
-      * @return The value.
-      */
-    public java.lang.String getUnitOfMeasurment() {
-      return unitOfMeasurment;
-    }
-
-    /**
-      * Sets the value of the 'unitOfMeasurment' field.
-      * @param value The value of 'unitOfMeasurment'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setUnitOfMeasurment(java.lang.String value) {
-      validate(fields()[2], value);
-      this.unitOfMeasurment = value;
-      fieldSetFlags()[2] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'unitOfMeasurment' field has been set.
-      * @return True if the 'unitOfMeasurment' field has been set, false otherwise.
-      */
-    public boolean hasUnitOfMeasurment() {
-      return fieldSetFlags()[2];
-    }
-
-
-    /**
-      * Clears the value of the 'unitOfMeasurment' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearUnitOfMeasurment() {
-      unitOfMeasurment = null;
-      fieldSetFlags()[2] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'plannedQuantity' field.
-      * @return The value.
-      */
-    public java.lang.Double getPlannedQuantity() {
-      return plannedQuantity;
-    }
-
-    /**
-      * Sets the value of the 'plannedQuantity' field.
-      * @param value The value of 'plannedQuantity'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setPlannedQuantity(java.lang.Double value) {
-      validate(fields()[3], value);
-      this.plannedQuantity = value;
-      fieldSetFlags()[3] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'plannedQuantity' field has been set.
-      * @return True if the 'plannedQuantity' field has been set, false otherwise.
-      */
-    public boolean hasPlannedQuantity() {
-      return fieldSetFlags()[3];
-    }
-
-
-    /**
-      * Clears the value of the 'plannedQuantity' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearPlannedQuantity() {
-      plannedQuantity = null;
-      fieldSetFlags()[3] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'loadedQuantity' field.
-      * @return The value.
-      */
-    public java.lang.Double getLoadedQuantity() {
-      return loadedQuantity;
-    }
-
-    /**
-      * Sets the value of the 'loadedQuantity' field.
-      * @param value The value of 'loadedQuantity'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setLoadedQuantity(java.lang.Double value) {
-      validate(fields()[4], value);
-      this.loadedQuantity = value;
-      fieldSetFlags()[4] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'loadedQuantity' field has been set.
-      * @return True if the 'loadedQuantity' field has been set, false otherwise.
-      */
-    public boolean hasLoadedQuantity() {
-      return fieldSetFlags()[4];
-    }
-
-
-    /**
-      * Clears the value of the 'loadedQuantity' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearLoadedQuantity() {
-      loadedQuantity = null;
-      fieldSetFlags()[4] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'deliveredQuantity' field.
-      * @return The value.
-      */
-    public java.lang.Double getDeliveredQuantity() {
-      return deliveredQuantity;
-    }
-
-    /**
-      * Sets the value of the 'deliveredQuantity' field.
-      * @param value The value of 'deliveredQuantity'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setDeliveredQuantity(java.lang.Double value) {
-      validate(fields()[5], value);
-      this.deliveredQuantity = value;
-      fieldSetFlags()[5] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'deliveredQuantity' field has been set.
-      * @return True if the 'deliveredQuantity' field has been set, false otherwise.
-      */
-    public boolean hasDeliveredQuantity() {
-      return fieldSetFlags()[5];
-    }
-
-
-    /**
-      * Clears the value of the 'deliveredQuantity' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearDeliveredQuantity() {
-      deliveredQuantity = null;
-      fieldSetFlags()[5] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'shortage' field.
-      * @return The value.
-      */
-    public java.lang.Double getShortage() {
-      return shortage;
-    }
-
-    /**
-      * Sets the value of the 'shortage' field.
-      * @param value The value of 'shortage'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setShortage(java.lang.Double value) {
-      validate(fields()[6], value);
-      this.shortage = value;
-      fieldSetFlags()[6] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'shortage' field has been set.
-      * @return True if the 'shortage' field has been set, false otherwise.
-      */
-    public boolean hasShortage() {
-      return fieldSetFlags()[6];
-    }
-
-
-    /**
-      * Clears the value of the 'shortage' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearShortage() {
-      shortage = null;
-      fieldSetFlags()[6] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'frieghtDeductableQuantity' field.
-      * @return The value.
-      */
-    public java.lang.Double getFrieghtDeductableQuantity() {
-      return frieghtDeductableQuantity;
-    }
-
-    /**
-      * Sets the value of the 'frieghtDeductableQuantity' field.
-      * @param value The value of 'frieghtDeductableQuantity'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setFrieghtDeductableQuantity(java.lang.Double value) {
-      validate(fields()[7], value);
-      this.frieghtDeductableQuantity = value;
-      fieldSetFlags()[7] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'frieghtDeductableQuantity' field has been set.
-      * @return True if the 'frieghtDeductableQuantity' field has been set, false otherwise.
-      */
-    public boolean hasFrieghtDeductableQuantity() {
-      return fieldSetFlags()[7];
-    }
-
-
-    /**
-      * Clears the value of the 'frieghtDeductableQuantity' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearFrieghtDeductableQuantity() {
-      frieghtDeductableQuantity = null;
-      fieldSetFlags()[7] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'claimQuantity' field.
-      * @return The value.
-      */
-    public java.lang.Double getClaimQuantity() {
-      return claimQuantity;
-    }
-
-    /**
-      * Sets the value of the 'claimQuantity' field.
-      * @param value The value of 'claimQuantity'.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder setClaimQuantity(java.lang.Double value) {
-      validate(fields()[8], value);
-      this.claimQuantity = value;
-      fieldSetFlags()[8] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'claimQuantity' field has been set.
-      * @return True if the 'claimQuantity' field has been set, false otherwise.
-      */
-    public boolean hasClaimQuantity() {
-      return fieldSetFlags()[8];
-    }
-
-
-    /**
-      * Clears the value of the 'claimQuantity' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.LoadInfo.Builder clearClaimQuantity() {
-      claimQuantity = null;
-      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -723,14 +240,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
       try {
         LoadInfo record = new LoadInfo();
         record.material = fieldSetFlags()[0] ? this.material : (java.lang.String) defaultValue(fields()[0]);
-        record.measurmentType = fieldSetFlags()[1] ? this.measurmentType : (java.lang.String) defaultValue(fields()[1]);
-        record.unitOfMeasurment = fieldSetFlags()[2] ? this.unitOfMeasurment : (java.lang.String) defaultValue(fields()[2]);
-        record.plannedQuantity = fieldSetFlags()[3] ? this.plannedQuantity : (java.lang.Double) defaultValue(fields()[3]);
-        record.loadedQuantity = fieldSetFlags()[4] ? this.loadedQuantity : (java.lang.Double) defaultValue(fields()[4]);
-        record.deliveredQuantity = fieldSetFlags()[5] ? this.deliveredQuantity : (java.lang.Double) defaultValue(fields()[5]);
-        record.shortage = fieldSetFlags()[6] ? this.shortage : (java.lang.Double) defaultValue(fields()[6]);
-        record.frieghtDeductableQuantity = fieldSetFlags()[7] ? this.frieghtDeductableQuantity : (java.lang.Double) defaultValue(fields()[7]);
-        record.claimQuantity = fieldSetFlags()[8] ? this.claimQuantity : (java.lang.Double) defaultValue(fields()[8]);
+        record.measurements = fieldSetFlags()[1] ? this.measurements : (java.util.List<com.fretron.Model.Measurement>) defaultValue(fields()[1]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
