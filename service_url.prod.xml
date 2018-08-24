@@ -101,5 +101,7 @@
     <!-- -->
     <entry key = "elastic.search.service.url">http://reporting-server.mean:8080</entry>
 
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
 </properties>

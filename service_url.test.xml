@@ -98,4 +98,7 @@
     <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
     <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
 
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
+
 </properties>

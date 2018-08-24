@@ -107,21 +107,9 @@
     <entry key="tracker.vts.topic">trackervts</entry>
 
     <!--================Shipment-Manager topics===================-->
-    <entry key="shiment.topic">shipmentTopic</entry>
-    <entry key="tracker.trip.topic">trackertriptopic</entry>
-
-
-    <entry key="shiment.added.stop.topic">shipmentAddedStopTopic</entry>
-    <entry key="added.shiment.tracking.state.topic">addedShipmentTrackingStateTopic</entry>
-    <entry key="shipment.tracking.request.topic">shipmentTrackingRequestTopic</entry>
-    <entry key="updated.shiment.tracking.state.topic">updatedShipmentTrackingStateTopic</entry>
-    <entry key="shipment.state.updated.topic">shipmentStateUpdatedTopic</entry>
-    <entry key="shipment.related.event.topic">shipmentRelatedEventTopic</entry>
-
-    <entry key="manually.added.shipment.status.topic">manuallyAddedShipmentStatusTopic</entry>
-    <entry key="manual.trip.event.topic">manualTripEventTopic</entry>
-    <entry key="manual.trip.vts.topic">manualTripVtsTopic</entry>
-
+    <entry key="shiment.topic">shipments</entry>
+    <entry key="shipment.tracking.request.topic">trackingRequestTopic</entry>
+    <entry key="consignment.topic">consignmentTopic</entry>
     <!--===============Hour-wise -topics=====================-->
     <entry key="hour.mov.topic">hourMovTopic</entry>
 

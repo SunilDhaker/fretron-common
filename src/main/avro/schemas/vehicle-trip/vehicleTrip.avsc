@@ -16,6 +16,11 @@
                 "default": null
             },
 			{
+                "name": "imei",
+                "type": ["null","string"],
+                "default": null
+            },
+			{
 				"name": "purpose",
 				"type": ["null", "string"],
 				"default": null
@@ -129,6 +134,17 @@
                 "name":"purposedDistance",
                 "type":["null","double"],
                 "default":null
+            },
+            {
+                "name": "forShipmentStages",
+                "type": [
+                    "null",
+                    {
+                        "type": "array",
+                        "items": "string"
+                    }
+                ],
+                "default": null
             }
 		]
 	}
