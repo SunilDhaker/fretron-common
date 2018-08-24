@@ -514,6 +514,7 @@ public class Constants {
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
 
 
+
     private Constants() {
 
     }
