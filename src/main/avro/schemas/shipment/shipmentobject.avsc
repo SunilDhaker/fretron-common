@@ -323,6 +323,22 @@
           "string"
         ],
         "default": null
+      },
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.Location"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
       }
     ]
   },
@@ -482,7 +498,16 @@
           "string"
         ],
         "default": null
-      }
+      },
+			{
+				"name": "creationTime",
+				"type": [
+					"null",
+					"long"
+				],
+				"logicalType": "timestamp-millis",
+				"default": null
+			}
     ]
   },
   {

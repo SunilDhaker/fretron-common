@@ -99,6 +99,6 @@
     <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
 
     <!-- =========Itinerary-Manager========== -->
-    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
+    <entry key="vehicle.trip.manager.service.url">http://v-trip-manager.streams:2129</entry>
 
 </properties>
