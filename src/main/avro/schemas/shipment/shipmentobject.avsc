@@ -507,7 +507,15 @@
 				],
 				"logicalType": "timestamp-millis",
 				"default": null
-			}
+			},
+			{
+                "name": "shipmentNumber",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
     ]
   },
   {
@@ -604,7 +612,16 @@
             "name":"currentLocation",
             "type":["null","com.fretron.Model.LitePosition"],
             "default":null
-        }
+        },
+        			{
+        				"name": "shipmentDate",
+        				"type": [
+        					"null",
+        					"long"
+        				],
+        				"logicalType": "timestamp-millis",
+        				"default": null
+        			}
     ]
   }
 ]
