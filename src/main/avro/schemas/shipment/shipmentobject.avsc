@@ -621,7 +621,15 @@
         				],
         				"logicalType": "timestamp-millis",
         				"default": null
-        			}
+        			},
+        			      {
+                            "name": "shipmentNumber",
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "default": null
+                          }
     ]
   }
 ]
