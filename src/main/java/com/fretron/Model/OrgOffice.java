@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 504558493188042823L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -7805030414265941534L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String _id;
   @Deprecated public java.util.List<java.lang.Double> geoLocation;
@@ -20,6 +20,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String address;
   @Deprecated public java.lang.String updatedBy;
+  @Deprecated public java.lang.String name;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
    * @param orgId The new value for orgId
    * @param address The new value for address
    * @param updatedBy The new value for updatedBy
+   * @param name The new value for name
    */
-  public OrgOffice(java.lang.String _id, java.util.List<java.lang.Double> geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy) {
+  public OrgOffice(java.lang.String _id, java.util.List<java.lang.Double> geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy, java.lang.String name) {
     this._id = _id;
     this.geoLocation = geoLocation;
     this.type = type;
@@ -46,6 +48,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     this.orgId = orgId;
     this.address = address;
     this.updatedBy = updatedBy;
+    this.name = name;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     case 4: return orgId;
     case 5: return address;
     case 6: return updatedBy;
+    case 7: return name;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     case 4: orgId = (java.lang.String)value$; break;
     case 5: address = (java.lang.String)value$; break;
     case 6: updatedBy = (java.lang.String)value$; break;
+    case 7: name = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'name' field.
+   * @return The value of the 'name' field.
+   */
+  public java.lang.String getName() {
+    return name;
+  }
+
+  /**
+   * Sets the value of the 'name' field.
+   * @param value the value to set.
+   */
+  public void setName(java.lang.String value) {
+    this.name = value;
+  }
+
+  /**
    * Creates a new OrgOffice RecordBuilder.
    * @return A new OrgOffice RecordBuilder
    */
@@ -229,6 +250,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String orgId;
     private java.lang.String address;
     private java.lang.String updatedBy;
+    private java.lang.String name;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +291,10 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
         this.updatedBy = data().deepCopy(fields()[6].schema(), other.updatedBy);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.name)) {
+        this.name = data().deepCopy(fields()[7].schema(), other.name);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -304,6 +330,10 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[6], other.updatedBy)) {
         this.updatedBy = data().deepCopy(fields()[6].schema(), other.updatedBy);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.name)) {
+        this.name = data().deepCopy(fields()[7].schema(), other.name);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -580,6 +610,45 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'name' field.
+      * @return The value.
+      */
+    public java.lang.String getName() {
+      return name;
+    }
+
+    /**
+      * Sets the value of the 'name' field.
+      * @param value The value of 'name'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder setName(java.lang.String value) {
+      validate(fields()[7], value);
+      this.name = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'name' field has been set.
+      * @return True if the 'name' field has been set, false otherwise.
+      */
+    public boolean hasName() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'name' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder clearName() {
+      name = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public OrgOffice build() {
       try {
@@ -591,6 +660,7 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
         record.orgId = fieldSetFlags()[4] ? this.orgId : (java.lang.String) defaultValue(fields()[4]);
         record.address = fieldSetFlags()[5] ? this.address : (java.lang.String) defaultValue(fields()[5]);
         record.updatedBy = fieldSetFlags()[6] ? this.updatedBy : (java.lang.String) defaultValue(fields()[6]);
+        record.name = fieldSetFlags()[7] ? this.name : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

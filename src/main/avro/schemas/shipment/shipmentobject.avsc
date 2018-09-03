@@ -629,7 +629,16 @@
                               "string"
                             ],
                             "default": null
-                          }
+                          },
+                                {
+                                  "name": "creationTime",
+                                  "type": [
+                                    "null",
+                                    "long"
+                                  ],
+                                  "logicalType": "timestamp-millis",
+                                  "default": null
+                                }
     ]
   }
 ]
