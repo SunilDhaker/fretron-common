@@ -37,6 +37,7 @@ public class ClusteringUtils {
 
 
     public static LitePosition updateMean(LitePosition lastMean, List<LitePosition> positions, int n) {
+        if (positions.size() > 0){
         LitePosition meanPosition = LitePosition.newBuilder()
             .setLatitude(0d)
             .setLongitude(0d)
@@ -49,7 +50,7 @@ public class ClusteringUtils {
         meanPosition.setLatitude((n * lastMean.getLatitude()));
         meanPosition.setLongitude((n * lastMean.getLongitude()));
         meanPosition.setTime((n * lastMean.getTime()));
-       if (positions.size() > 0){
+
            for (LitePosition p : positions) {
                meanPosition.latitude = meanPosition.latitude + p.latitude;
                meanPosition.longitude = meanPosition.longitude + p.longitude;
@@ -59,8 +60,10 @@ public class ClusteringUtils {
            meanPosition.latitude /= (n + positions.size());
            meanPosition.longitude /= (n + positions.size());
            meanPosition.time /= (n + positions.size());
+
+           return meanPosition;
        }
-        return meanPosition;
+        return lastMean;
     }
 
     public static LitePosition calculateMean(List<LitePosition> positions) {
