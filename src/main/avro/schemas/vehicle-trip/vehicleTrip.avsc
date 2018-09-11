@@ -185,6 +185,14 @@
           "com.fretron.Model.LitePosition"
         ],
         "default": null
+      },
+      {
+              "name": "hub",
+              "type": [
+                "null",
+                "com.fretron.Model.Place"
+              ],
+              "default": null
       }
     ]
   }
