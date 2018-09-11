@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 157673947478408951L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentStage\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"arrivalTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"departureTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"hub\",\"type\":[\"null\",\"Place\"],\"default\":null}]}],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"resourcePickup\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceDropOff\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentPickUps\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentDelivered\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8782069831883574391L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentStage\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"arrivalTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"departureTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripPoint\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"TripPoint\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"hub\",\"type\":[\"null\",\"Place\"],\"default\":null}]}],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"resourcePickup\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceDropOff\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentPickUps\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"consignmentDelivered\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expectedActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Long arrivalTime;
@@ -23,6 +23,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.util.List<java.lang.String> consignmentPickUps;
   @Deprecated public java.util.List<java.lang.String> consignmentDelivered;
   @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.Long expectedActivityStartTime;
+  @Deprecated public java.lang.Long actualActivityStartTime;
+  @Deprecated public java.lang.Long actualActivityEndTime;
+  @Deprecated public java.lang.Long eta;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +47,12 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
    * @param consignmentPickUps The new value for consignmentPickUps
    * @param consignmentDelivered The new value for consignmentDelivered
    * @param status The new value for status
+   * @param expectedActivityStartTime The new value for expectedActivityStartTime
+   * @param actualActivityStartTime The new value for actualActivityStartTime
+   * @param actualActivityEndTime The new value for actualActivityEndTime
+   * @param eta The new value for eta
    */
-  public ShipmentStage(java.lang.String uuid, java.lang.Long arrivalTime, java.lang.Long departureTime, com.fretron.Model.TripPoint tripPoint, com.fretron.Model.Place place, java.util.List<java.lang.String> resourcePickup, java.util.List<java.lang.String> resourceDropOff, java.util.List<java.lang.String> consignmentPickUps, java.util.List<java.lang.String> consignmentDelivered, java.lang.String status) {
+  public ShipmentStage(java.lang.String uuid, java.lang.Long arrivalTime, java.lang.Long departureTime, com.fretron.Model.TripPoint tripPoint, com.fretron.Model.Place place, java.util.List<java.lang.String> resourcePickup, java.util.List<java.lang.String> resourceDropOff, java.util.List<java.lang.String> consignmentPickUps, java.util.List<java.lang.String> consignmentDelivered, java.lang.String status, java.lang.Long expectedActivityStartTime, java.lang.Long actualActivityStartTime, java.lang.Long actualActivityEndTime, java.lang.Long eta) {
     this.uuid = uuid;
     this.arrivalTime = arrivalTime;
     this.departureTime = departureTime;
@@ -55,6 +63,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     this.consignmentPickUps = consignmentPickUps;
     this.consignmentDelivered = consignmentDelivered;
     this.status = status;
+    this.expectedActivityStartTime = expectedActivityStartTime;
+    this.actualActivityStartTime = actualActivityStartTime;
+    this.actualActivityEndTime = actualActivityEndTime;
+    this.eta = eta;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +83,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     case 7: return consignmentPickUps;
     case 8: return consignmentDelivered;
     case 9: return status;
+    case 10: return expectedActivityStartTime;
+    case 11: return actualActivityStartTime;
+    case 12: return actualActivityEndTime;
+    case 13: return eta;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +105,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     case 7: consignmentPickUps = (java.util.List<java.lang.String>)value$; break;
     case 8: consignmentDelivered = (java.util.List<java.lang.String>)value$; break;
     case 9: status = (java.lang.String)value$; break;
+    case 10: expectedActivityStartTime = (java.lang.Long)value$; break;
+    case 11: actualActivityStartTime = (java.lang.Long)value$; break;
+    case 12: actualActivityEndTime = (java.lang.Long)value$; break;
+    case 13: eta = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +274,70 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'expectedActivityStartTime' field.
+   * @return The value of the 'expectedActivityStartTime' field.
+   */
+  public java.lang.Long getExpectedActivityStartTime() {
+    return expectedActivityStartTime;
+  }
+
+  /**
+   * Sets the value of the 'expectedActivityStartTime' field.
+   * @param value the value to set.
+   */
+  public void setExpectedActivityStartTime(java.lang.Long value) {
+    this.expectedActivityStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'actualActivityStartTime' field.
+   * @return The value of the 'actualActivityStartTime' field.
+   */
+  public java.lang.Long getActualActivityStartTime() {
+    return actualActivityStartTime;
+  }
+
+  /**
+   * Sets the value of the 'actualActivityStartTime' field.
+   * @param value the value to set.
+   */
+  public void setActualActivityStartTime(java.lang.Long value) {
+    this.actualActivityStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'actualActivityEndTime' field.
+   * @return The value of the 'actualActivityEndTime' field.
+   */
+  public java.lang.Long getActualActivityEndTime() {
+    return actualActivityEndTime;
+  }
+
+  /**
+   * Sets the value of the 'actualActivityEndTime' field.
+   * @param value the value to set.
+   */
+  public void setActualActivityEndTime(java.lang.Long value) {
+    this.actualActivityEndTime = value;
+  }
+
+  /**
+   * Gets the value of the 'eta' field.
+   * @return The value of the 'eta' field.
+   */
+  public java.lang.Long getEta() {
+    return eta;
+  }
+
+  /**
+   * Sets the value of the 'eta' field.
+   * @param value the value to set.
+   */
+  public void setEta(java.lang.Long value) {
+    this.eta = value;
+  }
+
+  /**
    * Creates a new ShipmentStage RecordBuilder.
    * @return A new ShipmentStage RecordBuilder
    */
@@ -297,6 +381,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
     private java.util.List<java.lang.String> consignmentPickUps;
     private java.util.List<java.lang.String> consignmentDelivered;
     private java.lang.String status;
+    private java.lang.Long expectedActivityStartTime;
+    private java.lang.Long actualActivityStartTime;
+    private java.lang.Long actualActivityEndTime;
+    private java.lang.Long eta;
 
     /** Creates a new Builder */
     private Builder() {
@@ -355,6 +443,22 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
         this.status = data().deepCopy(fields()[9].schema(), other.status);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.expectedActivityStartTime)) {
+        this.expectedActivityStartTime = data().deepCopy(fields()[10].schema(), other.expectedActivityStartTime);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.actualActivityStartTime)) {
+        this.actualActivityStartTime = data().deepCopy(fields()[11].schema(), other.actualActivityStartTime);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.actualActivityEndTime)) {
+        this.actualActivityEndTime = data().deepCopy(fields()[12].schema(), other.actualActivityEndTime);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.eta)) {
+        this.eta = data().deepCopy(fields()[13].schema(), other.eta);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -404,6 +508,22 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[9], other.status)) {
         this.status = data().deepCopy(fields()[9].schema(), other.status);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.expectedActivityStartTime)) {
+        this.expectedActivityStartTime = data().deepCopy(fields()[10].schema(), other.expectedActivityStartTime);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.actualActivityStartTime)) {
+        this.actualActivityStartTime = data().deepCopy(fields()[11].schema(), other.actualActivityStartTime);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.actualActivityEndTime)) {
+        this.actualActivityEndTime = data().deepCopy(fields()[12].schema(), other.actualActivityEndTime);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.eta)) {
+        this.eta = data().deepCopy(fields()[13].schema(), other.eta);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -867,6 +987,162 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'expectedActivityStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getExpectedActivityStartTime() {
+      return expectedActivityStartTime;
+    }
+
+    /**
+      * Sets the value of the 'expectedActivityStartTime' field.
+      * @param value The value of 'expectedActivityStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setExpectedActivityStartTime(java.lang.Long value) {
+      validate(fields()[10], value);
+      this.expectedActivityStartTime = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'expectedActivityStartTime' field has been set.
+      * @return True if the 'expectedActivityStartTime' field has been set, false otherwise.
+      */
+    public boolean hasExpectedActivityStartTime() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'expectedActivityStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearExpectedActivityStartTime() {
+      expectedActivityStartTime = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualActivityStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualActivityStartTime() {
+      return actualActivityStartTime;
+    }
+
+    /**
+      * Sets the value of the 'actualActivityStartTime' field.
+      * @param value The value of 'actualActivityStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setActualActivityStartTime(java.lang.Long value) {
+      validate(fields()[11], value);
+      this.actualActivityStartTime = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualActivityStartTime' field has been set.
+      * @return True if the 'actualActivityStartTime' field has been set, false otherwise.
+      */
+    public boolean hasActualActivityStartTime() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'actualActivityStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearActualActivityStartTime() {
+      actualActivityStartTime = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualActivityEndTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualActivityEndTime() {
+      return actualActivityEndTime;
+    }
+
+    /**
+      * Sets the value of the 'actualActivityEndTime' field.
+      * @param value The value of 'actualActivityEndTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setActualActivityEndTime(java.lang.Long value) {
+      validate(fields()[12], value);
+      this.actualActivityEndTime = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualActivityEndTime' field has been set.
+      * @return True if the 'actualActivityEndTime' field has been set, false otherwise.
+      */
+    public boolean hasActualActivityEndTime() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'actualActivityEndTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearActualActivityEndTime() {
+      actualActivityEndTime = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'eta' field.
+      * @return The value.
+      */
+    public java.lang.Long getEta() {
+      return eta;
+    }
+
+    /**
+      * Sets the value of the 'eta' field.
+      * @param value The value of 'eta'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder setEta(java.lang.Long value) {
+      validate(fields()[13], value);
+      this.eta = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'eta' field has been set.
+      * @return True if the 'eta' field has been set, false otherwise.
+      */
+    public boolean hasEta() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'eta' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentStage.Builder clearEta() {
+      eta = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public ShipmentStage build() {
       try {
@@ -889,6 +1165,10 @@ public class ShipmentStage extends org.apache.avro.specific.SpecificRecordBase i
         record.consignmentPickUps = fieldSetFlags()[7] ? this.consignmentPickUps : (java.util.List<java.lang.String>) defaultValue(fields()[7]);
         record.consignmentDelivered = fieldSetFlags()[8] ? this.consignmentDelivered : (java.util.List<java.lang.String>) defaultValue(fields()[8]);
         record.status = fieldSetFlags()[9] ? this.status : (java.lang.String) defaultValue(fields()[9]);
+        record.expectedActivityStartTime = fieldSetFlags()[10] ? this.expectedActivityStartTime : (java.lang.Long) defaultValue(fields()[10]);
+        record.actualActivityStartTime = fieldSetFlags()[11] ? this.actualActivityStartTime : (java.lang.Long) defaultValue(fields()[11]);
+        record.actualActivityEndTime = fieldSetFlags()[12] ? this.actualActivityEndTime : (java.lang.Long) defaultValue(fields()[12]);
+        record.eta = fieldSetFlags()[13] ? this.eta : (java.lang.Long) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

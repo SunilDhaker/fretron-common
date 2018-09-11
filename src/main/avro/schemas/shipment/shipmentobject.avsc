@@ -436,6 +436,42 @@
           "string"
         ],
         "default": null
+      },
+      {
+        "name": "expectedActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "eta",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
       }
     ]
   },
@@ -499,23 +535,23 @@
         ],
         "default": null
       },
-			{
-				"name": "creationTime",
-				"type": [
-					"null",
-					"long"
-				],
-				"logicalType": "timestamp-millis",
-				"default": null
-			},
-			{
-                "name": "shipmentNumber",
-                "type": [
-                  "null",
-                  "string"
-                ],
-                "default": null
-              }
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
     ]
   },
   {
@@ -608,37 +644,69 @@
         ],
         "default": null
       },
-        {
-            "name":"currentLocation",
-            "type":["null","com.fretron.Model.LitePosition"],
-            "default":null
-        },
-        			{
-        				"name": "shipmentDate",
-        				"type": [
-        					"null",
-        					"long"
-        				],
-        				"logicalType": "timestamp-millis",
-        				"default": null
-        			},
-        			      {
-                            "name": "shipmentNumber",
-                            "type": [
-                              "null",
-                              "string"
-                            ],
-                            "default": null
-                          },
-                                {
-                                  "name": "creationTime",
-                                  "type": [
-                                    "null",
-                                    "long"
-                                  ],
-                                  "logicalType": "timestamp-millis",
-                                  "default": null
-                                }
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.LitePosition"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "lastSyncUpTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "syncUpDueTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "remarks",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      }
     ]
   }
 ]
