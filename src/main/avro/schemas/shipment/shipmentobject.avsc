@@ -2,6 +2,21 @@
   {
     "namespace": "com.fretron.Model",
     "type": "record",
+    "name": "TrainInfo",
+    "fields": [
+      {
+        "name": "rrNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
     "name": "FleetInfo",
     "fields": [
       {
@@ -49,6 +64,14 @@
         "type": [
           "null",
           "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trainInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.TrainInfo"
         ],
         "default": null
       }
