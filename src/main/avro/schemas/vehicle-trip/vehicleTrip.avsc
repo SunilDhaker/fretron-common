@@ -193,6 +193,33 @@
                 "com.fretron.Model.Place"
               ],
               "default": null
+      },
+      {
+        "name": "expectedActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
       }
     ]
   }
