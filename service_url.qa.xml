@@ -69,7 +69,7 @@
     <entry key="geofence.service.port">9090</entry>
 
 
-    <!-- ==========kafka-topic-manager========= -->
+    <!-- ==========stream-topic-manager========= -->
 
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
 
@@ -90,5 +90,7 @@
     <entry key="token.manager.restservice.port">7090</entry>
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
 </properties>

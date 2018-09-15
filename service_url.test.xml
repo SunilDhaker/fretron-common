@@ -69,7 +69,7 @@
     <entry key="freight.manager.service.port">8090</entry>
     <entry key="geofence.service.port">9090</entry>
 
-    <!-- ==========kafka-topic-manager========= -->
+    <!-- ==========stream-topic-manager========= -->
 
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
 
@@ -94,4 +94,11 @@
     <!--===============TRIP-MIS==============-->
     <entry key = "trip.mis.restservices.ip">http://0.0.0.0</entry>
     <entry key = "trip.mis.restservices.port">7887</entry>
+
+    <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
+    <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
+
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://v-trip-manager.streams:2129</entry>
+
 </properties>

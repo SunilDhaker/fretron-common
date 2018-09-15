@@ -1,228 +1,91 @@
 package com.fretron;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpRequestBase;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
-import org.apache.http.util.EntityUtils;
+import org.glassfish.jersey.client.ClientProperties;
 
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedHashMap;
+import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.core.Response;
+import java.util.HashMap;
+
+@Deprecated
+/**
+ * @deprecated Use Jersey Client and make helper classes in  Microservice only
+ */
 public class HttpRequestHepler {
 
-    public static HttpEntity makePostRequest(String uri, Object requestObject , String authToken ){
-        HttpResponse response = null;
-        HttpEntity entity = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+  private Client client;
 
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpPost post = new HttpPost(uri);
-        post.setHeader("Content-Type", "application/json");
-        if(authToken!=null){
-            post.setHeader("Authorization","Bearer "+authToken);
-        }
-        StringEntity se = null;
-        try {
-            if (requestObject!=null) {
-                se = new StringEntity(requestObject.toString());
-                post.setEntity(se);
-            }
+  public HttpRequestHepler(Client client) {
 
-            try {
-                response = httpClient.execute(post);
-                entity = response.getEntity();
-            } catch (IOException e) {
-                Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-            }
-            finally {
-                httpClient.getConnectionManager().shutdown();
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+    this.client = client;
+  }
 
-        return entity;
-    }
+  public static HttpRequestHepler getInstance() {
+    Client client = ClientBuilder.newBuilder().build();
+    return new HttpRequestHepler(client);
+  }
 
-    public static String makePostRequestAndGetData(String uri, Object requestObject , String authToken ){
-        HttpResponse response = null;
-        HttpEntity entity = null;
-        String dataString = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+  public Response makeGetRequest(String uri, String authToken) {
+    return client
+        .target(uri)
+        .request(MediaType.APPLICATION_JSON)
+        .header("Authorization", "Bearer " + authToken)
+        .get();
+  }
 
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpPost post = new HttpPost(uri);
-        post.setHeader("Content-Type", "application/json");
-        if(authToken!=null){
-            post.setHeader("Authorization","Bearer "+authToken);
-        }
-        StringEntity se = null;
-        try {
-            if (requestObject!=null) {
-                se = new StringEntity(requestObject.toString());
-                post.setEntity(se);
-            }
+  public Response makeGetRequest(String uri, String authToken, int timeout) {
+    return client
+        .property(ClientProperties.CONNECT_TIMEOUT, timeout)
+        .target(uri)
+        .request(MediaType.APPLICATION_JSON)
+        .header("Authorization", "Bearer " + authToken)
+        .get();
+  }
 
-            try {
-                response = httpClient.execute(post);
-                entity = response.getEntity();
-                dataString = EntityUtils.toString(entity);
-            } catch (IOException e) {
-                Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-            }
-            finally {
-                httpClient.getConnectionManager().shutdown();
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+  public Response makePostRequest(String uri, Object requestObject, String authToken) {
 
-        return dataString;
-    }
+    HashMap<String, String> headermap = new HashMap<String, String>();
+    headermap.put("Authorization", "Bearer " + authToken);
+    return makePostRequest(uri, requestObject, headermap);
+  }
 
-    public static HttpEntity makeGetRequest(String uri, String authToken ){
-        HttpResponse response = null;
-        HttpEntity entity = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
+  public String makePostRequestAndGetData(String uri, Object requestObject, String authToken) {
 
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpGet post = new HttpGet(uri);
-        post.setHeader("Content-Type", "application/json");
-        if(authToken!=null){
-            post.setHeader("Authorization","Bearer "+authToken);
-        }
-        StringEntity se = null;
+    Response response = makePostRequest(uri, requestObject, authToken);
+    return response.readEntity(String.class);
+  }
 
-            try {
-                response = httpClient.execute(post);
-                entity = response.getEntity();
-            } catch (IOException e) {
-                Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-            }
-            finally {
-                httpClient.getConnectionManager().shutdown();
-            }
+  public String makeGetRequestAndGetData(String uri, String authToken, int timeout) {
 
-        return entity;
-    }
+    Response response = makeGetRequest(uri, authToken, timeout);
+    return response.readEntity(String.class);
+  }
 
-    public static String makeGetRequestAndGetData(String uri, String authToken , int timeout){
-        String dataString = null;
-        HttpResponse response = null;
-        HttpEntity entity = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, timeout);
+  public Response makePostRequest(String uri, Object requestObject,
+      HashMap<String, String> headers) {
 
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpGet post = new HttpGet(uri);
-        post.setHeader("Content-Type", "application/json");
-        if(authToken!=null){
-            post.setHeader("Authorization","Bearer "+authToken);
-        }
-        StringEntity se = null;
+    MultivaluedMap<String, Object> headerMap = new MultivaluedHashMap<>(headers);
+    return client
+        .target(uri)
+        .request(MediaType.APPLICATION_JSON)
+        .headers(headerMap)
+        .post(Entity.entity(requestObject.toString(), MediaType.APPLICATION_JSON));
+  }
 
-        try {
-            response = httpClient.execute(post);
-            entity = response.getEntity();
-            dataString =  EntityUtils.toString(entity);
-        } catch (IOException e) {
-            Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-        }
-        finally {
-            httpClient.getConnectionManager().shutdown();
-        }
+  public Response makePostRequest(String uri, Object requestObject) {
+    return client
+        .target(uri)
+        .request(MediaType.APPLICATION_JSON)
+        .post(Entity.entity(requestObject.toString(), MediaType.APPLICATION_JSON));
+  }
 
-        return dataString;
-    }
-
-
-    public static String makePostRequest(String uri, Object requestObject , HashMap<String ,String> headers ,int requestTimeout){
-        HttpResponse response;
-        HttpEntity entity = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, requestTimeout);
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpPost post = new HttpPost(uri);
-        addHeaders(post ,headers);
-        StringEntity se;
-        String dataString = null;
-        try {
-            if (requestObject!=null) {
-                se = new StringEntity(requestObject.toString());
-                post.setEntity(se);
-            }
-
-            try {
-                response = httpClient.execute(post);
-                entity = response.getEntity();
-                dataString =  EntityUtils.toString(entity);
-
-            } catch (IOException e) {
-                Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-            }
-            finally {
-                httpClient.getConnectionManager().shutdown();
-            }
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-
-        return dataString;
-    }
-
-
-    private static void addHeaders(HttpRequestBase request , HashMap<String ,String> headerMap){
-        if (headerMap != null) {
-            Iterator iterator = headerMap.entrySet().iterator();
-            while (iterator.hasNext()) {
-                Map.Entry<String, String> header = (Map.Entry<String, String>) iterator.next();
-                request.addHeader(header.getKey(), header.getValue());
-            }
-
-        }
-
-    }
-
-    public static HttpEntity makeGetRequestWithTimeOut(String uri, String authToken ,int timeOut){
-        HttpResponse response = null;
-        HttpEntity entity = null;
-        final HttpParams httpParams = new BasicHttpParams();
-        HttpConnectionParams.setConnectionTimeout(httpParams, timeOut);
-
-        DefaultHttpClient httpClient = new DefaultHttpClient(httpParams);
-        HttpGet post = new HttpGet(uri);
-        post.setHeader("Content-Type", "application/json");
-        if(authToken!=null){
-            post.setHeader("Authorization","Bearer "+authToken);
-        }
-        StringEntity se = null;
-
-        try {
-            response = httpClient.execute(post);
-            entity = response.getEntity();
-        } catch (IOException e) {
-            Logger.getGlobal().log(Level.WARNING,"Connection exception: "+e.getMessage());
-        }
-        finally {
-            httpClient.getConnectionManager().shutdown();
-        }
-
-        return entity;
-    }
-
+  public String makePostRequestAndGetData(String uri, Object requestObject,
+      HashMap<String, String> headers) {
+    return makePostRequest(uri, requestObject, headers).readEntity(String.class);
+  }
 
 }
