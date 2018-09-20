@@ -582,6 +582,11 @@
           "string"
         ],
         "default": null
+      },
+      {
+        "name": "isConsignmentAdded",
+        "type": "boolean",
+        "default": false
       }
     ]
   },
