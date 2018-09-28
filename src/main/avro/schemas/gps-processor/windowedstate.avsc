@@ -100,6 +100,12 @@
             "items":"com.fretron.Model.LitePosition"
           },
           "default":null
+    },
+    {
+          "name": "lastDistance",
+           "type": ["null","double"],
+           "default":null
+
     }
   ]
 }
