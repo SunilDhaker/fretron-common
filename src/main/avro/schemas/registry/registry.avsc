@@ -59,11 +59,24 @@
               "default":null
             },
             {
+             "name": "fretronId",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default":null
+           },
+            {
                 "name":"geoFence",
                 "type":[
                     "null",
                     "com.fretron.Model.GeoJsonFence"
                 ],
+                "default":null
+            },
+            {
+                "name":"places",
+                "type": ["null",{"type" : "array", "items":"com.fretron.Model.Place"}],
                 "default":null
             },
             {
@@ -79,6 +92,14 @@
                   "com.fretron.Model.Location"
                 ],
                 "default":null
+             },
+             {
+               "name": "type",
+               "type": [
+                 "null",
+                 "string"
+               ],
+               "default":null
              }
          ]
       }

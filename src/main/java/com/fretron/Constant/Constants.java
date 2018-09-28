@@ -360,6 +360,8 @@ public class Constants {
     public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
     public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
     public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+    public static final String HUBS_MANAGER_COLLECTION_NAME = "hubs.collection.name";
+
 
     public static final String MONGODB_SERVER_CLUSTER_IP = "mongodb.server.cluster.ip";
     public static final String MONGODB_SERVER_CLUSTER_PORT = "mongodb.server.cluster.port";

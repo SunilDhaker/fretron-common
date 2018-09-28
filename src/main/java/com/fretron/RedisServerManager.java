@@ -117,22 +117,36 @@ public class RedisServerManager {
         return exist;
     }
 
-//    public void getAllFromRedis(){
-//        Jedis jedis = null;
-//        boolean exist = false;
-//        try {
-//            jedis = poolManager.getJedisInstance();
-//            String value  = jedis.
-//            if(value!=null){
-//                exist =  true;
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
-//        } finally {
-//            if (jedis != null) {
-//                jedis.close();
-//            }
-//        }
-//    }
+    public void saveInfo(String key, Object value , int dbIndex) {
+        Jedis jedis = null;
+        try {
+            jedis = poolManager.getJedisInstance();
+            jedis.select(dbIndex);
+            jedis.set(key, value.toString());
+        } catch (Exception e) {
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN SET KEY-VALUE JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+    }
+
+    public String getValueForKey(String key , int dbIndex) {
+        Jedis jedis = null;
+        String value = null;
+        try {
+            jedis = poolManager.getJedisInstance();
+            jedis.select(dbIndex);
+            value = jedis.get(key);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Logger.getGlobal().log(Level.WARNING, "ERROR IN GET VALUE FROM JEDIS-- " + e.getMessage());
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+        return value;
+    }
 }
