@@ -209,8 +209,16 @@
                   "boolean"
              ],
              "default":null
-           }
+           },
+         {
+      "name": "groupsExtended",
 
+      "type":  [
+                "null",
+               {"type" : "array", "items":"com.fretron.Model.OrganisationGroup"}
+               ],
+      "default":null
+     }
          ]
        },
   {
