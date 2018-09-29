@@ -362,7 +362,16 @@
           "string"
         ],
         "default": null
-      }
+      },
+        {
+          "name": "consignmentDate",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        }
     ]
   },
   {
