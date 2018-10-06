@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Vehicle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4744566997694031072L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -4446914417232873791L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"groupsExtended\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrganisationGroup\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String customerId;
   @Deprecated public java.lang.String vehicleType;
@@ -31,6 +31,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.util.List<java.lang.String> attachedDocs;
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.Boolean isTrackingEnabled;
+  @Deprecated public java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -59,8 +60,9 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param attachedDocs The new value for attachedDocs
    * @param source The new value for source
    * @param isTrackingEnabled The new value for isTrackingEnabled
+   * @param groupsExtended The new value for groupsExtended
    */
-  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled) {
+  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled, java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended) {
     this.customerId = customerId;
     this.vehicleType = vehicleType;
     this.vehicleModel = vehicleModel;
@@ -79,6 +81,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     this.attachedDocs = attachedDocs;
     this.source = source;
     this.isTrackingEnabled = isTrackingEnabled;
+    this.groupsExtended = groupsExtended;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -103,6 +106,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 15: return attachedDocs;
     case 16: return source;
     case 17: return isTrackingEnabled;
+    case 18: return groupsExtended;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +133,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 15: attachedDocs = (java.util.List<java.lang.String>)value$; break;
     case 16: source = (java.lang.String)value$; break;
     case 17: isTrackingEnabled = (java.lang.Boolean)value$; break;
+    case 18: groupsExtended = (java.util.List<com.fretron.Model.OrganisationGroup>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -422,6 +427,22 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'groupsExtended' field.
+   * @return The value of the 'groupsExtended' field.
+   */
+  public java.util.List<com.fretron.Model.OrganisationGroup> getGroupsExtended() {
+    return groupsExtended;
+  }
+
+  /**
+   * Sets the value of the 'groupsExtended' field.
+   * @param value the value to set.
+   */
+  public void setGroupsExtended(java.util.List<com.fretron.Model.OrganisationGroup> value) {
+    this.groupsExtended = value;
+  }
+
+  /**
    * Creates a new Vehicle RecordBuilder.
    * @return A new Vehicle RecordBuilder
    */
@@ -471,6 +492,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.util.List<java.lang.String> attachedDocs;
     private java.lang.String source;
     private java.lang.Boolean isTrackingEnabled;
+    private java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended;
 
     /** Creates a new Builder */
     private Builder() {
@@ -555,6 +577,10 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         this.isTrackingEnabled = data().deepCopy(fields()[17].schema(), other.isTrackingEnabled);
         fieldSetFlags()[17] = true;
       }
+      if (isValidValue(fields()[18], other.groupsExtended)) {
+        this.groupsExtended = data().deepCopy(fields()[18].schema(), other.groupsExtended);
+        fieldSetFlags()[18] = true;
+      }
     }
 
     /**
@@ -634,6 +660,10 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[17], other.isTrackingEnabled)) {
         this.isTrackingEnabled = data().deepCopy(fields()[17].schema(), other.isTrackingEnabled);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.groupsExtended)) {
+        this.groupsExtended = data().deepCopy(fields()[18].schema(), other.groupsExtended);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1339,6 +1369,45 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'groupsExtended' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.OrganisationGroup> getGroupsExtended() {
+      return groupsExtended;
+    }
+
+    /**
+      * Sets the value of the 'groupsExtended' field.
+      * @param value The value of 'groupsExtended'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setGroupsExtended(java.util.List<com.fretron.Model.OrganisationGroup> value) {
+      validate(fields()[18], value);
+      this.groupsExtended = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'groupsExtended' field has been set.
+      * @return True if the 'groupsExtended' field has been set, false otherwise.
+      */
+    public boolean hasGroupsExtended() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'groupsExtended' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearGroupsExtended() {
+      groupsExtended = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public Vehicle build() {
       try {
@@ -1361,6 +1430,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         record.attachedDocs = fieldSetFlags()[15] ? this.attachedDocs : (java.util.List<java.lang.String>) defaultValue(fields()[15]);
         record.source = fieldSetFlags()[16] ? this.source : (java.lang.String) defaultValue(fields()[16]);
         record.isTrackingEnabled = fieldSetFlags()[17] ? this.isTrackingEnabled : (java.lang.Boolean) defaultValue(fields()[17]);
+        record.groupsExtended = fieldSetFlags()[18] ? this.groupsExtended : (java.util.List<com.fretron.Model.OrganisationGroup>) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
