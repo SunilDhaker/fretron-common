@@ -294,6 +294,7 @@ public class Constants {
     public static final String FRETRON_GOD_FO_AGENT = "fretron.god.fo.agent";
     public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
     public static final String CONSIGNMENT_COLLECTION_NAME = "consignment.collection.name";
+    public static final String LOCATION_TRAIL_COLLECTION_NAME = "location.trail.collection.name";
     public static final String SHIPMENT_TRACKING_REQUEST_COLLECTION_NAME = "shipment.tracking.request.collection.name";
     public static final String TRUSTED_ORG_COLLECTION_NAME = "shipment.trustedorg.collection.name";
     public static final String SHIPMENT_DB_NAME = "shipment.db.name";
