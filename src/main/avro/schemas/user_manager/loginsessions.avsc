@@ -1,0 +1,52 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "LoginSession",
+  "fields": [
+  {
+       "name": "uuid",
+       "type": ["null" , "string"],
+       "default" : null
+  },
+  {
+      "name": "userId",
+      "type": ["null" , "string"],
+      "default" : null
+  },
+  {
+        "name": "token",
+         "type": ["null" , "string"],
+        "default" : null
+   },
+   {
+         "name": "userAgent",
+          "type": ["null" , "string"],
+          "default" : null
+   },
+    {
+        "name":"isValid",
+        "type": ["null","boolean"],
+        "default":null
+    },
+    {
+       "name": "createdAt",
+       "type":  ["null","long"],
+       "logicalType": "timestamp-millis",
+       "default":null
+    },
+    {
+           "name": "lastUsed",
+           "type":  ["null","long"],
+           "logicalType": "timestamp-millis",
+           "default":null
+    },
+    {
+       "name": "updatedOn",
+        "type":  ["null","long"],
+        "logicalType": "timestamp-millis",
+         "default":null
+    }
+
+
+  ]
+}
