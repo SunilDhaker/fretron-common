@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Updates extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7244800690605907891L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 7558674350787918082L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.util.List<java.lang.String> forwardReasons;
   @Deprecated public java.lang.String updatedBy;
   @Deprecated public java.lang.String userId;
+  @Deprecated public java.lang.Long time;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param forwardReasons The new value for forwardReasons
    * @param updatedBy The new value for updatedBy
    * @param userId The new value for userId
+   * @param time The new value for time
    */
-  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId) {
+  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time) {
     this.forwardReasons = forwardReasons;
     this.updatedBy = updatedBy;
     this.userId = userId;
+    this.time = time;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 0: return forwardReasons;
     case 1: return updatedBy;
     case 2: return userId;
+    case 3: return time;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 0: forwardReasons = (java.util.List<java.lang.String>)value$; break;
     case 1: updatedBy = (java.lang.String)value$; break;
     case 2: userId = (java.lang.String)value$; break;
+    case 3: time = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'time' field.
+   * @return The value of the 'time' field.
+   */
+  public java.lang.Long getTime() {
+    return time;
+  }
+
+  /**
+   * Sets the value of the 'time' field.
+   * @param value the value to set.
+   */
+  public void setTime(java.lang.Long value) {
+    this.time = value;
+  }
+
+  /**
    * Creates a new Updates RecordBuilder.
    * @return A new Updates RecordBuilder
    */
@@ -141,6 +162,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.util.List<java.lang.String> forwardReasons;
     private java.lang.String updatedBy;
     private java.lang.String userId;
+    private java.lang.Long time;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         this.userId = data().deepCopy(fields()[2].schema(), other.userId);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.time)) {
+        this.time = data().deepCopy(fields()[3].schema(), other.time);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[2], other.userId)) {
         this.userId = data().deepCopy(fields()[2].schema(), other.userId);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.time)) {
+        this.time = data().deepCopy(fields()[3].schema(), other.time);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'time' field.
+      * @return The value.
+      */
+    public java.lang.Long getTime() {
+      return time;
+    }
+
+    /**
+      * Sets the value of the 'time' field.
+      * @param value The value of 'time'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder setTime(java.lang.Long value) {
+      validate(fields()[3], value);
+      this.time = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'time' field has been set.
+      * @return True if the 'time' field has been set, false otherwise.
+      */
+    public boolean hasTime() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'time' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder clearTime() {
+      time = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public Updates build() {
       try {
@@ -311,6 +380,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         record.forwardReasons = fieldSetFlags()[0] ? this.forwardReasons : (java.util.List<java.lang.String>) defaultValue(fields()[0]);
         record.updatedBy = fieldSetFlags()[1] ? this.updatedBy : (java.lang.String) defaultValue(fields()[1]);
         record.userId = fieldSetFlags()[2] ? this.userId : (java.lang.String) defaultValue(fields()[2]);
+        record.time = fieldSetFlags()[3] ? this.time : (java.lang.Long) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

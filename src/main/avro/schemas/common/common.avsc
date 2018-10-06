@@ -391,7 +391,16 @@
             "string"
           ],
           "default": null
-        }
+        },
+      {
+        "name": "time",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      }
       ]
     }
 ]
