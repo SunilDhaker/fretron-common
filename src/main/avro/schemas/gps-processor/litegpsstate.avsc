@@ -1,4 +1,4 @@
-  {
+ [ {
     "type": "record",
     "name": "LiteVehicleGpsState",
     "namespace": "com.fretron.Model",
@@ -79,5 +79,5 @@
       }
 
       ]
-  }
+  }]
 
