@@ -12,9 +12,59 @@ import static com.fretron.Utils.Geospacial.DistanceCalculator.distance;
 /**
  * Created by sdhaker on 21/07/17.
  */
+@SuppressWarnings("deprecation")
 public class ClusteringUtils {
 
     private static PolylineDecoder decoder = PolylineDecoder.getInstance();
+
+    public static LitePosition updateMean(LitePosition lastMean, LitePosition endLocation, int n) {
+        LitePosition meanPosition = LitePosition.newBuilder()
+            .setLatitude(0d)
+            .setLongitude(0d)
+            .setSpeed(0)
+            .setTime(0L)
+            .setImei("")
+            .setVehicleId("")
+            .setAddress("")
+            .build();
+
+        meanPosition.setLatitude((((n * lastMean.getLatitude()) + endLocation.getLatitude()) / (n+1)));
+        meanPosition.setLongitude((((n * lastMean.getLongitude()) + endLocation.getLongitude()) / (n+1)));
+        meanPosition.setTime((((n * lastMean.getTime()) + endLocation.getTime()) / (n+1)));
+        return meanPosition;
+    }
+
+
+
+    public static LitePosition updateMean(LitePosition lastMean, List<LitePosition> positions, int n) {
+        if (positions.size() > 0){
+        LitePosition meanPosition = LitePosition.newBuilder()
+            .setLatitude(0d)
+            .setLongitude(0d)
+            .setSpeed(0)
+            .setTime(0L)
+            .setImei("")
+            .setVehicleId("")
+            .setAddress("")
+            .build();
+        meanPosition.setLatitude((n * lastMean.getLatitude()));
+        meanPosition.setLongitude((n * lastMean.getLongitude()));
+        meanPosition.setTime((n * lastMean.getTime()));
+
+           for (LitePosition p : positions) {
+               meanPosition.latitude = meanPosition.latitude + p.latitude;
+               meanPosition.longitude = meanPosition.longitude + p.longitude;
+               meanPosition.time = meanPosition.time + p.getTime();
+           }
+
+           meanPosition.latitude /= (n + positions.size());
+           meanPosition.longitude /= (n + positions.size());
+           meanPosition.time /= (n + positions.size());
+
+           return meanPosition;
+       }
+        return lastMean;
+    }
 
     public static LitePosition calculateMean(List<LitePosition> positions) {
         LitePosition meanPosition = LitePosition.newBuilder()
@@ -46,7 +96,7 @@ public class ClusteringUtils {
         return calculateVariance(positions, meanPosition);
     }
 
-      static double calculateVariance(List<LitePosition> positions, LitePosition mean) {
+    static double calculateVariance(List<LitePosition> positions, LitePosition mean) {
         double variance = 0;
         if (positions.size() > 1) {
             for (LitePosition p : positions) {
@@ -64,7 +114,7 @@ public class ClusteringUtils {
         return (new MeanVariance(meanPosition, variance));
     }
 
-    public static MeanVariance forPositions(List<LitePosition> positions){
+    public static MeanVariance forPositions(List<LitePosition> positions) {
         LitePosition meanPosition = calculateMean(positions);
         double variance = calculateVariance(positions, meanPosition);
         return (new MeanVariance(meanPosition, variance));
