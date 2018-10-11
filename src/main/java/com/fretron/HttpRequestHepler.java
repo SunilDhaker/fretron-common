@@ -79,7 +79,7 @@ public class HttpRequestHepler {
     public Response makePostRequest(String uri, Object requestObject) {
         return client
                 .target(uri)
-                .property(ClientProperties.READ_TIMEOUT, 5000)
+                .property(ClientProperties.READ_TIMEOUT, 20000)
                 .property(ClientProperties.CONNECT_TIMEOUT, 5000)
                 .request(MediaType.APPLICATION_JSON)
                 .post(Entity.entity(requestObject.toString(), MediaType.APPLICATION_JSON));
