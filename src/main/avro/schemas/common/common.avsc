@@ -391,7 +391,33 @@
             "string"
           ],
           "default": null
+        },
+      {
+        "name": "time",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "resourceType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+        {
+          "name": "resourceId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
         }
       ]
     }
+
 ]

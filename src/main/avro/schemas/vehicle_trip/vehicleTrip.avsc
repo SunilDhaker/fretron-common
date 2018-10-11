@@ -220,7 +220,23 @@
         ],
         "logicalType": "timestamp-millis",
         "default": null
-      }
+      },
+        {
+          "name": "updates",
+          "type": [
+            "null",
+            "com.fretron.Model.Updates"
+          ],
+          "default": null
+        },
+        {
+          "name": "currentGpsState",
+          "type": [
+            "null",
+            "com.fretron.Model.LiteVehicleGpsState"
+          ],
+          "default": null
+        }
     ]
   }
 ]

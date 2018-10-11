@@ -1,5 +1,5 @@
- [
-  {
+[
+{
     "type": "record",
     "name": "VehicleGpsState",
     "namespace": "com.fretron.Model",
@@ -87,17 +87,7 @@
         "name": "state",
         "type": [
           "null",
-          {
-            "type": "enum",
-            "name": "GPSState",
-            "symbols": [
-              "Stopped",
-              "Moving",
-              "Overspeeding",
-              "Disconnected",
-              "Unknown"
-            ]
-          }
+          "com.fretron.Model.GPSState"
         ]
       },
       {
@@ -192,5 +182,4 @@
 
     ]
   }
-
-  ]
+]
