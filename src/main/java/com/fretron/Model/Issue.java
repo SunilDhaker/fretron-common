@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Issue extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2536894942882068984L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Issue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueSummery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"reporter\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"assignee\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"creator\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"priority\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resolutionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resolutionDuration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"estimatedResolutionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userWatchers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"userFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"bpartnerFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"bpartnerWatchers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"tags\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"comments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Comment\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"attachments\",\"type\":[","\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 6290451600096870691L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Issue\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueSummery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"reporter\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"assignee\",\"type\":[\"null\",\"User\"],\"default\":null},{\"name\":\"creator\",\"type\":[\"null\",\"User\"],\"default\":null},{\"name\":\"priority\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resolutionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resolutionDuration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"estimatedResolutionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userWatchers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"userFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"bpartnerFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"bpartnerWatchers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"tags\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"comments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Comment\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"attachments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":","[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String resourceId;
@@ -19,9 +19,9 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public java.lang.String issueSummery;
   @Deprecated public java.lang.String issueType;
   @Deprecated public java.lang.String issueDescription;
-  @Deprecated public java.util.List<com.fretron.Model.User> reporter;
-  @Deprecated public java.util.List<com.fretron.Model.User> assignee;
-  @Deprecated public java.util.List<com.fretron.Model.User> creator;
+  @Deprecated public com.fretron.Model.User reporter;
+  @Deprecated public com.fretron.Model.User assignee;
+  @Deprecated public com.fretron.Model.User creator;
   @Deprecated public java.lang.String priority;
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.Long createdAt;
@@ -72,7 +72,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * @param comments The new value for comments
    * @param attachments The new value for attachments
    */
-  public Issue(java.lang.String uuid, java.lang.String resourceId, java.lang.String resourceType, java.lang.String issueSummery, java.lang.String issueType, java.lang.String issueDescription, java.util.List<com.fretron.Model.User> reporter, java.util.List<com.fretron.Model.User> assignee, java.util.List<com.fretron.Model.User> creator, java.lang.String priority, java.lang.String status, java.lang.Long createdAt, java.lang.Long updatedAt, java.lang.String updatedBy, java.lang.Long resolutionDate, java.lang.Long resolutionDuration, java.lang.Long estimatedResolutionDate, java.util.List<com.fretron.Model.User> userWatchers, java.util.List<com.fretron.Model.User> userFollowers, java.util.List<com.fretron.Model.BuisnessPartner> bpartnerFollowers, java.util.List<com.fretron.Model.BuisnessPartner> bpartnerWatchers, java.util.List<java.lang.String> tags, java.util.List<com.fretron.Model.Comment> comments, java.util.List<com.fretron.Model.Document> attachments) {
+  public Issue(java.lang.String uuid, java.lang.String resourceId, java.lang.String resourceType, java.lang.String issueSummery, java.lang.String issueType, java.lang.String issueDescription, com.fretron.Model.User reporter, com.fretron.Model.User assignee, com.fretron.Model.User creator, java.lang.String priority, java.lang.String status, java.lang.Long createdAt, java.lang.Long updatedAt, java.lang.String updatedBy, java.lang.Long resolutionDate, java.lang.Long resolutionDuration, java.lang.Long estimatedResolutionDate, java.util.List<com.fretron.Model.User> userWatchers, java.util.List<com.fretron.Model.User> userFollowers, java.util.List<com.fretron.Model.BuisnessPartner> bpartnerFollowers, java.util.List<com.fretron.Model.BuisnessPartner> bpartnerWatchers, java.util.List<java.lang.String> tags, java.util.List<com.fretron.Model.Comment> comments, java.util.List<com.fretron.Model.Document> attachments) {
     this.uuid = uuid;
     this.resourceId = resourceId;
     this.resourceType = resourceType;
@@ -141,9 +141,9 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
     case 3: issueSummery = (java.lang.String)value$; break;
     case 4: issueType = (java.lang.String)value$; break;
     case 5: issueDescription = (java.lang.String)value$; break;
-    case 6: reporter = (java.util.List<com.fretron.Model.User>)value$; break;
-    case 7: assignee = (java.util.List<com.fretron.Model.User>)value$; break;
-    case 8: creator = (java.util.List<com.fretron.Model.User>)value$; break;
+    case 6: reporter = (com.fretron.Model.User)value$; break;
+    case 7: assignee = (com.fretron.Model.User)value$; break;
+    case 8: creator = (com.fretron.Model.User)value$; break;
     case 9: priority = (java.lang.String)value$; break;
     case 10: status = (java.lang.String)value$; break;
     case 11: createdAt = (java.lang.Long)value$; break;
@@ -263,7 +263,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Gets the value of the 'reporter' field.
    * @return The value of the 'reporter' field.
    */
-  public java.util.List<com.fretron.Model.User> getReporter() {
+  public com.fretron.Model.User getReporter() {
     return reporter;
   }
 
@@ -271,7 +271,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Sets the value of the 'reporter' field.
    * @param value the value to set.
    */
-  public void setReporter(java.util.List<com.fretron.Model.User> value) {
+  public void setReporter(com.fretron.Model.User value) {
     this.reporter = value;
   }
 
@@ -279,7 +279,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Gets the value of the 'assignee' field.
    * @return The value of the 'assignee' field.
    */
-  public java.util.List<com.fretron.Model.User> getAssignee() {
+  public com.fretron.Model.User getAssignee() {
     return assignee;
   }
 
@@ -287,7 +287,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Sets the value of the 'assignee' field.
    * @param value the value to set.
    */
-  public void setAssignee(java.util.List<com.fretron.Model.User> value) {
+  public void setAssignee(com.fretron.Model.User value) {
     this.assignee = value;
   }
 
@@ -295,7 +295,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Gets the value of the 'creator' field.
    * @return The value of the 'creator' field.
    */
-  public java.util.List<com.fretron.Model.User> getCreator() {
+  public com.fretron.Model.User getCreator() {
     return creator;
   }
 
@@ -303,7 +303,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
    * Sets the value of the 'creator' field.
    * @param value the value to set.
    */
-  public void setCreator(java.util.List<com.fretron.Model.User> value) {
+  public void setCreator(com.fretron.Model.User value) {
     this.creator = value;
   }
 
@@ -585,9 +585,12 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
     private java.lang.String issueSummery;
     private java.lang.String issueType;
     private java.lang.String issueDescription;
-    private java.util.List<com.fretron.Model.User> reporter;
-    private java.util.List<com.fretron.Model.User> assignee;
-    private java.util.List<com.fretron.Model.User> creator;
+    private com.fretron.Model.User reporter;
+    private com.fretron.Model.User.Builder reporterBuilder;
+    private com.fretron.Model.User assignee;
+    private com.fretron.Model.User.Builder assigneeBuilder;
+    private com.fretron.Model.User creator;
+    private com.fretron.Model.User.Builder creatorBuilder;
     private java.lang.String priority;
     private java.lang.String status;
     private java.lang.Long createdAt;
@@ -643,13 +646,22 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
         this.reporter = data().deepCopy(fields()[6].schema(), other.reporter);
         fieldSetFlags()[6] = true;
       }
+      if (other.hasReporterBuilder()) {
+        this.reporterBuilder = com.fretron.Model.User.newBuilder(other.getReporterBuilder());
+      }
       if (isValidValue(fields()[7], other.assignee)) {
         this.assignee = data().deepCopy(fields()[7].schema(), other.assignee);
         fieldSetFlags()[7] = true;
       }
+      if (other.hasAssigneeBuilder()) {
+        this.assigneeBuilder = com.fretron.Model.User.newBuilder(other.getAssigneeBuilder());
+      }
       if (isValidValue(fields()[8], other.creator)) {
         this.creator = data().deepCopy(fields()[8].schema(), other.creator);
         fieldSetFlags()[8] = true;
+      }
+      if (other.hasCreatorBuilder()) {
+        this.creatorBuilder = com.fretron.Model.User.newBuilder(other.getCreatorBuilder());
       }
       if (isValidValue(fields()[9], other.priority)) {
         this.priority = data().deepCopy(fields()[9].schema(), other.priority);
@@ -747,14 +759,17 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
         this.reporter = data().deepCopy(fields()[6].schema(), other.reporter);
         fieldSetFlags()[6] = true;
       }
+      this.reporterBuilder = null;
       if (isValidValue(fields()[7], other.assignee)) {
         this.assignee = data().deepCopy(fields()[7].schema(), other.assignee);
         fieldSetFlags()[7] = true;
       }
+      this.assigneeBuilder = null;
       if (isValidValue(fields()[8], other.creator)) {
         this.creator = data().deepCopy(fields()[8].schema(), other.creator);
         fieldSetFlags()[8] = true;
       }
+      this.creatorBuilder = null;
       if (isValidValue(fields()[9], other.priority)) {
         this.priority = data().deepCopy(fields()[9].schema(), other.priority);
         fieldSetFlags()[9] = true;
@@ -1055,7 +1070,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * Gets the value of the 'reporter' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.User> getReporter() {
+    public com.fretron.Model.User getReporter() {
       return reporter;
     }
 
@@ -1064,8 +1079,9 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'reporter'.
       * @return This builder.
       */
-    public com.fretron.Model.Issue.Builder setReporter(java.util.List<com.fretron.Model.User> value) {
+    public com.fretron.Model.Issue.Builder setReporter(com.fretron.Model.User value) {
       validate(fields()[6], value);
+      this.reporterBuilder = null;
       this.reporter = value;
       fieldSetFlags()[6] = true;
       return this;
@@ -1079,6 +1095,39 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       return fieldSetFlags()[6];
     }
 
+    /**
+     * Gets the Builder instance for the 'reporter' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.User.Builder getReporterBuilder() {
+      if (reporterBuilder == null) {
+        if (hasReporter()) {
+          setReporterBuilder(com.fretron.Model.User.newBuilder(reporter));
+        } else {
+          setReporterBuilder(com.fretron.Model.User.newBuilder());
+        }
+      }
+      return reporterBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'reporter' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Issue.Builder setReporterBuilder(com.fretron.Model.User.Builder value) {
+      clearReporter();
+      reporterBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'reporter' field has an active Builder instance
+     * @return True if the 'reporter' field has an active Builder instance
+     */
+    public boolean hasReporterBuilder() {
+      return reporterBuilder != null;
+    }
 
     /**
       * Clears the value of the 'reporter' field.
@@ -1086,6 +1135,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Issue.Builder clearReporter() {
       reporter = null;
+      reporterBuilder = null;
       fieldSetFlags()[6] = false;
       return this;
     }
@@ -1094,7 +1144,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * Gets the value of the 'assignee' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.User> getAssignee() {
+    public com.fretron.Model.User getAssignee() {
       return assignee;
     }
 
@@ -1103,8 +1153,9 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'assignee'.
       * @return This builder.
       */
-    public com.fretron.Model.Issue.Builder setAssignee(java.util.List<com.fretron.Model.User> value) {
+    public com.fretron.Model.Issue.Builder setAssignee(com.fretron.Model.User value) {
       validate(fields()[7], value);
+      this.assigneeBuilder = null;
       this.assignee = value;
       fieldSetFlags()[7] = true;
       return this;
@@ -1118,6 +1169,39 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       return fieldSetFlags()[7];
     }
 
+    /**
+     * Gets the Builder instance for the 'assignee' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.User.Builder getAssigneeBuilder() {
+      if (assigneeBuilder == null) {
+        if (hasAssignee()) {
+          setAssigneeBuilder(com.fretron.Model.User.newBuilder(assignee));
+        } else {
+          setAssigneeBuilder(com.fretron.Model.User.newBuilder());
+        }
+      }
+      return assigneeBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'assignee' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Issue.Builder setAssigneeBuilder(com.fretron.Model.User.Builder value) {
+      clearAssignee();
+      assigneeBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'assignee' field has an active Builder instance
+     * @return True if the 'assignee' field has an active Builder instance
+     */
+    public boolean hasAssigneeBuilder() {
+      return assigneeBuilder != null;
+    }
 
     /**
       * Clears the value of the 'assignee' field.
@@ -1125,6 +1209,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Issue.Builder clearAssignee() {
       assignee = null;
+      assigneeBuilder = null;
       fieldSetFlags()[7] = false;
       return this;
     }
@@ -1133,7 +1218,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * Gets the value of the 'creator' field.
       * @return The value.
       */
-    public java.util.List<com.fretron.Model.User> getCreator() {
+    public com.fretron.Model.User getCreator() {
       return creator;
     }
 
@@ -1142,8 +1227,9 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'creator'.
       * @return This builder.
       */
-    public com.fretron.Model.Issue.Builder setCreator(java.util.List<com.fretron.Model.User> value) {
+    public com.fretron.Model.Issue.Builder setCreator(com.fretron.Model.User value) {
       validate(fields()[8], value);
+      this.creatorBuilder = null;
       this.creator = value;
       fieldSetFlags()[8] = true;
       return this;
@@ -1157,6 +1243,39 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       return fieldSetFlags()[8];
     }
 
+    /**
+     * Gets the Builder instance for the 'creator' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.User.Builder getCreatorBuilder() {
+      if (creatorBuilder == null) {
+        if (hasCreator()) {
+          setCreatorBuilder(com.fretron.Model.User.newBuilder(creator));
+        } else {
+          setCreatorBuilder(com.fretron.Model.User.newBuilder());
+        }
+      }
+      return creatorBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'creator' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Issue.Builder setCreatorBuilder(com.fretron.Model.User.Builder value) {
+      clearCreator();
+      creatorBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'creator' field has an active Builder instance
+     * @return True if the 'creator' field has an active Builder instance
+     */
+    public boolean hasCreatorBuilder() {
+      return creatorBuilder != null;
+    }
 
     /**
       * Clears the value of the 'creator' field.
@@ -1164,6 +1283,7 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Issue.Builder clearCreator() {
       creator = null;
+      creatorBuilder = null;
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -1763,9 +1883,21 @@ public class Issue extends org.apache.avro.specific.SpecificRecordBase implement
         record.issueSummery = fieldSetFlags()[3] ? this.issueSummery : (java.lang.String) defaultValue(fields()[3]);
         record.issueType = fieldSetFlags()[4] ? this.issueType : (java.lang.String) defaultValue(fields()[4]);
         record.issueDescription = fieldSetFlags()[5] ? this.issueDescription : (java.lang.String) defaultValue(fields()[5]);
-        record.reporter = fieldSetFlags()[6] ? this.reporter : (java.util.List<com.fretron.Model.User>) defaultValue(fields()[6]);
-        record.assignee = fieldSetFlags()[7] ? this.assignee : (java.util.List<com.fretron.Model.User>) defaultValue(fields()[7]);
-        record.creator = fieldSetFlags()[8] ? this.creator : (java.util.List<com.fretron.Model.User>) defaultValue(fields()[8]);
+        if (reporterBuilder != null) {
+          record.reporter = this.reporterBuilder.build();
+        } else {
+          record.reporter = fieldSetFlags()[6] ? this.reporter : (com.fretron.Model.User) defaultValue(fields()[6]);
+        }
+        if (assigneeBuilder != null) {
+          record.assignee = this.assigneeBuilder.build();
+        } else {
+          record.assignee = fieldSetFlags()[7] ? this.assignee : (com.fretron.Model.User) defaultValue(fields()[7]);
+        }
+        if (creatorBuilder != null) {
+          record.creator = this.creatorBuilder.build();
+        } else {
+          record.creator = fieldSetFlags()[8] ? this.creator : (com.fretron.Model.User) defaultValue(fields()[8]);
+        }
         record.priority = fieldSetFlags()[9] ? this.priority : (java.lang.String) defaultValue(fields()[9]);
         record.status = fieldSetFlags()[10] ? this.status : (java.lang.String) defaultValue(fields()[10]);
         record.createdAt = fieldSetFlags()[11] ? this.createdAt : (java.lang.Long) defaultValue(fields()[11]);

@@ -51,10 +51,7 @@
         "name": "reporter",
         "type": [
           "null",
-          {
-            "type": "array",
-            "items": "com.fretron.Model.User"
-          }
+          "com.fretron.Model.User"
         ],
         "default": null
       },
@@ -62,10 +59,7 @@
         "name": "assignee",
         "type": [
           "null",
-          {
-            "type": "array",
-            "items": "com.fretron.Model.User"
-          }
+          "com.fretron.Model.User"
         ],
         "default": null
       },
@@ -73,10 +67,7 @@
         "name": "creator",
         "type": [
           "null",
-          {
-            "type": "array",
-            "items": "com.fretron.Model.User"
-          }
+          "com.fretron.Model.User"
         ],
         "default": null
       },
