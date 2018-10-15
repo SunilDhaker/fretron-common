@@ -104,4 +104,7 @@
     <!-- =========Itinerary-Manager========== -->
     <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="issue.manager.service.url">http://issue-manager.streams:2130</entry>
+
 </properties>

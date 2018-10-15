@@ -516,6 +516,17 @@ public class Constants {
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
 
 
+    //=================================ISSUE MANAGER===========================
+    public static final String ISSUE_MANAGER_APP_ID = "issue.manager.app.id";
+    public static final String ISSUE_MANAGER_SERVICE_URL = "issue.manager.service.url";
+    public static final String ISSUE_MANAGER_APP_IP = "issue.manager.restservice.ip";
+    public static final String ISSUE_MANAGER_APP_PORT = "issue.manager.restservice.port";
+    public static final String ISSUES_DB_NAME = "issues.db.name";
+    public static final String ISSUES_DB_HOST = "issues.db.host";
+    public static final String ISSUES_DB_PORT = "issues.db.port";
+    public static final String ISSUES_COLLECTION_NAME = "issues.collection.name";
+    public static final String KEY_ISSUE_TOPIC = "issue.topic";
+
 
     private Constants() {
 

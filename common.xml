@@ -175,5 +175,7 @@
     <entry key="commad.result.copartition.topic">commandresultcoparttiontopic</entry>
     <entry key="geocoder">fretron</entry>
 
+    <!-- ================-issue-manager =============== -->
+    <entry key="issue.topic">issuetopic</entry>
 
 </properties>
