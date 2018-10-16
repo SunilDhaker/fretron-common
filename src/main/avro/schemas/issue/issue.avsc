@@ -215,6 +215,25 @@
           }
         ],
         "default": null
-      }
+      },
+       {
+              "name": "customeFields",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "com.fretron.Model.CustomeField"
+                }
+              ],
+              "default": null
+       },
+       {
+         "name": "updates",
+         "type": [
+           "null",
+           "com.fretron.Model.Updates"
+         ],
+         "default": null
+       }
     ]
   }
