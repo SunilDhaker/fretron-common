@@ -106,14 +106,11 @@
                "type":["null","string"],
                 "default":null
             },
-
-             {
-                 "name":"shipmentNumber",
+            {
+                 "name":"attachedResourceId",
                  "type":["null","string"],
                  "default":null
-             }
-
-
+            }
 
     ]
   }

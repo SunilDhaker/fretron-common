@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Device extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -339222262658482059L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3564694522025027973L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String mobileNumber;
@@ -28,7 +28,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.Boolean isSuspended;
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.String usedBy;
-  @Deprecated public java.lang.String shipmentNumber;
+  @Deprecated public java.lang.String attachedResourceId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -54,9 +54,9 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param isSuspended The new value for isSuspended
    * @param type The new value for type
    * @param usedBy The new value for usedBy
-   * @param shipmentNumber The new value for shipmentNumber
+   * @param attachedResourceId The new value for attachedResourceId
    */
-  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String shipmentNumber) {
+  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId) {
     this.imei = imei;
     this.mobileNumber = mobileNumber;
     this.manufacturerName = manufacturerName;
@@ -72,7 +72,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     this.isSuspended = isSuspended;
     this.type = type;
     this.usedBy = usedBy;
-    this.shipmentNumber = shipmentNumber;
+    this.attachedResourceId = attachedResourceId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -94,7 +94,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 12: return isSuspended;
     case 13: return type;
     case 14: return usedBy;
-    case 15: return shipmentNumber;
+    case 15: return attachedResourceId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -118,7 +118,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 12: isSuspended = (java.lang.Boolean)value$; break;
     case 13: type = (java.lang.String)value$; break;
     case 14: usedBy = (java.lang.String)value$; break;
-    case 15: shipmentNumber = (java.lang.String)value$; break;
+    case 15: attachedResourceId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -364,19 +364,19 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
-   * Gets the value of the 'shipmentNumber' field.
-   * @return The value of the 'shipmentNumber' field.
+   * Gets the value of the 'attachedResourceId' field.
+   * @return The value of the 'attachedResourceId' field.
    */
-  public java.lang.String getShipmentNumber() {
-    return shipmentNumber;
+  public java.lang.String getAttachedResourceId() {
+    return attachedResourceId;
   }
 
   /**
-   * Sets the value of the 'shipmentNumber' field.
+   * Sets the value of the 'attachedResourceId' field.
    * @param value the value to set.
    */
-  public void setShipmentNumber(java.lang.String value) {
-    this.shipmentNumber = value;
+  public void setAttachedResourceId(java.lang.String value) {
+    this.attachedResourceId = value;
   }
 
   /**
@@ -426,7 +426,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.Boolean isSuspended;
     private java.lang.String type;
     private java.lang.String usedBy;
-    private java.lang.String shipmentNumber;
+    private java.lang.String attachedResourceId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -499,8 +499,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.usedBy = data().deepCopy(fields()[14].schema(), other.usedBy);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.shipmentNumber)) {
-        this.shipmentNumber = data().deepCopy(fields()[15].schema(), other.shipmentNumber);
+      if (isValidValue(fields()[15], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
         fieldSetFlags()[15] = true;
       }
     }
@@ -571,8 +571,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.usedBy = data().deepCopy(fields()[14].schema(), other.usedBy);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.shipmentNumber)) {
-        this.shipmentNumber = data().deepCopy(fields()[15].schema(), other.shipmentNumber);
+      if (isValidValue(fields()[15], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
         fieldSetFlags()[15] = true;
       }
     }
@@ -1163,40 +1163,40 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     }
 
     /**
-      * Gets the value of the 'shipmentNumber' field.
+      * Gets the value of the 'attachedResourceId' field.
       * @return The value.
       */
-    public java.lang.String getShipmentNumber() {
-      return shipmentNumber;
+    public java.lang.String getAttachedResourceId() {
+      return attachedResourceId;
     }
 
     /**
-      * Sets the value of the 'shipmentNumber' field.
-      * @param value The value of 'shipmentNumber'.
+      * Sets the value of the 'attachedResourceId' field.
+      * @param value The value of 'attachedResourceId'.
       * @return This builder.
       */
-    public com.fretron.Model.Device.Builder setShipmentNumber(java.lang.String value) {
+    public com.fretron.Model.Device.Builder setAttachedResourceId(java.lang.String value) {
       validate(fields()[15], value);
-      this.shipmentNumber = value;
+      this.attachedResourceId = value;
       fieldSetFlags()[15] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'shipmentNumber' field has been set.
-      * @return True if the 'shipmentNumber' field has been set, false otherwise.
+      * Checks whether the 'attachedResourceId' field has been set.
+      * @return True if the 'attachedResourceId' field has been set, false otherwise.
       */
-    public boolean hasShipmentNumber() {
+    public boolean hasAttachedResourceId() {
       return fieldSetFlags()[15];
     }
 
 
     /**
-      * Clears the value of the 'shipmentNumber' field.
+      * Clears the value of the 'attachedResourceId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Device.Builder clearShipmentNumber() {
-      shipmentNumber = null;
+    public com.fretron.Model.Device.Builder clearAttachedResourceId() {
+      attachedResourceId = null;
       fieldSetFlags()[15] = false;
       return this;
     }
@@ -1220,7 +1220,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         record.isSuspended = fieldSetFlags()[12] ? this.isSuspended : (java.lang.Boolean) defaultValue(fields()[12]);
         record.type = fieldSetFlags()[13] ? this.type : (java.lang.String) defaultValue(fields()[13]);
         record.usedBy = fieldSetFlags()[14] ? this.usedBy : (java.lang.String) defaultValue(fields()[14]);
-        record.shipmentNumber = fieldSetFlags()[15] ? this.shipmentNumber : (java.lang.String) defaultValue(fields()[15]);
+        record.attachedResourceId = fieldSetFlags()[15] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

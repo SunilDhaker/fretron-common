@@ -37,7 +37,7 @@ public class BeanUtils {
   public static void main(String[] args) {
 
     Device d = new Device("12", "12", "123", null, null, null, null, null, null, null, null, null,
-        null, null ,null ,null);
+        null, null ,null ,null );
     Device d1 = new Device(null, "12", "1233", "adf", "dfsa", null, null, null, null, null, null,
         null, true, null ,null ,null);
     try {
