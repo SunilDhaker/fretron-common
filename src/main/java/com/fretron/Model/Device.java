@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Device extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3564694522025027973L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3675351545560527806L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String mobileNumber;
@@ -29,6 +29,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.String usedBy;
   @Deprecated public java.lang.String attachedResourceId;
+  @Deprecated public java.lang.String attachedResourceNumber;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -55,8 +56,9 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param type The new value for type
    * @param usedBy The new value for usedBy
    * @param attachedResourceId The new value for attachedResourceId
+   * @param attachedResourceNumber The new value for attachedResourceNumber
    */
-  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId) {
+  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber) {
     this.imei = imei;
     this.mobileNumber = mobileNumber;
     this.manufacturerName = manufacturerName;
@@ -73,6 +75,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     this.type = type;
     this.usedBy = usedBy;
     this.attachedResourceId = attachedResourceId;
+    this.attachedResourceNumber = attachedResourceNumber;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -95,6 +98,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 13: return type;
     case 14: return usedBy;
     case 15: return attachedResourceId;
+    case 16: return attachedResourceNumber;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -119,6 +123,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 13: type = (java.lang.String)value$; break;
     case 14: usedBy = (java.lang.String)value$; break;
     case 15: attachedResourceId = (java.lang.String)value$; break;
+    case 16: attachedResourceNumber = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -380,6 +385,22 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'attachedResourceNumber' field.
+   * @return The value of the 'attachedResourceNumber' field.
+   */
+  public java.lang.String getAttachedResourceNumber() {
+    return attachedResourceNumber;
+  }
+
+  /**
+   * Sets the value of the 'attachedResourceNumber' field.
+   * @param value the value to set.
+   */
+  public void setAttachedResourceNumber(java.lang.String value) {
+    this.attachedResourceNumber = value;
+  }
+
+  /**
    * Creates a new Device RecordBuilder.
    * @return A new Device RecordBuilder
    */
@@ -427,6 +448,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String type;
     private java.lang.String usedBy;
     private java.lang.String attachedResourceId;
+    private java.lang.String attachedResourceNumber;
 
     /** Creates a new Builder */
     private Builder() {
@@ -503,6 +525,10 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
         fieldSetFlags()[15] = true;
       }
+      if (isValidValue(fields()[16], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[16].schema(), other.attachedResourceNumber);
+        fieldSetFlags()[16] = true;
+      }
     }
 
     /**
@@ -574,6 +600,10 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       if (isValidValue(fields()[15], other.attachedResourceId)) {
         this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
         fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[16].schema(), other.attachedResourceNumber);
+        fieldSetFlags()[16] = true;
       }
     }
 
@@ -1201,6 +1231,45 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'attachedResourceNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getAttachedResourceNumber() {
+      return attachedResourceNumber;
+    }
+
+    /**
+      * Sets the value of the 'attachedResourceNumber' field.
+      * @param value The value of 'attachedResourceNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setAttachedResourceNumber(java.lang.String value) {
+      validate(fields()[16], value);
+      this.attachedResourceNumber = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attachedResourceNumber' field has been set.
+      * @return True if the 'attachedResourceNumber' field has been set, false otherwise.
+      */
+    public boolean hasAttachedResourceNumber() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'attachedResourceNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearAttachedResourceNumber() {
+      attachedResourceNumber = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
     @Override
     public Device build() {
       try {
@@ -1221,6 +1290,7 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         record.type = fieldSetFlags()[13] ? this.type : (java.lang.String) defaultValue(fields()[13]);
         record.usedBy = fieldSetFlags()[14] ? this.usedBy : (java.lang.String) defaultValue(fields()[14]);
         record.attachedResourceId = fieldSetFlags()[15] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[15]);
+        record.attachedResourceNumber = fieldSetFlags()[16] ? this.attachedResourceNumber : (java.lang.String) defaultValue(fields()[16]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

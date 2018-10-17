@@ -110,6 +110,11 @@
                  "name":"attachedResourceId",
                  "type":["null","string"],
                  "default":null
+            },
+            {
+               "name":"attachedResourceNumber",
+                "type":["null","string"],
+                "default":null
             }
 
     ]
