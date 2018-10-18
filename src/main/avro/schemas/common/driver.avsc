@@ -64,6 +64,16 @@
         "default": null
       },
       {
+                "name":"address",
+                 "type":["null","string"],
+               "default":null
+      },
+      {
+                "name":"pincode",
+                 "type":["null","string"],
+               "default":null
+      },
+      {
           "name":"vehicleId",
            "type":["null","string"],
          "default":null
