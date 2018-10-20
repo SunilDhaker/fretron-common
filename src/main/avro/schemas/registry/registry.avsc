@@ -48,6 +48,11 @@
           }
         ],
         "default": null
+      },
+      {
+        "name": "isPortalEnabled",
+        "type": "boolean",
+        "default": false
       }
     ]
   },

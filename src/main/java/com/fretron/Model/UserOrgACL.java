@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7289896999906777313L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3670063404879503490L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String orgUuid;
   @Deprecated public java.lang.String userUuid;
   @Deprecated public java.lang.String accessLevel;
+  @Deprecated public java.lang.String relationType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
    * @param orgUuid The new value for orgUuid
    * @param userUuid The new value for userUuid
    * @param accessLevel The new value for accessLevel
+   * @param relationType The new value for relationType
    */
-  public UserOrgACL(java.lang.String orgUuid, java.lang.String userUuid, java.lang.String accessLevel) {
+  public UserOrgACL(java.lang.String orgUuid, java.lang.String userUuid, java.lang.String accessLevel, java.lang.String relationType) {
     this.orgUuid = orgUuid;
     this.userUuid = userUuid;
     this.accessLevel = accessLevel;
+    this.relationType = relationType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 0: return orgUuid;
     case 1: return userUuid;
     case 2: return accessLevel;
+    case 3: return relationType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 0: orgUuid = (java.lang.String)value$; break;
     case 1: userUuid = (java.lang.String)value$; break;
     case 2: accessLevel = (java.lang.String)value$; break;
+    case 3: relationType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'relationType' field.
+   * @return The value of the 'relationType' field.
+   */
+  public java.lang.String getRelationType() {
+    return relationType;
+  }
+
+  /**
+   * Sets the value of the 'relationType' field.
+   * @param value the value to set.
+   */
+  public void setRelationType(java.lang.String value) {
+    this.relationType = value;
+  }
+
+  /**
    * Creates a new UserOrgACL RecordBuilder.
    * @return A new UserOrgACL RecordBuilder
    */
@@ -141,6 +162,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String orgUuid;
     private java.lang.String userUuid;
     private java.lang.String accessLevel;
+    private java.lang.String relationType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         this.accessLevel = data().deepCopy(fields()[2].schema(), other.accessLevel);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.relationType)) {
+        this.relationType = data().deepCopy(fields()[3].schema(), other.relationType);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[2], other.accessLevel)) {
         this.accessLevel = data().deepCopy(fields()[2].schema(), other.accessLevel);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.relationType)) {
+        this.relationType = data().deepCopy(fields()[3].schema(), other.relationType);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'relationType' field.
+      * @return The value.
+      */
+    public java.lang.String getRelationType() {
+      return relationType;
+    }
+
+    /**
+      * Sets the value of the 'relationType' field.
+      * @param value The value of 'relationType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder setRelationType(java.lang.String value) {
+      validate(fields()[3], value);
+      this.relationType = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'relationType' field has been set.
+      * @return True if the 'relationType' field has been set, false otherwise.
+      */
+    public boolean hasRelationType() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'relationType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder clearRelationType() {
+      relationType = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public UserOrgACL build() {
       try {
@@ -311,6 +380,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         record.orgUuid = fieldSetFlags()[0] ? this.orgUuid : (java.lang.String) defaultValue(fields()[0]);
         record.userUuid = fieldSetFlags()[1] ? this.userUuid : (java.lang.String) defaultValue(fields()[1]);
         record.accessLevel = fieldSetFlags()[2] ? this.accessLevel : (java.lang.String) defaultValue(fields()[2]);
+        record.relationType = fieldSetFlags()[3] ? this.relationType : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
