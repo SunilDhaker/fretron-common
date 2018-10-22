@@ -177,6 +177,9 @@ public class Constants {
     public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
     public static final String KEY_CONSIGNMENT_TOPIC = "consignment.topic";
 
+    public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
+    public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
+
     //=========================================
     public static final String REGISTRY_MANAGER_APPID = "registry.manager.appId";
     public static final String LATEST_COMMAND_TOPIC = "latest.command.topic";

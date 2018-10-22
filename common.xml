@@ -178,4 +178,10 @@
     <!-- ================-issue-manager =============== -->
     <entry key="issue.topic">issuetopic</entry>
 
+    <!-- ================-inventory-manager =============== -->
+
+    <entry key="equipment.topic">equipmentTopic</entry>
+    <entry key="org.office.topic">orgOfficeTopic</entry>
+
+
 </properties>
