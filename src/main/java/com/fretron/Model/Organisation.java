@@ -10,15 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3737346936281036966L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"bPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6367512182619566269L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String organisationName;
   @Deprecated public com.fretron.Model.OrganisationType type;
   @Deprecated public java.lang.String addedBy;
-  @Deprecated public java.lang.String bPartnerId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -34,15 +33,13 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param organisationName The new value for organisationName
    * @param type The new value for type
    * @param addedBy The new value for addedBy
-   * @param bPartnerId The new value for bPartnerId
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String bPartnerId) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
     this.type = type;
     this.addedBy = addedBy;
-    this.bPartnerId = bPartnerId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -54,7 +51,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 2: return organisationName;
     case 3: return type;
     case 4: return addedBy;
-    case 5: return bPartnerId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -68,7 +64,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 2: organisationName = (java.lang.String)value$; break;
     case 3: type = (com.fretron.Model.OrganisationType)value$; break;
     case 4: addedBy = (java.lang.String)value$; break;
-    case 5: bPartnerId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -154,22 +149,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
-   * Gets the value of the 'bPartnerId' field.
-   * @return The value of the 'bPartnerId' field.
-   */
-  public java.lang.String getBPartnerId() {
-    return bPartnerId;
-  }
-
-  /**
-   * Sets the value of the 'bPartnerId' field.
-   * @param value the value to set.
-   */
-  public void setBPartnerId(java.lang.String value) {
-    this.bPartnerId = value;
-  }
-
-  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -206,7 +185,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String organisationName;
     private com.fretron.Model.OrganisationType type;
     private java.lang.String addedBy;
-    private java.lang.String bPartnerId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -239,10 +217,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.addedBy = data().deepCopy(fields()[4].schema(), other.addedBy);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.bPartnerId)) {
-        this.bPartnerId = data().deepCopy(fields()[5].schema(), other.bPartnerId);
-        fieldSetFlags()[5] = true;
-      }
     }
 
     /**
@@ -270,10 +244,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[4], other.addedBy)) {
         this.addedBy = data().deepCopy(fields()[4].schema(), other.addedBy);
         fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.bPartnerId)) {
-        this.bPartnerId = data().deepCopy(fields()[5].schema(), other.bPartnerId);
-        fieldSetFlags()[5] = true;
       }
     }
 
@@ -472,45 +442,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
-    /**
-      * Gets the value of the 'bPartnerId' field.
-      * @return The value.
-      */
-    public java.lang.String getBPartnerId() {
-      return bPartnerId;
-    }
-
-    /**
-      * Sets the value of the 'bPartnerId' field.
-      * @param value The value of 'bPartnerId'.
-      * @return This builder.
-      */
-    public com.fretron.Model.Organisation.Builder setBPartnerId(java.lang.String value) {
-      validate(fields()[5], value);
-      this.bPartnerId = value;
-      fieldSetFlags()[5] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'bPartnerId' field has been set.
-      * @return True if the 'bPartnerId' field has been set, false otherwise.
-      */
-    public boolean hasBPartnerId() {
-      return fieldSetFlags()[5];
-    }
-
-
-    /**
-      * Clears the value of the 'bPartnerId' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.Organisation.Builder clearBPartnerId() {
-      bPartnerId = null;
-      fieldSetFlags()[5] = false;
-      return this;
-    }
-
     @Override
     public Organisation build() {
       try {
@@ -520,7 +451,6 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.organisationName = fieldSetFlags()[2] ? this.organisationName : (java.lang.String) defaultValue(fields()[2]);
         record.type = fieldSetFlags()[3] ? this.type : (com.fretron.Model.OrganisationType) defaultValue(fields()[3]);
         record.addedBy = fieldSetFlags()[4] ? this.addedBy : (java.lang.String) defaultValue(fields()[4]);
-        record.bPartnerId = fieldSetFlags()[5] ? this.bPartnerId : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

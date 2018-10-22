@@ -36,12 +36,7 @@
             "name": "addedBy",
              "type": ["null" , "string"],
              "default" : null
-       },
-    {
-           "name": "bPartnerId",
-            "type": ["null" , "string"],
-            "default" : null
-      }
+       }
   ]
 
   }
