@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Document extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -128436922636268349L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8801472296883192074L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Boolean isExpirable;
@@ -21,6 +21,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String docPath;
   @Deprecated public java.lang.String downloadUrl;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public java.lang.String previewString;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +40,9 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
    * @param docPath The new value for docPath
    * @param downloadUrl The new value for downloadUrl
    * @param orgId The new value for orgId
+   * @param previewString The new value for previewString
    */
-  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId) {
+  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId, java.lang.String previewString) {
     this.uuid = uuid;
     this.isExpirable = isExpirable;
     this.expireDate = expireDate;
@@ -49,6 +51,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     this.docPath = docPath;
     this.downloadUrl = downloadUrl;
     this.orgId = orgId;
+    this.previewString = previewString;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +66,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 5: return docPath;
     case 6: return downloadUrl;
     case 7: return orgId;
+    case 8: return previewString;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +83,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 5: docPath = (java.lang.String)value$; break;
     case 6: downloadUrl = (java.lang.String)value$; break;
     case 7: orgId = (java.lang.String)value$; break;
+    case 8: previewString = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +217,22 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'previewString' field.
+   * @return The value of the 'previewString' field.
+   */
+  public java.lang.String getPreviewString() {
+    return previewString;
+  }
+
+  /**
+   * Sets the value of the 'previewString' field.
+   * @param value the value to set.
+   */
+  public void setPreviewString(java.lang.String value) {
+    this.previewString = value;
+  }
+
+  /**
    * Creates a new Document RecordBuilder.
    * @return A new Document RecordBuilder
    */
@@ -251,6 +272,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String docPath;
     private java.lang.String downloadUrl;
     private java.lang.String orgId;
+    private java.lang.String previewString;
 
     /** Creates a new Builder */
     private Builder() {
@@ -295,6 +317,10 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.previewString)) {
+        this.previewString = data().deepCopy(fields()[8].schema(), other.previewString);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -334,6 +360,10 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[7], other.orgId)) {
         this.orgId = data().deepCopy(fields()[7].schema(), other.orgId);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.previewString)) {
+        this.previewString = data().deepCopy(fields()[8].schema(), other.previewString);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -649,6 +679,45 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'previewString' field.
+      * @return The value.
+      */
+    public java.lang.String getPreviewString() {
+      return previewString;
+    }
+
+    /**
+      * Sets the value of the 'previewString' field.
+      * @param value The value of 'previewString'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setPreviewString(java.lang.String value) {
+      validate(fields()[8], value);
+      this.previewString = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'previewString' field has been set.
+      * @return True if the 'previewString' field has been set, false otherwise.
+      */
+    public boolean hasPreviewString() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'previewString' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearPreviewString() {
+      previewString = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public Document build() {
       try {
@@ -661,6 +730,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         record.docPath = fieldSetFlags()[5] ? this.docPath : (java.lang.String) defaultValue(fields()[5]);
         record.downloadUrl = fieldSetFlags()[6] ? this.downloadUrl : (java.lang.String) defaultValue(fields()[6]);
         record.orgId = fieldSetFlags()[7] ? this.orgId : (java.lang.String) defaultValue(fields()[7]);
+        record.previewString = fieldSetFlags()[8] ? this.previewString : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
