@@ -48,11 +48,6 @@
           }
         ],
         "default": null
-      },
-      {
-        "name": "isPortalEnabled",
-        "type": "boolean",
-        "default": false
       }
     ]
   },
@@ -138,7 +133,12 @@
           "string"
         ],
         "default": null
-      }
+      },
+            {
+              "name": "isPortalEnabled",
+              "type": "boolean",
+              "default": false
+            }
     ]
   },
   {
