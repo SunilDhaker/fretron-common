@@ -36,6 +36,11 @@
             "name": "addedBy",
              "type": ["null" , "string"],
              "default" : null
+       },
+      {
+             "name": "buisnessPartnerId",
+              "type": ["null" , "string"],
+              "default" : null
        }
   ]
 
