@@ -41,7 +41,12 @@
              "name": "buisnessPartnerId",
               "type": ["null" , "string"],
               "default" : null
-       }
+       },
+   {
+          "name": "parentOrgUuid",
+           "type": ["null" , "string"],
+           "default" : null
+    }
   ]
 
   }

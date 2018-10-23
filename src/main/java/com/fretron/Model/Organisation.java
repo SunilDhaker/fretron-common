@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8254223503409129821L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2835012587040609876L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -19,6 +19,7 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public com.fretron.Model.OrganisationType type;
   @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String buisnessPartnerId;
+  @Deprecated public java.lang.String parentOrgUuid;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param type The new value for type
    * @param addedBy The new value for addedBy
    * @param buisnessPartnerId The new value for buisnessPartnerId
+   * @param parentOrgUuid The new value for parentOrgUuid
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
     this.type = type;
     this.addedBy = addedBy;
     this.buisnessPartnerId = buisnessPartnerId;
+    this.parentOrgUuid = parentOrgUuid;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 3: return type;
     case 4: return addedBy;
     case 5: return buisnessPartnerId;
+    case 6: return parentOrgUuid;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 3: type = (com.fretron.Model.OrganisationType)value$; break;
     case 4: addedBy = (java.lang.String)value$; break;
     case 5: buisnessPartnerId = (java.lang.String)value$; break;
+    case 6: parentOrgUuid = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'parentOrgUuid' field.
+   * @return The value of the 'parentOrgUuid' field.
+   */
+  public java.lang.String getParentOrgUuid() {
+    return parentOrgUuid;
+  }
+
+  /**
+   * Sets the value of the 'parentOrgUuid' field.
+   * @param value the value to set.
+   */
+  public void setParentOrgUuid(java.lang.String value) {
+    this.parentOrgUuid = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -207,6 +228,7 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private com.fretron.Model.OrganisationType type;
     private java.lang.String addedBy;
     private java.lang.String buisnessPartnerId;
+    private java.lang.String parentOrgUuid;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.buisnessPartnerId = data().deepCopy(fields()[5].schema(), other.buisnessPartnerId);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.parentOrgUuid)) {
+        this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[5], other.buisnessPartnerId)) {
         this.buisnessPartnerId = data().deepCopy(fields()[5].schema(), other.buisnessPartnerId);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.parentOrgUuid)) {
+        this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'parentOrgUuid' field.
+      * @return The value.
+      */
+    public java.lang.String getParentOrgUuid() {
+      return parentOrgUuid;
+    }
+
+    /**
+      * Sets the value of the 'parentOrgUuid' field.
+      * @param value The value of 'parentOrgUuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setParentOrgUuid(java.lang.String value) {
+      validate(fields()[6], value);
+      this.parentOrgUuid = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'parentOrgUuid' field has been set.
+      * @return True if the 'parentOrgUuid' field has been set, false otherwise.
+      */
+    public boolean hasParentOrgUuid() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'parentOrgUuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearParentOrgUuid() {
+      parentOrgUuid = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -521,6 +590,7 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.type = fieldSetFlags()[3] ? this.type : (com.fretron.Model.OrganisationType) defaultValue(fields()[3]);
         record.addedBy = fieldSetFlags()[4] ? this.addedBy : (java.lang.String) defaultValue(fields()[4]);
         record.buisnessPartnerId = fieldSetFlags()[5] ? this.buisnessPartnerId : (java.lang.String) defaultValue(fields()[5]);
+        record.parentOrgUuid = fieldSetFlags()[6] ? this.parentOrgUuid : (java.lang.String) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
