@@ -104,4 +104,11 @@
     <!-- =========Itinerary-Manager========== -->
     <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
+
+    <!-- =========Registry-Manager-Revamp========== -->
+    <entry key="registry.manager.revamp.service.url">http://registry-manager-revamp.streams:8087</entry>
+    <entry key="registry.manager.revamp.restservice.ip">http://0.0.0.0</entry>
+    <entry key="registry.manager.revamp.restservice.port">8087</entry>
+
+
 </properties>

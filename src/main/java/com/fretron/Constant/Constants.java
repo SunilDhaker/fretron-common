@@ -516,6 +516,9 @@ public class Constants {
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
 
 
+    public static final String REGISTRY_REVAMP_SERVICE_URL = "registry.manager.revamp.service.url";
+    public static final String REGISTRY_REVAMP_APP_IP = "registry.manager.revamp.restservice.ip";
+    public static final String REGISTRY_REVAMP_APP_PORT = "registry.manager.revamp.restservice.port";
 
     private Constants() {
 
