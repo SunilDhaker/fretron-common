@@ -67,6 +67,14 @@
       "default": null
     },
     {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "previewString",
       "type": [
         "null",
