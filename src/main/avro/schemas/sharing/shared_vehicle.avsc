@@ -1,0 +1,50 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "SharedVehicle",
+    "fields": [
+      {
+        "name": "vehicleId",
+        "type": "string"
+      },
+      {
+        "name": "sharedWithEmail",
+        "type": "string"
+      },
+      {
+        "name": "validFrom",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "validTill",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "accessLevel",
+        "type": "string",
+        "default": "DASHBOARD"
+      },
+      {
+        "name": "sharedByCustomer",
+        "type": "string"
+      },
+      {
+        "name": "sharedToCustomer",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  }

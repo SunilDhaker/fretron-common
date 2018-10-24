@@ -1,0 +1,38 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Geofence",
+    "fields": [
+      {
+        "name": "center",
+        "type": "com.fretron.Model.Location"
+      },
+      {
+        "name": "boundry",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Location"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "circle",
+        "type": [
+          "null",
+          "com.fretron.Model.Circle"
+        ],
+        "default": null
+      },
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "com.fretron.Model.GeofenceType"
+        ],
+        "default": null
+      }
+    ]
+  }

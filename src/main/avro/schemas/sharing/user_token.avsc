@@ -1,0 +1,15 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "UserToken",
+    "fields": [
+      {
+        "name": "customerEmail",
+        "type": "string"
+      },
+      {
+        "name": "token",
+        "type": "string"
+      }
+    ]
+  }

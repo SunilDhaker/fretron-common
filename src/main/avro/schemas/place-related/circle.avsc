@@ -1,0 +1,15 @@
+  {
+    "type": "record",
+    "name": "Circle",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "center",
+        "type": "com.fretron.Model.Location"
+      },
+      {
+        "name": "radius",
+        "type": "double"
+      }
+    ]
+  }

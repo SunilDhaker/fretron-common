@@ -1,0 +1,34 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "JobExecutionResult",
+    "fields": [
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "int"
+        ],
+        "default": null
+      },
+      {
+        "name": "error",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "response",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.TpiDataPacket"
+          }
+        ],
+        "default": null
+      }
+    ]
+  }

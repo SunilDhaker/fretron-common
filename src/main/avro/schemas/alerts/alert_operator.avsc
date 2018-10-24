@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "AlertOperator",
+  "namespace":"com.fretron.Model",
+  "symbols": [
+    "IS",
+    "IN",
+    "NIN",
+    "GT",
+    "GTE",
+    "LT",
+    "LTE",
+    "EQ",
+    "REGEX"
+  ]
+}

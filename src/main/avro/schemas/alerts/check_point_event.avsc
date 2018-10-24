@@ -1,0 +1,36 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CheckPointEvent",
+  "fields": [
+    {
+        "name": "checkPoint",
+        "type": ["null","com.fretron.Model.CheckPoint"],
+        "default":null
+    },
+    {
+      "name": "type",
+      "type": ["null","string"],
+      "default":null
+    },
+    {
+      "name": "eventTime",
+       "type": [
+         "null",
+         "long"
+       ],
+       "logicalType": "timestamp-millis",
+       "default": null
+    },
+    {
+          "name": "vehicleId",
+          "type": ["null","string"],
+          "default":null
+    },
+    {
+              "name": "info",
+              "type": ["null","string"],
+              "default":null
+    }
+  ]
+}

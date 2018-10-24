@@ -1,0 +1,19 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "EmailForNonExistingCUstomers",
+  "fields": [
+    {
+      "name": "emailAddress",
+      "type": "string"
+    },
+    {
+      "name": "emailFormat",
+      "type": "string"
+    },
+    {
+      "name": "token",
+      "type": "string"
+    }
+  ]
+}

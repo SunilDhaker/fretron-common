@@ -1,0 +1,10 @@
+  {
+    "type": "enum",
+    "name": "TrackingType",
+    "namespace": "com.fretron.Model",
+    "symbols": [
+      "Tracker",
+      "Trip",
+      "Manual"
+    ]
+  }

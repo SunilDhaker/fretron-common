@@ -1,0 +1,44 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "SingleCustomerVehicleList",
+  "fields": [
+    {
+      "name": "sharedByCustomer",
+      "type": "string"
+    },
+    {
+      "name": "sharedWith",
+      "type": "string"
+    },
+    {
+      "name": "vehicleList",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "validFrom",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "validTill",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "accessLevel",
+      "type": "com.fretron.Model.AccessLevel"
+    }
+  ]
+}

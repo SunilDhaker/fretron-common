@@ -1,0 +1,37 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "AcceptOffer",
+  "type": "record",
+  "fields": [
+    {
+      "name": "salesEnquiryID",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "offerRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "fleetOwnerID",
+      "type": "string"
+    },
+    {
+      "name": "noOfVehicle",
+      "type": "int"
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

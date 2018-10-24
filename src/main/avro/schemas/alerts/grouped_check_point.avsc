@@ -1,0 +1,18 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "GroupedCheckPoint",
+  "fields": [
+    {
+      "name": "checkPoints",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CheckPoint"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

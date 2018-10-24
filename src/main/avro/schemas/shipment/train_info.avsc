@@ -1,0 +1,15 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "TrainInfo",
+  "fields": [
+    {
+      "name": "rrNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
