@@ -10,15 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Contact extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2491353272874154026L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contact\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = 181712063090225176L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contact\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String address;
   @Deprecated public java.util.List<java.lang.String> emails;
   @Deprecated public java.util.List<java.lang.String> mobileNumbers;
-  @Deprecated public boolean isPortalEnabled;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -34,15 +33,13 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param address The new value for address
    * @param emails The new value for emails
    * @param mobileNumbers The new value for mobileNumbers
-   * @param isPortalEnabled The new value for isPortalEnabled
    */
-  public Contact(java.lang.String name, java.lang.String mobileNumber, java.lang.String address, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers, java.lang.Boolean isPortalEnabled) {
+  public Contact(java.lang.String name, java.lang.String mobileNumber, java.lang.String address, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.address = address;
     this.emails = emails;
     this.mobileNumbers = mobileNumbers;
-    this.isPortalEnabled = isPortalEnabled;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -54,7 +51,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     case 2: return address;
     case 3: return emails;
     case 4: return mobileNumbers;
-    case 5: return isPortalEnabled;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -68,7 +64,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     case 2: address = (java.lang.String)value$; break;
     case 3: emails = (java.util.List<java.lang.String>)value$; break;
     case 4: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
-    case 5: isPortalEnabled = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -154,22 +149,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
-   * Gets the value of the 'isPortalEnabled' field.
-   * @return The value of the 'isPortalEnabled' field.
-   */
-  public java.lang.Boolean getIsPortalEnabled() {
-    return isPortalEnabled;
-  }
-
-  /**
-   * Sets the value of the 'isPortalEnabled' field.
-   * @param value the value to set.
-   */
-  public void setIsPortalEnabled(java.lang.Boolean value) {
-    this.isPortalEnabled = value;
-  }
-
-  /**
    * Creates a new Contact RecordBuilder.
    * @return A new Contact RecordBuilder
    */
@@ -206,7 +185,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String address;
     private java.util.List<java.lang.String> emails;
     private java.util.List<java.lang.String> mobileNumbers;
-    private boolean isPortalEnabled;
 
     /** Creates a new Builder */
     private Builder() {
@@ -239,10 +217,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
         this.mobileNumbers = data().deepCopy(fields()[4].schema(), other.mobileNumbers);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.isPortalEnabled)) {
-        this.isPortalEnabled = data().deepCopy(fields()[5].schema(), other.isPortalEnabled);
-        fieldSetFlags()[5] = true;
-      }
     }
 
     /**
@@ -270,10 +244,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[4], other.mobileNumbers)) {
         this.mobileNumbers = data().deepCopy(fields()[4].schema(), other.mobileNumbers);
         fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.isPortalEnabled)) {
-        this.isPortalEnabled = data().deepCopy(fields()[5].schema(), other.isPortalEnabled);
-        fieldSetFlags()[5] = true;
       }
     }
 
@@ -472,44 +442,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
-    /**
-      * Gets the value of the 'isPortalEnabled' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getIsPortalEnabled() {
-      return isPortalEnabled;
-    }
-
-    /**
-      * Sets the value of the 'isPortalEnabled' field.
-      * @param value The value of 'isPortalEnabled'.
-      * @return This builder.
-      */
-    public com.fretron.Model.Contact.Builder setIsPortalEnabled(boolean value) {
-      validate(fields()[5], value);
-      this.isPortalEnabled = value;
-      fieldSetFlags()[5] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'isPortalEnabled' field has been set.
-      * @return True if the 'isPortalEnabled' field has been set, false otherwise.
-      */
-    public boolean hasIsPortalEnabled() {
-      return fieldSetFlags()[5];
-    }
-
-
-    /**
-      * Clears the value of the 'isPortalEnabled' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.Contact.Builder clearIsPortalEnabled() {
-      fieldSetFlags()[5] = false;
-      return this;
-    }
-
     @Override
     public Contact build() {
       try {
@@ -519,7 +451,6 @@ public class Contact extends org.apache.avro.specific.SpecificRecordBase impleme
         record.address = fieldSetFlags()[2] ? this.address : (java.lang.String) defaultValue(fields()[2]);
         record.emails = fieldSetFlags()[3] ? this.emails : (java.util.List<java.lang.String>) defaultValue(fields()[3]);
         record.mobileNumbers = fieldSetFlags()[4] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
-        record.isPortalEnabled = fieldSetFlags()[5] ? this.isPortalEnabled : (java.lang.Boolean) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
