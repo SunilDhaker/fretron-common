@@ -531,6 +531,8 @@ public class Constants {
     public static final String ISSUES_COLLECTION_NAME = "issues.collection.name";
     public static final String KEY_ISSUE_TOPIC = "issue.topic";
 
+    public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
+    public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
 
     private Constants() {
 

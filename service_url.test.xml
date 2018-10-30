@@ -106,5 +106,7 @@
     <entry key="registry.manager.revamp.restservice.ip">http://0.0.0.0</entry>
     <entry key="registry.manager.revamp.restservice.port">8087</entry>
 
->>>>>>> cleaned_registry
+    <!-- =========Issue-Manager========== -->
+    <entry key="issue.manager.service.url">http://issue-manager.streams:2130</entry>
+
 </properties>

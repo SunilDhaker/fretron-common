@@ -111,6 +111,6 @@
     <entry key="registry.manager.revamp.restservice.port">8087</entry>
 
 
-    <!-- =========Itinerary-Manager========== -->
+    <!-- =========Issue-Manager========== -->
     <entry key="issue.manager.service.url">http://issue-manager.streams:2130</entry>
 </properties>
