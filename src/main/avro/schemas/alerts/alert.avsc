@@ -11,110 +11,14 @@
       "name": "conditions",
       "type": {
         "type": "array",
-        "items": {
-          "namespace": "com.fretron.Model",
-          "type": "record",
-          "name": "AlertCondition",
-          "fields": [
-            {
-              "name": "field",
-              "type": "string"
-            },
-            {
-              "name": "windowSize",
-              "type": "long",
-              "default" : 0
-            },
-            {
-              "name": "fieldType",
-              "type":  {
-                "type": "enum",
-                "name": "AlertFieldType",
-                "symbols": [
-                  "PRIMITIVE",
-                  "CALCULATED",
-                  "AGGREGATE"
-                ]
-              }
-            },
-            {
-              "name": "value",
-              "type": "string"
-            },
-            {
-              "name": "valueType",
-              "type":  {
-                "type": "enum",
-                "name": "AlertParamValueType",
-                "symbols": [
-                  "INT",
-                  "LONG",
-                  "DOUBLE",
-                  "STRING",
-                  "INT_RANGE",
-                  "LONG_RANGE",
-                  "DOUBLE_RANGE",
-                  "LOCATION_PROXIMITY",
-                  "LOCATION_GEOFENCE"
-                ]
-              }
-            },
-            {
-              "name": "operator",
-              "type":  {
-                "type": "enum",
-                "name": "AlertOperator",
-                "symbols": [
-                  "IS",
-                  "IN",
-                  "NIN",
-                  "GT",
-                  "GTE",
-                  "LT",
-                  "LTE",
-                  "EQ",
-                  "REGEX"
-                ]
-              }
-            }
-          ]
-        }
+        "items":"com.fretron.Model.AlertCondition"
       }
     },
     {
       "name": "actions",
       "type": {
         "type": "array",
-        "items": {
-          "namespace": "com.fretron.Model",
-          "type": "record",
-          "name": "AlertAction",
-          "fields": [
-            {
-              "name": "type",
-              "type": {
-                "type": "enum",
-                "name": "AlertActionType",
-                "symbols": [
-                  "SMS",
-                  "EMAIL"
-                ]
-              }
-            },
-            {
-              "name": "valueTemplate",
-              "type": "string"
-            },
-            {
-              "name": "value",
-              "type": ["null" , "string"]
-            },
-            {
-              "name": "recipient",
-              "type": ["null" , "string"]
-            }
-           ]
-        }
+        "items": "com.fretron.Model.AlertAction"
       }
     },
     {

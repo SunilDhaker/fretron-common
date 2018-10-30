@@ -1,0 +1,32 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "AlertCondition",
+  "fields": [
+    {
+      "name": "field",
+      "type": "string"
+    },
+    {
+      "name": "windowSize",
+      "type": "long",
+      "default" : 0
+    },
+    {
+      "name": "fieldType",
+      "type": "com.fretron.Model.AlertFieldType"
+    },
+    {
+      "name": "value",
+      "type": "string"
+    },
+    {
+      "name": "valueType",
+      "type":  "com.fretron.Model.AlertParamValueType"
+    },
+    {
+      "name": "operator",
+      "type":  "com.fretron.Model.AlertOperator"
+    }
+  ]
+}

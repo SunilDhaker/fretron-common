@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "AlertAction",
+  "fields": [
+    {
+      "name": "type",
+      "type": "com.fretron.Model.AlertActionType"
+    },
+    {
+      "name": "valueTemplate",
+      "type": "string"
+    },
+    {
+      "name": "value",
+      "type": ["null" , "string"]
+    },
+    {
+      "name": "recipient",
+      "type": ["null" , "string"]
+    }
+  ]
+}

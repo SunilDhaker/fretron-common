@@ -1,0 +1,32 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Geometry",
+  "fields": [
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "coordinates",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": "double"
+            }
+          }
+        }
+      ],
+      "default": null
+    }
+  ]
+}

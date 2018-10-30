@@ -1,0 +1,77 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "TripLocation",
+  "fields": [
+    {
+      "name": "freightLocation",
+      "type": [
+        "null",
+        "com.fretron.Model.FreightLocation"
+      ],
+      "default": null
+    },
+    {
+      "name": "fromTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "tillTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "firstGpsLogId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lastGpsLogId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ignoredVehicleGpsLogs",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updatedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "updatedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    }
+  ]
+}

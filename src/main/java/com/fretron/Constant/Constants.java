@@ -177,9 +177,6 @@ public class Constants {
     public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
     public static final String KEY_CONSIGNMENT_TOPIC = "consignment.topic";
 
-    public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
-    public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
-
     //=========================================
     public static final String REGISTRY_MANAGER_APPID = "registry.manager.appId";
     public static final String LATEST_COMMAND_TOPIC = "latest.command.topic";
@@ -518,6 +515,10 @@ public class Constants {
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_IP = "device.connection.manager.rest.service.ip";
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
 
+
+    public static final String REGISTRY_REVAMP_SERVICE_URL = "registry.manager.revamp.service.url";
+    public static final String REGISTRY_REVAMP_APP_IP = "registry.manager.revamp.restservice.ip";
+    public static final String REGISTRY_REVAMP_APP_PORT = "registry.manager.revamp.restservice.port";
 
     //=================================ISSUE MANAGER===========================
     public static final String ISSUE_MANAGER_APP_ID = "issue.manager.app.id";

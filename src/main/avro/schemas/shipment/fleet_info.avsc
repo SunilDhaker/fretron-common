@@ -1,0 +1,63 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "FleetInfo",
+  "fields": [
+    {
+      "name": "vehicle",
+      "type": [
+        "null",
+        "com.fretron.Model.Vehicle"
+      ],
+      "default": null
+    },
+    {
+      "name": "driver",
+      "type": [
+        "null",
+        "com.fretron.Model.Driver"
+      ],
+      "default": null
+    },
+    {
+      "name": "device",
+      "type": [
+        "null",
+        "com.fretron.Model.Device"
+      ],
+      "default": null
+    },
+    {
+      "name": "fleetType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "fleetOwner",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "trackingMode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "trainInfo",
+      "type": [
+        "null",
+        "com.fretron.Model.TrainInfo"
+      ],
+      "default": null
+    }
+  ]
+}

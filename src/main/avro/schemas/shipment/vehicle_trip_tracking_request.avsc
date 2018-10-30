@@ -1,0 +1,84 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "VehicleTripTrackingRequest",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "vehicle",
+        "type": [
+          "null",
+          "com.fretron.Model.Vehicle"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ShipmentStage"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "requestedTo",
+        "type": [
+          "null",
+          "com.fretron.Model.Organisation"
+        ],
+        "default": null
+      },
+      {
+        "name": "requestedBy",
+        "type": [
+          "null",
+          "com.fretron.Model.Organisation"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "isConsignmentAdded",
+        "type": "boolean",
+        "default": false
+      }
+    ]
+  }

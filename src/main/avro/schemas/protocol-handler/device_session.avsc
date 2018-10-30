@@ -1,0 +1,47 @@
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "DeviceSession",
+    "fields": [
+      {
+        "name": "remoteAddress",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "imei",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "timeZoneOffset",
+        "type": [
+          "null",
+          "int"
+        ],
+        "default": null
+      },
+      {
+        "name": "isExpire",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null
+      }
+    ]
+  }

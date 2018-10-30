@@ -1,0 +1,39 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "MetaData",
+  "fields": [
+    {
+      "name": "clazz",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "addedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "accessibility",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

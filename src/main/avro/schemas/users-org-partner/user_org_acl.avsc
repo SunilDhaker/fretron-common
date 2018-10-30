@@ -1,0 +1,12 @@
+
+{
+"namespace" : "com.fretron.Model",
+"type" : "record",
+"name" : "UserOrgACL",
+"fields" :[
+{"name" : "orgUuid", "type" : ["null","string"], "default" : null},
+{"name" : "userUuid", "type" : ["null","string"], "default" : null},
+{"name" : "accessLevel", "type" : ["null","string"], "default" : null},
+{"name" : "relationType", "type" : ["null","string"], "default" : null}
+]
+}

@@ -1,0 +1,15 @@
+  {
+    "type": "record",
+    "name": "Location",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      }
+    ]
+  }
