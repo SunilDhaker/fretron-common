@@ -84,8 +84,12 @@
                   "string"
                 ],
                 "default": null
-             }
-
+        },
+        {
+          "name": "currentSpeed",
+           "type": ["null","double"],
+           "default" : null
+       }
     ]
 
   }
