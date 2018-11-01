@@ -147,6 +147,23 @@
           ],
           "logicalType": "timestamp-millis",
           "default": null
+        },
+      {
+        "name": "eWayBillNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+        {
+          "name": "eWayBillExpiryDate",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
         }
     ]
   }
