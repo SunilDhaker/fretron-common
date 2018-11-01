@@ -84,8 +84,17 @@
                   "string"
                 ],
                 "default": null
-             }
-
+        },
+        {
+          "name": "currentSpeed",
+           "type": ["null","double"],
+           "default" : null
+       },
+       {
+          "name": "vehicleId",
+          "type": ["null","string"],
+           "default" : null
+       }
     ]
 
   }
