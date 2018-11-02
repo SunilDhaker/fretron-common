@@ -54,6 +54,14 @@
           "string"
         ],
         "default": null
-      }
+      },
+    {
+      "name": "sourceOfInformation",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
     ]
-  }
+ }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Updates extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3930834386852018809L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -353537310142334445L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.util.List<java.lang.String> forwardReasons;
   @Deprecated public java.lang.String updatedBy;
@@ -19,6 +19,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String resourceType;
   @Deprecated public java.lang.String resourceId;
+  @Deprecated public java.lang.String sourceOfInformation;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param time The new value for time
    * @param resourceType The new value for resourceType
    * @param resourceId The new value for resourceId
+   * @param sourceOfInformation The new value for sourceOfInformation
    */
-  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId) {
+  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation) {
     this.forwardReasons = forwardReasons;
     this.updatedBy = updatedBy;
     this.userId = userId;
     this.time = time;
     this.resourceType = resourceType;
     this.resourceId = resourceId;
+    this.sourceOfInformation = sourceOfInformation;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 3: return time;
     case 4: return resourceType;
     case 5: return resourceId;
+    case 6: return sourceOfInformation;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 3: time = (java.lang.Long)value$; break;
     case 4: resourceType = (java.lang.String)value$; break;
     case 5: resourceId = (java.lang.String)value$; break;
+    case 6: sourceOfInformation = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'sourceOfInformation' field.
+   * @return The value of the 'sourceOfInformation' field.
+   */
+  public java.lang.String getSourceOfInformation() {
+    return sourceOfInformation;
+  }
+
+  /**
+   * Sets the value of the 'sourceOfInformation' field.
+   * @param value the value to set.
+   */
+  public void setSourceOfInformation(java.lang.String value) {
+    this.sourceOfInformation = value;
+  }
+
+  /**
    * Creates a new Updates RecordBuilder.
    * @return A new Updates RecordBuilder
    */
@@ -207,6 +228,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.Long time;
     private java.lang.String resourceType;
     private java.lang.String resourceId;
+    private java.lang.String sourceOfInformation;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         this.resourceId = data().deepCopy(fields()[5].schema(), other.resourceId);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.sourceOfInformation)) {
+        this.sourceOfInformation = data().deepCopy(fields()[6].schema(), other.sourceOfInformation);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[5], other.resourceId)) {
         this.resourceId = data().deepCopy(fields()[5].schema(), other.resourceId);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.sourceOfInformation)) {
+        this.sourceOfInformation = data().deepCopy(fields()[6].schema(), other.sourceOfInformation);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'sourceOfInformation' field.
+      * @return The value.
+      */
+    public java.lang.String getSourceOfInformation() {
+      return sourceOfInformation;
+    }
+
+    /**
+      * Sets the value of the 'sourceOfInformation' field.
+      * @param value The value of 'sourceOfInformation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder setSourceOfInformation(java.lang.String value) {
+      validate(fields()[6], value);
+      this.sourceOfInformation = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'sourceOfInformation' field has been set.
+      * @return True if the 'sourceOfInformation' field has been set, false otherwise.
+      */
+    public boolean hasSourceOfInformation() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'sourceOfInformation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder clearSourceOfInformation() {
+      sourceOfInformation = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Updates build() {
       try {
@@ -521,6 +590,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         record.time = fieldSetFlags()[3] ? this.time : (java.lang.Long) defaultValue(fields()[3]);
         record.resourceType = fieldSetFlags()[4] ? this.resourceType : (java.lang.String) defaultValue(fields()[4]);
         record.resourceId = fieldSetFlags()[5] ? this.resourceId : (java.lang.String) defaultValue(fields()[5]);
+        record.sourceOfInformation = fieldSetFlags()[6] ? this.sourceOfInformation : (java.lang.String) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
