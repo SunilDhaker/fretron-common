@@ -70,6 +70,14 @@
           "string"
         ],
         "default": null
-      }
+      },
+            {
+              "name": "description",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
     ]
  }
