@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Updates extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -353537310142334445L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -1940364512848834706L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.util.List<java.lang.String> forwardReasons;
   @Deprecated public java.lang.String updatedBy;
@@ -20,6 +20,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String resourceType;
   @Deprecated public java.lang.String resourceId;
   @Deprecated public java.lang.String sourceOfInformation;
+  @Deprecated public java.lang.String updateType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param resourceType The new value for resourceType
    * @param resourceId The new value for resourceId
    * @param sourceOfInformation The new value for sourceOfInformation
+   * @param updateType The new value for updateType
    */
-  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation) {
+  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation, java.lang.String updateType) {
     this.forwardReasons = forwardReasons;
     this.updatedBy = updatedBy;
     this.userId = userId;
@@ -46,6 +48,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     this.resourceType = resourceType;
     this.resourceId = resourceId;
     this.sourceOfInformation = sourceOfInformation;
+    this.updateType = updateType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 4: return resourceType;
     case 5: return resourceId;
     case 6: return sourceOfInformation;
+    case 7: return updateType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 4: resourceType = (java.lang.String)value$; break;
     case 5: resourceId = (java.lang.String)value$; break;
     case 6: sourceOfInformation = (java.lang.String)value$; break;
+    case 7: updateType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'updateType' field.
+   * @return The value of the 'updateType' field.
+   */
+  public java.lang.String getUpdateType() {
+    return updateType;
+  }
+
+  /**
+   * Sets the value of the 'updateType' field.
+   * @param value the value to set.
+   */
+  public void setUpdateType(java.lang.String value) {
+    this.updateType = value;
+  }
+
+  /**
    * Creates a new Updates RecordBuilder.
    * @return A new Updates RecordBuilder
    */
@@ -229,6 +250,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String resourceType;
     private java.lang.String resourceId;
     private java.lang.String sourceOfInformation;
+    private java.lang.String updateType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +291,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         this.sourceOfInformation = data().deepCopy(fields()[6].schema(), other.sourceOfInformation);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.updateType)) {
+        this.updateType = data().deepCopy(fields()[7].schema(), other.updateType);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -304,6 +330,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[6], other.sourceOfInformation)) {
         this.sourceOfInformation = data().deepCopy(fields()[6].schema(), other.sourceOfInformation);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.updateType)) {
+        this.updateType = data().deepCopy(fields()[7].schema(), other.updateType);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -580,6 +610,45 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'updateType' field.
+      * @return The value.
+      */
+    public java.lang.String getUpdateType() {
+      return updateType;
+    }
+
+    /**
+      * Sets the value of the 'updateType' field.
+      * @param value The value of 'updateType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder setUpdateType(java.lang.String value) {
+      validate(fields()[7], value);
+      this.updateType = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updateType' field has been set.
+      * @return True if the 'updateType' field has been set, false otherwise.
+      */
+    public boolean hasUpdateType() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'updateType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder clearUpdateType() {
+      updateType = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public Updates build() {
       try {
@@ -591,6 +660,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         record.resourceType = fieldSetFlags()[4] ? this.resourceType : (java.lang.String) defaultValue(fields()[4]);
         record.resourceId = fieldSetFlags()[5] ? this.resourceId : (java.lang.String) defaultValue(fields()[5]);
         record.sourceOfInformation = fieldSetFlags()[6] ? this.sourceOfInformation : (java.lang.String) defaultValue(fields()[6]);
+        record.updateType = fieldSetFlags()[7] ? this.updateType : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

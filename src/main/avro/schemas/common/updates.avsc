@@ -62,6 +62,14 @@
         "string"
       ],
       "default": null
-    }
+    },
+      {
+        "name": "updateType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
     ]
  }
