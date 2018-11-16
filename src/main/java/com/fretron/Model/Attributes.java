@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Attributes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -454724676501925053L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
+  private static final long serialVersionUID = -2462590677848869091L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String battery;
   @Deprecated public java.lang.String alarm;
@@ -32,6 +32,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.String signalStrength;
   @Deprecated public java.lang.String commandResult;
   @Deprecated public java.lang.Integer serialNumber;
+  @Deprecated public java.lang.String sleepMode;
+  @Deprecated public java.lang.String gpsStatus;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +63,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
    * @param signalStrength The new value for signalStrength
    * @param commandResult The new value for commandResult
    * @param serialNumber The new value for serialNumber
+   * @param sleepMode The new value for sleepMode
+   * @param gpsStatus The new value for gpsStatus
    */
-  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance, java.lang.Boolean isCharge, java.lang.Integer chargingValue, java.lang.Boolean ignition, java.lang.Integer ignitionValue, java.lang.Boolean isOilElectricityConnected, java.lang.Integer oilElectricityValue, java.lang.Boolean isGpsTrackingOn, java.lang.Integer acc, java.lang.Integer satellitesGpsQualityInfo, java.lang.String uploadReason, java.lang.String uploadMode, java.lang.String signalStrength, java.lang.String commandResult, java.lang.Integer serialNumber) {
+  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance, java.lang.Boolean isCharge, java.lang.Integer chargingValue, java.lang.Boolean ignition, java.lang.Integer ignitionValue, java.lang.Boolean isOilElectricityConnected, java.lang.Integer oilElectricityValue, java.lang.Boolean isGpsTrackingOn, java.lang.Integer acc, java.lang.Integer satellitesGpsQualityInfo, java.lang.String uploadReason, java.lang.String uploadMode, java.lang.String signalStrength, java.lang.String commandResult, java.lang.Integer serialNumber, java.lang.String sleepMode, java.lang.String gpsStatus) {
     this.battery = battery;
     this.alarm = alarm;
     this.ip = ip;
@@ -82,6 +86,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     this.signalStrength = signalStrength;
     this.commandResult = commandResult;
     this.serialNumber = serialNumber;
+    this.sleepMode = sleepMode;
+    this.gpsStatus = gpsStatus;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +113,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 16: return signalStrength;
     case 17: return commandResult;
     case 18: return serialNumber;
+    case 19: return sleepMode;
+    case 20: return gpsStatus;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +142,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 16: signalStrength = (java.lang.String)value$; break;
     case 17: commandResult = (java.lang.String)value$; break;
     case 18: serialNumber = (java.lang.Integer)value$; break;
+    case 19: sleepMode = (java.lang.String)value$; break;
+    case 20: gpsStatus = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +453,38 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'sleepMode' field.
+   * @return The value of the 'sleepMode' field.
+   */
+  public java.lang.String getSleepMode() {
+    return sleepMode;
+  }
+
+  /**
+   * Sets the value of the 'sleepMode' field.
+   * @param value the value to set.
+   */
+  public void setSleepMode(java.lang.String value) {
+    this.sleepMode = value;
+  }
+
+  /**
+   * Gets the value of the 'gpsStatus' field.
+   * @return The value of the 'gpsStatus' field.
+   */
+  public java.lang.String getGpsStatus() {
+    return gpsStatus;
+  }
+
+  /**
+   * Sets the value of the 'gpsStatus' field.
+   * @param value the value to set.
+   */
+  public void setGpsStatus(java.lang.String value) {
+    this.gpsStatus = value;
+  }
+
+  /**
    * Creates a new Attributes RecordBuilder.
    * @return A new Attributes RecordBuilder
    */
@@ -493,6 +535,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String signalStrength;
     private java.lang.String commandResult;
     private java.lang.Integer serialNumber;
+    private java.lang.String sleepMode;
+    private java.lang.String gpsStatus;
 
     /** Creates a new Builder */
     private Builder() {
@@ -581,6 +625,14 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         this.serialNumber = data().deepCopy(fields()[18].schema(), other.serialNumber);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.sleepMode)) {
+        this.sleepMode = data().deepCopy(fields()[19].schema(), other.sleepMode);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.gpsStatus)) {
+        this.gpsStatus = data().deepCopy(fields()[20].schema(), other.gpsStatus);
+        fieldSetFlags()[20] = true;
+      }
     }
 
     /**
@@ -664,6 +716,14 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[18], other.serialNumber)) {
         this.serialNumber = data().deepCopy(fields()[18].schema(), other.serialNumber);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.sleepMode)) {
+        this.sleepMode = data().deepCopy(fields()[19].schema(), other.sleepMode);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.gpsStatus)) {
+        this.gpsStatus = data().deepCopy(fields()[20].schema(), other.gpsStatus);
+        fieldSetFlags()[20] = true;
       }
     }
 
@@ -1404,6 +1464,84 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'sleepMode' field.
+      * @return The value.
+      */
+    public java.lang.String getSleepMode() {
+      return sleepMode;
+    }
+
+    /**
+      * Sets the value of the 'sleepMode' field.
+      * @param value The value of 'sleepMode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setSleepMode(java.lang.String value) {
+      validate(fields()[19], value);
+      this.sleepMode = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'sleepMode' field has been set.
+      * @return True if the 'sleepMode' field has been set, false otherwise.
+      */
+    public boolean hasSleepMode() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'sleepMode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearSleepMode() {
+      sleepMode = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'gpsStatus' field.
+      * @return The value.
+      */
+    public java.lang.String getGpsStatus() {
+      return gpsStatus;
+    }
+
+    /**
+      * Sets the value of the 'gpsStatus' field.
+      * @param value The value of 'gpsStatus'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setGpsStatus(java.lang.String value) {
+      validate(fields()[20], value);
+      this.gpsStatus = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'gpsStatus' field has been set.
+      * @return True if the 'gpsStatus' field has been set, false otherwise.
+      */
+    public boolean hasGpsStatus() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'gpsStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearGpsStatus() {
+      gpsStatus = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
     @Override
     public Attributes build() {
       try {
@@ -1427,6 +1565,8 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         record.signalStrength = fieldSetFlags()[16] ? this.signalStrength : (java.lang.String) defaultValue(fields()[16]);
         record.commandResult = fieldSetFlags()[17] ? this.commandResult : (java.lang.String) defaultValue(fields()[17]);
         record.serialNumber = fieldSetFlags()[18] ? this.serialNumber : (java.lang.Integer) defaultValue(fields()[18]);
+        record.sleepMode = fieldSetFlags()[19] ? this.sleepMode : (java.lang.String) defaultValue(fields()[19]);
+        record.gpsStatus = fieldSetFlags()[20] ? this.gpsStatus : (java.lang.String) defaultValue(fields()[20]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

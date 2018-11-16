@@ -120,6 +120,16 @@
               "name": "serialNumber",
                "type": ["null","int"],
                "default" : null
+           },
+           {
+             "name": "sleepMode",
+             "type": [ "null", "string"],
+              "default" : null
+           },
+           {
+              "name": "gpsStatus",
+               "type": [ "null", "string"],
+               "default" : null
            }
 
 
@@ -257,7 +267,12 @@
           "null",
           "string"
         ]
-      }
+      },
+      {
+              "name": "obdAttributes",
+              "type": ["null" ,"com.fretron.Model.OBDAttributes"],
+              "default" : null
+       }
     ]
   }
 ]
