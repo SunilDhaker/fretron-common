@@ -1,0 +1,33 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "OrganisationGroup",
+  "fields": [
+  {
+       "name": "uuid",
+       "type": ["null" , "string"],
+       "default" : null
+    },
+
+    {
+           "name": "orgId",
+           "type": ["null" , "string"],
+            "default" : null
+      },
+       {
+           "name": "groupName",
+           "type": ["null" , "string"],
+           "default" : null
+       },
+        {
+          "name": "groupType",
+          "type": ["null" , "string"],
+          "default" : null
+        },
+        {
+               "name":"sharedWith",
+               "type":["null",{"type" : "array", "items":"string"}],
+               "default":null
+         }
+  ]
+  }

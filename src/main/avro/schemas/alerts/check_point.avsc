@@ -1,0 +1,37 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CheckPoint",
+  "fields": [
+    {
+        "name": "name",
+        "type": ["null","string"],
+        "default":null
+    },
+    {
+      "name": "type",
+      "type": ["null","string"],
+      "default":null
+    },
+    {
+          "name": "orgId",
+          "type": ["null" , "string"],
+          "default":null
+    },
+    {
+                "name":"coordinate",
+                "type":["null","com.fretron.Model.Location"],
+                "default":null
+    },
+    {
+              "name": "uuid",
+              "type": ["null" , "string"],
+              "default":null
+    },
+     {
+           "name": "accessiblity",
+           "type": ["null","string"],
+           "default":null
+     }
+  ]
+}

@@ -10,14 +10,24 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceConnectionState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1302864950078912507L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -8088733248796070477L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"sessionStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speedBand\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activeAlarms\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentSpeed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String lastBatteryValue;
   @Deprecated public long lastLowBattery;
   @Deprecated public long lastPowerCut;
   @Deprecated public long time;
+  @Deprecated public com.fretron.Model.Attributes attributes;
+  @Deprecated public java.lang.Long duration;
+  @Deprecated public java.lang.Long sessionStartTime;
+  @Deprecated public java.lang.String speedBand;
+  @Deprecated public java.util.List<java.lang.String> activeAlarms;
+  @Deprecated public java.lang.Double speed;
+  @Deprecated public java.util.List<java.lang.String> forwardReasons;
+  @Deprecated public java.lang.String protocol;
+  @Deprecated public java.lang.Double currentSpeed;
+  @Deprecated public java.lang.String vehicleId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +43,33 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
    * @param lastLowBattery The new value for lastLowBattery
    * @param lastPowerCut The new value for lastPowerCut
    * @param time The new value for time
+   * @param attributes The new value for attributes
+   * @param duration The new value for duration
+   * @param sessionStartTime The new value for sessionStartTime
+   * @param speedBand The new value for speedBand
+   * @param activeAlarms The new value for activeAlarms
+   * @param speed The new value for speed
+   * @param forwardReasons The new value for forwardReasons
+   * @param protocol The new value for protocol
+   * @param currentSpeed The new value for currentSpeed
+   * @param vehicleId The new value for vehicleId
    */
-  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time) {
+  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time, com.fretron.Model.Attributes attributes, java.lang.Long duration, java.lang.Long sessionStartTime, java.lang.String speedBand, java.util.List<java.lang.String> activeAlarms, java.lang.Double speed, java.util.List<java.lang.String> forwardReasons, java.lang.String protocol, java.lang.Double currentSpeed, java.lang.String vehicleId) {
     this.imei = imei;
     this.lastBatteryValue = lastBatteryValue;
     this.lastLowBattery = lastLowBattery;
     this.lastPowerCut = lastPowerCut;
     this.time = time;
+    this.attributes = attributes;
+    this.duration = duration;
+    this.sessionStartTime = sessionStartTime;
+    this.speedBand = speedBand;
+    this.activeAlarms = activeAlarms;
+    this.speed = speed;
+    this.forwardReasons = forwardReasons;
+    this.protocol = protocol;
+    this.currentSpeed = currentSpeed;
+    this.vehicleId = vehicleId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +81,16 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 2: return lastLowBattery;
     case 3: return lastPowerCut;
     case 4: return time;
+    case 5: return attributes;
+    case 6: return duration;
+    case 7: return sessionStartTime;
+    case 8: return speedBand;
+    case 9: return activeAlarms;
+    case 10: return speed;
+    case 11: return forwardReasons;
+    case 12: return protocol;
+    case 13: return currentSpeed;
+    case 14: return vehicleId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +104,16 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 2: lastLowBattery = (java.lang.Long)value$; break;
     case 3: lastPowerCut = (java.lang.Long)value$; break;
     case 4: time = (java.lang.Long)value$; break;
+    case 5: attributes = (com.fretron.Model.Attributes)value$; break;
+    case 6: duration = (java.lang.Long)value$; break;
+    case 7: sessionStartTime = (java.lang.Long)value$; break;
+    case 8: speedBand = (java.lang.String)value$; break;
+    case 9: activeAlarms = (java.util.List<java.lang.String>)value$; break;
+    case 10: speed = (java.lang.Double)value$; break;
+    case 11: forwardReasons = (java.util.List<java.lang.String>)value$; break;
+    case 12: protocol = (java.lang.String)value$; break;
+    case 13: currentSpeed = (java.lang.Double)value$; break;
+    case 14: vehicleId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +199,166 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
   }
 
   /**
+   * Gets the value of the 'attributes' field.
+   * @return The value of the 'attributes' field.
+   */
+  public com.fretron.Model.Attributes getAttributes() {
+    return attributes;
+  }
+
+  /**
+   * Sets the value of the 'attributes' field.
+   * @param value the value to set.
+   */
+  public void setAttributes(com.fretron.Model.Attributes value) {
+    this.attributes = value;
+  }
+
+  /**
+   * Gets the value of the 'duration' field.
+   * @return The value of the 'duration' field.
+   */
+  public java.lang.Long getDuration() {
+    return duration;
+  }
+
+  /**
+   * Sets the value of the 'duration' field.
+   * @param value the value to set.
+   */
+  public void setDuration(java.lang.Long value) {
+    this.duration = value;
+  }
+
+  /**
+   * Gets the value of the 'sessionStartTime' field.
+   * @return The value of the 'sessionStartTime' field.
+   */
+  public java.lang.Long getSessionStartTime() {
+    return sessionStartTime;
+  }
+
+  /**
+   * Sets the value of the 'sessionStartTime' field.
+   * @param value the value to set.
+   */
+  public void setSessionStartTime(java.lang.Long value) {
+    this.sessionStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'speedBand' field.
+   * @return The value of the 'speedBand' field.
+   */
+  public java.lang.String getSpeedBand() {
+    return speedBand;
+  }
+
+  /**
+   * Sets the value of the 'speedBand' field.
+   * @param value the value to set.
+   */
+  public void setSpeedBand(java.lang.String value) {
+    this.speedBand = value;
+  }
+
+  /**
+   * Gets the value of the 'activeAlarms' field.
+   * @return The value of the 'activeAlarms' field.
+   */
+  public java.util.List<java.lang.String> getActiveAlarms() {
+    return activeAlarms;
+  }
+
+  /**
+   * Sets the value of the 'activeAlarms' field.
+   * @param value the value to set.
+   */
+  public void setActiveAlarms(java.util.List<java.lang.String> value) {
+    this.activeAlarms = value;
+  }
+
+  /**
+   * Gets the value of the 'speed' field.
+   * @return The value of the 'speed' field.
+   */
+  public java.lang.Double getSpeed() {
+    return speed;
+  }
+
+  /**
+   * Sets the value of the 'speed' field.
+   * @param value the value to set.
+   */
+  public void setSpeed(java.lang.Double value) {
+    this.speed = value;
+  }
+
+  /**
+   * Gets the value of the 'forwardReasons' field.
+   * @return The value of the 'forwardReasons' field.
+   */
+  public java.util.List<java.lang.String> getForwardReasons() {
+    return forwardReasons;
+  }
+
+  /**
+   * Sets the value of the 'forwardReasons' field.
+   * @param value the value to set.
+   */
+  public void setForwardReasons(java.util.List<java.lang.String> value) {
+    this.forwardReasons = value;
+  }
+
+  /**
+   * Gets the value of the 'protocol' field.
+   * @return The value of the 'protocol' field.
+   */
+  public java.lang.String getProtocol() {
+    return protocol;
+  }
+
+  /**
+   * Sets the value of the 'protocol' field.
+   * @param value the value to set.
+   */
+  public void setProtocol(java.lang.String value) {
+    this.protocol = value;
+  }
+
+  /**
+   * Gets the value of the 'currentSpeed' field.
+   * @return The value of the 'currentSpeed' field.
+   */
+  public java.lang.Double getCurrentSpeed() {
+    return currentSpeed;
+  }
+
+  /**
+   * Sets the value of the 'currentSpeed' field.
+   * @param value the value to set.
+   */
+  public void setCurrentSpeed(java.lang.Double value) {
+    this.currentSpeed = value;
+  }
+
+  /**
+   * Gets the value of the 'vehicleId' field.
+   * @return The value of the 'vehicleId' field.
+   */
+  public java.lang.String getVehicleId() {
+    return vehicleId;
+  }
+
+  /**
+   * Sets the value of the 'vehicleId' field.
+   * @param value the value to set.
+   */
+  public void setVehicleId(java.lang.String value) {
+    this.vehicleId = value;
+  }
+
+  /**
    * Creates a new DeviceConnectionState RecordBuilder.
    * @return A new DeviceConnectionState RecordBuilder
    */
@@ -185,6 +395,17 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     private long lastLowBattery;
     private long lastPowerCut;
     private long time;
+    private com.fretron.Model.Attributes attributes;
+    private com.fretron.Model.Attributes.Builder attributesBuilder;
+    private java.lang.Long duration;
+    private java.lang.Long sessionStartTime;
+    private java.lang.String speedBand;
+    private java.util.List<java.lang.String> activeAlarms;
+    private java.lang.Double speed;
+    private java.util.List<java.lang.String> forwardReasons;
+    private java.lang.String protocol;
+    private java.lang.Double currentSpeed;
+    private java.lang.String vehicleId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +438,49 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         this.time = data().deepCopy(fields()[4].schema(), other.time);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.attributes)) {
+        this.attributes = data().deepCopy(fields()[5].schema(), other.attributes);
+        fieldSetFlags()[5] = true;
+      }
+      if (other.hasAttributesBuilder()) {
+        this.attributesBuilder = com.fretron.Model.Attributes.newBuilder(other.getAttributesBuilder());
+      }
+      if (isValidValue(fields()[6], other.duration)) {
+        this.duration = data().deepCopy(fields()[6].schema(), other.duration);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.sessionStartTime)) {
+        this.sessionStartTime = data().deepCopy(fields()[7].schema(), other.sessionStartTime);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.speedBand)) {
+        this.speedBand = data().deepCopy(fields()[8].schema(), other.speedBand);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.activeAlarms)) {
+        this.activeAlarms = data().deepCopy(fields()[9].schema(), other.activeAlarms);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.speed)) {
+        this.speed = data().deepCopy(fields()[10].schema(), other.speed);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.forwardReasons)) {
+        this.forwardReasons = data().deepCopy(fields()[11].schema(), other.forwardReasons);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.protocol)) {
+        this.protocol = data().deepCopy(fields()[12].schema(), other.protocol);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.currentSpeed)) {
+        this.currentSpeed = data().deepCopy(fields()[13].schema(), other.currentSpeed);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -244,6 +508,47 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
       if (isValidValue(fields()[4], other.time)) {
         this.time = data().deepCopy(fields()[4].schema(), other.time);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.attributes)) {
+        this.attributes = data().deepCopy(fields()[5].schema(), other.attributes);
+        fieldSetFlags()[5] = true;
+      }
+      this.attributesBuilder = null;
+      if (isValidValue(fields()[6], other.duration)) {
+        this.duration = data().deepCopy(fields()[6].schema(), other.duration);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.sessionStartTime)) {
+        this.sessionStartTime = data().deepCopy(fields()[7].schema(), other.sessionStartTime);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.speedBand)) {
+        this.speedBand = data().deepCopy(fields()[8].schema(), other.speedBand);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.activeAlarms)) {
+        this.activeAlarms = data().deepCopy(fields()[9].schema(), other.activeAlarms);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.speed)) {
+        this.speed = data().deepCopy(fields()[10].schema(), other.speed);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.forwardReasons)) {
+        this.forwardReasons = data().deepCopy(fields()[11].schema(), other.forwardReasons);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.protocol)) {
+        this.protocol = data().deepCopy(fields()[12].schema(), other.protocol);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.currentSpeed)) {
+        this.currentSpeed = data().deepCopy(fields()[13].schema(), other.currentSpeed);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -439,6 +744,431 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
       return this;
     }
 
+    /**
+      * Gets the value of the 'attributes' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Attributes getAttributes() {
+      return attributes;
+    }
+
+    /**
+      * Sets the value of the 'attributes' field.
+      * @param value The value of 'attributes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setAttributes(com.fretron.Model.Attributes value) {
+      validate(fields()[5], value);
+      this.attributesBuilder = null;
+      this.attributes = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attributes' field has been set.
+      * @return True if the 'attributes' field has been set, false otherwise.
+      */
+    public boolean hasAttributes() {
+      return fieldSetFlags()[5];
+    }
+
+    /**
+     * Gets the Builder instance for the 'attributes' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Attributes.Builder getAttributesBuilder() {
+      if (attributesBuilder == null) {
+        if (hasAttributes()) {
+          setAttributesBuilder(com.fretron.Model.Attributes.newBuilder(attributes));
+        } else {
+          setAttributesBuilder(com.fretron.Model.Attributes.newBuilder());
+        }
+      }
+      return attributesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'attributes' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.DeviceConnectionState.Builder setAttributesBuilder(com.fretron.Model.Attributes.Builder value) {
+      clearAttributes();
+      attributesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'attributes' field has an active Builder instance
+     * @return True if the 'attributes' field has an active Builder instance
+     */
+    public boolean hasAttributesBuilder() {
+      return attributesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'attributes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearAttributes() {
+      attributes = null;
+      attributesBuilder = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'duration' field.
+      * @return The value.
+      */
+    public java.lang.Long getDuration() {
+      return duration;
+    }
+
+    /**
+      * Sets the value of the 'duration' field.
+      * @param value The value of 'duration'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setDuration(java.lang.Long value) {
+      validate(fields()[6], value);
+      this.duration = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'duration' field has been set.
+      * @return True if the 'duration' field has been set, false otherwise.
+      */
+    public boolean hasDuration() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'duration' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearDuration() {
+      duration = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'sessionStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getSessionStartTime() {
+      return sessionStartTime;
+    }
+
+    /**
+      * Sets the value of the 'sessionStartTime' field.
+      * @param value The value of 'sessionStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setSessionStartTime(java.lang.Long value) {
+      validate(fields()[7], value);
+      this.sessionStartTime = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'sessionStartTime' field has been set.
+      * @return True if the 'sessionStartTime' field has been set, false otherwise.
+      */
+    public boolean hasSessionStartTime() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'sessionStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearSessionStartTime() {
+      sessionStartTime = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'speedBand' field.
+      * @return The value.
+      */
+    public java.lang.String getSpeedBand() {
+      return speedBand;
+    }
+
+    /**
+      * Sets the value of the 'speedBand' field.
+      * @param value The value of 'speedBand'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setSpeedBand(java.lang.String value) {
+      validate(fields()[8], value);
+      this.speedBand = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'speedBand' field has been set.
+      * @return True if the 'speedBand' field has been set, false otherwise.
+      */
+    public boolean hasSpeedBand() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'speedBand' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearSpeedBand() {
+      speedBand = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'activeAlarms' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getActiveAlarms() {
+      return activeAlarms;
+    }
+
+    /**
+      * Sets the value of the 'activeAlarms' field.
+      * @param value The value of 'activeAlarms'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setActiveAlarms(java.util.List<java.lang.String> value) {
+      validate(fields()[9], value);
+      this.activeAlarms = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'activeAlarms' field has been set.
+      * @return True if the 'activeAlarms' field has been set, false otherwise.
+      */
+    public boolean hasActiveAlarms() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'activeAlarms' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearActiveAlarms() {
+      activeAlarms = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'speed' field.
+      * @return The value.
+      */
+    public java.lang.Double getSpeed() {
+      return speed;
+    }
+
+    /**
+      * Sets the value of the 'speed' field.
+      * @param value The value of 'speed'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setSpeed(java.lang.Double value) {
+      validate(fields()[10], value);
+      this.speed = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'speed' field has been set.
+      * @return True if the 'speed' field has been set, false otherwise.
+      */
+    public boolean hasSpeed() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'speed' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearSpeed() {
+      speed = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'forwardReasons' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getForwardReasons() {
+      return forwardReasons;
+    }
+
+    /**
+      * Sets the value of the 'forwardReasons' field.
+      * @param value The value of 'forwardReasons'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setForwardReasons(java.util.List<java.lang.String> value) {
+      validate(fields()[11], value);
+      this.forwardReasons = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'forwardReasons' field has been set.
+      * @return True if the 'forwardReasons' field has been set, false otherwise.
+      */
+    public boolean hasForwardReasons() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'forwardReasons' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearForwardReasons() {
+      forwardReasons = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'protocol' field.
+      * @return The value.
+      */
+    public java.lang.String getProtocol() {
+      return protocol;
+    }
+
+    /**
+      * Sets the value of the 'protocol' field.
+      * @param value The value of 'protocol'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setProtocol(java.lang.String value) {
+      validate(fields()[12], value);
+      this.protocol = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'protocol' field has been set.
+      * @return True if the 'protocol' field has been set, false otherwise.
+      */
+    public boolean hasProtocol() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'protocol' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearProtocol() {
+      protocol = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'currentSpeed' field.
+      * @return The value.
+      */
+    public java.lang.Double getCurrentSpeed() {
+      return currentSpeed;
+    }
+
+    /**
+      * Sets the value of the 'currentSpeed' field.
+      * @param value The value of 'currentSpeed'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setCurrentSpeed(java.lang.Double value) {
+      validate(fields()[13], value);
+      this.currentSpeed = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currentSpeed' field has been set.
+      * @return True if the 'currentSpeed' field has been set, false otherwise.
+      */
+    public boolean hasCurrentSpeed() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'currentSpeed' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearCurrentSpeed() {
+      currentSpeed = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'vehicleId' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleId() {
+      return vehicleId;
+    }
+
+    /**
+      * Sets the value of the 'vehicleId' field.
+      * @param value The value of 'vehicleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setVehicleId(java.lang.String value) {
+      validate(fields()[14], value);
+      this.vehicleId = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleId' field has been set.
+      * @return True if the 'vehicleId' field has been set, false otherwise.
+      */
+    public boolean hasVehicleId() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearVehicleId() {
+      vehicleId = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public DeviceConnectionState build() {
       try {
@@ -448,6 +1178,20 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         record.lastLowBattery = fieldSetFlags()[2] ? this.lastLowBattery : (java.lang.Long) defaultValue(fields()[2]);
         record.lastPowerCut = fieldSetFlags()[3] ? this.lastPowerCut : (java.lang.Long) defaultValue(fields()[3]);
         record.time = fieldSetFlags()[4] ? this.time : (java.lang.Long) defaultValue(fields()[4]);
+        if (attributesBuilder != null) {
+          record.attributes = this.attributesBuilder.build();
+        } else {
+          record.attributes = fieldSetFlags()[5] ? this.attributes : (com.fretron.Model.Attributes) defaultValue(fields()[5]);
+        }
+        record.duration = fieldSetFlags()[6] ? this.duration : (java.lang.Long) defaultValue(fields()[6]);
+        record.sessionStartTime = fieldSetFlags()[7] ? this.sessionStartTime : (java.lang.Long) defaultValue(fields()[7]);
+        record.speedBand = fieldSetFlags()[8] ? this.speedBand : (java.lang.String) defaultValue(fields()[8]);
+        record.activeAlarms = fieldSetFlags()[9] ? this.activeAlarms : (java.util.List<java.lang.String>) defaultValue(fields()[9]);
+        record.speed = fieldSetFlags()[10] ? this.speed : (java.lang.Double) defaultValue(fields()[10]);
+        record.forwardReasons = fieldSetFlags()[11] ? this.forwardReasons : (java.util.List<java.lang.String>) defaultValue(fields()[11]);
+        record.protocol = fieldSetFlags()[12] ? this.protocol : (java.lang.String) defaultValue(fields()[12]);
+        record.currentSpeed = fieldSetFlags()[13] ? this.currentSpeed : (java.lang.Double) defaultValue(fields()[13]);
+        record.vehicleId = fieldSetFlags()[14] ? this.vehicleId : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

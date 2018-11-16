@@ -1,0 +1,169 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Consignment",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string",
+        "default": null
+      },
+      {
+        "name": "associatedShipments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "activeShipment",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "consigner",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignee",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "salesOffice",
+        "type": [
+          "null",
+          "com.fretron.Model.OrgOffice"
+        ],
+        "default": null
+      },
+      {
+        "name": "billingType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "billToParty",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "loadInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.LoadInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "invoiceNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignmentNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "poNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "workOrderNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.Location"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+        {
+          "name": "consignmentDate",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+      {
+        "name": "eWayBillNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+        {
+          "name": "eWayBillExpiryDate",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        }
+    ]
+  }

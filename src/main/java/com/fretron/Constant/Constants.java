@@ -58,7 +58,6 @@ public class Constants {
 
     public static final String KEY_POSITION_TOPIC = "positions.topic";
     public static final String KEY_TPI_POSITION_TOPIC = "tpi.positions.topic";
-    public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
     public static final String KEY_GPS_STATE_TOPIC = "gps.state.topic";
     public static final String KEY_VEHICLE_TOPIC = "vehicle.topic";
     public static final String KEY_LITE_POSITION_TOPIC = "liteposition.topic";
@@ -174,38 +173,11 @@ public class Constants {
     //============================================================
     //Shipment Constants
     public static final String KEY_SHIPMENT_MANAGER_NEW_APP_ID = "shipment.manager.appname";
-    public static final String SHIPMENT_COMANDER_APP_NAME = "shipment.command.handler.app.name";
-    public static final String SHIPMENT_OLDTONEWSTREAM_APP = "shipment.oldtonew.stream.app.name";
-    //    public static final String KEY_VEHICLE_TRIP_STATE_TOPIC = "vehicletripstate.topic";
-//    public static final String KEY_LOADED_POSITION_TOPIC = "loadedposition.topic";
-//    public static final String KEY_ACTIVE_TRIP_TOPIC = "activetrip.topic";
-//    public static final String KEY_PLANNED_TRIP_TOPIC = "plannedtrip.topic";
-//
-//
-//    public static final String KEY_VEHICLESATE_BY_VEHICLE_STORE = "vehicletripState.by.vehicle.store";
-//    public static final String KEY_ACTIVE_TRIP_BY_VEHICLE_STORE = "activetrip.by.vehicle.store";
-//    public static final String KEY_PLANNED_TRIP_BY_VEHICLE_STORE = "plannedtrip.by.vehicle.store";
-//    public static final String KEY_VEHICLE_BY_DEVICE_ID_STORE = "vehicle.by.deviceId.store";
-    public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
-    public static final String KEY_SHIPMENT_STOPAGE_TOPIC = "shiment.added.stop.topic";
-    public static final String KEY_ADDED_SHIPMENT_TRACKING_STATE_TOPIC = "added.shiment.tracking.state.topic";
-    public static final String KEY_UPDATED_SHIPMENT_TRACKING_STATE_TOPIC = "updated.shiment.tracking.state.topic";
     public static final String SHIPMENT_TRACKING_REQUEST_TOPIC = "shipment.tracking.request.topic";
-    public static final String KEY_SHIPMENT_STATE_UPDATED_TOPIC = "shipment.state.updated.topic";
-    public static final String SHIPMENT_REALTED_EVENT_TOPIC = "shipment.related.event.topic";
+    public static final String KEY_SHIPMENT_TOPIC = "shiment.topic";
+    public static final String KEY_CONSIGNMENT_TOPIC = "consignment.topic";
 
-    //    ======================================================
-    // Tracker Related Constants
-    public static final String SHIPMENT_TRACKING_STATE_STORE = "shipment.tracking.state.store";
-    public static final String SHIPMENT_BY_TRIPID_STORE = "shipment.by.tripid.state.store";
-    public static final String SHIPMENT_BY_SHIPMENT_ID_STORE = "shiment.by.shipment.id.store";
-    public static final String MANUALLY_ADDED_SHIPMENT_STOP_STORE = "manully.added.shipment.state.store";
-    public static final String VEHICLE_BY_VEHICLE_ID_STORE = "vehicle.by.vehicleId.store.for.shipment";
-    public static final String SHIPMENT_BY_IMEI_STORE = "shipmentId.by.imei.store";
     //=========================================
-    public static final String MANUAL_TRACKING_APP_NAME = "manual.tracking.app.name";
-    public static final String MANUAL_TRIP_EVENTS_TOPIC = "manual.trip.event.topic";
-    public static final String MANUAL_TRIP_VTS_TOPIC = "manual.trip.vts.topic";
     public static final String REGISTRY_MANAGER_APPID = "registry.manager.appId";
     public static final String LATEST_COMMAND_TOPIC = "latest.command.topic";
     public static final String KEY_COMMAND_TO_REGISTRY_APP_ID = "commandresult.to.registry.appid";
@@ -321,6 +293,11 @@ public class Constants {
     public static final String FRETRON_GOD_SHIP = "fretron.god.shipper";
     public static final String FRETRON_GOD_FO_AGENT = "fretron.god.fo.agent";
     public static final String SHIPMENT_COLLECTION_NAME = "shipment.collection.name";
+    public static final String CONSIGNMENT_COLLECTION_NAME = "consignment.collection.name";
+    public static final String LOCATION_TRAIL_COLLECTION_NAME = "location.trail.collection.name";
+    public static final String UPDATES_TRAIL_COLLECTION_NAME = "updates.trail.collection.name";
+    public static final String SHIPMENT_TRACKING_REQUEST_COLLECTION_NAME = "shipment.tracking.request.collection.name";
+    public static final String TRUSTED_ORG_COLLECTION_NAME = "shipment.trustedorg.collection.name";
     public static final String SHIPMENT_DB_NAME = "shipment.db.name";
     public static final String SHIPMENT_DB_PORT = "shipment.db.port";
     public static final String SHIPMENT_DB_HOST = "shipment.db.host";
@@ -466,6 +443,8 @@ public class Constants {
    * VEHICLE TRIP CONSTANTS
    */
 
+    public static final String VEHICLE_TRIP_SERVICE_URL = "vehicle.trip.manager.service.url";
+
     public static final String VEHICLE_TRIP_MANAGER_APP_ID = "vehicle.trip.manager.app.id";
     public static final String VEHICLE_TRIP_DB_NAME = "vehicle.trip.db.name";
     public static final String VEHICLE_TRIP_DB_HOST = "vehicle.trip.db.host";
@@ -520,9 +499,41 @@ public class Constants {
     /*
     Elastic Search Manager Config
      */
-    public static final String ELASTIC_SEARCH_URL = "elastic.search.url";
-    public static final String ELASTIC_SEARCH_PORT = "elastic.search.port";
-    public static final String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
+    public static String ELASTIC_SEARCH_URL = "elastic.search.url";
+    public static String ELASTIC_SEARCH_PORT = "elastic.search.port";
+    public static String ELASTIC_SEARCH_APP_ID = "elastic.search.application.id";
+    public static final String ELASTIC_SEARCH_SERVICE_URL = "elastic.search.service.url";
+
+    public static String PLACE_RESYNC_TOPIC = "places.resync.topic";
+    public static String ELASTIC_SEARCH_MANAGER_IP = "elastic.serach.manager.ip";
+    public static String ELASTIC_SEARCH_MANAGER_PORT = "elastic.serach.manager.port";
+
+     /*
+    Device Connection State Manager Config
+     */
+     public static final String DEVICE_CONNECTION_MANAGER_APP_ID = "device.connection.manager.application.id";
+     public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
+    public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_IP = "device.connection.manager.rest.service.ip";
+    public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
+
+
+    public static final String REGISTRY_REVAMP_SERVICE_URL = "registry.manager.revamp.service.url";
+    public static final String REGISTRY_REVAMP_APP_IP = "registry.manager.revamp.restservice.ip";
+    public static final String REGISTRY_REVAMP_APP_PORT = "registry.manager.revamp.restservice.port";
+
+    //=================================ISSUE MANAGER===========================
+    public static final String ISSUE_MANAGER_APP_ID = "issue.manager.app.id";
+    public static final String ISSUE_MANAGER_SERVICE_URL = "issue.manager.service.url";
+    public static final String ISSUE_MANAGER_APP_IP = "issue.manager.restservice.ip";
+    public static final String ISSUE_MANAGER_APP_PORT = "issue.manager.restservice.port";
+    public static final String ISSUES_DB_NAME = "issues.db.name";
+    public static final String ISSUES_DB_HOST = "issues.db.host";
+    public static final String ISSUES_DB_PORT = "issues.db.port";
+    public static final String ISSUES_COLLECTION_NAME = "issues.collection.name";
+    public static final String KEY_ISSUE_TOPIC = "issue.topic";
+
+    public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
+    public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
 
     private Constants() {
 

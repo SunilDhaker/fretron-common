@@ -1,0 +1,39 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Mapper",
+  "fields": [
+    {
+      "name": "longitude",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "latitude",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "speed",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "imei",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

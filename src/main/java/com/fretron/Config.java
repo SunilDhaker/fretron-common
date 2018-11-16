@@ -1,13 +1,13 @@
 package com.fretron;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Properties;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 
 public class Config {

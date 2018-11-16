@@ -1,0 +1,175 @@
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentObject",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "consignments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Consignment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "equipments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Equipment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ShipmentStage"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "transportationMode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentTrackingStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.FleetInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.LitePosition"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "lastSyncUpTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "syncUpDueTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "remarks",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+        {
+          "name": "updates",
+          "type": [
+            "null",
+            "com.fretron.Model.Updates"
+          ],
+          "default": null
+        },
+         {
+                "name": "alerts",
+                "type": [
+                  "null",
+                  {
+                    "type": "array",
+                    "items": "com.fretron.Model.ResourceAlert"
+                  }
+                ],
+                "default": null
+              }
+
+    ]
+  }

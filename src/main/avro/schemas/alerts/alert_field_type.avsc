@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "name": "AlertFieldType",
+  "namespace": "com.fretron.Model",
+  "symbols": [
+    "PRIMITIVE",
+    "CALCULATED",
+    "AGGREGATE"
+  ]
+}

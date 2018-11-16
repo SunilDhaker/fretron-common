@@ -1,7 +1,6 @@
 package com.fretron;
 
 public class FretronException extends Exception {
-
   public FretronException(){
     super();
   }

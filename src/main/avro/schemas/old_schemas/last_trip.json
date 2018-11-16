@@ -1,0 +1,80 @@
+<<<<<<< HEAD:src/main/avro/schemas/token_manager/lastTrip.avsc
+{
+  "name":"LastTrip",
+  "namespace":"com.fretron.Model",
+  "type":"record",
+  "fields":[
+    {
+      "name": "consignor",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignee",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "material",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rate",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    }
+  ]
+=======
+{
+  "name": "LastTrip",
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "fields": [
+    {
+      "name": "consignor",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignee",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "material",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rate",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    }
+  ]
+>>>>>>> cleaned_registry:src/main/avro/schemas/old_schemas/last_trip.json
+}

@@ -1,0 +1,57 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "BidOffer",
+  "type": "record",
+  "fields": [
+    {
+      "name": "salesEnquiryID",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "BidStatus",
+        "symbols": [
+          "Pending",
+          "Accepted",
+          "Rejected",
+          "Expired"
+        ]
+      }
+    },
+    {
+      "name": "offerRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "fleetOwnerID",
+      "type": "string"
+    },
+    {
+      "name": "counterRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "bidRate",
+      "type": "int"
+    },
+    {
+      "name": "noOfVehicle",
+      "type": "int"
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

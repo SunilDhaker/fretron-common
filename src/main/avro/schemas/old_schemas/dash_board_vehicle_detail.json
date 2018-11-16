@@ -1,0 +1,55 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "DashBoardVehicleDetail",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vehicle",
+      "type": [
+        "null",
+        "com.fretron.Model.Vehicle"
+      ],
+      "default": null
+    },
+    {
+      "name": "gpsState",
+      "type": [
+        "null",
+        "com.fretron.Model.VehicleGpsState"
+      ],
+      "default": null
+    },
+    {
+      "name": "trip",
+      "type": [
+        "null",
+        "com.fretron.Model.Trip"
+      ],
+      "default": null
+    },
+    {
+      "name": "vtsState",
+      "type": [
+        "null",
+        "com.fretron.Model.VehicleTripState"
+      ],
+      "default": null
+    },
+    {
+      "name": "updatedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

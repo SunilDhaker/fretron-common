@@ -1,0 +1,83 @@
+{
+    "type": "record",
+    "name": "Updates",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "forwardReasons",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "updatedBy",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "userId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "time",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "resourceType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "resourceId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+    {
+      "name": "sourceOfInformation",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+      {
+        "name": "updateType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+            {
+              "name": "description",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+    ]
+ }

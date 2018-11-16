@@ -1,0 +1,1454 @@
+<<<<<<< HEAD:src/main/avro/schemas/shipment/shipmentobject.avsc
+[
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "TrainInfo",
+    "fields": [
+      {
+        "name": "rrNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "FleetInfo",
+    "fields": [
+      {
+        "name": "vehicle",
+        "type": [
+          "null",
+          "com.fretron.Model.Vehicle"
+        ],
+        "default": null
+      },
+      {
+        "name": "driver",
+        "type": [
+          "null",
+          "com.fretron.Model.Driver"
+        ],
+        "default": null
+      },
+      {
+        "name": "device",
+        "type": [
+          "null",
+          "com.fretron.Model.Device"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetOwner",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingMode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trainInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.TrainInfo"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Measurement",
+    "fields": [
+      {
+        "name": "measurmentType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "unitOfMeasurment",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "plannedLoadQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "actualLoadedQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "netQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "grossQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "standardQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "actualDeliveredQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "shortage",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "frieghtDeductableQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "claimQuantity",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "temperature",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "density",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "moisture",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "LoadInfo",
+    "fields": [
+      {
+        "name": "material",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "measurements",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Measurement"
+          }
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Consignment",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string",
+        "default": null
+      },
+      {
+        "name": "associatedShipments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "activeShipment",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "consigner",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignee",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "salesOffice",
+        "type": [
+          "null",
+          "com.fretron.Model.OrgOffice"
+        ],
+        "default": null
+      },
+      {
+        "name": "billingType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "billToParty",
+        "type": [
+          "null",
+          "com.fretron.Model.BuisnessPartner"
+        ],
+        "default": null
+      },
+      {
+        "name": "loadInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.LoadInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "invoiceNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "consignmentNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "poNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "workOrderNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.Location"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+        {
+          "name": "consignmentDate",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentStage",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "arrivalTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "departureTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "tripPoint",
+        "type": [
+          "null",
+          "com.fretron.Model.TripPoint"
+        ],
+        "default": null
+      },
+      {
+        "name": "place",
+        "type": [
+          "null",
+          "com.fretron.Model.Place"
+        ],
+        "default": null
+      },
+      {
+        "name": "resourcePickup",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "resourceDropOff",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "consignmentPickUps",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "consignmentDelivered",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "expectedActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualActivityEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "eta",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "hub",
+        "type": [
+          "null",
+          "com.fretron.Model.Place"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "VehicleTripTrackingRequest",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "vehicle",
+        "type": [
+          "null",
+          "com.fretron.Model.Vehicle"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ShipmentStage"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "requestedTo",
+        "type": [
+          "null",
+          "com.fretron.Model.Organisation"
+        ],
+        "default": null
+      },
+      {
+        "name": "requestedBy",
+        "type": [
+          "null",
+          "com.fretron.Model.Organisation"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "isConsignmentAdded",
+        "type": "boolean",
+        "default": false
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentObject",
+    "fields": [
+      {
+        "name": "uuid",
+        "type": "string"
+      },
+      {
+        "name": "consignments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Consignment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "equipments",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.Equipment"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStages",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ShipmentStage"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "transportationMode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentTrackingStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fleetInfo",
+        "type": [
+          "null",
+          "com.fretron.Model.FleetInfo"
+        ],
+        "default": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.LitePosition"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "creationTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "lastSyncUpTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "syncUpDueTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "remarks",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+        {
+          "name": "updates",
+          "type": [
+            "null",
+            "com.fretron.Model.Updates"
+          ],
+          "default": null
+        }
+    ]
+  }
+=======
+[
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Shipment",
+    "fields": [
+      {
+        "name": "startLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.TripLocation"
+        ],
+        "default": null
+      },
+      {
+        "name": "endLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.TripLocation"
+        ],
+        "default": null
+      },
+      {
+        "name": "planedStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "planedEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "deviceImei",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingType",
+        "type": [
+          "null",
+          "com.fretron.Model.TrackingType"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "com.fretron.Model.VehicleState"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentState",
+        "type": [
+          "null",
+          "com.fretron.Model.TripState"
+        ],
+        "default": null
+      },
+      {
+        "name": "actualStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "actualEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "shipmentNo",
+        "type": [
+          "null",
+          "int"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleRegistrationNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "driverName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mobileNo",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "assosiatedTripId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "deafult": null
+      },
+      {
+        "name": "orgId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "sharedWith",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentNoExtended",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "consignmentDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "invoiceDate",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "invoiceNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "valueOfGoods",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentTrackingState",
+        "type": [
+          "null",
+          "com.fretron.Model.VehicleState"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentTrackingState",
+    "fields": [
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "deviceImei",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "state",
+        "type": [
+          "null",
+          "com.fretron.Model.VehicleState"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "tripId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "startTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "endTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "latitude",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "longitude",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "address",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentTrackingRequest",
+    "fields": [
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "tripId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingType",
+        "type": [
+          "null",
+          "com.fretron.Model.TrackingType"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentRelatedEvent",
+    "fields": [
+      {
+        "name": "type",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingRequestPayload",
+        "type": [
+          "null",
+          "com.fretron.Model.ShipmentTrackingRequest"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentTrackingStatePayload",
+        "type": [
+          "null",
+          "com.fretron.Model.ShipmentTrackingState"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackerTripPayload",
+        "type": [
+          "null",
+          "com.fretron.Model.TrackerTrip"
+        ],
+        "default": null
+      },
+      {
+        "name": "tripPayload",
+        "type": [
+          "null",
+          "com.fretron.Model.Trip"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentPayload",
+        "type": [
+          "null",
+          "com.fretron.Model.Shipment"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentDashResponseObject",
+    "fields": [
+      {
+        "name": "latitude",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "longitude",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "startLocationName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "endLocationName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "vehicleRegistrationNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentState",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentLocationName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "trackingType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "vts",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentNo",
+        "type": [
+          "null",
+          "int"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentNoExtended",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "shipmentId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "plannedStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null,
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "assosiatedTripId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "startLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.TripLocation"
+        ],
+        "default": null
+      },
+      {
+        "name": "endLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.TripLocation"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "DeviceDetailResponse",
+    "fields": [
+      {
+        "name": "shipment",
+        "type": [
+          "null",
+          "com.fretron.Model.Shipment"
+        ],
+        "default": null
+      },
+      {
+        "name": "device",
+        "type": [
+          "null",
+          "com.fretron.Model.Device"
+        ],
+        "deafault": null
+      },
+      {
+        "name": "latestGpsState",
+        "type": [
+          "null",
+          "com.fretron.Model.VehicleGpsState"
+        ],
+        "default": null
+      }
+    ]
+  },
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "ShipmentDetailResponse",
+    "fields": [
+      {
+        "name": "latestGpsState",
+        "type": [
+          "null",
+          "com.fretron.Model.VehicleGpsState"
+        ],
+        "default": null
+      },
+      {
+        "name": "currentShipment",
+        "type": [
+          "null",
+          "com.fretron.Model.Shipment"
+        ],
+        "default": null
+      },
+      {
+        "name": "movementLegs",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.VehicleGpsState"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "vts",
+        "type": [
+          "null",
+          "com.fretron.Model.ShipmentTrackingState"
+        ],
+        "default": null
+      },
+      {
+        "name": "gpsState",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "gpsStateDuration",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null,
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "speed",
+        "type": [
+          "null",
+          "double"
+        ],
+        "default": null
+      },
+      {
+        "name": "plannedStartTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null,
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "tripEndTime",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null,
+        "logicalType": "timestamp-millis"
+      },
+      {
+        "name": "tripStartLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.FreightLocation"
+        ],
+        "default": null
+      },
+      {
+        "name": "tripEndLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.FreightLocation"
+        ],
+        "default": null
+      },
+      {
+        "name": "vtsDuration",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null,
+        "logicalType": "timestamp-millis"
+      }
+    ]
+  }
+>>>>>>> cleaned_registry:src/main/avro/schemas/old_schemas/shipment.json
+]

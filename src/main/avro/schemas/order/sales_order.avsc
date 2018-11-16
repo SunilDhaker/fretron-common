@@ -1,0 +1,47 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "SalesOrder",
+  "type": "record",
+  "fields": [
+    {
+      "name": "salesEnquiryID",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "offerRate",
+      "type": "int"
+    },
+    {
+      "name": "fleetOwnerID",
+      "type": "string"
+    },
+    {
+      "name": "counterRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "bidRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

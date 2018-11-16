@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5742214278714908764L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 8171537203300825892L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"hub\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"expectedActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"currentGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LiteVehicleGpsState\",\"fields\":[{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":\"LitePosition\"},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"mean\",\"type\":[\"null\",\"LitePosition\"],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"averageSpeeds\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
+  @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String purpose;
   @Deprecated public java.lang.Double sequenceId;
   @Deprecated public com.fretron.Model.Place place;
@@ -32,6 +33,14 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public boolean isAutoCompleted;
   @Deprecated public java.lang.Double coveredDistance;
   @Deprecated public java.lang.Double purposedDistance;
+  @Deprecated public java.util.List<java.lang.String> forShipmentStages;
+  @Deprecated public com.fretron.Model.LitePosition currentLocation;
+  @Deprecated public com.fretron.Model.Place hub;
+  @Deprecated public java.lang.Long expectedActivityStartTime;
+  @Deprecated public java.lang.Long actualActivityStartTime;
+  @Deprecated public java.lang.Long actualActivityEndTime;
+  @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public com.fretron.Model.LiteVehicleGpsState currentGpsState;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -44,6 +53,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * All-args constructor.
    * @param uuid The new value for uuid
    * @param vehicleId The new value for vehicleId
+   * @param imei The new value for imei
    * @param purpose The new value for purpose
    * @param sequenceId The new value for sequenceId
    * @param place The new value for place
@@ -61,10 +71,19 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param isAutoCompleted The new value for isAutoCompleted
    * @param coveredDistance The new value for coveredDistance
    * @param purposedDistance The new value for purposedDistance
+   * @param forShipmentStages The new value for forShipmentStages
+   * @param currentLocation The new value for currentLocation
+   * @param hub The new value for hub
+   * @param expectedActivityStartTime The new value for expectedActivityStartTime
+   * @param actualActivityStartTime The new value for actualActivityStartTime
+   * @param actualActivityEndTime The new value for actualActivityEndTime
+   * @param updates The new value for updates
+   * @param currentGpsState The new value for currentGpsState
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String imei, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance, java.util.List<java.lang.String> forShipmentStages, com.fretron.Model.LitePosition currentLocation, com.fretron.Model.Place hub, java.lang.Long expectedActivityStartTime, java.lang.Long actualActivityStartTime, java.lang.Long actualActivityEndTime, com.fretron.Model.Updates updates, com.fretron.Model.LiteVehicleGpsState currentGpsState) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
+    this.imei = imei;
     this.purpose = purpose;
     this.sequenceId = sequenceId;
     this.place = place;
@@ -82,6 +101,14 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     this.isAutoCompleted = isAutoCompleted;
     this.coveredDistance = coveredDistance;
     this.purposedDistance = purposedDistance;
+    this.forShipmentStages = forShipmentStages;
+    this.currentLocation = currentLocation;
+    this.hub = hub;
+    this.expectedActivityStartTime = expectedActivityStartTime;
+    this.actualActivityStartTime = actualActivityStartTime;
+    this.actualActivityEndTime = actualActivityEndTime;
+    this.updates = updates;
+    this.currentGpsState = currentGpsState;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -90,23 +117,32 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: return uuid;
     case 1: return vehicleId;
-    case 2: return purpose;
-    case 3: return sequenceId;
-    case 4: return place;
-    case 5: return status;
-    case 6: return eta;
-    case 7: return remainingDistance;
-    case 8: return plannedArrival;
-    case 9: return plannedDeparture;
-    case 10: return actualArrival;
-    case 11: return actualDeparture;
-    case 12: return assosiatedShipmentsId;
-    case 13: return creationTime;
-    case 14: return outOfTrackSince;
-    case 15: return isOutOfTrack;
-    case 16: return isAutoCompleted;
-    case 17: return coveredDistance;
-    case 18: return purposedDistance;
+    case 2: return imei;
+    case 3: return purpose;
+    case 4: return sequenceId;
+    case 5: return place;
+    case 6: return status;
+    case 7: return eta;
+    case 8: return remainingDistance;
+    case 9: return plannedArrival;
+    case 10: return plannedDeparture;
+    case 11: return actualArrival;
+    case 12: return actualDeparture;
+    case 13: return assosiatedShipmentsId;
+    case 14: return creationTime;
+    case 15: return outOfTrackSince;
+    case 16: return isOutOfTrack;
+    case 17: return isAutoCompleted;
+    case 18: return coveredDistance;
+    case 19: return purposedDistance;
+    case 20: return forShipmentStages;
+    case 21: return currentLocation;
+    case 22: return hub;
+    case 23: return expectedActivityStartTime;
+    case 24: return actualActivityStartTime;
+    case 25: return actualActivityEndTime;
+    case 26: return updates;
+    case 27: return currentGpsState;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -117,23 +153,32 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
     case 1: vehicleId = (java.lang.String)value$; break;
-    case 2: purpose = (java.lang.String)value$; break;
-    case 3: sequenceId = (java.lang.Double)value$; break;
-    case 4: place = (com.fretron.Model.Place)value$; break;
-    case 5: status = (java.lang.String)value$; break;
-    case 6: eta = (java.lang.Long)value$; break;
-    case 7: remainingDistance = (java.lang.Double)value$; break;
-    case 8: plannedArrival = (java.lang.Long)value$; break;
-    case 9: plannedDeparture = (java.lang.Long)value$; break;
-    case 10: actualArrival = (java.lang.Long)value$; break;
-    case 11: actualDeparture = (java.lang.Long)value$; break;
-    case 12: assosiatedShipmentsId = (java.util.List<java.lang.String>)value$; break;
-    case 13: creationTime = (java.lang.Long)value$; break;
-    case 14: outOfTrackSince = (java.lang.Long)value$; break;
-    case 15: isOutOfTrack = (java.lang.Boolean)value$; break;
-    case 16: isAutoCompleted = (java.lang.Boolean)value$; break;
-    case 17: coveredDistance = (java.lang.Double)value$; break;
-    case 18: purposedDistance = (java.lang.Double)value$; break;
+    case 2: imei = (java.lang.String)value$; break;
+    case 3: purpose = (java.lang.String)value$; break;
+    case 4: sequenceId = (java.lang.Double)value$; break;
+    case 5: place = (com.fretron.Model.Place)value$; break;
+    case 6: status = (java.lang.String)value$; break;
+    case 7: eta = (java.lang.Long)value$; break;
+    case 8: remainingDistance = (java.lang.Double)value$; break;
+    case 9: plannedArrival = (java.lang.Long)value$; break;
+    case 10: plannedDeparture = (java.lang.Long)value$; break;
+    case 11: actualArrival = (java.lang.Long)value$; break;
+    case 12: actualDeparture = (java.lang.Long)value$; break;
+    case 13: assosiatedShipmentsId = (java.util.List<java.lang.String>)value$; break;
+    case 14: creationTime = (java.lang.Long)value$; break;
+    case 15: outOfTrackSince = (java.lang.Long)value$; break;
+    case 16: isOutOfTrack = (java.lang.Boolean)value$; break;
+    case 17: isAutoCompleted = (java.lang.Boolean)value$; break;
+    case 18: coveredDistance = (java.lang.Double)value$; break;
+    case 19: purposedDistance = (java.lang.Double)value$; break;
+    case 20: forShipmentStages = (java.util.List<java.lang.String>)value$; break;
+    case 21: currentLocation = (com.fretron.Model.LitePosition)value$; break;
+    case 22: hub = (com.fretron.Model.Place)value$; break;
+    case 23: expectedActivityStartTime = (java.lang.Long)value$; break;
+    case 24: actualActivityStartTime = (java.lang.Long)value$; break;
+    case 25: actualActivityEndTime = (java.lang.Long)value$; break;
+    case 26: updates = (com.fretron.Model.Updates)value$; break;
+    case 27: currentGpsState = (com.fretron.Model.LiteVehicleGpsState)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -168,6 +213,22 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    */
   public void setVehicleId(java.lang.String value) {
     this.vehicleId = value;
+  }
+
+  /**
+   * Gets the value of the 'imei' field.
+   * @return The value of the 'imei' field.
+   */
+  public java.lang.String getImei() {
+    return imei;
+  }
+
+  /**
+   * Sets the value of the 'imei' field.
+   * @param value the value to set.
+   */
+  public void setImei(java.lang.String value) {
+    this.imei = value;
   }
 
   /**
@@ -443,6 +504,134 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'forShipmentStages' field.
+   * @return The value of the 'forShipmentStages' field.
+   */
+  public java.util.List<java.lang.String> getForShipmentStages() {
+    return forShipmentStages;
+  }
+
+  /**
+   * Sets the value of the 'forShipmentStages' field.
+   * @param value the value to set.
+   */
+  public void setForShipmentStages(java.util.List<java.lang.String> value) {
+    this.forShipmentStages = value;
+  }
+
+  /**
+   * Gets the value of the 'currentLocation' field.
+   * @return The value of the 'currentLocation' field.
+   */
+  public com.fretron.Model.LitePosition getCurrentLocation() {
+    return currentLocation;
+  }
+
+  /**
+   * Sets the value of the 'currentLocation' field.
+   * @param value the value to set.
+   */
+  public void setCurrentLocation(com.fretron.Model.LitePosition value) {
+    this.currentLocation = value;
+  }
+
+  /**
+   * Gets the value of the 'hub' field.
+   * @return The value of the 'hub' field.
+   */
+  public com.fretron.Model.Place getHub() {
+    return hub;
+  }
+
+  /**
+   * Sets the value of the 'hub' field.
+   * @param value the value to set.
+   */
+  public void setHub(com.fretron.Model.Place value) {
+    this.hub = value;
+  }
+
+  /**
+   * Gets the value of the 'expectedActivityStartTime' field.
+   * @return The value of the 'expectedActivityStartTime' field.
+   */
+  public java.lang.Long getExpectedActivityStartTime() {
+    return expectedActivityStartTime;
+  }
+
+  /**
+   * Sets the value of the 'expectedActivityStartTime' field.
+   * @param value the value to set.
+   */
+  public void setExpectedActivityStartTime(java.lang.Long value) {
+    this.expectedActivityStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'actualActivityStartTime' field.
+   * @return The value of the 'actualActivityStartTime' field.
+   */
+  public java.lang.Long getActualActivityStartTime() {
+    return actualActivityStartTime;
+  }
+
+  /**
+   * Sets the value of the 'actualActivityStartTime' field.
+   * @param value the value to set.
+   */
+  public void setActualActivityStartTime(java.lang.Long value) {
+    this.actualActivityStartTime = value;
+  }
+
+  /**
+   * Gets the value of the 'actualActivityEndTime' field.
+   * @return The value of the 'actualActivityEndTime' field.
+   */
+  public java.lang.Long getActualActivityEndTime() {
+    return actualActivityEndTime;
+  }
+
+  /**
+   * Sets the value of the 'actualActivityEndTime' field.
+   * @param value the value to set.
+   */
+  public void setActualActivityEndTime(java.lang.Long value) {
+    this.actualActivityEndTime = value;
+  }
+
+  /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
+   * Gets the value of the 'currentGpsState' field.
+   * @return The value of the 'currentGpsState' field.
+   */
+  public com.fretron.Model.LiteVehicleGpsState getCurrentGpsState() {
+    return currentGpsState;
+  }
+
+  /**
+   * Sets the value of the 'currentGpsState' field.
+   * @param value the value to set.
+   */
+  public void setCurrentGpsState(com.fretron.Model.LiteVehicleGpsState value) {
+    this.currentGpsState = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -476,6 +665,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
 
     private java.lang.String uuid;
     private java.lang.String vehicleId;
+    private java.lang.String imei;
     private java.lang.String purpose;
     private java.lang.Double sequenceId;
     private com.fretron.Model.Place place;
@@ -494,6 +684,18 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private boolean isAutoCompleted;
     private java.lang.Double coveredDistance;
     private java.lang.Double purposedDistance;
+    private java.util.List<java.lang.String> forShipmentStages;
+    private com.fretron.Model.LitePosition currentLocation;
+    private com.fretron.Model.LitePosition.Builder currentLocationBuilder;
+    private com.fretron.Model.Place hub;
+    private com.fretron.Model.Place.Builder hubBuilder;
+    private java.lang.Long expectedActivityStartTime;
+    private java.lang.Long actualActivityStartTime;
+    private java.lang.Long actualActivityEndTime;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
+    private com.fretron.Model.LiteVehicleGpsState currentGpsState;
+    private com.fretron.Model.LiteVehicleGpsState.Builder currentGpsStateBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -514,76 +716,124 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.vehicleId = data().deepCopy(fields()[1].schema(), other.vehicleId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.purpose)) {
-        this.purpose = data().deepCopy(fields()[2].schema(), other.purpose);
+      if (isValidValue(fields()[2], other.imei)) {
+        this.imei = data().deepCopy(fields()[2].schema(), other.imei);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.sequenceId)) {
-        this.sequenceId = data().deepCopy(fields()[3].schema(), other.sequenceId);
+      if (isValidValue(fields()[3], other.purpose)) {
+        this.purpose = data().deepCopy(fields()[3].schema(), other.purpose);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.place)) {
-        this.place = data().deepCopy(fields()[4].schema(), other.place);
+      if (isValidValue(fields()[4], other.sequenceId)) {
+        this.sequenceId = data().deepCopy(fields()[4].schema(), other.sequenceId);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.place)) {
+        this.place = data().deepCopy(fields()[5].schema(), other.place);
+        fieldSetFlags()[5] = true;
       }
       if (other.hasPlaceBuilder()) {
         this.placeBuilder = com.fretron.Model.Place.newBuilder(other.getPlaceBuilder());
       }
-      if (isValidValue(fields()[5], other.status)) {
-        this.status = data().deepCopy(fields()[5].schema(), other.status);
-        fieldSetFlags()[5] = true;
-      }
-      if (isValidValue(fields()[6], other.eta)) {
-        this.eta = data().deepCopy(fields()[6].schema(), other.eta);
+      if (isValidValue(fields()[6], other.status)) {
+        this.status = data().deepCopy(fields()[6].schema(), other.status);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.remainingDistance)) {
-        this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
+      if (isValidValue(fields()[7], other.eta)) {
+        this.eta = data().deepCopy(fields()[7].schema(), other.eta);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.plannedArrival)) {
-        this.plannedArrival = data().deepCopy(fields()[8].schema(), other.plannedArrival);
+      if (isValidValue(fields()[8], other.remainingDistance)) {
+        this.remainingDistance = data().deepCopy(fields()[8].schema(), other.remainingDistance);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.plannedDeparture)) {
-        this.plannedDeparture = data().deepCopy(fields()[9].schema(), other.plannedDeparture);
+      if (isValidValue(fields()[9], other.plannedArrival)) {
+        this.plannedArrival = data().deepCopy(fields()[9].schema(), other.plannedArrival);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.actualArrival)) {
-        this.actualArrival = data().deepCopy(fields()[10].schema(), other.actualArrival);
+      if (isValidValue(fields()[10], other.plannedDeparture)) {
+        this.plannedDeparture = data().deepCopy(fields()[10].schema(), other.plannedDeparture);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.actualDeparture)) {
-        this.actualDeparture = data().deepCopy(fields()[11].schema(), other.actualDeparture);
+      if (isValidValue(fields()[11], other.actualArrival)) {
+        this.actualArrival = data().deepCopy(fields()[11].schema(), other.actualArrival);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.assosiatedShipmentsId)) {
-        this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
+      if (isValidValue(fields()[12], other.actualDeparture)) {
+        this.actualDeparture = data().deepCopy(fields()[12].schema(), other.actualDeparture);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.creationTime)) {
-        this.creationTime = data().deepCopy(fields()[13].schema(), other.creationTime);
+      if (isValidValue(fields()[13], other.assosiatedShipmentsId)) {
+        this.assosiatedShipmentsId = data().deepCopy(fields()[13].schema(), other.assosiatedShipmentsId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.outOfTrackSince)) {
-        this.outOfTrackSince = data().deepCopy(fields()[14].schema(), other.outOfTrackSince);
+      if (isValidValue(fields()[14], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[14].schema(), other.creationTime);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.isOutOfTrack)) {
-        this.isOutOfTrack = data().deepCopy(fields()[15].schema(), other.isOutOfTrack);
+      if (isValidValue(fields()[15], other.outOfTrackSince)) {
+        this.outOfTrackSince = data().deepCopy(fields()[15].schema(), other.outOfTrackSince);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.isAutoCompleted)) {
-        this.isAutoCompleted = data().deepCopy(fields()[16].schema(), other.isAutoCompleted);
+      if (isValidValue(fields()[16], other.isOutOfTrack)) {
+        this.isOutOfTrack = data().deepCopy(fields()[16].schema(), other.isOutOfTrack);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.coveredDistance)) {
-        this.coveredDistance = data().deepCopy(fields()[17].schema(), other.coveredDistance);
+      if (isValidValue(fields()[17], other.isAutoCompleted)) {
+        this.isAutoCompleted = data().deepCopy(fields()[17].schema(), other.isAutoCompleted);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.purposedDistance)) {
-        this.purposedDistance = data().deepCopy(fields()[18].schema(), other.purposedDistance);
+      if (isValidValue(fields()[18], other.coveredDistance)) {
+        this.coveredDistance = data().deepCopy(fields()[18].schema(), other.coveredDistance);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.purposedDistance)) {
+        this.purposedDistance = data().deepCopy(fields()[19].schema(), other.purposedDistance);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.forShipmentStages)) {
+        this.forShipmentStages = data().deepCopy(fields()[20].schema(), other.forShipmentStages);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.currentLocation)) {
+        this.currentLocation = data().deepCopy(fields()[21].schema(), other.currentLocation);
+        fieldSetFlags()[21] = true;
+      }
+      if (other.hasCurrentLocationBuilder()) {
+        this.currentLocationBuilder = com.fretron.Model.LitePosition.newBuilder(other.getCurrentLocationBuilder());
+      }
+      if (isValidValue(fields()[22], other.hub)) {
+        this.hub = data().deepCopy(fields()[22].schema(), other.hub);
+        fieldSetFlags()[22] = true;
+      }
+      if (other.hasHubBuilder()) {
+        this.hubBuilder = com.fretron.Model.Place.newBuilder(other.getHubBuilder());
+      }
+      if (isValidValue(fields()[23], other.expectedActivityStartTime)) {
+        this.expectedActivityStartTime = data().deepCopy(fields()[23].schema(), other.expectedActivityStartTime);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.actualActivityStartTime)) {
+        this.actualActivityStartTime = data().deepCopy(fields()[24].schema(), other.actualActivityStartTime);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.actualActivityEndTime)) {
+        this.actualActivityEndTime = data().deepCopy(fields()[25].schema(), other.actualActivityEndTime);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.updates)) {
+        this.updates = data().deepCopy(fields()[26].schema(), other.updates);
+        fieldSetFlags()[26] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
+      if (isValidValue(fields()[27], other.currentGpsState)) {
+        this.currentGpsState = data().deepCopy(fields()[27].schema(), other.currentGpsState);
+        fieldSetFlags()[27] = true;
+      }
+      if (other.hasCurrentGpsStateBuilder()) {
+        this.currentGpsStateBuilder = com.fretron.Model.LiteVehicleGpsState.newBuilder(other.getCurrentGpsStateBuilder());
       }
     }
 
@@ -601,75 +851,115 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.vehicleId = data().deepCopy(fields()[1].schema(), other.vehicleId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.purpose)) {
-        this.purpose = data().deepCopy(fields()[2].schema(), other.purpose);
+      if (isValidValue(fields()[2], other.imei)) {
+        this.imei = data().deepCopy(fields()[2].schema(), other.imei);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.sequenceId)) {
-        this.sequenceId = data().deepCopy(fields()[3].schema(), other.sequenceId);
+      if (isValidValue(fields()[3], other.purpose)) {
+        this.purpose = data().deepCopy(fields()[3].schema(), other.purpose);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.place)) {
-        this.place = data().deepCopy(fields()[4].schema(), other.place);
+      if (isValidValue(fields()[4], other.sequenceId)) {
+        this.sequenceId = data().deepCopy(fields()[4].schema(), other.sequenceId);
         fieldSetFlags()[4] = true;
       }
-      this.placeBuilder = null;
-      if (isValidValue(fields()[5], other.status)) {
-        this.status = data().deepCopy(fields()[5].schema(), other.status);
+      if (isValidValue(fields()[5], other.place)) {
+        this.place = data().deepCopy(fields()[5].schema(), other.place);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.eta)) {
-        this.eta = data().deepCopy(fields()[6].schema(), other.eta);
+      this.placeBuilder = null;
+      if (isValidValue(fields()[6], other.status)) {
+        this.status = data().deepCopy(fields()[6].schema(), other.status);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.remainingDistance)) {
-        this.remainingDistance = data().deepCopy(fields()[7].schema(), other.remainingDistance);
+      if (isValidValue(fields()[7], other.eta)) {
+        this.eta = data().deepCopy(fields()[7].schema(), other.eta);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.plannedArrival)) {
-        this.plannedArrival = data().deepCopy(fields()[8].schema(), other.plannedArrival);
+      if (isValidValue(fields()[8], other.remainingDistance)) {
+        this.remainingDistance = data().deepCopy(fields()[8].schema(), other.remainingDistance);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.plannedDeparture)) {
-        this.plannedDeparture = data().deepCopy(fields()[9].schema(), other.plannedDeparture);
+      if (isValidValue(fields()[9], other.plannedArrival)) {
+        this.plannedArrival = data().deepCopy(fields()[9].schema(), other.plannedArrival);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.actualArrival)) {
-        this.actualArrival = data().deepCopy(fields()[10].schema(), other.actualArrival);
+      if (isValidValue(fields()[10], other.plannedDeparture)) {
+        this.plannedDeparture = data().deepCopy(fields()[10].schema(), other.plannedDeparture);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.actualDeparture)) {
-        this.actualDeparture = data().deepCopy(fields()[11].schema(), other.actualDeparture);
+      if (isValidValue(fields()[11], other.actualArrival)) {
+        this.actualArrival = data().deepCopy(fields()[11].schema(), other.actualArrival);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.assosiatedShipmentsId)) {
-        this.assosiatedShipmentsId = data().deepCopy(fields()[12].schema(), other.assosiatedShipmentsId);
+      if (isValidValue(fields()[12], other.actualDeparture)) {
+        this.actualDeparture = data().deepCopy(fields()[12].schema(), other.actualDeparture);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.creationTime)) {
-        this.creationTime = data().deepCopy(fields()[13].schema(), other.creationTime);
+      if (isValidValue(fields()[13], other.assosiatedShipmentsId)) {
+        this.assosiatedShipmentsId = data().deepCopy(fields()[13].schema(), other.assosiatedShipmentsId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.outOfTrackSince)) {
-        this.outOfTrackSince = data().deepCopy(fields()[14].schema(), other.outOfTrackSince);
+      if (isValidValue(fields()[14], other.creationTime)) {
+        this.creationTime = data().deepCopy(fields()[14].schema(), other.creationTime);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.isOutOfTrack)) {
-        this.isOutOfTrack = data().deepCopy(fields()[15].schema(), other.isOutOfTrack);
+      if (isValidValue(fields()[15], other.outOfTrackSince)) {
+        this.outOfTrackSince = data().deepCopy(fields()[15].schema(), other.outOfTrackSince);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.isAutoCompleted)) {
-        this.isAutoCompleted = data().deepCopy(fields()[16].schema(), other.isAutoCompleted);
+      if (isValidValue(fields()[16], other.isOutOfTrack)) {
+        this.isOutOfTrack = data().deepCopy(fields()[16].schema(), other.isOutOfTrack);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.coveredDistance)) {
-        this.coveredDistance = data().deepCopy(fields()[17].schema(), other.coveredDistance);
+      if (isValidValue(fields()[17], other.isAutoCompleted)) {
+        this.isAutoCompleted = data().deepCopy(fields()[17].schema(), other.isAutoCompleted);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.purposedDistance)) {
-        this.purposedDistance = data().deepCopy(fields()[18].schema(), other.purposedDistance);
+      if (isValidValue(fields()[18], other.coveredDistance)) {
+        this.coveredDistance = data().deepCopy(fields()[18].schema(), other.coveredDistance);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.purposedDistance)) {
+        this.purposedDistance = data().deepCopy(fields()[19].schema(), other.purposedDistance);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.forShipmentStages)) {
+        this.forShipmentStages = data().deepCopy(fields()[20].schema(), other.forShipmentStages);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.currentLocation)) {
+        this.currentLocation = data().deepCopy(fields()[21].schema(), other.currentLocation);
+        fieldSetFlags()[21] = true;
+      }
+      this.currentLocationBuilder = null;
+      if (isValidValue(fields()[22], other.hub)) {
+        this.hub = data().deepCopy(fields()[22].schema(), other.hub);
+        fieldSetFlags()[22] = true;
+      }
+      this.hubBuilder = null;
+      if (isValidValue(fields()[23], other.expectedActivityStartTime)) {
+        this.expectedActivityStartTime = data().deepCopy(fields()[23].schema(), other.expectedActivityStartTime);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.actualActivityStartTime)) {
+        this.actualActivityStartTime = data().deepCopy(fields()[24].schema(), other.actualActivityStartTime);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.actualActivityEndTime)) {
+        this.actualActivityEndTime = data().deepCopy(fields()[25].schema(), other.actualActivityEndTime);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.updates)) {
+        this.updates = data().deepCopy(fields()[26].schema(), other.updates);
+        fieldSetFlags()[26] = true;
+      }
+      this.updatesBuilder = null;
+      if (isValidValue(fields()[27], other.currentGpsState)) {
+        this.currentGpsState = data().deepCopy(fields()[27].schema(), other.currentGpsState);
+        fieldSetFlags()[27] = true;
+      }
+      this.currentGpsStateBuilder = null;
     }
 
     /**
@@ -751,6 +1041,45 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'imei' field.
+      * @return The value.
+      */
+    public java.lang.String getImei() {
+      return imei;
+    }
+
+    /**
+      * Sets the value of the 'imei' field.
+      * @param value The value of 'imei'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setImei(java.lang.String value) {
+      validate(fields()[2], value);
+      this.imei = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'imei' field has been set.
+      * @return True if the 'imei' field has been set, false otherwise.
+      */
+    public boolean hasImei() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'imei' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearImei() {
+      imei = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'purpose' field.
       * @return The value.
       */
@@ -764,9 +1093,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setPurpose(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.purpose = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -775,7 +1104,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'purpose' field has been set, false otherwise.
       */
     public boolean hasPurpose() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -785,7 +1114,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearPurpose() {
       purpose = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -803,9 +1132,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setSequenceId(java.lang.Double value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.sequenceId = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -814,7 +1143,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'sequenceId' field has been set, false otherwise.
       */
     public boolean hasSequenceId() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -824,7 +1153,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearSequenceId() {
       sequenceId = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -842,10 +1171,10 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setPlace(com.fretron.Model.Place value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.placeBuilder = null;
       this.place = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -854,7 +1183,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'place' field has been set, false otherwise.
       */
     public boolean hasPlace() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
     /**
@@ -898,7 +1227,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.TripPoint.Builder clearPlace() {
       place = null;
       placeBuilder = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -916,9 +1245,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setStatus(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.status = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -927,7 +1256,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'status' field has been set, false otherwise.
       */
     public boolean hasStatus() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -937,7 +1266,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearStatus() {
       status = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -955,9 +1284,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setEta(java.lang.Long value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.eta = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -966,7 +1295,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'eta' field has been set, false otherwise.
       */
     public boolean hasEta() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -976,7 +1305,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearEta() {
       eta = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -994,9 +1323,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setRemainingDistance(java.lang.Double value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.remainingDistance = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -1005,7 +1334,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'remainingDistance' field has been set, false otherwise.
       */
     public boolean hasRemainingDistance() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -1015,7 +1344,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearRemainingDistance() {
       remainingDistance = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -1033,9 +1362,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setPlannedArrival(java.lang.Long value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.plannedArrival = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -1044,7 +1373,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'plannedArrival' field has been set, false otherwise.
       */
     public boolean hasPlannedArrival() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -1054,7 +1383,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearPlannedArrival() {
       plannedArrival = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -1072,9 +1401,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setPlannedDeparture(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.plannedDeparture = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1083,7 +1412,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'plannedDeparture' field has been set, false otherwise.
       */
     public boolean hasPlannedDeparture() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1093,7 +1422,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearPlannedDeparture() {
       plannedDeparture = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1111,9 +1440,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setActualArrival(java.lang.Long value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.actualArrival = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1122,7 +1451,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'actualArrival' field has been set, false otherwise.
       */
     public boolean hasActualArrival() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1132,7 +1461,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearActualArrival() {
       actualArrival = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1150,9 +1479,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setActualDeparture(java.lang.Long value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.actualDeparture = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1161,7 +1490,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'actualDeparture' field has been set, false otherwise.
       */
     public boolean hasActualDeparture() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1171,7 +1500,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearActualDeparture() {
       actualDeparture = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1189,9 +1518,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setAssosiatedShipmentsId(java.util.List<java.lang.String> value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.assosiatedShipmentsId = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1200,7 +1529,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'assosiatedShipmentsId' field has been set, false otherwise.
       */
     public boolean hasAssosiatedShipmentsId() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1210,7 +1539,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearAssosiatedShipmentsId() {
       assosiatedShipmentsId = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1228,9 +1557,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setCreationTime(java.lang.Long value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.creationTime = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1239,7 +1568,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'creationTime' field has been set, false otherwise.
       */
     public boolean hasCreationTime() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1249,7 +1578,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearCreationTime() {
       creationTime = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1267,9 +1596,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setOutOfTrackSince(java.lang.Long value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.outOfTrackSince = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1278,7 +1607,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'outOfTrackSince' field has been set, false otherwise.
       */
     public boolean hasOutOfTrackSince() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1288,7 +1617,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearOutOfTrackSince() {
       outOfTrackSince = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1306,9 +1635,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setIsOutOfTrack(boolean value) {
-      validate(fields()[15], value);
+      validate(fields()[16], value);
       this.isOutOfTrack = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1317,7 +1646,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'isOutOfTrack' field has been set, false otherwise.
       */
     public boolean hasIsOutOfTrack() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1326,7 +1655,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder clearIsOutOfTrack() {
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1344,9 +1673,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setIsAutoCompleted(boolean value) {
-      validate(fields()[16], value);
+      validate(fields()[17], value);
       this.isAutoCompleted = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1355,7 +1684,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'isAutoCompleted' field has been set, false otherwise.
       */
     public boolean hasIsAutoCompleted() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1364,7 +1693,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder clearIsAutoCompleted() {
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1382,9 +1711,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setCoveredDistance(java.lang.Double value) {
-      validate(fields()[17], value);
+      validate(fields()[18], value);
       this.coveredDistance = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1393,7 +1722,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'coveredDistance' field has been set, false otherwise.
       */
     public boolean hasCoveredDistance() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1403,7 +1732,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearCoveredDistance() {
       coveredDistance = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1421,9 +1750,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.TripPoint.Builder setPurposedDistance(java.lang.Double value) {
-      validate(fields()[18], value);
+      validate(fields()[19], value);
       this.purposedDistance = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1432,7 +1761,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'purposedDistance' field has been set, false otherwise.
       */
     public boolean hasPurposedDistance() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1442,7 +1771,459 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.TripPoint.Builder clearPurposedDistance() {
       purposedDistance = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'forShipmentStages' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getForShipmentStages() {
+      return forShipmentStages;
+    }
+
+    /**
+      * Sets the value of the 'forShipmentStages' field.
+      * @param value The value of 'forShipmentStages'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setForShipmentStages(java.util.List<java.lang.String> value) {
+      validate(fields()[20], value);
+      this.forShipmentStages = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'forShipmentStages' field has been set.
+      * @return True if the 'forShipmentStages' field has been set, false otherwise.
+      */
+    public boolean hasForShipmentStages() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'forShipmentStages' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearForShipmentStages() {
+      forShipmentStages = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'currentLocation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.LitePosition getCurrentLocation() {
+      return currentLocation;
+    }
+
+    /**
+      * Sets the value of the 'currentLocation' field.
+      * @param value The value of 'currentLocation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setCurrentLocation(com.fretron.Model.LitePosition value) {
+      validate(fields()[21], value);
+      this.currentLocationBuilder = null;
+      this.currentLocation = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currentLocation' field has been set.
+      * @return True if the 'currentLocation' field has been set, false otherwise.
+      */
+    public boolean hasCurrentLocation() {
+      return fieldSetFlags()[21];
+    }
+
+    /**
+     * Gets the Builder instance for the 'currentLocation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.LitePosition.Builder getCurrentLocationBuilder() {
+      if (currentLocationBuilder == null) {
+        if (hasCurrentLocation()) {
+          setCurrentLocationBuilder(com.fretron.Model.LitePosition.newBuilder(currentLocation));
+        } else {
+          setCurrentLocationBuilder(com.fretron.Model.LitePosition.newBuilder());
+        }
+      }
+      return currentLocationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'currentLocation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripPoint.Builder setCurrentLocationBuilder(com.fretron.Model.LitePosition.Builder value) {
+      clearCurrentLocation();
+      currentLocationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'currentLocation' field has an active Builder instance
+     * @return True if the 'currentLocation' field has an active Builder instance
+     */
+    public boolean hasCurrentLocationBuilder() {
+      return currentLocationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'currentLocation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearCurrentLocation() {
+      currentLocation = null;
+      currentLocationBuilder = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'hub' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Place getHub() {
+      return hub;
+    }
+
+    /**
+      * Sets the value of the 'hub' field.
+      * @param value The value of 'hub'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setHub(com.fretron.Model.Place value) {
+      validate(fields()[22], value);
+      this.hubBuilder = null;
+      this.hub = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'hub' field has been set.
+      * @return True if the 'hub' field has been set, false otherwise.
+      */
+    public boolean hasHub() {
+      return fieldSetFlags()[22];
+    }
+
+    /**
+     * Gets the Builder instance for the 'hub' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Place.Builder getHubBuilder() {
+      if (hubBuilder == null) {
+        if (hasHub()) {
+          setHubBuilder(com.fretron.Model.Place.newBuilder(hub));
+        } else {
+          setHubBuilder(com.fretron.Model.Place.newBuilder());
+        }
+      }
+      return hubBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'hub' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripPoint.Builder setHubBuilder(com.fretron.Model.Place.Builder value) {
+      clearHub();
+      hubBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'hub' field has an active Builder instance
+     * @return True if the 'hub' field has an active Builder instance
+     */
+    public boolean hasHubBuilder() {
+      return hubBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'hub' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearHub() {
+      hub = null;
+      hubBuilder = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'expectedActivityStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getExpectedActivityStartTime() {
+      return expectedActivityStartTime;
+    }
+
+    /**
+      * Sets the value of the 'expectedActivityStartTime' field.
+      * @param value The value of 'expectedActivityStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setExpectedActivityStartTime(java.lang.Long value) {
+      validate(fields()[23], value);
+      this.expectedActivityStartTime = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'expectedActivityStartTime' field has been set.
+      * @return True if the 'expectedActivityStartTime' field has been set, false otherwise.
+      */
+    public boolean hasExpectedActivityStartTime() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'expectedActivityStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearExpectedActivityStartTime() {
+      expectedActivityStartTime = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualActivityStartTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualActivityStartTime() {
+      return actualActivityStartTime;
+    }
+
+    /**
+      * Sets the value of the 'actualActivityStartTime' field.
+      * @param value The value of 'actualActivityStartTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setActualActivityStartTime(java.lang.Long value) {
+      validate(fields()[24], value);
+      this.actualActivityStartTime = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualActivityStartTime' field has been set.
+      * @return True if the 'actualActivityStartTime' field has been set, false otherwise.
+      */
+    public boolean hasActualActivityStartTime() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'actualActivityStartTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearActualActivityStartTime() {
+      actualActivityStartTime = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'actualActivityEndTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getActualActivityEndTime() {
+      return actualActivityEndTime;
+    }
+
+    /**
+      * Sets the value of the 'actualActivityEndTime' field.
+      * @param value The value of 'actualActivityEndTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setActualActivityEndTime(java.lang.Long value) {
+      validate(fields()[25], value);
+      this.actualActivityEndTime = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actualActivityEndTime' field has been set.
+      * @return True if the 'actualActivityEndTime' field has been set, false otherwise.
+      */
+    public boolean hasActualActivityEndTime() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'actualActivityEndTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearActualActivityEndTime() {
+      actualActivityEndTime = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[26], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[26] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[26];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripPoint.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[26] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'currentGpsState' field.
+      * @return The value.
+      */
+    public com.fretron.Model.LiteVehicleGpsState getCurrentGpsState() {
+      return currentGpsState;
+    }
+
+    /**
+      * Sets the value of the 'currentGpsState' field.
+      * @param value The value of 'currentGpsState'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setCurrentGpsState(com.fretron.Model.LiteVehicleGpsState value) {
+      validate(fields()[27], value);
+      this.currentGpsStateBuilder = null;
+      this.currentGpsState = value;
+      fieldSetFlags()[27] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currentGpsState' field has been set.
+      * @return True if the 'currentGpsState' field has been set, false otherwise.
+      */
+    public boolean hasCurrentGpsState() {
+      return fieldSetFlags()[27];
+    }
+
+    /**
+     * Gets the Builder instance for the 'currentGpsState' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.LiteVehicleGpsState.Builder getCurrentGpsStateBuilder() {
+      if (currentGpsStateBuilder == null) {
+        if (hasCurrentGpsState()) {
+          setCurrentGpsStateBuilder(com.fretron.Model.LiteVehicleGpsState.newBuilder(currentGpsState));
+        } else {
+          setCurrentGpsStateBuilder(com.fretron.Model.LiteVehicleGpsState.newBuilder());
+        }
+      }
+      return currentGpsStateBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'currentGpsState' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.TripPoint.Builder setCurrentGpsStateBuilder(com.fretron.Model.LiteVehicleGpsState.Builder value) {
+      clearCurrentGpsState();
+      currentGpsStateBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'currentGpsState' field has an active Builder instance
+     * @return True if the 'currentGpsState' field has an active Builder instance
+     */
+    public boolean hasCurrentGpsStateBuilder() {
+      return currentGpsStateBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'currentGpsState' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearCurrentGpsState() {
+      currentGpsState = null;
+      currentGpsStateBuilder = null;
+      fieldSetFlags()[27] = false;
       return this;
     }
 
@@ -1452,27 +2233,52 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         TripPoint record = new TripPoint();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.vehicleId = fieldSetFlags()[1] ? this.vehicleId : (java.lang.String) defaultValue(fields()[1]);
-        record.purpose = fieldSetFlags()[2] ? this.purpose : (java.lang.String) defaultValue(fields()[2]);
-        record.sequenceId = fieldSetFlags()[3] ? this.sequenceId : (java.lang.Double) defaultValue(fields()[3]);
+        record.imei = fieldSetFlags()[2] ? this.imei : (java.lang.String) defaultValue(fields()[2]);
+        record.purpose = fieldSetFlags()[3] ? this.purpose : (java.lang.String) defaultValue(fields()[3]);
+        record.sequenceId = fieldSetFlags()[4] ? this.sequenceId : (java.lang.Double) defaultValue(fields()[4]);
         if (placeBuilder != null) {
           record.place = this.placeBuilder.build();
         } else {
-          record.place = fieldSetFlags()[4] ? this.place : (com.fretron.Model.Place) defaultValue(fields()[4]);
+          record.place = fieldSetFlags()[5] ? this.place : (com.fretron.Model.Place) defaultValue(fields()[5]);
         }
-        record.status = fieldSetFlags()[5] ? this.status : (java.lang.String) defaultValue(fields()[5]);
-        record.eta = fieldSetFlags()[6] ? this.eta : (java.lang.Long) defaultValue(fields()[6]);
-        record.remainingDistance = fieldSetFlags()[7] ? this.remainingDistance : (java.lang.Double) defaultValue(fields()[7]);
-        record.plannedArrival = fieldSetFlags()[8] ? this.plannedArrival : (java.lang.Long) defaultValue(fields()[8]);
-        record.plannedDeparture = fieldSetFlags()[9] ? this.plannedDeparture : (java.lang.Long) defaultValue(fields()[9]);
-        record.actualArrival = fieldSetFlags()[10] ? this.actualArrival : (java.lang.Long) defaultValue(fields()[10]);
-        record.actualDeparture = fieldSetFlags()[11] ? this.actualDeparture : (java.lang.Long) defaultValue(fields()[11]);
-        record.assosiatedShipmentsId = fieldSetFlags()[12] ? this.assosiatedShipmentsId : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
-        record.creationTime = fieldSetFlags()[13] ? this.creationTime : (java.lang.Long) defaultValue(fields()[13]);
-        record.outOfTrackSince = fieldSetFlags()[14] ? this.outOfTrackSince : (java.lang.Long) defaultValue(fields()[14]);
-        record.isOutOfTrack = fieldSetFlags()[15] ? this.isOutOfTrack : (java.lang.Boolean) defaultValue(fields()[15]);
-        record.isAutoCompleted = fieldSetFlags()[16] ? this.isAutoCompleted : (java.lang.Boolean) defaultValue(fields()[16]);
-        record.coveredDistance = fieldSetFlags()[17] ? this.coveredDistance : (java.lang.Double) defaultValue(fields()[17]);
-        record.purposedDistance = fieldSetFlags()[18] ? this.purposedDistance : (java.lang.Double) defaultValue(fields()[18]);
+        record.status = fieldSetFlags()[6] ? this.status : (java.lang.String) defaultValue(fields()[6]);
+        record.eta = fieldSetFlags()[7] ? this.eta : (java.lang.Long) defaultValue(fields()[7]);
+        record.remainingDistance = fieldSetFlags()[8] ? this.remainingDistance : (java.lang.Double) defaultValue(fields()[8]);
+        record.plannedArrival = fieldSetFlags()[9] ? this.plannedArrival : (java.lang.Long) defaultValue(fields()[9]);
+        record.plannedDeparture = fieldSetFlags()[10] ? this.plannedDeparture : (java.lang.Long) defaultValue(fields()[10]);
+        record.actualArrival = fieldSetFlags()[11] ? this.actualArrival : (java.lang.Long) defaultValue(fields()[11]);
+        record.actualDeparture = fieldSetFlags()[12] ? this.actualDeparture : (java.lang.Long) defaultValue(fields()[12]);
+        record.assosiatedShipmentsId = fieldSetFlags()[13] ? this.assosiatedShipmentsId : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.creationTime = fieldSetFlags()[14] ? this.creationTime : (java.lang.Long) defaultValue(fields()[14]);
+        record.outOfTrackSince = fieldSetFlags()[15] ? this.outOfTrackSince : (java.lang.Long) defaultValue(fields()[15]);
+        record.isOutOfTrack = fieldSetFlags()[16] ? this.isOutOfTrack : (java.lang.Boolean) defaultValue(fields()[16]);
+        record.isAutoCompleted = fieldSetFlags()[17] ? this.isAutoCompleted : (java.lang.Boolean) defaultValue(fields()[17]);
+        record.coveredDistance = fieldSetFlags()[18] ? this.coveredDistance : (java.lang.Double) defaultValue(fields()[18]);
+        record.purposedDistance = fieldSetFlags()[19] ? this.purposedDistance : (java.lang.Double) defaultValue(fields()[19]);
+        record.forShipmentStages = fieldSetFlags()[20] ? this.forShipmentStages : (java.util.List<java.lang.String>) defaultValue(fields()[20]);
+        if (currentLocationBuilder != null) {
+          record.currentLocation = this.currentLocationBuilder.build();
+        } else {
+          record.currentLocation = fieldSetFlags()[21] ? this.currentLocation : (com.fretron.Model.LitePosition) defaultValue(fields()[21]);
+        }
+        if (hubBuilder != null) {
+          record.hub = this.hubBuilder.build();
+        } else {
+          record.hub = fieldSetFlags()[22] ? this.hub : (com.fretron.Model.Place) defaultValue(fields()[22]);
+        }
+        record.expectedActivityStartTime = fieldSetFlags()[23] ? this.expectedActivityStartTime : (java.lang.Long) defaultValue(fields()[23]);
+        record.actualActivityStartTime = fieldSetFlags()[24] ? this.actualActivityStartTime : (java.lang.Long) defaultValue(fields()[24]);
+        record.actualActivityEndTime = fieldSetFlags()[25] ? this.actualActivityEndTime : (java.lang.Long) defaultValue(fields()[25]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[26] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[26]);
+        }
+        if (currentGpsStateBuilder != null) {
+          record.currentGpsState = this.currentGpsStateBuilder.build();
+        } else {
+          record.currentGpsState = fieldSetFlags()[27] ? this.currentGpsState : (com.fretron.Model.LiteVehicleGpsState) defaultValue(fields()[27]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -1,0 +1,26 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "LoadInfo",
+  "fields": [
+    {
+      "name": "material",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "measurements",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Measurement"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

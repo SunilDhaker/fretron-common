@@ -1,0 +1,51 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CustomeField",
+  "fields": [
+    {
+      "name": "fieldId",
+      "type": "string"
+    },
+    {
+      "name": "key",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "keyValue",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "valueClass",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "valueSerializer",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

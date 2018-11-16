@@ -90,5 +90,7 @@
     <entry key="token.manager.restservice.port">7090</entry>
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
 </properties>

@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "name": "AccessLevel",
+  "namespace":"com.fretron.Model",
+  "symbols": [
+    "DASHBOARD",
+    "REPORTS",
+    "TRIPS"
+  ]
+}

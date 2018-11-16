@@ -4,6 +4,7 @@ import com.fretron.Logger.Log
 import com.fretron.Model.LitePosition
 import com.fretron.Model.PointAtTime
 import com.fretron.Model.TimeAwarePolyline
+import org.omg.CORBA.TIMEOUT
 import java.util.*
 
 object OnlinePolylineEncoder {
@@ -281,6 +282,8 @@ object OnlinePolylineEncoder {
     }
 
 
+
+
     fun extendTimeAwarePolylineUsingPositions(list: List<LitePosition>): TimeAwarePolyline? {
         var polyline: TimeAwarePolyline? = null
         if (list.isNotEmpty()) {
@@ -291,6 +294,17 @@ object OnlinePolylineEncoder {
             }
         }
         return polyline
+    }
+
+    fun extendTimeAwarePolylineUsingPositions(polyline : TimeAwarePolyline?,list: List<LitePosition>): TimeAwarePolyline? {
+        var timeAwarePolyline: TimeAwarePolyline? = polyline ?: TimeAwarePolyline("", "", PointAtTime(0L, 0.0, 0.0), false, 0)
+        if (list.isNotEmpty()) {
+            for (point in list) {
+                timeAwarePolyline =
+                    extendTimeAwarePolyline(timeAwarePolyline, point.getLatitude(), point.getLongitude(), point.getTime())
+            }
+        }
+        return timeAwarePolyline
     }
 
 

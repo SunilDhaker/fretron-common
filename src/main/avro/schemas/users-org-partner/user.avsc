@@ -1,0 +1,67 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "User",
+  "fields": [
+
+  {
+          "name": "uuid",
+           "type": ["null" , "string"],
+           "default" : null
+  },
+  {
+        "name": "name",
+         "type": ["null" , "string"],
+         "default" : null
+   },
+   {
+         "name": "email",
+          "type": ["null" , "string"],
+           "default" : null
+   },
+   {
+         "name": "mobileNumber",
+          "type": ["null" , "string"],
+          "default" : null
+   },
+ {
+         "name": "address",
+          "type": ["null" , "string"],
+          "default" : null
+  },
+
+   {
+           "name": "authToken",
+           "type":[ "null", {"type" : "array", "items":"com.fretron.Model.Token"}],
+            "default":null
+    },
+
+    {
+            "name": "tokens",
+            "type": ["null", {"type" : "array", "items":"string"}],
+            "default":null
+    },
+    {
+        "name":"onBoardingType",
+        "type":[
+            "null",
+            "string"
+        ],
+        "default":null
+    },
+    {
+        "name":"otpEnabled",
+        "type":[
+            "null",
+            "boolean"
+        ],
+        "default":null
+    },
+    {
+        "name":"isGod",
+        "type": ["null","boolean"],
+        "default":null
+    }
+
+  ]
+}

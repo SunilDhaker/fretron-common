@@ -1,0 +1,88 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Customer",
+  "fields": [
+    {
+      "name": "contactPersonName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "emailAddress",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "mobileNumber",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "organizationName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "organizationBillingAddress",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "organizationShippingAddress",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "typeOfCustomer",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "isDeleted",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "createTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "updateTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    }
+  ]
+}

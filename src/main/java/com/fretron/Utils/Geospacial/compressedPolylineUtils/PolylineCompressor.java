@@ -8,6 +8,7 @@ import com.fretron.Utils.Geospacial.PolylineUtils.OnlinePolylineEncoder;
 import com.fretron.Utils.Geospacial.PolylineUtils.PolylineDecoder;
 import com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.Point;
 import com.fretron.Utils.Geospacial.compressedPolylineUtils.reducer.SeriesReducer;
+
 import java.util.List;
 
 public class PolylineCompressor {

@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "VehicleState",
+  "namespace":"com.fretron.Model",
+  "symbols": [
+    "WaitingForLoad",
+    "EnrouteForPickUp",
+    "AtPickUpPoint",
+    "EnrouteForDestination",
+    "AtDestination"
+  ]
+}
