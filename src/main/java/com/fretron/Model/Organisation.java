@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2835012587040609876L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6736493238661946228L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -20,6 +20,13 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String buisnessPartnerId;
   @Deprecated public java.lang.String parentOrgUuid;
+  @Deprecated public java.lang.String organisationAddress;
+  @Deprecated public java.lang.String billingAddress;
+  @Deprecated public com.fretron.Model.Contact contactInfo;
+  @Deprecated public java.lang.String websiteURL;
+  @Deprecated public java.lang.String gstIN;
+  @Deprecated public java.lang.String panNumber;
+  @Deprecated public java.util.List<java.lang.String> installedModules;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +44,15 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param addedBy The new value for addedBy
    * @param buisnessPartnerId The new value for buisnessPartnerId
    * @param parentOrgUuid The new value for parentOrgUuid
+   * @param organisationAddress The new value for organisationAddress
+   * @param billingAddress The new value for billingAddress
+   * @param contactInfo The new value for contactInfo
+   * @param websiteURL The new value for websiteURL
+   * @param gstIN The new value for gstIN
+   * @param panNumber The new value for panNumber
+   * @param installedModules The new value for installedModules
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
@@ -46,6 +60,13 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     this.addedBy = addedBy;
     this.buisnessPartnerId = buisnessPartnerId;
     this.parentOrgUuid = parentOrgUuid;
+    this.organisationAddress = organisationAddress;
+    this.billingAddress = billingAddress;
+    this.contactInfo = contactInfo;
+    this.websiteURL = websiteURL;
+    this.gstIN = gstIN;
+    this.panNumber = panNumber;
+    this.installedModules = installedModules;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +80,13 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 4: return addedBy;
     case 5: return buisnessPartnerId;
     case 6: return parentOrgUuid;
+    case 7: return organisationAddress;
+    case 8: return billingAddress;
+    case 9: return contactInfo;
+    case 10: return websiteURL;
+    case 11: return gstIN;
+    case 12: return panNumber;
+    case 13: return installedModules;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +102,13 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 4: addedBy = (java.lang.String)value$; break;
     case 5: buisnessPartnerId = (java.lang.String)value$; break;
     case 6: parentOrgUuid = (java.lang.String)value$; break;
+    case 7: organisationAddress = (java.lang.String)value$; break;
+    case 8: billingAddress = (java.lang.String)value$; break;
+    case 9: contactInfo = (com.fretron.Model.Contact)value$; break;
+    case 10: websiteURL = (java.lang.String)value$; break;
+    case 11: gstIN = (java.lang.String)value$; break;
+    case 12: panNumber = (java.lang.String)value$; break;
+    case 13: installedModules = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +226,118 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'organisationAddress' field.
+   * @return The value of the 'organisationAddress' field.
+   */
+  public java.lang.String getOrganisationAddress() {
+    return organisationAddress;
+  }
+
+  /**
+   * Sets the value of the 'organisationAddress' field.
+   * @param value the value to set.
+   */
+  public void setOrganisationAddress(java.lang.String value) {
+    this.organisationAddress = value;
+  }
+
+  /**
+   * Gets the value of the 'billingAddress' field.
+   * @return The value of the 'billingAddress' field.
+   */
+  public java.lang.String getBillingAddress() {
+    return billingAddress;
+  }
+
+  /**
+   * Sets the value of the 'billingAddress' field.
+   * @param value the value to set.
+   */
+  public void setBillingAddress(java.lang.String value) {
+    this.billingAddress = value;
+  }
+
+  /**
+   * Gets the value of the 'contactInfo' field.
+   * @return The value of the 'contactInfo' field.
+   */
+  public com.fretron.Model.Contact getContactInfo() {
+    return contactInfo;
+  }
+
+  /**
+   * Sets the value of the 'contactInfo' field.
+   * @param value the value to set.
+   */
+  public void setContactInfo(com.fretron.Model.Contact value) {
+    this.contactInfo = value;
+  }
+
+  /**
+   * Gets the value of the 'websiteURL' field.
+   * @return The value of the 'websiteURL' field.
+   */
+  public java.lang.String getWebsiteURL() {
+    return websiteURL;
+  }
+
+  /**
+   * Sets the value of the 'websiteURL' field.
+   * @param value the value to set.
+   */
+  public void setWebsiteURL(java.lang.String value) {
+    this.websiteURL = value;
+  }
+
+  /**
+   * Gets the value of the 'gstIN' field.
+   * @return The value of the 'gstIN' field.
+   */
+  public java.lang.String getGstIN() {
+    return gstIN;
+  }
+
+  /**
+   * Sets the value of the 'gstIN' field.
+   * @param value the value to set.
+   */
+  public void setGstIN(java.lang.String value) {
+    this.gstIN = value;
+  }
+
+  /**
+   * Gets the value of the 'panNumber' field.
+   * @return The value of the 'panNumber' field.
+   */
+  public java.lang.String getPanNumber() {
+    return panNumber;
+  }
+
+  /**
+   * Sets the value of the 'panNumber' field.
+   * @param value the value to set.
+   */
+  public void setPanNumber(java.lang.String value) {
+    this.panNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'installedModules' field.
+   * @return The value of the 'installedModules' field.
+   */
+  public java.util.List<java.lang.String> getInstalledModules() {
+    return installedModules;
+  }
+
+  /**
+   * Sets the value of the 'installedModules' field.
+   * @param value the value to set.
+   */
+  public void setInstalledModules(java.util.List<java.lang.String> value) {
+    this.installedModules = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -229,6 +376,14 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String addedBy;
     private java.lang.String buisnessPartnerId;
     private java.lang.String parentOrgUuid;
+    private java.lang.String organisationAddress;
+    private java.lang.String billingAddress;
+    private com.fretron.Model.Contact contactInfo;
+    private com.fretron.Model.Contact.Builder contactInfoBuilder;
+    private java.lang.String websiteURL;
+    private java.lang.String gstIN;
+    private java.lang.String panNumber;
+    private java.util.List<java.lang.String> installedModules;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +424,37 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.organisationAddress)) {
+        this.organisationAddress = data().deepCopy(fields()[7].schema(), other.organisationAddress);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.billingAddress)) {
+        this.billingAddress = data().deepCopy(fields()[8].schema(), other.billingAddress);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.contactInfo)) {
+        this.contactInfo = data().deepCopy(fields()[9].schema(), other.contactInfo);
+        fieldSetFlags()[9] = true;
+      }
+      if (other.hasContactInfoBuilder()) {
+        this.contactInfoBuilder = com.fretron.Model.Contact.newBuilder(other.getContactInfoBuilder());
+      }
+      if (isValidValue(fields()[10], other.websiteURL)) {
+        this.websiteURL = data().deepCopy(fields()[10].schema(), other.websiteURL);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.gstIN)) {
+        this.gstIN = data().deepCopy(fields()[11].schema(), other.gstIN);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.panNumber)) {
+        this.panNumber = data().deepCopy(fields()[12].schema(), other.panNumber);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.installedModules)) {
+        this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -304,6 +490,35 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[6], other.parentOrgUuid)) {
         this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.organisationAddress)) {
+        this.organisationAddress = data().deepCopy(fields()[7].schema(), other.organisationAddress);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.billingAddress)) {
+        this.billingAddress = data().deepCopy(fields()[8].schema(), other.billingAddress);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.contactInfo)) {
+        this.contactInfo = data().deepCopy(fields()[9].schema(), other.contactInfo);
+        fieldSetFlags()[9] = true;
+      }
+      this.contactInfoBuilder = null;
+      if (isValidValue(fields()[10], other.websiteURL)) {
+        this.websiteURL = data().deepCopy(fields()[10].schema(), other.websiteURL);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.gstIN)) {
+        this.gstIN = data().deepCopy(fields()[11].schema(), other.gstIN);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.panNumber)) {
+        this.panNumber = data().deepCopy(fields()[12].schema(), other.panNumber);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.installedModules)) {
+        this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -580,6 +795,314 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'organisationAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getOrganisationAddress() {
+      return organisationAddress;
+    }
+
+    /**
+      * Sets the value of the 'organisationAddress' field.
+      * @param value The value of 'organisationAddress'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setOrganisationAddress(java.lang.String value) {
+      validate(fields()[7], value);
+      this.organisationAddress = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'organisationAddress' field has been set.
+      * @return True if the 'organisationAddress' field has been set, false otherwise.
+      */
+    public boolean hasOrganisationAddress() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'organisationAddress' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearOrganisationAddress() {
+      organisationAddress = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'billingAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getBillingAddress() {
+      return billingAddress;
+    }
+
+    /**
+      * Sets the value of the 'billingAddress' field.
+      * @param value The value of 'billingAddress'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setBillingAddress(java.lang.String value) {
+      validate(fields()[8], value);
+      this.billingAddress = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'billingAddress' field has been set.
+      * @return True if the 'billingAddress' field has been set, false otherwise.
+      */
+    public boolean hasBillingAddress() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'billingAddress' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearBillingAddress() {
+      billingAddress = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'contactInfo' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Contact getContactInfo() {
+      return contactInfo;
+    }
+
+    /**
+      * Sets the value of the 'contactInfo' field.
+      * @param value The value of 'contactInfo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setContactInfo(com.fretron.Model.Contact value) {
+      validate(fields()[9], value);
+      this.contactInfoBuilder = null;
+      this.contactInfo = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'contactInfo' field has been set.
+      * @return True if the 'contactInfo' field has been set, false otherwise.
+      */
+    public boolean hasContactInfo() {
+      return fieldSetFlags()[9];
+    }
+
+    /**
+     * Gets the Builder instance for the 'contactInfo' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contact.Builder getContactInfoBuilder() {
+      if (contactInfoBuilder == null) {
+        if (hasContactInfo()) {
+          setContactInfoBuilder(com.fretron.Model.Contact.newBuilder(contactInfo));
+        } else {
+          setContactInfoBuilder(com.fretron.Model.Contact.newBuilder());
+        }
+      }
+      return contactInfoBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'contactInfo' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Organisation.Builder setContactInfoBuilder(com.fretron.Model.Contact.Builder value) {
+      clearContactInfo();
+      contactInfoBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'contactInfo' field has an active Builder instance
+     * @return True if the 'contactInfo' field has an active Builder instance
+     */
+    public boolean hasContactInfoBuilder() {
+      return contactInfoBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'contactInfo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearContactInfo() {
+      contactInfo = null;
+      contactInfoBuilder = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'websiteURL' field.
+      * @return The value.
+      */
+    public java.lang.String getWebsiteURL() {
+      return websiteURL;
+    }
+
+    /**
+      * Sets the value of the 'websiteURL' field.
+      * @param value The value of 'websiteURL'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setWebsiteURL(java.lang.String value) {
+      validate(fields()[10], value);
+      this.websiteURL = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'websiteURL' field has been set.
+      * @return True if the 'websiteURL' field has been set, false otherwise.
+      */
+    public boolean hasWebsiteURL() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'websiteURL' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearWebsiteURL() {
+      websiteURL = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'gstIN' field.
+      * @return The value.
+      */
+    public java.lang.String getGstIN() {
+      return gstIN;
+    }
+
+    /**
+      * Sets the value of the 'gstIN' field.
+      * @param value The value of 'gstIN'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setGstIN(java.lang.String value) {
+      validate(fields()[11], value);
+      this.gstIN = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'gstIN' field has been set.
+      * @return True if the 'gstIN' field has been set, false otherwise.
+      */
+    public boolean hasGstIN() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'gstIN' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearGstIN() {
+      gstIN = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'panNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getPanNumber() {
+      return panNumber;
+    }
+
+    /**
+      * Sets the value of the 'panNumber' field.
+      * @param value The value of 'panNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setPanNumber(java.lang.String value) {
+      validate(fields()[12], value);
+      this.panNumber = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'panNumber' field has been set.
+      * @return True if the 'panNumber' field has been set, false otherwise.
+      */
+    public boolean hasPanNumber() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'panNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearPanNumber() {
+      panNumber = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'installedModules' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getInstalledModules() {
+      return installedModules;
+    }
+
+    /**
+      * Sets the value of the 'installedModules' field.
+      * @param value The value of 'installedModules'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setInstalledModules(java.util.List<java.lang.String> value) {
+      validate(fields()[13], value);
+      this.installedModules = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'installedModules' field has been set.
+      * @return True if the 'installedModules' field has been set, false otherwise.
+      */
+    public boolean hasInstalledModules() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'installedModules' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearInstalledModules() {
+      installedModules = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -591,6 +1114,17 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.addedBy = fieldSetFlags()[4] ? this.addedBy : (java.lang.String) defaultValue(fields()[4]);
         record.buisnessPartnerId = fieldSetFlags()[5] ? this.buisnessPartnerId : (java.lang.String) defaultValue(fields()[5]);
         record.parentOrgUuid = fieldSetFlags()[6] ? this.parentOrgUuid : (java.lang.String) defaultValue(fields()[6]);
+        record.organisationAddress = fieldSetFlags()[7] ? this.organisationAddress : (java.lang.String) defaultValue(fields()[7]);
+        record.billingAddress = fieldSetFlags()[8] ? this.billingAddress : (java.lang.String) defaultValue(fields()[8]);
+        if (contactInfoBuilder != null) {
+          record.contactInfo = this.contactInfoBuilder.build();
+        } else {
+          record.contactInfo = fieldSetFlags()[9] ? this.contactInfo : (com.fretron.Model.Contact) defaultValue(fields()[9]);
+        }
+        record.websiteURL = fieldSetFlags()[10] ? this.websiteURL : (java.lang.String) defaultValue(fields()[10]);
+        record.gstIN = fieldSetFlags()[11] ? this.gstIN : (java.lang.String) defaultValue(fields()[11]);
+        record.panNumber = fieldSetFlags()[12] ? this.panNumber : (java.lang.String) defaultValue(fields()[12]);
+        record.installedModules = fieldSetFlags()[13] ? this.installedModules : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

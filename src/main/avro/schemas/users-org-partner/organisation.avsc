@@ -43,10 +43,51 @@
               "type": ["null" , "string"],
               "default" : null
        },
-   {
+      {
           "name": "parentOrgUuid",
            "type": ["null" , "string"],
            "default" : null
-    }
+      },
+      {
+         "name": "organisationAddress",
+         "type": ["null" , "string"],
+         "default" : null
+      },
+      {
+         "name": "billingAddress",
+         "type": ["null" , "string"],
+         "default" : null
+      },
+      {
+         "name": "contactInfo",
+         "type": ["null" , "com.fretron.Model.Contact"],
+          "default" : null
+      },
+      {
+         "name": "websiteURL",
+         "type": ["null" , "string"],
+         "default" : null
+       },
+       {
+                "name": "gstIN",
+                "type": ["null" , "string"],
+                "default" : null
+        },
+        {
+                 "name": "panNumber",
+                 "type": ["null" , "string"],
+                 "default" : null
+        },
+       {
+             "name": "installedModules",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "string"
+               }
+             ],
+             "default": null
+           }
   ]
   }
