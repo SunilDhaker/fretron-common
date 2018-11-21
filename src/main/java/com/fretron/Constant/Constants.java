@@ -299,6 +299,7 @@ public class Constants {
     public static final String SHIPMENT_TRACKING_REQUEST_COLLECTION_NAME = "shipment.tracking.request.collection.name";
     public static final String TRUSTED_ORG_COLLECTION_NAME = "shipment.trustedorg.collection.name";
     public static final String SHIPMENT_NOTIFICATION_COLLECTION_NAME = "shipment.notification.collection.name";
+    public static final String SHIPMENT_UPDATESCREEN_COLLECTION_NAME = "shipment.updatescreen.collection.name";
     public static final String SHIPMENT_REMINDER_COLLECTION_NAME = "shipment.reminder.collection.name";
     public static final String SHIPMENT_DB_NAME = "shipment.db.name";
     public static final String SHIPMENT_DB_PORT = "shipment.db.port";
