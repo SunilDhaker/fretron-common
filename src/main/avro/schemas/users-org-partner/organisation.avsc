@@ -88,6 +88,16 @@
                }
              ],
              "default": null
-           }
+           },
+         {
+             "name": "logoThumbnailString",
+             "type": ["null" , "string"],
+              "default" : null
+         },
+          {
+            "name": "logoDocumentId",
+             "type": ["null" , "string"],
+            "default" : null
+         }
   ]
   }

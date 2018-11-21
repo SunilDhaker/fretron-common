@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6736493238661946228L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -7815629338333742588L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -27,6 +27,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String gstIN;
   @Deprecated public java.lang.String panNumber;
   @Deprecated public java.util.List<java.lang.String> installedModules;
+  @Deprecated public java.lang.String logoThumbnailString;
+  @Deprecated public java.lang.String logoDocumentId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +53,10 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param gstIN The new value for gstIN
    * @param panNumber The new value for panNumber
    * @param installedModules The new value for installedModules
+   * @param logoThumbnailString The new value for logoThumbnailString
+   * @param logoDocumentId The new value for logoDocumentId
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
@@ -67,6 +71,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     this.gstIN = gstIN;
     this.panNumber = panNumber;
     this.installedModules = installedModules;
+    this.logoThumbnailString = logoThumbnailString;
+    this.logoDocumentId = logoDocumentId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +93,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 11: return gstIN;
     case 12: return panNumber;
     case 13: return installedModules;
+    case 14: return logoThumbnailString;
+    case 15: return logoDocumentId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +117,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 11: gstIN = (java.lang.String)value$; break;
     case 12: panNumber = (java.lang.String)value$; break;
     case 13: installedModules = (java.util.List<java.lang.String>)value$; break;
+    case 14: logoThumbnailString = (java.lang.String)value$; break;
+    case 15: logoDocumentId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +348,38 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'logoThumbnailString' field.
+   * @return The value of the 'logoThumbnailString' field.
+   */
+  public java.lang.String getLogoThumbnailString() {
+    return logoThumbnailString;
+  }
+
+  /**
+   * Sets the value of the 'logoThumbnailString' field.
+   * @param value the value to set.
+   */
+  public void setLogoThumbnailString(java.lang.String value) {
+    this.logoThumbnailString = value;
+  }
+
+  /**
+   * Gets the value of the 'logoDocumentId' field.
+   * @return The value of the 'logoDocumentId' field.
+   */
+  public java.lang.String getLogoDocumentId() {
+    return logoDocumentId;
+  }
+
+  /**
+   * Sets the value of the 'logoDocumentId' field.
+   * @param value the value to set.
+   */
+  public void setLogoDocumentId(java.lang.String value) {
+    this.logoDocumentId = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -384,6 +426,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String gstIN;
     private java.lang.String panNumber;
     private java.util.List<java.lang.String> installedModules;
+    private java.lang.String logoThumbnailString;
+    private java.lang.String logoDocumentId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -455,6 +499,14 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.logoThumbnailString)) {
+        this.logoThumbnailString = data().deepCopy(fields()[14].schema(), other.logoThumbnailString);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.logoDocumentId)) {
+        this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -519,6 +571,14 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[13], other.installedModules)) {
         this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.logoThumbnailString)) {
+        this.logoThumbnailString = data().deepCopy(fields()[14].schema(), other.logoThumbnailString);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.logoDocumentId)) {
+        this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -1103,6 +1163,84 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'logoThumbnailString' field.
+      * @return The value.
+      */
+    public java.lang.String getLogoThumbnailString() {
+      return logoThumbnailString;
+    }
+
+    /**
+      * Sets the value of the 'logoThumbnailString' field.
+      * @param value The value of 'logoThumbnailString'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLogoThumbnailString(java.lang.String value) {
+      validate(fields()[14], value);
+      this.logoThumbnailString = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'logoThumbnailString' field has been set.
+      * @return True if the 'logoThumbnailString' field has been set, false otherwise.
+      */
+    public boolean hasLogoThumbnailString() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'logoThumbnailString' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLogoThumbnailString() {
+      logoThumbnailString = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'logoDocumentId' field.
+      * @return The value.
+      */
+    public java.lang.String getLogoDocumentId() {
+      return logoDocumentId;
+    }
+
+    /**
+      * Sets the value of the 'logoDocumentId' field.
+      * @param value The value of 'logoDocumentId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLogoDocumentId(java.lang.String value) {
+      validate(fields()[15], value);
+      this.logoDocumentId = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'logoDocumentId' field has been set.
+      * @return True if the 'logoDocumentId' field has been set, false otherwise.
+      */
+    public boolean hasLogoDocumentId() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'logoDocumentId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLogoDocumentId() {
+      logoDocumentId = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -1125,6 +1263,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.gstIN = fieldSetFlags()[11] ? this.gstIN : (java.lang.String) defaultValue(fields()[11]);
         record.panNumber = fieldSetFlags()[12] ? this.panNumber : (java.lang.String) defaultValue(fields()[12]);
         record.installedModules = fieldSetFlags()[13] ? this.installedModules : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.logoThumbnailString = fieldSetFlags()[14] ? this.logoThumbnailString : (java.lang.String) defaultValue(fields()[14]);
+        record.logoDocumentId = fieldSetFlags()[15] ? this.logoDocumentId : (java.lang.String) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
