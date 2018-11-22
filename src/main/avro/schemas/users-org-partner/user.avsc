@@ -61,7 +61,17 @@
         "name":"isGod",
         "type": ["null","boolean"],
         "default":null
-    }
+    },
+    {
+            "name":"profileDocumentId",
+            "type": ["null","string"],
+            "default":null
+     },
+     {
+         "name":"profileThumbnailString",
+           "type": ["null","string"],
+          "default":null
+     }
 
   ]
 }
