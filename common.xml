@@ -184,4 +184,9 @@
     <entry key="org.office.topic">orgOfficeTopic</entry>
 
 
+    <!-- ================-location-based-services =============== -->
+    <entry key="lbs.result.topic">lbsResultTopic</entry>
+    <entry key="lbs.device.topic">lbsDeviceTopic</entry>
+
+
 </properties>
