@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class User extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2320639764974941530L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 1830800775258910973L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -23,6 +23,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
   @Deprecated public java.lang.String onBoardingType;
   @Deprecated public java.lang.Boolean otpEnabled;
   @Deprecated public java.lang.Boolean isGod;
+  @Deprecated public java.lang.String profileDocumentId;
+  @Deprecated public java.lang.String profileThumbnailString;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +45,10 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
    * @param onBoardingType The new value for onBoardingType
    * @param otpEnabled The new value for otpEnabled
    * @param isGod The new value for isGod
+   * @param profileDocumentId The new value for profileDocumentId
+   * @param profileThumbnailString The new value for profileThumbnailString
    */
-  public User(java.lang.String uuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String address, java.util.List<com.fretron.Model.Token> authToken, java.util.List<java.lang.String> tokens, java.lang.String onBoardingType, java.lang.Boolean otpEnabled, java.lang.Boolean isGod) {
+  public User(java.lang.String uuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String address, java.util.List<com.fretron.Model.Token> authToken, java.util.List<java.lang.String> tokens, java.lang.String onBoardingType, java.lang.Boolean otpEnabled, java.lang.Boolean isGod, java.lang.String profileDocumentId, java.lang.String profileThumbnailString) {
     this.uuid = uuid;
     this.name = name;
     this.email = email;
@@ -55,6 +59,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     this.onBoardingType = onBoardingType;
     this.otpEnabled = otpEnabled;
     this.isGod = isGod;
+    this.profileDocumentId = profileDocumentId;
+    this.profileThumbnailString = profileThumbnailString;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +77,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     case 7: return onBoardingType;
     case 8: return otpEnabled;
     case 9: return isGod;
+    case 10: return profileDocumentId;
+    case 11: return profileThumbnailString;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +97,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     case 7: onBoardingType = (java.lang.String)value$; break;
     case 8: otpEnabled = (java.lang.Boolean)value$; break;
     case 9: isGod = (java.lang.Boolean)value$; break;
+    case 10: profileDocumentId = (java.lang.String)value$; break;
+    case 11: profileThumbnailString = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +264,38 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   /**
+   * Gets the value of the 'profileDocumentId' field.
+   * @return The value of the 'profileDocumentId' field.
+   */
+  public java.lang.String getProfileDocumentId() {
+    return profileDocumentId;
+  }
+
+  /**
+   * Sets the value of the 'profileDocumentId' field.
+   * @param value the value to set.
+   */
+  public void setProfileDocumentId(java.lang.String value) {
+    this.profileDocumentId = value;
+  }
+
+  /**
+   * Gets the value of the 'profileThumbnailString' field.
+   * @return The value of the 'profileThumbnailString' field.
+   */
+  public java.lang.String getProfileThumbnailString() {
+    return profileThumbnailString;
+  }
+
+  /**
+   * Sets the value of the 'profileThumbnailString' field.
+   * @param value the value to set.
+   */
+  public void setProfileThumbnailString(java.lang.String value) {
+    this.profileThumbnailString = value;
+  }
+
+  /**
    * Creates a new User RecordBuilder.
    * @return A new User RecordBuilder
    */
@@ -295,6 +337,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     private java.lang.String onBoardingType;
     private java.lang.Boolean otpEnabled;
     private java.lang.Boolean isGod;
+    private java.lang.String profileDocumentId;
+    private java.lang.String profileThumbnailString;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +391,14 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
         this.isGod = data().deepCopy(fields()[9].schema(), other.isGod);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.profileDocumentId)) {
+        this.profileDocumentId = data().deepCopy(fields()[10].schema(), other.profileDocumentId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.profileThumbnailString)) {
+        this.profileThumbnailString = data().deepCopy(fields()[11].schema(), other.profileThumbnailString);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -394,6 +446,14 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
       if (isValidValue(fields()[9], other.isGod)) {
         this.isGod = data().deepCopy(fields()[9].schema(), other.isGod);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.profileDocumentId)) {
+        this.profileDocumentId = data().deepCopy(fields()[10].schema(), other.profileDocumentId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.profileThumbnailString)) {
+        this.profileThumbnailString = data().deepCopy(fields()[11].schema(), other.profileThumbnailString);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -787,6 +847,84 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
       return this;
     }
 
+    /**
+      * Gets the value of the 'profileDocumentId' field.
+      * @return The value.
+      */
+    public java.lang.String getProfileDocumentId() {
+      return profileDocumentId;
+    }
+
+    /**
+      * Sets the value of the 'profileDocumentId' field.
+      * @param value The value of 'profileDocumentId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder setProfileDocumentId(java.lang.String value) {
+      validate(fields()[10], value);
+      this.profileDocumentId = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'profileDocumentId' field has been set.
+      * @return True if the 'profileDocumentId' field has been set, false otherwise.
+      */
+    public boolean hasProfileDocumentId() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'profileDocumentId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder clearProfileDocumentId() {
+      profileDocumentId = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'profileThumbnailString' field.
+      * @return The value.
+      */
+    public java.lang.String getProfileThumbnailString() {
+      return profileThumbnailString;
+    }
+
+    /**
+      * Sets the value of the 'profileThumbnailString' field.
+      * @param value The value of 'profileThumbnailString'.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder setProfileThumbnailString(java.lang.String value) {
+      validate(fields()[11], value);
+      this.profileThumbnailString = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'profileThumbnailString' field has been set.
+      * @return True if the 'profileThumbnailString' field has been set, false otherwise.
+      */
+    public boolean hasProfileThumbnailString() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'profileThumbnailString' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder clearProfileThumbnailString() {
+      profileThumbnailString = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public User build() {
       try {
@@ -801,6 +939,8 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
         record.onBoardingType = fieldSetFlags()[7] ? this.onBoardingType : (java.lang.String) defaultValue(fields()[7]);
         record.otpEnabled = fieldSetFlags()[8] ? this.otpEnabled : (java.lang.Boolean) defaultValue(fields()[8]);
         record.isGod = fieldSetFlags()[9] ? this.isGod : (java.lang.Boolean) defaultValue(fields()[9]);
+        record.profileDocumentId = fieldSetFlags()[10] ? this.profileDocumentId : (java.lang.String) defaultValue(fields()[10]);
+        record.profileThumbnailString = fieldSetFlags()[11] ? this.profileThumbnailString : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
