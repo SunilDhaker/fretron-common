@@ -58,6 +58,14 @@
         "com.fretron.Model.TrainInfo"
       ],
       "default": null
-    }
+    },
+        {
+          "name": "lbsNumber",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
   ]
 }
