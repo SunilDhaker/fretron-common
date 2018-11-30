@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8898856415589319057L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = 5785831347266626092L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -23,6 +23,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public com.fretron.Model.Location location;
   @Deprecated public java.lang.String type;
   @Deprecated public boolean isPortalEnabled;
+  @Deprecated public java.lang.String address;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
    * @param location The new value for location
    * @param type The new value for type
    * @param isPortalEnabled The new value for isPortalEnabled
+   * @param address The new value for address
    */
-  public BuisnessPartner(java.lang.String uuid, java.lang.String name, java.lang.String orgId, java.lang.String fretronId, com.fretron.Model.GeoJsonFence geoFence, java.util.List<com.fretron.Model.Place> places, java.util.List<com.fretron.Model.Contact> contacts, com.fretron.Model.Location location, java.lang.String type, java.lang.Boolean isPortalEnabled) {
+  public BuisnessPartner(java.lang.String uuid, java.lang.String name, java.lang.String orgId, java.lang.String fretronId, com.fretron.Model.GeoJsonFence geoFence, java.util.List<com.fretron.Model.Place> places, java.util.List<com.fretron.Model.Contact> contacts, com.fretron.Model.Location location, java.lang.String type, java.lang.Boolean isPortalEnabled, java.lang.String address) {
     this.uuid = uuid;
     this.name = name;
     this.orgId = orgId;
@@ -55,6 +57,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     this.location = location;
     this.type = type;
     this.isPortalEnabled = isPortalEnabled;
+    this.address = address;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     case 7: return location;
     case 8: return type;
     case 9: return isPortalEnabled;
+    case 10: return address;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     case 7: location = (com.fretron.Model.Location)value$; break;
     case 8: type = (java.lang.String)value$; break;
     case 9: isPortalEnabled = (java.lang.Boolean)value$; break;
+    case 10: address = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'address' field.
+   * @return The value of the 'address' field.
+   */
+  public java.lang.String getAddress() {
+    return address;
+  }
+
+  /**
+   * Sets the value of the 'address' field.
+   * @param value the value to set.
+   */
+  public void setAddress(java.lang.String value) {
+    this.address = value;
+  }
+
+  /**
    * Creates a new BuisnessPartner RecordBuilder.
    * @return A new BuisnessPartner RecordBuilder
    */
@@ -297,6 +318,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
     private com.fretron.Model.Location.Builder locationBuilder;
     private java.lang.String type;
     private boolean isPortalEnabled;
+    private java.lang.String address;
 
     /** Creates a new Builder */
     private Builder() {
@@ -355,6 +377,10 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
         this.isPortalEnabled = data().deepCopy(fields()[9].schema(), other.isPortalEnabled);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.address)) {
+        this.address = data().deepCopy(fields()[10].schema(), other.address);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -404,6 +430,10 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       if (isValidValue(fields()[9], other.isPortalEnabled)) {
         this.isPortalEnabled = data().deepCopy(fields()[9].schema(), other.isPortalEnabled);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.address)) {
+        this.address = data().deepCopy(fields()[10].schema(), other.address);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -866,6 +896,45 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'address' field.
+      * @return The value.
+      */
+    public java.lang.String getAddress() {
+      return address;
+    }
+
+    /**
+      * Sets the value of the 'address' field.
+      * @param value The value of 'address'.
+      * @return This builder.
+      */
+    public com.fretron.Model.BuisnessPartner.Builder setAddress(java.lang.String value) {
+      validate(fields()[10], value);
+      this.address = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'address' field has been set.
+      * @return True if the 'address' field has been set, false otherwise.
+      */
+    public boolean hasAddress() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'address' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.BuisnessPartner.Builder clearAddress() {
+      address = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public BuisnessPartner build() {
       try {
@@ -888,6 +957,7 @@ public class BuisnessPartner extends org.apache.avro.specific.SpecificRecordBase
         }
         record.type = fieldSetFlags()[8] ? this.type : (java.lang.String) defaultValue(fields()[8]);
         record.isPortalEnabled = fieldSetFlags()[9] ? this.isPortalEnabled : (java.lang.Boolean) defaultValue(fields()[9]);
+        record.address = fieldSetFlags()[10] ? this.address : (java.lang.String) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
