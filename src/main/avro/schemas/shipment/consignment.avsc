@@ -164,6 +164,14 @@
           ],
           "logicalType": "timestamp-millis",
           "default": null
-        }
+        },
+          {
+            "name": "podDocument",
+            "type": [
+              "null",
+              "com.fretron.Model.Document"
+            ],
+            "default": null
+          }
     ]
   }
