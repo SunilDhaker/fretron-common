@@ -85,6 +85,14 @@
       "name": "isPortalEnabled",
       "type": "boolean",
       "default": false
-    }
+    },
+    {
+          "name": "address",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
   ]
 }

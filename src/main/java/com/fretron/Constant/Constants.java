@@ -298,6 +298,9 @@ public class Constants {
     public static final String UPDATES_TRAIL_COLLECTION_NAME = "updates.trail.collection.name";
     public static final String SHIPMENT_TRACKING_REQUEST_COLLECTION_NAME = "shipment.tracking.request.collection.name";
     public static final String TRUSTED_ORG_COLLECTION_NAME = "shipment.trustedorg.collection.name";
+    public static final String SHIPMENT_NOTIFICATION_COLLECTION_NAME = "shipment.notification.collection.name";
+    public static final String SHIPMENT_UPDATESCREEN_COLLECTION_NAME = "shipment.updatescreen.collection.name";
+    public static final String SHIPMENT_REMINDER_COLLECTION_NAME = "shipment.reminder.collection.name";
     public static final String SHIPMENT_DB_NAME = "shipment.db.name";
     public static final String SHIPMENT_DB_PORT = "shipment.db.port";
     public static final String SHIPMENT_DB_HOST = "shipment.db.host";
@@ -357,6 +360,7 @@ public class Constants {
     public static final String KEY_INTEGRATION_MANAGER_DATABASE_NAME = "integration.manager.mongodb.server.database";
     public static final String KEY_MONGODB_JOB_COLLECTION_NAME = "mongodb.server.integration.job.collection.name";
     public static final String KEY_MONGODB_RESPONSE_COLLECTION_NAME = "mongodb.server.response.collection.name";
+    public final static String KEY_NS_TRACKER_API_BASE_URL = "ns.tracker.api.base.url";
     public static final String KEY_TF_TOKEN_API_URL = "tatafleetman.getToken";
     public static final String KEY_TF_TRACK_VEHICLE_API_URL = "tatafleetman.track.vehicle";
     public static final String KEY_TRACK_YOUR_FLEET_API_URL = "track.your.fleet.api.url";
@@ -368,6 +372,10 @@ public class Constants {
     public static final String KEY_ETRANS_API_URL = "etrans.login.url";
     public static final String KEY_WEBHOOK_INTEGRATION_API_URL = "integrations.webhook.api.url";
     public static final String KEY_ROOSTER_INTEGRATION_API_URL = "integrations.roosterInfo.api.url";
+    public static final String KEY_LBS_RESULT_TOPIC = "lbs.result.topic";
+    public static final String KEY_LBS_DEVICE_TOPIC = "lbs.device.topic";
+
+
     public final static double ep = 0.0001;
     //******************************Protocol-eventproducer*****************************************************
     public static final String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
