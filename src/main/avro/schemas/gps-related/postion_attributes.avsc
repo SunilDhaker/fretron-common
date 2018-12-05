@@ -138,6 +138,16 @@
         "int"
       ],
       "default": null
-    }
+    },
+    {
+       "name": "sleepMode",
+                 "type": [ "null", "string"],
+                  "default" : null
+   },
+   {
+                  "name": "gpsStatus",
+                   "type": [ "null", "string"],
+                   "default" : null
+   }
   ]
 }
