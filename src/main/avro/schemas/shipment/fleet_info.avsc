@@ -66,6 +66,14 @@
             "string"
           ],
           "default": null
-        }
+        },
+    {
+      "name": "forwardingAgent",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    }
   ]
 }
