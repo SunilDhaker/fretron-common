@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Position extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6275520341468436318L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Position\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"int\"]},{\"name\":\"attributes\",\"type\":{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}},{\"name\":\"deviceId\",\"type\":[\"null\",\"int\"]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"serverTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"deviceTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"fixTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"outdated\",\"type\":\"boolean\"},{\"name\":\"valid\",\"type\":\"boolean\"},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"altitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"speed\",\"type\":[\"null\",\"double\"]},{\"name\":\"course\",\"type\":[\"null\",\"double\"]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"accuracy\",\"type\":[\"null\",\"int\"]},{\"name\":\"network\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"movemetState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalDistance\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]}]}");
+  private static final long serialVersionUID = 6754752070749257451L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Position\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"int\"]},{\"name\":\"attributes\",\"type\":{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},{\"name\":\"deviceId\",\"type\":[\"null\",\"int\"]},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"serverTime\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"deviceTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"fixTime\",\"type\":[\"null\",\"double\"]},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"outdated\",\"type\":\"boolean\"},{\"name\":\"valid\",\"type\":\"boolean\"},{\"name\":\"latitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"longitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"altitude\",\"type\":[\"null\",\"double\"]},{\"name\":\"speed\",\"type\":[\"null\",\"double\"]},{\"name\":\"course\",\"type\":[\"null\",\"double\"]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"accuracy\",\"type\":[\"null\",\"int\"]},{\"name\":\"network\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"movemetState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalDistance\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"obdAttributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OBDAttributes\",\"fields\":[{\"name\":\"numberOfDTC\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"engineLoad\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"coolantTemperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"fuelPressure\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"engineRPM\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"intakeTemp\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"vehicleSpeed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"throttlePosition\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"runTimeSinceEngineStart\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"fuelLevel\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalOdometer\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"distanceTravelledMILOn\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"timeRunWithMILOn\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"engineOilTemp\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"engineFuelRate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"movement\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"axisX\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"axisY\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"axisZ\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Integer id;
   @Deprecated public com.fretron.Model.Attributes attributes;
@@ -35,6 +35,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String network;
   @Deprecated public java.lang.String movemetState;
   @Deprecated public java.lang.String totalDistance;
+  @Deprecated public com.fretron.Model.OBDAttributes obdAttributes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -67,8 +68,9 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
    * @param network The new value for network
    * @param movemetState The new value for movemetState
    * @param totalDistance The new value for totalDistance
+   * @param obdAttributes The new value for obdAttributes
    */
-  public Position(java.lang.Integer id, com.fretron.Model.Attributes attributes, java.lang.Integer deviceId, java.lang.String type, java.lang.String imei, java.lang.String protocol, java.lang.String serverTime, java.lang.Double deviceTime, java.lang.Double fixTime, java.lang.String decoder, java.lang.Boolean outdated, java.lang.Boolean valid, java.lang.Double latitude, java.lang.Double longitude, java.lang.Double altitude, java.lang.Double speed, java.lang.Double course, java.lang.String address, java.lang.Integer accuracy, java.lang.String network, java.lang.String movemetState, java.lang.String totalDistance) {
+  public Position(java.lang.Integer id, com.fretron.Model.Attributes attributes, java.lang.Integer deviceId, java.lang.String type, java.lang.String imei, java.lang.String protocol, java.lang.String serverTime, java.lang.Double deviceTime, java.lang.Double fixTime, java.lang.String decoder, java.lang.Boolean outdated, java.lang.Boolean valid, java.lang.Double latitude, java.lang.Double longitude, java.lang.Double altitude, java.lang.Double speed, java.lang.Double course, java.lang.String address, java.lang.Integer accuracy, java.lang.String network, java.lang.String movemetState, java.lang.String totalDistance, com.fretron.Model.OBDAttributes obdAttributes) {
     this.id = id;
     this.attributes = attributes;
     this.deviceId = deviceId;
@@ -91,6 +93,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     this.network = network;
     this.movemetState = movemetState;
     this.totalDistance = totalDistance;
+    this.obdAttributes = obdAttributes;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -119,6 +122,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     case 19: return network;
     case 20: return movemetState;
     case 21: return totalDistance;
+    case 22: return obdAttributes;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +153,7 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     case 19: network = (java.lang.String)value$; break;
     case 20: movemetState = (java.lang.String)value$; break;
     case 21: totalDistance = (java.lang.String)value$; break;
+    case 22: obdAttributes = (com.fretron.Model.OBDAttributes)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -506,6 +511,22 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'obdAttributes' field.
+   * @return The value of the 'obdAttributes' field.
+   */
+  public com.fretron.Model.OBDAttributes getObdAttributes() {
+    return obdAttributes;
+  }
+
+  /**
+   * Sets the value of the 'obdAttributes' field.
+   * @param value the value to set.
+   */
+  public void setObdAttributes(com.fretron.Model.OBDAttributes value) {
+    this.obdAttributes = value;
+  }
+
+  /**
    * Creates a new Position RecordBuilder.
    * @return A new Position RecordBuilder
    */
@@ -560,6 +581,8 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String network;
     private java.lang.String movemetState;
     private java.lang.String totalDistance;
+    private com.fretron.Model.OBDAttributes obdAttributes;
+    private com.fretron.Model.OBDAttributes.Builder obdAttributesBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -663,6 +686,13 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         this.totalDistance = data().deepCopy(fields()[21].schema(), other.totalDistance);
         fieldSetFlags()[21] = true;
       }
+      if (isValidValue(fields()[22], other.obdAttributes)) {
+        this.obdAttributes = data().deepCopy(fields()[22].schema(), other.obdAttributes);
+        fieldSetFlags()[22] = true;
+      }
+      if (other.hasObdAttributesBuilder()) {
+        this.obdAttributesBuilder = com.fretron.Model.OBDAttributes.newBuilder(other.getObdAttributesBuilder());
+      }
     }
 
     /**
@@ -760,6 +790,11 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         this.totalDistance = data().deepCopy(fields()[21].schema(), other.totalDistance);
         fieldSetFlags()[21] = true;
       }
+      if (isValidValue(fields()[22], other.obdAttributes)) {
+        this.obdAttributes = data().deepCopy(fields()[22].schema(), other.obdAttributes);
+        fieldSetFlags()[22] = true;
+      }
+      this.obdAttributesBuilder = null;
     }
 
     /**
@@ -1653,6 +1688,80 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'obdAttributes' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OBDAttributes getObdAttributes() {
+      return obdAttributes;
+    }
+
+    /**
+      * Sets the value of the 'obdAttributes' field.
+      * @param value The value of 'obdAttributes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Position.Builder setObdAttributes(com.fretron.Model.OBDAttributes value) {
+      validate(fields()[22], value);
+      this.obdAttributesBuilder = null;
+      this.obdAttributes = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'obdAttributes' field has been set.
+      * @return True if the 'obdAttributes' field has been set, false otherwise.
+      */
+    public boolean hasObdAttributes() {
+      return fieldSetFlags()[22];
+    }
+
+    /**
+     * Gets the Builder instance for the 'obdAttributes' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OBDAttributes.Builder getObdAttributesBuilder() {
+      if (obdAttributesBuilder == null) {
+        if (hasObdAttributes()) {
+          setObdAttributesBuilder(com.fretron.Model.OBDAttributes.newBuilder(obdAttributes));
+        } else {
+          setObdAttributesBuilder(com.fretron.Model.OBDAttributes.newBuilder());
+        }
+      }
+      return obdAttributesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'obdAttributes' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Position.Builder setObdAttributesBuilder(com.fretron.Model.OBDAttributes.Builder value) {
+      clearObdAttributes();
+      obdAttributesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'obdAttributes' field has an active Builder instance
+     * @return True if the 'obdAttributes' field has an active Builder instance
+     */
+    public boolean hasObdAttributesBuilder() {
+      return obdAttributesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'obdAttributes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Position.Builder clearObdAttributes() {
+      obdAttributes = null;
+      obdAttributesBuilder = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
     @Override
     public Position build() {
       try {
@@ -1683,6 +1792,11 @@ public class Position extends org.apache.avro.specific.SpecificRecordBase implem
         record.network = fieldSetFlags()[19] ? this.network : (java.lang.String) defaultValue(fields()[19]);
         record.movemetState = fieldSetFlags()[20] ? this.movemetState : (java.lang.String) defaultValue(fields()[20]);
         record.totalDistance = fieldSetFlags()[21] ? this.totalDistance : (java.lang.String) defaultValue(fields()[21]);
+        if (obdAttributesBuilder != null) {
+          record.obdAttributes = this.obdAttributesBuilder.build();
+        } else {
+          record.obdAttributes = fieldSetFlags()[22] ? this.obdAttributes : (com.fretron.Model.OBDAttributes) defaultValue(fields()[22]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

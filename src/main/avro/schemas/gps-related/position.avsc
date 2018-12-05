@@ -148,6 +148,11 @@
         "null",
         "string"
       ]
+    },
+    {
+          "name": "obdAttributes",
+          "type": ["null" ,"com.fretron.Model.OBDAttributes"],
+          "default" : null
     }
   ]
 }

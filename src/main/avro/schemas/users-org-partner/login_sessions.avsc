@@ -45,7 +45,13 @@
         "type":  ["null","long"],
         "logicalType": "timestamp-millis",
          "default":null
-    }
+    },
+    {
+        "name": "location",
+        "type": ["null" , "string"],
+         "default" : null
+     }
+
 
 
   ]
