@@ -172,6 +172,15 @@
               "com.fretron.Model.Document"
             ],
             "default": null
-          }
+          },
+        {
+                    "name": "pod",
+                    "type": [
+                      "null",
+                      "com.fretron.Model.ConsignmentPod"
+                    ],
+                    "default": null
+         }
+
     ]
   }
