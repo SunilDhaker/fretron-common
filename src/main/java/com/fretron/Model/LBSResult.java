@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LBSResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -549277850643913255L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -7253152688062498191L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String requestType;
@@ -20,6 +20,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String data;
   @Deprecated public java.lang.String error;
   @Deprecated public java.lang.Long requestedAt;
+  @Deprecated public java.lang.Long requestTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * @param data The new value for data
    * @param error The new value for error
    * @param requestedAt The new value for requestedAt
+   * @param requestTime The new value for requestTime
    */
-  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt) {
+  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime) {
     this.mobileNumber = mobileNumber;
     this.requestType = requestType;
     this.requestURL = requestURL;
@@ -46,6 +48,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     this.data = data;
     this.error = error;
     this.requestedAt = requestedAt;
+    this.requestTime = requestTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 4: return data;
     case 5: return error;
     case 6: return requestedAt;
+    case 7: return requestTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 4: data = (java.lang.String)value$; break;
     case 5: error = (java.lang.String)value$; break;
     case 6: requestedAt = (java.lang.Long)value$; break;
+    case 7: requestTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'requestTime' field.
+   * @return The value of the 'requestTime' field.
+   */
+  public java.lang.Long getRequestTime() {
+    return requestTime;
+  }
+
+  /**
+   * Sets the value of the 'requestTime' field.
+   * @param value the value to set.
+   */
+  public void setRequestTime(java.lang.Long value) {
+    this.requestTime = value;
+  }
+
+  /**
    * Creates a new LBSResult RecordBuilder.
    * @return A new LBSResult RecordBuilder
    */
@@ -229,6 +250,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String data;
     private java.lang.String error;
     private java.lang.Long requestedAt;
+    private java.lang.Long requestTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +291,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.requestedAt = data().deepCopy(fields()[6].schema(), other.requestedAt);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.requestTime)) {
+        this.requestTime = data().deepCopy(fields()[7].schema(), other.requestTime);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -304,6 +330,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[6], other.requestedAt)) {
         this.requestedAt = data().deepCopy(fields()[6].schema(), other.requestedAt);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.requestTime)) {
+        this.requestTime = data().deepCopy(fields()[7].schema(), other.requestTime);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -580,6 +610,45 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'requestTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getRequestTime() {
+      return requestTime;
+    }
+
+    /**
+      * Sets the value of the 'requestTime' field.
+      * @param value The value of 'requestTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setRequestTime(java.lang.Long value) {
+      validate(fields()[7], value);
+      this.requestTime = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'requestTime' field has been set.
+      * @return True if the 'requestTime' field has been set, false otherwise.
+      */
+    public boolean hasRequestTime() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'requestTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearRequestTime() {
+      requestTime = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public LBSResult build() {
       try {
@@ -591,6 +660,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         record.data = fieldSetFlags()[4] ? this.data : (java.lang.String) defaultValue(fields()[4]);
         record.error = fieldSetFlags()[5] ? this.error : (java.lang.String) defaultValue(fields()[5]);
         record.requestedAt = fieldSetFlags()[6] ? this.requestedAt : (java.lang.Long) defaultValue(fields()[6]);
+        record.requestTime = fieldSetFlags()[7] ? this.requestTime : (java.lang.Long) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
