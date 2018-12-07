@@ -1,0 +1,88 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "ConsignmentPod",
+  "fields": [
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "documents",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Document"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "receiveDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "submissionDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "expectedSubmissionDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "issues",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "receivedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "remarks",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "submissionPlace",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
