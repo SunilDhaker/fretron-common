@@ -188,5 +188,9 @@
     <entry key="lbs.result.topic">lbsResultTopic</entry>
     <entry key="lbs.device.topic">lbsDeviceTopic</entry>
 
+    <!-- ================-authorization-manager-services =============== -->
+
+    <entry key="user.role.topic">roleTopic</entry>
+
 
 </properties>

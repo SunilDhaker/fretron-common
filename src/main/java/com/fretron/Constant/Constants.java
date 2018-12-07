@@ -543,6 +543,8 @@ public class Constants {
     public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
     public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
 
+    public static final String KEY_ROLE_TOPIC = "user.role.topic";
+
     private Constants() {
 
     }
