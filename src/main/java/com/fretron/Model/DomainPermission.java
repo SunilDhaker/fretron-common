@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DomainPermission extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7936506343387930582L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"canView\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canEdit\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canDelete\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filteredDataAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"morePermissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 3176574417440065950L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"canView\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canEdit\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canDelete\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filteredDataAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"morePermissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Setting\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isEnable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String entity;
@@ -20,7 +20,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
   @Deprecated public java.lang.Boolean canDelete;
   @Deprecated public java.lang.Boolean filteredDataAccess;
   @Deprecated public java.lang.String filters;
-  @Deprecated public java.util.List<java.lang.String> morePermissions;
+  @Deprecated public java.util.List<com.fretron.Model.Setting> morePermissions;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -40,7 +40,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
    * @param filters The new value for filters
    * @param morePermissions The new value for morePermissions
    */
-  public DomainPermission(java.lang.String uuid, java.lang.String entity, java.lang.Boolean canView, java.lang.Boolean canEdit, java.lang.Boolean canDelete, java.lang.Boolean filteredDataAccess, java.lang.String filters, java.util.List<java.lang.String> morePermissions) {
+  public DomainPermission(java.lang.String uuid, java.lang.String entity, java.lang.Boolean canView, java.lang.Boolean canEdit, java.lang.Boolean canDelete, java.lang.Boolean filteredDataAccess, java.lang.String filters, java.util.List<com.fretron.Model.Setting> morePermissions) {
     this.uuid = uuid;
     this.entity = entity;
     this.canView = canView;
@@ -78,7 +78,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     case 4: canDelete = (java.lang.Boolean)value$; break;
     case 5: filteredDataAccess = (java.lang.Boolean)value$; break;
     case 6: filters = (java.lang.String)value$; break;
-    case 7: morePermissions = (java.util.List<java.lang.String>)value$; break;
+    case 7: morePermissions = (java.util.List<com.fretron.Model.Setting>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -199,7 +199,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
    * Gets the value of the 'morePermissions' field.
    * @return The value of the 'morePermissions' field.
    */
-  public java.util.List<java.lang.String> getMorePermissions() {
+  public java.util.List<com.fretron.Model.Setting> getMorePermissions() {
     return morePermissions;
   }
 
@@ -207,7 +207,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
    * Sets the value of the 'morePermissions' field.
    * @param value the value to set.
    */
-  public void setMorePermissions(java.util.List<java.lang.String> value) {
+  public void setMorePermissions(java.util.List<com.fretron.Model.Setting> value) {
     this.morePermissions = value;
   }
 
@@ -250,7 +250,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     private java.lang.Boolean canDelete;
     private java.lang.Boolean filteredDataAccess;
     private java.lang.String filters;
-    private java.util.List<java.lang.String> morePermissions;
+    private java.util.List<com.fretron.Model.Setting> morePermissions;
 
     /** Creates a new Builder */
     private Builder() {
@@ -614,7 +614,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       * Gets the value of the 'morePermissions' field.
       * @return The value.
       */
-    public java.util.List<java.lang.String> getMorePermissions() {
+    public java.util.List<com.fretron.Model.Setting> getMorePermissions() {
       return morePermissions;
     }
 
@@ -623,7 +623,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'morePermissions'.
       * @return This builder.
       */
-    public com.fretron.Model.DomainPermission.Builder setMorePermissions(java.util.List<java.lang.String> value) {
+    public com.fretron.Model.DomainPermission.Builder setMorePermissions(java.util.List<com.fretron.Model.Setting> value) {
       validate(fields()[7], value);
       this.morePermissions = value;
       fieldSetFlags()[7] = true;
@@ -660,7 +660,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
         record.canDelete = fieldSetFlags()[4] ? this.canDelete : (java.lang.Boolean) defaultValue(fields()[4]);
         record.filteredDataAccess = fieldSetFlags()[5] ? this.filteredDataAccess : (java.lang.Boolean) defaultValue(fields()[5]);
         record.filters = fieldSetFlags()[6] ? this.filters : (java.lang.String) defaultValue(fields()[6]);
-        record.morePermissions = fieldSetFlags()[7] ? this.morePermissions : (java.util.List<java.lang.String>) defaultValue(fields()[7]);
+        record.morePermissions = fieldSetFlags()[7] ? this.morePermissions : (java.util.List<com.fretron.Model.Setting>) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
