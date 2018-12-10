@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3670063404879503490L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2713241320159936627L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"role\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Role\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"canView\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canEdit\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canDelete\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filteredDataAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"morePermissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String orgUuid;
   @Deprecated public java.lang.String userUuid;
   @Deprecated public java.lang.String accessLevel;
   @Deprecated public java.lang.String relationType;
+  @Deprecated public com.fretron.Model.Role role;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
    * @param userUuid The new value for userUuid
    * @param accessLevel The new value for accessLevel
    * @param relationType The new value for relationType
+   * @param role The new value for role
    */
-  public UserOrgACL(java.lang.String orgUuid, java.lang.String userUuid, java.lang.String accessLevel, java.lang.String relationType) {
+  public UserOrgACL(java.lang.String orgUuid, java.lang.String userUuid, java.lang.String accessLevel, java.lang.String relationType, com.fretron.Model.Role role) {
     this.orgUuid = orgUuid;
     this.userUuid = userUuid;
     this.accessLevel = accessLevel;
     this.relationType = relationType;
+    this.role = role;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 1: return userUuid;
     case 2: return accessLevel;
     case 3: return relationType;
+    case 4: return role;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 1: userUuid = (java.lang.String)value$; break;
     case 2: accessLevel = (java.lang.String)value$; break;
     case 3: relationType = (java.lang.String)value$; break;
+    case 4: role = (com.fretron.Model.Role)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'role' field.
+   * @return The value of the 'role' field.
+   */
+  public com.fretron.Model.Role getRole() {
+    return role;
+  }
+
+  /**
+   * Sets the value of the 'role' field.
+   * @param value the value to set.
+   */
+  public void setRole(com.fretron.Model.Role value) {
+    this.role = value;
+  }
+
+  /**
    * Creates a new UserOrgACL RecordBuilder.
    * @return A new UserOrgACL RecordBuilder
    */
@@ -163,6 +184,8 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String userUuid;
     private java.lang.String accessLevel;
     private java.lang.String relationType;
+    private com.fretron.Model.Role role;
+    private com.fretron.Model.Role.Builder roleBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +214,13 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         this.relationType = data().deepCopy(fields()[3].schema(), other.relationType);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.role)) {
+        this.role = data().deepCopy(fields()[4].schema(), other.role);
+        fieldSetFlags()[4] = true;
+      }
+      if (other.hasRoleBuilder()) {
+        this.roleBuilder = com.fretron.Model.Role.newBuilder(other.getRoleBuilder());
+      }
     }
 
     /**
@@ -215,6 +245,11 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         this.relationType = data().deepCopy(fields()[3].schema(), other.relationType);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.role)) {
+        this.role = data().deepCopy(fields()[4].schema(), other.role);
+        fieldSetFlags()[4] = true;
+      }
+      this.roleBuilder = null;
     }
 
     /**
@@ -373,6 +408,80 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'role' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Role getRole() {
+      return role;
+    }
+
+    /**
+      * Sets the value of the 'role' field.
+      * @param value The value of 'role'.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder setRole(com.fretron.Model.Role value) {
+      validate(fields()[4], value);
+      this.roleBuilder = null;
+      this.role = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'role' field has been set.
+      * @return True if the 'role' field has been set, false otherwise.
+      */
+    public boolean hasRole() {
+      return fieldSetFlags()[4];
+    }
+
+    /**
+     * Gets the Builder instance for the 'role' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Role.Builder getRoleBuilder() {
+      if (roleBuilder == null) {
+        if (hasRole()) {
+          setRoleBuilder(com.fretron.Model.Role.newBuilder(role));
+        } else {
+          setRoleBuilder(com.fretron.Model.Role.newBuilder());
+        }
+      }
+      return roleBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'role' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.UserOrgACL.Builder setRoleBuilder(com.fretron.Model.Role.Builder value) {
+      clearRole();
+      roleBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'role' field has an active Builder instance
+     * @return True if the 'role' field has an active Builder instance
+     */
+    public boolean hasRoleBuilder() {
+      return roleBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'role' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder clearRole() {
+      role = null;
+      roleBuilder = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public UserOrgACL build() {
       try {
@@ -381,6 +490,11 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         record.userUuid = fieldSetFlags()[1] ? this.userUuid : (java.lang.String) defaultValue(fields()[1]);
         record.accessLevel = fieldSetFlags()[2] ? this.accessLevel : (java.lang.String) defaultValue(fields()[2]);
         record.relationType = fieldSetFlags()[3] ? this.relationType : (java.lang.String) defaultValue(fields()[3]);
+        if (roleBuilder != null) {
+          record.role = this.roleBuilder.build();
+        } else {
+          record.role = fieldSetFlags()[4] ? this.role : (com.fretron.Model.Role) defaultValue(fields()[4]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
