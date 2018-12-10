@@ -543,7 +543,12 @@ public class Constants {
     public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
     public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
 
+    //=================================AUTHORIZATION MANAGER===========================
+
+
     public static final String KEY_ROLE_TOPIC = "user.role.topic";
+    public static final String AUTHORIZATION_MANAGER_SERVICE_URL = "authorization.manager.service.url";
+
 
     private Constants() {
 
