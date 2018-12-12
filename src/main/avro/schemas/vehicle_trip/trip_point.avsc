@@ -235,7 +235,12 @@
         "com.fretron.Model.LiteVehicleGpsState"
       ],
       "default": null
-    }
+    },
+        {
+          "name": "isDisconnected",
+          "type": "boolean",
+          "default": false
+        }
   ]
 }
 
