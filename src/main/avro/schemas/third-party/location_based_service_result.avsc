@@ -61,6 +61,22 @@
               ],
               "logicalType": "timestamp-millis",
               "default": null
-         }
+       },
+       {
+            "name": "userId",
+             "type": [
+                             "null",
+                             "string"
+                           ],
+             "default": null
+        },
+        {
+           "name": "orgId",
+            "type": [
+                      "null",
+                                   "string"
+                                 ],
+           "default": null
+        }
     ]
   }
