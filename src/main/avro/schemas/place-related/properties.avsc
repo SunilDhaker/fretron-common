@@ -50,6 +50,38 @@
         "string"
       ],
       "default": null
+    },
+    {
+       "name": "state",
+        "type": [
+                "null",
+                "string"
+              ],
+        "default": null
+    },
+    {
+       "name": "hubId",
+       "type": [
+                 "null",
+                 "string"
+               ],
+        "default": null
+    },
+    {
+      "name": "district",
+       "type": [
+                   "null",
+                   "string"
+                 ],
+       "default": null
+    },
+    {
+       "name": "subDistrict",
+        "type": [
+                     "null",
+                     "string"
+                   ],
+        "default": null
     }
   ]
 }
