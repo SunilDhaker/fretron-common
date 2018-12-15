@@ -46,6 +46,19 @@ public class HttpRequestHepler {
                 .get();
     }
 
+
+
+    public String makeGetRequestAndGetData(String uri,  int timeout) {
+        Response response = client
+                .property(ClientProperties.CONNECT_TIMEOUT, 2000)
+                .property(ClientProperties.READ_TIMEOUT, timeout)
+                .target(uri)
+                .request(MediaType.APPLICATION_JSON)
+                .get();
+        return response.readEntity(String.class);
+    }
+
+
     public Response makePostRequest(String uri, Object requestObject, String authToken) {
 
         HashMap<String, String> headermap = new HashMap<String, String>();
