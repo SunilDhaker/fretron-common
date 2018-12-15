@@ -224,10 +224,19 @@ public class Constants {
     public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
     public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
-
-    //========================ORGANISATION_MANAGER=================
     public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
     public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+    public static final String HUBS_MANAGER_COLLECTION_NAME = "hubs.collection.name";
+
+
+    public static final String MONGODB_SERVER_CLUSTER_IP = "mongodb.server.cluster.ip";
+    public static final String MONGODB_SERVER_CLUSTER_PORT = "mongodb.server.cluster.port";
+    public static final String CLUSTER_DB_NAME="cluster.db.name";
+    public static final String CLUSTER_COLLECTION_NAME= "cluster.collection.name";
+    public static final String CLUSTER_INSIDE_COLLECTION_NAME= "cluster.inside.collection.name";
+
+    //========================ORGANISATION_MANAGER=================
+
     public static final String REGISTRY_SERVICE_URL = "registry.manager.service.url";
     public static final String REGISTRY_APP_IP = "registry.manager.restservice.ip";
     public static final String REGISTRY_APP_PORT = "registry.manager.restservice.port";
