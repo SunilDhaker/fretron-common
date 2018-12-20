@@ -47,6 +47,14 @@
         }
       ],
       "default": null
-    }
+    },
+        {
+          "name": "type",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
   ]
 }
