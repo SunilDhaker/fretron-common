@@ -198,7 +198,18 @@
               }
             ],
             "default": null
-          }
+          },
+                {
+                  "name": "customContacts",
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "com.fretron.Model.Contact"
+                    }
+                  ],
+                  "default": null
+                }
 
     ]
   }
