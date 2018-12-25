@@ -180,7 +180,18 @@
                       "com.fretron.Model.ConsignmentPod"
                     ],
                     "default": null
-         }
+         },
+         {
+                 "name": "equipments",
+                 "type": [
+                   "null",
+                   {
+                     "type": "array",
+                     "items": "com.fretron.Model.Equipment"
+                   }
+                 ],
+                 "default": null
+               }
 
     ]
   }
