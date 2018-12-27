@@ -191,7 +191,32 @@
                    }
                  ],
                  "default": null
-               }
+               },
+                       {
+                         "name": "eWayBillRegistrationDate",
+                         "type": [
+                           "null",
+                           "long"
+                         ],
+                         "logicalType": "timestamp-millis",
+                         "default": null
+                       },
+                     {
+                       "name": "invoiceValue",
+                       "type": [
+                         "null",
+                         "string"
+                       ],
+                       "default": null
+                     },
+                      {
+                        "name": "pssNo",
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "default": null
+                      }
 
     ]
   }
