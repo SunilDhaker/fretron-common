@@ -9,7 +9,7 @@ class  ClientCacheManager<T>  constructor(private val flushIntervalMinute : Int)
 
     init {
         val timer = Timer()
-        timer.schedule(Task(),0, flushIntervalMinute * 60 * 1000L)
+        timer.schedule(Task(),5 * 60 * 1000, flushIntervalMinute * 60 * 1000L)
         Log.info("start scheduler..")
     }
 
