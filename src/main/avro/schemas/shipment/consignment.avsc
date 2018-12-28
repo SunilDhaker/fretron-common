@@ -216,7 +216,23 @@
                           "string"
                         ],
                         "default": null
-                      }
+                      },
+                        {
+                          "name": "customerPsnNo",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        },
+                              {
+                                "name": "contractToParty",
+                                "type": [
+                                  "null",
+                                  "com.fretron.Model.BuisnessPartner"
+                                ],
+                                "default": null
+                              }
 
     ]
   }
