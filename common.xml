@@ -136,6 +136,7 @@
     <!--================Freight-Location Manager topics =====================-->
     <entry key="freight.location.topic">freightlocationtopic</entry>
     <entry key="place.topic">placetopic</entry>
+    <entry key="hubs.topic">hubTopic</entry>
 
     <!--===============TPI -Manager topics=====================-->
     <entry key = "integration.job.events.topic">integratedJobsEventTopic</entry>
