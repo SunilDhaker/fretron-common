@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Properties extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2334074176666876240L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -6975517347915235290L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String catagory;
   @Deprecated public java.lang.String name;
@@ -23,6 +23,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.String hubId;
   @Deprecated public java.lang.String district;
   @Deprecated public java.lang.String subDistrict;
+  @Deprecated public java.lang.String externalId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
    * @param hubId The new value for hubId
    * @param district The new value for district
    * @param subDistrict The new value for subDistrict
+   * @param externalId The new value for externalId
    */
-  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String placeId, java.lang.String level, java.lang.String customeFields, java.lang.String state, java.lang.String hubId, java.lang.String district, java.lang.String subDistrict) {
+  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String placeId, java.lang.String level, java.lang.String customeFields, java.lang.String state, java.lang.String hubId, java.lang.String district, java.lang.String subDistrict, java.lang.String externalId) {
     this.catagory = catagory;
     this.name = name;
     this.address = address;
@@ -55,6 +57,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     this.hubId = hubId;
     this.district = district;
     this.subDistrict = subDistrict;
+    this.externalId = externalId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 7: return hubId;
     case 8: return district;
     case 9: return subDistrict;
+    case 10: return externalId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 7: hubId = (java.lang.String)value$; break;
     case 8: district = (java.lang.String)value$; break;
     case 9: subDistrict = (java.lang.String)value$; break;
+    case 10: externalId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
    * Creates a new Properties RecordBuilder.
    * @return A new Properties RecordBuilder
    */
@@ -295,6 +316,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String hubId;
     private java.lang.String district;
     private java.lang.String subDistrict;
+    private java.lang.String externalId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +369,10 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         this.subDistrict = data().deepCopy(fields()[9].schema(), other.subDistrict);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[10].schema(), other.externalId);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -394,6 +420,10 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[9], other.subDistrict)) {
         this.subDistrict = data().deepCopy(fields()[9].schema(), other.subDistrict);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[10].schema(), other.externalId);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -787,6 +817,45 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder setExternalId(java.lang.String value) {
+      validate(fields()[10], value);
+      this.externalId = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public Properties build() {
       try {
@@ -801,6 +870,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         record.hubId = fieldSetFlags()[7] ? this.hubId : (java.lang.String) defaultValue(fields()[7]);
         record.district = fieldSetFlags()[8] ? this.district : (java.lang.String) defaultValue(fields()[8]);
         record.subDistrict = fieldSetFlags()[9] ? this.subDistrict : (java.lang.String) defaultValue(fields()[9]);
+        record.externalId = fieldSetFlags()[10] ? this.externalId : (java.lang.String) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

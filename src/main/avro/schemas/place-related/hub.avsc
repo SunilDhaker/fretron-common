@@ -1,0 +1,94 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Hub",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+          "name": "catagory",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name": "name",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name": "address",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+              "name": "externalId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+          },
+
+    {
+      "name": "geometry",
+      "type": [
+        "null",
+        "com.fretron.Model.Geometry"
+      ],
+      "default": null
+    },
+    {
+       "name": "addedBy",
+       "type": ["null","string"
+                    ],
+       "default": null
+      },
+     {
+       "name": "source",
+        "type": ["null",
+                  "string"
+                    ],
+        "default": null
+      },
+      {
+         "name": "accessibility",
+          "type": [
+                        "null",
+                        "string"
+                    ],
+        "default": null
+      },
+      {
+          "name":"places",
+           "type":[
+                        "null",
+                        {"type" : "array", "items":"com.fretron.Model.Place"}
+                    ],
+           "default":null
+     }
+
+  ]
+}

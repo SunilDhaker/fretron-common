@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Place extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7971956328117469927L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
+  private static final long serialVersionUID = -8768803593314066044L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String address;
@@ -20,6 +20,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public double suggestedRadius;
   @Deprecated public com.fretron.Model.ViewPort viewport;
   @Deprecated public java.lang.String source;
+  @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String placeId;
   @Deprecated public java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
 
@@ -39,10 +40,11 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
    * @param suggestedRadius The new value for suggestedRadius
    * @param viewport The new value for viewport
    * @param source The new value for source
+   * @param addedBy The new value for addedBy
    * @param placeId The new value for placeId
    * @param boundary The new value for boundary
    */
-  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String placeId, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary) {
+  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String addedBy, java.lang.String placeId, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary) {
     this.name = name;
     this.address = address;
     this.category = category;
@@ -50,6 +52,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     this.suggestedRadius = suggestedRadius;
     this.viewport = viewport;
     this.source = source;
+    this.addedBy = addedBy;
     this.placeId = placeId;
     this.boundary = boundary;
   }
@@ -65,8 +68,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 4: return suggestedRadius;
     case 5: return viewport;
     case 6: return source;
-    case 7: return placeId;
-    case 8: return boundary;
+    case 7: return addedBy;
+    case 8: return placeId;
+    case 9: return boundary;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -82,8 +86,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 4: suggestedRadius = (java.lang.Double)value$; break;
     case 5: viewport = (com.fretron.Model.ViewPort)value$; break;
     case 6: source = (java.lang.String)value$; break;
-    case 7: placeId = (java.lang.String)value$; break;
-    case 8: boundary = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
+    case 7: addedBy = (java.lang.String)value$; break;
+    case 8: placeId = (java.lang.String)value$; break;
+    case 9: boundary = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -201,6 +206,22 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
+   * Gets the value of the 'addedBy' field.
+   * @return The value of the 'addedBy' field.
+   */
+  public java.lang.String getAddedBy() {
+    return addedBy;
+  }
+
+  /**
+   * Sets the value of the 'addedBy' field.
+   * @param value the value to set.
+   */
+  public void setAddedBy(java.lang.String value) {
+    this.addedBy = value;
+  }
+
+  /**
    * Gets the value of the 'placeId' field.
    * @return The value of the 'placeId' field.
    */
@@ -273,6 +294,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     private com.fretron.Model.ViewPort viewport;
     private com.fretron.Model.ViewPort.Builder viewportBuilder;
     private java.lang.String source;
+    private java.lang.String addedBy;
     private java.lang.String placeId;
     private java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
 
@@ -321,13 +343,17 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.source = data().deepCopy(fields()[6].schema(), other.source);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.placeId)) {
-        this.placeId = data().deepCopy(fields()[7].schema(), other.placeId);
+      if (isValidValue(fields()[7], other.addedBy)) {
+        this.addedBy = data().deepCopy(fields()[7].schema(), other.addedBy);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.boundary)) {
-        this.boundary = data().deepCopy(fields()[8].schema(), other.boundary);
+      if (isValidValue(fields()[8], other.placeId)) {
+        this.placeId = data().deepCopy(fields()[8].schema(), other.placeId);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.boundary)) {
+        this.boundary = data().deepCopy(fields()[9].schema(), other.boundary);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -367,13 +393,17 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.source = data().deepCopy(fields()[6].schema(), other.source);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.placeId)) {
-        this.placeId = data().deepCopy(fields()[7].schema(), other.placeId);
+      if (isValidValue(fields()[7], other.addedBy)) {
+        this.addedBy = data().deepCopy(fields()[7].schema(), other.addedBy);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.boundary)) {
-        this.boundary = data().deepCopy(fields()[8].schema(), other.boundary);
+      if (isValidValue(fields()[8], other.placeId)) {
+        this.placeId = data().deepCopy(fields()[8].schema(), other.placeId);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.boundary)) {
+        this.boundary = data().deepCopy(fields()[9].schema(), other.boundary);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -720,6 +750,45 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     }
 
     /**
+      * Gets the value of the 'addedBy' field.
+      * @return The value.
+      */
+    public java.lang.String getAddedBy() {
+      return addedBy;
+    }
+
+    /**
+      * Sets the value of the 'addedBy' field.
+      * @param value The value of 'addedBy'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setAddedBy(java.lang.String value) {
+      validate(fields()[7], value);
+      this.addedBy = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'addedBy' field has been set.
+      * @return True if the 'addedBy' field has been set, false otherwise.
+      */
+    public boolean hasAddedBy() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'addedBy' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearAddedBy() {
+      addedBy = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'placeId' field.
       * @return The value.
       */
@@ -733,9 +802,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return This builder.
       */
     public com.fretron.Model.Place.Builder setPlaceId(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.placeId = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -744,7 +813,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return True if the 'placeId' field has been set, false otherwise.
       */
     public boolean hasPlaceId() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -754,7 +823,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Place.Builder clearPlaceId() {
       placeId = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -772,9 +841,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return This builder.
       */
     public com.fretron.Model.Place.Builder setBoundary(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.boundary = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -783,7 +852,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return True if the 'boundary' field has been set, false otherwise.
       */
     public boolean hasBoundary() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -793,7 +862,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Place.Builder clearBoundary() {
       boundary = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -816,8 +885,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
           record.viewport = fieldSetFlags()[5] ? this.viewport : (com.fretron.Model.ViewPort) defaultValue(fields()[5]);
         }
         record.source = fieldSetFlags()[6] ? this.source : (java.lang.String) defaultValue(fields()[6]);
-        record.placeId = fieldSetFlags()[7] ? this.placeId : (java.lang.String) defaultValue(fields()[7]);
-        record.boundary = fieldSetFlags()[8] ? this.boundary : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[8]);
+        record.addedBy = fieldSetFlags()[7] ? this.addedBy : (java.lang.String) defaultValue(fields()[7]);
+        record.placeId = fieldSetFlags()[8] ? this.placeId : (java.lang.String) defaultValue(fields()[8]);
+        record.boundary = fieldSetFlags()[9] ? this.boundary : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
