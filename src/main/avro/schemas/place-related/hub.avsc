@@ -82,6 +82,19 @@
         "default": null
       },
       {
+        "name": "radius",
+      	"type": ["null","double"],
+      	"default": null
+      },
+      {
+        "name":"center",
+                 "type":[
+                              "null",
+                              {"type" : "array", "items":"double"}
+                          ],
+                 "default":null
+      },
+      {
           "name":"places",
            "type":[
                         "null",

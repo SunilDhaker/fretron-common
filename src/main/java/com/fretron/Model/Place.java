@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Place extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8768803593314066044L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
+  private static final long serialVersionUID = 2346853418490327930L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String address;
@@ -22,6 +22,8 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String placeId;
+  @Deprecated public java.lang.String externalId;
+  @Deprecated public java.lang.String hubId;
   @Deprecated public java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
 
   /**
@@ -42,9 +44,11 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
    * @param source The new value for source
    * @param addedBy The new value for addedBy
    * @param placeId The new value for placeId
+   * @param externalId The new value for externalId
+   * @param hubId The new value for hubId
    * @param boundary The new value for boundary
    */
-  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String addedBy, java.lang.String placeId, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary) {
+  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String addedBy, java.lang.String placeId, java.lang.String externalId, java.lang.String hubId, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary) {
     this.name = name;
     this.address = address;
     this.category = category;
@@ -54,6 +58,8 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     this.source = source;
     this.addedBy = addedBy;
     this.placeId = placeId;
+    this.externalId = externalId;
+    this.hubId = hubId;
     this.boundary = boundary;
   }
 
@@ -70,7 +76,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 6: return source;
     case 7: return addedBy;
     case 8: return placeId;
-    case 9: return boundary;
+    case 9: return externalId;
+    case 10: return hubId;
+    case 11: return boundary;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -88,7 +96,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 6: source = (java.lang.String)value$; break;
     case 7: addedBy = (java.lang.String)value$; break;
     case 8: placeId = (java.lang.String)value$; break;
-    case 9: boundary = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
+    case 9: externalId = (java.lang.String)value$; break;
+    case 10: hubId = (java.lang.String)value$; break;
+    case 11: boundary = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -238,6 +248,38 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
+   * Gets the value of the 'hubId' field.
+   * @return The value of the 'hubId' field.
+   */
+  public java.lang.String getHubId() {
+    return hubId;
+  }
+
+  /**
+   * Sets the value of the 'hubId' field.
+   * @param value the value to set.
+   */
+  public void setHubId(java.lang.String value) {
+    this.hubId = value;
+  }
+
+  /**
    * Gets the value of the 'boundary' field.
    * @return The value of the 'boundary' field.
    */
@@ -296,6 +338,8 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     private java.lang.String source;
     private java.lang.String addedBy;
     private java.lang.String placeId;
+    private java.lang.String externalId;
+    private java.lang.String hubId;
     private java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
 
     /** Creates a new Builder */
@@ -351,9 +395,17 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.placeId = data().deepCopy(fields()[8].schema(), other.placeId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.boundary)) {
-        this.boundary = data().deepCopy(fields()[9].schema(), other.boundary);
+      if (isValidValue(fields()[9], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[9].schema(), other.externalId);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.hubId)) {
+        this.hubId = data().deepCopy(fields()[10].schema(), other.hubId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.boundary)) {
+        this.boundary = data().deepCopy(fields()[11].schema(), other.boundary);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -401,9 +453,17 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.placeId = data().deepCopy(fields()[8].schema(), other.placeId);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.boundary)) {
-        this.boundary = data().deepCopy(fields()[9].schema(), other.boundary);
+      if (isValidValue(fields()[9], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[9].schema(), other.externalId);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.hubId)) {
+        this.hubId = data().deepCopy(fields()[10].schema(), other.hubId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.boundary)) {
+        this.boundary = data().deepCopy(fields()[11].schema(), other.boundary);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -828,6 +888,84 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     }
 
     /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setExternalId(java.lang.String value) {
+      validate(fields()[9], value);
+      this.externalId = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'hubId' field.
+      * @return The value.
+      */
+    public java.lang.String getHubId() {
+      return hubId;
+    }
+
+    /**
+      * Sets the value of the 'hubId' field.
+      * @param value The value of 'hubId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setHubId(java.lang.String value) {
+      validate(fields()[10], value);
+      this.hubId = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'hubId' field has been set.
+      * @return True if the 'hubId' field has been set, false otherwise.
+      */
+    public boolean hasHubId() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'hubId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearHubId() {
+      hubId = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'boundary' field.
       * @return The value.
       */
@@ -841,9 +979,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return This builder.
       */
     public com.fretron.Model.Place.Builder setBoundary(java.util.List<java.util.List<java.util.List<java.lang.Double>>> value) {
-      validate(fields()[9], value);
+      validate(fields()[11], value);
       this.boundary = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -852,7 +990,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       * @return True if the 'boundary' field has been set, false otherwise.
       */
     public boolean hasBoundary() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[11];
     }
 
 
@@ -862,7 +1000,7 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       */
     public com.fretron.Model.Place.Builder clearBoundary() {
       boundary = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -887,7 +1025,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         record.source = fieldSetFlags()[6] ? this.source : (java.lang.String) defaultValue(fields()[6]);
         record.addedBy = fieldSetFlags()[7] ? this.addedBy : (java.lang.String) defaultValue(fields()[7]);
         record.placeId = fieldSetFlags()[8] ? this.placeId : (java.lang.String) defaultValue(fields()[8]);
-        record.boundary = fieldSetFlags()[9] ? this.boundary : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[9]);
+        record.externalId = fieldSetFlags()[9] ? this.externalId : (java.lang.String) defaultValue(fields()[9]);
+        record.hubId = fieldSetFlags()[10] ? this.hubId : (java.lang.String) defaultValue(fields()[10]);
+        record.boundary = fieldSetFlags()[11] ? this.boundary : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Hub extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5174106799969934638L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Hub\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 3585822953466834380L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Hub\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"radius\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String type;
@@ -23,6 +23,8 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
   @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.String accessibility;
+  @Deprecated public java.lang.Double radius;
+  @Deprecated public java.util.List<java.lang.Double> center;
   @Deprecated public java.util.List<com.fretron.Model.Place> places;
 
   /**
@@ -44,9 +46,11 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param addedBy The new value for addedBy
    * @param source The new value for source
    * @param accessibility The new value for accessibility
+   * @param radius The new value for radius
+   * @param center The new value for center
    * @param places The new value for places
    */
-  public Hub(java.lang.String uuid, java.lang.String type, java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String externalId, com.fretron.Model.Geometry geometry, java.lang.String addedBy, java.lang.String source, java.lang.String accessibility, java.util.List<com.fretron.Model.Place> places) {
+  public Hub(java.lang.String uuid, java.lang.String type, java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String externalId, com.fretron.Model.Geometry geometry, java.lang.String addedBy, java.lang.String source, java.lang.String accessibility, java.lang.Double radius, java.util.List<java.lang.Double> center, java.util.List<com.fretron.Model.Place> places) {
     this.uuid = uuid;
     this.type = type;
     this.catagory = catagory;
@@ -57,6 +61,8 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
     this.addedBy = addedBy;
     this.source = source;
     this.accessibility = accessibility;
+    this.radius = radius;
+    this.center = center;
     this.places = places;
   }
 
@@ -74,7 +80,9 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
     case 7: return addedBy;
     case 8: return source;
     case 9: return accessibility;
-    case 10: return places;
+    case 10: return radius;
+    case 11: return center;
+    case 12: return places;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -93,7 +101,9 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
     case 7: addedBy = (java.lang.String)value$; break;
     case 8: source = (java.lang.String)value$; break;
     case 9: accessibility = (java.lang.String)value$; break;
-    case 10: places = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 10: radius = (java.lang.Double)value$; break;
+    case 11: center = (java.util.List<java.lang.Double>)value$; break;
+    case 12: places = (java.util.List<com.fretron.Model.Place>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -259,6 +269,38 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
   }
 
   /**
+   * Gets the value of the 'radius' field.
+   * @return The value of the 'radius' field.
+   */
+  public java.lang.Double getRadius() {
+    return radius;
+  }
+
+  /**
+   * Sets the value of the 'radius' field.
+   * @param value the value to set.
+   */
+  public void setRadius(java.lang.Double value) {
+    this.radius = value;
+  }
+
+  /**
+   * Gets the value of the 'center' field.
+   * @return The value of the 'center' field.
+   */
+  public java.util.List<java.lang.Double> getCenter() {
+    return center;
+  }
+
+  /**
+   * Sets the value of the 'center' field.
+   * @param value the value to set.
+   */
+  public void setCenter(java.util.List<java.lang.Double> value) {
+    this.center = value;
+  }
+
+  /**
    * Gets the value of the 'places' field.
    * @return The value of the 'places' field.
    */
@@ -317,6 +359,8 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
     private java.lang.String addedBy;
     private java.lang.String source;
     private java.lang.String accessibility;
+    private java.lang.Double radius;
+    private java.util.List<java.lang.Double> center;
     private java.util.List<com.fretron.Model.Place> places;
 
     /** Creates a new Builder */
@@ -373,9 +417,17 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
         this.accessibility = data().deepCopy(fields()[9].schema(), other.accessibility);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.places)) {
-        this.places = data().deepCopy(fields()[10].schema(), other.places);
+      if (isValidValue(fields()[10], other.radius)) {
+        this.radius = data().deepCopy(fields()[10].schema(), other.radius);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.center)) {
+        this.center = data().deepCopy(fields()[11].schema(), other.center);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.places)) {
+        this.places = data().deepCopy(fields()[12].schema(), other.places);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -426,9 +478,17 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
         this.accessibility = data().deepCopy(fields()[9].schema(), other.accessibility);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.places)) {
-        this.places = data().deepCopy(fields()[10].schema(), other.places);
+      if (isValidValue(fields()[10], other.radius)) {
+        this.radius = data().deepCopy(fields()[10].schema(), other.radius);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.center)) {
+        this.center = data().deepCopy(fields()[11].schema(), other.center);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.places)) {
+        this.places = data().deepCopy(fields()[12].schema(), other.places);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -858,6 +918,84 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
     }
 
     /**
+      * Gets the value of the 'radius' field.
+      * @return The value.
+      */
+    public java.lang.Double getRadius() {
+      return radius;
+    }
+
+    /**
+      * Sets the value of the 'radius' field.
+      * @param value The value of 'radius'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Hub.Builder setRadius(java.lang.Double value) {
+      validate(fields()[10], value);
+      this.radius = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'radius' field has been set.
+      * @return True if the 'radius' field has been set, false otherwise.
+      */
+    public boolean hasRadius() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'radius' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Hub.Builder clearRadius() {
+      radius = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'center' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.Double> getCenter() {
+      return center;
+    }
+
+    /**
+      * Sets the value of the 'center' field.
+      * @param value The value of 'center'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Hub.Builder setCenter(java.util.List<java.lang.Double> value) {
+      validate(fields()[11], value);
+      this.center = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'center' field has been set.
+      * @return True if the 'center' field has been set, false otherwise.
+      */
+    public boolean hasCenter() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'center' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Hub.Builder clearCenter() {
+      center = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'places' field.
       * @return The value.
       */
@@ -871,9 +1009,9 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return This builder.
       */
     public com.fretron.Model.Hub.Builder setPlaces(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[10], value);
+      validate(fields()[12], value);
       this.places = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -882,7 +1020,7 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return True if the 'places' field has been set, false otherwise.
       */
     public boolean hasPlaces() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[12];
     }
 
 
@@ -892,7 +1030,7 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
       */
     public com.fretron.Model.Hub.Builder clearPlaces() {
       places = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -914,7 +1052,9 @@ public class Hub extends org.apache.avro.specific.SpecificRecordBase implements 
         record.addedBy = fieldSetFlags()[7] ? this.addedBy : (java.lang.String) defaultValue(fields()[7]);
         record.source = fieldSetFlags()[8] ? this.source : (java.lang.String) defaultValue(fields()[8]);
         record.accessibility = fieldSetFlags()[9] ? this.accessibility : (java.lang.String) defaultValue(fields()[9]);
-        record.places = fieldSetFlags()[10] ? this.places : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[10]);
+        record.radius = fieldSetFlags()[10] ? this.radius : (java.lang.Double) defaultValue(fields()[10]);
+        record.center = fieldSetFlags()[11] ? this.center : (java.util.List<java.lang.Double>) defaultValue(fields()[11]);
+        record.places = fieldSetFlags()[12] ? this.places : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
