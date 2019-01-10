@@ -90,6 +90,14 @@
             "string"
           ],
           "default": null
-      }
+      },
+      {
+            "name": "isOwned",
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "default": null
+          }
   ]
 }

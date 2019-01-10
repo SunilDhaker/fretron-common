@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Properties extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6975517347915235290L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -1295257325207194078L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Properties\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String catagory;
   @Deprecated public java.lang.String name;
@@ -24,6 +24,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.String district;
   @Deprecated public java.lang.String subDistrict;
   @Deprecated public java.lang.String externalId;
+  @Deprecated public java.lang.Boolean isOwned;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
    * @param district The new value for district
    * @param subDistrict The new value for subDistrict
    * @param externalId The new value for externalId
+   * @param isOwned The new value for isOwned
    */
-  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String placeId, java.lang.String level, java.lang.String customeFields, java.lang.String state, java.lang.String hubId, java.lang.String district, java.lang.String subDistrict, java.lang.String externalId) {
+  public Properties(java.lang.String catagory, java.lang.String name, java.lang.String address, java.lang.String placeId, java.lang.String level, java.lang.String customeFields, java.lang.String state, java.lang.String hubId, java.lang.String district, java.lang.String subDistrict, java.lang.String externalId, java.lang.Boolean isOwned) {
     this.catagory = catagory;
     this.name = name;
     this.address = address;
@@ -58,6 +60,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     this.district = district;
     this.subDistrict = subDistrict;
     this.externalId = externalId;
+    this.isOwned = isOwned;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 8: return district;
     case 9: return subDistrict;
     case 10: return externalId;
+    case 11: return isOwned;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     case 8: district = (java.lang.String)value$; break;
     case 9: subDistrict = (java.lang.String)value$; break;
     case 10: externalId = (java.lang.String)value$; break;
+    case 11: isOwned = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'isOwned' field.
+   * @return The value of the 'isOwned' field.
+   */
+  public java.lang.Boolean getIsOwned() {
+    return isOwned;
+  }
+
+  /**
+   * Sets the value of the 'isOwned' field.
+   * @param value the value to set.
+   */
+  public void setIsOwned(java.lang.Boolean value) {
+    this.isOwned = value;
+  }
+
+  /**
    * Creates a new Properties RecordBuilder.
    * @return A new Properties RecordBuilder
    */
@@ -317,6 +338,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.String district;
     private java.lang.String subDistrict;
     private java.lang.String externalId;
+    private java.lang.Boolean isOwned;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +395,10 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         this.externalId = data().deepCopy(fields()[10].schema(), other.externalId);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.isOwned)) {
+        this.isOwned = data().deepCopy(fields()[11].schema(), other.isOwned);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -424,6 +450,10 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[10], other.externalId)) {
         this.externalId = data().deepCopy(fields()[10].schema(), other.externalId);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.isOwned)) {
+        this.isOwned = data().deepCopy(fields()[11].schema(), other.isOwned);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -856,6 +886,45 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'isOwned' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsOwned() {
+      return isOwned;
+    }
+
+    /**
+      * Sets the value of the 'isOwned' field.
+      * @param value The value of 'isOwned'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder setIsOwned(java.lang.Boolean value) {
+      validate(fields()[11], value);
+      this.isOwned = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isOwned' field has been set.
+      * @return True if the 'isOwned' field has been set, false otherwise.
+      */
+    public boolean hasIsOwned() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'isOwned' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Properties.Builder clearIsOwned() {
+      isOwned = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public Properties build() {
       try {
@@ -871,6 +940,7 @@ public class Properties extends org.apache.avro.specific.SpecificRecordBase impl
         record.district = fieldSetFlags()[8] ? this.district : (java.lang.String) defaultValue(fields()[8]);
         record.subDistrict = fieldSetFlags()[9] ? this.subDistrict : (java.lang.String) defaultValue(fields()[9]);
         record.externalId = fieldSetFlags()[10] ? this.externalId : (java.lang.String) defaultValue(fields()[10]);
+        record.isOwned = fieldSetFlags()[11] ? this.isOwned : (java.lang.Boolean) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
