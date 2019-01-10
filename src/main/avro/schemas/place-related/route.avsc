@@ -1,0 +1,127 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Route",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "origin",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+       "name": "destination",
+        "type": [
+            "null",
+            "com.fretron.Model.Place"
+          ],
+        "default": null
+    },
+    {
+      "name":"wayPoints",
+       "type":[
+                "null",
+               {"type" : "array", "items":"com.fretron.Model.Place"}
+              ],
+       "default":null
+    },
+    {
+          "name": "orgId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     },
+     {
+       "name": "distance",
+           "type": [
+             "null",
+             "double"
+           ],
+           "default": null
+     },
+     {
+       "name": "totalTime",
+        "type": [
+             "null",
+             "long"
+           ],
+        "default": null
+     },
+     {
+         "name": "vehicleId",
+               "type": [
+                 "null",
+                 "string"
+               ],
+           "default": null
+      },
+      {
+         "name": "polyline",
+         "type": [
+                       "null",
+                       "string"
+                     ],
+          "default": null
+       },
+       {
+          "name": "tollCount",
+               "type": [
+                    "null",
+                    "int"
+                  ],
+               "default": null
+         },
+        {
+          "name": "tollCost",
+               "type": [
+                    "null",
+                    "double"
+                  ],
+               "default": null
+         },
+         {
+           "name": "petrolPumps",
+            "type": [
+                         "null",
+                         "int"
+                       ],
+            "default": null
+         },
+      {
+            "name": "hospitals",
+             "type": [
+                  "null",
+                  "int"
+                ],
+             "default": null
+       },
+       {
+         "name": "serviceCenters",
+          "type": [
+                         "null",
+                         "int"
+                       ],
+          "default": null
+        }
+  ]
+}

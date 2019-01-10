@@ -221,6 +221,7 @@ public class Constants {
     //*************NEW**************//public static final String FRIGHT_LOCATION_TOPIC = "freight.location.topic";
     public static final String PLACES_TOPIC = "place.topic";
     public static final String HUB_TOPIC = "hubs.topic";
+    public static final String ROUTE_TOPIC = "route.topic";
     public static final String PLACES_MANAGER_SERVICE_PORT = "geofence.service.port";
     public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
     public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
