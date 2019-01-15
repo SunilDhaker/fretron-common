@@ -51,6 +51,15 @@
 				"type":["null","com.fretron.Model.Location"],
                 "default": null
 			},
+
+            {
+              "name":"centerCoordinates",
+              "type":[
+                      "null",
+                      {"type" : "array", "items":"double"}
+                     ],
+                    "default":null
+            },
 			{
 				"name": "suggestedRadius",
 				"type": "double",
@@ -73,12 +82,12 @@
                 "default": null
             },
             {
-                            "name": "addedBy",
+                "name": "addedBy",
                             "type": [
                                 "null",
                                 "string"
                             ],
-                            "default": null
+               "default": null
             },
             {
                 "name": "placeId",
@@ -104,6 +113,30 @@
                         ],
                "default": null
              },
+              {
+                    "name": "state",
+                     "type": [
+                             "null",
+                             "string"
+                           ],
+                     "default": null
+                 },
+                 {
+                   "name": "district",
+                    "type": [
+                                "null",
+                                "string"
+                              ],
+                    "default": null
+                 },
+                 {
+                    "name": "subDistrict",
+                     "type": [
+                                  "null",
+                                  "string"
+                                ],
+                     "default": null
+                 },
             {
                 "name": "boundary",
                 "type":[
@@ -121,7 +154,15 @@
 
                     ],
                 "default": null
-            }
+            },
+            {
+                    "name":"places",
+                             "type":[
+                                          "null",
+                                          {"type" : "array", "items":"Place"}
+                                      ],
+                   "default":null
+              }
         ]
 	}
 ]
