@@ -218,7 +218,16 @@
                         ],
                         "logicalType": "timestamp-millis",
                         "default": null
-                      }
+                      },
+                      {
+                                              "name": "completionTime",
+                                              "type": [
+                                                "null",
+                                                "long"
+                                              ],
+                                              "logicalType": "timestamp-millis",
+                                              "default": null
+                                            }
 
     ]
   }
