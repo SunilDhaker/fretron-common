@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Driver extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8943780388034987373L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2153963281877779065L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
@@ -24,6 +24,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String pincode;
   @Deprecated public java.lang.String vehicleId;
   @Deprecated public java.lang.String vehicleRegistrationNumber;
+  @Deprecated public java.lang.String externalId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param pincode The new value for pincode
    * @param vehicleId The new value for vehicleId
    * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
+   * @param externalId The new value for externalId
    */
-  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber) {
+  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.uuid = uuid;
@@ -58,6 +60,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     this.pincode = pincode;
     this.vehicleId = vehicleId;
     this.vehicleRegistrationNumber = vehicleRegistrationNumber;
+    this.externalId = externalId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 8: return pincode;
     case 9: return vehicleId;
     case 10: return vehicleRegistrationNumber;
+    case 11: return externalId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 8: pincode = (java.lang.String)value$; break;
     case 9: vehicleId = (java.lang.String)value$; break;
     case 10: vehicleRegistrationNumber = (java.lang.String)value$; break;
+    case 11: externalId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
    * Creates a new Driver RecordBuilder.
    * @return A new Driver RecordBuilder
    */
@@ -317,6 +338,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String pincode;
     private java.lang.String vehicleId;
     private java.lang.String vehicleRegistrationNumber;
+    private java.lang.String externalId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +395,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         this.vehicleRegistrationNumber = data().deepCopy(fields()[10].schema(), other.vehicleRegistrationNumber);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[11].schema(), other.externalId);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -424,6 +450,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       if (isValidValue(fields()[10], other.vehicleRegistrationNumber)) {
         this.vehicleRegistrationNumber = data().deepCopy(fields()[10].schema(), other.vehicleRegistrationNumber);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[11].schema(), other.externalId);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -856,6 +886,45 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setExternalId(java.lang.String value) {
+      validate(fields()[11], value);
+      this.externalId = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public Driver build() {
       try {
@@ -871,6 +940,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         record.pincode = fieldSetFlags()[8] ? this.pincode : (java.lang.String) defaultValue(fields()[8]);
         record.vehicleId = fieldSetFlags()[9] ? this.vehicleId : (java.lang.String) defaultValue(fields()[9]);
         record.vehicleRegistrationNumber = fieldSetFlags()[10] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[10]);
+        record.externalId = fieldSetFlags()[11] ? this.externalId : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
