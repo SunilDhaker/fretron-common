@@ -270,6 +270,7 @@ public class Constants {
     public static final String KAFKATOPIC_APP_PORT = "kafkatopics.app.port";
     public static final String TRIPMANAGER_SERVICE_URL = "trip.manager.new.service.url";
     public static final String TRIPMANAGER_APP_IP = "trip.manager.new.restservice.ip";
+    public static final String KEY_FREIGHT_LOCATION_MANAGER_SERVICE_URL = "freight.location.manager.service.url";
 
     //=======================IP AND PORTS ===============
     public static final String TRIPMANAGER_APP_PORT = "trip.manager.new.restservice.port";

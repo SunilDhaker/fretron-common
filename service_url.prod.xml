@@ -47,7 +47,6 @@
     <entry key="gps.processor.restservice.port">2121</entry>
 
 
-
     <entry key="position.processor.querablestate.host">0.0.0.0</entry>
     <entry key="position.processor.querablestate.port">2220</entry>
 
@@ -61,12 +60,13 @@
     <entry key="manual.tracking.manager.restservice.port">2126</entry>
 
     <!--===============TPI-Manger==============-->
-    <entry key = "integration.manager.restservices.ip">http://0.0.0.0</entry>
-    <entry key = "integration.manager.restservices.port">8083</entry>
+    <entry key="integration.manager.restservices.ip">http://0.0.0.0</entry>
+    <entry key="integration.manager.restservices.port">8083</entry>
 
     <!--===========Freight-Location===============-->
     <entry key="freight.manager.service.port">8090</entry>
     <entry key="geofence.service.port">9090</entry>
+    <entry key="freight.location.manager.service.url">http://freightlocation-manager-revamp.streams:9090</entry>
 
 
     <!-- ==========stream-topic-manager========= -->
@@ -91,15 +91,15 @@
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
     <!--===============TRIP-MIS==============-->
-    <entry key = "trip.mis.restservices.ip">http://0.0.0.0</entry>
-    <entry key = "trip.mis.restservices.port">7887</entry>
+    <entry key="trip.mis.restservices.ip">http://0.0.0.0</entry>
+    <entry key="trip.mis.restservices.port">7887</entry>
 
-    <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
-    <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
+    <entry key="dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
+    <entry key="reports.service.url">http://apis.fretron.com/reports</entry>
 
 
     <!-- -->
-    <entry key = "elastic.search.service.url">http://reporting-server.mean:8080</entry>
+    <entry key="elastic.search.service.url">http://reporting-server.mean:8080</entry>
 
     <!-- =========Itinerary-Manager========== -->
     <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>

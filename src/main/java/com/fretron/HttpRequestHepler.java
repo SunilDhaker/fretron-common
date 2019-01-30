@@ -1,7 +1,6 @@
 package com.fretron;
 
 import org.glassfish.jersey.client.ClientProperties;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
