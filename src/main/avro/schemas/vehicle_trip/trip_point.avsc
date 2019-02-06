@@ -248,7 +248,15 @@
                 "string"
               ],
               "default": null
-            }
+         },
+         {
+           "name": "routeDeviationSettings",
+            "type": [
+                         "null",
+                         "string"
+                       ],
+             "default": null
+           }
   ]
 }
 
