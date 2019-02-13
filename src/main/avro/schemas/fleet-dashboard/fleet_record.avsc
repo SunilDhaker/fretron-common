@@ -1,0 +1,76 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "FleetRecord",
+    "fields": [
+         {
+            "name": "vehicleId",
+             "type": [
+                             "null",
+                             "string"
+                           ],
+             "default":null
+         },
+         {
+           "name": "vehicle",
+            "type": ["null" ,"com.fretron.Model.Vehicle"],
+             "default":null
+         },
+         {
+           "name": "tripPoint",
+            "type": ["null" ,"com.fretron.Model.TripPoint"],
+             "default":null
+         },
+         {
+           "name": "activeShipment",
+            "type": ["null" ,"com.fretron.Model.ShipmentObject"],
+            "default":null
+         },
+          {
+              "name": "gpsState",
+              "type": ["null" ,"com.fretron.Model.LiteVehicleGpsState"],
+             "default":null
+          },
+         {
+            "name": "currentHub",
+             "type": [
+                     "null",
+                     "string"
+                   ],
+             "default":null
+         },
+         {
+            "name": "status",
+             "type": [
+                        "null",
+                        "string"
+                   ],
+             "default":null
+         },
+
+         {
+            "name": "updatedBy",
+             "type": [
+                        "null",
+                        "string"
+                            ],
+             "default":null
+         },
+         {
+            "name": "updatedAt",
+             "type": ["null","long"],
+             "logicalType": "timestamp-millis",
+             "default" : null
+         },
+         {
+            "name": "accessibleTo",
+             "type": {
+                 "type": "array",
+                 "items": "string"
+               },
+            "default": null
+        }
+    ]
+  }
+]
