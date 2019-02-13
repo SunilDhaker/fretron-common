@@ -70,7 +70,17 @@
                  "items": "string"
                },
             "default": null
-        }
+        },
+        {
+           "name": "activeIssues",
+            "type": {
+                         "type": "array",
+                         "items": "com.fretron.Model.Issue"
+                       },
+            "default": null
+         }
+
+
     ]
   }
 ]
