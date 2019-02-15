@@ -78,6 +78,15 @@
                 "string"
               ],
               "default": null
-            }
+            },
+                        {
+                          "name": "forwardedFrom",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        }
+
     ]
  }

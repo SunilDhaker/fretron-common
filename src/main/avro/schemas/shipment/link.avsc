@@ -1,0 +1,34 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "LinkObject",
+  "fields": [
+    {
+      "name": "linkedTo",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "linkDirection",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+      {
+        "name": "linkType",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      }
+  ]
+}

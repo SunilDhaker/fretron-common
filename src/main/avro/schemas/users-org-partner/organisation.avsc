@@ -98,6 +98,17 @@
             "name": "logoDocumentId",
              "type": ["null" , "string"],
             "default" : null
-         }
+         },
+         {
+                      "name": "linkedPortals",
+                      "type": [
+                        "null",
+                        {
+                          "type": "array",
+                          "items": "string"
+                        }
+                      ],
+                      "default": null
+                    }
   ]
   }

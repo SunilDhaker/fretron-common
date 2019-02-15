@@ -227,7 +227,17 @@
                                               ],
                                               "logicalType": "timestamp-millis",
                                               "default": null
-                                            }
-
+                                            },
+                                            {
+                                                    "name": "links",
+                                                    "type": [
+                                                      "null",
+                                                      {
+                                                        "type": "array",
+                                                        "items": "com.fretron.Model.LinkObject"
+                                                      }
+                                                    ],
+                                                    "default": null
+                                                  }
     ]
   }
