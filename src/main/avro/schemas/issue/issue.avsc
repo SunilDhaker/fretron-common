@@ -266,7 +266,7 @@
                                                                               "name": "orgId",
                                                                               "type": [
                                                                                 "null",
-                                                                                "com.fretron.Model.OrgOffice"
+                                                                                "string"
                                                                               ],
                                                                               "default": null
                                                                             }
