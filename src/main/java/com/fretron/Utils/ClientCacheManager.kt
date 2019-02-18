@@ -26,6 +26,10 @@ class  ClientCacheManager<T>  constructor(private val flushIntervalMinute : Int)
         cache[key] = Data(System.currentTimeMillis(), expireValue, value)
     }
 
+    fun remove(key: String) : Boolean{
+        return cache.remove(key) != null
+    }
+
 
     inner class Task : TimerTask() {
         override fun run() {
