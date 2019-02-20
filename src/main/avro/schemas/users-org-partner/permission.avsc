@@ -1,7 +1,7 @@
 {
   "namespace": "com.fretron.Model",
   "type": "record",
-  "name": "Setting",
+  "name": "Permission",
   "fields": [
    {
      "name": "name",

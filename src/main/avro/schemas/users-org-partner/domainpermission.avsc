@@ -65,7 +65,7 @@
         "null",
         {
           "type": "array",
-          "items": "com.fretron.Model.Setting"
+          "items": "com.fretron.Model.Permission"
         }
       ],
       "default": null

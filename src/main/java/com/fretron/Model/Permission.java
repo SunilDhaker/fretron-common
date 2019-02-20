@@ -9,9 +9,9 @@ import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
-public class Setting extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5817683840280233418L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Setting\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isEnable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+public class Permission extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = -2104743362231002650L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Permission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isEnable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.Boolean isEnable;
@@ -21,14 +21,14 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public Setting() {}
+  public Permission() {}
 
   /**
    * All-args constructor.
    * @param name The new value for name
    * @param isEnable The new value for isEnable
    */
-  public Setting(java.lang.String name, java.lang.Boolean isEnable) {
+  public Permission(java.lang.String name, java.lang.Boolean isEnable) {
     this.name = name;
     this.isEnable = isEnable;
   }
@@ -86,36 +86,36 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
-   * Creates a new Setting RecordBuilder.
-   * @return A new Setting RecordBuilder
+   * Creates a new Permission RecordBuilder.
+   * @return A new Permission RecordBuilder
    */
-  public static com.fretron.Model.Setting.Builder newBuilder() {
-    return new com.fretron.Model.Setting.Builder();
+  public static com.fretron.Model.Permission.Builder newBuilder() {
+    return new com.fretron.Model.Permission.Builder();
   }
 
   /**
-   * Creates a new Setting RecordBuilder by copying an existing Builder.
+   * Creates a new Permission RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new Setting RecordBuilder
+   * @return A new Permission RecordBuilder
    */
-  public static com.fretron.Model.Setting.Builder newBuilder(com.fretron.Model.Setting.Builder other) {
-    return new com.fretron.Model.Setting.Builder(other);
+  public static com.fretron.Model.Permission.Builder newBuilder(com.fretron.Model.Permission.Builder other) {
+    return new com.fretron.Model.Permission.Builder(other);
   }
 
   /**
-   * Creates a new Setting RecordBuilder by copying an existing Setting instance.
+   * Creates a new Permission RecordBuilder by copying an existing Permission instance.
    * @param other The existing instance to copy.
-   * @return A new Setting RecordBuilder
+   * @return A new Permission RecordBuilder
    */
-  public static com.fretron.Model.Setting.Builder newBuilder(com.fretron.Model.Setting other) {
-    return new com.fretron.Model.Setting.Builder(other);
+  public static com.fretron.Model.Permission.Builder newBuilder(com.fretron.Model.Permission other) {
+    return new com.fretron.Model.Permission.Builder(other);
   }
 
   /**
-   * RecordBuilder for Setting instances.
+   * RecordBuilder for Permission instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Setting>
-    implements org.apache.avro.data.RecordBuilder<Setting> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Permission>
+    implements org.apache.avro.data.RecordBuilder<Permission> {
 
     private java.lang.String name;
     private java.lang.Boolean isEnable;
@@ -129,7 +129,7 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.fretron.Model.Setting.Builder other) {
+    private Builder(com.fretron.Model.Permission.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -142,10 +142,10 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
     }
 
     /**
-     * Creates a Builder by copying an existing Setting instance
+     * Creates a Builder by copying an existing Permission instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.fretron.Model.Setting other) {
+    private Builder(com.fretron.Model.Permission other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -170,7 +170,7 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public com.fretron.Model.Setting.Builder setName(java.lang.String value) {
+    public com.fretron.Model.Permission.Builder setName(java.lang.String value) {
       validate(fields()[0], value);
       this.name = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public com.fretron.Model.Setting.Builder clearName() {
+    public com.fretron.Model.Permission.Builder clearName() {
       name = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -209,7 +209,7 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'isEnable'.
       * @return This builder.
       */
-    public com.fretron.Model.Setting.Builder setIsEnable(java.lang.Boolean value) {
+    public com.fretron.Model.Permission.Builder setIsEnable(java.lang.Boolean value) {
       validate(fields()[1], value);
       this.isEnable = value;
       fieldSetFlags()[1] = true;
@@ -229,16 +229,16 @@ public class Setting extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'isEnable' field.
       * @return This builder.
       */
-    public com.fretron.Model.Setting.Builder clearIsEnable() {
+    public com.fretron.Model.Permission.Builder clearIsEnable() {
       isEnable = null;
       fieldSetFlags()[1] = false;
       return this;
     }
 
     @Override
-    public Setting build() {
+    public Permission build() {
       try {
-        Setting record = new Setting();
+        Permission record = new Permission();
         record.name = fieldSetFlags()[0] ? this.name : (java.lang.String) defaultValue(fields()[0]);
         record.isEnable = fieldSetFlags()[1] ? this.isEnable : (java.lang.Boolean) defaultValue(fields()[1]);
         return record;
