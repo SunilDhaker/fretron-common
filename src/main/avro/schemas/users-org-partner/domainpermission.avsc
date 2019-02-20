@@ -18,57 +18,6 @@
         "string"
       ],
       "default": null
-    },
-    {
-      "name": "canView",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "canEdit",
-          "type": [
-            "null",
-            "boolean"
-          ],
-          "default": null
-     },
-     {
-        "name": "canDelete",
-           "type": [
-             "null",
-             "boolean"
-           ],
-           "default": null
-     },
-     {
-       "name": "filteredDataAccess",
-        "type": [
-             "null",
-             "boolean"
-           ],
-           "default": null
-     },
-     {
-           "name": "filters",
-           "type": [
-             "null",
-             "string"
-           ],
-           "default": null
-    },
-    {
-      "name": "morePermissions",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.Permission"
-        }
-      ],
-      "default": null
     }
   ]
 }

@@ -10,17 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DomainPermission extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5303196336264563896L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"canView\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canEdit\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"canDelete\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filteredDataAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"morePermissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Permission\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isEnable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 5801343377947843L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String entity;
-  @Deprecated public java.lang.Boolean canView;
-  @Deprecated public java.lang.Boolean canEdit;
-  @Deprecated public java.lang.Boolean canDelete;
-  @Deprecated public java.lang.Boolean filteredDataAccess;
-  @Deprecated public java.lang.String filters;
-  @Deprecated public java.util.List<com.fretron.Model.Permission> morePermissions;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,22 +27,10 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
    * All-args constructor.
    * @param uuid The new value for uuid
    * @param entity The new value for entity
-   * @param canView The new value for canView
-   * @param canEdit The new value for canEdit
-   * @param canDelete The new value for canDelete
-   * @param filteredDataAccess The new value for filteredDataAccess
-   * @param filters The new value for filters
-   * @param morePermissions The new value for morePermissions
    */
-  public DomainPermission(java.lang.String uuid, java.lang.String entity, java.lang.Boolean canView, java.lang.Boolean canEdit, java.lang.Boolean canDelete, java.lang.Boolean filteredDataAccess, java.lang.String filters, java.util.List<com.fretron.Model.Permission> morePermissions) {
+  public DomainPermission(java.lang.String uuid, java.lang.String entity) {
     this.uuid = uuid;
     this.entity = entity;
-    this.canView = canView;
-    this.canEdit = canEdit;
-    this.canDelete = canDelete;
-    this.filteredDataAccess = filteredDataAccess;
-    this.filters = filters;
-    this.morePermissions = morePermissions;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -57,12 +39,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     switch (field$) {
     case 0: return uuid;
     case 1: return entity;
-    case 2: return canView;
-    case 3: return canEdit;
-    case 4: return canDelete;
-    case 5: return filteredDataAccess;
-    case 6: return filters;
-    case 7: return morePermissions;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -73,12 +49,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
     case 1: entity = (java.lang.String)value$; break;
-    case 2: canView = (java.lang.Boolean)value$; break;
-    case 3: canEdit = (java.lang.Boolean)value$; break;
-    case 4: canDelete = (java.lang.Boolean)value$; break;
-    case 5: filteredDataAccess = (java.lang.Boolean)value$; break;
-    case 6: filters = (java.lang.String)value$; break;
-    case 7: morePermissions = (java.util.List<com.fretron.Model.Permission>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -116,102 +86,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
   }
 
   /**
-   * Gets the value of the 'canView' field.
-   * @return The value of the 'canView' field.
-   */
-  public java.lang.Boolean getCanView() {
-    return canView;
-  }
-
-  /**
-   * Sets the value of the 'canView' field.
-   * @param value the value to set.
-   */
-  public void setCanView(java.lang.Boolean value) {
-    this.canView = value;
-  }
-
-  /**
-   * Gets the value of the 'canEdit' field.
-   * @return The value of the 'canEdit' field.
-   */
-  public java.lang.Boolean getCanEdit() {
-    return canEdit;
-  }
-
-  /**
-   * Sets the value of the 'canEdit' field.
-   * @param value the value to set.
-   */
-  public void setCanEdit(java.lang.Boolean value) {
-    this.canEdit = value;
-  }
-
-  /**
-   * Gets the value of the 'canDelete' field.
-   * @return The value of the 'canDelete' field.
-   */
-  public java.lang.Boolean getCanDelete() {
-    return canDelete;
-  }
-
-  /**
-   * Sets the value of the 'canDelete' field.
-   * @param value the value to set.
-   */
-  public void setCanDelete(java.lang.Boolean value) {
-    this.canDelete = value;
-  }
-
-  /**
-   * Gets the value of the 'filteredDataAccess' field.
-   * @return The value of the 'filteredDataAccess' field.
-   */
-  public java.lang.Boolean getFilteredDataAccess() {
-    return filteredDataAccess;
-  }
-
-  /**
-   * Sets the value of the 'filteredDataAccess' field.
-   * @param value the value to set.
-   */
-  public void setFilteredDataAccess(java.lang.Boolean value) {
-    this.filteredDataAccess = value;
-  }
-
-  /**
-   * Gets the value of the 'filters' field.
-   * @return The value of the 'filters' field.
-   */
-  public java.lang.String getFilters() {
-    return filters;
-  }
-
-  /**
-   * Sets the value of the 'filters' field.
-   * @param value the value to set.
-   */
-  public void setFilters(java.lang.String value) {
-    this.filters = value;
-  }
-
-  /**
-   * Gets the value of the 'morePermissions' field.
-   * @return The value of the 'morePermissions' field.
-   */
-  public java.util.List<com.fretron.Model.Permission> getMorePermissions() {
-    return morePermissions;
-  }
-
-  /**
-   * Sets the value of the 'morePermissions' field.
-   * @param value the value to set.
-   */
-  public void setMorePermissions(java.util.List<com.fretron.Model.Permission> value) {
-    this.morePermissions = value;
-  }
-
-  /**
    * Creates a new DomainPermission RecordBuilder.
    * @return A new DomainPermission RecordBuilder
    */
@@ -245,12 +119,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
 
     private java.lang.String uuid;
     private java.lang.String entity;
-    private java.lang.Boolean canView;
-    private java.lang.Boolean canEdit;
-    private java.lang.Boolean canDelete;
-    private java.lang.Boolean filteredDataAccess;
-    private java.lang.String filters;
-    private java.util.List<com.fretron.Model.Permission> morePermissions;
 
     /** Creates a new Builder */
     private Builder() {
@@ -271,30 +139,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
         this.entity = data().deepCopy(fields()[1].schema(), other.entity);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.canView)) {
-        this.canView = data().deepCopy(fields()[2].schema(), other.canView);
-        fieldSetFlags()[2] = true;
-      }
-      if (isValidValue(fields()[3], other.canEdit)) {
-        this.canEdit = data().deepCopy(fields()[3].schema(), other.canEdit);
-        fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.canDelete)) {
-        this.canDelete = data().deepCopy(fields()[4].schema(), other.canDelete);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.filteredDataAccess)) {
-        this.filteredDataAccess = data().deepCopy(fields()[5].schema(), other.filteredDataAccess);
-        fieldSetFlags()[5] = true;
-      }
-      if (isValidValue(fields()[6], other.filters)) {
-        this.filters = data().deepCopy(fields()[6].schema(), other.filters);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.morePermissions)) {
-        this.morePermissions = data().deepCopy(fields()[7].schema(), other.morePermissions);
-        fieldSetFlags()[7] = true;
-      }
     }
 
     /**
@@ -310,30 +154,6 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       if (isValidValue(fields()[1], other.entity)) {
         this.entity = data().deepCopy(fields()[1].schema(), other.entity);
         fieldSetFlags()[1] = true;
-      }
-      if (isValidValue(fields()[2], other.canView)) {
-        this.canView = data().deepCopy(fields()[2].schema(), other.canView);
-        fieldSetFlags()[2] = true;
-      }
-      if (isValidValue(fields()[3], other.canEdit)) {
-        this.canEdit = data().deepCopy(fields()[3].schema(), other.canEdit);
-        fieldSetFlags()[3] = true;
-      }
-      if (isValidValue(fields()[4], other.canDelete)) {
-        this.canDelete = data().deepCopy(fields()[4].schema(), other.canDelete);
-        fieldSetFlags()[4] = true;
-      }
-      if (isValidValue(fields()[5], other.filteredDataAccess)) {
-        this.filteredDataAccess = data().deepCopy(fields()[5].schema(), other.filteredDataAccess);
-        fieldSetFlags()[5] = true;
-      }
-      if (isValidValue(fields()[6], other.filters)) {
-        this.filters = data().deepCopy(fields()[6].schema(), other.filters);
-        fieldSetFlags()[6] = true;
-      }
-      if (isValidValue(fields()[7], other.morePermissions)) {
-        this.morePermissions = data().deepCopy(fields()[7].schema(), other.morePermissions);
-        fieldSetFlags()[7] = true;
       }
     }
 
@@ -415,252 +235,12 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
-    /**
-      * Gets the value of the 'canView' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getCanView() {
-      return canView;
-    }
-
-    /**
-      * Sets the value of the 'canView' field.
-      * @param value The value of 'canView'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setCanView(java.lang.Boolean value) {
-      validate(fields()[2], value);
-      this.canView = value;
-      fieldSetFlags()[2] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'canView' field has been set.
-      * @return True if the 'canView' field has been set, false otherwise.
-      */
-    public boolean hasCanView() {
-      return fieldSetFlags()[2];
-    }
-
-
-    /**
-      * Clears the value of the 'canView' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearCanView() {
-      canView = null;
-      fieldSetFlags()[2] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'canEdit' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getCanEdit() {
-      return canEdit;
-    }
-
-    /**
-      * Sets the value of the 'canEdit' field.
-      * @param value The value of 'canEdit'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setCanEdit(java.lang.Boolean value) {
-      validate(fields()[3], value);
-      this.canEdit = value;
-      fieldSetFlags()[3] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'canEdit' field has been set.
-      * @return True if the 'canEdit' field has been set, false otherwise.
-      */
-    public boolean hasCanEdit() {
-      return fieldSetFlags()[3];
-    }
-
-
-    /**
-      * Clears the value of the 'canEdit' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearCanEdit() {
-      canEdit = null;
-      fieldSetFlags()[3] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'canDelete' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getCanDelete() {
-      return canDelete;
-    }
-
-    /**
-      * Sets the value of the 'canDelete' field.
-      * @param value The value of 'canDelete'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setCanDelete(java.lang.Boolean value) {
-      validate(fields()[4], value);
-      this.canDelete = value;
-      fieldSetFlags()[4] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'canDelete' field has been set.
-      * @return True if the 'canDelete' field has been set, false otherwise.
-      */
-    public boolean hasCanDelete() {
-      return fieldSetFlags()[4];
-    }
-
-
-    /**
-      * Clears the value of the 'canDelete' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearCanDelete() {
-      canDelete = null;
-      fieldSetFlags()[4] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'filteredDataAccess' field.
-      * @return The value.
-      */
-    public java.lang.Boolean getFilteredDataAccess() {
-      return filteredDataAccess;
-    }
-
-    /**
-      * Sets the value of the 'filteredDataAccess' field.
-      * @param value The value of 'filteredDataAccess'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setFilteredDataAccess(java.lang.Boolean value) {
-      validate(fields()[5], value);
-      this.filteredDataAccess = value;
-      fieldSetFlags()[5] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'filteredDataAccess' field has been set.
-      * @return True if the 'filteredDataAccess' field has been set, false otherwise.
-      */
-    public boolean hasFilteredDataAccess() {
-      return fieldSetFlags()[5];
-    }
-
-
-    /**
-      * Clears the value of the 'filteredDataAccess' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearFilteredDataAccess() {
-      filteredDataAccess = null;
-      fieldSetFlags()[5] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'filters' field.
-      * @return The value.
-      */
-    public java.lang.String getFilters() {
-      return filters;
-    }
-
-    /**
-      * Sets the value of the 'filters' field.
-      * @param value The value of 'filters'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setFilters(java.lang.String value) {
-      validate(fields()[6], value);
-      this.filters = value;
-      fieldSetFlags()[6] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'filters' field has been set.
-      * @return True if the 'filters' field has been set, false otherwise.
-      */
-    public boolean hasFilters() {
-      return fieldSetFlags()[6];
-    }
-
-
-    /**
-      * Clears the value of the 'filters' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearFilters() {
-      filters = null;
-      fieldSetFlags()[6] = false;
-      return this;
-    }
-
-    /**
-      * Gets the value of the 'morePermissions' field.
-      * @return The value.
-      */
-    public java.util.List<com.fretron.Model.Permission> getMorePermissions() {
-      return morePermissions;
-    }
-
-    /**
-      * Sets the value of the 'morePermissions' field.
-      * @param value The value of 'morePermissions'.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder setMorePermissions(java.util.List<com.fretron.Model.Permission> value) {
-      validate(fields()[7], value);
-      this.morePermissions = value;
-      fieldSetFlags()[7] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'morePermissions' field has been set.
-      * @return True if the 'morePermissions' field has been set, false otherwise.
-      */
-    public boolean hasMorePermissions() {
-      return fieldSetFlags()[7];
-    }
-
-
-    /**
-      * Clears the value of the 'morePermissions' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.DomainPermission.Builder clearMorePermissions() {
-      morePermissions = null;
-      fieldSetFlags()[7] = false;
-      return this;
-    }
-
     @Override
     public DomainPermission build() {
       try {
         DomainPermission record = new DomainPermission();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.entity = fieldSetFlags()[1] ? this.entity : (java.lang.String) defaultValue(fields()[1]);
-        record.canView = fieldSetFlags()[2] ? this.canView : (java.lang.Boolean) defaultValue(fields()[2]);
-        record.canEdit = fieldSetFlags()[3] ? this.canEdit : (java.lang.Boolean) defaultValue(fields()[3]);
-        record.canDelete = fieldSetFlags()[4] ? this.canDelete : (java.lang.Boolean) defaultValue(fields()[4]);
-        record.filteredDataAccess = fieldSetFlags()[5] ? this.filteredDataAccess : (java.lang.Boolean) defaultValue(fields()[5]);
-        record.filters = fieldSetFlags()[6] ? this.filters : (java.lang.String) defaultValue(fields()[6]);
-        record.morePermissions = fieldSetFlags()[7] ? this.morePermissions : (java.util.List<com.fretron.Model.Permission>) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
