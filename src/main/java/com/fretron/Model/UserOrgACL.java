@@ -10,9 +10,10 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1245611337967296715L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"role\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Role\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 4338395380519353796L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"role\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Role\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
+  @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgUuid;
   @Deprecated public java.lang.String userUuid;
   @Deprecated public java.lang.String name;
@@ -31,6 +32,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
 
   /**
    * All-args constructor.
+   * @param uuid The new value for uuid
    * @param orgUuid The new value for orgUuid
    * @param userUuid The new value for userUuid
    * @param name The new value for name
@@ -40,7 +42,8 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
    * @param relationType The new value for relationType
    * @param role The new value for role
    */
-  public UserOrgACL(java.lang.String orgUuid, java.lang.String userUuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String accessLevel, java.lang.String relationType, com.fretron.Model.Role role) {
+  public UserOrgACL(java.lang.String uuid, java.lang.String orgUuid, java.lang.String userUuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String accessLevel, java.lang.String relationType, com.fretron.Model.Role role) {
+    this.uuid = uuid;
     this.orgUuid = orgUuid;
     this.userUuid = userUuid;
     this.name = name;
@@ -55,14 +58,15 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return orgUuid;
-    case 1: return userUuid;
-    case 2: return name;
-    case 3: return email;
-    case 4: return mobileNumber;
-    case 5: return accessLevel;
-    case 6: return relationType;
-    case 7: return role;
+    case 0: return uuid;
+    case 1: return orgUuid;
+    case 2: return userUuid;
+    case 3: return name;
+    case 4: return email;
+    case 5: return mobileNumber;
+    case 6: return accessLevel;
+    case 7: return relationType;
+    case 8: return role;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -71,16 +75,33 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: orgUuid = (java.lang.String)value$; break;
-    case 1: userUuid = (java.lang.String)value$; break;
-    case 2: name = (java.lang.String)value$; break;
-    case 3: email = (java.lang.String)value$; break;
-    case 4: mobileNumber = (java.lang.String)value$; break;
-    case 5: accessLevel = (java.lang.String)value$; break;
-    case 6: relationType = (java.lang.String)value$; break;
-    case 7: role = (com.fretron.Model.Role)value$; break;
+    case 0: uuid = (java.lang.String)value$; break;
+    case 1: orgUuid = (java.lang.String)value$; break;
+    case 2: userUuid = (java.lang.String)value$; break;
+    case 3: name = (java.lang.String)value$; break;
+    case 4: email = (java.lang.String)value$; break;
+    case 5: mobileNumber = (java.lang.String)value$; break;
+    case 6: accessLevel = (java.lang.String)value$; break;
+    case 7: relationType = (java.lang.String)value$; break;
+    case 8: role = (com.fretron.Model.Role)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
+  }
+
+  /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
   }
 
   /**
@@ -243,6 +264,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<UserOrgACL>
     implements org.apache.avro.data.RecordBuilder<UserOrgACL> {
 
+    private java.lang.String uuid;
     private java.lang.String orgUuid;
     private java.lang.String userUuid;
     private java.lang.String name;
@@ -264,37 +286,41 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
      */
     private Builder(com.fretron.Model.UserOrgACL.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.orgUuid)) {
-        this.orgUuid = data().deepCopy(fields()[0].schema(), other.orgUuid);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.userUuid)) {
-        this.userUuid = data().deepCopy(fields()[1].schema(), other.userUuid);
+      if (isValidValue(fields()[1], other.orgUuid)) {
+        this.orgUuid = data().deepCopy(fields()[1].schema(), other.orgUuid);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.name)) {
-        this.name = data().deepCopy(fields()[2].schema(), other.name);
+      if (isValidValue(fields()[2], other.userUuid)) {
+        this.userUuid = data().deepCopy(fields()[2].schema(), other.userUuid);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.email)) {
-        this.email = data().deepCopy(fields()[3].schema(), other.email);
+      if (isValidValue(fields()[3], other.name)) {
+        this.name = data().deepCopy(fields()[3].schema(), other.name);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.mobileNumber)) {
-        this.mobileNumber = data().deepCopy(fields()[4].schema(), other.mobileNumber);
+      if (isValidValue(fields()[4], other.email)) {
+        this.email = data().deepCopy(fields()[4].schema(), other.email);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.accessLevel)) {
-        this.accessLevel = data().deepCopy(fields()[5].schema(), other.accessLevel);
+      if (isValidValue(fields()[5], other.mobileNumber)) {
+        this.mobileNumber = data().deepCopy(fields()[5].schema(), other.mobileNumber);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.relationType)) {
-        this.relationType = data().deepCopy(fields()[6].schema(), other.relationType);
+      if (isValidValue(fields()[6], other.accessLevel)) {
+        this.accessLevel = data().deepCopy(fields()[6].schema(), other.accessLevel);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.role)) {
-        this.role = data().deepCopy(fields()[7].schema(), other.role);
+      if (isValidValue(fields()[7], other.relationType)) {
+        this.relationType = data().deepCopy(fields()[7].schema(), other.relationType);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.role)) {
+        this.role = data().deepCopy(fields()[8].schema(), other.role);
+        fieldSetFlags()[8] = true;
       }
       if (other.hasRoleBuilder()) {
         this.roleBuilder = com.fretron.Model.Role.newBuilder(other.getRoleBuilder());
@@ -307,39 +333,82 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
      */
     private Builder(com.fretron.Model.UserOrgACL other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.orgUuid)) {
-        this.orgUuid = data().deepCopy(fields()[0].schema(), other.orgUuid);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.userUuid)) {
-        this.userUuid = data().deepCopy(fields()[1].schema(), other.userUuid);
+      if (isValidValue(fields()[1], other.orgUuid)) {
+        this.orgUuid = data().deepCopy(fields()[1].schema(), other.orgUuid);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.name)) {
-        this.name = data().deepCopy(fields()[2].schema(), other.name);
+      if (isValidValue(fields()[2], other.userUuid)) {
+        this.userUuid = data().deepCopy(fields()[2].schema(), other.userUuid);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.email)) {
-        this.email = data().deepCopy(fields()[3].schema(), other.email);
+      if (isValidValue(fields()[3], other.name)) {
+        this.name = data().deepCopy(fields()[3].schema(), other.name);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.mobileNumber)) {
-        this.mobileNumber = data().deepCopy(fields()[4].schema(), other.mobileNumber);
+      if (isValidValue(fields()[4], other.email)) {
+        this.email = data().deepCopy(fields()[4].schema(), other.email);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.accessLevel)) {
-        this.accessLevel = data().deepCopy(fields()[5].schema(), other.accessLevel);
+      if (isValidValue(fields()[5], other.mobileNumber)) {
+        this.mobileNumber = data().deepCopy(fields()[5].schema(), other.mobileNumber);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.relationType)) {
-        this.relationType = data().deepCopy(fields()[6].schema(), other.relationType);
+      if (isValidValue(fields()[6], other.accessLevel)) {
+        this.accessLevel = data().deepCopy(fields()[6].schema(), other.accessLevel);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.role)) {
-        this.role = data().deepCopy(fields()[7].schema(), other.role);
+      if (isValidValue(fields()[7], other.relationType)) {
+        this.relationType = data().deepCopy(fields()[7].schema(), other.relationType);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.role)) {
+        this.role = data().deepCopy(fields()[8].schema(), other.role);
+        fieldSetFlags()[8] = true;
+      }
       this.roleBuilder = null;
+    }
+
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder setUuid(java.lang.String value) {
+      validate(fields()[0], value);
+      this.uuid = value;
+      fieldSetFlags()[0] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[0];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[0] = false;
+      return this;
     }
 
     /**
@@ -356,9 +425,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setOrgUuid(java.lang.String value) {
-      validate(fields()[0], value);
+      validate(fields()[1], value);
       this.orgUuid = value;
-      fieldSetFlags()[0] = true;
+      fieldSetFlags()[1] = true;
       return this;
     }
 
@@ -367,7 +436,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'orgUuid' field has been set, false otherwise.
       */
     public boolean hasOrgUuid() {
-      return fieldSetFlags()[0];
+      return fieldSetFlags()[1];
     }
 
 
@@ -377,7 +446,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearOrgUuid() {
       orgUuid = null;
-      fieldSetFlags()[0] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -395,9 +464,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setUserUuid(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.userUuid = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -406,7 +475,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'userUuid' field has been set, false otherwise.
       */
     public boolean hasUserUuid() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -416,7 +485,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearUserUuid() {
       userUuid = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -434,9 +503,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setName(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.name = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -445,7 +514,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'name' field has been set, false otherwise.
       */
     public boolean hasName() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -455,7 +524,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearName() {
       name = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -473,9 +542,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setEmail(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.email = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -484,7 +553,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'email' field has been set, false otherwise.
       */
     public boolean hasEmail() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -494,7 +563,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearEmail() {
       email = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -512,9 +581,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setMobileNumber(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.mobileNumber = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -523,7 +592,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'mobileNumber' field has been set, false otherwise.
       */
     public boolean hasMobileNumber() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -533,7 +602,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearMobileNumber() {
       mobileNumber = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -551,9 +620,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setAccessLevel(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.accessLevel = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -562,7 +631,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'accessLevel' field has been set, false otherwise.
       */
     public boolean hasAccessLevel() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -572,7 +641,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearAccessLevel() {
       accessLevel = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -590,9 +659,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setRelationType(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.relationType = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -601,7 +670,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'relationType' field has been set, false otherwise.
       */
     public boolean hasRelationType() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -611,7 +680,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       */
     public com.fretron.Model.UserOrgACL.Builder clearRelationType() {
       relationType = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -629,10 +698,10 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return This builder.
       */
     public com.fretron.Model.UserOrgACL.Builder setRole(com.fretron.Model.Role value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.roleBuilder = null;
       this.role = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -641,7 +710,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       * @return True if the 'role' field has been set, false otherwise.
       */
     public boolean hasRole() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
     /**
@@ -685,7 +754,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     public com.fretron.Model.UserOrgACL.Builder clearRole() {
       role = null;
       roleBuilder = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -693,17 +762,18 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     public UserOrgACL build() {
       try {
         UserOrgACL record = new UserOrgACL();
-        record.orgUuid = fieldSetFlags()[0] ? this.orgUuid : (java.lang.String) defaultValue(fields()[0]);
-        record.userUuid = fieldSetFlags()[1] ? this.userUuid : (java.lang.String) defaultValue(fields()[1]);
-        record.name = fieldSetFlags()[2] ? this.name : (java.lang.String) defaultValue(fields()[2]);
-        record.email = fieldSetFlags()[3] ? this.email : (java.lang.String) defaultValue(fields()[3]);
-        record.mobileNumber = fieldSetFlags()[4] ? this.mobileNumber : (java.lang.String) defaultValue(fields()[4]);
-        record.accessLevel = fieldSetFlags()[5] ? this.accessLevel : (java.lang.String) defaultValue(fields()[5]);
-        record.relationType = fieldSetFlags()[6] ? this.relationType : (java.lang.String) defaultValue(fields()[6]);
+        record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
+        record.orgUuid = fieldSetFlags()[1] ? this.orgUuid : (java.lang.String) defaultValue(fields()[1]);
+        record.userUuid = fieldSetFlags()[2] ? this.userUuid : (java.lang.String) defaultValue(fields()[2]);
+        record.name = fieldSetFlags()[3] ? this.name : (java.lang.String) defaultValue(fields()[3]);
+        record.email = fieldSetFlags()[4] ? this.email : (java.lang.String) defaultValue(fields()[4]);
+        record.mobileNumber = fieldSetFlags()[5] ? this.mobileNumber : (java.lang.String) defaultValue(fields()[5]);
+        record.accessLevel = fieldSetFlags()[6] ? this.accessLevel : (java.lang.String) defaultValue(fields()[6]);
+        record.relationType = fieldSetFlags()[7] ? this.relationType : (java.lang.String) defaultValue(fields()[7]);
         if (roleBuilder != null) {
           record.role = this.roleBuilder.build();
         } else {
-          record.role = fieldSetFlags()[7] ? this.role : (com.fretron.Model.Role) defaultValue(fields()[7]);
+          record.role = fieldSetFlags()[8] ? this.role : (com.fretron.Model.Role) defaultValue(fields()[8]);
         }
         return record;
       } catch (Exception e) {

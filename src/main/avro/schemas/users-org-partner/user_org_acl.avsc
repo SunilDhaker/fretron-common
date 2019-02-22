@@ -4,6 +4,7 @@
 "type" : "record",
 "name" : "UserOrgACL",
 "fields" :[
+{"name" : "uuid", "type" : ["null","string"], "default" : null},
 {"name" : "orgUuid", "type" : ["null","string"], "default" : null},
 {"name" : "userUuid", "type" : ["null","string"], "default" : null},
  {
