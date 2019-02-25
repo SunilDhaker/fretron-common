@@ -246,6 +246,14 @@
               "string"
             ],
             "default": null
-          }
+          },
+          {
+                      "name": "externalShipmentId",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    }
     ]
   }
