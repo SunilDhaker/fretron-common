@@ -240,7 +240,23 @@
           "name": "isDisconnected",
           "type": "boolean",
           "default": false
-        }
+        },
+        {
+              "name": "routeId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+         },
+         {
+            "name": "routeDeviationMinimumDistanceConstraint",
+            "type": [
+                         "null",
+                         "double"
+                      ],
+            "default": null
+         }
   ]
 }
 
