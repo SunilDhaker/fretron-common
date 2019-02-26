@@ -1,0 +1,108 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CustomFields",
+    "fields": [
+      {
+        "name": "fieldType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fieldKey",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "value",
+        "type": [
+           "null",
+           "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "multiple",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "isRemark",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "remark",
+        "type": [
+           "null",
+           "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "description",
+        "type": [
+            "null",
+            "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "options",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "indexedValue",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "valueType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "input",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "unit",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+    ]
+  }

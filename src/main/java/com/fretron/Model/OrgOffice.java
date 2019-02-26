@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -899318790461114652L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -9089224900755231847L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrgOffice\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String _id;
   @Deprecated public java.util.List<java.lang.Double> geoLocation;
@@ -22,6 +22,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String updatedBy;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String externalId;
+  @Deprecated public java.lang.String branchName;
+  @Deprecated public java.lang.String regionName;
+  @Deprecated public java.lang.String zoneName;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +44,11 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
    * @param updatedBy The new value for updatedBy
    * @param name The new value for name
    * @param externalId The new value for externalId
+   * @param branchName The new value for branchName
+   * @param regionName The new value for regionName
+   * @param zoneName The new value for zoneName
    */
-  public OrgOffice(java.lang.String _id, java.util.List<java.lang.Double> geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy, java.lang.String name, java.lang.String externalId) {
+  public OrgOffice(java.lang.String _id, java.util.List<java.lang.Double> geoLocation, java.util.List<java.lang.String> type, java.util.List<com.fretron.Model.Contact> contacts, java.lang.String orgId, java.lang.String address, java.lang.String updatedBy, java.lang.String name, java.lang.String externalId, java.lang.String branchName, java.lang.String regionName, java.lang.String zoneName) {
     this._id = _id;
     this.geoLocation = geoLocation;
     this.type = type;
@@ -52,6 +58,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     this.updatedBy = updatedBy;
     this.name = name;
     this.externalId = externalId;
+    this.branchName = branchName;
+    this.regionName = regionName;
+    this.zoneName = zoneName;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +76,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     case 6: return updatedBy;
     case 7: return name;
     case 8: return externalId;
+    case 9: return branchName;
+    case 10: return regionName;
+    case 11: return zoneName;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +96,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     case 6: updatedBy = (java.lang.String)value$; break;
     case 7: name = (java.lang.String)value$; break;
     case 8: externalId = (java.lang.String)value$; break;
+    case 9: branchName = (java.lang.String)value$; break;
+    case 10: regionName = (java.lang.String)value$; break;
+    case 11: zoneName = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +248,54 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'branchName' field.
+   * @return The value of the 'branchName' field.
+   */
+  public java.lang.String getBranchName() {
+    return branchName;
+  }
+
+  /**
+   * Sets the value of the 'branchName' field.
+   * @param value the value to set.
+   */
+  public void setBranchName(java.lang.String value) {
+    this.branchName = value;
+  }
+
+  /**
+   * Gets the value of the 'regionName' field.
+   * @return The value of the 'regionName' field.
+   */
+  public java.lang.String getRegionName() {
+    return regionName;
+  }
+
+  /**
+   * Sets the value of the 'regionName' field.
+   * @param value the value to set.
+   */
+  public void setRegionName(java.lang.String value) {
+    this.regionName = value;
+  }
+
+  /**
+   * Gets the value of the 'zoneName' field.
+   * @return The value of the 'zoneName' field.
+   */
+  public java.lang.String getZoneName() {
+    return zoneName;
+  }
+
+  /**
+   * Sets the value of the 'zoneName' field.
+   * @param value the value to set.
+   */
+  public void setZoneName(java.lang.String value) {
+    this.zoneName = value;
+  }
+
+  /**
    * Creates a new OrgOffice RecordBuilder.
    * @return A new OrgOffice RecordBuilder
    */
@@ -273,6 +336,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String updatedBy;
     private java.lang.String name;
     private java.lang.String externalId;
+    private java.lang.String branchName;
+    private java.lang.String regionName;
+    private java.lang.String zoneName;
 
     /** Creates a new Builder */
     private Builder() {
@@ -321,6 +387,18 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
         this.externalId = data().deepCopy(fields()[8].schema(), other.externalId);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.branchName)) {
+        this.branchName = data().deepCopy(fields()[9].schema(), other.branchName);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.regionName)) {
+        this.regionName = data().deepCopy(fields()[10].schema(), other.regionName);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.zoneName)) {
+        this.zoneName = data().deepCopy(fields()[11].schema(), other.zoneName);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -364,6 +442,18 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[8], other.externalId)) {
         this.externalId = data().deepCopy(fields()[8].schema(), other.externalId);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.branchName)) {
+        this.branchName = data().deepCopy(fields()[9].schema(), other.branchName);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.regionName)) {
+        this.regionName = data().deepCopy(fields()[10].schema(), other.regionName);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.zoneName)) {
+        this.zoneName = data().deepCopy(fields()[11].schema(), other.zoneName);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -718,6 +808,123 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'branchName' field.
+      * @return The value.
+      */
+    public java.lang.String getBranchName() {
+      return branchName;
+    }
+
+    /**
+      * Sets the value of the 'branchName' field.
+      * @param value The value of 'branchName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder setBranchName(java.lang.String value) {
+      validate(fields()[9], value);
+      this.branchName = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'branchName' field has been set.
+      * @return True if the 'branchName' field has been set, false otherwise.
+      */
+    public boolean hasBranchName() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'branchName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder clearBranchName() {
+      branchName = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'regionName' field.
+      * @return The value.
+      */
+    public java.lang.String getRegionName() {
+      return regionName;
+    }
+
+    /**
+      * Sets the value of the 'regionName' field.
+      * @param value The value of 'regionName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder setRegionName(java.lang.String value) {
+      validate(fields()[10], value);
+      this.regionName = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'regionName' field has been set.
+      * @return True if the 'regionName' field has been set, false otherwise.
+      */
+    public boolean hasRegionName() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'regionName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder clearRegionName() {
+      regionName = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'zoneName' field.
+      * @return The value.
+      */
+    public java.lang.String getZoneName() {
+      return zoneName;
+    }
+
+    /**
+      * Sets the value of the 'zoneName' field.
+      * @param value The value of 'zoneName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder setZoneName(java.lang.String value) {
+      validate(fields()[11], value);
+      this.zoneName = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'zoneName' field has been set.
+      * @return True if the 'zoneName' field has been set, false otherwise.
+      */
+    public boolean hasZoneName() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'zoneName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrgOffice.Builder clearZoneName() {
+      zoneName = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public OrgOffice build() {
       try {
@@ -731,6 +938,9 @@ public class OrgOffice extends org.apache.avro.specific.SpecificRecordBase imple
         record.updatedBy = fieldSetFlags()[6] ? this.updatedBy : (java.lang.String) defaultValue(fields()[6]);
         record.name = fieldSetFlags()[7] ? this.name : (java.lang.String) defaultValue(fields()[7]);
         record.externalId = fieldSetFlags()[8] ? this.externalId : (java.lang.String) defaultValue(fields()[8]);
+        record.branchName = fieldSetFlags()[9] ? this.branchName : (java.lang.String) defaultValue(fields()[9]);
+        record.regionName = fieldSetFlags()[10] ? this.regionName : (java.lang.String) defaultValue(fields()[10]);
+        record.zoneName = fieldSetFlags()[11] ? this.zoneName : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

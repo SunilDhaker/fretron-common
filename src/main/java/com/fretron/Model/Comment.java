@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Comment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2146690748412927784L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -6823100463971005984L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String comment;
   @Deprecated public java.lang.String by;
   @Deprecated public java.util.List<java.lang.String> likedBy;
   @Deprecated public java.lang.Long time;
+  @Deprecated public java.lang.String source;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param by The new value for by
    * @param likedBy The new value for likedBy
    * @param time The new value for time
+   * @param source The new value for source
    */
-  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time) {
+  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time, java.lang.String source) {
     this.uuid = uuid;
     this.comment = comment;
     this.by = by;
     this.likedBy = likedBy;
     this.time = time;
+    this.source = source;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 2: return by;
     case 3: return likedBy;
     case 4: return time;
+    case 5: return source;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 2: by = (java.lang.String)value$; break;
     case 3: likedBy = (java.util.List<java.lang.String>)value$; break;
     case 4: time = (java.lang.Long)value$; break;
+    case 5: source = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'source' field.
+   * @return The value of the 'source' field.
+   */
+  public java.lang.String getSource() {
+    return source;
+  }
+
+  /**
+   * Sets the value of the 'source' field.
+   * @param value the value to set.
+   */
+  public void setSource(java.lang.String value) {
+    this.source = value;
+  }
+
+  /**
    * Creates a new Comment RecordBuilder.
    * @return A new Comment RecordBuilder
    */
@@ -185,6 +206,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String by;
     private java.util.List<java.lang.String> likedBy;
     private java.lang.Long time;
+    private java.lang.String source;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +239,10 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         this.time = data().deepCopy(fields()[4].schema(), other.time);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.source)) {
+        this.source = data().deepCopy(fields()[5].schema(), other.source);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -244,6 +270,10 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[4], other.time)) {
         this.time = data().deepCopy(fields()[4].schema(), other.time);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.source)) {
+        this.source = data().deepCopy(fields()[5].schema(), other.source);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -442,6 +472,45 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'source' field.
+      * @return The value.
+      */
+    public java.lang.String getSource() {
+      return source;
+    }
+
+    /**
+      * Sets the value of the 'source' field.
+      * @param value The value of 'source'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder setSource(java.lang.String value) {
+      validate(fields()[5], value);
+      this.source = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'source' field has been set.
+      * @return True if the 'source' field has been set, false otherwise.
+      */
+    public boolean hasSource() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'source' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder clearSource() {
+      source = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public Comment build() {
       try {
@@ -451,6 +520,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         record.by = fieldSetFlags()[2] ? this.by : (java.lang.String) defaultValue(fields()[2]);
         record.likedBy = fieldSetFlags()[3] ? this.likedBy : (java.util.List<java.lang.String>) defaultValue(fields()[3]);
         record.time = fieldSetFlags()[4] ? this.time : (java.lang.Long) defaultValue(fields()[4]);
+        record.source = fieldSetFlags()[5] ? this.source : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -556,6 +556,7 @@ public class Constants {
     public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
 
 
+
     //=================================SCHEDULER SERVICES===========================
 
     public static final String KEY_SCHEDULED_TASK_TOPIC = "scheduled.task.topic";
@@ -570,6 +571,10 @@ public class Constants {
     public static final String MAINTENANCE_ABOUT_TO_FINISH_NOTIFICATION = "tripPoint.maintenance.about.to.finish.notification";
     public static final String OFF_DUTY_ABOUT_TO_FINISH_NOTIFICATION = "tripPoint.offduty.about.to.finish.notification";
     public static final String ETA_PASSED_NOTIFICATION = "tripPoint.eta.passed.notification";
+    //=================================AUTHORIZATION MANAGER===========================
+
+    public static final String KEY_ROLE_TOPIC = "user.role.topic";
+    public static final String AUTHORIZATION_MANAGER_SERVICE_URL = "authorization.manager.service.url";
 
     private Constants() {
 

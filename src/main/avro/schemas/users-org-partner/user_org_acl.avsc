@@ -4,9 +4,30 @@
 "type" : "record",
 "name" : "UserOrgACL",
 "fields" :[
+{"name" : "uuid", "type" : ["null","string"], "default" : null},
 {"name" : "orgUuid", "type" : ["null","string"], "default" : null},
 {"name" : "userUuid", "type" : ["null","string"], "default" : null},
+ {
+        "name": "name",
+         "type": ["null" , "string"],
+         "default" : null
+   },
+   {
+         "name": "email",
+          "type": ["null" , "string"],
+           "default" : null
+   },
+   {
+         "name": "mobileNumber",
+          "type": ["null" , "string"],
+          "default" : null
+   },
 {"name" : "accessLevel", "type" : ["null","string"], "default" : null},
-{"name" : "relationType", "type" : ["null","string"], "default" : null}
+{"name" : "relationType", "type" : ["null","string"], "default" : null},
+  {
+           "name": "role",
+           "type":[ "null","com.fretron.Model.Role"],
+            "default":null
+    }
 ]
 }

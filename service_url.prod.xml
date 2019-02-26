@@ -113,4 +113,8 @@
 
     <!-- =========Issue-Manager========== -->
     <entry key="issue.manager.service.url">http://issue-manager.streams:2130</entry>
+
+    <!-- =========Authorization-Manager========== -->
+    <entry key="authorization.manager.service.url">http://authorization-manager.streams:5056</entry>
+
 </properties>
