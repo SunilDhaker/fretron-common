@@ -248,6 +248,14 @@
                 "string"
               ],
               "default": null
+         },
+         {
+            "name": "routeDeviationMinimumDistanceConstraint",
+            "type": [
+                         "null",
+                         "double"
+                      ],
+            "default": null
          }
   ]
 }
