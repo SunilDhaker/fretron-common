@@ -1,0 +1,21 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Permission",
+  "fields": [
+   {
+     "name": "name",
+     "type": ["null" , "string"],
+      "default" : null
+   },
+   {
+     "name": "isEnable",
+      "type": [
+                "null",
+                "boolean"
+              ],
+      "default": null
+    }
+
+   ]
+  }
