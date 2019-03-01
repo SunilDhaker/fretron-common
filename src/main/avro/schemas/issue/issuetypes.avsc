@@ -1,0 +1,41 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "IssueType",
+  "fields": [
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+    {
+      "name": "issueType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+          "name": "isSystemIssue",
+          "type": ["null","boolean"],
+          "default": null
+     },
+         {
+               "name": "isHidden",
+               "type": ["null","boolean"],
+               "default": null
+         }
+  ]
+}
