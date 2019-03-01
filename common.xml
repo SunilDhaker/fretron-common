@@ -190,6 +190,10 @@
 
     <!-- ================-scheduler-services =============== -->
     <entry key="scheduled.task.topic">scheduledTaskTopic</entry>
+    <!-- ================-authorization-manager-services =============== -->
+
+    <entry key="user.role.topic">roleTopic</entry>
+
 
 
 </properties>

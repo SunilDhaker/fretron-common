@@ -73,12 +73,36 @@
       "default": null
     },
     {
-          "name": "externalId",
-                      "type": [
-                        "null",
-                        "string"
+      "name": "externalId",
+       "type": [
+                 "null",
+                  "string"
                       ],
-               "default": null
-     }
+         "default": null
+     },
+     {
+       "name": "branchName",
+        "type": [
+                      "null",
+                       "string"
+                           ],
+         "default": null
+      },
+      {
+        "name": "regionName",
+         "type": [
+                       "null",
+                        "string"
+                            ],
+         "default": null
+       },
+       {
+         "name": "zoneName",
+          "type": [
+                              "null",
+                               "string"
+                                   ],
+         "default": null
+       }
   ]
 }
