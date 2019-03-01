@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TripPoint extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4114802805211537L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"hub\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"expectedActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"currentGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LiteVehicleGpsState\",\"fields\":[{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":\"LitePosition\"},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"mean\",\"type\":[\"null\",\"LitePosition\"],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"averageSpeeds\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"routeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 9041766345926146201L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TripPoint\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purpose\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sequenceId\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"place\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eta\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"remainingDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"plannedArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"plannedDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualArrival\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualDeparture\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"assosiatedShipmentsId\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"outOfTrackSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isOutOfTrack\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isAutoCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"coveredDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"purposedDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forShipmentStages\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"hub\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"expectedActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"actualActivityEndTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"currentGpsState\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LiteVehicleGpsState\",\"fields\":[{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":\"LitePosition\"},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"mean\",\"type\":[\"null\",\"LitePosition\"],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"averageSpeeds\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"routeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"routeDeviationMinimumDistanceConstraint\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String vehicleId;
@@ -43,6 +43,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public com.fretron.Model.LiteVehicleGpsState currentGpsState;
   @Deprecated public boolean isDisconnected;
   @Deprecated public java.lang.String routeId;
+  @Deprecated public java.lang.Double routeDeviationMinimumDistanceConstraint;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -83,8 +84,9 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
    * @param currentGpsState The new value for currentGpsState
    * @param isDisconnected The new value for isDisconnected
    * @param routeId The new value for routeId
+   * @param routeDeviationMinimumDistanceConstraint The new value for routeDeviationMinimumDistanceConstraint
    */
-  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String imei, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance, java.util.List<java.lang.String> forShipmentStages, com.fretron.Model.LitePosition currentLocation, com.fretron.Model.Place hub, java.lang.Long expectedActivityStartTime, java.lang.Long actualActivityStartTime, java.lang.Long actualActivityEndTime, com.fretron.Model.Updates updates, com.fretron.Model.LiteVehicleGpsState currentGpsState, java.lang.Boolean isDisconnected, java.lang.String routeId) {
+  public TripPoint(java.lang.String uuid, java.lang.String vehicleId, java.lang.String imei, java.lang.String purpose, java.lang.Double sequenceId, com.fretron.Model.Place place, java.lang.String status, java.lang.Long eta, java.lang.Double remainingDistance, java.lang.Long plannedArrival, java.lang.Long plannedDeparture, java.lang.Long actualArrival, java.lang.Long actualDeparture, java.util.List<java.lang.String> assosiatedShipmentsId, java.lang.Long creationTime, java.lang.Long outOfTrackSince, java.lang.Boolean isOutOfTrack, java.lang.Boolean isAutoCompleted, java.lang.Double coveredDistance, java.lang.Double purposedDistance, java.util.List<java.lang.String> forShipmentStages, com.fretron.Model.LitePosition currentLocation, com.fretron.Model.Place hub, java.lang.Long expectedActivityStartTime, java.lang.Long actualActivityStartTime, java.lang.Long actualActivityEndTime, com.fretron.Model.Updates updates, com.fretron.Model.LiteVehicleGpsState currentGpsState, java.lang.Boolean isDisconnected, java.lang.String routeId, java.lang.Double routeDeviationMinimumDistanceConstraint) {
     this.uuid = uuid;
     this.vehicleId = vehicleId;
     this.imei = imei;
@@ -115,6 +117,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     this.currentGpsState = currentGpsState;
     this.isDisconnected = isDisconnected;
     this.routeId = routeId;
+    this.routeDeviationMinimumDistanceConstraint = routeDeviationMinimumDistanceConstraint;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -151,6 +154,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 27: return currentGpsState;
     case 28: return isDisconnected;
     case 29: return routeId;
+    case 30: return routeDeviationMinimumDistanceConstraint;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -189,6 +193,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     case 27: currentGpsState = (com.fretron.Model.LiteVehicleGpsState)value$; break;
     case 28: isDisconnected = (java.lang.Boolean)value$; break;
     case 29: routeId = (java.lang.String)value$; break;
+    case 30: routeDeviationMinimumDistanceConstraint = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -674,6 +679,22 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'routeDeviationMinimumDistanceConstraint' field.
+   * @return The value of the 'routeDeviationMinimumDistanceConstraint' field.
+   */
+  public java.lang.Double getRouteDeviationMinimumDistanceConstraint() {
+    return routeDeviationMinimumDistanceConstraint;
+  }
+
+  /**
+   * Sets the value of the 'routeDeviationMinimumDistanceConstraint' field.
+   * @param value the value to set.
+   */
+  public void setRouteDeviationMinimumDistanceConstraint(java.lang.Double value) {
+    this.routeDeviationMinimumDistanceConstraint = value;
+  }
+
+  /**
    * Creates a new TripPoint RecordBuilder.
    * @return A new TripPoint RecordBuilder
    */
@@ -740,6 +761,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
     private com.fretron.Model.LiteVehicleGpsState.Builder currentGpsStateBuilder;
     private boolean isDisconnected;
     private java.lang.String routeId;
+    private java.lang.Double routeDeviationMinimumDistanceConstraint;
 
     /** Creates a new Builder */
     private Builder() {
@@ -887,6 +909,10 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         this.routeId = data().deepCopy(fields()[29].schema(), other.routeId);
         fieldSetFlags()[29] = true;
       }
+      if (isValidValue(fields()[30], other.routeDeviationMinimumDistanceConstraint)) {
+        this.routeDeviationMinimumDistanceConstraint = data().deepCopy(fields()[30].schema(), other.routeDeviationMinimumDistanceConstraint);
+        fieldSetFlags()[30] = true;
+      }
     }
 
     /**
@@ -1019,6 +1045,10 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[29], other.routeId)) {
         this.routeId = data().deepCopy(fields()[29].schema(), other.routeId);
         fieldSetFlags()[29] = true;
+      }
+      if (isValidValue(fields()[30], other.routeDeviationMinimumDistanceConstraint)) {
+        this.routeDeviationMinimumDistanceConstraint = data().deepCopy(fields()[30].schema(), other.routeDeviationMinimumDistanceConstraint);
+        fieldSetFlags()[30] = true;
       }
     }
 
@@ -2364,6 +2394,45 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'routeDeviationMinimumDistanceConstraint' field.
+      * @return The value.
+      */
+    public java.lang.Double getRouteDeviationMinimumDistanceConstraint() {
+      return routeDeviationMinimumDistanceConstraint;
+    }
+
+    /**
+      * Sets the value of the 'routeDeviationMinimumDistanceConstraint' field.
+      * @param value The value of 'routeDeviationMinimumDistanceConstraint'.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder setRouteDeviationMinimumDistanceConstraint(java.lang.Double value) {
+      validate(fields()[30], value);
+      this.routeDeviationMinimumDistanceConstraint = value;
+      fieldSetFlags()[30] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'routeDeviationMinimumDistanceConstraint' field has been set.
+      * @return True if the 'routeDeviationMinimumDistanceConstraint' field has been set, false otherwise.
+      */
+    public boolean hasRouteDeviationMinimumDistanceConstraint() {
+      return fieldSetFlags()[30];
+    }
+
+
+    /**
+      * Clears the value of the 'routeDeviationMinimumDistanceConstraint' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.TripPoint.Builder clearRouteDeviationMinimumDistanceConstraint() {
+      routeDeviationMinimumDistanceConstraint = null;
+      fieldSetFlags()[30] = false;
+      return this;
+    }
+
     @Override
     public TripPoint build() {
       try {
@@ -2418,6 +2487,7 @@ public class TripPoint extends org.apache.avro.specific.SpecificRecordBase imple
         }
         record.isDisconnected = fieldSetFlags()[28] ? this.isDisconnected : (java.lang.Boolean) defaultValue(fields()[28]);
         record.routeId = fieldSetFlags()[29] ? this.routeId : (java.lang.String) defaultValue(fields()[29]);
+        record.routeDeviationMinimumDistanceConstraint = fieldSetFlags()[30] ? this.routeDeviationMinimumDistanceConstraint : (java.lang.Double) defaultValue(fields()[30]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
