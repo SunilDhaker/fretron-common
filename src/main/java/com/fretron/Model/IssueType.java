@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3397864924563978799L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -8111767633706143224L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.Boolean isSystemIssue;
   @Deprecated public java.lang.Boolean isHidden;
+  @Deprecated public java.util.List<java.lang.String> relatedTo;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param orgId The new value for orgId
    * @param isSystemIssue The new value for isSystemIssue
    * @param isHidden The new value for isHidden
+   * @param relatedTo The new value for relatedTo
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
     this.isSystemIssue = isSystemIssue;
     this.isHidden = isHidden;
+    this.relatedTo = relatedTo;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 2: return orgId;
     case 3: return isSystemIssue;
     case 4: return isHidden;
+    case 5: return relatedTo;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 2: orgId = (java.lang.String)value$; break;
     case 3: isSystemIssue = (java.lang.Boolean)value$; break;
     case 4: isHidden = (java.lang.Boolean)value$; break;
+    case 5: relatedTo = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'relatedTo' field.
+   * @return The value of the 'relatedTo' field.
+   */
+  public java.util.List<java.lang.String> getRelatedTo() {
+    return relatedTo;
+  }
+
+  /**
+   * Sets the value of the 'relatedTo' field.
+   * @param value the value to set.
+   */
+  public void setRelatedTo(java.util.List<java.lang.String> value) {
+    this.relatedTo = value;
+  }
+
+  /**
    * Creates a new IssueType RecordBuilder.
    * @return A new IssueType RecordBuilder
    */
@@ -185,6 +206,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String orgId;
     private java.lang.Boolean isSystemIssue;
     private java.lang.Boolean isHidden;
+    private java.util.List<java.lang.String> relatedTo;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +239,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.isHidden = data().deepCopy(fields()[4].schema(), other.isHidden);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.relatedTo)) {
+        this.relatedTo = data().deepCopy(fields()[5].schema(), other.relatedTo);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -244,6 +270,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[4], other.isHidden)) {
         this.isHidden = data().deepCopy(fields()[4].schema(), other.isHidden);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.relatedTo)) {
+        this.relatedTo = data().deepCopy(fields()[5].schema(), other.relatedTo);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -442,6 +472,45 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'relatedTo' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getRelatedTo() {
+      return relatedTo;
+    }
+
+    /**
+      * Sets the value of the 'relatedTo' field.
+      * @param value The value of 'relatedTo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setRelatedTo(java.util.List<java.lang.String> value) {
+      validate(fields()[5], value);
+      this.relatedTo = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'relatedTo' field has been set.
+      * @return True if the 'relatedTo' field has been set, false otherwise.
+      */
+    public boolean hasRelatedTo() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'relatedTo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearRelatedTo() {
+      relatedTo = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public IssueType build() {
       try {
@@ -451,6 +520,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);
         record.isSystemIssue = fieldSetFlags()[3] ? this.isSystemIssue : (java.lang.Boolean) defaultValue(fields()[3]);
         record.isHidden = fieldSetFlags()[4] ? this.isHidden : (java.lang.Boolean) defaultValue(fields()[4]);
+        record.relatedTo = fieldSetFlags()[5] ? this.relatedTo : (java.util.List<java.lang.String>) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

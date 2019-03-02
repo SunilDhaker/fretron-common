@@ -74,6 +74,14 @@
         "com.fretron.Model.BuisnessPartner"
       ],
       "default": null
-    }
+    },
+        {
+          "name": "broker",
+          "type": [
+            "null",
+            "com.fretron.Model.BuisnessPartner"
+          ],
+          "default": null
+        }
   ]
 }

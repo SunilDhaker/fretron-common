@@ -36,6 +36,17 @@
                "name": "isHidden",
                "type": ["null","boolean"],
                "default": null
-         }
+         },
+         {
+                                  "name": "relatedTo",
+                                  "type": [
+                                    "null",
+                                    {
+                                      "type": "array",
+                                      "items": "string"
+                                    }
+                                  ],
+                                  "default": null
+                              }
   ]
 }
