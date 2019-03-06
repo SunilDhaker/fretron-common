@@ -263,13 +263,21 @@
                                         "default": null
                                       },
                                       {
-                                                                              "name": "orgId",
-                                                                              "type": [
-                                                                                "null",
-                                                                                "string"
-                                                                              ],
-                                                                              "default": null
-                                                                            }
+                                      "name": "orgId",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    },
+                                      {
+                                          "name": "emailThreadId",
+                                          "type": [
+                                            "null",
+                                            "string"
+                                          ],
+                                          "default": null
+                                        }
 
     ]
   }
