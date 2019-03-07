@@ -265,6 +265,14 @@
                   }
                 ],
                 "default": null
-            }
+            },
+               {
+                 "name": "branch",
+                 "type": [
+                   "null",
+                   "com.fretron.Model.OrgOffice"
+                 ],
+                 "default": null
+               }
     ]
   }
