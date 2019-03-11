@@ -78,9 +78,12 @@
                          "items": "com.fretron.Model.Issue"
                        },
             "default": null
+         },
+         {
+           "name": "driver",
+            "type": ["null" ,"com.fretron.Model.Driver"],
+             "default":null
          }
-
-
     ]
   }
 ]
