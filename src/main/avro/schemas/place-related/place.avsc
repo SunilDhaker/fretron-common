@@ -162,6 +162,24 @@
                                           {"type" : "array", "items":"Place"}
                                       ],
                    "default":null
+              },
+              {
+                  "name": "accessibility",
+                   "type": [
+                                "null",
+                                "string"
+                              ],
+                   "default": null
+               },
+               {
+                     "name": "isOwned",
+                     "type": ["null","boolean"],
+                     "default": null
+               },
+              {
+                    "name": "geoJsonBoundry",
+                    "type": ["null","com.fretron.Model.Geometry"],
+                    "default": null
               }
         ]
 	}

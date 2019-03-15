@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Place extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4093244205104444351L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1797853716246595598L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Place\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String address;
@@ -30,6 +30,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public java.lang.String subDistrict;
   @Deprecated public java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
   @Deprecated public java.util.List<com.fretron.Model.Place> places;
+  @Deprecated public java.lang.String accessibility;
+  @Deprecated public java.lang.Boolean isOwned;
+  @Deprecated public com.fretron.Model.Geometry geoJsonBoundry;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -57,8 +60,11 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
    * @param subDistrict The new value for subDistrict
    * @param boundary The new value for boundary
    * @param places The new value for places
+   * @param accessibility The new value for accessibility
+   * @param isOwned The new value for isOwned
+   * @param geoJsonBoundry The new value for geoJsonBoundry
    */
-  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.util.List<java.lang.Double> centerCoordinates, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String addedBy, java.lang.String placeId, java.lang.String externalId, java.lang.String hubId, java.lang.String state, java.lang.String district, java.lang.String subDistrict, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary, java.util.List<com.fretron.Model.Place> places) {
+  public Place(java.lang.String name, java.lang.String address, java.lang.String category, com.fretron.Model.Location center, java.util.List<java.lang.Double> centerCoordinates, java.lang.Double suggestedRadius, com.fretron.Model.ViewPort viewport, java.lang.String source, java.lang.String addedBy, java.lang.String placeId, java.lang.String externalId, java.lang.String hubId, java.lang.String state, java.lang.String district, java.lang.String subDistrict, java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary, java.util.List<com.fretron.Model.Place> places, java.lang.String accessibility, java.lang.Boolean isOwned, com.fretron.Model.Geometry geoJsonBoundry) {
     this.name = name;
     this.address = address;
     this.category = category;
@@ -76,6 +82,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     this.subDistrict = subDistrict;
     this.boundary = boundary;
     this.places = places;
+    this.accessibility = accessibility;
+    this.isOwned = isOwned;
+    this.geoJsonBoundry = geoJsonBoundry;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -99,6 +108,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 14: return subDistrict;
     case 15: return boundary;
     case 16: return places;
+    case 17: return accessibility;
+    case 18: return isOwned;
+    case 19: return geoJsonBoundry;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -124,6 +136,9 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     case 14: subDistrict = (java.lang.String)value$; break;
     case 15: boundary = (java.util.List<java.util.List<java.util.List<java.lang.Double>>>)value$; break;
     case 16: places = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 17: accessibility = (java.lang.String)value$; break;
+    case 18: isOwned = (java.lang.Boolean)value$; break;
+    case 19: geoJsonBoundry = (com.fretron.Model.Geometry)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -401,6 +416,54 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
+   * Gets the value of the 'accessibility' field.
+   * @return The value of the 'accessibility' field.
+   */
+  public java.lang.String getAccessibility() {
+    return accessibility;
+  }
+
+  /**
+   * Sets the value of the 'accessibility' field.
+   * @param value the value to set.
+   */
+  public void setAccessibility(java.lang.String value) {
+    this.accessibility = value;
+  }
+
+  /**
+   * Gets the value of the 'isOwned' field.
+   * @return The value of the 'isOwned' field.
+   */
+  public java.lang.Boolean getIsOwned() {
+    return isOwned;
+  }
+
+  /**
+   * Sets the value of the 'isOwned' field.
+   * @param value the value to set.
+   */
+  public void setIsOwned(java.lang.Boolean value) {
+    this.isOwned = value;
+  }
+
+  /**
+   * Gets the value of the 'geoJsonBoundry' field.
+   * @return The value of the 'geoJsonBoundry' field.
+   */
+  public com.fretron.Model.Geometry getGeoJsonBoundry() {
+    return geoJsonBoundry;
+  }
+
+  /**
+   * Sets the value of the 'geoJsonBoundry' field.
+   * @param value the value to set.
+   */
+  public void setGeoJsonBoundry(com.fretron.Model.Geometry value) {
+    this.geoJsonBoundry = value;
+  }
+
+  /**
    * Creates a new Place RecordBuilder.
    * @return A new Place RecordBuilder
    */
@@ -451,6 +514,10 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
     private java.lang.String subDistrict;
     private java.util.List<java.util.List<java.util.List<java.lang.Double>>> boundary;
     private java.util.List<com.fretron.Model.Place> places;
+    private java.lang.String accessibility;
+    private java.lang.Boolean isOwned;
+    private com.fretron.Model.Geometry geoJsonBoundry;
+    private com.fretron.Model.Geometry.Builder geoJsonBoundryBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -537,6 +604,21 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.places = data().deepCopy(fields()[16].schema(), other.places);
         fieldSetFlags()[16] = true;
       }
+      if (isValidValue(fields()[17], other.accessibility)) {
+        this.accessibility = data().deepCopy(fields()[17].schema(), other.accessibility);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.isOwned)) {
+        this.isOwned = data().deepCopy(fields()[18].schema(), other.isOwned);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.geoJsonBoundry)) {
+        this.geoJsonBoundry = data().deepCopy(fields()[19].schema(), other.geoJsonBoundry);
+        fieldSetFlags()[19] = true;
+      }
+      if (other.hasGeoJsonBoundryBuilder()) {
+        this.geoJsonBoundryBuilder = com.fretron.Model.Geometry.newBuilder(other.getGeoJsonBoundryBuilder());
+      }
     }
 
     /**
@@ -615,6 +697,19 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         this.places = data().deepCopy(fields()[16].schema(), other.places);
         fieldSetFlags()[16] = true;
       }
+      if (isValidValue(fields()[17], other.accessibility)) {
+        this.accessibility = data().deepCopy(fields()[17].schema(), other.accessibility);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.isOwned)) {
+        this.isOwned = data().deepCopy(fields()[18].schema(), other.isOwned);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.geoJsonBoundry)) {
+        this.geoJsonBoundry = data().deepCopy(fields()[19].schema(), other.geoJsonBoundry);
+        fieldSetFlags()[19] = true;
+      }
+      this.geoJsonBoundryBuilder = null;
     }
 
     /**
@@ -1349,6 +1444,158 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
       return this;
     }
 
+    /**
+      * Gets the value of the 'accessibility' field.
+      * @return The value.
+      */
+    public java.lang.String getAccessibility() {
+      return accessibility;
+    }
+
+    /**
+      * Sets the value of the 'accessibility' field.
+      * @param value The value of 'accessibility'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setAccessibility(java.lang.String value) {
+      validate(fields()[17], value);
+      this.accessibility = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'accessibility' field has been set.
+      * @return True if the 'accessibility' field has been set, false otherwise.
+      */
+    public boolean hasAccessibility() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'accessibility' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearAccessibility() {
+      accessibility = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isOwned' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsOwned() {
+      return isOwned;
+    }
+
+    /**
+      * Sets the value of the 'isOwned' field.
+      * @param value The value of 'isOwned'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setIsOwned(java.lang.Boolean value) {
+      validate(fields()[18], value);
+      this.isOwned = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isOwned' field has been set.
+      * @return True if the 'isOwned' field has been set, false otherwise.
+      */
+    public boolean hasIsOwned() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'isOwned' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearIsOwned() {
+      isOwned = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'geoJsonBoundry' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Geometry getGeoJsonBoundry() {
+      return geoJsonBoundry;
+    }
+
+    /**
+      * Sets the value of the 'geoJsonBoundry' field.
+      * @param value The value of 'geoJsonBoundry'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder setGeoJsonBoundry(com.fretron.Model.Geometry value) {
+      validate(fields()[19], value);
+      this.geoJsonBoundryBuilder = null;
+      this.geoJsonBoundry = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'geoJsonBoundry' field has been set.
+      * @return True if the 'geoJsonBoundry' field has been set, false otherwise.
+      */
+    public boolean hasGeoJsonBoundry() {
+      return fieldSetFlags()[19];
+    }
+
+    /**
+     * Gets the Builder instance for the 'geoJsonBoundry' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Geometry.Builder getGeoJsonBoundryBuilder() {
+      if (geoJsonBoundryBuilder == null) {
+        if (hasGeoJsonBoundry()) {
+          setGeoJsonBoundryBuilder(com.fretron.Model.Geometry.newBuilder(geoJsonBoundry));
+        } else {
+          setGeoJsonBoundryBuilder(com.fretron.Model.Geometry.newBuilder());
+        }
+      }
+      return geoJsonBoundryBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'geoJsonBoundry' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Place.Builder setGeoJsonBoundryBuilder(com.fretron.Model.Geometry.Builder value) {
+      clearGeoJsonBoundry();
+      geoJsonBoundryBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'geoJsonBoundry' field has an active Builder instance
+     * @return True if the 'geoJsonBoundry' field has an active Builder instance
+     */
+    public boolean hasGeoJsonBoundryBuilder() {
+      return geoJsonBoundryBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'geoJsonBoundry' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Place.Builder clearGeoJsonBoundry() {
+      geoJsonBoundry = null;
+      geoJsonBoundryBuilder = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
     @Override
     public Place build() {
       try {
@@ -1378,6 +1625,13 @@ public class Place extends org.apache.avro.specific.SpecificRecordBase implement
         record.subDistrict = fieldSetFlags()[14] ? this.subDistrict : (java.lang.String) defaultValue(fields()[14]);
         record.boundary = fieldSetFlags()[15] ? this.boundary : (java.util.List<java.util.List<java.util.List<java.lang.Double>>>) defaultValue(fields()[15]);
         record.places = fieldSetFlags()[16] ? this.places : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[16]);
+        record.accessibility = fieldSetFlags()[17] ? this.accessibility : (java.lang.String) defaultValue(fields()[17]);
+        record.isOwned = fieldSetFlags()[18] ? this.isOwned : (java.lang.Boolean) defaultValue(fields()[18]);
+        if (geoJsonBoundryBuilder != null) {
+          record.geoJsonBoundry = this.geoJsonBoundryBuilder.build();
+        } else {
+          record.geoJsonBoundry = fieldSetFlags()[19] ? this.geoJsonBoundry : (com.fretron.Model.Geometry) defaultValue(fields()[19]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
