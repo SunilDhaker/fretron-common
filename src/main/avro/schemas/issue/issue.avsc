@@ -269,7 +269,35 @@
                                         "string"
                                       ],
                                       "default": null
-                                    }
+                                    },
+                                 {
+                                         "name": "dueAt",
+                                         "type": [
+                                           "null",
+                                           "long"
+                                         ],
+                                         "logicalType": "timestamp-millis",
+                                         "default": null
+                                       },
+                                  {
+                                                                       "name": "issueTypeId",
+                                                                       "type": [
+                                                                         "null",
+                                                                         "string"
+                                                                       ],
+                                                                       "default": null
+                                                                     },
+                                   {
+                                                                                                            "name": "dueDateExtension",
+                                                                                                            "type": [
+                                                                                                              "null",
+                                                                                                              {
+                                                                                                                "type": "array",
+                                                                                                                "items": "com.fretron.Model.IssueExtensionReason"
+                                                                                                              }
+                                                                                                            ],
+                                                                                                            "default": null
+                                                                                                          }
 
     ]
   }
