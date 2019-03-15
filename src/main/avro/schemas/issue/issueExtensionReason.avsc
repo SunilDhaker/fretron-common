@@ -1,0 +1,33 @@
+{
+ "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "IssueExtensionReason",
+  "fields": [
+            {
+              "name": "reason",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+
+             {
+               "name": "extensionTime",
+               "type": [
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+             },
+       {
+               "name": "isCustom",
+               "type": [
+                 "null",
+                 "boolean"
+               ],
+               "default": null
+             }
+             ]
+}
