@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DeviceConnectionState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8088733248796070477L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"sessionStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speedBand\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activeAlarms\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentSpeed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -664370792252807475L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DeviceConnectionState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastBatteryValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"lastLowBattery\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastPowerCut\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"time\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Attributes\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"sessionStartTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"speedBand\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"activeAlarms\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"protocol\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentSpeed\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentLocation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"odometer\",\"type\":[\"null\",\"Odometer\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String lastBatteryValue;
@@ -28,6 +28,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
   @Deprecated public java.lang.String protocol;
   @Deprecated public java.lang.Double currentSpeed;
   @Deprecated public java.lang.String vehicleId;
+  @Deprecated public com.fretron.Model.LitePosition currentLocation;
+  @Deprecated public com.fretron.Model.Odometer odometer;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -53,8 +55,10 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
    * @param protocol The new value for protocol
    * @param currentSpeed The new value for currentSpeed
    * @param vehicleId The new value for vehicleId
+   * @param currentLocation The new value for currentLocation
+   * @param odometer The new value for odometer
    */
-  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time, com.fretron.Model.Attributes attributes, java.lang.Long duration, java.lang.Long sessionStartTime, java.lang.String speedBand, java.util.List<java.lang.String> activeAlarms, java.lang.Double speed, java.util.List<java.lang.String> forwardReasons, java.lang.String protocol, java.lang.Double currentSpeed, java.lang.String vehicleId) {
+  public DeviceConnectionState(java.lang.String imei, java.lang.String lastBatteryValue, java.lang.Long lastLowBattery, java.lang.Long lastPowerCut, java.lang.Long time, com.fretron.Model.Attributes attributes, java.lang.Long duration, java.lang.Long sessionStartTime, java.lang.String speedBand, java.util.List<java.lang.String> activeAlarms, java.lang.Double speed, java.util.List<java.lang.String> forwardReasons, java.lang.String protocol, java.lang.Double currentSpeed, java.lang.String vehicleId, com.fretron.Model.LitePosition currentLocation, com.fretron.Model.Odometer odometer) {
     this.imei = imei;
     this.lastBatteryValue = lastBatteryValue;
     this.lastLowBattery = lastLowBattery;
@@ -70,6 +74,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     this.protocol = protocol;
     this.currentSpeed = currentSpeed;
     this.vehicleId = vehicleId;
+    this.currentLocation = currentLocation;
+    this.odometer = odometer;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -91,6 +97,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 12: return protocol;
     case 13: return currentSpeed;
     case 14: return vehicleId;
+    case 15: return currentLocation;
+    case 16: return odometer;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -114,6 +122,8 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     case 12: protocol = (java.lang.String)value$; break;
     case 13: currentSpeed = (java.lang.Double)value$; break;
     case 14: vehicleId = (java.lang.String)value$; break;
+    case 15: currentLocation = (com.fretron.Model.LitePosition)value$; break;
+    case 16: odometer = (com.fretron.Model.Odometer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -359,6 +369,38 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
   }
 
   /**
+   * Gets the value of the 'currentLocation' field.
+   * @return The value of the 'currentLocation' field.
+   */
+  public com.fretron.Model.LitePosition getCurrentLocation() {
+    return currentLocation;
+  }
+
+  /**
+   * Sets the value of the 'currentLocation' field.
+   * @param value the value to set.
+   */
+  public void setCurrentLocation(com.fretron.Model.LitePosition value) {
+    this.currentLocation = value;
+  }
+
+  /**
+   * Gets the value of the 'odometer' field.
+   * @return The value of the 'odometer' field.
+   */
+  public com.fretron.Model.Odometer getOdometer() {
+    return odometer;
+  }
+
+  /**
+   * Sets the value of the 'odometer' field.
+   * @param value the value to set.
+   */
+  public void setOdometer(com.fretron.Model.Odometer value) {
+    this.odometer = value;
+  }
+
+  /**
    * Creates a new DeviceConnectionState RecordBuilder.
    * @return A new DeviceConnectionState RecordBuilder
    */
@@ -406,6 +448,10 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
     private java.lang.String protocol;
     private java.lang.Double currentSpeed;
     private java.lang.String vehicleId;
+    private com.fretron.Model.LitePosition currentLocation;
+    private com.fretron.Model.LitePosition.Builder currentLocationBuilder;
+    private com.fretron.Model.Odometer odometer;
+    private com.fretron.Model.Odometer.Builder odometerBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -481,6 +527,20 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.currentLocation)) {
+        this.currentLocation = data().deepCopy(fields()[15].schema(), other.currentLocation);
+        fieldSetFlags()[15] = true;
+      }
+      if (other.hasCurrentLocationBuilder()) {
+        this.currentLocationBuilder = com.fretron.Model.LitePosition.newBuilder(other.getCurrentLocationBuilder());
+      }
+      if (isValidValue(fields()[16], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[16].schema(), other.odometer);
+        fieldSetFlags()[16] = true;
+      }
+      if (other.hasOdometerBuilder()) {
+        this.odometerBuilder = com.fretron.Model.Odometer.newBuilder(other.getOdometerBuilder());
+      }
     }
 
     /**
@@ -550,6 +610,16 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         this.vehicleId = data().deepCopy(fields()[14].schema(), other.vehicleId);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.currentLocation)) {
+        this.currentLocation = data().deepCopy(fields()[15].schema(), other.currentLocation);
+        fieldSetFlags()[15] = true;
+      }
+      this.currentLocationBuilder = null;
+      if (isValidValue(fields()[16], other.odometer)) {
+        this.odometer = data().deepCopy(fields()[16].schema(), other.odometer);
+        fieldSetFlags()[16] = true;
+      }
+      this.odometerBuilder = null;
     }
 
     /**
@@ -1169,6 +1239,154 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
       return this;
     }
 
+    /**
+      * Gets the value of the 'currentLocation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.LitePosition getCurrentLocation() {
+      return currentLocation;
+    }
+
+    /**
+      * Sets the value of the 'currentLocation' field.
+      * @param value The value of 'currentLocation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setCurrentLocation(com.fretron.Model.LitePosition value) {
+      validate(fields()[15], value);
+      this.currentLocationBuilder = null;
+      this.currentLocation = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currentLocation' field has been set.
+      * @return True if the 'currentLocation' field has been set, false otherwise.
+      */
+    public boolean hasCurrentLocation() {
+      return fieldSetFlags()[15];
+    }
+
+    /**
+     * Gets the Builder instance for the 'currentLocation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.LitePosition.Builder getCurrentLocationBuilder() {
+      if (currentLocationBuilder == null) {
+        if (hasCurrentLocation()) {
+          setCurrentLocationBuilder(com.fretron.Model.LitePosition.newBuilder(currentLocation));
+        } else {
+          setCurrentLocationBuilder(com.fretron.Model.LitePosition.newBuilder());
+        }
+      }
+      return currentLocationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'currentLocation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.DeviceConnectionState.Builder setCurrentLocationBuilder(com.fretron.Model.LitePosition.Builder value) {
+      clearCurrentLocation();
+      currentLocationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'currentLocation' field has an active Builder instance
+     * @return True if the 'currentLocation' field has an active Builder instance
+     */
+    public boolean hasCurrentLocationBuilder() {
+      return currentLocationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'currentLocation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearCurrentLocation() {
+      currentLocation = null;
+      currentLocationBuilder = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'odometer' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Odometer getOdometer() {
+      return odometer;
+    }
+
+    /**
+      * Sets the value of the 'odometer' field.
+      * @param value The value of 'odometer'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder setOdometer(com.fretron.Model.Odometer value) {
+      validate(fields()[16], value);
+      this.odometerBuilder = null;
+      this.odometer = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'odometer' field has been set.
+      * @return True if the 'odometer' field has been set, false otherwise.
+      */
+    public boolean hasOdometer() {
+      return fieldSetFlags()[16];
+    }
+
+    /**
+     * Gets the Builder instance for the 'odometer' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Odometer.Builder getOdometerBuilder() {
+      if (odometerBuilder == null) {
+        if (hasOdometer()) {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder(odometer));
+        } else {
+          setOdometerBuilder(com.fretron.Model.Odometer.newBuilder());
+        }
+      }
+      return odometerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'odometer' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.DeviceConnectionState.Builder setOdometerBuilder(com.fretron.Model.Odometer.Builder value) {
+      clearOdometer();
+      odometerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'odometer' field has an active Builder instance
+     * @return True if the 'odometer' field has an active Builder instance
+     */
+    public boolean hasOdometerBuilder() {
+      return odometerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'odometer' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DeviceConnectionState.Builder clearOdometer() {
+      odometer = null;
+      odometerBuilder = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
     @Override
     public DeviceConnectionState build() {
       try {
@@ -1192,6 +1410,16 @@ public class DeviceConnectionState extends org.apache.avro.specific.SpecificReco
         record.protocol = fieldSetFlags()[12] ? this.protocol : (java.lang.String) defaultValue(fields()[12]);
         record.currentSpeed = fieldSetFlags()[13] ? this.currentSpeed : (java.lang.Double) defaultValue(fields()[13]);
         record.vehicleId = fieldSetFlags()[14] ? this.vehicleId : (java.lang.String) defaultValue(fields()[14]);
+        if (currentLocationBuilder != null) {
+          record.currentLocation = this.currentLocationBuilder.build();
+        } else {
+          record.currentLocation = fieldSetFlags()[15] ? this.currentLocation : (com.fretron.Model.LitePosition) defaultValue(fields()[15]);
+        }
+        if (odometerBuilder != null) {
+          record.odometer = this.odometerBuilder.build();
+        } else {
+          record.odometer = fieldSetFlags()[16] ? this.odometer : (com.fretron.Model.Odometer) defaultValue(fields()[16]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
