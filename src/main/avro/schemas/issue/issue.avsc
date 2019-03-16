@@ -288,7 +288,7 @@
                                                                        "default": null
                                                                      },
                                    {
-                                                                                                            "name": "dueDateExtension",
+                                                                                                            "name": "dueDateExtensions",
                                                                                                             "type": [
                                                                                                               "null",
                                                                                                               {

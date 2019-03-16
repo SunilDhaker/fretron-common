@@ -28,6 +28,16 @@
                  "boolean"
                ],
                "default": null
-             }
+             },
+              {
+                           "name": "userId",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         }
+
+
              ]
 }
