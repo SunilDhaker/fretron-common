@@ -47,6 +47,28 @@
                                     }
                                   ],
                                   "default": null
-                              }
+                              },
+
+                                                                  {
+                                                                          "name": "extensionReasons",
+                                                                          "type": [
+                                                                            "null",
+                                                                            {
+                                                                              "type": "array",
+                                                                              "items": "com.fretron.Model.IssueExtensionReason"
+                                                                            }
+                                                                          ],
+                                                                          "default": null
+                                                                        },
+                                                                    {
+                                                                                  "name": "standardResolutionTime",
+                                                                                  "type": [
+                                                                                    "null",
+                                                                                    "long"
+                                                                                  ],
+                                                                                  "logicalType": "timestamp-millis",
+                                                                                  "default": null
+                                                                                }
+
   ]
 }

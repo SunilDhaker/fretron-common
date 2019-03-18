@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8111767633706143224L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 2870696160684608933L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
@@ -19,6 +19,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.Boolean isSystemIssue;
   @Deprecated public java.lang.Boolean isHidden;
   @Deprecated public java.util.List<java.lang.String> relatedTo;
+  @Deprecated public java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons;
+  @Deprecated public java.lang.Long standardResolutionTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +37,18 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param isSystemIssue The new value for isSystemIssue
    * @param isHidden The new value for isHidden
    * @param relatedTo The new value for relatedTo
+   * @param extensionReasons The new value for extensionReasons
+   * @param standardResolutionTime The new value for standardResolutionTime
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
     this.isSystemIssue = isSystemIssue;
     this.isHidden = isHidden;
     this.relatedTo = relatedTo;
+    this.extensionReasons = extensionReasons;
+    this.standardResolutionTime = standardResolutionTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +61,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 3: return isSystemIssue;
     case 4: return isHidden;
     case 5: return relatedTo;
+    case 6: return extensionReasons;
+    case 7: return standardResolutionTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +77,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 3: isSystemIssue = (java.lang.Boolean)value$; break;
     case 4: isHidden = (java.lang.Boolean)value$; break;
     case 5: relatedTo = (java.util.List<java.lang.String>)value$; break;
+    case 6: extensionReasons = (java.util.List<com.fretron.Model.IssueExtensionReason>)value$; break;
+    case 7: standardResolutionTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +180,38 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'extensionReasons' field.
+   * @return The value of the 'extensionReasons' field.
+   */
+  public java.util.List<com.fretron.Model.IssueExtensionReason> getExtensionReasons() {
+    return extensionReasons;
+  }
+
+  /**
+   * Sets the value of the 'extensionReasons' field.
+   * @param value the value to set.
+   */
+  public void setExtensionReasons(java.util.List<com.fretron.Model.IssueExtensionReason> value) {
+    this.extensionReasons = value;
+  }
+
+  /**
+   * Gets the value of the 'standardResolutionTime' field.
+   * @return The value of the 'standardResolutionTime' field.
+   */
+  public java.lang.Long getStandardResolutionTime() {
+    return standardResolutionTime;
+  }
+
+  /**
+   * Sets the value of the 'standardResolutionTime' field.
+   * @param value the value to set.
+   */
+  public void setStandardResolutionTime(java.lang.Long value) {
+    this.standardResolutionTime = value;
+  }
+
+  /**
    * Creates a new IssueType RecordBuilder.
    * @return A new IssueType RecordBuilder
    */
@@ -207,6 +249,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.Boolean isSystemIssue;
     private java.lang.Boolean isHidden;
     private java.util.List<java.lang.String> relatedTo;
+    private java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons;
+    private java.lang.Long standardResolutionTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +287,14 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.relatedTo = data().deepCopy(fields()[5].schema(), other.relatedTo);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.extensionReasons)) {
+        this.extensionReasons = data().deepCopy(fields()[6].schema(), other.extensionReasons);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.standardResolutionTime)) {
+        this.standardResolutionTime = data().deepCopy(fields()[7].schema(), other.standardResolutionTime);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -274,6 +326,14 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[5], other.relatedTo)) {
         this.relatedTo = data().deepCopy(fields()[5].schema(), other.relatedTo);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.extensionReasons)) {
+        this.extensionReasons = data().deepCopy(fields()[6].schema(), other.extensionReasons);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.standardResolutionTime)) {
+        this.standardResolutionTime = data().deepCopy(fields()[7].schema(), other.standardResolutionTime);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -511,6 +571,84 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'extensionReasons' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.IssueExtensionReason> getExtensionReasons() {
+      return extensionReasons;
+    }
+
+    /**
+      * Sets the value of the 'extensionReasons' field.
+      * @param value The value of 'extensionReasons'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setExtensionReasons(java.util.List<com.fretron.Model.IssueExtensionReason> value) {
+      validate(fields()[6], value);
+      this.extensionReasons = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'extensionReasons' field has been set.
+      * @return True if the 'extensionReasons' field has been set, false otherwise.
+      */
+    public boolean hasExtensionReasons() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'extensionReasons' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearExtensionReasons() {
+      extensionReasons = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'standardResolutionTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getStandardResolutionTime() {
+      return standardResolutionTime;
+    }
+
+    /**
+      * Sets the value of the 'standardResolutionTime' field.
+      * @param value The value of 'standardResolutionTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setStandardResolutionTime(java.lang.Long value) {
+      validate(fields()[7], value);
+      this.standardResolutionTime = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'standardResolutionTime' field has been set.
+      * @return True if the 'standardResolutionTime' field has been set, false otherwise.
+      */
+    public boolean hasStandardResolutionTime() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'standardResolutionTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearStandardResolutionTime() {
+      standardResolutionTime = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public IssueType build() {
       try {
@@ -521,6 +659,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         record.isSystemIssue = fieldSetFlags()[3] ? this.isSystemIssue : (java.lang.Boolean) defaultValue(fields()[3]);
         record.isHidden = fieldSetFlags()[4] ? this.isHidden : (java.lang.Boolean) defaultValue(fields()[4]);
         record.relatedTo = fieldSetFlags()[5] ? this.relatedTo : (java.util.List<java.lang.String>) defaultValue(fields()[5]);
+        record.extensionReasons = fieldSetFlags()[6] ? this.extensionReasons : (java.util.List<com.fretron.Model.IssueExtensionReason>) defaultValue(fields()[6]);
+        record.standardResolutionTime = fieldSetFlags()[7] ? this.standardResolutionTime : (java.lang.Long) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
