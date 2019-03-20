@@ -78,9 +78,20 @@
                          "items": "com.fretron.Model.Issue"
                        },
             "default": null
-         }
-
-
+         },
+         {
+           "name": "driver",
+            "type": ["null" ,"com.fretron.Model.Driver"],
+             "default":null
+         },
+         {
+                    "name": "activeAlerts",
+                     "type": {
+                                  "type": "array",
+                                  "items": "com.fretron.Model.ResourceAlert"
+                                },
+                     "default": null
+            }
     ]
   }
 ]
