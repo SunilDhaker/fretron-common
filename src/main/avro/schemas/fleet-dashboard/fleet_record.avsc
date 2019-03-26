@@ -91,6 +91,22 @@
                                   "items": "com.fretron.Model.ResourceAlert"
                                 },
                      "default": null
+          },
+          {
+             "name": "remarks",
+              "type": {
+                         "type": "array",
+                                   "items": "string"
+                         },
+             "default": null
+           },
+           {
+                       "name": "secondaryStatus",
+                        "type": [
+                                   "null",
+                                   "string"
+                              ],
+                        "default":null
             }
     ]
   }
