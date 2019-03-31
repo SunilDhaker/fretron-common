@@ -180,8 +180,8 @@
 
     <!-- ================-inventory-manager =============== -->
 
-    <entry key="equipment.topic">equipmentTopic</entry>
-    <entry key="org.office.topic">orgOfficeTopic</entry>
+    <entry key="equipment.topic">newEquipmentTopic</entry>
+    <entry key="org.office.topic">newOfficeTopic</entry>
 
 
     <!-- ================-location-based-services =============== -->
