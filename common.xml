@@ -34,11 +34,11 @@
 
     <!--===============Registry-Manager topic====================-->
     <entry key="customer.topic">customer</entry>
-    <entry key="device.topic">device</entry>
-    <entry key="vehicle.topic">vehicle</entry>
-    <entry key="driver.topic">drivertopic</entry>
-    <entry key="document.topic">documenttopic</entry>
-    <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
+    <entry key="device.topic">newDeviceTopic</entry>
+    <entry key="vehicle.topic">newVehicleTopic</entry>
+    <entry key="driver.topic">newDriverTopic</entry>
+    <entry key="document.topic">newDocumentTopic</entry>
+    <entry key="buisness.partner.topic">newPartnersTopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
 
     <entry key="latest.command.topic">latestcommand</entry>
@@ -112,7 +112,7 @@
     <entry key="hour.mov.topic">hourMovTopic</entry>
 
     <!--================User-Manger-topics==================-->
-    <entry key="user.topic">user</entry>
+    <entry key="user.topic">newUserTopic</entry>
 
     <!--================Alert-Manager topics============================-->
     <entry key="alert.topic">alerts</entry>
@@ -123,9 +123,9 @@
     <entry key="alert.incident.topic">alertIncidentTopic</entry>
 
     <!--=================Org-Manager topics================================-->
-    <entry key="organisation.topic">organisation</entry>
-    <entry key="orguseracl.topic">orguseracl</entry>
-    <entry key="org.group.topic">orggroup</entry>
+    <entry key="organisation.topic">newOrganisationTopic</entry>
+    <entry key="orguseracl.topic">newOrgUserACLTopic</entry>
+    <entry key="org.group.topic">newOrgGroupTopic</entry>
 
     <entry key="organisationbyuser.topic">organisationbyuser</entry>
     <entry key="usersbyorganisation.topic">usersbyorganisation</entry>
