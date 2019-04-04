@@ -107,6 +107,20 @@
                                    "string"
                               ],
                         "default":null
+            },
+            {
+              "name": "updates",
+               "type": [
+                        "null",
+                        "com.fretron.Model.Updates"
+                      ],
+               "default": null
+            },
+            {
+               "name": "lastForwardTime",
+               "type": ["null","long"],
+               "logicalType": "timestamp-millis",
+                "default" : null
             }
     ]
   }
