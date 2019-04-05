@@ -65,18 +65,18 @@
          },
          {
             "name": "accessibleTo",
-             "type": {
+             "type": ["null",{
                  "type": "array",
                  "items": "string"
-               },
+               }],
             "default": null
         },
         {
            "name": "activeIssues",
-            "type": {
+            "type": ["null",{
                          "type": "array",
                          "items": "com.fretron.Model.Issue"
-                       },
+                       }],
             "default": null
          },
          {
@@ -86,18 +86,19 @@
          },
          {
                     "name": "activeAlerts",
-                     "type": {
+                     "type": ["null",{
                                   "type": "array",
                                   "items": "com.fretron.Model.ResourceAlert"
-                                },
+                                }],
                      "default": null
           },
+
           {
              "name": "remarks",
-              "type": {
+              "type": ["null" ,{
                          "type": "array",
                                    "items": "string"
-                         },
+                         }],
              "default": null
            },
            {
