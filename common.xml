@@ -194,7 +194,7 @@
     <entry key="user.role.topic">roleTopic</entry>
 
     <!-- ================dashboard-manager-services =============== -->
-    <entry key="fleet.record.topic">fleetRecordTopic</entry>
+    <entry key="fleet.record.topic">fleetRecordsTopic</entry>
 
 
 
