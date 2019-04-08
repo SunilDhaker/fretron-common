@@ -68,7 +68,12 @@
                                                                                   ],
                                                                                   "logicalType": "timestamp-millis",
                                                                                   "default": null
-                                                                                }
+                                                                                },
+                                                                                {
+                                                                                          "name": "isInternal",
+                                                                                          "type": ["null","boolean"],
+                                                                                          "default": null
+                                                                                     }
 
   ]
 }
