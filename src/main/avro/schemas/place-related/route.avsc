@@ -130,6 +130,14 @@
                        {"type" : "array", "items":"com.fretron.Model.Toll"}
                       ],
             "default":null
-        }
+        },
+        {
+            "name":"customCosts",
+             "type":[
+                                "null",
+                               {"type" : "array", "items":"com.fretron.Model.Cost"}
+                              ],
+             "default":null
+       }
   ]
 }

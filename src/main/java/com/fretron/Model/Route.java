@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Route extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7668739877954368621L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Route\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"wayPoints\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tollCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollCost\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"petrolPumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"hospitals\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"serviceCenters\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Toll\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"costs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Cost\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 236053519807704210L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Route\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"wayPoints\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tollCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollCost\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"petrolPumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"hospitals\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"serviceCenters\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Toll\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"costs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Cost\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customCosts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Cost\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -29,6 +29,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
   @Deprecated public java.lang.Integer hospitals;
   @Deprecated public java.lang.Integer serviceCenters;
   @Deprecated public java.util.List<com.fretron.Model.Toll> tollDetails;
+  @Deprecated public java.util.List<com.fretron.Model.Cost> customCosts;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -55,8 +56,9 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
    * @param hospitals The new value for hospitals
    * @param serviceCenters The new value for serviceCenters
    * @param tollDetails The new value for tollDetails
+   * @param customCosts The new value for customCosts
    */
-  public Route(java.lang.String uuid, java.lang.String name, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<com.fretron.Model.Place> wayPoints, java.lang.String orgId, java.lang.Double distance, java.lang.Long totalTime, java.lang.String vehicleId, java.lang.String polyline, java.lang.Integer tollCount, java.lang.Double tollCost, java.lang.Integer petrolPumps, java.lang.Integer hospitals, java.lang.Integer serviceCenters, java.util.List<com.fretron.Model.Toll> tollDetails) {
+  public Route(java.lang.String uuid, java.lang.String name, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<com.fretron.Model.Place> wayPoints, java.lang.String orgId, java.lang.Double distance, java.lang.Long totalTime, java.lang.String vehicleId, java.lang.String polyline, java.lang.Integer tollCount, java.lang.Double tollCost, java.lang.Integer petrolPumps, java.lang.Integer hospitals, java.lang.Integer serviceCenters, java.util.List<com.fretron.Model.Toll> tollDetails, java.util.List<com.fretron.Model.Cost> customCosts) {
     this.uuid = uuid;
     this.name = name;
     this.origin = origin;
@@ -73,6 +75,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
     this.hospitals = hospitals;
     this.serviceCenters = serviceCenters;
     this.tollDetails = tollDetails;
+    this.customCosts = customCosts;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -95,6 +98,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
     case 13: return hospitals;
     case 14: return serviceCenters;
     case 15: return tollDetails;
+    case 16: return customCosts;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -119,6 +123,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
     case 13: hospitals = (java.lang.Integer)value$; break;
     case 14: serviceCenters = (java.lang.Integer)value$; break;
     case 15: tollDetails = (java.util.List<com.fretron.Model.Toll>)value$; break;
+    case 16: customCosts = (java.util.List<com.fretron.Model.Cost>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -380,6 +385,22 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
   }
 
   /**
+   * Gets the value of the 'customCosts' field.
+   * @return The value of the 'customCosts' field.
+   */
+  public java.util.List<com.fretron.Model.Cost> getCustomCosts() {
+    return customCosts;
+  }
+
+  /**
+   * Sets the value of the 'customCosts' field.
+   * @param value the value to set.
+   */
+  public void setCustomCosts(java.util.List<com.fretron.Model.Cost> value) {
+    this.customCosts = value;
+  }
+
+  /**
    * Creates a new Route RecordBuilder.
    * @return A new Route RecordBuilder
    */
@@ -429,6 +450,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
     private java.lang.Integer hospitals;
     private java.lang.Integer serviceCenters;
     private java.util.List<com.fretron.Model.Toll> tollDetails;
+    private java.util.List<com.fretron.Model.Cost> customCosts;
 
     /** Creates a new Builder */
     private Builder() {
@@ -511,6 +533,10 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
         this.tollDetails = data().deepCopy(fields()[15].schema(), other.tollDetails);
         fieldSetFlags()[15] = true;
       }
+      if (isValidValue(fields()[16], other.customCosts)) {
+        this.customCosts = data().deepCopy(fields()[16].schema(), other.customCosts);
+        fieldSetFlags()[16] = true;
+      }
     }
 
     /**
@@ -584,6 +610,10 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
       if (isValidValue(fields()[15], other.tollDetails)) {
         this.tollDetails = data().deepCopy(fields()[15].schema(), other.tollDetails);
         fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.customCosts)) {
+        this.customCosts = data().deepCopy(fields()[16].schema(), other.customCosts);
+        fieldSetFlags()[16] = true;
       }
     }
 
@@ -1281,6 +1311,45 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
       return this;
     }
 
+    /**
+      * Gets the value of the 'customCosts' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.Cost> getCustomCosts() {
+      return customCosts;
+    }
+
+    /**
+      * Sets the value of the 'customCosts' field.
+      * @param value The value of 'customCosts'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Route.Builder setCustomCosts(java.util.List<com.fretron.Model.Cost> value) {
+      validate(fields()[16], value);
+      this.customCosts = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customCosts' field has been set.
+      * @return True if the 'customCosts' field has been set, false otherwise.
+      */
+    public boolean hasCustomCosts() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'customCosts' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Route.Builder clearCustomCosts() {
+      customCosts = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
     @Override
     public Route build() {
       try {
@@ -1309,6 +1378,7 @@ public class Route extends org.apache.avro.specific.SpecificRecordBase implement
         record.hospitals = fieldSetFlags()[13] ? this.hospitals : (java.lang.Integer) defaultValue(fields()[13]);
         record.serviceCenters = fieldSetFlags()[14] ? this.serviceCenters : (java.lang.Integer) defaultValue(fields()[14]);
         record.tollDetails = fieldSetFlags()[15] ? this.tollDetails : (java.util.List<com.fretron.Model.Toll>) defaultValue(fields()[15]);
+        record.customCosts = fieldSetFlags()[16] ? this.customCosts : (java.util.List<com.fretron.Model.Cost>) defaultValue(fields()[16]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
