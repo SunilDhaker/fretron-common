@@ -122,6 +122,14 @@
                          "int"
                        ],
           "default": null
+        },
+        {
+           "name":"tollDetails",
+             "type":[
+                        "null",
+                       {"type" : "array", "items":"com.fretron.Model.Toll"}
+                      ],
+            "default":null
         }
   ]
 }
