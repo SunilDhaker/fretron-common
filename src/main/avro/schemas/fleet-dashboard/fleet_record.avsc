@@ -122,7 +122,13 @@
                "type": ["null","long"],
                "logicalType": "timestamp-millis",
                 "default" : null
-            }
+            },
+            {
+              "name": "lastTripPointCompletionTime",
+               "type": ["null","long"],
+                "logicalType": "timestamp-millis",
+                "default" : null
+             }
     ]
   }
 ]
