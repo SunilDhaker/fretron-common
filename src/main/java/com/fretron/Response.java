@@ -32,13 +32,10 @@ public class Response<T> {
 
     @Override
     public String toString() {
-        JSONObject response = new JSONObject();
-        response.put("status", code);
-        if (error == null) response.put("error", JSONObject.NULL);
-        else response.put("error", error);
-        if (data == null) response.put("data", JSONObject.NULL);
-        else response.put("data", data);
-        return response.toString();
+        if (data instanceof String) {
+            return "{ \"status\" : " + code + " , \"error\" : \"" + error + "\" , \"data\" : \"" + data + "\" }";
+        }
+        return "{ \"status\" : " + code + " , \"error\" : \"" + error + "\" , \"data\" : " + data + " }";
     }
 }
 
