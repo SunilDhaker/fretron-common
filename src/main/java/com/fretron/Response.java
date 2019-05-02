@@ -2,13 +2,13 @@ package com.fretron;
 
 
 import org.apache.avro.specific.SpecificRecord;
+import org.json.JSONObject;
 
 public class Response<T> {
 
     int code;
     String error;
     T data;
-
 
     private Response(int code, String error, T data) {
 
@@ -32,10 +32,13 @@ public class Response<T> {
 
     @Override
     public String toString() {
-        if (data instanceof String) {
-            return "{ \"status\" : " + code + " , \"error\" : \"" + error + "\" , \"data\" : \"" + data + "\" }";
-        }
-        return "{ \"status\" : " + code + " , \"error\" : \"" + error + "\" , \"data\" : " + data + " }";
+        JSONObject response = new JSONObject();
+        response.put("status", code);
+        if (error == null) response.put("error", JSONObject.NULL);
+        else response.put("error", error);
+        if (data == null) response.put("data", JSONObject.NULL);
+        else response.put("data", data);
+        return response.toString();
     }
 }
 
