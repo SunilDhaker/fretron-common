@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "DomainPermission",
+  "fields": [
+   {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+     },
+    {
+      "name": "entity",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

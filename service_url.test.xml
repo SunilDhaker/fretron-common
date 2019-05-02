@@ -68,6 +68,8 @@
     <!--===========Freight-Location===============-->
     <entry key="freight.manager.service.port">8090</entry>
     <entry key="geofence.service.port">9090</entry>
+    <entry key="freight.location.manager.service.url">http://freightlocation-manager-revamp.streams:9090</entry>
+
 
     <!-- ==========stream-topic-manager========= -->
 
@@ -96,7 +98,7 @@
     <entry key = "trip.mis.restservices.port">7887</entry>
 
     <entry key = "dashboard.manager.service.url">http://dahboard-manager.streams:2127</entry>
-    <entry key = "reports.service.url">http://apis.fretron.com/reports</entry>
+    <entry key = "reports.service.url">http://reporting-server.mean:8080</entry>
 
     <!-- =========Itinerary-Manager========== -->
     <entry key="vehicle.trip.manager.service.url">http://v-trip-manager.streams:2129</entry>
@@ -108,5 +110,8 @@
 
     <!-- =========Issue-Manager========== -->
     <entry key="issue.manager.service.url">http://issue-manager.streams:2130</entry>
+
+    <!-- =========Authorization-Manager========== -->
+    <entry key="authorization.manager.service.url">http://authorization-manager.streams:5056</entry>
 
 </properties>

@@ -78,6 +78,23 @@
                 "string"
               ],
               "default": null
-            }
+            },
+                        {
+                          "name": "forwardedFrom",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        },
+                              {
+                                "name": "uuid",
+                                "type": [
+                                  "null",
+                                  "string"
+                                ],
+                                "default": null
+                              }
+
     ]
  }

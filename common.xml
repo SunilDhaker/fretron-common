@@ -47,8 +47,8 @@
     <!--===============Position-processor topics ================-->
     <entry key="positions.topic">positionsTopic</entry>
     <entry key="tpi.positions.topic">tpiPositionsTopic</entry>
-    <entry key= "processedPositions.topic">processedPositions</entry>
-    <entry key= "concox.processed.positions.topic">concoxProcessedPositions</entry>
+    <entry key="processedPositions.topic">processedPositions</entry>
+    <entry key="concox.processed.positions.topic">concoxProcessedPositions</entry>
     <entry key="liteposition.topic">liteposition</entry>
     <entry key="gps.events.topic">gpsMovementEventTopic</entry>
     <entry key="vehiclegps.state.topic">vehiclegpsstatetopic</entry>
@@ -70,8 +70,6 @@
     <entry key="rawpositions.topic">rawPositions</entry>
     <entry key="protocol.events.topic">protocolEvents</entry>
     <entry key="device.session.topic">deviceSession</entry>
-
-
 
 
     <!--===============Sales-order topics========================-->
@@ -136,10 +134,12 @@
     <!--================Freight-Location Manager topics =====================-->
     <entry key="freight.location.topic">freightlocationtopic</entry>
     <entry key="place.topic">placetopic</entry>
+    <entry key="hubs.topic">hubTopic</entry>
+    <entry key="route.topic">routeTopic</entry>
 
     <!--===============TPI -Manager topics=====================-->
-    <entry key = "integration.job.events.topic">integratedJobsEventTopic</entry>
-    <entry key = "integration.job.execution.topic">integratedJobsExecutionEvents</entry>
+    <entry key="integration.job.events.topic">integratedJobsEventTopic</entry>
+    <entry key="integration.job.execution.topic">integratedJobsExecutionEvents</entry>
     <entry key="integration.job.raw.response.topic">jobRawResponseTopic</entry>
 
     <!-- ===================org group manager id=======-->
@@ -170,7 +170,7 @@
 
     <!-- ================-vehicle-trip-manager =============== -->
     <entry key="trip.point.topic">tripPointTopic</entry>
-    <entry key="trip.point.event.topic">tripPointEventsTopic</entry>
+    <entry key="trip.point.event.topic">tripPointEventsTopicByImei</entry>
     <entry key="vgs.by.vid.topic">vehicleGpsStateByVidTopic</entry>
     <entry key="commad.result.copartition.topic">commandresultcoparttiontopic</entry>
     <entry key="geocoder">fretron</entry>
@@ -187,6 +187,17 @@
     <!-- ================-location-based-services =============== -->
     <entry key="lbs.result.topic">lbsResultTopic</entry>
     <entry key="lbs.device.topic">lbsDeviceTopic</entry>
+
+    <!-- ================-scheduler-services =============== -->
+    <entry key="scheduled.task.topic">scheduledTaskTopic</entry>
+    <!-- ================-authorization-manager-services =============== -->
+    <entry key="user.role.topic">roleTopic</entry>
+
+    <!-- ================dashboard-manager-services =============== -->
+    <entry key="fleet.record.topic">fleetRecordsTopic</entry>
+
+
+
 
 
 </properties>

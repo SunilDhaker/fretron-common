@@ -67,6 +67,8 @@
     <!--===========Freight-Location===============-->
     <entry key="freight.manager.service.port">8090</entry>
     <entry key="geofence.service.port">9090</entry>
+    <entry key="freight.location.manager.service.url">http://freightlocation-manager-revamp.streams:9090</entry>
+
 
 
     <!-- ==========stream-topic-manager========= -->
@@ -92,5 +94,8 @@
     <!--========================================Serice URL ,, Ports And IP=============================================-->
     <!-- =========Itinerary-Manager========== -->
     <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
+
+    <!-- =========Authorization-Manager========== -->
+    <entry key="authorization.manager.service.url">http://authorization-manager.streams:5056</entry>
 
 </properties>

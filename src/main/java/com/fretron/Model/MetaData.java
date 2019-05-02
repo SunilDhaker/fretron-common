@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class MetaData extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3302232649409211889L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MetaData\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2031695186838984577L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MetaData\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String clazz;
   @Deprecated public java.lang.String addedBy;
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.String accessibility;
+  @Deprecated public java.util.List<java.lang.String> isFavorite;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
    * @param addedBy The new value for addedBy
    * @param source The new value for source
    * @param accessibility The new value for accessibility
+   * @param isFavorite The new value for isFavorite
    */
-  public MetaData(java.lang.String clazz, java.lang.String addedBy, java.lang.String source, java.lang.String accessibility) {
+  public MetaData(java.lang.String clazz, java.lang.String addedBy, java.lang.String source, java.lang.String accessibility, java.util.List<java.lang.String> isFavorite) {
     this.clazz = clazz;
     this.addedBy = addedBy;
     this.source = source;
     this.accessibility = accessibility;
+    this.isFavorite = isFavorite;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: return addedBy;
     case 2: return source;
     case 3: return accessibility;
+    case 4: return isFavorite;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: addedBy = (java.lang.String)value$; break;
     case 2: source = (java.lang.String)value$; break;
     case 3: accessibility = (java.lang.String)value$; break;
+    case 4: isFavorite = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'isFavorite' field.
+   * @return The value of the 'isFavorite' field.
+   */
+  public java.util.List<java.lang.String> getIsFavorite() {
+    return isFavorite;
+  }
+
+  /**
+   * Sets the value of the 'isFavorite' field.
+   * @param value the value to set.
+   */
+  public void setIsFavorite(java.util.List<java.lang.String> value) {
+    this.isFavorite = value;
+  }
+
+  /**
    * Creates a new MetaData RecordBuilder.
    * @return A new MetaData RecordBuilder
    */
@@ -163,6 +184,7 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String addedBy;
     private java.lang.String source;
     private java.lang.String accessibility;
+    private java.util.List<java.lang.String> isFavorite;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +213,10 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
         this.accessibility = data().deepCopy(fields()[3].schema(), other.accessibility);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.isFavorite)) {
+        this.isFavorite = data().deepCopy(fields()[4].schema(), other.isFavorite);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -214,6 +240,10 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[3], other.accessibility)) {
         this.accessibility = data().deepCopy(fields()[3].schema(), other.accessibility);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.isFavorite)) {
+        this.isFavorite = data().deepCopy(fields()[4].schema(), other.isFavorite);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -373,6 +403,45 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'isFavorite' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getIsFavorite() {
+      return isFavorite;
+    }
+
+    /**
+      * Sets the value of the 'isFavorite' field.
+      * @param value The value of 'isFavorite'.
+      * @return This builder.
+      */
+    public com.fretron.Model.MetaData.Builder setIsFavorite(java.util.List<java.lang.String> value) {
+      validate(fields()[4], value);
+      this.isFavorite = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isFavorite' field has been set.
+      * @return True if the 'isFavorite' field has been set, false otherwise.
+      */
+    public boolean hasIsFavorite() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'isFavorite' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.MetaData.Builder clearIsFavorite() {
+      isFavorite = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public MetaData build() {
       try {
@@ -381,6 +450,7 @@ public class MetaData extends org.apache.avro.specific.SpecificRecordBase implem
         record.addedBy = fieldSetFlags()[1] ? this.addedBy : (java.lang.String) defaultValue(fields()[1]);
         record.source = fieldSetFlags()[2] ? this.source : (java.lang.String) defaultValue(fields()[2]);
         record.accessibility = fieldSetFlags()[3] ? this.accessibility : (java.lang.String) defaultValue(fields()[3]);
+        record.isFavorite = fieldSetFlags()[4] ? this.isFavorite : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

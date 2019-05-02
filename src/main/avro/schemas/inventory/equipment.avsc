@@ -54,6 +54,30 @@
         "string"
       ],
       "default": null
+    },
+    {
+          "name": "location",
+          "type": [
+            "null",
+            "com.fretron.Model.Place"
+          ],
+          "default": null
+    },
+    {
+         "name": "shipmentNumber",
+         "type": [
+           "null",
+           "string"
+         ],
+         "default": null
+    },
+    {
+      "name": "updates",
+       "type": [
+                "null",
+                "com.fretron.Model.Updates"
+               ],
+      "default": null
     }
   ]
 }

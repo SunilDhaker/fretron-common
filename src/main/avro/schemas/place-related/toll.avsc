@@ -1,0 +1,34 @@
+
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Toll",
+  "fields": [
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+         "name":"costs",
+           "type":[
+                    "null",
+                   {"type" : "array", "items":"com.fretron.Model.Cost"}
+                  ],
+           "default":null
+    },
+    {
+      "name": "isCustom",
+       "type": [
+              "null",
+              "boolean"
+            ],
+       "default": null
+     }
+  ]
+}
+
+

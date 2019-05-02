@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1353411120909464557L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceAlert\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -7328594038851023369L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceAlert\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String description;
   @Deprecated public java.lang.String type;
@@ -19,6 +19,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String closedBy;
   @Deprecated public java.lang.Long snoozTime;
+  @Deprecated public java.lang.Long createdAt;
+  @Deprecated public java.lang.Long updatedAt;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +37,18 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
    * @param uuid The new value for uuid
    * @param closedBy The new value for closedBy
    * @param snoozTime The new value for snoozTime
+   * @param createdAt The new value for createdAt
+   * @param updatedAt The new value for updatedAt
    */
-  public ResourceAlert(java.lang.String description, java.lang.String type, java.lang.String status, java.lang.String uuid, java.lang.String closedBy, java.lang.Long snoozTime) {
+  public ResourceAlert(java.lang.String description, java.lang.String type, java.lang.String status, java.lang.String uuid, java.lang.String closedBy, java.lang.Long snoozTime, java.lang.Long createdAt, java.lang.Long updatedAt) {
     this.description = description;
     this.type = type;
     this.status = status;
     this.uuid = uuid;
     this.closedBy = closedBy;
     this.snoozTime = snoozTime;
+    this.createdAt = createdAt;
+    this.updatedAt = updatedAt;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +61,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     case 3: return uuid;
     case 4: return closedBy;
     case 5: return snoozTime;
+    case 6: return createdAt;
+    case 7: return updatedAt;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +77,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     case 3: uuid = (java.lang.String)value$; break;
     case 4: closedBy = (java.lang.String)value$; break;
     case 5: snoozTime = (java.lang.Long)value$; break;
+    case 6: createdAt = (java.lang.Long)value$; break;
+    case 7: updatedAt = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +180,38 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'createdAt' field.
+   * @return The value of the 'createdAt' field.
+   */
+  public java.lang.Long getCreatedAt() {
+    return createdAt;
+  }
+
+  /**
+   * Sets the value of the 'createdAt' field.
+   * @param value the value to set.
+   */
+  public void setCreatedAt(java.lang.Long value) {
+    this.createdAt = value;
+  }
+
+  /**
+   * Gets the value of the 'updatedAt' field.
+   * @return The value of the 'updatedAt' field.
+   */
+  public java.lang.Long getUpdatedAt() {
+    return updatedAt;
+  }
+
+  /**
+   * Sets the value of the 'updatedAt' field.
+   * @param value the value to set.
+   */
+  public void setUpdatedAt(java.lang.Long value) {
+    this.updatedAt = value;
+  }
+
+  /**
    * Creates a new ResourceAlert RecordBuilder.
    * @return A new ResourceAlert RecordBuilder
    */
@@ -207,6 +249,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String uuid;
     private java.lang.String closedBy;
     private java.lang.Long snoozTime;
+    private java.lang.Long createdAt;
+    private java.lang.Long updatedAt;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +287,14 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
         this.snoozTime = data().deepCopy(fields()[5].schema(), other.snoozTime);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.createdAt)) {
+        this.createdAt = data().deepCopy(fields()[6].schema(), other.createdAt);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.updatedAt)) {
+        this.updatedAt = data().deepCopy(fields()[7].schema(), other.updatedAt);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -274,6 +326,14 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[5], other.snoozTime)) {
         this.snoozTime = data().deepCopy(fields()[5].schema(), other.snoozTime);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.createdAt)) {
+        this.createdAt = data().deepCopy(fields()[6].schema(), other.createdAt);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.updatedAt)) {
+        this.updatedAt = data().deepCopy(fields()[7].schema(), other.updatedAt);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -511,6 +571,84 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'createdAt' field.
+      * @return The value.
+      */
+    public java.lang.Long getCreatedAt() {
+      return createdAt;
+    }
+
+    /**
+      * Sets the value of the 'createdAt' field.
+      * @param value The value of 'createdAt'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder setCreatedAt(java.lang.Long value) {
+      validate(fields()[6], value);
+      this.createdAt = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'createdAt' field has been set.
+      * @return True if the 'createdAt' field has been set, false otherwise.
+      */
+    public boolean hasCreatedAt() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'createdAt' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder clearCreatedAt() {
+      createdAt = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updatedAt' field.
+      * @return The value.
+      */
+    public java.lang.Long getUpdatedAt() {
+      return updatedAt;
+    }
+
+    /**
+      * Sets the value of the 'updatedAt' field.
+      * @param value The value of 'updatedAt'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder setUpdatedAt(java.lang.Long value) {
+      validate(fields()[7], value);
+      this.updatedAt = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updatedAt' field has been set.
+      * @return True if the 'updatedAt' field has been set, false otherwise.
+      */
+    public boolean hasUpdatedAt() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'updatedAt' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder clearUpdatedAt() {
+      updatedAt = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public ResourceAlert build() {
       try {
@@ -521,6 +659,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
         record.uuid = fieldSetFlags()[3] ? this.uuid : (java.lang.String) defaultValue(fields()[3]);
         record.closedBy = fieldSetFlags()[4] ? this.closedBy : (java.lang.String) defaultValue(fields()[4]);
         record.snoozTime = fieldSetFlags()[5] ? this.snoozTime : (java.lang.Long) defaultValue(fields()[5]);
+        record.createdAt = fieldSetFlags()[6] ? this.createdAt : (java.lang.Long) defaultValue(fields()[6]);
+        record.updatedAt = fieldSetFlags()[7] ? this.updatedAt : (java.lang.Long) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

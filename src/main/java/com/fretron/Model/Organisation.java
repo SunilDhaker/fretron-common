@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7815629338333742588L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3172298693883498156L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedPortals\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedTo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -29,6 +29,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.util.List<java.lang.String> installedModules;
   @Deprecated public java.lang.String logoThumbnailString;
   @Deprecated public java.lang.String logoDocumentId;
+  @Deprecated public java.util.List<java.lang.String> linkedPortals;
+  @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.String linkedTo;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -55,8 +58,11 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param installedModules The new value for installedModules
    * @param logoThumbnailString The new value for logoThumbnailString
    * @param logoDocumentId The new value for logoDocumentId
+   * @param linkedPortals The new value for linkedPortals
+   * @param status The new value for status
+   * @param linkedTo The new value for linkedTo
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId, java.util.List<java.lang.String> linkedPortals, java.lang.String status, java.lang.String linkedTo) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
@@ -73,6 +79,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     this.installedModules = installedModules;
     this.logoThumbnailString = logoThumbnailString;
     this.logoDocumentId = logoDocumentId;
+    this.linkedPortals = linkedPortals;
+    this.status = status;
+    this.linkedTo = linkedTo;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -95,6 +104,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 13: return installedModules;
     case 14: return logoThumbnailString;
     case 15: return logoDocumentId;
+    case 16: return linkedPortals;
+    case 17: return status;
+    case 18: return linkedTo;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -119,6 +131,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 13: installedModules = (java.util.List<java.lang.String>)value$; break;
     case 14: logoThumbnailString = (java.lang.String)value$; break;
     case 15: logoDocumentId = (java.lang.String)value$; break;
+    case 16: linkedPortals = (java.util.List<java.lang.String>)value$; break;
+    case 17: status = (java.lang.String)value$; break;
+    case 18: linkedTo = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -380,6 +395,54 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'linkedPortals' field.
+   * @return The value of the 'linkedPortals' field.
+   */
+  public java.util.List<java.lang.String> getLinkedPortals() {
+    return linkedPortals;
+  }
+
+  /**
+   * Sets the value of the 'linkedPortals' field.
+   * @param value the value to set.
+   */
+  public void setLinkedPortals(java.util.List<java.lang.String> value) {
+    this.linkedPortals = value;
+  }
+
+  /**
+   * Gets the value of the 'status' field.
+   * @return The value of the 'status' field.
+   */
+  public java.lang.String getStatus() {
+    return status;
+  }
+
+  /**
+   * Sets the value of the 'status' field.
+   * @param value the value to set.
+   */
+  public void setStatus(java.lang.String value) {
+    this.status = value;
+  }
+
+  /**
+   * Gets the value of the 'linkedTo' field.
+   * @return The value of the 'linkedTo' field.
+   */
+  public java.lang.String getLinkedTo() {
+    return linkedTo;
+  }
+
+  /**
+   * Sets the value of the 'linkedTo' field.
+   * @param value the value to set.
+   */
+  public void setLinkedTo(java.lang.String value) {
+    this.linkedTo = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -428,6 +491,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.util.List<java.lang.String> installedModules;
     private java.lang.String logoThumbnailString;
     private java.lang.String logoDocumentId;
+    private java.util.List<java.lang.String> linkedPortals;
+    private java.lang.String status;
+    private java.lang.String linkedTo;
 
     /** Creates a new Builder */
     private Builder() {
@@ -507,6 +573,18 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
         fieldSetFlags()[15] = true;
       }
+      if (isValidValue(fields()[16], other.linkedPortals)) {
+        this.linkedPortals = data().deepCopy(fields()[16].schema(), other.linkedPortals);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.status)) {
+        this.status = data().deepCopy(fields()[17].schema(), other.status);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.linkedTo)) {
+        this.linkedTo = data().deepCopy(fields()[18].schema(), other.linkedTo);
+        fieldSetFlags()[18] = true;
+      }
     }
 
     /**
@@ -579,6 +657,18 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[15], other.logoDocumentId)) {
         this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
         fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.linkedPortals)) {
+        this.linkedPortals = data().deepCopy(fields()[16].schema(), other.linkedPortals);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.status)) {
+        this.status = data().deepCopy(fields()[17].schema(), other.status);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.linkedTo)) {
+        this.linkedTo = data().deepCopy(fields()[18].schema(), other.linkedTo);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1241,6 +1331,123 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'linkedPortals' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getLinkedPortals() {
+      return linkedPortals;
+    }
+
+    /**
+      * Sets the value of the 'linkedPortals' field.
+      * @param value The value of 'linkedPortals'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLinkedPortals(java.util.List<java.lang.String> value) {
+      validate(fields()[16], value);
+      this.linkedPortals = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'linkedPortals' field has been set.
+      * @return True if the 'linkedPortals' field has been set, false otherwise.
+      */
+    public boolean hasLinkedPortals() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'linkedPortals' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLinkedPortals() {
+      linkedPortals = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'status' field.
+      * @return The value.
+      */
+    public java.lang.String getStatus() {
+      return status;
+    }
+
+    /**
+      * Sets the value of the 'status' field.
+      * @param value The value of 'status'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setStatus(java.lang.String value) {
+      validate(fields()[17], value);
+      this.status = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'status' field has been set.
+      * @return True if the 'status' field has been set, false otherwise.
+      */
+    public boolean hasStatus() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'status' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearStatus() {
+      status = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'linkedTo' field.
+      * @return The value.
+      */
+    public java.lang.String getLinkedTo() {
+      return linkedTo;
+    }
+
+    /**
+      * Sets the value of the 'linkedTo' field.
+      * @param value The value of 'linkedTo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLinkedTo(java.lang.String value) {
+      validate(fields()[18], value);
+      this.linkedTo = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'linkedTo' field has been set.
+      * @return True if the 'linkedTo' field has been set, false otherwise.
+      */
+    public boolean hasLinkedTo() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'linkedTo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLinkedTo() {
+      linkedTo = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -1265,6 +1472,9 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.installedModules = fieldSetFlags()[13] ? this.installedModules : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
         record.logoThumbnailString = fieldSetFlags()[14] ? this.logoThumbnailString : (java.lang.String) defaultValue(fields()[14]);
         record.logoDocumentId = fieldSetFlags()[15] ? this.logoDocumentId : (java.lang.String) defaultValue(fields()[15]);
+        record.linkedPortals = fieldSetFlags()[16] ? this.linkedPortals : (java.util.List<java.lang.String>) defaultValue(fields()[16]);
+        record.status = fieldSetFlags()[17] ? this.status : (java.lang.String) defaultValue(fields()[17]);
+        record.linkedTo = fieldSetFlags()[18] ? this.linkedTo : (java.lang.String) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

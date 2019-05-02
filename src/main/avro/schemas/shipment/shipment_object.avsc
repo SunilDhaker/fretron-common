@@ -198,7 +198,81 @@
               }
             ],
             "default": null
-          }
-
+          },
+                {
+                  "name": "customContacts",
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "com.fretron.Model.Contact"
+                    }
+                  ],
+                  "default": null
+                },
+                      {
+                        "name": "lastForwardTime",
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "logicalType": "timestamp-millis",
+                        "default": null
+                      },
+                      {
+                                              "name": "completionTime",
+                                              "type": [
+                                                "null",
+                                                "long"
+                                              ],
+                                              "logicalType": "timestamp-millis",
+                                              "default": null
+                                            },
+                                            {
+                                                    "name": "links",
+                                                    "type": [
+                                                      "null",
+                                                      {
+                                                        "type": "array",
+                                                        "items": "com.fretron.Model.LinkObject"
+                                                      }
+                                                    ],
+                                                    "default": null
+                                                  },
+          {
+            "name": "tripType",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default": null
+          },
+          {
+                      "name": "externalShipmentId",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+            {
+                "name": "customFields",
+                "type": [
+                  "null",
+                  {
+                    "type": "array",
+                    "items": "com.fretron.Model.CustomFields"
+                  }
+                ],
+                "default": null
+            },
+               {
+                 "name": "branch",
+                 "type": [
+                   "null",
+                   "com.fretron.Model.OrgOffice"
+                 ],
+                 "default": null
+               }
     ]
   }

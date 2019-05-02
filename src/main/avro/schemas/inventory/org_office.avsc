@@ -71,6 +71,46 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+      "name": "externalId",
+       "type": [
+                 "null",
+                  "string"
+                      ],
+         "default": null
+     },
+     {
+       "name": "branchName",
+        "type": [
+                      "null",
+                       "string"
+                           ],
+         "default": null
+      },
+      {
+        "name": "regionName",
+         "type": [
+                       "null",
+                        "string"
+                            ],
+         "default": null
+       },
+       {
+         "name": "zoneName",
+          "type": [
+                              "null",
+                               "string"
+                                   ],
+         "default": null
+       },
+        {
+           "name": "updates",
+            "type": [
+                        "null",
+                       "com.fretron.Model.Updates"
+                               ],
+             "default": null
+         }
   ]
 }

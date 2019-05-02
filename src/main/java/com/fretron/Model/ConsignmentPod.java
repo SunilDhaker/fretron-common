@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7146380750317398361L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6394146658006571262L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.util.List<com.fretron.Model.Document> documents;
@@ -22,6 +22,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.lang.String receivedBy;
   @Deprecated public java.lang.String remarks;
   @Deprecated public java.lang.String submissionPlace;
+  @Deprecated public java.lang.String uuid;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +42,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
    * @param receivedBy The new value for receivedBy
    * @param remarks The new value for remarks
    * @param submissionPlace The new value for submissionPlace
+   * @param uuid The new value for uuid
    */
-  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace) {
+  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace, java.lang.String uuid) {
     this.status = status;
     this.documents = documents;
     this.receiveDate = receiveDate;
@@ -52,6 +54,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     this.receivedBy = receivedBy;
     this.remarks = remarks;
     this.submissionPlace = submissionPlace;
+    this.uuid = uuid;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +70,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 6: return receivedBy;
     case 7: return remarks;
     case 8: return submissionPlace;
+    case 9: return uuid;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +88,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 6: receivedBy = (java.lang.String)value$; break;
     case 7: remarks = (java.lang.String)value$; break;
     case 8: submissionPlace = (java.lang.String)value$; break;
+    case 9: uuid = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +238,22 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
    * Creates a new ConsignmentPod RecordBuilder.
    * @return A new ConsignmentPod RecordBuilder
    */
@@ -273,6 +294,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.String receivedBy;
     private java.lang.String remarks;
     private java.lang.String submissionPlace;
+    private java.lang.String uuid;
 
     /** Creates a new Builder */
     private Builder() {
@@ -321,6 +343,10 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         this.submissionPlace = data().deepCopy(fields()[8].schema(), other.submissionPlace);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[9].schema(), other.uuid);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -364,6 +390,10 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       if (isValidValue(fields()[8], other.submissionPlace)) {
         this.submissionPlace = data().deepCopy(fields()[8].schema(), other.submissionPlace);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[9].schema(), other.uuid);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -718,6 +748,45 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder setUuid(java.lang.String value) {
+      validate(fields()[9], value);
+      this.uuid = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public ConsignmentPod build() {
       try {
@@ -731,6 +800,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         record.receivedBy = fieldSetFlags()[6] ? this.receivedBy : (java.lang.String) defaultValue(fields()[6]);
         record.remarks = fieldSetFlags()[7] ? this.remarks : (java.lang.String) defaultValue(fields()[7]);
         record.submissionPlace = fieldSetFlags()[8] ? this.submissionPlace : (java.lang.String) defaultValue(fields()[8]);
+        record.uuid = fieldSetFlags()[9] ? this.uuid : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

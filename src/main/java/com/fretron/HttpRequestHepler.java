@@ -1,7 +1,6 @@
 package com.fretron;
 
 import org.glassfish.jersey.client.ClientProperties;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -45,6 +44,19 @@ public class HttpRequestHepler {
                 .header("Authorization", "Bearer " + authToken)
                 .get();
     }
+
+
+
+    public String makeGetRequestAndGetData(String uri,  int timeout) {
+        Response response = client
+                .property(ClientProperties.CONNECT_TIMEOUT, 2000)
+                .property(ClientProperties.READ_TIMEOUT, timeout)
+                .target(uri)
+                .request(MediaType.APPLICATION_JSON)
+                .get();
+        return response.readEntity(String.class);
+    }
+
 
     public Response makePostRequest(String uri, Object requestObject, String authToken) {
 

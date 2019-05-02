@@ -94,6 +94,33 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+         "name": "externalId",
+                     "type": [
+                       "null",
+                       "string"
+                     ],
+              "default": null
+       },
+           {
+             "name": "mobileNumbers",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "string"
+               }
+             ],
+             "default": null
+           },
+           {
+                    "name": "updates",
+                    "type": [
+                      "null",
+                      "com.fretron.Model.Updates"
+                    ],
+                    "default": null
+                  }
   ]
 }

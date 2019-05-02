@@ -50,9 +50,9 @@ public class Constants {
 
 
     /*
-    *****************************************************************************************************
-    *                                   GPS-Processor Configs
-    * **************************************************************************************************
+     *****************************************************************************************************
+     *                                   GPS-Processor Configs
+     * **************************************************************************************************
      */
     public static final String KEY_POSITION_PROCESSOR_APP_ID = "position.processor.app.id";
 
@@ -220,14 +220,25 @@ public class Constants {
     public static final String FR_LOC_RECENT_COLLECTION_NAME = "freight.location.recent.collection.name";
     //*************NEW**************//public static final String FRIGHT_LOCATION_TOPIC = "freight.location.topic";
     public static final String PLACES_TOPIC = "place.topic";
+    public static final String HUB_TOPIC = "hubs.topic";
+    public static final String ROUTE_TOPIC = "route.topic";
     public static final String PLACES_MANAGER_SERVICE_PORT = "geofence.service.port";
     public static final String PLACES_MANAGER_DB_NAME = "admin.geofence.db.name";
     public static final String PLACES_MANAGER_COLLECTION_NAME = "geofence.collection.name";
     public static final String ADMIN_STATES_COLLECTION_NAME = "admin.states.collection.name";
-
-    //========================ORGANISATION_MANAGER=================
     public static final String ADMIN_SUB_DISTS_COLLECTION_NAME = "admin.subdists.collection.name";
     public static final String ADMIN_VILLAGES_COLLECTION_NAME = "admin.villages.collection.name";
+    public static final String HUBS_MANAGER_COLLECTION_NAME = "hubs.collection.name";
+
+
+    public static final String MONGODB_SERVER_CLUSTER_IP = "mongodb.server.cluster.ip";
+    public static final String MONGODB_SERVER_CLUSTER_PORT = "mongodb.server.cluster.port";
+    public static final String CLUSTER_DB_NAME = "cluster.db.name";
+    public static final String CLUSTER_COLLECTION_NAME = "cluster.collection.name";
+    public static final String CLUSTER_INSIDE_COLLECTION_NAME = "cluster.inside.collection.name";
+
+    //========================ORGANISATION_MANAGER=================
+
     public static final String REGISTRY_SERVICE_URL = "registry.manager.service.url";
     public static final String REGISTRY_APP_IP = "registry.manager.restservice.ip";
     public static final String REGISTRY_APP_PORT = "registry.manager.restservice.port";
@@ -259,6 +270,7 @@ public class Constants {
     public static final String KAFKATOPIC_APP_PORT = "kafkatopics.app.port";
     public static final String TRIPMANAGER_SERVICE_URL = "trip.manager.new.service.url";
     public static final String TRIPMANAGER_APP_IP = "trip.manager.new.restservice.ip";
+    public static final String KEY_FREIGHT_LOCATION_MANAGER_SERVICE_URL = "freight.location.manager.service.url";
 
     //=======================IP AND PORTS ===============
     public static final String TRIPMANAGER_APP_PORT = "trip.manager.new.restservice.port";
@@ -432,24 +444,24 @@ public class Constants {
     public static final String UNIQUE_FLS_COLLECTION_NAME = "unique.fls.collection.name";
     public static final String VEHICLE_ACTIVITY_LOG_DB_HOST = "vehicle.activity.log.mongo.server.ip";
 
-  //========================DASHBOARD_MANAGER=================
-  public static final String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
+    //========================DASHBOARD_MANAGER=================
+    public static final String KEY_DASHBOARD_MANAGER_SERVICE_URL = "dashboard.manager.service.url";
 
-  public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
-  public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
-  public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
-  public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
-  public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
-  public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
-  /*
-   *****************************************************************************************************
-   *                                   name-not-decide-yet-manager-configs
-   * **************************************************************************************************
-   */
-  public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
-  /**
-   * VEHICLE TRIP CONSTANTS
-   */
+    public static final String VEHICLE_ACTIVITY_LOG_DB_PORT = "vehicle.activity.log.mongo.server.port";
+    public static final String VEHICLE_ACTIVITY_LOG_DB_NAME = "vehicle.activity.log.mongo.db.name";
+    public static final String VEHICLE_ACTIVITY_SERVICE_IP = "vehicle.activity.rest.service.ip";
+    public static final String VEHICLE_ACTIVITY_SERVICE_PORT = "vehicle.activity.rest.service.port";
+    public static final String TRIP_MIS_SERVICE_PORT = "trip.mis.restservices.port";
+    public static final String TRIP_MIS_APP_IP = "trip.mis.restservices.ip";
+    /*
+     *****************************************************************************************************
+     *                                   name-not-decide-yet-manager-configs
+     * **************************************************************************************************
+     */
+    public static final String GPS_STATE_MANAGER_APP_ID = "vehicle.gps.state.manager.app.id";
+    /**
+     * VEHICLE TRIP CONSTANTS
+     */
 
     public static final String VEHICLE_TRIP_SERVICE_URL = "vehicle.trip.manager.service.url";
 
@@ -516,11 +528,11 @@ public class Constants {
     public static String ELASTIC_SEARCH_MANAGER_IP = "elastic.serach.manager.ip";
     public static String ELASTIC_SEARCH_MANAGER_PORT = "elastic.serach.manager.port";
 
-     /*
-    Device Connection State Manager Config
-     */
-     public static final String DEVICE_CONNECTION_MANAGER_APP_ID = "device.connection.manager.application.id";
-     public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
+    /*
+   Device Connection State Manager Config
+    */
+    public static final String DEVICE_CONNECTION_MANAGER_APP_ID = "device.connection.manager.application.id";
+    public static final String KEY_DEVICE_CONNECTION_STATUS_TOPIC = "device.connection.status.topic";
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_IP = "device.connection.manager.rest.service.ip";
     public static final String KEY_DEVICE_CONNECTION_MANAGER_APP_PORT = "device.connection.manager.rest.service.port";
 
@@ -542,6 +554,30 @@ public class Constants {
 
     public static final String KEY_EQUIPMENT_TOPIC = "equipment.topic";
     public static final String KEY_ORG_OFFICE_TOPIC = "org.office.topic";
+
+
+    //=================================SCHEDULER SERVICES===========================
+
+    public static final String KEY_SCHEDULED_TASK_TOPIC = "scheduled.task.topic";
+
+    //=================================TRIP-POINT NOTIFICATIONS===========================
+
+    public static final String OVERSPEED_NOTIFICATION = "tripPoint.overspeed.notification";
+    public static final String ROUTE_DEVIATION_NOTIFICATION = "tripPoint.route.deviation.notification";
+    public static final String ABOUT_TO_REACH_DESTINATION_NOTIFICATION = "tripPoint.about.to.reach.destination.notification";
+    public static final String MAINTENANCE_EXPECTED_TIME_PASSED_NOTIFICATION = "tripPoint.maintenance.expected.time.passed.notification";
+    public static final String OFF_DUTY_EXPECTED_TIME_PASSED_NOTIFICATION = "tripPoint.offduty.expected.time.passed.notification";
+    public static final String MAINTENANCE_ABOUT_TO_FINISH_NOTIFICATION = "tripPoint.maintenance.about.to.finish.notification";
+    public static final String OFF_DUTY_ABOUT_TO_FINISH_NOTIFICATION = "tripPoint.offduty.about.to.finish.notification";
+    public static final String ETA_PASSED_NOTIFICATION = "tripPoint.eta.passed.notification";
+    //=================================AUTHORIZATION MANAGER===========================
+
+    public static final String KEY_ROLE_TOPIC = "user.role.topic";
+    public static final String AUTHORIZATION_MANAGER_SERVICE_URL = "authorization.manager.service.url";
+
+    //=================================DASHBOARD MANAGER===========================
+    public static final String KEY_FLEET_RECORD_TOPIC = "fleet.record.topic";
+
 
     private Constants() {
 

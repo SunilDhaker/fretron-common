@@ -15,7 +15,6 @@
  */
 package com.fretron.Utils.Geospacial.Geocoders;
 
-
 import com.fretron.Logger.Log;
 import org.glassfish.jersey.client.ClientProperties;
 

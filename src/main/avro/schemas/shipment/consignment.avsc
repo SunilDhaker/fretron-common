@@ -180,7 +180,70 @@
                       "com.fretron.Model.ConsignmentPod"
                     ],
                     "default": null
-         }
+         },
+         {
+                 "name": "equipments",
+                 "type": [
+                   "null",
+                   {
+                     "type": "array",
+                     "items": "com.fretron.Model.Equipment"
+                   }
+                 ],
+                 "default": null
+               },
+                       {
+                         "name": "eWayBillRegistrationDate",
+                         "type": [
+                           "null",
+                           "long"
+                         ],
+                         "logicalType": "timestamp-millis",
+                         "default": null
+                       },
+                     {
+                       "name": "invoiceValue",
+                       "type": [
+                         "null",
+                         "string"
+                       ],
+                       "default": null
+                     },
+                      {
+                        "name": "pssNo",
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "default": null
+                      },
+                        {
+                          "name": "customerPsnNo",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        },
+                              {
+                                "name": "contractToParty",
+                                "type": [
+                                  "null",
+                                  "com.fretron.Model.BuisnessPartner"
+                                ],
+                                "default": null
+                              },
+         {
+                         "name": "customFields",
+                         "type": [
+                           "null",
+                           {
+                             "type": "array",
+                             "items": "com.fretron.Model.CustomFields"
+                           }
+                         ],
+                         "default": null
+                     }
 
     ]
   }
