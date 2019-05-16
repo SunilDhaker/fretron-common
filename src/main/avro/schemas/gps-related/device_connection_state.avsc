@@ -104,7 +104,12 @@
                "name": "odometer",
                 "type": ["null","com.fretron.Model.Odometer"],
                 "default":null
-         }
+         },
+        {
+                 "name": "updatedAt",
+                 "type": ["null" ,"long"],
+                 "default" : null
+       }
     ]
 
   }
