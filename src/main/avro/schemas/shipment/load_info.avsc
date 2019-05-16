@@ -21,6 +21,22 @@
         }
       ],
       "default": null
-    }
+    },
+        {
+          "name": "valueOfGoods",
+          "type": [
+            "null",
+            "double"
+          ],
+          "default": null
+        },
+            {
+              "name": "currency",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
   ]
 }

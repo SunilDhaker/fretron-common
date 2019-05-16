@@ -10,11 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1124298014514912668L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 1548940421085242676L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"currency\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String material;
   @Deprecated public java.util.List<com.fretron.Model.Measurement> measurements;
+  @Deprecated public java.lang.Double valueOfGoods;
+  @Deprecated public java.lang.String currency;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -27,10 +29,14 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
    * All-args constructor.
    * @param material The new value for material
    * @param measurements The new value for measurements
+   * @param valueOfGoods The new value for valueOfGoods
+   * @param currency The new value for currency
    */
-  public LoadInfo(java.lang.String material, java.util.List<com.fretron.Model.Measurement> measurements) {
+  public LoadInfo(java.lang.String material, java.util.List<com.fretron.Model.Measurement> measurements, java.lang.Double valueOfGoods, java.lang.String currency) {
     this.material = material;
     this.measurements = measurements;
+    this.valueOfGoods = valueOfGoods;
+    this.currency = currency;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -39,6 +45,8 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     switch (field$) {
     case 0: return material;
     case 1: return measurements;
+    case 2: return valueOfGoods;
+    case 3: return currency;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -49,6 +57,8 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     switch (field$) {
     case 0: material = (java.lang.String)value$; break;
     case 1: measurements = (java.util.List<com.fretron.Model.Measurement>)value$; break;
+    case 2: valueOfGoods = (java.lang.Double)value$; break;
+    case 3: currency = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -86,6 +96,38 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'valueOfGoods' field.
+   * @return The value of the 'valueOfGoods' field.
+   */
+  public java.lang.Double getValueOfGoods() {
+    return valueOfGoods;
+  }
+
+  /**
+   * Sets the value of the 'valueOfGoods' field.
+   * @param value the value to set.
+   */
+  public void setValueOfGoods(java.lang.Double value) {
+    this.valueOfGoods = value;
+  }
+
+  /**
+   * Gets the value of the 'currency' field.
+   * @return The value of the 'currency' field.
+   */
+  public java.lang.String getCurrency() {
+    return currency;
+  }
+
+  /**
+   * Sets the value of the 'currency' field.
+   * @param value the value to set.
+   */
+  public void setCurrency(java.lang.String value) {
+    this.currency = value;
+  }
+
+  /**
    * Creates a new LoadInfo RecordBuilder.
    * @return A new LoadInfo RecordBuilder
    */
@@ -119,6 +161,8 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
 
     private java.lang.String material;
     private java.util.List<com.fretron.Model.Measurement> measurements;
+    private java.lang.Double valueOfGoods;
+    private java.lang.String currency;
 
     /** Creates a new Builder */
     private Builder() {
@@ -139,6 +183,14 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         this.measurements = data().deepCopy(fields()[1].schema(), other.measurements);
         fieldSetFlags()[1] = true;
       }
+      if (isValidValue(fields()[2], other.valueOfGoods)) {
+        this.valueOfGoods = data().deepCopy(fields()[2].schema(), other.valueOfGoods);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.currency)) {
+        this.currency = data().deepCopy(fields()[3].schema(), other.currency);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -154,6 +206,14 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[1], other.measurements)) {
         this.measurements = data().deepCopy(fields()[1].schema(), other.measurements);
         fieldSetFlags()[1] = true;
+      }
+      if (isValidValue(fields()[2], other.valueOfGoods)) {
+        this.valueOfGoods = data().deepCopy(fields()[2].schema(), other.valueOfGoods);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.currency)) {
+        this.currency = data().deepCopy(fields()[3].schema(), other.currency);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -235,12 +295,92 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'valueOfGoods' field.
+      * @return The value.
+      */
+    public java.lang.Double getValueOfGoods() {
+      return valueOfGoods;
+    }
+
+    /**
+      * Sets the value of the 'valueOfGoods' field.
+      * @param value The value of 'valueOfGoods'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder setValueOfGoods(java.lang.Double value) {
+      validate(fields()[2], value);
+      this.valueOfGoods = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'valueOfGoods' field has been set.
+      * @return True if the 'valueOfGoods' field has been set, false otherwise.
+      */
+    public boolean hasValueOfGoods() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'valueOfGoods' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder clearValueOfGoods() {
+      valueOfGoods = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'currency' field.
+      * @return The value.
+      */
+    public java.lang.String getCurrency() {
+      return currency;
+    }
+
+    /**
+      * Sets the value of the 'currency' field.
+      * @param value The value of 'currency'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder setCurrency(java.lang.String value) {
+      validate(fields()[3], value);
+      this.currency = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'currency' field has been set.
+      * @return True if the 'currency' field has been set, false otherwise.
+      */
+    public boolean hasCurrency() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'currency' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder clearCurrency() {
+      currency = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public LoadInfo build() {
       try {
         LoadInfo record = new LoadInfo();
         record.material = fieldSetFlags()[0] ? this.material : (java.lang.String) defaultValue(fields()[0]);
         record.measurements = fieldSetFlags()[1] ? this.measurements : (java.util.List<com.fretron.Model.Measurement>) defaultValue(fields()[1]);
+        record.valueOfGoods = fieldSetFlags()[2] ? this.valueOfGoods : (java.lang.Double) defaultValue(fields()[2]);
+        record.currency = fieldSetFlags()[3] ? this.currency : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
