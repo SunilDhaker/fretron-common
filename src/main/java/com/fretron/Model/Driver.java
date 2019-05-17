@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Driver extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2703599990182338370L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -7709715205902857544L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"associatedUserId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
@@ -27,6 +27,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.util.List<java.lang.String> mobileNumbers;
   @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public java.lang.String associatedUserId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +52,9 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param externalId The new value for externalId
    * @param mobileNumbers The new value for mobileNumbers
    * @param updates The new value for updates
+   * @param associatedUserId The new value for associatedUserId
    */
-  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId, java.util.List<java.lang.String> mobileNumbers, com.fretron.Model.Updates updates) {
+  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId, java.util.List<java.lang.String> mobileNumbers, com.fretron.Model.Updates updates, java.lang.String associatedUserId) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.uuid = uuid;
@@ -67,6 +69,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     this.externalId = externalId;
     this.mobileNumbers = mobileNumbers;
     this.updates = updates;
+    this.associatedUserId = associatedUserId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +90,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 11: return externalId;
     case 12: return mobileNumbers;
     case 13: return updates;
+    case 14: return associatedUserId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +113,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 11: externalId = (java.lang.String)value$; break;
     case 12: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
     case 13: updates = (com.fretron.Model.Updates)value$; break;
+    case 14: associatedUserId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +343,22 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'associatedUserId' field.
+   * @return The value of the 'associatedUserId' field.
+   */
+  public java.lang.String getAssociatedUserId() {
+    return associatedUserId;
+  }
+
+  /**
+   * Sets the value of the 'associatedUserId' field.
+   * @param value the value to set.
+   */
+  public void setAssociatedUserId(java.lang.String value) {
+    this.associatedUserId = value;
+  }
+
+  /**
    * Creates a new Driver RecordBuilder.
    * @return A new Driver RecordBuilder
    */
@@ -384,6 +405,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.util.List<java.lang.String> mobileNumbers;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
+    private java.lang.String associatedUserId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -455,6 +477,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
+      if (isValidValue(fields()[14], other.associatedUserId)) {
+        this.associatedUserId = data().deepCopy(fields()[14].schema(), other.associatedUserId);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -520,6 +546,10 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         fieldSetFlags()[13] = true;
       }
       this.updatesBuilder = null;
+      if (isValidValue(fields()[14], other.associatedUserId)) {
+        this.associatedUserId = data().deepCopy(fields()[14].schema(), other.associatedUserId);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -1103,6 +1133,45 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'associatedUserId' field.
+      * @return The value.
+      */
+    public java.lang.String getAssociatedUserId() {
+      return associatedUserId;
+    }
+
+    /**
+      * Sets the value of the 'associatedUserId' field.
+      * @param value The value of 'associatedUserId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setAssociatedUserId(java.lang.String value) {
+      validate(fields()[14], value);
+      this.associatedUserId = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'associatedUserId' field has been set.
+      * @return True if the 'associatedUserId' field has been set, false otherwise.
+      */
+    public boolean hasAssociatedUserId() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'associatedUserId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearAssociatedUserId() {
+      associatedUserId = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public Driver build() {
       try {
@@ -1125,6 +1194,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         } else {
           record.updates = fieldSetFlags()[13] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[13]);
         }
+        record.associatedUserId = fieldSetFlags()[14] ? this.associatedUserId : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -121,6 +121,14 @@
                       "com.fretron.Model.Updates"
                     ],
                     "default": null
-                  }
+            },
+            {
+               "name": "associatedUserId",
+                "type": [
+                    "null",
+                    "string"
+                ],
+                "default": null
+            }
   ]
 }
