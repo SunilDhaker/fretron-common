@@ -577,6 +577,7 @@ public class Constants {
 
     //=================================DASHBOARD MANAGER===========================
     public static final String KEY_FLEET_RECORD_TOPIC = "fleet.record.topic";
+    public static final String KEY_FLEET_MANAGER_SERVICE_URL = "key.fleet.manager.service.url";
 
 
     private Constants() {
