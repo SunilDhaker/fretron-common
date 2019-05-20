@@ -118,7 +118,7 @@
     <entry key="authorization.manager.service.url">http://authorization-manager.streams:5056</entry>
 
     <!-- =========Fleet-Manager========== -->
-    <entry key="fleet.manager.service.url">http://fleet-manager.streams:8092</entry>
+    <entry key="key.fleet.manager.service.url">http://fleet-manager.streams:8092</entry>
 
 
 </properties>
