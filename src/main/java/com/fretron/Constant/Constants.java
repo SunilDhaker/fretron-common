@@ -579,6 +579,10 @@ public class Constants {
     public static final String KEY_FLEET_RECORD_TOPIC = "fleet.record.topic";
     public static final String KEY_FLEET_MANAGER_SERVICE_URL = "key.fleet.manager.service.url";
 
+    //=================================SHIPMENT VIEW===========================
+    public static final String KEY_SHIPMENT_VIEW_SERVICE_URL = "key.shipment.view.service.url";
+
+
 
     private Constants() {
 
