@@ -582,6 +582,8 @@ public class Constants {
     //=================================SHIPMENT VIEW===========================
     public static final String KEY_SHIPMENT_VIEW_SERVICE_URL = "key.shipment.view.service.url";
 
+    //=================================AUTOMATION ENGINE SERVICE URL===========================
+    public static final String KEY_AUTOMATION_ENGINE_SERVICE_URL = "key.automation.engine.service.url";
 
 
     private Constants() {

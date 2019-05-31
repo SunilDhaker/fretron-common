@@ -104,4 +104,7 @@
     <!-- =========Shipment View========== -->
     <entry key="key.shipment.view.service.url">http://shipment-view.mean:8080</entry>
 
+    <!-- ==========Authomation Engine========== -->
+    <entry key="key.automation.engine.service.url">http://automation-engine.mean:8083</entry>
+
 </properties>
