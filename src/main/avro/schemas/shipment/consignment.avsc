@@ -243,7 +243,15 @@
                            }
                          ],
                          "default": null
-                     }
+                     },
+              {
+                "name": "externalId",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
 
     ]
   }
