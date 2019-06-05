@@ -109,6 +109,14 @@
                        "com.fretron.Model.Updates"
                      ],
                      "default": null
-                   }
+                   },
+                     {
+                         "name": "status",
+                         "type": [
+                           "null",
+                           "string"
+                         ],
+                         "default": null
+                       }
   ]
 }
