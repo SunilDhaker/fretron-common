@@ -108,12 +108,12 @@
          "default": null
     },
     {
-           "name": "loadInfo",
+           "name": "lineItems",
             "type": [
                       "null",
                       {
                         "type": "array",
-                        "items": "com.fretron.Model.LoadInfo"
+                        "items": "com.fretron.Model.OrderLineItem"
                       }
                     ],
             "default": null
