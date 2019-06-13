@@ -18,6 +18,24 @@
         "string"
       ],
       "default": null
+    },
+    {
+            "name":"isFilteredAccess",
+            "type": ["null","boolean"],
+            "default":null
+    },
+    {
+          "name": "filters",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     },
+     {
+         "name": "permissions",
+          "type": ["null", {"type" : "array", "items":"string"}],
+          "default":null
     }
   ]
 }
