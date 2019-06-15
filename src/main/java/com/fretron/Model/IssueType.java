@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1290070434167375604L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 1347619871841763496L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
@@ -22,6 +22,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons;
   @Deprecated public java.lang.Long standardResolutionTime;
   @Deprecated public java.lang.Boolean isInternal;
+  @Deprecated public java.util.List<com.fretron.Model.CustomFields> customFields;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +42,9 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param extensionReasons The new value for extensionReasons
    * @param standardResolutionTime The new value for standardResolutionTime
    * @param isInternal The new value for isInternal
+   * @param customFields The new value for customFields
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
@@ -52,6 +54,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     this.extensionReasons = extensionReasons;
     this.standardResolutionTime = standardResolutionTime;
     this.isInternal = isInternal;
+    this.customFields = customFields;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +70,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 6: return extensionReasons;
     case 7: return standardResolutionTime;
     case 8: return isInternal;
+    case 9: return customFields;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +88,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 6: extensionReasons = (java.util.List<com.fretron.Model.IssueExtensionReason>)value$; break;
     case 7: standardResolutionTime = (java.lang.Long)value$; break;
     case 8: isInternal = (java.lang.Boolean)value$; break;
+    case 9: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +238,22 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'customFields' field.
+   * @return The value of the 'customFields' field.
+   */
+  public java.util.List<com.fretron.Model.CustomFields> getCustomFields() {
+    return customFields;
+  }
+
+  /**
+   * Sets the value of the 'customFields' field.
+   * @param value the value to set.
+   */
+  public void setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
+    this.customFields = value;
+  }
+
+  /**
    * Creates a new IssueType RecordBuilder.
    * @return A new IssueType RecordBuilder
    */
@@ -273,6 +294,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons;
     private java.lang.Long standardResolutionTime;
     private java.lang.Boolean isInternal;
+    private java.util.List<com.fretron.Model.CustomFields> customFields;
 
     /** Creates a new Builder */
     private Builder() {
@@ -321,6 +343,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.isInternal = data().deepCopy(fields()[8].schema(), other.isInternal);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[9].schema(), other.customFields);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -364,6 +390,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[8], other.isInternal)) {
         this.isInternal = data().deepCopy(fields()[8].schema(), other.isInternal);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[9].schema(), other.customFields);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -718,6 +748,45 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'customFields' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.CustomFields> getCustomFields() {
+      return customFields;
+    }
+
+    /**
+      * Sets the value of the 'customFields' field.
+      * @param value The value of 'customFields'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
+      validate(fields()[9], value);
+      this.customFields = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customFields' field has been set.
+      * @return True if the 'customFields' field has been set, false otherwise.
+      */
+    public boolean hasCustomFields() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'customFields' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearCustomFields() {
+      customFields = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public IssueType build() {
       try {
@@ -731,6 +800,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         record.extensionReasons = fieldSetFlags()[6] ? this.extensionReasons : (java.util.List<com.fretron.Model.IssueExtensionReason>) defaultValue(fields()[6]);
         record.standardResolutionTime = fieldSetFlags()[7] ? this.standardResolutionTime : (java.lang.Long) defaultValue(fields()[7]);
         record.isInternal = fieldSetFlags()[8] ? this.isInternal : (java.lang.Boolean) defaultValue(fields()[8]);
+        record.customFields = fieldSetFlags()[9] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
