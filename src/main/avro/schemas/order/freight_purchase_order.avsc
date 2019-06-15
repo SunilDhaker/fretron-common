@@ -1,0 +1,119 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "FreightPurchaseOrder",
+  "type": "record",
+  "fields": [
+    {
+       "name": "uuid",
+        "type": [
+                    "null",
+                    "string"
+                  ],
+        "default": null
+      },
+      {
+        "name": "externalId",
+         "type": [
+                   "null",
+                   "string"
+                      ],
+         "default": null
+      },
+      {
+         "name": "orgId",
+         "type": [
+                   "null",
+                   "string"
+                      ],
+         "default": null
+      },
+      {
+            "name": "vendor",
+             "type": [
+                       "null",
+                       "com.fretron.Model.BuisnessPartner"
+                     ],
+            "default": null
+    },
+    {
+        "name": "orderType",
+         "type": [
+                   "null",
+                    "string"
+                 ],
+        "default": null
+     },
+     {
+       "name": "status",
+        "type": [
+                  "null",
+                  "string"
+                      ],
+        "default": null
+     },
+     {
+        "name": "placementDate",
+         "type": [
+                    "null",
+                     "long"
+                  ],
+         "logicalType": "timestamp-millis",
+          "default": null
+     },
+     {
+        "name": "origin",
+         "type": [
+                   "null",
+                   "com.fretron.Model.Place"
+                   ],
+          "default": null
+     },
+     {
+        "name": "destination",
+         "type": [
+                        "null",
+                        "com.fretron.Model.Place"
+                        ],
+         "default": null
+      },
+      {
+        "name": "material",
+         "type": [
+                            "null",
+                            "string"
+                               ],
+         "default": null
+      },
+      {
+             "name": "vehicleType",
+              "type": [
+                            "null",
+                            "string"
+                               ],
+              "default": null
+        },
+        {
+               "name": "salesOrder",
+                "type": [
+                           "null",
+                           {
+                              "type": "array",
+                               "items": "string"
+                           }
+                                ],
+                 "default": null
+          },
+
+    {
+       "name": "tnCs",
+        "type": [
+                   "null",
+                   {
+                      "type": "array",
+                       "items": "com.fretron.Model.ContractTerms"
+                   }
+                        ],
+         "default": null
+     }
+  ]
+}

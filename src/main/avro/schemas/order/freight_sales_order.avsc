@@ -1,6 +1,6 @@
 {
   "namespace": "com.fretron.Model",
-  "name": "Order",
+  "name": "FreightSalesOrder",
   "type": "record",
   "fields": [
    {
