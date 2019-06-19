@@ -107,6 +107,17 @@
                              ],
          "default": null
     },
+     {
+           "name": "purchaseOrders",
+                "type": [
+                               "null",
+                               {
+                                  "type": "array",
+                                   "items": "string"
+                               }
+                                    ],
+                "default": null
+     },
     {
            "name": "lineItems",
             "type": [
@@ -118,6 +129,14 @@
                     ],
             "default": null
     },
+     {
+           "name": "updates",
+            "type": [
+                    "null",
+                    "com.fretron.Model.Updates"
+                  ],
+            "default": null
+        },
     {
        "name": "terms",
         "type": [

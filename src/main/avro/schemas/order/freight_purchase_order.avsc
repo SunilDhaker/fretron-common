@@ -85,24 +85,32 @@
          "default": null
       },
       {
-             "name": "vehicleType",
-              "type": [
+         "name": "vehicleType",
+          "type": [
                             "null",
                             "string"
                                ],
-              "default": null
+         "default": null
         },
         {
-               "name": "salesOrder",
-                "type": [
+           "name": "salesOrders",
+            "type": [
                            "null",
                            {
                               "type": "array",
                                "items": "string"
                            }
                                 ],
-                 "default": null
+            "default": null
           },
+           {
+                 "name": "updates",
+                  "type": [
+                          "null",
+                          "com.fretron.Model.Updates"
+                        ],
+                  "default": null
+              },
 
     {
        "name": "tnCs",
