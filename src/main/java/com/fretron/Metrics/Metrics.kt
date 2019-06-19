@@ -25,23 +25,6 @@ class Metrics {
                 .name(name).help(description).register()
         }
 
-        fun startExporter(port: Int) {
-//            // update the configuration
-//            val server = Server(port)
-//
-//            val context = ServletContextHandler()
-//            context.setContextPath("/")
-//            server.setHandler(context)
-//            context.addServlet(ServletHolder(MetricsServlet()), "/metrics")
-//
-//            try {
-//                server.start()
-//            } catch (e: Exception) {
-//                Log.error("Couldn't start http server", e)
-//            }
-
-
-        }
 
     }
 
