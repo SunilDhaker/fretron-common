@@ -1,10 +1,10 @@
-package com.fretron.metrics
+package com.fretron.Metrics
 
-import com.fretron.Logger.Log
+
 import io.prometheus.client.Counter
 import io.prometheus.client.Gauge
 import io.prometheus.client.Summary
-import io.prometheus.client.exporter.MetricsServlet
+
 
 
 class Metrics {
