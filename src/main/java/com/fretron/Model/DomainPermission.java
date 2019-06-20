@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class DomainPermission extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5005892304941283160L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 1768640833111582974L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"DomainPermission\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chooseAtAssignment\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String entity;
   @Deprecated public java.lang.Boolean isFilteredAccess;
   @Deprecated public java.lang.String filters;
   @Deprecated public java.util.List<java.lang.String> permissions;
+  @Deprecated public java.lang.Boolean chooseAtAssignment;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
    * @param isFilteredAccess The new value for isFilteredAccess
    * @param filters The new value for filters
    * @param permissions The new value for permissions
+   * @param chooseAtAssignment The new value for chooseAtAssignment
    */
-  public DomainPermission(java.lang.String uuid, java.lang.String entity, java.lang.Boolean isFilteredAccess, java.lang.String filters, java.util.List<java.lang.String> permissions) {
+  public DomainPermission(java.lang.String uuid, java.lang.String entity, java.lang.Boolean isFilteredAccess, java.lang.String filters, java.util.List<java.lang.String> permissions, java.lang.Boolean chooseAtAssignment) {
     this.uuid = uuid;
     this.entity = entity;
     this.isFilteredAccess = isFilteredAccess;
     this.filters = filters;
     this.permissions = permissions;
+    this.chooseAtAssignment = chooseAtAssignment;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     case 2: return isFilteredAccess;
     case 3: return filters;
     case 4: return permissions;
+    case 5: return chooseAtAssignment;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     case 2: isFilteredAccess = (java.lang.Boolean)value$; break;
     case 3: filters = (java.lang.String)value$; break;
     case 4: permissions = (java.util.List<java.lang.String>)value$; break;
+    case 5: chooseAtAssignment = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
   }
 
   /**
+   * Gets the value of the 'chooseAtAssignment' field.
+   * @return The value of the 'chooseAtAssignment' field.
+   */
+  public java.lang.Boolean getChooseAtAssignment() {
+    return chooseAtAssignment;
+  }
+
+  /**
+   * Sets the value of the 'chooseAtAssignment' field.
+   * @param value the value to set.
+   */
+  public void setChooseAtAssignment(java.lang.Boolean value) {
+    this.chooseAtAssignment = value;
+  }
+
+  /**
    * Creates a new DomainPermission RecordBuilder.
    * @return A new DomainPermission RecordBuilder
    */
@@ -185,6 +206,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
     private java.lang.Boolean isFilteredAccess;
     private java.lang.String filters;
     private java.util.List<java.lang.String> permissions;
+    private java.lang.Boolean chooseAtAssignment;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +239,10 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
         this.permissions = data().deepCopy(fields()[4].schema(), other.permissions);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.chooseAtAssignment)) {
+        this.chooseAtAssignment = data().deepCopy(fields()[5].schema(), other.chooseAtAssignment);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -244,6 +270,10 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       if (isValidValue(fields()[4], other.permissions)) {
         this.permissions = data().deepCopy(fields()[4].schema(), other.permissions);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.chooseAtAssignment)) {
+        this.chooseAtAssignment = data().deepCopy(fields()[5].schema(), other.chooseAtAssignment);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -442,6 +472,45 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'chooseAtAssignment' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getChooseAtAssignment() {
+      return chooseAtAssignment;
+    }
+
+    /**
+      * Sets the value of the 'chooseAtAssignment' field.
+      * @param value The value of 'chooseAtAssignment'.
+      * @return This builder.
+      */
+    public com.fretron.Model.DomainPermission.Builder setChooseAtAssignment(java.lang.Boolean value) {
+      validate(fields()[5], value);
+      this.chooseAtAssignment = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'chooseAtAssignment' field has been set.
+      * @return True if the 'chooseAtAssignment' field has been set, false otherwise.
+      */
+    public boolean hasChooseAtAssignment() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'chooseAtAssignment' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.DomainPermission.Builder clearChooseAtAssignment() {
+      chooseAtAssignment = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public DomainPermission build() {
       try {
@@ -451,6 +520,7 @@ public class DomainPermission extends org.apache.avro.specific.SpecificRecordBas
         record.isFilteredAccess = fieldSetFlags()[2] ? this.isFilteredAccess : (java.lang.Boolean) defaultValue(fields()[2]);
         record.filters = fieldSetFlags()[3] ? this.filters : (java.lang.String) defaultValue(fields()[3]);
         record.permissions = fieldSetFlags()[4] ? this.permissions : (java.util.List<java.lang.String>) defaultValue(fields()[4]);
+        record.chooseAtAssignment = fieldSetFlags()[5] ? this.chooseAtAssignment : (java.lang.Boolean) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

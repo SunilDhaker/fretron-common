@@ -10,7 +10,7 @@
           "string"
         ],
         "default": null
-     },
+    },
     {
       "name": "entity",
       "type": [
@@ -23,8 +23,8 @@
             "name":"isFilteredAccess",
             "type": ["null","boolean"],
             "default":null
-    },
-    {
+     },
+     {
           "name": "filters",
           "type": [
             "null",
@@ -36,6 +36,11 @@
          "name": "permissions",
           "type": ["null", {"type" : "array", "items":"string"}],
           "default":null
-    }
+     },
+     {
+        "name":"chooseAtAssignment",
+        "type": ["null","boolean"],
+        "default":null
+     }
   ]
 }
