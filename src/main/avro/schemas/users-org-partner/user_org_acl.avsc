@@ -22,6 +22,14 @@
           "type": ["null" , "string"],
           "default" : null
    },
+   {
+         "name": "externalId",
+                     "type": [
+                       "null",
+                       "string"
+                     ],
+              "default": null
+       },
 {"name" : "accessLevel", "type" : ["null","string"], "default" : null},
 {"name" : "relationType", "type" : ["null","string"], "default" : null},
   {
