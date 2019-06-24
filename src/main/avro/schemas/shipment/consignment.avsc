@@ -251,7 +251,16 @@
                   "string"
                 ],
                 "default": null
-              }
+              },
+                      {
+                        "name": "deliveryDate",
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "logicalType": "timestamp-millis",
+                        "default": null
+                      }
 
     ]
   }
