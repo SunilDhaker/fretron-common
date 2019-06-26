@@ -1,0 +1,167 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "Auction",
+  "type": "record",
+  "fields": [
+   {
+     "name": "uuid",
+      "type": [
+                  "null",
+                  "string"
+                ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+       "type": [
+                 "null",
+                 "string"
+                    ],
+       "default": null
+    },
+    {
+       "name": "orgId",
+       "type": [
+                 "null",
+                 "string"
+                    ],
+       "default": null
+    },
+    {
+       "name": "status",
+       "type": [
+                 "null",
+                 "string"
+                ],
+        "default": null
+     },
+     {
+        "name": "numberOfVehicles",
+         "type": [
+                      "null",
+                      "int"
+                     ],
+         "default": null
+     },
+     {
+       "name": "origin",
+        "type": [
+                  "null",
+                  "com.fretron.Model.Place"
+                ],
+       "default": null
+     },
+     {
+       "name": "destination",
+        "type": [
+                   "null",
+                   "com.fretron.Model.Place"
+                ],
+        "default": null
+     },
+     {
+        "name": "alternateOrigins",
+         "type": [
+                    "null",
+                  {
+                     "type": "array",
+                     "items": "com.fretron.Model.Place"
+                  }
+                ],
+        "default": null
+     },
+     {
+         "name": "alternateDestinations",
+          "type": [
+                     "null",
+                     {
+                       "type": "array",
+                        "items": "com.fretron.Model.Place"
+                     }
+                  ],
+          "default": null
+     },
+     {
+         "name": "bids",
+          "type": [
+                     "null",
+                                        {
+                                            "type": "array",
+                                             "items": "com.fretron.Model.Bid"
+                                         }
+                 ],
+          "default": null
+     },
+     {
+         "name": "price",
+          "type": [
+                     "null",
+                     "double"
+                   ],
+         "default": null
+     },
+     {
+       "name": "allowedTransporters",
+       "type": [
+                     "null",
+                                    {
+                                       "type": "array",
+                                        "items": "string"
+                                    }
+                  ],
+         "default": null
+    },
+    {
+        "name": "allowedMaterial",
+         "type": [
+                          "null",
+                                    {
+                                      "type": "array",
+                                      "items": "string"
+                                    }
+                        ],
+        "default": null
+    },
+    {
+       "name": "allowedVehicleTypes",
+        "type": [
+                              "null",
+                                        {
+                                          "type": "array",
+                                          "items": "string"
+                                        }
+                            ],
+         "default": null
+    },
+    {
+      "name": "purchaseEnquiries",
+       "type": [
+                  "null",
+                  {
+                       "type": "array",
+                       "items": "string"
+                  }
+               ],
+      "default": null
+    },
+    {
+       "name": "tnCs",
+        "type": [
+                   "null",
+                   {
+                      "type": "array",
+                       "items": "com.fretron.Model.ContractTerms"
+                   }
+                        ],
+         "default": null
+     },
+     {
+        "name": "updates",
+         "type": [
+                   "null",
+                   "com.fretron.Model.Updates"
+                  ],
+         "default": null
+      }
+  ]
+}
