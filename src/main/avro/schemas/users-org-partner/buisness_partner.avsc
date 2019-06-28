@@ -117,6 +117,14 @@
                            "string"
                          ],
                          "default": null
-                       }
+                       },
+                       {
+                             "name": "panNumber",
+                             "type": [
+                               "null",
+                               "string"
+                             ],
+                             "default": null
+                           }
   ]
 }
