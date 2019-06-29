@@ -68,6 +68,44 @@
         "default": null
      },
      {
+             "name": "orderDate",
+              "type": [
+                         "null",
+                          "long"
+                       ],
+              "logicalType": "timestamp-millis",
+               "default": null
+     },
+     {
+        "name": "expireDate",
+         "type": [
+                    "null",
+                    "long"
+                  ],
+          "logicalType": "timestamp-millis",
+          "default": null
+      },
+
+      {
+          "name": "plannedStartTime",
+               "type": [
+                          "null",
+                          "long"
+                        ],
+                "logicalType": "timestamp-millis",
+                "default": null
+      },
+
+       {
+         "name": "plannedEndTime",
+          "type": [
+                                "null",
+                                "long"
+                              ],
+         "logicalType": "timestamp-millis",
+         "default": null
+      },
+     {
        "name": "salesOffice",
         "type": [
                           "null",

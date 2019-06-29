@@ -85,10 +85,10 @@
          "name": "bids",
           "type": [
                      "null",
-                                        {
-                                            "type": "array",
-                                             "items": "com.fretron.Model.Bid"
-                                         }
+                       {
+                         "type": "array",
+                         "items": "com.fretron.Model.Bid"
+                       }
                  ],
           "default": null
      },
