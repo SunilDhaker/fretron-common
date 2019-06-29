@@ -28,6 +28,14 @@
          "default": null
       },
       {
+        "name": "orderNumber",
+         "type": [
+                       "null",
+                      "string"
+                     ],
+        "default": null
+      },
+      {
             "name": "vendor",
              "type": [
                        "null",
