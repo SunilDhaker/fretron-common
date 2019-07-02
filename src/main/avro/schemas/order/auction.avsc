@@ -36,6 +36,14 @@
         "default": null
      },
      {
+       "name": "orderId",
+        "type": [
+                  "null",
+                  "string"
+                 ],
+        "default": null
+     },
+     {
         "name": "numberOfVehicles",
          "type": [
                       "null",
@@ -58,6 +66,17 @@
                    "com.fretron.Model.Place"
                 ],
         "default": null
+     },
+     {
+        "name": "remarks",
+         "type": [
+                   "null",
+                       {
+                          "type": "array",
+                          "items": "string"
+                       }
+                  ],
+         "default": null
      },
      {
         "name": "alternateOrigins",
@@ -101,6 +120,15 @@
          "default": null
      },
      {
+       "name": "placementDate",
+        "type": [
+                         "null",
+                          "long"
+                       ],
+              "logicalType": "timestamp-millis",
+       "default": null
+     },
+     {
        "name": "allowedTransporters",
        "type": [
                      "null",
@@ -125,12 +153,12 @@
     {
        "name": "allowedVehicleTypes",
         "type": [
-                              "null",
+                   "null",
                                         {
                                           "type": "array",
                                           "items": "string"
                                         }
-                            ],
+                 ],
          "default": null
     },
     {
@@ -154,6 +182,14 @@
                    }
                         ],
          "default": null
+     },
+     {
+        "name": "round",
+         "type": [
+                        "null",
+                        "com.fretron.Model.AuctionRound"
+                       ],
+        "default": null
      },
      {
         "name": "updates",

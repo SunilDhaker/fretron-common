@@ -38,10 +38,10 @@
             {
                 "name": "rank",
                  "type": [
-                             "null",
-                              "double"
-                                    ],
+                           "null",
+                           "double"
+                         ],
                  "default": null
-               }
+            }
   ]
 }

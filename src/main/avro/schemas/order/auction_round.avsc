@@ -1,0 +1,34 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "AuctionRound",
+  "type": "record",
+  "fields": [
+           {
+              "name": "status",
+              "type": [
+                        "null",
+                        "string"
+                       ],
+               "default": null
+            },
+            {
+               "name": "startTime",
+                "type": [
+                          "null",
+                           "long"
+                         ],
+                "logicalType": "timestamp-millis",
+                "default": null
+            },
+            {
+              "name": "endTime",
+               "type": [
+                          "null",
+                           "long"
+                        ],
+              "logicalType": "timestamp-millis",
+              "default": null
+             }
+
+  ]
+}
