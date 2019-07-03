@@ -1,0 +1,29 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "OrderRelation",
+  "type": "record",
+  "fields": [
+        {
+            "name": "standardMeasurement",
+             "type": [
+                        "null",
+                         "com.fretron.Model.StandardMeasurement"
+                          ],
+            "default": null
+        },
+        {
+             "name": "orderId",
+              "type": ["null",
+                         "string"
+                      ],
+              "default": null
+        },
+        {
+            "name": "lineItemId",
+             "type": ["null",
+                          "string"
+                     ],
+              "default": null
+        }
+  ]
+}

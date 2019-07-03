@@ -12,6 +12,14 @@
              "default": null
         },
         {
+                  "name": "consigner",
+                   "type": [
+                                  "null",
+                                  "com.fretron.Model.BuisnessPartner"
+                                ],
+                  "default": null
+        },
+        {
            "name": "expectedDeliveryDate",
                    "type": [
                           "null",
@@ -44,10 +52,18 @@
            {
                "name": "loadInfo",
                 "type": [
-                                   "null",
-                                    "com.fretron.Model.LoadInfo"
-                                      ],
+                            "null",
+                            "com.fretron.Model.LoadInfo"
+                        ],
                 "default": null
+          },
+          {
+             "name": "mapping",
+              "type": [
+                         "null",
+                          "com.fretron.Model.OrderRelation"
+                      ],
+             "default": null
           }
   ]
 }

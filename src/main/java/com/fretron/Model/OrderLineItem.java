@@ -10,15 +10,17 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1161408428767968709L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"consignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",\"Geometry\"],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"expectedDeliveryDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceValue\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"invoiceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"loadInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LoadInfo\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\"",":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"currency\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -291068710963187385L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"consignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",\"Geometry\"],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"consigner\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"expectedDeliveryDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"invoiceValue\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"invoiceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"loadInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LoadInfo\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"","array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"currency\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"mapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrderRelation\",\"fields\":[{\"name\":\"standardMeasurement\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"package\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.BuisnessPartner consignee;
+  @Deprecated public com.fretron.Model.BuisnessPartner consigner;
   @Deprecated public java.lang.Long expectedDeliveryDate;
   @Deprecated public java.lang.Long invoiceDate;
   @Deprecated public java.lang.Double invoiceValue;
   @Deprecated public java.lang.String invoiceNumber;
   @Deprecated public com.fretron.Model.LoadInfo loadInfo;
+  @Deprecated public com.fretron.Model.OrderRelation mapping;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -30,19 +32,23 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
   /**
    * All-args constructor.
    * @param consignee The new value for consignee
+   * @param consigner The new value for consigner
    * @param expectedDeliveryDate The new value for expectedDeliveryDate
    * @param invoiceDate The new value for invoiceDate
    * @param invoiceValue The new value for invoiceValue
    * @param invoiceNumber The new value for invoiceNumber
    * @param loadInfo The new value for loadInfo
+   * @param mapping The new value for mapping
    */
-  public OrderLineItem(com.fretron.Model.BuisnessPartner consignee, java.lang.Long expectedDeliveryDate, java.lang.Long invoiceDate, java.lang.Double invoiceValue, java.lang.String invoiceNumber, com.fretron.Model.LoadInfo loadInfo) {
+  public OrderLineItem(com.fretron.Model.BuisnessPartner consignee, com.fretron.Model.BuisnessPartner consigner, java.lang.Long expectedDeliveryDate, java.lang.Long invoiceDate, java.lang.Double invoiceValue, java.lang.String invoiceNumber, com.fretron.Model.LoadInfo loadInfo, com.fretron.Model.OrderRelation mapping) {
     this.consignee = consignee;
+    this.consigner = consigner;
     this.expectedDeliveryDate = expectedDeliveryDate;
     this.invoiceDate = invoiceDate;
     this.invoiceValue = invoiceValue;
     this.invoiceNumber = invoiceNumber;
     this.loadInfo = loadInfo;
+    this.mapping = mapping;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -50,11 +56,13 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return consignee;
-    case 1: return expectedDeliveryDate;
-    case 2: return invoiceDate;
-    case 3: return invoiceValue;
-    case 4: return invoiceNumber;
-    case 5: return loadInfo;
+    case 1: return consigner;
+    case 2: return expectedDeliveryDate;
+    case 3: return invoiceDate;
+    case 4: return invoiceValue;
+    case 5: return invoiceNumber;
+    case 6: return loadInfo;
+    case 7: return mapping;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,11 +72,13 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: consignee = (com.fretron.Model.BuisnessPartner)value$; break;
-    case 1: expectedDeliveryDate = (java.lang.Long)value$; break;
-    case 2: invoiceDate = (java.lang.Long)value$; break;
-    case 3: invoiceValue = (java.lang.Double)value$; break;
-    case 4: invoiceNumber = (java.lang.String)value$; break;
-    case 5: loadInfo = (com.fretron.Model.LoadInfo)value$; break;
+    case 1: consigner = (com.fretron.Model.BuisnessPartner)value$; break;
+    case 2: expectedDeliveryDate = (java.lang.Long)value$; break;
+    case 3: invoiceDate = (java.lang.Long)value$; break;
+    case 4: invoiceValue = (java.lang.Double)value$; break;
+    case 5: invoiceNumber = (java.lang.String)value$; break;
+    case 6: loadInfo = (com.fretron.Model.LoadInfo)value$; break;
+    case 7: mapping = (com.fretron.Model.OrderRelation)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -87,6 +97,22 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
    */
   public void setConsignee(com.fretron.Model.BuisnessPartner value) {
     this.consignee = value;
+  }
+
+  /**
+   * Gets the value of the 'consigner' field.
+   * @return The value of the 'consigner' field.
+   */
+  public com.fretron.Model.BuisnessPartner getConsigner() {
+    return consigner;
+  }
+
+  /**
+   * Sets the value of the 'consigner' field.
+   * @param value the value to set.
+   */
+  public void setConsigner(com.fretron.Model.BuisnessPartner value) {
+    this.consigner = value;
   }
 
   /**
@@ -170,6 +196,22 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'mapping' field.
+   * @return The value of the 'mapping' field.
+   */
+  public com.fretron.Model.OrderRelation getMapping() {
+    return mapping;
+  }
+
+  /**
+   * Sets the value of the 'mapping' field.
+   * @param value the value to set.
+   */
+  public void setMapping(com.fretron.Model.OrderRelation value) {
+    this.mapping = value;
+  }
+
+  /**
    * Creates a new OrderLineItem RecordBuilder.
    * @return A new OrderLineItem RecordBuilder
    */
@@ -203,12 +245,16 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
 
     private com.fretron.Model.BuisnessPartner consignee;
     private com.fretron.Model.BuisnessPartner.Builder consigneeBuilder;
+    private com.fretron.Model.BuisnessPartner consigner;
+    private com.fretron.Model.BuisnessPartner.Builder consignerBuilder;
     private java.lang.Long expectedDeliveryDate;
     private java.lang.Long invoiceDate;
     private java.lang.Double invoiceValue;
     private java.lang.String invoiceNumber;
     private com.fretron.Model.LoadInfo loadInfo;
     private com.fretron.Model.LoadInfo.Builder loadInfoBuilder;
+    private com.fretron.Model.OrderRelation mapping;
+    private com.fretron.Model.OrderRelation.Builder mappingBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -228,28 +274,42 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       if (other.hasConsigneeBuilder()) {
         this.consigneeBuilder = com.fretron.Model.BuisnessPartner.newBuilder(other.getConsigneeBuilder());
       }
-      if (isValidValue(fields()[1], other.expectedDeliveryDate)) {
-        this.expectedDeliveryDate = data().deepCopy(fields()[1].schema(), other.expectedDeliveryDate);
+      if (isValidValue(fields()[1], other.consigner)) {
+        this.consigner = data().deepCopy(fields()[1].schema(), other.consigner);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.invoiceDate)) {
-        this.invoiceDate = data().deepCopy(fields()[2].schema(), other.invoiceDate);
+      if (other.hasConsignerBuilder()) {
+        this.consignerBuilder = com.fretron.Model.BuisnessPartner.newBuilder(other.getConsignerBuilder());
+      }
+      if (isValidValue(fields()[2], other.expectedDeliveryDate)) {
+        this.expectedDeliveryDate = data().deepCopy(fields()[2].schema(), other.expectedDeliveryDate);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.invoiceValue)) {
-        this.invoiceValue = data().deepCopy(fields()[3].schema(), other.invoiceValue);
+      if (isValidValue(fields()[3], other.invoiceDate)) {
+        this.invoiceDate = data().deepCopy(fields()[3].schema(), other.invoiceDate);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.invoiceNumber)) {
-        this.invoiceNumber = data().deepCopy(fields()[4].schema(), other.invoiceNumber);
+      if (isValidValue(fields()[4], other.invoiceValue)) {
+        this.invoiceValue = data().deepCopy(fields()[4].schema(), other.invoiceValue);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.loadInfo)) {
-        this.loadInfo = data().deepCopy(fields()[5].schema(), other.loadInfo);
+      if (isValidValue(fields()[5], other.invoiceNumber)) {
+        this.invoiceNumber = data().deepCopy(fields()[5].schema(), other.invoiceNumber);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.loadInfo)) {
+        this.loadInfo = data().deepCopy(fields()[6].schema(), other.loadInfo);
+        fieldSetFlags()[6] = true;
       }
       if (other.hasLoadInfoBuilder()) {
         this.loadInfoBuilder = com.fretron.Model.LoadInfo.newBuilder(other.getLoadInfoBuilder());
+      }
+      if (isValidValue(fields()[7], other.mapping)) {
+        this.mapping = data().deepCopy(fields()[7].schema(), other.mapping);
+        fieldSetFlags()[7] = true;
+      }
+      if (other.hasMappingBuilder()) {
+        this.mappingBuilder = com.fretron.Model.OrderRelation.newBuilder(other.getMappingBuilder());
       }
     }
 
@@ -264,27 +324,37 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
         fieldSetFlags()[0] = true;
       }
       this.consigneeBuilder = null;
-      if (isValidValue(fields()[1], other.expectedDeliveryDate)) {
-        this.expectedDeliveryDate = data().deepCopy(fields()[1].schema(), other.expectedDeliveryDate);
+      if (isValidValue(fields()[1], other.consigner)) {
+        this.consigner = data().deepCopy(fields()[1].schema(), other.consigner);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.invoiceDate)) {
-        this.invoiceDate = data().deepCopy(fields()[2].schema(), other.invoiceDate);
+      this.consignerBuilder = null;
+      if (isValidValue(fields()[2], other.expectedDeliveryDate)) {
+        this.expectedDeliveryDate = data().deepCopy(fields()[2].schema(), other.expectedDeliveryDate);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.invoiceValue)) {
-        this.invoiceValue = data().deepCopy(fields()[3].schema(), other.invoiceValue);
+      if (isValidValue(fields()[3], other.invoiceDate)) {
+        this.invoiceDate = data().deepCopy(fields()[3].schema(), other.invoiceDate);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.invoiceNumber)) {
-        this.invoiceNumber = data().deepCopy(fields()[4].schema(), other.invoiceNumber);
+      if (isValidValue(fields()[4], other.invoiceValue)) {
+        this.invoiceValue = data().deepCopy(fields()[4].schema(), other.invoiceValue);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.loadInfo)) {
-        this.loadInfo = data().deepCopy(fields()[5].schema(), other.loadInfo);
+      if (isValidValue(fields()[5], other.invoiceNumber)) {
+        this.invoiceNumber = data().deepCopy(fields()[5].schema(), other.invoiceNumber);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.loadInfo)) {
+        this.loadInfo = data().deepCopy(fields()[6].schema(), other.loadInfo);
+        fieldSetFlags()[6] = true;
+      }
       this.loadInfoBuilder = null;
+      if (isValidValue(fields()[7], other.mapping)) {
+        this.mapping = data().deepCopy(fields()[7].schema(), other.mapping);
+        fieldSetFlags()[7] = true;
+      }
+      this.mappingBuilder = null;
     }
 
     /**
@@ -362,6 +432,80 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
+      * Gets the value of the 'consigner' field.
+      * @return The value.
+      */
+    public com.fretron.Model.BuisnessPartner getConsigner() {
+      return consigner;
+    }
+
+    /**
+      * Sets the value of the 'consigner' field.
+      * @param value The value of 'consigner'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrderLineItem.Builder setConsigner(com.fretron.Model.BuisnessPartner value) {
+      validate(fields()[1], value);
+      this.consignerBuilder = null;
+      this.consigner = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'consigner' field has been set.
+      * @return True if the 'consigner' field has been set, false otherwise.
+      */
+    public boolean hasConsigner() {
+      return fieldSetFlags()[1];
+    }
+
+    /**
+     * Gets the Builder instance for the 'consigner' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.BuisnessPartner.Builder getConsignerBuilder() {
+      if (consignerBuilder == null) {
+        if (hasConsigner()) {
+          setConsignerBuilder(com.fretron.Model.BuisnessPartner.newBuilder(consigner));
+        } else {
+          setConsignerBuilder(com.fretron.Model.BuisnessPartner.newBuilder());
+        }
+      }
+      return consignerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'consigner' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrderLineItem.Builder setConsignerBuilder(com.fretron.Model.BuisnessPartner.Builder value) {
+      clearConsigner();
+      consignerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'consigner' field has an active Builder instance
+     * @return True if the 'consigner' field has an active Builder instance
+     */
+    public boolean hasConsignerBuilder() {
+      return consignerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'consigner' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrderLineItem.Builder clearConsigner() {
+      consigner = null;
+      consignerBuilder = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'expectedDeliveryDate' field.
       * @return The value.
       */
@@ -375,9 +519,9 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderLineItem.Builder setExpectedDeliveryDate(java.lang.Long value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.expectedDeliveryDate = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -386,7 +530,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'expectedDeliveryDate' field has been set, false otherwise.
       */
     public boolean hasExpectedDeliveryDate() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -396,7 +540,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderLineItem.Builder clearExpectedDeliveryDate() {
       expectedDeliveryDate = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -414,9 +558,9 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderLineItem.Builder setInvoiceDate(java.lang.Long value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.invoiceDate = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -425,7 +569,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'invoiceDate' field has been set, false otherwise.
       */
     public boolean hasInvoiceDate() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -435,7 +579,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderLineItem.Builder clearInvoiceDate() {
       invoiceDate = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -453,9 +597,9 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderLineItem.Builder setInvoiceValue(java.lang.Double value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.invoiceValue = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -464,7 +608,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'invoiceValue' field has been set, false otherwise.
       */
     public boolean hasInvoiceValue() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -474,7 +618,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderLineItem.Builder clearInvoiceValue() {
       invoiceValue = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -492,9 +636,9 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderLineItem.Builder setInvoiceNumber(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.invoiceNumber = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -503,7 +647,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'invoiceNumber' field has been set, false otherwise.
       */
     public boolean hasInvoiceNumber() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -513,7 +657,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderLineItem.Builder clearInvoiceNumber() {
       invoiceNumber = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -531,10 +675,10 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderLineItem.Builder setLoadInfo(com.fretron.Model.LoadInfo value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.loadInfoBuilder = null;
       this.loadInfo = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -543,7 +687,7 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'loadInfo' field has been set, false otherwise.
       */
     public boolean hasLoadInfo() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
     /**
@@ -587,7 +731,81 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
     public com.fretron.Model.OrderLineItem.Builder clearLoadInfo() {
       loadInfo = null;
       loadInfoBuilder = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mapping' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrderRelation getMapping() {
+      return mapping;
+    }
+
+    /**
+      * Sets the value of the 'mapping' field.
+      * @param value The value of 'mapping'.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrderLineItem.Builder setMapping(com.fretron.Model.OrderRelation value) {
+      validate(fields()[7], value);
+      this.mappingBuilder = null;
+      this.mapping = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mapping' field has been set.
+      * @return True if the 'mapping' field has been set, false otherwise.
+      */
+    public boolean hasMapping() {
+      return fieldSetFlags()[7];
+    }
+
+    /**
+     * Gets the Builder instance for the 'mapping' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrderRelation.Builder getMappingBuilder() {
+      if (mappingBuilder == null) {
+        if (hasMapping()) {
+          setMappingBuilder(com.fretron.Model.OrderRelation.newBuilder(mapping));
+        } else {
+          setMappingBuilder(com.fretron.Model.OrderRelation.newBuilder());
+        }
+      }
+      return mappingBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'mapping' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrderLineItem.Builder setMappingBuilder(com.fretron.Model.OrderRelation.Builder value) {
+      clearMapping();
+      mappingBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'mapping' field has an active Builder instance
+     * @return True if the 'mapping' field has an active Builder instance
+     */
+    public boolean hasMappingBuilder() {
+      return mappingBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'mapping' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.OrderLineItem.Builder clearMapping() {
+      mapping = null;
+      mappingBuilder = null;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -600,14 +818,24 @@ public class OrderLineItem extends org.apache.avro.specific.SpecificRecordBase i
         } else {
           record.consignee = fieldSetFlags()[0] ? this.consignee : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[0]);
         }
-        record.expectedDeliveryDate = fieldSetFlags()[1] ? this.expectedDeliveryDate : (java.lang.Long) defaultValue(fields()[1]);
-        record.invoiceDate = fieldSetFlags()[2] ? this.invoiceDate : (java.lang.Long) defaultValue(fields()[2]);
-        record.invoiceValue = fieldSetFlags()[3] ? this.invoiceValue : (java.lang.Double) defaultValue(fields()[3]);
-        record.invoiceNumber = fieldSetFlags()[4] ? this.invoiceNumber : (java.lang.String) defaultValue(fields()[4]);
+        if (consignerBuilder != null) {
+          record.consigner = this.consignerBuilder.build();
+        } else {
+          record.consigner = fieldSetFlags()[1] ? this.consigner : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[1]);
+        }
+        record.expectedDeliveryDate = fieldSetFlags()[2] ? this.expectedDeliveryDate : (java.lang.Long) defaultValue(fields()[2]);
+        record.invoiceDate = fieldSetFlags()[3] ? this.invoiceDate : (java.lang.Long) defaultValue(fields()[3]);
+        record.invoiceValue = fieldSetFlags()[4] ? this.invoiceValue : (java.lang.Double) defaultValue(fields()[4]);
+        record.invoiceNumber = fieldSetFlags()[5] ? this.invoiceNumber : (java.lang.String) defaultValue(fields()[5]);
         if (loadInfoBuilder != null) {
           record.loadInfo = this.loadInfoBuilder.build();
         } else {
-          record.loadInfo = fieldSetFlags()[5] ? this.loadInfo : (com.fretron.Model.LoadInfo) defaultValue(fields()[5]);
+          record.loadInfo = fieldSetFlags()[6] ? this.loadInfo : (com.fretron.Model.LoadInfo) defaultValue(fields()[6]);
+        }
+        if (mappingBuilder != null) {
+          record.mapping = this.mappingBuilder.build();
+        } else {
+          record.mapping = fieldSetFlags()[7] ? this.mapping : (com.fretron.Model.OrderRelation) defaultValue(fields()[7]);
         }
         return record;
       } catch (Exception e) {

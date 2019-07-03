@@ -130,6 +130,17 @@
                    }
                         ],
          "default": null
-     }
+     },
+     {
+        "name": "lineItems",
+         "type": [
+                   "null",
+                           {
+                             "type": "array",
+                             "items": "com.fretron.Model.OrderLineItem"
+                           }
+                  ],
+         "default": null
+      }
   ]
 }
