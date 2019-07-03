@@ -20,7 +20,7 @@
             "default": null
         },
         {
-             "name": "package",
+             "name": "packageMeasurement",
              "type": [
                        "null",
                        "com.fretron.Model.Measurement"

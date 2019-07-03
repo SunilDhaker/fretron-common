@@ -58,12 +58,19 @@
                 "default": null
           },
           {
-             "name": "mapping",
+             "name": "orderMapping",
               "type": [
                          "null",
                           "com.fretron.Model.OrderRelation"
                       ],
              "default": null
-          }
+          },
+                    {
+                           "name": "uuid",
+                            "type": ["null",
+                                          "string"
+                                    ],
+                            "default": null
+                     }
   ]
 }
