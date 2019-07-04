@@ -20,6 +20,14 @@
                "default": null
             },
             {
+                "name": "partnerName",
+                 "type": [
+                            "null",
+                             "string"
+                          ],
+               "default": null
+            },
+            {
                "name": "numberOfVehicles",
                 "type": [
                              "null",

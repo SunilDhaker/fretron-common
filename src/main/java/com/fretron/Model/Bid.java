@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Bid extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4487330607081182441L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -4417906203744483624L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String businessPartnerId;
+  @Deprecated public java.lang.String partnerName;
   @Deprecated public java.lang.Integer numberOfVehicles;
   @Deprecated public java.lang.Double amount;
   @Deprecated public java.lang.Double rank;
@@ -30,13 +31,15 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
    * All-args constructor.
    * @param status The new value for status
    * @param businessPartnerId The new value for businessPartnerId
+   * @param partnerName The new value for partnerName
    * @param numberOfVehicles The new value for numberOfVehicles
    * @param amount The new value for amount
    * @param rank The new value for rank
    */
-  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank) {
+  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank) {
     this.status = status;
     this.businessPartnerId = businessPartnerId;
+    this.partnerName = partnerName;
     this.numberOfVehicles = numberOfVehicles;
     this.amount = amount;
     this.rank = rank;
@@ -48,9 +51,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     switch (field$) {
     case 0: return status;
     case 1: return businessPartnerId;
-    case 2: return numberOfVehicles;
-    case 3: return amount;
-    case 4: return rank;
+    case 2: return partnerName;
+    case 3: return numberOfVehicles;
+    case 4: return amount;
+    case 5: return rank;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -61,9 +65,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     switch (field$) {
     case 0: status = (java.lang.String)value$; break;
     case 1: businessPartnerId = (java.lang.String)value$; break;
-    case 2: numberOfVehicles = (java.lang.Integer)value$; break;
-    case 3: amount = (java.lang.Double)value$; break;
-    case 4: rank = (java.lang.Double)value$; break;
+    case 2: partnerName = (java.lang.String)value$; break;
+    case 3: numberOfVehicles = (java.lang.Integer)value$; break;
+    case 4: amount = (java.lang.Double)value$; break;
+    case 5: rank = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -98,6 +103,22 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
    */
   public void setBusinessPartnerId(java.lang.String value) {
     this.businessPartnerId = value;
+  }
+
+  /**
+   * Gets the value of the 'partnerName' field.
+   * @return The value of the 'partnerName' field.
+   */
+  public java.lang.String getPartnerName() {
+    return partnerName;
+  }
+
+  /**
+   * Sets the value of the 'partnerName' field.
+   * @param value the value to set.
+   */
+  public void setPartnerName(java.lang.String value) {
+    this.partnerName = value;
   }
 
   /**
@@ -182,6 +203,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
 
     private java.lang.String status;
     private java.lang.String businessPartnerId;
+    private java.lang.String partnerName;
     private java.lang.Integer numberOfVehicles;
     private java.lang.Double amount;
     private java.lang.Double rank;
@@ -205,17 +227,21 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         this.businessPartnerId = data().deepCopy(fields()[1].schema(), other.businessPartnerId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[2].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[2], other.partnerName)) {
+        this.partnerName = data().deepCopy(fields()[2].schema(), other.partnerName);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.amount)) {
-        this.amount = data().deepCopy(fields()[3].schema(), other.amount);
+      if (isValidValue(fields()[3], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[3].schema(), other.numberOfVehicles);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.rank)) {
-        this.rank = data().deepCopy(fields()[4].schema(), other.rank);
+      if (isValidValue(fields()[4], other.amount)) {
+        this.amount = data().deepCopy(fields()[4].schema(), other.amount);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.rank)) {
+        this.rank = data().deepCopy(fields()[5].schema(), other.rank);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -233,17 +259,21 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         this.businessPartnerId = data().deepCopy(fields()[1].schema(), other.businessPartnerId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[2].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[2], other.partnerName)) {
+        this.partnerName = data().deepCopy(fields()[2].schema(), other.partnerName);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.amount)) {
-        this.amount = data().deepCopy(fields()[3].schema(), other.amount);
+      if (isValidValue(fields()[3], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[3].schema(), other.numberOfVehicles);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.rank)) {
-        this.rank = data().deepCopy(fields()[4].schema(), other.rank);
+      if (isValidValue(fields()[4], other.amount)) {
+        this.amount = data().deepCopy(fields()[4].schema(), other.amount);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.rank)) {
+        this.rank = data().deepCopy(fields()[5].schema(), other.rank);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -326,6 +356,45 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     }
 
     /**
+      * Gets the value of the 'partnerName' field.
+      * @return The value.
+      */
+    public java.lang.String getPartnerName() {
+      return partnerName;
+    }
+
+    /**
+      * Sets the value of the 'partnerName' field.
+      * @param value The value of 'partnerName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder setPartnerName(java.lang.String value) {
+      validate(fields()[2], value);
+      this.partnerName = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'partnerName' field has been set.
+      * @return True if the 'partnerName' field has been set, false otherwise.
+      */
+    public boolean hasPartnerName() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'partnerName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder clearPartnerName() {
+      partnerName = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'numberOfVehicles' field.
       * @return The value.
       */
@@ -339,9 +408,9 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return This builder.
       */
     public com.fretron.Model.Bid.Builder setNumberOfVehicles(java.lang.Integer value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.numberOfVehicles = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -350,7 +419,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return True if the 'numberOfVehicles' field has been set, false otherwise.
       */
     public boolean hasNumberOfVehicles() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -360,7 +429,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       */
     public com.fretron.Model.Bid.Builder clearNumberOfVehicles() {
       numberOfVehicles = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -378,9 +447,9 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return This builder.
       */
     public com.fretron.Model.Bid.Builder setAmount(java.lang.Double value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.amount = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -389,7 +458,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return True if the 'amount' field has been set, false otherwise.
       */
     public boolean hasAmount() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -399,7 +468,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       */
     public com.fretron.Model.Bid.Builder clearAmount() {
       amount = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -417,9 +486,9 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return This builder.
       */
     public com.fretron.Model.Bid.Builder setRank(java.lang.Double value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.rank = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -428,7 +497,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       * @return True if the 'rank' field has been set, false otherwise.
       */
     public boolean hasRank() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -438,7 +507,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       */
     public com.fretron.Model.Bid.Builder clearRank() {
       rank = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -448,9 +517,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         Bid record = new Bid();
         record.status = fieldSetFlags()[0] ? this.status : (java.lang.String) defaultValue(fields()[0]);
         record.businessPartnerId = fieldSetFlags()[1] ? this.businessPartnerId : (java.lang.String) defaultValue(fields()[1]);
-        record.numberOfVehicles = fieldSetFlags()[2] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[2]);
-        record.amount = fieldSetFlags()[3] ? this.amount : (java.lang.Double) defaultValue(fields()[3]);
-        record.rank = fieldSetFlags()[4] ? this.rank : (java.lang.Double) defaultValue(fields()[4]);
+        record.partnerName = fieldSetFlags()[2] ? this.partnerName : (java.lang.String) defaultValue(fields()[2]);
+        record.numberOfVehicles = fieldSetFlags()[3] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[3]);
+        record.amount = fieldSetFlags()[4] ? this.amount : (java.lang.Double) defaultValue(fields()[4]);
+        record.rank = fieldSetFlags()[5] ? this.rank : (java.lang.Double) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
