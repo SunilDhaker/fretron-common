@@ -10,10 +10,9 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2942425193778767040L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderRelation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"standardMeasurement\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -424570504618551449L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderRelation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public com.fretron.Model.StandardMeasurement standardMeasurement;
   @Deprecated public java.lang.String orderId;
   @Deprecated public java.lang.String lineItemId;
 
@@ -26,12 +25,10 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
 
   /**
    * All-args constructor.
-   * @param standardMeasurement The new value for standardMeasurement
    * @param orderId The new value for orderId
    * @param lineItemId The new value for lineItemId
    */
-  public OrderRelation(com.fretron.Model.StandardMeasurement standardMeasurement, java.lang.String orderId, java.lang.String lineItemId) {
-    this.standardMeasurement = standardMeasurement;
+  public OrderRelation(java.lang.String orderId, java.lang.String lineItemId) {
     this.orderId = orderId;
     this.lineItemId = lineItemId;
   }
@@ -40,9 +37,8 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return standardMeasurement;
-    case 1: return orderId;
-    case 2: return lineItemId;
+    case 0: return orderId;
+    case 1: return lineItemId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -51,27 +47,10 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: standardMeasurement = (com.fretron.Model.StandardMeasurement)value$; break;
-    case 1: orderId = (java.lang.String)value$; break;
-    case 2: lineItemId = (java.lang.String)value$; break;
+    case 0: orderId = (java.lang.String)value$; break;
+    case 1: lineItemId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
-  }
-
-  /**
-   * Gets the value of the 'standardMeasurement' field.
-   * @return The value of the 'standardMeasurement' field.
-   */
-  public com.fretron.Model.StandardMeasurement getStandardMeasurement() {
-    return standardMeasurement;
-  }
-
-  /**
-   * Sets the value of the 'standardMeasurement' field.
-   * @param value the value to set.
-   */
-  public void setStandardMeasurement(com.fretron.Model.StandardMeasurement value) {
-    this.standardMeasurement = value;
   }
 
   /**
@@ -138,8 +117,6 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<OrderRelation>
     implements org.apache.avro.data.RecordBuilder<OrderRelation> {
 
-    private com.fretron.Model.StandardMeasurement standardMeasurement;
-    private com.fretron.Model.StandardMeasurement.Builder standardMeasurementBuilder;
     private java.lang.String orderId;
     private java.lang.String lineItemId;
 
@@ -154,20 +131,13 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
      */
     private Builder(com.fretron.Model.OrderRelation.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.standardMeasurement)) {
-        this.standardMeasurement = data().deepCopy(fields()[0].schema(), other.standardMeasurement);
+      if (isValidValue(fields()[0], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[0].schema(), other.orderId);
         fieldSetFlags()[0] = true;
       }
-      if (other.hasStandardMeasurementBuilder()) {
-        this.standardMeasurementBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getStandardMeasurementBuilder());
-      }
-      if (isValidValue(fields()[1], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[1].schema(), other.orderId);
+      if (isValidValue(fields()[1], other.lineItemId)) {
+        this.lineItemId = data().deepCopy(fields()[1].schema(), other.lineItemId);
         fieldSetFlags()[1] = true;
-      }
-      if (isValidValue(fields()[2], other.lineItemId)) {
-        this.lineItemId = data().deepCopy(fields()[2].schema(), other.lineItemId);
-        fieldSetFlags()[2] = true;
       }
     }
 
@@ -177,93 +147,14 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
      */
     private Builder(com.fretron.Model.OrderRelation other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.standardMeasurement)) {
-        this.standardMeasurement = data().deepCopy(fields()[0].schema(), other.standardMeasurement);
+      if (isValidValue(fields()[0], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[0].schema(), other.orderId);
         fieldSetFlags()[0] = true;
       }
-      this.standardMeasurementBuilder = null;
-      if (isValidValue(fields()[1], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[1].schema(), other.orderId);
+      if (isValidValue(fields()[1], other.lineItemId)) {
+        this.lineItemId = data().deepCopy(fields()[1].schema(), other.lineItemId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.lineItemId)) {
-        this.lineItemId = data().deepCopy(fields()[2].schema(), other.lineItemId);
-        fieldSetFlags()[2] = true;
-      }
-    }
-
-    /**
-      * Gets the value of the 'standardMeasurement' field.
-      * @return The value.
-      */
-    public com.fretron.Model.StandardMeasurement getStandardMeasurement() {
-      return standardMeasurement;
-    }
-
-    /**
-      * Sets the value of the 'standardMeasurement' field.
-      * @param value The value of 'standardMeasurement'.
-      * @return This builder.
-      */
-    public com.fretron.Model.OrderRelation.Builder setStandardMeasurement(com.fretron.Model.StandardMeasurement value) {
-      validate(fields()[0], value);
-      this.standardMeasurementBuilder = null;
-      this.standardMeasurement = value;
-      fieldSetFlags()[0] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'standardMeasurement' field has been set.
-      * @return True if the 'standardMeasurement' field has been set, false otherwise.
-      */
-    public boolean hasStandardMeasurement() {
-      return fieldSetFlags()[0];
-    }
-
-    /**
-     * Gets the Builder instance for the 'standardMeasurement' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.StandardMeasurement.Builder getStandardMeasurementBuilder() {
-      if (standardMeasurementBuilder == null) {
-        if (hasStandardMeasurement()) {
-          setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.newBuilder(standardMeasurement));
-        } else {
-          setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.newBuilder());
-        }
-      }
-      return standardMeasurementBuilder;
-    }
-
-    /**
-     * Sets the Builder instance for the 'standardMeasurement' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.OrderRelation.Builder setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.Builder value) {
-      clearStandardMeasurement();
-      standardMeasurementBuilder = value;
-      return this;
-    }
-
-    /**
-     * Checks whether the 'standardMeasurement' field has an active Builder instance
-     * @return True if the 'standardMeasurement' field has an active Builder instance
-     */
-    public boolean hasStandardMeasurementBuilder() {
-      return standardMeasurementBuilder != null;
-    }
-
-    /**
-      * Clears the value of the 'standardMeasurement' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.OrderRelation.Builder clearStandardMeasurement() {
-      standardMeasurement = null;
-      standardMeasurementBuilder = null;
-      fieldSetFlags()[0] = false;
-      return this;
     }
 
     /**
@@ -280,9 +171,9 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderRelation.Builder setOrderId(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[0], value);
       this.orderId = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[0] = true;
       return this;
     }
 
@@ -291,7 +182,7 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'orderId' field has been set, false otherwise.
       */
     public boolean hasOrderId() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[0];
     }
 
 
@@ -301,7 +192,7 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderRelation.Builder clearOrderId() {
       orderId = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[0] = false;
       return this;
     }
 
@@ -319,9 +210,9 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.OrderRelation.Builder setLineItemId(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[1], value);
       this.lineItemId = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[1] = true;
       return this;
     }
 
@@ -330,7 +221,7 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'lineItemId' field has been set, false otherwise.
       */
     public boolean hasLineItemId() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[1];
     }
 
 
@@ -340,7 +231,7 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.OrderRelation.Builder clearLineItemId() {
       lineItemId = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -348,13 +239,8 @@ public class OrderRelation extends org.apache.avro.specific.SpecificRecordBase i
     public OrderRelation build() {
       try {
         OrderRelation record = new OrderRelation();
-        if (standardMeasurementBuilder != null) {
-          record.standardMeasurement = this.standardMeasurementBuilder.build();
-        } else {
-          record.standardMeasurement = fieldSetFlags()[0] ? this.standardMeasurement : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[0]);
-        }
-        record.orderId = fieldSetFlags()[1] ? this.orderId : (java.lang.String) defaultValue(fields()[1]);
-        record.lineItemId = fieldSetFlags()[2] ? this.lineItemId : (java.lang.String) defaultValue(fields()[2]);
+        record.orderId = fieldSetFlags()[0] ? this.orderId : (java.lang.String) defaultValue(fields()[0]);
+        record.lineItemId = fieldSetFlags()[1] ? this.lineItemId : (java.lang.String) defaultValue(fields()[1]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

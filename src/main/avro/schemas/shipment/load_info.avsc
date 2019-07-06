@@ -37,6 +37,14 @@
                 "string"
               ],
               "default": null
+            },
+          {
+              "name": "standardMeasurement",
+               "type": [
+                          "null",
+                          "com.fretron.Model.StandardMeasurement"
+                        ],
+               "default": null
             }
   ]
 }

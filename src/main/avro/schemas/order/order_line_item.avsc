@@ -19,7 +19,7 @@
                                 ],
                   "default": null
         },
-        {
+         {
            "name": "expectedDeliveryDate",
                    "type": [
                           "null",
@@ -58,19 +58,23 @@
                 "default": null
           },
           {
-             "name": "orderMapping",
-              "type": [
-                         "null",
-                          "com.fretron.Model.OrderRelation"
-                      ],
-             "default": null
+                 "name": "orderMapping",
+                  "type": [
+                             "null",
+                             {
+                                "type": "array",
+                                 "items": "com.fretron.Model.OrderRelation"
+                             }
+                                  ],
+                   "default": null
           },
-                    {
-                           "name": "uuid",
-                            "type": ["null",
+
+          {
+               "name": "uuid",
+               "type": ["null",
                                           "string"
                                     ],
-                            "default": null
-                     }
+              "default": null
+          }
   ]
 }
