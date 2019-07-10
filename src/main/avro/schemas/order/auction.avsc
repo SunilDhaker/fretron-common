@@ -122,44 +122,49 @@
      {
        "name": "placementDate",
         "type": [
-                         "null",
-                          "long"
-                       ],
-              "logicalType": "timestamp-millis",
+                  "null",
+                  "long"
+                ],
+       "logicalType": "timestamp-millis",
        "default": null
      },
      {
        "name": "allowedTransporters",
        "type": [
-                     "null",
-                                    {
-                                       "type": "array",
-                                        "items": "string"
-                                    }
-                  ],
+                 "null",
+                 {
+                    "type": "array",
+                     "items": "string"
+                 }
+               ],
          "default": null
     },
     {
         "name": "allowedMaterial",
          "type": [
-                          "null",
-                                    {
-                                      "type": "array",
-                                      "items": "string"
-                                    }
-                        ],
+                   "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                 ],
         "default": null
     },
     {
        "name": "allowedVehicleTypes",
         "type": [
                    "null",
-                                        {
-                                          "type": "array",
-                                          "items": "string"
-                                        }
+                   {
+                      "type": "array",
+                       "items": "string"
+                   }
                  ],
-         "default": null
+        "default": null
+    },
+    {
+        "name": "isShowTopRankToOthers",
+        "type": ["null","boolean"],
+        "default": null
     },
     {
       "name": "purchaseEnquiries",
