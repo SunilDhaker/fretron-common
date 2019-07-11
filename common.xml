@@ -40,6 +40,8 @@
     <entry key="document.topic">documenttopic</entry>
     <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
+    <entry key="partner.group.topic">partnerGroup</entry>
+
 
     <entry key="latest.command.topic">latestcommand</entry>
     <entry key="vehiclewithdevice.topic">vehicleWithDevice</entry>
