@@ -122,14 +122,6 @@
           "default": null
      },
      {
-          "name": "consigner",
-           "type": [
-                          "null",
-                          "com.fretron.Model.BuisnessPartner"
-                        ],
-          "default": null
-     },
-     {
         "name": "billToParty",
          "type": [
                                "null",
