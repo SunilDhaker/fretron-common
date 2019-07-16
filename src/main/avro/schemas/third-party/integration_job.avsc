@@ -124,6 +124,14 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+                   "name": "disableVehicleSync",
+                   "type": [
+                   "null",
+                   "boolean"
+                   ],
+                   "default": null
+             }
   ]
 }
