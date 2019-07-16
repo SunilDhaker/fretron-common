@@ -68,11 +68,14 @@
           "default": null
      },
      {
-           "name": "weekDays",
-           "type": {
-             "type":"array",
-             "items":"int"
-           },
+          "name": "weekDays",
+           "type": [
+                          "null",
+                           {
+                             "type": "array",
+                             "items": "int"
+                           }
+                         ],
            "default":null
      },
      {
