@@ -45,6 +45,7 @@ public class Constants {
     public static final String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public static final String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
     public static final String KEY_PARTNER_GROUP_TOPIC="partner.group.topic";
+    public static final String KEY_PARTNER_fLEET_TOPIC = "partner.fleet.topic";
     public static final String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
     public static final String MAXIMUM_CONSIERABLE_DIST = "maximum.considerable.distance";
     public static final String MINIMUM_TIME_DIFF = "minimum.time.difference";
