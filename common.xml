@@ -41,6 +41,7 @@
     <entry key="buisness.partner.topic">buisnesspartnertopic</entry>
     <entry key="vehicleshare.topic">vehicleshare</entry>
     <entry key="partner.group.topic">partnerGroup</entry>
+    <entry key="partner.fleet.topic">partnerFleetTopic</entry>
 
 
     <entry key="latest.command.topic">latestcommand</entry>
