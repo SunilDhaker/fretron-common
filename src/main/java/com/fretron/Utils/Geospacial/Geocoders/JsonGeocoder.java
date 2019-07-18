@@ -56,7 +56,7 @@ public abstract class JsonGeocoder implements Geocoder {
 
         try {
             String target = String.format(url, latitude, longitude);
-            System.out.println("JsonGeocoder TRAGET : " + target);
+//            System.out.println("JsonGeocoder TRAGET : " + target);
             Response response = httpClient
                     .target(target)
                     .property(ClientProperties.CONNECT_TIMEOUT, 1000)

@@ -36,7 +36,7 @@ public class FretronCachedGeocode extends JsonGeocoder {
       url = Context.getProp(Constants.KEY_FRETRON_GEOCODER_URL);
     }
     url += "?lat=%f&lng=%f";
-    System.out.println("FretronCachedGeocode ADDRESS : "+url);
+//    System.out.println("FretronCachedGeocode ADDRESS : "+url);
     return url;
   }
 
@@ -45,7 +45,7 @@ public class FretronCachedGeocode extends JsonGeocoder {
       final AddressFormat format, final double latitude,
       final double longitude) {
       String target = String.format(url, latitude, longitude);
-      System.out.println("FretronCachedGeocode TRAGET : "+target);
+//      System.out.println("FretronCachedGeocode TRAGET : "+target);
       Response response = httpClient
           .target(target)
           .property(ClientProperties.CONNECT_TIMEOUT, 3000)
