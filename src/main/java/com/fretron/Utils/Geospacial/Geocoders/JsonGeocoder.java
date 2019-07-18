@@ -38,12 +38,12 @@ public abstract class JsonGeocoder implements Geocoder {
         this.url = url;
         if (cacheSize > 0) {
             this.cache = Collections
-                .synchronizedMap(new LinkedHashMap<Map.Entry<Double, Double>, String>() {
-                    @Override
-                    protected boolean removeEldestEntry(Map.Entry eldest) {
-                        return size() > cacheSize;
-                    }
-                });
+                    .synchronizedMap(new LinkedHashMap<Map.Entry<Double, Double>, String>() {
+                        @Override
+                        protected boolean removeEldestEntry(Map.Entry eldest) {
+                            return size() > cacheSize;
+                        }
+                    });
         }
         httpClient = ClientBuilder.newBuilder().build();
         Log.info("json geo-coder http-Client initialized");
@@ -51,16 +51,18 @@ public abstract class JsonGeocoder implements Geocoder {
 
     @Override
     public String getAddressSync(
-        final AddressFormat format, final double latitude,
-        final double longitude) throws IOException {
+            final AddressFormat format, final double latitude,
+            final double longitude) throws IOException {
 
         try {
+            String target = String.format(url, latitude, longitude);
+            System.out.println("JsonGeocoder TRAGET : " + target);
             Response response = httpClient
-                .target(String.format(url, latitude, longitude))
+                    .target(target)
                     .property(ClientProperties.CONNECT_TIMEOUT, 1000)
                     .property(ClientProperties.READ_TIMEOUT, 500)
-                .request(MediaType.APPLICATION_JSON_TYPE)
-                .get();
+                    .request(MediaType.APPLICATION_JSON_TYPE)
+                    .get();
             if (response.getStatus() < 300) {
                 Address address = parseAddress(response.readEntity(JsonObject.class));
                 if (address != null) {
@@ -70,8 +72,8 @@ public abstract class JsonGeocoder implements Geocoder {
                 }
             }
         } catch (Exception e) {
-           Log.error(JsonGeocoder.class ,Log.exceptionStack(e));
-           throw new IOException("connection timeout");
+            Log.error(JsonGeocoder.class, Log.exceptionStack(e));
+            throw new IOException("connection timeout");
         }
 
         return null;
