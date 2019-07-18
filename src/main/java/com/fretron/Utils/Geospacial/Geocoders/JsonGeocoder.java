@@ -57,7 +57,8 @@ public abstract class JsonGeocoder implements Geocoder {
         try {
             Response response = httpClient
                 .target(String.format(url, latitude, longitude))
-                .property(ClientProperties.READ_TIMEOUT, 500)
+                    .property(ClientProperties.CONNECT_TIMEOUT, 1000)
+                    .property(ClientProperties.READ_TIMEOUT, 500)
                 .request(MediaType.APPLICATION_JSON_TYPE)
                 .get();
             if (response.getStatus() < 300) {
