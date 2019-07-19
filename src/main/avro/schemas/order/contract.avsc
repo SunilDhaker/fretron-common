@@ -71,6 +71,14 @@
                          ],
         "default": null
      },
+{
+"name": "contractNumber",
+"type": [
+"null",
+"string"
+],
+"default": null
+},
      {
           "name": "salesOffice",
            "type": [
@@ -78,6 +86,14 @@
                      "com.fretron.Model.OrgOffice"
                    ],
           "default": null
+     },
+     {
+        "name": "customer",
+         "type": [
+                          "null",
+                          "com.fretron.Model.BuisnessPartner"
+                        ],
+        "default": null
      },
      {
         "name": "termsOfPayment",

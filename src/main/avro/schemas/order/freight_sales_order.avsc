@@ -130,14 +130,6 @@
         "default": null
      },
      {
-         "name": "shipToParty",
-          "type": [
-                     "null",
-                     "com.fretron.Model.BuisnessPartner"
-                             ],
-         "default": null
-    },
-     {
            "name": "purchaseOrders",
                 "type": [
                                "null",
