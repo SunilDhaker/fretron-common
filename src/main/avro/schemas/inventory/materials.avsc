@@ -1,0 +1,27 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Materials",
+  "fields": [
+  {
+        "name": "uuid",
+        "type": "string",
+        "default": null
+  },
+  {
+         "name": "externalId",
+         "type": ["null","string"],
+         "default": null
+  },
+  {
+          "name": "name",
+          "type": ["null","string"],
+          "default": null
+  },
+  {
+        "name": "orgId",
+        "type": ["null","string"],
+        "default": null
+      }
+  ]
+ }
