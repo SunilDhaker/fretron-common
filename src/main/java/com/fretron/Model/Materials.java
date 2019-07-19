@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Materials extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8896232259216933604L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2679921865409963677L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public com.fretron.Model.Updates updates;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
    * @param externalId The new value for externalId
    * @param name The new value for name
    * @param orgId The new value for orgId
+   * @param updates The new value for updates
    */
-  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId) {
+  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, com.fretron.Model.Updates updates) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.name = name;
     this.orgId = orgId;
+    this.updates = updates;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 1: return externalId;
     case 2: return name;
     case 3: return orgId;
+    case 4: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 1: externalId = (java.lang.String)value$; break;
     case 2: name = (java.lang.String)value$; break;
     case 3: orgId = (java.lang.String)value$; break;
+    case 4: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
    * Creates a new Materials RecordBuilder.
    * @return A new Materials RecordBuilder
    */
@@ -163,6 +184,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String externalId;
     private java.lang.String name;
     private java.lang.String orgId;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +214,13 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.updates)) {
+        this.updates = data().deepCopy(fields()[4].schema(), other.updates);
+        fieldSetFlags()[4] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
     }
 
     /**
@@ -215,6 +245,11 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.updates)) {
+        this.updates = data().deepCopy(fields()[4].schema(), other.updates);
+        fieldSetFlags()[4] = true;
+      }
+      this.updatesBuilder = null;
     }
 
     /**
@@ -373,6 +408,80 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[4], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[4];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Materials.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public Materials build() {
       try {
@@ -381,6 +490,11 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         record.externalId = fieldSetFlags()[1] ? this.externalId : (java.lang.String) defaultValue(fields()[1]);
         record.name = fieldSetFlags()[2] ? this.name : (java.lang.String) defaultValue(fields()[2]);
         record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[4] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[4]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
