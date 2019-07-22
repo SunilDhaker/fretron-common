@@ -36,6 +36,11 @@
            "name": "role",
            "type":[ "null","com.fretron.Model.Role"],
             "default":null
-    }
+    },
+     {
+             "name":"isDirty",
+                "type": ["null","boolean"],
+                "default":null
+         }
 ]
 }
