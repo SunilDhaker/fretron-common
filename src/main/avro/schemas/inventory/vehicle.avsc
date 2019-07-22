@@ -226,13 +226,21 @@
                   ],
            "default": null
     },
-     {
-                        "name": "updates",
-                        "type": [
+    {
+        "name": "updates",
+         "type": [
                           "null",
                           "com.fretron.Model.Updates"
                         ],
-                        "default": null
-        }
+         "default": null
+    },
+    {
+      "name": "branch",
+       "type": [
+                   "null",
+                   "com.fretron.Model.OrgOffice"
+               ],
+      "default": null
+    }
   ]
 }

@@ -42,7 +42,50 @@
         "long"
       ],
       "default": null
-    }
+    },
+    {
+      "name": "isAutoSchedulable",
+       "type": [
+              "null",
+              "boolean"
+            ],
+      "default": null
+    },
+    {
+       "name": "scheduleType",
+        "type": [
+            "null",
+            "string"
+          ],
+        "default": null
+    },
+    {
+      "name": "timeOfDay",
+      "type": [
+            "null",
+            "long"
+          ],
+          "default": null
+     },
+     {
+          "name": "weekDays",
+           "type": [
+                          "null",
+                           {
+                             "type": "array",
+                             "items": "int"
+                           }
+                         ],
+           "default":null
+     },
+     {
+        "name": "interval",
+         "type": [
+             "null",
+             "long"
+           ],
+         "default": null
+     }
 
   ]
 }
