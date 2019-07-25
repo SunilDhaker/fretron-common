@@ -100,8 +100,8 @@
             "default" : null
          },
          {
-                      "name": "linkedPortals",
-                      "type": [
+            "name": "linkedPortals",
+             "type": [
                         "null",
                         {
                           "type": "array",
@@ -109,16 +109,22 @@
                         }
                       ],
                       "default": null
-                    },
-                              {
-                                "name": "status",
-                                 "type": ["null" , "string"],
-                                "default" : null
-                             },
-                             {
-                                                             "name": "linkedTo",
-                                                              "type": ["null" , "string"],
-                                                             "default" : null
-                                                          }
+         },
+               {
+                    "name": "status",
+                    "type": ["null" , "string"],
+                    "default" : null
+            },
+     {
+           "name": "linkedTo",
+           "type": ["null" , "string"],
+            "default" : null
+     } ,
+     {
+          "name": "portalType",
+           "type": ["null" , "string"],
+           "default" : null
+    }
+
   ]
   }
