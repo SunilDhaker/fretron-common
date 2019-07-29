@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1347619871841763496L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = -609469999347508113L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"defaultAssignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
@@ -23,6 +23,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.Long standardResolutionTime;
   @Deprecated public java.lang.Boolean isInternal;
   @Deprecated public java.util.List<com.fretron.Model.CustomFields> customFields;
+  @Deprecated public com.fretron.Model.User defaultAssignee;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param standardResolutionTime The new value for standardResolutionTime
    * @param isInternal The new value for isInternal
    * @param customFields The new value for customFields
+   * @param defaultAssignee The new value for defaultAssignee
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.User defaultAssignee) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
@@ -55,6 +57,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     this.standardResolutionTime = standardResolutionTime;
     this.isInternal = isInternal;
     this.customFields = customFields;
+    this.defaultAssignee = defaultAssignee;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 7: return standardResolutionTime;
     case 8: return isInternal;
     case 9: return customFields;
+    case 10: return defaultAssignee;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 7: standardResolutionTime = (java.lang.Long)value$; break;
     case 8: isInternal = (java.lang.Boolean)value$; break;
     case 9: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
+    case 10: defaultAssignee = (com.fretron.Model.User)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'defaultAssignee' field.
+   * @return The value of the 'defaultAssignee' field.
+   */
+  public com.fretron.Model.User getDefaultAssignee() {
+    return defaultAssignee;
+  }
+
+  /**
+   * Sets the value of the 'defaultAssignee' field.
+   * @param value the value to set.
+   */
+  public void setDefaultAssignee(com.fretron.Model.User value) {
+    this.defaultAssignee = value;
+  }
+
+  /**
    * Creates a new IssueType RecordBuilder.
    * @return A new IssueType RecordBuilder
    */
@@ -295,6 +316,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.Long standardResolutionTime;
     private java.lang.Boolean isInternal;
     private java.util.List<com.fretron.Model.CustomFields> customFields;
+    private com.fretron.Model.User defaultAssignee;
+    private com.fretron.Model.User.Builder defaultAssigneeBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +370,13 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.customFields = data().deepCopy(fields()[9].schema(), other.customFields);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.defaultAssignee)) {
+        this.defaultAssignee = data().deepCopy(fields()[10].schema(), other.defaultAssignee);
+        fieldSetFlags()[10] = true;
+      }
+      if (other.hasDefaultAssigneeBuilder()) {
+        this.defaultAssigneeBuilder = com.fretron.Model.User.newBuilder(other.getDefaultAssigneeBuilder());
+      }
     }
 
     /**
@@ -395,6 +425,11 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.customFields = data().deepCopy(fields()[9].schema(), other.customFields);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.defaultAssignee)) {
+        this.defaultAssignee = data().deepCopy(fields()[10].schema(), other.defaultAssignee);
+        fieldSetFlags()[10] = true;
+      }
+      this.defaultAssigneeBuilder = null;
     }
 
     /**
@@ -787,6 +822,80 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'defaultAssignee' field.
+      * @return The value.
+      */
+    public com.fretron.Model.User getDefaultAssignee() {
+      return defaultAssignee;
+    }
+
+    /**
+      * Sets the value of the 'defaultAssignee' field.
+      * @param value The value of 'defaultAssignee'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setDefaultAssignee(com.fretron.Model.User value) {
+      validate(fields()[10], value);
+      this.defaultAssigneeBuilder = null;
+      this.defaultAssignee = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'defaultAssignee' field has been set.
+      * @return True if the 'defaultAssignee' field has been set, false otherwise.
+      */
+    public boolean hasDefaultAssignee() {
+      return fieldSetFlags()[10];
+    }
+
+    /**
+     * Gets the Builder instance for the 'defaultAssignee' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.User.Builder getDefaultAssigneeBuilder() {
+      if (defaultAssigneeBuilder == null) {
+        if (hasDefaultAssignee()) {
+          setDefaultAssigneeBuilder(com.fretron.Model.User.newBuilder(defaultAssignee));
+        } else {
+          setDefaultAssigneeBuilder(com.fretron.Model.User.newBuilder());
+        }
+      }
+      return defaultAssigneeBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'defaultAssignee' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.IssueType.Builder setDefaultAssigneeBuilder(com.fretron.Model.User.Builder value) {
+      clearDefaultAssignee();
+      defaultAssigneeBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'defaultAssignee' field has an active Builder instance
+     * @return True if the 'defaultAssignee' field has an active Builder instance
+     */
+    public boolean hasDefaultAssigneeBuilder() {
+      return defaultAssigneeBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'defaultAssignee' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearDefaultAssignee() {
+      defaultAssignee = null;
+      defaultAssigneeBuilder = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public IssueType build() {
       try {
@@ -801,6 +910,11 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         record.standardResolutionTime = fieldSetFlags()[7] ? this.standardResolutionTime : (java.lang.Long) defaultValue(fields()[7]);
         record.isInternal = fieldSetFlags()[8] ? this.isInternal : (java.lang.Boolean) defaultValue(fields()[8]);
         record.customFields = fieldSetFlags()[9] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[9]);
+        if (defaultAssigneeBuilder != null) {
+          record.defaultAssignee = this.defaultAssigneeBuilder.build();
+        } else {
+          record.defaultAssignee = fieldSetFlags()[10] ? this.defaultAssignee : (com.fretron.Model.User) defaultValue(fields()[10]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
