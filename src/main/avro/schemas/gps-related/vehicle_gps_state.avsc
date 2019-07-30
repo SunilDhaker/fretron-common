@@ -178,7 +178,23 @@
                      }
                    ],
              "default": null
-     }
+     },
+     {
+              "name": "orgId",
+               "type": ["null" ,"string"],
+               "default" : null
+      },
+      {
+             "name": "accessibleTo",
+                    "type": [
+                          "null",
+                          {
+                            "type": "array",
+                            "items": "string"
+                          }
+                        ],
+                  "default": null
+       }
 
     ]
   }

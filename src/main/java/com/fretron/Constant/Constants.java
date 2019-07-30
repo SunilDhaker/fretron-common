@@ -44,6 +44,8 @@ public class Constants {
     public static final String KEY_BP_TOPIC = "buisness.partner.topic";
     public static final String KEY_VEHICLE_CUSTOMER_SHARE = "vehicleCustomerShare.topic";
     public static final String KEY_COMMAND_RESULT_TOPIC = "commandresult.topic";
+    public static final String KEY_PARTNER_GROUP_TOPIC="partner.group.topic";
+    public static final String KEY_PARTNER_fLEET_TOPIC = "partner.fleet.topic";
     public static final String MINIMUM_CONSIERABLE_DIST = "minimum.considerable.distance";
     public static final String MAXIMUM_CONSIERABLE_DIST = "maximum.considerable.distance";
     public static final String MINIMUM_TIME_DIFF = "minimum.time.difference";
@@ -578,6 +580,12 @@ public class Constants {
     //=================================DASHBOARD MANAGER===========================
     public static final String KEY_FLEET_RECORD_TOPIC = "fleet.record.topic";
     public static final String KEY_FLEET_MANAGER_SERVICE_URL = "key.fleet.manager.service.url";
+
+    //=================================SHIPMENT VIEW===========================
+    public static final String KEY_SHIPMENT_VIEW_SERVICE_URL = "key.shipment.view.service.url";
+
+    //=================================AUTOMATION ENGINE SERVICE URL===========================
+    public static final String KEY_AUTOMATION_ENGINE_SERVICE_URL = "key.automation.engine.service.url";
 
 
     private Constants() {

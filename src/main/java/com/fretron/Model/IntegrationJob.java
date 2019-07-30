@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1605103823609098056L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IntegrationJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queryParameters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"headers\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"requestMethod\",\"type\":{\"type\":\"enum\",\"name\":\"RequestMethod\",\"symbols\":[\"GET\",\"POST\",\"PUT\"]}},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastScheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"selectedVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isActive\",\"type\":\"boolean\"},{\"name\":\"isWebhookActive\",\"type\":\"boolean\"},{\"name\":\"mapper\",\"type\":{\"type\":\"record\",\"name\":\"Mapper\",\"fields\":[{\"name\":\"longitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 7533046879418948413L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IntegrationJob\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"url\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"password\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"queryParameters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"headers\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"requestMethod\",\"type\":{\"type\":\"enum\",\"name\":\"RequestMethod\",\"symbols\":[\"GET\",\"POST\",\"PUT\"]}},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creationTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"lastScheduleTime\",\"type\":[\"null\",\"long\"]},{\"name\":\"selectedVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"totalVechiles\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isActive\",\"type\":\"boolean\"},{\"name\":\"isWebhookActive\",\"type\":\"boolean\"},{\"name\":\"mapper\",\"type\":{\"type\":\"record\",\"name\":\"Mapper\",\"fields\":[{\"name\":\"longitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"latitude\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"speed\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"disableVehicleSync\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String id;
   @Deprecated public java.lang.String url;
@@ -31,6 +31,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public boolean isWebhookActive;
   @Deprecated public com.fretron.Model.Mapper mapper;
   @Deprecated public java.lang.String eventType;
+  @Deprecated public java.lang.Boolean disableVehicleSync;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -59,8 +60,9 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
    * @param isWebhookActive The new value for isWebhookActive
    * @param mapper The new value for mapper
    * @param eventType The new value for eventType
+   * @param disableVehicleSync The new value for disableVehicleSync
    */
-  public IntegrationJob(java.lang.String id, java.lang.String url, java.lang.String userName, java.lang.String password, java.lang.String queryParameters, java.lang.String headers, java.lang.String orgId, com.fretron.Model.RequestMethod requestMethod, java.lang.String type, java.lang.Long creationTime, java.lang.Long scheduleTime, java.lang.Long lastScheduleTime, java.lang.String selectedVechiles, java.lang.String totalVechiles, java.lang.Boolean isActive, java.lang.Boolean isWebhookActive, com.fretron.Model.Mapper mapper, java.lang.String eventType) {
+  public IntegrationJob(java.lang.String id, java.lang.String url, java.lang.String userName, java.lang.String password, java.lang.String queryParameters, java.lang.String headers, java.lang.String orgId, com.fretron.Model.RequestMethod requestMethod, java.lang.String type, java.lang.Long creationTime, java.lang.Long scheduleTime, java.lang.Long lastScheduleTime, java.lang.String selectedVechiles, java.lang.String totalVechiles, java.lang.Boolean isActive, java.lang.Boolean isWebhookActive, com.fretron.Model.Mapper mapper, java.lang.String eventType, java.lang.Boolean disableVehicleSync) {
     this.id = id;
     this.url = url;
     this.userName = userName;
@@ -79,6 +81,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     this.isWebhookActive = isWebhookActive;
     this.mapper = mapper;
     this.eventType = eventType;
+    this.disableVehicleSync = disableVehicleSync;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -103,6 +106,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     case 15: return isWebhookActive;
     case 16: return mapper;
     case 17: return eventType;
+    case 18: return disableVehicleSync;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +133,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     case 15: isWebhookActive = (java.lang.Boolean)value$; break;
     case 16: mapper = (com.fretron.Model.Mapper)value$; break;
     case 17: eventType = (java.lang.String)value$; break;
+    case 18: disableVehicleSync = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -422,6 +427,22 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'disableVehicleSync' field.
+   * @return The value of the 'disableVehicleSync' field.
+   */
+  public java.lang.Boolean getDisableVehicleSync() {
+    return disableVehicleSync;
+  }
+
+  /**
+   * Sets the value of the 'disableVehicleSync' field.
+   * @param value the value to set.
+   */
+  public void setDisableVehicleSync(java.lang.Boolean value) {
+    this.disableVehicleSync = value;
+  }
+
+  /**
    * Creates a new IntegrationJob RecordBuilder.
    * @return A new IntegrationJob RecordBuilder
    */
@@ -472,6 +493,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
     private com.fretron.Model.Mapper mapper;
     private com.fretron.Model.Mapper.Builder mapperBuilder;
     private java.lang.String eventType;
+    private java.lang.Boolean disableVehicleSync;
 
     /** Creates a new Builder */
     private Builder() {
@@ -559,6 +581,10 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
         this.eventType = data().deepCopy(fields()[17].schema(), other.eventType);
         fieldSetFlags()[17] = true;
       }
+      if (isValidValue(fields()[18], other.disableVehicleSync)) {
+        this.disableVehicleSync = data().deepCopy(fields()[18].schema(), other.disableVehicleSync);
+        fieldSetFlags()[18] = true;
+      }
     }
 
     /**
@@ -639,6 +665,10 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       if (isValidValue(fields()[17], other.eventType)) {
         this.eventType = data().deepCopy(fields()[17].schema(), other.eventType);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.disableVehicleSync)) {
+        this.disableVehicleSync = data().deepCopy(fields()[18].schema(), other.disableVehicleSync);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1377,6 +1407,45 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'disableVehicleSync' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getDisableVehicleSync() {
+      return disableVehicleSync;
+    }
+
+    /**
+      * Sets the value of the 'disableVehicleSync' field.
+      * @param value The value of 'disableVehicleSync'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder setDisableVehicleSync(java.lang.Boolean value) {
+      validate(fields()[18], value);
+      this.disableVehicleSync = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'disableVehicleSync' field has been set.
+      * @return True if the 'disableVehicleSync' field has been set, false otherwise.
+      */
+    public boolean hasDisableVehicleSync() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'disableVehicleSync' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IntegrationJob.Builder clearDisableVehicleSync() {
+      disableVehicleSync = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public IntegrationJob build() {
       try {
@@ -1403,6 +1472,7 @@ public class IntegrationJob extends org.apache.avro.specific.SpecificRecordBase 
           record.mapper = fieldSetFlags()[16] ? this.mapper : (com.fretron.Model.Mapper) defaultValue(fields()[16]);
         }
         record.eventType = fieldSetFlags()[17] ? this.eventType : (java.lang.String) defaultValue(fields()[17]);
+        record.disableVehicleSync = fieldSetFlags()[18] ? this.disableVehicleSync : (java.lang.Boolean) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

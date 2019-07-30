@@ -1,0 +1,38 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "PartnerGroup",
+  "fields": [
+
+
+    {
+         "name": "partnerType",
+         "type": [
+           "null",
+           "string"
+         ],
+         "default": null
+       }, {
+               "name": "name",
+               "type": [
+                 "null",
+                 "string"
+               ],
+               "default": null
+             },  {
+                     "name": "uuid",
+                     "type": [
+                       "null",
+                       "string"
+                     ],
+                     "default": null
+                   },{
+                           "name": "orgId",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         }
+  ]
+}

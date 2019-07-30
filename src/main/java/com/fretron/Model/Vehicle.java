@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Vehicle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3378507730332360815L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"groupsExtended\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrganisationGroup\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"truckLength\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"loadCapacity\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"floorType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"kmDriven\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageLoaded\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageEmpty\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -4204650677623173306L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"groupsExtended\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrganisationGroup\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"truckLength\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"loadCapacity\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"floorType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"kmDriven\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageLoaded\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageEmpty\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String customerId;
   @Deprecated public java.lang.String vehicleType;
@@ -41,6 +41,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String category;
   @Deprecated public java.lang.String externalId;
   @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public com.fretron.Model.OrgOffice branch;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -79,8 +80,9 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param category The new value for category
    * @param externalId The new value for externalId
    * @param updates The new value for updates
+   * @param branch The new value for branch
    */
-  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled, java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended, java.lang.Long truckLength, java.lang.Long loadCapacity, java.lang.String floorType, java.lang.Double kmDriven, java.lang.Double mileageLoaded, java.lang.Double mileageEmpty, java.lang.String category, java.lang.String externalId, com.fretron.Model.Updates updates) {
+  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled, java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended, java.lang.Long truckLength, java.lang.Long loadCapacity, java.lang.String floorType, java.lang.Double kmDriven, java.lang.Double mileageLoaded, java.lang.Double mileageEmpty, java.lang.String category, java.lang.String externalId, com.fretron.Model.Updates updates, com.fretron.Model.OrgOffice branch) {
     this.customerId = customerId;
     this.vehicleType = vehicleType;
     this.vehicleModel = vehicleModel;
@@ -109,6 +111,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     this.category = category;
     this.externalId = externalId;
     this.updates = updates;
+    this.branch = branch;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -143,6 +146,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 25: return category;
     case 26: return externalId;
     case 27: return updates;
+    case 28: return branch;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -179,6 +183,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 25: category = (java.lang.String)value$; break;
     case 26: externalId = (java.lang.String)value$; break;
     case 27: updates = (com.fretron.Model.Updates)value$; break;
+    case 28: branch = (com.fretron.Model.OrgOffice)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -632,6 +637,22 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'branch' field.
+   * @return The value of the 'branch' field.
+   */
+  public com.fretron.Model.OrgOffice getBranch() {
+    return branch;
+  }
+
+  /**
+   * Sets the value of the 'branch' field.
+   * @param value the value to set.
+   */
+  public void setBranch(com.fretron.Model.OrgOffice value) {
+    this.branch = value;
+  }
+
+  /**
    * Creates a new Vehicle RecordBuilder.
    * @return A new Vehicle RecordBuilder
    */
@@ -692,6 +713,8 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String externalId;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
+    private com.fretron.Model.OrgOffice branch;
+    private com.fretron.Model.OrgOffice.Builder branchBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -819,6 +842,13 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
+      if (isValidValue(fields()[28], other.branch)) {
+        this.branch = data().deepCopy(fields()[28].schema(), other.branch);
+        fieldSetFlags()[28] = true;
+      }
+      if (other.hasBranchBuilder()) {
+        this.branchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getBranchBuilder());
+      }
     }
 
     /**
@@ -940,6 +970,11 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         fieldSetFlags()[27] = true;
       }
       this.updatesBuilder = null;
+      if (isValidValue(fields()[28], other.branch)) {
+        this.branch = data().deepCopy(fields()[28].schema(), other.branch);
+        fieldSetFlags()[28] = true;
+      }
+      this.branchBuilder = null;
     }
 
     /**
@@ -2069,6 +2104,80 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'branch' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrgOffice getBranch() {
+      return branch;
+    }
+
+    /**
+      * Sets the value of the 'branch' field.
+      * @param value The value of 'branch'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setBranch(com.fretron.Model.OrgOffice value) {
+      validate(fields()[28], value);
+      this.branchBuilder = null;
+      this.branch = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'branch' field has been set.
+      * @return True if the 'branch' field has been set, false otherwise.
+      */
+    public boolean hasBranch() {
+      return fieldSetFlags()[28];
+    }
+
+    /**
+     * Gets the Builder instance for the 'branch' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrgOffice.Builder getBranchBuilder() {
+      if (branchBuilder == null) {
+        if (hasBranch()) {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder(branch));
+        } else {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder());
+        }
+      }
+      return branchBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'branch' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Vehicle.Builder setBranchBuilder(com.fretron.Model.OrgOffice.Builder value) {
+      clearBranch();
+      branchBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'branch' field has an active Builder instance
+     * @return True if the 'branch' field has an active Builder instance
+     */
+    public boolean hasBranchBuilder() {
+      return branchBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'branch' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearBranch() {
+      branch = null;
+      branchBuilder = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
     @Override
     public Vehicle build() {
       try {
@@ -2104,6 +2213,11 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
           record.updates = this.updatesBuilder.build();
         } else {
           record.updates = fieldSetFlags()[27] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[27]);
+        }
+        if (branchBuilder != null) {
+          record.branch = this.branchBuilder.build();
+        } else {
+          record.branch = fieldSetFlags()[28] ? this.branch : (com.fretron.Model.OrgOffice) defaultValue(fields()[28]);
         }
         return record;
       } catch (Exception e) {

@@ -109,6 +109,43 @@
                        "com.fretron.Model.Updates"
                      ],
                      "default": null
-                   }
+                   },
+                     {
+                         "name": "status",
+                         "type": [
+                           "null",
+                           "string"
+                         ],
+                         "default": null
+                       },
+                       {
+                             "name": "panNumber",
+                             "type": [
+                               "null",
+                               "string"
+                             ],
+                             "default": null
+                           },
+                            {
+                                                "name": "group",
+                                                "type": [
+                                                  "null",
+                                                  "com.fretron.Model.PartnerGroup"
+                                                ],
+                                                "default": null
+                                              },
+                                              {
+                                                      "name": "route",
+                                                       "type": [
+                                                        "null",
+                                                       {
+                                                        "type": "array",
+                                                        "items": "string"
+                                                                  }
+                                                                  ],
+                                                         "default": null
+                                               }
+
+
   ]
 }
