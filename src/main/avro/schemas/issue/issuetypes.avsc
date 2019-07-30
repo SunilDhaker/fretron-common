@@ -84,7 +84,15 @@
                                                                                                                }
                                                                                                              ],
                                                                                                              "default": null
-                                                                                                         }
+                                                                                                         },
+                                                 {
+                                                       "name": "defaultAssignee",
+                                                       "type": [
+                                                         "null",
+                                                         "com.fretron.Model.User"
+                                                       ],
+                                                       "default": null
+                                                     }
 
   ]
 }
