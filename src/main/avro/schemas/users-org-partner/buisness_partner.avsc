@@ -133,7 +133,19 @@
                                                   "com.fretron.Model.PartnerGroup"
                                                 ],
                                                 "default": null
-                                              }
+                                              },
+                                              {
+                                                      "name": "route",
+                                                       "type": [
+                                                        "null",
+                                                       {
+                                                        "type": "array",
+                                                        "items": "string"
+                                                                  }
+                                                                  ],
+                                                         "default": null
+                                               }
+
 
   ]
 }
