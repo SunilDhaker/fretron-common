@@ -3,7 +3,7 @@
   "name": "FreightPurchaseOrder",
   "type": "record",
   "fields": [
-    {
+     {
        "name": "uuid",
         "type": [
                     "null",
@@ -36,21 +36,21 @@
         "default": null
       },
       {
-                   "name": "orderDate",
-                    "type": [
-                               "null",
-                                "long"
+         "name": "orderDate",
+          "type": [
+                    "null",
+                    "long"
                              ],
                     "logicalType": "timestamp-millis",
                      "default": null
       },
-      {
-            "name": "vendor",
-             "type": [
+     {
+        "name": "vendor",
+         "type": [
                        "null",
                        "com.fretron.Model.BuisnessPartner"
                      ],
-            "default": null
+         "default": null
     },
     {
         "name": "orderType",
@@ -96,40 +96,48 @@
       {
         "name": "material",
          "type": [
-                            "null",
-                            "string"
-                               ],
+                   "null",
+                   "string"
+                  ],
          "default": null
       },
       {
          "name": "vehicleType",
           "type": [
-                            "null",
-                            "string"
-                               ],
+                    "null",
+                     "string"
+                   ],
          "default": null
+       },
+       {
+         "name": "numberOfVehicles",
+         "type": [
+                   "null",
+                   "string"
+                ],
+         "default": null
+       },
+       {
+         "name": "salesOrders",
+          "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+          "default": null
         },
         {
-           "name": "salesOrders",
-            "type": [
-                           "null",
-                           {
-                              "type": "array",
-                               "items": "string"
-                           }
-                                ],
-            "default": null
-          },
-           {
-                 "name": "updates",
-                  "type": [
-                          "null",
-                          "com.fretron.Model.Updates"
-                        ],
-                  "default": null
-              },
+          "name": "updates",
+          "type": [
+                    "null",
+                    "com.fretron.Model.Updates"
+                  ],
+          "default": null
+        },
 
-    {
+       {
        "name": "tnCs",
         "type": [
                    "null",
@@ -152,12 +160,12 @@
          "default": null
       },
       {
-             "name": "branch",
-              "type": [
-                          "null",
-                           "com.fretron.Model.OrgOffice"
-                              ],
-             "default": null
+         "name": "branch",
+          "type": [
+                    "null",
+                    "com.fretron.Model.OrgOffice"
+                  ],
+         "default": null
        }
   ]
 }

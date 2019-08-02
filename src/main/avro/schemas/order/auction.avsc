@@ -52,6 +52,14 @@
          "default": null
      },
      {
+       "name": "allocatedVehicles",
+        "type": [
+                 "null",
+                  "int"
+                ],
+       "default": null
+     },
+     {
        "name": "origin",
         "type": [
                   "null",
@@ -191,17 +199,17 @@
      {
         "name": "round",
          "type": [
-                        "null",
-                        "com.fretron.Model.AuctionRound"
-                       ],
+                  "null",
+                  "com.fretron.Model.AuctionRound"
+                 ],
         "default": null
      },
      {
        "name": "branch",
         "type": [
-                               "null",
-                                "com.fretron.Model.OrgOffice"
-                                   ],
+                  "null",
+                   "com.fretron.Model.OrgOffice"
+                ],
         "default": null
      },
      {
