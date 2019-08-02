@@ -36,6 +36,15 @@
         "default": null
       },
       {
+                   "name": "orderDate",
+                    "type": [
+                               "null",
+                                "long"
+                             ],
+                    "logicalType": "timestamp-millis",
+                     "default": null
+      },
+      {
             "name": "vendor",
              "type": [
                        "null",
