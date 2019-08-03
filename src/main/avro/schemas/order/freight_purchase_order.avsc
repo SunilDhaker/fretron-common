@@ -113,7 +113,7 @@
          "name": "numberOfVehicles",
          "type": [
                    "null",
-                   "string"
+                   "int"
                 ],
          "default": null
        },
