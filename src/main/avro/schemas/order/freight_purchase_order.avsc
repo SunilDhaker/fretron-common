@@ -166,6 +166,14 @@
                     "com.fretron.Model.OrgOffice"
                   ],
          "default": null
-       }
+       },
+            {
+                   "name": "route",
+                    "type": [
+                              "null",
+                               "string"
+                             ],
+                   "default": null
+                 }
   ]
 }

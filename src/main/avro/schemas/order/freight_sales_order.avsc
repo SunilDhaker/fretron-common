@@ -169,6 +169,14 @@
                    }
                         ],
          "default": null
-     }
+     },
+      {
+                        "name": "route",
+                         "type": [
+                                   "null",
+                                    "string"
+                                  ],
+                        "default": null
+                      }
   ]
 }
