@@ -71,7 +71,22 @@
          "name":"profileThumbnailString",
            "type": ["null","string"],
           "default":null
-     }
+     },
+         {
+                 "name": "alternateEmails",
+                 "type": ["null", {"type" : "array", "items":"string"}],
+                 "default":null
+         },
+             {
+                     "name": "alternateMobileNumbers",
+                     "type": ["null", {"type" : "array", "items":"string"}],
+                     "default":null
+             },
+                          {
+                                  "name": "mergedUserIds",
+                                  "type": ["null", {"type" : "array", "items":"string"}],
+                                  "default":null
+                          }
 
   ]
 }
