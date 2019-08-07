@@ -118,6 +118,14 @@
          "default": null
        },
        {
+         "name": "remainingVehicles",
+          "type": [
+                    "null",
+                    "int"
+                  ],
+         "default": null
+       },
+       {
          "name": "salesOrders",
           "type": [
                     "null",
@@ -167,13 +175,13 @@
                   ],
          "default": null
        },
-            {
-                   "name": "route",
-                    "type": [
-                              "null",
-                               "string"
-                             ],
-                   "default": null
-                 }
+       {
+          "name": "route",
+          "type": [
+                    "null",
+                    "string"
+                   ],
+          "default": null
+       }
   ]
 }
