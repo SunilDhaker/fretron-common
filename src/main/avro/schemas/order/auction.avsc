@@ -232,6 +232,17 @@
                    "com.fretron.Model.Updates"
                   ],
          "default": null
-      }
+      },
+      {
+             "name": "completedRounds",
+              "type": [
+                         "null",
+                         {
+                            "type": "array",
+                             "items": "com.fretron.Model.AuctionRound"
+                         }
+                              ],
+               "default": null
+           }
   ]
 }

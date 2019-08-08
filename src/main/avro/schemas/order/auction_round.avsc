@@ -28,7 +28,16 @@
                         ],
               "logicalType": "timestamp-millis",
               "default": null
-             }
+             },
+             {
+               "name": "roundNumber",
+                "type": [
+                          "null",
+                            "int"
+                               ],
+
+                           "default": null
+                          }
 
   ]
 }

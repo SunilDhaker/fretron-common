@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8046335741633719511L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AuctionRound\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = 2036665727244493668L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AuctionRound\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"roundNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
+  @Deprecated public java.lang.Integer roundNumber;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
    * @param status The new value for status
    * @param startTime The new value for startTime
    * @param endTime The new value for endTime
+   * @param roundNumber The new value for roundNumber
    */
-  public AuctionRound(java.lang.String status, java.lang.Long startTime, java.lang.Long endTime) {
+  public AuctionRound(java.lang.String status, java.lang.Long startTime, java.lang.Long endTime, java.lang.Integer roundNumber) {
     this.status = status;
     this.startTime = startTime;
     this.endTime = endTime;
+    this.roundNumber = roundNumber;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
     case 0: return status;
     case 1: return startTime;
     case 2: return endTime;
+    case 3: return roundNumber;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
     case 0: status = (java.lang.String)value$; break;
     case 1: startTime = (java.lang.Long)value$; break;
     case 2: endTime = (java.lang.Long)value$; break;
+    case 3: roundNumber = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'roundNumber' field.
+   * @return The value of the 'roundNumber' field.
+   */
+  public java.lang.Integer getRoundNumber() {
+    return roundNumber;
+  }
+
+  /**
+   * Sets the value of the 'roundNumber' field.
+   * @param value the value to set.
+   */
+  public void setRoundNumber(java.lang.Integer value) {
+    this.roundNumber = value;
+  }
+
+  /**
    * Creates a new AuctionRound RecordBuilder.
    * @return A new AuctionRound RecordBuilder
    */
@@ -141,6 +162,7 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String status;
     private java.lang.Long startTime;
     private java.lang.Long endTime;
+    private java.lang.Integer roundNumber;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
         this.endTime = data().deepCopy(fields()[2].schema(), other.endTime);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.roundNumber)) {
+        this.roundNumber = data().deepCopy(fields()[3].schema(), other.roundNumber);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[2], other.endTime)) {
         this.endTime = data().deepCopy(fields()[2].schema(), other.endTime);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.roundNumber)) {
+        this.roundNumber = data().deepCopy(fields()[3].schema(), other.roundNumber);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'roundNumber' field.
+      * @return The value.
+      */
+    public java.lang.Integer getRoundNumber() {
+      return roundNumber;
+    }
+
+    /**
+      * Sets the value of the 'roundNumber' field.
+      * @param value The value of 'roundNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.AuctionRound.Builder setRoundNumber(java.lang.Integer value) {
+      validate(fields()[3], value);
+      this.roundNumber = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'roundNumber' field has been set.
+      * @return True if the 'roundNumber' field has been set, false otherwise.
+      */
+    public boolean hasRoundNumber() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'roundNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.AuctionRound.Builder clearRoundNumber() {
+      roundNumber = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public AuctionRound build() {
       try {
@@ -311,6 +380,7 @@ public class AuctionRound extends org.apache.avro.specific.SpecificRecordBase im
         record.status = fieldSetFlags()[0] ? this.status : (java.lang.String) defaultValue(fields()[0]);
         record.startTime = fieldSetFlags()[1] ? this.startTime : (java.lang.Long) defaultValue(fields()[1]);
         record.endTime = fieldSetFlags()[2] ? this.endTime : (java.lang.Long) defaultValue(fields()[2]);
+        record.roundNumber = fieldSetFlags()[3] ? this.roundNumber : (java.lang.Integer) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
