@@ -10,15 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6401819644145666431L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleTypeName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleTypeDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"caringCapacity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"variant\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 5215819525983442005L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleTypeName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleTypeDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"carryingCapacity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"variant\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.lang.String vehicleTypeName;
   @Deprecated public java.lang.String vehicleTypeDescription;
-  @Deprecated public java.lang.Double caringCapacity;
+  @Deprecated public java.lang.Double carryingCapacity;
   @Deprecated public java.util.List<java.lang.String> variant;
 
   /**
@@ -35,16 +35,16 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
    * @param externalId The new value for externalId
    * @param vehicleTypeName The new value for vehicleTypeName
    * @param vehicleTypeDescription The new value for vehicleTypeDescription
-   * @param caringCapacity The new value for caringCapacity
+   * @param carryingCapacity The new value for carryingCapacity
    * @param variant The new value for variant
    */
-  public VehicleType(java.lang.String uuid, java.lang.String orgId, java.lang.String externalId, java.lang.String vehicleTypeName, java.lang.String vehicleTypeDescription, java.lang.Double caringCapacity, java.util.List<java.lang.String> variant) {
+  public VehicleType(java.lang.String uuid, java.lang.String orgId, java.lang.String externalId, java.lang.String vehicleTypeName, java.lang.String vehicleTypeDescription, java.lang.Double carryingCapacity, java.util.List<java.lang.String> variant) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.externalId = externalId;
     this.vehicleTypeName = vehicleTypeName;
     this.vehicleTypeDescription = vehicleTypeDescription;
-    this.caringCapacity = caringCapacity;
+    this.carryingCapacity = carryingCapacity;
     this.variant = variant;
   }
 
@@ -57,7 +57,7 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
     case 2: return externalId;
     case 3: return vehicleTypeName;
     case 4: return vehicleTypeDescription;
-    case 5: return caringCapacity;
+    case 5: return carryingCapacity;
     case 6: return variant;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -72,7 +72,7 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
     case 2: externalId = (java.lang.String)value$; break;
     case 3: vehicleTypeName = (java.lang.String)value$; break;
     case 4: vehicleTypeDescription = (java.lang.String)value$; break;
-    case 5: caringCapacity = (java.lang.Double)value$; break;
+    case 5: carryingCapacity = (java.lang.Double)value$; break;
     case 6: variant = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -159,19 +159,19 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
   }
 
   /**
-   * Gets the value of the 'caringCapacity' field.
-   * @return The value of the 'caringCapacity' field.
+   * Gets the value of the 'carryingCapacity' field.
+   * @return The value of the 'carryingCapacity' field.
    */
-  public java.lang.Double getCaringCapacity() {
-    return caringCapacity;
+  public java.lang.Double getCarryingCapacity() {
+    return carryingCapacity;
   }
 
   /**
-   * Sets the value of the 'caringCapacity' field.
+   * Sets the value of the 'carryingCapacity' field.
    * @param value the value to set.
    */
-  public void setCaringCapacity(java.lang.Double value) {
-    this.caringCapacity = value;
+  public void setCarryingCapacity(java.lang.Double value) {
+    this.carryingCapacity = value;
   }
 
   /**
@@ -227,7 +227,7 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
     private java.lang.String externalId;
     private java.lang.String vehicleTypeName;
     private java.lang.String vehicleTypeDescription;
-    private java.lang.Double caringCapacity;
+    private java.lang.Double carryingCapacity;
     private java.util.List<java.lang.String> variant;
 
     /** Creates a new Builder */
@@ -261,8 +261,8 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
         this.vehicleTypeDescription = data().deepCopy(fields()[4].schema(), other.vehicleTypeDescription);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.caringCapacity)) {
-        this.caringCapacity = data().deepCopy(fields()[5].schema(), other.caringCapacity);
+      if (isValidValue(fields()[5], other.carryingCapacity)) {
+        this.carryingCapacity = data().deepCopy(fields()[5].schema(), other.carryingCapacity);
         fieldSetFlags()[5] = true;
       }
       if (isValidValue(fields()[6], other.variant)) {
@@ -297,8 +297,8 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
         this.vehicleTypeDescription = data().deepCopy(fields()[4].schema(), other.vehicleTypeDescription);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.caringCapacity)) {
-        this.caringCapacity = data().deepCopy(fields()[5].schema(), other.caringCapacity);
+      if (isValidValue(fields()[5], other.carryingCapacity)) {
+        this.carryingCapacity = data().deepCopy(fields()[5].schema(), other.carryingCapacity);
         fieldSetFlags()[5] = true;
       }
       if (isValidValue(fields()[6], other.variant)) {
@@ -503,40 +503,40 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
     }
 
     /**
-      * Gets the value of the 'caringCapacity' field.
+      * Gets the value of the 'carryingCapacity' field.
       * @return The value.
       */
-    public java.lang.Double getCaringCapacity() {
-      return caringCapacity;
+    public java.lang.Double getCarryingCapacity() {
+      return carryingCapacity;
     }
 
     /**
-      * Sets the value of the 'caringCapacity' field.
-      * @param value The value of 'caringCapacity'.
+      * Sets the value of the 'carryingCapacity' field.
+      * @param value The value of 'carryingCapacity'.
       * @return This builder.
       */
-    public com.fretron.Model.VehicleType.Builder setCaringCapacity(java.lang.Double value) {
+    public com.fretron.Model.VehicleType.Builder setCarryingCapacity(java.lang.Double value) {
       validate(fields()[5], value);
-      this.caringCapacity = value;
+      this.carryingCapacity = value;
       fieldSetFlags()[5] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'caringCapacity' field has been set.
-      * @return True if the 'caringCapacity' field has been set, false otherwise.
+      * Checks whether the 'carryingCapacity' field has been set.
+      * @return True if the 'carryingCapacity' field has been set, false otherwise.
       */
-    public boolean hasCaringCapacity() {
+    public boolean hasCarryingCapacity() {
       return fieldSetFlags()[5];
     }
 
 
     /**
-      * Clears the value of the 'caringCapacity' field.
+      * Clears the value of the 'carryingCapacity' field.
       * @return This builder.
       */
-    public com.fretron.Model.VehicleType.Builder clearCaringCapacity() {
-      caringCapacity = null;
+    public com.fretron.Model.VehicleType.Builder clearCarryingCapacity() {
+      carryingCapacity = null;
       fieldSetFlags()[5] = false;
       return this;
     }
@@ -589,7 +589,7 @@ public class VehicleType extends org.apache.avro.specific.SpecificRecordBase imp
         record.externalId = fieldSetFlags()[2] ? this.externalId : (java.lang.String) defaultValue(fields()[2]);
         record.vehicleTypeName = fieldSetFlags()[3] ? this.vehicleTypeName : (java.lang.String) defaultValue(fields()[3]);
         record.vehicleTypeDescription = fieldSetFlags()[4] ? this.vehicleTypeDescription : (java.lang.String) defaultValue(fields()[4]);
-        record.caringCapacity = fieldSetFlags()[5] ? this.caringCapacity : (java.lang.Double) defaultValue(fields()[5]);
+        record.carryingCapacity = fieldSetFlags()[5] ? this.carryingCapacity : (java.lang.Double) defaultValue(fields()[5]);
         record.variant = fieldSetFlags()[6] ? this.variant : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {

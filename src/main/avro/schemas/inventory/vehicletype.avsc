@@ -44,7 +44,7 @@
                    "default": null
                 } ,
           {
-                    "name": "caringCapacity",
+                    "name": "carryingCapacity",
                      "type": [
                      "null",
                       "double"
