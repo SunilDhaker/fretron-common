@@ -1,0 +1,66 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "VehicleType",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+       "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+       "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+       "default": null
+    },
+      {
+          "name": "vehicleTypeName",
+          "type": [
+            "null",
+            "string"
+          ],
+           "default": null
+        },
+        {
+                  "name": "vehicleTypeDescription",
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                   "default": null
+                } ,
+          {
+                    "name": "caringCapacity",
+                     "type": [
+                     "null",
+                      "double"
+                         ],
+                       "default": null
+                                 },
+             {
+                  "name": "variant",
+                  "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+                  "default": null
+                }
+  ]
+}
