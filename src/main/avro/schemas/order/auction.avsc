@@ -243,6 +243,11 @@
                          }
                               ],
                "default": null
-           }
+           },
+         {
+            "name":"isConsiderReferencePrice",
+            "type": ["null","boolean"],
+            "default":null
+       }
   ]
 }
