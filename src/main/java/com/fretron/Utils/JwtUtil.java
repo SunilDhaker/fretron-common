@@ -82,8 +82,13 @@ public class JwtUtil {
               .setSigningKey("abcabcabcabc")
               .parseClaimsJws(token).getBody();
 
-      Boolean isAgent =  (Boolean) claims.get("isAgent");
-      return isAgent;
+      Object isAgent =   claims.get("isAgent");
+      if(isAgent == null){
+        return false;
+      }
+      else{
+        return (Boolean) isAgent;
+      }
     } catch (ExpiredJwtException e) {
       e.printStackTrace();
     } catch (UnsupportedJwtException e) {
