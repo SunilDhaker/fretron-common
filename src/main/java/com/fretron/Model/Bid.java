@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Bid extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4417906203744483624L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 303219654718366789L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String businessPartnerId;
@@ -19,6 +19,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   @Deprecated public java.lang.Integer numberOfVehicles;
   @Deprecated public java.lang.Double amount;
   @Deprecated public java.lang.Double rank;
+  @Deprecated public java.util.List<java.lang.String> contacts;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param numberOfVehicles The new value for numberOfVehicles
    * @param amount The new value for amount
    * @param rank The new value for rank
+   * @param contacts The new value for contacts
    */
-  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank) {
+  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank, java.util.List<java.lang.String> contacts) {
     this.status = status;
     this.businessPartnerId = businessPartnerId;
     this.partnerName = partnerName;
     this.numberOfVehicles = numberOfVehicles;
     this.amount = amount;
     this.rank = rank;
+    this.contacts = contacts;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 3: return numberOfVehicles;
     case 4: return amount;
     case 5: return rank;
+    case 6: return contacts;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 3: numberOfVehicles = (java.lang.Integer)value$; break;
     case 4: amount = (java.lang.Double)value$; break;
     case 5: rank = (java.lang.Double)value$; break;
+    case 6: contacts = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   }
 
   /**
+   * Gets the value of the 'contacts' field.
+   * @return The value of the 'contacts' field.
+   */
+  public java.util.List<java.lang.String> getContacts() {
+    return contacts;
+  }
+
+  /**
+   * Sets the value of the 'contacts' field.
+   * @param value the value to set.
+   */
+  public void setContacts(java.util.List<java.lang.String> value) {
+    this.contacts = value;
+  }
+
+  /**
    * Creates a new Bid RecordBuilder.
    * @return A new Bid RecordBuilder
    */
@@ -207,6 +228,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     private java.lang.Integer numberOfVehicles;
     private java.lang.Double amount;
     private java.lang.Double rank;
+    private java.util.List<java.lang.String> contacts;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         this.rank = data().deepCopy(fields()[5].schema(), other.rank);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.contacts)) {
+        this.contacts = data().deepCopy(fields()[6].schema(), other.contacts);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       if (isValidValue(fields()[5], other.rank)) {
         this.rank = data().deepCopy(fields()[5].schema(), other.rank);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.contacts)) {
+        this.contacts = data().deepCopy(fields()[6].schema(), other.contacts);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       return this;
     }
 
+    /**
+      * Gets the value of the 'contacts' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getContacts() {
+      return contacts;
+    }
+
+    /**
+      * Sets the value of the 'contacts' field.
+      * @param value The value of 'contacts'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder setContacts(java.util.List<java.lang.String> value) {
+      validate(fields()[6], value);
+      this.contacts = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'contacts' field has been set.
+      * @return True if the 'contacts' field has been set, false otherwise.
+      */
+    public boolean hasContacts() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'contacts' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder clearContacts() {
+      contacts = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Bid build() {
       try {
@@ -521,6 +590,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         record.numberOfVehicles = fieldSetFlags()[3] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[3]);
         record.amount = fieldSetFlags()[4] ? this.amount : (java.lang.Double) defaultValue(fields()[4]);
         record.rank = fieldSetFlags()[5] ? this.rank : (java.lang.Double) defaultValue(fields()[5]);
+        record.contacts = fieldSetFlags()[6] ? this.contacts : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
