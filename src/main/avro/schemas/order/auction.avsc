@@ -248,6 +248,33 @@
             "name":"isConsiderReferencePrice",
             "type": ["null","boolean"],
             "default":null
-       }
+       },
+       {
+          "name": "customFields",
+           "type": [
+                     "null",
+                    {
+                       "type": "array",
+                        "items": "com.fretron.Model.CustomFields"
+                    }
+                         ],
+           "default": null
+       },
+       {
+                "name": "customerName",
+                 "type": [
+                                "null",
+                                "string"
+                               ],
+                "default": null
+        },
+        {
+             "name": "route",
+             "type": [
+                       "null",
+                       "string"
+                     ],
+             "default": null
+        }
   ]
 }
