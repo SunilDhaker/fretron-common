@@ -192,6 +192,14 @@
           "default": null
        },
        {
+          "name": "auctionId",
+          "type": [
+                    "null",
+                     "string"
+                  ],
+          "default": null
+       },
+       {
            "name": "customFields",
            "type": [
                       "null",
@@ -201,6 +209,17 @@
              }
                   ],
            "default": null
-        }
+        },
+        {
+           "name": "allowedVehicleTypes",
+            "type": [
+                      "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+                  ],
+            "default": null
+       }
   ]
 }
