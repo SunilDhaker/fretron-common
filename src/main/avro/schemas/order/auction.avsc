@@ -149,6 +149,15 @@
        "logicalType": "timestamp-millis",
        "default": null
      },
+      {
+            "name": "createDate",
+            "type": [
+                              "null",
+                               "long"
+                            ],
+                 "logicalType": "timestamp-millis",
+                    "default": null
+      },
      {
        "name": "allowedTransporters",
        "type": [
