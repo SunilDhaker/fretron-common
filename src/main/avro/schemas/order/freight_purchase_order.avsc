@@ -78,6 +78,22 @@
           "default": null
      },
      {
+       "name": "freightType",
+        "type": [
+                  "null",
+                  "string"
+                ],
+        "default": null
+    },
+    {
+       "name": "freightCost",
+       "type": [
+                  "null",
+                  "double"
+                ],
+       "default": null
+     },
+     {
         "name": "origin",
          "type": [
                    "null",
