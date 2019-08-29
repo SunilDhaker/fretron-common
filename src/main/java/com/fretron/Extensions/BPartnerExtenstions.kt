@@ -5,6 +5,8 @@ import com.fretron.Model.BuisnessPartner
 fun BuisnessPartner.clean(){
     this.setUpdates(null)
     this.getGroup()?.setOrgId(null)
+    this.getGroup()?.setPartnerType(null)
+    this.getGroup()?.setUuid(null)
     this.setCustomFields(null)
 }
 
