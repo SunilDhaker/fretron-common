@@ -10,11 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LBSResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1496742830477337895L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -6702725748183904407L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String requestType;
+  @Deprecated public java.lang.String requestId;
   @Deprecated public java.lang.String requestURL;
   @Deprecated public java.lang.Integer statusCode;
   @Deprecated public java.lang.String data;
@@ -35,6 +36,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * All-args constructor.
    * @param mobileNumber The new value for mobileNumber
    * @param requestType The new value for requestType
+   * @param requestId The new value for requestId
    * @param requestURL The new value for requestURL
    * @param statusCode The new value for statusCode
    * @param data The new value for data
@@ -44,9 +46,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * @param userId The new value for userId
    * @param orgId The new value for orgId
    */
-  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId) {
+  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId) {
     this.mobileNumber = mobileNumber;
     this.requestType = requestType;
+    this.requestId = requestId;
     this.requestURL = requestURL;
     this.statusCode = statusCode;
     this.data = data;
@@ -63,14 +66,15 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: return mobileNumber;
     case 1: return requestType;
-    case 2: return requestURL;
-    case 3: return statusCode;
-    case 4: return data;
-    case 5: return error;
-    case 6: return requestedAt;
-    case 7: return requestTime;
-    case 8: return userId;
-    case 9: return orgId;
+    case 2: return requestId;
+    case 3: return requestURL;
+    case 4: return statusCode;
+    case 5: return data;
+    case 6: return error;
+    case 7: return requestedAt;
+    case 8: return requestTime;
+    case 9: return userId;
+    case 10: return orgId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -81,14 +85,15 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     switch (field$) {
     case 0: mobileNumber = (java.lang.String)value$; break;
     case 1: requestType = (java.lang.String)value$; break;
-    case 2: requestURL = (java.lang.String)value$; break;
-    case 3: statusCode = (java.lang.Integer)value$; break;
-    case 4: data = (java.lang.String)value$; break;
-    case 5: error = (java.lang.String)value$; break;
-    case 6: requestedAt = (java.lang.Long)value$; break;
-    case 7: requestTime = (java.lang.Long)value$; break;
-    case 8: userId = (java.lang.String)value$; break;
-    case 9: orgId = (java.lang.String)value$; break;
+    case 2: requestId = (java.lang.String)value$; break;
+    case 3: requestURL = (java.lang.String)value$; break;
+    case 4: statusCode = (java.lang.Integer)value$; break;
+    case 5: data = (java.lang.String)value$; break;
+    case 6: error = (java.lang.String)value$; break;
+    case 7: requestedAt = (java.lang.Long)value$; break;
+    case 8: requestTime = (java.lang.Long)value$; break;
+    case 9: userId = (java.lang.String)value$; break;
+    case 10: orgId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -123,6 +128,22 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    */
   public void setRequestType(java.lang.String value) {
     this.requestType = value;
+  }
+
+  /**
+   * Gets the value of the 'requestId' field.
+   * @return The value of the 'requestId' field.
+   */
+  public java.lang.String getRequestId() {
+    return requestId;
+  }
+
+  /**
+   * Sets the value of the 'requestId' field.
+   * @param value the value to set.
+   */
+  public void setRequestId(java.lang.String value) {
+    this.requestId = value;
   }
 
   /**
@@ -287,6 +308,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
 
     private java.lang.String mobileNumber;
     private java.lang.String requestType;
+    private java.lang.String requestId;
     private java.lang.String requestURL;
     private java.lang.Integer statusCode;
     private java.lang.String data;
@@ -315,37 +337,41 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.requestType = data().deepCopy(fields()[1].schema(), other.requestType);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.requestURL)) {
-        this.requestURL = data().deepCopy(fields()[2].schema(), other.requestURL);
+      if (isValidValue(fields()[2], other.requestId)) {
+        this.requestId = data().deepCopy(fields()[2].schema(), other.requestId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.statusCode)) {
-        this.statusCode = data().deepCopy(fields()[3].schema(), other.statusCode);
+      if (isValidValue(fields()[3], other.requestURL)) {
+        this.requestURL = data().deepCopy(fields()[3].schema(), other.requestURL);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.data)) {
-        this.data = data().deepCopy(fields()[4].schema(), other.data);
+      if (isValidValue(fields()[4], other.statusCode)) {
+        this.statusCode = data().deepCopy(fields()[4].schema(), other.statusCode);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.error)) {
-        this.error = data().deepCopy(fields()[5].schema(), other.error);
+      if (isValidValue(fields()[5], other.data)) {
+        this.data = data().deepCopy(fields()[5].schema(), other.data);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.requestedAt)) {
-        this.requestedAt = data().deepCopy(fields()[6].schema(), other.requestedAt);
+      if (isValidValue(fields()[6], other.error)) {
+        this.error = data().deepCopy(fields()[6].schema(), other.error);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.requestTime)) {
-        this.requestTime = data().deepCopy(fields()[7].schema(), other.requestTime);
+      if (isValidValue(fields()[7], other.requestedAt)) {
+        this.requestedAt = data().deepCopy(fields()[7].schema(), other.requestedAt);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.userId)) {
-        this.userId = data().deepCopy(fields()[8].schema(), other.userId);
+      if (isValidValue(fields()[8], other.requestTime)) {
+        this.requestTime = data().deepCopy(fields()[8].schema(), other.requestTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
+      if (isValidValue(fields()[9], other.userId)) {
+        this.userId = data().deepCopy(fields()[9].schema(), other.userId);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[10].schema(), other.orgId);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -363,37 +389,41 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.requestType = data().deepCopy(fields()[1].schema(), other.requestType);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.requestURL)) {
-        this.requestURL = data().deepCopy(fields()[2].schema(), other.requestURL);
+      if (isValidValue(fields()[2], other.requestId)) {
+        this.requestId = data().deepCopy(fields()[2].schema(), other.requestId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.statusCode)) {
-        this.statusCode = data().deepCopy(fields()[3].schema(), other.statusCode);
+      if (isValidValue(fields()[3], other.requestURL)) {
+        this.requestURL = data().deepCopy(fields()[3].schema(), other.requestURL);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.data)) {
-        this.data = data().deepCopy(fields()[4].schema(), other.data);
+      if (isValidValue(fields()[4], other.statusCode)) {
+        this.statusCode = data().deepCopy(fields()[4].schema(), other.statusCode);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.error)) {
-        this.error = data().deepCopy(fields()[5].schema(), other.error);
+      if (isValidValue(fields()[5], other.data)) {
+        this.data = data().deepCopy(fields()[5].schema(), other.data);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.requestedAt)) {
-        this.requestedAt = data().deepCopy(fields()[6].schema(), other.requestedAt);
+      if (isValidValue(fields()[6], other.error)) {
+        this.error = data().deepCopy(fields()[6].schema(), other.error);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.requestTime)) {
-        this.requestTime = data().deepCopy(fields()[7].schema(), other.requestTime);
+      if (isValidValue(fields()[7], other.requestedAt)) {
+        this.requestedAt = data().deepCopy(fields()[7].schema(), other.requestedAt);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.userId)) {
-        this.userId = data().deepCopy(fields()[8].schema(), other.userId);
+      if (isValidValue(fields()[8], other.requestTime)) {
+        this.requestTime = data().deepCopy(fields()[8].schema(), other.requestTime);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
+      if (isValidValue(fields()[9], other.userId)) {
+        this.userId = data().deepCopy(fields()[9].schema(), other.userId);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[10].schema(), other.orgId);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -476,6 +506,45 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'requestId' field.
+      * @return The value.
+      */
+    public java.lang.String getRequestId() {
+      return requestId;
+    }
+
+    /**
+      * Sets the value of the 'requestId' field.
+      * @param value The value of 'requestId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setRequestId(java.lang.String value) {
+      validate(fields()[2], value);
+      this.requestId = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'requestId' field has been set.
+      * @return True if the 'requestId' field has been set, false otherwise.
+      */
+    public boolean hasRequestId() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'requestId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearRequestId() {
+      requestId = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'requestURL' field.
       * @return The value.
       */
@@ -489,9 +558,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setRequestURL(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.requestURL = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -500,7 +569,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'requestURL' field has been set, false otherwise.
       */
     public boolean hasRequestURL() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -510,7 +579,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearRequestURL() {
       requestURL = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -528,9 +597,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setStatusCode(java.lang.Integer value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.statusCode = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -539,7 +608,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'statusCode' field has been set, false otherwise.
       */
     public boolean hasStatusCode() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -549,7 +618,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearStatusCode() {
       statusCode = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -567,9 +636,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setData(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.data = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -578,7 +647,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'data' field has been set, false otherwise.
       */
     public boolean hasData() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -588,7 +657,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearData() {
       data = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -606,9 +675,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setError(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.error = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -617,7 +686,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'error' field has been set, false otherwise.
       */
     public boolean hasError() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -627,7 +696,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearError() {
       error = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -645,9 +714,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setRequestedAt(java.lang.Long value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.requestedAt = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -656,7 +725,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'requestedAt' field has been set, false otherwise.
       */
     public boolean hasRequestedAt() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -666,7 +735,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearRequestedAt() {
       requestedAt = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -684,9 +753,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setRequestTime(java.lang.Long value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.requestTime = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -695,7 +764,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'requestTime' field has been set, false otherwise.
       */
     public boolean hasRequestTime() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -705,7 +774,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearRequestTime() {
       requestTime = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -723,9 +792,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setUserId(java.lang.String value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.userId = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -734,7 +803,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'userId' field has been set, false otherwise.
       */
     public boolean hasUserId() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -744,7 +813,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearUserId() {
       userId = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -762,9 +831,9 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.LBSResult.Builder setOrgId(java.lang.String value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.orgId = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -773,7 +842,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -783,7 +852,7 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.LBSResult.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -793,14 +862,15 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         LBSResult record = new LBSResult();
         record.mobileNumber = fieldSetFlags()[0] ? this.mobileNumber : (java.lang.String) defaultValue(fields()[0]);
         record.requestType = fieldSetFlags()[1] ? this.requestType : (java.lang.String) defaultValue(fields()[1]);
-        record.requestURL = fieldSetFlags()[2] ? this.requestURL : (java.lang.String) defaultValue(fields()[2]);
-        record.statusCode = fieldSetFlags()[3] ? this.statusCode : (java.lang.Integer) defaultValue(fields()[3]);
-        record.data = fieldSetFlags()[4] ? this.data : (java.lang.String) defaultValue(fields()[4]);
-        record.error = fieldSetFlags()[5] ? this.error : (java.lang.String) defaultValue(fields()[5]);
-        record.requestedAt = fieldSetFlags()[6] ? this.requestedAt : (java.lang.Long) defaultValue(fields()[6]);
-        record.requestTime = fieldSetFlags()[7] ? this.requestTime : (java.lang.Long) defaultValue(fields()[7]);
-        record.userId = fieldSetFlags()[8] ? this.userId : (java.lang.String) defaultValue(fields()[8]);
-        record.orgId = fieldSetFlags()[9] ? this.orgId : (java.lang.String) defaultValue(fields()[9]);
+        record.requestId = fieldSetFlags()[2] ? this.requestId : (java.lang.String) defaultValue(fields()[2]);
+        record.requestURL = fieldSetFlags()[3] ? this.requestURL : (java.lang.String) defaultValue(fields()[3]);
+        record.statusCode = fieldSetFlags()[4] ? this.statusCode : (java.lang.Integer) defaultValue(fields()[4]);
+        record.data = fieldSetFlags()[5] ? this.data : (java.lang.String) defaultValue(fields()[5]);
+        record.error = fieldSetFlags()[6] ? this.error : (java.lang.String) defaultValue(fields()[6]);
+        record.requestedAt = fieldSetFlags()[7] ? this.requestedAt : (java.lang.Long) defaultValue(fields()[7]);
+        record.requestTime = fieldSetFlags()[8] ? this.requestTime : (java.lang.Long) defaultValue(fields()[8]);
+        record.userId = fieldSetFlags()[9] ? this.userId : (java.lang.String) defaultValue(fields()[9]);
+        record.orgId = fieldSetFlags()[10] ? this.orgId : (java.lang.String) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
