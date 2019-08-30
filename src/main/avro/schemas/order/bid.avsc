@@ -61,6 +61,22 @@
                       }
                     ],
                     "default": null
-                  }
+              },
+              {
+                "name": "vehicleType",
+                 "type": [
+                           "null",
+                            "string"
+                          ],
+                 "default": null
+              },
+              {
+                  "name": "purchaseOrderId",
+                    "type": [
+                               "null",
+                                "string"
+                            ],
+                   "default": null
+            }
   ]
 }
