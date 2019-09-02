@@ -1,0 +1,70 @@
+{
+	"namespace": "com.fretron.Model",
+	"name": "LoadType",
+	"type": "record",
+	"fields": [{
+			"name": "name",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "orgId",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "partnerId",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "vehicleCategory",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "numberOfWheels",
+			"type": [
+				"null",
+				"int"
+			],
+			"default": null
+		},
+		{
+			"name": "passingCapacityMT",
+			"type": [
+				"null",
+				"double"
+			],
+			"default": null
+		},
+		{
+			"name": "bodyType",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "dimensionString",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		}
+	]
+}
