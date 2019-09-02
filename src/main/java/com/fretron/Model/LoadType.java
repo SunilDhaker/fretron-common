@@ -10,10 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5344115552399851274L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2738421070624552901L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
+  @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String partnerId;
   @Deprecated public java.lang.String vehicleCategory;
@@ -32,6 +33,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   /**
    * All-args constructor.
    * @param name The new value for name
+   * @param uuid The new value for uuid
    * @param orgId The new value for orgId
    * @param partnerId The new value for partnerId
    * @param vehicleCategory The new value for vehicleCategory
@@ -40,8 +42,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param bodyType The new value for bodyType
    * @param dimensionString The new value for dimensionString
    */
-  public LoadType(java.lang.String name, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.String bodyType, java.lang.String dimensionString) {
+  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.String bodyType, java.lang.String dimensionString) {
     this.name = name;
+    this.uuid = uuid;
     this.orgId = orgId;
     this.partnerId = partnerId;
     this.vehicleCategory = vehicleCategory;
@@ -56,13 +59,14 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return name;
-    case 1: return orgId;
-    case 2: return partnerId;
-    case 3: return vehicleCategory;
-    case 4: return numberOfWheels;
-    case 5: return passingCapacityMT;
-    case 6: return bodyType;
-    case 7: return dimensionString;
+    case 1: return uuid;
+    case 2: return orgId;
+    case 3: return partnerId;
+    case 4: return vehicleCategory;
+    case 5: return numberOfWheels;
+    case 6: return passingCapacityMT;
+    case 7: return bodyType;
+    case 8: return dimensionString;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -72,13 +76,14 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: name = (java.lang.String)value$; break;
-    case 1: orgId = (java.lang.String)value$; break;
-    case 2: partnerId = (java.lang.String)value$; break;
-    case 3: vehicleCategory = (java.lang.String)value$; break;
-    case 4: numberOfWheels = (java.lang.Integer)value$; break;
-    case 5: passingCapacityMT = (java.lang.Double)value$; break;
-    case 6: bodyType = (java.lang.String)value$; break;
-    case 7: dimensionString = (java.lang.String)value$; break;
+    case 1: uuid = (java.lang.String)value$; break;
+    case 2: orgId = (java.lang.String)value$; break;
+    case 3: partnerId = (java.lang.String)value$; break;
+    case 4: vehicleCategory = (java.lang.String)value$; break;
+    case 5: numberOfWheels = (java.lang.Integer)value$; break;
+    case 6: passingCapacityMT = (java.lang.Double)value$; break;
+    case 7: bodyType = (java.lang.String)value$; break;
+    case 8: dimensionString = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -97,6 +102,22 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    */
   public void setName(java.lang.String value) {
     this.name = value;
+  }
+
+  /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
   }
 
   /**
@@ -244,6 +265,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     implements org.apache.avro.data.RecordBuilder<LoadType> {
 
     private java.lang.String name;
+    private java.lang.String uuid;
     private java.lang.String orgId;
     private java.lang.String partnerId;
     private java.lang.String vehicleCategory;
@@ -267,33 +289,37 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.name = data().deepCopy(fields()[0].schema(), other.name);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[1].schema(), other.orgId);
+      if (isValidValue(fields()[1], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[1].schema(), other.uuid);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.partnerId)) {
-        this.partnerId = data().deepCopy(fields()[2].schema(), other.partnerId);
+      if (isValidValue(fields()[2], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[2].schema(), other.orgId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.vehicleCategory)) {
-        this.vehicleCategory = data().deepCopy(fields()[3].schema(), other.vehicleCategory);
+      if (isValidValue(fields()[3], other.partnerId)) {
+        this.partnerId = data().deepCopy(fields()[3].schema(), other.partnerId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.numberOfWheels)) {
-        this.numberOfWheels = data().deepCopy(fields()[4].schema(), other.numberOfWheels);
+      if (isValidValue(fields()[4], other.vehicleCategory)) {
+        this.vehicleCategory = data().deepCopy(fields()[4].schema(), other.vehicleCategory);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.passingCapacityMT)) {
-        this.passingCapacityMT = data().deepCopy(fields()[5].schema(), other.passingCapacityMT);
+      if (isValidValue(fields()[5], other.numberOfWheels)) {
+        this.numberOfWheels = data().deepCopy(fields()[5].schema(), other.numberOfWheels);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[6].schema(), other.bodyType);
+      if (isValidValue(fields()[6], other.passingCapacityMT)) {
+        this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[7].schema(), other.dimensionString);
+      if (isValidValue(fields()[7], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -307,33 +333,37 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.name = data().deepCopy(fields()[0].schema(), other.name);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[1].schema(), other.orgId);
+      if (isValidValue(fields()[1], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[1].schema(), other.uuid);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.partnerId)) {
-        this.partnerId = data().deepCopy(fields()[2].schema(), other.partnerId);
+      if (isValidValue(fields()[2], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[2].schema(), other.orgId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.vehicleCategory)) {
-        this.vehicleCategory = data().deepCopy(fields()[3].schema(), other.vehicleCategory);
+      if (isValidValue(fields()[3], other.partnerId)) {
+        this.partnerId = data().deepCopy(fields()[3].schema(), other.partnerId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.numberOfWheels)) {
-        this.numberOfWheels = data().deepCopy(fields()[4].schema(), other.numberOfWheels);
+      if (isValidValue(fields()[4], other.vehicleCategory)) {
+        this.vehicleCategory = data().deepCopy(fields()[4].schema(), other.vehicleCategory);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.passingCapacityMT)) {
-        this.passingCapacityMT = data().deepCopy(fields()[5].schema(), other.passingCapacityMT);
+      if (isValidValue(fields()[5], other.numberOfWheels)) {
+        this.numberOfWheels = data().deepCopy(fields()[5].schema(), other.numberOfWheels);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[6].schema(), other.bodyType);
+      if (isValidValue(fields()[6], other.passingCapacityMT)) {
+        this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[7].schema(), other.dimensionString);
+      if (isValidValue(fields()[7], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -377,6 +407,45 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setUuid(java.lang.String value) {
+      validate(fields()[1], value);
+      this.uuid = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[1];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'orgId' field.
       * @return The value.
       */
@@ -390,9 +459,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setOrgId(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.orgId = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -401,7 +470,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -411,7 +480,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -429,9 +498,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setPartnerId(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.partnerId = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -440,7 +509,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'partnerId' field has been set, false otherwise.
       */
     public boolean hasPartnerId() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -450,7 +519,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearPartnerId() {
       partnerId = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -468,9 +537,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setVehicleCategory(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.vehicleCategory = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -479,7 +548,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'vehicleCategory' field has been set, false otherwise.
       */
     public boolean hasVehicleCategory() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -489,7 +558,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearVehicleCategory() {
       vehicleCategory = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -507,9 +576,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setNumberOfWheels(java.lang.Integer value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.numberOfWheels = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -518,7 +587,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'numberOfWheels' field has been set, false otherwise.
       */
     public boolean hasNumberOfWheels() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -528,7 +597,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearNumberOfWheels() {
       numberOfWheels = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -546,9 +615,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setPassingCapacityMT(java.lang.Double value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.passingCapacityMT = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -557,7 +626,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'passingCapacityMT' field has been set, false otherwise.
       */
     public boolean hasPassingCapacityMT() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -567,7 +636,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearPassingCapacityMT() {
       passingCapacityMT = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -585,9 +654,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setBodyType(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.bodyType = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -596,7 +665,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'bodyType' field has been set, false otherwise.
       */
     public boolean hasBodyType() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -606,7 +675,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearBodyType() {
       bodyType = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -624,9 +693,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setDimensionString(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.dimensionString = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -635,7 +704,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'dimensionString' field has been set, false otherwise.
       */
     public boolean hasDimensionString() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -645,7 +714,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearDimensionString() {
       dimensionString = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -654,13 +723,14 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       try {
         LoadType record = new LoadType();
         record.name = fieldSetFlags()[0] ? this.name : (java.lang.String) defaultValue(fields()[0]);
-        record.orgId = fieldSetFlags()[1] ? this.orgId : (java.lang.String) defaultValue(fields()[1]);
-        record.partnerId = fieldSetFlags()[2] ? this.partnerId : (java.lang.String) defaultValue(fields()[2]);
-        record.vehicleCategory = fieldSetFlags()[3] ? this.vehicleCategory : (java.lang.String) defaultValue(fields()[3]);
-        record.numberOfWheels = fieldSetFlags()[4] ? this.numberOfWheels : (java.lang.Integer) defaultValue(fields()[4]);
-        record.passingCapacityMT = fieldSetFlags()[5] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[5]);
-        record.bodyType = fieldSetFlags()[6] ? this.bodyType : (java.lang.String) defaultValue(fields()[6]);
-        record.dimensionString = fieldSetFlags()[7] ? this.dimensionString : (java.lang.String) defaultValue(fields()[7]);
+        record.uuid = fieldSetFlags()[1] ? this.uuid : (java.lang.String) defaultValue(fields()[1]);
+        record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);
+        record.partnerId = fieldSetFlags()[3] ? this.partnerId : (java.lang.String) defaultValue(fields()[3]);
+        record.vehicleCategory = fieldSetFlags()[4] ? this.vehicleCategory : (java.lang.String) defaultValue(fields()[4]);
+        record.numberOfWheels = fieldSetFlags()[5] ? this.numberOfWheels : (java.lang.Integer) defaultValue(fields()[5]);
+        record.passingCapacityMT = fieldSetFlags()[6] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[6]);
+        record.bodyType = fieldSetFlags()[7] ? this.bodyType : (java.lang.String) defaultValue(fields()[7]);
+        record.dimensionString = fieldSetFlags()[8] ? this.dimensionString : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
