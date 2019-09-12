@@ -77,6 +77,14 @@
                                 "string"
                             ],
                    "default": null
-            }
+            },
+             {
+                                          "name": "time",
+                                            "type": [
+                                                       "null",
+                                                        "long"
+                                                    ],
+                                           "default": null
+                                    }
   ]
 }
