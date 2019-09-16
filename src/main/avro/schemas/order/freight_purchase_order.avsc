@@ -236,6 +236,17 @@
             }
                   ],
             "default": null
+       },
+       {
+          "name": "shipments",
+                 "type": [
+                           "null",
+                           {
+                             "type": "array",
+                             "items": "string"
+                           }
+                         ],
+           "default": null
        }
   ]
 }
