@@ -72,9 +72,25 @@
           {
                "name": "uuid",
                "type": ["null",
-                                          "string"
-                                    ],
+                             "string"
+                       ],
               "default": null
+          },
+          {
+            "name": "loadType",
+             "type": [
+                       "null",
+                       "com.fretron.Model.LoadType"
+                     ],
+             "default": null
+          },
+          {
+          	 "name": "allowedTransitDays",
+          	  "type": [
+          				"null",
+          				"int"
+          			],
+          	 "default": null
           }
   ]
 }
