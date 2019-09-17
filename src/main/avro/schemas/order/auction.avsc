@@ -292,6 +292,23 @@
                                     "string"
                                   ],
            "default": null
-        }
+        },
+        {
+              "name": "totalQuantity",
+              "type": [
+                "null",
+                "double"
+              ],
+              "default": null
+        },
+
+        {
+           "name": "placedQuantity",
+              "type": [
+                "null",
+                "double"
+              ],
+              "default": null
+       }
   ]
 }
