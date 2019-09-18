@@ -4,7 +4,6 @@ import com.fretron.Logger.Log
 import com.fretron.Model.LitePosition
 import com.fretron.Model.PointAtTime
 import com.fretron.Model.TimeAwarePolyline
-import org.omg.CORBA.TIMEOUT
 import java.util.*
 
 object OnlinePolylineEncoder {
@@ -75,9 +74,9 @@ object OnlinePolylineEncoder {
 
 
     fun extendTimeAwarePolyline(polylineObj: TimeAwarePolyline?,
-        newLat: Double,
-        newLng: Double,
-        newLocationTime: Long): TimeAwarePolyline? {
+                                newLat: Double,
+                                newLng: Double,
+                                newLocationTime: Long): TimeAwarePolyline? {
         if (polylineObj == null) {
             return null
         }
@@ -156,7 +155,7 @@ object OnlinePolylineEncoder {
 
 
     fun mergeTimeAwarePolylines(polylineObj1: TimeAwarePolyline?,
-        polylineObj2: TimeAwarePolyline?): TimeAwarePolyline? {
+                                polylineObj2: TimeAwarePolyline?): TimeAwarePolyline? {
         var timeAwarePolyline = polylineObj1
         if (timeAwarePolyline != null && polylineObj2 != null) {
             val points = decoder.decodeTimeAwarePolyline(polylineObj2.getPolyline())
@@ -203,8 +202,8 @@ object OnlinePolylineEncoder {
     }
 
     fun mergePolylineWithTimeAwarePolyline(polylineObj: TimeAwarePolyline?,
-        polyline: String,
-        newLocationTime: Long): TimeAwarePolyline? {
+                                           polyline: String,
+                                           newLocationTime: Long): TimeAwarePolyline? {
         var timeAwarePolyline = polylineObj
         if (polyline.isEmpty() || timeAwarePolyline == null) return timeAwarePolyline
         val lastPointTimestamp = timeAwarePolyline.getLastPoint().getTimestamp()
