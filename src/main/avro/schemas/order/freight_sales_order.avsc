@@ -87,23 +87,13 @@
       },
 
       {
-          "name": "plannedStartTime",
+          "name": "orderReceiveDate",
                "type": [
                           "null",
                           "long"
                         ],
                 "logicalType": "timestamp-millis",
                 "default": null
-      },
-
-       {
-         "name": "plannedEndTime",
-          "type": [
-                                "null",
-                                "long"
-                              ],
-         "logicalType": "timestamp-millis",
-         "default": null
       },
      {
        "name": "salesOffice",

@@ -28,6 +28,15 @@
                   "logicalType": "timestamp-millis",
                    "default": null
           },
+                   {
+                     "name": "expectedPickupDate",
+                             "type": [
+                                    "null",
+                                    "long"
+                                  ],
+                            "logicalType": "timestamp-millis",
+                             "default": null
+                    },
           {
               "name": "invoiceDate",
                              "type": [
