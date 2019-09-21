@@ -315,7 +315,15 @@
   				"string"
   			],
   			"default": null
-  		}
+  		},
+  		  		{
+          			"name": "issueNo",
+          			"type": [
+          				"null",
+          				"string"
+          			],
+          			"default": null
+          		}
 
   	]
   }
