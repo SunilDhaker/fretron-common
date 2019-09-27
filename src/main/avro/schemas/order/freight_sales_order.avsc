@@ -62,18 +62,26 @@
      {
        "name": "status",
         "type": [
-                        "null",
-                         "string"
-                      ],
+                  "null",
+                  "string"
+                ],
+       "default": null
+     },
+     {
+        "name": "statusDescription",
+        "type": [
+                  "null",
+                   "string"
+                 ],
         "default": null
      },
      {
-            "name": "statusDescription",
-             "type": [
-                             "null",
-                              "string"
-                           ],
-             "default": null
+        "name": "secondaryStatus",
+        "type": [
+                   "null",
+                   "string"
+                 ],
+        "default": null
      },
      {
              "name": "orderDate",
