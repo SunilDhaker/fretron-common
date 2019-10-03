@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoginSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8680592580245207078L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8007022289392270973L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String userId;
@@ -22,6 +22,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.Long lastUsed;
   @Deprecated public java.lang.Long updatedOn;
   @Deprecated public java.lang.String location;
+  @Deprecated public java.lang.String orgId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +42,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
    * @param lastUsed The new value for lastUsed
    * @param updatedOn The new value for updatedOn
    * @param location The new value for location
+   * @param orgId The new value for orgId
    */
-  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location) {
+  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location, java.lang.String orgId) {
     this.uuid = uuid;
     this.userId = userId;
     this.token = token;
@@ -52,6 +54,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     this.lastUsed = lastUsed;
     this.updatedOn = updatedOn;
     this.location = location;
+    this.orgId = orgId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +70,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 6: return lastUsed;
     case 7: return updatedOn;
     case 8: return location;
+    case 9: return orgId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +88,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 6: lastUsed = (java.lang.Long)value$; break;
     case 7: updatedOn = (java.lang.Long)value$; break;
     case 8: location = (java.lang.String)value$; break;
+    case 9: orgId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +238,22 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'orgId' field.
+   * @return The value of the 'orgId' field.
+   */
+  public java.lang.String getOrgId() {
+    return orgId;
+  }
+
+  /**
+   * Sets the value of the 'orgId' field.
+   * @param value the value to set.
+   */
+  public void setOrgId(java.lang.String value) {
+    this.orgId = value;
+  }
+
+  /**
    * Creates a new LoginSession RecordBuilder.
    * @return A new LoginSession RecordBuilder
    */
@@ -273,6 +294,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.Long lastUsed;
     private java.lang.Long updatedOn;
     private java.lang.String location;
+    private java.lang.String orgId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -321,6 +343,10 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         this.location = data().deepCopy(fields()[8].schema(), other.location);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -364,6 +390,10 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[8], other.location)) {
         this.location = data().deepCopy(fields()[8].schema(), other.location);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -718,6 +748,45 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'orgId' field.
+      * @return The value.
+      */
+    public java.lang.String getOrgId() {
+      return orgId;
+    }
+
+    /**
+      * Sets the value of the 'orgId' field.
+      * @param value The value of 'orgId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setOrgId(java.lang.String value) {
+      validate(fields()[9], value);
+      this.orgId = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'orgId' field has been set.
+      * @return True if the 'orgId' field has been set, false otherwise.
+      */
+    public boolean hasOrgId() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'orgId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearOrgId() {
+      orgId = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public LoginSession build() {
       try {
@@ -731,6 +800,7 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         record.lastUsed = fieldSetFlags()[6] ? this.lastUsed : (java.lang.Long) defaultValue(fields()[6]);
         record.updatedOn = fieldSetFlags()[7] ? this.updatedOn : (java.lang.Long) defaultValue(fields()[7]);
         record.location = fieldSetFlags()[8] ? this.location : (java.lang.String) defaultValue(fields()[8]);
+        record.orgId = fieldSetFlags()[9] ? this.orgId : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

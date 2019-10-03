@@ -103,6 +103,14 @@
           "string"
         ],
         "default": null
-      }
+      },
+            {
+              "name": "accessType",
+              "type": [
+                 "null",
+                 "string"
+              ],
+              "default": null
+            }
     ]
   }

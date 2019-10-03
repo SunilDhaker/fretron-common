@@ -1,0 +1,89 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Employee",
+  "fields": [
+  {
+        "name": "externalId",
+        "type": ["null","string"],
+        "default": null
+  },
+ {
+        "name": "orgId",
+        "type": ["null","string"],
+        "default": null
+  },
+
+  {
+         "name": "uuid",
+         "type": ["null","string"],
+         "default": null
+
+  },
+  {
+         "name": "name",
+         "type": ["null","string"]
+
+  },
+  {
+          "name": "designation",
+          "type": ["null","string"],
+          "default": null
+
+  },
+  {
+          "name": "branch",
+          "type": ["null","com.fretron.Model.OrgOffice"],
+          "default": null
+  },
+  {
+          "name": "department",
+          "type": ["null","com.fretron.Model.Department"],
+          "default": null
+  },
+
+  {
+          "name": "address",
+          "type": ["null","string"],
+          "default": null
+  },
+  {
+         "name": "email",
+         "type": ["null","string"],
+         "default": null
+  },
+
+  {
+         "name": "alternateEmails",
+         "type":[ "null", {"type" : "array", "items":"string"}],
+         "default":null
+  },
+
+  {
+         "name": "mobileNumber",
+         "type": ["null","string"],
+         "default": null
+  },
+  {
+           "name": "alternateMobileNumber",
+           "type":[ "null", {"type" : "array", "items":"string"}],
+           "default":null
+    },
+
+   {
+            "name": "customFields",
+            "type": ["null",{"type": "array","items": "com.fretron.Model.CustomFields"}],
+            "default": null
+   },
+
+    {
+            "name": "updates",
+            "type": ["null","com.fretron.Model.Updates"],
+            "default": null
+          }
+
+
+
+
+  ]
+}

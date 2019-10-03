@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class User extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1830800775258910973L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 78602934388932562L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"User\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateMobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mergedUserIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -25,6 +25,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
   @Deprecated public java.lang.Boolean isGod;
   @Deprecated public java.lang.String profileDocumentId;
   @Deprecated public java.lang.String profileThumbnailString;
+  @Deprecated public java.util.List<java.lang.String> alternateEmails;
+  @Deprecated public java.util.List<java.lang.String> alternateMobileNumbers;
+  @Deprecated public java.util.List<java.lang.String> mergedUserIds;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +50,11 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
    * @param isGod The new value for isGod
    * @param profileDocumentId The new value for profileDocumentId
    * @param profileThumbnailString The new value for profileThumbnailString
+   * @param alternateEmails The new value for alternateEmails
+   * @param alternateMobileNumbers The new value for alternateMobileNumbers
+   * @param mergedUserIds The new value for mergedUserIds
    */
-  public User(java.lang.String uuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String address, java.util.List<com.fretron.Model.Token> authToken, java.util.List<java.lang.String> tokens, java.lang.String onBoardingType, java.lang.Boolean otpEnabled, java.lang.Boolean isGod, java.lang.String profileDocumentId, java.lang.String profileThumbnailString) {
+  public User(java.lang.String uuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String address, java.util.List<com.fretron.Model.Token> authToken, java.util.List<java.lang.String> tokens, java.lang.String onBoardingType, java.lang.Boolean otpEnabled, java.lang.Boolean isGod, java.lang.String profileDocumentId, java.lang.String profileThumbnailString, java.util.List<java.lang.String> alternateEmails, java.util.List<java.lang.String> alternateMobileNumbers, java.util.List<java.lang.String> mergedUserIds) {
     this.uuid = uuid;
     this.name = name;
     this.email = email;
@@ -61,6 +67,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     this.isGod = isGod;
     this.profileDocumentId = profileDocumentId;
     this.profileThumbnailString = profileThumbnailString;
+    this.alternateEmails = alternateEmails;
+    this.alternateMobileNumbers = alternateMobileNumbers;
+    this.mergedUserIds = mergedUserIds;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +88,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     case 9: return isGod;
     case 10: return profileDocumentId;
     case 11: return profileThumbnailString;
+    case 12: return alternateEmails;
+    case 13: return alternateMobileNumbers;
+    case 14: return mergedUserIds;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +111,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     case 9: isGod = (java.lang.Boolean)value$; break;
     case 10: profileDocumentId = (java.lang.String)value$; break;
     case 11: profileThumbnailString = (java.lang.String)value$; break;
+    case 12: alternateEmails = (java.util.List<java.lang.String>)value$; break;
+    case 13: alternateMobileNumbers = (java.util.List<java.lang.String>)value$; break;
+    case 14: mergedUserIds = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +311,54 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   /**
+   * Gets the value of the 'alternateEmails' field.
+   * @return The value of the 'alternateEmails' field.
+   */
+  public java.util.List<java.lang.String> getAlternateEmails() {
+    return alternateEmails;
+  }
+
+  /**
+   * Sets the value of the 'alternateEmails' field.
+   * @param value the value to set.
+   */
+  public void setAlternateEmails(java.util.List<java.lang.String> value) {
+    this.alternateEmails = value;
+  }
+
+  /**
+   * Gets the value of the 'alternateMobileNumbers' field.
+   * @return The value of the 'alternateMobileNumbers' field.
+   */
+  public java.util.List<java.lang.String> getAlternateMobileNumbers() {
+    return alternateMobileNumbers;
+  }
+
+  /**
+   * Sets the value of the 'alternateMobileNumbers' field.
+   * @param value the value to set.
+   */
+  public void setAlternateMobileNumbers(java.util.List<java.lang.String> value) {
+    this.alternateMobileNumbers = value;
+  }
+
+  /**
+   * Gets the value of the 'mergedUserIds' field.
+   * @return The value of the 'mergedUserIds' field.
+   */
+  public java.util.List<java.lang.String> getMergedUserIds() {
+    return mergedUserIds;
+  }
+
+  /**
+   * Sets the value of the 'mergedUserIds' field.
+   * @param value the value to set.
+   */
+  public void setMergedUserIds(java.util.List<java.lang.String> value) {
+    this.mergedUserIds = value;
+  }
+
+  /**
    * Creates a new User RecordBuilder.
    * @return A new User RecordBuilder
    */
@@ -339,6 +402,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
     private java.lang.Boolean isGod;
     private java.lang.String profileDocumentId;
     private java.lang.String profileThumbnailString;
+    private java.util.List<java.lang.String> alternateEmails;
+    private java.util.List<java.lang.String> alternateMobileNumbers;
+    private java.util.List<java.lang.String> mergedUserIds;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +465,18 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
         this.profileThumbnailString = data().deepCopy(fields()[11].schema(), other.profileThumbnailString);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.alternateEmails)) {
+        this.alternateEmails = data().deepCopy(fields()[12].schema(), other.alternateEmails);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.alternateMobileNumbers)) {
+        this.alternateMobileNumbers = data().deepCopy(fields()[13].schema(), other.alternateMobileNumbers);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.mergedUserIds)) {
+        this.mergedUserIds = data().deepCopy(fields()[14].schema(), other.mergedUserIds);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -454,6 +532,18 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
       if (isValidValue(fields()[11], other.profileThumbnailString)) {
         this.profileThumbnailString = data().deepCopy(fields()[11].schema(), other.profileThumbnailString);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.alternateEmails)) {
+        this.alternateEmails = data().deepCopy(fields()[12].schema(), other.alternateEmails);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.alternateMobileNumbers)) {
+        this.alternateMobileNumbers = data().deepCopy(fields()[13].schema(), other.alternateMobileNumbers);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.mergedUserIds)) {
+        this.mergedUserIds = data().deepCopy(fields()[14].schema(), other.mergedUserIds);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -925,6 +1015,123 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
       return this;
     }
 
+    /**
+      * Gets the value of the 'alternateEmails' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAlternateEmails() {
+      return alternateEmails;
+    }
+
+    /**
+      * Sets the value of the 'alternateEmails' field.
+      * @param value The value of 'alternateEmails'.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder setAlternateEmails(java.util.List<java.lang.String> value) {
+      validate(fields()[12], value);
+      this.alternateEmails = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'alternateEmails' field has been set.
+      * @return True if the 'alternateEmails' field has been set, false otherwise.
+      */
+    public boolean hasAlternateEmails() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'alternateEmails' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder clearAlternateEmails() {
+      alternateEmails = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'alternateMobileNumbers' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAlternateMobileNumbers() {
+      return alternateMobileNumbers;
+    }
+
+    /**
+      * Sets the value of the 'alternateMobileNumbers' field.
+      * @param value The value of 'alternateMobileNumbers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder setAlternateMobileNumbers(java.util.List<java.lang.String> value) {
+      validate(fields()[13], value);
+      this.alternateMobileNumbers = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'alternateMobileNumbers' field has been set.
+      * @return True if the 'alternateMobileNumbers' field has been set, false otherwise.
+      */
+    public boolean hasAlternateMobileNumbers() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'alternateMobileNumbers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder clearAlternateMobileNumbers() {
+      alternateMobileNumbers = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mergedUserIds' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getMergedUserIds() {
+      return mergedUserIds;
+    }
+
+    /**
+      * Sets the value of the 'mergedUserIds' field.
+      * @param value The value of 'mergedUserIds'.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder setMergedUserIds(java.util.List<java.lang.String> value) {
+      validate(fields()[14], value);
+      this.mergedUserIds = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mergedUserIds' field has been set.
+      * @return True if the 'mergedUserIds' field has been set, false otherwise.
+      */
+    public boolean hasMergedUserIds() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'mergedUserIds' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.User.Builder clearMergedUserIds() {
+      mergedUserIds = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public User build() {
       try {
@@ -941,6 +1148,9 @@ public class User extends org.apache.avro.specific.SpecificRecordBase implements
         record.isGod = fieldSetFlags()[9] ? this.isGod : (java.lang.Boolean) defaultValue(fields()[9]);
         record.profileDocumentId = fieldSetFlags()[10] ? this.profileDocumentId : (java.lang.String) defaultValue(fields()[10]);
         record.profileThumbnailString = fieldSetFlags()[11] ? this.profileThumbnailString : (java.lang.String) defaultValue(fields()[11]);
+        record.alternateEmails = fieldSetFlags()[12] ? this.alternateEmails : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        record.alternateMobileNumbers = fieldSetFlags()[13] ? this.alternateMobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.mergedUserIds = fieldSetFlags()[14] ? this.mergedUserIds : (java.util.List<java.lang.String>) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

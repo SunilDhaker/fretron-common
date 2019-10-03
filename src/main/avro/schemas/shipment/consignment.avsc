@@ -260,7 +260,15 @@
                         ],
                         "logicalType": "timestamp-millis",
                         "default": null
-                      }
+                      },
+                      {
+                                      "name": "salesOrderId",
+                                      "type": [
+                                        "null",
+                                        "string"
+                                      ],
+                                      "default": null
+                                    }
 
     ]
   }
