@@ -36,6 +36,14 @@
       "default": null
     },
     {
+          "name": "actionData",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     },
+    {
       "name": "scheduleTime",
       "type": [
         "null",
