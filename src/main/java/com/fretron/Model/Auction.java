@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Auction extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1274897487151161653L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Auction\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"allocatedVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateOrigins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"alternateDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"bids\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Bid\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null}]}}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placementDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"allowedTransporters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isShowTopRankToOthers\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"purchaseEnquiries\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"tnCs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"round\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"AuctionRound\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"roundNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\"",",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"completedRounds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"AuctionRound\"}],\"default\":null},{\"name\":\"isConsiderReferencePrice\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"totalQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = 1921219393786494153L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Auction\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"secondaryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"allocatedVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateOrigins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"alternateDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"bids\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Bid\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null}]}}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placementDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"allowedTransporters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isShowTopRankToOthers\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"purchaseEnquiries\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"tnCs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"round\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"AuctionRound\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"roundNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\"",":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"completedRounds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"AuctionRound\"}],\"default\":null},{\"name\":\"isConsiderReferencePrice\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"totalQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.String secondaryStatus;
   @Deprecated public java.lang.String orderId;
   @Deprecated public java.lang.String freightType;
   @Deprecated public java.lang.Boolean isNegotiable;
@@ -62,6 +63,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param externalId The new value for externalId
    * @param orgId The new value for orgId
    * @param status The new value for status
+   * @param secondaryStatus The new value for secondaryStatus
    * @param orderId The new value for orderId
    * @param freightType The new value for freightType
    * @param isNegotiable The new value for isNegotiable
@@ -94,11 +96,12 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param totalQuantity The new value for totalQuantity
    * @param placedQuantity The new value for placedQuantity
    */
-  public Auction(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String status, java.lang.String orderId, java.lang.String freightType, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.Integer allocatedVehicles, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<java.lang.String> remarks, java.util.List<com.fretron.Model.Place> alternateOrigins, java.util.List<com.fretron.Model.Place> alternateDestinations, java.util.List<com.fretron.Model.Bid> bids, java.lang.Double price, java.lang.Long placementDate, java.lang.Long createDate, java.util.List<java.lang.String> allowedTransporters, java.util.List<java.lang.String> allowedMaterial, java.util.List<java.lang.String> allowedVehicleTypes, java.lang.Boolean isShowTopRankToOthers, java.util.List<java.lang.String> purchaseEnquiries, java.util.List<com.fretron.Model.ContractTerms> tnCs, com.fretron.Model.AuctionRound round, com.fretron.Model.OrgOffice branch, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.AuctionRound> completedRounds, java.lang.Boolean isConsiderReferencePrice, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.String customerName, java.lang.String route, java.lang.String statusDescription, java.lang.Double totalQuantity, java.lang.Double placedQuantity) {
+  public Auction(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String status, java.lang.String secondaryStatus, java.lang.String orderId, java.lang.String freightType, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.Integer allocatedVehicles, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<java.lang.String> remarks, java.util.List<com.fretron.Model.Place> alternateOrigins, java.util.List<com.fretron.Model.Place> alternateDestinations, java.util.List<com.fretron.Model.Bid> bids, java.lang.Double price, java.lang.Long placementDate, java.lang.Long createDate, java.util.List<java.lang.String> allowedTransporters, java.util.List<java.lang.String> allowedMaterial, java.util.List<java.lang.String> allowedVehicleTypes, java.lang.Boolean isShowTopRankToOthers, java.util.List<java.lang.String> purchaseEnquiries, java.util.List<com.fretron.Model.ContractTerms> tnCs, com.fretron.Model.AuctionRound round, com.fretron.Model.OrgOffice branch, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.AuctionRound> completedRounds, java.lang.Boolean isConsiderReferencePrice, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.String customerName, java.lang.String route, java.lang.String statusDescription, java.lang.Double totalQuantity, java.lang.Double placedQuantity) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.orgId = orgId;
     this.status = status;
+    this.secondaryStatus = secondaryStatus;
     this.orderId = orderId;
     this.freightType = freightType;
     this.isNegotiable = isNegotiable;
@@ -140,37 +143,38 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     case 1: return externalId;
     case 2: return orgId;
     case 3: return status;
-    case 4: return orderId;
-    case 5: return freightType;
-    case 6: return isNegotiable;
-    case 7: return numberOfVehicles;
-    case 8: return allocatedVehicles;
-    case 9: return origin;
-    case 10: return destination;
-    case 11: return remarks;
-    case 12: return alternateOrigins;
-    case 13: return alternateDestinations;
-    case 14: return bids;
-    case 15: return price;
-    case 16: return placementDate;
-    case 17: return createDate;
-    case 18: return allowedTransporters;
-    case 19: return allowedMaterial;
-    case 20: return allowedVehicleTypes;
-    case 21: return isShowTopRankToOthers;
-    case 22: return purchaseEnquiries;
-    case 23: return tnCs;
-    case 24: return round;
-    case 25: return branch;
-    case 26: return updates;
-    case 27: return completedRounds;
-    case 28: return isConsiderReferencePrice;
-    case 29: return customFields;
-    case 30: return customerName;
-    case 31: return route;
-    case 32: return statusDescription;
-    case 33: return totalQuantity;
-    case 34: return placedQuantity;
+    case 4: return secondaryStatus;
+    case 5: return orderId;
+    case 6: return freightType;
+    case 7: return isNegotiable;
+    case 8: return numberOfVehicles;
+    case 9: return allocatedVehicles;
+    case 10: return origin;
+    case 11: return destination;
+    case 12: return remarks;
+    case 13: return alternateOrigins;
+    case 14: return alternateDestinations;
+    case 15: return bids;
+    case 16: return price;
+    case 17: return placementDate;
+    case 18: return createDate;
+    case 19: return allowedTransporters;
+    case 20: return allowedMaterial;
+    case 21: return allowedVehicleTypes;
+    case 22: return isShowTopRankToOthers;
+    case 23: return purchaseEnquiries;
+    case 24: return tnCs;
+    case 25: return round;
+    case 26: return branch;
+    case 27: return updates;
+    case 28: return completedRounds;
+    case 29: return isConsiderReferencePrice;
+    case 30: return customFields;
+    case 31: return customerName;
+    case 32: return route;
+    case 33: return statusDescription;
+    case 34: return totalQuantity;
+    case 35: return placedQuantity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -183,37 +187,38 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     case 1: externalId = (java.lang.String)value$; break;
     case 2: orgId = (java.lang.String)value$; break;
     case 3: status = (java.lang.String)value$; break;
-    case 4: orderId = (java.lang.String)value$; break;
-    case 5: freightType = (java.lang.String)value$; break;
-    case 6: isNegotiable = (java.lang.Boolean)value$; break;
-    case 7: numberOfVehicles = (java.lang.Integer)value$; break;
-    case 8: allocatedVehicles = (java.lang.Integer)value$; break;
-    case 9: origin = (com.fretron.Model.Place)value$; break;
-    case 10: destination = (com.fretron.Model.Place)value$; break;
-    case 11: remarks = (java.util.List<java.lang.String>)value$; break;
-    case 12: alternateOrigins = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 13: alternateDestinations = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 14: bids = (java.util.List<com.fretron.Model.Bid>)value$; break;
-    case 15: price = (java.lang.Double)value$; break;
-    case 16: placementDate = (java.lang.Long)value$; break;
-    case 17: createDate = (java.lang.Long)value$; break;
-    case 18: allowedTransporters = (java.util.List<java.lang.String>)value$; break;
-    case 19: allowedMaterial = (java.util.List<java.lang.String>)value$; break;
-    case 20: allowedVehicleTypes = (java.util.List<java.lang.String>)value$; break;
-    case 21: isShowTopRankToOthers = (java.lang.Boolean)value$; break;
-    case 22: purchaseEnquiries = (java.util.List<java.lang.String>)value$; break;
-    case 23: tnCs = (java.util.List<com.fretron.Model.ContractTerms>)value$; break;
-    case 24: round = (com.fretron.Model.AuctionRound)value$; break;
-    case 25: branch = (com.fretron.Model.OrgOffice)value$; break;
-    case 26: updates = (com.fretron.Model.Updates)value$; break;
-    case 27: completedRounds = (java.util.List<com.fretron.Model.AuctionRound>)value$; break;
-    case 28: isConsiderReferencePrice = (java.lang.Boolean)value$; break;
-    case 29: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
-    case 30: customerName = (java.lang.String)value$; break;
-    case 31: route = (java.lang.String)value$; break;
-    case 32: statusDescription = (java.lang.String)value$; break;
-    case 33: totalQuantity = (java.lang.Double)value$; break;
-    case 34: placedQuantity = (java.lang.Double)value$; break;
+    case 4: secondaryStatus = (java.lang.String)value$; break;
+    case 5: orderId = (java.lang.String)value$; break;
+    case 6: freightType = (java.lang.String)value$; break;
+    case 7: isNegotiable = (java.lang.Boolean)value$; break;
+    case 8: numberOfVehicles = (java.lang.Integer)value$; break;
+    case 9: allocatedVehicles = (java.lang.Integer)value$; break;
+    case 10: origin = (com.fretron.Model.Place)value$; break;
+    case 11: destination = (com.fretron.Model.Place)value$; break;
+    case 12: remarks = (java.util.List<java.lang.String>)value$; break;
+    case 13: alternateOrigins = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 14: alternateDestinations = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 15: bids = (java.util.List<com.fretron.Model.Bid>)value$; break;
+    case 16: price = (java.lang.Double)value$; break;
+    case 17: placementDate = (java.lang.Long)value$; break;
+    case 18: createDate = (java.lang.Long)value$; break;
+    case 19: allowedTransporters = (java.util.List<java.lang.String>)value$; break;
+    case 20: allowedMaterial = (java.util.List<java.lang.String>)value$; break;
+    case 21: allowedVehicleTypes = (java.util.List<java.lang.String>)value$; break;
+    case 22: isShowTopRankToOthers = (java.lang.Boolean)value$; break;
+    case 23: purchaseEnquiries = (java.util.List<java.lang.String>)value$; break;
+    case 24: tnCs = (java.util.List<com.fretron.Model.ContractTerms>)value$; break;
+    case 25: round = (com.fretron.Model.AuctionRound)value$; break;
+    case 26: branch = (com.fretron.Model.OrgOffice)value$; break;
+    case 27: updates = (com.fretron.Model.Updates)value$; break;
+    case 28: completedRounds = (java.util.List<com.fretron.Model.AuctionRound>)value$; break;
+    case 29: isConsiderReferencePrice = (java.lang.Boolean)value$; break;
+    case 30: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
+    case 31: customerName = (java.lang.String)value$; break;
+    case 32: route = (java.lang.String)value$; break;
+    case 33: statusDescription = (java.lang.String)value$; break;
+    case 34: totalQuantity = (java.lang.Double)value$; break;
+    case 35: placedQuantity = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -280,6 +285,22 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
    */
   public void setStatus(java.lang.String value) {
     this.status = value;
+  }
+
+  /**
+   * Gets the value of the 'secondaryStatus' field.
+   * @return The value of the 'secondaryStatus' field.
+   */
+  public java.lang.String getSecondaryStatus() {
+    return secondaryStatus;
+  }
+
+  /**
+   * Sets the value of the 'secondaryStatus' field.
+   * @param value the value to set.
+   */
+  public void setSecondaryStatus(java.lang.String value) {
+    this.secondaryStatus = value;
   }
 
   /**
@@ -814,6 +835,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String externalId;
     private java.lang.String orgId;
     private java.lang.String status;
+    private java.lang.String secondaryStatus;
     private java.lang.String orderId;
     private java.lang.String freightType;
     private java.lang.Boolean isNegotiable;
@@ -878,144 +900,148 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         this.status = data().deepCopy(fields()[3].schema(), other.status);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[4].schema(), other.orderId);
+      if (isValidValue(fields()[4], other.secondaryStatus)) {
+        this.secondaryStatus = data().deepCopy(fields()[4].schema(), other.secondaryStatus);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.freightType)) {
-        this.freightType = data().deepCopy(fields()[5].schema(), other.freightType);
+      if (isValidValue(fields()[5], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[5].schema(), other.orderId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.isNegotiable)) {
-        this.isNegotiable = data().deepCopy(fields()[6].schema(), other.isNegotiable);
+      if (isValidValue(fields()[6], other.freightType)) {
+        this.freightType = data().deepCopy(fields()[6].schema(), other.freightType);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[7].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[7], other.isNegotiable)) {
+        this.isNegotiable = data().deepCopy(fields()[7].schema(), other.isNegotiable);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.allocatedVehicles)) {
-        this.allocatedVehicles = data().deepCopy(fields()[8].schema(), other.allocatedVehicles);
+      if (isValidValue(fields()[8], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[8].schema(), other.numberOfVehicles);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.origin)) {
-        this.origin = data().deepCopy(fields()[9].schema(), other.origin);
+      if (isValidValue(fields()[9], other.allocatedVehicles)) {
+        this.allocatedVehicles = data().deepCopy(fields()[9].schema(), other.allocatedVehicles);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.origin)) {
+        this.origin = data().deepCopy(fields()[10].schema(), other.origin);
+        fieldSetFlags()[10] = true;
       }
       if (other.hasOriginBuilder()) {
         this.originBuilder = com.fretron.Model.Place.newBuilder(other.getOriginBuilder());
       }
-      if (isValidValue(fields()[10], other.destination)) {
-        this.destination = data().deepCopy(fields()[10].schema(), other.destination);
-        fieldSetFlags()[10] = true;
+      if (isValidValue(fields()[11], other.destination)) {
+        this.destination = data().deepCopy(fields()[11].schema(), other.destination);
+        fieldSetFlags()[11] = true;
       }
       if (other.hasDestinationBuilder()) {
         this.destinationBuilder = com.fretron.Model.Place.newBuilder(other.getDestinationBuilder());
       }
-      if (isValidValue(fields()[11], other.remarks)) {
-        this.remarks = data().deepCopy(fields()[11].schema(), other.remarks);
-        fieldSetFlags()[11] = true;
-      }
-      if (isValidValue(fields()[12], other.alternateOrigins)) {
-        this.alternateOrigins = data().deepCopy(fields()[12].schema(), other.alternateOrigins);
+      if (isValidValue(fields()[12], other.remarks)) {
+        this.remarks = data().deepCopy(fields()[12].schema(), other.remarks);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.alternateDestinations)) {
-        this.alternateDestinations = data().deepCopy(fields()[13].schema(), other.alternateDestinations);
+      if (isValidValue(fields()[13], other.alternateOrigins)) {
+        this.alternateOrigins = data().deepCopy(fields()[13].schema(), other.alternateOrigins);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.bids)) {
-        this.bids = data().deepCopy(fields()[14].schema(), other.bids);
+      if (isValidValue(fields()[14], other.alternateDestinations)) {
+        this.alternateDestinations = data().deepCopy(fields()[14].schema(), other.alternateDestinations);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.price)) {
-        this.price = data().deepCopy(fields()[15].schema(), other.price);
+      if (isValidValue(fields()[15], other.bids)) {
+        this.bids = data().deepCopy(fields()[15].schema(), other.bids);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.placementDate)) {
-        this.placementDate = data().deepCopy(fields()[16].schema(), other.placementDate);
+      if (isValidValue(fields()[16], other.price)) {
+        this.price = data().deepCopy(fields()[16].schema(), other.price);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.createDate)) {
-        this.createDate = data().deepCopy(fields()[17].schema(), other.createDate);
+      if (isValidValue(fields()[17], other.placementDate)) {
+        this.placementDate = data().deepCopy(fields()[17].schema(), other.placementDate);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.allowedTransporters)) {
-        this.allowedTransporters = data().deepCopy(fields()[18].schema(), other.allowedTransporters);
+      if (isValidValue(fields()[18], other.createDate)) {
+        this.createDate = data().deepCopy(fields()[18].schema(), other.createDate);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.allowedMaterial)) {
-        this.allowedMaterial = data().deepCopy(fields()[19].schema(), other.allowedMaterial);
+      if (isValidValue(fields()[19], other.allowedTransporters)) {
+        this.allowedTransporters = data().deepCopy(fields()[19].schema(), other.allowedTransporters);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.allowedVehicleTypes)) {
-        this.allowedVehicleTypes = data().deepCopy(fields()[20].schema(), other.allowedVehicleTypes);
+      if (isValidValue(fields()[20], other.allowedMaterial)) {
+        this.allowedMaterial = data().deepCopy(fields()[20].schema(), other.allowedMaterial);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.isShowTopRankToOthers)) {
-        this.isShowTopRankToOthers = data().deepCopy(fields()[21].schema(), other.isShowTopRankToOthers);
+      if (isValidValue(fields()[21], other.allowedVehicleTypes)) {
+        this.allowedVehicleTypes = data().deepCopy(fields()[21].schema(), other.allowedVehicleTypes);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.purchaseEnquiries)) {
-        this.purchaseEnquiries = data().deepCopy(fields()[22].schema(), other.purchaseEnquiries);
+      if (isValidValue(fields()[22], other.isShowTopRankToOthers)) {
+        this.isShowTopRankToOthers = data().deepCopy(fields()[22].schema(), other.isShowTopRankToOthers);
         fieldSetFlags()[22] = true;
       }
-      if (isValidValue(fields()[23], other.tnCs)) {
-        this.tnCs = data().deepCopy(fields()[23].schema(), other.tnCs);
+      if (isValidValue(fields()[23], other.purchaseEnquiries)) {
+        this.purchaseEnquiries = data().deepCopy(fields()[23].schema(), other.purchaseEnquiries);
         fieldSetFlags()[23] = true;
       }
-      if (isValidValue(fields()[24], other.round)) {
-        this.round = data().deepCopy(fields()[24].schema(), other.round);
+      if (isValidValue(fields()[24], other.tnCs)) {
+        this.tnCs = data().deepCopy(fields()[24].schema(), other.tnCs);
         fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.round)) {
+        this.round = data().deepCopy(fields()[25].schema(), other.round);
+        fieldSetFlags()[25] = true;
       }
       if (other.hasRoundBuilder()) {
         this.roundBuilder = com.fretron.Model.AuctionRound.newBuilder(other.getRoundBuilder());
       }
-      if (isValidValue(fields()[25], other.branch)) {
-        this.branch = data().deepCopy(fields()[25].schema(), other.branch);
-        fieldSetFlags()[25] = true;
+      if (isValidValue(fields()[26], other.branch)) {
+        this.branch = data().deepCopy(fields()[26].schema(), other.branch);
+        fieldSetFlags()[26] = true;
       }
       if (other.hasBranchBuilder()) {
         this.branchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getBranchBuilder());
       }
-      if (isValidValue(fields()[26], other.updates)) {
-        this.updates = data().deepCopy(fields()[26].schema(), other.updates);
-        fieldSetFlags()[26] = true;
+      if (isValidValue(fields()[27], other.updates)) {
+        this.updates = data().deepCopy(fields()[27].schema(), other.updates);
+        fieldSetFlags()[27] = true;
       }
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
-      if (isValidValue(fields()[27], other.completedRounds)) {
-        this.completedRounds = data().deepCopy(fields()[27].schema(), other.completedRounds);
-        fieldSetFlags()[27] = true;
-      }
-      if (isValidValue(fields()[28], other.isConsiderReferencePrice)) {
-        this.isConsiderReferencePrice = data().deepCopy(fields()[28].schema(), other.isConsiderReferencePrice);
+      if (isValidValue(fields()[28], other.completedRounds)) {
+        this.completedRounds = data().deepCopy(fields()[28].schema(), other.completedRounds);
         fieldSetFlags()[28] = true;
       }
-      if (isValidValue(fields()[29], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[29].schema(), other.customFields);
+      if (isValidValue(fields()[29], other.isConsiderReferencePrice)) {
+        this.isConsiderReferencePrice = data().deepCopy(fields()[29].schema(), other.isConsiderReferencePrice);
         fieldSetFlags()[29] = true;
       }
-      if (isValidValue(fields()[30], other.customerName)) {
-        this.customerName = data().deepCopy(fields()[30].schema(), other.customerName);
+      if (isValidValue(fields()[30], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[30].schema(), other.customFields);
         fieldSetFlags()[30] = true;
       }
-      if (isValidValue(fields()[31], other.route)) {
-        this.route = data().deepCopy(fields()[31].schema(), other.route);
+      if (isValidValue(fields()[31], other.customerName)) {
+        this.customerName = data().deepCopy(fields()[31].schema(), other.customerName);
         fieldSetFlags()[31] = true;
       }
-      if (isValidValue(fields()[32], other.statusDescription)) {
-        this.statusDescription = data().deepCopy(fields()[32].schema(), other.statusDescription);
+      if (isValidValue(fields()[32], other.route)) {
+        this.route = data().deepCopy(fields()[32].schema(), other.route);
         fieldSetFlags()[32] = true;
       }
-      if (isValidValue(fields()[33], other.totalQuantity)) {
-        this.totalQuantity = data().deepCopy(fields()[33].schema(), other.totalQuantity);
+      if (isValidValue(fields()[33], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[33].schema(), other.statusDescription);
         fieldSetFlags()[33] = true;
       }
-      if (isValidValue(fields()[34], other.placedQuantity)) {
-        this.placedQuantity = data().deepCopy(fields()[34].schema(), other.placedQuantity);
+      if (isValidValue(fields()[34], other.totalQuantity)) {
+        this.totalQuantity = data().deepCopy(fields()[34].schema(), other.totalQuantity);
         fieldSetFlags()[34] = true;
+      }
+      if (isValidValue(fields()[35], other.placedQuantity)) {
+        this.placedQuantity = data().deepCopy(fields()[35].schema(), other.placedQuantity);
+        fieldSetFlags()[35] = true;
       }
     }
 
@@ -1041,134 +1067,138 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         this.status = data().deepCopy(fields()[3].schema(), other.status);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[4].schema(), other.orderId);
+      if (isValidValue(fields()[4], other.secondaryStatus)) {
+        this.secondaryStatus = data().deepCopy(fields()[4].schema(), other.secondaryStatus);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.freightType)) {
-        this.freightType = data().deepCopy(fields()[5].schema(), other.freightType);
+      if (isValidValue(fields()[5], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[5].schema(), other.orderId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.isNegotiable)) {
-        this.isNegotiable = data().deepCopy(fields()[6].schema(), other.isNegotiable);
+      if (isValidValue(fields()[6], other.freightType)) {
+        this.freightType = data().deepCopy(fields()[6].schema(), other.freightType);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[7].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[7], other.isNegotiable)) {
+        this.isNegotiable = data().deepCopy(fields()[7].schema(), other.isNegotiable);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.allocatedVehicles)) {
-        this.allocatedVehicles = data().deepCopy(fields()[8].schema(), other.allocatedVehicles);
+      if (isValidValue(fields()[8], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[8].schema(), other.numberOfVehicles);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.origin)) {
-        this.origin = data().deepCopy(fields()[9].schema(), other.origin);
+      if (isValidValue(fields()[9], other.allocatedVehicles)) {
+        this.allocatedVehicles = data().deepCopy(fields()[9].schema(), other.allocatedVehicles);
         fieldSetFlags()[9] = true;
       }
-      this.originBuilder = null;
-      if (isValidValue(fields()[10], other.destination)) {
-        this.destination = data().deepCopy(fields()[10].schema(), other.destination);
+      if (isValidValue(fields()[10], other.origin)) {
+        this.origin = data().deepCopy(fields()[10].schema(), other.origin);
         fieldSetFlags()[10] = true;
       }
-      this.destinationBuilder = null;
-      if (isValidValue(fields()[11], other.remarks)) {
-        this.remarks = data().deepCopy(fields()[11].schema(), other.remarks);
+      this.originBuilder = null;
+      if (isValidValue(fields()[11], other.destination)) {
+        this.destination = data().deepCopy(fields()[11].schema(), other.destination);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.alternateOrigins)) {
-        this.alternateOrigins = data().deepCopy(fields()[12].schema(), other.alternateOrigins);
+      this.destinationBuilder = null;
+      if (isValidValue(fields()[12], other.remarks)) {
+        this.remarks = data().deepCopy(fields()[12].schema(), other.remarks);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.alternateDestinations)) {
-        this.alternateDestinations = data().deepCopy(fields()[13].schema(), other.alternateDestinations);
+      if (isValidValue(fields()[13], other.alternateOrigins)) {
+        this.alternateOrigins = data().deepCopy(fields()[13].schema(), other.alternateOrigins);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.bids)) {
-        this.bids = data().deepCopy(fields()[14].schema(), other.bids);
+      if (isValidValue(fields()[14], other.alternateDestinations)) {
+        this.alternateDestinations = data().deepCopy(fields()[14].schema(), other.alternateDestinations);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.price)) {
-        this.price = data().deepCopy(fields()[15].schema(), other.price);
+      if (isValidValue(fields()[15], other.bids)) {
+        this.bids = data().deepCopy(fields()[15].schema(), other.bids);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.placementDate)) {
-        this.placementDate = data().deepCopy(fields()[16].schema(), other.placementDate);
+      if (isValidValue(fields()[16], other.price)) {
+        this.price = data().deepCopy(fields()[16].schema(), other.price);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.createDate)) {
-        this.createDate = data().deepCopy(fields()[17].schema(), other.createDate);
+      if (isValidValue(fields()[17], other.placementDate)) {
+        this.placementDate = data().deepCopy(fields()[17].schema(), other.placementDate);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.allowedTransporters)) {
-        this.allowedTransporters = data().deepCopy(fields()[18].schema(), other.allowedTransporters);
+      if (isValidValue(fields()[18], other.createDate)) {
+        this.createDate = data().deepCopy(fields()[18].schema(), other.createDate);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.allowedMaterial)) {
-        this.allowedMaterial = data().deepCopy(fields()[19].schema(), other.allowedMaterial);
+      if (isValidValue(fields()[19], other.allowedTransporters)) {
+        this.allowedTransporters = data().deepCopy(fields()[19].schema(), other.allowedTransporters);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.allowedVehicleTypes)) {
-        this.allowedVehicleTypes = data().deepCopy(fields()[20].schema(), other.allowedVehicleTypes);
+      if (isValidValue(fields()[20], other.allowedMaterial)) {
+        this.allowedMaterial = data().deepCopy(fields()[20].schema(), other.allowedMaterial);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.isShowTopRankToOthers)) {
-        this.isShowTopRankToOthers = data().deepCopy(fields()[21].schema(), other.isShowTopRankToOthers);
+      if (isValidValue(fields()[21], other.allowedVehicleTypes)) {
+        this.allowedVehicleTypes = data().deepCopy(fields()[21].schema(), other.allowedVehicleTypes);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.purchaseEnquiries)) {
-        this.purchaseEnquiries = data().deepCopy(fields()[22].schema(), other.purchaseEnquiries);
+      if (isValidValue(fields()[22], other.isShowTopRankToOthers)) {
+        this.isShowTopRankToOthers = data().deepCopy(fields()[22].schema(), other.isShowTopRankToOthers);
         fieldSetFlags()[22] = true;
       }
-      if (isValidValue(fields()[23], other.tnCs)) {
-        this.tnCs = data().deepCopy(fields()[23].schema(), other.tnCs);
+      if (isValidValue(fields()[23], other.purchaseEnquiries)) {
+        this.purchaseEnquiries = data().deepCopy(fields()[23].schema(), other.purchaseEnquiries);
         fieldSetFlags()[23] = true;
       }
-      if (isValidValue(fields()[24], other.round)) {
-        this.round = data().deepCopy(fields()[24].schema(), other.round);
+      if (isValidValue(fields()[24], other.tnCs)) {
+        this.tnCs = data().deepCopy(fields()[24].schema(), other.tnCs);
         fieldSetFlags()[24] = true;
       }
-      this.roundBuilder = null;
-      if (isValidValue(fields()[25], other.branch)) {
-        this.branch = data().deepCopy(fields()[25].schema(), other.branch);
+      if (isValidValue(fields()[25], other.round)) {
+        this.round = data().deepCopy(fields()[25].schema(), other.round);
         fieldSetFlags()[25] = true;
       }
-      this.branchBuilder = null;
-      if (isValidValue(fields()[26], other.updates)) {
-        this.updates = data().deepCopy(fields()[26].schema(), other.updates);
+      this.roundBuilder = null;
+      if (isValidValue(fields()[26], other.branch)) {
+        this.branch = data().deepCopy(fields()[26].schema(), other.branch);
         fieldSetFlags()[26] = true;
       }
-      this.updatesBuilder = null;
-      if (isValidValue(fields()[27], other.completedRounds)) {
-        this.completedRounds = data().deepCopy(fields()[27].schema(), other.completedRounds);
+      this.branchBuilder = null;
+      if (isValidValue(fields()[27], other.updates)) {
+        this.updates = data().deepCopy(fields()[27].schema(), other.updates);
         fieldSetFlags()[27] = true;
       }
-      if (isValidValue(fields()[28], other.isConsiderReferencePrice)) {
-        this.isConsiderReferencePrice = data().deepCopy(fields()[28].schema(), other.isConsiderReferencePrice);
+      this.updatesBuilder = null;
+      if (isValidValue(fields()[28], other.completedRounds)) {
+        this.completedRounds = data().deepCopy(fields()[28].schema(), other.completedRounds);
         fieldSetFlags()[28] = true;
       }
-      if (isValidValue(fields()[29], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[29].schema(), other.customFields);
+      if (isValidValue(fields()[29], other.isConsiderReferencePrice)) {
+        this.isConsiderReferencePrice = data().deepCopy(fields()[29].schema(), other.isConsiderReferencePrice);
         fieldSetFlags()[29] = true;
       }
-      if (isValidValue(fields()[30], other.customerName)) {
-        this.customerName = data().deepCopy(fields()[30].schema(), other.customerName);
+      if (isValidValue(fields()[30], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[30].schema(), other.customFields);
         fieldSetFlags()[30] = true;
       }
-      if (isValidValue(fields()[31], other.route)) {
-        this.route = data().deepCopy(fields()[31].schema(), other.route);
+      if (isValidValue(fields()[31], other.customerName)) {
+        this.customerName = data().deepCopy(fields()[31].schema(), other.customerName);
         fieldSetFlags()[31] = true;
       }
-      if (isValidValue(fields()[32], other.statusDescription)) {
-        this.statusDescription = data().deepCopy(fields()[32].schema(), other.statusDescription);
+      if (isValidValue(fields()[32], other.route)) {
+        this.route = data().deepCopy(fields()[32].schema(), other.route);
         fieldSetFlags()[32] = true;
       }
-      if (isValidValue(fields()[33], other.totalQuantity)) {
-        this.totalQuantity = data().deepCopy(fields()[33].schema(), other.totalQuantity);
+      if (isValidValue(fields()[33], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[33].schema(), other.statusDescription);
         fieldSetFlags()[33] = true;
       }
-      if (isValidValue(fields()[34], other.placedQuantity)) {
-        this.placedQuantity = data().deepCopy(fields()[34].schema(), other.placedQuantity);
+      if (isValidValue(fields()[34], other.totalQuantity)) {
+        this.totalQuantity = data().deepCopy(fields()[34].schema(), other.totalQuantity);
         fieldSetFlags()[34] = true;
+      }
+      if (isValidValue(fields()[35], other.placedQuantity)) {
+        this.placedQuantity = data().deepCopy(fields()[35].schema(), other.placedQuantity);
+        fieldSetFlags()[35] = true;
       }
     }
 
@@ -1329,6 +1359,45 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     }
 
     /**
+      * Gets the value of the 'secondaryStatus' field.
+      * @return The value.
+      */
+    public java.lang.String getSecondaryStatus() {
+      return secondaryStatus;
+    }
+
+    /**
+      * Sets the value of the 'secondaryStatus' field.
+      * @param value The value of 'secondaryStatus'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setSecondaryStatus(java.lang.String value) {
+      validate(fields()[4], value);
+      this.secondaryStatus = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'secondaryStatus' field has been set.
+      * @return True if the 'secondaryStatus' field has been set, false otherwise.
+      */
+    public boolean hasSecondaryStatus() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'secondaryStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearSecondaryStatus() {
+      secondaryStatus = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'orderId' field.
       * @return The value.
       */
@@ -1342,9 +1411,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setOrderId(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.orderId = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -1353,7 +1422,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'orderId' field has been set, false otherwise.
       */
     public boolean hasOrderId() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -1363,7 +1432,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearOrderId() {
       orderId = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -1381,9 +1450,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setFreightType(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.freightType = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -1392,7 +1461,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'freightType' field has been set, false otherwise.
       */
     public boolean hasFreightType() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -1402,7 +1471,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearFreightType() {
       freightType = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -1420,9 +1489,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setIsNegotiable(java.lang.Boolean value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.isNegotiable = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -1431,7 +1500,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'isNegotiable' field has been set, false otherwise.
       */
     public boolean hasIsNegotiable() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -1441,7 +1510,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearIsNegotiable() {
       isNegotiable = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -1459,9 +1528,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setNumberOfVehicles(java.lang.Integer value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.numberOfVehicles = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -1470,7 +1539,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'numberOfVehicles' field has been set, false otherwise.
       */
     public boolean hasNumberOfVehicles() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -1480,7 +1549,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearNumberOfVehicles() {
       numberOfVehicles = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -1498,9 +1567,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAllocatedVehicles(java.lang.Integer value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.allocatedVehicles = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -1509,7 +1578,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'allocatedVehicles' field has been set, false otherwise.
       */
     public boolean hasAllocatedVehicles() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -1519,7 +1588,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAllocatedVehicles() {
       allocatedVehicles = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -1537,10 +1606,10 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setOrigin(com.fretron.Model.Place value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.originBuilder = null;
       this.origin = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1549,7 +1618,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'origin' field has been set, false otherwise.
       */
     public boolean hasOrigin() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
     /**
@@ -1593,7 +1662,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     public com.fretron.Model.Auction.Builder clearOrigin() {
       origin = null;
       originBuilder = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1611,10 +1680,10 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setDestination(com.fretron.Model.Place value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.destinationBuilder = null;
       this.destination = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1623,7 +1692,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'destination' field has been set, false otherwise.
       */
     public boolean hasDestination() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
     /**
@@ -1667,7 +1736,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     public com.fretron.Model.Auction.Builder clearDestination() {
       destination = null;
       destinationBuilder = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1685,9 +1754,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setRemarks(java.util.List<java.lang.String> value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.remarks = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1696,7 +1765,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'remarks' field has been set, false otherwise.
       */
     public boolean hasRemarks() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1706,7 +1775,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearRemarks() {
       remarks = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1724,9 +1793,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAlternateOrigins(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.alternateOrigins = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1735,7 +1804,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'alternateOrigins' field has been set, false otherwise.
       */
     public boolean hasAlternateOrigins() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1745,7 +1814,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAlternateOrigins() {
       alternateOrigins = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1763,9 +1832,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAlternateDestinations(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.alternateDestinations = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1774,7 +1843,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'alternateDestinations' field has been set, false otherwise.
       */
     public boolean hasAlternateDestinations() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1784,7 +1853,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAlternateDestinations() {
       alternateDestinations = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1802,9 +1871,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setBids(java.util.List<com.fretron.Model.Bid> value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.bids = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1813,7 +1882,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'bids' field has been set, false otherwise.
       */
     public boolean hasBids() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1823,7 +1892,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearBids() {
       bids = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1841,9 +1910,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setPrice(java.lang.Double value) {
-      validate(fields()[15], value);
+      validate(fields()[16], value);
       this.price = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1852,7 +1921,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'price' field has been set, false otherwise.
       */
     public boolean hasPrice() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1862,7 +1931,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearPrice() {
       price = null;
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1880,9 +1949,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setPlacementDate(java.lang.Long value) {
-      validate(fields()[16], value);
+      validate(fields()[17], value);
       this.placementDate = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1891,7 +1960,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'placementDate' field has been set, false otherwise.
       */
     public boolean hasPlacementDate() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1901,7 +1970,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearPlacementDate() {
       placementDate = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1919,9 +1988,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setCreateDate(java.lang.Long value) {
-      validate(fields()[17], value);
+      validate(fields()[18], value);
       this.createDate = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1930,7 +1999,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'createDate' field has been set, false otherwise.
       */
     public boolean hasCreateDate() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1940,7 +2009,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearCreateDate() {
       createDate = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1958,9 +2027,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAllowedTransporters(java.util.List<java.lang.String> value) {
-      validate(fields()[18], value);
+      validate(fields()[19], value);
       this.allowedTransporters = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1969,7 +2038,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'allowedTransporters' field has been set, false otherwise.
       */
     public boolean hasAllowedTransporters() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1979,7 +2048,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAllowedTransporters() {
       allowedTransporters = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1997,9 +2066,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAllowedMaterial(java.util.List<java.lang.String> value) {
-      validate(fields()[19], value);
+      validate(fields()[20], value);
       this.allowedMaterial = value;
-      fieldSetFlags()[19] = true;
+      fieldSetFlags()[20] = true;
       return this;
     }
 
@@ -2008,7 +2077,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'allowedMaterial' field has been set, false otherwise.
       */
     public boolean hasAllowedMaterial() {
-      return fieldSetFlags()[19];
+      return fieldSetFlags()[20];
     }
 
 
@@ -2018,7 +2087,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAllowedMaterial() {
       allowedMaterial = null;
-      fieldSetFlags()[19] = false;
+      fieldSetFlags()[20] = false;
       return this;
     }
 
@@ -2036,9 +2105,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setAllowedVehicleTypes(java.util.List<java.lang.String> value) {
-      validate(fields()[20], value);
+      validate(fields()[21], value);
       this.allowedVehicleTypes = value;
-      fieldSetFlags()[20] = true;
+      fieldSetFlags()[21] = true;
       return this;
     }
 
@@ -2047,7 +2116,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'allowedVehicleTypes' field has been set, false otherwise.
       */
     public boolean hasAllowedVehicleTypes() {
-      return fieldSetFlags()[20];
+      return fieldSetFlags()[21];
     }
 
 
@@ -2057,7 +2126,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearAllowedVehicleTypes() {
       allowedVehicleTypes = null;
-      fieldSetFlags()[20] = false;
+      fieldSetFlags()[21] = false;
       return this;
     }
 
@@ -2075,9 +2144,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setIsShowTopRankToOthers(java.lang.Boolean value) {
-      validate(fields()[21], value);
+      validate(fields()[22], value);
       this.isShowTopRankToOthers = value;
-      fieldSetFlags()[21] = true;
+      fieldSetFlags()[22] = true;
       return this;
     }
 
@@ -2086,7 +2155,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'isShowTopRankToOthers' field has been set, false otherwise.
       */
     public boolean hasIsShowTopRankToOthers() {
-      return fieldSetFlags()[21];
+      return fieldSetFlags()[22];
     }
 
 
@@ -2096,7 +2165,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearIsShowTopRankToOthers() {
       isShowTopRankToOthers = null;
-      fieldSetFlags()[21] = false;
+      fieldSetFlags()[22] = false;
       return this;
     }
 
@@ -2114,9 +2183,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setPurchaseEnquiries(java.util.List<java.lang.String> value) {
-      validate(fields()[22], value);
+      validate(fields()[23], value);
       this.purchaseEnquiries = value;
-      fieldSetFlags()[22] = true;
+      fieldSetFlags()[23] = true;
       return this;
     }
 
@@ -2125,7 +2194,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'purchaseEnquiries' field has been set, false otherwise.
       */
     public boolean hasPurchaseEnquiries() {
-      return fieldSetFlags()[22];
+      return fieldSetFlags()[23];
     }
 
 
@@ -2135,7 +2204,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearPurchaseEnquiries() {
       purchaseEnquiries = null;
-      fieldSetFlags()[22] = false;
+      fieldSetFlags()[23] = false;
       return this;
     }
 
@@ -2153,9 +2222,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setTnCs(java.util.List<com.fretron.Model.ContractTerms> value) {
-      validate(fields()[23], value);
+      validate(fields()[24], value);
       this.tnCs = value;
-      fieldSetFlags()[23] = true;
+      fieldSetFlags()[24] = true;
       return this;
     }
 
@@ -2164,7 +2233,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'tnCs' field has been set, false otherwise.
       */
     public boolean hasTnCs() {
-      return fieldSetFlags()[23];
+      return fieldSetFlags()[24];
     }
 
 
@@ -2174,7 +2243,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearTnCs() {
       tnCs = null;
-      fieldSetFlags()[23] = false;
+      fieldSetFlags()[24] = false;
       return this;
     }
 
@@ -2192,10 +2261,10 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setRound(com.fretron.Model.AuctionRound value) {
-      validate(fields()[24], value);
+      validate(fields()[25], value);
       this.roundBuilder = null;
       this.round = value;
-      fieldSetFlags()[24] = true;
+      fieldSetFlags()[25] = true;
       return this;
     }
 
@@ -2204,7 +2273,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'round' field has been set, false otherwise.
       */
     public boolean hasRound() {
-      return fieldSetFlags()[24];
+      return fieldSetFlags()[25];
     }
 
     /**
@@ -2248,7 +2317,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     public com.fretron.Model.Auction.Builder clearRound() {
       round = null;
       roundBuilder = null;
-      fieldSetFlags()[24] = false;
+      fieldSetFlags()[25] = false;
       return this;
     }
 
@@ -2266,10 +2335,10 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setBranch(com.fretron.Model.OrgOffice value) {
-      validate(fields()[25], value);
+      validate(fields()[26], value);
       this.branchBuilder = null;
       this.branch = value;
-      fieldSetFlags()[25] = true;
+      fieldSetFlags()[26] = true;
       return this;
     }
 
@@ -2278,7 +2347,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'branch' field has been set, false otherwise.
       */
     public boolean hasBranch() {
-      return fieldSetFlags()[25];
+      return fieldSetFlags()[26];
     }
 
     /**
@@ -2322,7 +2391,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     public com.fretron.Model.Auction.Builder clearBranch() {
       branch = null;
       branchBuilder = null;
-      fieldSetFlags()[25] = false;
+      fieldSetFlags()[26] = false;
       return this;
     }
 
@@ -2340,10 +2409,10 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setUpdates(com.fretron.Model.Updates value) {
-      validate(fields()[26], value);
+      validate(fields()[27], value);
       this.updatesBuilder = null;
       this.updates = value;
-      fieldSetFlags()[26] = true;
+      fieldSetFlags()[27] = true;
       return this;
     }
 
@@ -2352,7 +2421,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'updates' field has been set, false otherwise.
       */
     public boolean hasUpdates() {
-      return fieldSetFlags()[26];
+      return fieldSetFlags()[27];
     }
 
     /**
@@ -2396,7 +2465,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     public com.fretron.Model.Auction.Builder clearUpdates() {
       updates = null;
       updatesBuilder = null;
-      fieldSetFlags()[26] = false;
+      fieldSetFlags()[27] = false;
       return this;
     }
 
@@ -2414,9 +2483,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setCompletedRounds(java.util.List<com.fretron.Model.AuctionRound> value) {
-      validate(fields()[27], value);
+      validate(fields()[28], value);
       this.completedRounds = value;
-      fieldSetFlags()[27] = true;
+      fieldSetFlags()[28] = true;
       return this;
     }
 
@@ -2425,7 +2494,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'completedRounds' field has been set, false otherwise.
       */
     public boolean hasCompletedRounds() {
-      return fieldSetFlags()[27];
+      return fieldSetFlags()[28];
     }
 
 
@@ -2435,7 +2504,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearCompletedRounds() {
       completedRounds = null;
-      fieldSetFlags()[27] = false;
+      fieldSetFlags()[28] = false;
       return this;
     }
 
@@ -2453,9 +2522,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setIsConsiderReferencePrice(java.lang.Boolean value) {
-      validate(fields()[28], value);
+      validate(fields()[29], value);
       this.isConsiderReferencePrice = value;
-      fieldSetFlags()[28] = true;
+      fieldSetFlags()[29] = true;
       return this;
     }
 
@@ -2464,7 +2533,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'isConsiderReferencePrice' field has been set, false otherwise.
       */
     public boolean hasIsConsiderReferencePrice() {
-      return fieldSetFlags()[28];
+      return fieldSetFlags()[29];
     }
 
 
@@ -2474,7 +2543,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearIsConsiderReferencePrice() {
       isConsiderReferencePrice = null;
-      fieldSetFlags()[28] = false;
+      fieldSetFlags()[29] = false;
       return this;
     }
 
@@ -2492,9 +2561,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
-      validate(fields()[29], value);
+      validate(fields()[30], value);
       this.customFields = value;
-      fieldSetFlags()[29] = true;
+      fieldSetFlags()[30] = true;
       return this;
     }
 
@@ -2503,7 +2572,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'customFields' field has been set, false otherwise.
       */
     public boolean hasCustomFields() {
-      return fieldSetFlags()[29];
+      return fieldSetFlags()[30];
     }
 
 
@@ -2513,7 +2582,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearCustomFields() {
       customFields = null;
-      fieldSetFlags()[29] = false;
+      fieldSetFlags()[30] = false;
       return this;
     }
 
@@ -2531,9 +2600,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setCustomerName(java.lang.String value) {
-      validate(fields()[30], value);
+      validate(fields()[31], value);
       this.customerName = value;
-      fieldSetFlags()[30] = true;
+      fieldSetFlags()[31] = true;
       return this;
     }
 
@@ -2542,7 +2611,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'customerName' field has been set, false otherwise.
       */
     public boolean hasCustomerName() {
-      return fieldSetFlags()[30];
+      return fieldSetFlags()[31];
     }
 
 
@@ -2552,7 +2621,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearCustomerName() {
       customerName = null;
-      fieldSetFlags()[30] = false;
+      fieldSetFlags()[31] = false;
       return this;
     }
 
@@ -2570,9 +2639,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setRoute(java.lang.String value) {
-      validate(fields()[31], value);
+      validate(fields()[32], value);
       this.route = value;
-      fieldSetFlags()[31] = true;
+      fieldSetFlags()[32] = true;
       return this;
     }
 
@@ -2581,7 +2650,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'route' field has been set, false otherwise.
       */
     public boolean hasRoute() {
-      return fieldSetFlags()[31];
+      return fieldSetFlags()[32];
     }
 
 
@@ -2591,7 +2660,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearRoute() {
       route = null;
-      fieldSetFlags()[31] = false;
+      fieldSetFlags()[32] = false;
       return this;
     }
 
@@ -2609,9 +2678,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setStatusDescription(java.lang.String value) {
-      validate(fields()[32], value);
+      validate(fields()[33], value);
       this.statusDescription = value;
-      fieldSetFlags()[32] = true;
+      fieldSetFlags()[33] = true;
       return this;
     }
 
@@ -2620,7 +2689,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'statusDescription' field has been set, false otherwise.
       */
     public boolean hasStatusDescription() {
-      return fieldSetFlags()[32];
+      return fieldSetFlags()[33];
     }
 
 
@@ -2630,7 +2699,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearStatusDescription() {
       statusDescription = null;
-      fieldSetFlags()[32] = false;
+      fieldSetFlags()[33] = false;
       return this;
     }
 
@@ -2648,9 +2717,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setTotalQuantity(java.lang.Double value) {
-      validate(fields()[33], value);
+      validate(fields()[34], value);
       this.totalQuantity = value;
-      fieldSetFlags()[33] = true;
+      fieldSetFlags()[34] = true;
       return this;
     }
 
@@ -2659,7 +2728,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'totalQuantity' field has been set, false otherwise.
       */
     public boolean hasTotalQuantity() {
-      return fieldSetFlags()[33];
+      return fieldSetFlags()[34];
     }
 
 
@@ -2669,7 +2738,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearTotalQuantity() {
       totalQuantity = null;
-      fieldSetFlags()[33] = false;
+      fieldSetFlags()[34] = false;
       return this;
     }
 
@@ -2687,9 +2756,9 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return This builder.
       */
     public com.fretron.Model.Auction.Builder setPlacedQuantity(java.lang.Double value) {
-      validate(fields()[34], value);
+      validate(fields()[35], value);
       this.placedQuantity = value;
-      fieldSetFlags()[34] = true;
+      fieldSetFlags()[35] = true;
       return this;
     }
 
@@ -2698,7 +2767,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       * @return True if the 'placedQuantity' field has been set, false otherwise.
       */
     public boolean hasPlacedQuantity() {
-      return fieldSetFlags()[34];
+      return fieldSetFlags()[35];
     }
 
 
@@ -2708,7 +2777,7 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       */
     public com.fretron.Model.Auction.Builder clearPlacedQuantity() {
       placedQuantity = null;
-      fieldSetFlags()[34] = false;
+      fieldSetFlags()[35] = false;
       return this;
     }
 
@@ -2720,57 +2789,58 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         record.externalId = fieldSetFlags()[1] ? this.externalId : (java.lang.String) defaultValue(fields()[1]);
         record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);
         record.status = fieldSetFlags()[3] ? this.status : (java.lang.String) defaultValue(fields()[3]);
-        record.orderId = fieldSetFlags()[4] ? this.orderId : (java.lang.String) defaultValue(fields()[4]);
-        record.freightType = fieldSetFlags()[5] ? this.freightType : (java.lang.String) defaultValue(fields()[5]);
-        record.isNegotiable = fieldSetFlags()[6] ? this.isNegotiable : (java.lang.Boolean) defaultValue(fields()[6]);
-        record.numberOfVehicles = fieldSetFlags()[7] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[7]);
-        record.allocatedVehicles = fieldSetFlags()[8] ? this.allocatedVehicles : (java.lang.Integer) defaultValue(fields()[8]);
+        record.secondaryStatus = fieldSetFlags()[4] ? this.secondaryStatus : (java.lang.String) defaultValue(fields()[4]);
+        record.orderId = fieldSetFlags()[5] ? this.orderId : (java.lang.String) defaultValue(fields()[5]);
+        record.freightType = fieldSetFlags()[6] ? this.freightType : (java.lang.String) defaultValue(fields()[6]);
+        record.isNegotiable = fieldSetFlags()[7] ? this.isNegotiable : (java.lang.Boolean) defaultValue(fields()[7]);
+        record.numberOfVehicles = fieldSetFlags()[8] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[8]);
+        record.allocatedVehicles = fieldSetFlags()[9] ? this.allocatedVehicles : (java.lang.Integer) defaultValue(fields()[9]);
         if (originBuilder != null) {
           record.origin = this.originBuilder.build();
         } else {
-          record.origin = fieldSetFlags()[9] ? this.origin : (com.fretron.Model.Place) defaultValue(fields()[9]);
+          record.origin = fieldSetFlags()[10] ? this.origin : (com.fretron.Model.Place) defaultValue(fields()[10]);
         }
         if (destinationBuilder != null) {
           record.destination = this.destinationBuilder.build();
         } else {
-          record.destination = fieldSetFlags()[10] ? this.destination : (com.fretron.Model.Place) defaultValue(fields()[10]);
+          record.destination = fieldSetFlags()[11] ? this.destination : (com.fretron.Model.Place) defaultValue(fields()[11]);
         }
-        record.remarks = fieldSetFlags()[11] ? this.remarks : (java.util.List<java.lang.String>) defaultValue(fields()[11]);
-        record.alternateOrigins = fieldSetFlags()[12] ? this.alternateOrigins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[12]);
-        record.alternateDestinations = fieldSetFlags()[13] ? this.alternateDestinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[13]);
-        record.bids = fieldSetFlags()[14] ? this.bids : (java.util.List<com.fretron.Model.Bid>) defaultValue(fields()[14]);
-        record.price = fieldSetFlags()[15] ? this.price : (java.lang.Double) defaultValue(fields()[15]);
-        record.placementDate = fieldSetFlags()[16] ? this.placementDate : (java.lang.Long) defaultValue(fields()[16]);
-        record.createDate = fieldSetFlags()[17] ? this.createDate : (java.lang.Long) defaultValue(fields()[17]);
-        record.allowedTransporters = fieldSetFlags()[18] ? this.allowedTransporters : (java.util.List<java.lang.String>) defaultValue(fields()[18]);
-        record.allowedMaterial = fieldSetFlags()[19] ? this.allowedMaterial : (java.util.List<java.lang.String>) defaultValue(fields()[19]);
-        record.allowedVehicleTypes = fieldSetFlags()[20] ? this.allowedVehicleTypes : (java.util.List<java.lang.String>) defaultValue(fields()[20]);
-        record.isShowTopRankToOthers = fieldSetFlags()[21] ? this.isShowTopRankToOthers : (java.lang.Boolean) defaultValue(fields()[21]);
-        record.purchaseEnquiries = fieldSetFlags()[22] ? this.purchaseEnquiries : (java.util.List<java.lang.String>) defaultValue(fields()[22]);
-        record.tnCs = fieldSetFlags()[23] ? this.tnCs : (java.util.List<com.fretron.Model.ContractTerms>) defaultValue(fields()[23]);
+        record.remarks = fieldSetFlags()[12] ? this.remarks : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        record.alternateOrigins = fieldSetFlags()[13] ? this.alternateOrigins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[13]);
+        record.alternateDestinations = fieldSetFlags()[14] ? this.alternateDestinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[14]);
+        record.bids = fieldSetFlags()[15] ? this.bids : (java.util.List<com.fretron.Model.Bid>) defaultValue(fields()[15]);
+        record.price = fieldSetFlags()[16] ? this.price : (java.lang.Double) defaultValue(fields()[16]);
+        record.placementDate = fieldSetFlags()[17] ? this.placementDate : (java.lang.Long) defaultValue(fields()[17]);
+        record.createDate = fieldSetFlags()[18] ? this.createDate : (java.lang.Long) defaultValue(fields()[18]);
+        record.allowedTransporters = fieldSetFlags()[19] ? this.allowedTransporters : (java.util.List<java.lang.String>) defaultValue(fields()[19]);
+        record.allowedMaterial = fieldSetFlags()[20] ? this.allowedMaterial : (java.util.List<java.lang.String>) defaultValue(fields()[20]);
+        record.allowedVehicleTypes = fieldSetFlags()[21] ? this.allowedVehicleTypes : (java.util.List<java.lang.String>) defaultValue(fields()[21]);
+        record.isShowTopRankToOthers = fieldSetFlags()[22] ? this.isShowTopRankToOthers : (java.lang.Boolean) defaultValue(fields()[22]);
+        record.purchaseEnquiries = fieldSetFlags()[23] ? this.purchaseEnquiries : (java.util.List<java.lang.String>) defaultValue(fields()[23]);
+        record.tnCs = fieldSetFlags()[24] ? this.tnCs : (java.util.List<com.fretron.Model.ContractTerms>) defaultValue(fields()[24]);
         if (roundBuilder != null) {
           record.round = this.roundBuilder.build();
         } else {
-          record.round = fieldSetFlags()[24] ? this.round : (com.fretron.Model.AuctionRound) defaultValue(fields()[24]);
+          record.round = fieldSetFlags()[25] ? this.round : (com.fretron.Model.AuctionRound) defaultValue(fields()[25]);
         }
         if (branchBuilder != null) {
           record.branch = this.branchBuilder.build();
         } else {
-          record.branch = fieldSetFlags()[25] ? this.branch : (com.fretron.Model.OrgOffice) defaultValue(fields()[25]);
+          record.branch = fieldSetFlags()[26] ? this.branch : (com.fretron.Model.OrgOffice) defaultValue(fields()[26]);
         }
         if (updatesBuilder != null) {
           record.updates = this.updatesBuilder.build();
         } else {
-          record.updates = fieldSetFlags()[26] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[26]);
+          record.updates = fieldSetFlags()[27] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[27]);
         }
-        record.completedRounds = fieldSetFlags()[27] ? this.completedRounds : (java.util.List<com.fretron.Model.AuctionRound>) defaultValue(fields()[27]);
-        record.isConsiderReferencePrice = fieldSetFlags()[28] ? this.isConsiderReferencePrice : (java.lang.Boolean) defaultValue(fields()[28]);
-        record.customFields = fieldSetFlags()[29] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[29]);
-        record.customerName = fieldSetFlags()[30] ? this.customerName : (java.lang.String) defaultValue(fields()[30]);
-        record.route = fieldSetFlags()[31] ? this.route : (java.lang.String) defaultValue(fields()[31]);
-        record.statusDescription = fieldSetFlags()[32] ? this.statusDescription : (java.lang.String) defaultValue(fields()[32]);
-        record.totalQuantity = fieldSetFlags()[33] ? this.totalQuantity : (java.lang.Double) defaultValue(fields()[33]);
-        record.placedQuantity = fieldSetFlags()[34] ? this.placedQuantity : (java.lang.Double) defaultValue(fields()[34]);
+        record.completedRounds = fieldSetFlags()[28] ? this.completedRounds : (java.util.List<com.fretron.Model.AuctionRound>) defaultValue(fields()[28]);
+        record.isConsiderReferencePrice = fieldSetFlags()[29] ? this.isConsiderReferencePrice : (java.lang.Boolean) defaultValue(fields()[29]);
+        record.customFields = fieldSetFlags()[30] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[30]);
+        record.customerName = fieldSetFlags()[31] ? this.customerName : (java.lang.String) defaultValue(fields()[31]);
+        record.route = fieldSetFlags()[32] ? this.route : (java.lang.String) defaultValue(fields()[32]);
+        record.statusDescription = fieldSetFlags()[33] ? this.statusDescription : (java.lang.String) defaultValue(fields()[33]);
+        record.totalQuantity = fieldSetFlags()[34] ? this.totalQuantity : (java.lang.Double) defaultValue(fields()[34]);
+        record.placedQuantity = fieldSetFlags()[35] ? this.placedQuantity : (java.lang.Double) defaultValue(fields()[35]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
