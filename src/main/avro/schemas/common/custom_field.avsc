@@ -111,6 +111,14 @@
                  "string"
               ],
               "default": null
-            }
+            },
+                        {
+                          "name": "uuid",
+                          "type": [
+                             "null",
+                             "string"
+                          ],
+                          "default": null
+                        }
     ]
   }
