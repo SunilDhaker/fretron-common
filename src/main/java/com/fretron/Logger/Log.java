@@ -65,7 +65,7 @@ public final class Log {
 
   public static void setupLogger(Config config) throws IOException {
 
-    PatternLayout layout = new PatternLayout("%d{" + DATE_FORMAT + "} %5p: - %m%n");
+    PatternLayout layout = new PatternLayout("%d{" + DATE_FORMAT + "} %5p %X{traceID}: - %m%n");
 
     //file appender write logs in a file
     RollingFileAppender appender = new RollingFileAppender(layout, config.getString("logger.file"),
