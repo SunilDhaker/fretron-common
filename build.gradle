@@ -2,7 +2,6 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'kotlin'
 
-
 group = 'com.fretron'
 version = '1.0-SNAPSHOT'
 
@@ -93,11 +92,14 @@ task fatJar(type: Jar) {
     exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
 }
 
-task renewAvro << {
-    delete "src/main/java/com/fretron/Model"
-    copy {
-        from "build/avro/com/fretron/Model"
-        into "src/main/java/com/fretron/Model"
+task renewAvro {
+
+    doLast {
+        delete "src/main/java/com/fretron/Model"
+        copy {
+            from "build/avro/com/fretron/Model"
+            into "src/main/java/com/fretron/Model"
+        }
     }
 }
 
