@@ -85,6 +85,22 @@
                                                         "long"
                                                     ],
                                            "default": null
-                                    }
+             },
+             {
+                    "name": "partnerExternalId",
+                     "type": [
+                                            "null",
+                                             "string"
+                                         ],
+                                "default": null
+              },
+              {
+                  "name": "vendorExecutive",
+                   "type": [
+                                "null",
+                                 "string"
+                            ],
+                    "default": null
+               }
   ]
 }
