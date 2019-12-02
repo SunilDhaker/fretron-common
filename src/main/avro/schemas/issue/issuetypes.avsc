@@ -103,7 +103,25 @@
                                                        				}
                                                        			],
                                                        			"default": null
-                                                       		}
+                                                       		},
+                                                       		    {
+                                                                  "name": "status",
+                                                                  "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                  ],
+                                                                  "default": null
+                                                                },
+                                                                  		{
+                                                                  			"name": "updates",
+                                                                  			"type": [
+                                                                  				"null",
+                                                                  				"com.fretron.Model.Updates"
+                                                                  			],
+                                                                  			"default": null
+                                                                  		}
+
+
 
   ]
 }
