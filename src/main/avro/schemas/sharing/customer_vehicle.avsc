@@ -1,0 +1,33 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "CustomerVehicle",
+    "fields": [
+      {
+        "name": "email",
+        "type": "string"
+      },
+      {
+        "name": "vehicleId",
+        "type": "string"
+      },
+      {
+        "name": "from",
+        "type": [
+          "null",
+          "long"
+        ]
+      },
+      {
+        "name": "to",
+        "type": [
+          "null",
+          "long"
+        ]
+      },
+      {
+        "name": "AccessLevel",
+        "type": "com.fretron.Model.AccessLevel"
+      }
+    ]
+  }

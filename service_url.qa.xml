@@ -67,9 +67,11 @@
     <!--===========Freight-Location===============-->
     <entry key="freight.manager.service.port">8090</entry>
     <entry key="geofence.service.port">9090</entry>
+    <entry key="freight.location.manager.service.url">http://freightlocation-manager-revamp.streams:9090</entry>
 
 
-    <!-- ==========kafka-topic-manager========= -->
+
+    <!-- ==========stream-topic-manager========= -->
 
     <entry key="kafka.topic.create.service.url">http://kafkatopic-manager:8089/topic/create</entry>
 
@@ -90,5 +92,20 @@
     <entry key="token.manager.restservice.port">7090</entry>
 
     <!--========================================Serice URL ,, Ports And IP=============================================-->
+    <!-- =========Itinerary-Manager========== -->
+    <entry key="vehicle.trip.manager.service.url">http://vehicle-itinery.streams:2129</entry>
 
+    <!-- =========Authorization-Manager========== -->
+    <entry key="authorization.manager.service.url">http://authorization-manager.streams:5056</entry>
+
+    <!-- =========Fleet-Manager========== -->
+    <entry key="key.fleet.manager.service.url">http://fleet-manager.streams:8092</entry>
+
+    <!-- =========Shipment View========== -->
+    <entry key="key.shipment.view.service.url">http://shipment-view.mean:8080</entry>
+
+    <!-- ==========Authomation Engine========== -->
+    <entry key="key.automation.engine.service.url">http://automation-engine.mean:8083</entry>
+
+    <entry key="settings.manager.service.url">http://settings-manager.streams:2131</entry>
 </properties>

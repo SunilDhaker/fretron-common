@@ -1,0 +1,86 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "LBSDevice",
+  "fields": [
+    {
+      "name": "imei",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+       "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ]
+      , "default": null
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+       "default": null
+    },
+
+    {
+      "name": "createdAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "updatedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+          "name": "lastLocationFetchTime",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+     },
+
+    {
+      "name": "consentStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+          "name": "lastLocation",
+          "type": [
+            "null",
+            "com.fretron.Model.LitePosition"
+          ],
+          "default": null
+    }
+
+
+  ]
+}

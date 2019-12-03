@@ -1,0 +1,110 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "WorkflowTask",
+  "fields": [
+      {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+       {
+         "name": "orgId",
+         "type": [
+           "null",
+           "string"
+         ],
+         "default": null
+       },
+        {
+          "name": "workflowId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+         {
+           "name": "workflowName",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+         },
+         {
+           "name": "stageName",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+         },
+     {
+        "name": "dueAt",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+        "name": "completedAt",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+       {
+         "name": "delayedBy",
+         "type": [
+           "null",
+           "long"
+         ],
+         "default": null
+       },
+       {
+         "name": "status",
+         "type": [
+           "null",
+           "string"
+         ],
+         "default": null
+       } ,{
+        "name": "SLAs",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "com.fretron.Model.ServiceLevelAgreement"
+          }
+        ],
+        "default": null
+      },
+     	{
+          "name": "attributes",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "com.fretron.Model.CustomFields"
+            }
+          ],
+        "default": null
+        }
+     ]
+}

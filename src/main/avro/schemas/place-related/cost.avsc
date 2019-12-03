@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Cost",
+  "fields": [
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+       "name": "value",
+          "type": [
+            "null",
+            "double"
+          ],
+       "default": null
+     }
+  ]
+}

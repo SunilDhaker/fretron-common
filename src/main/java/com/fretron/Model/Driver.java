@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Driver extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1227843398266008840L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -7709715205902857544L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"associatedUserId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
@@ -20,6 +20,14 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String dlNumber;
   @Deprecated public java.lang.Long dlExpiryTime;
   @Deprecated public java.util.List<java.lang.String> attachedDocs;
+  @Deprecated public java.lang.String address;
+  @Deprecated public java.lang.String pincode;
+  @Deprecated public java.lang.String vehicleId;
+  @Deprecated public java.lang.String vehicleRegistrationNumber;
+  @Deprecated public java.lang.String externalId;
+  @Deprecated public java.util.List<java.lang.String> mobileNumbers;
+  @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public java.lang.String associatedUserId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +45,16 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param dlNumber The new value for dlNumber
    * @param dlExpiryTime The new value for dlExpiryTime
    * @param attachedDocs The new value for attachedDocs
+   * @param address The new value for address
+   * @param pincode The new value for pincode
+   * @param vehicleId The new value for vehicleId
+   * @param vehicleRegistrationNumber The new value for vehicleRegistrationNumber
+   * @param externalId The new value for externalId
+   * @param mobileNumbers The new value for mobileNumbers
+   * @param updates The new value for updates
+   * @param associatedUserId The new value for associatedUserId
    */
-  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs) {
+  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId, java.util.List<java.lang.String> mobileNumbers, com.fretron.Model.Updates updates, java.lang.String associatedUserId) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.uuid = uuid;
@@ -46,6 +62,14 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     this.dlNumber = dlNumber;
     this.dlExpiryTime = dlExpiryTime;
     this.attachedDocs = attachedDocs;
+    this.address = address;
+    this.pincode = pincode;
+    this.vehicleId = vehicleId;
+    this.vehicleRegistrationNumber = vehicleRegistrationNumber;
+    this.externalId = externalId;
+    this.mobileNumbers = mobileNumbers;
+    this.updates = updates;
+    this.associatedUserId = associatedUserId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +83,14 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 4: return dlNumber;
     case 5: return dlExpiryTime;
     case 6: return attachedDocs;
+    case 7: return address;
+    case 8: return pincode;
+    case 9: return vehicleId;
+    case 10: return vehicleRegistrationNumber;
+    case 11: return externalId;
+    case 12: return mobileNumbers;
+    case 13: return updates;
+    case 14: return associatedUserId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +106,14 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 4: dlNumber = (java.lang.String)value$; break;
     case 5: dlExpiryTime = (java.lang.Long)value$; break;
     case 6: attachedDocs = (java.util.List<java.lang.String>)value$; break;
+    case 7: address = (java.lang.String)value$; break;
+    case 8: pincode = (java.lang.String)value$; break;
+    case 9: vehicleId = (java.lang.String)value$; break;
+    case 10: vehicleRegistrationNumber = (java.lang.String)value$; break;
+    case 11: externalId = (java.lang.String)value$; break;
+    case 12: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
+    case 13: updates = (com.fretron.Model.Updates)value$; break;
+    case 14: associatedUserId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +231,134 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'address' field.
+   * @return The value of the 'address' field.
+   */
+  public java.lang.String getAddress() {
+    return address;
+  }
+
+  /**
+   * Sets the value of the 'address' field.
+   * @param value the value to set.
+   */
+  public void setAddress(java.lang.String value) {
+    this.address = value;
+  }
+
+  /**
+   * Gets the value of the 'pincode' field.
+   * @return The value of the 'pincode' field.
+   */
+  public java.lang.String getPincode() {
+    return pincode;
+  }
+
+  /**
+   * Sets the value of the 'pincode' field.
+   * @param value the value to set.
+   */
+  public void setPincode(java.lang.String value) {
+    this.pincode = value;
+  }
+
+  /**
+   * Gets the value of the 'vehicleId' field.
+   * @return The value of the 'vehicleId' field.
+   */
+  public java.lang.String getVehicleId() {
+    return vehicleId;
+  }
+
+  /**
+   * Sets the value of the 'vehicleId' field.
+   * @param value the value to set.
+   */
+  public void setVehicleId(java.lang.String value) {
+    this.vehicleId = value;
+  }
+
+  /**
+   * Gets the value of the 'vehicleRegistrationNumber' field.
+   * @return The value of the 'vehicleRegistrationNumber' field.
+   */
+  public java.lang.String getVehicleRegistrationNumber() {
+    return vehicleRegistrationNumber;
+  }
+
+  /**
+   * Sets the value of the 'vehicleRegistrationNumber' field.
+   * @param value the value to set.
+   */
+  public void setVehicleRegistrationNumber(java.lang.String value) {
+    this.vehicleRegistrationNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
+   * Gets the value of the 'mobileNumbers' field.
+   * @return The value of the 'mobileNumbers' field.
+   */
+  public java.util.List<java.lang.String> getMobileNumbers() {
+    return mobileNumbers;
+  }
+
+  /**
+   * Sets the value of the 'mobileNumbers' field.
+   * @param value the value to set.
+   */
+  public void setMobileNumbers(java.util.List<java.lang.String> value) {
+    this.mobileNumbers = value;
+  }
+
+  /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
+   * Gets the value of the 'associatedUserId' field.
+   * @return The value of the 'associatedUserId' field.
+   */
+  public java.lang.String getAssociatedUserId() {
+    return associatedUserId;
+  }
+
+  /**
+   * Sets the value of the 'associatedUserId' field.
+   * @param value the value to set.
+   */
+  public void setAssociatedUserId(java.lang.String value) {
+    this.associatedUserId = value;
+  }
+
+  /**
    * Creates a new Driver RecordBuilder.
    * @return A new Driver RecordBuilder
    */
@@ -229,6 +397,15 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String dlNumber;
     private java.lang.Long dlExpiryTime;
     private java.util.List<java.lang.String> attachedDocs;
+    private java.lang.String address;
+    private java.lang.String pincode;
+    private java.lang.String vehicleId;
+    private java.lang.String vehicleRegistrationNumber;
+    private java.lang.String externalId;
+    private java.util.List<java.lang.String> mobileNumbers;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
+    private java.lang.String associatedUserId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +446,41 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         this.attachedDocs = data().deepCopy(fields()[6].schema(), other.attachedDocs);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.address)) {
+        this.address = data().deepCopy(fields()[7].schema(), other.address);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.pincode)) {
+        this.pincode = data().deepCopy(fields()[8].schema(), other.pincode);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[9].schema(), other.vehicleId);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[10].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[11].schema(), other.externalId);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[12].schema(), other.mobileNumbers);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.updates)) {
+        this.updates = data().deepCopy(fields()[13].schema(), other.updates);
+        fieldSetFlags()[13] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
+      if (isValidValue(fields()[14], other.associatedUserId)) {
+        this.associatedUserId = data().deepCopy(fields()[14].schema(), other.associatedUserId);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -304,6 +516,39 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       if (isValidValue(fields()[6], other.attachedDocs)) {
         this.attachedDocs = data().deepCopy(fields()[6].schema(), other.attachedDocs);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.address)) {
+        this.address = data().deepCopy(fields()[7].schema(), other.address);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.pincode)) {
+        this.pincode = data().deepCopy(fields()[8].schema(), other.pincode);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.vehicleId)) {
+        this.vehicleId = data().deepCopy(fields()[9].schema(), other.vehicleId);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.vehicleRegistrationNumber)) {
+        this.vehicleRegistrationNumber = data().deepCopy(fields()[10].schema(), other.vehicleRegistrationNumber);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[11].schema(), other.externalId);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[12].schema(), other.mobileNumbers);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.updates)) {
+        this.updates = data().deepCopy(fields()[13].schema(), other.updates);
+        fieldSetFlags()[13] = true;
+      }
+      this.updatesBuilder = null;
+      if (isValidValue(fields()[14], other.associatedUserId)) {
+        this.associatedUserId = data().deepCopy(fields()[14].schema(), other.associatedUserId);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -580,6 +825,353 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'address' field.
+      * @return The value.
+      */
+    public java.lang.String getAddress() {
+      return address;
+    }
+
+    /**
+      * Sets the value of the 'address' field.
+      * @param value The value of 'address'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setAddress(java.lang.String value) {
+      validate(fields()[7], value);
+      this.address = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'address' field has been set.
+      * @return True if the 'address' field has been set, false otherwise.
+      */
+    public boolean hasAddress() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'address' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearAddress() {
+      address = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'pincode' field.
+      * @return The value.
+      */
+    public java.lang.String getPincode() {
+      return pincode;
+    }
+
+    /**
+      * Sets the value of the 'pincode' field.
+      * @param value The value of 'pincode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setPincode(java.lang.String value) {
+      validate(fields()[8], value);
+      this.pincode = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'pincode' field has been set.
+      * @return True if the 'pincode' field has been set, false otherwise.
+      */
+    public boolean hasPincode() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'pincode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearPincode() {
+      pincode = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'vehicleId' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleId() {
+      return vehicleId;
+    }
+
+    /**
+      * Sets the value of the 'vehicleId' field.
+      * @param value The value of 'vehicleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setVehicleId(java.lang.String value) {
+      validate(fields()[9], value);
+      this.vehicleId = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleId' field has been set.
+      * @return True if the 'vehicleId' field has been set, false otherwise.
+      */
+    public boolean hasVehicleId() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearVehicleId() {
+      vehicleId = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'vehicleRegistrationNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getVehicleRegistrationNumber() {
+      return vehicleRegistrationNumber;
+    }
+
+    /**
+      * Sets the value of the 'vehicleRegistrationNumber' field.
+      * @param value The value of 'vehicleRegistrationNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setVehicleRegistrationNumber(java.lang.String value) {
+      validate(fields()[10], value);
+      this.vehicleRegistrationNumber = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'vehicleRegistrationNumber' field has been set.
+      * @return True if the 'vehicleRegistrationNumber' field has been set, false otherwise.
+      */
+    public boolean hasVehicleRegistrationNumber() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'vehicleRegistrationNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearVehicleRegistrationNumber() {
+      vehicleRegistrationNumber = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setExternalId(java.lang.String value) {
+      validate(fields()[11], value);
+      this.externalId = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mobileNumbers' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getMobileNumbers() {
+      return mobileNumbers;
+    }
+
+    /**
+      * Sets the value of the 'mobileNumbers' field.
+      * @param value The value of 'mobileNumbers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setMobileNumbers(java.util.List<java.lang.String> value) {
+      validate(fields()[12], value);
+      this.mobileNumbers = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mobileNumbers' field has been set.
+      * @return True if the 'mobileNumbers' field has been set, false otherwise.
+      */
+    public boolean hasMobileNumbers() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'mobileNumbers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearMobileNumbers() {
+      mobileNumbers = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[13], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[13];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Driver.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'associatedUserId' field.
+      * @return The value.
+      */
+    public java.lang.String getAssociatedUserId() {
+      return associatedUserId;
+    }
+
+    /**
+      * Sets the value of the 'associatedUserId' field.
+      * @param value The value of 'associatedUserId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setAssociatedUserId(java.lang.String value) {
+      validate(fields()[14], value);
+      this.associatedUserId = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'associatedUserId' field has been set.
+      * @return True if the 'associatedUserId' field has been set, false otherwise.
+      */
+    public boolean hasAssociatedUserId() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'associatedUserId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearAssociatedUserId() {
+      associatedUserId = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public Driver build() {
       try {
@@ -591,6 +1183,18 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         record.dlNumber = fieldSetFlags()[4] ? this.dlNumber : (java.lang.String) defaultValue(fields()[4]);
         record.dlExpiryTime = fieldSetFlags()[5] ? this.dlExpiryTime : (java.lang.Long) defaultValue(fields()[5]);
         record.attachedDocs = fieldSetFlags()[6] ? this.attachedDocs : (java.util.List<java.lang.String>) defaultValue(fields()[6]);
+        record.address = fieldSetFlags()[7] ? this.address : (java.lang.String) defaultValue(fields()[7]);
+        record.pincode = fieldSetFlags()[8] ? this.pincode : (java.lang.String) defaultValue(fields()[8]);
+        record.vehicleId = fieldSetFlags()[9] ? this.vehicleId : (java.lang.String) defaultValue(fields()[9]);
+        record.vehicleRegistrationNumber = fieldSetFlags()[10] ? this.vehicleRegistrationNumber : (java.lang.String) defaultValue(fields()[10]);
+        record.externalId = fieldSetFlags()[11] ? this.externalId : (java.lang.String) defaultValue(fields()[11]);
+        record.mobileNumbers = fieldSetFlags()[12] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[13] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[13]);
+        }
+        record.associatedUserId = fieldSetFlags()[14] ? this.associatedUserId : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

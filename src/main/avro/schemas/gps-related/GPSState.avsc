@@ -1,0 +1,16 @@
+ [
+ {
+      "type": "enum",
+      "name": "GPSState",
+      "namespace": "com.fretron.Model",
+      "symbols": [
+                    "Stopped",
+                    "Moving",
+                    "Overspeeding",
+                    "Disconnected",
+                    "Unknown"
+       ]
+    }
+  ]
+
+

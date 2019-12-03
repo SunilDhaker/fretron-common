@@ -1,0 +1,74 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "ResourceAlert",
+  "fields": [
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "closedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "snoozTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+             {
+               "name": "createdAt",
+               "type": [
+                 "null",
+                 "long"
+               ],
+               "logicalType": "timestamp-millis",
+               "default": null
+             },
+                     {
+                       "name": "updatedAt",
+                       "type": [
+                         "null",
+                         "long"
+                       ],
+                       "logicalType": "timestamp-millis",
+                       "default": null
+                     }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "SalesEnquiry",
+  "type": "record",
+  "fields": [
+    {
+      "name": "sourceLoc",
+      "type": "com.fretron.Model.Location"
+    },
+    {
+      "name": "destination",
+      "type": "com.fretron.Model.Location"
+    },
+    {
+      "name": "salesEnquiryID",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "EnquiryStatus",
+          "symbols": [
+            "Pending",
+            "Completed",
+            "CarriedForward",
+            "Canceled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "material",
+      "type": "string"
+    },
+    {
+      "name": "offerRate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "numberOFLoads",
+      "type": "int"
+    },
+    {
+      "name": "endTime",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "name": "remainingLoad",
+      "type": "int"
+    }
+
+  ]
+}

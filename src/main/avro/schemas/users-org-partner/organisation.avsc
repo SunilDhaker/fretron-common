@@ -1,0 +1,130 @@
+
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Organisation",
+  "fields": [
+
+  {
+          "name": "uuid",
+           "type": ["null" , "string"],
+           "default" : null
+  },
+   {
+            "name": "orgId",
+             "type": ["null" , "string"],
+             "default" : null
+    },
+  {
+        "name": "organisationName",
+         "type": ["null" , "string"],
+         "default" : null
+   },
+
+    {
+        "name": "type",
+        "type": {
+          "type": "enum",
+          "name": "OrganisationType",
+              "symbols": [
+               "FLEET_OWNER",
+              "TRANSPORTER",
+              "FLEET_OWNER_AGENT"
+               ]
+       }
+    },
+     {
+            "name": "addedBy",
+             "type": ["null" , "string"],
+             "default" : null
+       },
+      {
+             "name": "buisnessPartnerId",
+              "type": ["null" , "string"],
+              "default" : null
+       },
+      {
+          "name": "parentOrgUuid",
+           "type": ["null" , "string"],
+           "default" : null
+      },
+      {
+         "name": "organisationAddress",
+         "type": ["null" , "string"],
+         "default" : null
+      },
+      {
+         "name": "billingAddress",
+         "type": ["null" , "string"],
+         "default" : null
+      },
+      {
+         "name": "contactInfo",
+         "type": ["null" , "com.fretron.Model.Contact"],
+          "default" : null
+      },
+      {
+         "name": "websiteURL",
+         "type": ["null" , "string"],
+         "default" : null
+       },
+       {
+                "name": "gstIN",
+                "type": ["null" , "string"],
+                "default" : null
+        },
+        {
+                 "name": "panNumber",
+                 "type": ["null" , "string"],
+                 "default" : null
+        },
+       {
+             "name": "installedModules",
+             "type": [
+               "null",
+               {
+                 "type": "array",
+                 "items": "string"
+               }
+             ],
+             "default": null
+           },
+         {
+             "name": "logoThumbnailString",
+             "type": ["null" , "string"],
+              "default" : null
+         },
+          {
+            "name": "logoDocumentId",
+             "type": ["null" , "string"],
+            "default" : null
+         },
+         {
+            "name": "linkedPortals",
+             "type": [
+                        "null",
+                        {
+                          "type": "array",
+                          "items": "string"
+                        }
+                      ],
+                      "default": null
+         },
+               {
+                    "name": "status",
+                    "type": ["null" , "string"],
+                    "default" : null
+            },
+     {
+           "name": "linkedTo",
+           "type": ["null" , "string"],
+            "default" : null
+     } ,
+     {
+          "name": "portalType",
+           "type": ["null" , "string"],
+           "default" : null
+    }
+
+  ]
+  }

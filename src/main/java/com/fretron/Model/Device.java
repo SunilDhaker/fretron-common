@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Device extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1288661925417208968L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 3238082867039765681L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String mobileNumber;
@@ -27,6 +27,11 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.util.List<java.lang.String> sharedWith;
   @Deprecated public java.lang.Boolean isSuspended;
   @Deprecated public java.lang.String type;
+  @Deprecated public java.lang.String usedBy;
+  @Deprecated public java.lang.String attachedResourceId;
+  @Deprecated public java.lang.String attachedResourceNumber;
+  @Deprecated public java.lang.String externalId;
+  @Deprecated public com.fretron.Model.Updates updates;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +56,13 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param sharedWith The new value for sharedWith
    * @param isSuspended The new value for isSuspended
    * @param type The new value for type
+   * @param usedBy The new value for usedBy
+   * @param attachedResourceId The new value for attachedResourceId
+   * @param attachedResourceNumber The new value for attachedResourceNumber
+   * @param externalId The new value for externalId
+   * @param updates The new value for updates
    */
-  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type) {
+  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String externalId, com.fretron.Model.Updates updates) {
     this.imei = imei;
     this.mobileNumber = mobileNumber;
     this.manufacturerName = manufacturerName;
@@ -67,6 +77,11 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     this.sharedWith = sharedWith;
     this.isSuspended = isSuspended;
     this.type = type;
+    this.usedBy = usedBy;
+    this.attachedResourceId = attachedResourceId;
+    this.attachedResourceNumber = attachedResourceNumber;
+    this.externalId = externalId;
+    this.updates = updates;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +102,11 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 11: return sharedWith;
     case 12: return isSuspended;
     case 13: return type;
+    case 14: return usedBy;
+    case 15: return attachedResourceId;
+    case 16: return attachedResourceNumber;
+    case 17: return externalId;
+    case 18: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +129,11 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 11: sharedWith = (java.util.List<java.lang.String>)value$; break;
     case 12: isSuspended = (java.lang.Boolean)value$; break;
     case 13: type = (java.lang.String)value$; break;
+    case 14: usedBy = (java.lang.String)value$; break;
+    case 15: attachedResourceId = (java.lang.String)value$; break;
+    case 16: attachedResourceNumber = (java.lang.String)value$; break;
+    case 17: externalId = (java.lang.String)value$; break;
+    case 18: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +363,86 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'usedBy' field.
+   * @return The value of the 'usedBy' field.
+   */
+  public java.lang.String getUsedBy() {
+    return usedBy;
+  }
+
+  /**
+   * Sets the value of the 'usedBy' field.
+   * @param value the value to set.
+   */
+  public void setUsedBy(java.lang.String value) {
+    this.usedBy = value;
+  }
+
+  /**
+   * Gets the value of the 'attachedResourceId' field.
+   * @return The value of the 'attachedResourceId' field.
+   */
+  public java.lang.String getAttachedResourceId() {
+    return attachedResourceId;
+  }
+
+  /**
+   * Sets the value of the 'attachedResourceId' field.
+   * @param value the value to set.
+   */
+  public void setAttachedResourceId(java.lang.String value) {
+    this.attachedResourceId = value;
+  }
+
+  /**
+   * Gets the value of the 'attachedResourceNumber' field.
+   * @return The value of the 'attachedResourceNumber' field.
+   */
+  public java.lang.String getAttachedResourceNumber() {
+    return attachedResourceNumber;
+  }
+
+  /**
+   * Sets the value of the 'attachedResourceNumber' field.
+   * @param value the value to set.
+   */
+  public void setAttachedResourceNumber(java.lang.String value) {
+    this.attachedResourceNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
    * Creates a new Device RecordBuilder.
    * @return A new Device RecordBuilder
    */
@@ -383,6 +488,12 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.util.List<java.lang.String> sharedWith;
     private java.lang.Boolean isSuspended;
     private java.lang.String type;
+    private java.lang.String usedBy;
+    private java.lang.String attachedResourceId;
+    private java.lang.String attachedResourceNumber;
+    private java.lang.String externalId;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +562,29 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.type = data().deepCopy(fields()[13].schema(), other.type);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.usedBy)) {
+        this.usedBy = data().deepCopy(fields()[14].schema(), other.usedBy);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[16].schema(), other.attachedResourceNumber);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[17].schema(), other.externalId);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.updates)) {
+        this.updates = data().deepCopy(fields()[18].schema(), other.updates);
+        fieldSetFlags()[18] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
     }
 
     /**
@@ -515,6 +649,27 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         this.type = data().deepCopy(fields()[13].schema(), other.type);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.usedBy)) {
+        this.usedBy = data().deepCopy(fields()[14].schema(), other.usedBy);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[15].schema(), other.attachedResourceId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[16].schema(), other.attachedResourceNumber);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[17].schema(), other.externalId);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.updates)) {
+        this.updates = data().deepCopy(fields()[18].schema(), other.updates);
+        fieldSetFlags()[18] = true;
+      }
+      this.updatesBuilder = null;
     }
 
     /**
@@ -1063,6 +1218,236 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'usedBy' field.
+      * @return The value.
+      */
+    public java.lang.String getUsedBy() {
+      return usedBy;
+    }
+
+    /**
+      * Sets the value of the 'usedBy' field.
+      * @param value The value of 'usedBy'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setUsedBy(java.lang.String value) {
+      validate(fields()[14], value);
+      this.usedBy = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'usedBy' field has been set.
+      * @return True if the 'usedBy' field has been set, false otherwise.
+      */
+    public boolean hasUsedBy() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'usedBy' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearUsedBy() {
+      usedBy = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'attachedResourceId' field.
+      * @return The value.
+      */
+    public java.lang.String getAttachedResourceId() {
+      return attachedResourceId;
+    }
+
+    /**
+      * Sets the value of the 'attachedResourceId' field.
+      * @param value The value of 'attachedResourceId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setAttachedResourceId(java.lang.String value) {
+      validate(fields()[15], value);
+      this.attachedResourceId = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attachedResourceId' field has been set.
+      * @return True if the 'attachedResourceId' field has been set, false otherwise.
+      */
+    public boolean hasAttachedResourceId() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'attachedResourceId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearAttachedResourceId() {
+      attachedResourceId = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'attachedResourceNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getAttachedResourceNumber() {
+      return attachedResourceNumber;
+    }
+
+    /**
+      * Sets the value of the 'attachedResourceNumber' field.
+      * @param value The value of 'attachedResourceNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setAttachedResourceNumber(java.lang.String value) {
+      validate(fields()[16], value);
+      this.attachedResourceNumber = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'attachedResourceNumber' field has been set.
+      * @return True if the 'attachedResourceNumber' field has been set, false otherwise.
+      */
+    public boolean hasAttachedResourceNumber() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'attachedResourceNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearAttachedResourceNumber() {
+      attachedResourceNumber = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setExternalId(java.lang.String value) {
+      validate(fields()[17], value);
+      this.externalId = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[18], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[18];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Device.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public Device build() {
       try {
@@ -1081,6 +1466,15 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         record.sharedWith = fieldSetFlags()[11] ? this.sharedWith : (java.util.List<java.lang.String>) defaultValue(fields()[11]);
         record.isSuspended = fieldSetFlags()[12] ? this.isSuspended : (java.lang.Boolean) defaultValue(fields()[12]);
         record.type = fieldSetFlags()[13] ? this.type : (java.lang.String) defaultValue(fields()[13]);
+        record.usedBy = fieldSetFlags()[14] ? this.usedBy : (java.lang.String) defaultValue(fields()[14]);
+        record.attachedResourceId = fieldSetFlags()[15] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[15]);
+        record.attachedResourceNumber = fieldSetFlags()[16] ? this.attachedResourceNumber : (java.lang.String) defaultValue(fields()[16]);
+        record.externalId = fieldSetFlags()[17] ? this.externalId : (java.lang.String) defaultValue(fields()[17]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[18] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[18]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

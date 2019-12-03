@@ -1,0 +1,116 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "OrgOffice",
+  "fields": [
+    {
+      "name": "_id",
+      "type": "string"
+    },
+    {
+      "name": "geoLocation",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "double"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "contacts",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Contact"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "address",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "updatedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+       "type": [
+                 "null",
+                  "string"
+                      ],
+         "default": null
+     },
+     {
+       "name": "branchName",
+        "type": [
+                      "null",
+                       "string"
+                           ],
+         "default": null
+      },
+      {
+        "name": "regionName",
+         "type": [
+                       "null",
+                        "string"
+                            ],
+         "default": null
+       },
+       {
+         "name": "zoneName",
+          "type": [
+                              "null",
+                               "string"
+                                   ],
+         "default": null
+       },
+        {
+           "name": "updates",
+            "type": [
+                        "null",
+                       "com.fretron.Model.Updates"
+                               ],
+             "default": null
+         }
+  ]
+}

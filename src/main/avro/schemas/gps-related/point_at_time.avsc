@@ -1,0 +1,25 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "PointAtTime",
+    "fields": [
+      {
+         "name": "timestamp",
+         "type": [ "null", "long"] ,
+         "default" : null
+      },
+      {
+         "name": "latitude",
+          "type": [ "null","double"] ,
+          "default" : null
+      },
+
+      {
+           "name": "longitude",
+           "type": [ "null","double"] ,
+            "default" : null
+      }
+    ]
+  }
+]

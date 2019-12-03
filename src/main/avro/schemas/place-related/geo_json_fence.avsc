@@ -1,0 +1,48 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "GeoJsonFence",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "properties",
+      "type": [
+        "null",
+        "com.fretron.Model.Properties"
+      ],
+      "default": null
+    },
+    {
+      "name": "geometry",
+      "type": [
+        "null",
+        "com.fretron.Model.Geometry"
+      ],
+      "default": null
+    },
+    {
+      "name": "metadata",
+      "type": [
+        "null",
+        "com.fretron.Model.MetaData"
+      ],
+      "default": null
+    }
+
+  ]
+}

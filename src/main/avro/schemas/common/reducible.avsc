@@ -1,0 +1,46 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "Reducible",
+    "fields": [
+      {
+        "name": "store",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "value",
+        "type": [
+          "null",
+          "bytes"
+        ]
+      },
+      {
+        "name": "key",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "valueType",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "action",
+        "type": "string"
+      },
+      {
+        "name": "schemaTopic",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  }

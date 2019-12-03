@@ -1,0 +1,9 @@
+{
+  "type": "enum",
+  "name": "GeofenceType",
+  "namespace":"com.fretron.Model",
+  "symbols": [
+    "Proximity",
+    "Polygon"
+  ]
+}

@@ -1,0 +1,90 @@
+ {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "LBSResult",
+    "fields": [
+       {
+         "name": "mobileNumber",
+          "type": [
+              "null",
+              "string"
+            ],
+          "default": null
+      },
+      {
+         "name": "requestType",
+          "type": [
+                    "null",
+                    "string"
+                  ],
+          "default": null
+      },
+       {
+           "name": "requestId",
+                "type": [
+                          "null",
+                          "string"
+                        ],
+                "default": null
+         },
+      {
+        "name": "requestURL",
+         "type": ["null","string"],
+         "default": null
+      },
+      {
+        "name": "statusCode",
+        "type": [
+          "null",
+          "int"
+        ]
+      },
+      {
+        "name": "data",
+         "type": ["null","string"],
+         "default": null
+      },
+      {
+        "name": "error",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "requestedAt",
+        "type": [
+          "null",
+          "long"
+        ],
+        "logicalType": "timestamp-millis",
+        "default": null
+      },
+      {
+              "name": "requestTime",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+       },
+       {
+            "name": "userId",
+             "type": [
+                             "null",
+                             "string"
+                           ],
+             "default": null
+        },
+        {
+           "name": "orgId",
+            "type": [
+                      "null",
+                                   "string"
+                                 ],
+           "default": null
+        }
+    ]
+  }

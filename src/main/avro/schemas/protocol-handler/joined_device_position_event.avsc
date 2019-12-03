@@ -1,0 +1,17 @@
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "JoinedDevicePositionEvent",
+    "fields": [
+      {
+        "name": "device",
+        "type": "com.fretron.Model.DeviceSession",
+        "default": null
+      },
+      {
+        "name": "event",
+        "type": "com.fretron.Model.ProtocolEvent",
+        "default": null
+      }
+    ]
+  }

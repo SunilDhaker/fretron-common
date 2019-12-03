@@ -1,0 +1,20 @@
+package com.fretron.Extensions
+
+import com.fretron.Model.Consignment
+
+fun  Consignment.clean(){
+    this.getConsignee()?.clean()
+    this.getConsigner()?.clean()
+    this.getBillToParty()?.clean()
+    this.getContractToParty()?.clean()
+    this.getSalesOffice()?.clean()
+}
+
+fun  Consignment.deepClean(){
+     this.clean()
+     this.getBillToParty()?.deepClean()
+     this.getContractToParty()?.deepClean()
+//     this.getCustomFields()?.forEach { field->
+//         field.setAccessType(null)
+//     }
+}

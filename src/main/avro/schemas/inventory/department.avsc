@@ -1,0 +1,35 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Department",
+  "fields": [
+  {
+       "name": "uuid",
+       "type": ["null","string"],
+       "default": null
+  },
+  {
+         "name": "externalId",
+         "type": ["null","string"],
+         "default": null
+  },
+  {
+          "name": "name",
+          "type": ["null","string"],
+          "default": null
+  },
+  {
+        "name": "orgId",
+        "type": ["null","string"],
+        "default": null
+      },
+   {
+           "name": "updates",
+           "type": [
+             "null",
+             "com.fretron.Model.Updates"
+           ],
+           "default": null
+         }
+  ]
+ }

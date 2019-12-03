@@ -1,0 +1,46 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "DomainPermission",
+  "fields": [
+   {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+    },
+    {
+      "name": "entity",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+            "name":"isFilteredAccess",
+            "type": ["null","boolean"],
+            "default":null
+     },
+     {
+          "name": "filters",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     },
+     {
+         "name": "permissions",
+          "type": ["null", {"type" : "array", "items":"string"}],
+          "default":null
+     },
+     {
+        "name":"chooseAtAssignment",
+        "type": ["null","boolean"],
+        "default":null
+     }
+  ]
+}

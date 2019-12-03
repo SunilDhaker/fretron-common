@@ -1,0 +1,23 @@
+
+{
+    "type": "record",
+    "name": "VehicleImei",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "imei",
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      {
+        "name": "vehicleUUID",
+        "type": [
+          "null",
+          "string"
+        ]
+      }
+    ]
+  }
+     

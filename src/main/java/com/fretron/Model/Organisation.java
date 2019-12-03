@@ -10,14 +10,29 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6367512182619566269L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -1145728740623130240L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedPortals\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedTo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"portalType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String organisationName;
   @Deprecated public com.fretron.Model.OrganisationType type;
   @Deprecated public java.lang.String addedBy;
+  @Deprecated public java.lang.String buisnessPartnerId;
+  @Deprecated public java.lang.String parentOrgUuid;
+  @Deprecated public java.lang.String organisationAddress;
+  @Deprecated public java.lang.String billingAddress;
+  @Deprecated public com.fretron.Model.Contact contactInfo;
+  @Deprecated public java.lang.String websiteURL;
+  @Deprecated public java.lang.String gstIN;
+  @Deprecated public java.lang.String panNumber;
+  @Deprecated public java.util.List<java.lang.String> installedModules;
+  @Deprecated public java.lang.String logoThumbnailString;
+  @Deprecated public java.lang.String logoDocumentId;
+  @Deprecated public java.util.List<java.lang.String> linkedPortals;
+  @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.String linkedTo;
+  @Deprecated public java.lang.String portalType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +48,43 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param organisationName The new value for organisationName
    * @param type The new value for type
    * @param addedBy The new value for addedBy
+   * @param buisnessPartnerId The new value for buisnessPartnerId
+   * @param parentOrgUuid The new value for parentOrgUuid
+   * @param organisationAddress The new value for organisationAddress
+   * @param billingAddress The new value for billingAddress
+   * @param contactInfo The new value for contactInfo
+   * @param websiteURL The new value for websiteURL
+   * @param gstIN The new value for gstIN
+   * @param panNumber The new value for panNumber
+   * @param installedModules The new value for installedModules
+   * @param logoThumbnailString The new value for logoThumbnailString
+   * @param logoDocumentId The new value for logoDocumentId
+   * @param linkedPortals The new value for linkedPortals
+   * @param status The new value for status
+   * @param linkedTo The new value for linkedTo
+   * @param portalType The new value for portalType
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId, java.util.List<java.lang.String> linkedPortals, java.lang.String status, java.lang.String linkedTo, java.lang.String portalType) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
     this.type = type;
     this.addedBy = addedBy;
+    this.buisnessPartnerId = buisnessPartnerId;
+    this.parentOrgUuid = parentOrgUuid;
+    this.organisationAddress = organisationAddress;
+    this.billingAddress = billingAddress;
+    this.contactInfo = contactInfo;
+    this.websiteURL = websiteURL;
+    this.gstIN = gstIN;
+    this.panNumber = panNumber;
+    this.installedModules = installedModules;
+    this.logoThumbnailString = logoThumbnailString;
+    this.logoDocumentId = logoDocumentId;
+    this.linkedPortals = linkedPortals;
+    this.status = status;
+    this.linkedTo = linkedTo;
+    this.portalType = portalType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +96,21 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 2: return organisationName;
     case 3: return type;
     case 4: return addedBy;
+    case 5: return buisnessPartnerId;
+    case 6: return parentOrgUuid;
+    case 7: return organisationAddress;
+    case 8: return billingAddress;
+    case 9: return contactInfo;
+    case 10: return websiteURL;
+    case 11: return gstIN;
+    case 12: return panNumber;
+    case 13: return installedModules;
+    case 14: return logoThumbnailString;
+    case 15: return logoDocumentId;
+    case 16: return linkedPortals;
+    case 17: return status;
+    case 18: return linkedTo;
+    case 19: return portalType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +124,21 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 2: organisationName = (java.lang.String)value$; break;
     case 3: type = (com.fretron.Model.OrganisationType)value$; break;
     case 4: addedBy = (java.lang.String)value$; break;
+    case 5: buisnessPartnerId = (java.lang.String)value$; break;
+    case 6: parentOrgUuid = (java.lang.String)value$; break;
+    case 7: organisationAddress = (java.lang.String)value$; break;
+    case 8: billingAddress = (java.lang.String)value$; break;
+    case 9: contactInfo = (com.fretron.Model.Contact)value$; break;
+    case 10: websiteURL = (java.lang.String)value$; break;
+    case 11: gstIN = (java.lang.String)value$; break;
+    case 12: panNumber = (java.lang.String)value$; break;
+    case 13: installedModules = (java.util.List<java.lang.String>)value$; break;
+    case 14: logoThumbnailString = (java.lang.String)value$; break;
+    case 15: logoDocumentId = (java.lang.String)value$; break;
+    case 16: linkedPortals = (java.util.List<java.lang.String>)value$; break;
+    case 17: status = (java.lang.String)value$; break;
+    case 18: linkedTo = (java.lang.String)value$; break;
+    case 19: portalType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +224,246 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'buisnessPartnerId' field.
+   * @return The value of the 'buisnessPartnerId' field.
+   */
+  public java.lang.String getBuisnessPartnerId() {
+    return buisnessPartnerId;
+  }
+
+  /**
+   * Sets the value of the 'buisnessPartnerId' field.
+   * @param value the value to set.
+   */
+  public void setBuisnessPartnerId(java.lang.String value) {
+    this.buisnessPartnerId = value;
+  }
+
+  /**
+   * Gets the value of the 'parentOrgUuid' field.
+   * @return The value of the 'parentOrgUuid' field.
+   */
+  public java.lang.String getParentOrgUuid() {
+    return parentOrgUuid;
+  }
+
+  /**
+   * Sets the value of the 'parentOrgUuid' field.
+   * @param value the value to set.
+   */
+  public void setParentOrgUuid(java.lang.String value) {
+    this.parentOrgUuid = value;
+  }
+
+  /**
+   * Gets the value of the 'organisationAddress' field.
+   * @return The value of the 'organisationAddress' field.
+   */
+  public java.lang.String getOrganisationAddress() {
+    return organisationAddress;
+  }
+
+  /**
+   * Sets the value of the 'organisationAddress' field.
+   * @param value the value to set.
+   */
+  public void setOrganisationAddress(java.lang.String value) {
+    this.organisationAddress = value;
+  }
+
+  /**
+   * Gets the value of the 'billingAddress' field.
+   * @return The value of the 'billingAddress' field.
+   */
+  public java.lang.String getBillingAddress() {
+    return billingAddress;
+  }
+
+  /**
+   * Sets the value of the 'billingAddress' field.
+   * @param value the value to set.
+   */
+  public void setBillingAddress(java.lang.String value) {
+    this.billingAddress = value;
+  }
+
+  /**
+   * Gets the value of the 'contactInfo' field.
+   * @return The value of the 'contactInfo' field.
+   */
+  public com.fretron.Model.Contact getContactInfo() {
+    return contactInfo;
+  }
+
+  /**
+   * Sets the value of the 'contactInfo' field.
+   * @param value the value to set.
+   */
+  public void setContactInfo(com.fretron.Model.Contact value) {
+    this.contactInfo = value;
+  }
+
+  /**
+   * Gets the value of the 'websiteURL' field.
+   * @return The value of the 'websiteURL' field.
+   */
+  public java.lang.String getWebsiteURL() {
+    return websiteURL;
+  }
+
+  /**
+   * Sets the value of the 'websiteURL' field.
+   * @param value the value to set.
+   */
+  public void setWebsiteURL(java.lang.String value) {
+    this.websiteURL = value;
+  }
+
+  /**
+   * Gets the value of the 'gstIN' field.
+   * @return The value of the 'gstIN' field.
+   */
+  public java.lang.String getGstIN() {
+    return gstIN;
+  }
+
+  /**
+   * Sets the value of the 'gstIN' field.
+   * @param value the value to set.
+   */
+  public void setGstIN(java.lang.String value) {
+    this.gstIN = value;
+  }
+
+  /**
+   * Gets the value of the 'panNumber' field.
+   * @return The value of the 'panNumber' field.
+   */
+  public java.lang.String getPanNumber() {
+    return panNumber;
+  }
+
+  /**
+   * Sets the value of the 'panNumber' field.
+   * @param value the value to set.
+   */
+  public void setPanNumber(java.lang.String value) {
+    this.panNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'installedModules' field.
+   * @return The value of the 'installedModules' field.
+   */
+  public java.util.List<java.lang.String> getInstalledModules() {
+    return installedModules;
+  }
+
+  /**
+   * Sets the value of the 'installedModules' field.
+   * @param value the value to set.
+   */
+  public void setInstalledModules(java.util.List<java.lang.String> value) {
+    this.installedModules = value;
+  }
+
+  /**
+   * Gets the value of the 'logoThumbnailString' field.
+   * @return The value of the 'logoThumbnailString' field.
+   */
+  public java.lang.String getLogoThumbnailString() {
+    return logoThumbnailString;
+  }
+
+  /**
+   * Sets the value of the 'logoThumbnailString' field.
+   * @param value the value to set.
+   */
+  public void setLogoThumbnailString(java.lang.String value) {
+    this.logoThumbnailString = value;
+  }
+
+  /**
+   * Gets the value of the 'logoDocumentId' field.
+   * @return The value of the 'logoDocumentId' field.
+   */
+  public java.lang.String getLogoDocumentId() {
+    return logoDocumentId;
+  }
+
+  /**
+   * Sets the value of the 'logoDocumentId' field.
+   * @param value the value to set.
+   */
+  public void setLogoDocumentId(java.lang.String value) {
+    this.logoDocumentId = value;
+  }
+
+  /**
+   * Gets the value of the 'linkedPortals' field.
+   * @return The value of the 'linkedPortals' field.
+   */
+  public java.util.List<java.lang.String> getLinkedPortals() {
+    return linkedPortals;
+  }
+
+  /**
+   * Sets the value of the 'linkedPortals' field.
+   * @param value the value to set.
+   */
+  public void setLinkedPortals(java.util.List<java.lang.String> value) {
+    this.linkedPortals = value;
+  }
+
+  /**
+   * Gets the value of the 'status' field.
+   * @return The value of the 'status' field.
+   */
+  public java.lang.String getStatus() {
+    return status;
+  }
+
+  /**
+   * Sets the value of the 'status' field.
+   * @param value the value to set.
+   */
+  public void setStatus(java.lang.String value) {
+    this.status = value;
+  }
+
+  /**
+   * Gets the value of the 'linkedTo' field.
+   * @return The value of the 'linkedTo' field.
+   */
+  public java.lang.String getLinkedTo() {
+    return linkedTo;
+  }
+
+  /**
+   * Sets the value of the 'linkedTo' field.
+   * @param value the value to set.
+   */
+  public void setLinkedTo(java.lang.String value) {
+    this.linkedTo = value;
+  }
+
+  /**
+   * Gets the value of the 'portalType' field.
+   * @return The value of the 'portalType' field.
+   */
+  public java.lang.String getPortalType() {
+    return portalType;
+  }
+
+  /**
+   * Sets the value of the 'portalType' field.
+   * @param value the value to set.
+   */
+  public void setPortalType(java.lang.String value) {
+    this.portalType = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -185,6 +500,22 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String organisationName;
     private com.fretron.Model.OrganisationType type;
     private java.lang.String addedBy;
+    private java.lang.String buisnessPartnerId;
+    private java.lang.String parentOrgUuid;
+    private java.lang.String organisationAddress;
+    private java.lang.String billingAddress;
+    private com.fretron.Model.Contact contactInfo;
+    private com.fretron.Model.Contact.Builder contactInfoBuilder;
+    private java.lang.String websiteURL;
+    private java.lang.String gstIN;
+    private java.lang.String panNumber;
+    private java.util.List<java.lang.String> installedModules;
+    private java.lang.String logoThumbnailString;
+    private java.lang.String logoDocumentId;
+    private java.util.List<java.lang.String> linkedPortals;
+    private java.lang.String status;
+    private java.lang.String linkedTo;
+    private java.lang.String portalType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +548,69 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.addedBy = data().deepCopy(fields()[4].schema(), other.addedBy);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.buisnessPartnerId)) {
+        this.buisnessPartnerId = data().deepCopy(fields()[5].schema(), other.buisnessPartnerId);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.parentOrgUuid)) {
+        this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.organisationAddress)) {
+        this.organisationAddress = data().deepCopy(fields()[7].schema(), other.organisationAddress);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.billingAddress)) {
+        this.billingAddress = data().deepCopy(fields()[8].schema(), other.billingAddress);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.contactInfo)) {
+        this.contactInfo = data().deepCopy(fields()[9].schema(), other.contactInfo);
+        fieldSetFlags()[9] = true;
+      }
+      if (other.hasContactInfoBuilder()) {
+        this.contactInfoBuilder = com.fretron.Model.Contact.newBuilder(other.getContactInfoBuilder());
+      }
+      if (isValidValue(fields()[10], other.websiteURL)) {
+        this.websiteURL = data().deepCopy(fields()[10].schema(), other.websiteURL);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.gstIN)) {
+        this.gstIN = data().deepCopy(fields()[11].schema(), other.gstIN);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.panNumber)) {
+        this.panNumber = data().deepCopy(fields()[12].schema(), other.panNumber);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.installedModules)) {
+        this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.logoThumbnailString)) {
+        this.logoThumbnailString = data().deepCopy(fields()[14].schema(), other.logoThumbnailString);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.logoDocumentId)) {
+        this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.linkedPortals)) {
+        this.linkedPortals = data().deepCopy(fields()[16].schema(), other.linkedPortals);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.status)) {
+        this.status = data().deepCopy(fields()[17].schema(), other.status);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.linkedTo)) {
+        this.linkedTo = data().deepCopy(fields()[18].schema(), other.linkedTo);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.portalType)) {
+        this.portalType = data().deepCopy(fields()[19].schema(), other.portalType);
+        fieldSetFlags()[19] = true;
+      }
     }
 
     /**
@@ -244,6 +638,67 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[4], other.addedBy)) {
         this.addedBy = data().deepCopy(fields()[4].schema(), other.addedBy);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.buisnessPartnerId)) {
+        this.buisnessPartnerId = data().deepCopy(fields()[5].schema(), other.buisnessPartnerId);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.parentOrgUuid)) {
+        this.parentOrgUuid = data().deepCopy(fields()[6].schema(), other.parentOrgUuid);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.organisationAddress)) {
+        this.organisationAddress = data().deepCopy(fields()[7].schema(), other.organisationAddress);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.billingAddress)) {
+        this.billingAddress = data().deepCopy(fields()[8].schema(), other.billingAddress);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.contactInfo)) {
+        this.contactInfo = data().deepCopy(fields()[9].schema(), other.contactInfo);
+        fieldSetFlags()[9] = true;
+      }
+      this.contactInfoBuilder = null;
+      if (isValidValue(fields()[10], other.websiteURL)) {
+        this.websiteURL = data().deepCopy(fields()[10].schema(), other.websiteURL);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.gstIN)) {
+        this.gstIN = data().deepCopy(fields()[11].schema(), other.gstIN);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.panNumber)) {
+        this.panNumber = data().deepCopy(fields()[12].schema(), other.panNumber);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.installedModules)) {
+        this.installedModules = data().deepCopy(fields()[13].schema(), other.installedModules);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.logoThumbnailString)) {
+        this.logoThumbnailString = data().deepCopy(fields()[14].schema(), other.logoThumbnailString);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.logoDocumentId)) {
+        this.logoDocumentId = data().deepCopy(fields()[15].schema(), other.logoDocumentId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.linkedPortals)) {
+        this.linkedPortals = data().deepCopy(fields()[16].schema(), other.linkedPortals);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.status)) {
+        this.status = data().deepCopy(fields()[17].schema(), other.status);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.linkedTo)) {
+        this.linkedTo = data().deepCopy(fields()[18].schema(), other.linkedTo);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.portalType)) {
+        this.portalType = data().deepCopy(fields()[19].schema(), other.portalType);
+        fieldSetFlags()[19] = true;
       }
     }
 
@@ -442,6 +897,626 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'buisnessPartnerId' field.
+      * @return The value.
+      */
+    public java.lang.String getBuisnessPartnerId() {
+      return buisnessPartnerId;
+    }
+
+    /**
+      * Sets the value of the 'buisnessPartnerId' field.
+      * @param value The value of 'buisnessPartnerId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setBuisnessPartnerId(java.lang.String value) {
+      validate(fields()[5], value);
+      this.buisnessPartnerId = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'buisnessPartnerId' field has been set.
+      * @return True if the 'buisnessPartnerId' field has been set, false otherwise.
+      */
+    public boolean hasBuisnessPartnerId() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'buisnessPartnerId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearBuisnessPartnerId() {
+      buisnessPartnerId = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'parentOrgUuid' field.
+      * @return The value.
+      */
+    public java.lang.String getParentOrgUuid() {
+      return parentOrgUuid;
+    }
+
+    /**
+      * Sets the value of the 'parentOrgUuid' field.
+      * @param value The value of 'parentOrgUuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setParentOrgUuid(java.lang.String value) {
+      validate(fields()[6], value);
+      this.parentOrgUuid = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'parentOrgUuid' field has been set.
+      * @return True if the 'parentOrgUuid' field has been set, false otherwise.
+      */
+    public boolean hasParentOrgUuid() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'parentOrgUuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearParentOrgUuid() {
+      parentOrgUuid = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'organisationAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getOrganisationAddress() {
+      return organisationAddress;
+    }
+
+    /**
+      * Sets the value of the 'organisationAddress' field.
+      * @param value The value of 'organisationAddress'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setOrganisationAddress(java.lang.String value) {
+      validate(fields()[7], value);
+      this.organisationAddress = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'organisationAddress' field has been set.
+      * @return True if the 'organisationAddress' field has been set, false otherwise.
+      */
+    public boolean hasOrganisationAddress() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'organisationAddress' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearOrganisationAddress() {
+      organisationAddress = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'billingAddress' field.
+      * @return The value.
+      */
+    public java.lang.String getBillingAddress() {
+      return billingAddress;
+    }
+
+    /**
+      * Sets the value of the 'billingAddress' field.
+      * @param value The value of 'billingAddress'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setBillingAddress(java.lang.String value) {
+      validate(fields()[8], value);
+      this.billingAddress = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'billingAddress' field has been set.
+      * @return True if the 'billingAddress' field has been set, false otherwise.
+      */
+    public boolean hasBillingAddress() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'billingAddress' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearBillingAddress() {
+      billingAddress = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'contactInfo' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Contact getContactInfo() {
+      return contactInfo;
+    }
+
+    /**
+      * Sets the value of the 'contactInfo' field.
+      * @param value The value of 'contactInfo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setContactInfo(com.fretron.Model.Contact value) {
+      validate(fields()[9], value);
+      this.contactInfoBuilder = null;
+      this.contactInfo = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'contactInfo' field has been set.
+      * @return True if the 'contactInfo' field has been set, false otherwise.
+      */
+    public boolean hasContactInfo() {
+      return fieldSetFlags()[9];
+    }
+
+    /**
+     * Gets the Builder instance for the 'contactInfo' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contact.Builder getContactInfoBuilder() {
+      if (contactInfoBuilder == null) {
+        if (hasContactInfo()) {
+          setContactInfoBuilder(com.fretron.Model.Contact.newBuilder(contactInfo));
+        } else {
+          setContactInfoBuilder(com.fretron.Model.Contact.newBuilder());
+        }
+      }
+      return contactInfoBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'contactInfo' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Organisation.Builder setContactInfoBuilder(com.fretron.Model.Contact.Builder value) {
+      clearContactInfo();
+      contactInfoBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'contactInfo' field has an active Builder instance
+     * @return True if the 'contactInfo' field has an active Builder instance
+     */
+    public boolean hasContactInfoBuilder() {
+      return contactInfoBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'contactInfo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearContactInfo() {
+      contactInfo = null;
+      contactInfoBuilder = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'websiteURL' field.
+      * @return The value.
+      */
+    public java.lang.String getWebsiteURL() {
+      return websiteURL;
+    }
+
+    /**
+      * Sets the value of the 'websiteURL' field.
+      * @param value The value of 'websiteURL'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setWebsiteURL(java.lang.String value) {
+      validate(fields()[10], value);
+      this.websiteURL = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'websiteURL' field has been set.
+      * @return True if the 'websiteURL' field has been set, false otherwise.
+      */
+    public boolean hasWebsiteURL() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'websiteURL' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearWebsiteURL() {
+      websiteURL = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'gstIN' field.
+      * @return The value.
+      */
+    public java.lang.String getGstIN() {
+      return gstIN;
+    }
+
+    /**
+      * Sets the value of the 'gstIN' field.
+      * @param value The value of 'gstIN'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setGstIN(java.lang.String value) {
+      validate(fields()[11], value);
+      this.gstIN = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'gstIN' field has been set.
+      * @return True if the 'gstIN' field has been set, false otherwise.
+      */
+    public boolean hasGstIN() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'gstIN' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearGstIN() {
+      gstIN = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'panNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getPanNumber() {
+      return panNumber;
+    }
+
+    /**
+      * Sets the value of the 'panNumber' field.
+      * @param value The value of 'panNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setPanNumber(java.lang.String value) {
+      validate(fields()[12], value);
+      this.panNumber = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'panNumber' field has been set.
+      * @return True if the 'panNumber' field has been set, false otherwise.
+      */
+    public boolean hasPanNumber() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'panNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearPanNumber() {
+      panNumber = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'installedModules' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getInstalledModules() {
+      return installedModules;
+    }
+
+    /**
+      * Sets the value of the 'installedModules' field.
+      * @param value The value of 'installedModules'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setInstalledModules(java.util.List<java.lang.String> value) {
+      validate(fields()[13], value);
+      this.installedModules = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'installedModules' field has been set.
+      * @return True if the 'installedModules' field has been set, false otherwise.
+      */
+    public boolean hasInstalledModules() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'installedModules' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearInstalledModules() {
+      installedModules = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'logoThumbnailString' field.
+      * @return The value.
+      */
+    public java.lang.String getLogoThumbnailString() {
+      return logoThumbnailString;
+    }
+
+    /**
+      * Sets the value of the 'logoThumbnailString' field.
+      * @param value The value of 'logoThumbnailString'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLogoThumbnailString(java.lang.String value) {
+      validate(fields()[14], value);
+      this.logoThumbnailString = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'logoThumbnailString' field has been set.
+      * @return True if the 'logoThumbnailString' field has been set, false otherwise.
+      */
+    public boolean hasLogoThumbnailString() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'logoThumbnailString' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLogoThumbnailString() {
+      logoThumbnailString = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'logoDocumentId' field.
+      * @return The value.
+      */
+    public java.lang.String getLogoDocumentId() {
+      return logoDocumentId;
+    }
+
+    /**
+      * Sets the value of the 'logoDocumentId' field.
+      * @param value The value of 'logoDocumentId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLogoDocumentId(java.lang.String value) {
+      validate(fields()[15], value);
+      this.logoDocumentId = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'logoDocumentId' field has been set.
+      * @return True if the 'logoDocumentId' field has been set, false otherwise.
+      */
+    public boolean hasLogoDocumentId() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'logoDocumentId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLogoDocumentId() {
+      logoDocumentId = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'linkedPortals' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getLinkedPortals() {
+      return linkedPortals;
+    }
+
+    /**
+      * Sets the value of the 'linkedPortals' field.
+      * @param value The value of 'linkedPortals'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLinkedPortals(java.util.List<java.lang.String> value) {
+      validate(fields()[16], value);
+      this.linkedPortals = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'linkedPortals' field has been set.
+      * @return True if the 'linkedPortals' field has been set, false otherwise.
+      */
+    public boolean hasLinkedPortals() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'linkedPortals' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLinkedPortals() {
+      linkedPortals = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'status' field.
+      * @return The value.
+      */
+    public java.lang.String getStatus() {
+      return status;
+    }
+
+    /**
+      * Sets the value of the 'status' field.
+      * @param value The value of 'status'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setStatus(java.lang.String value) {
+      validate(fields()[17], value);
+      this.status = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'status' field has been set.
+      * @return True if the 'status' field has been set, false otherwise.
+      */
+    public boolean hasStatus() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'status' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearStatus() {
+      status = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'linkedTo' field.
+      * @return The value.
+      */
+    public java.lang.String getLinkedTo() {
+      return linkedTo;
+    }
+
+    /**
+      * Sets the value of the 'linkedTo' field.
+      * @param value The value of 'linkedTo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setLinkedTo(java.lang.String value) {
+      validate(fields()[18], value);
+      this.linkedTo = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'linkedTo' field has been set.
+      * @return True if the 'linkedTo' field has been set, false otherwise.
+      */
+    public boolean hasLinkedTo() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'linkedTo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearLinkedTo() {
+      linkedTo = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'portalType' field.
+      * @return The value.
+      */
+    public java.lang.String getPortalType() {
+      return portalType;
+    }
+
+    /**
+      * Sets the value of the 'portalType' field.
+      * @param value The value of 'portalType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setPortalType(java.lang.String value) {
+      validate(fields()[19], value);
+      this.portalType = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'portalType' field has been set.
+      * @return True if the 'portalType' field has been set, false otherwise.
+      */
+    public boolean hasPortalType() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'portalType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearPortalType() {
+      portalType = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -451,6 +1526,25 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.organisationName = fieldSetFlags()[2] ? this.organisationName : (java.lang.String) defaultValue(fields()[2]);
         record.type = fieldSetFlags()[3] ? this.type : (com.fretron.Model.OrganisationType) defaultValue(fields()[3]);
         record.addedBy = fieldSetFlags()[4] ? this.addedBy : (java.lang.String) defaultValue(fields()[4]);
+        record.buisnessPartnerId = fieldSetFlags()[5] ? this.buisnessPartnerId : (java.lang.String) defaultValue(fields()[5]);
+        record.parentOrgUuid = fieldSetFlags()[6] ? this.parentOrgUuid : (java.lang.String) defaultValue(fields()[6]);
+        record.organisationAddress = fieldSetFlags()[7] ? this.organisationAddress : (java.lang.String) defaultValue(fields()[7]);
+        record.billingAddress = fieldSetFlags()[8] ? this.billingAddress : (java.lang.String) defaultValue(fields()[8]);
+        if (contactInfoBuilder != null) {
+          record.contactInfo = this.contactInfoBuilder.build();
+        } else {
+          record.contactInfo = fieldSetFlags()[9] ? this.contactInfo : (com.fretron.Model.Contact) defaultValue(fields()[9]);
+        }
+        record.websiteURL = fieldSetFlags()[10] ? this.websiteURL : (java.lang.String) defaultValue(fields()[10]);
+        record.gstIN = fieldSetFlags()[11] ? this.gstIN : (java.lang.String) defaultValue(fields()[11]);
+        record.panNumber = fieldSetFlags()[12] ? this.panNumber : (java.lang.String) defaultValue(fields()[12]);
+        record.installedModules = fieldSetFlags()[13] ? this.installedModules : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.logoThumbnailString = fieldSetFlags()[14] ? this.logoThumbnailString : (java.lang.String) defaultValue(fields()[14]);
+        record.logoDocumentId = fieldSetFlags()[15] ? this.logoDocumentId : (java.lang.String) defaultValue(fields()[15]);
+        record.linkedPortals = fieldSetFlags()[16] ? this.linkedPortals : (java.util.List<java.lang.String>) defaultValue(fields()[16]);
+        record.status = fieldSetFlags()[17] ? this.status : (java.lang.String) defaultValue(fields()[17]);
+        record.linkedTo = fieldSetFlags()[18] ? this.linkedTo : (java.lang.String) defaultValue(fields()[18]);
+        record.portalType = fieldSetFlags()[19] ? this.portalType : (java.lang.String) defaultValue(fields()[19]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

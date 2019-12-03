@@ -1,0 +1,9 @@
+{
+  "type": "enum",
+  "name": "AlertActionType",
+  "namespace": "com.fretron.Model",
+  "symbols": [
+    "SMS",
+    "EMAIL"
+  ]
+}

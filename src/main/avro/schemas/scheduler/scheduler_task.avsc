@@ -1,0 +1,100 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "SchedulerTask",
+  "fields": [
+    {
+          "name": "taskId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+    },
+    {
+      "name": "resourceId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "resourceType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "action",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+          "name": "actionData",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     },
+    {
+      "name": "scheduleTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "isAutoSchedulable",
+       "type": [
+              "null",
+              "boolean"
+            ],
+      "default": null
+    },
+    {
+       "name": "scheduleType",
+        "type": [
+            "null",
+            "string"
+          ],
+        "default": null
+    },
+    {
+      "name": "timeOfDay",
+      "type": [
+            "null",
+            "long"
+          ],
+          "default": null
+     },
+     {
+          "name": "weekDays",
+           "type": [
+                          "null",
+                           {
+                             "type": "array",
+                             "items": "int"
+                           }
+                         ],
+           "default":null
+     },
+     {
+        "name": "interval",
+         "type": [
+             "null",
+             "long"
+           ],
+         "default": null
+     }
+
+  ]
+}
+

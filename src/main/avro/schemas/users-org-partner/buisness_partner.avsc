@@ -1,0 +1,162 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "BuisnessPartner",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "fretronId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "geoFence",
+      "type": [
+        "null",
+        "com.fretron.Model.GeoJsonFence"
+      ],
+      "default": null
+    },
+    {
+      "name": "places",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Place"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "contacts",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Contact"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "location",
+      "type": [
+        "null",
+        "com.fretron.Model.Location"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "isPortalEnabled",
+      "type": "boolean",
+      "default": false
+    },
+    {
+          "name": "address",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+            {
+              "name": "externalId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+                     "name": "updates",
+                     "type": [
+                       "null",
+                       "com.fretron.Model.Updates"
+                     ],
+                     "default": null
+                   },
+                     {
+                         "name": "status",
+                         "type": [
+                           "null",
+                           "string"
+                         ],
+                         "default": null
+                       },
+                       {
+                             "name": "panNumber",
+                             "type": [
+                               "null",
+                               "string"
+                             ],
+                             "default": null
+                           },
+                            {
+                                                "name": "group",
+                                                "type": [
+                                                  "null",
+                                                  "com.fretron.Model.PartnerGroup"
+                                                ],
+                                                "default": null
+                                              },
+                                              {
+                                                      "name": "route",
+                                                       "type": [
+                                                        "null",
+                                                       {
+                                                        "type": "array",
+                                                        "items": "string"
+                                                                  }
+                                                                  ],
+                                                         "default": null
+                                               },
+                                                {
+                                                               "name": "customFields",
+                                                               "type": [
+                                                                 "null",
+                                                                 {
+                                                                   "type": "array",
+                                                                   "items": "com.fretron.Model.CustomFields"
+                                                                 }
+                                                               ],
+                                                               "default": null
+                                                           }
+
+
+  ]
+}

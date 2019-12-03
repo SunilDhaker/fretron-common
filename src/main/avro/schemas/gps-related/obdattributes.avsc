@@ -1,0 +1,105 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "OBDAttributes",
+    "fields": [
+      {
+         "name": "numberOfDTC",
+         "type": [ "null", "int"],
+         "default" : null
+      },
+      {
+          "name": "engineLoad",
+          "type": [ "null", "double"],
+           "default" : null
+      },
+      {
+         "name": "coolantTemperature",
+         "type": [ "null", "double"],
+         "default" : null
+      },
+      {
+           "name": "fuelPressure",
+          "type": [ "null", "double"],
+          "default" : null
+      },
+      {
+        "name": "engineRPM",
+        "type": [ "null", "double"],
+         "default" : null
+     },
+     {
+         "name": "intakeTemp",
+          "type": [ "null", "double"],
+          "default" : null
+     },
+     {
+         "name": "vehicleSpeed",
+         "type": [ "null", "double"],
+         "default" : null
+     },
+     {
+        "name": "throttlePosition",
+        "type": [ "null", "double"],
+         "default" : null
+     },
+      {
+        "name": "runTimeSinceEngineStart",
+        "type": [ "null", "long"],
+        "default" : null
+      },
+       {
+            "name": "fuelLevel",
+             "type": [ "null", "double"],
+              "default" : null
+        },
+       {
+           "name": "totalOdometer",
+            "type": [ "null", "double"],
+             "default" : null
+       },
+       {
+           "name": "distanceTravelledMILOn",
+            "type": [ "null", "double"],
+             "default" : null
+       },
+       {
+             "name": "timeRunWithMILOn",
+             "type": [ "null", "long"],
+              "default" : null
+       },
+       {
+          "name": "engineOilTemp",
+           "type": [ "null", "double"],
+           "default" : null
+       },
+       {
+          "name": "engineFuelRate",
+          "type": [ "null", "double"],
+          "default" : null
+       },
+       {
+         "name": "movement",
+          "type": [ "null", "int"],
+           "default" : null
+        },
+        {
+           "name": "axisX",
+           "type": [ "null", "double"],
+           "default" : null
+        },
+        {
+          "name": "axisY",
+          "type": [ "null", "double"],
+          "default" : null
+       },
+       {
+           "name": "axisZ",
+           "type": [ "null", "double"],
+           "default" : null
+        }
+
+    ]
+  }
+]

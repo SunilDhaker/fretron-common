@@ -1,0 +1,60 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Contact",
+  "fields": [
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "mobileNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "address",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "emails",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "mobileNumbers",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+        {
+          "name": "type",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
+  ]
+}

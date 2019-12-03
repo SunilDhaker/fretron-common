@@ -1,0 +1,153 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Attributes",
+  "fields": [
+    {
+      "name": "battery",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "alarm",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ip",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "distance",
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "totalDistance",
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "isCharge",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "chargingValue",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "ignition",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "ignitionValue",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "isOilElectricityConnected",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "oilElectricityValue",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "isGpsTrackingOn",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "acc",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "satellitesGpsQualityInfo",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "uploadReason",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "uploadMode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "signalStrength",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "commandResult",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "serialNumber",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+       "name": "sleepMode",
+                 "type": [ "null", "string"],
+                  "default" : null
+   },
+   {
+                  "name": "gpsStatus",
+                   "type": [ "null", "string"],
+                   "default" : null
+   }
+  ]
+}

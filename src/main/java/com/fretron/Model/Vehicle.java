@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Vehicle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4446914417232873791L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"groupsExtended\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrganisationGroup\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = -4204650677623173306L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Vehicle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"customerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleModel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleMake\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vtsDeviceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"associatedWith\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"driverId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isTrackingEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"groupsExtended\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrganisationGroup\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"groupType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"truckLength\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"loadCapacity\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"floorType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"kmDriven\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageLoaded\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"mileageEmpty\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String customerId;
   @Deprecated public java.lang.String vehicleType;
@@ -32,6 +32,16 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.Boolean isTrackingEnabled;
   @Deprecated public java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended;
+  @Deprecated public java.lang.Long truckLength;
+  @Deprecated public java.lang.Long loadCapacity;
+  @Deprecated public java.lang.String floorType;
+  @Deprecated public java.lang.Double kmDriven;
+  @Deprecated public java.lang.Double mileageLoaded;
+  @Deprecated public java.lang.Double mileageEmpty;
+  @Deprecated public java.lang.String category;
+  @Deprecated public java.lang.String externalId;
+  @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public com.fretron.Model.OrgOffice branch;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +71,18 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param source The new value for source
    * @param isTrackingEnabled The new value for isTrackingEnabled
    * @param groupsExtended The new value for groupsExtended
+   * @param truckLength The new value for truckLength
+   * @param loadCapacity The new value for loadCapacity
+   * @param floorType The new value for floorType
+   * @param kmDriven The new value for kmDriven
+   * @param mileageLoaded The new value for mileageLoaded
+   * @param mileageEmpty The new value for mileageEmpty
+   * @param category The new value for category
+   * @param externalId The new value for externalId
+   * @param updates The new value for updates
+   * @param branch The new value for branch
    */
-  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled, java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended) {
+  public Vehicle(java.lang.String customerId, java.lang.String vehicleType, java.lang.String vehicleModel, java.lang.String vehicleMake, java.lang.String vtsDeviceId, java.lang.String vehicleRegistrationNumber, java.lang.String uuid, java.lang.String associatedWith, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.util.List<java.lang.String> sharedWith, java.lang.String driverId, java.util.List<java.lang.String> attachedDocs, java.lang.String source, java.lang.Boolean isTrackingEnabled, java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended, java.lang.Long truckLength, java.lang.Long loadCapacity, java.lang.String floorType, java.lang.Double kmDriven, java.lang.Double mileageLoaded, java.lang.Double mileageEmpty, java.lang.String category, java.lang.String externalId, com.fretron.Model.Updates updates, com.fretron.Model.OrgOffice branch) {
     this.customerId = customerId;
     this.vehicleType = vehicleType;
     this.vehicleModel = vehicleModel;
@@ -82,6 +102,16 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     this.source = source;
     this.isTrackingEnabled = isTrackingEnabled;
     this.groupsExtended = groupsExtended;
+    this.truckLength = truckLength;
+    this.loadCapacity = loadCapacity;
+    this.floorType = floorType;
+    this.kmDriven = kmDriven;
+    this.mileageLoaded = mileageLoaded;
+    this.mileageEmpty = mileageEmpty;
+    this.category = category;
+    this.externalId = externalId;
+    this.updates = updates;
+    this.branch = branch;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +137,16 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 16: return source;
     case 17: return isTrackingEnabled;
     case 18: return groupsExtended;
+    case 19: return truckLength;
+    case 20: return loadCapacity;
+    case 21: return floorType;
+    case 22: return kmDriven;
+    case 23: return mileageLoaded;
+    case 24: return mileageEmpty;
+    case 25: return category;
+    case 26: return externalId;
+    case 27: return updates;
+    case 28: return branch;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +174,16 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     case 16: source = (java.lang.String)value$; break;
     case 17: isTrackingEnabled = (java.lang.Boolean)value$; break;
     case 18: groupsExtended = (java.util.List<com.fretron.Model.OrganisationGroup>)value$; break;
+    case 19: truckLength = (java.lang.Long)value$; break;
+    case 20: loadCapacity = (java.lang.Long)value$; break;
+    case 21: floorType = (java.lang.String)value$; break;
+    case 22: kmDriven = (java.lang.Double)value$; break;
+    case 23: mileageLoaded = (java.lang.Double)value$; break;
+    case 24: mileageEmpty = (java.lang.Double)value$; break;
+    case 25: category = (java.lang.String)value$; break;
+    case 26: externalId = (java.lang.String)value$; break;
+    case 27: updates = (com.fretron.Model.Updates)value$; break;
+    case 28: branch = (com.fretron.Model.OrgOffice)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +493,166 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'truckLength' field.
+   * @return The value of the 'truckLength' field.
+   */
+  public java.lang.Long getTruckLength() {
+    return truckLength;
+  }
+
+  /**
+   * Sets the value of the 'truckLength' field.
+   * @param value the value to set.
+   */
+  public void setTruckLength(java.lang.Long value) {
+    this.truckLength = value;
+  }
+
+  /**
+   * Gets the value of the 'loadCapacity' field.
+   * @return The value of the 'loadCapacity' field.
+   */
+  public java.lang.Long getLoadCapacity() {
+    return loadCapacity;
+  }
+
+  /**
+   * Sets the value of the 'loadCapacity' field.
+   * @param value the value to set.
+   */
+  public void setLoadCapacity(java.lang.Long value) {
+    this.loadCapacity = value;
+  }
+
+  /**
+   * Gets the value of the 'floorType' field.
+   * @return The value of the 'floorType' field.
+   */
+  public java.lang.String getFloorType() {
+    return floorType;
+  }
+
+  /**
+   * Sets the value of the 'floorType' field.
+   * @param value the value to set.
+   */
+  public void setFloorType(java.lang.String value) {
+    this.floorType = value;
+  }
+
+  /**
+   * Gets the value of the 'kmDriven' field.
+   * @return The value of the 'kmDriven' field.
+   */
+  public java.lang.Double getKmDriven() {
+    return kmDriven;
+  }
+
+  /**
+   * Sets the value of the 'kmDriven' field.
+   * @param value the value to set.
+   */
+  public void setKmDriven(java.lang.Double value) {
+    this.kmDriven = value;
+  }
+
+  /**
+   * Gets the value of the 'mileageLoaded' field.
+   * @return The value of the 'mileageLoaded' field.
+   */
+  public java.lang.Double getMileageLoaded() {
+    return mileageLoaded;
+  }
+
+  /**
+   * Sets the value of the 'mileageLoaded' field.
+   * @param value the value to set.
+   */
+  public void setMileageLoaded(java.lang.Double value) {
+    this.mileageLoaded = value;
+  }
+
+  /**
+   * Gets the value of the 'mileageEmpty' field.
+   * @return The value of the 'mileageEmpty' field.
+   */
+  public java.lang.Double getMileageEmpty() {
+    return mileageEmpty;
+  }
+
+  /**
+   * Sets the value of the 'mileageEmpty' field.
+   * @param value the value to set.
+   */
+  public void setMileageEmpty(java.lang.Double value) {
+    this.mileageEmpty = value;
+  }
+
+  /**
+   * Gets the value of the 'category' field.
+   * @return The value of the 'category' field.
+   */
+  public java.lang.String getCategory() {
+    return category;
+  }
+
+  /**
+   * Sets the value of the 'category' field.
+   * @param value the value to set.
+   */
+  public void setCategory(java.lang.String value) {
+    this.category = value;
+  }
+
+  /**
+   * Gets the value of the 'externalId' field.
+   * @return The value of the 'externalId' field.
+   */
+  public java.lang.String getExternalId() {
+    return externalId;
+  }
+
+  /**
+   * Sets the value of the 'externalId' field.
+   * @param value the value to set.
+   */
+  public void setExternalId(java.lang.String value) {
+    this.externalId = value;
+  }
+
+  /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
+   * Gets the value of the 'branch' field.
+   * @return The value of the 'branch' field.
+   */
+  public com.fretron.Model.OrgOffice getBranch() {
+    return branch;
+  }
+
+  /**
+   * Sets the value of the 'branch' field.
+   * @param value the value to set.
+   */
+  public void setBranch(com.fretron.Model.OrgOffice value) {
+    this.branch = value;
+  }
+
+  /**
    * Creates a new Vehicle RecordBuilder.
    * @return A new Vehicle RecordBuilder
    */
@@ -493,6 +703,18 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String source;
     private java.lang.Boolean isTrackingEnabled;
     private java.util.List<com.fretron.Model.OrganisationGroup> groupsExtended;
+    private java.lang.Long truckLength;
+    private java.lang.Long loadCapacity;
+    private java.lang.String floorType;
+    private java.lang.Double kmDriven;
+    private java.lang.Double mileageLoaded;
+    private java.lang.Double mileageEmpty;
+    private java.lang.String category;
+    private java.lang.String externalId;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
+    private com.fretron.Model.OrgOffice branch;
+    private com.fretron.Model.OrgOffice.Builder branchBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -581,6 +803,52 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         this.groupsExtended = data().deepCopy(fields()[18].schema(), other.groupsExtended);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.truckLength)) {
+        this.truckLength = data().deepCopy(fields()[19].schema(), other.truckLength);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.loadCapacity)) {
+        this.loadCapacity = data().deepCopy(fields()[20].schema(), other.loadCapacity);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.floorType)) {
+        this.floorType = data().deepCopy(fields()[21].schema(), other.floorType);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.kmDriven)) {
+        this.kmDriven = data().deepCopy(fields()[22].schema(), other.kmDriven);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.mileageLoaded)) {
+        this.mileageLoaded = data().deepCopy(fields()[23].schema(), other.mileageLoaded);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.mileageEmpty)) {
+        this.mileageEmpty = data().deepCopy(fields()[24].schema(), other.mileageEmpty);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.category)) {
+        this.category = data().deepCopy(fields()[25].schema(), other.category);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[26].schema(), other.externalId);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.updates)) {
+        this.updates = data().deepCopy(fields()[27].schema(), other.updates);
+        fieldSetFlags()[27] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
+      if (isValidValue(fields()[28], other.branch)) {
+        this.branch = data().deepCopy(fields()[28].schema(), other.branch);
+        fieldSetFlags()[28] = true;
+      }
+      if (other.hasBranchBuilder()) {
+        this.branchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getBranchBuilder());
+      }
     }
 
     /**
@@ -665,6 +933,48 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         this.groupsExtended = data().deepCopy(fields()[18].schema(), other.groupsExtended);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.truckLength)) {
+        this.truckLength = data().deepCopy(fields()[19].schema(), other.truckLength);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.loadCapacity)) {
+        this.loadCapacity = data().deepCopy(fields()[20].schema(), other.loadCapacity);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.floorType)) {
+        this.floorType = data().deepCopy(fields()[21].schema(), other.floorType);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.kmDriven)) {
+        this.kmDriven = data().deepCopy(fields()[22].schema(), other.kmDriven);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.mileageLoaded)) {
+        this.mileageLoaded = data().deepCopy(fields()[23].schema(), other.mileageLoaded);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.mileageEmpty)) {
+        this.mileageEmpty = data().deepCopy(fields()[24].schema(), other.mileageEmpty);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.category)) {
+        this.category = data().deepCopy(fields()[25].schema(), other.category);
+        fieldSetFlags()[25] = true;
+      }
+      if (isValidValue(fields()[26], other.externalId)) {
+        this.externalId = data().deepCopy(fields()[26].schema(), other.externalId);
+        fieldSetFlags()[26] = true;
+      }
+      if (isValidValue(fields()[27], other.updates)) {
+        this.updates = data().deepCopy(fields()[27].schema(), other.updates);
+        fieldSetFlags()[27] = true;
+      }
+      this.updatesBuilder = null;
+      if (isValidValue(fields()[28], other.branch)) {
+        this.branch = data().deepCopy(fields()[28].schema(), other.branch);
+        fieldSetFlags()[28] = true;
+      }
+      this.branchBuilder = null;
     }
 
     /**
@@ -1408,6 +1718,466 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'truckLength' field.
+      * @return The value.
+      */
+    public java.lang.Long getTruckLength() {
+      return truckLength;
+    }
+
+    /**
+      * Sets the value of the 'truckLength' field.
+      * @param value The value of 'truckLength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setTruckLength(java.lang.Long value) {
+      validate(fields()[19], value);
+      this.truckLength = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'truckLength' field has been set.
+      * @return True if the 'truckLength' field has been set, false otherwise.
+      */
+    public boolean hasTruckLength() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'truckLength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearTruckLength() {
+      truckLength = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'loadCapacity' field.
+      * @return The value.
+      */
+    public java.lang.Long getLoadCapacity() {
+      return loadCapacity;
+    }
+
+    /**
+      * Sets the value of the 'loadCapacity' field.
+      * @param value The value of 'loadCapacity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setLoadCapacity(java.lang.Long value) {
+      validate(fields()[20], value);
+      this.loadCapacity = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'loadCapacity' field has been set.
+      * @return True if the 'loadCapacity' field has been set, false otherwise.
+      */
+    public boolean hasLoadCapacity() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'loadCapacity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearLoadCapacity() {
+      loadCapacity = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'floorType' field.
+      * @return The value.
+      */
+    public java.lang.String getFloorType() {
+      return floorType;
+    }
+
+    /**
+      * Sets the value of the 'floorType' field.
+      * @param value The value of 'floorType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setFloorType(java.lang.String value) {
+      validate(fields()[21], value);
+      this.floorType = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'floorType' field has been set.
+      * @return True if the 'floorType' field has been set, false otherwise.
+      */
+    public boolean hasFloorType() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'floorType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearFloorType() {
+      floorType = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'kmDriven' field.
+      * @return The value.
+      */
+    public java.lang.Double getKmDriven() {
+      return kmDriven;
+    }
+
+    /**
+      * Sets the value of the 'kmDriven' field.
+      * @param value The value of 'kmDriven'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setKmDriven(java.lang.Double value) {
+      validate(fields()[22], value);
+      this.kmDriven = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'kmDriven' field has been set.
+      * @return True if the 'kmDriven' field has been set, false otherwise.
+      */
+    public boolean hasKmDriven() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'kmDriven' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearKmDriven() {
+      kmDriven = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mileageLoaded' field.
+      * @return The value.
+      */
+    public java.lang.Double getMileageLoaded() {
+      return mileageLoaded;
+    }
+
+    /**
+      * Sets the value of the 'mileageLoaded' field.
+      * @param value The value of 'mileageLoaded'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setMileageLoaded(java.lang.Double value) {
+      validate(fields()[23], value);
+      this.mileageLoaded = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mileageLoaded' field has been set.
+      * @return True if the 'mileageLoaded' field has been set, false otherwise.
+      */
+    public boolean hasMileageLoaded() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'mileageLoaded' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearMileageLoaded() {
+      mileageLoaded = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mileageEmpty' field.
+      * @return The value.
+      */
+    public java.lang.Double getMileageEmpty() {
+      return mileageEmpty;
+    }
+
+    /**
+      * Sets the value of the 'mileageEmpty' field.
+      * @param value The value of 'mileageEmpty'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setMileageEmpty(java.lang.Double value) {
+      validate(fields()[24], value);
+      this.mileageEmpty = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mileageEmpty' field has been set.
+      * @return True if the 'mileageEmpty' field has been set, false otherwise.
+      */
+    public boolean hasMileageEmpty() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'mileageEmpty' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearMileageEmpty() {
+      mileageEmpty = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'category' field.
+      * @return The value.
+      */
+    public java.lang.String getCategory() {
+      return category;
+    }
+
+    /**
+      * Sets the value of the 'category' field.
+      * @param value The value of 'category'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setCategory(java.lang.String value) {
+      validate(fields()[25], value);
+      this.category = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'category' field has been set.
+      * @return True if the 'category' field has been set, false otherwise.
+      */
+    public boolean hasCategory() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'category' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearCategory() {
+      category = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'externalId' field.
+      * @return The value.
+      */
+    public java.lang.String getExternalId() {
+      return externalId;
+    }
+
+    /**
+      * Sets the value of the 'externalId' field.
+      * @param value The value of 'externalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setExternalId(java.lang.String value) {
+      validate(fields()[26], value);
+      this.externalId = value;
+      fieldSetFlags()[26] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'externalId' field has been set.
+      * @return True if the 'externalId' field has been set, false otherwise.
+      */
+    public boolean hasExternalId() {
+      return fieldSetFlags()[26];
+    }
+
+
+    /**
+      * Clears the value of the 'externalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearExternalId() {
+      externalId = null;
+      fieldSetFlags()[26] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[27], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[27] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[27];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Vehicle.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[27] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'branch' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrgOffice getBranch() {
+      return branch;
+    }
+
+    /**
+      * Sets the value of the 'branch' field.
+      * @param value The value of 'branch'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder setBranch(com.fretron.Model.OrgOffice value) {
+      validate(fields()[28], value);
+      this.branchBuilder = null;
+      this.branch = value;
+      fieldSetFlags()[28] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'branch' field has been set.
+      * @return True if the 'branch' field has been set, false otherwise.
+      */
+    public boolean hasBranch() {
+      return fieldSetFlags()[28];
+    }
+
+    /**
+     * Gets the Builder instance for the 'branch' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrgOffice.Builder getBranchBuilder() {
+      if (branchBuilder == null) {
+        if (hasBranch()) {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder(branch));
+        } else {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder());
+        }
+      }
+      return branchBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'branch' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Vehicle.Builder setBranchBuilder(com.fretron.Model.OrgOffice.Builder value) {
+      clearBranch();
+      branchBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'branch' field has an active Builder instance
+     * @return True if the 'branch' field has an active Builder instance
+     */
+    public boolean hasBranchBuilder() {
+      return branchBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'branch' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Vehicle.Builder clearBranch() {
+      branch = null;
+      branchBuilder = null;
+      fieldSetFlags()[28] = false;
+      return this;
+    }
+
     @Override
     public Vehicle build() {
       try {
@@ -1431,6 +2201,24 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
         record.source = fieldSetFlags()[16] ? this.source : (java.lang.String) defaultValue(fields()[16]);
         record.isTrackingEnabled = fieldSetFlags()[17] ? this.isTrackingEnabled : (java.lang.Boolean) defaultValue(fields()[17]);
         record.groupsExtended = fieldSetFlags()[18] ? this.groupsExtended : (java.util.List<com.fretron.Model.OrganisationGroup>) defaultValue(fields()[18]);
+        record.truckLength = fieldSetFlags()[19] ? this.truckLength : (java.lang.Long) defaultValue(fields()[19]);
+        record.loadCapacity = fieldSetFlags()[20] ? this.loadCapacity : (java.lang.Long) defaultValue(fields()[20]);
+        record.floorType = fieldSetFlags()[21] ? this.floorType : (java.lang.String) defaultValue(fields()[21]);
+        record.kmDriven = fieldSetFlags()[22] ? this.kmDriven : (java.lang.Double) defaultValue(fields()[22]);
+        record.mileageLoaded = fieldSetFlags()[23] ? this.mileageLoaded : (java.lang.Double) defaultValue(fields()[23]);
+        record.mileageEmpty = fieldSetFlags()[24] ? this.mileageEmpty : (java.lang.Double) defaultValue(fields()[24]);
+        record.category = fieldSetFlags()[25] ? this.category : (java.lang.String) defaultValue(fields()[25]);
+        record.externalId = fieldSetFlags()[26] ? this.externalId : (java.lang.String) defaultValue(fields()[26]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[27] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[27]);
+        }
+        if (branchBuilder != null) {
+          record.branch = this.branchBuilder.build();
+        } else {
+          record.branch = fieldSetFlags()[28] ? this.branch : (com.fretron.Model.OrgOffice) defaultValue(fields()[28]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

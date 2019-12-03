@@ -1,0 +1,18 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "VehicleEventCache",
+  "fields": [
+    {
+      "name": "vehicleId",
+      "type": ["null" , "string"]
+   },
+    {
+      "name": "cache",
+      "type": {
+        "type": "array",
+        "items": "com.fretron.Model.EventCache"
+      }
+    }
+  ]
+}

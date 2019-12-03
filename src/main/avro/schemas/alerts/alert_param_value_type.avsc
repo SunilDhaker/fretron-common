@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "AlertParamValueType",
+  "namespace":"com.fretron.Model",
+  "symbols": [
+    "INT",
+    "LONG",
+    "DOUBLE",
+    "STRING",
+    "INT_RANGE",
+    "LONG_RANGE",
+    "DOUBLE_RANGE",
+    "LOCATION_PROXIMITY",
+    "LOCATION_GEOFENCE"
+  ]
+}

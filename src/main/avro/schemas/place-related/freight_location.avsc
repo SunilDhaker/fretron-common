@@ -1,0 +1,89 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "FreightLocation",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": null
+    },
+    {
+      "name": "geofence",
+      "type": [
+        "null",
+        "com.fretron.Model.Geofence"
+      ],
+      "default": null
+    },
+    {
+      "name": "material",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "address",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "favouriteOf",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "FreightLocType",
+          "symbols": [
+            "Private",
+            "Public"
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "isDeleted",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    }
+  ]
+}
