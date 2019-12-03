@@ -1,0 +1,106 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "Bid",
+  "type": "record",
+  "fields": [
+           {
+              "name": "status",
+              "type": [
+                        "null",
+                        "string"
+                       ],
+               "default": null
+            },
+            {
+               "name": "businessPartnerId",
+                "type": [
+                          "null",
+                          "string"
+                        ],
+               "default": null
+            },
+            {
+                "name": "partnerName",
+                 "type": [
+                            "null",
+                             "string"
+                          ],
+               "default": null
+            },
+            {
+               "name": "numberOfVehicles",
+                "type": [
+                             "null",
+                             "int"
+                            ],
+                "default": null
+            },
+            {
+               "name": "amount",
+               "type": [
+                         "null",
+                         "double"
+                        ],
+               "default": null
+            },
+            {
+                "name": "rank",
+                 "type": [
+                           "null",
+                           "double"
+                         ],
+                 "default": null
+            },
+            {
+                    "name": "contacts",
+                    "type": [
+                      "null",
+                      {
+                        "type": "array",
+                        "items": "string"
+                      }
+                    ],
+                    "default": null
+              },
+              {
+                "name": "vehicleType",
+                 "type": [
+                           "null",
+                            "string"
+                          ],
+                 "default": null
+              },
+              {
+                  "name": "purchaseOrderId",
+                    "type": [
+                               "null",
+                                "string"
+                            ],
+                   "default": null
+            },
+             {
+                                          "name": "time",
+                                            "type": [
+                                                       "null",
+                                                        "long"
+                                                    ],
+                                           "default": null
+             },
+             {
+                    "name": "partnerExternalId",
+                     "type": [
+                                            "null",
+                                             "string"
+                                         ],
+                                "default": null
+              },
+              {
+                  "name": "vendorExecutive",
+                   "type": [
+                                "null",
+                                 "string"
+                            ],
+                    "default": null
+               }
+  ]
+}

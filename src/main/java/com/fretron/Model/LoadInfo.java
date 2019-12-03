@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1548940421085242676L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"currency\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 145610066108608754L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurements\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"currency\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"standardMeasurement\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String material;
   @Deprecated public java.util.List<com.fretron.Model.Measurement> measurements;
   @Deprecated public java.lang.Double valueOfGoods;
   @Deprecated public java.lang.String currency;
+  @Deprecated public com.fretron.Model.StandardMeasurement standardMeasurement;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
    * @param measurements The new value for measurements
    * @param valueOfGoods The new value for valueOfGoods
    * @param currency The new value for currency
+   * @param standardMeasurement The new value for standardMeasurement
    */
-  public LoadInfo(java.lang.String material, java.util.List<com.fretron.Model.Measurement> measurements, java.lang.Double valueOfGoods, java.lang.String currency) {
+  public LoadInfo(java.lang.String material, java.util.List<com.fretron.Model.Measurement> measurements, java.lang.Double valueOfGoods, java.lang.String currency, com.fretron.Model.StandardMeasurement standardMeasurement) {
     this.material = material;
     this.measurements = measurements;
     this.valueOfGoods = valueOfGoods;
     this.currency = currency;
+    this.standardMeasurement = standardMeasurement;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: return measurements;
     case 2: return valueOfGoods;
     case 3: return currency;
+    case 4: return standardMeasurement;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: measurements = (java.util.List<com.fretron.Model.Measurement>)value$; break;
     case 2: valueOfGoods = (java.lang.Double)value$; break;
     case 3: currency = (java.lang.String)value$; break;
+    case 4: standardMeasurement = (com.fretron.Model.StandardMeasurement)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'standardMeasurement' field.
+   * @return The value of the 'standardMeasurement' field.
+   */
+  public com.fretron.Model.StandardMeasurement getStandardMeasurement() {
+    return standardMeasurement;
+  }
+
+  /**
+   * Sets the value of the 'standardMeasurement' field.
+   * @param value the value to set.
+   */
+  public void setStandardMeasurement(com.fretron.Model.StandardMeasurement value) {
+    this.standardMeasurement = value;
+  }
+
+  /**
    * Creates a new LoadInfo RecordBuilder.
    * @return A new LoadInfo RecordBuilder
    */
@@ -163,6 +184,8 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
     private java.util.List<com.fretron.Model.Measurement> measurements;
     private java.lang.Double valueOfGoods;
     private java.lang.String currency;
+    private com.fretron.Model.StandardMeasurement standardMeasurement;
+    private com.fretron.Model.StandardMeasurement.Builder standardMeasurementBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +214,13 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         this.currency = data().deepCopy(fields()[3].schema(), other.currency);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.standardMeasurement)) {
+        this.standardMeasurement = data().deepCopy(fields()[4].schema(), other.standardMeasurement);
+        fieldSetFlags()[4] = true;
+      }
+      if (other.hasStandardMeasurementBuilder()) {
+        this.standardMeasurementBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getStandardMeasurementBuilder());
+      }
     }
 
     /**
@@ -215,6 +245,11 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         this.currency = data().deepCopy(fields()[3].schema(), other.currency);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.standardMeasurement)) {
+        this.standardMeasurement = data().deepCopy(fields()[4].schema(), other.standardMeasurement);
+        fieldSetFlags()[4] = true;
+      }
+      this.standardMeasurementBuilder = null;
     }
 
     /**
@@ -373,6 +408,80 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'standardMeasurement' field.
+      * @return The value.
+      */
+    public com.fretron.Model.StandardMeasurement getStandardMeasurement() {
+      return standardMeasurement;
+    }
+
+    /**
+      * Sets the value of the 'standardMeasurement' field.
+      * @param value The value of 'standardMeasurement'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder setStandardMeasurement(com.fretron.Model.StandardMeasurement value) {
+      validate(fields()[4], value);
+      this.standardMeasurementBuilder = null;
+      this.standardMeasurement = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'standardMeasurement' field has been set.
+      * @return True if the 'standardMeasurement' field has been set, false otherwise.
+      */
+    public boolean hasStandardMeasurement() {
+      return fieldSetFlags()[4];
+    }
+
+    /**
+     * Gets the Builder instance for the 'standardMeasurement' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.StandardMeasurement.Builder getStandardMeasurementBuilder() {
+      if (standardMeasurementBuilder == null) {
+        if (hasStandardMeasurement()) {
+          setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.newBuilder(standardMeasurement));
+        } else {
+          setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.newBuilder());
+        }
+      }
+      return standardMeasurementBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'standardMeasurement' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.LoadInfo.Builder setStandardMeasurementBuilder(com.fretron.Model.StandardMeasurement.Builder value) {
+      clearStandardMeasurement();
+      standardMeasurementBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'standardMeasurement' field has an active Builder instance
+     * @return True if the 'standardMeasurement' field has an active Builder instance
+     */
+    public boolean hasStandardMeasurementBuilder() {
+      return standardMeasurementBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'standardMeasurement' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadInfo.Builder clearStandardMeasurement() {
+      standardMeasurement = null;
+      standardMeasurementBuilder = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public LoadInfo build() {
       try {
@@ -381,6 +490,11 @@ public class LoadInfo extends org.apache.avro.specific.SpecificRecordBase implem
         record.measurements = fieldSetFlags()[1] ? this.measurements : (java.util.List<com.fretron.Model.Measurement>) defaultValue(fields()[1]);
         record.valueOfGoods = fieldSetFlags()[2] ? this.valueOfGoods : (java.lang.Double) defaultValue(fields()[2]);
         record.currency = fieldSetFlags()[3] ? this.currency : (java.lang.String) defaultValue(fields()[3]);
+        if (standardMeasurementBuilder != null) {
+          record.standardMeasurement = this.standardMeasurementBuilder.build();
+        } else {
+          record.standardMeasurement = fieldSetFlags()[4] ? this.standardMeasurement : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[4]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

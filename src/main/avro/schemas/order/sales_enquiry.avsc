@@ -60,5 +60,6 @@
       "name": "remainingLoad",
       "type": "int"
     }
+
   ]
 }
