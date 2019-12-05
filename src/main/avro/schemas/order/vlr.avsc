@@ -3,6 +3,14 @@
   "name": "VehicleLoadRequest",
   "type": "record",
   "fields": [
+  {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
 
     {
       "name": "origins",
