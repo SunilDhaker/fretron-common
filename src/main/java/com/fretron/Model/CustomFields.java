@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CustomFields extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4087048032210819344L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CustomFields\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3193859294658118501L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CustomFields\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String fieldType;
   @Deprecated public java.lang.String fieldKey;
@@ -27,6 +27,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String input;
   @Deprecated public java.lang.String unit;
   @Deprecated public java.lang.String accessType;
+  @Deprecated public java.lang.String uuid;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +52,9 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
    * @param input The new value for input
    * @param unit The new value for unit
    * @param accessType The new value for accessType
+   * @param uuid The new value for uuid
    */
-  public CustomFields(java.lang.String fieldType, java.lang.String fieldKey, java.lang.String value, java.lang.Boolean multiple, java.lang.Boolean isRemark, java.lang.String remark, java.lang.Boolean required, java.lang.String description, java.util.List<java.lang.String> options, java.util.List<java.lang.String> indexedValue, java.lang.String valueType, java.lang.String input, java.lang.String unit, java.lang.String accessType) {
+  public CustomFields(java.lang.String fieldType, java.lang.String fieldKey, java.lang.String value, java.lang.Boolean multiple, java.lang.Boolean isRemark, java.lang.String remark, java.lang.Boolean required, java.lang.String description, java.util.List<java.lang.String> options, java.util.List<java.lang.String> indexedValue, java.lang.String valueType, java.lang.String input, java.lang.String unit, java.lang.String accessType, java.lang.String uuid) {
     this.fieldType = fieldType;
     this.fieldKey = fieldKey;
     this.value = value;
@@ -67,6 +69,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
     this.input = input;
     this.unit = unit;
     this.accessType = accessType;
+    this.uuid = uuid;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +90,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
     case 11: return input;
     case 12: return unit;
     case 13: return accessType;
+    case 14: return uuid;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +113,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
     case 11: input = (java.lang.String)value$; break;
     case 12: unit = (java.lang.String)value$; break;
     case 13: accessType = (java.lang.String)value$; break;
+    case 14: uuid = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +343,22 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
    * Creates a new CustomFields RecordBuilder.
    * @return A new CustomFields RecordBuilder
    */
@@ -383,6 +404,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String input;
     private java.lang.String unit;
     private java.lang.String accessType;
+    private java.lang.String uuid;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +473,10 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
         this.accessType = data().deepCopy(fields()[13].schema(), other.accessType);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[14].schema(), other.uuid);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -514,6 +540,10 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[13], other.accessType)) {
         this.accessType = data().deepCopy(fields()[13].schema(), other.accessType);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[14].schema(), other.uuid);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -1060,6 +1090,45 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CustomFields.Builder setUuid(java.lang.String value) {
+      validate(fields()[14], value);
+      this.uuid = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CustomFields.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public CustomFields build() {
       try {
@@ -1078,6 +1147,7 @@ public class CustomFields extends org.apache.avro.specific.SpecificRecordBase im
         record.input = fieldSetFlags()[11] ? this.input : (java.lang.String) defaultValue(fields()[11]);
         record.unit = fieldSetFlags()[12] ? this.unit : (java.lang.String) defaultValue(fields()[12]);
         record.accessType = fieldSetFlags()[13] ? this.accessType : (java.lang.String) defaultValue(fields()[13]);
+        record.uuid = fieldSetFlags()[14] ? this.uuid : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

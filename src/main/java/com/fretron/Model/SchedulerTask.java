@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6422253093727243724L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SchedulerTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"action\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isAutoSchedulable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"scheduleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeOfDay\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"interval\",\"type\":[\"null\",\"long\"],\"default\":null}]}");
+  private static final long serialVersionUID = -6665559423693996538L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SchedulerTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"action\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"actionData\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isAutoSchedulable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"scheduleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeOfDay\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"interval\",\"type\":[\"null\",\"long\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String taskId;
   @Deprecated public java.lang.String resourceId;
   @Deprecated public java.lang.String resourceType;
   @Deprecated public java.lang.String action;
+  @Deprecated public java.lang.String actionData;
   @Deprecated public java.lang.Long scheduleTime;
   @Deprecated public java.lang.Boolean isAutoSchedulable;
   @Deprecated public java.lang.String scheduleType;
@@ -37,6 +38,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
    * @param resourceId The new value for resourceId
    * @param resourceType The new value for resourceType
    * @param action The new value for action
+   * @param actionData The new value for actionData
    * @param scheduleTime The new value for scheduleTime
    * @param isAutoSchedulable The new value for isAutoSchedulable
    * @param scheduleType The new value for scheduleType
@@ -44,11 +46,12 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
    * @param weekDays The new value for weekDays
    * @param interval The new value for interval
    */
-  public SchedulerTask(java.lang.String taskId, java.lang.String resourceId, java.lang.String resourceType, java.lang.String action, java.lang.Long scheduleTime, java.lang.Boolean isAutoSchedulable, java.lang.String scheduleType, java.lang.Long timeOfDay, java.util.List<java.lang.Integer> weekDays, java.lang.Long interval) {
+  public SchedulerTask(java.lang.String taskId, java.lang.String resourceId, java.lang.String resourceType, java.lang.String action, java.lang.String actionData, java.lang.Long scheduleTime, java.lang.Boolean isAutoSchedulable, java.lang.String scheduleType, java.lang.Long timeOfDay, java.util.List<java.lang.Integer> weekDays, java.lang.Long interval) {
     this.taskId = taskId;
     this.resourceId = resourceId;
     this.resourceType = resourceType;
     this.action = action;
+    this.actionData = actionData;
     this.scheduleTime = scheduleTime;
     this.isAutoSchedulable = isAutoSchedulable;
     this.scheduleType = scheduleType;
@@ -65,12 +68,13 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     case 1: return resourceId;
     case 2: return resourceType;
     case 3: return action;
-    case 4: return scheduleTime;
-    case 5: return isAutoSchedulable;
-    case 6: return scheduleType;
-    case 7: return timeOfDay;
-    case 8: return weekDays;
-    case 9: return interval;
+    case 4: return actionData;
+    case 5: return scheduleTime;
+    case 6: return isAutoSchedulable;
+    case 7: return scheduleType;
+    case 8: return timeOfDay;
+    case 9: return weekDays;
+    case 10: return interval;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -83,12 +87,13 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     case 1: resourceId = (java.lang.String)value$; break;
     case 2: resourceType = (java.lang.String)value$; break;
     case 3: action = (java.lang.String)value$; break;
-    case 4: scheduleTime = (java.lang.Long)value$; break;
-    case 5: isAutoSchedulable = (java.lang.Boolean)value$; break;
-    case 6: scheduleType = (java.lang.String)value$; break;
-    case 7: timeOfDay = (java.lang.Long)value$; break;
-    case 8: weekDays = (java.util.List<java.lang.Integer>)value$; break;
-    case 9: interval = (java.lang.Long)value$; break;
+    case 4: actionData = (java.lang.String)value$; break;
+    case 5: scheduleTime = (java.lang.Long)value$; break;
+    case 6: isAutoSchedulable = (java.lang.Boolean)value$; break;
+    case 7: scheduleType = (java.lang.String)value$; break;
+    case 8: timeOfDay = (java.lang.Long)value$; break;
+    case 9: weekDays = (java.util.List<java.lang.Integer>)value$; break;
+    case 10: interval = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -155,6 +160,22 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
    */
   public void setAction(java.lang.String value) {
     this.action = value;
+  }
+
+  /**
+   * Gets the value of the 'actionData' field.
+   * @return The value of the 'actionData' field.
+   */
+  public java.lang.String getActionData() {
+    return actionData;
+  }
+
+  /**
+   * Sets the value of the 'actionData' field.
+   * @param value the value to set.
+   */
+  public void setActionData(java.lang.String value) {
+    this.actionData = value;
   }
 
   /**
@@ -289,6 +310,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String resourceId;
     private java.lang.String resourceType;
     private java.lang.String action;
+    private java.lang.String actionData;
     private java.lang.Long scheduleTime;
     private java.lang.Boolean isAutoSchedulable;
     private java.lang.String scheduleType;
@@ -323,29 +345,33 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
         this.action = data().deepCopy(fields()[3].schema(), other.action);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.scheduleTime)) {
-        this.scheduleTime = data().deepCopy(fields()[4].schema(), other.scheduleTime);
+      if (isValidValue(fields()[4], other.actionData)) {
+        this.actionData = data().deepCopy(fields()[4].schema(), other.actionData);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.isAutoSchedulable)) {
-        this.isAutoSchedulable = data().deepCopy(fields()[5].schema(), other.isAutoSchedulable);
+      if (isValidValue(fields()[5], other.scheduleTime)) {
+        this.scheduleTime = data().deepCopy(fields()[5].schema(), other.scheduleTime);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.scheduleType)) {
-        this.scheduleType = data().deepCopy(fields()[6].schema(), other.scheduleType);
+      if (isValidValue(fields()[6], other.isAutoSchedulable)) {
+        this.isAutoSchedulable = data().deepCopy(fields()[6].schema(), other.isAutoSchedulable);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.timeOfDay)) {
-        this.timeOfDay = data().deepCopy(fields()[7].schema(), other.timeOfDay);
+      if (isValidValue(fields()[7], other.scheduleType)) {
+        this.scheduleType = data().deepCopy(fields()[7].schema(), other.scheduleType);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.weekDays)) {
-        this.weekDays = data().deepCopy(fields()[8].schema(), other.weekDays);
+      if (isValidValue(fields()[8], other.timeOfDay)) {
+        this.timeOfDay = data().deepCopy(fields()[8].schema(), other.timeOfDay);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.interval)) {
-        this.interval = data().deepCopy(fields()[9].schema(), other.interval);
+      if (isValidValue(fields()[9], other.weekDays)) {
+        this.weekDays = data().deepCopy(fields()[9].schema(), other.weekDays);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.interval)) {
+        this.interval = data().deepCopy(fields()[10].schema(), other.interval);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -371,29 +397,33 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
         this.action = data().deepCopy(fields()[3].schema(), other.action);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.scheduleTime)) {
-        this.scheduleTime = data().deepCopy(fields()[4].schema(), other.scheduleTime);
+      if (isValidValue(fields()[4], other.actionData)) {
+        this.actionData = data().deepCopy(fields()[4].schema(), other.actionData);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.isAutoSchedulable)) {
-        this.isAutoSchedulable = data().deepCopy(fields()[5].schema(), other.isAutoSchedulable);
+      if (isValidValue(fields()[5], other.scheduleTime)) {
+        this.scheduleTime = data().deepCopy(fields()[5].schema(), other.scheduleTime);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.scheduleType)) {
-        this.scheduleType = data().deepCopy(fields()[6].schema(), other.scheduleType);
+      if (isValidValue(fields()[6], other.isAutoSchedulable)) {
+        this.isAutoSchedulable = data().deepCopy(fields()[6].schema(), other.isAutoSchedulable);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.timeOfDay)) {
-        this.timeOfDay = data().deepCopy(fields()[7].schema(), other.timeOfDay);
+      if (isValidValue(fields()[7], other.scheduleType)) {
+        this.scheduleType = data().deepCopy(fields()[7].schema(), other.scheduleType);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.weekDays)) {
-        this.weekDays = data().deepCopy(fields()[8].schema(), other.weekDays);
+      if (isValidValue(fields()[8], other.timeOfDay)) {
+        this.timeOfDay = data().deepCopy(fields()[8].schema(), other.timeOfDay);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.interval)) {
-        this.interval = data().deepCopy(fields()[9].schema(), other.interval);
+      if (isValidValue(fields()[9], other.weekDays)) {
+        this.weekDays = data().deepCopy(fields()[9].schema(), other.weekDays);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.interval)) {
+        this.interval = data().deepCopy(fields()[10].schema(), other.interval);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -554,6 +584,45 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
+      * Gets the value of the 'actionData' field.
+      * @return The value.
+      */
+    public java.lang.String getActionData() {
+      return actionData;
+    }
+
+    /**
+      * Sets the value of the 'actionData' field.
+      * @param value The value of 'actionData'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SchedulerTask.Builder setActionData(java.lang.String value) {
+      validate(fields()[4], value);
+      this.actionData = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'actionData' field has been set.
+      * @return True if the 'actionData' field has been set, false otherwise.
+      */
+    public boolean hasActionData() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'actionData' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SchedulerTask.Builder clearActionData() {
+      actionData = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'scheduleTime' field.
       * @return The value.
       */
@@ -567,9 +636,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setScheduleTime(java.lang.Long value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.scheduleTime = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -578,7 +647,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'scheduleTime' field has been set, false otherwise.
       */
     public boolean hasScheduleTime() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -588,7 +657,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearScheduleTime() {
       scheduleTime = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -606,9 +675,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setIsAutoSchedulable(java.lang.Boolean value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.isAutoSchedulable = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -617,7 +686,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'isAutoSchedulable' field has been set, false otherwise.
       */
     public boolean hasIsAutoSchedulable() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -627,7 +696,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearIsAutoSchedulable() {
       isAutoSchedulable = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -645,9 +714,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setScheduleType(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.scheduleType = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -656,7 +725,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'scheduleType' field has been set, false otherwise.
       */
     public boolean hasScheduleType() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -666,7 +735,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearScheduleType() {
       scheduleType = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -684,9 +753,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setTimeOfDay(java.lang.Long value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.timeOfDay = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -695,7 +764,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'timeOfDay' field has been set, false otherwise.
       */
     public boolean hasTimeOfDay() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -705,7 +774,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearTimeOfDay() {
       timeOfDay = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -723,9 +792,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setWeekDays(java.util.List<java.lang.Integer> value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.weekDays = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -734,7 +803,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'weekDays' field has been set, false otherwise.
       */
     public boolean hasWeekDays() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -744,7 +813,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearWeekDays() {
       weekDays = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -762,9 +831,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.SchedulerTask.Builder setInterval(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.interval = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -773,7 +842,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'interval' field has been set, false otherwise.
       */
     public boolean hasInterval() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -783,7 +852,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.SchedulerTask.Builder clearInterval() {
       interval = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -795,12 +864,13 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
         record.resourceId = fieldSetFlags()[1] ? this.resourceId : (java.lang.String) defaultValue(fields()[1]);
         record.resourceType = fieldSetFlags()[2] ? this.resourceType : (java.lang.String) defaultValue(fields()[2]);
         record.action = fieldSetFlags()[3] ? this.action : (java.lang.String) defaultValue(fields()[3]);
-        record.scheduleTime = fieldSetFlags()[4] ? this.scheduleTime : (java.lang.Long) defaultValue(fields()[4]);
-        record.isAutoSchedulable = fieldSetFlags()[5] ? this.isAutoSchedulable : (java.lang.Boolean) defaultValue(fields()[5]);
-        record.scheduleType = fieldSetFlags()[6] ? this.scheduleType : (java.lang.String) defaultValue(fields()[6]);
-        record.timeOfDay = fieldSetFlags()[7] ? this.timeOfDay : (java.lang.Long) defaultValue(fields()[7]);
-        record.weekDays = fieldSetFlags()[8] ? this.weekDays : (java.util.List<java.lang.Integer>) defaultValue(fields()[8]);
-        record.interval = fieldSetFlags()[9] ? this.interval : (java.lang.Long) defaultValue(fields()[9]);
+        record.actionData = fieldSetFlags()[4] ? this.actionData : (java.lang.String) defaultValue(fields()[4]);
+        record.scheduleTime = fieldSetFlags()[5] ? this.scheduleTime : (java.lang.Long) defaultValue(fields()[5]);
+        record.isAutoSchedulable = fieldSetFlags()[6] ? this.isAutoSchedulable : (java.lang.Boolean) defaultValue(fields()[6]);
+        record.scheduleType = fieldSetFlags()[7] ? this.scheduleType : (java.lang.String) defaultValue(fields()[7]);
+        record.timeOfDay = fieldSetFlags()[8] ? this.timeOfDay : (java.lang.Long) defaultValue(fields()[8]);
+        record.weekDays = fieldSetFlags()[9] ? this.weekDays : (java.util.List<java.lang.Integer>) defaultValue(fields()[9]);
+        record.interval = fieldSetFlags()[10] ? this.interval : (java.lang.Long) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -389,9 +389,8 @@ public class Constants {
     public static final String KEY_LBS_RESULT_TOPIC = "lbs.result.topic";
     public static final String KEY_LBS_DEVICE_TOPIC = "lbs.device.topic";
 
+
     public final static double ep = 0.0001;
-
-
     //******************************Protocol-eventproducer*****************************************************
     public static final String KEY_TRACKER_SERVER_IP = "tracker.server.ip";
     //========================================= TracementManager========================================
