@@ -41,6 +41,15 @@
              "name":"isDirty",
                 "type": ["null","boolean"],
                 "default":null
-         }
+         },
+
+      {
+           "name": "status",
+                     "type": [
+                           "null",
+                            "string"
+                               ],
+                      "default": null
+                           }
 ]
 }
