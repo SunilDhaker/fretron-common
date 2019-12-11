@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -9200956890645147974L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"role\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Role\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chooseAtAssignment\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"isDirty\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 369746166603749952L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"UserOrgACL\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessLevel\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"relationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"role\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Role\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chooseAtAssignment\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"isDirty\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgUuid;
@@ -24,6 +24,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.String relationType;
   @Deprecated public com.fretron.Model.Role role;
   @Deprecated public java.lang.Boolean isDirty;
+  @Deprecated public java.lang.String status;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
    * @param relationType The new value for relationType
    * @param role The new value for role
    * @param isDirty The new value for isDirty
+   * @param status The new value for status
    */
-  public UserOrgACL(java.lang.String uuid, java.lang.String orgUuid, java.lang.String userUuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String externalId, java.lang.String accessLevel, java.lang.String relationType, com.fretron.Model.Role role, java.lang.Boolean isDirty) {
+  public UserOrgACL(java.lang.String uuid, java.lang.String orgUuid, java.lang.String userUuid, java.lang.String name, java.lang.String email, java.lang.String mobileNumber, java.lang.String externalId, java.lang.String accessLevel, java.lang.String relationType, com.fretron.Model.Role role, java.lang.Boolean isDirty, java.lang.String status) {
     this.uuid = uuid;
     this.orgUuid = orgUuid;
     this.userUuid = userUuid;
@@ -58,6 +60,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     this.relationType = relationType;
     this.role = role;
     this.isDirty = isDirty;
+    this.status = status;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 8: return relationType;
     case 9: return role;
     case 10: return isDirty;
+    case 11: return status;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     case 8: relationType = (java.lang.String)value$; break;
     case 9: role = (com.fretron.Model.Role)value$; break;
     case 10: isDirty = (java.lang.Boolean)value$; break;
+    case 11: status = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'status' field.
+   * @return The value of the 'status' field.
+   */
+  public java.lang.String getStatus() {
+    return status;
+  }
+
+  /**
+   * Sets the value of the 'status' field.
+   * @param value the value to set.
+   */
+  public void setStatus(java.lang.String value) {
+    this.status = value;
+  }
+
+  /**
    * Creates a new UserOrgACL RecordBuilder.
    * @return A new UserOrgACL RecordBuilder
    */
@@ -318,6 +339,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
     private com.fretron.Model.Role role;
     private com.fretron.Model.Role.Builder roleBuilder;
     private java.lang.Boolean isDirty;
+    private java.lang.String status;
 
     /** Creates a new Builder */
     private Builder() {
@@ -377,6 +399,10 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
         this.isDirty = data().deepCopy(fields()[10].schema(), other.isDirty);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.status)) {
+        this.status = data().deepCopy(fields()[11].schema(), other.status);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -429,6 +455,10 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[10], other.isDirty)) {
         this.isDirty = data().deepCopy(fields()[10].schema(), other.isDirty);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.status)) {
+        this.status = data().deepCopy(fields()[11].schema(), other.status);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -896,6 +926,45 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'status' field.
+      * @return The value.
+      */
+    public java.lang.String getStatus() {
+      return status;
+    }
+
+    /**
+      * Sets the value of the 'status' field.
+      * @param value The value of 'status'.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder setStatus(java.lang.String value) {
+      validate(fields()[11], value);
+      this.status = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'status' field has been set.
+      * @return True if the 'status' field has been set, false otherwise.
+      */
+    public boolean hasStatus() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'status' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.UserOrgACL.Builder clearStatus() {
+      status = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public UserOrgACL build() {
       try {
@@ -915,6 +984,7 @@ public class UserOrgACL extends org.apache.avro.specific.SpecificRecordBase impl
           record.role = fieldSetFlags()[9] ? this.role : (com.fretron.Model.Role) defaultValue(fields()[9]);
         }
         record.isDirty = fieldSetFlags()[10] ? this.isDirty : (java.lang.Boolean) defaultValue(fields()[10]);
+        record.status = fieldSetFlags()[11] ? this.status : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

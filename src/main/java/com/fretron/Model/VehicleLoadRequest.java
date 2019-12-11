@@ -10,10 +10,11 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -348358248286844509L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleLoadRequest\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"destinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"routeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"priceUOM\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"validTill\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vendor\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",\"Geometry\"],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"defa","ult\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 8555290337331292482L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VehicleLoadRequest\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"destinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"routeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"priceUOM\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"validTill\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vendor\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",\"Geometry\"],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":n","ull},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.String orgId;
   @Deprecated public java.util.List<com.fretron.Model.Place> origins;
   @Deprecated public java.util.List<com.fretron.Model.Place> destinations;
   @Deprecated public java.lang.String status;
@@ -36,6 +37,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
   /**
    * All-args constructor.
    * @param uuid The new value for uuid
+   * @param orgId The new value for orgId
    * @param origins The new value for origins
    * @param destinations The new value for destinations
    * @param status The new value for status
@@ -48,8 +50,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
    * @param validTill The new value for validTill
    * @param vendor The new value for vendor
    */
-  public VehicleLoadRequest(java.lang.String uuid, java.util.List<com.fretron.Model.Place> origins, java.util.List<com.fretron.Model.Place> destinations, java.lang.String status, java.lang.String routeId, java.lang.Double price, java.lang.String priceUOM, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.String vehicleType, java.lang.Long validTill, com.fretron.Model.BuisnessPartner vendor) {
+  public VehicleLoadRequest(java.lang.String uuid, java.lang.String orgId, java.util.List<com.fretron.Model.Place> origins, java.util.List<com.fretron.Model.Place> destinations, java.lang.String status, java.lang.String routeId, java.lang.Double price, java.lang.String priceUOM, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.String vehicleType, java.lang.Long validTill, com.fretron.Model.BuisnessPartner vendor) {
     this.uuid = uuid;
+    this.orgId = orgId;
     this.origins = origins;
     this.destinations = destinations;
     this.status = status;
@@ -68,17 +71,18 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return uuid;
-    case 1: return origins;
-    case 2: return destinations;
-    case 3: return status;
-    case 4: return routeId;
-    case 5: return price;
-    case 6: return priceUOM;
-    case 7: return isNegotiable;
-    case 8: return numberOfVehicles;
-    case 9: return vehicleType;
-    case 10: return validTill;
-    case 11: return vendor;
+    case 1: return orgId;
+    case 2: return origins;
+    case 3: return destinations;
+    case 4: return status;
+    case 5: return routeId;
+    case 6: return price;
+    case 7: return priceUOM;
+    case 8: return isNegotiable;
+    case 9: return numberOfVehicles;
+    case 10: return vehicleType;
+    case 11: return validTill;
+    case 12: return vendor;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -88,17 +92,18 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: uuid = (java.lang.String)value$; break;
-    case 1: origins = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 2: destinations = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 3: status = (java.lang.String)value$; break;
-    case 4: routeId = (java.lang.String)value$; break;
-    case 5: price = (java.lang.Double)value$; break;
-    case 6: priceUOM = (java.lang.String)value$; break;
-    case 7: isNegotiable = (java.lang.Boolean)value$; break;
-    case 8: numberOfVehicles = (java.lang.Integer)value$; break;
-    case 9: vehicleType = (java.lang.String)value$; break;
-    case 10: validTill = (java.lang.Long)value$; break;
-    case 11: vendor = (com.fretron.Model.BuisnessPartner)value$; break;
+    case 1: orgId = (java.lang.String)value$; break;
+    case 2: origins = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 3: destinations = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 4: status = (java.lang.String)value$; break;
+    case 5: routeId = (java.lang.String)value$; break;
+    case 6: price = (java.lang.Double)value$; break;
+    case 7: priceUOM = (java.lang.String)value$; break;
+    case 8: isNegotiable = (java.lang.Boolean)value$; break;
+    case 9: numberOfVehicles = (java.lang.Integer)value$; break;
+    case 10: vehicleType = (java.lang.String)value$; break;
+    case 11: validTill = (java.lang.Long)value$; break;
+    case 12: vendor = (com.fretron.Model.BuisnessPartner)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -117,6 +122,22 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
    */
   public void setUuid(java.lang.String value) {
     this.uuid = value;
+  }
+
+  /**
+   * Gets the value of the 'orgId' field.
+   * @return The value of the 'orgId' field.
+   */
+  public java.lang.String getOrgId() {
+    return orgId;
+  }
+
+  /**
+   * Sets the value of the 'orgId' field.
+   * @param value the value to set.
+   */
+  public void setOrgId(java.lang.String value) {
+    this.orgId = value;
   }
 
   /**
@@ -328,6 +349,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
     implements org.apache.avro.data.RecordBuilder<VehicleLoadRequest> {
 
     private java.lang.String uuid;
+    private java.lang.String orgId;
     private java.util.List<com.fretron.Model.Place> origins;
     private java.util.List<com.fretron.Model.Place> destinations;
     private java.lang.String status;
@@ -356,49 +378,53 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.origins)) {
-        this.origins = data().deepCopy(fields()[1].schema(), other.origins);
+      if (isValidValue(fields()[1], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[1].schema(), other.orgId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.destinations)) {
-        this.destinations = data().deepCopy(fields()[2].schema(), other.destinations);
+      if (isValidValue(fields()[2], other.origins)) {
+        this.origins = data().deepCopy(fields()[2].schema(), other.origins);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.status)) {
-        this.status = data().deepCopy(fields()[3].schema(), other.status);
+      if (isValidValue(fields()[3], other.destinations)) {
+        this.destinations = data().deepCopy(fields()[3].schema(), other.destinations);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.routeId)) {
-        this.routeId = data().deepCopy(fields()[4].schema(), other.routeId);
+      if (isValidValue(fields()[4], other.status)) {
+        this.status = data().deepCopy(fields()[4].schema(), other.status);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.price)) {
-        this.price = data().deepCopy(fields()[5].schema(), other.price);
+      if (isValidValue(fields()[5], other.routeId)) {
+        this.routeId = data().deepCopy(fields()[5].schema(), other.routeId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.priceUOM)) {
-        this.priceUOM = data().deepCopy(fields()[6].schema(), other.priceUOM);
+      if (isValidValue(fields()[6], other.price)) {
+        this.price = data().deepCopy(fields()[6].schema(), other.price);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isNegotiable)) {
-        this.isNegotiable = data().deepCopy(fields()[7].schema(), other.isNegotiable);
+      if (isValidValue(fields()[7], other.priceUOM)) {
+        this.priceUOM = data().deepCopy(fields()[7].schema(), other.priceUOM);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[8].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[8], other.isNegotiable)) {
+        this.isNegotiable = data().deepCopy(fields()[8].schema(), other.isNegotiable);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.vehicleType)) {
-        this.vehicleType = data().deepCopy(fields()[9].schema(), other.vehicleType);
+      if (isValidValue(fields()[9], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[9].schema(), other.numberOfVehicles);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.validTill)) {
-        this.validTill = data().deepCopy(fields()[10].schema(), other.validTill);
+      if (isValidValue(fields()[10], other.vehicleType)) {
+        this.vehicleType = data().deepCopy(fields()[10].schema(), other.vehicleType);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.vendor)) {
-        this.vendor = data().deepCopy(fields()[11].schema(), other.vendor);
+      if (isValidValue(fields()[11], other.validTill)) {
+        this.validTill = data().deepCopy(fields()[11].schema(), other.validTill);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.vendor)) {
+        this.vendor = data().deepCopy(fields()[12].schema(), other.vendor);
+        fieldSetFlags()[12] = true;
       }
       if (other.hasVendorBuilder()) {
         this.vendorBuilder = com.fretron.Model.BuisnessPartner.newBuilder(other.getVendorBuilder());
@@ -415,49 +441,53 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.origins)) {
-        this.origins = data().deepCopy(fields()[1].schema(), other.origins);
+      if (isValidValue(fields()[1], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[1].schema(), other.orgId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.destinations)) {
-        this.destinations = data().deepCopy(fields()[2].schema(), other.destinations);
+      if (isValidValue(fields()[2], other.origins)) {
+        this.origins = data().deepCopy(fields()[2].schema(), other.origins);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.status)) {
-        this.status = data().deepCopy(fields()[3].schema(), other.status);
+      if (isValidValue(fields()[3], other.destinations)) {
+        this.destinations = data().deepCopy(fields()[3].schema(), other.destinations);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.routeId)) {
-        this.routeId = data().deepCopy(fields()[4].schema(), other.routeId);
+      if (isValidValue(fields()[4], other.status)) {
+        this.status = data().deepCopy(fields()[4].schema(), other.status);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.price)) {
-        this.price = data().deepCopy(fields()[5].schema(), other.price);
+      if (isValidValue(fields()[5], other.routeId)) {
+        this.routeId = data().deepCopy(fields()[5].schema(), other.routeId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.priceUOM)) {
-        this.priceUOM = data().deepCopy(fields()[6].schema(), other.priceUOM);
+      if (isValidValue(fields()[6], other.price)) {
+        this.price = data().deepCopy(fields()[6].schema(), other.price);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isNegotiable)) {
-        this.isNegotiable = data().deepCopy(fields()[7].schema(), other.isNegotiable);
+      if (isValidValue(fields()[7], other.priceUOM)) {
+        this.priceUOM = data().deepCopy(fields()[7].schema(), other.priceUOM);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.numberOfVehicles)) {
-        this.numberOfVehicles = data().deepCopy(fields()[8].schema(), other.numberOfVehicles);
+      if (isValidValue(fields()[8], other.isNegotiable)) {
+        this.isNegotiable = data().deepCopy(fields()[8].schema(), other.isNegotiable);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.vehicleType)) {
-        this.vehicleType = data().deepCopy(fields()[9].schema(), other.vehicleType);
+      if (isValidValue(fields()[9], other.numberOfVehicles)) {
+        this.numberOfVehicles = data().deepCopy(fields()[9].schema(), other.numberOfVehicles);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.validTill)) {
-        this.validTill = data().deepCopy(fields()[10].schema(), other.validTill);
+      if (isValidValue(fields()[10], other.vehicleType)) {
+        this.vehicleType = data().deepCopy(fields()[10].schema(), other.vehicleType);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.vendor)) {
-        this.vendor = data().deepCopy(fields()[11].schema(), other.vendor);
+      if (isValidValue(fields()[11], other.validTill)) {
+        this.validTill = data().deepCopy(fields()[11].schema(), other.validTill);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.vendor)) {
+        this.vendor = data().deepCopy(fields()[12].schema(), other.vendor);
+        fieldSetFlags()[12] = true;
       }
       this.vendorBuilder = null;
     }
@@ -502,6 +532,45 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
     }
 
     /**
+      * Gets the value of the 'orgId' field.
+      * @return The value.
+      */
+    public java.lang.String getOrgId() {
+      return orgId;
+    }
+
+    /**
+      * Sets the value of the 'orgId' field.
+      * @param value The value of 'orgId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleLoadRequest.Builder setOrgId(java.lang.String value) {
+      validate(fields()[1], value);
+      this.orgId = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'orgId' field has been set.
+      * @return True if the 'orgId' field has been set, false otherwise.
+      */
+    public boolean hasOrgId() {
+      return fieldSetFlags()[1];
+    }
+
+
+    /**
+      * Clears the value of the 'orgId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.VehicleLoadRequest.Builder clearOrgId() {
+      orgId = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'origins' field.
       * @return The value.
       */
@@ -515,9 +584,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setOrigins(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.origins = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -526,7 +595,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'origins' field has been set, false otherwise.
       */
     public boolean hasOrigins() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -536,7 +605,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearOrigins() {
       origins = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -554,9 +623,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setDestinations(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.destinations = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -565,7 +634,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'destinations' field has been set, false otherwise.
       */
     public boolean hasDestinations() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -575,7 +644,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearDestinations() {
       destinations = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -593,9 +662,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setStatus(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.status = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -604,7 +673,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'status' field has been set, false otherwise.
       */
     public boolean hasStatus() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -614,7 +683,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearStatus() {
       status = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -632,9 +701,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setRouteId(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.routeId = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -643,7 +712,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'routeId' field has been set, false otherwise.
       */
     public boolean hasRouteId() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -653,7 +722,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearRouteId() {
       routeId = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -671,9 +740,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setPrice(java.lang.Double value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.price = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -682,7 +751,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'price' field has been set, false otherwise.
       */
     public boolean hasPrice() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -692,7 +761,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearPrice() {
       price = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -710,9 +779,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setPriceUOM(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.priceUOM = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -721,7 +790,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'priceUOM' field has been set, false otherwise.
       */
     public boolean hasPriceUOM() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -731,7 +800,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearPriceUOM() {
       priceUOM = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -749,9 +818,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setIsNegotiable(java.lang.Boolean value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.isNegotiable = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -760,7 +829,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'isNegotiable' field has been set, false otherwise.
       */
     public boolean hasIsNegotiable() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -770,7 +839,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearIsNegotiable() {
       isNegotiable = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -788,9 +857,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setNumberOfVehicles(java.lang.Integer value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.numberOfVehicles = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -799,7 +868,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'numberOfVehicles' field has been set, false otherwise.
       */
     public boolean hasNumberOfVehicles() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -809,7 +878,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearNumberOfVehicles() {
       numberOfVehicles = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -827,9 +896,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setVehicleType(java.lang.String value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.vehicleType = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -838,7 +907,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'vehicleType' field has been set, false otherwise.
       */
     public boolean hasVehicleType() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -848,7 +917,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearVehicleType() {
       vehicleType = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -866,9 +935,9 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setValidTill(java.lang.Long value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.validTill = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -877,7 +946,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'validTill' field has been set, false otherwise.
       */
     public boolean hasValidTill() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -887,7 +956,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       */
     public com.fretron.Model.VehicleLoadRequest.Builder clearValidTill() {
       validTill = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -905,10 +974,10 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return This builder.
       */
     public com.fretron.Model.VehicleLoadRequest.Builder setVendor(com.fretron.Model.BuisnessPartner value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.vendorBuilder = null;
       this.vendor = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -917,7 +986,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       * @return True if the 'vendor' field has been set, false otherwise.
       */
     public boolean hasVendor() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
     /**
@@ -961,7 +1030,7 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
     public com.fretron.Model.VehicleLoadRequest.Builder clearVendor() {
       vendor = null;
       vendorBuilder = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -970,20 +1039,21 @@ public class VehicleLoadRequest extends org.apache.avro.specific.SpecificRecordB
       try {
         VehicleLoadRequest record = new VehicleLoadRequest();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
-        record.origins = fieldSetFlags()[1] ? this.origins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[1]);
-        record.destinations = fieldSetFlags()[2] ? this.destinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[2]);
-        record.status = fieldSetFlags()[3] ? this.status : (java.lang.String) defaultValue(fields()[3]);
-        record.routeId = fieldSetFlags()[4] ? this.routeId : (java.lang.String) defaultValue(fields()[4]);
-        record.price = fieldSetFlags()[5] ? this.price : (java.lang.Double) defaultValue(fields()[5]);
-        record.priceUOM = fieldSetFlags()[6] ? this.priceUOM : (java.lang.String) defaultValue(fields()[6]);
-        record.isNegotiable = fieldSetFlags()[7] ? this.isNegotiable : (java.lang.Boolean) defaultValue(fields()[7]);
-        record.numberOfVehicles = fieldSetFlags()[8] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[8]);
-        record.vehicleType = fieldSetFlags()[9] ? this.vehicleType : (java.lang.String) defaultValue(fields()[9]);
-        record.validTill = fieldSetFlags()[10] ? this.validTill : (java.lang.Long) defaultValue(fields()[10]);
+        record.orgId = fieldSetFlags()[1] ? this.orgId : (java.lang.String) defaultValue(fields()[1]);
+        record.origins = fieldSetFlags()[2] ? this.origins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[2]);
+        record.destinations = fieldSetFlags()[3] ? this.destinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[3]);
+        record.status = fieldSetFlags()[4] ? this.status : (java.lang.String) defaultValue(fields()[4]);
+        record.routeId = fieldSetFlags()[5] ? this.routeId : (java.lang.String) defaultValue(fields()[5]);
+        record.price = fieldSetFlags()[6] ? this.price : (java.lang.Double) defaultValue(fields()[6]);
+        record.priceUOM = fieldSetFlags()[7] ? this.priceUOM : (java.lang.String) defaultValue(fields()[7]);
+        record.isNegotiable = fieldSetFlags()[8] ? this.isNegotiable : (java.lang.Boolean) defaultValue(fields()[8]);
+        record.numberOfVehicles = fieldSetFlags()[9] ? this.numberOfVehicles : (java.lang.Integer) defaultValue(fields()[9]);
+        record.vehicleType = fieldSetFlags()[10] ? this.vehicleType : (java.lang.String) defaultValue(fields()[10]);
+        record.validTill = fieldSetFlags()[11] ? this.validTill : (java.lang.Long) defaultValue(fields()[11]);
         if (vendorBuilder != null) {
           record.vendor = this.vendorBuilder.build();
         } else {
-          record.vendor = fieldSetFlags()[11] ? this.vendor : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[11]);
+          record.vendor = fieldSetFlags()[12] ? this.vendor : (com.fretron.Model.BuisnessPartner) defaultValue(fields()[12]);
         }
         return record;
       } catch (Exception e) {

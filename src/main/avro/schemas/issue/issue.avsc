@@ -323,7 +323,15 @@
           				"string"
           			],
           			"default": null
-          		}
+          		},
+        {
+                  			"name": "escalationLevel",
+                  			"type": [
+                  				"null",
+                  				"string"
+                  			],
+                  			"default": null
+                  		}
 
   	]
   }
