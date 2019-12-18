@@ -116,7 +116,10 @@
                                                                   			"name": "escalationLevels",
                                                                   			"type": [
                                                                   				"null",
-                                                                  				"com.fretron.Model.EscalationLevels"
+                                                                  		{
+                                                                                                 "type": "array",
+                                                                                		"items": "com.fretron.Model.EscalationLevels"
+                                                                                                                           				}
                                                                   			],
                                                                   			"default": null
                                                                   		},
