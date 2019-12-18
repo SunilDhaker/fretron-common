@@ -113,13 +113,21 @@
                                                                   "default": null
                                                                 },
                                                                   		{
-                                                                  			"name": "updates",
+                                                                  			"name": "escalationLevels",
                                                                   			"type": [
                                                                   				"null",
-                                                                  				"com.fretron.Model.Updates"
+                                                                  				"com.fretron.Model.EscalationLevels"
                                                                   			],
                                                                   			"default": null
-                                                                  		}
+                                                                  		},
+                                                                  			{
+                                                                                                                                          			"name": "updates",
+                                                                                                                                          			"type": [
+                                                                                                                                          				"null",
+                                                                                                                                          				"com.fretron.Model.Updates"
+                                                                                                                                          			],
+                                                                                                                                          			"default": null
+                                                                                                                                          		}
 
 
 

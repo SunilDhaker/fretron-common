@@ -331,7 +331,15 @@
                   				"string"
                   			],
                   			"default": null
-                  		}
+                  		},
+                  		  {
+                                          			"name": "escalationDueDate",
+                                          			"type": [
+                                          				"null",
+                                          				"long"
+                                          			],
+                                          			"default": null
+                                          		}
 
   	]
   }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4899783354281333367L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"defaultAssignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateMobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mergedUserIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"defaultFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -9005072034577310198L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"defaultAssignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateMobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mergedUserIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"defaultFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevels\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"EscalationLevels\",\"fields\":[{\"name\":\"escalationToId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalatedToIdType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevelName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevel\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"resolutionHourType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
@@ -26,6 +26,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public com.fretron.Model.User defaultAssignee;
   @Deprecated public java.util.List<com.fretron.Model.User> defaultFollowers;
   @Deprecated public java.lang.String status;
+  @Deprecated public com.fretron.Model.EscalationLevels escalationLevels;
   @Deprecated public com.fretron.Model.Updates updates;
 
   /**
@@ -50,9 +51,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param defaultAssignee The new value for defaultAssignee
    * @param defaultFollowers The new value for defaultFollowers
    * @param status The new value for status
+   * @param escalationLevels The new value for escalationLevels
    * @param updates The new value for updates
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.User defaultAssignee, java.util.List<com.fretron.Model.User> defaultFollowers, java.lang.String status, com.fretron.Model.Updates updates) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.User defaultAssignee, java.util.List<com.fretron.Model.User> defaultFollowers, java.lang.String status, com.fretron.Model.EscalationLevels escalationLevels, com.fretron.Model.Updates updates) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
@@ -66,6 +68,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     this.defaultAssignee = defaultAssignee;
     this.defaultFollowers = defaultFollowers;
     this.status = status;
+    this.escalationLevels = escalationLevels;
     this.updates = updates;
   }
 
@@ -86,7 +89,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 10: return defaultAssignee;
     case 11: return defaultFollowers;
     case 12: return status;
-    case 13: return updates;
+    case 13: return escalationLevels;
+    case 14: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -108,7 +112,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 10: defaultAssignee = (com.fretron.Model.User)value$; break;
     case 11: defaultFollowers = (java.util.List<com.fretron.Model.User>)value$; break;
     case 12: status = (java.lang.String)value$; break;
-    case 13: updates = (com.fretron.Model.Updates)value$; break;
+    case 13: escalationLevels = (com.fretron.Model.EscalationLevels)value$; break;
+    case 14: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -322,6 +327,22 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'escalationLevels' field.
+   * @return The value of the 'escalationLevels' field.
+   */
+  public com.fretron.Model.EscalationLevels getEscalationLevels() {
+    return escalationLevels;
+  }
+
+  /**
+   * Sets the value of the 'escalationLevels' field.
+   * @param value the value to set.
+   */
+  public void setEscalationLevels(com.fretron.Model.EscalationLevels value) {
+    this.escalationLevels = value;
+  }
+
+  /**
    * Gets the value of the 'updates' field.
    * @return The value of the 'updates' field.
    */
@@ -383,6 +404,8 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private com.fretron.Model.User.Builder defaultAssigneeBuilder;
     private java.util.List<com.fretron.Model.User> defaultFollowers;
     private java.lang.String status;
+    private com.fretron.Model.EscalationLevels escalationLevels;
+    private com.fretron.Model.EscalationLevels.Builder escalationLevelsBuilder;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
 
@@ -452,9 +475,16 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.status = data().deepCopy(fields()[12].schema(), other.status);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.updates)) {
-        this.updates = data().deepCopy(fields()[13].schema(), other.updates);
+      if (isValidValue(fields()[13], other.escalationLevels)) {
+        this.escalationLevels = data().deepCopy(fields()[13].schema(), other.escalationLevels);
         fieldSetFlags()[13] = true;
+      }
+      if (other.hasEscalationLevelsBuilder()) {
+        this.escalationLevelsBuilder = com.fretron.Model.EscalationLevels.newBuilder(other.getEscalationLevelsBuilder());
+      }
+      if (isValidValue(fields()[14], other.updates)) {
+        this.updates = data().deepCopy(fields()[14].schema(), other.updates);
+        fieldSetFlags()[14] = true;
       }
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
@@ -520,9 +550,14 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.status = data().deepCopy(fields()[12].schema(), other.status);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.updates)) {
-        this.updates = data().deepCopy(fields()[13].schema(), other.updates);
+      if (isValidValue(fields()[13], other.escalationLevels)) {
+        this.escalationLevels = data().deepCopy(fields()[13].schema(), other.escalationLevels);
         fieldSetFlags()[13] = true;
+      }
+      this.escalationLevelsBuilder = null;
+      if (isValidValue(fields()[14], other.updates)) {
+        this.updates = data().deepCopy(fields()[14].schema(), other.updates);
+        fieldSetFlags()[14] = true;
       }
       this.updatesBuilder = null;
     }
@@ -1070,6 +1105,80 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'escalationLevels' field.
+      * @return The value.
+      */
+    public com.fretron.Model.EscalationLevels getEscalationLevels() {
+      return escalationLevels;
+    }
+
+    /**
+      * Sets the value of the 'escalationLevels' field.
+      * @param value The value of 'escalationLevels'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setEscalationLevels(com.fretron.Model.EscalationLevels value) {
+      validate(fields()[13], value);
+      this.escalationLevelsBuilder = null;
+      this.escalationLevels = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'escalationLevels' field has been set.
+      * @return True if the 'escalationLevels' field has been set, false otherwise.
+      */
+    public boolean hasEscalationLevels() {
+      return fieldSetFlags()[13];
+    }
+
+    /**
+     * Gets the Builder instance for the 'escalationLevels' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.EscalationLevels.Builder getEscalationLevelsBuilder() {
+      if (escalationLevelsBuilder == null) {
+        if (hasEscalationLevels()) {
+          setEscalationLevelsBuilder(com.fretron.Model.EscalationLevels.newBuilder(escalationLevels));
+        } else {
+          setEscalationLevelsBuilder(com.fretron.Model.EscalationLevels.newBuilder());
+        }
+      }
+      return escalationLevelsBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'escalationLevels' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.IssueType.Builder setEscalationLevelsBuilder(com.fretron.Model.EscalationLevels.Builder value) {
+      clearEscalationLevels();
+      escalationLevelsBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'escalationLevels' field has an active Builder instance
+     * @return True if the 'escalationLevels' field has an active Builder instance
+     */
+    public boolean hasEscalationLevelsBuilder() {
+      return escalationLevelsBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'escalationLevels' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearEscalationLevels() {
+      escalationLevels = null;
+      escalationLevelsBuilder = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'updates' field.
       * @return The value.
       */
@@ -1083,10 +1192,10 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.IssueType.Builder setUpdates(com.fretron.Model.Updates value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.updatesBuilder = null;
       this.updates = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1095,7 +1204,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'updates' field has been set, false otherwise.
       */
     public boolean hasUpdates() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
     /**
@@ -1139,7 +1248,7 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.IssueType.Builder clearUpdates() {
       updates = null;
       updatesBuilder = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1164,10 +1273,15 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         }
         record.defaultFollowers = fieldSetFlags()[11] ? this.defaultFollowers : (java.util.List<com.fretron.Model.User>) defaultValue(fields()[11]);
         record.status = fieldSetFlags()[12] ? this.status : (java.lang.String) defaultValue(fields()[12]);
+        if (escalationLevelsBuilder != null) {
+          record.escalationLevels = this.escalationLevelsBuilder.build();
+        } else {
+          record.escalationLevels = fieldSetFlags()[13] ? this.escalationLevels : (com.fretron.Model.EscalationLevels) defaultValue(fields()[13]);
+        }
         if (updatesBuilder != null) {
           record.updates = this.updatesBuilder.build();
         } else {
-          record.updates = fieldSetFlags()[13] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[13]);
+          record.updates = fieldSetFlags()[14] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[14]);
         }
         return record;
       } catch (Exception e) {
