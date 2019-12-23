@@ -124,13 +124,24 @@
                                                                   			"default": null
                                                                   		},
                                                                   			{
-                                                                                                                                          			"name": "updates",
-                                                                                                                                          			"type": [
+                                                                                     			"name": "updates",
+                                                                                          			"type": [
                                                                                                                                           				"null",
                                                                                                                                           				"com.fretron.Model.Updates"
                                                                                                                                           			],
                                                                                                                                           			"default": null
-                                                                                                                                          		}
+                                                                                                                                          		},
+                                                                                                                                          			{
+                                                                                                                                                                                                                  			"name": "issueFieldMapping",
+                                                                                                                                                                                                                  			"type": [
+                                                                                                                                                                                                                  				"null",
+                                                                                                                                                                                                                  		{
+                                                                                                                                                                                                                                                 "type": "array",
+                                                                                                                                                                                                                                		"items": "com.fretron.Model.IssueFieldMapping"
+                                                                                                                                                                                                                                                                           				}
+                                                                                                                                                                                                                  			],
+                                                                                                                                                                                                                  			"default": null
+                                                                                                                                                                                                                  		}
 
 
 
