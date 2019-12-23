@@ -1,0 +1,32 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "StandardMeasurement",
+  "type": "record",
+  "fields": [
+        {
+            "name": "weight",
+             "type": [
+                        "null",
+                         "com.fretron.Model.Measurement"
+                          ],
+            "default": null
+        },
+        {
+            "name": "volume",
+             "type": [
+                        "null",
+                        "com.fretron.Model.Measurement"
+                     ],
+            "default": null
+        },
+        {
+             "name": "packageMeasurement",
+             "type": [
+                       "null",
+                       "com.fretron.Model.Measurement"
+                     ],
+             "default": null
+        }
+
+  ]
+}

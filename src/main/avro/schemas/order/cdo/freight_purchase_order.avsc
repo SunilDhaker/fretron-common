@@ -1,0 +1,260 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "FreightPurchaseOrder",
+  "type": "record",
+  "fields": [
+     {
+       "name": "uuid",
+        "type": [
+                    "null",
+                    "string"
+                  ],
+        "default": null
+      },
+      {
+        "name": "externalId",
+         "type": [
+                   "null",
+                   "string"
+                      ],
+         "default": null
+      },
+      {
+         "name": "orgId",
+         "type": [
+                   "null",
+                   "string"
+                      ],
+         "default": null
+      },
+      {
+        "name": "orderNumber",
+         "type": [
+                       "null",
+                      "string"
+                     ],
+        "default": null
+      },
+      {
+         "name": "orderDate",
+          "type": [
+                    "null",
+                    "long"
+                             ],
+                    "logicalType": "timestamp-millis",
+                     "default": null
+      },
+     {
+        "name": "vendor",
+         "type": [
+                       "null",
+                       "com.fretron.Model.BuisnessPartner"
+                     ],
+         "default": null
+    },
+    {
+        "name": "orderType",
+         "type": [
+                   "null",
+                    "string"
+                 ],
+        "default": null
+     },
+     {
+       "name": "status",
+        "type": [
+                  "null",
+                  "string"
+                      ],
+        "default": null
+     },
+      {
+             "name": "secondaryStatus",
+             "type": [
+                        "null",
+                        "string"
+                      ],
+             "default": null
+       },
+     {
+        "name": "placementDate",
+         "type": [
+                    "null",
+                     "long"
+                  ],
+         "logicalType": "timestamp-millis",
+          "default": null
+     },
+     {
+       "name": "freightType",
+        "type": [
+                  "null",
+                  "string"
+                ],
+        "default": null
+    },
+    {
+       "name": "freightCost",
+       "type": [
+                  "null",
+                  "double"
+                ],
+       "default": null
+     },
+     {
+        "name": "origin",
+         "type": [
+                   "null",
+                   "com.fretron.Model.Place"
+                   ],
+          "default": null
+     },
+     {
+        "name": "destination",
+         "type": [
+                        "null",
+                        "com.fretron.Model.Place"
+                        ],
+         "default": null
+      },
+      {
+        "name": "material",
+         "type": [
+                   "null",
+                   "string"
+                  ],
+         "default": null
+      },
+      {
+         "name": "customerName",
+          "type": [
+                         "null",
+                         "string"
+                        ],
+         "default": null
+      },
+      {
+         "name": "vehicleType",
+          "type": [
+                    "null",
+                     "string"
+                   ],
+         "default": null
+       },
+       {
+         "name": "numberOfVehicles",
+         "type": [
+                   "null",
+                   "int"
+                ],
+         "default": null
+       },
+       {
+         "name": "remainingVehicles",
+          "type": [
+                    "null",
+                    "int"
+                  ],
+         "default": null
+       },
+       {
+         "name": "salesOrders",
+          "type": [
+                    "null",
+                    {
+                      "type": "array",
+                      "items": "string"
+                    }
+                  ],
+          "default": null
+        },
+        {
+          "name": "updates",
+          "type": [
+                    "null",
+                    "com.fretron.Model.Updates"
+                  ],
+          "default": null
+        },
+
+       {
+       "name": "tnCs",
+        "type": [
+                   "null",
+                   {
+                      "type": "array",
+                       "items": "com.fretron.Model.ContractTerms"
+                   }
+                        ],
+         "default": null
+     },
+     {
+        "name": "lineItems",
+         "type": [
+                   "null",
+                           {
+                             "type": "array",
+                             "items": "com.fretron.Model.OrderLineItem"
+                           }
+                  ],
+         "default": null
+      },
+      {
+         "name": "branch",
+          "type": [
+                    "null",
+                    "com.fretron.Model.OrgOffice"
+                  ],
+         "default": null
+       },
+       {
+          "name": "route",
+          "type": [
+                    "null",
+                    "string"
+                   ],
+          "default": null
+       },
+       {
+          "name": "auctionId",
+          "type": [
+                    "null",
+                     "string"
+                  ],
+          "default": null
+       },
+       {
+           "name": "customFields",
+           "type": [
+                      "null",
+             {
+                "type": "array",
+                 "items": "com.fretron.Model.CustomFields"
+             }
+                  ],
+           "default": null
+        },
+        {
+           "name": "allowedVehicleTypes",
+            "type": [
+                      "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+                  ],
+            "default": null
+       },
+       {
+          "name": "shipments",
+                 "type": [
+                           "null",
+                           {
+                             "type": "array",
+                             "items": "string"
+                           }
+                         ],
+           "default": null
+       }
+  ]
+}

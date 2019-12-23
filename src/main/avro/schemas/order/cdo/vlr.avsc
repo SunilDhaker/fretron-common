@@ -1,0 +1,115 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "VehicleLoadRequest",
+  "type": "record",
+  "fields": [
+     {
+        "name": "uuid",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+         "name": "orgId",
+         "type": [
+                "null",
+                "string"
+              ],
+         "default": null
+      },
+
+    {
+      "name": "origins",
+      "type": [
+                 "null",
+                        {
+                          "type": "array",
+                          "items": "com.fretron.Model.Place"
+                        }
+                      ],
+      "default": null
+    },
+    {
+          "name": "destinations",
+          "type": [
+                     "null",
+                            {
+                              "type": "array",
+                              "items": "com.fretron.Model.Place"
+                            }
+                          ],
+          "default": null
+      },
+      {
+              "name": "status",
+              "type": [
+                        "null",
+                        "string"
+                       ],
+               "default": null
+      },
+      {
+         "name": "routeId",
+          "type": [
+                          "null",
+                          "string"
+                        ],
+          "default": null
+      },
+      {
+          "name": "price",
+             "type": [
+                       "null",
+                       "double"
+                     ],
+            "default": null
+       },
+       {
+         "name": "priceUOM",
+          "type": [
+                            "null",
+                             "string"
+                          ],
+           "default": null
+         },
+         {
+                 "name":"isNegotiable",
+                  "type": ["null","boolean"],
+                  "default":null
+          },
+         {
+               "name": "numberOfVehicles",
+                "type": [
+                             "null",
+                             "int"
+                            ],
+                "default": null
+            },
+            {
+                "name": "vehicleType",
+                 "type": [
+                            "null",
+                            "string"
+                         ],
+                  "default": null
+            },
+            {
+                 "name": "validTill",
+                 "type": [
+                             "null",
+                             "long"
+                         ],
+                 "default": null
+             },
+             {
+                     "name": "vendor",
+                      "type": [
+                                            "null",
+                                            "com.fretron.Model.BuisnessPartner"
+                                          ],
+                     "default": null
+                  }
+  ]
+}

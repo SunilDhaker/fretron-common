@@ -1,0 +1,48 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "FreightUnitLineItem",
+  "type": "record",
+  "fields": [
+           {
+               "name": "status",
+               "type": ["null",
+                               "string"
+                         ],
+                "default": null
+           },
+          {
+                 "name": "salesOrderMappings",
+                  "type": [
+                             "null",
+                             {
+                                "type": "array",
+                                 "items": "com.fretron.Model.SalesOrderMapping"
+                             }
+                                  ],
+                   "default": null
+          },
+
+           {
+              "name": "purchaseOrderId",
+              "type": ["null",
+                             "string"
+                      ],
+              "default": null
+           },
+            {
+              "name": "purchaseLineItemId",
+               "type": ["null",
+                                        "string"
+                                 ],
+               "default": null
+            },
+            {
+              "name": "auctionId",
+              "type": ["null",
+                            "string"
+                      ],
+            "default": null
+           }
+
+  ]
+}

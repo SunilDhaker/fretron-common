@@ -1,0 +1,72 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "FreightUnit",
+  "type": "record",
+  "fields": [
+   {
+     "name": "uuid",
+      "type": [
+                  "null",
+                  "string"
+                ],
+      "default": null
+    },
+    {
+       "name": "orgId",
+       "type": [
+                 "null",
+                 "string"
+                    ],
+       "default": null
+    },
+    {
+       "name": "auctionQuantity",
+       "type": [
+                  "null",
+                  "com.fretron.Model.StandardMeasurement"
+               ],
+       "default": null
+     } ,
+     {
+          "name": "allocatedQuantity",
+           "type": [
+                      "null",
+                       "com.fretron.Model.StandardMeasurement"
+                   ],
+         "default": null
+    },
+    {
+        "name": "totalQuantity",
+         "type": [
+                   "null",
+                    "com.fretron.Model.StandardMeasurement"
+                  ],
+         "default": null
+     },
+     {
+            "name": "allowedLoadTypes",
+            "type": [
+                         "null",
+                      {
+                         "type": "array",
+                         "items": "com.fretron.Model.LoadType"
+                      }
+                                       ],
+                        "default": null
+      },
+      {
+                 "name": "lineItems",
+                  "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "com.fretron.Model.FreightUnitLineItem"
+                            }
+                          ],
+                  "default": null
+      }
+
+
+
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "OrderLineItem",
+  "type": "record",
+  "fields": [
+       {
+          "name": "consignee",
+              "type": [
+                        "null",
+                        "com.fretron.Model.BuisnessPartner"
+                           ],
+             "default": null
+        },
+        {
+           "name": "consigner",
+            "type": [
+                       "null",
+                       "com.fretron.Model.BuisnessPartner"
+                    ],
+          "default": null
+        },
+
+        {
+          "name": "expectedPickupDate",
+           "type": [
+                                    "null",
+                                    "long"
+                                  ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+          {
+              "name": "invoiceDate",
+                             "type": [
+                                    "null",
+                                    "long"
+                                  ],
+              "logicalType": "timestamp-millis",
+              "default": null
+          },
+          {
+             "name": "invoiceValue",
+              "type": ["null","double"],
+               "default" : null
+          },
+          {
+                 "name": "invoiceNumber",
+                  "type": ["null",
+                                "string"
+                          ],
+                  "default": null
+           },
+           {
+               "name": "loadInfo",
+                "type": [
+                            "null",
+                            "com.fretron.Model.LoadInfo"
+                        ],
+                "default": null
+          },
+          {
+                 "name": "allowedLoadTypes",
+                  "type": [
+                             "null",
+                             {
+                                "type": "array",
+                                 "items": "com.fretron.Model.LoadType"
+                             }
+                                  ],
+                   "default": null
+          },
+          {
+               "name": "uuid",
+               "type": ["null",
+                             "string"
+                       ],
+              "default": null
+          },
+          {
+              "name": "plannedQuantity",
+              "type": ["null","double"],
+              "default" : null
+         }
+  ]
+}
