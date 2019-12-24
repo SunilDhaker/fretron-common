@@ -53,9 +53,9 @@ public class Response<T> {
         if (data == null) {
             response.put("data", JSONObject.NULL);
         } else {
-            if (data instanceof  JSONObject || data instanceof JSONArray || data instanceof String){
+            if (data instanceof JSONObject || data instanceof JSONArray || data instanceof String) {
                 response.put("data", data);
-            }else{
+            } else {
                 if (data instanceof SpecificRecord) {
                     response.put("data", new JSONObject(data.toString()));
                 } else if (data instanceof List) {
