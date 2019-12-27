@@ -79,23 +79,31 @@
                    "default": null
             },
              {
-                                          "name": "time",
-                                            "type": [
-                                                       "null",
-                                                        "long"
-                                                    ],
-                                           "default": null
+                  "name": "time",
+                    "type": [
+                               "null",
+                                "long"
+                            ],
+                   "default": null
              },
              {
-                    "name": "partnerExternalId",
-                     "type": [
-                                            "null",
-                                             "string"
-                                         ],
-                                "default": null
+                "name": "partnerExternalId",
+                 "type": [
+                            "null",
+                             "string"
+                         ],
+                "default": null
               },
               {
                   "name": "vendorExecutive",
+                   "type": [
+                                "null",
+                                 "string"
+                            ],
+                    "default": null
+               },
+              {
+                  "name": "source",
                    "type": [
                                 "null",
                                  "string"
