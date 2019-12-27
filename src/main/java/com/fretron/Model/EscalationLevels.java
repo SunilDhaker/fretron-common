@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 9077102708487676521L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EscalationLevels\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"escalationToId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalatedToIdType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevelName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevel\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"resolutionHourType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8358887015104928153L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"EscalationLevels\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"escalationToId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalatedToIdType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevelName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevel\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"resolutionHourType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueFieldMapping\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueFieldMapping\",\"fields\":[{\"name\":\"issueFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"roleFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String escalationToId;
   @Deprecated public java.lang.String escalatedToIdType;
@@ -19,6 +19,7 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
   @Deprecated public java.lang.Integer escalationLevel;
   @Deprecated public java.lang.Long resolutionTime;
   @Deprecated public java.lang.String resolutionHourType;
+  @Deprecated public java.util.List<com.fretron.Model.IssueFieldMapping> issueFieldMapping;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
    * @param escalationLevel The new value for escalationLevel
    * @param resolutionTime The new value for resolutionTime
    * @param resolutionHourType The new value for resolutionHourType
+   * @param issueFieldMapping The new value for issueFieldMapping
    */
-  public EscalationLevels(java.lang.String escalationToId, java.lang.String escalatedToIdType, java.lang.String escalationLevelName, java.lang.Integer escalationLevel, java.lang.Long resolutionTime, java.lang.String resolutionHourType) {
+  public EscalationLevels(java.lang.String escalationToId, java.lang.String escalatedToIdType, java.lang.String escalationLevelName, java.lang.Integer escalationLevel, java.lang.Long resolutionTime, java.lang.String resolutionHourType, java.util.List<com.fretron.Model.IssueFieldMapping> issueFieldMapping) {
     this.escalationToId = escalationToId;
     this.escalatedToIdType = escalatedToIdType;
     this.escalationLevelName = escalationLevelName;
     this.escalationLevel = escalationLevel;
     this.resolutionTime = resolutionTime;
     this.resolutionHourType = resolutionHourType;
+    this.issueFieldMapping = issueFieldMapping;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
     case 3: return escalationLevel;
     case 4: return resolutionTime;
     case 5: return resolutionHourType;
+    case 6: return issueFieldMapping;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
     case 3: escalationLevel = (java.lang.Integer)value$; break;
     case 4: resolutionTime = (java.lang.Long)value$; break;
     case 5: resolutionHourType = (java.lang.String)value$; break;
+    case 6: issueFieldMapping = (java.util.List<com.fretron.Model.IssueFieldMapping>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
   }
 
   /**
+   * Gets the value of the 'issueFieldMapping' field.
+   * @return The value of the 'issueFieldMapping' field.
+   */
+  public java.util.List<com.fretron.Model.IssueFieldMapping> getIssueFieldMapping() {
+    return issueFieldMapping;
+  }
+
+  /**
+   * Sets the value of the 'issueFieldMapping' field.
+   * @param value the value to set.
+   */
+  public void setIssueFieldMapping(java.util.List<com.fretron.Model.IssueFieldMapping> value) {
+    this.issueFieldMapping = value;
+  }
+
+  /**
    * Creates a new EscalationLevels RecordBuilder.
    * @return A new EscalationLevels RecordBuilder
    */
@@ -207,6 +228,7 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
     private java.lang.Integer escalationLevel;
     private java.lang.Long resolutionTime;
     private java.lang.String resolutionHourType;
+    private java.util.List<com.fretron.Model.IssueFieldMapping> issueFieldMapping;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
         this.resolutionHourType = data().deepCopy(fields()[5].schema(), other.resolutionHourType);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.issueFieldMapping)) {
+        this.issueFieldMapping = data().deepCopy(fields()[6].schema(), other.issueFieldMapping);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
       if (isValidValue(fields()[5], other.resolutionHourType)) {
         this.resolutionHourType = data().deepCopy(fields()[5].schema(), other.resolutionHourType);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.issueFieldMapping)) {
+        this.issueFieldMapping = data().deepCopy(fields()[6].schema(), other.issueFieldMapping);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'issueFieldMapping' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.IssueFieldMapping> getIssueFieldMapping() {
+      return issueFieldMapping;
+    }
+
+    /**
+      * Sets the value of the 'issueFieldMapping' field.
+      * @param value The value of 'issueFieldMapping'.
+      * @return This builder.
+      */
+    public com.fretron.Model.EscalationLevels.Builder setIssueFieldMapping(java.util.List<com.fretron.Model.IssueFieldMapping> value) {
+      validate(fields()[6], value);
+      this.issueFieldMapping = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'issueFieldMapping' field has been set.
+      * @return True if the 'issueFieldMapping' field has been set, false otherwise.
+      */
+    public boolean hasIssueFieldMapping() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'issueFieldMapping' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.EscalationLevels.Builder clearIssueFieldMapping() {
+      issueFieldMapping = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public EscalationLevels build() {
       try {
@@ -521,6 +590,7 @@ public class EscalationLevels extends org.apache.avro.specific.SpecificRecordBas
         record.escalationLevel = fieldSetFlags()[3] ? this.escalationLevel : (java.lang.Integer) defaultValue(fields()[3]);
         record.resolutionTime = fieldSetFlags()[4] ? this.resolutionTime : (java.lang.Long) defaultValue(fields()[4]);
         record.resolutionHourType = fieldSetFlags()[5] ? this.resolutionHourType : (java.lang.String) defaultValue(fields()[5]);
+        record.issueFieldMapping = fieldSetFlags()[6] ? this.issueFieldMapping : (java.util.List<com.fretron.Model.IssueFieldMapping>) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

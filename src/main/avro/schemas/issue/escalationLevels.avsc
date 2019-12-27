@@ -55,7 +55,20 @@
                                               "string"
                                                ],
                                                "default": null
-                                                }
+                                                },
+
+             	{
+             			"name": "issueFieldMapping",
+             			"type": [
+             				"null",
+             				{
+             					"type": "array",
+             					"items": "com.fretron.Model.IssueFieldMapping"
+             				}
+             			],
+             			"default": null
+             		}
+
 
 
 
