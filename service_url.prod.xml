@@ -129,6 +129,7 @@
 
 
     <entry key="settings.manager.service.url">http://settings-manager.streams:2131</entry>
+    <entry key="vehicle.manager.service.url">http://vehicle-manager.streams:8087</entry>
 
 
 
