@@ -132,7 +132,7 @@
     <entry key="vehicle.manager.service.url">http://vehicle-manager.streams:8087</entry>
 
 
-
+    <entry key="business.partner.manager.service.url">http://business-partner-manager.streams:8087</entry>
 
 
 </properties>
