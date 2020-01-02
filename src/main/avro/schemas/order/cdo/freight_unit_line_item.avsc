@@ -3,6 +3,14 @@
   "name": "FreightUnitLineItem",
   "type": "record",
   "fields": [
+     {
+       "name": "uuid",
+        "type": [
+                    "null",
+                    "string"
+                  ],
+        "default": null
+      },
            {
                "name": "status",
                "type": ["null",
