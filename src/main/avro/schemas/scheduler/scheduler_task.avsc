@@ -93,7 +93,18 @@
              "long"
            ],
          "default": null
-     }
+     },
+     {
+               "name": "dayHours",
+                "type": [
+                               "null",
+                                {
+                                  "type": "array",
+                                  "items": "int"
+                                }
+                              ],
+                "default":null
+          }
 
   ]
 }
