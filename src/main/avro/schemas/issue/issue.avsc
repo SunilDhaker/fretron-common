@@ -341,7 +341,7 @@
                                           			"default": null
                                           		},
              	{
-               			"name": "escalationPerson",
+               		"name": "escalationPerson",
                			"type": [
                				"null",
                				"com.fretron.Model.User"
