@@ -339,7 +339,16 @@
                                           				"long"
                                           			],
                                           			"default": null
-                                          		}
+                                          		},
+             	{
+               			"name": "escalationPerson",
+               			"type": [
+               				"null",
+               				"com.fretron.Model.User"
+               			],
+               			"default": null
+               		}
+
 
   	]
   }
