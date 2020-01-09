@@ -347,7 +347,15 @@
                				"com.fretron.Model.User"
                			],
                			"default": null
-               		}
+               		},
+               		  {
+                                      			"name": "escalationName",
+                                      			"type": [
+                                      				"null",
+                                      				"string"
+                                      			],
+                                      			"default": null
+                                      		}
 
 
   	]
