@@ -355,7 +355,18 @@
                                       				"string"
                                       			],
                                       			"default": null
-                                      		}
+                                      		},
+                                      				{
+                                            			"name": "showIn",
+                                            			"type": [
+                                            				"null",
+                                            				{
+                                            					"type": "array",
+                                            					"items": "string"
+                                            				}
+                                            			],
+                                            			"default": null
+                                            		}
 
 
   	]
