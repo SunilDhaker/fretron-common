@@ -80,6 +80,13 @@
               "name": "plannedQuantity",
               "type": ["null","double"],
               "default" : null
+         },
+         {
+              "name": "legType",
+                        "type": ["null",
+                                      "string"
+                                ],
+                 "default": null
          }
   ]
 }
