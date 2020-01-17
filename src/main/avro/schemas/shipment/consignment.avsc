@@ -276,7 +276,15 @@
                                                 "com.fretron.Model.Updates"
                                               ],
                                               "default": null
-                                            }
+                                            },
+                                                  {
+                                                    "name": "trackingStatus",
+                                                    "type": [
+                                                      "null",
+                                                      "string"
+                                                    ],
+                                                    "default": null
+                                                  }
 
     ]
   }

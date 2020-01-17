@@ -1,0 +1,80 @@
+{
+ "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "EscalationLevels",
+  "fields": [
+            {
+              "name": "escalationToId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+
+             {
+               "name": "escalatedToIdType",
+               "type": [
+                 "null",
+                 "string"
+               ],
+
+               "default": null
+             },
+       {
+               "name": "escalationLevelName",
+               "type": [
+                 "null",
+                 "string"
+               ],
+               "default": null
+             },
+              {
+                           "name": "escalationLevel",
+                           "type": [
+                             "null",
+                             "int"
+                           ],
+                           "default": null
+                         },
+
+
+
+                 {
+                  "name": "resolutionTime",
+                   "type": [
+                     "null",
+                      "long"
+                       ],
+                       "default": null
+                        },
+                          {
+                                          "name": "resolutionHourType",
+                                           "type": [
+                                             "null",
+                                              "string"
+                                               ],
+                                               "default": null
+                                                },
+
+             	{
+             			"name": "issueFieldMapping",
+             			"type": [
+             				"null",
+             				{
+             					"type": "array",
+             					"items": "com.fretron.Model.IssueFieldMapping"
+             				}
+             			],
+             			"default": null
+             		}
+
+
+
+
+
+
+
+
+             ]
+}

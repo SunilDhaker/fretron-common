@@ -591,6 +591,8 @@ public class Constants {
     public static final String KEY_AUTOMATION_ENGINE_SERVICE_URL = "key.automation.engine.service.url";
     public static final String KEY_SETTING_MANAGER_SERVICE_URL = "settings.manager.service.url";
 
+    public static final String KEY_VEHICLE_MANAGER_SERVICE_URL = "vehicle.manager.service.url";
+    public static final String KEY_BPARTNER_MANAGER_SERVICE_URL = "business.partner.manager.service.url";
 
     private Constants() {
 

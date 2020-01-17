@@ -93,7 +93,29 @@
              "long"
            ],
          "default": null
-     }
+     },
+     {
+               "name": "dayHours",
+                "type": [
+                               "null",
+                                {
+                                  "type": "array",
+                                  "items": "int"
+                                }
+                              ],
+                "default":null
+          },
+          {
+                    "name": "timesOfDay",
+                     "type": [
+                                    "null",
+                                     {
+                                       "type": "array",
+                                       "items": "long"
+                                     }
+                                   ],
+                     "default":null
+               }
 
   ]
 }
