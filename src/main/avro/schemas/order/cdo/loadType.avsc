@@ -59,6 +59,14 @@
 			"default": null
 		},
 		{
+          "name": "passingCapacityCFT",
+        			"type": [
+        				"null",
+        				"double"
+        			],
+        "default": null
+        },
+		{
 			"name": "bodyType",
 			"type": [
 				"null",

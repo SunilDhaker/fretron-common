@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2738421070624552901L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3945807258590028675L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String uuid;
@@ -20,6 +20,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String vehicleCategory;
   @Deprecated public java.lang.Integer numberOfWheels;
   @Deprecated public java.lang.Double passingCapacityMT;
+  @Deprecated public java.lang.Double passingCapacityCFT;
   @Deprecated public java.lang.String bodyType;
   @Deprecated public java.lang.String dimensionString;
 
@@ -39,10 +40,11 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param vehicleCategory The new value for vehicleCategory
    * @param numberOfWheels The new value for numberOfWheels
    * @param passingCapacityMT The new value for passingCapacityMT
+   * @param passingCapacityCFT The new value for passingCapacityCFT
    * @param bodyType The new value for bodyType
    * @param dimensionString The new value for dimensionString
    */
-  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.String bodyType, java.lang.String dimensionString) {
+  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String dimensionString) {
     this.name = name;
     this.uuid = uuid;
     this.orgId = orgId;
@@ -50,6 +52,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     this.vehicleCategory = vehicleCategory;
     this.numberOfWheels = numberOfWheels;
     this.passingCapacityMT = passingCapacityMT;
+    this.passingCapacityCFT = passingCapacityCFT;
     this.bodyType = bodyType;
     this.dimensionString = dimensionString;
   }
@@ -65,8 +68,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 4: return vehicleCategory;
     case 5: return numberOfWheels;
     case 6: return passingCapacityMT;
-    case 7: return bodyType;
-    case 8: return dimensionString;
+    case 7: return passingCapacityCFT;
+    case 8: return bodyType;
+    case 9: return dimensionString;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -82,8 +86,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 4: vehicleCategory = (java.lang.String)value$; break;
     case 5: numberOfWheels = (java.lang.Integer)value$; break;
     case 6: passingCapacityMT = (java.lang.Double)value$; break;
-    case 7: bodyType = (java.lang.String)value$; break;
-    case 8: dimensionString = (java.lang.String)value$; break;
+    case 7: passingCapacityCFT = (java.lang.Double)value$; break;
+    case 8: bodyType = (java.lang.String)value$; break;
+    case 9: dimensionString = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -201,6 +206,22 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'passingCapacityCFT' field.
+   * @return The value of the 'passingCapacityCFT' field.
+   */
+  public java.lang.Double getPassingCapacityCFT() {
+    return passingCapacityCFT;
+  }
+
+  /**
+   * Sets the value of the 'passingCapacityCFT' field.
+   * @param value the value to set.
+   */
+  public void setPassingCapacityCFT(java.lang.Double value) {
+    this.passingCapacityCFT = value;
+  }
+
+  /**
    * Gets the value of the 'bodyType' field.
    * @return The value of the 'bodyType' field.
    */
@@ -271,6 +292,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String vehicleCategory;
     private java.lang.Integer numberOfWheels;
     private java.lang.Double passingCapacityMT;
+    private java.lang.Double passingCapacityCFT;
     private java.lang.String bodyType;
     private java.lang.String dimensionString;
 
@@ -313,13 +335,17 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
+      if (isValidValue(fields()[7], other.passingCapacityCFT)) {
+        this.passingCapacityCFT = data().deepCopy(fields()[7].schema(), other.passingCapacityCFT);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+      if (isValidValue(fields()[8], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[8].schema(), other.bodyType);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[9].schema(), other.dimensionString);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -357,13 +383,17 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
+      if (isValidValue(fields()[7], other.passingCapacityCFT)) {
+        this.passingCapacityCFT = data().deepCopy(fields()[7].schema(), other.passingCapacityCFT);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+      if (isValidValue(fields()[8], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[8].schema(), other.bodyType);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[9].schema(), other.dimensionString);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -641,6 +671,45 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
+      * Gets the value of the 'passingCapacityCFT' field.
+      * @return The value.
+      */
+    public java.lang.Double getPassingCapacityCFT() {
+      return passingCapacityCFT;
+    }
+
+    /**
+      * Sets the value of the 'passingCapacityCFT' field.
+      * @param value The value of 'passingCapacityCFT'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setPassingCapacityCFT(java.lang.Double value) {
+      validate(fields()[7], value);
+      this.passingCapacityCFT = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'passingCapacityCFT' field has been set.
+      * @return True if the 'passingCapacityCFT' field has been set, false otherwise.
+      */
+    public boolean hasPassingCapacityCFT() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'passingCapacityCFT' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearPassingCapacityCFT() {
+      passingCapacityCFT = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'bodyType' field.
       * @return The value.
       */
@@ -654,9 +723,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setBodyType(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.bodyType = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -665,7 +734,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'bodyType' field has been set, false otherwise.
       */
     public boolean hasBodyType() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -675,7 +744,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearBodyType() {
       bodyType = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -693,9 +762,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setDimensionString(java.lang.String value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.dimensionString = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -704,7 +773,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'dimensionString' field has been set, false otherwise.
       */
     public boolean hasDimensionString() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -714,7 +783,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearDimensionString() {
       dimensionString = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -729,8 +798,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         record.vehicleCategory = fieldSetFlags()[4] ? this.vehicleCategory : (java.lang.String) defaultValue(fields()[4]);
         record.numberOfWheels = fieldSetFlags()[5] ? this.numberOfWheels : (java.lang.Integer) defaultValue(fields()[5]);
         record.passingCapacityMT = fieldSetFlags()[6] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[6]);
-        record.bodyType = fieldSetFlags()[7] ? this.bodyType : (java.lang.String) defaultValue(fields()[7]);
-        record.dimensionString = fieldSetFlags()[8] ? this.dimensionString : (java.lang.String) defaultValue(fields()[8]);
+        record.passingCapacityCFT = fieldSetFlags()[7] ? this.passingCapacityCFT : (java.lang.Double) defaultValue(fields()[7]);
+        record.bodyType = fieldSetFlags()[8] ? this.bodyType : (java.lang.String) defaultValue(fields()[8]);
+        record.dimensionString = fieldSetFlags()[9] ? this.dimensionString : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
