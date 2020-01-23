@@ -284,7 +284,25 @@
                                                       "string"
                                                     ],
                                                     "default": null
-                                                  }
+                                                  },
+         {
+                "name": "edd",
+                "type": [
+                  "null",
+                  "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+              },
+            {
+              "name": "originalEdd",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+            }
 
     ]
   }
