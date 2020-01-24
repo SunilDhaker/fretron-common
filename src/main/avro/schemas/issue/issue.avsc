@@ -331,7 +331,43 @@
                   				"string"
                   			],
                   			"default": null
-                  		}
+                  		},
+                  		  {
+                                          			"name": "escalationDueDate",
+                                          			"type": [
+                                          				"null",
+                                          				"long"
+                                          			],
+                                          			"default": null
+                                          		},
+             	{
+               		"name": "escalationPerson",
+               			"type": [
+               				"null",
+               				"com.fretron.Model.User"
+               			],
+               			"default": null
+               		},
+               		  {
+                                      			"name": "escalationName",
+                                      			"type": [
+                                      				"null",
+                                      				"string"
+                                      			],
+                                      			"default": null
+                                      		},
+                                      				{
+                                            			"name": "showIn",
+                                            			"type": [
+                                            				"null",
+                                            				{
+                                            					"type": "array",
+                                            					"items": "string"
+                                            				}
+                                            			],
+                                            			"default": null
+                                            		}
+
 
   	]
   }
