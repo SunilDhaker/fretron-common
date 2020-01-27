@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Updates extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7799826918580145451L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2846916516355186261L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.util.List<java.lang.String> forwardReasons;
   @Deprecated public java.lang.String updatedBy;
@@ -24,6 +24,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String description;
   @Deprecated public java.lang.String forwardedFrom;
   @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.Integer revision;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param description The new value for description
    * @param forwardedFrom The new value for forwardedFrom
    * @param uuid The new value for uuid
+   * @param revision The new value for revision
    */
-  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation, java.lang.String updateType, java.lang.String description, java.lang.String forwardedFrom, java.lang.String uuid) {
+  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation, java.lang.String updateType, java.lang.String description, java.lang.String forwardedFrom, java.lang.String uuid, java.lang.Integer revision) {
     this.forwardReasons = forwardReasons;
     this.updatedBy = updatedBy;
     this.userId = userId;
@@ -58,6 +60,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     this.description = description;
     this.forwardedFrom = forwardedFrom;
     this.uuid = uuid;
+    this.revision = revision;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 8: return description;
     case 9: return forwardedFrom;
     case 10: return uuid;
+    case 11: return revision;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 8: description = (java.lang.String)value$; break;
     case 9: forwardedFrom = (java.lang.String)value$; break;
     case 10: uuid = (java.lang.String)value$; break;
+    case 11: revision = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'revision' field.
+   * @return The value of the 'revision' field.
+   */
+  public java.lang.Integer getRevision() {
+    return revision;
+  }
+
+  /**
+   * Sets the value of the 'revision' field.
+   * @param value the value to set.
+   */
+  public void setRevision(java.lang.Integer value) {
+    this.revision = value;
+  }
+
+  /**
    * Creates a new Updates RecordBuilder.
    * @return A new Updates RecordBuilder
    */
@@ -317,6 +338,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String description;
     private java.lang.String forwardedFrom;
     private java.lang.String uuid;
+    private java.lang.Integer revision;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +395,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         this.uuid = data().deepCopy(fields()[10].schema(), other.uuid);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.revision)) {
+        this.revision = data().deepCopy(fields()[11].schema(), other.revision);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -424,6 +450,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[10], other.uuid)) {
         this.uuid = data().deepCopy(fields()[10].schema(), other.uuid);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.revision)) {
+        this.revision = data().deepCopy(fields()[11].schema(), other.revision);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -856,6 +886,45 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'revision' field.
+      * @return The value.
+      */
+    public java.lang.Integer getRevision() {
+      return revision;
+    }
+
+    /**
+      * Sets the value of the 'revision' field.
+      * @param value The value of 'revision'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder setRevision(java.lang.Integer value) {
+      validate(fields()[11], value);
+      this.revision = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'revision' field has been set.
+      * @return True if the 'revision' field has been set, false otherwise.
+      */
+    public boolean hasRevision() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'revision' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder clearRevision() {
+      revision = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public Updates build() {
       try {
@@ -871,6 +940,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         record.description = fieldSetFlags()[8] ? this.description : (java.lang.String) defaultValue(fields()[8]);
         record.forwardedFrom = fieldSetFlags()[9] ? this.forwardedFrom : (java.lang.String) defaultValue(fields()[9]);
         record.uuid = fieldSetFlags()[10] ? this.uuid : (java.lang.String) defaultValue(fields()[10]);
+        record.revision = fieldSetFlags()[11] ? this.revision : (java.lang.Integer) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
