@@ -94,7 +94,15 @@
                                   "string"
                                 ],
                                 "default": null
-                              }
+                              },
+                              {
+                                                              "name": "revision",
+                                                              "type": [
+                                                                "null",
+                                                                "int"
+                                                              ],
+                                                              "default": null
+                                                            }
 
     ]
  }
