@@ -10,13 +10,16 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Materials extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2679921865409963677L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -6996255539980520813L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public java.lang.String measurementType;
+  @Deprecated public java.lang.String unitOfMeasurement;
+  @Deprecated public java.lang.Double pricePerUnit;
   @Deprecated public com.fretron.Model.Updates updates;
 
   /**
@@ -32,13 +35,19 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
    * @param externalId The new value for externalId
    * @param name The new value for name
    * @param orgId The new value for orgId
+   * @param measurementType The new value for measurementType
+   * @param unitOfMeasurement The new value for unitOfMeasurement
+   * @param pricePerUnit The new value for pricePerUnit
    * @param updates The new value for updates
    */
-  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, com.fretron.Model.Updates updates) {
+  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.name = name;
     this.orgId = orgId;
+    this.measurementType = measurementType;
+    this.unitOfMeasurement = unitOfMeasurement;
+    this.pricePerUnit = pricePerUnit;
     this.updates = updates;
   }
 
@@ -50,7 +59,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 1: return externalId;
     case 2: return name;
     case 3: return orgId;
-    case 4: return updates;
+    case 4: return measurementType;
+    case 5: return unitOfMeasurement;
+    case 6: return pricePerUnit;
+    case 7: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -63,7 +75,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 1: externalId = (java.lang.String)value$; break;
     case 2: name = (java.lang.String)value$; break;
     case 3: orgId = (java.lang.String)value$; break;
-    case 4: updates = (com.fretron.Model.Updates)value$; break;
+    case 4: measurementType = (java.lang.String)value$; break;
+    case 5: unitOfMeasurement = (java.lang.String)value$; break;
+    case 6: pricePerUnit = (java.lang.Double)value$; break;
+    case 7: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -133,6 +148,54 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'measurementType' field.
+   * @return The value of the 'measurementType' field.
+   */
+  public java.lang.String getMeasurementType() {
+    return measurementType;
+  }
+
+  /**
+   * Sets the value of the 'measurementType' field.
+   * @param value the value to set.
+   */
+  public void setMeasurementType(java.lang.String value) {
+    this.measurementType = value;
+  }
+
+  /**
+   * Gets the value of the 'unitOfMeasurement' field.
+   * @return The value of the 'unitOfMeasurement' field.
+   */
+  public java.lang.String getUnitOfMeasurement() {
+    return unitOfMeasurement;
+  }
+
+  /**
+   * Sets the value of the 'unitOfMeasurement' field.
+   * @param value the value to set.
+   */
+  public void setUnitOfMeasurement(java.lang.String value) {
+    this.unitOfMeasurement = value;
+  }
+
+  /**
+   * Gets the value of the 'pricePerUnit' field.
+   * @return The value of the 'pricePerUnit' field.
+   */
+  public java.lang.Double getPricePerUnit() {
+    return pricePerUnit;
+  }
+
+  /**
+   * Sets the value of the 'pricePerUnit' field.
+   * @param value the value to set.
+   */
+  public void setPricePerUnit(java.lang.Double value) {
+    this.pricePerUnit = value;
+  }
+
+  /**
    * Gets the value of the 'updates' field.
    * @return The value of the 'updates' field.
    */
@@ -184,6 +247,9 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String externalId;
     private java.lang.String name;
     private java.lang.String orgId;
+    private java.lang.String measurementType;
+    private java.lang.String unitOfMeasurement;
+    private java.lang.Double pricePerUnit;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
 
@@ -214,9 +280,21 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.updates)) {
-        this.updates = data().deepCopy(fields()[4].schema(), other.updates);
+      if (isValidValue(fields()[4], other.measurementType)) {
+        this.measurementType = data().deepCopy(fields()[4].schema(), other.measurementType);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.unitOfMeasurement)) {
+        this.unitOfMeasurement = data().deepCopy(fields()[5].schema(), other.unitOfMeasurement);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.pricePerUnit)) {
+        this.pricePerUnit = data().deepCopy(fields()[6].schema(), other.pricePerUnit);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.updates)) {
+        this.updates = data().deepCopy(fields()[7].schema(), other.updates);
+        fieldSetFlags()[7] = true;
       }
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
@@ -245,9 +323,21 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.orgId = data().deepCopy(fields()[3].schema(), other.orgId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.updates)) {
-        this.updates = data().deepCopy(fields()[4].schema(), other.updates);
+      if (isValidValue(fields()[4], other.measurementType)) {
+        this.measurementType = data().deepCopy(fields()[4].schema(), other.measurementType);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.unitOfMeasurement)) {
+        this.unitOfMeasurement = data().deepCopy(fields()[5].schema(), other.unitOfMeasurement);
+        fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.pricePerUnit)) {
+        this.pricePerUnit = data().deepCopy(fields()[6].schema(), other.pricePerUnit);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.updates)) {
+        this.updates = data().deepCopy(fields()[7].schema(), other.updates);
+        fieldSetFlags()[7] = true;
       }
       this.updatesBuilder = null;
     }
@@ -409,6 +499,123 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'measurementType' field.
+      * @return The value.
+      */
+    public java.lang.String getMeasurementType() {
+      return measurementType;
+    }
+
+    /**
+      * Sets the value of the 'measurementType' field.
+      * @param value The value of 'measurementType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMeasurementType(java.lang.String value) {
+      validate(fields()[4], value);
+      this.measurementType = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'measurementType' field has been set.
+      * @return True if the 'measurementType' field has been set, false otherwise.
+      */
+    public boolean hasMeasurementType() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'measurementType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMeasurementType() {
+      measurementType = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'unitOfMeasurement' field.
+      * @return The value.
+      */
+    public java.lang.String getUnitOfMeasurement() {
+      return unitOfMeasurement;
+    }
+
+    /**
+      * Sets the value of the 'unitOfMeasurement' field.
+      * @param value The value of 'unitOfMeasurement'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setUnitOfMeasurement(java.lang.String value) {
+      validate(fields()[5], value);
+      this.unitOfMeasurement = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'unitOfMeasurement' field has been set.
+      * @return True if the 'unitOfMeasurement' field has been set, false otherwise.
+      */
+    public boolean hasUnitOfMeasurement() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'unitOfMeasurement' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearUnitOfMeasurement() {
+      unitOfMeasurement = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'pricePerUnit' field.
+      * @return The value.
+      */
+    public java.lang.Double getPricePerUnit() {
+      return pricePerUnit;
+    }
+
+    /**
+      * Sets the value of the 'pricePerUnit' field.
+      * @param value The value of 'pricePerUnit'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setPricePerUnit(java.lang.Double value) {
+      validate(fields()[6], value);
+      this.pricePerUnit = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'pricePerUnit' field has been set.
+      * @return True if the 'pricePerUnit' field has been set, false otherwise.
+      */
+    public boolean hasPricePerUnit() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'pricePerUnit' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearPricePerUnit() {
+      pricePerUnit = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'updates' field.
       * @return The value.
       */
@@ -422,10 +629,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Materials.Builder setUpdates(com.fretron.Model.Updates value) {
-      validate(fields()[4], value);
+      validate(fields()[7], value);
       this.updatesBuilder = null;
       this.updates = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -434,7 +641,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'updates' field has been set, false otherwise.
       */
     public boolean hasUpdates() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[7];
     }
 
     /**
@@ -478,7 +685,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.Materials.Builder clearUpdates() {
       updates = null;
       updatesBuilder = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -490,10 +697,13 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         record.externalId = fieldSetFlags()[1] ? this.externalId : (java.lang.String) defaultValue(fields()[1]);
         record.name = fieldSetFlags()[2] ? this.name : (java.lang.String) defaultValue(fields()[2]);
         record.orgId = fieldSetFlags()[3] ? this.orgId : (java.lang.String) defaultValue(fields()[3]);
+        record.measurementType = fieldSetFlags()[4] ? this.measurementType : (java.lang.String) defaultValue(fields()[4]);
+        record.unitOfMeasurement = fieldSetFlags()[5] ? this.unitOfMeasurement : (java.lang.String) defaultValue(fields()[5]);
+        record.pricePerUnit = fieldSetFlags()[6] ? this.pricePerUnit : (java.lang.Double) defaultValue(fields()[6]);
         if (updatesBuilder != null) {
           record.updates = this.updatesBuilder.build();
         } else {
-          record.updates = fieldSetFlags()[4] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[4]);
+          record.updates = fieldSetFlags()[7] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[7]);
         }
         return record;
       } catch (Exception e) {
