@@ -44,26 +44,26 @@
          "default": null
      },
      {
-            "name": "allowedLoadTypes",
-            "type": [
-                         "null",
-                      {
-                         "type": "array",
-                         "items": "com.fretron.Model.LoadType"
-                      }
+        "name": "allowedLoadTypes",
+         "type": [
+                  "null",
+                   {
+                     "type": "array",
+                      "items": "com.fretron.Model.LoadType"
+                    }
                                        ],
-                        "default": null
+         "default": null
       },
       {
-                 "name": "lineItems",
-                  "type": [
+         "name": "lineItems",
+          "type": [
                             "null",
                             {
                               "type": "array",
                               "items": "com.fretron.Model.FreightUnitLineItem"
                             }
                           ],
-                  "default": null
+          "default": null
       },
       {
         "name": "updates",
@@ -72,9 +72,30 @@
                           "com.fretron.Model.Updates"
                         ],
         "default": null
-      }
-
-
-
+      },
+      {
+        "name": "type",
+        "type": [
+                        "null",
+                        "string"
+                      ],
+        "default": null
+       },
+       {
+         "name": "optimisationBasis",
+         "type": [
+                    "null",
+                    "string"
+                ],
+         "default": null
+        },
+        {
+          "name": "utilization",
+          "type": [
+              				"null",
+              				"double"
+              			],
+         "default": null
+        }
   ]
 }

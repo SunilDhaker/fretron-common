@@ -19,15 +19,15 @@
                 "default": null
            },
           {
-                 "name": "salesOrderMappings",
-                  "type": [
-                             "null",
+             "name": "salesOrderMappings",
+              "type": [
+                        "null",
                              {
                                 "type": "array",
                                  "items": "com.fretron.Model.SalesOrderMapping"
                              }
-                                  ],
-                   "default": null
+                       ],
+            "default": null
           },
 
            {
