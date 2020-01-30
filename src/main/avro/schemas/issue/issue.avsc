@@ -366,7 +366,26 @@
                                             				}
                                             			],
                                             			"default": null
-                                            		}
+                                            		},
+                                            		{
+                                                                                                			"name": "onHoldDueTo",
+                                                                                                			"type": [
+                                                                                                				"null",
+                                                                                                				{
+                                                                                                					"type": "array",
+                                                                                                					"items": "string"
+                                                                                                				}
+                                                                                                			],
+                                                                                                			"default": null
+                                                                                                		},
+                                                                                                		 {
+                                                                                                                                                  			"name": "holdOnTime",
+                                                                                                                                                  			"type": [
+                                                                                                                                                  				"null",
+                                                                                                                                                  				"long"
+                                                                                                                                                  			],
+                                                                                                                                                  			"default": null
+                                                                                                                                                  		}
 
 
   	]
