@@ -80,22 +80,6 @@
                         "string"
                       ],
         "default": null
-       },
-       {
-         "name": "optimisationBasis",
-         "type": [
-                    "null",
-                    "string"
-                ],
-         "default": null
-        },
-        {
-          "name": "utilization",
-          "type": [
-              				"null",
-              				"double"
-              			],
-         "default": null
-        }
+       }
   ]
 }

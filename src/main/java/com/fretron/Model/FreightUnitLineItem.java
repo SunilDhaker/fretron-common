@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 659395629100131598L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightUnitLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOrderMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"auctionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2399991385647900151L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightUnitLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOrderMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"auctionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"optimisationBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"utilization\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String status;
@@ -19,6 +19,8 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.String purchaseOrderId;
   @Deprecated public java.lang.String purchaseLineItemId;
   @Deprecated public java.lang.String auctionId;
+  @Deprecated public java.lang.String optimisationBasis;
+  @Deprecated public java.lang.Double utilization;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +37,18 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
    * @param purchaseOrderId The new value for purchaseOrderId
    * @param purchaseLineItemId The new value for purchaseLineItemId
    * @param auctionId The new value for auctionId
+   * @param optimisationBasis The new value for optimisationBasis
+   * @param utilization The new value for utilization
    */
-  public FreightUnitLineItem(java.lang.String uuid, java.lang.String status, java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings, java.lang.String purchaseOrderId, java.lang.String purchaseLineItemId, java.lang.String auctionId) {
+  public FreightUnitLineItem(java.lang.String uuid, java.lang.String status, java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings, java.lang.String purchaseOrderId, java.lang.String purchaseLineItemId, java.lang.String auctionId, java.lang.String optimisationBasis, java.lang.Double utilization) {
     this.uuid = uuid;
     this.status = status;
     this.salesOrderMappings = salesOrderMappings;
     this.purchaseOrderId = purchaseOrderId;
     this.purchaseLineItemId = purchaseLineItemId;
     this.auctionId = auctionId;
+    this.optimisationBasis = optimisationBasis;
+    this.utilization = utilization;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +61,8 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     case 3: return purchaseOrderId;
     case 4: return purchaseLineItemId;
     case 5: return auctionId;
+    case 6: return optimisationBasis;
+    case 7: return utilization;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +77,8 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     case 3: purchaseOrderId = (java.lang.String)value$; break;
     case 4: purchaseLineItemId = (java.lang.String)value$; break;
     case 5: auctionId = (java.lang.String)value$; break;
+    case 6: optimisationBasis = (java.lang.String)value$; break;
+    case 7: utilization = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +180,38 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'optimisationBasis' field.
+   * @return The value of the 'optimisationBasis' field.
+   */
+  public java.lang.String getOptimisationBasis() {
+    return optimisationBasis;
+  }
+
+  /**
+   * Sets the value of the 'optimisationBasis' field.
+   * @param value the value to set.
+   */
+  public void setOptimisationBasis(java.lang.String value) {
+    this.optimisationBasis = value;
+  }
+
+  /**
+   * Gets the value of the 'utilization' field.
+   * @return The value of the 'utilization' field.
+   */
+  public java.lang.Double getUtilization() {
+    return utilization;
+  }
+
+  /**
+   * Sets the value of the 'utilization' field.
+   * @param value the value to set.
+   */
+  public void setUtilization(java.lang.Double value) {
+    this.utilization = value;
+  }
+
+  /**
    * Creates a new FreightUnitLineItem RecordBuilder.
    * @return A new FreightUnitLineItem RecordBuilder
    */
@@ -207,6 +249,8 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     private java.lang.String purchaseOrderId;
     private java.lang.String purchaseLineItemId;
     private java.lang.String auctionId;
+    private java.lang.String optimisationBasis;
+    private java.lang.Double utilization;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +287,14 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
         this.auctionId = data().deepCopy(fields()[5].schema(), other.auctionId);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.optimisationBasis)) {
+        this.optimisationBasis = data().deepCopy(fields()[6].schema(), other.optimisationBasis);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.utilization)) {
+        this.utilization = data().deepCopy(fields()[7].schema(), other.utilization);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -274,6 +326,14 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[5], other.auctionId)) {
         this.auctionId = data().deepCopy(fields()[5].schema(), other.auctionId);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.optimisationBasis)) {
+        this.optimisationBasis = data().deepCopy(fields()[6].schema(), other.optimisationBasis);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.utilization)) {
+        this.utilization = data().deepCopy(fields()[7].schema(), other.utilization);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -511,6 +571,84 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'optimisationBasis' field.
+      * @return The value.
+      */
+    public java.lang.String getOptimisationBasis() {
+      return optimisationBasis;
+    }
+
+    /**
+      * Sets the value of the 'optimisationBasis' field.
+      * @param value The value of 'optimisationBasis'.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder setOptimisationBasis(java.lang.String value) {
+      validate(fields()[6], value);
+      this.optimisationBasis = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'optimisationBasis' field has been set.
+      * @return True if the 'optimisationBasis' field has been set, false otherwise.
+      */
+    public boolean hasOptimisationBasis() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'optimisationBasis' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder clearOptimisationBasis() {
+      optimisationBasis = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'utilization' field.
+      * @return The value.
+      */
+    public java.lang.Double getUtilization() {
+      return utilization;
+    }
+
+    /**
+      * Sets the value of the 'utilization' field.
+      * @param value The value of 'utilization'.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder setUtilization(java.lang.Double value) {
+      validate(fields()[7], value);
+      this.utilization = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'utilization' field has been set.
+      * @return True if the 'utilization' field has been set, false otherwise.
+      */
+    public boolean hasUtilization() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'utilization' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder clearUtilization() {
+      utilization = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public FreightUnitLineItem build() {
       try {
@@ -521,6 +659,8 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
         record.purchaseOrderId = fieldSetFlags()[3] ? this.purchaseOrderId : (java.lang.String) defaultValue(fields()[3]);
         record.purchaseLineItemId = fieldSetFlags()[4] ? this.purchaseLineItemId : (java.lang.String) defaultValue(fields()[4]);
         record.auctionId = fieldSetFlags()[5] ? this.auctionId : (java.lang.String) defaultValue(fields()[5]);
+        record.optimisationBasis = fieldSetFlags()[6] ? this.optimisationBasis : (java.lang.String) defaultValue(fields()[6]);
+        record.utilization = fieldSetFlags()[7] ? this.utilization : (java.lang.Double) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
