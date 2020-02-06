@@ -302,7 +302,18 @@
               ],
               "logicalType": "timestamp-millis",
               "default": null
-            }
+            },
+                  {
+                    "name": "fuLineItemIds",
+                    "type": [
+                      "null",
+                      {
+                        "type": "array",
+                        "items": "string"
+                      }
+                    ],
+                    "default": null
+                  }
 
     ]
   }

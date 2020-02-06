@@ -273,6 +273,14 @@
                    "com.fretron.Model.OrgOffice"
                  ],
                  "default": null
-               }
+               },
+               {
+                           "name": "poLineItemId",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         }
     ]
   }
