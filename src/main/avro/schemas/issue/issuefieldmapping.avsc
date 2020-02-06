@@ -1,0 +1,27 @@
+{
+ "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "IssueFieldMapping",
+  "fields": [
+            {
+              "name": "issueFilledId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+
+             {
+               "name": "roleFilledId",
+               "type": [
+                 "null",
+                 "string"
+               ],
+
+               "default": null
+             }
+
+
+             ]
+}

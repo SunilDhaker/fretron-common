@@ -276,7 +276,44 @@
                                                 "com.fretron.Model.Updates"
                                               ],
                                               "default": null
-                                            }
+                                            },
+                                                  {
+                                                    "name": "trackingStatus",
+                                                    "type": [
+                                                      "null",
+                                                      "string"
+                                                    ],
+                                                    "default": null
+                                                  },
+         {
+                "name": "edd",
+                "type": [
+                  "null",
+                  "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+              },
+            {
+              "name": "originalEdd",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+            },
+                  {
+                    "name": "fuLineItemIds",
+                    "type": [
+                      "null",
+                      {
+                        "type": "array",
+                        "items": "string"
+                      }
+                    ],
+                    "default": null
+                  }
 
     ]
   }

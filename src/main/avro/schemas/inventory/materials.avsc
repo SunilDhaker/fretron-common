@@ -23,6 +23,21 @@
         "type": ["null","string"],
         "default": null
       },
+       {
+              "name": "measurementType",
+              "type": ["null","string"],
+              "default": null
+            },
+             {
+                          "name": "unitOfMeasurement",
+                          "type": ["null","string"],
+                          "default": null
+                        },
+                         {
+                                                  "name": "pricePerUnit",
+                                                  "type": ["null","double"],
+                                                  "default": null
+                                                },
    {
            "name": "updates",
            "type": [
