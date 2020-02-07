@@ -317,6 +317,11 @@
                 "double"
               ],
               "default": null
-       }
+       } ,
+        {
+                      "name":"isCritical",
+                       "type": ["null","boolean"],
+                       "default":null
+                   }
   ]
 }

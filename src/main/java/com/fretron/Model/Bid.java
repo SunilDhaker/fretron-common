@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Bid extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -9135959931232633821L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4606603822487646485L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String businessPartnerId;
@@ -25,6 +25,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String partnerExternalId;
   @Deprecated public java.lang.String vendorExecutive;
+  @Deprecated public java.lang.String source;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +48,9 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param time The new value for time
    * @param partnerExternalId The new value for partnerExternalId
    * @param vendorExecutive The new value for vendorExecutive
+   * @param source The new value for source
    */
-  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank, java.util.List<java.lang.String> contacts, java.lang.String vehicleType, java.lang.String purchaseOrderId, java.lang.Long time, java.lang.String partnerExternalId, java.lang.String vendorExecutive) {
+  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank, java.util.List<java.lang.String> contacts, java.lang.String vehicleType, java.lang.String purchaseOrderId, java.lang.Long time, java.lang.String partnerExternalId, java.lang.String vendorExecutive, java.lang.String source) {
     this.status = status;
     this.businessPartnerId = businessPartnerId;
     this.partnerName = partnerName;
@@ -61,6 +63,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     this.time = time;
     this.partnerExternalId = partnerExternalId;
     this.vendorExecutive = vendorExecutive;
+    this.source = source;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +82,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 9: return time;
     case 10: return partnerExternalId;
     case 11: return vendorExecutive;
+    case 12: return source;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +103,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 9: time = (java.lang.Long)value$; break;
     case 10: partnerExternalId = (java.lang.String)value$; break;
     case 11: vendorExecutive = (java.lang.String)value$; break;
+    case 12: source = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +301,22 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   }
 
   /**
+   * Gets the value of the 'source' field.
+   * @return The value of the 'source' field.
+   */
+  public java.lang.String getSource() {
+    return source;
+  }
+
+  /**
+   * Sets the value of the 'source' field.
+   * @param value the value to set.
+   */
+  public void setSource(java.lang.String value) {
+    this.source = value;
+  }
+
+  /**
    * Creates a new Bid RecordBuilder.
    * @return A new Bid RecordBuilder
    */
@@ -339,6 +360,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     private java.lang.Long time;
     private java.lang.String partnerExternalId;
     private java.lang.String vendorExecutive;
+    private java.lang.String source;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +421,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         this.vendorExecutive = data().deepCopy(fields()[11].schema(), other.vendorExecutive);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.source)) {
+        this.source = data().deepCopy(fields()[12].schema(), other.source);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -454,6 +480,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       if (isValidValue(fields()[11], other.vendorExecutive)) {
         this.vendorExecutive = data().deepCopy(fields()[11].schema(), other.vendorExecutive);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.source)) {
+        this.source = data().deepCopy(fields()[12].schema(), other.source);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -925,6 +955,45 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       return this;
     }
 
+    /**
+      * Gets the value of the 'source' field.
+      * @return The value.
+      */
+    public java.lang.String getSource() {
+      return source;
+    }
+
+    /**
+      * Sets the value of the 'source' field.
+      * @param value The value of 'source'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder setSource(java.lang.String value) {
+      validate(fields()[12], value);
+      this.source = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'source' field has been set.
+      * @return True if the 'source' field has been set, false otherwise.
+      */
+    public boolean hasSource() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'source' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder clearSource() {
+      source = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public Bid build() {
       try {
@@ -941,6 +1010,7 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         record.time = fieldSetFlags()[9] ? this.time : (java.lang.Long) defaultValue(fields()[9]);
         record.partnerExternalId = fieldSetFlags()[10] ? this.partnerExternalId : (java.lang.String) defaultValue(fields()[10]);
         record.vendorExecutive = fieldSetFlags()[11] ? this.vendorExecutive : (java.lang.String) defaultValue(fields()[11]);
+        record.source = fieldSetFlags()[12] ? this.source : (java.lang.String) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
