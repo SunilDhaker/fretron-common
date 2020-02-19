@@ -102,10 +102,10 @@
           {
              "name": "status",
              "type": [
-                                  "null",
-                                  "string"
-                                ],
+                       "null",
+                       "string"
+                     ],
              "default": null
-            }
+          }
   ]
 }

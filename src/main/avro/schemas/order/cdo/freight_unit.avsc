@@ -81,7 +81,7 @@
                       ],
         "default": null
        },
-        {
+       {
                 "name": "customFields",
                 "type": [
                             "null",
@@ -91,6 +91,23 @@
                         }
                         ],
                      "default": null
-             }
+       },
+      {
+          "name": "documentDate",
+           "type": [
+                               "null",
+                                "long"
+                             ],
+          "logicalType": "timestamp-millis",
+           "default": null
+        },
+        {
+          "name": "documentNumber",
+          "type": [
+                         "null",
+                         "string"
+                            ],
+          "default": null
+        }
   ]
 }
