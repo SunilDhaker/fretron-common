@@ -106,6 +106,17 @@
                        "string"
                      ],
              "default": null
-          }
+          },
+          {
+                    "name": "fuMappings",
+                    "type": [
+                                  "null",
+                                  {
+                                     "type": "array",
+                                      "items": "com.fretron.Model.FreightUnitMapping"
+                                  }
+                                       ],
+                        "default": null
+             }
   ]
 }
