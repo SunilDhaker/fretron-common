@@ -111,7 +111,18 @@
                                        "items": "com.fretron.Model.ResourceAlert"
                                 }],
                        "default": null
-                    }
+                    },
+                    {
+                       "name": "finalizationIssues",
+                       "type": [
+                                   "null",
+                                                 {
+                                                   "type": "array",
+                                                   "items": "string"
+                                                 }
+                               ],
+                      "default": null
+                   }
 
   ]
 }
