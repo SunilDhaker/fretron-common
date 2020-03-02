@@ -10,9 +10,10 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5574775637573367889L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -1712389808385466628L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
+  @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orderId;
   @Deprecated public java.lang.String lineItemId;
   @Deprecated public java.lang.String legType;
@@ -28,13 +29,15 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
 
   /**
    * All-args constructor.
+   * @param uuid The new value for uuid
    * @param orderId The new value for orderId
    * @param lineItemId The new value for lineItemId
    * @param legType The new value for legType
    * @param consignmentId The new value for consignmentId
    * @param quantity The new value for quantity
    */
-  public SalesOrderMapping(java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity) {
+  public SalesOrderMapping(java.lang.String uuid, java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity) {
+    this.uuid = uuid;
     this.orderId = orderId;
     this.lineItemId = lineItemId;
     this.legType = legType;
@@ -46,11 +49,12 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return orderId;
-    case 1: return lineItemId;
-    case 2: return legType;
-    case 3: return consignmentId;
-    case 4: return quantity;
+    case 0: return uuid;
+    case 1: return orderId;
+    case 2: return lineItemId;
+    case 3: return legType;
+    case 4: return consignmentId;
+    case 5: return quantity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,13 +63,30 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: orderId = (java.lang.String)value$; break;
-    case 1: lineItemId = (java.lang.String)value$; break;
-    case 2: legType = (java.lang.String)value$; break;
-    case 3: consignmentId = (java.lang.String)value$; break;
-    case 4: quantity = (com.fretron.Model.StandardMeasurement)value$; break;
+    case 0: uuid = (java.lang.String)value$; break;
+    case 1: orderId = (java.lang.String)value$; break;
+    case 2: lineItemId = (java.lang.String)value$; break;
+    case 3: legType = (java.lang.String)value$; break;
+    case 4: consignmentId = (java.lang.String)value$; break;
+    case 5: quantity = (com.fretron.Model.StandardMeasurement)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
+  }
+
+  /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
   }
 
   /**
@@ -180,6 +201,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<SalesOrderMapping>
     implements org.apache.avro.data.RecordBuilder<SalesOrderMapping> {
 
+    private java.lang.String uuid;
     private java.lang.String orderId;
     private java.lang.String lineItemId;
     private java.lang.String legType;
@@ -198,25 +220,29 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
      */
     private Builder(com.fretron.Model.SalesOrderMapping.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[0].schema(), other.orderId);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.lineItemId)) {
-        this.lineItemId = data().deepCopy(fields()[1].schema(), other.lineItemId);
+      if (isValidValue(fields()[1], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[1].schema(), other.orderId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.legType)) {
-        this.legType = data().deepCopy(fields()[2].schema(), other.legType);
+      if (isValidValue(fields()[2], other.lineItemId)) {
+        this.lineItemId = data().deepCopy(fields()[2].schema(), other.lineItemId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.consignmentId)) {
-        this.consignmentId = data().deepCopy(fields()[3].schema(), other.consignmentId);
+      if (isValidValue(fields()[3], other.legType)) {
+        this.legType = data().deepCopy(fields()[3].schema(), other.legType);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.quantity)) {
-        this.quantity = data().deepCopy(fields()[4].schema(), other.quantity);
+      if (isValidValue(fields()[4], other.consignmentId)) {
+        this.consignmentId = data().deepCopy(fields()[4].schema(), other.consignmentId);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.quantity)) {
+        this.quantity = data().deepCopy(fields()[5].schema(), other.quantity);
+        fieldSetFlags()[5] = true;
       }
       if (other.hasQuantityBuilder()) {
         this.quantityBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getQuantityBuilder());
@@ -229,27 +255,70 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
      */
     private Builder(com.fretron.Model.SalesOrderMapping other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.orderId)) {
-        this.orderId = data().deepCopy(fields()[0].schema(), other.orderId);
+      if (isValidValue(fields()[0], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.lineItemId)) {
-        this.lineItemId = data().deepCopy(fields()[1].schema(), other.lineItemId);
+      if (isValidValue(fields()[1], other.orderId)) {
+        this.orderId = data().deepCopy(fields()[1].schema(), other.orderId);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.legType)) {
-        this.legType = data().deepCopy(fields()[2].schema(), other.legType);
+      if (isValidValue(fields()[2], other.lineItemId)) {
+        this.lineItemId = data().deepCopy(fields()[2].schema(), other.lineItemId);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.consignmentId)) {
-        this.consignmentId = data().deepCopy(fields()[3].schema(), other.consignmentId);
+      if (isValidValue(fields()[3], other.legType)) {
+        this.legType = data().deepCopy(fields()[3].schema(), other.legType);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.quantity)) {
-        this.quantity = data().deepCopy(fields()[4].schema(), other.quantity);
+      if (isValidValue(fields()[4], other.consignmentId)) {
+        this.consignmentId = data().deepCopy(fields()[4].schema(), other.consignmentId);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.quantity)) {
+        this.quantity = data().deepCopy(fields()[5].schema(), other.quantity);
+        fieldSetFlags()[5] = true;
+      }
       this.quantityBuilder = null;
+    }
+
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder setUuid(java.lang.String value) {
+      validate(fields()[0], value);
+      this.uuid = value;
+      fieldSetFlags()[0] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[0];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[0] = false;
+      return this;
     }
 
     /**
@@ -266,9 +335,9 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.SalesOrderMapping.Builder setOrderId(java.lang.String value) {
-      validate(fields()[0], value);
+      validate(fields()[1], value);
       this.orderId = value;
-      fieldSetFlags()[0] = true;
+      fieldSetFlags()[1] = true;
       return this;
     }
 
@@ -277,7 +346,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'orderId' field has been set, false otherwise.
       */
     public boolean hasOrderId() {
-      return fieldSetFlags()[0];
+      return fieldSetFlags()[1];
     }
 
 
@@ -287,7 +356,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       */
     public com.fretron.Model.SalesOrderMapping.Builder clearOrderId() {
       orderId = null;
-      fieldSetFlags()[0] = false;
+      fieldSetFlags()[1] = false;
       return this;
     }
 
@@ -305,9 +374,9 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.SalesOrderMapping.Builder setLineItemId(java.lang.String value) {
-      validate(fields()[1], value);
+      validate(fields()[2], value);
       this.lineItemId = value;
-      fieldSetFlags()[1] = true;
+      fieldSetFlags()[2] = true;
       return this;
     }
 
@@ -316,7 +385,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'lineItemId' field has been set, false otherwise.
       */
     public boolean hasLineItemId() {
-      return fieldSetFlags()[1];
+      return fieldSetFlags()[2];
     }
 
 
@@ -326,7 +395,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       */
     public com.fretron.Model.SalesOrderMapping.Builder clearLineItemId() {
       lineItemId = null;
-      fieldSetFlags()[1] = false;
+      fieldSetFlags()[2] = false;
       return this;
     }
 
@@ -344,9 +413,9 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.SalesOrderMapping.Builder setLegType(java.lang.String value) {
-      validate(fields()[2], value);
+      validate(fields()[3], value);
       this.legType = value;
-      fieldSetFlags()[2] = true;
+      fieldSetFlags()[3] = true;
       return this;
     }
 
@@ -355,7 +424,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'legType' field has been set, false otherwise.
       */
     public boolean hasLegType() {
-      return fieldSetFlags()[2];
+      return fieldSetFlags()[3];
     }
 
 
@@ -365,7 +434,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       */
     public com.fretron.Model.SalesOrderMapping.Builder clearLegType() {
       legType = null;
-      fieldSetFlags()[2] = false;
+      fieldSetFlags()[3] = false;
       return this;
     }
 
@@ -383,9 +452,9 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.SalesOrderMapping.Builder setConsignmentId(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.consignmentId = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -394,7 +463,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'consignmentId' field has been set, false otherwise.
       */
     public boolean hasConsignmentId() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -404,7 +473,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       */
     public com.fretron.Model.SalesOrderMapping.Builder clearConsignmentId() {
       consignmentId = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -422,10 +491,10 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.SalesOrderMapping.Builder setQuantity(com.fretron.Model.StandardMeasurement value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.quantityBuilder = null;
       this.quantity = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -434,7 +503,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'quantity' field has been set, false otherwise.
       */
     public boolean hasQuantity() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
     /**
@@ -478,7 +547,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     public com.fretron.Model.SalesOrderMapping.Builder clearQuantity() {
       quantity = null;
       quantityBuilder = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -486,14 +555,15 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     public SalesOrderMapping build() {
       try {
         SalesOrderMapping record = new SalesOrderMapping();
-        record.orderId = fieldSetFlags()[0] ? this.orderId : (java.lang.String) defaultValue(fields()[0]);
-        record.lineItemId = fieldSetFlags()[1] ? this.lineItemId : (java.lang.String) defaultValue(fields()[1]);
-        record.legType = fieldSetFlags()[2] ? this.legType : (java.lang.String) defaultValue(fields()[2]);
-        record.consignmentId = fieldSetFlags()[3] ? this.consignmentId : (java.lang.String) defaultValue(fields()[3]);
+        record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
+        record.orderId = fieldSetFlags()[1] ? this.orderId : (java.lang.String) defaultValue(fields()[1]);
+        record.lineItemId = fieldSetFlags()[2] ? this.lineItemId : (java.lang.String) defaultValue(fields()[2]);
+        record.legType = fieldSetFlags()[3] ? this.legType : (java.lang.String) defaultValue(fields()[3]);
+        record.consignmentId = fieldSetFlags()[4] ? this.consignmentId : (java.lang.String) defaultValue(fields()[4]);
         if (quantityBuilder != null) {
           record.quantity = this.quantityBuilder.build();
         } else {
-          record.quantity = fieldSetFlags()[4] ? this.quantity : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[4]);
+          record.quantity = fieldSetFlags()[5] ? this.quantity : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[5]);
         }
         return record;
       } catch (Exception e) {

@@ -313,7 +313,18 @@
                       }
                     ],
                     "default": null
-                  }
+                  },
+              {
+                  "name": "orderMappings",
+                   "type": [
+                               "null",
+                                     {
+                                       "type": "array",
+                                       "items": "com.fretron.Model.SalesOrderMapping"
+                                     }
+                                   ],
+                   "default": null
+                }
 
     ]
   }
