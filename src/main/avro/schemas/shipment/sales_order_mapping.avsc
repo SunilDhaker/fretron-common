@@ -46,6 +46,17 @@
                            "com.fretron.Model.StandardMeasurement"
                          ],
                 "default": null
-      }
+      },
+      {
+              "name": "fuMappings",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "com.fretron.Model.LegWiseFuMapping"
+                }
+              ],
+              "default": null
+            }
   ]
 }

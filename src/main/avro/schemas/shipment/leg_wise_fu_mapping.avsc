@@ -1,0 +1,22 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "LegWiseFuMapping",
+  "type": "record",
+  "fields": [
+
+         {
+            "name": "legId",
+            "type": ["null",
+                       "string"
+                              ],
+            "default": null
+        },
+        {
+             "name": "fuLineItemId",
+              "type": ["null",
+                         "string"
+                      ],
+              "default": null
+        }
+  ]
+}
