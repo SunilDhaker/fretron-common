@@ -11,6 +11,13 @@
                               ],
             "default": null
         },
+         {
+            "name": "legType",
+            "type": ["null",
+                               "string"
+                                      ],
+              "default": null
+        },
         {
              "name": "fuLineItemId",
               "type": ["null",
