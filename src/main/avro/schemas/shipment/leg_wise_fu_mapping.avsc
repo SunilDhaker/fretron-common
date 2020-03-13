@@ -14,8 +14,8 @@
          {
             "name": "legType",
             "type": ["null",
-                               "string"
-                                      ],
+                      "string"
+                    ],
               "default": null
         },
         {
@@ -24,6 +24,13 @@
                          "string"
                       ],
               "default": null
+        },
+        {
+           "name": "executionPlanId",
+           "type": ["null",
+                          "string"
+                    ],
+            "default": null
         }
   ]
 }

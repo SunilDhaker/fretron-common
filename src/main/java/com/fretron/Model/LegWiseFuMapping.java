@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8322114336005124698L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 823579018054041313L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String legId;
   @Deprecated public java.lang.String legType;
   @Deprecated public java.lang.String fuLineItemId;
+  @Deprecated public java.lang.String executionPlanId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
    * @param legId The new value for legId
    * @param legType The new value for legType
    * @param fuLineItemId The new value for fuLineItemId
+   * @param executionPlanId The new value for executionPlanId
    */
-  public LegWiseFuMapping(java.lang.String legId, java.lang.String legType, java.lang.String fuLineItemId) {
+  public LegWiseFuMapping(java.lang.String legId, java.lang.String legType, java.lang.String fuLineItemId, java.lang.String executionPlanId) {
     this.legId = legId;
     this.legType = legType;
     this.fuLineItemId = fuLineItemId;
+    this.executionPlanId = executionPlanId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
     case 0: return legId;
     case 1: return legType;
     case 2: return fuLineItemId;
+    case 3: return executionPlanId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
     case 0: legId = (java.lang.String)value$; break;
     case 1: legType = (java.lang.String)value$; break;
     case 2: fuLineItemId = (java.lang.String)value$; break;
+    case 3: executionPlanId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
   }
 
   /**
+   * Gets the value of the 'executionPlanId' field.
+   * @return The value of the 'executionPlanId' field.
+   */
+  public java.lang.String getExecutionPlanId() {
+    return executionPlanId;
+  }
+
+  /**
+   * Sets the value of the 'executionPlanId' field.
+   * @param value the value to set.
+   */
+  public void setExecutionPlanId(java.lang.String value) {
+    this.executionPlanId = value;
+  }
+
+  /**
    * Creates a new LegWiseFuMapping RecordBuilder.
    * @return A new LegWiseFuMapping RecordBuilder
    */
@@ -141,6 +162,7 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
     private java.lang.String legId;
     private java.lang.String legType;
     private java.lang.String fuLineItemId;
+    private java.lang.String executionPlanId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
         this.fuLineItemId = data().deepCopy(fields()[2].schema(), other.fuLineItemId);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.executionPlanId)) {
+        this.executionPlanId = data().deepCopy(fields()[3].schema(), other.executionPlanId);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
       if (isValidValue(fields()[2], other.fuLineItemId)) {
         this.fuLineItemId = data().deepCopy(fields()[2].schema(), other.fuLineItemId);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.executionPlanId)) {
+        this.executionPlanId = data().deepCopy(fields()[3].schema(), other.executionPlanId);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'executionPlanId' field.
+      * @return The value.
+      */
+    public java.lang.String getExecutionPlanId() {
+      return executionPlanId;
+    }
+
+    /**
+      * Sets the value of the 'executionPlanId' field.
+      * @param value The value of 'executionPlanId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LegWiseFuMapping.Builder setExecutionPlanId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.executionPlanId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'executionPlanId' field has been set.
+      * @return True if the 'executionPlanId' field has been set, false otherwise.
+      */
+    public boolean hasExecutionPlanId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'executionPlanId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LegWiseFuMapping.Builder clearExecutionPlanId() {
+      executionPlanId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public LegWiseFuMapping build() {
       try {
@@ -311,6 +380,7 @@ public class LegWiseFuMapping extends org.apache.avro.specific.SpecificRecordBas
         record.legId = fieldSetFlags()[0] ? this.legId : (java.lang.String) defaultValue(fields()[0]);
         record.legType = fieldSetFlags()[1] ? this.legType : (java.lang.String) defaultValue(fields()[1]);
         record.fuLineItemId = fieldSetFlags()[2] ? this.fuLineItemId : (java.lang.String) defaultValue(fields()[2]);
+        record.executionPlanId = fieldSetFlags()[3] ? this.executionPlanId : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
