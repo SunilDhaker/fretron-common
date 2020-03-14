@@ -33,7 +33,7 @@
             "default": null
         },
          {
-               "name": "fuStatus",
+               "name": "legStatus",
                 "type": ["null",
                                  "string"
                               ],
