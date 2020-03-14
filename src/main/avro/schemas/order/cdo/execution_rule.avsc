@@ -1,0 +1,36 @@
+{
+	"namespace": "com.fretron.Model",
+	"name": "ExecutionRule",
+	"type": "record",
+	"fields": [
+	       {
+             "name": "uuid",
+              "type": [
+            		 "null",
+            		 "string"
+            			],
+             "default": null
+           },
+
+	     {
+			"name": "name",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+           "name": "legs",
+            "type": [
+                      "null",
+                    {
+                      "type": "array",
+                      "items": "com.fretron.Model.Leg"
+                    }
+                    ],
+            "default": null
+        }
+
+	]
+}

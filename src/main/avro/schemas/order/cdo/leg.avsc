@@ -1,0 +1,64 @@
+{
+	"namespace": "com.fretron.Model",
+	"name": "Leg",
+	"type": "record",
+	"fields": [
+	       {
+             "name": "uuid",
+              "type": [
+            		 "null",
+            		 "string"
+            			],
+             "default": null
+           },
+
+	     {
+			"name": "type",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+           "name": "origin",
+           "type": [
+                       "null",
+                       "com.fretron.Model.Place"
+                   ],
+           "default": null
+        },
+        {
+           "name": "destination",
+            "type": [
+                               "null",
+                               "com.fretron.Model.Place"
+                           ],
+            "default": null
+        },
+        {
+        	"name": "originType",
+        	"type": [
+        				"null",
+        				"string"
+        			],
+        	"default": null
+        },
+        {
+            "name": "transportationMode",
+            "type": [
+                				"null",
+                				"string"
+                			],
+             "default": null
+          },
+          {
+              "name": "allowedTransitDays",
+              "type": [
+                        "null",
+                            "int"
+                       ],
+               "default": null
+            }
+	]
+}
