@@ -281,6 +281,11 @@
                              "string"
                            ],
                            "default": null
-                         }
+                         },
+                             {
+                               "name": "isActive",
+                               "type": "boolean",
+                               "default": true
+                             }
     ]
   }
