@@ -286,6 +286,15 @@
                                "name": "isActive",
                                "type": "boolean",
                                "default": true
-                             }
+                             },
+
+                                            {
+                                                        "name": "routeId",
+                                                        "type": [
+                                                          "null",
+                                                          "string"
+                                                        ],
+                                                        "default": null
+                                                      }
     ]
   }
