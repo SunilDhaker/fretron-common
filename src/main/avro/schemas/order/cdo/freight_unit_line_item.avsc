@@ -122,7 +122,15 @@
                                                  }
                                ],
                       "default": null
-                   }
+                   } ,
+                    {
+                           "name": "expectedStageEndTime",
+                           "type": [
+                                                                          "null",
+                                                                           "long"
+                                                                       ],
+                            "default": null
+                 }
 
   ]
 }
