@@ -209,17 +209,6 @@
                          }
                        ],
          "default": null
-      },
-      {
-               "name": "allowedExecutionProfiles",
-               "type": [
-                           "null",
-                       {
-                          "type": "array",
-                         "items": "com.fretron.Model.ExecutionRule"
-                       }
-                       ],
-                    "default": null
-        }
+      }
   ]
 }
