@@ -4,10 +4,9 @@ import com.fretron.Model.TripPoint
 
 fun TripPoint.clean(){
 
-    this.setUpdates(null)
+//    this.setUpdates(null)
     this.getPlace()?.clean()
 
-//    this.setCurrentGpsState(null)
 }
 
 fun TripPoint.deepClean(){
