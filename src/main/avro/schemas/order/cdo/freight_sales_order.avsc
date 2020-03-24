@@ -209,6 +209,14 @@
                          }
                        ],
          "default": null
-      }
+      },
+      {
+        "name": "toleranceQuantity",
+        "type": [
+                  "null",
+                  "double"
+                ],
+          "default": null
+       }
   ]
 }
