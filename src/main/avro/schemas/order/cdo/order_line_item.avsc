@@ -128,6 +128,11 @@
                                               }
                                                    ],
                     "default": null
-                }
+                } ,
+                {
+                     "name": "remainingPlannedQuantity",
+                      "type": ["null","com.fretron.Model.StandardMeasurement"],
+                       "default" : null
+               }
   ]
 }
