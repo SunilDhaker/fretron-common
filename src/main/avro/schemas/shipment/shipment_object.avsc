@@ -295,6 +295,14 @@
                                                           "string"
                                                         ],
                                                         "default": null
-                                                      }
+                                                      } ,
+                                     {
+                                               "name": "freightUnitLineItemId",
+                                                                                                              "type": [
+                                                                                                                "null",
+                                                                                                                "string"
+                                                                                                              ],
+                                                                                                              "default": null
+                                             }
     ]
   }
