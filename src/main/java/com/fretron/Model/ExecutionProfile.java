@@ -9,9 +9,9 @@ import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
-public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 5262775959873109687L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ExecutionRule\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Leg\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"originType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transportationMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+public class ExecutionProfile extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = 5751878361860908189L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ExecutionProfile\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Leg\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"originType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transportationMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String name;
@@ -23,7 +23,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public ExecutionRule() {}
+  public ExecutionProfile() {}
 
   /**
    * All-args constructor.
@@ -32,7 +32,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
    * @param legs The new value for legs
    * @param orgId The new value for orgId
    */
-  public ExecutionRule(java.lang.String uuid, java.lang.String name, java.util.List<com.fretron.Model.Leg> legs, java.lang.String orgId) {
+  public ExecutionProfile(java.lang.String uuid, java.lang.String name, java.util.List<com.fretron.Model.Leg> legs, java.lang.String orgId) {
     this.uuid = uuid;
     this.name = name;
     this.legs = legs;
@@ -128,36 +128,36 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
-   * Creates a new ExecutionRule RecordBuilder.
-   * @return A new ExecutionRule RecordBuilder
+   * Creates a new ExecutionProfile RecordBuilder.
+   * @return A new ExecutionProfile RecordBuilder
    */
-  public static com.fretron.Model.ExecutionRule.Builder newBuilder() {
-    return new com.fretron.Model.ExecutionRule.Builder();
+  public static com.fretron.Model.ExecutionProfile.Builder newBuilder() {
+    return new com.fretron.Model.ExecutionProfile.Builder();
   }
 
   /**
-   * Creates a new ExecutionRule RecordBuilder by copying an existing Builder.
+   * Creates a new ExecutionProfile RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new ExecutionRule RecordBuilder
+   * @return A new ExecutionProfile RecordBuilder
    */
-  public static com.fretron.Model.ExecutionRule.Builder newBuilder(com.fretron.Model.ExecutionRule.Builder other) {
-    return new com.fretron.Model.ExecutionRule.Builder(other);
+  public static com.fretron.Model.ExecutionProfile.Builder newBuilder(com.fretron.Model.ExecutionProfile.Builder other) {
+    return new com.fretron.Model.ExecutionProfile.Builder(other);
   }
 
   /**
-   * Creates a new ExecutionRule RecordBuilder by copying an existing ExecutionRule instance.
+   * Creates a new ExecutionProfile RecordBuilder by copying an existing ExecutionProfile instance.
    * @param other The existing instance to copy.
-   * @return A new ExecutionRule RecordBuilder
+   * @return A new ExecutionProfile RecordBuilder
    */
-  public static com.fretron.Model.ExecutionRule.Builder newBuilder(com.fretron.Model.ExecutionRule other) {
-    return new com.fretron.Model.ExecutionRule.Builder(other);
+  public static com.fretron.Model.ExecutionProfile.Builder newBuilder(com.fretron.Model.ExecutionProfile other) {
+    return new com.fretron.Model.ExecutionProfile.Builder(other);
   }
 
   /**
-   * RecordBuilder for ExecutionRule instances.
+   * RecordBuilder for ExecutionProfile instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ExecutionRule>
-    implements org.apache.avro.data.RecordBuilder<ExecutionRule> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ExecutionProfile>
+    implements org.apache.avro.data.RecordBuilder<ExecutionProfile> {
 
     private java.lang.String uuid;
     private java.lang.String name;
@@ -173,7 +173,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.fretron.Model.ExecutionRule.Builder other) {
+    private Builder(com.fretron.Model.ExecutionProfile.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -194,10 +194,10 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
-     * Creates a Builder by copying an existing ExecutionRule instance
+     * Creates a Builder by copying an existing ExecutionProfile instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.fretron.Model.ExecutionRule other) {
+    private Builder(com.fretron.Model.ExecutionProfile other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -230,7 +230,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'uuid'.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder setUuid(java.lang.String value) {
+    public com.fretron.Model.ExecutionProfile.Builder setUuid(java.lang.String value) {
       validate(fields()[0], value);
       this.uuid = value;
       fieldSetFlags()[0] = true;
@@ -250,7 +250,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'uuid' field.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder clearUuid() {
+    public com.fretron.Model.ExecutionProfile.Builder clearUuid() {
       uuid = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -269,7 +269,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder setName(java.lang.String value) {
+    public com.fretron.Model.ExecutionProfile.Builder setName(java.lang.String value) {
       validate(fields()[1], value);
       this.name = value;
       fieldSetFlags()[1] = true;
@@ -289,7 +289,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder clearName() {
+    public com.fretron.Model.ExecutionProfile.Builder clearName() {
       name = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -308,7 +308,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'legs'.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder setLegs(java.util.List<com.fretron.Model.Leg> value) {
+    public com.fretron.Model.ExecutionProfile.Builder setLegs(java.util.List<com.fretron.Model.Leg> value) {
       validate(fields()[2], value);
       this.legs = value;
       fieldSetFlags()[2] = true;
@@ -328,7 +328,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'legs' field.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder clearLegs() {
+    public com.fretron.Model.ExecutionProfile.Builder clearLegs() {
       legs = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -347,7 +347,7 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'orgId'.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder setOrgId(java.lang.String value) {
+    public com.fretron.Model.ExecutionProfile.Builder setOrgId(java.lang.String value) {
       validate(fields()[3], value);
       this.orgId = value;
       fieldSetFlags()[3] = true;
@@ -367,16 +367,16 @@ public class ExecutionRule extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'orgId' field.
       * @return This builder.
       */
-    public com.fretron.Model.ExecutionRule.Builder clearOrgId() {
+    public com.fretron.Model.ExecutionProfile.Builder clearOrgId() {
       orgId = null;
       fieldSetFlags()[3] = false;
       return this;
     }
 
     @Override
-    public ExecutionRule build() {
+    public ExecutionProfile build() {
       try {
-        ExecutionRule record = new ExecutionRule();
+        ExecutionProfile record = new ExecutionProfile();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.name = fieldSetFlags()[1] ? this.name : (java.lang.String) defaultValue(fields()[1]);
         record.legs = fieldSetFlags()[2] ? this.legs : (java.util.List<com.fretron.Model.Leg>) defaultValue(fields()[2]);

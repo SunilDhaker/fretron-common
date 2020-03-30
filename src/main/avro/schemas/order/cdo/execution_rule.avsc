@@ -1,6 +1,6 @@
 {
 	"namespace": "com.fretron.Model",
-	"name": "ExecutionRule",
+	"name": "ExecutionProfile",
 	"type": "record",
 	"fields": [
 	       {

@@ -224,7 +224,7 @@
                             "null",
                         {
                            "type": "array",
-                          "items": "com.fretron.Model.ExecutionRule"
+                          "items": "com.fretron.Model.ExecutionProfile"
                         }
                         ],
                      "default": null
