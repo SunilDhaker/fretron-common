@@ -121,18 +121,31 @@
              {
                   "name": "mappings",
                   "type": [
-                                              "null",
-                                              {
-                                                 "type": "array",
-                                                  "items": "com.fretron.Model.SalesOrderMapping"
-                                              }
-                                                   ],
+                             "null",
+                        {
+                           "type": "array",
+                           "items": "com.fretron.Model.SalesOrderMapping"
+                        }
+                       ],
                     "default": null
                 } ,
                 {
                      "name": "remainingPlannedQuantity",
                       "type": ["null","com.fretron.Model.StandardMeasurement"],
                        "default" : null
-               }
+               },
+               {
+                  "name": "freightChargeType",
+                   "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                   "default": null
+               },
+                {
+                   "name": "freightChargeRate",
+                    "type": ["null","double"],
+                   "default" : null
+                }
   ]
 }
