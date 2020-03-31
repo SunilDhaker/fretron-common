@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Leg extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6221875449380274255L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Leg\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"originType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transportationMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
+  private static final long serialVersionUID = -3846402973043661401L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Leg\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"originType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transportationMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransitDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"destinationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String type;
@@ -20,6 +20,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
   @Deprecated public java.lang.String originType;
   @Deprecated public java.lang.String transportationMode;
   @Deprecated public java.lang.Integer allowedTransitDays;
+  @Deprecated public java.lang.String destinationType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param originType The new value for originType
    * @param transportationMode The new value for transportationMode
    * @param allowedTransitDays The new value for allowedTransitDays
+   * @param destinationType The new value for destinationType
    */
-  public Leg(java.lang.String uuid, java.lang.String type, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.lang.String originType, java.lang.String transportationMode, java.lang.Integer allowedTransitDays) {
+  public Leg(java.lang.String uuid, java.lang.String type, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.lang.String originType, java.lang.String transportationMode, java.lang.Integer allowedTransitDays, java.lang.String destinationType) {
     this.uuid = uuid;
     this.type = type;
     this.origin = origin;
@@ -46,6 +48,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
     this.originType = originType;
     this.transportationMode = transportationMode;
     this.allowedTransitDays = allowedTransitDays;
+    this.destinationType = destinationType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
     case 4: return originType;
     case 5: return transportationMode;
     case 6: return allowedTransitDays;
+    case 7: return destinationType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
     case 4: originType = (java.lang.String)value$; break;
     case 5: transportationMode = (java.lang.String)value$; break;
     case 6: allowedTransitDays = (java.lang.Integer)value$; break;
+    case 7: destinationType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
   }
 
   /**
+   * Gets the value of the 'destinationType' field.
+   * @return The value of the 'destinationType' field.
+   */
+  public java.lang.String getDestinationType() {
+    return destinationType;
+  }
+
+  /**
+   * Sets the value of the 'destinationType' field.
+   * @param value the value to set.
+   */
+  public void setDestinationType(java.lang.String value) {
+    this.destinationType = value;
+  }
+
+  /**
    * Creates a new Leg RecordBuilder.
    * @return A new Leg RecordBuilder
    */
@@ -231,6 +252,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
     private java.lang.String originType;
     private java.lang.String transportationMode;
     private java.lang.Integer allowedTransitDays;
+    private java.lang.String destinationType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -277,6 +299,10 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
         this.allowedTransitDays = data().deepCopy(fields()[6].schema(), other.allowedTransitDays);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.destinationType)) {
+        this.destinationType = data().deepCopy(fields()[7].schema(), other.destinationType);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -314,6 +340,10 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
       if (isValidValue(fields()[6], other.allowedTransitDays)) {
         this.allowedTransitDays = data().deepCopy(fields()[6].schema(), other.allowedTransitDays);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.destinationType)) {
+        this.destinationType = data().deepCopy(fields()[7].schema(), other.destinationType);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -660,6 +690,45 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
       return this;
     }
 
+    /**
+      * Gets the value of the 'destinationType' field.
+      * @return The value.
+      */
+    public java.lang.String getDestinationType() {
+      return destinationType;
+    }
+
+    /**
+      * Sets the value of the 'destinationType' field.
+      * @param value The value of 'destinationType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Leg.Builder setDestinationType(java.lang.String value) {
+      validate(fields()[7], value);
+      this.destinationType = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'destinationType' field has been set.
+      * @return True if the 'destinationType' field has been set, false otherwise.
+      */
+    public boolean hasDestinationType() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'destinationType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Leg.Builder clearDestinationType() {
+      destinationType = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public Leg build() {
       try {
@@ -679,6 +748,7 @@ public class Leg extends org.apache.avro.specific.SpecificRecordBase implements 
         record.originType = fieldSetFlags()[4] ? this.originType : (java.lang.String) defaultValue(fields()[4]);
         record.transportationMode = fieldSetFlags()[5] ? this.transportationMode : (java.lang.String) defaultValue(fields()[5]);
         record.allowedTransitDays = fieldSetFlags()[6] ? this.allowedTransitDays : (java.lang.Integer) defaultValue(fields()[6]);
+        record.destinationType = fieldSetFlags()[7] ? this.destinationType : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -59,6 +59,14 @@
                             "int"
                        ],
                "default": null
-            }
+            },
+            {
+               "name": "destinationType",
+                "type": [
+                    				"null",
+                    				"string"
+                    			],
+                "default": null
+             }
 	]
 }
