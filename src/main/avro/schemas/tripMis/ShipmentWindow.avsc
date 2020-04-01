@@ -60,6 +60,14 @@
         "string"
       ],
       "default": null
-    }
+    },
+         {
+           "name": "imei",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+         }
   ]
 }

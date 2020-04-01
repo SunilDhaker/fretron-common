@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 494557011794328076L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3050496995609498934L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -20,6 +20,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.lang.String windowUuid;
   @Deprecated public java.lang.String shipmentUuid;
   @Deprecated public java.lang.String vehicleId;
+  @Deprecated public java.lang.String imei;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
    * @param windowUuid The new value for windowUuid
    * @param shipmentUuid The new value for shipmentUuid
    * @param vehicleId The new value for vehicleId
+   * @param imei The new value for imei
    */
-  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId) {
+  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId, java.lang.String imei) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.tripState = tripState;
@@ -46,6 +48,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     this.windowUuid = windowUuid;
     this.shipmentUuid = shipmentUuid;
     this.vehicleId = vehicleId;
+    this.imei = imei;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 4: return windowUuid;
     case 5: return shipmentUuid;
     case 6: return vehicleId;
+    case 7: return imei;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 4: windowUuid = (java.lang.String)value$; break;
     case 5: shipmentUuid = (java.lang.String)value$; break;
     case 6: vehicleId = (java.lang.String)value$; break;
+    case 7: imei = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'imei' field.
+   * @return The value of the 'imei' field.
+   */
+  public java.lang.String getImei() {
+    return imei;
+  }
+
+  /**
+   * Sets the value of the 'imei' field.
+   * @param value the value to set.
+   */
+  public void setImei(java.lang.String value) {
+    this.imei = value;
+  }
+
+  /**
    * Creates a new ShipmentWindow RecordBuilder.
    * @return A new ShipmentWindow RecordBuilder
    */
@@ -229,6 +250,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.String windowUuid;
     private java.lang.String shipmentUuid;
     private java.lang.String vehicleId;
+    private java.lang.String imei;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +291,10 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         this.vehicleId = data().deepCopy(fields()[6].schema(), other.vehicleId);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.imei)) {
+        this.imei = data().deepCopy(fields()[7].schema(), other.imei);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -304,6 +330,10 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       if (isValidValue(fields()[6], other.vehicleId)) {
         this.vehicleId = data().deepCopy(fields()[6].schema(), other.vehicleId);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.imei)) {
+        this.imei = data().deepCopy(fields()[7].schema(), other.imei);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -580,6 +610,45 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'imei' field.
+      * @return The value.
+      */
+    public java.lang.String getImei() {
+      return imei;
+    }
+
+    /**
+      * Sets the value of the 'imei' field.
+      * @param value The value of 'imei'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder setImei(java.lang.String value) {
+      validate(fields()[7], value);
+      this.imei = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'imei' field has been set.
+      * @return True if the 'imei' field has been set, false otherwise.
+      */
+    public boolean hasImei() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'imei' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder clearImei() {
+      imei = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public ShipmentWindow build() {
       try {
@@ -591,6 +660,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         record.windowUuid = fieldSetFlags()[4] ? this.windowUuid : (java.lang.String) defaultValue(fields()[4]);
         record.shipmentUuid = fieldSetFlags()[5] ? this.shipmentUuid : (java.lang.String) defaultValue(fields()[5]);
         record.vehicleId = fieldSetFlags()[6] ? this.vehicleId : (java.lang.String) defaultValue(fields()[6]);
+        record.imei = fieldSetFlags()[7] ? this.imei : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
