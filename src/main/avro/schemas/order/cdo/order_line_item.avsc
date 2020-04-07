@@ -146,6 +146,13 @@
                    "name": "freightChargeRate",
                     "type": ["null","double"],
                    "default" : null
-                }
+                },
+                 {
+                               "name": "externalId",
+                               "type": ["null",
+                                             "string"
+                                       ],
+                              "default": null
+                          }
   ]
 }

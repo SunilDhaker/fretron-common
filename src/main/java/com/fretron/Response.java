@@ -34,7 +34,9 @@ public class Response<T> {
     public static Response error(String error) {
         return new Response<SpecificRecord>(400, error, null, null);
     }
-
+    public static Response error(int code,String error) {
+        return new Response<SpecificRecord>(code, error, null, null);
+    }
     private JSONObject covertIntoJSONObject(T json) {
         try {
             return new JSONObject(json.toString());
