@@ -85,6 +85,23 @@
                                    "string"
                                  ],
            "default": null
-        }
+        },
+         {
+               "name": "resourceIdentifier",
+                "type": [
+                        "null",
+                                    "string"
+                                      ],
+                   "default": null
+                },
+                 {
+                        "name": "resourceCreationTime",
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "logicalType": "timestamp-millis",
+                        "default": null
+                      }
     ]
   }
