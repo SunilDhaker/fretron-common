@@ -130,6 +130,14 @@
                                                                            "long"
                                                                        ],
                             "default": null
+                 } ,
+                 {
+                      "name": "stageStartTime",
+                      "type": [
+                                "null",
+                               "long"
+                              ],
+                      "default": null
                  }
 
   ]
