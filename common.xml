@@ -116,6 +116,7 @@
 
     <!--================User-Manger-topics==================-->
     <entry key="user.topic">user</entry>
+    <entry key="session.topic">sessiontopic</entry>
 
     <!--================Alert-Manager topics============================-->
     <entry key="alert.topic">alerts</entry>

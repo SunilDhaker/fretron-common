@@ -195,6 +195,7 @@ public class Constants {
     //=========================USER_MANAGER================
     public static final String KEY_USER_MANAGER_APP_ID = "user.manager.app.id";
     public static final String KEY_USER_TOPIC = "user.topic";
+    public static final String KEY_SESSION_TOPIC = "session.topic";
     public static final String KEY_COMMAND_TO_USER_APP_ID = "commandresult.to.user.appid";
     public static final String USER_MANAGER_SERVICE_URL = "user.manager.service.url";
     public static final String KEY_ORGANISATION_MANAGER_APP_ID = "organisation.manager.app.id";
