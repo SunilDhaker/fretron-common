@@ -61,13 +61,23 @@
       ],
       "default": null
     },
-         {
-           "name": "imei",
-           "type": [
-             "null",
-             "string"
-           ],
-           "default": null
-         }
+    {
+       "name": "imei",
+       "type": [
+       "null",
+       "string"
+        ],
+       "default": null
+    },
+    {
+       "name": "isOverlapping",
+       "type": "boolean",
+       "default": false
+    },
+    {
+       "name": "isShipmentCompleted",
+       "type": "boolean",
+       "default": false
+    }
   ]
 }
