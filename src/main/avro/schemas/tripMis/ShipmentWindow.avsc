@@ -72,12 +72,12 @@
     {
        "name": "isOverlapping",
        "type": "boolean",
-       "default": false
+       "default": null
     },
     {
        "name": "isShipmentCompleted",
        "type": "boolean",
-       "default": false
+       "default": null
     }
   ]
 }
