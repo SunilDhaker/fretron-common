@@ -71,13 +71,13 @@
     },
     {
        "name": "isOverlapping",
-       "type": ["null","boolean"],
-       "default": null
+       "type": "boolean",
+       "default": false
     },
     {
        "name": "isShipmentCompleted",
-       "type": ["null","boolean"],
-       "default": null
+       "type": "boolean",
+       "default": false
     }
   ]
 }
