@@ -71,12 +71,12 @@
     },
     {
        "name": "isOverlapping",
-       "type": "boolean",
+       "type": ["null","boolean"],
        "default": null
     },
     {
        "name": "isShipmentCompleted",
-       "type": "boolean",
+       "type": ["null","boolean"],
        "default": null
     }
   ]

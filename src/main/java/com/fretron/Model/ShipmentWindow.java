@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4285472023602612945L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":\"boolean\",\"default\":null},{\"name\":\"isShipmentCompleted\",\"type\":\"boolean\",\"default\":null}]}");
+  private static final long serialVersionUID = -7541239833082958024L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isShipmentCompleted\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -21,8 +21,8 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.lang.String shipmentUuid;
   @Deprecated public java.lang.String vehicleId;
   @Deprecated public java.lang.String imei;
-  @Deprecated public boolean isOverlapping;
-  @Deprecated public boolean isShipmentCompleted;
+  @Deprecated public java.lang.Boolean isOverlapping;
+  @Deprecated public java.lang.Boolean isShipmentCompleted;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -293,8 +293,8 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.String shipmentUuid;
     private java.lang.String vehicleId;
     private java.lang.String imei;
-    private boolean isOverlapping;
-    private boolean isShipmentCompleted;
+    private java.lang.Boolean isOverlapping;
+    private java.lang.Boolean isShipmentCompleted;
 
     /** Creates a new Builder */
     private Builder() {
@@ -722,7 +722,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'isOverlapping'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentWindow.Builder setIsOverlapping(boolean value) {
+    public com.fretron.Model.ShipmentWindow.Builder setIsOverlapping(java.lang.Boolean value) {
       validate(fields()[8], value);
       this.isOverlapping = value;
       fieldSetFlags()[8] = true;
@@ -743,6 +743,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ShipmentWindow.Builder clearIsOverlapping() {
+      isOverlapping = null;
       fieldSetFlags()[8] = false;
       return this;
     }
@@ -760,7 +761,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'isShipmentCompleted'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentWindow.Builder setIsShipmentCompleted(boolean value) {
+    public com.fretron.Model.ShipmentWindow.Builder setIsShipmentCompleted(java.lang.Boolean value) {
       validate(fields()[9], value);
       this.isShipmentCompleted = value;
       fieldSetFlags()[9] = true;
@@ -781,6 +782,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ShipmentWindow.Builder clearIsShipmentCompleted() {
+      isShipmentCompleted = null;
       fieldSetFlags()[9] = false;
       return this;
     }
