@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4285472023602612945L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isShipmentCompleted\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = -8840984381033056022L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isShipmentCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"shipmentCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -23,6 +23,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.lang.String imei;
   @Deprecated public boolean isOverlapping;
   @Deprecated public boolean isShipmentCompleted;
+  @Deprecated public java.lang.Long shipmentCreationTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
    * @param imei The new value for imei
    * @param isOverlapping The new value for isOverlapping
    * @param isShipmentCompleted The new value for isShipmentCompleted
+   * @param shipmentCreationTime The new value for shipmentCreationTime
    */
-  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId, java.lang.String imei, java.lang.Boolean isOverlapping, java.lang.Boolean isShipmentCompleted) {
+  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId, java.lang.String imei, java.lang.Boolean isOverlapping, java.lang.Boolean isShipmentCompleted, java.lang.Long shipmentCreationTime) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.tripState = tripState;
@@ -55,6 +57,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     this.imei = imei;
     this.isOverlapping = isOverlapping;
     this.isShipmentCompleted = isShipmentCompleted;
+    this.shipmentCreationTime = shipmentCreationTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 7: return imei;
     case 8: return isOverlapping;
     case 9: return isShipmentCompleted;
+    case 10: return shipmentCreationTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 7: imei = (java.lang.String)value$; break;
     case 8: isOverlapping = (java.lang.Boolean)value$; break;
     case 9: isShipmentCompleted = (java.lang.Boolean)value$; break;
+    case 10: shipmentCreationTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'shipmentCreationTime' field.
+   * @return The value of the 'shipmentCreationTime' field.
+   */
+  public java.lang.Long getShipmentCreationTime() {
+    return shipmentCreationTime;
+  }
+
+  /**
+   * Sets the value of the 'shipmentCreationTime' field.
+   * @param value the value to set.
+   */
+  public void setShipmentCreationTime(java.lang.Long value) {
+    this.shipmentCreationTime = value;
+  }
+
+  /**
    * Creates a new ShipmentWindow RecordBuilder.
    * @return A new ShipmentWindow RecordBuilder
    */
@@ -295,6 +316,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.String imei;
     private boolean isOverlapping;
     private boolean isShipmentCompleted;
+    private java.lang.Long shipmentCreationTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +369,10 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         this.isShipmentCompleted = data().deepCopy(fields()[9].schema(), other.isShipmentCompleted);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.shipmentCreationTime)) {
+        this.shipmentCreationTime = data().deepCopy(fields()[10].schema(), other.shipmentCreationTime);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -394,6 +420,10 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       if (isValidValue(fields()[9], other.isShipmentCompleted)) {
         this.isShipmentCompleted = data().deepCopy(fields()[9].schema(), other.isShipmentCompleted);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.shipmentCreationTime)) {
+        this.shipmentCreationTime = data().deepCopy(fields()[10].schema(), other.shipmentCreationTime);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -785,6 +815,45 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'shipmentCreationTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getShipmentCreationTime() {
+      return shipmentCreationTime;
+    }
+
+    /**
+      * Sets the value of the 'shipmentCreationTime' field.
+      * @param value The value of 'shipmentCreationTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder setShipmentCreationTime(java.lang.Long value) {
+      validate(fields()[10], value);
+      this.shipmentCreationTime = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'shipmentCreationTime' field has been set.
+      * @return True if the 'shipmentCreationTime' field has been set, false otherwise.
+      */
+    public boolean hasShipmentCreationTime() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'shipmentCreationTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder clearShipmentCreationTime() {
+      shipmentCreationTime = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public ShipmentWindow build() {
       try {
@@ -799,6 +868,7 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         record.imei = fieldSetFlags()[7] ? this.imei : (java.lang.String) defaultValue(fields()[7]);
         record.isOverlapping = fieldSetFlags()[8] ? this.isOverlapping : (java.lang.Boolean) defaultValue(fields()[8]);
         record.isShipmentCompleted = fieldSetFlags()[9] ? this.isShipmentCompleted : (java.lang.Boolean) defaultValue(fields()[9]);
+        record.shipmentCreationTime = fieldSetFlags()[10] ? this.shipmentCreationTime : (java.lang.Long) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

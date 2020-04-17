@@ -78,6 +78,15 @@
        "name": "isShipmentCompleted",
        "type": "boolean",
        "default": false
-    }
+    },
+    {
+        "name": "shipmentCreationTime",
+        "type": [
+             "null",
+             "long"
+           ],
+        "logicalType": "timestamp-millis",
+        "default": null
+     }
   ]
 }
