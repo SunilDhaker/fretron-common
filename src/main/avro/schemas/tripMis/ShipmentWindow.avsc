@@ -87,6 +87,24 @@
             ],
        "logicalType": "timestamp-millis",
        "default": null
-     }
+    },
+    {
+           "name": "lastShipmentWindowId",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+    },
+    {
+         "name": "nextShipmentWindowId",
+          "type": [
+          "null",
+          "string"
+          ],
+         "default": null
+    }
+
+
   ]
 }
