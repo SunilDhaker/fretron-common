@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -428795870762701811L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isShipmentCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"shipmentCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastShipmentWindowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextShipmentWindowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -6533556737155727987L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentWindow\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"tripState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tripId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"windowUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOverlapping\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isShipmentCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"shipmentCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastShipmentWindowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextShipmentWindowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isWindowCompleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isWindowDeleted\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isDiscarded\",\"type\":\"boolean\",\"default\":false}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long endTime;
@@ -26,6 +26,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.lang.Long shipmentCreationTime;
   @Deprecated public java.lang.String lastShipmentWindowId;
   @Deprecated public java.lang.String nextShipmentWindowId;
+  @Deprecated public boolean isWindowCompleted;
+  @Deprecated public boolean isWindowDeleted;
+  @Deprecated public boolean isDiscarded;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,8 +52,11 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
    * @param shipmentCreationTime The new value for shipmentCreationTime
    * @param lastShipmentWindowId The new value for lastShipmentWindowId
    * @param nextShipmentWindowId The new value for nextShipmentWindowId
+   * @param isWindowCompleted The new value for isWindowCompleted
+   * @param isWindowDeleted The new value for isWindowDeleted
+   * @param isDiscarded The new value for isDiscarded
    */
-  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId, java.lang.String imei, java.lang.Boolean isOverlapping, java.lang.Boolean isShipmentCompleted, java.lang.Long shipmentCreationTime, java.lang.String lastShipmentWindowId, java.lang.String nextShipmentWindowId) {
+  public ShipmentWindow(java.lang.Long startTime, java.lang.Long endTime, java.lang.String tripState, java.lang.String tripId, java.lang.String windowUuid, java.lang.String shipmentUuid, java.lang.String vehicleId, java.lang.String imei, java.lang.Boolean isOverlapping, java.lang.Boolean isShipmentCompleted, java.lang.Long shipmentCreationTime, java.lang.String lastShipmentWindowId, java.lang.String nextShipmentWindowId, java.lang.Boolean isWindowCompleted, java.lang.Boolean isWindowDeleted, java.lang.Boolean isDiscarded) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.tripState = tripState;
@@ -64,6 +70,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     this.shipmentCreationTime = shipmentCreationTime;
     this.lastShipmentWindowId = lastShipmentWindowId;
     this.nextShipmentWindowId = nextShipmentWindowId;
+    this.isWindowCompleted = isWindowCompleted;
+    this.isWindowDeleted = isWindowDeleted;
+    this.isDiscarded = isDiscarded;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -83,6 +92,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 10: return shipmentCreationTime;
     case 11: return lastShipmentWindowId;
     case 12: return nextShipmentWindowId;
+    case 13: return isWindowCompleted;
+    case 14: return isWindowDeleted;
+    case 15: return isDiscarded;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -104,6 +116,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     case 10: shipmentCreationTime = (java.lang.Long)value$; break;
     case 11: lastShipmentWindowId = (java.lang.String)value$; break;
     case 12: nextShipmentWindowId = (java.lang.String)value$; break;
+    case 13: isWindowCompleted = (java.lang.Boolean)value$; break;
+    case 14: isWindowDeleted = (java.lang.Boolean)value$; break;
+    case 15: isDiscarded = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -317,6 +332,54 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'isWindowCompleted' field.
+   * @return The value of the 'isWindowCompleted' field.
+   */
+  public java.lang.Boolean getIsWindowCompleted() {
+    return isWindowCompleted;
+  }
+
+  /**
+   * Sets the value of the 'isWindowCompleted' field.
+   * @param value the value to set.
+   */
+  public void setIsWindowCompleted(java.lang.Boolean value) {
+    this.isWindowCompleted = value;
+  }
+
+  /**
+   * Gets the value of the 'isWindowDeleted' field.
+   * @return The value of the 'isWindowDeleted' field.
+   */
+  public java.lang.Boolean getIsWindowDeleted() {
+    return isWindowDeleted;
+  }
+
+  /**
+   * Sets the value of the 'isWindowDeleted' field.
+   * @param value the value to set.
+   */
+  public void setIsWindowDeleted(java.lang.Boolean value) {
+    this.isWindowDeleted = value;
+  }
+
+  /**
+   * Gets the value of the 'isDiscarded' field.
+   * @return The value of the 'isDiscarded' field.
+   */
+  public java.lang.Boolean getIsDiscarded() {
+    return isDiscarded;
+  }
+
+  /**
+   * Sets the value of the 'isDiscarded' field.
+   * @param value the value to set.
+   */
+  public void setIsDiscarded(java.lang.Boolean value) {
+    this.isDiscarded = value;
+  }
+
+  /**
    * Creates a new ShipmentWindow RecordBuilder.
    * @return A new ShipmentWindow RecordBuilder
    */
@@ -361,6 +424,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.Long shipmentCreationTime;
     private java.lang.String lastShipmentWindowId;
     private java.lang.String nextShipmentWindowId;
+    private boolean isWindowCompleted;
+    private boolean isWindowDeleted;
+    private boolean isDiscarded;
 
     /** Creates a new Builder */
     private Builder() {
@@ -425,6 +491,18 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         this.nextShipmentWindowId = data().deepCopy(fields()[12].schema(), other.nextShipmentWindowId);
         fieldSetFlags()[12] = true;
       }
+      if (isValidValue(fields()[13], other.isWindowCompleted)) {
+        this.isWindowCompleted = data().deepCopy(fields()[13].schema(), other.isWindowCompleted);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.isWindowDeleted)) {
+        this.isWindowDeleted = data().deepCopy(fields()[14].schema(), other.isWindowDeleted);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isDiscarded)) {
+        this.isDiscarded = data().deepCopy(fields()[15].schema(), other.isDiscarded);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -484,6 +562,18 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       if (isValidValue(fields()[12], other.nextShipmentWindowId)) {
         this.nextShipmentWindowId = data().deepCopy(fields()[12].schema(), other.nextShipmentWindowId);
         fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.isWindowCompleted)) {
+        this.isWindowCompleted = data().deepCopy(fields()[13].schema(), other.isWindowCompleted);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.isWindowDeleted)) {
+        this.isWindowDeleted = data().deepCopy(fields()[14].schema(), other.isWindowDeleted);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isDiscarded)) {
+        this.isDiscarded = data().deepCopy(fields()[15].schema(), other.isDiscarded);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -992,6 +1082,120 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'isWindowCompleted' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsWindowCompleted() {
+      return isWindowCompleted;
+    }
+
+    /**
+      * Sets the value of the 'isWindowCompleted' field.
+      * @param value The value of 'isWindowCompleted'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder setIsWindowCompleted(boolean value) {
+      validate(fields()[13], value);
+      this.isWindowCompleted = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isWindowCompleted' field has been set.
+      * @return True if the 'isWindowCompleted' field has been set, false otherwise.
+      */
+    public boolean hasIsWindowCompleted() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'isWindowCompleted' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder clearIsWindowCompleted() {
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isWindowDeleted' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsWindowDeleted() {
+      return isWindowDeleted;
+    }
+
+    /**
+      * Sets the value of the 'isWindowDeleted' field.
+      * @param value The value of 'isWindowDeleted'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder setIsWindowDeleted(boolean value) {
+      validate(fields()[14], value);
+      this.isWindowDeleted = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isWindowDeleted' field has been set.
+      * @return True if the 'isWindowDeleted' field has been set, false otherwise.
+      */
+    public boolean hasIsWindowDeleted() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'isWindowDeleted' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder clearIsWindowDeleted() {
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isDiscarded' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsDiscarded() {
+      return isDiscarded;
+    }
+
+    /**
+      * Sets the value of the 'isDiscarded' field.
+      * @param value The value of 'isDiscarded'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder setIsDiscarded(boolean value) {
+      validate(fields()[15], value);
+      this.isDiscarded = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isDiscarded' field has been set.
+      * @return True if the 'isDiscarded' field has been set, false otherwise.
+      */
+    public boolean hasIsDiscarded() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'isDiscarded' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentWindow.Builder clearIsDiscarded() {
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public ShipmentWindow build() {
       try {
@@ -1009,6 +1213,9 @@ public class ShipmentWindow extends org.apache.avro.specific.SpecificRecordBase 
         record.shipmentCreationTime = fieldSetFlags()[10] ? this.shipmentCreationTime : (java.lang.Long) defaultValue(fields()[10]);
         record.lastShipmentWindowId = fieldSetFlags()[11] ? this.lastShipmentWindowId : (java.lang.String) defaultValue(fields()[11]);
         record.nextShipmentWindowId = fieldSetFlags()[12] ? this.nextShipmentWindowId : (java.lang.String) defaultValue(fields()[12]);
+        record.isWindowCompleted = fieldSetFlags()[13] ? this.isWindowCompleted : (java.lang.Boolean) defaultValue(fields()[13]);
+        record.isWindowDeleted = fieldSetFlags()[14] ? this.isWindowDeleted : (java.lang.Boolean) defaultValue(fields()[14]);
+        record.isDiscarded = fieldSetFlags()[15] ? this.isDiscarded : (java.lang.Boolean) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

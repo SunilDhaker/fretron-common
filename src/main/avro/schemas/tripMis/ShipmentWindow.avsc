@@ -103,6 +103,21 @@
           "string"
           ],
          "default": null
+    },
+    {
+        "name": "isWindowCompleted",
+        "type": "boolean",
+        "default": false
+    },
+    {
+         "name": "isWindowDeleted",
+         "type": "boolean",
+         "default": false
+    },
+    {
+         "name": "isDiscarded",
+         "type": "boolean",
+         "default": false
     }
 
 
