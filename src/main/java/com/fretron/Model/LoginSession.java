@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoginSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8007022289392270973L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -1200204277819390852L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushToken\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushTokenService\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String userId;
@@ -23,6 +23,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.Long updatedOn;
   @Deprecated public java.lang.String location;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public java.lang.String parentOrgId;
+  @Deprecated public java.lang.String pushToken;
+  @Deprecated public java.lang.String pushTokenService;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +46,11 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
    * @param updatedOn The new value for updatedOn
    * @param location The new value for location
    * @param orgId The new value for orgId
+   * @param parentOrgId The new value for parentOrgId
+   * @param pushToken The new value for pushToken
+   * @param pushTokenService The new value for pushTokenService
    */
-  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location, java.lang.String orgId) {
+  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location, java.lang.String orgId, java.lang.String parentOrgId, java.lang.String pushToken, java.lang.String pushTokenService) {
     this.uuid = uuid;
     this.userId = userId;
     this.token = token;
@@ -55,6 +61,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     this.updatedOn = updatedOn;
     this.location = location;
     this.orgId = orgId;
+    this.parentOrgId = parentOrgId;
+    this.pushToken = pushToken;
+    this.pushTokenService = pushTokenService;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +80,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 7: return updatedOn;
     case 8: return location;
     case 9: return orgId;
+    case 10: return parentOrgId;
+    case 11: return pushToken;
+    case 12: return pushTokenService;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +101,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 7: updatedOn = (java.lang.Long)value$; break;
     case 8: location = (java.lang.String)value$; break;
     case 9: orgId = (java.lang.String)value$; break;
+    case 10: parentOrgId = (java.lang.String)value$; break;
+    case 11: pushToken = (java.lang.String)value$; break;
+    case 12: pushTokenService = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +269,54 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'parentOrgId' field.
+   * @return The value of the 'parentOrgId' field.
+   */
+  public java.lang.String getParentOrgId() {
+    return parentOrgId;
+  }
+
+  /**
+   * Sets the value of the 'parentOrgId' field.
+   * @param value the value to set.
+   */
+  public void setParentOrgId(java.lang.String value) {
+    this.parentOrgId = value;
+  }
+
+  /**
+   * Gets the value of the 'pushToken' field.
+   * @return The value of the 'pushToken' field.
+   */
+  public java.lang.String getPushToken() {
+    return pushToken;
+  }
+
+  /**
+   * Sets the value of the 'pushToken' field.
+   * @param value the value to set.
+   */
+  public void setPushToken(java.lang.String value) {
+    this.pushToken = value;
+  }
+
+  /**
+   * Gets the value of the 'pushTokenService' field.
+   * @return The value of the 'pushTokenService' field.
+   */
+  public java.lang.String getPushTokenService() {
+    return pushTokenService;
+  }
+
+  /**
+   * Sets the value of the 'pushTokenService' field.
+   * @param value the value to set.
+   */
+  public void setPushTokenService(java.lang.String value) {
+    this.pushTokenService = value;
+  }
+
+  /**
    * Creates a new LoginSession RecordBuilder.
    * @return A new LoginSession RecordBuilder
    */
@@ -295,6 +358,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.Long updatedOn;
     private java.lang.String location;
     private java.lang.String orgId;
+    private java.lang.String parentOrgId;
+    private java.lang.String pushToken;
+    private java.lang.String pushTokenService;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +413,18 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.parentOrgId)) {
+        this.parentOrgId = data().deepCopy(fields()[10].schema(), other.parentOrgId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.pushToken)) {
+        this.pushToken = data().deepCopy(fields()[11].schema(), other.pushToken);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.pushTokenService)) {
+        this.pushTokenService = data().deepCopy(fields()[12].schema(), other.pushTokenService);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -394,6 +472,18 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[9], other.orgId)) {
         this.orgId = data().deepCopy(fields()[9].schema(), other.orgId);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.parentOrgId)) {
+        this.parentOrgId = data().deepCopy(fields()[10].schema(), other.parentOrgId);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.pushToken)) {
+        this.pushToken = data().deepCopy(fields()[11].schema(), other.pushToken);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.pushTokenService)) {
+        this.pushTokenService = data().deepCopy(fields()[12].schema(), other.pushTokenService);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -787,6 +877,123 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'parentOrgId' field.
+      * @return The value.
+      */
+    public java.lang.String getParentOrgId() {
+      return parentOrgId;
+    }
+
+    /**
+      * Sets the value of the 'parentOrgId' field.
+      * @param value The value of 'parentOrgId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setParentOrgId(java.lang.String value) {
+      validate(fields()[10], value);
+      this.parentOrgId = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'parentOrgId' field has been set.
+      * @return True if the 'parentOrgId' field has been set, false otherwise.
+      */
+    public boolean hasParentOrgId() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'parentOrgId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearParentOrgId() {
+      parentOrgId = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'pushToken' field.
+      * @return The value.
+      */
+    public java.lang.String getPushToken() {
+      return pushToken;
+    }
+
+    /**
+      * Sets the value of the 'pushToken' field.
+      * @param value The value of 'pushToken'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setPushToken(java.lang.String value) {
+      validate(fields()[11], value);
+      this.pushToken = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'pushToken' field has been set.
+      * @return True if the 'pushToken' field has been set, false otherwise.
+      */
+    public boolean hasPushToken() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'pushToken' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearPushToken() {
+      pushToken = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'pushTokenService' field.
+      * @return The value.
+      */
+    public java.lang.String getPushTokenService() {
+      return pushTokenService;
+    }
+
+    /**
+      * Sets the value of the 'pushTokenService' field.
+      * @param value The value of 'pushTokenService'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setPushTokenService(java.lang.String value) {
+      validate(fields()[12], value);
+      this.pushTokenService = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'pushTokenService' field has been set.
+      * @return True if the 'pushTokenService' field has been set, false otherwise.
+      */
+    public boolean hasPushTokenService() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'pushTokenService' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearPushTokenService() {
+      pushTokenService = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public LoginSession build() {
       try {
@@ -801,6 +1008,9 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         record.updatedOn = fieldSetFlags()[7] ? this.updatedOn : (java.lang.Long) defaultValue(fields()[7]);
         record.location = fieldSetFlags()[8] ? this.location : (java.lang.String) defaultValue(fields()[8]);
         record.orgId = fieldSetFlags()[9] ? this.orgId : (java.lang.String) defaultValue(fields()[9]);
+        record.parentOrgId = fieldSetFlags()[10] ? this.parentOrgId : (java.lang.String) defaultValue(fields()[10]);
+        record.pushToken = fieldSetFlags()[11] ? this.pushToken : (java.lang.String) defaultValue(fields()[11]);
+        record.pushTokenService = fieldSetFlags()[12] ? this.pushTokenService : (java.lang.String) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
