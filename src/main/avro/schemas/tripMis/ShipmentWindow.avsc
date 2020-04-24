@@ -4,6 +4,14 @@
   "name": "ShipmentWindow",
   "fields": [
     {
+         "name": "windowNumber",
+         "type": [
+           "null",
+           "long"
+             ],
+        "default": null
+    },
+    {
       "name": "startTime",
       "type": [
         "null",
@@ -111,11 +119,6 @@
     },
     {
          "name": "isWindowDeleted",
-         "type": "boolean",
-         "default": false
-    },
-    {
-         "name": "isDiscarded",
          "type": "boolean",
          "default": false
     }
