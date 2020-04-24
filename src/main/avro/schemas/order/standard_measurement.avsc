@@ -26,7 +26,15 @@
                        "com.fretron.Model.Measurement"
                      ],
              "default": null
-        }
+        },
+        {
+             "name": "trucks",
+              "type": [
+                                 				"null",
+                                 				"double"
+                                 			],
+                   "default": null
+         }
 
   ]
 }
