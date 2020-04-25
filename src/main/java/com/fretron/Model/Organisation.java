@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Organisation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1145728740623130240L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedPortals\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedTo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"portalType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2215012820828785416L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Organisation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"OrganisationType\",\"symbols\":[\"FLEET_OWNER\",\"TRANSPORTER\",\"FLEET_OWNER_AGENT\"]}},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"buisnessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgUuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"organisationAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingAddress\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contactInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"websiteURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstIN\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"installedModules\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"logoThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"logoDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedPortals\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedTo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"portalType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"registeredDomains\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isEnableAutoJoinUser\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -33,6 +33,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String linkedTo;
   @Deprecated public java.lang.String portalType;
+  @Deprecated public java.util.List<java.lang.String> registeredDomains;
+  @Deprecated public java.lang.Boolean isEnableAutoJoinUser;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -63,8 +65,10 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
    * @param status The new value for status
    * @param linkedTo The new value for linkedTo
    * @param portalType The new value for portalType
+   * @param registeredDomains The new value for registeredDomains
+   * @param isEnableAutoJoinUser The new value for isEnableAutoJoinUser
    */
-  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId, java.util.List<java.lang.String> linkedPortals, java.lang.String status, java.lang.String linkedTo, java.lang.String portalType) {
+  public Organisation(java.lang.String uuid, java.lang.String orgId, java.lang.String organisationName, com.fretron.Model.OrganisationType type, java.lang.String addedBy, java.lang.String buisnessPartnerId, java.lang.String parentOrgUuid, java.lang.String organisationAddress, java.lang.String billingAddress, com.fretron.Model.Contact contactInfo, java.lang.String websiteURL, java.lang.String gstIN, java.lang.String panNumber, java.util.List<java.lang.String> installedModules, java.lang.String logoThumbnailString, java.lang.String logoDocumentId, java.util.List<java.lang.String> linkedPortals, java.lang.String status, java.lang.String linkedTo, java.lang.String portalType, java.util.List<java.lang.String> registeredDomains, java.lang.Boolean isEnableAutoJoinUser) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.organisationName = organisationName;
@@ -85,6 +89,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     this.status = status;
     this.linkedTo = linkedTo;
     this.portalType = portalType;
+    this.registeredDomains = registeredDomains;
+    this.isEnableAutoJoinUser = isEnableAutoJoinUser;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -111,6 +117,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 17: return status;
     case 18: return linkedTo;
     case 19: return portalType;
+    case 20: return registeredDomains;
+    case 21: return isEnableAutoJoinUser;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -139,6 +147,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     case 17: status = (java.lang.String)value$; break;
     case 18: linkedTo = (java.lang.String)value$; break;
     case 19: portalType = (java.lang.String)value$; break;
+    case 20: registeredDomains = (java.util.List<java.lang.String>)value$; break;
+    case 21: isEnableAutoJoinUser = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -464,6 +474,38 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'registeredDomains' field.
+   * @return The value of the 'registeredDomains' field.
+   */
+  public java.util.List<java.lang.String> getRegisteredDomains() {
+    return registeredDomains;
+  }
+
+  /**
+   * Sets the value of the 'registeredDomains' field.
+   * @param value the value to set.
+   */
+  public void setRegisteredDomains(java.util.List<java.lang.String> value) {
+    this.registeredDomains = value;
+  }
+
+  /**
+   * Gets the value of the 'isEnableAutoJoinUser' field.
+   * @return The value of the 'isEnableAutoJoinUser' field.
+   */
+  public java.lang.Boolean getIsEnableAutoJoinUser() {
+    return isEnableAutoJoinUser;
+  }
+
+  /**
+   * Sets the value of the 'isEnableAutoJoinUser' field.
+   * @param value the value to set.
+   */
+  public void setIsEnableAutoJoinUser(java.lang.Boolean value) {
+    this.isEnableAutoJoinUser = value;
+  }
+
+  /**
    * Creates a new Organisation RecordBuilder.
    * @return A new Organisation RecordBuilder
    */
@@ -516,6 +558,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String status;
     private java.lang.String linkedTo;
     private java.lang.String portalType;
+    private java.util.List<java.lang.String> registeredDomains;
+    private java.lang.Boolean isEnableAutoJoinUser;
 
     /** Creates a new Builder */
     private Builder() {
@@ -611,6 +655,14 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         this.portalType = data().deepCopy(fields()[19].schema(), other.portalType);
         fieldSetFlags()[19] = true;
       }
+      if (isValidValue(fields()[20], other.registeredDomains)) {
+        this.registeredDomains = data().deepCopy(fields()[20].schema(), other.registeredDomains);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.isEnableAutoJoinUser)) {
+        this.isEnableAutoJoinUser = data().deepCopy(fields()[21].schema(), other.isEnableAutoJoinUser);
+        fieldSetFlags()[21] = true;
+      }
     }
 
     /**
@@ -699,6 +751,14 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[19], other.portalType)) {
         this.portalType = data().deepCopy(fields()[19].schema(), other.portalType);
         fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.registeredDomains)) {
+        this.registeredDomains = data().deepCopy(fields()[20].schema(), other.registeredDomains);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.isEnableAutoJoinUser)) {
+        this.isEnableAutoJoinUser = data().deepCopy(fields()[21].schema(), other.isEnableAutoJoinUser);
+        fieldSetFlags()[21] = true;
       }
     }
 
@@ -1517,6 +1577,84 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'registeredDomains' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getRegisteredDomains() {
+      return registeredDomains;
+    }
+
+    /**
+      * Sets the value of the 'registeredDomains' field.
+      * @param value The value of 'registeredDomains'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setRegisteredDomains(java.util.List<java.lang.String> value) {
+      validate(fields()[20], value);
+      this.registeredDomains = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'registeredDomains' field has been set.
+      * @return True if the 'registeredDomains' field has been set, false otherwise.
+      */
+    public boolean hasRegisteredDomains() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'registeredDomains' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearRegisteredDomains() {
+      registeredDomains = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isEnableAutoJoinUser' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsEnableAutoJoinUser() {
+      return isEnableAutoJoinUser;
+    }
+
+    /**
+      * Sets the value of the 'isEnableAutoJoinUser' field.
+      * @param value The value of 'isEnableAutoJoinUser'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder setIsEnableAutoJoinUser(java.lang.Boolean value) {
+      validate(fields()[21], value);
+      this.isEnableAutoJoinUser = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isEnableAutoJoinUser' field has been set.
+      * @return True if the 'isEnableAutoJoinUser' field has been set, false otherwise.
+      */
+    public boolean hasIsEnableAutoJoinUser() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'isEnableAutoJoinUser' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Organisation.Builder clearIsEnableAutoJoinUser() {
+      isEnableAutoJoinUser = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
     @Override
     public Organisation build() {
       try {
@@ -1545,6 +1683,8 @@ public class Organisation extends org.apache.avro.specific.SpecificRecordBase im
         record.status = fieldSetFlags()[17] ? this.status : (java.lang.String) defaultValue(fields()[17]);
         record.linkedTo = fieldSetFlags()[18] ? this.linkedTo : (java.lang.String) defaultValue(fields()[18]);
         record.portalType = fieldSetFlags()[19] ? this.portalType : (java.lang.String) defaultValue(fields()[19]);
+        record.registeredDomains = fieldSetFlags()[20] ? this.registeredDomains : (java.util.List<java.lang.String>) defaultValue(fields()[20]);
+        record.isEnableAutoJoinUser = fieldSetFlags()[21] ? this.isEnableAutoJoinUser : (java.lang.Boolean) defaultValue(fields()[21]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
