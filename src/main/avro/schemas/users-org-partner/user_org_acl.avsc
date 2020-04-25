@@ -50,6 +50,17 @@
                             "string"
                                ],
                       "default": null
-                           }
+      },
+       {
+           "name": "roles",
+            "type": [
+                 "null",
+                 {
+                   "type": "array",
+                   "items": "com.fretron.Model.Role"
+                 }
+               ],
+            "default": null
+       }
 ]
 }
