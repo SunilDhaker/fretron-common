@@ -111,6 +111,30 @@
                        "com.fretron.Model.Updates"
                                ],
              "default": null
-         }
+         },
+            {
+               "name": "regionId",
+               "type": [
+                 "null",
+                 "string"
+               ],
+               "default": null
+             },
+              {
+                           "name": "zoneId",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         },
+                 {
+                    "name": "officeType",
+                    "type": [
+                     "null",
+                     "string"
+                              ],
+                    "default": null
+                 }
   ]
 }

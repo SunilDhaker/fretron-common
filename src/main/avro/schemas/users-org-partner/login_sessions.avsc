@@ -50,12 +50,27 @@
         "name": "location",
         "type": ["null" , "string"],
          "default" : null
-     },
-       {
-           "name": "orgId",
-           "type": ["null" , "string"],
-           "default" : null
-       }
+    },
+    {
+         "name": "orgId",
+         "type": ["null" , "string"],
+         "default" : null
+    },
+    {
+          "name": "parentOrgId",
+          "type": ["null" , "string"],
+          "default" : null
+    },
+    {
+          "name": "pushToken",
+          "type": ["null" , "string"],
+          "default" : null
+    },
+    {
+          "name": "pushTokenService",
+          "type": ["null" , "string"],
+          "default" : null
+    }
 
 
 

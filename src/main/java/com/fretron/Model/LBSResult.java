@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LBSResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6702725748183904407L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5817408691992606594L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String requestType;
@@ -24,6 +24,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.Long requestTime;
   @Deprecated public java.lang.String userId;
   @Deprecated public java.lang.String orgId;
+  @Deprecated public java.lang.String resourceIdentifier;
+  @Deprecated public java.lang.Long resourceCreationTime;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +47,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * @param requestTime The new value for requestTime
    * @param userId The new value for userId
    * @param orgId The new value for orgId
+   * @param resourceIdentifier The new value for resourceIdentifier
+   * @param resourceCreationTime The new value for resourceCreationTime
    */
-  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId) {
+  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId, java.lang.String resourceIdentifier, java.lang.Long resourceCreationTime) {
     this.mobileNumber = mobileNumber;
     this.requestType = requestType;
     this.requestId = requestId;
@@ -58,6 +62,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     this.requestTime = requestTime;
     this.userId = userId;
     this.orgId = orgId;
+    this.resourceIdentifier = resourceIdentifier;
+    this.resourceCreationTime = resourceCreationTime;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +81,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 8: return requestTime;
     case 9: return userId;
     case 10: return orgId;
+    case 11: return resourceIdentifier;
+    case 12: return resourceCreationTime;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +102,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 8: requestTime = (java.lang.Long)value$; break;
     case 9: userId = (java.lang.String)value$; break;
     case 10: orgId = (java.lang.String)value$; break;
+    case 11: resourceIdentifier = (java.lang.String)value$; break;
+    case 12: resourceCreationTime = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +285,38 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'resourceIdentifier' field.
+   * @return The value of the 'resourceIdentifier' field.
+   */
+  public java.lang.String getResourceIdentifier() {
+    return resourceIdentifier;
+  }
+
+  /**
+   * Sets the value of the 'resourceIdentifier' field.
+   * @param value the value to set.
+   */
+  public void setResourceIdentifier(java.lang.String value) {
+    this.resourceIdentifier = value;
+  }
+
+  /**
+   * Gets the value of the 'resourceCreationTime' field.
+   * @return The value of the 'resourceCreationTime' field.
+   */
+  public java.lang.Long getResourceCreationTime() {
+    return resourceCreationTime;
+  }
+
+  /**
+   * Sets the value of the 'resourceCreationTime' field.
+   * @param value the value to set.
+   */
+  public void setResourceCreationTime(java.lang.Long value) {
+    this.resourceCreationTime = value;
+  }
+
+  /**
    * Creates a new LBSResult RecordBuilder.
    * @return A new LBSResult RecordBuilder
    */
@@ -317,6 +359,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.Long requestTime;
     private java.lang.String userId;
     private java.lang.String orgId;
+    private java.lang.String resourceIdentifier;
+    private java.lang.Long resourceCreationTime;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +417,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.orgId = data().deepCopy(fields()[10].schema(), other.orgId);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.resourceIdentifier)) {
+        this.resourceIdentifier = data().deepCopy(fields()[11].schema(), other.resourceIdentifier);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.resourceCreationTime)) {
+        this.resourceCreationTime = data().deepCopy(fields()[12].schema(), other.resourceCreationTime);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -424,6 +476,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[10], other.orgId)) {
         this.orgId = data().deepCopy(fields()[10].schema(), other.orgId);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.resourceIdentifier)) {
+        this.resourceIdentifier = data().deepCopy(fields()[11].schema(), other.resourceIdentifier);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.resourceCreationTime)) {
+        this.resourceCreationTime = data().deepCopy(fields()[12].schema(), other.resourceCreationTime);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -856,6 +916,84 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'resourceIdentifier' field.
+      * @return The value.
+      */
+    public java.lang.String getResourceIdentifier() {
+      return resourceIdentifier;
+    }
+
+    /**
+      * Sets the value of the 'resourceIdentifier' field.
+      * @param value The value of 'resourceIdentifier'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setResourceIdentifier(java.lang.String value) {
+      validate(fields()[11], value);
+      this.resourceIdentifier = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'resourceIdentifier' field has been set.
+      * @return True if the 'resourceIdentifier' field has been set, false otherwise.
+      */
+    public boolean hasResourceIdentifier() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'resourceIdentifier' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearResourceIdentifier() {
+      resourceIdentifier = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'resourceCreationTime' field.
+      * @return The value.
+      */
+    public java.lang.Long getResourceCreationTime() {
+      return resourceCreationTime;
+    }
+
+    /**
+      * Sets the value of the 'resourceCreationTime' field.
+      * @param value The value of 'resourceCreationTime'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setResourceCreationTime(java.lang.Long value) {
+      validate(fields()[12], value);
+      this.resourceCreationTime = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'resourceCreationTime' field has been set.
+      * @return True if the 'resourceCreationTime' field has been set, false otherwise.
+      */
+    public boolean hasResourceCreationTime() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'resourceCreationTime' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearResourceCreationTime() {
+      resourceCreationTime = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public LBSResult build() {
       try {
@@ -871,6 +1009,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         record.requestTime = fieldSetFlags()[8] ? this.requestTime : (java.lang.Long) defaultValue(fields()[8]);
         record.userId = fieldSetFlags()[9] ? this.userId : (java.lang.String) defaultValue(fields()[9]);
         record.orgId = fieldSetFlags()[10] ? this.orgId : (java.lang.String) defaultValue(fields()[10]);
+        record.resourceIdentifier = fieldSetFlags()[11] ? this.resourceIdentifier : (java.lang.String) defaultValue(fields()[11]);
+        record.resourceCreationTime = fieldSetFlags()[12] ? this.resourceCreationTime : (java.lang.Long) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
