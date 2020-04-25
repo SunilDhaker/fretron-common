@@ -135,7 +135,15 @@
                    }
                  ],
         "default": null
-     }
+     },
+      {
+          "name": "isEnableAutoJoinUser",
+           "type": [
+                     "null",
+                     "boolean"
+                   ],
+           "default": null
+       }
 
   ]
   }
