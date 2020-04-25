@@ -338,6 +338,17 @@
             "name": "reason",
             "type": ["null", "string"],
             "default": null
+        },
+        {
+            "name": "allowedTransportMaterials",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.Materials"
+                }
+            ],
+            "default": null
         }
 	]
 }
