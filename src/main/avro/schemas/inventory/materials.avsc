@@ -39,12 +39,44 @@
                                                   "default": null
                                                 },
    {
-           "name": "updates",
-           "type": [
-             "null",
-             "com.fretron.Model.Updates"
-           ],
-           "default": null
-         }
+       "name": "updates",
+       "type": [
+         "null",
+         "com.fretron.Model.Updates"
+       ],
+       "default": null
+     },
+     {
+        "name": "materialType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+       {
+          "name": "materialGroup",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+       {
+          "name": "controlCode",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+               {
+                  "name": "division",
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "default": null
+                }
   ]
  }
