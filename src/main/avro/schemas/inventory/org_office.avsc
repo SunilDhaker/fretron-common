@@ -135,6 +135,17 @@
                      "string"
                               ],
                     "default": null
-                 }
+                 },
+                 {
+                       "name": "materialServices",
+                       "type": [
+                         "null",
+                         {
+                           "type": "array",
+                           "items": "com.fretron.Model.Materials"
+                         }
+                       ],
+                       "default": null
+                     }
   ]
 }
