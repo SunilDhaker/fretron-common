@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Materials extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -881097614718774839L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = -3609242630154774933L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -21,6 +21,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String unitOfMeasurement;
   @Deprecated public java.lang.Double pricePerUnit;
   @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public java.lang.String materialType;
+  @Deprecated public java.lang.String materialGroup;
+  @Deprecated public java.lang.String controlCode;
+  @Deprecated public java.lang.String division;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +43,12 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
    * @param unitOfMeasurement The new value for unitOfMeasurement
    * @param pricePerUnit The new value for pricePerUnit
    * @param updates The new value for updates
+   * @param materialType The new value for materialType
+   * @param materialGroup The new value for materialGroup
+   * @param controlCode The new value for controlCode
+   * @param division The new value for division
    */
-  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates) {
+  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates, java.lang.String materialType, java.lang.String materialGroup, java.lang.String controlCode, java.lang.String division) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.name = name;
@@ -49,6 +57,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     this.unitOfMeasurement = unitOfMeasurement;
     this.pricePerUnit = pricePerUnit;
     this.updates = updates;
+    this.materialType = materialType;
+    this.materialGroup = materialGroup;
+    this.controlCode = controlCode;
+    this.division = division;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +75,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 5: return unitOfMeasurement;
     case 6: return pricePerUnit;
     case 7: return updates;
+    case 8: return materialType;
+    case 9: return materialGroup;
+    case 10: return controlCode;
+    case 11: return division;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +95,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 5: unitOfMeasurement = (java.lang.String)value$; break;
     case 6: pricePerUnit = (java.lang.Double)value$; break;
     case 7: updates = (com.fretron.Model.Updates)value$; break;
+    case 8: materialType = (java.lang.String)value$; break;
+    case 9: materialGroup = (java.lang.String)value$; break;
+    case 10: controlCode = (java.lang.String)value$; break;
+    case 11: division = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +232,70 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'materialType' field.
+   * @return The value of the 'materialType' field.
+   */
+  public java.lang.String getMaterialType() {
+    return materialType;
+  }
+
+  /**
+   * Sets the value of the 'materialType' field.
+   * @param value the value to set.
+   */
+  public void setMaterialType(java.lang.String value) {
+    this.materialType = value;
+  }
+
+  /**
+   * Gets the value of the 'materialGroup' field.
+   * @return The value of the 'materialGroup' field.
+   */
+  public java.lang.String getMaterialGroup() {
+    return materialGroup;
+  }
+
+  /**
+   * Sets the value of the 'materialGroup' field.
+   * @param value the value to set.
+   */
+  public void setMaterialGroup(java.lang.String value) {
+    this.materialGroup = value;
+  }
+
+  /**
+   * Gets the value of the 'controlCode' field.
+   * @return The value of the 'controlCode' field.
+   */
+  public java.lang.String getControlCode() {
+    return controlCode;
+  }
+
+  /**
+   * Sets the value of the 'controlCode' field.
+   * @param value the value to set.
+   */
+  public void setControlCode(java.lang.String value) {
+    this.controlCode = value;
+  }
+
+  /**
+   * Gets the value of the 'division' field.
+   * @return The value of the 'division' field.
+   */
+  public java.lang.String getDivision() {
+    return division;
+  }
+
+  /**
+   * Sets the value of the 'division' field.
+   * @param value the value to set.
+   */
+  public void setDivision(java.lang.String value) {
+    this.division = value;
+  }
+
+  /**
    * Creates a new Materials RecordBuilder.
    * @return A new Materials RecordBuilder
    */
@@ -252,6 +336,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.Double pricePerUnit;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
+    private java.lang.String materialType;
+    private java.lang.String materialGroup;
+    private java.lang.String controlCode;
+    private java.lang.String division;
 
     /** Creates a new Builder */
     private Builder() {
@@ -299,6 +387,22 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
+      if (isValidValue(fields()[8], other.materialType)) {
+        this.materialType = data().deepCopy(fields()[8].schema(), other.materialType);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.materialGroup)) {
+        this.materialGroup = data().deepCopy(fields()[9].schema(), other.materialGroup);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.controlCode)) {
+        this.controlCode = data().deepCopy(fields()[10].schema(), other.controlCode);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.division)) {
+        this.division = data().deepCopy(fields()[11].schema(), other.division);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -340,6 +444,22 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         fieldSetFlags()[7] = true;
       }
       this.updatesBuilder = null;
+      if (isValidValue(fields()[8], other.materialType)) {
+        this.materialType = data().deepCopy(fields()[8].schema(), other.materialType);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.materialGroup)) {
+        this.materialGroup = data().deepCopy(fields()[9].schema(), other.materialGroup);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.controlCode)) {
+        this.controlCode = data().deepCopy(fields()[10].schema(), other.controlCode);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.division)) {
+        this.division = data().deepCopy(fields()[11].schema(), other.division);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -689,6 +809,162 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'materialType' field.
+      * @return The value.
+      */
+    public java.lang.String getMaterialType() {
+      return materialType;
+    }
+
+    /**
+      * Sets the value of the 'materialType' field.
+      * @param value The value of 'materialType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMaterialType(java.lang.String value) {
+      validate(fields()[8], value);
+      this.materialType = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'materialType' field has been set.
+      * @return True if the 'materialType' field has been set, false otherwise.
+      */
+    public boolean hasMaterialType() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'materialType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMaterialType() {
+      materialType = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'materialGroup' field.
+      * @return The value.
+      */
+    public java.lang.String getMaterialGroup() {
+      return materialGroup;
+    }
+
+    /**
+      * Sets the value of the 'materialGroup' field.
+      * @param value The value of 'materialGroup'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMaterialGroup(java.lang.String value) {
+      validate(fields()[9], value);
+      this.materialGroup = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'materialGroup' field has been set.
+      * @return True if the 'materialGroup' field has been set, false otherwise.
+      */
+    public boolean hasMaterialGroup() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'materialGroup' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMaterialGroup() {
+      materialGroup = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'controlCode' field.
+      * @return The value.
+      */
+    public java.lang.String getControlCode() {
+      return controlCode;
+    }
+
+    /**
+      * Sets the value of the 'controlCode' field.
+      * @param value The value of 'controlCode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setControlCode(java.lang.String value) {
+      validate(fields()[10], value);
+      this.controlCode = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'controlCode' field has been set.
+      * @return True if the 'controlCode' field has been set, false otherwise.
+      */
+    public boolean hasControlCode() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'controlCode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearControlCode() {
+      controlCode = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'division' field.
+      * @return The value.
+      */
+    public java.lang.String getDivision() {
+      return division;
+    }
+
+    /**
+      * Sets the value of the 'division' field.
+      * @param value The value of 'division'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setDivision(java.lang.String value) {
+      validate(fields()[11], value);
+      this.division = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'division' field has been set.
+      * @return True if the 'division' field has been set, false otherwise.
+      */
+    public boolean hasDivision() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'division' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearDivision() {
+      division = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public Materials build() {
       try {
@@ -705,6 +981,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         } else {
           record.updates = fieldSetFlags()[7] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[7]);
         }
+        record.materialType = fieldSetFlags()[8] ? this.materialType : (java.lang.String) defaultValue(fields()[8]);
+        record.materialGroup = fieldSetFlags()[9] ? this.materialGroup : (java.lang.String) defaultValue(fields()[9]);
+        record.controlCode = fieldSetFlags()[10] ? this.controlCode : (java.lang.String) defaultValue(fields()[10]);
+        record.division = fieldSetFlags()[11] ? this.division : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
