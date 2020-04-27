@@ -82,11 +82,19 @@
                      "type": ["null", {"type" : "array", "items":"string"}],
                      "default":null
              },
-                          {
-                                  "name": "mergedUserIds",
-                                  "type": ["null", {"type" : "array", "items":"string"}],
-                                  "default":null
-                          }
+          {
+             "name": "mergedUserIds",
+             "type": ["null", {"type" : "array", "items":"string"}],
+              "default":null
+          } ,
+          {
+                  "name": "updates",
+                   "type": [
+                             "null",
+                             "com.fretron.Model.Updates"
+                            ],
+                   "default": null
+              }
 
   ]
 }

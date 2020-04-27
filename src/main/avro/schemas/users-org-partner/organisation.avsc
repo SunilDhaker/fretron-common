@@ -124,7 +124,26 @@
           "name": "portalType",
            "type": ["null" , "string"],
            "default" : null
-    }
+    },
+    {
+        "name": "registeredDomains",
+         "type": [
+                   "null",
+                   {
+                     "type": "array",
+                     "items": "string"
+                   }
+                 ],
+        "default": null
+     },
+      {
+          "name": "isEnableAutoJoinUser",
+           "type": [
+                     "null",
+                     "boolean"
+                   ],
+           "default": null
+       }
 
   ]
   }

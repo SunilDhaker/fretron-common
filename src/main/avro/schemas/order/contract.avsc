@@ -1,209 +1,354 @@
 {
-  "namespace": "com.fretron.Model",
-  "name": "Contract",
-  "type": "record",
-  "fields": [
-   {
-     "name": "uuid",
-      "type": [
-                  "null",
-                  "string"
-                ],
-      "default": null
-    },
-    {
-      "name": "externalId",
-       "type": [
-                 "null",
-                 "string"
-                    ],
-       "default": null
-    },
-    {
-         "name": "orgId",
-          "type": [
-                      "null",
-                      "string"
-                    ],
-          "default": null
-    },
-    {
-      "name": "validFrom",
-       "type": [
-              "null",
-              "long"
-            ],
-      "logicalType": "timestamp-millis",
-       "default": null
-    },
-    {
-          "name": "validTill",
-           "type": [
-                  "null",
-                  "long"
-                ],
-          "logicalType": "timestamp-millis",
-           "default": null
-    },
-    {
-          "name": "contractDate",
-           "type": [
-                  "null",
-                  "long"
-                ],
-          "logicalType": "timestamp-millis",
-           "default": null
-     },
-     {
-       "name": "contractStartDate",
-        "type": [
-                       "null",
-                       "long"
-                     ],
-       "logicalType": "timestamp-millis",
-        "default": null
-     },
-     {
-       "name": "contractType",
-        "type": [
-                      "null",
-                      "string"
-                         ],
-        "default": null
-     },
-{
-"name": "contractNumber",
-"type": [
-"null",
-"string"
-],
-"default": null
-},
-     {
-          "name": "salesOffice",
-           "type": [
-                     "null",
-                     "com.fretron.Model.OrgOffice"
-                   ],
-          "default": null
-     },
-     {
-        "name": "customer",
-         "type": [
-                          "null",
-                          "com.fretron.Model.BuisnessPartner"
-                        ],
-        "default": null
-     },
-     {
-        "name": "termsOfPayment",
-         "type": [
-                   "null",
-                   {
-                     "type": "array",
-                     "items": "com.fretron.Model.ContractTerms"
-                   }
-                 ],
-         "default": null
-     },
-     {
-       "name": "createdAt",
-        "type": [
-                 "null",
-                 "long"
-                     ],
-        "logicalType": "timestamp-millis",
-        "default": null
-     },
-     {
-       "name": "updates",
-        "type": [
-                "null",
-                "com.fretron.Model.Updates"
-              ],
-        "default": null
-    },
-    {
-       "name": "estimatedContractQuantity",
-             "type": [
-                       "null",
-                       {
-                         "type": "array",
-                         "items": "com.fretron.Model.Measurement"
-                       }
-                     ],
-             "default": null
-    },
-    {
-      "name": "estimatedAmountINR",
-       "type": ["null","double"],
-       "default" : null
-    },
-    {
-      "name": "allowedVehicleTypes",
-      "type": [
-                 "null",
-                           {
-                             "type": "array",
-                             "items": "string"
-                           }
-                         ],
-        "default": null
-    },
-    {
-       "name": "allowedConsigner",
-        "type": [
-                    "null",
-                           {
-                             "type": "array",
-                             "items": "com.fretron.Model.BuisnessPartner"
-                           }
-                ],
-       "default": null
-    },
-    {
-           "name": "allowedConsignee",
+	"namespace": "com.fretron.Model",
+	"name": "Contract",
+	"type": "record",
+	"fields": [{
+			"name": "uuid",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "externalId",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "orgId",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "validFrom",
+			"type": [
+				"null",
+				"long"
+			],
+			"logicalType": "timestamp-millis",
+			"default": null
+		},
+		{
+			"name": "validTill",
+			"type": [
+				"null",
+				"long"
+			],
+			"logicalType": "timestamp-millis",
+			"default": null
+		},
+		{
+			"name": "contractDate",
+			"type": [
+				"null",
+				"long"
+			],
+			"logicalType": "timestamp-millis",
+			"default": null
+		},
+		{
+			"name": "contractStartDate",
+			"type": [
+				"null",
+				"long"
+			],
+			"logicalType": "timestamp-millis",
+			"default": null
+		},
+		{
+			"name": "contractType",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "contractNumber",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
+		},
+		{
+			"name": "salesOffice",
+			"type": [
+				"null",
+				"com.fretron.Model.OrgOffice"
+			],
+			"default": null
+		},
+		{
+			"name": "customer",
+			"type": [
+				"null",
+				"com.fretron.Model.BuisnessPartner"
+			],
+			"default": null
+		},
+		{
+			"name": "termsOfPayment",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.ContractTerms"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "createdAt",
+			"type": [
+				"null",
+				"long"
+			],
+			"logicalType": "timestamp-millis",
+			"default": null
+		},
+		{
+			"name": "updates",
+			"type": [
+				"null",
+				"com.fretron.Model.Updates"
+			],
+			"default": null
+		},
+		{
+			"name": "estimatedContractQuantity",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.Measurement"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "estimatedAmountINR",
+			"type": ["null", "double"],
+			"default": null
+		},
+		{
+			"name": "allowedVehicleTypes",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "string"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedConsigner",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.BuisnessPartner"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedConsignee",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.BuisnessPartner"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedBillToParties",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.BuisnessPartner"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedMaterial",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "string"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "customFields",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.CustomFields"
+				}
+			],
+			"default": null
+		},
+
+
+
+
+
+
+		{
+			"name": "allowedOrderBranches",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.OrgOffice"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedCustomerLoadTypes",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.LoadType"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedPaymentCollectionBranches",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.OrgOffice"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedPayers",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.BuisnessPartner"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "allowedBillingBranches",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "com.fretron.Model.OrgOffice"
+				}
+			],
+			"default": null
+		},
+        {
+            "name": "allowedLoadType",
             "type": [
-                        "null",
-                               {
-                                 "type": "array",
-                                 "items": "com.fretron.Model.BuisnessPartner"
-                               }
-                    ],
-           "default": null
-     },
-     {
-            "name": "allowedBillToParties",
-             "type": [
-                         "null",
-                                {
-                                  "type": "array",
-                                  "items": "com.fretron.Model.BuisnessPartner"
-                                }
-                     ],
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.LoadType"
+                }
+            ],
             "default": null
-     },
-     {
-           "name": "allowedMaterial",
-           "type": [
-                      "null",
-                                {
-                                  "type": "array",
-                                  "items": "string"
-                                }
-                    ],
-             "default": null
-     },
-                 {
-                     "name": "customFields",
-                     "type": [
-                       "null",
-                       {
-                         "type": "array",
-                         "items": "com.fretron.Model.CustomFields"
-                       }
-                     ],
-                     "default": null
-                 }
-  ]
+        },
+        {
+            "name": "routes",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.Route"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "allowedTransportationServices",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.Materials"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "allowedConsignmentBranches",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.OrgOffice"
+                }
+            ],
+            "default": null
+        },
+        {
+            "name": "payerRule",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "billToPartyRule",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "billingBranchRule",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "paymentResponsibleBranchRule",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "status",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "reason",
+            "type": ["null", "string"],
+            "default": null
+        },
+        {
+            "name": "allowedTransportMaterials",
+            "type": [
+                "null",
+                {
+                    "type": "array",
+                    "items": "com.fretron.Model.Materials"
+                }
+            ],
+            "default": null
+        }
+	]
 }
