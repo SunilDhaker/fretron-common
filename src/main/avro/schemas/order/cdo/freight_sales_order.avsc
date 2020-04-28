@@ -268,6 +268,30 @@
                                  "com.fretron.Model.BuisnessPartner"
                              ],
                   "default": null
-              }
+             },
+              {
+                "name": "paymentCollectionBranch",
+                 "type": [
+                              "null",
+                              "com.fretron.Model.OrgOffice"
+                        ],
+                  "default": null
+             },
+              {
+                             "name": "billingBranch",
+                              "type": [
+                                           "null",
+                                           "com.fretron.Model.OrgOffice"
+                                     ],
+                               "default": null
+               },
+                {
+                     "name": "consignmentBranch",
+                      "type": [
+                                             "null",
+                                             "com.fretron.Model.OrgOffice"
+                                       ],
+                     "default": null
+                  }
   ]
 }
