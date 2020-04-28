@@ -153,6 +153,17 @@
                                              "string"
                                        ],
                               "default": null
-                          }
+            },
+            {
+                 "name": "allowedCustomerLoadTypes",
+                  "type": [
+                                         "null",
+                                         {
+                                            "type": "array",
+                                             "items": "com.fretron.Model.LoadType"
+                                         }
+                                              ],
+                   "default": null
+               }
   ]
 }
