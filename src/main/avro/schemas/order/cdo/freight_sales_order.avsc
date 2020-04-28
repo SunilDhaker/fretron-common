@@ -244,6 +244,30 @@
                         "items": "com.fretron.Model.ResourceAlert"
                         }],
             "default": null
-          }
+          },
+          {
+                 "name": "material",
+                  "type": [
+                                    "null",
+                                    "com.fretron.Model.Materials"
+                                  ],
+                 "default": null
+           },
+           {
+                      "name": "service",
+                       "type": [
+                                         "null",
+                                         "com.fretron.Model.Materials"
+                                       ],
+                      "default": null
+            },
+            {
+                    "name": "payer",
+                     "type": [
+                                   "null",
+                                 "com.fretron.Model.BuisnessPartner"
+                             ],
+                  "default": null
+              }
   ]
 }
