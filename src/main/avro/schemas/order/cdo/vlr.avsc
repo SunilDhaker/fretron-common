@@ -110,6 +110,23 @@
                                             "com.fretron.Model.BuisnessPartner"
                                           ],
                      "default": null
-                  }
+                  },
+                   {
+                             "name": "updates",
+                              "type": [
+                                      "null",
+                                      "com.fretron.Model.Updates"
+                                    ],
+                              "default": null
+                          },
+                           {
+                                       "name": "orderDate",
+                                        "type": [
+                                                   "null",
+                                                    "long"
+                                                 ],
+                                        "logicalType": "timestamp-millis",
+                                         "default": null
+                               }
   ]
 }
