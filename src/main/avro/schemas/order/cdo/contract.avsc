@@ -349,6 +349,17 @@
                 }
             ],
             "default": null
-        }
+        },
+                {
+                    "name": "lineItems",
+                    "type": [
+                        "null",
+                        {
+                            "type": "array",
+                            "items": "com.fretron.Model.ContractLineItem"
+                        }
+                    ],
+                    "default": null
+                }
 	]
 }

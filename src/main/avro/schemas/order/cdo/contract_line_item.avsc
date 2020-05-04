@@ -1,0 +1,215 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "ContractLineItem",
+  "type": "record",
+  "fields": [
+    {
+      "name": "billToParty",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignee",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignor",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "contractOwner",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "payer",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "billingBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "collectionBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "contractBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "deliveryBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "customerLoadType",
+      "type": [
+        "null",
+        "com.fretron.Model.LoadType"
+      ],
+      "default": null
+    },
+    {
+      "name": "loadType",
+      "type": [
+        "null",
+        "com.fretron.Model.LoadType"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "material",
+      "type": [
+        "null",
+        "com.fretron.Model.Materials"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialService",
+      "type": [
+        "null",
+        "com.fretron.Model.Materials"
+      ],
+      "default": null
+    },
+
+
+    {
+      "name": "lineItemNo",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "orderCalculationRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "transitDays",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "userName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "weightUnit",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "packageUnit",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "noOfPackage",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "orderItemAmount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "quantity",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "client",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
