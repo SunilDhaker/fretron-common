@@ -51,6 +51,14 @@
                  ],
          "default": null
      },
+     {
+       "name": "contractLineItemId",
+       "type": [
+                           "null",
+                           "string"
+                              ],
+       "default": null
+      },
       {
         "name": "orderType",
          "type": [
