@@ -50,6 +50,14 @@
             "string"
           ],
           "default": null
-        }
+        },
+    {
+            "name": "edited",
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "default": null
+          }
   ]
 }
