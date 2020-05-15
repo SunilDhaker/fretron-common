@@ -13,4 +13,5 @@ fun OrgOffice.clean(){
 
 fun OrgOffice.deepClean(){
     this.clean()
+    this.setMaterialServices(null)
 }
