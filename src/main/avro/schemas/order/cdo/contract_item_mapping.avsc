@@ -1,0 +1,21 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "ContractItemMapping",
+  "type": "record",
+  "fields": [
+        {
+             "name": "uuid",
+              "type": ["null",
+                         "string"
+                      ],
+              "default": null
+        },
+        {
+            "name": "externalId",
+             "type": ["null",
+                          "string"
+                     ],
+              "default": null
+        }
+  ]
+}

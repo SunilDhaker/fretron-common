@@ -218,6 +218,14 @@
             "string"
           ],
           "default": null
+      },
+      {
+         "name": "contractUUID",
+          "type": [
+                  "null",
+                  "string"
+                ],
+           "default": null
       }
   ]
 }

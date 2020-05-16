@@ -360,6 +360,17 @@
                         }
                     ],
                     "default": null
+                },
+                {
+                			"name": "lineItemMappings",
+                			"type": [
+                				"null",
+                				{
+                					"type": "array",
+                					"items": "com.fretron.Model.ContractItemMapping"
+                				}
+                			],
+                			"default": null
                 }
 	]
 }
