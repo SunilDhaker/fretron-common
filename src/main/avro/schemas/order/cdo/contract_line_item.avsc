@@ -226,6 +226,14 @@
                   "string"
                 ],
            "default": null
-      }
+      },
+      {
+               "name": "contractExternalId",
+                "type": [
+                        "null",
+                        "string"
+                      ],
+                 "default": null
+         }
   ]
 }
