@@ -164,6 +164,16 @@
                                          }
                                               ],
                    "default": null
-               }
+             },
+              {
+                  "name": "allowedTransitDays",
+                   "type": [
+                              "null",
+                              "long"
+                           ],
+                  "logicalType": "timestamp-millis",
+                   "default": null
+              }
+
   ]
 }
