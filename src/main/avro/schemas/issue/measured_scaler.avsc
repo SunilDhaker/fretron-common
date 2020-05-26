@@ -1,0 +1,30 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "MeasuredScalers",
+  "fields": [
+      {
+        "name": "measuredValueName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "measuredValueUOM",
+         "type": [
+              "null",
+               "string"
+          ],
+         "default": null
+      }, {
+                "name": "measuredValue",
+                "type": [
+                  "null",
+                  "double"
+                ],
+                "default": null
+      }
+    ]
+}

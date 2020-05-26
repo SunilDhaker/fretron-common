@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6589581112276856819L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WorkflowTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"workflowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"workflowName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"stageName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"completedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"delayedBy\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"SLAs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ServiceLevelAgreement\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isAchieved\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 4228467920677425434L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"WorkflowTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"workflowId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"workflowName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"stageName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"completedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"delayedBy\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"SLAs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ServiceLevelAgreement\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isAchieved\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"attributes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"measuredScalers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"MeasuredScalers\",\"fields\":[{\"name\":\"measuredValueName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measuredValueUOM\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measuredValue\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -25,6 +25,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String status;
   @Deprecated public java.util.List<com.fretron.Model.ServiceLevelAgreement> SLAs;
   @Deprecated public java.util.List<com.fretron.Model.CustomFields> attributes;
+  @Deprecated public java.util.List<com.fretron.Model.MeasuredScalers> measuredScalers;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +48,9 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
    * @param status The new value for status
    * @param SLAs The new value for SLAs
    * @param attributes The new value for attributes
+   * @param measuredScalers The new value for measuredScalers
    */
-  public WorkflowTask(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String workflowId, java.lang.String workflowName, java.lang.String stageName, java.lang.Long dueAt, java.lang.Long completedAt, java.lang.Long delayedBy, java.lang.String status, java.util.List<com.fretron.Model.ServiceLevelAgreement> SLAs, java.util.List<com.fretron.Model.CustomFields> attributes) {
+  public WorkflowTask(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String workflowId, java.lang.String workflowName, java.lang.String stageName, java.lang.Long dueAt, java.lang.Long completedAt, java.lang.Long delayedBy, java.lang.String status, java.util.List<com.fretron.Model.ServiceLevelAgreement> SLAs, java.util.List<com.fretron.Model.CustomFields> attributes, java.util.List<com.fretron.Model.MeasuredScalers> measuredScalers) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.orgId = orgId;
@@ -61,6 +63,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
     this.status = status;
     this.SLAs = SLAs;
     this.attributes = attributes;
+    this.measuredScalers = measuredScalers;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +82,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
     case 9: return status;
     case 10: return SLAs;
     case 11: return attributes;
+    case 12: return measuredScalers;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +103,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
     case 9: status = (java.lang.String)value$; break;
     case 10: SLAs = (java.util.List<com.fretron.Model.ServiceLevelAgreement>)value$; break;
     case 11: attributes = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
+    case 12: measuredScalers = (java.util.List<com.fretron.Model.MeasuredScalers>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +301,22 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'measuredScalers' field.
+   * @return The value of the 'measuredScalers' field.
+   */
+  public java.util.List<com.fretron.Model.MeasuredScalers> getMeasuredScalers() {
+    return measuredScalers;
+  }
+
+  /**
+   * Sets the value of the 'measuredScalers' field.
+   * @param value the value to set.
+   */
+  public void setMeasuredScalers(java.util.List<com.fretron.Model.MeasuredScalers> value) {
+    this.measuredScalers = value;
+  }
+
+  /**
    * Creates a new WorkflowTask RecordBuilder.
    * @return A new WorkflowTask RecordBuilder
    */
@@ -339,6 +360,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String status;
     private java.util.List<com.fretron.Model.ServiceLevelAgreement> SLAs;
     private java.util.List<com.fretron.Model.CustomFields> attributes;
+    private java.util.List<com.fretron.Model.MeasuredScalers> measuredScalers;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +421,10 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
         this.attributes = data().deepCopy(fields()[11].schema(), other.attributes);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.measuredScalers)) {
+        this.measuredScalers = data().deepCopy(fields()[12].schema(), other.measuredScalers);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -454,6 +480,10 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[11], other.attributes)) {
         this.attributes = data().deepCopy(fields()[11].schema(), other.attributes);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.measuredScalers)) {
+        this.measuredScalers = data().deepCopy(fields()[12].schema(), other.measuredScalers);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -925,6 +955,45 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'measuredScalers' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.MeasuredScalers> getMeasuredScalers() {
+      return measuredScalers;
+    }
+
+    /**
+      * Sets the value of the 'measuredScalers' field.
+      * @param value The value of 'measuredScalers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.WorkflowTask.Builder setMeasuredScalers(java.util.List<com.fretron.Model.MeasuredScalers> value) {
+      validate(fields()[12], value);
+      this.measuredScalers = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'measuredScalers' field has been set.
+      * @return True if the 'measuredScalers' field has been set, false otherwise.
+      */
+    public boolean hasMeasuredScalers() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'measuredScalers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.WorkflowTask.Builder clearMeasuredScalers() {
+      measuredScalers = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public WorkflowTask build() {
       try {
@@ -941,6 +1010,7 @@ public class WorkflowTask extends org.apache.avro.specific.SpecificRecordBase im
         record.status = fieldSetFlags()[9] ? this.status : (java.lang.String) defaultValue(fields()[9]);
         record.SLAs = fieldSetFlags()[10] ? this.SLAs : (java.util.List<com.fretron.Model.ServiceLevelAgreement>) defaultValue(fields()[10]);
         record.attributes = fieldSetFlags()[11] ? this.attributes : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[11]);
+        record.measuredScalers = fieldSetFlags()[12] ? this.measuredScalers : (java.util.List<com.fretron.Model.MeasuredScalers>) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

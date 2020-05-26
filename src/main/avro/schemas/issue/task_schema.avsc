@@ -105,6 +105,17 @@
             }
           ],
         "default": null
-        }
+        },
+        {
+                "name": "measuredScalers",
+                "type": [
+                  "null",
+                  {
+                    "type": "array",
+                    "items": "com.fretron.Model.MeasuredScalers"
+                  }
+                ],
+                "default": null
+              }
      ]
 }
