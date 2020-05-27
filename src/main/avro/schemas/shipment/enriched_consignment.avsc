@@ -1,0 +1,26 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "EnrichedConsignment",
+  "fields": [
+    {
+      "name": "consignment",
+      "type": [
+        "null",
+        "com.fretron.Model.Consignment"
+      ],
+      "default": null
+    },
+    {
+      "name": "associatedShipments",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ShipmentObject"
+        }
+      ],
+      "default": null
+    }
+  ]
+}
