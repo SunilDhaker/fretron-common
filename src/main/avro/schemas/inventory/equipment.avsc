@@ -110,6 +110,14 @@
             "string"
           ],
           "default": null
-        }
+        },
+         {
+             "name": "statusDescription",
+             "type": [
+                            "null",
+                            "string"
+                          ],
+               "default": null
+          }
   ]
 }

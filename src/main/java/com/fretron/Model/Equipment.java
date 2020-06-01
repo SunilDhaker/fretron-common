@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Equipment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3508046205479801224L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Equipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"inventoryNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6400571981533217274L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Equipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"inventoryNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String _id;
   @Deprecated public java.lang.String inventoryNo;
@@ -27,6 +27,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String usedBy;
   @Deprecated public java.lang.String attachedResourceId;
   @Deprecated public java.lang.String attachedResourceNumber;
+  @Deprecated public java.lang.String statusDescription;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +52,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
    * @param usedBy The new value for usedBy
    * @param attachedResourceId The new value for attachedResourceId
    * @param attachedResourceNumber The new value for attachedResourceNumber
+   * @param statusDescription The new value for statusDescription
    */
-  public Equipment(java.lang.String _id, java.lang.String inventoryNo, java.lang.String type, java.lang.String catagory, java.lang.String name, java.lang.String orgId, java.lang.String updatedBy, com.fretron.Model.Place location, java.lang.String shipmentNumber, com.fretron.Model.Updates updates, java.lang.String status, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber) {
+  public Equipment(java.lang.String _id, java.lang.String inventoryNo, java.lang.String type, java.lang.String catagory, java.lang.String name, java.lang.String orgId, java.lang.String updatedBy, com.fretron.Model.Place location, java.lang.String shipmentNumber, com.fretron.Model.Updates updates, java.lang.String status, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String statusDescription) {
     this._id = _id;
     this.inventoryNo = inventoryNo;
     this.type = type;
@@ -67,6 +69,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     this.usedBy = usedBy;
     this.attachedResourceId = attachedResourceId;
     this.attachedResourceNumber = attachedResourceNumber;
+    this.statusDescription = statusDescription;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +90,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     case 11: return usedBy;
     case 12: return attachedResourceId;
     case 13: return attachedResourceNumber;
+    case 14: return statusDescription;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +113,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     case 11: usedBy = (java.lang.String)value$; break;
     case 12: attachedResourceId = (java.lang.String)value$; break;
     case 13: attachedResourceNumber = (java.lang.String)value$; break;
+    case 14: statusDescription = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +343,22 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'statusDescription' field.
+   * @return The value of the 'statusDescription' field.
+   */
+  public java.lang.String getStatusDescription() {
+    return statusDescription;
+  }
+
+  /**
+   * Sets the value of the 'statusDescription' field.
+   * @param value the value to set.
+   */
+  public void setStatusDescription(java.lang.String value) {
+    this.statusDescription = value;
+  }
+
+  /**
    * Creates a new Equipment RecordBuilder.
    * @return A new Equipment RecordBuilder
    */
@@ -385,6 +406,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String usedBy;
     private java.lang.String attachedResourceId;
     private java.lang.String attachedResourceNumber;
+    private java.lang.String statusDescription;
 
     /** Creates a new Builder */
     private Builder() {
@@ -459,6 +481,10 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
         this.attachedResourceNumber = data().deepCopy(fields()[13].schema(), other.attachedResourceNumber);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[14].schema(), other.statusDescription);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -524,6 +550,10 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[13], other.attachedResourceNumber)) {
         this.attachedResourceNumber = data().deepCopy(fields()[13].schema(), other.attachedResourceNumber);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[14].schema(), other.statusDescription);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -1143,6 +1173,45 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'statusDescription' field.
+      * @return The value.
+      */
+    public java.lang.String getStatusDescription() {
+      return statusDescription;
+    }
+
+    /**
+      * Sets the value of the 'statusDescription' field.
+      * @param value The value of 'statusDescription'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder setStatusDescription(java.lang.String value) {
+      validate(fields()[14], value);
+      this.statusDescription = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'statusDescription' field has been set.
+      * @return True if the 'statusDescription' field has been set, false otherwise.
+      */
+    public boolean hasStatusDescription() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'statusDescription' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder clearStatusDescription() {
+      statusDescription = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public Equipment build() {
       try {
@@ -1169,6 +1238,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
         record.usedBy = fieldSetFlags()[11] ? this.usedBy : (java.lang.String) defaultValue(fields()[11]);
         record.attachedResourceId = fieldSetFlags()[12] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[12]);
         record.attachedResourceNumber = fieldSetFlags()[13] ? this.attachedResourceNumber : (java.lang.String) defaultValue(fields()[13]);
+        record.statusDescription = fieldSetFlags()[14] ? this.statusDescription : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
