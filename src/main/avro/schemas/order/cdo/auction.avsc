@@ -333,6 +333,45 @@
                                }
                                     ],
                      "default": null
+          },
+          {
+              "name": "salesOrderMappings",
+              "type": [
+                          "null",
+                      {
+                          "type": "array",
+                           "items": "com.fretron.Model.SalesOrderMapping"
+                      }
+                      ],
+                "default": null
+           },
+           {
+               "name": "auctionType",
+                "type": [
+                                  "null",
+                                  "string"
+                                ],
+                "default": null
+            },
+            {
+               "name": "optimisationBasis",
+               "type": [
+                          "null",
+                          "string"
+                       ],
+               "default": null
+            },
+            {
+                  "name": "placedStdQuantity",
+                  "type": ["null","com.fretron.Model.StandardMeasurement"],
+                   "default" : null
+            },
+            {
+                  "name": "totalStdQuantity",
+                 "type": ["null","com.fretron.Model.StandardMeasurement"],
+                   "default" : null
              }
+
+
   ]
 }

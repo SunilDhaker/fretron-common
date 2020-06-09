@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Auction extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1227756866337814735L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Auction\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"secondaryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"allocatedVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateOrigins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"alternateDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"bids\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Bid\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placementDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"allowedTransporters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isShowTopRankToOthers\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"purchaseEnquiries\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"tnCs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"round\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"AuctionRound\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"roundNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"external","Id\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"completedRounds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"AuctionRound\"}],\"default\":null},{\"name\":\"isConsiderReferencePrice\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"totalQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isCritical\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FreightUnitMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = -9086591989924939983L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Auction\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"secondaryStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNegotiable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"allocatedVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateOrigins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"alternateDestinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"bids\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Bid\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"price\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placementDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"allowedTransporters\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isShowTopRankToOthers\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"purchaseEnquiries\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"tnCs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"round\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"AuctionRound\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"roundNumber\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"external","Id\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"completedRounds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"AuctionRound\"}],\"default\":null},{\"name\":\"isConsiderReferencePrice\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"totalQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"placedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"isCritical\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"FreightUnitMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"salesOrderMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"ty","pe\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}}],\"default\":null},{\"name\":\"auctionType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"optimisationBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placedStdQuantity\",\"type\":[\"null\",\"StandardMeasurement\"],\"default\":null},{\"name\":\"totalStdQuantity\",\"type\":[\"null\",\"StandardMeasurement\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -51,6 +51,11 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.Double placedQuantity;
   @Deprecated public java.lang.Boolean isCritical;
   @Deprecated public java.util.List<com.fretron.Model.FreightUnitMapping> fuMappings;
+  @Deprecated public java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings;
+  @Deprecated public java.lang.String auctionType;
+  @Deprecated public java.lang.String optimisationBasis;
+  @Deprecated public com.fretron.Model.StandardMeasurement placedStdQuantity;
+  @Deprecated public com.fretron.Model.StandardMeasurement totalStdQuantity;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -99,8 +104,13 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param placedQuantity The new value for placedQuantity
    * @param isCritical The new value for isCritical
    * @param fuMappings The new value for fuMappings
+   * @param salesOrderMappings The new value for salesOrderMappings
+   * @param auctionType The new value for auctionType
+   * @param optimisationBasis The new value for optimisationBasis
+   * @param placedStdQuantity The new value for placedStdQuantity
+   * @param totalStdQuantity The new value for totalStdQuantity
    */
-  public Auction(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String status, java.lang.String secondaryStatus, java.lang.String orderId, java.lang.String freightType, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.Integer allocatedVehicles, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<java.lang.String> remarks, java.util.List<com.fretron.Model.Place> alternateOrigins, java.util.List<com.fretron.Model.Place> alternateDestinations, java.util.List<com.fretron.Model.Bid> bids, java.lang.Double price, java.lang.Long placementDate, java.lang.Long createDate, java.util.List<java.lang.String> allowedTransporters, java.util.List<java.lang.String> allowedMaterial, java.util.List<java.lang.String> allowedVehicleTypes, java.lang.Boolean isShowTopRankToOthers, java.util.List<java.lang.String> purchaseEnquiries, java.util.List<com.fretron.Model.ContractTerms> tnCs, com.fretron.Model.AuctionRound round, com.fretron.Model.OrgOffice branch, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.AuctionRound> completedRounds, java.lang.Boolean isConsiderReferencePrice, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.String customerName, java.lang.String route, java.lang.String statusDescription, java.lang.Double totalQuantity, java.lang.Double placedQuantity, java.lang.Boolean isCritical, java.util.List<com.fretron.Model.FreightUnitMapping> fuMappings) {
+  public Auction(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.String status, java.lang.String secondaryStatus, java.lang.String orderId, java.lang.String freightType, java.lang.Boolean isNegotiable, java.lang.Integer numberOfVehicles, java.lang.Integer allocatedVehicles, com.fretron.Model.Place origin, com.fretron.Model.Place destination, java.util.List<java.lang.String> remarks, java.util.List<com.fretron.Model.Place> alternateOrigins, java.util.List<com.fretron.Model.Place> alternateDestinations, java.util.List<com.fretron.Model.Bid> bids, java.lang.Double price, java.lang.Long placementDate, java.lang.Long createDate, java.util.List<java.lang.String> allowedTransporters, java.util.List<java.lang.String> allowedMaterial, java.util.List<java.lang.String> allowedVehicleTypes, java.lang.Boolean isShowTopRankToOthers, java.util.List<java.lang.String> purchaseEnquiries, java.util.List<com.fretron.Model.ContractTerms> tnCs, com.fretron.Model.AuctionRound round, com.fretron.Model.OrgOffice branch, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.AuctionRound> completedRounds, java.lang.Boolean isConsiderReferencePrice, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.String customerName, java.lang.String route, java.lang.String statusDescription, java.lang.Double totalQuantity, java.lang.Double placedQuantity, java.lang.Boolean isCritical, java.util.List<com.fretron.Model.FreightUnitMapping> fuMappings, java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings, java.lang.String auctionType, java.lang.String optimisationBasis, com.fretron.Model.StandardMeasurement placedStdQuantity, com.fretron.Model.StandardMeasurement totalStdQuantity) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.orgId = orgId;
@@ -139,6 +149,11 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     this.placedQuantity = placedQuantity;
     this.isCritical = isCritical;
     this.fuMappings = fuMappings;
+    this.salesOrderMappings = salesOrderMappings;
+    this.auctionType = auctionType;
+    this.optimisationBasis = optimisationBasis;
+    this.placedStdQuantity = placedStdQuantity;
+    this.totalStdQuantity = totalStdQuantity;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -183,6 +198,11 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     case 35: return placedQuantity;
     case 36: return isCritical;
     case 37: return fuMappings;
+    case 38: return salesOrderMappings;
+    case 39: return auctionType;
+    case 40: return optimisationBasis;
+    case 41: return placedStdQuantity;
+    case 42: return totalStdQuantity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -229,6 +249,11 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     case 35: placedQuantity = (java.lang.Double)value$; break;
     case 36: isCritical = (java.lang.Boolean)value$; break;
     case 37: fuMappings = (java.util.List<com.fretron.Model.FreightUnitMapping>)value$; break;
+    case 38: salesOrderMappings = (java.util.List<com.fretron.Model.SalesOrderMapping>)value$; break;
+    case 39: auctionType = (java.lang.String)value$; break;
+    case 40: optimisationBasis = (java.lang.String)value$; break;
+    case 41: placedStdQuantity = (com.fretron.Model.StandardMeasurement)value$; break;
+    case 42: totalStdQuantity = (com.fretron.Model.StandardMeasurement)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -842,6 +867,86 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'salesOrderMappings' field.
+   * @return The value of the 'salesOrderMappings' field.
+   */
+  public java.util.List<com.fretron.Model.SalesOrderMapping> getSalesOrderMappings() {
+    return salesOrderMappings;
+  }
+
+  /**
+   * Sets the value of the 'salesOrderMappings' field.
+   * @param value the value to set.
+   */
+  public void setSalesOrderMappings(java.util.List<com.fretron.Model.SalesOrderMapping> value) {
+    this.salesOrderMappings = value;
+  }
+
+  /**
+   * Gets the value of the 'auctionType' field.
+   * @return The value of the 'auctionType' field.
+   */
+  public java.lang.String getAuctionType() {
+    return auctionType;
+  }
+
+  /**
+   * Sets the value of the 'auctionType' field.
+   * @param value the value to set.
+   */
+  public void setAuctionType(java.lang.String value) {
+    this.auctionType = value;
+  }
+
+  /**
+   * Gets the value of the 'optimisationBasis' field.
+   * @return The value of the 'optimisationBasis' field.
+   */
+  public java.lang.String getOptimisationBasis() {
+    return optimisationBasis;
+  }
+
+  /**
+   * Sets the value of the 'optimisationBasis' field.
+   * @param value the value to set.
+   */
+  public void setOptimisationBasis(java.lang.String value) {
+    this.optimisationBasis = value;
+  }
+
+  /**
+   * Gets the value of the 'placedStdQuantity' field.
+   * @return The value of the 'placedStdQuantity' field.
+   */
+  public com.fretron.Model.StandardMeasurement getPlacedStdQuantity() {
+    return placedStdQuantity;
+  }
+
+  /**
+   * Sets the value of the 'placedStdQuantity' field.
+   * @param value the value to set.
+   */
+  public void setPlacedStdQuantity(com.fretron.Model.StandardMeasurement value) {
+    this.placedStdQuantity = value;
+  }
+
+  /**
+   * Gets the value of the 'totalStdQuantity' field.
+   * @return The value of the 'totalStdQuantity' field.
+   */
+  public com.fretron.Model.StandardMeasurement getTotalStdQuantity() {
+    return totalStdQuantity;
+  }
+
+  /**
+   * Sets the value of the 'totalStdQuantity' field.
+   * @param value the value to set.
+   */
+  public void setTotalStdQuantity(com.fretron.Model.StandardMeasurement value) {
+    this.totalStdQuantity = value;
+  }
+
+  /**
    * Creates a new Auction RecordBuilder.
    * @return A new Auction RecordBuilder
    */
@@ -916,6 +1021,13 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.Double placedQuantity;
     private java.lang.Boolean isCritical;
     private java.util.List<com.fretron.Model.FreightUnitMapping> fuMappings;
+    private java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings;
+    private java.lang.String auctionType;
+    private java.lang.String optimisationBasis;
+    private com.fretron.Model.StandardMeasurement placedStdQuantity;
+    private com.fretron.Model.StandardMeasurement.Builder placedStdQuantityBuilder;
+    private com.fretron.Model.StandardMeasurement totalStdQuantity;
+    private com.fretron.Model.StandardMeasurement.Builder totalStdQuantityBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -1095,6 +1207,32 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         this.fuMappings = data().deepCopy(fields()[37].schema(), other.fuMappings);
         fieldSetFlags()[37] = true;
       }
+      if (isValidValue(fields()[38], other.salesOrderMappings)) {
+        this.salesOrderMappings = data().deepCopy(fields()[38].schema(), other.salesOrderMappings);
+        fieldSetFlags()[38] = true;
+      }
+      if (isValidValue(fields()[39], other.auctionType)) {
+        this.auctionType = data().deepCopy(fields()[39].schema(), other.auctionType);
+        fieldSetFlags()[39] = true;
+      }
+      if (isValidValue(fields()[40], other.optimisationBasis)) {
+        this.optimisationBasis = data().deepCopy(fields()[40].schema(), other.optimisationBasis);
+        fieldSetFlags()[40] = true;
+      }
+      if (isValidValue(fields()[41], other.placedStdQuantity)) {
+        this.placedStdQuantity = data().deepCopy(fields()[41].schema(), other.placedStdQuantity);
+        fieldSetFlags()[41] = true;
+      }
+      if (other.hasPlacedStdQuantityBuilder()) {
+        this.placedStdQuantityBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getPlacedStdQuantityBuilder());
+      }
+      if (isValidValue(fields()[42], other.totalStdQuantity)) {
+        this.totalStdQuantity = data().deepCopy(fields()[42].schema(), other.totalStdQuantity);
+        fieldSetFlags()[42] = true;
+      }
+      if (other.hasTotalStdQuantityBuilder()) {
+        this.totalStdQuantityBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getTotalStdQuantityBuilder());
+      }
     }
 
     /**
@@ -1260,6 +1398,28 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         this.fuMappings = data().deepCopy(fields()[37].schema(), other.fuMappings);
         fieldSetFlags()[37] = true;
       }
+      if (isValidValue(fields()[38], other.salesOrderMappings)) {
+        this.salesOrderMappings = data().deepCopy(fields()[38].schema(), other.salesOrderMappings);
+        fieldSetFlags()[38] = true;
+      }
+      if (isValidValue(fields()[39], other.auctionType)) {
+        this.auctionType = data().deepCopy(fields()[39].schema(), other.auctionType);
+        fieldSetFlags()[39] = true;
+      }
+      if (isValidValue(fields()[40], other.optimisationBasis)) {
+        this.optimisationBasis = data().deepCopy(fields()[40].schema(), other.optimisationBasis);
+        fieldSetFlags()[40] = true;
+      }
+      if (isValidValue(fields()[41], other.placedStdQuantity)) {
+        this.placedStdQuantity = data().deepCopy(fields()[41].schema(), other.placedStdQuantity);
+        fieldSetFlags()[41] = true;
+      }
+      this.placedStdQuantityBuilder = null;
+      if (isValidValue(fields()[42], other.totalStdQuantity)) {
+        this.totalStdQuantity = data().deepCopy(fields()[42].schema(), other.totalStdQuantity);
+        fieldSetFlags()[42] = true;
+      }
+      this.totalStdQuantityBuilder = null;
     }
 
     /**
@@ -2919,6 +3079,271 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'salesOrderMappings' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.SalesOrderMapping> getSalesOrderMappings() {
+      return salesOrderMappings;
+    }
+
+    /**
+      * Sets the value of the 'salesOrderMappings' field.
+      * @param value The value of 'salesOrderMappings'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setSalesOrderMappings(java.util.List<com.fretron.Model.SalesOrderMapping> value) {
+      validate(fields()[38], value);
+      this.salesOrderMappings = value;
+      fieldSetFlags()[38] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'salesOrderMappings' field has been set.
+      * @return True if the 'salesOrderMappings' field has been set, false otherwise.
+      */
+    public boolean hasSalesOrderMappings() {
+      return fieldSetFlags()[38];
+    }
+
+
+    /**
+      * Clears the value of the 'salesOrderMappings' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearSalesOrderMappings() {
+      salesOrderMappings = null;
+      fieldSetFlags()[38] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'auctionType' field.
+      * @return The value.
+      */
+    public java.lang.String getAuctionType() {
+      return auctionType;
+    }
+
+    /**
+      * Sets the value of the 'auctionType' field.
+      * @param value The value of 'auctionType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setAuctionType(java.lang.String value) {
+      validate(fields()[39], value);
+      this.auctionType = value;
+      fieldSetFlags()[39] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'auctionType' field has been set.
+      * @return True if the 'auctionType' field has been set, false otherwise.
+      */
+    public boolean hasAuctionType() {
+      return fieldSetFlags()[39];
+    }
+
+
+    /**
+      * Clears the value of the 'auctionType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearAuctionType() {
+      auctionType = null;
+      fieldSetFlags()[39] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'optimisationBasis' field.
+      * @return The value.
+      */
+    public java.lang.String getOptimisationBasis() {
+      return optimisationBasis;
+    }
+
+    /**
+      * Sets the value of the 'optimisationBasis' field.
+      * @param value The value of 'optimisationBasis'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setOptimisationBasis(java.lang.String value) {
+      validate(fields()[40], value);
+      this.optimisationBasis = value;
+      fieldSetFlags()[40] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'optimisationBasis' field has been set.
+      * @return True if the 'optimisationBasis' field has been set, false otherwise.
+      */
+    public boolean hasOptimisationBasis() {
+      return fieldSetFlags()[40];
+    }
+
+
+    /**
+      * Clears the value of the 'optimisationBasis' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearOptimisationBasis() {
+      optimisationBasis = null;
+      fieldSetFlags()[40] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'placedStdQuantity' field.
+      * @return The value.
+      */
+    public com.fretron.Model.StandardMeasurement getPlacedStdQuantity() {
+      return placedStdQuantity;
+    }
+
+    /**
+      * Sets the value of the 'placedStdQuantity' field.
+      * @param value The value of 'placedStdQuantity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setPlacedStdQuantity(com.fretron.Model.StandardMeasurement value) {
+      validate(fields()[41], value);
+      this.placedStdQuantityBuilder = null;
+      this.placedStdQuantity = value;
+      fieldSetFlags()[41] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'placedStdQuantity' field has been set.
+      * @return True if the 'placedStdQuantity' field has been set, false otherwise.
+      */
+    public boolean hasPlacedStdQuantity() {
+      return fieldSetFlags()[41];
+    }
+
+    /**
+     * Gets the Builder instance for the 'placedStdQuantity' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.StandardMeasurement.Builder getPlacedStdQuantityBuilder() {
+      if (placedStdQuantityBuilder == null) {
+        if (hasPlacedStdQuantity()) {
+          setPlacedStdQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder(placedStdQuantity));
+        } else {
+          setPlacedStdQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder());
+        }
+      }
+      return placedStdQuantityBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'placedStdQuantity' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Auction.Builder setPlacedStdQuantityBuilder(com.fretron.Model.StandardMeasurement.Builder value) {
+      clearPlacedStdQuantity();
+      placedStdQuantityBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'placedStdQuantity' field has an active Builder instance
+     * @return True if the 'placedStdQuantity' field has an active Builder instance
+     */
+    public boolean hasPlacedStdQuantityBuilder() {
+      return placedStdQuantityBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'placedStdQuantity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearPlacedStdQuantity() {
+      placedStdQuantity = null;
+      placedStdQuantityBuilder = null;
+      fieldSetFlags()[41] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'totalStdQuantity' field.
+      * @return The value.
+      */
+    public com.fretron.Model.StandardMeasurement getTotalStdQuantity() {
+      return totalStdQuantity;
+    }
+
+    /**
+      * Sets the value of the 'totalStdQuantity' field.
+      * @param value The value of 'totalStdQuantity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder setTotalStdQuantity(com.fretron.Model.StandardMeasurement value) {
+      validate(fields()[42], value);
+      this.totalStdQuantityBuilder = null;
+      this.totalStdQuantity = value;
+      fieldSetFlags()[42] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'totalStdQuantity' field has been set.
+      * @return True if the 'totalStdQuantity' field has been set, false otherwise.
+      */
+    public boolean hasTotalStdQuantity() {
+      return fieldSetFlags()[42];
+    }
+
+    /**
+     * Gets the Builder instance for the 'totalStdQuantity' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.StandardMeasurement.Builder getTotalStdQuantityBuilder() {
+      if (totalStdQuantityBuilder == null) {
+        if (hasTotalStdQuantity()) {
+          setTotalStdQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder(totalStdQuantity));
+        } else {
+          setTotalStdQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder());
+        }
+      }
+      return totalStdQuantityBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'totalStdQuantity' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Auction.Builder setTotalStdQuantityBuilder(com.fretron.Model.StandardMeasurement.Builder value) {
+      clearTotalStdQuantity();
+      totalStdQuantityBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'totalStdQuantity' field has an active Builder instance
+     * @return True if the 'totalStdQuantity' field has an active Builder instance
+     */
+    public boolean hasTotalStdQuantityBuilder() {
+      return totalStdQuantityBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'totalStdQuantity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Auction.Builder clearTotalStdQuantity() {
+      totalStdQuantity = null;
+      totalStdQuantityBuilder = null;
+      fieldSetFlags()[42] = false;
+      return this;
+    }
+
     @Override
     public Auction build() {
       try {
@@ -2981,6 +3406,19 @@ public class Auction extends org.apache.avro.specific.SpecificRecordBase impleme
         record.placedQuantity = fieldSetFlags()[35] ? this.placedQuantity : (java.lang.Double) defaultValue(fields()[35]);
         record.isCritical = fieldSetFlags()[36] ? this.isCritical : (java.lang.Boolean) defaultValue(fields()[36]);
         record.fuMappings = fieldSetFlags()[37] ? this.fuMappings : (java.util.List<com.fretron.Model.FreightUnitMapping>) defaultValue(fields()[37]);
+        record.salesOrderMappings = fieldSetFlags()[38] ? this.salesOrderMappings : (java.util.List<com.fretron.Model.SalesOrderMapping>) defaultValue(fields()[38]);
+        record.auctionType = fieldSetFlags()[39] ? this.auctionType : (java.lang.String) defaultValue(fields()[39]);
+        record.optimisationBasis = fieldSetFlags()[40] ? this.optimisationBasis : (java.lang.String) defaultValue(fields()[40]);
+        if (placedStdQuantityBuilder != null) {
+          record.placedStdQuantity = this.placedStdQuantityBuilder.build();
+        } else {
+          record.placedStdQuantity = fieldSetFlags()[41] ? this.placedStdQuantity : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[41]);
+        }
+        if (totalStdQuantityBuilder != null) {
+          record.totalStdQuantity = this.totalStdQuantityBuilder.build();
+        } else {
+          record.totalStdQuantity = fieldSetFlags()[42] ? this.totalStdQuantity : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[42]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
