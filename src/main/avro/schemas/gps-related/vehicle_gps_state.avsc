@@ -194,7 +194,12 @@
                           }
                         ],
                   "default": null
-       }
+      },
+      {
+         "name":"isNoGpsZone",
+         "type": "boolean",
+         "default":false
+      }
 
     ]
   }
