@@ -385,7 +385,16 @@
                                                                                                                                                   				"long"
                                                                                                                                                   			],
                                                                                                                                                   			"default": null
-                                                                                                                                                  		}
+                                                                                                                                                  		},
+                                                                                      	{
+                                                                                        			"name": "descriptionHTML",
+                                                                                        			"type": [
+                                                                                        				"null",
+                                                                                        				"string"
+                                                                                        			],
+                                                                                        			"default": null
+                                                                                        		}
+
 
 
   	]
