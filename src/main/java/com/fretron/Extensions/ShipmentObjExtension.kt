@@ -17,7 +17,7 @@ fun ShipmentObject.clean(){
     this.getFleetInfo()?.getBroker()?.deepClean()
     this.getFleetInfo()?.getFleetOwner()?.deepClean()
     this.getIssues()?.forEach { issue->
-        issue.deepClean()
+        issue.clean()
     }
 //    this.getCustomFields()?.forEach { field->
 //        field.setAccessType(null)
