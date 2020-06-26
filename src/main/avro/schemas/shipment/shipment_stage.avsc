@@ -136,6 +136,23 @@
           "com.fretron.Model.Place"
         ],
         "default": null
-      }
+      },
+            {
+              "name": "gateInTime",
+              "type": [
+                "null",
+                "long"
+              ],
+              "logicalType": "timestamp-millis",
+              "default": null
+            },
+                  {
+                    "name": "secondaryStatus",
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "default": null
+                  }
     ]
   }
