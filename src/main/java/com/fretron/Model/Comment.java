@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Comment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6823100463971005984L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3139308373881136054L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"edited\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String comment;
@@ -19,6 +19,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.util.List<java.lang.String> likedBy;
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String source;
+  @Deprecated public java.lang.Boolean edited;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +36,16 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param likedBy The new value for likedBy
    * @param time The new value for time
    * @param source The new value for source
+   * @param edited The new value for edited
    */
-  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time, java.lang.String source) {
+  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time, java.lang.String source, java.lang.Boolean edited) {
     this.uuid = uuid;
     this.comment = comment;
     this.by = by;
     this.likedBy = likedBy;
     this.time = time;
     this.source = source;
+    this.edited = edited;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +58,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 3: return likedBy;
     case 4: return time;
     case 5: return source;
+    case 6: return edited;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +73,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 3: likedBy = (java.util.List<java.lang.String>)value$; break;
     case 4: time = (java.lang.Long)value$; break;
     case 5: source = (java.lang.String)value$; break;
+    case 6: edited = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +175,22 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'edited' field.
+   * @return The value of the 'edited' field.
+   */
+  public java.lang.Boolean getEdited() {
+    return edited;
+  }
+
+  /**
+   * Sets the value of the 'edited' field.
+   * @param value the value to set.
+   */
+  public void setEdited(java.lang.Boolean value) {
+    this.edited = value;
+  }
+
+  /**
    * Creates a new Comment RecordBuilder.
    * @return A new Comment RecordBuilder
    */
@@ -207,6 +228,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.util.List<java.lang.String> likedBy;
     private java.lang.Long time;
     private java.lang.String source;
+    private java.lang.Boolean edited;
 
     /** Creates a new Builder */
     private Builder() {
@@ -243,6 +265,10 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         this.source = data().deepCopy(fields()[5].schema(), other.source);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.edited)) {
+        this.edited = data().deepCopy(fields()[6].schema(), other.edited);
+        fieldSetFlags()[6] = true;
+      }
     }
 
     /**
@@ -274,6 +300,10 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[5], other.source)) {
         this.source = data().deepCopy(fields()[5].schema(), other.source);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.edited)) {
+        this.edited = data().deepCopy(fields()[6].schema(), other.edited);
+        fieldSetFlags()[6] = true;
       }
     }
 
@@ -511,6 +541,45 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'edited' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getEdited() {
+      return edited;
+    }
+
+    /**
+      * Sets the value of the 'edited' field.
+      * @param value The value of 'edited'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder setEdited(java.lang.Boolean value) {
+      validate(fields()[6], value);
+      this.edited = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'edited' field has been set.
+      * @return True if the 'edited' field has been set, false otherwise.
+      */
+    public boolean hasEdited() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'edited' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder clearEdited() {
+      edited = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
     @Override
     public Comment build() {
       try {
@@ -521,6 +590,7 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         record.likedBy = fieldSetFlags()[3] ? this.likedBy : (java.util.List<java.lang.String>) defaultValue(fields()[3]);
         record.time = fieldSetFlags()[4] ? this.time : (java.lang.Long) defaultValue(fields()[4]);
         record.source = fieldSetFlags()[5] ? this.source : (java.lang.String) defaultValue(fields()[5]);
+        record.edited = fieldSetFlags()[6] ? this.edited : (java.lang.Boolean) defaultValue(fields()[6]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Role extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8076122377223343372L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Role\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chooseAtAssignment\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 5762818961155357507L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Role\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"version\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"DomainPermission\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"entity\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFilteredAccess\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"filters\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"permissions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chooseAtAssignment\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -20,6 +20,7 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
   @Deprecated public java.lang.Double version;
   @Deprecated public java.util.List<com.fretron.Model.DomainPermission> permissions;
   @Deprecated public java.util.List<com.fretron.Model.CustomFields> customFields;
+  @Deprecated public com.fretron.Model.Updates updates;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +38,9 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
    * @param version The new value for version
    * @param permissions The new value for permissions
    * @param customFields The new value for customFields
+   * @param updates The new value for updates
    */
-  public Role(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String description, java.lang.Double version, java.util.List<com.fretron.Model.DomainPermission> permissions, java.util.List<com.fretron.Model.CustomFields> customFields) {
+  public Role(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String description, java.lang.Double version, java.util.List<com.fretron.Model.DomainPermission> permissions, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.Updates updates) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.name = name;
@@ -46,6 +48,7 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
     this.version = version;
     this.permissions = permissions;
     this.customFields = customFields;
+    this.updates = updates;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +62,7 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
     case 4: return version;
     case 5: return permissions;
     case 6: return customFields;
+    case 7: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +78,7 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
     case 4: version = (java.lang.Double)value$; break;
     case 5: permissions = (java.util.List<com.fretron.Model.DomainPermission>)value$; break;
     case 6: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
+    case 7: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +196,22 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
   }
 
   /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
+  }
+
+  /**
    * Creates a new Role RecordBuilder.
    * @return A new Role RecordBuilder
    */
@@ -229,6 +250,8 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
     private java.lang.Double version;
     private java.util.List<com.fretron.Model.DomainPermission> permissions;
     private java.util.List<com.fretron.Model.CustomFields> customFields;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +292,13 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
         this.customFields = data().deepCopy(fields()[6].schema(), other.customFields);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.updates)) {
+        this.updates = data().deepCopy(fields()[7].schema(), other.updates);
+        fieldSetFlags()[7] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
+      }
     }
 
     /**
@@ -305,6 +335,11 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
         this.customFields = data().deepCopy(fields()[6].schema(), other.customFields);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.updates)) {
+        this.updates = data().deepCopy(fields()[7].schema(), other.updates);
+        fieldSetFlags()[7] = true;
+      }
+      this.updatesBuilder = null;
     }
 
     /**
@@ -580,6 +615,80 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
       return this;
     }
 
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Role.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[7], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[7];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Role.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Role.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public Role build() {
       try {
@@ -591,6 +700,11 @@ public class Role extends org.apache.avro.specific.SpecificRecordBase implements
         record.version = fieldSetFlags()[4] ? this.version : (java.lang.Double) defaultValue(fields()[4]);
         record.permissions = fieldSetFlags()[5] ? this.permissions : (java.util.List<com.fretron.Model.DomainPermission>) defaultValue(fields()[5]);
         record.customFields = fieldSetFlags()[6] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[6]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[7] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[7]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

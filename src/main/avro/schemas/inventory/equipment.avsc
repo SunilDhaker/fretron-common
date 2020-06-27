@@ -78,6 +78,46 @@
                 "com.fretron.Model.Updates"
                ],
       "default": null
-    }
+    },
+     {
+            "name": "status",
+            "type": [
+                    "null",
+                    "string"
+                  ],
+            "default": null
+    },
+    {
+        "name": "usedBy",
+        "type": [
+                "null",
+                "string"
+              ],
+        "default": null
+    },
+    {
+          "name": "attachedResourceId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name": "attachedResourceNumber",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+         {
+             "name": "statusDescription",
+             "type": [
+                            "null",
+                            "string"
+                          ],
+               "default": null
+          }
   ]
 }

@@ -370,6 +370,18 @@
                   "name": "totalStdQuantity",
                  "type": ["null","com.fretron.Model.StandardMeasurement"],
                    "default" : null
+             },
+              {
+                                  "name": "issues",
+                                   "type": [
+                                                          "null",
+                                                          {
+                                                            "type": "array",
+                                                            "items": "com.fretron.Model.Issue"
+                                                          }
+                                                        ],
+                                     "default": null
+
              }
 
 
