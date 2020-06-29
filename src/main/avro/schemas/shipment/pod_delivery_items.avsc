@@ -1,0 +1,34 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "PodDeliveryItem",
+  "fields": [
+    {
+      "name": "orderMapping",
+      "type": [
+        "null",
+        "com.fretron.Model.SalesOrderMapping"
+      ],
+      "default": null
+    },
+    {
+      "name": "issues",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "remarks",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
