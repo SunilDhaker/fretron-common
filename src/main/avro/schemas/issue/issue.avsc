@@ -1,401 +1,423 @@
-  {
-  	"namespace": "com.fretron.Model",
-  	"type": "record",
-  	"name": "Issue",
-  	"fields": [{
-  			"name": "uuid",
-  			"type": "string"
-  		},
-  		{
-  			"name": "resourceId",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "resourceType",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "issueSummery",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "issueType",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "issueDescription",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "reporter",
-  			"type": [
-  				"null",
-  				"com.fretron.Model.User"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "assignee",
-  			"type": [
-  				"null",
-  				"com.fretron.Model.User"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "creator",
-  			"type": [
-  				"null",
-  				"com.fretron.Model.User"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "priority",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "status",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "createdAt",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"logicalType": "timestamp-millis",
-  			"default": null
-  		},
-  		{
-  			"name": "updatedAt",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"logicalType": "timestamp-millis",
-  			"default": null
-  		},
-  		{
-  			"name": "updatedBy",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "resolutionDate",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"logicalType": "timestamp-millis",
-  			"default": null
-  		},
-  		{
-  			"name": "resolutionDuration",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "estimatedResolutionDate",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"logicalType": "timestamp-millis",
-  			"default": null
-  		},
-  		{
-  			"name": "userWatchers",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.User"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "userFollowers",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.User"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "bpartnerFollowers",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.BuisnessPartner"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "bpartnerWatchers",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.BuisnessPartner"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "tags",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "string"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "comments",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.Comment"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "attachments",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.Document"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "customeFields",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.CustomeField"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "updates",
-  			"type": [
-  				"null",
-  				"com.fretron.Model.Updates"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "filterTags",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "string"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "resourceIdentifier",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "branch",
-  			"type": [
-  				"null",
-  				"com.fretron.Model.OrgOffice"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "orgId",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "dueAt",
-  			"type": [
-  				"null",
-  				"long"
-  			],
-  			"logicalType": "timestamp-millis",
-  			"default": null
-  		},
-  		{
-  			"name": "issueTypeId",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "dueDateExtensions",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.IssueExtensionReason"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "customFields",
-  			"type": [
-  				"null",
-  				{
-  					"type": "array",
-  					"items": "com.fretron.Model.CustomFields"
-  				}
-  			],
-  			"default": null
-  		},
-  		{
-  			"name": "parentId",
-  			"type": [
-  				"null",
-  				"string"
-  			],
-  			"default": null
-  		},
-  		  		{
-          			"name": "issueNo",
-          			"type": [
-          				"null",
-          				"string"
-          			],
-          			"default": null
-          		},
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Issue",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": "string"
+    },
+    {
+      "name": "resourceId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "resourceType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "issueSummery",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "issueType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "issueDescription",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "reporter",
+      "type": [
+        "null",
+        "com.fretron.Model.User"
+      ],
+      "default": null
+    },
+    {
+      "name": "assignee",
+      "type": [
+        "null",
+        "com.fretron.Model.User"
+      ],
+      "default": null
+    },
+    {
+      "name": "creator",
+      "type": [
+        "null",
+        "com.fretron.Model.User"
+      ],
+      "default": null
+    },
+    {
+      "name": "priority",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "updatedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "updatedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "resolutionDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "resolutionDuration",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "estimatedResolutionDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "userWatchers",
+      "type": [
+        "null",
         {
-                  			"name": "escalationLevel",
-                  			"type": [
-                  				"null",
-                  				"string"
-                  			],
-                  			"default": null
-                  		},
-                  		  {
-                                          			"name": "escalationDueDate",
-                                          			"type": [
-                                          				"null",
-                                          				"long"
-                                          			],
-                                          			"default": null
-                                          		},
-             	{
-               		"name": "escalationPerson",
-               			"type": [
-               				"null",
-               				"com.fretron.Model.User"
-               			],
-               			"default": null
-               		},
-               		  {
-                                      			"name": "escalationName",
-                                      			"type": [
-                                      				"null",
-                                      				"string"
-                                      			],
-                                      			"default": null
-                                      		},
-                                      				{
-                                            			"name": "showIn",
-                                            			"type": [
-                                            				"null",
-                                            				{
-                                            					"type": "array",
-                                            					"items": "string"
-                                            				}
-                                            			],
-                                            			"default": null
-                                            		},
-                                            		{
-                                                                                                			"name": "onHoldDueTo",
-                                                                                                			"type": [
-                                                                                                				"null",
-                                                                                                				{
-                                                                                                					"type": "array",
-                                                                                                					"items": "string"
-                                                                                                				}
-                                                                                                			],
-                                                                                                			"default": null
-                                                                                                		},
-                                                                                                		 {
-                                                                                                                                                  			"name": "holdOnTime",
-                                                                                                                                                  			"type": [
-                                                                                                                                                  				"null",
-                                                                                                                                                  				"long"
-                                                                                                                                                  			],
-                                                                                                                                                  			"default": null
-                                                                                                                                                  		},
-                                                                                      	{
-                                                                                        			"name": "descriptionHTML",
-                                                                                        			"type": [
-                                                                                        				"null",
-                                                                                        				"string"
-                                                                                        			],
-                                                                                        			"default": null
-                                                                                        		}
-
-
-
-  	]
-  }
+          "type": "array",
+          "items": "com.fretron.Model.User"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "userFollowers",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.User"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "bpartnerFollowers",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.BuisnessPartner"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "bpartnerWatchers",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.BuisnessPartner"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "tags",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "comments",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Comment"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "attachments",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Document"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "customeFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomeField"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "filterTags",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "resourceIdentifier",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "branch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "dueAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "issueTypeId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "dueDateExtensions",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.IssueExtensionReason"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "parentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "issueNo",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "escalationLevel",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "escalationDueDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "escalationPerson",
+      "type": [
+        "null",
+        "com.fretron.Model.User"
+      ],
+      "default": null
+    },
+    {
+      "name": "escalationName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "showIn",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "onHoldDueTo",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "holdOnTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "descriptionHTML",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "secondaryStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "category",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
