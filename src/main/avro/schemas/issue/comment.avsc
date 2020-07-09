@@ -58,6 +58,27 @@
               "boolean"
             ],
             "default": null
-          }
+          },
+     	{
+                                                                                           	"name": "commentHTML",
+                                                                                            			"type": [
+                                                                                            				"null",
+                                                                                            				"string"
+                                                                                            			],
+                                                                                            			"default": null
+                                                                                            		}   ,
+                                                                                            		  {
+                                                                                                          "name": "mentions",
+                                                                                                          "type": [
+                                                                                                            "null",
+                                                                                                            {
+                                                                                                              "type": "array",
+                                                                                                              "items": "string"
+                                                                                                            }
+                                                                                                          ],
+                                                                                                          "default": null
+                                                                                                        }
+
+
   ]
 }

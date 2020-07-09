@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Comment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3139308373881136054L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"edited\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -4078453961440376873L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Comment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"comment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"by\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"likedBy\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"edited\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"commentHTML\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mentions\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String comment;
@@ -20,6 +20,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.Boolean edited;
+  @Deprecated public java.lang.String commentHTML;
+  @Deprecated public java.util.List<java.lang.String> mentions;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +39,10 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param time The new value for time
    * @param source The new value for source
    * @param edited The new value for edited
+   * @param commentHTML The new value for commentHTML
+   * @param mentions The new value for mentions
    */
-  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time, java.lang.String source, java.lang.Boolean edited) {
+  public Comment(java.lang.String uuid, java.lang.String comment, java.lang.String by, java.util.List<java.lang.String> likedBy, java.lang.Long time, java.lang.String source, java.lang.Boolean edited, java.lang.String commentHTML, java.util.List<java.lang.String> mentions) {
     this.uuid = uuid;
     this.comment = comment;
     this.by = by;
@@ -46,6 +50,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     this.time = time;
     this.source = source;
     this.edited = edited;
+    this.commentHTML = commentHTML;
+    this.mentions = mentions;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +65,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 4: return time;
     case 5: return source;
     case 6: return edited;
+    case 7: return commentHTML;
+    case 8: return mentions;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +82,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     case 4: time = (java.lang.Long)value$; break;
     case 5: source = (java.lang.String)value$; break;
     case 6: edited = (java.lang.Boolean)value$; break;
+    case 7: commentHTML = (java.lang.String)value$; break;
+    case 8: mentions = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +201,38 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'commentHTML' field.
+   * @return The value of the 'commentHTML' field.
+   */
+  public java.lang.String getCommentHTML() {
+    return commentHTML;
+  }
+
+  /**
+   * Sets the value of the 'commentHTML' field.
+   * @param value the value to set.
+   */
+  public void setCommentHTML(java.lang.String value) {
+    this.commentHTML = value;
+  }
+
+  /**
+   * Gets the value of the 'mentions' field.
+   * @return The value of the 'mentions' field.
+   */
+  public java.util.List<java.lang.String> getMentions() {
+    return mentions;
+  }
+
+  /**
+   * Sets the value of the 'mentions' field.
+   * @param value the value to set.
+   */
+  public void setMentions(java.util.List<java.lang.String> value) {
+    this.mentions = value;
+  }
+
+  /**
    * Creates a new Comment RecordBuilder.
    * @return A new Comment RecordBuilder
    */
@@ -229,6 +271,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.Long time;
     private java.lang.String source;
     private java.lang.Boolean edited;
+    private java.lang.String commentHTML;
+    private java.util.List<java.lang.String> mentions;
 
     /** Creates a new Builder */
     private Builder() {
@@ -269,6 +313,14 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         this.edited = data().deepCopy(fields()[6].schema(), other.edited);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.commentHTML)) {
+        this.commentHTML = data().deepCopy(fields()[7].schema(), other.commentHTML);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.mentions)) {
+        this.mentions = data().deepCopy(fields()[8].schema(), other.mentions);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -304,6 +356,14 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[6], other.edited)) {
         this.edited = data().deepCopy(fields()[6].schema(), other.edited);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.commentHTML)) {
+        this.commentHTML = data().deepCopy(fields()[7].schema(), other.commentHTML);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.mentions)) {
+        this.mentions = data().deepCopy(fields()[8].schema(), other.mentions);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -580,6 +640,84 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'commentHTML' field.
+      * @return The value.
+      */
+    public java.lang.String getCommentHTML() {
+      return commentHTML;
+    }
+
+    /**
+      * Sets the value of the 'commentHTML' field.
+      * @param value The value of 'commentHTML'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder setCommentHTML(java.lang.String value) {
+      validate(fields()[7], value);
+      this.commentHTML = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'commentHTML' field has been set.
+      * @return True if the 'commentHTML' field has been set, false otherwise.
+      */
+    public boolean hasCommentHTML() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'commentHTML' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder clearCommentHTML() {
+      commentHTML = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mentions' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getMentions() {
+      return mentions;
+    }
+
+    /**
+      * Sets the value of the 'mentions' field.
+      * @param value The value of 'mentions'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder setMentions(java.util.List<java.lang.String> value) {
+      validate(fields()[8], value);
+      this.mentions = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mentions' field has been set.
+      * @return True if the 'mentions' field has been set, false otherwise.
+      */
+    public boolean hasMentions() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'mentions' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Comment.Builder clearMentions() {
+      mentions = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public Comment build() {
       try {
@@ -591,6 +729,8 @@ public class Comment extends org.apache.avro.specific.SpecificRecordBase impleme
         record.time = fieldSetFlags()[4] ? this.time : (java.lang.Long) defaultValue(fields()[4]);
         record.source = fieldSetFlags()[5] ? this.source : (java.lang.String) defaultValue(fields()[5]);
         record.edited = fieldSetFlags()[6] ? this.edited : (java.lang.Boolean) defaultValue(fields()[6]);
+        record.commentHTML = fieldSetFlags()[7] ? this.commentHTML : (java.lang.String) defaultValue(fields()[7]);
+        record.mentions = fieldSetFlags()[8] ? this.mentions : (java.util.List<java.lang.String>) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
