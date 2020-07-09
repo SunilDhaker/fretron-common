@@ -28,7 +28,6 @@ fun Contract.clean() {
 
 fun ContractLineItem.clean(){
     this.getContractBranch()?.clean()
-    this.getContractOwner()?.clean()
     this.getConsignee()?.clean()
     this.getConsignor()?.clean()
     this.getConsignmentBranch()?.clean()

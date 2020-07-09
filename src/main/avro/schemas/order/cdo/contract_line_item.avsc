@@ -28,14 +28,6 @@
       "default": null
     },
     {
-      "name": "contractOwner",
-      "type": [
-        "null",
-        "com.fretron.Model.Employee"
-      ],
-      "default": null
-    },
-    {
       "name": "payer",
       "type": [
         "null",
