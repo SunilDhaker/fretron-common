@@ -31,7 +31,7 @@
       "name": "contractOwner",
       "type": [
         "null",
-        "com.fretron.Model.BuisnessPartner"
+        "com.fretron.Model.Employee"
       ],
       "default": null
     },
