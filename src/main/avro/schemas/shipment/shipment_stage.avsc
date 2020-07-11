@@ -153,6 +153,14 @@
                       "string"
                     ],
                     "default": null
-                  }
+                  },
+                        {
+                          "name": "stageName",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        }
     ]
   }
