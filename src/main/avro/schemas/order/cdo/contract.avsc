@@ -79,6 +79,14 @@
 			"default": null
 		},
 		{
+        	"name": "contractBranch",
+        	  "type": [
+        			"null",
+        			"com.fretron.Model.OrgOffice"
+        	   ],
+        	 "default": null
+        },
+		{
 			"name": "salesOffice",
 			"type": [
 				"null",
