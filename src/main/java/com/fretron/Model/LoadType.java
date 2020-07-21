@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 471208529988172759L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = -5244757698010041741L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String uuid;
@@ -22,6 +22,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.Double passingCapacityMT;
   @Deprecated public java.lang.Double passingCapacityCFT;
   @Deprecated public java.lang.String bodyType;
+  @Deprecated public java.lang.String chassisType;
   @Deprecated public java.lang.String dimensionString;
   @Deprecated public java.lang.Double minLength;
   @Deprecated public boolean includeMinLength;
@@ -50,6 +51,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param passingCapacityMT The new value for passingCapacityMT
    * @param passingCapacityCFT The new value for passingCapacityCFT
    * @param bodyType The new value for bodyType
+   * @param chassisType The new value for chassisType
    * @param dimensionString The new value for dimensionString
    * @param minLength The new value for minLength
    * @param includeMinLength The new value for includeMinLength
@@ -60,7 +62,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param maxHeight The new value for maxHeight
    * @param includeMaxHeight The new value for includeMaxHeight
    */
-  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String dimensionString, java.lang.Double minLength, java.lang.Boolean includeMinLength, java.lang.Double maxLength, java.lang.Boolean includeMaxLength, java.lang.Double minHeight, java.lang.Boolean includeMinHeight, java.lang.Double maxHeight, java.lang.Boolean includeMaxHeight) {
+  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String chassisType, java.lang.String dimensionString, java.lang.Double minLength, java.lang.Boolean includeMinLength, java.lang.Double maxLength, java.lang.Boolean includeMaxLength, java.lang.Double minHeight, java.lang.Boolean includeMinHeight, java.lang.Double maxHeight, java.lang.Boolean includeMaxHeight) {
     this.name = name;
     this.uuid = uuid;
     this.orgId = orgId;
@@ -70,6 +72,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     this.passingCapacityMT = passingCapacityMT;
     this.passingCapacityCFT = passingCapacityCFT;
     this.bodyType = bodyType;
+    this.chassisType = chassisType;
     this.dimensionString = dimensionString;
     this.minLength = minLength;
     this.includeMinLength = includeMinLength;
@@ -94,15 +97,16 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 6: return passingCapacityMT;
     case 7: return passingCapacityCFT;
     case 8: return bodyType;
-    case 9: return dimensionString;
-    case 10: return minLength;
-    case 11: return includeMinLength;
-    case 12: return maxLength;
-    case 13: return includeMaxLength;
-    case 14: return minHeight;
-    case 15: return includeMinHeight;
-    case 16: return maxHeight;
-    case 17: return includeMaxHeight;
+    case 9: return chassisType;
+    case 10: return dimensionString;
+    case 11: return minLength;
+    case 12: return includeMinLength;
+    case 13: return maxLength;
+    case 14: return includeMaxLength;
+    case 15: return minHeight;
+    case 16: return includeMinHeight;
+    case 17: return maxHeight;
+    case 18: return includeMaxHeight;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -120,15 +124,16 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 6: passingCapacityMT = (java.lang.Double)value$; break;
     case 7: passingCapacityCFT = (java.lang.Double)value$; break;
     case 8: bodyType = (java.lang.String)value$; break;
-    case 9: dimensionString = (java.lang.String)value$; break;
-    case 10: minLength = (java.lang.Double)value$; break;
-    case 11: includeMinLength = (java.lang.Boolean)value$; break;
-    case 12: maxLength = (java.lang.Double)value$; break;
-    case 13: includeMaxLength = (java.lang.Boolean)value$; break;
-    case 14: minHeight = (java.lang.Double)value$; break;
-    case 15: includeMinHeight = (java.lang.Boolean)value$; break;
-    case 16: maxHeight = (java.lang.Double)value$; break;
-    case 17: includeMaxHeight = (java.lang.Boolean)value$; break;
+    case 9: chassisType = (java.lang.String)value$; break;
+    case 10: dimensionString = (java.lang.String)value$; break;
+    case 11: minLength = (java.lang.Double)value$; break;
+    case 12: includeMinLength = (java.lang.Boolean)value$; break;
+    case 13: maxLength = (java.lang.Double)value$; break;
+    case 14: includeMaxLength = (java.lang.Boolean)value$; break;
+    case 15: minHeight = (java.lang.Double)value$; break;
+    case 16: includeMinHeight = (java.lang.Boolean)value$; break;
+    case 17: maxHeight = (java.lang.Double)value$; break;
+    case 18: includeMaxHeight = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    */
   public void setBodyType(java.lang.String value) {
     this.bodyType = value;
+  }
+
+  /**
+   * Gets the value of the 'chassisType' field.
+   * @return The value of the 'chassisType' field.
+   */
+  public java.lang.String getChassisType() {
+    return chassisType;
+  }
+
+  /**
+   * Sets the value of the 'chassisType' field.
+   * @param value the value to set.
+   */
+  public void setChassisType(java.lang.String value) {
+    this.chassisType = value;
   }
 
   /**
@@ -462,6 +483,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.Double passingCapacityMT;
     private java.lang.Double passingCapacityCFT;
     private java.lang.String bodyType;
+    private java.lang.String chassisType;
     private java.lang.String dimensionString;
     private java.lang.Double minLength;
     private boolean includeMinLength;
@@ -519,41 +541,45 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.bodyType = data().deepCopy(fields()[8].schema(), other.bodyType);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[9].schema(), other.dimensionString);
+      if (isValidValue(fields()[9], other.chassisType)) {
+        this.chassisType = data().deepCopy(fields()[9].schema(), other.chassisType);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.minLength)) {
-        this.minLength = data().deepCopy(fields()[10].schema(), other.minLength);
+      if (isValidValue(fields()[10], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[10].schema(), other.dimensionString);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.includeMinLength)) {
-        this.includeMinLength = data().deepCopy(fields()[11].schema(), other.includeMinLength);
+      if (isValidValue(fields()[11], other.minLength)) {
+        this.minLength = data().deepCopy(fields()[11].schema(), other.minLength);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.maxLength)) {
-        this.maxLength = data().deepCopy(fields()[12].schema(), other.maxLength);
+      if (isValidValue(fields()[12], other.includeMinLength)) {
+        this.includeMinLength = data().deepCopy(fields()[12].schema(), other.includeMinLength);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.includeMaxLength)) {
-        this.includeMaxLength = data().deepCopy(fields()[13].schema(), other.includeMaxLength);
+      if (isValidValue(fields()[13], other.maxLength)) {
+        this.maxLength = data().deepCopy(fields()[13].schema(), other.maxLength);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.minHeight)) {
-        this.minHeight = data().deepCopy(fields()[14].schema(), other.minHeight);
+      if (isValidValue(fields()[14], other.includeMaxLength)) {
+        this.includeMaxLength = data().deepCopy(fields()[14].schema(), other.includeMaxLength);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.includeMinHeight)) {
-        this.includeMinHeight = data().deepCopy(fields()[15].schema(), other.includeMinHeight);
+      if (isValidValue(fields()[15], other.minHeight)) {
+        this.minHeight = data().deepCopy(fields()[15].schema(), other.minHeight);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.maxHeight)) {
-        this.maxHeight = data().deepCopy(fields()[16].schema(), other.maxHeight);
+      if (isValidValue(fields()[16], other.includeMinHeight)) {
+        this.includeMinHeight = data().deepCopy(fields()[16].schema(), other.includeMinHeight);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.includeMaxHeight)) {
-        this.includeMaxHeight = data().deepCopy(fields()[17].schema(), other.includeMaxHeight);
+      if (isValidValue(fields()[17], other.maxHeight)) {
+        this.maxHeight = data().deepCopy(fields()[17].schema(), other.maxHeight);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.includeMaxHeight)) {
+        this.includeMaxHeight = data().deepCopy(fields()[18].schema(), other.includeMaxHeight);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -599,41 +625,45 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.bodyType = data().deepCopy(fields()[8].schema(), other.bodyType);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[9].schema(), other.dimensionString);
+      if (isValidValue(fields()[9], other.chassisType)) {
+        this.chassisType = data().deepCopy(fields()[9].schema(), other.chassisType);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.minLength)) {
-        this.minLength = data().deepCopy(fields()[10].schema(), other.minLength);
+      if (isValidValue(fields()[10], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[10].schema(), other.dimensionString);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.includeMinLength)) {
-        this.includeMinLength = data().deepCopy(fields()[11].schema(), other.includeMinLength);
+      if (isValidValue(fields()[11], other.minLength)) {
+        this.minLength = data().deepCopy(fields()[11].schema(), other.minLength);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.maxLength)) {
-        this.maxLength = data().deepCopy(fields()[12].schema(), other.maxLength);
+      if (isValidValue(fields()[12], other.includeMinLength)) {
+        this.includeMinLength = data().deepCopy(fields()[12].schema(), other.includeMinLength);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.includeMaxLength)) {
-        this.includeMaxLength = data().deepCopy(fields()[13].schema(), other.includeMaxLength);
+      if (isValidValue(fields()[13], other.maxLength)) {
+        this.maxLength = data().deepCopy(fields()[13].schema(), other.maxLength);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.minHeight)) {
-        this.minHeight = data().deepCopy(fields()[14].schema(), other.minHeight);
+      if (isValidValue(fields()[14], other.includeMaxLength)) {
+        this.includeMaxLength = data().deepCopy(fields()[14].schema(), other.includeMaxLength);
         fieldSetFlags()[14] = true;
       }
-      if (isValidValue(fields()[15], other.includeMinHeight)) {
-        this.includeMinHeight = data().deepCopy(fields()[15].schema(), other.includeMinHeight);
+      if (isValidValue(fields()[15], other.minHeight)) {
+        this.minHeight = data().deepCopy(fields()[15].schema(), other.minHeight);
         fieldSetFlags()[15] = true;
       }
-      if (isValidValue(fields()[16], other.maxHeight)) {
-        this.maxHeight = data().deepCopy(fields()[16].schema(), other.maxHeight);
+      if (isValidValue(fields()[16], other.includeMinHeight)) {
+        this.includeMinHeight = data().deepCopy(fields()[16].schema(), other.includeMinHeight);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.includeMaxHeight)) {
-        this.includeMaxHeight = data().deepCopy(fields()[17].schema(), other.includeMaxHeight);
+      if (isValidValue(fields()[17], other.maxHeight)) {
+        this.maxHeight = data().deepCopy(fields()[17].schema(), other.maxHeight);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.includeMaxHeight)) {
+        this.includeMaxHeight = data().deepCopy(fields()[18].schema(), other.includeMaxHeight);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -989,6 +1019,45 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
+      * Gets the value of the 'chassisType' field.
+      * @return The value.
+      */
+    public java.lang.String getChassisType() {
+      return chassisType;
+    }
+
+    /**
+      * Sets the value of the 'chassisType' field.
+      * @param value The value of 'chassisType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setChassisType(java.lang.String value) {
+      validate(fields()[9], value);
+      this.chassisType = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'chassisType' field has been set.
+      * @return True if the 'chassisType' field has been set, false otherwise.
+      */
+    public boolean hasChassisType() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'chassisType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearChassisType() {
+      chassisType = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'dimensionString' field.
       * @return The value.
       */
@@ -1002,9 +1071,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setDimensionString(java.lang.String value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.dimensionString = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -1013,7 +1082,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'dimensionString' field has been set, false otherwise.
       */
     public boolean hasDimensionString() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
 
@@ -1023,7 +1092,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearDimensionString() {
       dimensionString = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1041,9 +1110,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setMinLength(java.lang.Double value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.minLength = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1052,7 +1121,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'minLength' field has been set, false otherwise.
       */
     public boolean hasMinLength() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1062,7 +1131,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearMinLength() {
       minLength = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1080,9 +1149,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setIncludeMinLength(boolean value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.includeMinLength = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1091,7 +1160,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'includeMinLength' field has been set, false otherwise.
       */
     public boolean hasIncludeMinLength() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1100,7 +1169,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder clearIncludeMinLength() {
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1118,9 +1187,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setMaxLength(java.lang.Double value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.maxLength = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1129,7 +1198,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'maxLength' field has been set, false otherwise.
       */
     public boolean hasMaxLength() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1139,7 +1208,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearMaxLength() {
       maxLength = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1157,9 +1226,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setIncludeMaxLength(boolean value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.includeMaxLength = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1168,7 +1237,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'includeMaxLength' field has been set, false otherwise.
       */
     public boolean hasIncludeMaxLength() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1177,7 +1246,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder clearIncludeMaxLength() {
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1195,9 +1264,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setMinHeight(java.lang.Double value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.minHeight = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1206,7 +1275,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'minHeight' field has been set, false otherwise.
       */
     public boolean hasMinHeight() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1216,7 +1285,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearMinHeight() {
       minHeight = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -1234,9 +1303,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setIncludeMinHeight(boolean value) {
-      validate(fields()[15], value);
+      validate(fields()[16], value);
       this.includeMinHeight = value;
-      fieldSetFlags()[15] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1245,7 +1314,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'includeMinHeight' field has been set, false otherwise.
       */
     public boolean hasIncludeMinHeight() {
-      return fieldSetFlags()[15];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1254,7 +1323,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder clearIncludeMinHeight() {
-      fieldSetFlags()[15] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1272,9 +1341,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setMaxHeight(java.lang.Double value) {
-      validate(fields()[16], value);
+      validate(fields()[17], value);
       this.maxHeight = value;
-      fieldSetFlags()[16] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1283,7 +1352,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'maxHeight' field has been set, false otherwise.
       */
     public boolean hasMaxHeight() {
-      return fieldSetFlags()[16];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1293,7 +1362,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearMaxHeight() {
       maxHeight = null;
-      fieldSetFlags()[16] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1311,9 +1380,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setIncludeMaxHeight(boolean value) {
-      validate(fields()[17], value);
+      validate(fields()[18], value);
       this.includeMaxHeight = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1322,7 +1391,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'includeMaxHeight' field has been set, false otherwise.
       */
     public boolean hasIncludeMaxHeight() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1331,7 +1400,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder clearIncludeMaxHeight() {
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1348,15 +1417,16 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         record.passingCapacityMT = fieldSetFlags()[6] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[6]);
         record.passingCapacityCFT = fieldSetFlags()[7] ? this.passingCapacityCFT : (java.lang.Double) defaultValue(fields()[7]);
         record.bodyType = fieldSetFlags()[8] ? this.bodyType : (java.lang.String) defaultValue(fields()[8]);
-        record.dimensionString = fieldSetFlags()[9] ? this.dimensionString : (java.lang.String) defaultValue(fields()[9]);
-        record.minLength = fieldSetFlags()[10] ? this.minLength : (java.lang.Double) defaultValue(fields()[10]);
-        record.includeMinLength = fieldSetFlags()[11] ? this.includeMinLength : (java.lang.Boolean) defaultValue(fields()[11]);
-        record.maxLength = fieldSetFlags()[12] ? this.maxLength : (java.lang.Double) defaultValue(fields()[12]);
-        record.includeMaxLength = fieldSetFlags()[13] ? this.includeMaxLength : (java.lang.Boolean) defaultValue(fields()[13]);
-        record.minHeight = fieldSetFlags()[14] ? this.minHeight : (java.lang.Double) defaultValue(fields()[14]);
-        record.includeMinHeight = fieldSetFlags()[15] ? this.includeMinHeight : (java.lang.Boolean) defaultValue(fields()[15]);
-        record.maxHeight = fieldSetFlags()[16] ? this.maxHeight : (java.lang.Double) defaultValue(fields()[16]);
-        record.includeMaxHeight = fieldSetFlags()[17] ? this.includeMaxHeight : (java.lang.Boolean) defaultValue(fields()[17]);
+        record.chassisType = fieldSetFlags()[9] ? this.chassisType : (java.lang.String) defaultValue(fields()[9]);
+        record.dimensionString = fieldSetFlags()[10] ? this.dimensionString : (java.lang.String) defaultValue(fields()[10]);
+        record.minLength = fieldSetFlags()[11] ? this.minLength : (java.lang.Double) defaultValue(fields()[11]);
+        record.includeMinLength = fieldSetFlags()[12] ? this.includeMinLength : (java.lang.Boolean) defaultValue(fields()[12]);
+        record.maxLength = fieldSetFlags()[13] ? this.maxLength : (java.lang.Double) defaultValue(fields()[13]);
+        record.includeMaxLength = fieldSetFlags()[14] ? this.includeMaxLength : (java.lang.Boolean) defaultValue(fields()[14]);
+        record.minHeight = fieldSetFlags()[15] ? this.minHeight : (java.lang.Double) defaultValue(fields()[15]);
+        record.includeMinHeight = fieldSetFlags()[16] ? this.includeMinHeight : (java.lang.Boolean) defaultValue(fields()[16]);
+        record.maxHeight = fieldSetFlags()[17] ? this.maxHeight : (java.lang.Double) defaultValue(fields()[17]);
+        record.includeMaxHeight = fieldSetFlags()[18] ? this.includeMaxHeight : (java.lang.Boolean) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
