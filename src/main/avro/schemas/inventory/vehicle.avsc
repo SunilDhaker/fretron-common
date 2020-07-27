@@ -241,6 +241,19 @@
                    "com.fretron.Model.OrgOffice"
                ],
       "default": null
-    }
+    },
+    {
+          "name": "chassisNumber",
+          "type": [
+            "null",
+            "string"
+          ]
+        },    {
+                   "name": "vehicleLoadType",
+                   "type": [
+                     "null",
+                     "com.fretron.Model.LoadType"
+                   ]
+                 }
   ]
 }
