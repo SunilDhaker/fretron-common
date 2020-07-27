@@ -107,6 +107,14 @@
                                     "string"
                                   ],
                                   "default": null
-                                }
+                                },
+                                    {
+                                      "name": "secondaryDriver",
+                                      "type": [
+                                        "null",
+                                        "com.fretron.Model.Driver"
+                                      ],
+                                      "default": null
+                                    }
   ]
 }
