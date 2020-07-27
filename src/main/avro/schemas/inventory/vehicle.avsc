@@ -247,13 +247,15 @@
           "type": [
             "null",
             "string"
-          ]
+          ],
+          "default": null
         },    {
                    "name": "vehicleLoadType",
                    "type": [
                      "null",
                      "com.fretron.Model.LoadType"
-                   ]
+                   ],
+                   "default": null
                  }
   ]
 }
