@@ -164,7 +164,31 @@
           ],
           "default": null
         }
-
+    ,
+    {
+          "name": "gstn",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+              "name": "aadharNo",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+                {
+                      "name": "voterId",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    }
 
   ]
 }
