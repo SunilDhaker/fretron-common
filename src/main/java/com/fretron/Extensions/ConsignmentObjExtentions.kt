@@ -8,7 +8,7 @@ fun  Consignment.clean(){
     this.getBillToParty()?.clean()
     this.getContractToParty()?.clean()
     this.getSalesOffice()?.clean()
-    this.getPod()?.clean()
+    this.getPod()?.deepClean()
 }
 
 fun  Consignment.deepClean(){
