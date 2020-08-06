@@ -75,12 +75,73 @@
 			"default": null
 		},
 		{
+                			"name": "chassisType",
+                			"type": [
+                				"null",
+                				"string"
+                			],
+                			"default": null
+                },
+		{
 			"name": "dimensionString",
 			"type": [
 				"null",
 				"string"
 			],
 			"default": null
-		}
+		},
+		{
+        	"name": "minLength",
+        	 "type": [
+        				"null",
+        				"double"
+        			],
+        	"default": null
+        },
+         {
+                     "name":"includeMinLength",
+                      "type": "boolean",
+                       "default":false
+        },
+        {
+             "name": "maxLength",
+             "type": [
+                				"null",
+                				"double"
+                			],
+               "default": null
+        },
+         {
+             "name":"includeMaxLength",
+              "type": "boolean",
+               "default":false
+         },
+        {
+                 	"name": "minHeight",
+                 	 "type": [
+                 				"null",
+                 				"double"
+                 			],
+                 	"default": null
+         },
+         {
+            "name":"includeMinHeight",
+             "type": "boolean",
+              "default":false
+         },
+         {
+             "name": "maxHeight",
+             "type": [
+                         				"null",
+                         				"double"
+                         			],
+              "default": null
+          },
+          {
+              "name":"includeMaxHeight",
+               "type": "boolean",
+              "default":false
+           }
+
 	]
 }
