@@ -75,6 +75,14 @@
 			"default": null
 		},
 		{
+                			"name": "chassisType",
+                			"type": [
+                				"null",
+                				"string"
+                			],
+                			"default": null
+                },
+		{
 			"name": "dimensionString",
 			"type": [
 				"null",
