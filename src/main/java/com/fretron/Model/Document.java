@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Document extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4699348067708070009L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8633715940263458128L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Boolean isExpirable;
@@ -23,6 +23,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String previewString;
+  @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customFields;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -43,8 +44,9 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
    * @param orgId The new value for orgId
    * @param name The new value for name
    * @param previewString The new value for previewString
+   * @param customFields The new value for customFields
    */
-  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId, java.lang.String name, java.lang.String previewString) {
+  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId, java.lang.String name, java.lang.String previewString, java.util.List<com.fretron.Model.LiteCustomFields> customFields) {
     this.uuid = uuid;
     this.isExpirable = isExpirable;
     this.expireDate = expireDate;
@@ -55,6 +57,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     this.orgId = orgId;
     this.name = name;
     this.previewString = previewString;
+    this.customFields = customFields;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -71,6 +74,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 7: return orgId;
     case 8: return name;
     case 9: return previewString;
+    case 10: return customFields;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -89,6 +93,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 7: orgId = (java.lang.String)value$; break;
     case 8: name = (java.lang.String)value$; break;
     case 9: previewString = (java.lang.String)value$; break;
+    case 10: customFields = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -254,6 +259,22 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'customFields' field.
+   * @return The value of the 'customFields' field.
+   */
+  public java.util.List<com.fretron.Model.LiteCustomFields> getCustomFields() {
+    return customFields;
+  }
+
+  /**
+   * Sets the value of the 'customFields' field.
+   * @param value the value to set.
+   */
+  public void setCustomFields(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+    this.customFields = value;
+  }
+
+  /**
    * Creates a new Document RecordBuilder.
    * @return A new Document RecordBuilder
    */
@@ -295,6 +316,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String orgId;
     private java.lang.String name;
     private java.lang.String previewString;
+    private java.util.List<com.fretron.Model.LiteCustomFields> customFields;
 
     /** Creates a new Builder */
     private Builder() {
@@ -347,6 +369,10 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         this.previewString = data().deepCopy(fields()[9].schema(), other.previewString);
         fieldSetFlags()[9] = true;
       }
+      if (isValidValue(fields()[10], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[10].schema(), other.customFields);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -394,6 +420,10 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[9], other.previewString)) {
         this.previewString = data().deepCopy(fields()[9].schema(), other.previewString);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[10].schema(), other.customFields);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -787,6 +817,45 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'customFields' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.LiteCustomFields> getCustomFields() {
+      return customFields;
+    }
+
+    /**
+      * Sets the value of the 'customFields' field.
+      * @param value The value of 'customFields'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setCustomFields(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+      validate(fields()[10], value);
+      this.customFields = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customFields' field has been set.
+      * @return True if the 'customFields' field has been set, false otherwise.
+      */
+    public boolean hasCustomFields() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'customFields' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearCustomFields() {
+      customFields = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public Document build() {
       try {
@@ -801,6 +870,7 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         record.orgId = fieldSetFlags()[7] ? this.orgId : (java.lang.String) defaultValue(fields()[7]);
         record.name = fieldSetFlags()[8] ? this.name : (java.lang.String) defaultValue(fields()[8]);
         record.previewString = fieldSetFlags()[9] ? this.previewString : (java.lang.String) defaultValue(fields()[9]);
+        record.customFields = fieldSetFlags()[10] ? this.customFields : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -1,0 +1,58 @@
+  {
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "LiteCustomFields",
+    "fields": [
+      {
+        "name": "fieldType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fieldKey",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "value",
+        "type": [
+           "null",
+           "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "indexedValue",
+        "type": [
+          "null",
+          {
+            "type": "array",
+            "items": "string"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "valueType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+                        {
+                          "name": "definitionId",
+                          "type": [
+                             "null",
+                             "string"
+                          ],
+                          "default": null
+                        }
+    ]
+  }
