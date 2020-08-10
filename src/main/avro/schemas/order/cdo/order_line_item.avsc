@@ -173,7 +173,18 @@
                            ],
                   "logicalType": "timestamp-millis",
                    "default": null
-              }
+              },
+               {
+                          "name": "auctionIds",
+                           "type": [
+                                         "null",
+                                           {
+                                             "type": "array",
+                                             "items": "string"
+                                           }
+                                         ],
+                          "default": null
+                        }
 
   ]
 }
