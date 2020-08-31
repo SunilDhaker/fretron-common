@@ -382,7 +382,23 @@
                                                         ],
                                      "default": null
 
-             }
+             },
+             {
+                  "name":"isAllowCounterOffer",
+                   "type": ["null","boolean"],
+                   "default":null
+              },
+              {
+                  "name": "enquiries",
+                   "type": [
+                                        "null",
+                                    {
+                                        "type": "array",
+                                         "items": "com.fretron.Model.SalesOrderMapping"
+                                    }
+                                    ],
+                   "default": null
+               }
 
 
   ]
