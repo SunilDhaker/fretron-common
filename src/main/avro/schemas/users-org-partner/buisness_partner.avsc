@@ -164,7 +164,42 @@
           ],
           "default": null
         }
-
+    ,
+    {
+          "name": "gstn",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+              "name": "aadharNo",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+                {
+                      "name": "voterId",
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "default": null
+                    },
+                        {
+                          "name": "documents",
+                          "type": [
+                            "null",
+                            {
+                              "type": "array",
+                              "items": "com.fretron.Model.Document"
+                            }
+                          ],
+                          "default": null
+                        }
 
   ]
 }

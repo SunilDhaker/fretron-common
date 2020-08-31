@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6550933023380566731L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LiteVehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"mean\",\"type\":[\"null\",\"LitePosition\"],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"averageSpeeds\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 8715191615915677176L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LiteVehicleGpsState\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"startTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"endTime\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"startLocation\",\"type\":{\"type\":\"record\",\"name\":\"LitePosition\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"speed\",\"type\":\"double\"},{\"name\":\"course\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"decoder\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lngLat\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"isFillingEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"odometer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Odometer\",\"fields\":[{\"name\":\"softwareMeter\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"lastUpdateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSoftwareMeterManuallyCalibrated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"lastCalibrationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"hardwareReading\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"hardwareDistance\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}},{\"name\":\"endLocation\",\"type\":\"LitePosition\"},{\"name\":\"mean\",\"type\":[\"null\",\"LitePosition\"],\"default\":null},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"averageSpeeds\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"numberOfRecord\",\"type\":\"int\"},{\"name\":\"imei\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"enum\",\"name\":\"GPSState\",\"symbols\":[\"Stopped\",\"Moving\",\"Overspeeding\",\"Disconnected\",\"Unknown\"]}]},{\"name\":\"isDisconnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"eventType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isNoGpsZone\",\"type\":\"boolean\",\"default\":false}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public long startTime;
   @Deprecated public long endTime;
@@ -28,6 +28,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
   @Deprecated public com.fretron.Model.GPSState state;
   @Deprecated public boolean isDisconnected;
   @Deprecated public java.lang.String eventType;
+  @Deprecated public boolean isNoGpsZone;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -53,8 +54,9 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
    * @param state The new value for state
    * @param isDisconnected The new value for isDisconnected
    * @param eventType The new value for eventType
+   * @param isNoGpsZone The new value for isNoGpsZone
    */
-  public LiteVehicleGpsState(java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.Boolean isDisconnected, java.lang.String eventType) {
+  public LiteVehicleGpsState(java.lang.Long startTime, java.lang.Long endTime, com.fretron.Model.LitePosition startLocation, com.fretron.Model.LitePosition endLocation, com.fretron.Model.LitePosition mean, java.lang.Double totalDistance, java.lang.Long totalTime, java.lang.Double averageSpeeds, java.lang.Integer numberOfRecord, java.lang.String imei, java.lang.String vehicleId, java.lang.String uuid, com.fretron.Model.GPSState state, java.lang.Boolean isDisconnected, java.lang.String eventType, java.lang.Boolean isNoGpsZone) {
     this.startTime = startTime;
     this.endTime = endTime;
     this.startLocation = startLocation;
@@ -70,6 +72,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
     this.state = state;
     this.isDisconnected = isDisconnected;
     this.eventType = eventType;
+    this.isNoGpsZone = isNoGpsZone;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -91,6 +94,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
     case 12: return state;
     case 13: return isDisconnected;
     case 14: return eventType;
+    case 15: return isNoGpsZone;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -114,6 +118,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
     case 12: state = (com.fretron.Model.GPSState)value$; break;
     case 13: isDisconnected = (java.lang.Boolean)value$; break;
     case 14: eventType = (java.lang.String)value$; break;
+    case 15: isNoGpsZone = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -359,6 +364,22 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'isNoGpsZone' field.
+   * @return The value of the 'isNoGpsZone' field.
+   */
+  public java.lang.Boolean getIsNoGpsZone() {
+    return isNoGpsZone;
+  }
+
+  /**
+   * Sets the value of the 'isNoGpsZone' field.
+   * @param value the value to set.
+   */
+  public void setIsNoGpsZone(java.lang.Boolean value) {
+    this.isNoGpsZone = value;
+  }
+
+  /**
    * Creates a new LiteVehicleGpsState RecordBuilder.
    * @return A new LiteVehicleGpsState RecordBuilder
    */
@@ -408,6 +429,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
     private com.fretron.Model.GPSState state;
     private boolean isDisconnected;
     private java.lang.String eventType;
+    private boolean isNoGpsZone;
 
     /** Creates a new Builder */
     private Builder() {
@@ -489,6 +511,10 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
         this.eventType = data().deepCopy(fields()[14].schema(), other.eventType);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.isNoGpsZone)) {
+        this.isNoGpsZone = data().deepCopy(fields()[15].schema(), other.isNoGpsZone);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -559,6 +585,10 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[14], other.eventType)) {
         this.eventType = data().deepCopy(fields()[14].schema(), other.eventType);
         fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isNoGpsZone)) {
+        this.isNoGpsZone = data().deepCopy(fields()[15].schema(), other.isNoGpsZone);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -1248,6 +1278,44 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'isNoGpsZone' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsNoGpsZone() {
+      return isNoGpsZone;
+    }
+
+    /**
+      * Sets the value of the 'isNoGpsZone' field.
+      * @param value The value of 'isNoGpsZone'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LiteVehicleGpsState.Builder setIsNoGpsZone(boolean value) {
+      validate(fields()[15], value);
+      this.isNoGpsZone = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isNoGpsZone' field has been set.
+      * @return True if the 'isNoGpsZone' field has been set, false otherwise.
+      */
+    public boolean hasIsNoGpsZone() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'isNoGpsZone' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LiteVehicleGpsState.Builder clearIsNoGpsZone() {
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public LiteVehicleGpsState build() {
       try {
@@ -1279,6 +1347,7 @@ public class LiteVehicleGpsState extends org.apache.avro.specific.SpecificRecord
         record.state = fieldSetFlags()[12] ? this.state : (com.fretron.Model.GPSState) defaultValue(fields()[12]);
         record.isDisconnected = fieldSetFlags()[13] ? this.isDisconnected : (java.lang.Boolean) defaultValue(fields()[13]);
         record.eventType = fieldSetFlags()[14] ? this.eventType : (java.lang.String) defaultValue(fields()[14]);
+        record.isNoGpsZone = fieldSetFlags()[15] ? this.isNoGpsZone : (java.lang.Boolean) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

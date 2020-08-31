@@ -76,7 +76,12 @@
         "name": "eventType",
         "type": ["null" ,"string"],
         "default" : null
-      }
+      },
+      {
+         "name":"isNoGpsZone",
+         "type": "boolean",
+          "default":false
+       }
 
       ]
   }]

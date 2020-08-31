@@ -99,6 +99,33 @@
                           "string"
                         ],
                         "default": null
-                      }
+                      },
+                      {
+                            "name": "consignmentId",
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "default": null
+                          },
+                              {
+                                "name": "deliveryItems",
+                                "type": [
+                                  "null",
+                                  {
+                                    "type": "array",
+                                    "items": "com.fretron.Model.PodDeliveryItem"
+                                  }
+                                ],
+                                "default": null
+                              },
+                                                                          {
+                                                                            "name": "updates",
+                                                                            "type": [
+                                                                              "null",
+                                                                              "com.fretron.Model.Updates"
+                                                                            ],
+                                                                            "default": null
+                                                                          }
   ]
 }
