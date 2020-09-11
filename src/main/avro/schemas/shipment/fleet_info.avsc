@@ -115,6 +115,14 @@
                                         "com.fretron.Model.Driver"
                                       ],
                                       "default": null
-                                    }
+                                    },
+                                                            {
+                                                                  "name": "verificationStatus",
+                                                                  "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                  ],
+                                                                  "default": null
+                                                                }
   ]
 }
