@@ -89,7 +89,7 @@ object OnlinePolylineEncoder {
         val dlng = lnge5 - lastLng
         val dtime = newLocationTime - lastPoint.getTimestamp()!!
 
-        if (dlat != 0 || dlng != 0 || dtime != 0L) {
+        if (dlat != 0 || dlng != 0) {
             val extendedPolyline = encodeSignedNumber(dlat) + encodeSignedNumber(dlng) + encodeSignedNumber(dtime)
             polylineObj.setPolyline(polylineObj.getPolyline() + extendedPolyline)
             lastPoint.setTimestamp(newLocationTime)
