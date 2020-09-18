@@ -4,7 +4,7 @@ import com.fretron.Model.Vehicle
 
 fun Vehicle.clean(){
     this.setUpdates(null)
-    this.setAttachedDocs(null)
+//    this.setAttachedDocs(null)
     this.getGroupsExtended()?.forEach { grp->
         grp.setOrgId(null)
     }

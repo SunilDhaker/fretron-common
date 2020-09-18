@@ -234,7 +234,16 @@
                   }
                 ],
                 "default": null
-            }
+            },
+
+         {
+               "name": "vehicleState",
+               "type": [
+                   "null",
+                   "string"
+               ],
+               "default": null
+          }
 
 		]
 	}

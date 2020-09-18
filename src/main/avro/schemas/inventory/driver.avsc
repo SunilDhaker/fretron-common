@@ -129,6 +129,14 @@
                     "string"
                 ],
                 "default": null
-            }
+            },
+                    {
+                          "name": "aadharNo",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        }
   ]
 }
