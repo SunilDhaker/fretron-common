@@ -1,0 +1,128 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "ShipmentWindow",
+  "fields": [
+    {
+         "name": "windowNumber",
+         "type": [
+           "null",
+           "long"
+             ],
+        "default": null
+    },
+    {
+      "name": "startTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "endTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "tripState",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "tripId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "windowUuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shipmentUuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "vehicleId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+       "name": "imei",
+       "type": [
+       "null",
+       "string"
+        ],
+       "default": null
+    },
+    {
+       "name": "isOverlapping",
+       "type": "boolean",
+       "default": false
+    },
+    {
+       "name": "isShipmentCompleted",
+       "type": "boolean",
+       "default": false
+    },
+    {
+       "name": "shipmentCreationTime",
+       "type": [
+            "null",
+            "long"
+            ],
+       "logicalType": "timestamp-millis",
+       "default": null
+    },
+    {
+           "name": "lastShipmentWindowId",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+    },
+    {
+         "name": "nextShipmentWindowId",
+          "type": [
+          "null",
+          "string"
+          ],
+         "default": null
+    },
+    {
+        "name": "isWindowCompleted",
+        "type": "boolean",
+        "default": false
+    },
+    {
+         "name": "isWindowDeleted",
+         "type": "boolean",
+         "default": false
+    }
+
+
+  ]
+}
