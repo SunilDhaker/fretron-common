@@ -256,6 +256,17 @@
                      "com.fretron.Model.LoadType"
                    ],
                    "default": null
-                 }
+                 },
+                 {
+                           "name": "customFields",
+                           "type": [
+                             "null",
+                             {
+                               "type": "array",
+                               "items": "com.fretron.Model.LiteCustomFields"
+                             }
+                           ],
+                           "default": null
+                         }
   ]
 }
