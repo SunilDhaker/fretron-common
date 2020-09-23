@@ -296,6 +296,22 @@
                                 }
                               ],
                  "default": null
-            }
+            },
+             {
+                              "name": "material",
+                               "type": [
+                                                                "null",
+                                                                "com.fretron.Model.Materials"
+                                                              ],
+                                 "default": null
+               },
+                  {
+                              "name": "service",
+                               "type": [
+                                            "null",
+                                               "com.fretron.Model.Materials"
+                                      ],
+                                 "default": null
+                   }
   ]
 }
