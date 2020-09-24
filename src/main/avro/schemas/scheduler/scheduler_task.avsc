@@ -115,7 +115,18 @@
                                      }
                                    ],
                      "default":null
-               }
+         },
+         {
+                 "name": "registeredTopics",
+                 "type": [
+                   "null",
+                   {
+                     "type": "array",
+                     "items": "string"
+                   }
+                 ],
+                 "default": null
+          }
 
   ]
 }
