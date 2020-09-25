@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5244757698010041741L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false}]}");
+  private static final long serialVersionUID = -2111277233410355701L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"bodyTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chassisTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String uuid;
@@ -32,6 +32,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public boolean includeMinHeight;
   @Deprecated public java.lang.Double maxHeight;
   @Deprecated public boolean includeMaxHeight;
+  @Deprecated public java.util.List<java.lang.String> bodyTypes;
+  @Deprecated public java.util.List<java.lang.String> chassisTypes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +63,10 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param includeMinHeight The new value for includeMinHeight
    * @param maxHeight The new value for maxHeight
    * @param includeMaxHeight The new value for includeMaxHeight
+   * @param bodyTypes The new value for bodyTypes
+   * @param chassisTypes The new value for chassisTypes
    */
-  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String chassisType, java.lang.String dimensionString, java.lang.Double minLength, java.lang.Boolean includeMinLength, java.lang.Double maxLength, java.lang.Boolean includeMaxLength, java.lang.Double minHeight, java.lang.Boolean includeMinHeight, java.lang.Double maxHeight, java.lang.Boolean includeMaxHeight) {
+  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String chassisType, java.lang.String dimensionString, java.lang.Double minLength, java.lang.Boolean includeMinLength, java.lang.Double maxLength, java.lang.Boolean includeMaxLength, java.lang.Double minHeight, java.lang.Boolean includeMinHeight, java.lang.Double maxHeight, java.lang.Boolean includeMaxHeight, java.util.List<java.lang.String> bodyTypes, java.util.List<java.lang.String> chassisTypes) {
     this.name = name;
     this.uuid = uuid;
     this.orgId = orgId;
@@ -82,6 +86,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     this.includeMinHeight = includeMinHeight;
     this.maxHeight = maxHeight;
     this.includeMaxHeight = includeMaxHeight;
+    this.bodyTypes = bodyTypes;
+    this.chassisTypes = chassisTypes;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +113,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 16: return includeMinHeight;
     case 17: return maxHeight;
     case 18: return includeMaxHeight;
+    case 19: return bodyTypes;
+    case 20: return chassisTypes;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +142,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 16: includeMinHeight = (java.lang.Boolean)value$; break;
     case 17: maxHeight = (java.lang.Double)value$; break;
     case 18: includeMaxHeight = (java.lang.Boolean)value$; break;
+    case 19: bodyTypes = (java.util.List<java.lang.String>)value$; break;
+    case 20: chassisTypes = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +453,38 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'bodyTypes' field.
+   * @return The value of the 'bodyTypes' field.
+   */
+  public java.util.List<java.lang.String> getBodyTypes() {
+    return bodyTypes;
+  }
+
+  /**
+   * Sets the value of the 'bodyTypes' field.
+   * @param value the value to set.
+   */
+  public void setBodyTypes(java.util.List<java.lang.String> value) {
+    this.bodyTypes = value;
+  }
+
+  /**
+   * Gets the value of the 'chassisTypes' field.
+   * @return The value of the 'chassisTypes' field.
+   */
+  public java.util.List<java.lang.String> getChassisTypes() {
+    return chassisTypes;
+  }
+
+  /**
+   * Sets the value of the 'chassisTypes' field.
+   * @param value the value to set.
+   */
+  public void setChassisTypes(java.util.List<java.lang.String> value) {
+    this.chassisTypes = value;
+  }
+
+  /**
    * Creates a new LoadType RecordBuilder.
    * @return A new LoadType RecordBuilder
    */
@@ -493,6 +535,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     private boolean includeMinHeight;
     private java.lang.Double maxHeight;
     private boolean includeMaxHeight;
+    private java.util.List<java.lang.String> bodyTypes;
+    private java.util.List<java.lang.String> chassisTypes;
 
     /** Creates a new Builder */
     private Builder() {
@@ -581,6 +625,14 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.includeMaxHeight = data().deepCopy(fields()[18].schema(), other.includeMaxHeight);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.bodyTypes)) {
+        this.bodyTypes = data().deepCopy(fields()[19].schema(), other.bodyTypes);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.chassisTypes)) {
+        this.chassisTypes = data().deepCopy(fields()[20].schema(), other.chassisTypes);
+        fieldSetFlags()[20] = true;
+      }
     }
 
     /**
@@ -664,6 +716,14 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[18], other.includeMaxHeight)) {
         this.includeMaxHeight = data().deepCopy(fields()[18].schema(), other.includeMaxHeight);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.bodyTypes)) {
+        this.bodyTypes = data().deepCopy(fields()[19].schema(), other.bodyTypes);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.chassisTypes)) {
+        this.chassisTypes = data().deepCopy(fields()[20].schema(), other.chassisTypes);
+        fieldSetFlags()[20] = true;
       }
     }
 
@@ -1404,6 +1464,84 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'bodyTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getBodyTypes() {
+      return bodyTypes;
+    }
+
+    /**
+      * Sets the value of the 'bodyTypes' field.
+      * @param value The value of 'bodyTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setBodyTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[19], value);
+      this.bodyTypes = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'bodyTypes' field has been set.
+      * @return True if the 'bodyTypes' field has been set, false otherwise.
+      */
+    public boolean hasBodyTypes() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'bodyTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearBodyTypes() {
+      bodyTypes = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'chassisTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getChassisTypes() {
+      return chassisTypes;
+    }
+
+    /**
+      * Sets the value of the 'chassisTypes' field.
+      * @param value The value of 'chassisTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setChassisTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[20], value);
+      this.chassisTypes = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'chassisTypes' field has been set.
+      * @return True if the 'chassisTypes' field has been set, false otherwise.
+      */
+    public boolean hasChassisTypes() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'chassisTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearChassisTypes() {
+      chassisTypes = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
     @Override
     public LoadType build() {
       try {
@@ -1427,6 +1565,8 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         record.includeMinHeight = fieldSetFlags()[16] ? this.includeMinHeight : (java.lang.Boolean) defaultValue(fields()[16]);
         record.maxHeight = fieldSetFlags()[17] ? this.maxHeight : (java.lang.Double) defaultValue(fields()[17]);
         record.includeMaxHeight = fieldSetFlags()[18] ? this.includeMaxHeight : (java.lang.Boolean) defaultValue(fields()[18]);
+        record.bodyTypes = fieldSetFlags()[19] ? this.bodyTypes : (java.util.List<java.lang.String>) defaultValue(fields()[19]);
+        record.chassisTypes = fieldSetFlags()[20] ? this.chassisTypes : (java.util.List<java.lang.String>) defaultValue(fields()[20]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

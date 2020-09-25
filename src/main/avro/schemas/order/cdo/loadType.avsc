@@ -141,7 +141,30 @@
               "name":"includeMaxHeight",
                "type": "boolean",
               "default":false
-           }
+           },
+            {
+                    "name": "bodyTypes",
+                     "type": [
+                                    "null",
+                                    {
+                                       "type": "array",
+                                        "items": "string"
+                                    }
+                                  ],
+                    "default": null
+               },
+               {
+                    "name": "chassisTypes",
+                     "type": [
+                                  "null",
+                                                   {
+                                                      "type": "array",
+                                                       "items": "string"
+                                                   }
+                           ],
+                    "default": null
+                }
+
 
 	]
 }
