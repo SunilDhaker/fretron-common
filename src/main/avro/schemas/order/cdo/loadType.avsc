@@ -35,6 +35,22 @@
 			"default": null
 		},
 		{
+           "name": "partnerName",
+            "type": [
+                				"null",
+                				"string"
+                			],
+           "default": null
+        },
+        {
+           "name": "partnerExternalId",
+            "type": [
+                      "null",
+                        				"string"
+                        			],
+            "default": null
+         },
+		{
 			"name": "vehicleCategory",
 			"type": [
 				"null",
