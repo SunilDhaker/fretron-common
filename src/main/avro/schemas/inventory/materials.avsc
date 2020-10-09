@@ -77,6 +77,14 @@
                     "string"
                   ],
                   "default": null
-                }
+                },
+                               {
+                                  "name": "taxCode",
+                                  "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                                  "default": null
+                                }
   ]
  }
