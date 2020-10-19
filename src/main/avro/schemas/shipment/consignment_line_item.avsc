@@ -1,0 +1,36 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "ConsignmentLineItem",
+  "fields": [
+    {
+      "name": "material",
+      "type": [
+        "null",
+        "com.fretron.Model.Materials"
+      ],
+      "default": null
+    },
+    {
+      "name": "customerMaterial",
+      "type": [
+        "null",
+        "com.fretron.Model.Materials"
+      ],
+      "default": null
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+              {
+                 "name": "valueOfGoods",
+                  "type": ["null","double"],
+                   "default" : null
+              }
+  ]
+}
