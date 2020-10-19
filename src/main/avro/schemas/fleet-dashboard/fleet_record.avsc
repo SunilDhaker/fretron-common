@@ -139,6 +139,11 @@
                                }
                              ],
               "default": null
+            },
+             {
+              "name": "vehicleSupervisor",
+               "type": ["null" ,"com.fretron.Model.UserOrgACL"],
+              "default": null
             }
     ]
   }
