@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Document extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8633715940263458128L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = 6014416094311608579L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Document\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Boolean isExpirable;
@@ -24,6 +24,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String previewString;
   @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+  @Deprecated public java.lang.Long createdAt;
+  @Deprecated public java.lang.String createdBy;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +47,10 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
    * @param name The new value for name
    * @param previewString The new value for previewString
    * @param customFields The new value for customFields
+   * @param createdAt The new value for createdAt
+   * @param createdBy The new value for createdBy
    */
-  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId, java.lang.String name, java.lang.String previewString, java.util.List<com.fretron.Model.LiteCustomFields> customFields) {
+  public Document(java.lang.String uuid, java.lang.Boolean isExpirable, java.lang.Long expireDate, java.lang.String resourceType, java.lang.String resourceId, java.lang.String docPath, java.lang.String downloadUrl, java.lang.String orgId, java.lang.String name, java.lang.String previewString, java.util.List<com.fretron.Model.LiteCustomFields> customFields, java.lang.Long createdAt, java.lang.String createdBy) {
     this.uuid = uuid;
     this.isExpirable = isExpirable;
     this.expireDate = expireDate;
@@ -58,6 +62,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     this.name = name;
     this.previewString = previewString;
     this.customFields = customFields;
+    this.createdAt = createdAt;
+    this.createdBy = createdBy;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +81,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 8: return name;
     case 9: return previewString;
     case 10: return customFields;
+    case 11: return createdAt;
+    case 12: return createdBy;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +102,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     case 8: name = (java.lang.String)value$; break;
     case 9: previewString = (java.lang.String)value$; break;
     case 10: customFields = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
+    case 11: createdAt = (java.lang.Long)value$; break;
+    case 12: createdBy = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +285,38 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'createdAt' field.
+   * @return The value of the 'createdAt' field.
+   */
+  public java.lang.Long getCreatedAt() {
+    return createdAt;
+  }
+
+  /**
+   * Sets the value of the 'createdAt' field.
+   * @param value the value to set.
+   */
+  public void setCreatedAt(java.lang.Long value) {
+    this.createdAt = value;
+  }
+
+  /**
+   * Gets the value of the 'createdBy' field.
+   * @return The value of the 'createdBy' field.
+   */
+  public java.lang.String getCreatedBy() {
+    return createdBy;
+  }
+
+  /**
+   * Sets the value of the 'createdBy' field.
+   * @param value the value to set.
+   */
+  public void setCreatedBy(java.lang.String value) {
+    this.createdBy = value;
+  }
+
+  /**
    * Creates a new Document RecordBuilder.
    * @return A new Document RecordBuilder
    */
@@ -317,6 +359,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String name;
     private java.lang.String previewString;
     private java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+    private java.lang.Long createdAt;
+    private java.lang.String createdBy;
 
     /** Creates a new Builder */
     private Builder() {
@@ -373,6 +417,14 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         this.customFields = data().deepCopy(fields()[10].schema(), other.customFields);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.createdAt)) {
+        this.createdAt = data().deepCopy(fields()[11].schema(), other.createdAt);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.createdBy)) {
+        this.createdBy = data().deepCopy(fields()[12].schema(), other.createdBy);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -424,6 +476,14 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       if (isValidValue(fields()[10], other.customFields)) {
         this.customFields = data().deepCopy(fields()[10].schema(), other.customFields);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.createdAt)) {
+        this.createdAt = data().deepCopy(fields()[11].schema(), other.createdAt);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.createdBy)) {
+        this.createdBy = data().deepCopy(fields()[12].schema(), other.createdBy);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -856,6 +916,84 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
       return this;
     }
 
+    /**
+      * Gets the value of the 'createdAt' field.
+      * @return The value.
+      */
+    public java.lang.Long getCreatedAt() {
+      return createdAt;
+    }
+
+    /**
+      * Sets the value of the 'createdAt' field.
+      * @param value The value of 'createdAt'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setCreatedAt(java.lang.Long value) {
+      validate(fields()[11], value);
+      this.createdAt = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'createdAt' field has been set.
+      * @return True if the 'createdAt' field has been set, false otherwise.
+      */
+    public boolean hasCreatedAt() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'createdAt' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearCreatedAt() {
+      createdAt = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'createdBy' field.
+      * @return The value.
+      */
+    public java.lang.String getCreatedBy() {
+      return createdBy;
+    }
+
+    /**
+      * Sets the value of the 'createdBy' field.
+      * @param value The value of 'createdBy'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder setCreatedBy(java.lang.String value) {
+      validate(fields()[12], value);
+      this.createdBy = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'createdBy' field has been set.
+      * @return True if the 'createdBy' field has been set, false otherwise.
+      */
+    public boolean hasCreatedBy() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'createdBy' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Document.Builder clearCreatedBy() {
+      createdBy = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public Document build() {
       try {
@@ -871,6 +1009,8 @@ public class Document extends org.apache.avro.specific.SpecificRecordBase implem
         record.name = fieldSetFlags()[8] ? this.name : (java.lang.String) defaultValue(fields()[8]);
         record.previewString = fieldSetFlags()[9] ? this.previewString : (java.lang.String) defaultValue(fields()[9]);
         record.customFields = fieldSetFlags()[10] ? this.customFields : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[10]);
+        record.createdAt = fieldSetFlags()[11] ? this.createdAt : (java.lang.Long) defaultValue(fields()[11]);
+        record.createdBy = fieldSetFlags()[12] ? this.createdBy : (java.lang.String) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
