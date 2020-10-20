@@ -57,7 +57,15 @@
                 }
               ],
               "default": null
-            }
+            },
+            {
+                           "name": "consignmentLineItemId",
+                            "type": [
+                                      "null",
+                                       "string"
+                                     ],
+                            "default": null
+                  }
 
   ]
 }
