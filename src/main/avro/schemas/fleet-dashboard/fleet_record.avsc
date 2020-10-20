@@ -144,7 +144,14 @@
               "name": "vehicleSupervisor",
                "type": ["null" ,"com.fretron.Model.User"],
               "default": null
-            }
+            },
+            {
+                  "name": "activeIssuesCount",
+                  "type": [
+                    "null",
+                    "int"
+                  ]
+                }
     ]
   }
 ]
