@@ -1,6 +1,8 @@
 package com.fretron.Extensions
 
-fun  Consignment.clean(){
+import com.fretron.Model.Consignment
+
+fun Consignment.clean(){
     this.getConsignee()?.clean()
     this.getConsigner()?.clean()
     this.getBillToParty()?.clean()
