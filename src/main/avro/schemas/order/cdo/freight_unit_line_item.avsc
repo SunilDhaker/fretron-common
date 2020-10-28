@@ -52,13 +52,13 @@
             "default": null
            } ,
             {
-                    "name": "optimisationBasis",
-                    "type": [
+               "name": "optimisationBasis",
+               "type": [
                                "null",
                                "string"
                            ],
-                    "default": null
-                   },
+               "default": null
+           },
                    {
                      "name": "utilization",
                      "type": [
@@ -123,12 +123,12 @@
                                ],
                       "default": null
                    } ,
-                    {
+                  {
                            "name": "expectedStageEndTime",
                            "type": [
-                                                                          "null",
-                                                                           "long"
-                                                                       ],
+                                       "null",
+                                       "long"
+                                   ],
                             "default": null
                  } ,
                  {
