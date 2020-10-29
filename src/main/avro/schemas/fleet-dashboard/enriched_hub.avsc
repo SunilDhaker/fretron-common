@@ -2,7 +2,7 @@
  {
      "namespace": "com.fretron.Model",
      "type": "record",
-     "name": "FleetHub",
+     "name": "EnrichedHub",
      "fields": [
          {
 
@@ -18,6 +18,12 @@
         "name": "evaluationLocation",
         "type": ["null" ,"com.fretron.Model.LitePosition"],
         "default" : null
+      },
+      {
+         "name": "lastEvaluationTime",
+         "type": ["null","long"],
+         "logicalType": "timestamp-millis",
+         "default" : null
       }
 
          ]

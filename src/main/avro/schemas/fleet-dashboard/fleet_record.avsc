@@ -155,7 +155,7 @@
             {
               "name": "currentNearestHub",
 
-              "type": ["null" ,"com.fretron.Model.FleetHub"],
+              "type": ["null" ,"com.fretron.Model.EnrichedHub"],
               "default": null
               }
     ]
