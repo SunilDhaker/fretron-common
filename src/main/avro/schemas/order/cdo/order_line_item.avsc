@@ -196,13 +196,13 @@
                                 ],
                              "default": null
                 },
-              {
+               {
                   "name": "material",
                    "type": [
-                                                    "null",
-                                                    "com.fretron.Model.Materials"
-                                                  ],
-                     "default": null
+                             "null",
+                              "com.fretron.Model.Materials"
+                            ],
+                   "default": null
                },
                {
                   "name": "service",
@@ -211,7 +211,15 @@
                                    "com.fretron.Model.Materials"
                           ],
                      "default": null
-                }
+                },
+                {
+                    "name": "customerMaterial",
+                     "type": [
+                                "null",
+                                 "com.fretron.Model.Materials"
+                              ],
+                     "default": null
+                 }
 
   ]
 }

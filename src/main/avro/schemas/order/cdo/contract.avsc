@@ -393,6 +393,17 @@
                                          }
                                ],
                       "default": null
-                  }
+                  },
+                  {
+                      "name": "allowedCustomerMaterials",
+                       "type": [
+                                  "null",
+                                  {
+                                      "type": "array",
+                                      "items": "com.fretron.Model.Materials"
+                                  }
+                              ],
+                        "default": null
+                    }
 	]
 }
