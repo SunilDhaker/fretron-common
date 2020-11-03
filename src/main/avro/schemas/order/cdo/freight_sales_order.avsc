@@ -92,22 +92,6 @@
         "default": null
      },
      {
-       "name": "truckLoadType",
-        "type": [
-                        "null",
-                        "string"
-                      ],
-        "default": null
-     },
-     {
-        "name": "numberOfVehicle",
-             "type": [
-                             "null",
-                             "string"
-                           ],
-         "default": null
-     },
-     {
              "name": "orderDate",
               "type": [
                          "null",
@@ -208,17 +192,6 @@
               "default": null
       },
       {
-         "name": "allowedVehicleTypes",
-          "type": [
-                         "null",
-                         {
-                            "type": "array",
-                             "items": "string"
-                         }
-                       ],
-         "default": null
-      },
-      {
         "name": "toleranceQuantity",
         "type": [
                   "null",
@@ -296,22 +269,6 @@
                                 }
                               ],
                  "default": null
-            },
-             {
-                              "name": "material",
-                               "type": [
-                                                                "null",
-                                                                "com.fretron.Model.Materials"
-                                                              ],
-                                 "default": null
-               },
-                  {
-                              "name": "service",
-                               "type": [
-                                            "null",
-                                               "com.fretron.Model.Materials"
-                                      ],
-                                 "default": null
-                   }
+            }
   ]
 }

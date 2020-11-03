@@ -200,9 +200,9 @@
                   "name": "material",
                    "type": [
                              "null",
-                              "com.fretron.Model.Materials"
-                            ],
-                   "default": null
+                                "com.fretron.Model.Materials"
+                              ],
+                     "default": null
                },
                {
                   "name": "service",
