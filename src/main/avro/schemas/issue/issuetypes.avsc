@@ -168,6 +168,17 @@
             }
           ],
           "default": null
-        }
+        },
+     {
+               "name": "linkedIssue",
+               "type": [
+                 "null",
+                 {
+                   "type": "array",
+                   "items": "string"
+                 }
+               ],
+               "default": null
+             }
   ]
 }
