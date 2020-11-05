@@ -157,7 +157,17 @@
 
               "type": ["null" ,"com.fretron.Model.EnrichedHub"],
               "default": null
-              }
+             },
+              {
+
+                  "name": "currentHubDetails",
+                  "type": [
+                           "null",
+                           "com.fretron.Model.Place"
+                                 ],
+                         "default": null
+
+               }
     ]
   }
 ]
