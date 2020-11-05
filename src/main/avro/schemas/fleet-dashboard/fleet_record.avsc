@@ -151,7 +151,13 @@
                     "null",
                     "int"
                   ]
-                }
+                },
+            {
+              "name": "currentNearestHub",
+
+              "type": ["null" ,"com.fretron.Model.EnrichedHub"],
+              "default": null
+              }
     ]
   }
 ]

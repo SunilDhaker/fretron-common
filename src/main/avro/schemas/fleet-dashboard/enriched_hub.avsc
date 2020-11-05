@@ -1,0 +1,31 @@
+[
+ {
+     "namespace": "com.fretron.Model",
+     "type": "record",
+     "name": "EnrichedHub",
+     "fields": [
+         {
+
+            "name": "hub",
+            "type": [
+              "null",
+              "com.fretron.Model.Place"
+                    ],
+            "default": null
+
+         },
+      {
+        "name": "evaluationLocation",
+        "type": ["null" ,"com.fretron.Model.LitePosition"],
+        "default" : null
+      },
+      {
+         "name": "lastEvaluationTime",
+         "type": ["null","long"],
+         "logicalType": "timestamp-millis",
+         "default" : null
+      }
+
+         ]
+  }
+]
