@@ -418,6 +418,17 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+         "name": "subIssues",
+         "type": [
+           "null",
+           {
+             "type": "array",
+             "items": "string"
+           }
+         ],
+         "default": null
+       }
   ]
 }
