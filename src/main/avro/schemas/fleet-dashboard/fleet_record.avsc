@@ -139,7 +139,35 @@
                                }
                              ],
               "default": null
-            }
+            },
+             {
+              "name": "vehicleSupervisor",
+               "type": ["null" ,"com.fretron.Model.User"],
+              "default": null
+            },
+            {
+                  "name": "activeIssuesCount",
+                  "type": [
+                    "null",
+                    "int"
+                  ]
+                },
+            {
+              "name": "currentNearestHub",
+
+              "type": ["null" ,"com.fretron.Model.EnrichedHub"],
+              "default": null
+             },
+              {
+
+                  "name": "currentHubDetails",
+                  "type": [
+                           "null",
+                           "com.fretron.Model.Place"
+                                 ],
+                         "default": null
+
+               }
     ]
   }
 ]

@@ -157,6 +157,28 @@
         "string"
       ],
       "default": null
-    }
+    },
+     {
+          "name": "sharedDepartments",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+          ],
+          "default": null
+        },
+     {
+               "name": "linkedIssue",
+               "type": [
+                 "null",
+                 {
+                   "type": "array",
+                   "items": "string"
+                 }
+               ],
+               "default": null
+             }
   ]
 }

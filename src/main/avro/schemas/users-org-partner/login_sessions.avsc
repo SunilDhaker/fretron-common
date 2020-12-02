@@ -70,7 +70,12 @@
           "name": "pushTokenService",
           "type": ["null" , "string"],
           "default" : null
-    }
+    },
+      {
+              "name": "app",
+              "type": ["null" , "string"],
+              "default" : null
+        }
 
 
 
