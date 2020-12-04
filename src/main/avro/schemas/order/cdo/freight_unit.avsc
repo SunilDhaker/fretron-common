@@ -108,6 +108,17 @@
                          "string"
                             ],
           "default": null
+        },
+        {
+            "name": "issues",
+             "type": [
+                                        "null",
+                                        {
+                                          "type": "array",
+                                          "items": "com.fretron.Model.Issue"
+                                        }
+                                      ],
+             "default": null
         }
   ]
 }
