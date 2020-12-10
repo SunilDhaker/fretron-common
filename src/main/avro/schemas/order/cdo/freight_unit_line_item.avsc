@@ -138,6 +138,17 @@
                                "long"
                               ],
                       "default": null
+                 } ,
+                 {
+                        "name": "issues",
+                          "type": [
+                                       "null",
+                                                 {
+                                                      "type": "array",
+                                                       "items": "string"
+                                                  }
+                                                ],
+                          "default": null
                  }
 
   ]
