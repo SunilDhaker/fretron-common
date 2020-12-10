@@ -126,6 +126,14 @@
                                                                               "com.fretron.Model.Updates"
                                                                             ],
                                                                             "default": null
-                                                                          }
+                                                                          },
+                                                                            {
+                                                                              "name": "feedingStatus",
+                                                                              "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                              ],
+                                                                              "default": null
+                                                                            }
   ]
 }
