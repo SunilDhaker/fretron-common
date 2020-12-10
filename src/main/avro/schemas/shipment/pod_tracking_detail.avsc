@@ -1,0 +1,65 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "PodTrackingDetail",
+  "fields": [
+    {
+      "name": "currentState",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "currentStateDetail",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "currentStateSince",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "nextState",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "nextStateDetail",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "nextStateExpectedTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "trackingRemark",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

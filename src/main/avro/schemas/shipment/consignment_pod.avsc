@@ -134,6 +134,14 @@
                                                                                 "string"
                                                                               ],
                                                                               "default": null
-                                                                            }
+                                                                            },
+                                                                                                                                                        {
+                                                                                                                                                          "name": "trackingDetail",
+                                                                                                                                                          "type": [
+                                                                                                                                                            "null",
+                                                                                                                                                            "com.fretron.Model.PodTrackingDetail"
+                                                                                                                                                          ],
+                                                                                                                                                          "default": null
+                                                                                                                                                        }
   ]
 }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3483438449344156505L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"deliveryItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Document\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"feedingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -6616730622665543360L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"deliveryItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Document\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"feedingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingDetail\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PodTrackingDetail\",\"fields\":[{\"name\":\"currentState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateDetail\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"nextState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateDetail\",\"type\":[\"nu","ll\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateExpectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"trackingRemark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.util.List<com.fretron.Model.Document> documents;
@@ -28,6 +28,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public java.util.List<com.fretron.Model.PodDeliveryItem> deliveryItems;
   @Deprecated public com.fretron.Model.Updates updates;
   @Deprecated public java.lang.String feedingStatus;
+  @Deprecated public com.fretron.Model.PodTrackingDetail trackingDetail;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -53,8 +54,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
    * @param deliveryItems The new value for deliveryItems
    * @param updates The new value for updates
    * @param feedingStatus The new value for feedingStatus
+   * @param trackingDetail The new value for trackingDetail
    */
-  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace, java.lang.String uuid, java.lang.String externalId, java.lang.String consignmentId, java.util.List<com.fretron.Model.PodDeliveryItem> deliveryItems, com.fretron.Model.Updates updates, java.lang.String feedingStatus) {
+  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace, java.lang.String uuid, java.lang.String externalId, java.lang.String consignmentId, java.util.List<com.fretron.Model.PodDeliveryItem> deliveryItems, com.fretron.Model.Updates updates, java.lang.String feedingStatus, com.fretron.Model.PodTrackingDetail trackingDetail) {
     this.status = status;
     this.documents = documents;
     this.receiveDate = receiveDate;
@@ -70,6 +72,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     this.deliveryItems = deliveryItems;
     this.updates = updates;
     this.feedingStatus = feedingStatus;
+    this.trackingDetail = trackingDetail;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -91,6 +94,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 12: return deliveryItems;
     case 13: return updates;
     case 14: return feedingStatus;
+    case 15: return trackingDetail;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -114,6 +118,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 12: deliveryItems = (java.util.List<com.fretron.Model.PodDeliveryItem>)value$; break;
     case 13: updates = (com.fretron.Model.Updates)value$; break;
     case 14: feedingStatus = (java.lang.String)value$; break;
+    case 15: trackingDetail = (com.fretron.Model.PodTrackingDetail)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -359,6 +364,22 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'trackingDetail' field.
+   * @return The value of the 'trackingDetail' field.
+   */
+  public com.fretron.Model.PodTrackingDetail getTrackingDetail() {
+    return trackingDetail;
+  }
+
+  /**
+   * Sets the value of the 'trackingDetail' field.
+   * @param value the value to set.
+   */
+  public void setTrackingDetail(com.fretron.Model.PodTrackingDetail value) {
+    this.trackingDetail = value;
+  }
+
+  /**
    * Creates a new ConsignmentPod RecordBuilder.
    * @return A new ConsignmentPod RecordBuilder
    */
@@ -406,6 +427,8 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
     private java.lang.String feedingStatus;
+    private com.fretron.Model.PodTrackingDetail trackingDetail;
+    private com.fretron.Model.PodTrackingDetail.Builder trackingDetailBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -481,6 +504,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         this.feedingStatus = data().deepCopy(fields()[14].schema(), other.feedingStatus);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.trackingDetail)) {
+        this.trackingDetail = data().deepCopy(fields()[15].schema(), other.trackingDetail);
+        fieldSetFlags()[15] = true;
+      }
+      if (other.hasTrackingDetailBuilder()) {
+        this.trackingDetailBuilder = com.fretron.Model.PodTrackingDetail.newBuilder(other.getTrackingDetailBuilder());
+      }
     }
 
     /**
@@ -550,6 +580,11 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         this.feedingStatus = data().deepCopy(fields()[14].schema(), other.feedingStatus);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.trackingDetail)) {
+        this.trackingDetail = data().deepCopy(fields()[15].schema(), other.trackingDetail);
+        fieldSetFlags()[15] = true;
+      }
+      this.trackingDetailBuilder = null;
     }
 
     /**
@@ -1172,6 +1207,80 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       return this;
     }
 
+    /**
+      * Gets the value of the 'trackingDetail' field.
+      * @return The value.
+      */
+    public com.fretron.Model.PodTrackingDetail getTrackingDetail() {
+      return trackingDetail;
+    }
+
+    /**
+      * Sets the value of the 'trackingDetail' field.
+      * @param value The value of 'trackingDetail'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder setTrackingDetail(com.fretron.Model.PodTrackingDetail value) {
+      validate(fields()[15], value);
+      this.trackingDetailBuilder = null;
+      this.trackingDetail = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'trackingDetail' field has been set.
+      * @return True if the 'trackingDetail' field has been set, false otherwise.
+      */
+    public boolean hasTrackingDetail() {
+      return fieldSetFlags()[15];
+    }
+
+    /**
+     * Gets the Builder instance for the 'trackingDetail' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.PodTrackingDetail.Builder getTrackingDetailBuilder() {
+      if (trackingDetailBuilder == null) {
+        if (hasTrackingDetail()) {
+          setTrackingDetailBuilder(com.fretron.Model.PodTrackingDetail.newBuilder(trackingDetail));
+        } else {
+          setTrackingDetailBuilder(com.fretron.Model.PodTrackingDetail.newBuilder());
+        }
+      }
+      return trackingDetailBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'trackingDetail' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ConsignmentPod.Builder setTrackingDetailBuilder(com.fretron.Model.PodTrackingDetail.Builder value) {
+      clearTrackingDetail();
+      trackingDetailBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'trackingDetail' field has an active Builder instance
+     * @return True if the 'trackingDetail' field has an active Builder instance
+     */
+    public boolean hasTrackingDetailBuilder() {
+      return trackingDetailBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'trackingDetail' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder clearTrackingDetail() {
+      trackingDetail = null;
+      trackingDetailBuilder = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public ConsignmentPod build() {
       try {
@@ -1195,6 +1304,11 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
           record.updates = fieldSetFlags()[13] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[13]);
         }
         record.feedingStatus = fieldSetFlags()[14] ? this.feedingStatus : (java.lang.String) defaultValue(fields()[14]);
+        if (trackingDetailBuilder != null) {
+          record.trackingDetail = this.trackingDetailBuilder.build();
+        } else {
+          record.trackingDetail = fieldSetFlags()[15] ? this.trackingDetail : (com.fretron.Model.PodTrackingDetail) defaultValue(fields()[15]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
