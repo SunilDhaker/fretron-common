@@ -126,6 +126,22 @@
                                                                               "com.fretron.Model.Updates"
                                                                             ],
                                                                             "default": null
-                                                                          }
+                                                                          },
+                                                                            {
+                                                                              "name": "feedingStatus",
+                                                                              "type": [
+                                                                                "null",
+                                                                                "string"
+                                                                              ],
+                                                                              "default": null
+                                                                            },
+                                                                                                                                                        {
+                                                                                                                                                          "name": "trackingDetail",
+                                                                                                                                                          "type": [
+                                                                                                                                                            "null",
+                                                                                                                                                            "com.fretron.Model.PodTrackingDetail"
+                                                                                                                                                          ],
+                                                                                                                                                          "default": null
+                                                                                                                                                        }
   ]
 }

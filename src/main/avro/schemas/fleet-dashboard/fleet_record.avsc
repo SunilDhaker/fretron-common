@@ -158,7 +158,7 @@
               "type": ["null" ,"com.fretron.Model.EnrichedHub"],
               "default": null
              },
-              {
+             {
 
                   "name": "currentHubDetails",
                   "type": [
@@ -167,7 +167,13 @@
                                  ],
                          "default": null
 
-               }
+              },
+              {
+                     "name": "isActiveVLR",
+                     "type": "boolean",
+                     "default": false
+              }
+
     ]
   }
 ]
