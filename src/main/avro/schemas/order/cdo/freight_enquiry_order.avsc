@@ -280,6 +280,32 @@
                              }
                              ],
                 "default": null
-             }
+             },
+             {
+                  "name": "expectedResultDeadline",
+                   "type": [
+                                      "null",
+                                       "long"
+                                    ],
+                   "logicalType": "timestamp-millis",
+                     "default": null
+              },
+              {
+                     "name": "quotationDeadline",
+                      "type": [
+                                                    "null",
+                                                     "long"
+                                                  ],
+                      "logicalType": "timestamp-millis",
+                        "default": null
+              },
+              {
+                   "name": "quotationMode",
+                   "type": [
+                                     "null",
+                                   "string"
+                                  ],
+                    "default": null
+                 }
   ]
 }
