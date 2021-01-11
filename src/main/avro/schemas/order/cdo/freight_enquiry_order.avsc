@@ -148,7 +148,7 @@
                       "null",
                       {
                         "type": "array",
-                        "items": "com.fretron.Model.OrderLineItem"
+                        "items": "com.fretron.Model.EnquiryLineItem"
                       }
                     ],
             "default": null

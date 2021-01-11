@@ -1,0 +1,233 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "EnquiryLineItem",
+  "type": "record",
+  "fields": [
+       {
+          "name": "consignee",
+              "type": [
+                        "null",
+                        "com.fretron.Model.BuisnessPartner"
+                           ],
+             "default": null
+        },
+        {
+           "name": "consigner",
+            "type": [
+                       "null",
+                       "com.fretron.Model.BuisnessPartner"
+                    ],
+          "default": null
+        },
+
+        {
+          "name": "expectedPickupDate",
+           "type": [
+                                    "null",
+                                    "long"
+                                  ],
+          "logicalType": "timestamp-millis",
+          "default": null
+        },
+          {
+              "name": "invoiceDate",
+                             "type": [
+                                    "null",
+                                    "long"
+                                  ],
+              "logicalType": "timestamp-millis",
+              "default": null
+          },
+          {
+             "name": "invoiceValue",
+              "type": ["null","double"],
+               "default" : null
+          },
+          {
+                 "name": "invoiceNumber",
+                  "type": ["null",
+                                "string"
+                          ],
+                  "default": null
+           },
+           {
+               "name": "loadInfo",
+                "type": [
+                            "null",
+                            "com.fretron.Model.LoadInfo"
+                        ],
+                "default": null
+          },
+          {
+                 "name": "allowedLoadTypes",
+                  "type": [
+                             "null",
+                             {
+                                "type": "array",
+                                 "items": "com.fretron.Model.LoadType"
+                             }
+                                  ],
+                   "default": null
+          },
+          {
+               "name": "uuid",
+               "type": ["null",
+                             "string"
+                       ],
+              "default": null
+          },
+          {
+              "name": "plannedQuantity",
+              "type": ["null","com.fretron.Model.StandardMeasurement"],
+              "default" : null
+         },
+         {
+              "name": "legType",
+                        "type": ["null",
+                                      "string"
+                                ],
+                 "default": null
+         },
+         {
+            "name": "freightUnitLineItemIds",
+             "type": [
+                           "null",
+                             {
+                               "type": "array",
+                               "items": "string"
+                             }
+                           ],
+            "default": null
+          },
+          {
+             "name": "status",
+             "type": [
+                       "null",
+                       "string"
+                     ],
+             "default": null
+          },
+          {
+                    "name": "fuMappings",
+                    "type": [
+                                  "null",
+                                  {
+                                     "type": "array",
+                                      "items": "com.fretron.Model.FreightUnitMapping"
+                                  }
+                                       ],
+                        "default": null
+            },
+             {
+                  "name": "mappings",
+                  "type": [
+                             "null",
+                        {
+                           "type": "array",
+                           "items": "com.fretron.Model.SalesOrderMapping"
+                        }
+                       ],
+                    "default": null
+                } ,
+                {
+                     "name": "remainingPlannedQuantity",
+                      "type": ["null","com.fretron.Model.StandardMeasurement"],
+                       "default" : null
+               },
+               {
+                  "name": "freightChargeType",
+                   "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                   "default": null
+               },
+                {
+                   "name": "freightChargeRate",
+                    "type": ["null","double"],
+                   "default" : null
+                },
+                 {
+                               "name": "externalId",
+                               "type": ["null",
+                                             "string"
+                                       ],
+                              "default": null
+            },
+            {
+                 "name": "allowedCustomerLoadTypes",
+                  "type": [
+                                         "null",
+                                         {
+                                            "type": "array",
+                                             "items": "com.fretron.Model.LoadType"
+                                         }
+                                              ],
+                   "default": null
+             },
+              {
+                  "name": "allowedTransitDays",
+                   "type": [
+                              "null",
+                              "long"
+                           ],
+                  "logicalType": "timestamp-millis",
+                   "default": null
+              },
+               {
+                          "name": "auctionIds",
+                           "type": [
+                                         "null",
+                                           {
+                                             "type": "array",
+                                             "items": "string"
+                                           }
+                                         ],
+                          "default": null
+               },
+               {
+                       "name": "customFields",
+                        "type": [
+                                    "null",
+                                {
+                                   "type": "array",
+                                  "items": "com.fretron.Model.LiteCustomFields"
+                                }
+                                ],
+                             "default": null
+                },
+               {
+                  "name": "material",
+                   "type": [
+                             "null",
+                                "com.fretron.Model.Materials"
+                              ],
+                     "default": null
+               },
+               {
+                  "name": "service",
+                   "type": [
+                                "null",
+                                   "com.fretron.Model.Materials"
+                          ],
+                     "default": null
+                },
+                {
+                    "name": "customerMaterial",
+                     "type": [
+                                "null",
+                                 "com.fretron.Model.Materials"
+                              ],
+                     "default": null
+                 } ,
+                {
+                     "name": "consignmentBranch",
+                        "type": [
+                                     "null",
+                                       "com.fretron.Model.OrgOffice"
+                                 ],
+                           "default": null
+                  }
+
+  ]
+}
