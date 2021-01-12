@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Notification extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7173854884399887657L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Notification\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scope\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"title\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushACKId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mailACKIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"readOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isRead\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"mailThreadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 360396799199258630L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Notification\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scope\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"title\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushACKId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mailACKIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"readOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isRead\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"mailThreadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounced\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"commandId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processed\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String subscriber;
@@ -36,6 +36,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.Long readOn;
   @Deprecated public java.lang.Boolean isRead;
   @Deprecated public java.lang.String mailThreadId;
+  @Deprecated public java.lang.Boolean debounced;
+  @Deprecated public java.lang.String commandId;
+  @Deprecated public java.lang.Boolean processed;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -69,8 +72,11 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
    * @param readOn The new value for readOn
    * @param isRead The new value for isRead
    * @param mailThreadId The new value for mailThreadId
+   * @param debounced The new value for debounced
+   * @param commandId The new value for commandId
+   * @param processed The new value for processed
    */
-  public Notification(java.lang.String uuid, java.lang.String subscriber, java.lang.String orgId, java.lang.String type, java.lang.String scope, java.lang.String email, java.lang.String mobileNumber, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String title, java.lang.String content, java.lang.String htmlContent, java.lang.String pushACKId, java.lang.String redirectURL, java.util.List<java.lang.String> mailACKIds, java.lang.Long createdOn, java.lang.Long readOn, java.lang.Boolean isRead, java.lang.String mailThreadId) {
+  public Notification(java.lang.String uuid, java.lang.String subscriber, java.lang.String orgId, java.lang.String type, java.lang.String scope, java.lang.String email, java.lang.String mobileNumber, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String title, java.lang.String content, java.lang.String htmlContent, java.lang.String pushACKId, java.lang.String redirectURL, java.util.List<java.lang.String> mailACKIds, java.lang.Long createdOn, java.lang.Long readOn, java.lang.Boolean isRead, java.lang.String mailThreadId, java.lang.Boolean debounced, java.lang.String commandId, java.lang.Boolean processed) {
     this.uuid = uuid;
     this.subscriber = subscriber;
     this.orgId = orgId;
@@ -94,6 +100,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
     this.readOn = readOn;
     this.isRead = isRead;
     this.mailThreadId = mailThreadId;
+    this.debounced = debounced;
+    this.commandId = commandId;
+    this.processed = processed;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -123,6 +132,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
     case 20: return readOn;
     case 21: return isRead;
     case 22: return mailThreadId;
+    case 23: return debounced;
+    case 24: return commandId;
+    case 25: return processed;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -154,6 +166,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
     case 20: readOn = (java.lang.Long)value$; break;
     case 21: isRead = (java.lang.Boolean)value$; break;
     case 22: mailThreadId = (java.lang.String)value$; break;
+    case 23: debounced = (java.lang.Boolean)value$; break;
+    case 24: commandId = (java.lang.String)value$; break;
+    case 25: processed = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -527,6 +542,54 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'debounced' field.
+   * @return The value of the 'debounced' field.
+   */
+  public java.lang.Boolean getDebounced() {
+    return debounced;
+  }
+
+  /**
+   * Sets the value of the 'debounced' field.
+   * @param value the value to set.
+   */
+  public void setDebounced(java.lang.Boolean value) {
+    this.debounced = value;
+  }
+
+  /**
+   * Gets the value of the 'commandId' field.
+   * @return The value of the 'commandId' field.
+   */
+  public java.lang.String getCommandId() {
+    return commandId;
+  }
+
+  /**
+   * Sets the value of the 'commandId' field.
+   * @param value the value to set.
+   */
+  public void setCommandId(java.lang.String value) {
+    this.commandId = value;
+  }
+
+  /**
+   * Gets the value of the 'processed' field.
+   * @return The value of the 'processed' field.
+   */
+  public java.lang.Boolean getProcessed() {
+    return processed;
+  }
+
+  /**
+   * Sets the value of the 'processed' field.
+   * @param value the value to set.
+   */
+  public void setProcessed(java.lang.Boolean value) {
+    this.processed = value;
+  }
+
+  /**
    * Creates a new Notification RecordBuilder.
    * @return A new Notification RecordBuilder
    */
@@ -581,6 +644,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.Long readOn;
     private java.lang.Boolean isRead;
     private java.lang.String mailThreadId;
+    private java.lang.Boolean debounced;
+    private java.lang.String commandId;
+    private java.lang.Boolean processed;
 
     /** Creates a new Builder */
     private Builder() {
@@ -685,6 +751,18 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
         this.mailThreadId = data().deepCopy(fields()[22].schema(), other.mailThreadId);
         fieldSetFlags()[22] = true;
       }
+      if (isValidValue(fields()[23], other.debounced)) {
+        this.debounced = data().deepCopy(fields()[23].schema(), other.debounced);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.commandId)) {
+        this.commandId = data().deepCopy(fields()[24].schema(), other.commandId);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.processed)) {
+        this.processed = data().deepCopy(fields()[25].schema(), other.processed);
+        fieldSetFlags()[25] = true;
+      }
     }
 
     /**
@@ -784,6 +862,18 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[22], other.mailThreadId)) {
         this.mailThreadId = data().deepCopy(fields()[22].schema(), other.mailThreadId);
         fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.debounced)) {
+        this.debounced = data().deepCopy(fields()[23].schema(), other.debounced);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.commandId)) {
+        this.commandId = data().deepCopy(fields()[24].schema(), other.commandId);
+        fieldSetFlags()[24] = true;
+      }
+      if (isValidValue(fields()[25], other.processed)) {
+        this.processed = data().deepCopy(fields()[25].schema(), other.processed);
+        fieldSetFlags()[25] = true;
       }
     }
 
@@ -1684,6 +1774,123 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'debounced' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getDebounced() {
+      return debounced;
+    }
+
+    /**
+      * Sets the value of the 'debounced' field.
+      * @param value The value of 'debounced'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder setDebounced(java.lang.Boolean value) {
+      validate(fields()[23], value);
+      this.debounced = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'debounced' field has been set.
+      * @return True if the 'debounced' field has been set, false otherwise.
+      */
+    public boolean hasDebounced() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'debounced' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder clearDebounced() {
+      debounced = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'commandId' field.
+      * @return The value.
+      */
+    public java.lang.String getCommandId() {
+      return commandId;
+    }
+
+    /**
+      * Sets the value of the 'commandId' field.
+      * @param value The value of 'commandId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder setCommandId(java.lang.String value) {
+      validate(fields()[24], value);
+      this.commandId = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'commandId' field has been set.
+      * @return True if the 'commandId' field has been set, false otherwise.
+      */
+    public boolean hasCommandId() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'commandId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder clearCommandId() {
+      commandId = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'processed' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getProcessed() {
+      return processed;
+    }
+
+    /**
+      * Sets the value of the 'processed' field.
+      * @param value The value of 'processed'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder setProcessed(java.lang.Boolean value) {
+      validate(fields()[25], value);
+      this.processed = value;
+      fieldSetFlags()[25] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'processed' field has been set.
+      * @return True if the 'processed' field has been set, false otherwise.
+      */
+    public boolean hasProcessed() {
+      return fieldSetFlags()[25];
+    }
+
+
+    /**
+      * Clears the value of the 'processed' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Notification.Builder clearProcessed() {
+      processed = null;
+      fieldSetFlags()[25] = false;
+      return this;
+    }
+
     @Override
     public Notification build() {
       try {
@@ -1711,6 +1918,9 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
         record.readOn = fieldSetFlags()[20] ? this.readOn : (java.lang.Long) defaultValue(fields()[20]);
         record.isRead = fieldSetFlags()[21] ? this.isRead : (java.lang.Boolean) defaultValue(fields()[21]);
         record.mailThreadId = fieldSetFlags()[22] ? this.mailThreadId : (java.lang.String) defaultValue(fields()[22]);
+        record.debounced = fieldSetFlags()[23] ? this.debounced : (java.lang.Boolean) defaultValue(fields()[23]);
+        record.commandId = fieldSetFlags()[24] ? this.commandId : (java.lang.String) defaultValue(fields()[24]);
+        record.processed = fieldSetFlags()[25] ? this.processed : (java.lang.Boolean) defaultValue(fields()[25]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

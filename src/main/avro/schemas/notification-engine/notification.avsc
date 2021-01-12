@@ -194,6 +194,30 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "debounced",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "commandId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "processed",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
   ]
 }
