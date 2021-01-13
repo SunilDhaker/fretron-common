@@ -9,9 +9,9 @@ import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
-public class Notification extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 360396799199258630L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Notification\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scope\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"title\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushACKId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mailACKIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"readOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isRead\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"mailThreadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounced\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"commandId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processed\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+public class NotificationEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = -4894612008600282144L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationEvent\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scope\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"title\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushACKId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mailACKIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"readOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isRead\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"mailThreadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounced\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"commandId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"processed\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String subscriber;
@@ -45,7 +45,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public Notification() {}
+  public NotificationEvent() {}
 
   /**
    * All-args constructor.
@@ -76,7 +76,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
    * @param commandId The new value for commandId
    * @param processed The new value for processed
    */
-  public Notification(java.lang.String uuid, java.lang.String subscriber, java.lang.String orgId, java.lang.String type, java.lang.String scope, java.lang.String email, java.lang.String mobileNumber, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String title, java.lang.String content, java.lang.String htmlContent, java.lang.String pushACKId, java.lang.String redirectURL, java.util.List<java.lang.String> mailACKIds, java.lang.Long createdOn, java.lang.Long readOn, java.lang.Boolean isRead, java.lang.String mailThreadId, java.lang.Boolean debounced, java.lang.String commandId, java.lang.Boolean processed) {
+  public NotificationEvent(java.lang.String uuid, java.lang.String subscriber, java.lang.String orgId, java.lang.String type, java.lang.String scope, java.lang.String email, java.lang.String mobileNumber, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String title, java.lang.String content, java.lang.String htmlContent, java.lang.String pushACKId, java.lang.String redirectURL, java.util.List<java.lang.String> mailACKIds, java.lang.Long createdOn, java.lang.Long readOn, java.lang.Boolean isRead, java.lang.String mailThreadId, java.lang.Boolean debounced, java.lang.String commandId, java.lang.Boolean processed) {
     this.uuid = uuid;
     this.subscriber = subscriber;
     this.orgId = orgId;
@@ -590,36 +590,36 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
-   * Creates a new Notification RecordBuilder.
-   * @return A new Notification RecordBuilder
+   * Creates a new NotificationEvent RecordBuilder.
+   * @return A new NotificationEvent RecordBuilder
    */
-  public static com.fretron.Model.Notification.Builder newBuilder() {
-    return new com.fretron.Model.Notification.Builder();
+  public static com.fretron.Model.NotificationEvent.Builder newBuilder() {
+    return new com.fretron.Model.NotificationEvent.Builder();
   }
 
   /**
-   * Creates a new Notification RecordBuilder by copying an existing Builder.
+   * Creates a new NotificationEvent RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new Notification RecordBuilder
+   * @return A new NotificationEvent RecordBuilder
    */
-  public static com.fretron.Model.Notification.Builder newBuilder(com.fretron.Model.Notification.Builder other) {
-    return new com.fretron.Model.Notification.Builder(other);
+  public static com.fretron.Model.NotificationEvent.Builder newBuilder(com.fretron.Model.NotificationEvent.Builder other) {
+    return new com.fretron.Model.NotificationEvent.Builder(other);
   }
 
   /**
-   * Creates a new Notification RecordBuilder by copying an existing Notification instance.
+   * Creates a new NotificationEvent RecordBuilder by copying an existing NotificationEvent instance.
    * @param other The existing instance to copy.
-   * @return A new Notification RecordBuilder
+   * @return A new NotificationEvent RecordBuilder
    */
-  public static com.fretron.Model.Notification.Builder newBuilder(com.fretron.Model.Notification other) {
-    return new com.fretron.Model.Notification.Builder(other);
+  public static com.fretron.Model.NotificationEvent.Builder newBuilder(com.fretron.Model.NotificationEvent other) {
+    return new com.fretron.Model.NotificationEvent.Builder(other);
   }
 
   /**
-   * RecordBuilder for Notification instances.
+   * RecordBuilder for NotificationEvent instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Notification>
-    implements org.apache.avro.data.RecordBuilder<Notification> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<NotificationEvent>
+    implements org.apache.avro.data.RecordBuilder<NotificationEvent> {
 
     private java.lang.String uuid;
     private java.lang.String subscriber;
@@ -657,7 +657,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.fretron.Model.Notification.Builder other) {
+    private Builder(com.fretron.Model.NotificationEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -766,10 +766,10 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
     }
 
     /**
-     * Creates a Builder by copying an existing Notification instance
+     * Creates a Builder by copying an existing NotificationEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.fretron.Model.Notification other) {
+    private Builder(com.fretron.Model.NotificationEvent other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -890,7 +890,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'uuid'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setUuid(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setUuid(java.lang.String value) {
       validate(fields()[0], value);
       this.uuid = value;
       fieldSetFlags()[0] = true;
@@ -910,7 +910,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'uuid' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearUuid() {
+    public com.fretron.Model.NotificationEvent.Builder clearUuid() {
       uuid = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -929,7 +929,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'subscriber'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setSubscriber(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setSubscriber(java.lang.String value) {
       validate(fields()[1], value);
       this.subscriber = value;
       fieldSetFlags()[1] = true;
@@ -949,7 +949,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'subscriber' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearSubscriber() {
+    public com.fretron.Model.NotificationEvent.Builder clearSubscriber() {
       subscriber = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -968,7 +968,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'orgId'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setOrgId(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setOrgId(java.lang.String value) {
       validate(fields()[2], value);
       this.orgId = value;
       fieldSetFlags()[2] = true;
@@ -988,7 +988,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'orgId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearOrgId() {
+    public com.fretron.Model.NotificationEvent.Builder clearOrgId() {
       orgId = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -1007,7 +1007,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'type'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setType(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setType(java.lang.String value) {
       validate(fields()[3], value);
       this.type = value;
       fieldSetFlags()[3] = true;
@@ -1027,7 +1027,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'type' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearType() {
+    public com.fretron.Model.NotificationEvent.Builder clearType() {
       type = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -1046,7 +1046,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'scope'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setScope(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setScope(java.lang.String value) {
       validate(fields()[4], value);
       this.scope = value;
       fieldSetFlags()[4] = true;
@@ -1066,7 +1066,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'scope' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearScope() {
+    public com.fretron.Model.NotificationEvent.Builder clearScope() {
       scope = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -1085,7 +1085,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'email'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setEmail(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setEmail(java.lang.String value) {
       validate(fields()[5], value);
       this.email = value;
       fieldSetFlags()[5] = true;
@@ -1105,7 +1105,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'email' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearEmail() {
+    public com.fretron.Model.NotificationEvent.Builder clearEmail() {
       email = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -1124,7 +1124,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'mobileNumber'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setMobileNumber(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setMobileNumber(java.lang.String value) {
       validate(fields()[6], value);
       this.mobileNumber = value;
       fieldSetFlags()[6] = true;
@@ -1144,7 +1144,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'mobileNumber' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearMobileNumber() {
+    public com.fretron.Model.NotificationEvent.Builder clearMobileNumber() {
       mobileNumber = null;
       fieldSetFlags()[6] = false;
       return this;
@@ -1163,7 +1163,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'module'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setModule(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setModule(java.lang.String value) {
       validate(fields()[7], value);
       this.module = value;
       fieldSetFlags()[7] = true;
@@ -1183,7 +1183,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'module' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearModule() {
+    public com.fretron.Model.NotificationEvent.Builder clearModule() {
       module = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -1202,7 +1202,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'channels'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setChannels(java.util.List<java.lang.String> value) {
+    public com.fretron.Model.NotificationEvent.Builder setChannels(java.util.List<java.lang.String> value) {
       validate(fields()[8], value);
       this.channels = value;
       fieldSetFlags()[8] = true;
@@ -1222,7 +1222,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'channels' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearChannels() {
+    public com.fretron.Model.NotificationEvent.Builder clearChannels() {
       channels = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -1241,7 +1241,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'resourceId'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setResourceId(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setResourceId(java.lang.String value) {
       validate(fields()[9], value);
       this.resourceId = value;
       fieldSetFlags()[9] = true;
@@ -1261,7 +1261,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'resourceId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearResourceId() {
+    public com.fretron.Model.NotificationEvent.Builder clearResourceId() {
       resourceId = null;
       fieldSetFlags()[9] = false;
       return this;
@@ -1280,7 +1280,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'resourceIdentifier'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setResourceIdentifier(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setResourceIdentifier(java.lang.String value) {
       validate(fields()[10], value);
       this.resourceIdentifier = value;
       fieldSetFlags()[10] = true;
@@ -1300,7 +1300,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'resourceIdentifier' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearResourceIdentifier() {
+    public com.fretron.Model.NotificationEvent.Builder clearResourceIdentifier() {
       resourceIdentifier = null;
       fieldSetFlags()[10] = false;
       return this;
@@ -1319,7 +1319,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'resourceType'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setResourceType(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setResourceType(java.lang.String value) {
       validate(fields()[11], value);
       this.resourceType = value;
       fieldSetFlags()[11] = true;
@@ -1339,7 +1339,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'resourceType' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearResourceType() {
+    public com.fretron.Model.NotificationEvent.Builder clearResourceType() {
       resourceType = null;
       fieldSetFlags()[11] = false;
       return this;
@@ -1358,7 +1358,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'eventName'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setEventName(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setEventName(java.lang.String value) {
       validate(fields()[12], value);
       this.eventName = value;
       fieldSetFlags()[12] = true;
@@ -1378,7 +1378,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'eventName' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearEventName() {
+    public com.fretron.Model.NotificationEvent.Builder clearEventName() {
       eventName = null;
       fieldSetFlags()[12] = false;
       return this;
@@ -1397,7 +1397,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'title'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setTitle(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setTitle(java.lang.String value) {
       validate(fields()[13], value);
       this.title = value;
       fieldSetFlags()[13] = true;
@@ -1417,7 +1417,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'title' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearTitle() {
+    public com.fretron.Model.NotificationEvent.Builder clearTitle() {
       title = null;
       fieldSetFlags()[13] = false;
       return this;
@@ -1436,7 +1436,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'content'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setContent(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setContent(java.lang.String value) {
       validate(fields()[14], value);
       this.content = value;
       fieldSetFlags()[14] = true;
@@ -1456,7 +1456,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'content' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearContent() {
+    public com.fretron.Model.NotificationEvent.Builder clearContent() {
       content = null;
       fieldSetFlags()[14] = false;
       return this;
@@ -1475,7 +1475,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'htmlContent'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setHtmlContent(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setHtmlContent(java.lang.String value) {
       validate(fields()[15], value);
       this.htmlContent = value;
       fieldSetFlags()[15] = true;
@@ -1495,7 +1495,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'htmlContent' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearHtmlContent() {
+    public com.fretron.Model.NotificationEvent.Builder clearHtmlContent() {
       htmlContent = null;
       fieldSetFlags()[15] = false;
       return this;
@@ -1514,7 +1514,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'pushACKId'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setPushACKId(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setPushACKId(java.lang.String value) {
       validate(fields()[16], value);
       this.pushACKId = value;
       fieldSetFlags()[16] = true;
@@ -1534,7 +1534,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'pushACKId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearPushACKId() {
+    public com.fretron.Model.NotificationEvent.Builder clearPushACKId() {
       pushACKId = null;
       fieldSetFlags()[16] = false;
       return this;
@@ -1553,7 +1553,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'redirectURL'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setRedirectURL(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setRedirectURL(java.lang.String value) {
       validate(fields()[17], value);
       this.redirectURL = value;
       fieldSetFlags()[17] = true;
@@ -1573,7 +1573,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'redirectURL' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearRedirectURL() {
+    public com.fretron.Model.NotificationEvent.Builder clearRedirectURL() {
       redirectURL = null;
       fieldSetFlags()[17] = false;
       return this;
@@ -1592,7 +1592,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'mailACKIds'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setMailACKIds(java.util.List<java.lang.String> value) {
+    public com.fretron.Model.NotificationEvent.Builder setMailACKIds(java.util.List<java.lang.String> value) {
       validate(fields()[18], value);
       this.mailACKIds = value;
       fieldSetFlags()[18] = true;
@@ -1612,7 +1612,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'mailACKIds' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearMailACKIds() {
+    public com.fretron.Model.NotificationEvent.Builder clearMailACKIds() {
       mailACKIds = null;
       fieldSetFlags()[18] = false;
       return this;
@@ -1631,7 +1631,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'createdOn'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setCreatedOn(java.lang.Long value) {
+    public com.fretron.Model.NotificationEvent.Builder setCreatedOn(java.lang.Long value) {
       validate(fields()[19], value);
       this.createdOn = value;
       fieldSetFlags()[19] = true;
@@ -1651,7 +1651,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'createdOn' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearCreatedOn() {
+    public com.fretron.Model.NotificationEvent.Builder clearCreatedOn() {
       createdOn = null;
       fieldSetFlags()[19] = false;
       return this;
@@ -1670,7 +1670,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'readOn'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setReadOn(java.lang.Long value) {
+    public com.fretron.Model.NotificationEvent.Builder setReadOn(java.lang.Long value) {
       validate(fields()[20], value);
       this.readOn = value;
       fieldSetFlags()[20] = true;
@@ -1690,7 +1690,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'readOn' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearReadOn() {
+    public com.fretron.Model.NotificationEvent.Builder clearReadOn() {
       readOn = null;
       fieldSetFlags()[20] = false;
       return this;
@@ -1709,7 +1709,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'isRead'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setIsRead(java.lang.Boolean value) {
+    public com.fretron.Model.NotificationEvent.Builder setIsRead(java.lang.Boolean value) {
       validate(fields()[21], value);
       this.isRead = value;
       fieldSetFlags()[21] = true;
@@ -1729,7 +1729,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'isRead' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearIsRead() {
+    public com.fretron.Model.NotificationEvent.Builder clearIsRead() {
       isRead = null;
       fieldSetFlags()[21] = false;
       return this;
@@ -1748,7 +1748,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'mailThreadId'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setMailThreadId(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setMailThreadId(java.lang.String value) {
       validate(fields()[22], value);
       this.mailThreadId = value;
       fieldSetFlags()[22] = true;
@@ -1768,7 +1768,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'mailThreadId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearMailThreadId() {
+    public com.fretron.Model.NotificationEvent.Builder clearMailThreadId() {
       mailThreadId = null;
       fieldSetFlags()[22] = false;
       return this;
@@ -1787,7 +1787,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'debounced'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setDebounced(java.lang.Boolean value) {
+    public com.fretron.Model.NotificationEvent.Builder setDebounced(java.lang.Boolean value) {
       validate(fields()[23], value);
       this.debounced = value;
       fieldSetFlags()[23] = true;
@@ -1807,7 +1807,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'debounced' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearDebounced() {
+    public com.fretron.Model.NotificationEvent.Builder clearDebounced() {
       debounced = null;
       fieldSetFlags()[23] = false;
       return this;
@@ -1826,7 +1826,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'commandId'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setCommandId(java.lang.String value) {
+    public com.fretron.Model.NotificationEvent.Builder setCommandId(java.lang.String value) {
       validate(fields()[24], value);
       this.commandId = value;
       fieldSetFlags()[24] = true;
@@ -1846,7 +1846,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'commandId' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearCommandId() {
+    public com.fretron.Model.NotificationEvent.Builder clearCommandId() {
       commandId = null;
       fieldSetFlags()[24] = false;
       return this;
@@ -1865,7 +1865,7 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'processed'.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder setProcessed(java.lang.Boolean value) {
+    public com.fretron.Model.NotificationEvent.Builder setProcessed(java.lang.Boolean value) {
       validate(fields()[25], value);
       this.processed = value;
       fieldSetFlags()[25] = true;
@@ -1885,16 +1885,16 @@ public class Notification extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'processed' field.
       * @return This builder.
       */
-    public com.fretron.Model.Notification.Builder clearProcessed() {
+    public com.fretron.Model.NotificationEvent.Builder clearProcessed() {
       processed = null;
       fieldSetFlags()[25] = false;
       return this;
     }
 
     @Override
-    public Notification build() {
+    public NotificationEvent build() {
       try {
-        Notification record = new Notification();
+        NotificationEvent record = new NotificationEvent();
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.subscriber = fieldSetFlags()[1] ? this.subscriber : (java.lang.String) defaultValue(fields()[1]);
         record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);

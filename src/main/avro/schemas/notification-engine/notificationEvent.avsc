@@ -1,7 +1,7 @@
 {
   "namespace": "com.fretron.Model",
   "type": "record",
-  "name": "Notification",
+  "name": "NotificationEvent",
   "fields": [
     {
       "name": "uuid",
