@@ -10,18 +10,33 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoadType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2738421070624552901L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -2441058759860440122L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoadType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"bodyTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chassisTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String partnerId;
+  @Deprecated public java.lang.String partnerName;
+  @Deprecated public java.lang.String partnerExternalId;
   @Deprecated public java.lang.String vehicleCategory;
   @Deprecated public java.lang.Integer numberOfWheels;
   @Deprecated public java.lang.Double passingCapacityMT;
+  @Deprecated public java.lang.Double passingCapacityCFT;
   @Deprecated public java.lang.String bodyType;
+  @Deprecated public java.lang.String chassisType;
   @Deprecated public java.lang.String dimensionString;
+  @Deprecated public java.lang.Double minLength;
+  @Deprecated public boolean includeMinLength;
+  @Deprecated public java.lang.Double maxLength;
+  @Deprecated public boolean includeMaxLength;
+  @Deprecated public java.lang.Double minHeight;
+  @Deprecated public boolean includeMinHeight;
+  @Deprecated public java.lang.Double maxHeight;
+  @Deprecated public boolean includeMaxHeight;
+  @Deprecated public java.util.List<java.lang.String> bodyTypes;
+  @Deprecated public java.util.List<java.lang.String> chassisTypes;
+  @Deprecated public com.fretron.Model.Updates updates;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -36,22 +51,52 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    * @param uuid The new value for uuid
    * @param orgId The new value for orgId
    * @param partnerId The new value for partnerId
+   * @param partnerName The new value for partnerName
+   * @param partnerExternalId The new value for partnerExternalId
    * @param vehicleCategory The new value for vehicleCategory
    * @param numberOfWheels The new value for numberOfWheels
    * @param passingCapacityMT The new value for passingCapacityMT
+   * @param passingCapacityCFT The new value for passingCapacityCFT
    * @param bodyType The new value for bodyType
+   * @param chassisType The new value for chassisType
    * @param dimensionString The new value for dimensionString
+   * @param minLength The new value for minLength
+   * @param includeMinLength The new value for includeMinLength
+   * @param maxLength The new value for maxLength
+   * @param includeMaxLength The new value for includeMaxLength
+   * @param minHeight The new value for minHeight
+   * @param includeMinHeight The new value for includeMinHeight
+   * @param maxHeight The new value for maxHeight
+   * @param includeMaxHeight The new value for includeMaxHeight
+   * @param bodyTypes The new value for bodyTypes
+   * @param chassisTypes The new value for chassisTypes
+   * @param updates The new value for updates
    */
-  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.String bodyType, java.lang.String dimensionString) {
+  public LoadType(java.lang.String name, java.lang.String uuid, java.lang.String orgId, java.lang.String partnerId, java.lang.String partnerName, java.lang.String partnerExternalId, java.lang.String vehicleCategory, java.lang.Integer numberOfWheels, java.lang.Double passingCapacityMT, java.lang.Double passingCapacityCFT, java.lang.String bodyType, java.lang.String chassisType, java.lang.String dimensionString, java.lang.Double minLength, java.lang.Boolean includeMinLength, java.lang.Double maxLength, java.lang.Boolean includeMaxLength, java.lang.Double minHeight, java.lang.Boolean includeMinHeight, java.lang.Double maxHeight, java.lang.Boolean includeMaxHeight, java.util.List<java.lang.String> bodyTypes, java.util.List<java.lang.String> chassisTypes, com.fretron.Model.Updates updates) {
     this.name = name;
     this.uuid = uuid;
     this.orgId = orgId;
     this.partnerId = partnerId;
+    this.partnerName = partnerName;
+    this.partnerExternalId = partnerExternalId;
     this.vehicleCategory = vehicleCategory;
     this.numberOfWheels = numberOfWheels;
     this.passingCapacityMT = passingCapacityMT;
+    this.passingCapacityCFT = passingCapacityCFT;
     this.bodyType = bodyType;
+    this.chassisType = chassisType;
     this.dimensionString = dimensionString;
+    this.minLength = minLength;
+    this.includeMinLength = includeMinLength;
+    this.maxLength = maxLength;
+    this.includeMaxLength = includeMaxLength;
+    this.minHeight = minHeight;
+    this.includeMinHeight = includeMinHeight;
+    this.maxHeight = maxHeight;
+    this.includeMaxHeight = includeMaxHeight;
+    this.bodyTypes = bodyTypes;
+    this.chassisTypes = chassisTypes;
+    this.updates = updates;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -62,11 +107,26 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: return uuid;
     case 2: return orgId;
     case 3: return partnerId;
-    case 4: return vehicleCategory;
-    case 5: return numberOfWheels;
-    case 6: return passingCapacityMT;
-    case 7: return bodyType;
-    case 8: return dimensionString;
+    case 4: return partnerName;
+    case 5: return partnerExternalId;
+    case 6: return vehicleCategory;
+    case 7: return numberOfWheels;
+    case 8: return passingCapacityMT;
+    case 9: return passingCapacityCFT;
+    case 10: return bodyType;
+    case 11: return chassisType;
+    case 12: return dimensionString;
+    case 13: return minLength;
+    case 14: return includeMinLength;
+    case 15: return maxLength;
+    case 16: return includeMaxLength;
+    case 17: return minHeight;
+    case 18: return includeMinHeight;
+    case 19: return maxHeight;
+    case 20: return includeMaxHeight;
+    case 21: return bodyTypes;
+    case 22: return chassisTypes;
+    case 23: return updates;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,11 +139,26 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     case 1: uuid = (java.lang.String)value$; break;
     case 2: orgId = (java.lang.String)value$; break;
     case 3: partnerId = (java.lang.String)value$; break;
-    case 4: vehicleCategory = (java.lang.String)value$; break;
-    case 5: numberOfWheels = (java.lang.Integer)value$; break;
-    case 6: passingCapacityMT = (java.lang.Double)value$; break;
-    case 7: bodyType = (java.lang.String)value$; break;
-    case 8: dimensionString = (java.lang.String)value$; break;
+    case 4: partnerName = (java.lang.String)value$; break;
+    case 5: partnerExternalId = (java.lang.String)value$; break;
+    case 6: vehicleCategory = (java.lang.String)value$; break;
+    case 7: numberOfWheels = (java.lang.Integer)value$; break;
+    case 8: passingCapacityMT = (java.lang.Double)value$; break;
+    case 9: passingCapacityCFT = (java.lang.Double)value$; break;
+    case 10: bodyType = (java.lang.String)value$; break;
+    case 11: chassisType = (java.lang.String)value$; break;
+    case 12: dimensionString = (java.lang.String)value$; break;
+    case 13: minLength = (java.lang.Double)value$; break;
+    case 14: includeMinLength = (java.lang.Boolean)value$; break;
+    case 15: maxLength = (java.lang.Double)value$; break;
+    case 16: includeMaxLength = (java.lang.Boolean)value$; break;
+    case 17: minHeight = (java.lang.Double)value$; break;
+    case 18: includeMinHeight = (java.lang.Boolean)value$; break;
+    case 19: maxHeight = (java.lang.Double)value$; break;
+    case 20: includeMaxHeight = (java.lang.Boolean)value$; break;
+    case 21: bodyTypes = (java.util.List<java.lang.String>)value$; break;
+    case 22: chassisTypes = (java.util.List<java.lang.String>)value$; break;
+    case 23: updates = (com.fretron.Model.Updates)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -153,6 +228,38 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'partnerName' field.
+   * @return The value of the 'partnerName' field.
+   */
+  public java.lang.String getPartnerName() {
+    return partnerName;
+  }
+
+  /**
+   * Sets the value of the 'partnerName' field.
+   * @param value the value to set.
+   */
+  public void setPartnerName(java.lang.String value) {
+    this.partnerName = value;
+  }
+
+  /**
+   * Gets the value of the 'partnerExternalId' field.
+   * @return The value of the 'partnerExternalId' field.
+   */
+  public java.lang.String getPartnerExternalId() {
+    return partnerExternalId;
+  }
+
+  /**
+   * Sets the value of the 'partnerExternalId' field.
+   * @param value the value to set.
+   */
+  public void setPartnerExternalId(java.lang.String value) {
+    this.partnerExternalId = value;
+  }
+
+  /**
    * Gets the value of the 'vehicleCategory' field.
    * @return The value of the 'vehicleCategory' field.
    */
@@ -201,6 +308,22 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'passingCapacityCFT' field.
+   * @return The value of the 'passingCapacityCFT' field.
+   */
+  public java.lang.Double getPassingCapacityCFT() {
+    return passingCapacityCFT;
+  }
+
+  /**
+   * Sets the value of the 'passingCapacityCFT' field.
+   * @param value the value to set.
+   */
+  public void setPassingCapacityCFT(java.lang.Double value) {
+    this.passingCapacityCFT = value;
+  }
+
+  /**
    * Gets the value of the 'bodyType' field.
    * @return The value of the 'bodyType' field.
    */
@@ -217,6 +340,22 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'chassisType' field.
+   * @return The value of the 'chassisType' field.
+   */
+  public java.lang.String getChassisType() {
+    return chassisType;
+  }
+
+  /**
+   * Sets the value of the 'chassisType' field.
+   * @param value the value to set.
+   */
+  public void setChassisType(java.lang.String value) {
+    this.chassisType = value;
+  }
+
+  /**
    * Gets the value of the 'dimensionString' field.
    * @return The value of the 'dimensionString' field.
    */
@@ -230,6 +369,182 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
    */
   public void setDimensionString(java.lang.String value) {
     this.dimensionString = value;
+  }
+
+  /**
+   * Gets the value of the 'minLength' field.
+   * @return The value of the 'minLength' field.
+   */
+  public java.lang.Double getMinLength() {
+    return minLength;
+  }
+
+  /**
+   * Sets the value of the 'minLength' field.
+   * @param value the value to set.
+   */
+  public void setMinLength(java.lang.Double value) {
+    this.minLength = value;
+  }
+
+  /**
+   * Gets the value of the 'includeMinLength' field.
+   * @return The value of the 'includeMinLength' field.
+   */
+  public java.lang.Boolean getIncludeMinLength() {
+    return includeMinLength;
+  }
+
+  /**
+   * Sets the value of the 'includeMinLength' field.
+   * @param value the value to set.
+   */
+  public void setIncludeMinLength(java.lang.Boolean value) {
+    this.includeMinLength = value;
+  }
+
+  /**
+   * Gets the value of the 'maxLength' field.
+   * @return The value of the 'maxLength' field.
+   */
+  public java.lang.Double getMaxLength() {
+    return maxLength;
+  }
+
+  /**
+   * Sets the value of the 'maxLength' field.
+   * @param value the value to set.
+   */
+  public void setMaxLength(java.lang.Double value) {
+    this.maxLength = value;
+  }
+
+  /**
+   * Gets the value of the 'includeMaxLength' field.
+   * @return The value of the 'includeMaxLength' field.
+   */
+  public java.lang.Boolean getIncludeMaxLength() {
+    return includeMaxLength;
+  }
+
+  /**
+   * Sets the value of the 'includeMaxLength' field.
+   * @param value the value to set.
+   */
+  public void setIncludeMaxLength(java.lang.Boolean value) {
+    this.includeMaxLength = value;
+  }
+
+  /**
+   * Gets the value of the 'minHeight' field.
+   * @return The value of the 'minHeight' field.
+   */
+  public java.lang.Double getMinHeight() {
+    return minHeight;
+  }
+
+  /**
+   * Sets the value of the 'minHeight' field.
+   * @param value the value to set.
+   */
+  public void setMinHeight(java.lang.Double value) {
+    this.minHeight = value;
+  }
+
+  /**
+   * Gets the value of the 'includeMinHeight' field.
+   * @return The value of the 'includeMinHeight' field.
+   */
+  public java.lang.Boolean getIncludeMinHeight() {
+    return includeMinHeight;
+  }
+
+  /**
+   * Sets the value of the 'includeMinHeight' field.
+   * @param value the value to set.
+   */
+  public void setIncludeMinHeight(java.lang.Boolean value) {
+    this.includeMinHeight = value;
+  }
+
+  /**
+   * Gets the value of the 'maxHeight' field.
+   * @return The value of the 'maxHeight' field.
+   */
+  public java.lang.Double getMaxHeight() {
+    return maxHeight;
+  }
+
+  /**
+   * Sets the value of the 'maxHeight' field.
+   * @param value the value to set.
+   */
+  public void setMaxHeight(java.lang.Double value) {
+    this.maxHeight = value;
+  }
+
+  /**
+   * Gets the value of the 'includeMaxHeight' field.
+   * @return The value of the 'includeMaxHeight' field.
+   */
+  public java.lang.Boolean getIncludeMaxHeight() {
+    return includeMaxHeight;
+  }
+
+  /**
+   * Sets the value of the 'includeMaxHeight' field.
+   * @param value the value to set.
+   */
+  public void setIncludeMaxHeight(java.lang.Boolean value) {
+    this.includeMaxHeight = value;
+  }
+
+  /**
+   * Gets the value of the 'bodyTypes' field.
+   * @return The value of the 'bodyTypes' field.
+   */
+  public java.util.List<java.lang.String> getBodyTypes() {
+    return bodyTypes;
+  }
+
+  /**
+   * Sets the value of the 'bodyTypes' field.
+   * @param value the value to set.
+   */
+  public void setBodyTypes(java.util.List<java.lang.String> value) {
+    this.bodyTypes = value;
+  }
+
+  /**
+   * Gets the value of the 'chassisTypes' field.
+   * @return The value of the 'chassisTypes' field.
+   */
+  public java.util.List<java.lang.String> getChassisTypes() {
+    return chassisTypes;
+  }
+
+  /**
+   * Sets the value of the 'chassisTypes' field.
+   * @param value the value to set.
+   */
+  public void setChassisTypes(java.util.List<java.lang.String> value) {
+    this.chassisTypes = value;
+  }
+
+  /**
+   * Gets the value of the 'updates' field.
+   * @return The value of the 'updates' field.
+   */
+  public com.fretron.Model.Updates getUpdates() {
+    return updates;
+  }
+
+  /**
+   * Sets the value of the 'updates' field.
+   * @param value the value to set.
+   */
+  public void setUpdates(com.fretron.Model.Updates value) {
+    this.updates = value;
   }
 
   /**
@@ -268,11 +583,27 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String uuid;
     private java.lang.String orgId;
     private java.lang.String partnerId;
+    private java.lang.String partnerName;
+    private java.lang.String partnerExternalId;
     private java.lang.String vehicleCategory;
     private java.lang.Integer numberOfWheels;
     private java.lang.Double passingCapacityMT;
+    private java.lang.Double passingCapacityCFT;
     private java.lang.String bodyType;
+    private java.lang.String chassisType;
     private java.lang.String dimensionString;
+    private java.lang.Double minLength;
+    private boolean includeMinLength;
+    private java.lang.Double maxLength;
+    private boolean includeMaxLength;
+    private java.lang.Double minHeight;
+    private boolean includeMinHeight;
+    private java.lang.Double maxHeight;
+    private boolean includeMaxHeight;
+    private java.util.List<java.lang.String> bodyTypes;
+    private java.util.List<java.lang.String> chassisTypes;
+    private com.fretron.Model.Updates updates;
+    private com.fretron.Model.Updates.Builder updatesBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -301,25 +632,88 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.partnerId = data().deepCopy(fields()[3].schema(), other.partnerId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.vehicleCategory)) {
-        this.vehicleCategory = data().deepCopy(fields()[4].schema(), other.vehicleCategory);
+      if (isValidValue(fields()[4], other.partnerName)) {
+        this.partnerName = data().deepCopy(fields()[4].schema(), other.partnerName);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.numberOfWheels)) {
-        this.numberOfWheels = data().deepCopy(fields()[5].schema(), other.numberOfWheels);
+      if (isValidValue(fields()[5], other.partnerExternalId)) {
+        this.partnerExternalId = data().deepCopy(fields()[5].schema(), other.partnerExternalId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.passingCapacityMT)) {
-        this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
+      if (isValidValue(fields()[6], other.vehicleCategory)) {
+        this.vehicleCategory = data().deepCopy(fields()[6].schema(), other.vehicleCategory);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
+      if (isValidValue(fields()[7], other.numberOfWheels)) {
+        this.numberOfWheels = data().deepCopy(fields()[7].schema(), other.numberOfWheels);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+      if (isValidValue(fields()[8], other.passingCapacityMT)) {
+        this.passingCapacityMT = data().deepCopy(fields()[8].schema(), other.passingCapacityMT);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.passingCapacityCFT)) {
+        this.passingCapacityCFT = data().deepCopy(fields()[9].schema(), other.passingCapacityCFT);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[10].schema(), other.bodyType);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.chassisType)) {
+        this.chassisType = data().deepCopy(fields()[11].schema(), other.chassisType);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[12].schema(), other.dimensionString);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.minLength)) {
+        this.minLength = data().deepCopy(fields()[13].schema(), other.minLength);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.includeMinLength)) {
+        this.includeMinLength = data().deepCopy(fields()[14].schema(), other.includeMinLength);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.maxLength)) {
+        this.maxLength = data().deepCopy(fields()[15].schema(), other.maxLength);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.includeMaxLength)) {
+        this.includeMaxLength = data().deepCopy(fields()[16].schema(), other.includeMaxLength);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.minHeight)) {
+        this.minHeight = data().deepCopy(fields()[17].schema(), other.minHeight);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.includeMinHeight)) {
+        this.includeMinHeight = data().deepCopy(fields()[18].schema(), other.includeMinHeight);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.maxHeight)) {
+        this.maxHeight = data().deepCopy(fields()[19].schema(), other.maxHeight);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.includeMaxHeight)) {
+        this.includeMaxHeight = data().deepCopy(fields()[20].schema(), other.includeMaxHeight);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.bodyTypes)) {
+        this.bodyTypes = data().deepCopy(fields()[21].schema(), other.bodyTypes);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.chassisTypes)) {
+        this.chassisTypes = data().deepCopy(fields()[22].schema(), other.chassisTypes);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.updates)) {
+        this.updates = data().deepCopy(fields()[23].schema(), other.updates);
+        fieldSetFlags()[23] = true;
+      }
+      if (other.hasUpdatesBuilder()) {
+        this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
     }
 
@@ -345,26 +739,87 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         this.partnerId = data().deepCopy(fields()[3].schema(), other.partnerId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.vehicleCategory)) {
-        this.vehicleCategory = data().deepCopy(fields()[4].schema(), other.vehicleCategory);
+      if (isValidValue(fields()[4], other.partnerName)) {
+        this.partnerName = data().deepCopy(fields()[4].schema(), other.partnerName);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.numberOfWheels)) {
-        this.numberOfWheels = data().deepCopy(fields()[5].schema(), other.numberOfWheels);
+      if (isValidValue(fields()[5], other.partnerExternalId)) {
+        this.partnerExternalId = data().deepCopy(fields()[5].schema(), other.partnerExternalId);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.passingCapacityMT)) {
-        this.passingCapacityMT = data().deepCopy(fields()[6].schema(), other.passingCapacityMT);
+      if (isValidValue(fields()[6], other.vehicleCategory)) {
+        this.vehicleCategory = data().deepCopy(fields()[6].schema(), other.vehicleCategory);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.bodyType)) {
-        this.bodyType = data().deepCopy(fields()[7].schema(), other.bodyType);
+      if (isValidValue(fields()[7], other.numberOfWheels)) {
+        this.numberOfWheels = data().deepCopy(fields()[7].schema(), other.numberOfWheels);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.dimensionString)) {
-        this.dimensionString = data().deepCopy(fields()[8].schema(), other.dimensionString);
+      if (isValidValue(fields()[8], other.passingCapacityMT)) {
+        this.passingCapacityMT = data().deepCopy(fields()[8].schema(), other.passingCapacityMT);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.passingCapacityCFT)) {
+        this.passingCapacityCFT = data().deepCopy(fields()[9].schema(), other.passingCapacityCFT);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.bodyType)) {
+        this.bodyType = data().deepCopy(fields()[10].schema(), other.bodyType);
+        fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.chassisType)) {
+        this.chassisType = data().deepCopy(fields()[11].schema(), other.chassisType);
+        fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.dimensionString)) {
+        this.dimensionString = data().deepCopy(fields()[12].schema(), other.dimensionString);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.minLength)) {
+        this.minLength = data().deepCopy(fields()[13].schema(), other.minLength);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.includeMinLength)) {
+        this.includeMinLength = data().deepCopy(fields()[14].schema(), other.includeMinLength);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.maxLength)) {
+        this.maxLength = data().deepCopy(fields()[15].schema(), other.maxLength);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.includeMaxLength)) {
+        this.includeMaxLength = data().deepCopy(fields()[16].schema(), other.includeMaxLength);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.minHeight)) {
+        this.minHeight = data().deepCopy(fields()[17].schema(), other.minHeight);
+        fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.includeMinHeight)) {
+        this.includeMinHeight = data().deepCopy(fields()[18].schema(), other.includeMinHeight);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.maxHeight)) {
+        this.maxHeight = data().deepCopy(fields()[19].schema(), other.maxHeight);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.includeMaxHeight)) {
+        this.includeMaxHeight = data().deepCopy(fields()[20].schema(), other.includeMaxHeight);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.bodyTypes)) {
+        this.bodyTypes = data().deepCopy(fields()[21].schema(), other.bodyTypes);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.chassisTypes)) {
+        this.chassisTypes = data().deepCopy(fields()[22].schema(), other.chassisTypes);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.updates)) {
+        this.updates = data().deepCopy(fields()[23].schema(), other.updates);
+        fieldSetFlags()[23] = true;
+      }
+      this.updatesBuilder = null;
     }
 
     /**
@@ -524,6 +979,84 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
+      * Gets the value of the 'partnerName' field.
+      * @return The value.
+      */
+    public java.lang.String getPartnerName() {
+      return partnerName;
+    }
+
+    /**
+      * Sets the value of the 'partnerName' field.
+      * @param value The value of 'partnerName'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setPartnerName(java.lang.String value) {
+      validate(fields()[4], value);
+      this.partnerName = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'partnerName' field has been set.
+      * @return True if the 'partnerName' field has been set, false otherwise.
+      */
+    public boolean hasPartnerName() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'partnerName' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearPartnerName() {
+      partnerName = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'partnerExternalId' field.
+      * @return The value.
+      */
+    public java.lang.String getPartnerExternalId() {
+      return partnerExternalId;
+    }
+
+    /**
+      * Sets the value of the 'partnerExternalId' field.
+      * @param value The value of 'partnerExternalId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setPartnerExternalId(java.lang.String value) {
+      validate(fields()[5], value);
+      this.partnerExternalId = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'partnerExternalId' field has been set.
+      * @return True if the 'partnerExternalId' field has been set, false otherwise.
+      */
+    public boolean hasPartnerExternalId() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'partnerExternalId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearPartnerExternalId() {
+      partnerExternalId = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'vehicleCategory' field.
       * @return The value.
       */
@@ -537,9 +1070,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setVehicleCategory(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[6], value);
       this.vehicleCategory = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -548,7 +1081,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'vehicleCategory' field has been set, false otherwise.
       */
     public boolean hasVehicleCategory() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[6];
     }
 
 
@@ -558,7 +1091,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearVehicleCategory() {
       vehicleCategory = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -576,9 +1109,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setNumberOfWheels(java.lang.Integer value) {
-      validate(fields()[5], value);
+      validate(fields()[7], value);
       this.numberOfWheels = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -587,7 +1120,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'numberOfWheels' field has been set, false otherwise.
       */
     public boolean hasNumberOfWheels() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[7];
     }
 
 
@@ -597,7 +1130,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearNumberOfWheels() {
       numberOfWheels = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -615,9 +1148,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setPassingCapacityMT(java.lang.Double value) {
-      validate(fields()[6], value);
+      validate(fields()[8], value);
       this.passingCapacityMT = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -626,7 +1159,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'passingCapacityMT' field has been set, false otherwise.
       */
     public boolean hasPassingCapacityMT() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[8];
     }
 
 
@@ -636,7 +1169,46 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearPassingCapacityMT() {
       passingCapacityMT = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'passingCapacityCFT' field.
+      * @return The value.
+      */
+    public java.lang.Double getPassingCapacityCFT() {
+      return passingCapacityCFT;
+    }
+
+    /**
+      * Sets the value of the 'passingCapacityCFT' field.
+      * @param value The value of 'passingCapacityCFT'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setPassingCapacityCFT(java.lang.Double value) {
+      validate(fields()[9], value);
+      this.passingCapacityCFT = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'passingCapacityCFT' field has been set.
+      * @return True if the 'passingCapacityCFT' field has been set, false otherwise.
+      */
+    public boolean hasPassingCapacityCFT() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'passingCapacityCFT' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearPassingCapacityCFT() {
+      passingCapacityCFT = null;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -654,9 +1226,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setBodyType(java.lang.String value) {
-      validate(fields()[7], value);
+      validate(fields()[10], value);
       this.bodyType = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -665,7 +1237,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'bodyType' field has been set, false otherwise.
       */
     public boolean hasBodyType() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[10];
     }
 
 
@@ -675,7 +1247,46 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearBodyType() {
       bodyType = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'chassisType' field.
+      * @return The value.
+      */
+    public java.lang.String getChassisType() {
+      return chassisType;
+    }
+
+    /**
+      * Sets the value of the 'chassisType' field.
+      * @param value The value of 'chassisType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setChassisType(java.lang.String value) {
+      validate(fields()[11], value);
+      this.chassisType = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'chassisType' field has been set.
+      * @return True if the 'chassisType' field has been set, false otherwise.
+      */
+    public boolean hasChassisType() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'chassisType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearChassisType() {
+      chassisType = null;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -693,9 +1304,9 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.LoadType.Builder setDimensionString(java.lang.String value) {
-      validate(fields()[8], value);
+      validate(fields()[12], value);
       this.dimensionString = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -704,7 +1315,7 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'dimensionString' field has been set, false otherwise.
       */
     public boolean hasDimensionString() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[12];
     }
 
 
@@ -714,7 +1325,467 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.LoadType.Builder clearDimensionString() {
       dimensionString = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'minLength' field.
+      * @return The value.
+      */
+    public java.lang.Double getMinLength() {
+      return minLength;
+    }
+
+    /**
+      * Sets the value of the 'minLength' field.
+      * @param value The value of 'minLength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setMinLength(java.lang.Double value) {
+      validate(fields()[13], value);
+      this.minLength = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'minLength' field has been set.
+      * @return True if the 'minLength' field has been set, false otherwise.
+      */
+    public boolean hasMinLength() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'minLength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearMinLength() {
+      minLength = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'includeMinLength' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIncludeMinLength() {
+      return includeMinLength;
+    }
+
+    /**
+      * Sets the value of the 'includeMinLength' field.
+      * @param value The value of 'includeMinLength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setIncludeMinLength(boolean value) {
+      validate(fields()[14], value);
+      this.includeMinLength = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'includeMinLength' field has been set.
+      * @return True if the 'includeMinLength' field has been set, false otherwise.
+      */
+    public boolean hasIncludeMinLength() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'includeMinLength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearIncludeMinLength() {
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'maxLength' field.
+      * @return The value.
+      */
+    public java.lang.Double getMaxLength() {
+      return maxLength;
+    }
+
+    /**
+      * Sets the value of the 'maxLength' field.
+      * @param value The value of 'maxLength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setMaxLength(java.lang.Double value) {
+      validate(fields()[15], value);
+      this.maxLength = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'maxLength' field has been set.
+      * @return True if the 'maxLength' field has been set, false otherwise.
+      */
+    public boolean hasMaxLength() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'maxLength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearMaxLength() {
+      maxLength = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'includeMaxLength' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIncludeMaxLength() {
+      return includeMaxLength;
+    }
+
+    /**
+      * Sets the value of the 'includeMaxLength' field.
+      * @param value The value of 'includeMaxLength'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setIncludeMaxLength(boolean value) {
+      validate(fields()[16], value);
+      this.includeMaxLength = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'includeMaxLength' field has been set.
+      * @return True if the 'includeMaxLength' field has been set, false otherwise.
+      */
+    public boolean hasIncludeMaxLength() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'includeMaxLength' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearIncludeMaxLength() {
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'minHeight' field.
+      * @return The value.
+      */
+    public java.lang.Double getMinHeight() {
+      return minHeight;
+    }
+
+    /**
+      * Sets the value of the 'minHeight' field.
+      * @param value The value of 'minHeight'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setMinHeight(java.lang.Double value) {
+      validate(fields()[17], value);
+      this.minHeight = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'minHeight' field has been set.
+      * @return True if the 'minHeight' field has been set, false otherwise.
+      */
+    public boolean hasMinHeight() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'minHeight' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearMinHeight() {
+      minHeight = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'includeMinHeight' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIncludeMinHeight() {
+      return includeMinHeight;
+    }
+
+    /**
+      * Sets the value of the 'includeMinHeight' field.
+      * @param value The value of 'includeMinHeight'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setIncludeMinHeight(boolean value) {
+      validate(fields()[18], value);
+      this.includeMinHeight = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'includeMinHeight' field has been set.
+      * @return True if the 'includeMinHeight' field has been set, false otherwise.
+      */
+    public boolean hasIncludeMinHeight() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'includeMinHeight' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearIncludeMinHeight() {
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'maxHeight' field.
+      * @return The value.
+      */
+    public java.lang.Double getMaxHeight() {
+      return maxHeight;
+    }
+
+    /**
+      * Sets the value of the 'maxHeight' field.
+      * @param value The value of 'maxHeight'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setMaxHeight(java.lang.Double value) {
+      validate(fields()[19], value);
+      this.maxHeight = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'maxHeight' field has been set.
+      * @return True if the 'maxHeight' field has been set, false otherwise.
+      */
+    public boolean hasMaxHeight() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'maxHeight' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearMaxHeight() {
+      maxHeight = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'includeMaxHeight' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIncludeMaxHeight() {
+      return includeMaxHeight;
+    }
+
+    /**
+      * Sets the value of the 'includeMaxHeight' field.
+      * @param value The value of 'includeMaxHeight'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setIncludeMaxHeight(boolean value) {
+      validate(fields()[20], value);
+      this.includeMaxHeight = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'includeMaxHeight' field has been set.
+      * @return True if the 'includeMaxHeight' field has been set, false otherwise.
+      */
+    public boolean hasIncludeMaxHeight() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'includeMaxHeight' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearIncludeMaxHeight() {
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'bodyTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getBodyTypes() {
+      return bodyTypes;
+    }
+
+    /**
+      * Sets the value of the 'bodyTypes' field.
+      * @param value The value of 'bodyTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setBodyTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[21], value);
+      this.bodyTypes = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'bodyTypes' field has been set.
+      * @return True if the 'bodyTypes' field has been set, false otherwise.
+      */
+    public boolean hasBodyTypes() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'bodyTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearBodyTypes() {
+      bodyTypes = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'chassisTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getChassisTypes() {
+      return chassisTypes;
+    }
+
+    /**
+      * Sets the value of the 'chassisTypes' field.
+      * @param value The value of 'chassisTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setChassisTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[22], value);
+      this.chassisTypes = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'chassisTypes' field has been set.
+      * @return True if the 'chassisTypes' field has been set, false otherwise.
+      */
+    public boolean hasChassisTypes() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'chassisTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearChassisTypes() {
+      chassisTypes = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'updates' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Updates getUpdates() {
+      return updates;
+    }
+
+    /**
+      * Sets the value of the 'updates' field.
+      * @param value The value of 'updates'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder setUpdates(com.fretron.Model.Updates value) {
+      validate(fields()[23], value);
+      this.updatesBuilder = null;
+      this.updates = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'updates' field has been set.
+      * @return True if the 'updates' field has been set, false otherwise.
+      */
+    public boolean hasUpdates() {
+      return fieldSetFlags()[23];
+    }
+
+    /**
+     * Gets the Builder instance for the 'updates' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Updates.Builder getUpdatesBuilder() {
+      if (updatesBuilder == null) {
+        if (hasUpdates()) {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder(updates));
+        } else {
+          setUpdatesBuilder(com.fretron.Model.Updates.newBuilder());
+        }
+      }
+      return updatesBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'updates' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.LoadType.Builder setUpdatesBuilder(com.fretron.Model.Updates.Builder value) {
+      clearUpdates();
+      updatesBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'updates' field has an active Builder instance
+     * @return True if the 'updates' field has an active Builder instance
+     */
+    public boolean hasUpdatesBuilder() {
+      return updatesBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'updates' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoadType.Builder clearUpdates() {
+      updates = null;
+      updatesBuilder = null;
+      fieldSetFlags()[23] = false;
       return this;
     }
 
@@ -726,11 +1797,30 @@ public class LoadType extends org.apache.avro.specific.SpecificRecordBase implem
         record.uuid = fieldSetFlags()[1] ? this.uuid : (java.lang.String) defaultValue(fields()[1]);
         record.orgId = fieldSetFlags()[2] ? this.orgId : (java.lang.String) defaultValue(fields()[2]);
         record.partnerId = fieldSetFlags()[3] ? this.partnerId : (java.lang.String) defaultValue(fields()[3]);
-        record.vehicleCategory = fieldSetFlags()[4] ? this.vehicleCategory : (java.lang.String) defaultValue(fields()[4]);
-        record.numberOfWheels = fieldSetFlags()[5] ? this.numberOfWheels : (java.lang.Integer) defaultValue(fields()[5]);
-        record.passingCapacityMT = fieldSetFlags()[6] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[6]);
-        record.bodyType = fieldSetFlags()[7] ? this.bodyType : (java.lang.String) defaultValue(fields()[7]);
-        record.dimensionString = fieldSetFlags()[8] ? this.dimensionString : (java.lang.String) defaultValue(fields()[8]);
+        record.partnerName = fieldSetFlags()[4] ? this.partnerName : (java.lang.String) defaultValue(fields()[4]);
+        record.partnerExternalId = fieldSetFlags()[5] ? this.partnerExternalId : (java.lang.String) defaultValue(fields()[5]);
+        record.vehicleCategory = fieldSetFlags()[6] ? this.vehicleCategory : (java.lang.String) defaultValue(fields()[6]);
+        record.numberOfWheels = fieldSetFlags()[7] ? this.numberOfWheels : (java.lang.Integer) defaultValue(fields()[7]);
+        record.passingCapacityMT = fieldSetFlags()[8] ? this.passingCapacityMT : (java.lang.Double) defaultValue(fields()[8]);
+        record.passingCapacityCFT = fieldSetFlags()[9] ? this.passingCapacityCFT : (java.lang.Double) defaultValue(fields()[9]);
+        record.bodyType = fieldSetFlags()[10] ? this.bodyType : (java.lang.String) defaultValue(fields()[10]);
+        record.chassisType = fieldSetFlags()[11] ? this.chassisType : (java.lang.String) defaultValue(fields()[11]);
+        record.dimensionString = fieldSetFlags()[12] ? this.dimensionString : (java.lang.String) defaultValue(fields()[12]);
+        record.minLength = fieldSetFlags()[13] ? this.minLength : (java.lang.Double) defaultValue(fields()[13]);
+        record.includeMinLength = fieldSetFlags()[14] ? this.includeMinLength : (java.lang.Boolean) defaultValue(fields()[14]);
+        record.maxLength = fieldSetFlags()[15] ? this.maxLength : (java.lang.Double) defaultValue(fields()[15]);
+        record.includeMaxLength = fieldSetFlags()[16] ? this.includeMaxLength : (java.lang.Boolean) defaultValue(fields()[16]);
+        record.minHeight = fieldSetFlags()[17] ? this.minHeight : (java.lang.Double) defaultValue(fields()[17]);
+        record.includeMinHeight = fieldSetFlags()[18] ? this.includeMinHeight : (java.lang.Boolean) defaultValue(fields()[18]);
+        record.maxHeight = fieldSetFlags()[19] ? this.maxHeight : (java.lang.Double) defaultValue(fields()[19]);
+        record.includeMaxHeight = fieldSetFlags()[20] ? this.includeMaxHeight : (java.lang.Boolean) defaultValue(fields()[20]);
+        record.bodyTypes = fieldSetFlags()[21] ? this.bodyTypes : (java.util.List<java.lang.String>) defaultValue(fields()[21]);
+        record.chassisTypes = fieldSetFlags()[22] ? this.chassisTypes : (java.util.List<java.lang.String>) defaultValue(fields()[22]);
+        if (updatesBuilder != null) {
+          record.updates = this.updatesBuilder.build();
+        } else {
+          record.updates = fieldSetFlags()[23] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[23]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
