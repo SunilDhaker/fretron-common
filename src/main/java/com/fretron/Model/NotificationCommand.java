@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationCommand extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4549779612441103736L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCommand\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscribers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cc\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"to\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subject\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"threadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounceTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 746445102696672007L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCommand\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscribers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cc\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"to\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subject\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"threadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounceTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isPushQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.util.List<java.lang.String> subscribers;
@@ -32,6 +32,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.String threadId;
   @Deprecated public java.lang.Long debounceTime;
   @Deprecated public java.lang.String status;
+  @Deprecated public java.lang.Boolean isSmsQuotaOver;
+  @Deprecated public java.lang.Boolean isPushQuotaOver;
+  @Deprecated public java.lang.Boolean isEmailQuotaOver;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +64,11 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
    * @param threadId The new value for threadId
    * @param debounceTime The new value for debounceTime
    * @param status The new value for status
+   * @param isSmsQuotaOver The new value for isSmsQuotaOver
+   * @param isPushQuotaOver The new value for isPushQuotaOver
+   * @param isEmailQuotaOver The new value for isEmailQuotaOver
    */
-  public NotificationCommand(java.lang.String uuid, java.util.List<java.lang.String> subscribers, java.lang.String orgId, java.util.List<java.lang.String> cc, java.lang.String to, java.util.List<java.lang.String> mobileNumbers, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String subject, java.lang.String content, java.lang.String htmlContent, java.lang.String redirectURL, java.lang.String threadId, java.lang.Long debounceTime, java.lang.String status) {
+  public NotificationCommand(java.lang.String uuid, java.util.List<java.lang.String> subscribers, java.lang.String orgId, java.util.List<java.lang.String> cc, java.lang.String to, java.util.List<java.lang.String> mobileNumbers, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String subject, java.lang.String content, java.lang.String htmlContent, java.lang.String redirectURL, java.lang.String threadId, java.lang.Long debounceTime, java.lang.String status, java.lang.Boolean isSmsQuotaOver, java.lang.Boolean isPushQuotaOver, java.lang.Boolean isEmailQuotaOver) {
     this.uuid = uuid;
     this.subscribers = subscribers;
     this.orgId = orgId;
@@ -82,6 +88,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     this.threadId = threadId;
     this.debounceTime = debounceTime;
     this.status = status;
+    this.isSmsQuotaOver = isSmsQuotaOver;
+    this.isPushQuotaOver = isPushQuotaOver;
+    this.isEmailQuotaOver = isEmailQuotaOver;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +116,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     case 16: return threadId;
     case 17: return debounceTime;
     case 18: return status;
+    case 19: return isSmsQuotaOver;
+    case 20: return isPushQuotaOver;
+    case 21: return isEmailQuotaOver;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +146,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     case 16: threadId = (java.lang.String)value$; break;
     case 17: debounceTime = (java.lang.Long)value$; break;
     case 18: status = (java.lang.String)value$; break;
+    case 19: isSmsQuotaOver = (java.lang.Boolean)value$; break;
+    case 20: isPushQuotaOver = (java.lang.Boolean)value$; break;
+    case 21: isEmailQuotaOver = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +458,54 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'isSmsQuotaOver' field.
+   * @return The value of the 'isSmsQuotaOver' field.
+   */
+  public java.lang.Boolean getIsSmsQuotaOver() {
+    return isSmsQuotaOver;
+  }
+
+  /**
+   * Sets the value of the 'isSmsQuotaOver' field.
+   * @param value the value to set.
+   */
+  public void setIsSmsQuotaOver(java.lang.Boolean value) {
+    this.isSmsQuotaOver = value;
+  }
+
+  /**
+   * Gets the value of the 'isPushQuotaOver' field.
+   * @return The value of the 'isPushQuotaOver' field.
+   */
+  public java.lang.Boolean getIsPushQuotaOver() {
+    return isPushQuotaOver;
+  }
+
+  /**
+   * Sets the value of the 'isPushQuotaOver' field.
+   * @param value the value to set.
+   */
+  public void setIsPushQuotaOver(java.lang.Boolean value) {
+    this.isPushQuotaOver = value;
+  }
+
+  /**
+   * Gets the value of the 'isEmailQuotaOver' field.
+   * @return The value of the 'isEmailQuotaOver' field.
+   */
+  public java.lang.Boolean getIsEmailQuotaOver() {
+    return isEmailQuotaOver;
+  }
+
+  /**
+   * Sets the value of the 'isEmailQuotaOver' field.
+   * @param value the value to set.
+   */
+  public void setIsEmailQuotaOver(java.lang.Boolean value) {
+    this.isEmailQuotaOver = value;
+  }
+
+  /**
    * Creates a new NotificationCommand RecordBuilder.
    * @return A new NotificationCommand RecordBuilder
    */
@@ -493,6 +556,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     private java.lang.String threadId;
     private java.lang.Long debounceTime;
     private java.lang.String status;
+    private java.lang.Boolean isSmsQuotaOver;
+    private java.lang.Boolean isPushQuotaOver;
+    private java.lang.Boolean isEmailQuotaOver;
 
     /** Creates a new Builder */
     private Builder() {
@@ -581,6 +647,18 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
         this.status = data().deepCopy(fields()[18].schema(), other.status);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.isSmsQuotaOver)) {
+        this.isSmsQuotaOver = data().deepCopy(fields()[19].schema(), other.isSmsQuotaOver);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.isPushQuotaOver)) {
+        this.isPushQuotaOver = data().deepCopy(fields()[20].schema(), other.isPushQuotaOver);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.isEmailQuotaOver)) {
+        this.isEmailQuotaOver = data().deepCopy(fields()[21].schema(), other.isEmailQuotaOver);
+        fieldSetFlags()[21] = true;
+      }
     }
 
     /**
@@ -664,6 +742,18 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[18], other.status)) {
         this.status = data().deepCopy(fields()[18].schema(), other.status);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.isSmsQuotaOver)) {
+        this.isSmsQuotaOver = data().deepCopy(fields()[19].schema(), other.isSmsQuotaOver);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.isPushQuotaOver)) {
+        this.isPushQuotaOver = data().deepCopy(fields()[20].schema(), other.isPushQuotaOver);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.isEmailQuotaOver)) {
+        this.isEmailQuotaOver = data().deepCopy(fields()[21].schema(), other.isEmailQuotaOver);
+        fieldSetFlags()[21] = true;
       }
     }
 
@@ -1408,6 +1498,123 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'isSmsQuotaOver' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsSmsQuotaOver() {
+      return isSmsQuotaOver;
+    }
+
+    /**
+      * Sets the value of the 'isSmsQuotaOver' field.
+      * @param value The value of 'isSmsQuotaOver'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder setIsSmsQuotaOver(java.lang.Boolean value) {
+      validate(fields()[19], value);
+      this.isSmsQuotaOver = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isSmsQuotaOver' field has been set.
+      * @return True if the 'isSmsQuotaOver' field has been set, false otherwise.
+      */
+    public boolean hasIsSmsQuotaOver() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'isSmsQuotaOver' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder clearIsSmsQuotaOver() {
+      isSmsQuotaOver = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isPushQuotaOver' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsPushQuotaOver() {
+      return isPushQuotaOver;
+    }
+
+    /**
+      * Sets the value of the 'isPushQuotaOver' field.
+      * @param value The value of 'isPushQuotaOver'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder setIsPushQuotaOver(java.lang.Boolean value) {
+      validate(fields()[20], value);
+      this.isPushQuotaOver = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isPushQuotaOver' field has been set.
+      * @return True if the 'isPushQuotaOver' field has been set, false otherwise.
+      */
+    public boolean hasIsPushQuotaOver() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'isPushQuotaOver' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder clearIsPushQuotaOver() {
+      isPushQuotaOver = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isEmailQuotaOver' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsEmailQuotaOver() {
+      return isEmailQuotaOver;
+    }
+
+    /**
+      * Sets the value of the 'isEmailQuotaOver' field.
+      * @param value The value of 'isEmailQuotaOver'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder setIsEmailQuotaOver(java.lang.Boolean value) {
+      validate(fields()[21], value);
+      this.isEmailQuotaOver = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isEmailQuotaOver' field has been set.
+      * @return True if the 'isEmailQuotaOver' field has been set, false otherwise.
+      */
+    public boolean hasIsEmailQuotaOver() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'isEmailQuotaOver' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder clearIsEmailQuotaOver() {
+      isEmailQuotaOver = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
     @Override
     public NotificationCommand build() {
       try {
@@ -1431,6 +1638,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
         record.threadId = fieldSetFlags()[16] ? this.threadId : (java.lang.String) defaultValue(fields()[16]);
         record.debounceTime = fieldSetFlags()[17] ? this.debounceTime : (java.lang.Long) defaultValue(fields()[17]);
         record.status = fieldSetFlags()[18] ? this.status : (java.lang.String) defaultValue(fields()[18]);
+        record.isSmsQuotaOver = fieldSetFlags()[19] ? this.isSmsQuotaOver : (java.lang.Boolean) defaultValue(fields()[19]);
+        record.isPushQuotaOver = fieldSetFlags()[20] ? this.isPushQuotaOver : (java.lang.Boolean) defaultValue(fields()[20]);
+        record.isEmailQuotaOver = fieldSetFlags()[21] ? this.isEmailQuotaOver : (java.lang.Boolean) defaultValue(fields()[21]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -218,6 +218,30 @@
         "boolean"
       ],
       "default": null
+    },
+    {
+      "name": "isSmsQuotaOver",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isPushQuotaOver",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isEmailQuotaOver",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
   ]
 }
