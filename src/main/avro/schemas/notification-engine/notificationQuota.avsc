@@ -103,7 +103,23 @@
       "default": null
     },
     {
-      "name": "isWarningNotificationSent",
+      "name": "isSmsWarningSent",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isPushWarningSent",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isEmailWarningSent",
       "type": [
         "null",
         "boolean"
