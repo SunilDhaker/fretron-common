@@ -169,6 +169,15 @@
       "default": null
     },
     {
+      "name": "createdOn",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
       "name": "isSmsQuotaOver",
       "type": [
         "null",
