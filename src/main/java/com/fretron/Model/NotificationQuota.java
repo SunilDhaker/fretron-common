@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7935968038065695429L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"pushAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"pushCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -5071885740565853927L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"pushAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"pushCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isWarningNotificationSent\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -25,6 +25,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.lang.Long till;
   @Deprecated public java.lang.Long lastUpdate;
   @Deprecated public java.lang.String type;
+  @Deprecated public java.lang.Boolean isWarningNotificationSent;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +48,9 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
    * @param till The new value for till
    * @param lastUpdate The new value for lastUpdate
    * @param type The new value for type
+   * @param isWarningNotificationSent The new value for isWarningNotificationSent
    */
-  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long pushAmount, java.lang.Long pushCurrentUses, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type) {
+  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long pushAmount, java.lang.Long pushCurrentUses, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isWarningNotificationSent) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.emailAmount = emailAmount;
@@ -61,6 +63,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     this.till = till;
     this.lastUpdate = lastUpdate;
     this.type = type;
+    this.isWarningNotificationSent = isWarningNotificationSent;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +82,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: return till;
     case 10: return lastUpdate;
     case 11: return type;
+    case 12: return isWarningNotificationSent;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +103,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: till = (java.lang.Long)value$; break;
     case 10: lastUpdate = (java.lang.Long)value$; break;
     case 11: type = (java.lang.String)value$; break;
+    case 12: isWarningNotificationSent = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +301,22 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'isWarningNotificationSent' field.
+   * @return The value of the 'isWarningNotificationSent' field.
+   */
+  public java.lang.Boolean getIsWarningNotificationSent() {
+    return isWarningNotificationSent;
+  }
+
+  /**
+   * Sets the value of the 'isWarningNotificationSent' field.
+   * @param value the value to set.
+   */
+  public void setIsWarningNotificationSent(java.lang.Boolean value) {
+    this.isWarningNotificationSent = value;
+  }
+
+  /**
    * Creates a new NotificationQuota RecordBuilder.
    * @return A new NotificationQuota RecordBuilder
    */
@@ -339,6 +360,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.Long till;
     private java.lang.Long lastUpdate;
     private java.lang.String type;
+    private java.lang.Boolean isWarningNotificationSent;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +421,10 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         this.type = data().deepCopy(fields()[11].schema(), other.type);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.isWarningNotificationSent)) {
+        this.isWarningNotificationSent = data().deepCopy(fields()[12].schema(), other.isWarningNotificationSent);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -454,6 +480,10 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       if (isValidValue(fields()[11], other.type)) {
         this.type = data().deepCopy(fields()[11].schema(), other.type);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.isWarningNotificationSent)) {
+        this.isWarningNotificationSent = data().deepCopy(fields()[12].schema(), other.isWarningNotificationSent);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -925,6 +955,45 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'isWarningNotificationSent' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsWarningNotificationSent() {
+      return isWarningNotificationSent;
+    }
+
+    /**
+      * Sets the value of the 'isWarningNotificationSent' field.
+      * @param value The value of 'isWarningNotificationSent'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setIsWarningNotificationSent(java.lang.Boolean value) {
+      validate(fields()[12], value);
+      this.isWarningNotificationSent = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isWarningNotificationSent' field has been set.
+      * @return True if the 'isWarningNotificationSent' field has been set, false otherwise.
+      */
+    public boolean hasIsWarningNotificationSent() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'isWarningNotificationSent' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearIsWarningNotificationSent() {
+      isWarningNotificationSent = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public NotificationQuota build() {
       try {
@@ -941,6 +1010,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         record.till = fieldSetFlags()[9] ? this.till : (java.lang.Long) defaultValue(fields()[9]);
         record.lastUpdate = fieldSetFlags()[10] ? this.lastUpdate : (java.lang.Long) defaultValue(fields()[10]);
         record.type = fieldSetFlags()[11] ? this.type : (java.lang.String) defaultValue(fields()[11]);
+        record.isWarningNotificationSent = fieldSetFlags()[12] ? this.isWarningNotificationSent : (java.lang.Boolean) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

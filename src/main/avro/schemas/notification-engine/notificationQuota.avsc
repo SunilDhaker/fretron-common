@@ -101,6 +101,14 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "isWarningNotificationSent",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
   ]
 }
