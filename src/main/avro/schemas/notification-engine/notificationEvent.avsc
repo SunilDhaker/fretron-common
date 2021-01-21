@@ -228,14 +228,6 @@
       "default": null
     },
     {
-      "name": "isPushQuotaOver",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
       "name": "isEmailQuotaOver",
       "type": [
         "null",

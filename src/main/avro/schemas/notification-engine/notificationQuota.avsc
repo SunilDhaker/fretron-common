@@ -36,22 +36,6 @@
       "default": null
     },
     {
-      "name": "pushAmount",
-      "type": [
-        "null",
-        "long"
-      ],
-      "default": null
-    },
-    {
-      "name": "pushCurrentUses",
-      "type": [
-        "null",
-        "long"
-      ],
-      "default": null
-    },
-    {
       "name": "emailCurrentUses",
       "type": [
         "null",
@@ -104,14 +88,6 @@
     },
     {
       "name": "isSmsWarningSent",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "isPushWarningSent",
       "type": [
         "null",
         "boolean"
