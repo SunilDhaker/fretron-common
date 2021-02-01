@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4242298986267742560L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 5543047355399996576L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -25,6 +25,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.Boolean isSmsWarningSent;
   @Deprecated public java.lang.Boolean isEmailWarningSent;
+  @Deprecated public java.util.List<java.lang.String> emails;
+  @Deprecated public java.util.List<java.lang.String> mobileNumbers;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +49,10 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
    * @param type The new value for type
    * @param isSmsWarningSent The new value for isSmsWarningSent
    * @param isEmailWarningSent The new value for isEmailWarningSent
+   * @param emails The new value for emails
+   * @param mobileNumbers The new value for mobileNumbers
    */
-  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent) {
+  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.emailAmount = emailAmount;
@@ -61,6 +65,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     this.type = type;
     this.isSmsWarningSent = isSmsWarningSent;
     this.isEmailWarningSent = isEmailWarningSent;
+    this.emails = emails;
+    this.mobileNumbers = mobileNumbers;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +85,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: return type;
     case 10: return isSmsWarningSent;
     case 11: return isEmailWarningSent;
+    case 12: return emails;
+    case 13: return mobileNumbers;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +107,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: type = (java.lang.String)value$; break;
     case 10: isSmsWarningSent = (java.lang.Boolean)value$; break;
     case 11: isEmailWarningSent = (java.lang.Boolean)value$; break;
+    case 12: emails = (java.util.List<java.lang.String>)value$; break;
+    case 13: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +306,38 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'emails' field.
+   * @return The value of the 'emails' field.
+   */
+  public java.util.List<java.lang.String> getEmails() {
+    return emails;
+  }
+
+  /**
+   * Sets the value of the 'emails' field.
+   * @param value the value to set.
+   */
+  public void setEmails(java.util.List<java.lang.String> value) {
+    this.emails = value;
+  }
+
+  /**
+   * Gets the value of the 'mobileNumbers' field.
+   * @return The value of the 'mobileNumbers' field.
+   */
+  public java.util.List<java.lang.String> getMobileNumbers() {
+    return mobileNumbers;
+  }
+
+  /**
+   * Sets the value of the 'mobileNumbers' field.
+   * @param value the value to set.
+   */
+  public void setMobileNumbers(java.util.List<java.lang.String> value) {
+    this.mobileNumbers = value;
+  }
+
+  /**
    * Creates a new NotificationQuota RecordBuilder.
    * @return A new NotificationQuota RecordBuilder
    */
@@ -339,6 +381,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.String type;
     private java.lang.Boolean isSmsWarningSent;
     private java.lang.Boolean isEmailWarningSent;
+    private java.util.List<java.lang.String> emails;
+    private java.util.List<java.lang.String> mobileNumbers;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +443,14 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         this.isEmailWarningSent = data().deepCopy(fields()[11].schema(), other.isEmailWarningSent);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.emails)) {
+        this.emails = data().deepCopy(fields()[12].schema(), other.emails);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[13].schema(), other.mobileNumbers);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -454,6 +506,14 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       if (isValidValue(fields()[11], other.isEmailWarningSent)) {
         this.isEmailWarningSent = data().deepCopy(fields()[11].schema(), other.isEmailWarningSent);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.emails)) {
+        this.emails = data().deepCopy(fields()[12].schema(), other.emails);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[13].schema(), other.mobileNumbers);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -925,6 +985,84 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'emails' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getEmails() {
+      return emails;
+    }
+
+    /**
+      * Sets the value of the 'emails' field.
+      * @param value The value of 'emails'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setEmails(java.util.List<java.lang.String> value) {
+      validate(fields()[12], value);
+      this.emails = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'emails' field has been set.
+      * @return True if the 'emails' field has been set, false otherwise.
+      */
+    public boolean hasEmails() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'emails' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearEmails() {
+      emails = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mobileNumbers' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getMobileNumbers() {
+      return mobileNumbers;
+    }
+
+    /**
+      * Sets the value of the 'mobileNumbers' field.
+      * @param value The value of 'mobileNumbers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setMobileNumbers(java.util.List<java.lang.String> value) {
+      validate(fields()[13], value);
+      this.mobileNumbers = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mobileNumbers' field has been set.
+      * @return True if the 'mobileNumbers' field has been set, false otherwise.
+      */
+    public boolean hasMobileNumbers() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'mobileNumbers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearMobileNumbers() {
+      mobileNumbers = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public NotificationQuota build() {
       try {
@@ -941,6 +1079,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         record.type = fieldSetFlags()[9] ? this.type : (java.lang.String) defaultValue(fields()[9]);
         record.isSmsWarningSent = fieldSetFlags()[10] ? this.isSmsWarningSent : (java.lang.Boolean) defaultValue(fields()[10]);
         record.isEmailWarningSent = fieldSetFlags()[11] ? this.isEmailWarningSent : (java.lang.Boolean) defaultValue(fields()[11]);
+        record.emails = fieldSetFlags()[12] ? this.emails : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        record.mobileNumbers = fieldSetFlags()[13] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

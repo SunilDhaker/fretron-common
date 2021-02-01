@@ -101,6 +101,28 @@
         "boolean"
       ],
       "default": null
+    },
+    {
+       "name": "emails",
+       "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+          ],
+        "default": null
+    },
+    {
+       "name": "mobileNumbers",
+       "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+       "default": null
     }
   ]
 }
