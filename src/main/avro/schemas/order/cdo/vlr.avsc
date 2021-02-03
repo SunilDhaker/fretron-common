@@ -119,7 +119,7 @@
                                     ],
                               "default": null
                           },
-                           {
+                        {
                                        "name": "createdDate",
                                         "type": [
                                                    "null",
@@ -127,6 +127,22 @@
                                                  ],
                                         "logicalType": "timestamp-millis",
                                          "default": null
-                               }
+                     },
+                   {
+                        "name": "indentId",
+                        "type": [
+                                  "null",
+                                 "string"
+                             ],
+                        "default": null
+                     },
+                     {
+                        "name": "vehicleId",
+                         "type": [
+                                    "null",
+                                    "string"
+                                  ],
+                        "default": null
+                    }
   ]
 }
