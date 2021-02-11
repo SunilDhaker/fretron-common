@@ -123,6 +123,24 @@
                 }
               ],
        "default": null
-    }
+    },
+    {
+          "name": "emailWarningSnoozeTill",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+      },
+      {
+                "name": "smsWarningSnoozeTill",
+                "type": [
+                  "null",
+                  "long"
+                ],
+                "logicalType": "timestamp-millis",
+                "default": null
+       }
   ]
 }
