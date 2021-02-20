@@ -227,7 +227,15 @@
                                        "com.fretron.Model.OrgOffice"
                                  ],
                            "default": null
-                  }
+                  },
+                   {
+                         "name": "contractLineItemId",
+                         "type": [
+                                             "null",
+                                             "string"
+                                                ],
+                         "default": null
+                        }
 
   ]
 }
