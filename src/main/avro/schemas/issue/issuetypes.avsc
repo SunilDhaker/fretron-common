@@ -179,6 +179,59 @@
                  }
                ],
                "default": null
-             }
+             },
+     {
+        "name": "assigneeRuleType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+    {
+          "name": "assigneeRuleId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+ {
+           "name": "followerRuleType",
+           "type": [
+             "null",
+             "string"
+           ],
+           "default": null
+         },
+  {
+            "name": "followerRuleId",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default": null
+          },
+
+  {
+             "name": "dueTimeRuleType",
+             "type": [
+               "null",
+               "string"
+             ],
+             "default": null
+           },
+
+
+  {
+              "name": "dueTimeRuleId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+
+
   ]
 }

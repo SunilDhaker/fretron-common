@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class IssueType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1207417743372889263L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"defaultAssignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateMobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mergedUserIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"defaultFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"EscalationLevels\",\"fields\":[{\"name\":\"escalationToId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalatedToIdType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevelName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevel\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"resolutionHourType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueFieldMapping\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueFieldMapping\",\"fields\":[{\"name\":\"issueFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"roleFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"showIn\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedDepartments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"linkedIssue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = 4499109376438877535L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"IssueType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSystemIssue\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"relatedTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"extensionReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueExtensionReason\",\"fields\":[{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"extensionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"standardResolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isInternal\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"defaultAssignee\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"User\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"authToken\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Token\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"provider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"tokens\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"onBoardingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"otpEnabled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isGod\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"profileDocumentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"profileThumbnailString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"alternateMobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mergedUserIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"defaultFollowers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"User\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"EscalationLevels\",\"fields\":[{\"name\":\"escalationToId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalatedToIdType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevelName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"escalationLevel\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"resolutionTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"resolutionHourType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"issueFieldMapping\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IssueFieldMapping\",\"fields\":[{\"name\":\"issueFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"roleFilledId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"showIn\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedDepartments\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"linkedIssue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"assigneeRuleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"assigneeRuleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"followerRuleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"followerRuleId\",\"type\":[\"null\",{\"type\":\"string\",\"avr","o.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueTimeRuleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dueTimeRuleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String issueType;
@@ -32,6 +32,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String category;
   @Deprecated public java.util.List<java.lang.String> sharedDepartments;
   @Deprecated public java.util.List<java.lang.String> linkedIssue;
+  @Deprecated public java.lang.String assigneeRuleType;
+  @Deprecated public java.lang.String assigneeRuleId;
+  @Deprecated public java.lang.String followerRuleType;
+  @Deprecated public java.lang.String followerRuleId;
+  @Deprecated public java.lang.String dueTimeRuleType;
+  @Deprecated public java.lang.String dueTimeRuleId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +67,14 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
    * @param category The new value for category
    * @param sharedDepartments The new value for sharedDepartments
    * @param linkedIssue The new value for linkedIssue
+   * @param assigneeRuleType The new value for assigneeRuleType
+   * @param assigneeRuleId The new value for assigneeRuleId
+   * @param followerRuleType The new value for followerRuleType
+   * @param followerRuleId The new value for followerRuleId
+   * @param dueTimeRuleType The new value for dueTimeRuleType
+   * @param dueTimeRuleId The new value for dueTimeRuleId
    */
-  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.User defaultAssignee, java.util.List<com.fretron.Model.User> defaultFollowers, java.lang.String status, java.util.List<com.fretron.Model.EscalationLevels> escalationLevels, com.fretron.Model.Updates updates, java.util.List<java.lang.String> showIn, java.lang.String category, java.util.List<java.lang.String> sharedDepartments, java.util.List<java.lang.String> linkedIssue) {
+  public IssueType(java.lang.String uuid, java.lang.String issueType, java.lang.String orgId, java.lang.Boolean isSystemIssue, java.lang.Boolean isHidden, java.util.List<java.lang.String> relatedTo, java.util.List<com.fretron.Model.IssueExtensionReason> extensionReasons, java.lang.Long standardResolutionTime, java.lang.Boolean isInternal, java.util.List<com.fretron.Model.CustomFields> customFields, com.fretron.Model.User defaultAssignee, java.util.List<com.fretron.Model.User> defaultFollowers, java.lang.String status, java.util.List<com.fretron.Model.EscalationLevels> escalationLevels, com.fretron.Model.Updates updates, java.util.List<java.lang.String> showIn, java.lang.String category, java.util.List<java.lang.String> sharedDepartments, java.util.List<java.lang.String> linkedIssue, java.lang.String assigneeRuleType, java.lang.String assigneeRuleId, java.lang.String followerRuleType, java.lang.String followerRuleId, java.lang.String dueTimeRuleType, java.lang.String dueTimeRuleId) {
     this.uuid = uuid;
     this.issueType = issueType;
     this.orgId = orgId;
@@ -82,6 +94,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     this.category = category;
     this.sharedDepartments = sharedDepartments;
     this.linkedIssue = linkedIssue;
+    this.assigneeRuleType = assigneeRuleType;
+    this.assigneeRuleId = assigneeRuleId;
+    this.followerRuleType = followerRuleType;
+    this.followerRuleId = followerRuleId;
+    this.dueTimeRuleType = dueTimeRuleType;
+    this.dueTimeRuleId = dueTimeRuleId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +125,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 16: return category;
     case 17: return sharedDepartments;
     case 18: return linkedIssue;
+    case 19: return assigneeRuleType;
+    case 20: return assigneeRuleId;
+    case 21: return followerRuleType;
+    case 22: return followerRuleId;
+    case 23: return dueTimeRuleType;
+    case 24: return dueTimeRuleId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +158,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     case 16: category = (java.lang.String)value$; break;
     case 17: sharedDepartments = (java.util.List<java.lang.String>)value$; break;
     case 18: linkedIssue = (java.util.List<java.lang.String>)value$; break;
+    case 19: assigneeRuleType = (java.lang.String)value$; break;
+    case 20: assigneeRuleId = (java.lang.String)value$; break;
+    case 21: followerRuleType = (java.lang.String)value$; break;
+    case 22: followerRuleId = (java.lang.String)value$; break;
+    case 23: dueTimeRuleType = (java.lang.String)value$; break;
+    case 24: dueTimeRuleId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +473,102 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'assigneeRuleType' field.
+   * @return The value of the 'assigneeRuleType' field.
+   */
+  public java.lang.String getAssigneeRuleType() {
+    return assigneeRuleType;
+  }
+
+  /**
+   * Sets the value of the 'assigneeRuleType' field.
+   * @param value the value to set.
+   */
+  public void setAssigneeRuleType(java.lang.String value) {
+    this.assigneeRuleType = value;
+  }
+
+  /**
+   * Gets the value of the 'assigneeRuleId' field.
+   * @return The value of the 'assigneeRuleId' field.
+   */
+  public java.lang.String getAssigneeRuleId() {
+    return assigneeRuleId;
+  }
+
+  /**
+   * Sets the value of the 'assigneeRuleId' field.
+   * @param value the value to set.
+   */
+  public void setAssigneeRuleId(java.lang.String value) {
+    this.assigneeRuleId = value;
+  }
+
+  /**
+   * Gets the value of the 'followerRuleType' field.
+   * @return The value of the 'followerRuleType' field.
+   */
+  public java.lang.String getFollowerRuleType() {
+    return followerRuleType;
+  }
+
+  /**
+   * Sets the value of the 'followerRuleType' field.
+   * @param value the value to set.
+   */
+  public void setFollowerRuleType(java.lang.String value) {
+    this.followerRuleType = value;
+  }
+
+  /**
+   * Gets the value of the 'followerRuleId' field.
+   * @return The value of the 'followerRuleId' field.
+   */
+  public java.lang.String getFollowerRuleId() {
+    return followerRuleId;
+  }
+
+  /**
+   * Sets the value of the 'followerRuleId' field.
+   * @param value the value to set.
+   */
+  public void setFollowerRuleId(java.lang.String value) {
+    this.followerRuleId = value;
+  }
+
+  /**
+   * Gets the value of the 'dueTimeRuleType' field.
+   * @return The value of the 'dueTimeRuleType' field.
+   */
+  public java.lang.String getDueTimeRuleType() {
+    return dueTimeRuleType;
+  }
+
+  /**
+   * Sets the value of the 'dueTimeRuleType' field.
+   * @param value the value to set.
+   */
+  public void setDueTimeRuleType(java.lang.String value) {
+    this.dueTimeRuleType = value;
+  }
+
+  /**
+   * Gets the value of the 'dueTimeRuleId' field.
+   * @return The value of the 'dueTimeRuleId' field.
+   */
+  public java.lang.String getDueTimeRuleId() {
+    return dueTimeRuleId;
+  }
+
+  /**
+   * Sets the value of the 'dueTimeRuleId' field.
+   * @param value the value to set.
+   */
+  public void setDueTimeRuleId(java.lang.String value) {
+    this.dueTimeRuleId = value;
+  }
+
+  /**
    * Creates a new IssueType RecordBuilder.
    * @return A new IssueType RecordBuilder
    */
@@ -495,6 +621,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String category;
     private java.util.List<java.lang.String> sharedDepartments;
     private java.util.List<java.lang.String> linkedIssue;
+    private java.lang.String assigneeRuleType;
+    private java.lang.String assigneeRuleId;
+    private java.lang.String followerRuleType;
+    private java.lang.String followerRuleId;
+    private java.lang.String dueTimeRuleType;
+    private java.lang.String dueTimeRuleId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -589,6 +721,30 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         this.linkedIssue = data().deepCopy(fields()[18].schema(), other.linkedIssue);
         fieldSetFlags()[18] = true;
       }
+      if (isValidValue(fields()[19], other.assigneeRuleType)) {
+        this.assigneeRuleType = data().deepCopy(fields()[19].schema(), other.assigneeRuleType);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.assigneeRuleId)) {
+        this.assigneeRuleId = data().deepCopy(fields()[20].schema(), other.assigneeRuleId);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.followerRuleType)) {
+        this.followerRuleType = data().deepCopy(fields()[21].schema(), other.followerRuleType);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.followerRuleId)) {
+        this.followerRuleId = data().deepCopy(fields()[22].schema(), other.followerRuleId);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.dueTimeRuleType)) {
+        this.dueTimeRuleType = data().deepCopy(fields()[23].schema(), other.dueTimeRuleType);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.dueTimeRuleId)) {
+        this.dueTimeRuleId = data().deepCopy(fields()[24].schema(), other.dueTimeRuleId);
+        fieldSetFlags()[24] = true;
+      }
     }
 
     /**
@@ -674,6 +830,30 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[18], other.linkedIssue)) {
         this.linkedIssue = data().deepCopy(fields()[18].schema(), other.linkedIssue);
         fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.assigneeRuleType)) {
+        this.assigneeRuleType = data().deepCopy(fields()[19].schema(), other.assigneeRuleType);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.assigneeRuleId)) {
+        this.assigneeRuleId = data().deepCopy(fields()[20].schema(), other.assigneeRuleId);
+        fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.followerRuleType)) {
+        this.followerRuleType = data().deepCopy(fields()[21].schema(), other.followerRuleType);
+        fieldSetFlags()[21] = true;
+      }
+      if (isValidValue(fields()[22], other.followerRuleId)) {
+        this.followerRuleId = data().deepCopy(fields()[22].schema(), other.followerRuleId);
+        fieldSetFlags()[22] = true;
+      }
+      if (isValidValue(fields()[23], other.dueTimeRuleType)) {
+        this.dueTimeRuleType = data().deepCopy(fields()[23].schema(), other.dueTimeRuleType);
+        fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.dueTimeRuleId)) {
+        this.dueTimeRuleId = data().deepCopy(fields()[24].schema(), other.dueTimeRuleId);
+        fieldSetFlags()[24] = true;
       }
     }
 
@@ -1488,6 +1668,240 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'assigneeRuleType' field.
+      * @return The value.
+      */
+    public java.lang.String getAssigneeRuleType() {
+      return assigneeRuleType;
+    }
+
+    /**
+      * Sets the value of the 'assigneeRuleType' field.
+      * @param value The value of 'assigneeRuleType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setAssigneeRuleType(java.lang.String value) {
+      validate(fields()[19], value);
+      this.assigneeRuleType = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'assigneeRuleType' field has been set.
+      * @return True if the 'assigneeRuleType' field has been set, false otherwise.
+      */
+    public boolean hasAssigneeRuleType() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'assigneeRuleType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearAssigneeRuleType() {
+      assigneeRuleType = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'assigneeRuleId' field.
+      * @return The value.
+      */
+    public java.lang.String getAssigneeRuleId() {
+      return assigneeRuleId;
+    }
+
+    /**
+      * Sets the value of the 'assigneeRuleId' field.
+      * @param value The value of 'assigneeRuleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setAssigneeRuleId(java.lang.String value) {
+      validate(fields()[20], value);
+      this.assigneeRuleId = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'assigneeRuleId' field has been set.
+      * @return True if the 'assigneeRuleId' field has been set, false otherwise.
+      */
+    public boolean hasAssigneeRuleId() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'assigneeRuleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearAssigneeRuleId() {
+      assigneeRuleId = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'followerRuleType' field.
+      * @return The value.
+      */
+    public java.lang.String getFollowerRuleType() {
+      return followerRuleType;
+    }
+
+    /**
+      * Sets the value of the 'followerRuleType' field.
+      * @param value The value of 'followerRuleType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setFollowerRuleType(java.lang.String value) {
+      validate(fields()[21], value);
+      this.followerRuleType = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'followerRuleType' field has been set.
+      * @return True if the 'followerRuleType' field has been set, false otherwise.
+      */
+    public boolean hasFollowerRuleType() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'followerRuleType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearFollowerRuleType() {
+      followerRuleType = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'followerRuleId' field.
+      * @return The value.
+      */
+    public java.lang.String getFollowerRuleId() {
+      return followerRuleId;
+    }
+
+    /**
+      * Sets the value of the 'followerRuleId' field.
+      * @param value The value of 'followerRuleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setFollowerRuleId(java.lang.String value) {
+      validate(fields()[22], value);
+      this.followerRuleId = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'followerRuleId' field has been set.
+      * @return True if the 'followerRuleId' field has been set, false otherwise.
+      */
+    public boolean hasFollowerRuleId() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'followerRuleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearFollowerRuleId() {
+      followerRuleId = null;
+      fieldSetFlags()[22] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'dueTimeRuleType' field.
+      * @return The value.
+      */
+    public java.lang.String getDueTimeRuleType() {
+      return dueTimeRuleType;
+    }
+
+    /**
+      * Sets the value of the 'dueTimeRuleType' field.
+      * @param value The value of 'dueTimeRuleType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setDueTimeRuleType(java.lang.String value) {
+      validate(fields()[23], value);
+      this.dueTimeRuleType = value;
+      fieldSetFlags()[23] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'dueTimeRuleType' field has been set.
+      * @return True if the 'dueTimeRuleType' field has been set, false otherwise.
+      */
+    public boolean hasDueTimeRuleType() {
+      return fieldSetFlags()[23];
+    }
+
+
+    /**
+      * Clears the value of the 'dueTimeRuleType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearDueTimeRuleType() {
+      dueTimeRuleType = null;
+      fieldSetFlags()[23] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'dueTimeRuleId' field.
+      * @return The value.
+      */
+    public java.lang.String getDueTimeRuleId() {
+      return dueTimeRuleId;
+    }
+
+    /**
+      * Sets the value of the 'dueTimeRuleId' field.
+      * @param value The value of 'dueTimeRuleId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder setDueTimeRuleId(java.lang.String value) {
+      validate(fields()[24], value);
+      this.dueTimeRuleId = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'dueTimeRuleId' field has been set.
+      * @return True if the 'dueTimeRuleId' field has been set, false otherwise.
+      */
+    public boolean hasDueTimeRuleId() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'dueTimeRuleId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.IssueType.Builder clearDueTimeRuleId() {
+      dueTimeRuleId = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
     @Override
     public IssueType build() {
       try {
@@ -1519,6 +1933,12 @@ public class IssueType extends org.apache.avro.specific.SpecificRecordBase imple
         record.category = fieldSetFlags()[16] ? this.category : (java.lang.String) defaultValue(fields()[16]);
         record.sharedDepartments = fieldSetFlags()[17] ? this.sharedDepartments : (java.util.List<java.lang.String>) defaultValue(fields()[17]);
         record.linkedIssue = fieldSetFlags()[18] ? this.linkedIssue : (java.util.List<java.lang.String>) defaultValue(fields()[18]);
+        record.assigneeRuleType = fieldSetFlags()[19] ? this.assigneeRuleType : (java.lang.String) defaultValue(fields()[19]);
+        record.assigneeRuleId = fieldSetFlags()[20] ? this.assigneeRuleId : (java.lang.String) defaultValue(fields()[20]);
+        record.followerRuleType = fieldSetFlags()[21] ? this.followerRuleType : (java.lang.String) defaultValue(fields()[21]);
+        record.followerRuleId = fieldSetFlags()[22] ? this.followerRuleId : (java.lang.String) defaultValue(fields()[22]);
+        record.dueTimeRuleType = fieldSetFlags()[23] ? this.dueTimeRuleType : (java.lang.String) defaultValue(fields()[23]);
+        record.dueTimeRuleId = fieldSetFlags()[24] ? this.dueTimeRuleId : (java.lang.String) defaultValue(fields()[24]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
