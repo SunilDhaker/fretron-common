@@ -1,5 +1,6 @@
 package com.fretron.Extensions
 
+import com.fretron.Model.Contract
 import com.fretron.Model.ContractLineItem
 import com.fretron.Model.Materials
 

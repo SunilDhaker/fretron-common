@@ -1,5 +1,7 @@
 package com.fretron.Extensions
 
+import com.fretron.Model.ShipmentObject
+
 
 fun ShipmentObject.clean(){
 
