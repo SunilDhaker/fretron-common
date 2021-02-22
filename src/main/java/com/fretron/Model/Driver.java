@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Driver extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2799034635311839053L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"associatedUserId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"aadharNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = -7737227736145552918L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Driver\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dlExpiryTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"attachedDocs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pincode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleRegistrationNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"associatedUserId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"aadharNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LiteCustomFields\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String mobileNumber;
@@ -30,6 +30,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String associatedUserId;
   @Deprecated public java.lang.String aadharNo;
   @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+  @Deprecated public com.fretron.Model.OrgOffice branch;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -57,8 +58,9 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param associatedUserId The new value for associatedUserId
    * @param aadharNo The new value for aadharNo
    * @param customFields The new value for customFields
+   * @param branch The new value for branch
    */
-  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId, java.util.List<java.lang.String> mobileNumbers, com.fretron.Model.Updates updates, java.lang.String associatedUserId, java.lang.String aadharNo, java.util.List<com.fretron.Model.LiteCustomFields> customFields) {
+  public Driver(java.lang.String name, java.lang.String mobileNumber, java.lang.String uuid, java.lang.String orgId, java.lang.String dlNumber, java.lang.Long dlExpiryTime, java.util.List<java.lang.String> attachedDocs, java.lang.String address, java.lang.String pincode, java.lang.String vehicleId, java.lang.String vehicleRegistrationNumber, java.lang.String externalId, java.util.List<java.lang.String> mobileNumbers, com.fretron.Model.Updates updates, java.lang.String associatedUserId, java.lang.String aadharNo, java.util.List<com.fretron.Model.LiteCustomFields> customFields, com.fretron.Model.OrgOffice branch) {
     this.name = name;
     this.mobileNumber = mobileNumber;
     this.uuid = uuid;
@@ -76,6 +78,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     this.associatedUserId = associatedUserId;
     this.aadharNo = aadharNo;
     this.customFields = customFields;
+    this.branch = branch;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -99,6 +102,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 14: return associatedUserId;
     case 15: return aadharNo;
     case 16: return customFields;
+    case 17: return branch;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -124,6 +128,7 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     case 14: associatedUserId = (java.lang.String)value$; break;
     case 15: aadharNo = (java.lang.String)value$; break;
     case 16: customFields = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
+    case 17: branch = (com.fretron.Model.OrgOffice)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -401,6 +406,22 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'branch' field.
+   * @return The value of the 'branch' field.
+   */
+  public com.fretron.Model.OrgOffice getBranch() {
+    return branch;
+  }
+
+  /**
+   * Sets the value of the 'branch' field.
+   * @param value the value to set.
+   */
+  public void setBranch(com.fretron.Model.OrgOffice value) {
+    this.branch = value;
+  }
+
+  /**
    * Creates a new Driver RecordBuilder.
    * @return A new Driver RecordBuilder
    */
@@ -450,6 +471,8 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String associatedUserId;
     private java.lang.String aadharNo;
     private java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+    private com.fretron.Model.OrgOffice branch;
+    private com.fretron.Model.OrgOffice.Builder branchBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -533,6 +556,13 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
         fieldSetFlags()[16] = true;
       }
+      if (isValidValue(fields()[17], other.branch)) {
+        this.branch = data().deepCopy(fields()[17].schema(), other.branch);
+        fieldSetFlags()[17] = true;
+      }
+      if (other.hasBranchBuilder()) {
+        this.branchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getBranchBuilder());
+      }
     }
 
     /**
@@ -610,6 +640,11 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
         fieldSetFlags()[16] = true;
       }
+      if (isValidValue(fields()[17], other.branch)) {
+        this.branch = data().deepCopy(fields()[17].schema(), other.branch);
+        fieldSetFlags()[17] = true;
+      }
+      this.branchBuilder = null;
     }
 
     /**
@@ -1310,6 +1345,80 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'branch' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrgOffice getBranch() {
+      return branch;
+    }
+
+    /**
+      * Sets the value of the 'branch' field.
+      * @param value The value of 'branch'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder setBranch(com.fretron.Model.OrgOffice value) {
+      validate(fields()[17], value);
+      this.branchBuilder = null;
+      this.branch = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'branch' field has been set.
+      * @return True if the 'branch' field has been set, false otherwise.
+      */
+    public boolean hasBranch() {
+      return fieldSetFlags()[17];
+    }
+
+    /**
+     * Gets the Builder instance for the 'branch' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrgOffice.Builder getBranchBuilder() {
+      if (branchBuilder == null) {
+        if (hasBranch()) {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder(branch));
+        } else {
+          setBranchBuilder(com.fretron.Model.OrgOffice.newBuilder());
+        }
+      }
+      return branchBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'branch' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Driver.Builder setBranchBuilder(com.fretron.Model.OrgOffice.Builder value) {
+      clearBranch();
+      branchBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'branch' field has an active Builder instance
+     * @return True if the 'branch' field has an active Builder instance
+     */
+    public boolean hasBranchBuilder() {
+      return branchBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'branch' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Driver.Builder clearBranch() {
+      branch = null;
+      branchBuilder = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
     @Override
     public Driver build() {
       try {
@@ -1335,6 +1444,11 @@ public class Driver extends org.apache.avro.specific.SpecificRecordBase implemen
         record.associatedUserId = fieldSetFlags()[14] ? this.associatedUserId : (java.lang.String) defaultValue(fields()[14]);
         record.aadharNo = fieldSetFlags()[15] ? this.aadharNo : (java.lang.String) defaultValue(fields()[15]);
         record.customFields = fieldSetFlags()[16] ? this.customFields : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[16]);
+        if (branchBuilder != null) {
+          record.branch = this.branchBuilder.build();
+        } else {
+          record.branch = fieldSetFlags()[17] ? this.branch : (com.fretron.Model.OrgOffice) defaultValue(fields()[17]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
