@@ -228,14 +228,19 @@
                                  ],
                            "default": null
                   },
-                   {
+                  {
                          "name": "contractLineItemId",
                          "type": [
                                              "null",
                                              "string"
                                                 ],
                          "default": null
-                        }
+                   },
+                   {
+                      "name": "cancelledQuantity",
+                      "type": ["null","com.fretron.Model.StandardMeasurement"],
+                       "default" : null
+                   }
 
   ]
 }
