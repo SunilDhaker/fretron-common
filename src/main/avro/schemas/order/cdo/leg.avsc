@@ -21,20 +21,26 @@
 			"default": null
 		},
 		{
-           "name": "origin",
-           "type": [
-                       "null",
-                       "com.fretron.Model.Place"
-                   ],
-           "default": null
+                "name": "allowedOrigins",
+                 "type": [
+                          "null",
+                           {
+                             "type": "array",
+                              "items": "com.fretron.Model.Place"
+                            }
+                                               ],
+                 "default": null
         },
         {
-           "name": "destination",
-            "type": [
-                               "null",
-                               "com.fretron.Model.Place"
-                           ],
-            "default": null
+             "name": "allowedDestination",
+              "type": [
+                         "null",
+                                   {
+                                     "type": "array",
+                                      "items": "com.fretron.Model.Place"
+                                    }
+                      ],
+              "default": null
         },
         {
         	"name": "originType",
@@ -51,7 +57,7 @@
                 				"string"
                 			],
              "default": null
-          },
+         },
           {
               "name": "allowedTransitDays",
               "type": [
@@ -63,10 +69,21 @@
             {
                "name": "destinationType",
                 "type": [
-                    				"null",
-                    				"string"
-                    			],
+                     "null",
+                     "string"
+                     ],
                 "default": null
-             }
+             },
+             {
+                "name": "allowedVehicleTypes",
+                 "type": [
+                               "null",
+                                                {
+                                                  "type": "array",
+                                                   "items": "com.fretron.Model.LoadType"
+                                                 }
+                        ],
+                 "default": null
+            }
 	]
 }

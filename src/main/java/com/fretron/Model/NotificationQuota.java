@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -291620994478684185L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -8268933449515796800L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"emailWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"smsWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastSentSmsWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastSentEmailWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -25,8 +25,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.Boolean isSmsWarningSent;
   @Deprecated public java.lang.Boolean isEmailWarningSent;
-  @Deprecated public java.util.List<java.lang.String> mobileNumbers;
   @Deprecated public java.util.List<java.lang.String> emails;
+  @Deprecated public java.util.List<java.lang.String> mobileNumbers;
+  @Deprecated public java.lang.Long emailWarningSnoozeTill;
+  @Deprecated public java.lang.Long smsWarningSnoozeTill;
+  @Deprecated public java.lang.String lastSentSmsWarningType;
+  @Deprecated public java.lang.String lastSentEmailWarningType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,10 +53,14 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
    * @param type The new value for type
    * @param isSmsWarningSent The new value for isSmsWarningSent
    * @param isEmailWarningSent The new value for isEmailWarningSent
-   * @param mobileNumbers The new value for mobileNumbers
    * @param emails The new value for emails
+   * @param mobileNumbers The new value for mobileNumbers
+   * @param emailWarningSnoozeTill The new value for emailWarningSnoozeTill
+   * @param smsWarningSnoozeTill The new value for smsWarningSnoozeTill
+   * @param lastSentSmsWarningType The new value for lastSentSmsWarningType
+   * @param lastSentEmailWarningType The new value for lastSentEmailWarningType
    */
-  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent, java.util.List<java.lang.String> mobileNumbers, java.util.List<java.lang.String> emails) {
+  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers, java.lang.Long emailWarningSnoozeTill, java.lang.Long smsWarningSnoozeTill, java.lang.String lastSentSmsWarningType, java.lang.String lastSentEmailWarningType) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.emailAmount = emailAmount;
@@ -65,8 +73,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     this.type = type;
     this.isSmsWarningSent = isSmsWarningSent;
     this.isEmailWarningSent = isEmailWarningSent;
-    this.mobileNumbers = mobileNumbers;
     this.emails = emails;
+    this.mobileNumbers = mobileNumbers;
+    this.emailWarningSnoozeTill = emailWarningSnoozeTill;
+    this.smsWarningSnoozeTill = smsWarningSnoozeTill;
+    this.lastSentSmsWarningType = lastSentSmsWarningType;
+    this.lastSentEmailWarningType = lastSentEmailWarningType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -85,8 +97,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: return type;
     case 10: return isSmsWarningSent;
     case 11: return isEmailWarningSent;
-    case 12: return mobileNumbers;
-    case 13: return emails;
+    case 12: return emails;
+    case 13: return mobileNumbers;
+    case 14: return emailWarningSnoozeTill;
+    case 15: return smsWarningSnoozeTill;
+    case 16: return lastSentSmsWarningType;
+    case 17: return lastSentEmailWarningType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,8 +123,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 9: type = (java.lang.String)value$; break;
     case 10: isSmsWarningSent = (java.lang.Boolean)value$; break;
     case 11: isEmailWarningSent = (java.lang.Boolean)value$; break;
-    case 12: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
-    case 13: emails = (java.util.List<java.lang.String>)value$; break;
+    case 12: emails = (java.util.List<java.lang.String>)value$; break;
+    case 13: mobileNumbers = (java.util.List<java.lang.String>)value$; break;
+    case 14: emailWarningSnoozeTill = (java.lang.Long)value$; break;
+    case 15: smsWarningSnoozeTill = (java.lang.Long)value$; break;
+    case 16: lastSentSmsWarningType = (java.lang.String)value$; break;
+    case 17: lastSentEmailWarningType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -306,6 +326,22 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'emails' field.
+   * @return The value of the 'emails' field.
+   */
+  public java.util.List<java.lang.String> getEmails() {
+    return emails;
+  }
+
+  /**
+   * Sets the value of the 'emails' field.
+   * @param value the value to set.
+   */
+  public void setEmails(java.util.List<java.lang.String> value) {
+    this.emails = value;
+  }
+
+  /**
    * Gets the value of the 'mobileNumbers' field.
    * @return The value of the 'mobileNumbers' field.
    */
@@ -322,19 +358,67 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
-   * Gets the value of the 'emails' field.
-   * @return The value of the 'emails' field.
+   * Gets the value of the 'emailWarningSnoozeTill' field.
+   * @return The value of the 'emailWarningSnoozeTill' field.
    */
-  public java.util.List<java.lang.String> getEmails() {
-    return emails;
+  public java.lang.Long getEmailWarningSnoozeTill() {
+    return emailWarningSnoozeTill;
   }
 
   /**
-   * Sets the value of the 'emails' field.
+   * Sets the value of the 'emailWarningSnoozeTill' field.
    * @param value the value to set.
    */
-  public void setEmails(java.util.List<java.lang.String> value) {
-    this.emails = value;
+  public void setEmailWarningSnoozeTill(java.lang.Long value) {
+    this.emailWarningSnoozeTill = value;
+  }
+
+  /**
+   * Gets the value of the 'smsWarningSnoozeTill' field.
+   * @return The value of the 'smsWarningSnoozeTill' field.
+   */
+  public java.lang.Long getSmsWarningSnoozeTill() {
+    return smsWarningSnoozeTill;
+  }
+
+  /**
+   * Sets the value of the 'smsWarningSnoozeTill' field.
+   * @param value the value to set.
+   */
+  public void setSmsWarningSnoozeTill(java.lang.Long value) {
+    this.smsWarningSnoozeTill = value;
+  }
+
+  /**
+   * Gets the value of the 'lastSentSmsWarningType' field.
+   * @return The value of the 'lastSentSmsWarningType' field.
+   */
+  public java.lang.String getLastSentSmsWarningType() {
+    return lastSentSmsWarningType;
+  }
+
+  /**
+   * Sets the value of the 'lastSentSmsWarningType' field.
+   * @param value the value to set.
+   */
+  public void setLastSentSmsWarningType(java.lang.String value) {
+    this.lastSentSmsWarningType = value;
+  }
+
+  /**
+   * Gets the value of the 'lastSentEmailWarningType' field.
+   * @return The value of the 'lastSentEmailWarningType' field.
+   */
+  public java.lang.String getLastSentEmailWarningType() {
+    return lastSentEmailWarningType;
+  }
+
+  /**
+   * Sets the value of the 'lastSentEmailWarningType' field.
+   * @param value the value to set.
+   */
+  public void setLastSentEmailWarningType(java.lang.String value) {
+    this.lastSentEmailWarningType = value;
   }
 
   /**
@@ -381,8 +465,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.String type;
     private java.lang.Boolean isSmsWarningSent;
     private java.lang.Boolean isEmailWarningSent;
-    private java.util.List<java.lang.String> mobileNumbers;
     private java.util.List<java.lang.String> emails;
+    private java.util.List<java.lang.String> mobileNumbers;
+    private java.lang.Long emailWarningSnoozeTill;
+    private java.lang.Long smsWarningSnoozeTill;
+    private java.lang.String lastSentSmsWarningType;
+    private java.lang.String lastSentEmailWarningType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -443,13 +531,29 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         this.isEmailWarningSent = data().deepCopy(fields()[11].schema(), other.isEmailWarningSent);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.mobileNumbers)) {
-        this.mobileNumbers = data().deepCopy(fields()[12].schema(), other.mobileNumbers);
+      if (isValidValue(fields()[12], other.emails)) {
+        this.emails = data().deepCopy(fields()[12].schema(), other.emails);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.emails)) {
-        this.emails = data().deepCopy(fields()[13].schema(), other.emails);
+      if (isValidValue(fields()[13], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[13].schema(), other.mobileNumbers);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.emailWarningSnoozeTill)) {
+        this.emailWarningSnoozeTill = data().deepCopy(fields()[14].schema(), other.emailWarningSnoozeTill);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.smsWarningSnoozeTill)) {
+        this.smsWarningSnoozeTill = data().deepCopy(fields()[15].schema(), other.smsWarningSnoozeTill);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.lastSentSmsWarningType)) {
+        this.lastSentSmsWarningType = data().deepCopy(fields()[16].schema(), other.lastSentSmsWarningType);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.lastSentEmailWarningType)) {
+        this.lastSentEmailWarningType = data().deepCopy(fields()[17].schema(), other.lastSentEmailWarningType);
+        fieldSetFlags()[17] = true;
       }
     }
 
@@ -507,13 +611,29 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         this.isEmailWarningSent = data().deepCopy(fields()[11].schema(), other.isEmailWarningSent);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.mobileNumbers)) {
-        this.mobileNumbers = data().deepCopy(fields()[12].schema(), other.mobileNumbers);
+      if (isValidValue(fields()[12], other.emails)) {
+        this.emails = data().deepCopy(fields()[12].schema(), other.emails);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.emails)) {
-        this.emails = data().deepCopy(fields()[13].schema(), other.emails);
+      if (isValidValue(fields()[13], other.mobileNumbers)) {
+        this.mobileNumbers = data().deepCopy(fields()[13].schema(), other.mobileNumbers);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.emailWarningSnoozeTill)) {
+        this.emailWarningSnoozeTill = data().deepCopy(fields()[14].schema(), other.emailWarningSnoozeTill);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.smsWarningSnoozeTill)) {
+        this.smsWarningSnoozeTill = data().deepCopy(fields()[15].schema(), other.smsWarningSnoozeTill);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.lastSentSmsWarningType)) {
+        this.lastSentSmsWarningType = data().deepCopy(fields()[16].schema(), other.lastSentSmsWarningType);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.lastSentEmailWarningType)) {
+        this.lastSentEmailWarningType = data().deepCopy(fields()[17].schema(), other.lastSentEmailWarningType);
+        fieldSetFlags()[17] = true;
       }
     }
 
@@ -986,45 +1106,6 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     }
 
     /**
-      * Gets the value of the 'mobileNumbers' field.
-      * @return The value.
-      */
-    public java.util.List<java.lang.String> getMobileNumbers() {
-      return mobileNumbers;
-    }
-
-    /**
-      * Sets the value of the 'mobileNumbers' field.
-      * @param value The value of 'mobileNumbers'.
-      * @return This builder.
-      */
-    public com.fretron.Model.NotificationQuota.Builder setMobileNumbers(java.util.List<java.lang.String> value) {
-      validate(fields()[12], value);
-      this.mobileNumbers = value;
-      fieldSetFlags()[12] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'mobileNumbers' field has been set.
-      * @return True if the 'mobileNumbers' field has been set, false otherwise.
-      */
-    public boolean hasMobileNumbers() {
-      return fieldSetFlags()[12];
-    }
-
-
-    /**
-      * Clears the value of the 'mobileNumbers' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.NotificationQuota.Builder clearMobileNumbers() {
-      mobileNumbers = null;
-      fieldSetFlags()[12] = false;
-      return this;
-    }
-
-    /**
       * Gets the value of the 'emails' field.
       * @return The value.
       */
@@ -1038,9 +1119,9 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       * @return This builder.
       */
     public com.fretron.Model.NotificationQuota.Builder setEmails(java.util.List<java.lang.String> value) {
-      validate(fields()[13], value);
+      validate(fields()[12], value);
       this.emails = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1049,7 +1130,7 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       * @return True if the 'emails' field has been set, false otherwise.
       */
     public boolean hasEmails() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1059,7 +1140,202 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       */
     public com.fretron.Model.NotificationQuota.Builder clearEmails() {
       emails = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'mobileNumbers' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getMobileNumbers() {
+      return mobileNumbers;
+    }
+
+    /**
+      * Sets the value of the 'mobileNumbers' field.
+      * @param value The value of 'mobileNumbers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setMobileNumbers(java.util.List<java.lang.String> value) {
+      validate(fields()[13], value);
+      this.mobileNumbers = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'mobileNumbers' field has been set.
+      * @return True if the 'mobileNumbers' field has been set, false otherwise.
+      */
+    public boolean hasMobileNumbers() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'mobileNumbers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearMobileNumbers() {
+      mobileNumbers = null;
       fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'emailWarningSnoozeTill' field.
+      * @return The value.
+      */
+    public java.lang.Long getEmailWarningSnoozeTill() {
+      return emailWarningSnoozeTill;
+    }
+
+    /**
+      * Sets the value of the 'emailWarningSnoozeTill' field.
+      * @param value The value of 'emailWarningSnoozeTill'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setEmailWarningSnoozeTill(java.lang.Long value) {
+      validate(fields()[14], value);
+      this.emailWarningSnoozeTill = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'emailWarningSnoozeTill' field has been set.
+      * @return True if the 'emailWarningSnoozeTill' field has been set, false otherwise.
+      */
+    public boolean hasEmailWarningSnoozeTill() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'emailWarningSnoozeTill' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearEmailWarningSnoozeTill() {
+      emailWarningSnoozeTill = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'smsWarningSnoozeTill' field.
+      * @return The value.
+      */
+    public java.lang.Long getSmsWarningSnoozeTill() {
+      return smsWarningSnoozeTill;
+    }
+
+    /**
+      * Sets the value of the 'smsWarningSnoozeTill' field.
+      * @param value The value of 'smsWarningSnoozeTill'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setSmsWarningSnoozeTill(java.lang.Long value) {
+      validate(fields()[15], value);
+      this.smsWarningSnoozeTill = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'smsWarningSnoozeTill' field has been set.
+      * @return True if the 'smsWarningSnoozeTill' field has been set, false otherwise.
+      */
+    public boolean hasSmsWarningSnoozeTill() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'smsWarningSnoozeTill' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearSmsWarningSnoozeTill() {
+      smsWarningSnoozeTill = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'lastSentSmsWarningType' field.
+      * @return The value.
+      */
+    public java.lang.String getLastSentSmsWarningType() {
+      return lastSentSmsWarningType;
+    }
+
+    /**
+      * Sets the value of the 'lastSentSmsWarningType' field.
+      * @param value The value of 'lastSentSmsWarningType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setLastSentSmsWarningType(java.lang.String value) {
+      validate(fields()[16], value);
+      this.lastSentSmsWarningType = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastSentSmsWarningType' field has been set.
+      * @return True if the 'lastSentSmsWarningType' field has been set, false otherwise.
+      */
+    public boolean hasLastSentSmsWarningType() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'lastSentSmsWarningType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearLastSentSmsWarningType() {
+      lastSentSmsWarningType = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'lastSentEmailWarningType' field.
+      * @return The value.
+      */
+    public java.lang.String getLastSentEmailWarningType() {
+      return lastSentEmailWarningType;
+    }
+
+    /**
+      * Sets the value of the 'lastSentEmailWarningType' field.
+      * @param value The value of 'lastSentEmailWarningType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setLastSentEmailWarningType(java.lang.String value) {
+      validate(fields()[17], value);
+      this.lastSentEmailWarningType = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'lastSentEmailWarningType' field has been set.
+      * @return True if the 'lastSentEmailWarningType' field has been set, false otherwise.
+      */
+    public boolean hasLastSentEmailWarningType() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'lastSentEmailWarningType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearLastSentEmailWarningType() {
+      lastSentEmailWarningType = null;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1079,8 +1355,12 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         record.type = fieldSetFlags()[9] ? this.type : (java.lang.String) defaultValue(fields()[9]);
         record.isSmsWarningSent = fieldSetFlags()[10] ? this.isSmsWarningSent : (java.lang.Boolean) defaultValue(fields()[10]);
         record.isEmailWarningSent = fieldSetFlags()[11] ? this.isEmailWarningSent : (java.lang.Boolean) defaultValue(fields()[11]);
-        record.mobileNumbers = fieldSetFlags()[12] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
-        record.emails = fieldSetFlags()[13] ? this.emails : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.emails = fieldSetFlags()[12] ? this.emails : (java.util.List<java.lang.String>) defaultValue(fields()[12]);
+        record.mobileNumbers = fieldSetFlags()[13] ? this.mobileNumbers : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.emailWarningSnoozeTill = fieldSetFlags()[14] ? this.emailWarningSnoozeTill : (java.lang.Long) defaultValue(fields()[14]);
+        record.smsWarningSnoozeTill = fieldSetFlags()[15] ? this.smsWarningSnoozeTill : (java.lang.Long) defaultValue(fields()[15]);
+        record.lastSentSmsWarningType = fieldSetFlags()[16] ? this.lastSentSmsWarningType : (java.lang.String) defaultValue(fields()[16]);
+        record.lastSentEmailWarningType = fieldSetFlags()[17] ? this.lastSentEmailWarningType : (java.lang.String) defaultValue(fields()[17]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

@@ -2,7 +2,7 @@
   "namespace": "com.fretron.Model",
   "type": "record",
   "name": "NotificationQuota",
-  "fields":[
+  "fields": [
     {
       "name": "uuid",
       "type": [
@@ -103,6 +103,17 @@
       "default": null
     },
     {
+      "name": "emails",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "mobileNumbers",
       "type": [
         "null",
@@ -114,13 +125,36 @@
       "default": null
     },
     {
-      "name": "emails",
+      "name": "emailWarningSnoozeTill",
       "type": [
         "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "smsWarningSnoozeTill",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "lastSentSmsWarningType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lastSentEmailWarningType",
+      "type": [
+        "null",
+        "string"
       ],
       "default": null
     }

@@ -85,6 +85,22 @@
                                     "string"
                                   ],
                                   "default": null
-                                }
+                                },
+                                                               {
+                                                                  "name": "partnerId",
+                                                                  "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                  ],
+                                                                  "default": null
+                                                                },
+                                                               {
+                                                                  "name": "linkedMaterialId",
+                                                                  "type": [
+                                                                    "null",
+                                                                    "string"
+                                                                  ],
+                                                                  "default": null
+                                                                }
   ]
  }

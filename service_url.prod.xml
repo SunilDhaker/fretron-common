@@ -134,5 +134,9 @@
 
     <entry key="business.partner.manager.service.url">http://business-partner-manager.streams:8087</entry>
 
+    <!-- ==Central Notification Manager==-->
+    <entry key="central.notification.manager.service.url">http://fretron-central-notification-manager.streams:8092</entry>
+    <entry key="notification.event.topic">notificationEvent</entry>
+    <entry key="notification.command.topic">notificationCommand</entry>
 
 </properties>
