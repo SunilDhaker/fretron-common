@@ -86,21 +86,37 @@
                                   ],
                                   "default": null
                                 },
-                                                               {
-                                                                  "name": "partnerId",
-                                                                  "type": [
-                                                                    "null",
-                                                                    "string"
-                                                                  ],
-                                                                  "default": null
-                                                                },
-                                                               {
-                                                                  "name": "linkedMaterialId",
-                                                                  "type": [
-                                                                    "null",
-                                                                    "string"
-                                                                  ],
-                                                                  "default": null
-                                                                }
+           {
+              "name": "partnerId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+           {
+              "name": "linkedMaterialId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+           {
+              "name": "materialGroupId",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+                       {
+                          "name": "materialDescription",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        }
   ]
  }

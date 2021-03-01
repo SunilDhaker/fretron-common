@@ -207,7 +207,15 @@
                                 "string"
                               ],
                               "default": null
-                            }
+                            },
+                                                {
+                                                      "name": "firmType",
+                                                      "type": [
+                                                        "null",
+                                                        "string"
+                                                      ],
+                                                      "default": null
+                                                    }
 
   ]
 }

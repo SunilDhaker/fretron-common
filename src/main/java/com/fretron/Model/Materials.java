@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Materials extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3639359946037617466L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 7665193803728028701L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -28,6 +28,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String taxCode;
   @Deprecated public java.lang.String partnerId;
   @Deprecated public java.lang.String linkedMaterialId;
+  @Deprecated public java.lang.String materialGroupId;
+  @Deprecated public java.lang.String materialDescription;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -53,8 +55,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
    * @param taxCode The new value for taxCode
    * @param partnerId The new value for partnerId
    * @param linkedMaterialId The new value for linkedMaterialId
+   * @param materialGroupId The new value for materialGroupId
+   * @param materialDescription The new value for materialDescription
    */
-  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates, java.lang.String materialType, java.lang.String materialGroup, java.lang.String controlCode, java.lang.String division, java.lang.String taxCode, java.lang.String partnerId, java.lang.String linkedMaterialId) {
+  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates, java.lang.String materialType, java.lang.String materialGroup, java.lang.String controlCode, java.lang.String division, java.lang.String taxCode, java.lang.String partnerId, java.lang.String linkedMaterialId, java.lang.String materialGroupId, java.lang.String materialDescription) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.name = name;
@@ -70,6 +74,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     this.taxCode = taxCode;
     this.partnerId = partnerId;
     this.linkedMaterialId = linkedMaterialId;
+    this.materialGroupId = materialGroupId;
+    this.materialDescription = materialDescription;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -91,6 +97,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 12: return taxCode;
     case 13: return partnerId;
     case 14: return linkedMaterialId;
+    case 15: return materialGroupId;
+    case 16: return materialDescription;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -114,6 +122,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 12: taxCode = (java.lang.String)value$; break;
     case 13: partnerId = (java.lang.String)value$; break;
     case 14: linkedMaterialId = (java.lang.String)value$; break;
+    case 15: materialGroupId = (java.lang.String)value$; break;
+    case 16: materialDescription = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -359,6 +369,38 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'materialGroupId' field.
+   * @return The value of the 'materialGroupId' field.
+   */
+  public java.lang.String getMaterialGroupId() {
+    return materialGroupId;
+  }
+
+  /**
+   * Sets the value of the 'materialGroupId' field.
+   * @param value the value to set.
+   */
+  public void setMaterialGroupId(java.lang.String value) {
+    this.materialGroupId = value;
+  }
+
+  /**
+   * Gets the value of the 'materialDescription' field.
+   * @return The value of the 'materialDescription' field.
+   */
+  public java.lang.String getMaterialDescription() {
+    return materialDescription;
+  }
+
+  /**
+   * Sets the value of the 'materialDescription' field.
+   * @param value the value to set.
+   */
+  public void setMaterialDescription(java.lang.String value) {
+    this.materialDescription = value;
+  }
+
+  /**
    * Creates a new Materials RecordBuilder.
    * @return A new Materials RecordBuilder
    */
@@ -406,6 +448,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String taxCode;
     private java.lang.String partnerId;
     private java.lang.String linkedMaterialId;
+    private java.lang.String materialGroupId;
+    private java.lang.String materialDescription;
 
     /** Creates a new Builder */
     private Builder() {
@@ -481,6 +525,14 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.linkedMaterialId = data().deepCopy(fields()[14].schema(), other.linkedMaterialId);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.materialGroupId)) {
+        this.materialGroupId = data().deepCopy(fields()[15].schema(), other.materialGroupId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.materialDescription)) {
+        this.materialDescription = data().deepCopy(fields()[16].schema(), other.materialDescription);
+        fieldSetFlags()[16] = true;
+      }
     }
 
     /**
@@ -549,6 +601,14 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[14], other.linkedMaterialId)) {
         this.linkedMaterialId = data().deepCopy(fields()[14].schema(), other.linkedMaterialId);
         fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.materialGroupId)) {
+        this.materialGroupId = data().deepCopy(fields()[15].schema(), other.materialGroupId);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.materialDescription)) {
+        this.materialDescription = data().deepCopy(fields()[16].schema(), other.materialDescription);
+        fieldSetFlags()[16] = true;
       }
     }
 
@@ -1172,6 +1232,84 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'materialGroupId' field.
+      * @return The value.
+      */
+    public java.lang.String getMaterialGroupId() {
+      return materialGroupId;
+    }
+
+    /**
+      * Sets the value of the 'materialGroupId' field.
+      * @param value The value of 'materialGroupId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMaterialGroupId(java.lang.String value) {
+      validate(fields()[15], value);
+      this.materialGroupId = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'materialGroupId' field has been set.
+      * @return True if the 'materialGroupId' field has been set, false otherwise.
+      */
+    public boolean hasMaterialGroupId() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'materialGroupId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMaterialGroupId() {
+      materialGroupId = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'materialDescription' field.
+      * @return The value.
+      */
+    public java.lang.String getMaterialDescription() {
+      return materialDescription;
+    }
+
+    /**
+      * Sets the value of the 'materialDescription' field.
+      * @param value The value of 'materialDescription'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMaterialDescription(java.lang.String value) {
+      validate(fields()[16], value);
+      this.materialDescription = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'materialDescription' field has been set.
+      * @return True if the 'materialDescription' field has been set, false otherwise.
+      */
+    public boolean hasMaterialDescription() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'materialDescription' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMaterialDescription() {
+      materialDescription = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
     @Override
     public Materials build() {
       try {
@@ -1195,6 +1333,8 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         record.taxCode = fieldSetFlags()[12] ? this.taxCode : (java.lang.String) defaultValue(fields()[12]);
         record.partnerId = fieldSetFlags()[13] ? this.partnerId : (java.lang.String) defaultValue(fields()[13]);
         record.linkedMaterialId = fieldSetFlags()[14] ? this.linkedMaterialId : (java.lang.String) defaultValue(fields()[14]);
+        record.materialGroupId = fieldSetFlags()[15] ? this.materialGroupId : (java.lang.String) defaultValue(fields()[15]);
+        record.materialDescription = fieldSetFlags()[16] ? this.materialDescription : (java.lang.String) defaultValue(fields()[16]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
