@@ -404,6 +404,11 @@
                                   }
                               ],
                         "default": null
+                    },
+                   {
+                      "name":"isDirectAssignmentAllowed",
+                       "type": ["null","boolean"],
+                        "default":null
                     }
 	]
 }
