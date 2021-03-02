@@ -149,7 +149,15 @@
                                                   }
                                                 ],
                           "default": null
-                 }
+                 },
+                  {
+                                      "name": "allocationHistory",
+                                       "type": ["null",{
+                                                         "type": "array",
+                                                        "items": "com.fretron.Model.AllocationHistory"
+                                                 }],
+                                        "default": null
+                                     }
 
   ]
 }

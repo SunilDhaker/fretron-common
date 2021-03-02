@@ -1,0 +1,49 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "AllocationHistory",
+  "type": "record",
+  "fields": [
+           {
+              "name": "allocationType",
+              "type": [
+                        "null",
+                        "string"
+                       ],
+               "default": null
+            },
+            {
+               "name": "vendorId",
+                "type": [
+                          "null",
+                          "string"
+                        ],
+               "default": null
+            },
+            {
+                "name": "rejectionType",
+                 "type": [
+                            "null",
+                             "string"
+                          ],
+               "default": null
+            },
+              {
+                  "name": "source",
+                    "type": [
+                               "null",
+                                "string"
+                            ],
+                   "default": null
+            },
+             {
+                      "name": "time",
+                       "type": [
+                                      "null",
+                                       "long"
+                                ],
+                        "default": null
+             }
+
+
+  ]
+}

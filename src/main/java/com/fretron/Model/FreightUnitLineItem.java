@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3059650432317719848L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightUnitLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOrderMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"auctionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"optimisationBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"utilization\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"expectedFreightINR\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transporterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"loadTypeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alerts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ResourceAlert\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"finalizationIssues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"expectedStageEndTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"stageStartTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -8112281009019089249L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"FreightUnitLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOrderMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"auctionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"optimisationBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"utilization\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"expectedFreightINR\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"freightType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transporterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"loadTypeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alerts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ResourceAlert\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}}],\"default\":null},{\"name\":\"finalizationIssues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"expectedStageEndTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"stageStartTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allocationHistory\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"AllocationHistory\",\"fields\":[{\"name\":\"allocationType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rejectionType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String status;
@@ -31,6 +31,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.Long expectedStageEndTime;
   @Deprecated public java.lang.Long stageStartTime;
   @Deprecated public java.util.List<java.lang.String> issues;
+  @Deprecated public java.util.List<com.fretron.Model.AllocationHistory> allocationHistory;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -59,8 +60,9 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
    * @param expectedStageEndTime The new value for expectedStageEndTime
    * @param stageStartTime The new value for stageStartTime
    * @param issues The new value for issues
+   * @param allocationHistory The new value for allocationHistory
    */
-  public FreightUnitLineItem(java.lang.String uuid, java.lang.String status, java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings, java.lang.String purchaseOrderId, java.lang.String purchaseLineItemId, java.lang.String auctionId, java.lang.String optimisationBasis, java.lang.Double utilization, java.lang.Double expectedFreightINR, java.lang.String freightType, java.lang.String transporterId, java.lang.String shipmentId, java.lang.String loadTypeId, java.util.List<com.fretron.Model.ResourceAlert> alerts, java.util.List<java.lang.String> finalizationIssues, java.lang.Long expectedStageEndTime, java.lang.Long stageStartTime, java.util.List<java.lang.String> issues) {
+  public FreightUnitLineItem(java.lang.String uuid, java.lang.String status, java.util.List<com.fretron.Model.SalesOrderMapping> salesOrderMappings, java.lang.String purchaseOrderId, java.lang.String purchaseLineItemId, java.lang.String auctionId, java.lang.String optimisationBasis, java.lang.Double utilization, java.lang.Double expectedFreightINR, java.lang.String freightType, java.lang.String transporterId, java.lang.String shipmentId, java.lang.String loadTypeId, java.util.List<com.fretron.Model.ResourceAlert> alerts, java.util.List<java.lang.String> finalizationIssues, java.lang.Long expectedStageEndTime, java.lang.Long stageStartTime, java.util.List<java.lang.String> issues, java.util.List<com.fretron.Model.AllocationHistory> allocationHistory) {
     this.uuid = uuid;
     this.status = status;
     this.salesOrderMappings = salesOrderMappings;
@@ -79,6 +81,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     this.expectedStageEndTime = expectedStageEndTime;
     this.stageStartTime = stageStartTime;
     this.issues = issues;
+    this.allocationHistory = allocationHistory;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -103,6 +106,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     case 15: return expectedStageEndTime;
     case 16: return stageStartTime;
     case 17: return issues;
+    case 18: return allocationHistory;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +133,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     case 15: expectedStageEndTime = (java.lang.Long)value$; break;
     case 16: stageStartTime = (java.lang.Long)value$; break;
     case 17: issues = (java.util.List<java.lang.String>)value$; break;
+    case 18: allocationHistory = (java.util.List<com.fretron.Model.AllocationHistory>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -422,6 +427,22 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'allocationHistory' field.
+   * @return The value of the 'allocationHistory' field.
+   */
+  public java.util.List<com.fretron.Model.AllocationHistory> getAllocationHistory() {
+    return allocationHistory;
+  }
+
+  /**
+   * Sets the value of the 'allocationHistory' field.
+   * @param value the value to set.
+   */
+  public void setAllocationHistory(java.util.List<com.fretron.Model.AllocationHistory> value) {
+    this.allocationHistory = value;
+  }
+
+  /**
    * Creates a new FreightUnitLineItem RecordBuilder.
    * @return A new FreightUnitLineItem RecordBuilder
    */
@@ -471,6 +492,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
     private java.lang.Long expectedStageEndTime;
     private java.lang.Long stageStartTime;
     private java.util.List<java.lang.String> issues;
+    private java.util.List<com.fretron.Model.AllocationHistory> allocationHistory;
 
     /** Creates a new Builder */
     private Builder() {
@@ -555,6 +577,10 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
         this.issues = data().deepCopy(fields()[17].schema(), other.issues);
         fieldSetFlags()[17] = true;
       }
+      if (isValidValue(fields()[18], other.allocationHistory)) {
+        this.allocationHistory = data().deepCopy(fields()[18].schema(), other.allocationHistory);
+        fieldSetFlags()[18] = true;
+      }
     }
 
     /**
@@ -634,6 +660,10 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[17], other.issues)) {
         this.issues = data().deepCopy(fields()[17].schema(), other.issues);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.allocationHistory)) {
+        this.allocationHistory = data().deepCopy(fields()[18].schema(), other.allocationHistory);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1339,6 +1369,45 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'allocationHistory' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.AllocationHistory> getAllocationHistory() {
+      return allocationHistory;
+    }
+
+    /**
+      * Sets the value of the 'allocationHistory' field.
+      * @param value The value of 'allocationHistory'.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder setAllocationHistory(java.util.List<com.fretron.Model.AllocationHistory> value) {
+      validate(fields()[18], value);
+      this.allocationHistory = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'allocationHistory' field has been set.
+      * @return True if the 'allocationHistory' field has been set, false otherwise.
+      */
+    public boolean hasAllocationHistory() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'allocationHistory' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.FreightUnitLineItem.Builder clearAllocationHistory() {
+      allocationHistory = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public FreightUnitLineItem build() {
       try {
@@ -1361,6 +1430,7 @@ public class FreightUnitLineItem extends org.apache.avro.specific.SpecificRecord
         record.expectedStageEndTime = fieldSetFlags()[15] ? this.expectedStageEndTime : (java.lang.Long) defaultValue(fields()[15]);
         record.stageStartTime = fieldSetFlags()[16] ? this.stageStartTime : (java.lang.Long) defaultValue(fields()[16]);
         record.issues = fieldSetFlags()[17] ? this.issues : (java.util.List<java.lang.String>) defaultValue(fields()[17]);
+        record.allocationHistory = fieldSetFlags()[18] ? this.allocationHistory : (java.util.List<com.fretron.Model.AllocationHistory>) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
