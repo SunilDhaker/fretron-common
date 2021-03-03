@@ -409,6 +409,15 @@
                       "name":"isDirectAssignmentAllowed",
                        "type": ["null","boolean"],
                         "default":null
-                    }
+                    },
+                    {
+                    			"name": "liftingEndDuration",
+                    			"type": [
+                    				"null",
+                    				"long"
+                    			],
+                    			"logicalType": "timestamp-millis",
+                    			"default": null
+                    		}
 	]
 }
