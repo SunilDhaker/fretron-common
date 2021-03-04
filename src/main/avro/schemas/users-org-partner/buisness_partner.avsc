@@ -215,7 +215,15 @@
                                                         "string"
                                                       ],
                                                       "default": null
-                                                    }
+                                                    },
+                                                    {
+                                                          "name": "verificationTicketId",
+                                                          "type": [
+                                                            "null",
+                                                            "string"
+                                                          ],
+                                                          "default": null
+                                                        }
 
   ]
 }
