@@ -398,7 +398,15 @@
                                     }
                                     ],
                    "default": null
-               }
+               },
+                {
+                      "name": "numberOfBidRequiredToMarkWON",
+                       "type": [
+                                "null",
+                                 "int"
+                               ],
+                      "default": null
+                }
 
 
   ]
