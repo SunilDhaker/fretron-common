@@ -234,6 +234,14 @@
         "boolean"
       ],
       "default": null
+    },
+    {
+      "name": "userType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
