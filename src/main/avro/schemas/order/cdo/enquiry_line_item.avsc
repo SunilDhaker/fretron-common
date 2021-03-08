@@ -227,7 +227,15 @@
                                        "com.fretron.Model.OrgOffice"
                                  ],
                            "default": null
-                  }
+                  },
+                   {
+                           "name":"additionalCost",
+                            "type":[
+                                                  "null",
+                                                 {"type" : "array", "items":"com.fretron.Model.Cost"}
+                                                ],
+                           "default":null
+                         }
 
   ]
 }
