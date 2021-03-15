@@ -406,7 +406,23 @@
                                  "int"
                                ],
                       "default": null
-                }
+                },
+                {
+                         "name": "bidToleranceMethod",
+                          "type": [
+                                       "null",
+                                       "string"
+                                      ],
+                           "default": null
+                  },
+                   {
+                         "name": "bidToleranceAmount",
+                            "type": [
+                                                         "null",
+                                                         "double"
+                                                        ],
+                              "default": null
+                     }
 
 
   ]
