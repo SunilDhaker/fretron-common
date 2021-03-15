@@ -1,0 +1,16 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "PaymentCondition",
+  "fields": [
+      {
+                   "name": "duration",
+                                  "type": [
+                                         "null",
+                                         "long"
+                                       ],
+                   "logicalType": "timestamp-millis",
+                   "default": null
+               }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "BillingCycle",
+  "fields": [
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+       {
+           "name": "weekDays",
+               "type": [
+                              "null",
+                               {
+                                 "type": "array",
+                                 "items": "int"
+                               }
+                             ],
+               "default":null
+         },
+
+          {
+                   "name": "dayHours",
+                    "type": [
+                                   "null",
+                                    {
+                                      "type": "array",
+                                      "items": "int"
+                                    }
+                                  ],
+                    "default":null
+              },
+              {
+                        "name": "timesOfDay",
+                         "type": [
+                                        "null",
+                                         {
+                                           "type": "array",
+                                           "items": "long"
+                                         }
+                                       ],
+                         "default":null
+             },
+             {
+                      "name": "monthDays",
+                       "type": [
+                                                "null",
+                                                 {
+                                                   "type": "array",
+                                                   "items": "int"
+                                                 }
+                                               ],
+                        "default":null
+              }
+
+  ]
+}

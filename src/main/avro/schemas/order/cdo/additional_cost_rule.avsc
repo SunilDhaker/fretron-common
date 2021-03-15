@@ -1,0 +1,44 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "CostRule",
+  "fields": [
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+       "name": "value",
+          "type": [
+            "null",
+            "double"
+          ],
+       "default": null
+     },
+      {
+           "name": "uom",
+               "type": [
+                 "null",
+                 "string"
+               ],
+            "default": null
+       },
+       {
+          "name": "description",
+           "type": [
+                        "null",
+                        "string"
+                      ],
+           "default": null
+       },
+        {
+               "name":"isApplicable",
+                "type": ["null","boolean"],
+                "default":null
+        }
+  ]
+}

@@ -418,6 +418,33 @@
                     			],
                     			"logicalType": "timestamp-millis",
                     			"default": null
-                    		}
+                 },
+                 {
+                 	"name": "additionalCosts",
+                 	 "type": [
+                 				"null",
+                 				{
+                 					"type": "array",
+                 					"items": "com.fretron.Model.CostRule"
+                 				}
+                 			],
+                 			"default": null
+                 },
+                  {
+                        "name": "billingCycle",
+                         "type": [
+                                                 "null",
+                                                 "com.fretron.Model.BillingCycle"
+                                                    ],
+                        "default": null
+                },
+                 {
+                           "name": "paymentRules",
+                                                       "type": [
+                                                                 "null",
+                                                                 "com.fretron.Model.PaymentRules"
+                                                                    ],
+                                        "default": null
+                  }
 	]
 }

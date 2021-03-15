@@ -1,0 +1,26 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "PaymentRules",
+  "fields": [
+      {
+               "name": "whenClaimApplicable",
+                   "type": [
+                             "null",
+                             "com.fretron.Model.PaymentCondition"
+                                ],
+                  "default": null
+        },
+         {
+                  "name": "whenNoClaimApplicable",
+                      "type": [
+                                "null",
+                                "com.fretron.Model.PaymentCondition"
+                                   ],
+                     "default": null
+          }
+  ]
+}
+
+
+
