@@ -55,7 +55,15 @@
                                                  }
                                                ],
                         "default":null
-              }
+              },
+              {
+                    "name": "billingRule",
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "default": null
+                  }
 
   ]
 }

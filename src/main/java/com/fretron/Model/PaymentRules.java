@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6388330492225085989L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentRules\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null}]}");
+  private static final long serialVersionUID = 8215228269104427060L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentRules\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.PaymentCondition whenClaimApplicable;
   @Deprecated public com.fretron.Model.PaymentCondition whenNoClaimApplicable;

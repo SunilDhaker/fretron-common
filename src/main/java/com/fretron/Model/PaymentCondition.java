@@ -10,10 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4176448315099622298L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentCondition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = 3158611743041995497L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentCondition\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long duration;
+  @Deprecated public java.lang.String paymentMode;
+  @Deprecated public java.lang.Double creditLimit;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -25,9 +27,13 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
   /**
    * All-args constructor.
    * @param duration The new value for duration
+   * @param paymentMode The new value for paymentMode
+   * @param creditLimit The new value for creditLimit
    */
-  public PaymentCondition(java.lang.Long duration) {
+  public PaymentCondition(java.lang.Long duration, java.lang.String paymentMode, java.lang.Double creditLimit) {
     this.duration = duration;
+    this.paymentMode = paymentMode;
+    this.creditLimit = creditLimit;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -35,6 +41,8 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
   public java.lang.Object get(int field$) {
     switch (field$) {
     case 0: return duration;
+    case 1: return paymentMode;
+    case 2: return creditLimit;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -44,6 +52,8 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
     case 0: duration = (java.lang.Long)value$; break;
+    case 1: paymentMode = (java.lang.String)value$; break;
+    case 2: creditLimit = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -62,6 +72,38 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
    */
   public void setDuration(java.lang.Long value) {
     this.duration = value;
+  }
+
+  /**
+   * Gets the value of the 'paymentMode' field.
+   * @return The value of the 'paymentMode' field.
+   */
+  public java.lang.String getPaymentMode() {
+    return paymentMode;
+  }
+
+  /**
+   * Sets the value of the 'paymentMode' field.
+   * @param value the value to set.
+   */
+  public void setPaymentMode(java.lang.String value) {
+    this.paymentMode = value;
+  }
+
+  /**
+   * Gets the value of the 'creditLimit' field.
+   * @return The value of the 'creditLimit' field.
+   */
+  public java.lang.Double getCreditLimit() {
+    return creditLimit;
+  }
+
+  /**
+   * Sets the value of the 'creditLimit' field.
+   * @param value the value to set.
+   */
+  public void setCreditLimit(java.lang.Double value) {
+    this.creditLimit = value;
   }
 
   /**
@@ -97,6 +139,8 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
     implements org.apache.avro.data.RecordBuilder<PaymentCondition> {
 
     private java.lang.Long duration;
+    private java.lang.String paymentMode;
+    private java.lang.Double creditLimit;
 
     /** Creates a new Builder */
     private Builder() {
@@ -113,6 +157,14 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
         this.duration = data().deepCopy(fields()[0].schema(), other.duration);
         fieldSetFlags()[0] = true;
       }
+      if (isValidValue(fields()[1], other.paymentMode)) {
+        this.paymentMode = data().deepCopy(fields()[1].schema(), other.paymentMode);
+        fieldSetFlags()[1] = true;
+      }
+      if (isValidValue(fields()[2], other.creditLimit)) {
+        this.creditLimit = data().deepCopy(fields()[2].schema(), other.creditLimit);
+        fieldSetFlags()[2] = true;
+      }
     }
 
     /**
@@ -124,6 +176,14 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
       if (isValidValue(fields()[0], other.duration)) {
         this.duration = data().deepCopy(fields()[0].schema(), other.duration);
         fieldSetFlags()[0] = true;
+      }
+      if (isValidValue(fields()[1], other.paymentMode)) {
+        this.paymentMode = data().deepCopy(fields()[1].schema(), other.paymentMode);
+        fieldSetFlags()[1] = true;
+      }
+      if (isValidValue(fields()[2], other.creditLimit)) {
+        this.creditLimit = data().deepCopy(fields()[2].schema(), other.creditLimit);
+        fieldSetFlags()[2] = true;
       }
     }
 
@@ -166,11 +226,91 @@ public class PaymentCondition extends org.apache.avro.specific.SpecificRecordBas
       return this;
     }
 
+    /**
+      * Gets the value of the 'paymentMode' field.
+      * @return The value.
+      */
+    public java.lang.String getPaymentMode() {
+      return paymentMode;
+    }
+
+    /**
+      * Sets the value of the 'paymentMode' field.
+      * @param value The value of 'paymentMode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentCondition.Builder setPaymentMode(java.lang.String value) {
+      validate(fields()[1], value);
+      this.paymentMode = value;
+      fieldSetFlags()[1] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'paymentMode' field has been set.
+      * @return True if the 'paymentMode' field has been set, false otherwise.
+      */
+    public boolean hasPaymentMode() {
+      return fieldSetFlags()[1];
+    }
+
+
+    /**
+      * Clears the value of the 'paymentMode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentCondition.Builder clearPaymentMode() {
+      paymentMode = null;
+      fieldSetFlags()[1] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'creditLimit' field.
+      * @return The value.
+      */
+    public java.lang.Double getCreditLimit() {
+      return creditLimit;
+    }
+
+    /**
+      * Sets the value of the 'creditLimit' field.
+      * @param value The value of 'creditLimit'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentCondition.Builder setCreditLimit(java.lang.Double value) {
+      validate(fields()[2], value);
+      this.creditLimit = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'creditLimit' field has been set.
+      * @return True if the 'creditLimit' field has been set, false otherwise.
+      */
+    public boolean hasCreditLimit() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'creditLimit' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentCondition.Builder clearCreditLimit() {
+      creditLimit = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
     @Override
     public PaymentCondition build() {
       try {
         PaymentCondition record = new PaymentCondition();
         record.duration = fieldSetFlags()[0] ? this.duration : (java.lang.Long) defaultValue(fields()[0]);
+        record.paymentMode = fieldSetFlags()[1] ? this.paymentMode : (java.lang.String) defaultValue(fields()[1]);
+        record.creditLimit = fieldSetFlags()[2] ? this.creditLimit : (java.lang.Double) defaultValue(fields()[2]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

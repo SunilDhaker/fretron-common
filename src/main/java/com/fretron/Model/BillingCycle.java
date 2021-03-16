@@ -10,14 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6472786074311215952L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BillingCycle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 3333953039868853699L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BillingCycle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"billingRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
   @Deprecated public java.util.List<java.lang.Integer> weekDays;
   @Deprecated public java.util.List<java.lang.Integer> dayHours;
   @Deprecated public java.util.List<java.lang.Long> timesOfDay;
   @Deprecated public java.util.List<java.lang.Integer> monthDays;
+  @Deprecated public java.lang.String billingRule;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -33,13 +34,15 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
    * @param dayHours The new value for dayHours
    * @param timesOfDay The new value for timesOfDay
    * @param monthDays The new value for monthDays
+   * @param billingRule The new value for billingRule
    */
-  public BillingCycle(java.lang.String type, java.util.List<java.lang.Integer> weekDays, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.Integer> monthDays) {
+  public BillingCycle(java.lang.String type, java.util.List<java.lang.Integer> weekDays, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.Integer> monthDays, java.lang.String billingRule) {
     this.type = type;
     this.weekDays = weekDays;
     this.dayHours = dayHours;
     this.timesOfDay = timesOfDay;
     this.monthDays = monthDays;
+    this.billingRule = billingRule;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -51,6 +54,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     case 2: return dayHours;
     case 3: return timesOfDay;
     case 4: return monthDays;
+    case 5: return billingRule;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -64,6 +68,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     case 2: dayHours = (java.util.List<java.lang.Integer>)value$; break;
     case 3: timesOfDay = (java.util.List<java.lang.Long>)value$; break;
     case 4: monthDays = (java.util.List<java.lang.Integer>)value$; break;
+    case 5: billingRule = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -149,6 +154,22 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'billingRule' field.
+   * @return The value of the 'billingRule' field.
+   */
+  public java.lang.String getBillingRule() {
+    return billingRule;
+  }
+
+  /**
+   * Sets the value of the 'billingRule' field.
+   * @param value the value to set.
+   */
+  public void setBillingRule(java.lang.String value) {
+    this.billingRule = value;
+  }
+
+  /**
    * Creates a new BillingCycle RecordBuilder.
    * @return A new BillingCycle RecordBuilder
    */
@@ -185,6 +206,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     private java.util.List<java.lang.Integer> dayHours;
     private java.util.List<java.lang.Long> timesOfDay;
     private java.util.List<java.lang.Integer> monthDays;
+    private java.lang.String billingRule;
 
     /** Creates a new Builder */
     private Builder() {
@@ -217,6 +239,10 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
         this.monthDays = data().deepCopy(fields()[4].schema(), other.monthDays);
         fieldSetFlags()[4] = true;
       }
+      if (isValidValue(fields()[5], other.billingRule)) {
+        this.billingRule = data().deepCopy(fields()[5].schema(), other.billingRule);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -244,6 +270,10 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[4], other.monthDays)) {
         this.monthDays = data().deepCopy(fields()[4].schema(), other.monthDays);
         fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.billingRule)) {
+        this.billingRule = data().deepCopy(fields()[5].schema(), other.billingRule);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -442,6 +472,45 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'billingRule' field.
+      * @return The value.
+      */
+    public java.lang.String getBillingRule() {
+      return billingRule;
+    }
+
+    /**
+      * Sets the value of the 'billingRule' field.
+      * @param value The value of 'billingRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.BillingCycle.Builder setBillingRule(java.lang.String value) {
+      validate(fields()[5], value);
+      this.billingRule = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'billingRule' field has been set.
+      * @return True if the 'billingRule' field has been set, false otherwise.
+      */
+    public boolean hasBillingRule() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'billingRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.BillingCycle.Builder clearBillingRule() {
+      billingRule = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public BillingCycle build() {
       try {
@@ -451,6 +520,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
         record.dayHours = fieldSetFlags()[2] ? this.dayHours : (java.util.List<java.lang.Integer>) defaultValue(fields()[2]);
         record.timesOfDay = fieldSetFlags()[3] ? this.timesOfDay : (java.util.List<java.lang.Long>) defaultValue(fields()[3]);
         record.monthDays = fieldSetFlags()[4] ? this.monthDays : (java.util.List<java.lang.Integer>) defaultValue(fields()[4]);
+        record.billingRule = fieldSetFlags()[5] ? this.billingRule : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

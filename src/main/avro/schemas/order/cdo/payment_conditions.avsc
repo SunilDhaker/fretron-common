@@ -11,6 +11,22 @@
                                        ],
                    "logicalType": "timestamp-millis",
                    "default": null
+          },
+           {
+           		"name": "paymentMode",
+           			"type": [
+           				"null",
+           				"string"
+           			],
+           			"default": null
+           },
+            {
+                 "name": "creditLimit",
+                 "type": [
+                   "null",
+                   "double"
+                 ],
+                 "default": null
                }
   ]
 }
