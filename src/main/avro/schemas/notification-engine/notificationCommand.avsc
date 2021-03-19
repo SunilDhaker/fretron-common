@@ -200,6 +200,14 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "smsContent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
