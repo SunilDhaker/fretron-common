@@ -156,7 +156,12 @@
                         "com.fretron.Model.OrgOffice"
                     ],
            "default": null
-         }
+         },
+                             {
+                               "name": "isEmployee",
+                               "type": "boolean",
+                               "default": false
+                             }
 
   ]
 }
