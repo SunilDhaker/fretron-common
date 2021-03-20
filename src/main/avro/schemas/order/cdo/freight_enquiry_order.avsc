@@ -306,6 +306,15 @@
                                    "string"
                                   ],
                     "default": null
-                 }
+                 },
+                  {
+                          "name": "costSubmissionDeadline",
+                                       "type": [
+                                                       "null",
+                                                                      "long"
+                                                                   ],
+                               "logicalType": "timestamp-millis",
+                                         "default": null
+                     }
   ]
 }
