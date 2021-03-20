@@ -3,6 +3,7 @@ package com.fretron.Metrics
 
 import io.prometheus.client.Counter
 import io.prometheus.client.Gauge
+import io.prometheus.client.Histogram
 import io.prometheus.client.Summary
 
 
@@ -25,6 +26,9 @@ class Metrics {
                 .name(name).help(description).register()
         }
 
+        fun registerHistogram(name:String,description: String):Histogram{
+            return Histogram.build().name(name).help(description).register()
+        }
 
     }
 

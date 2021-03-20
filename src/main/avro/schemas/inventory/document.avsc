@@ -81,32 +81,41 @@
         "string"
       ],
       "default": null
-    },        {
-          "name": "customFields",
-          "type": [
-            "null",
-            {
-              "type": "array",
-              "items": "com.fretron.Model.LiteCustomFields"
-            }
-          ],
-          "default": null
-        },
-         {
-              "name": "createdAt",
-              "type": [
-                "null",
-                "long"
-              ],
-              "default": null
-            },
-             {
-                          "name": "createdBy",
-                          "type": [
-                            "null",
-                            "string"
-                          ],
-                          "default": null
-                        }
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.LiteCustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    }
   ]
 }
