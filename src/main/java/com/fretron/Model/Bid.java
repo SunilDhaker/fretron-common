@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Bid extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4606603822487646485L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1560825844889267710L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Bid\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"businessPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfVehicles\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"rank\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"vehicleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"purchaseOrderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vendorExecutive\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"termAcceptanceStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String businessPartnerId;
@@ -26,6 +26,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   @Deprecated public java.lang.String partnerExternalId;
   @Deprecated public java.lang.String vendorExecutive;
   @Deprecated public java.lang.String source;
+  @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.String termAcceptanceStatus;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,8 +51,10 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
    * @param partnerExternalId The new value for partnerExternalId
    * @param vendorExecutive The new value for vendorExecutive
    * @param source The new value for source
+   * @param uuid The new value for uuid
+   * @param termAcceptanceStatus The new value for termAcceptanceStatus
    */
-  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank, java.util.List<java.lang.String> contacts, java.lang.String vehicleType, java.lang.String purchaseOrderId, java.lang.Long time, java.lang.String partnerExternalId, java.lang.String vendorExecutive, java.lang.String source) {
+  public Bid(java.lang.String status, java.lang.String businessPartnerId, java.lang.String partnerName, java.lang.Integer numberOfVehicles, java.lang.Double amount, java.lang.Double rank, java.util.List<java.lang.String> contacts, java.lang.String vehicleType, java.lang.String purchaseOrderId, java.lang.Long time, java.lang.String partnerExternalId, java.lang.String vendorExecutive, java.lang.String source, java.lang.String uuid, java.lang.String termAcceptanceStatus) {
     this.status = status;
     this.businessPartnerId = businessPartnerId;
     this.partnerName = partnerName;
@@ -64,6 +68,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     this.partnerExternalId = partnerExternalId;
     this.vendorExecutive = vendorExecutive;
     this.source = source;
+    this.uuid = uuid;
+    this.termAcceptanceStatus = termAcceptanceStatus;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -83,6 +89,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 10: return partnerExternalId;
     case 11: return vendorExecutive;
     case 12: return source;
+    case 13: return uuid;
+    case 14: return termAcceptanceStatus;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -104,6 +112,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     case 10: partnerExternalId = (java.lang.String)value$; break;
     case 11: vendorExecutive = (java.lang.String)value$; break;
     case 12: source = (java.lang.String)value$; break;
+    case 13: uuid = (java.lang.String)value$; break;
+    case 14: termAcceptanceStatus = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -317,6 +327,38 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
+   * Gets the value of the 'termAcceptanceStatus' field.
+   * @return The value of the 'termAcceptanceStatus' field.
+   */
+  public java.lang.String getTermAcceptanceStatus() {
+    return termAcceptanceStatus;
+  }
+
+  /**
+   * Sets the value of the 'termAcceptanceStatus' field.
+   * @param value the value to set.
+   */
+  public void setTermAcceptanceStatus(java.lang.String value) {
+    this.termAcceptanceStatus = value;
+  }
+
+  /**
    * Creates a new Bid RecordBuilder.
    * @return A new Bid RecordBuilder
    */
@@ -361,6 +403,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
     private java.lang.String partnerExternalId;
     private java.lang.String vendorExecutive;
     private java.lang.String source;
+    private java.lang.String uuid;
+    private java.lang.String termAcceptanceStatus;
 
     /** Creates a new Builder */
     private Builder() {
@@ -425,6 +469,14 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         this.source = data().deepCopy(fields()[12].schema(), other.source);
         fieldSetFlags()[12] = true;
       }
+      if (isValidValue(fields()[13], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[13].schema(), other.uuid);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.termAcceptanceStatus)) {
+        this.termAcceptanceStatus = data().deepCopy(fields()[14].schema(), other.termAcceptanceStatus);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -484,6 +536,14 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       if (isValidValue(fields()[12], other.source)) {
         this.source = data().deepCopy(fields()[12].schema(), other.source);
         fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[13].schema(), other.uuid);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.termAcceptanceStatus)) {
+        this.termAcceptanceStatus = data().deepCopy(fields()[14].schema(), other.termAcceptanceStatus);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -994,6 +1054,84 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
       return this;
     }
 
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder setUuid(java.lang.String value) {
+      validate(fields()[13], value);
+      this.uuid = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'termAcceptanceStatus' field.
+      * @return The value.
+      */
+    public java.lang.String getTermAcceptanceStatus() {
+      return termAcceptanceStatus;
+    }
+
+    /**
+      * Sets the value of the 'termAcceptanceStatus' field.
+      * @param value The value of 'termAcceptanceStatus'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder setTermAcceptanceStatus(java.lang.String value) {
+      validate(fields()[14], value);
+      this.termAcceptanceStatus = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'termAcceptanceStatus' field has been set.
+      * @return True if the 'termAcceptanceStatus' field has been set, false otherwise.
+      */
+    public boolean hasTermAcceptanceStatus() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'termAcceptanceStatus' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Bid.Builder clearTermAcceptanceStatus() {
+      termAcceptanceStatus = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public Bid build() {
       try {
@@ -1011,6 +1149,8 @@ public class Bid extends org.apache.avro.specific.SpecificRecordBase implements 
         record.partnerExternalId = fieldSetFlags()[10] ? this.partnerExternalId : (java.lang.String) defaultValue(fields()[10]);
         record.vendorExecutive = fieldSetFlags()[11] ? this.vendorExecutive : (java.lang.String) defaultValue(fields()[11]);
         record.source = fieldSetFlags()[12] ? this.source : (java.lang.String) defaultValue(fields()[12]);
+        record.uuid = fieldSetFlags()[13] ? this.uuid : (java.lang.String) defaultValue(fields()[13]);
+        record.termAcceptanceStatus = fieldSetFlags()[14] ? this.termAcceptanceStatus : (java.lang.String) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

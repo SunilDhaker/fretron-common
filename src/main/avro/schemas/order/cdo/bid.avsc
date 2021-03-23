@@ -109,6 +109,22 @@
                                                 "string"
                                            ],
                                    "default": null
-                              }
+                },
+                {
+                    "name": "uuid",
+                     "type": [
+                                        "null",
+                                        "string"
+                                       ],
+                     "default": null
+               },
+                {
+                           "name": "termAcceptanceStatus",
+                                    "type": [
+                                                       "null",
+                                                       "string"
+                                                      ],
+                        "default": null
+                    }
   ]
 }
