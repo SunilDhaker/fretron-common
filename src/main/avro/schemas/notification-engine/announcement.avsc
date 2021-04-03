@@ -1,0 +1,111 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "Announcement",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "title",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+          "name": "type",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+    },
+    {
+      "name": "summary",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+     {
+          "name": "createdOn",
+          "type": [
+            "null",
+            "long"
+          ],
+          "logicalType": "timestamp-millis",
+          "default": null
+      },
+      {
+          "name": "expirationDate",
+          "type": [
+                  "null",
+                  "long"
+                ],
+                "logicalType": "timestamp-millis",
+           "default": null
+       },
+       {
+         "name": "status",
+                 "type": [
+                   "null",
+                   "string"
+                 ],
+          "default": null
+      },
+      {
+          "name": "badgeColor",
+                       "type": [
+                         "null",
+                         "string"
+                       ],
+                "default": null
+      },
+       {
+                "name": "iconURL",
+                             "type": [
+                               "null",
+                               "string"
+                             ],
+            "default": null
+      },
+      {
+      			"name": "target",
+      			"type": [
+      				"null",
+      				"com.fretron.Model.AnnouncementTarget"
+      			],
+      			"default": null
+      },
+      {
+      			"name": "activities",
+      			"type": [
+      				"null",
+      				{
+      					"type": "array",
+      					"items": "com.fretron.Model.AnnouncementActivity"
+      				}
+      			],
+      			"default": null
+      },
+      {
+                    "name": "subscribers",
+                     "type": [
+                                     "null",
+                                     {
+                                       "type": "array",
+                                       "items": "string"
+                                     }
+                                   ],
+                  "default": null
+        }
+  ]
+}

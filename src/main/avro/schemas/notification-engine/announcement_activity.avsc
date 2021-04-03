@@ -1,0 +1,24 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "AnnouncementActivity",
+  "fields": [
+           {
+              "name": "time",
+              "type": [
+                      "null",
+                      "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+               "default": null
+           },
+           {
+             "name": "description",
+                     "type": [
+                       "null",
+                       "string"
+                     ],
+              "default": null
+          }
+  ]
+}

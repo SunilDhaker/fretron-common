@@ -1,0 +1,60 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "AnnouncementTarget",
+  "fields": [
+     {
+         "name": "domains",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+          ],
+          "default": null
+        },
+        {
+              "name": "organisations",
+              "type": [
+                "null",
+                {
+                  "type": "array",
+                  "items": "string"
+                }
+              ],
+              "default": null
+       },
+       {
+           "name": "modules",
+            "type": [
+                       "null",
+                       {
+                         "type": "array",
+                         "items": "string"
+                       }
+                     ],
+            "default": null
+        },
+         {
+              "name": "tags",
+               "type": [
+                               "null",
+                               {
+                                 "type": "array",
+                                 "items": "string"
+                               }
+                             ],
+            "default": null
+       },
+       {
+           "name": "version",
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+            "default": null
+       }
+
+  ]
+}
