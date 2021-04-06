@@ -85,7 +85,12 @@
              "name": "associatedUserId",
              "type": ["null","string"],
              "default": null
-      }
+      },
+       {
+                   "name": "employeeCode",
+                   "type": ["null","string"],
+                   "default": null
+            }
 
 
 
