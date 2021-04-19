@@ -172,7 +172,15 @@
                      "name": "isActiveVLR",
                      "type": "boolean",
                      "default": false
-              }
+              },
+              {
+                  "name": "fleetCategory",
+                                      "type": [
+                                                 "null",
+                                                 "string"
+                                            ],
+                   "default":null
+                 }
 
     ]
   }
