@@ -235,7 +235,12 @@
                                                  {"type" : "array", "items":"com.fretron.Model.Cost"}
                                                 ],
                            "default":null
-                         }
+                         },
+                          {
+                                            "name": "distance",
+                                             "type": ["null","double"],
+                                            "default" : null
+                           }
 
   ]
 }

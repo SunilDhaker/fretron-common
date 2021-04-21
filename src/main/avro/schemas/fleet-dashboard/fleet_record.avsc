@@ -180,7 +180,16 @@
                                                  "string"
                                             ],
                    "default":null
-                 }
+                 },
+
+               {
+                   "name": "emptyRunReason",
+                    "type": [
+                                              "null",
+                                              "string"
+                              ],
+                    "default":null
+              }
 
     ]
   }
