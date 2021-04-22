@@ -422,7 +422,16 @@
                                                          "double"
                                                         ],
                               "default": null
-                     }
+                     },
+
+                      {
+                              "name": "routeDistance",
+                               "type": [
+                                          "null",
+                                          "double"
+                                        ],
+                              "default": null
+                          }
 
 
   ]
