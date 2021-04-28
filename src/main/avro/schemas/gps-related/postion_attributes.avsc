@@ -148,6 +148,17 @@
                   "name": "gpsStatus",
                    "type": [ "null", "string"],
                    "default" : null
-   }
+   },
+    {
+      "name": "ioReadings",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.IOReading"
+        }
+      ],
+      "default": null
+    }
   ]
 }

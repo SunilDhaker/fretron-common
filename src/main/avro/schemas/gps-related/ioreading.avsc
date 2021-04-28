@@ -1,0 +1,30 @@
+[
+{
+    "namespace": "com.fretron.Model",
+    "type": "record",
+    "name": "IOReading",
+    "fields": [
+          {
+               "name": "pinNumber",
+               "type": ["null" ,"string"],
+               "default" : null
+          },
+          {
+               "name": "value",
+               "type": ["null" ,"string"],
+               "default" : null
+          },
+          {
+             "name": "unit",
+             "type": ["null" ,"string"],
+              "default" : null
+          },
+          {
+            "name": "valueType",
+             "type": ["null" ,"string"],
+             "default" : null
+          }
+
+    ]
+  }
+]
