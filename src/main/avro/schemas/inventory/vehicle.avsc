@@ -267,6 +267,22 @@
                              }
                            ],
                            "default": null
-                         }
+                         },
+                         {
+                                   "name": "description",
+                                   "type": [
+                                     "null",
+                                     "string"
+                                   ],
+                                   "default": null
+                                 },
+           {
+                                            "name": "secondaryDriverId",
+                                            "type": [
+                                              "null",
+                                              "string"
+                                            ],
+                                            "default": null
+                                          }
   ]
 }
