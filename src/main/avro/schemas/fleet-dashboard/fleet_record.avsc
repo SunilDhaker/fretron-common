@@ -189,7 +189,17 @@
                                               "string"
                               ],
                     "default":null
-              }
+              },
+      {
+
+        "name": "baseLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.Place"
+        ],
+        "default": null
+
+      }
 
     ]
   }
