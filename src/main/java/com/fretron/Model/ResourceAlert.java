@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7328594038851023369L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceAlert\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"}]}");
+  private static final long serialVersionUID = -1265311245684660628L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceAlert\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String description;
   @Deprecated public java.lang.String type;
@@ -21,6 +21,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.Long snoozTime;
   @Deprecated public java.lang.Long createdAt;
   @Deprecated public java.lang.Long updatedAt;
+  @Deprecated public java.lang.String issueId;
+  @Deprecated public java.lang.String createdBy;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -39,8 +41,10 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
    * @param snoozTime The new value for snoozTime
    * @param createdAt The new value for createdAt
    * @param updatedAt The new value for updatedAt
+   * @param issueId The new value for issueId
+   * @param createdBy The new value for createdBy
    */
-  public ResourceAlert(java.lang.String description, java.lang.String type, java.lang.String status, java.lang.String uuid, java.lang.String closedBy, java.lang.Long snoozTime, java.lang.Long createdAt, java.lang.Long updatedAt) {
+  public ResourceAlert(java.lang.String description, java.lang.String type, java.lang.String status, java.lang.String uuid, java.lang.String closedBy, java.lang.Long snoozTime, java.lang.Long createdAt, java.lang.Long updatedAt, java.lang.String issueId, java.lang.String createdBy) {
     this.description = description;
     this.type = type;
     this.status = status;
@@ -49,6 +53,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     this.snoozTime = snoozTime;
     this.createdAt = createdAt;
     this.updatedAt = updatedAt;
+    this.issueId = issueId;
+    this.createdBy = createdBy;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -63,6 +69,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     case 5: return snoozTime;
     case 6: return createdAt;
     case 7: return updatedAt;
+    case 8: return issueId;
+    case 9: return createdBy;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -79,6 +87,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     case 5: snoozTime = (java.lang.Long)value$; break;
     case 6: createdAt = (java.lang.Long)value$; break;
     case 7: updatedAt = (java.lang.Long)value$; break;
+    case 8: issueId = (java.lang.String)value$; break;
+    case 9: createdBy = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -212,6 +222,38 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'issueId' field.
+   * @return The value of the 'issueId' field.
+   */
+  public java.lang.String getIssueId() {
+    return issueId;
+  }
+
+  /**
+   * Sets the value of the 'issueId' field.
+   * @param value the value to set.
+   */
+  public void setIssueId(java.lang.String value) {
+    this.issueId = value;
+  }
+
+  /**
+   * Gets the value of the 'createdBy' field.
+   * @return The value of the 'createdBy' field.
+   */
+  public java.lang.String getCreatedBy() {
+    return createdBy;
+  }
+
+  /**
+   * Sets the value of the 'createdBy' field.
+   * @param value the value to set.
+   */
+  public void setCreatedBy(java.lang.String value) {
+    this.createdBy = value;
+  }
+
+  /**
    * Creates a new ResourceAlert RecordBuilder.
    * @return A new ResourceAlert RecordBuilder
    */
@@ -251,6 +293,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.Long snoozTime;
     private java.lang.Long createdAt;
     private java.lang.Long updatedAt;
+    private java.lang.String issueId;
+    private java.lang.String createdBy;
 
     /** Creates a new Builder */
     private Builder() {
@@ -295,6 +339,14 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
         this.updatedAt = data().deepCopy(fields()[7].schema(), other.updatedAt);
         fieldSetFlags()[7] = true;
       }
+      if (isValidValue(fields()[8], other.issueId)) {
+        this.issueId = data().deepCopy(fields()[8].schema(), other.issueId);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.createdBy)) {
+        this.createdBy = data().deepCopy(fields()[9].schema(), other.createdBy);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -334,6 +386,14 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[7], other.updatedAt)) {
         this.updatedAt = data().deepCopy(fields()[7].schema(), other.updatedAt);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.issueId)) {
+        this.issueId = data().deepCopy(fields()[8].schema(), other.issueId);
+        fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.createdBy)) {
+        this.createdBy = data().deepCopy(fields()[9].schema(), other.createdBy);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -649,6 +709,84 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'issueId' field.
+      * @return The value.
+      */
+    public java.lang.String getIssueId() {
+      return issueId;
+    }
+
+    /**
+      * Sets the value of the 'issueId' field.
+      * @param value The value of 'issueId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder setIssueId(java.lang.String value) {
+      validate(fields()[8], value);
+      this.issueId = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'issueId' field has been set.
+      * @return True if the 'issueId' field has been set, false otherwise.
+      */
+    public boolean hasIssueId() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'issueId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder clearIssueId() {
+      issueId = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'createdBy' field.
+      * @return The value.
+      */
+    public java.lang.String getCreatedBy() {
+      return createdBy;
+    }
+
+    /**
+      * Sets the value of the 'createdBy' field.
+      * @param value The value of 'createdBy'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder setCreatedBy(java.lang.String value) {
+      validate(fields()[9], value);
+      this.createdBy = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'createdBy' field has been set.
+      * @return True if the 'createdBy' field has been set, false otherwise.
+      */
+    public boolean hasCreatedBy() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'createdBy' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ResourceAlert.Builder clearCreatedBy() {
+      createdBy = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public ResourceAlert build() {
       try {
@@ -661,6 +799,8 @@ public class ResourceAlert extends org.apache.avro.specific.SpecificRecordBase i
         record.snoozTime = fieldSetFlags()[5] ? this.snoozTime : (java.lang.Long) defaultValue(fields()[5]);
         record.createdAt = fieldSetFlags()[6] ? this.createdAt : (java.lang.Long) defaultValue(fields()[6]);
         record.updatedAt = fieldSetFlags()[7] ? this.updatedAt : (java.lang.Long) defaultValue(fields()[7]);
+        record.issueId = fieldSetFlags()[8] ? this.issueId : (java.lang.String) defaultValue(fields()[8]);
+        record.createdBy = fieldSetFlags()[9] ? this.createdBy : (java.lang.String) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
