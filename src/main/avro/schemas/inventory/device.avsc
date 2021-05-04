@@ -158,6 +158,22 @@
            "com.fretron.Model.Updates"
          ],
          "default": null
-       }
+       },
+        {
+             "name": "branchId",
+                             "type": [
+                               "null",
+                               "string"
+                             ],
+           "default": null
+          },
+            {
+                       "name": "serviceProvider",
+                                       "type": [
+                                         "null",
+                                         "string"
+                                       ],
+                     "default": null
+                    }
   ]
 }

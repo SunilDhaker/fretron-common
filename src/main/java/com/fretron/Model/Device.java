@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Device extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3029092310004475746L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 3517285863640850039L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Device\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"imei\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"manufacturerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isAssociated\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isDeleted\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updateTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"groups\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sharedWith\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"isSuspended\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"branchId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serviceProvider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String imei;
   @Deprecated public java.lang.String mobileNumber;
@@ -32,6 +32,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   @Deprecated public java.lang.String attachedResourceNumber;
   @Deprecated public java.lang.String externalId;
   @Deprecated public com.fretron.Model.Updates updates;
+  @Deprecated public java.lang.String branchId;
+  @Deprecated public java.lang.String serviceProvider;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -61,8 +63,10 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param attachedResourceNumber The new value for attachedResourceNumber
    * @param externalId The new value for externalId
    * @param updates The new value for updates
+   * @param branchId The new value for branchId
+   * @param serviceProvider The new value for serviceProvider
    */
-  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String externalId, com.fretron.Model.Updates updates) {
+  public Device(java.lang.String imei, java.lang.String mobileNumber, java.lang.String manufacturerName, java.lang.String uuid, java.lang.String isAssociated, java.lang.String isDeleted, java.lang.Long createTime, java.lang.Long updateTime, java.util.List<java.lang.String> groups, java.lang.String orgId, java.lang.String status, java.util.List<java.lang.String> sharedWith, java.lang.Boolean isSuspended, java.lang.String type, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String externalId, com.fretron.Model.Updates updates, java.lang.String branchId, java.lang.String serviceProvider) {
     this.imei = imei;
     this.mobileNumber = mobileNumber;
     this.manufacturerName = manufacturerName;
@@ -82,6 +86,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     this.attachedResourceNumber = attachedResourceNumber;
     this.externalId = externalId;
     this.updates = updates;
+    this.branchId = branchId;
+    this.serviceProvider = serviceProvider;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -107,6 +113,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 16: return attachedResourceNumber;
     case 17: return externalId;
     case 18: return updates;
+    case 19: return branchId;
+    case 20: return serviceProvider;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -134,6 +142,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     case 16: attachedResourceNumber = (java.lang.String)value$; break;
     case 17: externalId = (java.lang.String)value$; break;
     case 18: updates = (com.fretron.Model.Updates)value$; break;
+    case 19: branchId = (java.lang.String)value$; break;
+    case 20: serviceProvider = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -443,6 +453,38 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
   }
 
   /**
+   * Gets the value of the 'branchId' field.
+   * @return The value of the 'branchId' field.
+   */
+  public java.lang.String getBranchId() {
+    return branchId;
+  }
+
+  /**
+   * Sets the value of the 'branchId' field.
+   * @param value the value to set.
+   */
+  public void setBranchId(java.lang.String value) {
+    this.branchId = value;
+  }
+
+  /**
+   * Gets the value of the 'serviceProvider' field.
+   * @return The value of the 'serviceProvider' field.
+   */
+  public java.lang.String getServiceProvider() {
+    return serviceProvider;
+  }
+
+  /**
+   * Sets the value of the 'serviceProvider' field.
+   * @param value the value to set.
+   */
+  public void setServiceProvider(java.lang.String value) {
+    this.serviceProvider = value;
+  }
+
+  /**
    * Creates a new Device RecordBuilder.
    * @return A new Device RecordBuilder
    */
@@ -494,6 +536,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
     private java.lang.String externalId;
     private com.fretron.Model.Updates updates;
     private com.fretron.Model.Updates.Builder updatesBuilder;
+    private java.lang.String branchId;
+    private java.lang.String serviceProvider;
 
     /** Creates a new Builder */
     private Builder() {
@@ -585,6 +629,14 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
+      if (isValidValue(fields()[19], other.branchId)) {
+        this.branchId = data().deepCopy(fields()[19].schema(), other.branchId);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.serviceProvider)) {
+        this.serviceProvider = data().deepCopy(fields()[20].schema(), other.serviceProvider);
+        fieldSetFlags()[20] = true;
+      }
     }
 
     /**
@@ -670,6 +722,14 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         fieldSetFlags()[18] = true;
       }
       this.updatesBuilder = null;
+      if (isValidValue(fields()[19], other.branchId)) {
+        this.branchId = data().deepCopy(fields()[19].schema(), other.branchId);
+        fieldSetFlags()[19] = true;
+      }
+      if (isValidValue(fields()[20], other.serviceProvider)) {
+        this.serviceProvider = data().deepCopy(fields()[20].schema(), other.serviceProvider);
+        fieldSetFlags()[20] = true;
+      }
     }
 
     /**
@@ -1448,6 +1508,84 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
       return this;
     }
 
+    /**
+      * Gets the value of the 'branchId' field.
+      * @return The value.
+      */
+    public java.lang.String getBranchId() {
+      return branchId;
+    }
+
+    /**
+      * Sets the value of the 'branchId' field.
+      * @param value The value of 'branchId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setBranchId(java.lang.String value) {
+      validate(fields()[19], value);
+      this.branchId = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'branchId' field has been set.
+      * @return True if the 'branchId' field has been set, false otherwise.
+      */
+    public boolean hasBranchId() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'branchId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearBranchId() {
+      branchId = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'serviceProvider' field.
+      * @return The value.
+      */
+    public java.lang.String getServiceProvider() {
+      return serviceProvider;
+    }
+
+    /**
+      * Sets the value of the 'serviceProvider' field.
+      * @param value The value of 'serviceProvider'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder setServiceProvider(java.lang.String value) {
+      validate(fields()[20], value);
+      this.serviceProvider = value;
+      fieldSetFlags()[20] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'serviceProvider' field has been set.
+      * @return True if the 'serviceProvider' field has been set, false otherwise.
+      */
+    public boolean hasServiceProvider() {
+      return fieldSetFlags()[20];
+    }
+
+
+    /**
+      * Clears the value of the 'serviceProvider' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Device.Builder clearServiceProvider() {
+      serviceProvider = null;
+      fieldSetFlags()[20] = false;
+      return this;
+    }
+
     @Override
     public Device build() {
       try {
@@ -1475,6 +1613,8 @@ public class Device extends org.apache.avro.specific.SpecificRecordBase implemen
         } else {
           record.updates = fieldSetFlags()[18] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[18]);
         }
+        record.branchId = fieldSetFlags()[19] ? this.branchId : (java.lang.String) defaultValue(fields()[19]);
+        record.serviceProvider = fieldSetFlags()[20] ? this.serviceProvider : (java.lang.String) defaultValue(fields()[20]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
