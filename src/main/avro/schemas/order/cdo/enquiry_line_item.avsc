@@ -240,7 +240,12 @@
                                             "name": "distance",
                                              "type": ["null","double"],
                                             "default" : null
-                           }
+                           },
+    {
+      "name": "cancelledQuantity",
+      "type": ["null","com.fretron.Model.StandardMeasurement"],
+      "default" : null
+    }
 
   ]
 }
