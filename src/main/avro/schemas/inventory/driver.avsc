@@ -161,7 +161,15 @@
                                "name": "isEmployee",
                                "type": "boolean",
                                "default": false
-                             }
+                             },
+                             {
+                                   "name": "pfNumber",
+                                   "type": [
+                                     "null",
+                                     "string"
+                                   ],
+                                   "default": null
+                                 }
 
   ]
 }
