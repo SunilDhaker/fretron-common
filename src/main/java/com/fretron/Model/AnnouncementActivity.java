@@ -10,11 +10,15 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5858341471589789576L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AnnouncementActivity\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 2792341262128141716L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"AnnouncementActivity\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"title\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"badgeColor\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"expirationDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Long time;
   @Deprecated public java.lang.String description;
+  @Deprecated public java.lang.String title;
+  @Deprecated public java.lang.String badgeColor;
+  @Deprecated public java.lang.Long expirationDate;
+  @Deprecated public java.lang.String type;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -27,10 +31,18 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
    * All-args constructor.
    * @param time The new value for time
    * @param description The new value for description
+   * @param title The new value for title
+   * @param badgeColor The new value for badgeColor
+   * @param expirationDate The new value for expirationDate
+   * @param type The new value for type
    */
-  public AnnouncementActivity(java.lang.Long time, java.lang.String description) {
+  public AnnouncementActivity(java.lang.Long time, java.lang.String description, java.lang.String title, java.lang.String badgeColor, java.lang.Long expirationDate, java.lang.String type) {
     this.time = time;
     this.description = description;
+    this.title = title;
+    this.badgeColor = badgeColor;
+    this.expirationDate = expirationDate;
+    this.type = type;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -39,6 +51,10 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
     switch (field$) {
     case 0: return time;
     case 1: return description;
+    case 2: return title;
+    case 3: return badgeColor;
+    case 4: return expirationDate;
+    case 5: return type;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -49,6 +65,10 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
     switch (field$) {
     case 0: time = (java.lang.Long)value$; break;
     case 1: description = (java.lang.String)value$; break;
+    case 2: title = (java.lang.String)value$; break;
+    case 3: badgeColor = (java.lang.String)value$; break;
+    case 4: expirationDate = (java.lang.Long)value$; break;
+    case 5: type = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -86,6 +106,70 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
   }
 
   /**
+   * Gets the value of the 'title' field.
+   * @return The value of the 'title' field.
+   */
+  public java.lang.String getTitle() {
+    return title;
+  }
+
+  /**
+   * Sets the value of the 'title' field.
+   * @param value the value to set.
+   */
+  public void setTitle(java.lang.String value) {
+    this.title = value;
+  }
+
+  /**
+   * Gets the value of the 'badgeColor' field.
+   * @return The value of the 'badgeColor' field.
+   */
+  public java.lang.String getBadgeColor() {
+    return badgeColor;
+  }
+
+  /**
+   * Sets the value of the 'badgeColor' field.
+   * @param value the value to set.
+   */
+  public void setBadgeColor(java.lang.String value) {
+    this.badgeColor = value;
+  }
+
+  /**
+   * Gets the value of the 'expirationDate' field.
+   * @return The value of the 'expirationDate' field.
+   */
+  public java.lang.Long getExpirationDate() {
+    return expirationDate;
+  }
+
+  /**
+   * Sets the value of the 'expirationDate' field.
+   * @param value the value to set.
+   */
+  public void setExpirationDate(java.lang.Long value) {
+    this.expirationDate = value;
+  }
+
+  /**
+   * Gets the value of the 'type' field.
+   * @return The value of the 'type' field.
+   */
+  public java.lang.String getType() {
+    return type;
+  }
+
+  /**
+   * Sets the value of the 'type' field.
+   * @param value the value to set.
+   */
+  public void setType(java.lang.String value) {
+    this.type = value;
+  }
+
+  /**
    * Creates a new AnnouncementActivity RecordBuilder.
    * @return A new AnnouncementActivity RecordBuilder
    */
@@ -119,6 +203,10 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
 
     private java.lang.Long time;
     private java.lang.String description;
+    private java.lang.String title;
+    private java.lang.String badgeColor;
+    private java.lang.Long expirationDate;
+    private java.lang.String type;
 
     /** Creates a new Builder */
     private Builder() {
@@ -139,6 +227,22 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
         this.description = data().deepCopy(fields()[1].schema(), other.description);
         fieldSetFlags()[1] = true;
       }
+      if (isValidValue(fields()[2], other.title)) {
+        this.title = data().deepCopy(fields()[2].schema(), other.title);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.badgeColor)) {
+        this.badgeColor = data().deepCopy(fields()[3].schema(), other.badgeColor);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.expirationDate)) {
+        this.expirationDate = data().deepCopy(fields()[4].schema(), other.expirationDate);
+        fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.type)) {
+        this.type = data().deepCopy(fields()[5].schema(), other.type);
+        fieldSetFlags()[5] = true;
+      }
     }
 
     /**
@@ -154,6 +258,22 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
       if (isValidValue(fields()[1], other.description)) {
         this.description = data().deepCopy(fields()[1].schema(), other.description);
         fieldSetFlags()[1] = true;
+      }
+      if (isValidValue(fields()[2], other.title)) {
+        this.title = data().deepCopy(fields()[2].schema(), other.title);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.badgeColor)) {
+        this.badgeColor = data().deepCopy(fields()[3].schema(), other.badgeColor);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.expirationDate)) {
+        this.expirationDate = data().deepCopy(fields()[4].schema(), other.expirationDate);
+        fieldSetFlags()[4] = true;
+      }
+      if (isValidValue(fields()[5], other.type)) {
+        this.type = data().deepCopy(fields()[5].schema(), other.type);
+        fieldSetFlags()[5] = true;
       }
     }
 
@@ -235,12 +355,172 @@ public class AnnouncementActivity extends org.apache.avro.specific.SpecificRecor
       return this;
     }
 
+    /**
+      * Gets the value of the 'title' field.
+      * @return The value.
+      */
+    public java.lang.String getTitle() {
+      return title;
+    }
+
+    /**
+      * Sets the value of the 'title' field.
+      * @param value The value of 'title'.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder setTitle(java.lang.String value) {
+      validate(fields()[2], value);
+      this.title = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'title' field has been set.
+      * @return True if the 'title' field has been set, false otherwise.
+      */
+    public boolean hasTitle() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'title' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder clearTitle() {
+      title = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'badgeColor' field.
+      * @return The value.
+      */
+    public java.lang.String getBadgeColor() {
+      return badgeColor;
+    }
+
+    /**
+      * Sets the value of the 'badgeColor' field.
+      * @param value The value of 'badgeColor'.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder setBadgeColor(java.lang.String value) {
+      validate(fields()[3], value);
+      this.badgeColor = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'badgeColor' field has been set.
+      * @return True if the 'badgeColor' field has been set, false otherwise.
+      */
+    public boolean hasBadgeColor() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'badgeColor' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder clearBadgeColor() {
+      badgeColor = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'expirationDate' field.
+      * @return The value.
+      */
+    public java.lang.Long getExpirationDate() {
+      return expirationDate;
+    }
+
+    /**
+      * Sets the value of the 'expirationDate' field.
+      * @param value The value of 'expirationDate'.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder setExpirationDate(java.lang.Long value) {
+      validate(fields()[4], value);
+      this.expirationDate = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'expirationDate' field has been set.
+      * @return True if the 'expirationDate' field has been set, false otherwise.
+      */
+    public boolean hasExpirationDate() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'expirationDate' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder clearExpirationDate() {
+      expirationDate = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'type' field.
+      * @return The value.
+      */
+    public java.lang.String getType() {
+      return type;
+    }
+
+    /**
+      * Sets the value of the 'type' field.
+      * @param value The value of 'type'.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder setType(java.lang.String value) {
+      validate(fields()[5], value);
+      this.type = value;
+      fieldSetFlags()[5] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'type' field has been set.
+      * @return True if the 'type' field has been set, false otherwise.
+      */
+    public boolean hasType() {
+      return fieldSetFlags()[5];
+    }
+
+
+    /**
+      * Clears the value of the 'type' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.AnnouncementActivity.Builder clearType() {
+      type = null;
+      fieldSetFlags()[5] = false;
+      return this;
+    }
+
     @Override
     public AnnouncementActivity build() {
       try {
         AnnouncementActivity record = new AnnouncementActivity();
         record.time = fieldSetFlags()[0] ? this.time : (java.lang.Long) defaultValue(fields()[0]);
         record.description = fieldSetFlags()[1] ? this.description : (java.lang.String) defaultValue(fields()[1]);
+        record.title = fieldSetFlags()[2] ? this.title : (java.lang.String) defaultValue(fields()[2]);
+        record.badgeColor = fieldSetFlags()[3] ? this.badgeColor : (java.lang.String) defaultValue(fields()[3]);
+        record.expirationDate = fieldSetFlags()[4] ? this.expirationDate : (java.lang.Long) defaultValue(fields()[4]);
+        record.type = fieldSetFlags()[5] ? this.type : (java.lang.String) defaultValue(fields()[5]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
