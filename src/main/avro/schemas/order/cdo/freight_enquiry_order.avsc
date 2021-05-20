@@ -315,6 +315,14 @@
                                                                    ],
                                "logicalType": "timestamp-millis",
                                          "default": null
-                     }
+                     },
+                     {
+                           "name": "createdBy",
+                            "type": [
+                                      "null",
+                                      "string"
+                                         ],
+                            "default": null
+                         }
   ]
 }

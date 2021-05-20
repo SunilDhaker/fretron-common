@@ -172,7 +172,34 @@
                      "name": "isActiveVLR",
                      "type": "boolean",
                      "default": false
-              }
+              },
+              {
+                  "name": "fleetCategory",
+                                      "type": [
+                                                 "null",
+                                                 "string"
+                                            ],
+                   "default":null
+                 },
+
+               {
+                   "name": "emptyRunReason",
+                    "type": [
+                                              "null",
+                                              "string"
+                              ],
+                    "default":null
+              },
+      {
+
+        "name": "baseLocation",
+        "type": [
+          "null",
+          "com.fretron.Model.Place"
+        ],
+        "default": null
+
+      }
 
     ]
   }

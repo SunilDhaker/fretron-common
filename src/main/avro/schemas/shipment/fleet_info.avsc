@@ -123,6 +123,14 @@
                                                                     "string"
                                                                   ],
                                                                   "default": null
-                                                                }
+                                                                },
+                                                                  {
+                                                                      "name": "isTrackingEnable",
+                                                                      "type": [
+                                                                        "null",
+                                                                        "boolean"
+                                                                      ],
+                                                                      "default": null
+                                                                    }
   ]
 }

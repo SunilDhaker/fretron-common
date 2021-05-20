@@ -52,23 +52,39 @@
       "logicalType": "timestamp-millis",
       "default": null
     },
-             {
-               "name": "createdAt",
-               "type": [
-                 "null",
-                 "long"
-               ],
-               "logicalType": "timestamp-millis",
-               "default": null
-             },
-                     {
-                       "name": "updatedAt",
-                       "type": [
-                         "null",
-                         "long"
-                       ],
-                       "logicalType": "timestamp-millis",
-                       "default": null
-                     }
+    {
+      "name": "createdAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "updatedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "issueId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }

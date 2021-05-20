@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Attributes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2462590677848869091L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -5612336659480268509L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Attributes\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"battery\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"alarm\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ip\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"distance\",\"type\":[\"null\",\"double\"]},{\"name\":\"totalDistance\",\"type\":[\"null\",\"double\"]},{\"name\":\"isCharge\",\"type\":\"boolean\",\"default\":false},{\"name\":\"chargingValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"ignition\",\"type\":\"boolean\",\"default\":false},{\"name\":\"ignitionValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isOilElectricityConnected\",\"type\":\"boolean\",\"default\":false},{\"name\":\"oilElectricityValue\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"isGpsTrackingOn\",\"type\":\"boolean\",\"default\":false},{\"name\":\"acc\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"satellitesGpsQualityInfo\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"uploadReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uploadMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"signalStrength\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"commandResult\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"serialNumber\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"sleepMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gpsStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ioReadings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"IOReading\",\"fields\":[{\"name\":\"pinNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String battery;
   @Deprecated public java.lang.String alarm;
@@ -34,6 +34,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   @Deprecated public java.lang.Integer serialNumber;
   @Deprecated public java.lang.String sleepMode;
   @Deprecated public java.lang.String gpsStatus;
+  @Deprecated public java.util.List<com.fretron.Model.IOReading> ioReadings;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -65,8 +66,9 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
    * @param serialNumber The new value for serialNumber
    * @param sleepMode The new value for sleepMode
    * @param gpsStatus The new value for gpsStatus
+   * @param ioReadings The new value for ioReadings
    */
-  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance, java.lang.Boolean isCharge, java.lang.Integer chargingValue, java.lang.Boolean ignition, java.lang.Integer ignitionValue, java.lang.Boolean isOilElectricityConnected, java.lang.Integer oilElectricityValue, java.lang.Boolean isGpsTrackingOn, java.lang.Integer acc, java.lang.Integer satellitesGpsQualityInfo, java.lang.String uploadReason, java.lang.String uploadMode, java.lang.String signalStrength, java.lang.String commandResult, java.lang.Integer serialNumber, java.lang.String sleepMode, java.lang.String gpsStatus) {
+  public Attributes(java.lang.String battery, java.lang.String alarm, java.lang.String ip, java.lang.Double distance, java.lang.Double totalDistance, java.lang.Boolean isCharge, java.lang.Integer chargingValue, java.lang.Boolean ignition, java.lang.Integer ignitionValue, java.lang.Boolean isOilElectricityConnected, java.lang.Integer oilElectricityValue, java.lang.Boolean isGpsTrackingOn, java.lang.Integer acc, java.lang.Integer satellitesGpsQualityInfo, java.lang.String uploadReason, java.lang.String uploadMode, java.lang.String signalStrength, java.lang.String commandResult, java.lang.Integer serialNumber, java.lang.String sleepMode, java.lang.String gpsStatus, java.util.List<com.fretron.Model.IOReading> ioReadings) {
     this.battery = battery;
     this.alarm = alarm;
     this.ip = ip;
@@ -88,6 +90,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     this.serialNumber = serialNumber;
     this.sleepMode = sleepMode;
     this.gpsStatus = gpsStatus;
+    this.ioReadings = ioReadings;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -115,6 +118,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 18: return serialNumber;
     case 19: return sleepMode;
     case 20: return gpsStatus;
+    case 21: return ioReadings;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -144,6 +148,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     case 18: serialNumber = (java.lang.Integer)value$; break;
     case 19: sleepMode = (java.lang.String)value$; break;
     case 20: gpsStatus = (java.lang.String)value$; break;
+    case 21: ioReadings = (java.util.List<com.fretron.Model.IOReading>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -485,6 +490,22 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
   }
 
   /**
+   * Gets the value of the 'ioReadings' field.
+   * @return The value of the 'ioReadings' field.
+   */
+  public java.util.List<com.fretron.Model.IOReading> getIoReadings() {
+    return ioReadings;
+  }
+
+  /**
+   * Sets the value of the 'ioReadings' field.
+   * @param value the value to set.
+   */
+  public void setIoReadings(java.util.List<com.fretron.Model.IOReading> value) {
+    this.ioReadings = value;
+  }
+
+  /**
    * Creates a new Attributes RecordBuilder.
    * @return A new Attributes RecordBuilder
    */
@@ -537,6 +558,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
     private java.lang.Integer serialNumber;
     private java.lang.String sleepMode;
     private java.lang.String gpsStatus;
+    private java.util.List<com.fretron.Model.IOReading> ioReadings;
 
     /** Creates a new Builder */
     private Builder() {
@@ -633,6 +655,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         this.gpsStatus = data().deepCopy(fields()[20].schema(), other.gpsStatus);
         fieldSetFlags()[20] = true;
       }
+      if (isValidValue(fields()[21], other.ioReadings)) {
+        this.ioReadings = data().deepCopy(fields()[21].schema(), other.ioReadings);
+        fieldSetFlags()[21] = true;
+      }
     }
 
     /**
@@ -724,6 +750,10 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       if (isValidValue(fields()[20], other.gpsStatus)) {
         this.gpsStatus = data().deepCopy(fields()[20].schema(), other.gpsStatus);
         fieldSetFlags()[20] = true;
+      }
+      if (isValidValue(fields()[21], other.ioReadings)) {
+        this.ioReadings = data().deepCopy(fields()[21].schema(), other.ioReadings);
+        fieldSetFlags()[21] = true;
       }
     }
 
@@ -1542,6 +1572,45 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
       return this;
     }
 
+    /**
+      * Gets the value of the 'ioReadings' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.IOReading> getIoReadings() {
+      return ioReadings;
+    }
+
+    /**
+      * Sets the value of the 'ioReadings' field.
+      * @param value The value of 'ioReadings'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder setIoReadings(java.util.List<com.fretron.Model.IOReading> value) {
+      validate(fields()[21], value);
+      this.ioReadings = value;
+      fieldSetFlags()[21] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'ioReadings' field has been set.
+      * @return True if the 'ioReadings' field has been set, false otherwise.
+      */
+    public boolean hasIoReadings() {
+      return fieldSetFlags()[21];
+    }
+
+
+    /**
+      * Clears the value of the 'ioReadings' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Attributes.Builder clearIoReadings() {
+      ioReadings = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
     @Override
     public Attributes build() {
       try {
@@ -1567,6 +1636,7 @@ public class Attributes extends org.apache.avro.specific.SpecificRecordBase impl
         record.serialNumber = fieldSetFlags()[18] ? this.serialNumber : (java.lang.Integer) defaultValue(fields()[18]);
         record.sleepMode = fieldSetFlags()[19] ? this.sleepMode : (java.lang.String) defaultValue(fields()[19]);
         record.gpsStatus = fieldSetFlags()[20] ? this.gpsStatus : (java.lang.String) defaultValue(fields()[20]);
+        record.ioReadings = fieldSetFlags()[21] ? this.ioReadings : (java.util.List<com.fretron.Model.IOReading>) defaultValue(fields()[21]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
