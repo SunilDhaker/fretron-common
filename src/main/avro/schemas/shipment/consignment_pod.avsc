@@ -85,63 +85,126 @@
       "default": null
     },
     {
-          "name": "uuid",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        },
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "deliveryItems",
+      "type": [
+        "null",
         {
-                        "name": "externalId",
-                        "type": [
-                          "null",
-                          "string"
-                        ],
-                        "default": null
-                      },
-                      {
-                            "name": "consignmentId",
-                            "type": [
-                              "null",
-                              "string"
-                            ],
-                            "default": null
-                          },
-                              {
-                                "name": "deliveryItems",
-                                "type": [
-                                  "null",
-                                  {
-                                    "type": "array",
-                                    "items": "com.fretron.Model.PodDeliveryItem"
-                                  }
-                                ],
-                                "default": null
-                              },
-                                                                          {
-                                                                            "name": "updates",
-                                                                            "type": [
-                                                                              "null",
-                                                                              "com.fretron.Model.Updates"
-                                                                            ],
-                                                                            "default": null
-                                                                          },
-                                                                            {
-                                                                              "name": "feedingStatus",
-                                                                              "type": [
-                                                                                "null",
-                                                                                "string"
-                                                                              ],
-                                                                              "default": null
-                                                                            },
-                                                                                                                                                        {
-                                                                                                                                                          "name": "trackingDetail",
-                                                                                                                                                          "type": [
-                                                                                                                                                            "null",
-                                                                                                                                                            "com.fretron.Model.PodTrackingDetail"
-                                                                                                                                                          ],
-                                                                                                                                                          "default": null
-                                                                                                                                                        }
+          "type": "array",
+          "items": "com.fretron.Model.PodDeliveryItem"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "feedingStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "trackingDetail",
+      "type": [
+        "null",
+        "com.fretron.Model.PodTrackingDetail"
+      ],
+      "default": null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "reportingDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "unloadingStartDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "unloadingFinishDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "vehicleReleaseDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shipmentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }
