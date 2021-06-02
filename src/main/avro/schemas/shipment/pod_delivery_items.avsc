@@ -48,6 +48,16 @@
                 "string"
               ],
               "default": null
-            }
+            },
+                            {
+                               "name": "estimatedDamangedAmount",
+                                "type": ["null","double"],
+                                 "default" : null
+                            },
+                          {
+                             "name": "estimatedShortageAmount",
+                              "type": ["null","double"],
+                               "default" : null
+                          }
   ]
 }
