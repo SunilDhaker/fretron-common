@@ -144,17 +144,6 @@
       "default": null
     },
     {
-      "name": "customFields",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.CustomFields"
-        }
-      ],
-      "default": null
-    },
-    {
       "name": "reportingDate",
       "type": [
         "null",
@@ -205,6 +194,17 @@
         "string"
       ],
       "default": null
-    }
+    },
+        {
+          "name": "customField",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "com.fretron.Model.LiteCustomFields"
+            }
+          ],
+          "default": null
+        }
   ]
 }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5429459392201776384L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"deliveryItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Document\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"estimatedDamangedAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"estimatedShortageAmount\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"feedingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingDetail\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PodTrackingDetail\",\"fields\":[{\"name\":\"currentState\",\"type","\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateDetail\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"nextState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateDetail\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateExpectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"trackingRemark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"reportingDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"unloadingStartDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"unloadingFinishDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleReleaseDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -8151195526550151104L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentPod\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"receiveDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"submissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"expectedSubmissionDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"receivedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"submissionPlace\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"deliveryItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Document\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"estimatedDamangedAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"estimatedShortageAmount\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"feedingStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingDetail\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PodTrackingDetail\",\"fields\":[{\"name\":\"currentState\",\"type","\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateDetail\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"currentStateSince\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"nextState\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateDetail\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"nextStateExpectedTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"trackingRemark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"reportingDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"unloadingStartDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"unloadingFinishDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"vehicleReleaseDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customField\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LiteCustomFields\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String status;
   @Deprecated public java.util.List<com.fretron.Model.Document> documents;
@@ -29,13 +29,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   @Deprecated public com.fretron.Model.Updates updates;
   @Deprecated public java.lang.String feedingStatus;
   @Deprecated public com.fretron.Model.PodTrackingDetail trackingDetail;
-  @Deprecated public java.util.List<com.fretron.Model.CustomFields> customFields;
   @Deprecated public java.lang.Long reportingDate;
   @Deprecated public java.lang.Long unloadingStartDate;
   @Deprecated public java.lang.Long unloadingFinishDate;
   @Deprecated public java.lang.Long vehicleReleaseDate;
   @Deprecated public java.lang.String type;
   @Deprecated public java.lang.String shipmentId;
+  @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customField;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -62,15 +62,15 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
    * @param updates The new value for updates
    * @param feedingStatus The new value for feedingStatus
    * @param trackingDetail The new value for trackingDetail
-   * @param customFields The new value for customFields
    * @param reportingDate The new value for reportingDate
    * @param unloadingStartDate The new value for unloadingStartDate
    * @param unloadingFinishDate The new value for unloadingFinishDate
    * @param vehicleReleaseDate The new value for vehicleReleaseDate
    * @param type The new value for type
    * @param shipmentId The new value for shipmentId
+   * @param customField The new value for customField
    */
-  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace, java.lang.String uuid, java.lang.String externalId, java.lang.String consignmentId, java.util.List<com.fretron.Model.PodDeliveryItem> deliveryItems, com.fretron.Model.Updates updates, java.lang.String feedingStatus, com.fretron.Model.PodTrackingDetail trackingDetail, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.Long reportingDate, java.lang.Long unloadingStartDate, java.lang.Long unloadingFinishDate, java.lang.Long vehicleReleaseDate, java.lang.String type, java.lang.String shipmentId) {
+  public ConsignmentPod(java.lang.String status, java.util.List<com.fretron.Model.Document> documents, java.lang.Long receiveDate, java.lang.Long submissionDate, java.lang.Long expectedSubmissionDate, java.util.List<java.lang.String> issues, java.lang.String receivedBy, java.lang.String remarks, java.lang.String submissionPlace, java.lang.String uuid, java.lang.String externalId, java.lang.String consignmentId, java.util.List<com.fretron.Model.PodDeliveryItem> deliveryItems, com.fretron.Model.Updates updates, java.lang.String feedingStatus, com.fretron.Model.PodTrackingDetail trackingDetail, java.lang.Long reportingDate, java.lang.Long unloadingStartDate, java.lang.Long unloadingFinishDate, java.lang.Long vehicleReleaseDate, java.lang.String type, java.lang.String shipmentId, java.util.List<com.fretron.Model.LiteCustomFields> customField) {
     this.status = status;
     this.documents = documents;
     this.receiveDate = receiveDate;
@@ -87,13 +87,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     this.updates = updates;
     this.feedingStatus = feedingStatus;
     this.trackingDetail = trackingDetail;
-    this.customFields = customFields;
     this.reportingDate = reportingDate;
     this.unloadingStartDate = unloadingStartDate;
     this.unloadingFinishDate = unloadingFinishDate;
     this.vehicleReleaseDate = vehicleReleaseDate;
     this.type = type;
     this.shipmentId = shipmentId;
+    this.customField = customField;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -116,13 +116,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 13: return updates;
     case 14: return feedingStatus;
     case 15: return trackingDetail;
-    case 16: return customFields;
-    case 17: return reportingDate;
-    case 18: return unloadingStartDate;
-    case 19: return unloadingFinishDate;
-    case 20: return vehicleReleaseDate;
-    case 21: return type;
-    case 22: return shipmentId;
+    case 16: return reportingDate;
+    case 17: return unloadingStartDate;
+    case 18: return unloadingFinishDate;
+    case 19: return vehicleReleaseDate;
+    case 20: return type;
+    case 21: return shipmentId;
+    case 22: return customField;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -147,13 +147,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     case 13: updates = (com.fretron.Model.Updates)value$; break;
     case 14: feedingStatus = (java.lang.String)value$; break;
     case 15: trackingDetail = (com.fretron.Model.PodTrackingDetail)value$; break;
-    case 16: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
-    case 17: reportingDate = (java.lang.Long)value$; break;
-    case 18: unloadingStartDate = (java.lang.Long)value$; break;
-    case 19: unloadingFinishDate = (java.lang.Long)value$; break;
-    case 20: vehicleReleaseDate = (java.lang.Long)value$; break;
-    case 21: type = (java.lang.String)value$; break;
-    case 22: shipmentId = (java.lang.String)value$; break;
+    case 16: reportingDate = (java.lang.Long)value$; break;
+    case 17: unloadingStartDate = (java.lang.Long)value$; break;
+    case 18: unloadingFinishDate = (java.lang.Long)value$; break;
+    case 19: vehicleReleaseDate = (java.lang.Long)value$; break;
+    case 20: type = (java.lang.String)value$; break;
+    case 21: shipmentId = (java.lang.String)value$; break;
+    case 22: customField = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -415,22 +415,6 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
-   * Gets the value of the 'customFields' field.
-   * @return The value of the 'customFields' field.
-   */
-  public java.util.List<com.fretron.Model.CustomFields> getCustomFields() {
-    return customFields;
-  }
-
-  /**
-   * Sets the value of the 'customFields' field.
-   * @param value the value to set.
-   */
-  public void setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
-    this.customFields = value;
-  }
-
-  /**
    * Gets the value of the 'reportingDate' field.
    * @return The value of the 'reportingDate' field.
    */
@@ -527,6 +511,22 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
   }
 
   /**
+   * Gets the value of the 'customField' field.
+   * @return The value of the 'customField' field.
+   */
+  public java.util.List<com.fretron.Model.LiteCustomFields> getCustomField() {
+    return customField;
+  }
+
+  /**
+   * Sets the value of the 'customField' field.
+   * @param value the value to set.
+   */
+  public void setCustomField(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+    this.customField = value;
+  }
+
+  /**
    * Creates a new ConsignmentPod RecordBuilder.
    * @return A new ConsignmentPod RecordBuilder
    */
@@ -576,13 +576,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     private java.lang.String feedingStatus;
     private com.fretron.Model.PodTrackingDetail trackingDetail;
     private com.fretron.Model.PodTrackingDetail.Builder trackingDetailBuilder;
-    private java.util.List<com.fretron.Model.CustomFields> customFields;
     private java.lang.Long reportingDate;
     private java.lang.Long unloadingStartDate;
     private java.lang.Long unloadingFinishDate;
     private java.lang.Long vehicleReleaseDate;
     private java.lang.String type;
     private java.lang.String shipmentId;
+    private java.util.List<com.fretron.Model.LiteCustomFields> customField;
 
     /** Creates a new Builder */
     private Builder() {
@@ -665,32 +665,32 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       if (other.hasTrackingDetailBuilder()) {
         this.trackingDetailBuilder = com.fretron.Model.PodTrackingDetail.newBuilder(other.getTrackingDetailBuilder());
       }
-      if (isValidValue(fields()[16], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
+      if (isValidValue(fields()[16], other.reportingDate)) {
+        this.reportingDate = data().deepCopy(fields()[16].schema(), other.reportingDate);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.reportingDate)) {
-        this.reportingDate = data().deepCopy(fields()[17].schema(), other.reportingDate);
+      if (isValidValue(fields()[17], other.unloadingStartDate)) {
+        this.unloadingStartDate = data().deepCopy(fields()[17].schema(), other.unloadingStartDate);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.unloadingStartDate)) {
-        this.unloadingStartDate = data().deepCopy(fields()[18].schema(), other.unloadingStartDate);
+      if (isValidValue(fields()[18], other.unloadingFinishDate)) {
+        this.unloadingFinishDate = data().deepCopy(fields()[18].schema(), other.unloadingFinishDate);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.unloadingFinishDate)) {
-        this.unloadingFinishDate = data().deepCopy(fields()[19].schema(), other.unloadingFinishDate);
+      if (isValidValue(fields()[19], other.vehicleReleaseDate)) {
+        this.vehicleReleaseDate = data().deepCopy(fields()[19].schema(), other.vehicleReleaseDate);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.vehicleReleaseDate)) {
-        this.vehicleReleaseDate = data().deepCopy(fields()[20].schema(), other.vehicleReleaseDate);
+      if (isValidValue(fields()[20], other.type)) {
+        this.type = data().deepCopy(fields()[20].schema(), other.type);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.type)) {
-        this.type = data().deepCopy(fields()[21].schema(), other.type);
+      if (isValidValue(fields()[21], other.shipmentId)) {
+        this.shipmentId = data().deepCopy(fields()[21].schema(), other.shipmentId);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.shipmentId)) {
-        this.shipmentId = data().deepCopy(fields()[22].schema(), other.shipmentId);
+      if (isValidValue(fields()[22], other.customField)) {
+        this.customField = data().deepCopy(fields()[22].schema(), other.customField);
         fieldSetFlags()[22] = true;
       }
     }
@@ -767,32 +767,32 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         fieldSetFlags()[15] = true;
       }
       this.trackingDetailBuilder = null;
-      if (isValidValue(fields()[16], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
+      if (isValidValue(fields()[16], other.reportingDate)) {
+        this.reportingDate = data().deepCopy(fields()[16].schema(), other.reportingDate);
         fieldSetFlags()[16] = true;
       }
-      if (isValidValue(fields()[17], other.reportingDate)) {
-        this.reportingDate = data().deepCopy(fields()[17].schema(), other.reportingDate);
+      if (isValidValue(fields()[17], other.unloadingStartDate)) {
+        this.unloadingStartDate = data().deepCopy(fields()[17].schema(), other.unloadingStartDate);
         fieldSetFlags()[17] = true;
       }
-      if (isValidValue(fields()[18], other.unloadingStartDate)) {
-        this.unloadingStartDate = data().deepCopy(fields()[18].schema(), other.unloadingStartDate);
+      if (isValidValue(fields()[18], other.unloadingFinishDate)) {
+        this.unloadingFinishDate = data().deepCopy(fields()[18].schema(), other.unloadingFinishDate);
         fieldSetFlags()[18] = true;
       }
-      if (isValidValue(fields()[19], other.unloadingFinishDate)) {
-        this.unloadingFinishDate = data().deepCopy(fields()[19].schema(), other.unloadingFinishDate);
+      if (isValidValue(fields()[19], other.vehicleReleaseDate)) {
+        this.vehicleReleaseDate = data().deepCopy(fields()[19].schema(), other.vehicleReleaseDate);
         fieldSetFlags()[19] = true;
       }
-      if (isValidValue(fields()[20], other.vehicleReleaseDate)) {
-        this.vehicleReleaseDate = data().deepCopy(fields()[20].schema(), other.vehicleReleaseDate);
+      if (isValidValue(fields()[20], other.type)) {
+        this.type = data().deepCopy(fields()[20].schema(), other.type);
         fieldSetFlags()[20] = true;
       }
-      if (isValidValue(fields()[21], other.type)) {
-        this.type = data().deepCopy(fields()[21].schema(), other.type);
+      if (isValidValue(fields()[21], other.shipmentId)) {
+        this.shipmentId = data().deepCopy(fields()[21].schema(), other.shipmentId);
         fieldSetFlags()[21] = true;
       }
-      if (isValidValue(fields()[22], other.shipmentId)) {
-        this.shipmentId = data().deepCopy(fields()[22].schema(), other.shipmentId);
+      if (isValidValue(fields()[22], other.customField)) {
+        this.customField = data().deepCopy(fields()[22].schema(), other.customField);
         fieldSetFlags()[22] = true;
       }
     }
@@ -1492,45 +1492,6 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
     }
 
     /**
-      * Gets the value of the 'customFields' field.
-      * @return The value.
-      */
-    public java.util.List<com.fretron.Model.CustomFields> getCustomFields() {
-      return customFields;
-    }
-
-    /**
-      * Sets the value of the 'customFields' field.
-      * @param value The value of 'customFields'.
-      * @return This builder.
-      */
-    public com.fretron.Model.ConsignmentPod.Builder setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
-      validate(fields()[16], value);
-      this.customFields = value;
-      fieldSetFlags()[16] = true;
-      return this;
-    }
-
-    /**
-      * Checks whether the 'customFields' field has been set.
-      * @return True if the 'customFields' field has been set, false otherwise.
-      */
-    public boolean hasCustomFields() {
-      return fieldSetFlags()[16];
-    }
-
-
-    /**
-      * Clears the value of the 'customFields' field.
-      * @return This builder.
-      */
-    public com.fretron.Model.ConsignmentPod.Builder clearCustomFields() {
-      customFields = null;
-      fieldSetFlags()[16] = false;
-      return this;
-    }
-
-    /**
       * Gets the value of the 'reportingDate' field.
       * @return The value.
       */
@@ -1544,9 +1505,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setReportingDate(java.lang.Long value) {
-      validate(fields()[17], value);
+      validate(fields()[16], value);
       this.reportingDate = value;
-      fieldSetFlags()[17] = true;
+      fieldSetFlags()[16] = true;
       return this;
     }
 
@@ -1555,7 +1516,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'reportingDate' field has been set, false otherwise.
       */
     public boolean hasReportingDate() {
-      return fieldSetFlags()[17];
+      return fieldSetFlags()[16];
     }
 
 
@@ -1565,7 +1526,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearReportingDate() {
       reportingDate = null;
-      fieldSetFlags()[17] = false;
+      fieldSetFlags()[16] = false;
       return this;
     }
 
@@ -1583,9 +1544,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setUnloadingStartDate(java.lang.Long value) {
-      validate(fields()[18], value);
+      validate(fields()[17], value);
       this.unloadingStartDate = value;
-      fieldSetFlags()[18] = true;
+      fieldSetFlags()[17] = true;
       return this;
     }
 
@@ -1594,7 +1555,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'unloadingStartDate' field has been set, false otherwise.
       */
     public boolean hasUnloadingStartDate() {
-      return fieldSetFlags()[18];
+      return fieldSetFlags()[17];
     }
 
 
@@ -1604,7 +1565,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearUnloadingStartDate() {
       unloadingStartDate = null;
-      fieldSetFlags()[18] = false;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1622,9 +1583,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setUnloadingFinishDate(java.lang.Long value) {
-      validate(fields()[19], value);
+      validate(fields()[18], value);
       this.unloadingFinishDate = value;
-      fieldSetFlags()[19] = true;
+      fieldSetFlags()[18] = true;
       return this;
     }
 
@@ -1633,7 +1594,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'unloadingFinishDate' field has been set, false otherwise.
       */
     public boolean hasUnloadingFinishDate() {
-      return fieldSetFlags()[19];
+      return fieldSetFlags()[18];
     }
 
 
@@ -1643,7 +1604,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearUnloadingFinishDate() {
       unloadingFinishDate = null;
-      fieldSetFlags()[19] = false;
+      fieldSetFlags()[18] = false;
       return this;
     }
 
@@ -1661,9 +1622,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setVehicleReleaseDate(java.lang.Long value) {
-      validate(fields()[20], value);
+      validate(fields()[19], value);
       this.vehicleReleaseDate = value;
-      fieldSetFlags()[20] = true;
+      fieldSetFlags()[19] = true;
       return this;
     }
 
@@ -1672,7 +1633,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'vehicleReleaseDate' field has been set, false otherwise.
       */
     public boolean hasVehicleReleaseDate() {
-      return fieldSetFlags()[20];
+      return fieldSetFlags()[19];
     }
 
 
@@ -1682,7 +1643,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearVehicleReleaseDate() {
       vehicleReleaseDate = null;
-      fieldSetFlags()[20] = false;
+      fieldSetFlags()[19] = false;
       return this;
     }
 
@@ -1700,9 +1661,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setType(java.lang.String value) {
-      validate(fields()[21], value);
+      validate(fields()[20], value);
       this.type = value;
-      fieldSetFlags()[21] = true;
+      fieldSetFlags()[20] = true;
       return this;
     }
 
@@ -1711,7 +1672,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'type' field has been set, false otherwise.
       */
     public boolean hasType() {
-      return fieldSetFlags()[21];
+      return fieldSetFlags()[20];
     }
 
 
@@ -1721,7 +1682,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearType() {
       type = null;
-      fieldSetFlags()[21] = false;
+      fieldSetFlags()[20] = false;
       return this;
     }
 
@@ -1739,9 +1700,9 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return This builder.
       */
     public com.fretron.Model.ConsignmentPod.Builder setShipmentId(java.lang.String value) {
-      validate(fields()[22], value);
+      validate(fields()[21], value);
       this.shipmentId = value;
-      fieldSetFlags()[22] = true;
+      fieldSetFlags()[21] = true;
       return this;
     }
 
@@ -1750,7 +1711,7 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       * @return True if the 'shipmentId' field has been set, false otherwise.
       */
     public boolean hasShipmentId() {
-      return fieldSetFlags()[22];
+      return fieldSetFlags()[21];
     }
 
 
@@ -1760,6 +1721,45 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
       */
     public com.fretron.Model.ConsignmentPod.Builder clearShipmentId() {
       shipmentId = null;
+      fieldSetFlags()[21] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'customField' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.LiteCustomFields> getCustomField() {
+      return customField;
+    }
+
+    /**
+      * Sets the value of the 'customField' field.
+      * @param value The value of 'customField'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder setCustomField(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+      validate(fields()[22], value);
+      this.customField = value;
+      fieldSetFlags()[22] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customField' field has been set.
+      * @return True if the 'customField' field has been set, false otherwise.
+      */
+    public boolean hasCustomField() {
+      return fieldSetFlags()[22];
+    }
+
+
+    /**
+      * Clears the value of the 'customField' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentPod.Builder clearCustomField() {
+      customField = null;
       fieldSetFlags()[22] = false;
       return this;
     }
@@ -1792,13 +1792,13 @@ public class ConsignmentPod extends org.apache.avro.specific.SpecificRecordBase 
         } else {
           record.trackingDetail = fieldSetFlags()[15] ? this.trackingDetail : (com.fretron.Model.PodTrackingDetail) defaultValue(fields()[15]);
         }
-        record.customFields = fieldSetFlags()[16] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[16]);
-        record.reportingDate = fieldSetFlags()[17] ? this.reportingDate : (java.lang.Long) defaultValue(fields()[17]);
-        record.unloadingStartDate = fieldSetFlags()[18] ? this.unloadingStartDate : (java.lang.Long) defaultValue(fields()[18]);
-        record.unloadingFinishDate = fieldSetFlags()[19] ? this.unloadingFinishDate : (java.lang.Long) defaultValue(fields()[19]);
-        record.vehicleReleaseDate = fieldSetFlags()[20] ? this.vehicleReleaseDate : (java.lang.Long) defaultValue(fields()[20]);
-        record.type = fieldSetFlags()[21] ? this.type : (java.lang.String) defaultValue(fields()[21]);
-        record.shipmentId = fieldSetFlags()[22] ? this.shipmentId : (java.lang.String) defaultValue(fields()[22]);
+        record.reportingDate = fieldSetFlags()[16] ? this.reportingDate : (java.lang.Long) defaultValue(fields()[16]);
+        record.unloadingStartDate = fieldSetFlags()[17] ? this.unloadingStartDate : (java.lang.Long) defaultValue(fields()[17]);
+        record.unloadingFinishDate = fieldSetFlags()[18] ? this.unloadingFinishDate : (java.lang.Long) defaultValue(fields()[18]);
+        record.vehicleReleaseDate = fieldSetFlags()[19] ? this.vehicleReleaseDate : (java.lang.Long) defaultValue(fields()[19]);
+        record.type = fieldSetFlags()[20] ? this.type : (java.lang.String) defaultValue(fields()[20]);
+        record.shipmentId = fieldSetFlags()[21] ? this.shipmentId : (java.lang.String) defaultValue(fields()[21]);
+        record.customField = fieldSetFlags()[22] ? this.customField : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[22]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
