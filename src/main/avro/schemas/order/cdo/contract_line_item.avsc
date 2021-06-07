@@ -226,6 +226,14 @@
                         "string"
                       ],
                  "default": null
-         }
+         },
+     {
+      "name": "customerMaterial",
+      "type": [
+        "null",
+        "com.fretron.Model.Materials"
+      ],
+      "default": null
+    }
   ]
 }
