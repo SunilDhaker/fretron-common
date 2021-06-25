@@ -3,435 +3,443 @@
   "name": "Auction",
   "type": "record",
   "fields": [
-   {
-     "name": "uuid",
+    {
+      "name": "uuid",
       "type": [
-                  "null",
-                  "string"
-                ],
+        "null",
+        "string"
+      ],
       "default": null
     },
     {
       "name": "externalId",
-       "type": [
-                 "null",
-                 "string"
-                    ],
-       "default": null
-    },
-    {
-       "name": "orgId",
-       "type": [
-                 "null",
-                 "string"
-                    ],
-       "default": null
-    },
-    {
-       "name": "status",
-       "type": [
-                 "null",
-                 "string"
-                ],
-        "default": null
-     },
-     {
-       "name": "secondaryStatus",
-        "type": [
-                        "null",
-                        "string"
-                      ],
-        "default": null
-     },
-     {
-       "name": "orderId",
-        "type": [
-                  "null",
-                  "string"
-                 ],
-        "default": null
-     },
-     {
-         "name": "freightType",
-          "type": [
-                       "null",
-                       "string"
-                      ],
-           "default": null
-     },
-     {
-        "name":"isNegotiable",
-         "type": ["null","boolean"],
-         "default":null
-     },
-     {
-        "name": "numberOfVehicles",
-         "type": [
-                      "null",
-                      "int"
-                     ],
-         "default": null
-     },
-     {
-       "name": "allocatedVehicles",
-        "type": [
-                 "null",
-                  "int"
-                ],
-       "default": null
-     },
-     {
-       "name": "origin",
-        "type": [
-                  "null",
-                  "com.fretron.Model.Place"
-                ],
-       "default": null
-     },
-     {
-       "name": "destination",
-        "type": [
-                   "null",
-                   "com.fretron.Model.Place"
-                ],
-        "default": null
-     },
-     {
-        "name": "remarks",
-         "type": [
-                   "null",
-                       {
-                          "type": "array",
-                          "items": "string"
-                       }
-                  ],
-         "default": null
-     },
-     {
-        "name": "alternateOrigins",
-         "type": [
-                    "null",
-                  {
-                     "type": "array",
-                     "items": "com.fretron.Model.Place"
-                  }
-                ],
-        "default": null
-     },
-     {
-         "name": "alternateDestinations",
-          "type": [
-                     "null",
-                     {
-                       "type": "array",
-                        "items": "com.fretron.Model.Place"
-                     }
-                  ],
-          "default": null
-     },
-     {
-         "name": "bids",
-          "type": [
-                     "null",
-                       {
-                         "type": "array",
-                         "items": "com.fretron.Model.Bid"
-                       }
-                 ],
-          "default": null
-     },
-     {
-         "name": "price",
-          "type": [
-                     "null",
-                     "double"
-                   ],
-         "default": null
-     },
-     {
-       "name": "placementDate",
-        "type": [
-                  "null",
-                  "long"
-                ],
-       "logicalType": "timestamp-millis",
-       "default": null
-     },
-      {
-            "name": "createDate",
-            "type": [
-                              "null",
-                               "long"
-                            ],
-                 "logicalType": "timestamp-millis",
-                    "default": null
-      },
-     {
-       "name": "allowedTransporters",
-       "type": [
-                 "null",
-                 {
-                    "type": "array",
-                     "items": "string"
-                 }
-               ],
-         "default": null
-    },
-    {
-        "name": "allowedMaterial",
-         "type": [
-                   "null",
-                    {
-                      "type": "array",
-                      "items": "string"
-                    }
-                 ],
-        "default": null
-    },
-    {
-       "name": "allowedVehicleTypes",
-        "type": [
-                   "null",
-                   {
-                      "type": "array",
-                       "items": "string"
-                   }
-                 ],
-        "default": null
-    },
-    {
-        "name": "isShowTopRankToOthers",
-        "type": ["null","boolean"],
-        "default": null
-    },
-    {
-      "name": "purchaseEnquiries",
-       "type": [
-                  "null",
-                  {
-                       "type": "array",
-                       "items": "string"
-                  }
-               ],
+      "type": [
+        "null",
+        "string"
+      ],
       "default": null
     },
     {
-       "name": "tnCs",
-        "type": [
-                   "null",
-                   {
-                      "type": "array",
-                       "items": "com.fretron.Model.ContractTerms"
-                   }
-                        ],
-         "default": null
-     },
-     {
-        "name": "round",
-         "type": [
-                  "null",
-                  "com.fretron.Model.AuctionRound"
-                 ],
-        "default": null
-     },
-     {
-       "name": "branch",
-        "type": [
-                  "null",
-                   "com.fretron.Model.OrgOffice"
-                ],
-        "default": null
-     },
-     {
-        "name": "updates",
-         "type": [
-                   "null",
-                   "com.fretron.Model.Updates"
-                  ],
-         "default": null
-      },
-      {
-             "name": "completedRounds",
-              "type": [
-                         "null",
-                         {
-                            "type": "array",
-                             "items": "com.fretron.Model.AuctionRound"
-                         }
-                              ],
-               "default": null
-           },
-      {
-            "name":"isConsiderReferencePrice",
-            "type": ["null","boolean"],
-            "default":null
-       },
-       {
-          "name": "customFields",
-           "type": [
-                     "null",
-                    {
-                       "type": "array",
-                        "items": "com.fretron.Model.CustomFields"
-                    }
-                         ],
-           "default": null
-       },
-       {
-                "name": "customerName",
-                 "type": [
-                                "null",
-                                "string"
-                               ],
-                "default": null
-        },
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "secondaryStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orderId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "freightType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name":"isNegotiable",
+      "type": ["null","boolean"],
+      "default":null
+    },
+    {
+      "name": "numberOfVehicles",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "allocatedVehicles",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "origin",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+      "name": "destination",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+      "name": "remarks",
+      "type": [
+        "null",
         {
-             "name": "route",
-             "type": [
-                       "null",
-                       "string"
-                     ],
-             "default": null
-        },
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "alternateOrigins",
+      "type": [
+        "null",
         {
-          "name": "statusDescription",
-           "type": [
-                                   "null",
-                                    "string"
-                                  ],
-           "default": null
-        },
+          "type": "array",
+          "items": "com.fretron.Model.Place"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "alternateDestinations",
+      "type": [
+        "null",
         {
-              "name": "totalQuantity",
-              "type": [
-                "null",
-                "double"
-              ],
-              "default": null
-        },
+          "type": "array",
+          "items": "com.fretron.Model.Place"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "bids",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Bid"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "price",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "placementDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "createDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "allowedTransporters",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "allowedMaterial",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "allowedVehicleTypes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "isShowTopRankToOthers",
+      "type": ["null","boolean"],
+      "default": null
+    },
+    {
+      "name": "purchaseEnquiries",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "tnCs",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ContractTerms"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "round",
+      "type": [
+        "null",
+        "com.fretron.Model.AuctionRound"
+      ],
+      "default": null
+    },
+    {
+      "name": "branch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "completedRounds",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.AuctionRound"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name":"isConsiderReferencePrice",
+      "type": ["null","boolean"],
+      "default":null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "customerName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "route",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "statusDescription",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "totalQuantity",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
 
+    {
+      "name": "placedQuantity",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    } ,
+    {
+      "name":"isCritical",
+      "type": ["null","boolean"],
+      "default":null
+    } ,
+    {
+      "name": "fuMappings",
+      "type": [
+        "null",
         {
-           "name": "placedQuantity",
-              "type": [
-                "null",
-                "double"
-              ],
-              "default": null
-       } ,
+          "type": "array",
+          "items": "com.fretron.Model.FreightUnitMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "salesOrderMappings",
+      "type": [
+        "null",
         {
-                      "name":"isCritical",
-                       "type": ["null","boolean"],
-                       "default":null
-       } ,
+          "type": "array",
+          "items": "com.fretron.Model.SalesOrderMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "auctionType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "optimisationBasis",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "placedStdQuantity",
+      "type": ["null","com.fretron.Model.StandardMeasurement"],
+      "default" : null
+    },
+    {
+      "name": "totalStdQuantity",
+      "type": ["null","com.fretron.Model.StandardMeasurement"],
+      "default" : null
+    },
+    {
+      "name": "issues",
+      "type": [
+        "null",
         {
-                 "name": "fuMappings",
-                 "type": [
-                               "null",
-                               {
-                                  "type": "array",
-                                   "items": "com.fretron.Model.FreightUnitMapping"
-                               }
-                                    ],
-                     "default": null
-          },
-          {
-              "name": "salesOrderMappings",
-              "type": [
-                          "null",
-                      {
-                          "type": "array",
-                           "items": "com.fretron.Model.SalesOrderMapping"
-                      }
-                      ],
-                "default": null
-           },
-           {
-               "name": "auctionType",
-                "type": [
-                                  "null",
-                                  "string"
-                                ],
-                "default": null
-            },
-            {
-               "name": "optimisationBasis",
-               "type": [
-                          "null",
-                          "string"
-                       ],
-               "default": null
-            },
-            {
-                  "name": "placedStdQuantity",
-                  "type": ["null","com.fretron.Model.StandardMeasurement"],
-                   "default" : null
-            },
-            {
-                  "name": "totalStdQuantity",
-                 "type": ["null","com.fretron.Model.StandardMeasurement"],
-                   "default" : null
-             },
-              {
-                                  "name": "issues",
-                                   "type": [
-                                                          "null",
-                                                          {
-                                                            "type": "array",
-                                                            "items": "com.fretron.Model.Issue"
-                                                          }
-                                                        ],
-                                     "default": null
+          "type": "array",
+          "items": "com.fretron.Model.Issue"
+        }
+      ],
+      "default": null
 
-             },
-             {
-                  "name":"isAllowCounterOffer",
-                   "type": ["null","boolean"],
-                   "default":null
-              },
-              {
-                  "name": "enquiries",
-                   "type": [
-                                        "null",
-                                    {
-                                        "type": "array",
-                                         "items": "com.fretron.Model.SalesOrderMapping"
-                                    }
-                                    ],
-                   "default": null
-               },
-                {
-                      "name": "numberOfBidRequiredToMarkWON",
-                       "type": [
-                                "null",
-                                 "int"
-                               ],
-                      "default": null
-                },
-                {
-                         "name": "bidToleranceMethod",
-                          "type": [
-                                       "null",
-                                       "string"
-                                      ],
-                           "default": null
-                  },
-                   {
-                         "name": "bidToleranceAmount",
-                            "type": [
-                                                         "null",
-                                                         "double"
-                                                        ],
-                              "default": null
-                     },
+    },
+    {
+      "name":"isAllowCounterOffer",
+      "type": ["null","boolean"],
+      "default":null
+    },
+    {
+      "name": "enquiries",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.SalesOrderMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "numberOfBidRequiredToMarkWON",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "bidToleranceMethod",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "bidToleranceAmount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
 
-                      {
-                              "name": "routeDistance",
-                               "type": [
-                                          "null",
-                                          "double"
-                                        ],
-                              "default": null
-                          }
+    {
+      "name": "routeDistance",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "legType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
 
 
   ]
