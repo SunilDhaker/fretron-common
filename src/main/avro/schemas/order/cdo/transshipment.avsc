@@ -1,0 +1,34 @@
+{
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "TransShipmentPlanningRecord",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignment",
+      "type": [
+        "null",
+        "com.fretron.Model.Consignment"
+      ],
+      "default": null
+    },
+    {
+      "name": "plannedLegs",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.TransShipmentLeg"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

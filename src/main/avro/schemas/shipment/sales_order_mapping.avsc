@@ -3,69 +3,80 @@
   "name": "SalesOrderMapping",
   "type": "record",
   "fields": [
-
-         {
-            "name": "uuid",
-            "type": ["null",
-                       "string"
-                              ],
-            "default": null
-        },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orderId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lineItemId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "legType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "quantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    },
+    {
+      "name": "fuMappings",
+      "type": [
+        "null",
         {
-             "name": "orderId",
-              "type": ["null",
-                         "string"
-                      ],
-              "default": null
-        },
-        {
-            "name": "lineItemId",
-             "type": ["null",
-                          "string"
-                     ],
-              "default": null
-        },
-        {
-          "name": "legType",
-          "type": ["null",
-                       "string"
-                  ],
-           "default": null
-        },
-        {
-           "name": "consignmentId",
-            "type": ["null",
-                         "string"
-                     ],
-           "default": null
-       },
-       {
-               "name": "quantity",
-                "type": [
-                          "null",
-                           "com.fretron.Model.StandardMeasurement"
-                         ],
-                "default": null
-      },
-      {
-              "name": "fuMappings",
-              "type": [
-                "null",
-                {
-                  "type": "array",
-                  "items": "com.fretron.Model.LegWiseFuMapping"
-                }
-              ],
-              "default": null
-            },
-            {
-                           "name": "consignmentLineItemId",
-                            "type": [
-                                      "null",
-                                       "string"
-                                     ],
-                            "default": null
-                  }
-
+          "type": "array",
+          "items": "com.fretron.Model.LegWiseFuMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentLineItemId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }

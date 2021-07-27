@@ -1,0 +1,120 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "TransShipmentLeg",
+  "type": "record",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "transShipmentPoint",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+      "name": "legType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "legId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "totalReceivedQuantity",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.SalesOrderMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "plannedMappings",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.SalesOrderMapping"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "remainingPlannedQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    },
+    {
+      "name": "isSplit",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "grn",
+      "type": [
+        "null",
+        "com.fretron.Model.ConsignmentPod"
+      ],
+      "default": null
+    },
+    {
+      "name": "previousShipmentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "previousFreightUnitItemId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "cancelledQuantity",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CancelledMapping"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

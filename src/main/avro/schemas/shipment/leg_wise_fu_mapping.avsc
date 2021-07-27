@@ -38,6 +38,14 @@
                                  "string"
                               ],
                  "default": null
-          }
+          },
+    {
+      "name": "shipmentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }

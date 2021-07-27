@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "CancelledMapping",
+  "type": "record",
+  "fields": [
+    {
+      "name": "reason",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "mapping",
+      "type": [
+        "null",
+        "com.fretron.Model.SalesOrderMapping"
+      ],
+      "default": null
+    }
+  ]
+}
