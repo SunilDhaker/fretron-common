@@ -115,6 +115,24 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "vehicleRegistrationNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "previousLegEDD",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     }
   ]
 }
