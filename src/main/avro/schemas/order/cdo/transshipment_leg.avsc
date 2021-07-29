@@ -126,13 +126,21 @@
     },
 
     {
-      "name": "previousLegEDD",
+      "name": "edd",
       "type": [
         "null",
         "long"
       ],
       "logicalType": "timestamp-millis",
       "default": null
-    }
+    },
+    {
+         "name": "vehicleLoadType",
+          "type": [
+                         "null",
+                         "com.fretron.Model.LoadType"
+                       ],
+          "default": null
+      }
   ]
 }
