@@ -58,6 +58,22 @@
                              "name": "estimatedShortageAmount",
                               "type": ["null","double"],
                                "default" : null
-                          }
+                          },
+                              {
+                                "name": "damageReason",
+                                "type": [
+                                  "null",
+                                  "string"
+                                ],
+                                "default": null
+                              },
+                                  {
+                                    "name": "shortageReason",
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ],
+                                    "default": null
+                                  }
   ]
 }

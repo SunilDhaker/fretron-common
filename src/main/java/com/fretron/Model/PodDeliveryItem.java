@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7012000226332658848L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"estimatedDamangedAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"estimatedShortageAmount\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -5813173697757887524L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PodDeliveryItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"orderMapping\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"issues\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"remarks\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"estimatedDamangedAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"estimatedShortageAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"damageReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shortageReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.SalesOrderMapping orderMapping;
   @Deprecated public java.util.List<java.lang.String> issues;
@@ -20,6 +20,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.Double estimatedDamangedAmount;
   @Deprecated public java.lang.Double estimatedShortageAmount;
+  @Deprecated public java.lang.String damageReason;
+  @Deprecated public java.lang.String shortageReason;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -37,8 +39,10 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
    * @param status The new value for status
    * @param estimatedDamangedAmount The new value for estimatedDamangedAmount
    * @param estimatedShortageAmount The new value for estimatedShortageAmount
+   * @param damageReason The new value for damageReason
+   * @param shortageReason The new value for shortageReason
    */
-  public PodDeliveryItem(com.fretron.Model.SalesOrderMapping orderMapping, java.util.List<java.lang.String> issues, java.lang.String remarks, java.util.List<com.fretron.Model.Document> documents, java.lang.String status, java.lang.Double estimatedDamangedAmount, java.lang.Double estimatedShortageAmount) {
+  public PodDeliveryItem(com.fretron.Model.SalesOrderMapping orderMapping, java.util.List<java.lang.String> issues, java.lang.String remarks, java.util.List<com.fretron.Model.Document> documents, java.lang.String status, java.lang.Double estimatedDamangedAmount, java.lang.Double estimatedShortageAmount, java.lang.String damageReason, java.lang.String shortageReason) {
     this.orderMapping = orderMapping;
     this.issues = issues;
     this.remarks = remarks;
@@ -46,6 +50,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
     this.status = status;
     this.estimatedDamangedAmount = estimatedDamangedAmount;
     this.estimatedShortageAmount = estimatedShortageAmount;
+    this.damageReason = damageReason;
+    this.shortageReason = shortageReason;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -59,6 +65,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
     case 4: return status;
     case 5: return estimatedDamangedAmount;
     case 6: return estimatedShortageAmount;
+    case 7: return damageReason;
+    case 8: return shortageReason;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,6 +82,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
     case 4: status = (java.lang.String)value$; break;
     case 5: estimatedDamangedAmount = (java.lang.Double)value$; break;
     case 6: estimatedShortageAmount = (java.lang.Double)value$; break;
+    case 7: damageReason = (java.lang.String)value$; break;
+    case 8: shortageReason = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -191,6 +201,38 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
+   * Gets the value of the 'damageReason' field.
+   * @return The value of the 'damageReason' field.
+   */
+  public java.lang.String getDamageReason() {
+    return damageReason;
+  }
+
+  /**
+   * Sets the value of the 'damageReason' field.
+   * @param value the value to set.
+   */
+  public void setDamageReason(java.lang.String value) {
+    this.damageReason = value;
+  }
+
+  /**
+   * Gets the value of the 'shortageReason' field.
+   * @return The value of the 'shortageReason' field.
+   */
+  public java.lang.String getShortageReason() {
+    return shortageReason;
+  }
+
+  /**
+   * Sets the value of the 'shortageReason' field.
+   * @param value the value to set.
+   */
+  public void setShortageReason(java.lang.String value) {
+    this.shortageReason = value;
+  }
+
+  /**
    * Creates a new PodDeliveryItem RecordBuilder.
    * @return A new PodDeliveryItem RecordBuilder
    */
@@ -230,6 +272,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
     private java.lang.String status;
     private java.lang.Double estimatedDamangedAmount;
     private java.lang.Double estimatedShortageAmount;
+    private java.lang.String damageReason;
+    private java.lang.String shortageReason;
 
     /** Creates a new Builder */
     private Builder() {
@@ -273,6 +317,14 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
         this.estimatedShortageAmount = data().deepCopy(fields()[6].schema(), other.estimatedShortageAmount);
         fieldSetFlags()[6] = true;
       }
+      if (isValidValue(fields()[7], other.damageReason)) {
+        this.damageReason = data().deepCopy(fields()[7].schema(), other.damageReason);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.shortageReason)) {
+        this.shortageReason = data().deepCopy(fields()[8].schema(), other.shortageReason);
+        fieldSetFlags()[8] = true;
+      }
     }
 
     /**
@@ -309,6 +361,14 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
       if (isValidValue(fields()[6], other.estimatedShortageAmount)) {
         this.estimatedShortageAmount = data().deepCopy(fields()[6].schema(), other.estimatedShortageAmount);
         fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.damageReason)) {
+        this.damageReason = data().deepCopy(fields()[7].schema(), other.damageReason);
+        fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.shortageReason)) {
+        this.shortageReason = data().deepCopy(fields()[8].schema(), other.shortageReason);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -620,6 +680,84 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
       return this;
     }
 
+    /**
+      * Gets the value of the 'damageReason' field.
+      * @return The value.
+      */
+    public java.lang.String getDamageReason() {
+      return damageReason;
+    }
+
+    /**
+      * Sets the value of the 'damageReason' field.
+      * @param value The value of 'damageReason'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PodDeliveryItem.Builder setDamageReason(java.lang.String value) {
+      validate(fields()[7], value);
+      this.damageReason = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'damageReason' field has been set.
+      * @return True if the 'damageReason' field has been set, false otherwise.
+      */
+    public boolean hasDamageReason() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'damageReason' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PodDeliveryItem.Builder clearDamageReason() {
+      damageReason = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'shortageReason' field.
+      * @return The value.
+      */
+    public java.lang.String getShortageReason() {
+      return shortageReason;
+    }
+
+    /**
+      * Sets the value of the 'shortageReason' field.
+      * @param value The value of 'shortageReason'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PodDeliveryItem.Builder setShortageReason(java.lang.String value) {
+      validate(fields()[8], value);
+      this.shortageReason = value;
+      fieldSetFlags()[8] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'shortageReason' field has been set.
+      * @return True if the 'shortageReason' field has been set, false otherwise.
+      */
+    public boolean hasShortageReason() {
+      return fieldSetFlags()[8];
+    }
+
+
+    /**
+      * Clears the value of the 'shortageReason' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PodDeliveryItem.Builder clearShortageReason() {
+      shortageReason = null;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
     @Override
     public PodDeliveryItem build() {
       try {
@@ -635,6 +773,8 @@ public class PodDeliveryItem extends org.apache.avro.specific.SpecificRecordBase
         record.status = fieldSetFlags()[4] ? this.status : (java.lang.String) defaultValue(fields()[4]);
         record.estimatedDamangedAmount = fieldSetFlags()[5] ? this.estimatedDamangedAmount : (java.lang.Double) defaultValue(fields()[5]);
         record.estimatedShortageAmount = fieldSetFlags()[6] ? this.estimatedShortageAmount : (java.lang.Double) defaultValue(fields()[6]);
+        record.damageReason = fieldSetFlags()[7] ? this.damageReason : (java.lang.String) defaultValue(fields()[7]);
+        record.shortageReason = fieldSetFlags()[8] ? this.shortageReason : (java.lang.String) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
