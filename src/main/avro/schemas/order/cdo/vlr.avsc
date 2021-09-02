@@ -143,6 +143,14 @@
                                     "string"
                                   ],
                         "default": null
-                    }
+                    },
+                     {
+                            "name": "vlrNumber",
+                            "type": [
+                              "null",
+                              "string"
+                            ],
+                            "default": null
+                       }
   ]
 }
