@@ -77,6 +77,21 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+          "name": "originLegId",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+      },
+      {
+         "name":"isFullyUtilized",
+          "type": ["null","boolean"],
+          "default":null
+      }
+
+
   ]
 }

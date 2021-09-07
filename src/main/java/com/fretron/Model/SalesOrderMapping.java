@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6335866481816907238L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -4219796282645886802L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"originLegId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFullyUtilized\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orderId;
@@ -22,6 +22,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings;
   @Deprecated public java.lang.String consignmentLineItemId;
   @Deprecated public java.lang.String source;
+  @Deprecated public java.lang.String originLegId;
+  @Deprecated public java.lang.Boolean isFullyUtilized;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +43,10 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
    * @param fuMappings The new value for fuMappings
    * @param consignmentLineItemId The new value for consignmentLineItemId
    * @param source The new value for source
+   * @param originLegId The new value for originLegId
+   * @param isFullyUtilized The new value for isFullyUtilized
    */
-  public SalesOrderMapping(java.lang.String uuid, java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity, java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings, java.lang.String consignmentLineItemId, java.lang.String source) {
+  public SalesOrderMapping(java.lang.String uuid, java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity, java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings, java.lang.String consignmentLineItemId, java.lang.String source, java.lang.String originLegId, java.lang.Boolean isFullyUtilized) {
     this.uuid = uuid;
     this.orderId = orderId;
     this.lineItemId = lineItemId;
@@ -52,6 +56,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     this.fuMappings = fuMappings;
     this.consignmentLineItemId = consignmentLineItemId;
     this.source = source;
+    this.originLegId = originLegId;
+    this.isFullyUtilized = isFullyUtilized;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +73,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     case 6: return fuMappings;
     case 7: return consignmentLineItemId;
     case 8: return source;
+    case 9: return originLegId;
+    case 10: return isFullyUtilized;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +92,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     case 6: fuMappings = (java.util.List<com.fretron.Model.LegWiseFuMapping>)value$; break;
     case 7: consignmentLineItemId = (java.lang.String)value$; break;
     case 8: source = (java.lang.String)value$; break;
+    case 9: originLegId = (java.lang.String)value$; break;
+    case 10: isFullyUtilized = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +243,38 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'originLegId' field.
+   * @return The value of the 'originLegId' field.
+   */
+  public java.lang.String getOriginLegId() {
+    return originLegId;
+  }
+
+  /**
+   * Sets the value of the 'originLegId' field.
+   * @param value the value to set.
+   */
+  public void setOriginLegId(java.lang.String value) {
+    this.originLegId = value;
+  }
+
+  /**
+   * Gets the value of the 'isFullyUtilized' field.
+   * @return The value of the 'isFullyUtilized' field.
+   */
+  public java.lang.Boolean getIsFullyUtilized() {
+    return isFullyUtilized;
+  }
+
+  /**
+   * Sets the value of the 'isFullyUtilized' field.
+   * @param value the value to set.
+   */
+  public void setIsFullyUtilized(java.lang.Boolean value) {
+    this.isFullyUtilized = value;
+  }
+
+  /**
    * Creates a new SalesOrderMapping RecordBuilder.
    * @return A new SalesOrderMapping RecordBuilder
    */
@@ -274,6 +316,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     private java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings;
     private java.lang.String consignmentLineItemId;
     private java.lang.String source;
+    private java.lang.String originLegId;
+    private java.lang.Boolean isFullyUtilized;
 
     /** Creates a new Builder */
     private Builder() {
@@ -325,6 +369,14 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
         this.source = data().deepCopy(fields()[8].schema(), other.source);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.originLegId)) {
+        this.originLegId = data().deepCopy(fields()[9].schema(), other.originLegId);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.isFullyUtilized)) {
+        this.isFullyUtilized = data().deepCopy(fields()[10].schema(), other.isFullyUtilized);
+        fieldSetFlags()[10] = true;
+      }
     }
 
     /**
@@ -369,6 +421,14 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       if (isValidValue(fields()[8], other.source)) {
         this.source = data().deepCopy(fields()[8].schema(), other.source);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.originLegId)) {
+        this.originLegId = data().deepCopy(fields()[9].schema(), other.originLegId);
+        fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.isFullyUtilized)) {
+        this.isFullyUtilized = data().deepCopy(fields()[10].schema(), other.isFullyUtilized);
+        fieldSetFlags()[10] = true;
       }
     }
 
@@ -758,6 +818,84 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'originLegId' field.
+      * @return The value.
+      */
+    public java.lang.String getOriginLegId() {
+      return originLegId;
+    }
+
+    /**
+      * Sets the value of the 'originLegId' field.
+      * @param value The value of 'originLegId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder setOriginLegId(java.lang.String value) {
+      validate(fields()[9], value);
+      this.originLegId = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'originLegId' field has been set.
+      * @return True if the 'originLegId' field has been set, false otherwise.
+      */
+    public boolean hasOriginLegId() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'originLegId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder clearOriginLegId() {
+      originLegId = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isFullyUtilized' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsFullyUtilized() {
+      return isFullyUtilized;
+    }
+
+    /**
+      * Sets the value of the 'isFullyUtilized' field.
+      * @param value The value of 'isFullyUtilized'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder setIsFullyUtilized(java.lang.Boolean value) {
+      validate(fields()[10], value);
+      this.isFullyUtilized = value;
+      fieldSetFlags()[10] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isFullyUtilized' field has been set.
+      * @return True if the 'isFullyUtilized' field has been set, false otherwise.
+      */
+    public boolean hasIsFullyUtilized() {
+      return fieldSetFlags()[10];
+    }
+
+
+    /**
+      * Clears the value of the 'isFullyUtilized' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder clearIsFullyUtilized() {
+      isFullyUtilized = null;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
     @Override
     public SalesOrderMapping build() {
       try {
@@ -775,6 +913,8 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
         record.fuMappings = fieldSetFlags()[6] ? this.fuMappings : (java.util.List<com.fretron.Model.LegWiseFuMapping>) defaultValue(fields()[6]);
         record.consignmentLineItemId = fieldSetFlags()[7] ? this.consignmentLineItemId : (java.lang.String) defaultValue(fields()[7]);
         record.source = fieldSetFlags()[8] ? this.source : (java.lang.String) defaultValue(fields()[8]);
+        record.originLegId = fieldSetFlags()[9] ? this.originLegId : (java.lang.String) defaultValue(fields()[9]);
+        record.isFullyUtilized = fieldSetFlags()[10] ? this.isFullyUtilized : (java.lang.Boolean) defaultValue(fields()[10]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
