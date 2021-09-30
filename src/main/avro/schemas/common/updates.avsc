@@ -1,60 +1,60 @@
 {
-    "type": "record",
-    "name": "Updates",
-    "namespace": "com.fretron.Model",
-    "fields": [
-      {
-        "name": "forwardReasons",
-        "type": [
-          "null",
-          {
-            "type": "array",
-            "items": "string"
-          }
-        ],
-        "default": null
-      },
-      {
-        "name": "updatedBy",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "userId",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "time",
-        "type": [
-          "null",
-          "long"
-        ],
-        "logicalType": "timestamp-millis",
-        "default": null
-      },
-      {
-        "name": "resourceType",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "resourceId",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
+  "type": "record",
+  "name": "Updates",
+  "namespace": "com.fretron.Model",
+  "fields": [
+    {
+      "name": "forwardReasons",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updatedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "time",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "resourceType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "resourceId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
     {
       "name": "sourceOfInformation",
       "type": [
@@ -63,54 +63,64 @@
       ],
       "default": null
     },
-      {
-        "name": "updateType",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-            {
-              "name": "description",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-                        {
-                          "name": "forwardedFrom",
-                          "type": [
-                            "null",
-                            "string"
-                          ],
-                          "default": null
-                        },
-                              {
-                                "name": "uuid",
-                                "type": [
-                                  "null",
-                                  "string"
-                                ],
-                                "default": null
-                              },
-                              {
-                                                              "name": "revision",
-                                                              "type": [
-                                                                "null",
-                                                                "int"
-                                                              ],
-                                            "default": null
-                              },
-                              {
-                                      "name": "traceID",
-                                      "type": [
-                                        "null",
-                                        "string"
-                                      ],
-                                      "default": null
-                                    }
-
-    ]
- }
+    {
+      "name": "updateType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "forwardedFrom",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "revision",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "traceID",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "changes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ChangeUpdate"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

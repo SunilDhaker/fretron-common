@@ -1,0 +1,33 @@
+{
+    "type": "record",
+    "name": "ChangeUpdate",
+    "namespace": "com.fretron.Model",
+    "fields": [
+      {
+        "name": "currentValue",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "fieldName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "lastValue",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
+
+
+    ]
+ }

@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Updates extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3787474080179050546L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5496862630970286869L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Updates\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.util.List<java.lang.String> forwardReasons;
   @Deprecated public java.lang.String updatedBy;
@@ -26,6 +26,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.Integer revision;
   @Deprecated public java.lang.String traceID;
+  @Deprecated public java.util.List<com.fretron.Model.ChangeUpdate> changes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -49,8 +50,9 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param uuid The new value for uuid
    * @param revision The new value for revision
    * @param traceID The new value for traceID
+   * @param changes The new value for changes
    */
-  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation, java.lang.String updateType, java.lang.String description, java.lang.String forwardedFrom, java.lang.String uuid, java.lang.Integer revision, java.lang.String traceID) {
+  public Updates(java.util.List<java.lang.String> forwardReasons, java.lang.String updatedBy, java.lang.String userId, java.lang.Long time, java.lang.String resourceType, java.lang.String resourceId, java.lang.String sourceOfInformation, java.lang.String updateType, java.lang.String description, java.lang.String forwardedFrom, java.lang.String uuid, java.lang.Integer revision, java.lang.String traceID, java.util.List<com.fretron.Model.ChangeUpdate> changes) {
     this.forwardReasons = forwardReasons;
     this.updatedBy = updatedBy;
     this.userId = userId;
@@ -64,6 +66,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     this.uuid = uuid;
     this.revision = revision;
     this.traceID = traceID;
+    this.changes = changes;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -83,6 +86,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 10: return uuid;
     case 11: return revision;
     case 12: return traceID;
+    case 13: return changes;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -104,6 +108,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     case 10: uuid = (java.lang.String)value$; break;
     case 11: revision = (java.lang.Integer)value$; break;
     case 12: traceID = (java.lang.String)value$; break;
+    case 13: changes = (java.util.List<com.fretron.Model.ChangeUpdate>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -317,6 +322,22 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
   }
 
   /**
+   * Gets the value of the 'changes' field.
+   * @return The value of the 'changes' field.
+   */
+  public java.util.List<com.fretron.Model.ChangeUpdate> getChanges() {
+    return changes;
+  }
+
+  /**
+   * Sets the value of the 'changes' field.
+   * @param value the value to set.
+   */
+  public void setChanges(java.util.List<com.fretron.Model.ChangeUpdate> value) {
+    this.changes = value;
+  }
+
+  /**
    * Creates a new Updates RecordBuilder.
    * @return A new Updates RecordBuilder
    */
@@ -361,6 +382,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
     private java.lang.String uuid;
     private java.lang.Integer revision;
     private java.lang.String traceID;
+    private java.util.List<com.fretron.Model.ChangeUpdate> changes;
 
     /** Creates a new Builder */
     private Builder() {
@@ -425,6 +447,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         this.traceID = data().deepCopy(fields()[12].schema(), other.traceID);
         fieldSetFlags()[12] = true;
       }
+      if (isValidValue(fields()[13], other.changes)) {
+        this.changes = data().deepCopy(fields()[13].schema(), other.changes);
+        fieldSetFlags()[13] = true;
+      }
     }
 
     /**
@@ -484,6 +510,10 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       if (isValidValue(fields()[12], other.traceID)) {
         this.traceID = data().deepCopy(fields()[12].schema(), other.traceID);
         fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.changes)) {
+        this.changes = data().deepCopy(fields()[13].schema(), other.changes);
+        fieldSetFlags()[13] = true;
       }
     }
 
@@ -994,6 +1024,45 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
       return this;
     }
 
+    /**
+      * Gets the value of the 'changes' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.ChangeUpdate> getChanges() {
+      return changes;
+    }
+
+    /**
+      * Sets the value of the 'changes' field.
+      * @param value The value of 'changes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder setChanges(java.util.List<com.fretron.Model.ChangeUpdate> value) {
+      validate(fields()[13], value);
+      this.changes = value;
+      fieldSetFlags()[13] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'changes' field has been set.
+      * @return True if the 'changes' field has been set, false otherwise.
+      */
+    public boolean hasChanges() {
+      return fieldSetFlags()[13];
+    }
+
+
+    /**
+      * Clears the value of the 'changes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Updates.Builder clearChanges() {
+      changes = null;
+      fieldSetFlags()[13] = false;
+      return this;
+    }
+
     @Override
     public Updates build() {
       try {
@@ -1011,6 +1080,7 @@ public class Updates extends org.apache.avro.specific.SpecificRecordBase impleme
         record.uuid = fieldSetFlags()[10] ? this.uuid : (java.lang.String) defaultValue(fields()[10]);
         record.revision = fieldSetFlags()[11] ? this.revision : (java.lang.Integer) defaultValue(fields()[11]);
         record.traceID = fieldSetFlags()[12] ? this.traceID : (java.lang.String) defaultValue(fields()[12]);
+        record.changes = fieldSetFlags()[13] ? this.changes : (java.util.List<com.fretron.Model.ChangeUpdate>) defaultValue(fields()[13]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
