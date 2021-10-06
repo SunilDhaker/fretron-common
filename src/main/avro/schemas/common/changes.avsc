@@ -26,6 +26,14 @@
           "string"
         ],
         "default": null
+      },
+      {
+        "name": "fieldType",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
       }
 
 

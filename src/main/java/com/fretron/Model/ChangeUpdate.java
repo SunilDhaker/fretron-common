@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -1867798517133120236L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 6559296698159995274L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String currentValue;
   @Deprecated public java.lang.String fieldName;
   @Deprecated public java.lang.String lastValue;
+  @Deprecated public java.lang.String fieldType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -29,11 +30,13 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
    * @param currentValue The new value for currentValue
    * @param fieldName The new value for fieldName
    * @param lastValue The new value for lastValue
+   * @param fieldType The new value for fieldType
    */
-  public ChangeUpdate(java.lang.String currentValue, java.lang.String fieldName, java.lang.String lastValue) {
+  public ChangeUpdate(java.lang.String currentValue, java.lang.String fieldName, java.lang.String lastValue, java.lang.String fieldType) {
     this.currentValue = currentValue;
     this.fieldName = fieldName;
     this.lastValue = lastValue;
+    this.fieldType = fieldType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -43,6 +46,7 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
     case 0: return currentValue;
     case 1: return fieldName;
     case 2: return lastValue;
+    case 3: return fieldType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -54,6 +58,7 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
     case 0: currentValue = (java.lang.String)value$; break;
     case 1: fieldName = (java.lang.String)value$; break;
     case 2: lastValue = (java.lang.String)value$; break;
+    case 3: fieldType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -107,6 +112,22 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'fieldType' field.
+   * @return The value of the 'fieldType' field.
+   */
+  public java.lang.String getFieldType() {
+    return fieldType;
+  }
+
+  /**
+   * Sets the value of the 'fieldType' field.
+   * @param value the value to set.
+   */
+  public void setFieldType(java.lang.String value) {
+    this.fieldType = value;
+  }
+
+  /**
    * Creates a new ChangeUpdate RecordBuilder.
    * @return A new ChangeUpdate RecordBuilder
    */
@@ -141,6 +162,7 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String currentValue;
     private java.lang.String fieldName;
     private java.lang.String lastValue;
+    private java.lang.String fieldType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -165,6 +187,10 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
         this.lastValue = data().deepCopy(fields()[2].schema(), other.lastValue);
         fieldSetFlags()[2] = true;
       }
+      if (isValidValue(fields()[3], other.fieldType)) {
+        this.fieldType = data().deepCopy(fields()[3].schema(), other.fieldType);
+        fieldSetFlags()[3] = true;
+      }
     }
 
     /**
@@ -184,6 +210,10 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[2], other.lastValue)) {
         this.lastValue = data().deepCopy(fields()[2].schema(), other.lastValue);
         fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.fieldType)) {
+        this.fieldType = data().deepCopy(fields()[3].schema(), other.fieldType);
+        fieldSetFlags()[3] = true;
       }
     }
 
@@ -304,6 +334,45 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'fieldType' field.
+      * @return The value.
+      */
+    public java.lang.String getFieldType() {
+      return fieldType;
+    }
+
+    /**
+      * Sets the value of the 'fieldType' field.
+      * @param value The value of 'fieldType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ChangeUpdate.Builder setFieldType(java.lang.String value) {
+      validate(fields()[3], value);
+      this.fieldType = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'fieldType' field has been set.
+      * @return True if the 'fieldType' field has been set, false otherwise.
+      */
+    public boolean hasFieldType() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'fieldType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ChangeUpdate.Builder clearFieldType() {
+      fieldType = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public ChangeUpdate build() {
       try {
@@ -311,6 +380,7 @@ public class ChangeUpdate extends org.apache.avro.specific.SpecificRecordBase im
         record.currentValue = fieldSetFlags()[0] ? this.currentValue : (java.lang.String) defaultValue(fields()[0]);
         record.fieldName = fieldSetFlags()[1] ? this.fieldName : (java.lang.String) defaultValue(fields()[1]);
         record.lastValue = fieldSetFlags()[2] ? this.lastValue : (java.lang.String) defaultValue(fields()[2]);
+        record.fieldType = fieldSetFlags()[3] ? this.fieldType : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
