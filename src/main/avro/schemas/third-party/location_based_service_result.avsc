@@ -110,6 +110,22 @@
                                                          "string"
                                                        ],
                                  "default": null
-                              }
+                              },
+        {
+          "name": "consentProvider",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        },
+        {
+          "name": "operator",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
     ]
   }
