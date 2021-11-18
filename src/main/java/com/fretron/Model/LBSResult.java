@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LBSResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1855973926762409811L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"apiKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 4475281225835406132L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"apiKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consentProvider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"operator\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String requestType;
@@ -27,6 +27,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String resourceIdentifier;
   @Deprecated public java.lang.Long resourceCreationTime;
   @Deprecated public java.lang.String apiKey;
+  @Deprecated public java.lang.String consentProvider;
+  @Deprecated public java.lang.String operator;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +53,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * @param resourceIdentifier The new value for resourceIdentifier
    * @param resourceCreationTime The new value for resourceCreationTime
    * @param apiKey The new value for apiKey
+   * @param consentProvider The new value for consentProvider
+   * @param operator The new value for operator
    */
-  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId, java.lang.String resourceIdentifier, java.lang.Long resourceCreationTime, java.lang.String apiKey) {
+  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId, java.lang.String resourceIdentifier, java.lang.Long resourceCreationTime, java.lang.String apiKey, java.lang.String consentProvider, java.lang.String operator) {
     this.mobileNumber = mobileNumber;
     this.requestType = requestType;
     this.requestId = requestId;
@@ -67,6 +71,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     this.resourceIdentifier = resourceIdentifier;
     this.resourceCreationTime = resourceCreationTime;
     this.apiKey = apiKey;
+    this.consentProvider = consentProvider;
+    this.operator = operator;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +93,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 11: return resourceIdentifier;
     case 12: return resourceCreationTime;
     case 13: return apiKey;
+    case 14: return consentProvider;
+    case 15: return operator;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +117,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 11: resourceIdentifier = (java.lang.String)value$; break;
     case 12: resourceCreationTime = (java.lang.Long)value$; break;
     case 13: apiKey = (java.lang.String)value$; break;
+    case 14: consentProvider = (java.lang.String)value$; break;
+    case 15: operator = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +348,38 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'consentProvider' field.
+   * @return The value of the 'consentProvider' field.
+   */
+  public java.lang.String getConsentProvider() {
+    return consentProvider;
+  }
+
+  /**
+   * Sets the value of the 'consentProvider' field.
+   * @param value the value to set.
+   */
+  public void setConsentProvider(java.lang.String value) {
+    this.consentProvider = value;
+  }
+
+  /**
+   * Gets the value of the 'operator' field.
+   * @return The value of the 'operator' field.
+   */
+  public java.lang.String getOperator() {
+    return operator;
+  }
+
+  /**
+   * Sets the value of the 'operator' field.
+   * @param value the value to set.
+   */
+  public void setOperator(java.lang.String value) {
+    this.operator = value;
+  }
+
+  /**
    * Creates a new LBSResult RecordBuilder.
    * @return A new LBSResult RecordBuilder
    */
@@ -383,6 +425,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String resourceIdentifier;
     private java.lang.Long resourceCreationTime;
     private java.lang.String apiKey;
+    private java.lang.String consentProvider;
+    private java.lang.String operator;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +495,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.apiKey = data().deepCopy(fields()[13].schema(), other.apiKey);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.consentProvider)) {
+        this.consentProvider = data().deepCopy(fields()[14].schema(), other.consentProvider);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.operator)) {
+        this.operator = data().deepCopy(fields()[15].schema(), other.operator);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -514,6 +566,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[13], other.apiKey)) {
         this.apiKey = data().deepCopy(fields()[13].schema(), other.apiKey);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.consentProvider)) {
+        this.consentProvider = data().deepCopy(fields()[14].schema(), other.consentProvider);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.operator)) {
+        this.operator = data().deepCopy(fields()[15].schema(), other.operator);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -1063,6 +1123,84 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'consentProvider' field.
+      * @return The value.
+      */
+    public java.lang.String getConsentProvider() {
+      return consentProvider;
+    }
+
+    /**
+      * Sets the value of the 'consentProvider' field.
+      * @param value The value of 'consentProvider'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setConsentProvider(java.lang.String value) {
+      validate(fields()[14], value);
+      this.consentProvider = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'consentProvider' field has been set.
+      * @return True if the 'consentProvider' field has been set, false otherwise.
+      */
+    public boolean hasConsentProvider() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'consentProvider' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearConsentProvider() {
+      consentProvider = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'operator' field.
+      * @return The value.
+      */
+    public java.lang.String getOperator() {
+      return operator;
+    }
+
+    /**
+      * Sets the value of the 'operator' field.
+      * @param value The value of 'operator'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setOperator(java.lang.String value) {
+      validate(fields()[15], value);
+      this.operator = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'operator' field has been set.
+      * @return True if the 'operator' field has been set, false otherwise.
+      */
+    public boolean hasOperator() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'operator' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearOperator() {
+      operator = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public LBSResult build() {
       try {
@@ -1081,6 +1219,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         record.resourceIdentifier = fieldSetFlags()[11] ? this.resourceIdentifier : (java.lang.String) defaultValue(fields()[11]);
         record.resourceCreationTime = fieldSetFlags()[12] ? this.resourceCreationTime : (java.lang.Long) defaultValue(fields()[12]);
         record.apiKey = fieldSetFlags()[13] ? this.apiKey : (java.lang.String) defaultValue(fields()[13]);
+        record.consentProvider = fieldSetFlags()[14] ? this.consentProvider : (java.lang.String) defaultValue(fields()[14]);
+        record.operator = fieldSetFlags()[15] ? this.operator : (java.lang.String) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
