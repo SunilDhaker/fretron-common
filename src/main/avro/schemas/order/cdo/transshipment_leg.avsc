@@ -141,6 +141,17 @@
                          "com.fretron.Model.LoadType"
                        ],
           "default": null
-      }
+      },
+    {
+      "name": "freightUnitLineItemIds",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    }
   ]
 }
