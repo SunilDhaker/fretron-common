@@ -456,6 +456,11 @@
 				}
 			],
 			"default": null
+		},
+		{
+			"name": "category",
+			"type": ["null", "string"],
+			"default": null
 		}
 	]
 }
