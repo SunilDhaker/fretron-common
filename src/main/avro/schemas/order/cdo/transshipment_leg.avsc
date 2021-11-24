@@ -152,6 +152,14 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "shipmentInfo",
+      "type": [
+        "null",
+        "com.fretron.Model.ShipmentInfo"
+      ],
+      "default": null
     }
   ]
 }

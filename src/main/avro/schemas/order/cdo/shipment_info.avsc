@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "ShipmentInfo",
+  "type": "record",
+  "fields": [
+    {
+      "name": "shipmentNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
