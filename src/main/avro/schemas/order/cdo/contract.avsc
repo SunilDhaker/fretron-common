@@ -445,6 +445,22 @@
                                                                  "com.fretron.Model.PaymentRules"
                                                                     ],
                                         "default": null
-                  }
+                  },
+		{
+			"name": "pricingTableIds",
+			"type": [
+				"null",
+				{
+					"type": "array",
+					"items": "string"
+				}
+			],
+			"default": null
+		},
+		{
+			"name": "category",
+			"type": ["null", "string"],
+			"default": null
+		}
 	]
 }
