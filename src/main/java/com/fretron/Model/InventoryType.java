@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class InventoryType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1852328869871043630L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InventoryType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"isSystemInventory\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 4183997887620556998L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InventoryType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"isSystemInventory\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
   @Deprecated public java.lang.String name;
+  @Deprecated public java.lang.String category;
   @Deprecated public java.lang.String measurementType;
   @Deprecated public java.lang.String uom;
   @Deprecated public java.lang.Boolean isHidden;
@@ -34,16 +35,18 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
    * @param uuid The new value for uuid
    * @param orgId The new value for orgId
    * @param name The new value for name
+   * @param category The new value for category
    * @param measurementType The new value for measurementType
    * @param uom The new value for uom
    * @param isHidden The new value for isHidden
    * @param customFields The new value for customFields
    * @param isSystemInventory The new value for isSystemInventory
    */
-  public InventoryType(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String measurementType, java.lang.String uom, java.lang.Boolean isHidden, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.Boolean isSystemInventory) {
+  public InventoryType(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String category, java.lang.String measurementType, java.lang.String uom, java.lang.Boolean isHidden, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.Boolean isSystemInventory) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.name = name;
+    this.category = category;
     this.measurementType = measurementType;
     this.uom = uom;
     this.isHidden = isHidden;
@@ -58,11 +61,12 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     case 0: return uuid;
     case 1: return orgId;
     case 2: return name;
-    case 3: return measurementType;
-    case 4: return uom;
-    case 5: return isHidden;
-    case 6: return customFields;
-    case 7: return isSystemInventory;
+    case 3: return category;
+    case 4: return measurementType;
+    case 5: return uom;
+    case 6: return isHidden;
+    case 7: return customFields;
+    case 8: return isSystemInventory;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -74,11 +78,12 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     case 0: uuid = (java.lang.String)value$; break;
     case 1: orgId = (java.lang.String)value$; break;
     case 2: name = (java.lang.String)value$; break;
-    case 3: measurementType = (java.lang.String)value$; break;
-    case 4: uom = (java.lang.String)value$; break;
-    case 5: isHidden = (java.lang.Boolean)value$; break;
-    case 6: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
-    case 7: isSystemInventory = (java.lang.Boolean)value$; break;
+    case 3: category = (java.lang.String)value$; break;
+    case 4: measurementType = (java.lang.String)value$; break;
+    case 5: uom = (java.lang.String)value$; break;
+    case 6: isHidden = (java.lang.Boolean)value$; break;
+    case 7: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
+    case 8: isSystemInventory = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +134,22 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
    */
   public void setName(java.lang.String value) {
     this.name = value;
+  }
+
+  /**
+   * Gets the value of the 'category' field.
+   * @return The value of the 'category' field.
+   */
+  public java.lang.String getCategory() {
+    return category;
+  }
+
+  /**
+   * Sets the value of the 'category' field.
+   * @param value the value to set.
+   */
+  public void setCategory(java.lang.String value) {
+    this.category = value;
   }
 
   /**
@@ -246,6 +267,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.String uuid;
     private java.lang.String orgId;
     private java.lang.String name;
+    private java.lang.String category;
     private java.lang.String measurementType;
     private java.lang.String uom;
     private java.lang.Boolean isHidden;
@@ -275,25 +297,29 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
         this.name = data().deepCopy(fields()[2].schema(), other.name);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.measurementType)) {
-        this.measurementType = data().deepCopy(fields()[3].schema(), other.measurementType);
+      if (isValidValue(fields()[3], other.category)) {
+        this.category = data().deepCopy(fields()[3].schema(), other.category);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.uom)) {
-        this.uom = data().deepCopy(fields()[4].schema(), other.uom);
+      if (isValidValue(fields()[4], other.measurementType)) {
+        this.measurementType = data().deepCopy(fields()[4].schema(), other.measurementType);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.isHidden)) {
-        this.isHidden = data().deepCopy(fields()[5].schema(), other.isHidden);
+      if (isValidValue(fields()[5], other.uom)) {
+        this.uom = data().deepCopy(fields()[5].schema(), other.uom);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[6].schema(), other.customFields);
+      if (isValidValue(fields()[6], other.isHidden)) {
+        this.isHidden = data().deepCopy(fields()[6].schema(), other.isHidden);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isSystemInventory)) {
-        this.isSystemInventory = data().deepCopy(fields()[7].schema(), other.isSystemInventory);
+      if (isValidValue(fields()[7], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[7].schema(), other.customFields);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.isSystemInventory)) {
+        this.isSystemInventory = data().deepCopy(fields()[8].schema(), other.isSystemInventory);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -315,25 +341,29 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
         this.name = data().deepCopy(fields()[2].schema(), other.name);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.measurementType)) {
-        this.measurementType = data().deepCopy(fields()[3].schema(), other.measurementType);
+      if (isValidValue(fields()[3], other.category)) {
+        this.category = data().deepCopy(fields()[3].schema(), other.category);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.uom)) {
-        this.uom = data().deepCopy(fields()[4].schema(), other.uom);
+      if (isValidValue(fields()[4], other.measurementType)) {
+        this.measurementType = data().deepCopy(fields()[4].schema(), other.measurementType);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.isHidden)) {
-        this.isHidden = data().deepCopy(fields()[5].schema(), other.isHidden);
+      if (isValidValue(fields()[5], other.uom)) {
+        this.uom = data().deepCopy(fields()[5].schema(), other.uom);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.customFields)) {
-        this.customFields = data().deepCopy(fields()[6].schema(), other.customFields);
+      if (isValidValue(fields()[6], other.isHidden)) {
+        this.isHidden = data().deepCopy(fields()[6].schema(), other.isHidden);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isSystemInventory)) {
-        this.isSystemInventory = data().deepCopy(fields()[7].schema(), other.isSystemInventory);
+      if (isValidValue(fields()[7], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[7].schema(), other.customFields);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.isSystemInventory)) {
+        this.isSystemInventory = data().deepCopy(fields()[8].schema(), other.isSystemInventory);
+        fieldSetFlags()[8] = true;
       }
     }
 
@@ -455,6 +485,45 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     }
 
     /**
+      * Gets the value of the 'category' field.
+      * @return The value.
+      */
+    public java.lang.String getCategory() {
+      return category;
+    }
+
+    /**
+      * Sets the value of the 'category' field.
+      * @param value The value of 'category'.
+      * @return This builder.
+      */
+    public com.fretron.Model.InventoryType.Builder setCategory(java.lang.String value) {
+      validate(fields()[3], value);
+      this.category = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'category' field has been set.
+      * @return True if the 'category' field has been set, false otherwise.
+      */
+    public boolean hasCategory() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'category' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.InventoryType.Builder clearCategory() {
+      category = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'measurementType' field.
       * @return The value.
       */
@@ -468,9 +537,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.InventoryType.Builder setMeasurementType(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.measurementType = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -479,7 +548,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'measurementType' field has been set, false otherwise.
       */
     public boolean hasMeasurementType() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -489,7 +558,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.InventoryType.Builder clearMeasurementType() {
       measurementType = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -507,9 +576,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.InventoryType.Builder setUom(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.uom = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -518,7 +587,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'uom' field has been set, false otherwise.
       */
     public boolean hasUom() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -528,7 +597,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.InventoryType.Builder clearUom() {
       uom = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -546,9 +615,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.InventoryType.Builder setIsHidden(java.lang.Boolean value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.isHidden = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -557,7 +626,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'isHidden' field has been set, false otherwise.
       */
     public boolean hasIsHidden() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -567,7 +636,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.InventoryType.Builder clearIsHidden() {
       isHidden = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -585,9 +654,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.InventoryType.Builder setCustomFields(java.util.List<com.fretron.Model.CustomFields> value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.customFields = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -596,7 +665,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'customFields' field has been set, false otherwise.
       */
     public boolean hasCustomFields() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -606,7 +675,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.InventoryType.Builder clearCustomFields() {
       customFields = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -624,9 +693,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return This builder.
       */
     public com.fretron.Model.InventoryType.Builder setIsSystemInventory(java.lang.Boolean value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.isSystemInventory = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -635,7 +704,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       * @return True if the 'isSystemInventory' field has been set, false otherwise.
       */
     public boolean hasIsSystemInventory() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -645,7 +714,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       */
     public com.fretron.Model.InventoryType.Builder clearIsSystemInventory() {
       isSystemInventory = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -656,11 +725,12 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
         record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
         record.orgId = fieldSetFlags()[1] ? this.orgId : (java.lang.String) defaultValue(fields()[1]);
         record.name = fieldSetFlags()[2] ? this.name : (java.lang.String) defaultValue(fields()[2]);
-        record.measurementType = fieldSetFlags()[3] ? this.measurementType : (java.lang.String) defaultValue(fields()[3]);
-        record.uom = fieldSetFlags()[4] ? this.uom : (java.lang.String) defaultValue(fields()[4]);
-        record.isHidden = fieldSetFlags()[5] ? this.isHidden : (java.lang.Boolean) defaultValue(fields()[5]);
-        record.customFields = fieldSetFlags()[6] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[6]);
-        record.isSystemInventory = fieldSetFlags()[7] ? this.isSystemInventory : (java.lang.Boolean) defaultValue(fields()[7]);
+        record.category = fieldSetFlags()[3] ? this.category : (java.lang.String) defaultValue(fields()[3]);
+        record.measurementType = fieldSetFlags()[4] ? this.measurementType : (java.lang.String) defaultValue(fields()[4]);
+        record.uom = fieldSetFlags()[5] ? this.uom : (java.lang.String) defaultValue(fields()[5]);
+        record.isHidden = fieldSetFlags()[6] ? this.isHidden : (java.lang.Boolean) defaultValue(fields()[6]);
+        record.customFields = fieldSetFlags()[7] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[7]);
+        record.isSystemInventory = fieldSetFlags()[8] ? this.isSystemInventory : (java.lang.Boolean) defaultValue(fields()[8]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
