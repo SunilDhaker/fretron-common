@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class InventoryType extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4183997887620556998L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InventoryType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"isSystemInventory\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 6920861208891973026L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InventoryType\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isHidden\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"isSystemInventory\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"assignTo\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -22,6 +22,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.Boolean isHidden;
   @Deprecated public java.util.List<com.fretron.Model.CustomFields> customFields;
   @Deprecated public java.lang.Boolean isSystemInventory;
+  @Deprecated public java.util.List<java.lang.String> assignTo;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,8 +42,9 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
    * @param isHidden The new value for isHidden
    * @param customFields The new value for customFields
    * @param isSystemInventory The new value for isSystemInventory
+   * @param assignTo The new value for assignTo
    */
-  public InventoryType(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String category, java.lang.String measurementType, java.lang.String uom, java.lang.Boolean isHidden, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.Boolean isSystemInventory) {
+  public InventoryType(java.lang.String uuid, java.lang.String orgId, java.lang.String name, java.lang.String category, java.lang.String measurementType, java.lang.String uom, java.lang.Boolean isHidden, java.util.List<com.fretron.Model.CustomFields> customFields, java.lang.Boolean isSystemInventory, java.util.List<java.lang.String> assignTo) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.name = name;
@@ -52,6 +54,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     this.isHidden = isHidden;
     this.customFields = customFields;
     this.isSystemInventory = isSystemInventory;
+    this.assignTo = assignTo;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -67,6 +70,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     case 6: return isHidden;
     case 7: return customFields;
     case 8: return isSystemInventory;
+    case 9: return assignTo;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -84,6 +88,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     case 6: isHidden = (java.lang.Boolean)value$; break;
     case 7: customFields = (java.util.List<com.fretron.Model.CustomFields>)value$; break;
     case 8: isSystemInventory = (java.lang.Boolean)value$; break;
+    case 9: assignTo = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -233,6 +238,22 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'assignTo' field.
+   * @return The value of the 'assignTo' field.
+   */
+  public java.util.List<java.lang.String> getAssignTo() {
+    return assignTo;
+  }
+
+  /**
+   * Sets the value of the 'assignTo' field.
+   * @param value the value to set.
+   */
+  public void setAssignTo(java.util.List<java.lang.String> value) {
+    this.assignTo = value;
+  }
+
+  /**
    * Creates a new InventoryType RecordBuilder.
    * @return A new InventoryType RecordBuilder
    */
@@ -273,6 +294,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.Boolean isHidden;
     private java.util.List<com.fretron.Model.CustomFields> customFields;
     private java.lang.Boolean isSystemInventory;
+    private java.util.List<java.lang.String> assignTo;
 
     /** Creates a new Builder */
     private Builder() {
@@ -321,6 +343,10 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
         this.isSystemInventory = data().deepCopy(fields()[8].schema(), other.isSystemInventory);
         fieldSetFlags()[8] = true;
       }
+      if (isValidValue(fields()[9], other.assignTo)) {
+        this.assignTo = data().deepCopy(fields()[9].schema(), other.assignTo);
+        fieldSetFlags()[9] = true;
+      }
     }
 
     /**
@@ -364,6 +390,10 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[8], other.isSystemInventory)) {
         this.isSystemInventory = data().deepCopy(fields()[8].schema(), other.isSystemInventory);
         fieldSetFlags()[8] = true;
+      }
+      if (isValidValue(fields()[9], other.assignTo)) {
+        this.assignTo = data().deepCopy(fields()[9].schema(), other.assignTo);
+        fieldSetFlags()[9] = true;
       }
     }
 
@@ -718,6 +748,45 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'assignTo' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAssignTo() {
+      return assignTo;
+    }
+
+    /**
+      * Sets the value of the 'assignTo' field.
+      * @param value The value of 'assignTo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.InventoryType.Builder setAssignTo(java.util.List<java.lang.String> value) {
+      validate(fields()[9], value);
+      this.assignTo = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'assignTo' field has been set.
+      * @return True if the 'assignTo' field has been set, false otherwise.
+      */
+    public boolean hasAssignTo() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'assignTo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.InventoryType.Builder clearAssignTo() {
+      assignTo = null;
+      fieldSetFlags()[9] = false;
+      return this;
+    }
+
     @Override
     public InventoryType build() {
       try {
@@ -731,6 +800,7 @@ public class InventoryType extends org.apache.avro.specific.SpecificRecordBase i
         record.isHidden = fieldSetFlags()[6] ? this.isHidden : (java.lang.Boolean) defaultValue(fields()[6]);
         record.customFields = fieldSetFlags()[7] ? this.customFields : (java.util.List<com.fretron.Model.CustomFields>) defaultValue(fields()[7]);
         record.isSystemInventory = fieldSetFlags()[8] ? this.isSystemInventory : (java.lang.Boolean) defaultValue(fields()[8]);
+        record.assignTo = fieldSetFlags()[9] ? this.assignTo : (java.util.List<java.lang.String>) defaultValue(fields()[9]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
