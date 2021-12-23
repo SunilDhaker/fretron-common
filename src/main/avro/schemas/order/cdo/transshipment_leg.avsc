@@ -44,6 +44,14 @@
       "default": null
     },
     {
+      "name": "lastOptimizationBasis",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "totalReceivedQuantity",
       "type": [
         "null",
