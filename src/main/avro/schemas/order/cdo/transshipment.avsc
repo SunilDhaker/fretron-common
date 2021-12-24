@@ -30,13 +30,22 @@
       ],
       "default": null
     },
-     {
-          "name": "orgId",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        }
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lastUpdatedTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    }
   ]
 }
