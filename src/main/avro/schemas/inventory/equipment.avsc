@@ -24,6 +24,14 @@
       "default": null
     },
     {
+      "name": "inventoryTypeId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "catagory",
       "type": [
         "null",
@@ -118,6 +126,17 @@
                             "string"
                           ],
                "default": null
-          }
+          },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.LiteCustomFields"
+        }
+      ],
+      "default": null
+    }
   ]
 }
