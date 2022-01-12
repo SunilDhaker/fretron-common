@@ -87,6 +87,8 @@
                ],
       "default": null
     },
+
+
      {
             "name": "status",
             "type": [
@@ -135,6 +137,14 @@
           "type": "array",
           "items": "com.fretron.Model.LiteCustomFields"
         }
+      ],
+      "default": null
+    },
+    {
+      "name": "orderDetails",
+      "type": [
+        "null",
+        "com.fretron.Model.OrderRelation"
       ],
       "default": null
     }
