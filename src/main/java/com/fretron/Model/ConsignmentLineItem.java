@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4558158083436096266L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"customerMaterial\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
+  private static final long serialVersionUID = -43479170606737952L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ConsignmentLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"material\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"customerMaterial\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"valueOfGoods\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"itemNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"invoiceNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.Materials material;
   @Deprecated public com.fretron.Model.Materials customerMaterial;
@@ -19,6 +19,8 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.Double valueOfGoods;
   @Deprecated public java.lang.String externalId;
   @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+  @Deprecated public java.lang.String itemNumber;
+  @Deprecated public java.lang.String invoiceNo;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -35,14 +37,18 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
    * @param valueOfGoods The new value for valueOfGoods
    * @param externalId The new value for externalId
    * @param customFields The new value for customFields
+   * @param itemNumber The new value for itemNumber
+   * @param invoiceNo The new value for invoiceNo
    */
-  public ConsignmentLineItem(com.fretron.Model.Materials material, com.fretron.Model.Materials customerMaterial, java.lang.String uuid, java.lang.Double valueOfGoods, java.lang.String externalId, java.util.List<com.fretron.Model.LiteCustomFields> customFields) {
+  public ConsignmentLineItem(com.fretron.Model.Materials material, com.fretron.Model.Materials customerMaterial, java.lang.String uuid, java.lang.Double valueOfGoods, java.lang.String externalId, java.util.List<com.fretron.Model.LiteCustomFields> customFields, java.lang.String itemNumber, java.lang.String invoiceNo) {
     this.material = material;
     this.customerMaterial = customerMaterial;
     this.uuid = uuid;
     this.valueOfGoods = valueOfGoods;
     this.externalId = externalId;
     this.customFields = customFields;
+    this.itemNumber = itemNumber;
+    this.invoiceNo = invoiceNo;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -55,6 +61,8 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
     case 3: return valueOfGoods;
     case 4: return externalId;
     case 5: return customFields;
+    case 6: return itemNumber;
+    case 7: return invoiceNo;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -69,6 +77,8 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
     case 3: valueOfGoods = (java.lang.Double)value$; break;
     case 4: externalId = (java.lang.String)value$; break;
     case 5: customFields = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
+    case 6: itemNumber = (java.lang.String)value$; break;
+    case 7: invoiceNo = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -170,6 +180,38 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'itemNumber' field.
+   * @return The value of the 'itemNumber' field.
+   */
+  public java.lang.String getItemNumber() {
+    return itemNumber;
+  }
+
+  /**
+   * Sets the value of the 'itemNumber' field.
+   * @param value the value to set.
+   */
+  public void setItemNumber(java.lang.String value) {
+    this.itemNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'invoiceNo' field.
+   * @return The value of the 'invoiceNo' field.
+   */
+  public java.lang.String getInvoiceNo() {
+    return invoiceNo;
+  }
+
+  /**
+   * Sets the value of the 'invoiceNo' field.
+   * @param value the value to set.
+   */
+  public void setInvoiceNo(java.lang.String value) {
+    this.invoiceNo = value;
+  }
+
+  /**
    * Creates a new ConsignmentLineItem RecordBuilder.
    * @return A new ConsignmentLineItem RecordBuilder
    */
@@ -209,6 +251,8 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
     private java.lang.Double valueOfGoods;
     private java.lang.String externalId;
     private java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+    private java.lang.String itemNumber;
+    private java.lang.String invoiceNo;
 
     /** Creates a new Builder */
     private Builder() {
@@ -251,6 +295,14 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
         this.customFields = data().deepCopy(fields()[5].schema(), other.customFields);
         fieldSetFlags()[5] = true;
       }
+      if (isValidValue(fields()[6], other.itemNumber)) {
+        this.itemNumber = data().deepCopy(fields()[6].schema(), other.itemNumber);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.invoiceNo)) {
+        this.invoiceNo = data().deepCopy(fields()[7].schema(), other.invoiceNo);
+        fieldSetFlags()[7] = true;
+      }
     }
 
     /**
@@ -284,6 +336,14 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[5], other.customFields)) {
         this.customFields = data().deepCopy(fields()[5].schema(), other.customFields);
         fieldSetFlags()[5] = true;
+      }
+      if (isValidValue(fields()[6], other.itemNumber)) {
+        this.itemNumber = data().deepCopy(fields()[6].schema(), other.itemNumber);
+        fieldSetFlags()[6] = true;
+      }
+      if (isValidValue(fields()[7], other.invoiceNo)) {
+        this.invoiceNo = data().deepCopy(fields()[7].schema(), other.invoiceNo);
+        fieldSetFlags()[7] = true;
       }
     }
 
@@ -591,6 +651,84 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'itemNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getItemNumber() {
+      return itemNumber;
+    }
+
+    /**
+      * Sets the value of the 'itemNumber' field.
+      * @param value The value of 'itemNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentLineItem.Builder setItemNumber(java.lang.String value) {
+      validate(fields()[6], value);
+      this.itemNumber = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'itemNumber' field has been set.
+      * @return True if the 'itemNumber' field has been set, false otherwise.
+      */
+    public boolean hasItemNumber() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'itemNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentLineItem.Builder clearItemNumber() {
+      itemNumber = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'invoiceNo' field.
+      * @return The value.
+      */
+    public java.lang.String getInvoiceNo() {
+      return invoiceNo;
+    }
+
+    /**
+      * Sets the value of the 'invoiceNo' field.
+      * @param value The value of 'invoiceNo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentLineItem.Builder setInvoiceNo(java.lang.String value) {
+      validate(fields()[7], value);
+      this.invoiceNo = value;
+      fieldSetFlags()[7] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'invoiceNo' field has been set.
+      * @return True if the 'invoiceNo' field has been set, false otherwise.
+      */
+    public boolean hasInvoiceNo() {
+      return fieldSetFlags()[7];
+    }
+
+
+    /**
+      * Clears the value of the 'invoiceNo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ConsignmentLineItem.Builder clearInvoiceNo() {
+      invoiceNo = null;
+      fieldSetFlags()[7] = false;
+      return this;
+    }
+
     @Override
     public ConsignmentLineItem build() {
       try {
@@ -609,6 +747,8 @@ public class ConsignmentLineItem extends org.apache.avro.specific.SpecificRecord
         record.valueOfGoods = fieldSetFlags()[3] ? this.valueOfGoods : (java.lang.Double) defaultValue(fields()[3]);
         record.externalId = fieldSetFlags()[4] ? this.externalId : (java.lang.String) defaultValue(fields()[4]);
         record.customFields = fieldSetFlags()[5] ? this.customFields : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[5]);
+        record.itemNumber = fieldSetFlags()[6] ? this.itemNumber : (java.lang.String) defaultValue(fields()[6]);
+        record.invoiceNo = fieldSetFlags()[7] ? this.invoiceNo : (java.lang.String) defaultValue(fields()[7]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

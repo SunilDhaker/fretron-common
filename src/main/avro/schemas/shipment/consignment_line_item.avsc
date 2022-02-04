@@ -50,6 +50,22 @@
                               }
                             ],
                             "default": null
-                          }
+                          },
+      {
+            "name": "itemNumber",
+            "type": [
+              "null",
+              "string"
+            ],
+            "default": null
+          },
+          {
+                "name": "invoiceNo",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
   ]
 }
