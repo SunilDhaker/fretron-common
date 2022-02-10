@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LoginSession extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 7548249217491002032L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushToken\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushTokenService\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"app\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 9199025538274662023L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LoginSession\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"token\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userAgent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isValid\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUsed\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"parentOrgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushToken\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pushTokenService\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"app\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"bPartnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"portalType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String userId;
@@ -27,6 +27,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String pushToken;
   @Deprecated public java.lang.String pushTokenService;
   @Deprecated public java.lang.String app;
+  @Deprecated public java.lang.String bPartnerId;
+  @Deprecated public java.lang.String portalType;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +53,10 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
    * @param pushToken The new value for pushToken
    * @param pushTokenService The new value for pushTokenService
    * @param app The new value for app
+   * @param bPartnerId The new value for bPartnerId
+   * @param portalType The new value for portalType
    */
-  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location, java.lang.String orgId, java.lang.String parentOrgId, java.lang.String pushToken, java.lang.String pushTokenService, java.lang.String app) {
+  public LoginSession(java.lang.String uuid, java.lang.String userId, java.lang.String token, java.lang.String userAgent, java.lang.Boolean isValid, java.lang.Long createdAt, java.lang.Long lastUsed, java.lang.Long updatedOn, java.lang.String location, java.lang.String orgId, java.lang.String parentOrgId, java.lang.String pushToken, java.lang.String pushTokenService, java.lang.String app, java.lang.String bPartnerId, java.lang.String portalType) {
     this.uuid = uuid;
     this.userId = userId;
     this.token = token;
@@ -67,6 +71,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     this.pushToken = pushToken;
     this.pushTokenService = pushTokenService;
     this.app = app;
+    this.bPartnerId = bPartnerId;
+    this.portalType = portalType;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +93,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 11: return pushToken;
     case 12: return pushTokenService;
     case 13: return app;
+    case 14: return bPartnerId;
+    case 15: return portalType;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +117,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     case 11: pushToken = (java.lang.String)value$; break;
     case 12: pushTokenService = (java.lang.String)value$; break;
     case 13: app = (java.lang.String)value$; break;
+    case 14: bPartnerId = (java.lang.String)value$; break;
+    case 15: portalType = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +348,38 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'bPartnerId' field.
+   * @return The value of the 'bPartnerId' field.
+   */
+  public java.lang.String getBPartnerId() {
+    return bPartnerId;
+  }
+
+  /**
+   * Sets the value of the 'bPartnerId' field.
+   * @param value the value to set.
+   */
+  public void setBPartnerId(java.lang.String value) {
+    this.bPartnerId = value;
+  }
+
+  /**
+   * Gets the value of the 'portalType' field.
+   * @return The value of the 'portalType' field.
+   */
+  public java.lang.String getPortalType() {
+    return portalType;
+  }
+
+  /**
+   * Sets the value of the 'portalType' field.
+   * @param value the value to set.
+   */
+  public void setPortalType(java.lang.String value) {
+    this.portalType = value;
+  }
+
+  /**
    * Creates a new LoginSession RecordBuilder.
    * @return A new LoginSession RecordBuilder
    */
@@ -383,6 +425,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String pushToken;
     private java.lang.String pushTokenService;
     private java.lang.String app;
+    private java.lang.String bPartnerId;
+    private java.lang.String portalType;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +495,14 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         this.app = data().deepCopy(fields()[13].schema(), other.app);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.bPartnerId)) {
+        this.bPartnerId = data().deepCopy(fields()[14].schema(), other.bPartnerId);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.portalType)) {
+        this.portalType = data().deepCopy(fields()[15].schema(), other.portalType);
+        fieldSetFlags()[15] = true;
+      }
     }
 
     /**
@@ -514,6 +566,14 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[13], other.app)) {
         this.app = data().deepCopy(fields()[13].schema(), other.app);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.bPartnerId)) {
+        this.bPartnerId = data().deepCopy(fields()[14].schema(), other.bPartnerId);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.portalType)) {
+        this.portalType = data().deepCopy(fields()[15].schema(), other.portalType);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -1063,6 +1123,84 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'bPartnerId' field.
+      * @return The value.
+      */
+    public java.lang.String getBPartnerId() {
+      return bPartnerId;
+    }
+
+    /**
+      * Sets the value of the 'bPartnerId' field.
+      * @param value The value of 'bPartnerId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setBPartnerId(java.lang.String value) {
+      validate(fields()[14], value);
+      this.bPartnerId = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'bPartnerId' field has been set.
+      * @return True if the 'bPartnerId' field has been set, false otherwise.
+      */
+    public boolean hasBPartnerId() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'bPartnerId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearBPartnerId() {
+      bPartnerId = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'portalType' field.
+      * @return The value.
+      */
+    public java.lang.String getPortalType() {
+      return portalType;
+    }
+
+    /**
+      * Sets the value of the 'portalType' field.
+      * @param value The value of 'portalType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder setPortalType(java.lang.String value) {
+      validate(fields()[15], value);
+      this.portalType = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'portalType' field has been set.
+      * @return True if the 'portalType' field has been set, false otherwise.
+      */
+    public boolean hasPortalType() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'portalType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LoginSession.Builder clearPortalType() {
+      portalType = null;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
     @Override
     public LoginSession build() {
       try {
@@ -1081,6 +1219,8 @@ public class LoginSession extends org.apache.avro.specific.SpecificRecordBase im
         record.pushToken = fieldSetFlags()[11] ? this.pushToken : (java.lang.String) defaultValue(fields()[11]);
         record.pushTokenService = fieldSetFlags()[12] ? this.pushTokenService : (java.lang.String) defaultValue(fields()[12]);
         record.app = fieldSetFlags()[13] ? this.app : (java.lang.String) defaultValue(fields()[13]);
+        record.bPartnerId = fieldSetFlags()[14] ? this.bPartnerId : (java.lang.String) defaultValue(fields()[14]);
+        record.portalType = fieldSetFlags()[15] ? this.portalType : (java.lang.String) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
