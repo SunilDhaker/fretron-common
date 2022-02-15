@@ -87,7 +87,7 @@ task fatJar(type: Jar) {
     from sourceSets.test.output
 
     //collect all dependencies
-    from { configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) } }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
     exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
 }
