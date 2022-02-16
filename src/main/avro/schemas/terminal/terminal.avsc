@@ -195,7 +195,7 @@
       "name": "terminalIncharge",
       "type": [
         "null",
-        "com.fretron.Model.User"
+        "com.fretron.Model.Employee"
       ],
       "default": null
     }
