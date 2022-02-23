@@ -80,6 +80,8 @@ dependencies {
 
 
 task fatJar(type: Jar) {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+
     manifest {
         attributes 'Implementation-Title': 'Common',
                 'Implementation-Version': archiveVersion,
