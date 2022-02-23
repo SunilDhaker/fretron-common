@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class StandardMeasurement extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2550338169947578980L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -7376653118106731074L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.Measurement weight;
   @Deprecated public com.fretron.Model.Measurement volume;
   @Deprecated public com.fretron.Model.Measurement packageMeasurement;
   @Deprecated public java.lang.Double trucks;
+  @Deprecated public java.lang.Double containers;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
    * @param volume The new value for volume
    * @param packageMeasurement The new value for packageMeasurement
    * @param trucks The new value for trucks
+   * @param containers The new value for containers
    */
-  public StandardMeasurement(com.fretron.Model.Measurement weight, com.fretron.Model.Measurement volume, com.fretron.Model.Measurement packageMeasurement, java.lang.Double trucks) {
+  public StandardMeasurement(com.fretron.Model.Measurement weight, com.fretron.Model.Measurement volume, com.fretron.Model.Measurement packageMeasurement, java.lang.Double trucks, java.lang.Double containers) {
     this.weight = weight;
     this.volume = volume;
     this.packageMeasurement = packageMeasurement;
     this.trucks = trucks;
+    this.containers = containers;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
     case 1: return volume;
     case 2: return packageMeasurement;
     case 3: return trucks;
+    case 4: return containers;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
     case 1: volume = (com.fretron.Model.Measurement)value$; break;
     case 2: packageMeasurement = (com.fretron.Model.Measurement)value$; break;
     case 3: trucks = (java.lang.Double)value$; break;
+    case 4: containers = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'containers' field.
+   * @return The value of the 'containers' field.
+   */
+  public java.lang.Double getContainers() {
+    return containers;
+  }
+
+  /**
+   * Sets the value of the 'containers' field.
+   * @param value the value to set.
+   */
+  public void setContainers(java.lang.Double value) {
+    this.containers = value;
+  }
+
+  /**
    * Creates a new StandardMeasurement RecordBuilder.
    * @return A new StandardMeasurement RecordBuilder
    */
@@ -166,6 +187,7 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
     private com.fretron.Model.Measurement packageMeasurement;
     private com.fretron.Model.Measurement.Builder packageMeasurementBuilder;
     private java.lang.Double trucks;
+    private java.lang.Double containers;
 
     /** Creates a new Builder */
     private Builder() {
@@ -203,6 +225,10 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
         this.trucks = data().deepCopy(fields()[3].schema(), other.trucks);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.containers)) {
+        this.containers = data().deepCopy(fields()[4].schema(), other.containers);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -229,6 +255,10 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[3], other.trucks)) {
         this.trucks = data().deepCopy(fields()[3].schema(), other.trucks);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.containers)) {
+        this.containers = data().deepCopy(fields()[4].schema(), other.containers);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -493,6 +523,45 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'containers' field.
+      * @return The value.
+      */
+    public java.lang.Double getContainers() {
+      return containers;
+    }
+
+    /**
+      * Sets the value of the 'containers' field.
+      * @param value The value of 'containers'.
+      * @return This builder.
+      */
+    public com.fretron.Model.StandardMeasurement.Builder setContainers(java.lang.Double value) {
+      validate(fields()[4], value);
+      this.containers = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'containers' field has been set.
+      * @return True if the 'containers' field has been set, false otherwise.
+      */
+    public boolean hasContainers() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'containers' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.StandardMeasurement.Builder clearContainers() {
+      containers = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public StandardMeasurement build() {
       try {
@@ -513,6 +582,7 @@ public class StandardMeasurement extends org.apache.avro.specific.SpecificRecord
           record.packageMeasurement = fieldSetFlags()[2] ? this.packageMeasurement : (com.fretron.Model.Measurement) defaultValue(fields()[2]);
         }
         record.trucks = fieldSetFlags()[3] ? this.trucks : (java.lang.Double) defaultValue(fields()[3]);
+        record.containers = fieldSetFlags()[4] ? this.containers : (java.lang.Double) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
