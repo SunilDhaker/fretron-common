@@ -335,7 +335,15 @@
                                      }
                                    ],
                    "default": null
-                }
+                },
+               {
+                 "name": "contractId",
+                 "type": [
+                   "null",
+                   "string"
+                 ],
+                 "default": null
+               }
 
     ]
   }
