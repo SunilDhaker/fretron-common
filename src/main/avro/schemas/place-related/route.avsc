@@ -138,6 +138,11 @@
                                {"type" : "array", "items":"com.fretron.Model.Cost"}
                               ],
              "default":null
-       }
+       },
+         {
+                   "name":"isPrimary",
+                   "type": ["null","boolean"],
+                   "default":null
+            }
   ]
 }

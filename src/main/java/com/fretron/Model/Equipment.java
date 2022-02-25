@@ -10,12 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Equipment extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1001543145094440029L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Equipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"inventoryNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"controllingBranchId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -3850344923555622521L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Equipment\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"inventoryNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"inventoryTypeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"controllingBranchId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"usedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"attachedResourceNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orderDetails\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrderRelation\",\"fields\":[{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String _id;
   @Deprecated public java.lang.String inventoryNo;
   @Deprecated public java.lang.String type;
+  @Deprecated public java.lang.String inventoryTypeId;
   @Deprecated public java.lang.String catagory;
   @Deprecated public java.lang.String name;
   @Deprecated public java.lang.String orgId;
@@ -28,6 +29,8 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String attachedResourceId;
   @Deprecated public java.lang.String attachedResourceNumber;
   @Deprecated public java.lang.String statusDescription;
+  @Deprecated public java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+  @Deprecated public com.fretron.Model.OrderRelation orderDetails;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,6 +44,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
    * @param _id The new value for _id
    * @param inventoryNo The new value for inventoryNo
    * @param type The new value for type
+   * @param inventoryTypeId The new value for inventoryTypeId
    * @param catagory The new value for catagory
    * @param name The new value for name
    * @param orgId The new value for orgId
@@ -53,11 +57,14 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
    * @param attachedResourceId The new value for attachedResourceId
    * @param attachedResourceNumber The new value for attachedResourceNumber
    * @param statusDescription The new value for statusDescription
+   * @param customFields The new value for customFields
+   * @param orderDetails The new value for orderDetails
    */
-  public Equipment(java.lang.String _id, java.lang.String inventoryNo, java.lang.String type, java.lang.String catagory, java.lang.String name, java.lang.String orgId, java.lang.String updatedBy, com.fretron.Model.Place location, java.lang.String shipmentNumber, com.fretron.Model.Updates updates, java.lang.String status, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String statusDescription) {
+  public Equipment(java.lang.String _id, java.lang.String inventoryNo, java.lang.String type, java.lang.String inventoryTypeId, java.lang.String catagory, java.lang.String name, java.lang.String orgId, java.lang.String updatedBy, com.fretron.Model.Place location, java.lang.String shipmentNumber, com.fretron.Model.Updates updates, java.lang.String status, java.lang.String usedBy, java.lang.String attachedResourceId, java.lang.String attachedResourceNumber, java.lang.String statusDescription, java.util.List<com.fretron.Model.LiteCustomFields> customFields, com.fretron.Model.OrderRelation orderDetails) {
     this._id = _id;
     this.inventoryNo = inventoryNo;
     this.type = type;
+    this.inventoryTypeId = inventoryTypeId;
     this.catagory = catagory;
     this.name = name;
     this.orgId = orgId;
@@ -70,6 +77,8 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     this.attachedResourceId = attachedResourceId;
     this.attachedResourceNumber = attachedResourceNumber;
     this.statusDescription = statusDescription;
+    this.customFields = customFields;
+    this.orderDetails = orderDetails;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,18 +88,21 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     case 0: return _id;
     case 1: return inventoryNo;
     case 2: return type;
-    case 3: return catagory;
-    case 4: return name;
-    case 5: return orgId;
-    case 6: return updatedBy;
-    case 7: return location;
-    case 8: return shipmentNumber;
-    case 9: return updates;
-    case 10: return status;
-    case 11: return usedBy;
-    case 12: return attachedResourceId;
-    case 13: return attachedResourceNumber;
-    case 14: return statusDescription;
+    case 3: return inventoryTypeId;
+    case 4: return catagory;
+    case 5: return name;
+    case 6: return orgId;
+    case 7: return updatedBy;
+    case 8: return location;
+    case 9: return shipmentNumber;
+    case 10: return updates;
+    case 11: return status;
+    case 12: return usedBy;
+    case 13: return attachedResourceId;
+    case 14: return attachedResourceNumber;
+    case 15: return statusDescription;
+    case 16: return customFields;
+    case 17: return orderDetails;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -102,18 +114,21 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     case 0: _id = (java.lang.String)value$; break;
     case 1: inventoryNo = (java.lang.String)value$; break;
     case 2: type = (java.lang.String)value$; break;
-    case 3: catagory = (java.lang.String)value$; break;
-    case 4: name = (java.lang.String)value$; break;
-    case 5: orgId = (java.lang.String)value$; break;
-    case 6: updatedBy = (java.lang.String)value$; break;
-    case 7: location = (com.fretron.Model.Place)value$; break;
-    case 8: shipmentNumber = (java.lang.String)value$; break;
-    case 9: updates = (com.fretron.Model.Updates)value$; break;
-    case 10: status = (java.lang.String)value$; break;
-    case 11: usedBy = (java.lang.String)value$; break;
-    case 12: attachedResourceId = (java.lang.String)value$; break;
-    case 13: attachedResourceNumber = (java.lang.String)value$; break;
-    case 14: statusDescription = (java.lang.String)value$; break;
+    case 3: inventoryTypeId = (java.lang.String)value$; break;
+    case 4: catagory = (java.lang.String)value$; break;
+    case 5: name = (java.lang.String)value$; break;
+    case 6: orgId = (java.lang.String)value$; break;
+    case 7: updatedBy = (java.lang.String)value$; break;
+    case 8: location = (com.fretron.Model.Place)value$; break;
+    case 9: shipmentNumber = (java.lang.String)value$; break;
+    case 10: updates = (com.fretron.Model.Updates)value$; break;
+    case 11: status = (java.lang.String)value$; break;
+    case 12: usedBy = (java.lang.String)value$; break;
+    case 13: attachedResourceId = (java.lang.String)value$; break;
+    case 14: attachedResourceNumber = (java.lang.String)value$; break;
+    case 15: statusDescription = (java.lang.String)value$; break;
+    case 16: customFields = (java.util.List<com.fretron.Model.LiteCustomFields>)value$; break;
+    case 17: orderDetails = (com.fretron.Model.OrderRelation)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -164,6 +179,22 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
    */
   public void setType(java.lang.String value) {
     this.type = value;
+  }
+
+  /**
+   * Gets the value of the 'inventoryTypeId' field.
+   * @return The value of the 'inventoryTypeId' field.
+   */
+  public java.lang.String getInventoryTypeId() {
+    return inventoryTypeId;
+  }
+
+  /**
+   * Sets the value of the 'inventoryTypeId' field.
+   * @param value the value to set.
+   */
+  public void setInventoryTypeId(java.lang.String value) {
+    this.inventoryTypeId = value;
   }
 
   /**
@@ -359,6 +390,38 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'customFields' field.
+   * @return The value of the 'customFields' field.
+   */
+  public java.util.List<com.fretron.Model.LiteCustomFields> getCustomFields() {
+    return customFields;
+  }
+
+  /**
+   * Sets the value of the 'customFields' field.
+   * @param value the value to set.
+   */
+  public void setCustomFields(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+    this.customFields = value;
+  }
+
+  /**
+   * Gets the value of the 'orderDetails' field.
+   * @return The value of the 'orderDetails' field.
+   */
+  public com.fretron.Model.OrderRelation getOrderDetails() {
+    return orderDetails;
+  }
+
+  /**
+   * Sets the value of the 'orderDetails' field.
+   * @param value the value to set.
+   */
+  public void setOrderDetails(com.fretron.Model.OrderRelation value) {
+    this.orderDetails = value;
+  }
+
+  /**
    * Creates a new Equipment RecordBuilder.
    * @return A new Equipment RecordBuilder
    */
@@ -393,6 +456,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String _id;
     private java.lang.String inventoryNo;
     private java.lang.String type;
+    private java.lang.String inventoryTypeId;
     private java.lang.String catagory;
     private java.lang.String name;
     private java.lang.String orgId;
@@ -407,6 +471,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String attachedResourceId;
     private java.lang.String attachedResourceNumber;
     private java.lang.String statusDescription;
+    private java.util.List<com.fretron.Model.LiteCustomFields> customFields;
+    private com.fretron.Model.OrderRelation orderDetails;
+    private com.fretron.Model.OrderRelation.Builder orderDetailsBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -431,59 +498,74 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
         this.type = data().deepCopy(fields()[2].schema(), other.type);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.catagory)) {
-        this.catagory = data().deepCopy(fields()[3].schema(), other.catagory);
+      if (isValidValue(fields()[3], other.inventoryTypeId)) {
+        this.inventoryTypeId = data().deepCopy(fields()[3].schema(), other.inventoryTypeId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.name)) {
-        this.name = data().deepCopy(fields()[4].schema(), other.name);
+      if (isValidValue(fields()[4], other.catagory)) {
+        this.catagory = data().deepCopy(fields()[4].schema(), other.catagory);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[5].schema(), other.orgId);
+      if (isValidValue(fields()[5], other.name)) {
+        this.name = data().deepCopy(fields()[5].schema(), other.name);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.updatedBy)) {
-        this.updatedBy = data().deepCopy(fields()[6].schema(), other.updatedBy);
+      if (isValidValue(fields()[6], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[6].schema(), other.orgId);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.location)) {
-        this.location = data().deepCopy(fields()[7].schema(), other.location);
+      if (isValidValue(fields()[7], other.updatedBy)) {
+        this.updatedBy = data().deepCopy(fields()[7].schema(), other.updatedBy);
         fieldSetFlags()[7] = true;
+      }
+      if (isValidValue(fields()[8], other.location)) {
+        this.location = data().deepCopy(fields()[8].schema(), other.location);
+        fieldSetFlags()[8] = true;
       }
       if (other.hasLocationBuilder()) {
         this.locationBuilder = com.fretron.Model.Place.newBuilder(other.getLocationBuilder());
       }
-      if (isValidValue(fields()[8], other.shipmentNumber)) {
-        this.shipmentNumber = data().deepCopy(fields()[8].schema(), other.shipmentNumber);
-        fieldSetFlags()[8] = true;
-      }
-      if (isValidValue(fields()[9], other.updates)) {
-        this.updates = data().deepCopy(fields()[9].schema(), other.updates);
+      if (isValidValue(fields()[9], other.shipmentNumber)) {
+        this.shipmentNumber = data().deepCopy(fields()[9].schema(), other.shipmentNumber);
         fieldSetFlags()[9] = true;
+      }
+      if (isValidValue(fields()[10], other.updates)) {
+        this.updates = data().deepCopy(fields()[10].schema(), other.updates);
+        fieldSetFlags()[10] = true;
       }
       if (other.hasUpdatesBuilder()) {
         this.updatesBuilder = com.fretron.Model.Updates.newBuilder(other.getUpdatesBuilder());
       }
-      if (isValidValue(fields()[10], other.status)) {
-        this.status = data().deepCopy(fields()[10].schema(), other.status);
-        fieldSetFlags()[10] = true;
-      }
-      if (isValidValue(fields()[11], other.usedBy)) {
-        this.usedBy = data().deepCopy(fields()[11].schema(), other.usedBy);
+      if (isValidValue(fields()[11], other.status)) {
+        this.status = data().deepCopy(fields()[11].schema(), other.status);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.attachedResourceId)) {
-        this.attachedResourceId = data().deepCopy(fields()[12].schema(), other.attachedResourceId);
+      if (isValidValue(fields()[12], other.usedBy)) {
+        this.usedBy = data().deepCopy(fields()[12].schema(), other.usedBy);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.attachedResourceNumber)) {
-        this.attachedResourceNumber = data().deepCopy(fields()[13].schema(), other.attachedResourceNumber);
+      if (isValidValue(fields()[13], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[13].schema(), other.attachedResourceId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.statusDescription)) {
-        this.statusDescription = data().deepCopy(fields()[14].schema(), other.statusDescription);
+      if (isValidValue(fields()[14], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[14].schema(), other.attachedResourceNumber);
         fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[15].schema(), other.statusDescription);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.orderDetails)) {
+        this.orderDetails = data().deepCopy(fields()[17].schema(), other.orderDetails);
+        fieldSetFlags()[17] = true;
+      }
+      if (other.hasOrderDetailsBuilder()) {
+        this.orderDetailsBuilder = com.fretron.Model.OrderRelation.newBuilder(other.getOrderDetailsBuilder());
       }
     }
 
@@ -505,56 +587,69 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
         this.type = data().deepCopy(fields()[2].schema(), other.type);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.catagory)) {
-        this.catagory = data().deepCopy(fields()[3].schema(), other.catagory);
+      if (isValidValue(fields()[3], other.inventoryTypeId)) {
+        this.inventoryTypeId = data().deepCopy(fields()[3].schema(), other.inventoryTypeId);
         fieldSetFlags()[3] = true;
       }
-      if (isValidValue(fields()[4], other.name)) {
-        this.name = data().deepCopy(fields()[4].schema(), other.name);
+      if (isValidValue(fields()[4], other.catagory)) {
+        this.catagory = data().deepCopy(fields()[4].schema(), other.catagory);
         fieldSetFlags()[4] = true;
       }
-      if (isValidValue(fields()[5], other.orgId)) {
-        this.orgId = data().deepCopy(fields()[5].schema(), other.orgId);
+      if (isValidValue(fields()[5], other.name)) {
+        this.name = data().deepCopy(fields()[5].schema(), other.name);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.updatedBy)) {
-        this.updatedBy = data().deepCopy(fields()[6].schema(), other.updatedBy);
+      if (isValidValue(fields()[6], other.orgId)) {
+        this.orgId = data().deepCopy(fields()[6].schema(), other.orgId);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.location)) {
-        this.location = data().deepCopy(fields()[7].schema(), other.location);
+      if (isValidValue(fields()[7], other.updatedBy)) {
+        this.updatedBy = data().deepCopy(fields()[7].schema(), other.updatedBy);
         fieldSetFlags()[7] = true;
       }
-      this.locationBuilder = null;
-      if (isValidValue(fields()[8], other.shipmentNumber)) {
-        this.shipmentNumber = data().deepCopy(fields()[8].schema(), other.shipmentNumber);
+      if (isValidValue(fields()[8], other.location)) {
+        this.location = data().deepCopy(fields()[8].schema(), other.location);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.updates)) {
-        this.updates = data().deepCopy(fields()[9].schema(), other.updates);
+      this.locationBuilder = null;
+      if (isValidValue(fields()[9], other.shipmentNumber)) {
+        this.shipmentNumber = data().deepCopy(fields()[9].schema(), other.shipmentNumber);
         fieldSetFlags()[9] = true;
       }
-      this.updatesBuilder = null;
-      if (isValidValue(fields()[10], other.status)) {
-        this.status = data().deepCopy(fields()[10].schema(), other.status);
+      if (isValidValue(fields()[10], other.updates)) {
+        this.updates = data().deepCopy(fields()[10].schema(), other.updates);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.usedBy)) {
-        this.usedBy = data().deepCopy(fields()[11].schema(), other.usedBy);
+      this.updatesBuilder = null;
+      if (isValidValue(fields()[11], other.status)) {
+        this.status = data().deepCopy(fields()[11].schema(), other.status);
         fieldSetFlags()[11] = true;
       }
-      if (isValidValue(fields()[12], other.attachedResourceId)) {
-        this.attachedResourceId = data().deepCopy(fields()[12].schema(), other.attachedResourceId);
+      if (isValidValue(fields()[12], other.usedBy)) {
+        this.usedBy = data().deepCopy(fields()[12].schema(), other.usedBy);
         fieldSetFlags()[12] = true;
       }
-      if (isValidValue(fields()[13], other.attachedResourceNumber)) {
-        this.attachedResourceNumber = data().deepCopy(fields()[13].schema(), other.attachedResourceNumber);
+      if (isValidValue(fields()[13], other.attachedResourceId)) {
+        this.attachedResourceId = data().deepCopy(fields()[13].schema(), other.attachedResourceId);
         fieldSetFlags()[13] = true;
       }
-      if (isValidValue(fields()[14], other.statusDescription)) {
-        this.statusDescription = data().deepCopy(fields()[14].schema(), other.statusDescription);
+      if (isValidValue(fields()[14], other.attachedResourceNumber)) {
+        this.attachedResourceNumber = data().deepCopy(fields()[14].schema(), other.attachedResourceNumber);
         fieldSetFlags()[14] = true;
       }
+      if (isValidValue(fields()[15], other.statusDescription)) {
+        this.statusDescription = data().deepCopy(fields()[15].schema(), other.statusDescription);
+        fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.customFields)) {
+        this.customFields = data().deepCopy(fields()[16].schema(), other.customFields);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.orderDetails)) {
+        this.orderDetails = data().deepCopy(fields()[17].schema(), other.orderDetails);
+        fieldSetFlags()[17] = true;
+      }
+      this.orderDetailsBuilder = null;
     }
 
     /**
@@ -675,6 +770,45 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     }
 
     /**
+      * Gets the value of the 'inventoryTypeId' field.
+      * @return The value.
+      */
+    public java.lang.String getInventoryTypeId() {
+      return inventoryTypeId;
+    }
+
+    /**
+      * Sets the value of the 'inventoryTypeId' field.
+      * @param value The value of 'inventoryTypeId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder setInventoryTypeId(java.lang.String value) {
+      validate(fields()[3], value);
+      this.inventoryTypeId = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'inventoryTypeId' field has been set.
+      * @return True if the 'inventoryTypeId' field has been set, false otherwise.
+      */
+    public boolean hasInventoryTypeId() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'inventoryTypeId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder clearInventoryTypeId() {
+      inventoryTypeId = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'catagory' field.
       * @return The value.
       */
@@ -688,9 +822,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setCatagory(java.lang.String value) {
-      validate(fields()[3], value);
+      validate(fields()[4], value);
       this.catagory = value;
-      fieldSetFlags()[3] = true;
+      fieldSetFlags()[4] = true;
       return this;
     }
 
@@ -699,7 +833,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'catagory' field has been set, false otherwise.
       */
     public boolean hasCatagory() {
-      return fieldSetFlags()[3];
+      return fieldSetFlags()[4];
     }
 
 
@@ -709,7 +843,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearCatagory() {
       catagory = null;
-      fieldSetFlags()[3] = false;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -727,9 +861,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setName(java.lang.String value) {
-      validate(fields()[4], value);
+      validate(fields()[5], value);
       this.name = value;
-      fieldSetFlags()[4] = true;
+      fieldSetFlags()[5] = true;
       return this;
     }
 
@@ -738,7 +872,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'name' field has been set, false otherwise.
       */
     public boolean hasName() {
-      return fieldSetFlags()[4];
+      return fieldSetFlags()[5];
     }
 
 
@@ -748,7 +882,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearName() {
       name = null;
-      fieldSetFlags()[4] = false;
+      fieldSetFlags()[5] = false;
       return this;
     }
 
@@ -766,9 +900,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setOrgId(java.lang.String value) {
-      validate(fields()[5], value);
+      validate(fields()[6], value);
       this.orgId = value;
-      fieldSetFlags()[5] = true;
+      fieldSetFlags()[6] = true;
       return this;
     }
 
@@ -777,7 +911,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'orgId' field has been set, false otherwise.
       */
     public boolean hasOrgId() {
-      return fieldSetFlags()[5];
+      return fieldSetFlags()[6];
     }
 
 
@@ -787,7 +921,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearOrgId() {
       orgId = null;
-      fieldSetFlags()[5] = false;
+      fieldSetFlags()[6] = false;
       return this;
     }
 
@@ -805,9 +939,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setUpdatedBy(java.lang.String value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.updatedBy = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -816,7 +950,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'updatedBy' field has been set, false otherwise.
       */
     public boolean hasUpdatedBy() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -826,7 +960,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearUpdatedBy() {
       updatedBy = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -844,10 +978,10 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setLocation(com.fretron.Model.Place value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.locationBuilder = null;
       this.location = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -856,7 +990,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'location' field has been set, false otherwise.
       */
     public boolean hasLocation() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
     /**
@@ -900,7 +1034,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.Equipment.Builder clearLocation() {
       location = null;
       locationBuilder = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
       return this;
     }
 
@@ -918,9 +1052,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setShipmentNumber(java.lang.String value) {
-      validate(fields()[8], value);
+      validate(fields()[9], value);
       this.shipmentNumber = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[9] = true;
       return this;
     }
 
@@ -929,7 +1063,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'shipmentNumber' field has been set, false otherwise.
       */
     public boolean hasShipmentNumber() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[9];
     }
 
 
@@ -939,7 +1073,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearShipmentNumber() {
       shipmentNumber = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -957,10 +1091,10 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setUpdates(com.fretron.Model.Updates value) {
-      validate(fields()[9], value);
+      validate(fields()[10], value);
       this.updatesBuilder = null;
       this.updates = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -969,7 +1103,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'updates' field has been set, false otherwise.
       */
     public boolean hasUpdates() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[10];
     }
 
     /**
@@ -1013,7 +1147,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
     public com.fretron.Model.Equipment.Builder clearUpdates() {
       updates = null;
       updatesBuilder = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[10] = false;
       return this;
     }
 
@@ -1031,9 +1165,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setStatus(java.lang.String value) {
-      validate(fields()[10], value);
+      validate(fields()[11], value);
       this.status = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[11] = true;
       return this;
     }
 
@@ -1042,7 +1176,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'status' field has been set, false otherwise.
       */
     public boolean hasStatus() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[11];
     }
 
 
@@ -1052,7 +1186,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearStatus() {
       status = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -1070,9 +1204,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setUsedBy(java.lang.String value) {
-      validate(fields()[11], value);
+      validate(fields()[12], value);
       this.usedBy = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -1081,7 +1215,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'usedBy' field has been set, false otherwise.
       */
     public boolean hasUsedBy() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[12];
     }
 
 
@@ -1091,7 +1225,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearUsedBy() {
       usedBy = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -1109,9 +1243,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setAttachedResourceId(java.lang.String value) {
-      validate(fields()[12], value);
+      validate(fields()[13], value);
       this.attachedResourceId = value;
-      fieldSetFlags()[12] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -1120,7 +1254,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'attachedResourceId' field has been set, false otherwise.
       */
     public boolean hasAttachedResourceId() {
-      return fieldSetFlags()[12];
+      return fieldSetFlags()[13];
     }
 
 
@@ -1130,7 +1264,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearAttachedResourceId() {
       attachedResourceId = null;
-      fieldSetFlags()[12] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -1148,9 +1282,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setAttachedResourceNumber(java.lang.String value) {
-      validate(fields()[13], value);
+      validate(fields()[14], value);
       this.attachedResourceNumber = value;
-      fieldSetFlags()[13] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -1159,7 +1293,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'attachedResourceNumber' field has been set, false otherwise.
       */
     public boolean hasAttachedResourceNumber() {
-      return fieldSetFlags()[13];
+      return fieldSetFlags()[14];
     }
 
 
@@ -1169,7 +1303,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearAttachedResourceNumber() {
       attachedResourceNumber = null;
-      fieldSetFlags()[13] = false;
+      fieldSetFlags()[14] = false;
       return this;
     }
 
@@ -1187,9 +1321,9 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return This builder.
       */
     public com.fretron.Model.Equipment.Builder setStatusDescription(java.lang.String value) {
-      validate(fields()[14], value);
+      validate(fields()[15], value);
       this.statusDescription = value;
-      fieldSetFlags()[14] = true;
+      fieldSetFlags()[15] = true;
       return this;
     }
 
@@ -1198,7 +1332,7 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       * @return True if the 'statusDescription' field has been set, false otherwise.
       */
     public boolean hasStatusDescription() {
-      return fieldSetFlags()[14];
+      return fieldSetFlags()[15];
     }
 
 
@@ -1208,7 +1342,120 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
       */
     public com.fretron.Model.Equipment.Builder clearStatusDescription() {
       statusDescription = null;
-      fieldSetFlags()[14] = false;
+      fieldSetFlags()[15] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'customFields' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.LiteCustomFields> getCustomFields() {
+      return customFields;
+    }
+
+    /**
+      * Sets the value of the 'customFields' field.
+      * @param value The value of 'customFields'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder setCustomFields(java.util.List<com.fretron.Model.LiteCustomFields> value) {
+      validate(fields()[16], value);
+      this.customFields = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customFields' field has been set.
+      * @return True if the 'customFields' field has been set, false otherwise.
+      */
+    public boolean hasCustomFields() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'customFields' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder clearCustomFields() {
+      customFields = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'orderDetails' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrderRelation getOrderDetails() {
+      return orderDetails;
+    }
+
+    /**
+      * Sets the value of the 'orderDetails' field.
+      * @param value The value of 'orderDetails'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder setOrderDetails(com.fretron.Model.OrderRelation value) {
+      validate(fields()[17], value);
+      this.orderDetailsBuilder = null;
+      this.orderDetails = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'orderDetails' field has been set.
+      * @return True if the 'orderDetails' field has been set, false otherwise.
+      */
+    public boolean hasOrderDetails() {
+      return fieldSetFlags()[17];
+    }
+
+    /**
+     * Gets the Builder instance for the 'orderDetails' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrderRelation.Builder getOrderDetailsBuilder() {
+      if (orderDetailsBuilder == null) {
+        if (hasOrderDetails()) {
+          setOrderDetailsBuilder(com.fretron.Model.OrderRelation.newBuilder(orderDetails));
+        } else {
+          setOrderDetailsBuilder(com.fretron.Model.OrderRelation.newBuilder());
+        }
+      }
+      return orderDetailsBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'orderDetails' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Equipment.Builder setOrderDetailsBuilder(com.fretron.Model.OrderRelation.Builder value) {
+      clearOrderDetails();
+      orderDetailsBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'orderDetails' field has an active Builder instance
+     * @return True if the 'orderDetails' field has an active Builder instance
+     */
+    public boolean hasOrderDetailsBuilder() {
+      return orderDetailsBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'orderDetails' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Equipment.Builder clearOrderDetails() {
+      orderDetails = null;
+      orderDetailsBuilder = null;
+      fieldSetFlags()[17] = false;
       return this;
     }
 
@@ -1219,26 +1466,33 @@ public class Equipment extends org.apache.avro.specific.SpecificRecordBase imple
         record._id = fieldSetFlags()[0] ? this._id : (java.lang.String) defaultValue(fields()[0]);
         record.inventoryNo = fieldSetFlags()[1] ? this.inventoryNo : (java.lang.String) defaultValue(fields()[1]);
         record.type = fieldSetFlags()[2] ? this.type : (java.lang.String) defaultValue(fields()[2]);
-        record.catagory = fieldSetFlags()[3] ? this.catagory : (java.lang.String) defaultValue(fields()[3]);
-        record.name = fieldSetFlags()[4] ? this.name : (java.lang.String) defaultValue(fields()[4]);
-        record.orgId = fieldSetFlags()[5] ? this.orgId : (java.lang.String) defaultValue(fields()[5]);
-        record.updatedBy = fieldSetFlags()[6] ? this.updatedBy : (java.lang.String) defaultValue(fields()[6]);
+        record.inventoryTypeId = fieldSetFlags()[3] ? this.inventoryTypeId : (java.lang.String) defaultValue(fields()[3]);
+        record.catagory = fieldSetFlags()[4] ? this.catagory : (java.lang.String) defaultValue(fields()[4]);
+        record.name = fieldSetFlags()[5] ? this.name : (java.lang.String) defaultValue(fields()[5]);
+        record.orgId = fieldSetFlags()[6] ? this.orgId : (java.lang.String) defaultValue(fields()[6]);
+        record.updatedBy = fieldSetFlags()[7] ? this.updatedBy : (java.lang.String) defaultValue(fields()[7]);
         if (locationBuilder != null) {
           record.location = this.locationBuilder.build();
         } else {
-          record.location = fieldSetFlags()[7] ? this.location : (com.fretron.Model.Place) defaultValue(fields()[7]);
+          record.location = fieldSetFlags()[8] ? this.location : (com.fretron.Model.Place) defaultValue(fields()[8]);
         }
-        record.shipmentNumber = fieldSetFlags()[8] ? this.shipmentNumber : (java.lang.String) defaultValue(fields()[8]);
+        record.shipmentNumber = fieldSetFlags()[9] ? this.shipmentNumber : (java.lang.String) defaultValue(fields()[9]);
         if (updatesBuilder != null) {
           record.updates = this.updatesBuilder.build();
         } else {
-          record.updates = fieldSetFlags()[9] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[9]);
+          record.updates = fieldSetFlags()[10] ? this.updates : (com.fretron.Model.Updates) defaultValue(fields()[10]);
         }
-        record.status = fieldSetFlags()[10] ? this.status : (java.lang.String) defaultValue(fields()[10]);
-        record.usedBy = fieldSetFlags()[11] ? this.usedBy : (java.lang.String) defaultValue(fields()[11]);
-        record.attachedResourceId = fieldSetFlags()[12] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[12]);
-        record.attachedResourceNumber = fieldSetFlags()[13] ? this.attachedResourceNumber : (java.lang.String) defaultValue(fields()[13]);
-        record.statusDescription = fieldSetFlags()[14] ? this.statusDescription : (java.lang.String) defaultValue(fields()[14]);
+        record.status = fieldSetFlags()[11] ? this.status : (java.lang.String) defaultValue(fields()[11]);
+        record.usedBy = fieldSetFlags()[12] ? this.usedBy : (java.lang.String) defaultValue(fields()[12]);
+        record.attachedResourceId = fieldSetFlags()[13] ? this.attachedResourceId : (java.lang.String) defaultValue(fields()[13]);
+        record.attachedResourceNumber = fieldSetFlags()[14] ? this.attachedResourceNumber : (java.lang.String) defaultValue(fields()[14]);
+        record.statusDescription = fieldSetFlags()[15] ? this.statusDescription : (java.lang.String) defaultValue(fields()[15]);
+        record.customFields = fieldSetFlags()[16] ? this.customFields : (java.util.List<com.fretron.Model.LiteCustomFields>) defaultValue(fields()[16]);
+        if (orderDetailsBuilder != null) {
+          record.orderDetails = this.orderDetailsBuilder.build();
+        } else {
+          record.orderDetails = fieldSetFlags()[17] ? this.orderDetails : (com.fretron.Model.OrderRelation) defaultValue(fields()[17]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
