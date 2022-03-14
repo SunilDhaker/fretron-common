@@ -66,6 +66,14 @@
                   "string"
                 ],
                 "default": null
-              }
+              },
+              {
+                    "name": "transportationServiceId",
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "default": null
+                  }
   ]
 }
