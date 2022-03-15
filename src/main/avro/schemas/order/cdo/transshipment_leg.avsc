@@ -20,6 +20,14 @@
       "default": null
     },
     {
+      "name": "transShipmentBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
       "name": "legType",
       "type": [
         "null",
