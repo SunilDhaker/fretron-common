@@ -18,6 +18,22 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "loadingBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
+    },
+    {
+      "name": "unloadingBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
     }
   ]
 }

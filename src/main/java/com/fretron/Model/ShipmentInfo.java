@@ -10,11 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -765495106118449461L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 399915551262518690L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"shipmentNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"loadingBranch\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"unloadingBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String shipmentNumber;
   @Deprecated public java.lang.String externalId;
+  @Deprecated public com.fretron.Model.OrgOffice loadingBranch;
+  @Deprecated public com.fretron.Model.OrgOffice unloadingBranch;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -27,10 +29,14 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
    * All-args constructor.
    * @param shipmentNumber The new value for shipmentNumber
    * @param externalId The new value for externalId
+   * @param loadingBranch The new value for loadingBranch
+   * @param unloadingBranch The new value for unloadingBranch
    */
-  public ShipmentInfo(java.lang.String shipmentNumber, java.lang.String externalId) {
+  public ShipmentInfo(java.lang.String shipmentNumber, java.lang.String externalId, com.fretron.Model.OrgOffice loadingBranch, com.fretron.Model.OrgOffice unloadingBranch) {
     this.shipmentNumber = shipmentNumber;
     this.externalId = externalId;
+    this.loadingBranch = loadingBranch;
+    this.unloadingBranch = unloadingBranch;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -39,6 +45,8 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: return shipmentNumber;
     case 1: return externalId;
+    case 2: return loadingBranch;
+    case 3: return unloadingBranch;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -49,6 +57,8 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: shipmentNumber = (java.lang.String)value$; break;
     case 1: externalId = (java.lang.String)value$; break;
+    case 2: loadingBranch = (com.fretron.Model.OrgOffice)value$; break;
+    case 3: unloadingBranch = (com.fretron.Model.OrgOffice)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -86,6 +96,38 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'loadingBranch' field.
+   * @return The value of the 'loadingBranch' field.
+   */
+  public com.fretron.Model.OrgOffice getLoadingBranch() {
+    return loadingBranch;
+  }
+
+  /**
+   * Sets the value of the 'loadingBranch' field.
+   * @param value the value to set.
+   */
+  public void setLoadingBranch(com.fretron.Model.OrgOffice value) {
+    this.loadingBranch = value;
+  }
+
+  /**
+   * Gets the value of the 'unloadingBranch' field.
+   * @return The value of the 'unloadingBranch' field.
+   */
+  public com.fretron.Model.OrgOffice getUnloadingBranch() {
+    return unloadingBranch;
+  }
+
+  /**
+   * Sets the value of the 'unloadingBranch' field.
+   * @param value the value to set.
+   */
+  public void setUnloadingBranch(com.fretron.Model.OrgOffice value) {
+    this.unloadingBranch = value;
+  }
+
+  /**
    * Creates a new ShipmentInfo RecordBuilder.
    * @return A new ShipmentInfo RecordBuilder
    */
@@ -119,6 +161,10 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
 
     private java.lang.String shipmentNumber;
     private java.lang.String externalId;
+    private com.fretron.Model.OrgOffice loadingBranch;
+    private com.fretron.Model.OrgOffice.Builder loadingBranchBuilder;
+    private com.fretron.Model.OrgOffice unloadingBranch;
+    private com.fretron.Model.OrgOffice.Builder unloadingBranchBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -139,6 +185,20 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
         this.externalId = data().deepCopy(fields()[1].schema(), other.externalId);
         fieldSetFlags()[1] = true;
       }
+      if (isValidValue(fields()[2], other.loadingBranch)) {
+        this.loadingBranch = data().deepCopy(fields()[2].schema(), other.loadingBranch);
+        fieldSetFlags()[2] = true;
+      }
+      if (other.hasLoadingBranchBuilder()) {
+        this.loadingBranchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getLoadingBranchBuilder());
+      }
+      if (isValidValue(fields()[3], other.unloadingBranch)) {
+        this.unloadingBranch = data().deepCopy(fields()[3].schema(), other.unloadingBranch);
+        fieldSetFlags()[3] = true;
+      }
+      if (other.hasUnloadingBranchBuilder()) {
+        this.unloadingBranchBuilder = com.fretron.Model.OrgOffice.newBuilder(other.getUnloadingBranchBuilder());
+      }
     }
 
     /**
@@ -155,6 +215,16 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
         this.externalId = data().deepCopy(fields()[1].schema(), other.externalId);
         fieldSetFlags()[1] = true;
       }
+      if (isValidValue(fields()[2], other.loadingBranch)) {
+        this.loadingBranch = data().deepCopy(fields()[2].schema(), other.loadingBranch);
+        fieldSetFlags()[2] = true;
+      }
+      this.loadingBranchBuilder = null;
+      if (isValidValue(fields()[3], other.unloadingBranch)) {
+        this.unloadingBranch = data().deepCopy(fields()[3].schema(), other.unloadingBranch);
+        fieldSetFlags()[3] = true;
+      }
+      this.unloadingBranchBuilder = null;
     }
 
     /**
@@ -235,12 +305,170 @@ public class ShipmentInfo extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'loadingBranch' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrgOffice getLoadingBranch() {
+      return loadingBranch;
+    }
+
+    /**
+      * Sets the value of the 'loadingBranch' field.
+      * @param value The value of 'loadingBranch'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentInfo.Builder setLoadingBranch(com.fretron.Model.OrgOffice value) {
+      validate(fields()[2], value);
+      this.loadingBranchBuilder = null;
+      this.loadingBranch = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'loadingBranch' field has been set.
+      * @return True if the 'loadingBranch' field has been set, false otherwise.
+      */
+    public boolean hasLoadingBranch() {
+      return fieldSetFlags()[2];
+    }
+
+    /**
+     * Gets the Builder instance for the 'loadingBranch' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrgOffice.Builder getLoadingBranchBuilder() {
+      if (loadingBranchBuilder == null) {
+        if (hasLoadingBranch()) {
+          setLoadingBranchBuilder(com.fretron.Model.OrgOffice.newBuilder(loadingBranch));
+        } else {
+          setLoadingBranchBuilder(com.fretron.Model.OrgOffice.newBuilder());
+        }
+      }
+      return loadingBranchBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'loadingBranch' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ShipmentInfo.Builder setLoadingBranchBuilder(com.fretron.Model.OrgOffice.Builder value) {
+      clearLoadingBranch();
+      loadingBranchBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'loadingBranch' field has an active Builder instance
+     * @return True if the 'loadingBranch' field has an active Builder instance
+     */
+    public boolean hasLoadingBranchBuilder() {
+      return loadingBranchBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'loadingBranch' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentInfo.Builder clearLoadingBranch() {
+      loadingBranch = null;
+      loadingBranchBuilder = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'unloadingBranch' field.
+      * @return The value.
+      */
+    public com.fretron.Model.OrgOffice getUnloadingBranch() {
+      return unloadingBranch;
+    }
+
+    /**
+      * Sets the value of the 'unloadingBranch' field.
+      * @param value The value of 'unloadingBranch'.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentInfo.Builder setUnloadingBranch(com.fretron.Model.OrgOffice value) {
+      validate(fields()[3], value);
+      this.unloadingBranchBuilder = null;
+      this.unloadingBranch = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'unloadingBranch' field has been set.
+      * @return True if the 'unloadingBranch' field has been set, false otherwise.
+      */
+    public boolean hasUnloadingBranch() {
+      return fieldSetFlags()[3];
+    }
+
+    /**
+     * Gets the Builder instance for the 'unloadingBranch' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.OrgOffice.Builder getUnloadingBranchBuilder() {
+      if (unloadingBranchBuilder == null) {
+        if (hasUnloadingBranch()) {
+          setUnloadingBranchBuilder(com.fretron.Model.OrgOffice.newBuilder(unloadingBranch));
+        } else {
+          setUnloadingBranchBuilder(com.fretron.Model.OrgOffice.newBuilder());
+        }
+      }
+      return unloadingBranchBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'unloadingBranch' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.ShipmentInfo.Builder setUnloadingBranchBuilder(com.fretron.Model.OrgOffice.Builder value) {
+      clearUnloadingBranch();
+      unloadingBranchBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'unloadingBranch' field has an active Builder instance
+     * @return True if the 'unloadingBranch' field has an active Builder instance
+     */
+    public boolean hasUnloadingBranchBuilder() {
+      return unloadingBranchBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'unloadingBranch' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.ShipmentInfo.Builder clearUnloadingBranch() {
+      unloadingBranch = null;
+      unloadingBranchBuilder = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
     @Override
     public ShipmentInfo build() {
       try {
         ShipmentInfo record = new ShipmentInfo();
         record.shipmentNumber = fieldSetFlags()[0] ? this.shipmentNumber : (java.lang.String) defaultValue(fields()[0]);
         record.externalId = fieldSetFlags()[1] ? this.externalId : (java.lang.String) defaultValue(fields()[1]);
+        if (loadingBranchBuilder != null) {
+          record.loadingBranch = this.loadingBranchBuilder.build();
+        } else {
+          record.loadingBranch = fieldSetFlags()[2] ? this.loadingBranch : (com.fretron.Model.OrgOffice) defaultValue(fields()[2]);
+        }
+        if (unloadingBranchBuilder != null) {
+          record.unloadingBranch = this.unloadingBranchBuilder.build();
+        } else {
+          record.unloadingBranch = fieldSetFlags()[3] ? this.unloadingBranch : (com.fretron.Model.OrgOffice) defaultValue(fields()[3]);
+        }
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
