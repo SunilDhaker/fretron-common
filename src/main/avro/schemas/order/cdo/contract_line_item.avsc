@@ -234,6 +234,19 @@
         "com.fretron.Model.Materials"
       ],
       "default": null
+    },
+    {
+      "name": "freightChargeType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "freightChargeRate",
+      "type": ["null","double"],
+      "default" : null
     }
   ]
 }
