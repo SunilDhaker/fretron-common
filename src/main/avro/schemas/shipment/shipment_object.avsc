@@ -304,14 +304,6 @@
                                                     ],
                                              "default": null
 
-                                             },
-      {
-        "name": "unloadingBranch",
-        "type": [
-          "null",
-          "com.fretron.Model.OrgOffice"
-        ],
-        "default": null
-      }
+                                             }
     ]
   }
