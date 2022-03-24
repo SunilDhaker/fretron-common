@@ -198,6 +198,14 @@
         "com.fretron.Model.Employee"
       ],
       "default": null
-    }
+    },
+    {
+          "name": "status",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
   ]
 }
