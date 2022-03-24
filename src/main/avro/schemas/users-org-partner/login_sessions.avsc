@@ -3,81 +3,136 @@
   "type": "record",
   "name": "LoginSession",
   "fields": [
-  {
-       "name": "uuid",
-       "type": ["null" , "string"],
-       "default" : null
-  },
-  {
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "userId",
-      "type": ["null" , "string"],
-      "default" : null
-  },
-  {
-        "name": "token",
-         "type": ["null" , "string"],
-        "default" : null
-   },
-   {
-         "name": "userAgent",
-          "type": ["null" , "string"],
-          "default" : null
-   },
-    {
-        "name":"isValid",
-        "type": ["null","boolean"],
-        "default":null
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
     {
-       "name": "createdAt",
-       "type":  ["null","long"],
-       "logicalType": "timestamp-millis",
-       "default":null
+      "name": "token",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
     {
-           "name": "lastUsed",
-           "type":  ["null","long"],
-           "logicalType": "timestamp-millis",
-           "default":null
+      "name": "userAgent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
     {
-       "name": "updatedOn",
-        "type":  ["null","long"],
-        "logicalType": "timestamp-millis",
-         "default":null
+      "name": "isValid",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     },
     {
-        "name": "location",
-        "type": ["null" , "string"],
-         "default" : null
+      "name": "createdAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     },
     {
-         "name": "orgId",
-         "type": ["null" , "string"],
-         "default" : null
+      "name": "lastUsed",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     },
     {
-          "name": "parentOrgId",
-          "type": ["null" , "string"],
-          "default" : null
+      "name": "updatedOn",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     },
     {
-          "name": "pushToken",
-          "type": ["null" , "string"],
-          "default" : null
+      "name": "location",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
     {
-          "name": "pushTokenService",
-          "type": ["null" , "string"],
-          "default" : null
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
-      {
-              "name": "app",
-              "type": ["null" , "string"],
-              "default" : null
-        }
-
-
-
+    {
+      "name": "parentOrgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "pushToken",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "pushTokenService",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "app",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "bPartnerId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "portalType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }
