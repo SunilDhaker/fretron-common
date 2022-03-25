@@ -21,8 +21,8 @@ public class TrainTrip {
     private List<Place> viaTerminals;
     private String trainNumber;
     private String trainOwner;
-    private String capacityUtilizationType;
-    private StandardMeasurement trainActualCapaticy;
+    private List<String> capacityUtilizationType;
+    private StandardMeasurement trainActualCapacity;
     private StandardMeasurement trainPossibleUtilization;
     private String RRNumber;
     private String FNRNumber;
@@ -39,7 +39,7 @@ public class TrainTrip {
     public TrainTrip(String uuid, String orgId, String status, String tripType, String tripCategory,
                      String tripNumber, Long etd, Long originalEtd, Place trainOriginTerminal,
                      Place trainDestinationTerminal, List<Place> viaTerminals, String trainNumber,
-                     String trainOwner, String capacityUtilizationType, StandardMeasurement trainActualCapaticy,
+                     String trainOwner, List<String> capacityUtilizationType, StandardMeasurement trainActualCapacity,
                      StandardMeasurement trainPossibleUtilization, String RRNumber, String FNRNumber,
                      OtherTrainBooking otherBooking, ReferenceTrainInfo referenceTrainInfo, List<TrainContainer> containers,
                      List<TripCn> consignments, List<TripSh> shipments) {
@@ -57,7 +57,7 @@ public class TrainTrip {
         this.trainNumber = trainNumber;
         this.trainOwner = trainOwner;
         this.capacityUtilizationType = capacityUtilizationType;
-        this.trainActualCapaticy = trainActualCapaticy;
+        this.trainActualCapacity = trainActualCapacity;
         this.trainPossibleUtilization = trainPossibleUtilization;
         this.RRNumber = RRNumber;
         this.FNRNumber = FNRNumber;
@@ -172,20 +172,20 @@ public class TrainTrip {
         this.trainOwner = trainOwner;
     }
 
-    public String getCapacityUtilizationType() {
+    public List<String> getCapacityUtilizationType() {
         return capacityUtilizationType;
     }
 
-    public void setCapacityUtilizationType(String capacityUtilizationType) {
+    public void setCapacityUtilizationType(List<String> capacityUtilizationType) {
         this.capacityUtilizationType = capacityUtilizationType;
     }
 
-    public StandardMeasurement getTrainActualCapaticy() {
-        return trainActualCapaticy;
+    public StandardMeasurement getTrainActualCapacity() {
+        return trainActualCapacity;
     }
 
-    public void setTrainActualCapaticy(StandardMeasurement trainActualCapaticy) {
-        this.trainActualCapaticy = trainActualCapaticy;
+    public void setTrainActualCapacity(StandardMeasurement trainActualCapacity) {
+        this.trainActualCapacity = trainActualCapacity;
     }
 
     public StandardMeasurement getTrainPossibleUtilization() {
