@@ -161,6 +161,14 @@
                             "string"
                           ],
                           "default": null
-                        }
+                        },
+      {
+        "name": "controllingBranchId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      }
     ]
   }

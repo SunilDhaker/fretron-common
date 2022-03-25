@@ -168,6 +168,14 @@
         "com.fretron.Model.ShipmentInfo"
       ],
       "default": null
+    },
+    {
+      "name": "transShipmentBranch",
+      "type": [
+        "null",
+        "com.fretron.Model.OrgOffice"
+      ],
+      "default": null
     }
   ]
 }
