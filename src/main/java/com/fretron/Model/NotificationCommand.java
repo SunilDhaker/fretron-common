@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationCommand extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4309282310351280114L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCommand\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscribers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cc\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"to\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subject\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"threadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounceTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSmsQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"smsContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5960329634714230273L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCommand\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscribers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"cc\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"to\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"module\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"channels\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"eventName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subject\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"content\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"htmlContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"redirectURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"threadId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"debounceTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdOn\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isSmsQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailQuotaOver\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"userType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"smsContent\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailTags\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.util.List<java.lang.String> subscribers;
@@ -37,6 +37,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.Boolean isEmailQuotaOver;
   @Deprecated public java.lang.String userType;
   @Deprecated public java.lang.String smsContent;
+  @Deprecated public java.util.List<java.lang.String> emailTags;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -71,8 +72,9 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
    * @param isEmailQuotaOver The new value for isEmailQuotaOver
    * @param userType The new value for userType
    * @param smsContent The new value for smsContent
+   * @param emailTags The new value for emailTags
    */
-  public NotificationCommand(java.lang.String uuid, java.util.List<java.lang.String> subscribers, java.lang.String orgId, java.util.List<java.lang.String> cc, java.lang.String to, java.util.List<java.lang.String> mobileNumbers, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String subject, java.lang.String content, java.lang.String htmlContent, java.lang.String redirectURL, java.lang.String threadId, java.lang.Long debounceTime, java.lang.String status, java.lang.Long createdOn, java.lang.Boolean isSmsQuotaOver, java.lang.Boolean isEmailQuotaOver, java.lang.String userType, java.lang.String smsContent) {
+  public NotificationCommand(java.lang.String uuid, java.util.List<java.lang.String> subscribers, java.lang.String orgId, java.util.List<java.lang.String> cc, java.lang.String to, java.util.List<java.lang.String> mobileNumbers, java.lang.String module, java.util.List<java.lang.String> channels, java.lang.String resourceId, java.lang.String resourceIdentifier, java.lang.String resourceType, java.lang.String eventName, java.lang.String subject, java.lang.String content, java.lang.String htmlContent, java.lang.String redirectURL, java.lang.String threadId, java.lang.Long debounceTime, java.lang.String status, java.lang.Long createdOn, java.lang.Boolean isSmsQuotaOver, java.lang.Boolean isEmailQuotaOver, java.lang.String userType, java.lang.String smsContent, java.util.List<java.lang.String> emailTags) {
     this.uuid = uuid;
     this.subscribers = subscribers;
     this.orgId = orgId;
@@ -97,6 +99,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     this.isEmailQuotaOver = isEmailQuotaOver;
     this.userType = userType;
     this.smsContent = smsContent;
+    this.emailTags = emailTags;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -127,6 +130,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     case 21: return isEmailQuotaOver;
     case 22: return userType;
     case 23: return smsContent;
+    case 24: return emailTags;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -159,6 +163,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     case 21: isEmailQuotaOver = (java.lang.Boolean)value$; break;
     case 22: userType = (java.lang.String)value$; break;
     case 23: smsContent = (java.lang.String)value$; break;
+    case 24: emailTags = (java.util.List<java.lang.String>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -548,6 +553,22 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'emailTags' field.
+   * @return The value of the 'emailTags' field.
+   */
+  public java.util.List<java.lang.String> getEmailTags() {
+    return emailTags;
+  }
+
+  /**
+   * Sets the value of the 'emailTags' field.
+   * @param value the value to set.
+   */
+  public void setEmailTags(java.util.List<java.lang.String> value) {
+    this.emailTags = value;
+  }
+
+  /**
    * Creates a new NotificationCommand RecordBuilder.
    * @return A new NotificationCommand RecordBuilder
    */
@@ -603,6 +624,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
     private java.lang.Boolean isEmailQuotaOver;
     private java.lang.String userType;
     private java.lang.String smsContent;
+    private java.util.List<java.lang.String> emailTags;
 
     /** Creates a new Builder */
     private Builder() {
@@ -711,6 +733,10 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
         this.smsContent = data().deepCopy(fields()[23].schema(), other.smsContent);
         fieldSetFlags()[23] = true;
       }
+      if (isValidValue(fields()[24], other.emailTags)) {
+        this.emailTags = data().deepCopy(fields()[24].schema(), other.emailTags);
+        fieldSetFlags()[24] = true;
+      }
     }
 
     /**
@@ -814,6 +840,10 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
       if (isValidValue(fields()[23], other.smsContent)) {
         this.smsContent = data().deepCopy(fields()[23].schema(), other.smsContent);
         fieldSetFlags()[23] = true;
+      }
+      if (isValidValue(fields()[24], other.emailTags)) {
+        this.emailTags = data().deepCopy(fields()[24].schema(), other.emailTags);
+        fieldSetFlags()[24] = true;
       }
     }
 
@@ -1753,6 +1783,45 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
       return this;
     }
 
+    /**
+      * Gets the value of the 'emailTags' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getEmailTags() {
+      return emailTags;
+    }
+
+    /**
+      * Sets the value of the 'emailTags' field.
+      * @param value The value of 'emailTags'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder setEmailTags(java.util.List<java.lang.String> value) {
+      validate(fields()[24], value);
+      this.emailTags = value;
+      fieldSetFlags()[24] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'emailTags' field has been set.
+      * @return True if the 'emailTags' field has been set, false otherwise.
+      */
+    public boolean hasEmailTags() {
+      return fieldSetFlags()[24];
+    }
+
+
+    /**
+      * Clears the value of the 'emailTags' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCommand.Builder clearEmailTags() {
+      emailTags = null;
+      fieldSetFlags()[24] = false;
+      return this;
+    }
+
     @Override
     public NotificationCommand build() {
       try {
@@ -1781,6 +1850,7 @@ public class NotificationCommand extends org.apache.avro.specific.SpecificRecord
         record.isEmailQuotaOver = fieldSetFlags()[21] ? this.isEmailQuotaOver : (java.lang.Boolean) defaultValue(fields()[21]);
         record.userType = fieldSetFlags()[22] ? this.userType : (java.lang.String) defaultValue(fields()[22]);
         record.smsContent = fieldSetFlags()[23] ? this.smsContent : (java.lang.String) defaultValue(fields()[23]);
+        record.emailTags = fieldSetFlags()[24] ? this.emailTags : (java.util.List<java.lang.String>) defaultValue(fields()[24]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
