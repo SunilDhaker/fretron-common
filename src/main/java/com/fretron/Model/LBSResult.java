@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class LBSResult extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 4475281225835406132L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"apiKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consentProvider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"operator\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 5140742619121763786L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"LBSResult\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestURL\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"statusCode\",\"type\":[\"null\",\"int\"]},{\"name\":\"data\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"error\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"requestedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"requestTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceCreationTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"apiKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consentProvider\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"operator\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fretronCode\",\"type\":[\"null\",\"int\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String mobileNumber;
   @Deprecated public java.lang.String requestType;
@@ -29,6 +29,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String apiKey;
   @Deprecated public java.lang.String consentProvider;
   @Deprecated public java.lang.String operator;
+  @Deprecated public java.lang.String uuid;
+  @Deprecated public java.lang.Integer fretronCode;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -55,8 +57,10 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
    * @param apiKey The new value for apiKey
    * @param consentProvider The new value for consentProvider
    * @param operator The new value for operator
+   * @param uuid The new value for uuid
+   * @param fretronCode The new value for fretronCode
    */
-  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId, java.lang.String resourceIdentifier, java.lang.Long resourceCreationTime, java.lang.String apiKey, java.lang.String consentProvider, java.lang.String operator) {
+  public LBSResult(java.lang.String mobileNumber, java.lang.String requestType, java.lang.String requestId, java.lang.String requestURL, java.lang.Integer statusCode, java.lang.String data, java.lang.String error, java.lang.Long requestedAt, java.lang.Long requestTime, java.lang.String userId, java.lang.String orgId, java.lang.String resourceIdentifier, java.lang.Long resourceCreationTime, java.lang.String apiKey, java.lang.String consentProvider, java.lang.String operator, java.lang.String uuid, java.lang.Integer fretronCode) {
     this.mobileNumber = mobileNumber;
     this.requestType = requestType;
     this.requestId = requestId;
@@ -73,6 +77,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     this.apiKey = apiKey;
     this.consentProvider = consentProvider;
     this.operator = operator;
+    this.uuid = uuid;
+    this.fretronCode = fretronCode;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -95,6 +101,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 13: return apiKey;
     case 14: return consentProvider;
     case 15: return operator;
+    case 16: return uuid;
+    case 17: return fretronCode;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -119,6 +127,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     case 13: apiKey = (java.lang.String)value$; break;
     case 14: consentProvider = (java.lang.String)value$; break;
     case 15: operator = (java.lang.String)value$; break;
+    case 16: uuid = (java.lang.String)value$; break;
+    case 17: fretronCode = (java.lang.Integer)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -380,6 +390,38 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'uuid' field.
+   * @return The value of the 'uuid' field.
+   */
+  public java.lang.String getUuid() {
+    return uuid;
+  }
+
+  /**
+   * Sets the value of the 'uuid' field.
+   * @param value the value to set.
+   */
+  public void setUuid(java.lang.String value) {
+    this.uuid = value;
+  }
+
+  /**
+   * Gets the value of the 'fretronCode' field.
+   * @return The value of the 'fretronCode' field.
+   */
+  public java.lang.Integer getFretronCode() {
+    return fretronCode;
+  }
+
+  /**
+   * Sets the value of the 'fretronCode' field.
+   * @param value the value to set.
+   */
+  public void setFretronCode(java.lang.Integer value) {
+    this.fretronCode = value;
+  }
+
+  /**
    * Creates a new LBSResult RecordBuilder.
    * @return A new LBSResult RecordBuilder
    */
@@ -427,6 +469,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String apiKey;
     private java.lang.String consentProvider;
     private java.lang.String operator;
+    private java.lang.String uuid;
+    private java.lang.Integer fretronCode;
 
     /** Creates a new Builder */
     private Builder() {
@@ -503,6 +547,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         this.operator = data().deepCopy(fields()[15].schema(), other.operator);
         fieldSetFlags()[15] = true;
       }
+      if (isValidValue(fields()[16], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[16].schema(), other.uuid);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.fretronCode)) {
+        this.fretronCode = data().deepCopy(fields()[17].schema(), other.fretronCode);
+        fieldSetFlags()[17] = true;
+      }
     }
 
     /**
@@ -574,6 +626,14 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[15], other.operator)) {
         this.operator = data().deepCopy(fields()[15].schema(), other.operator);
         fieldSetFlags()[15] = true;
+      }
+      if (isValidValue(fields()[16], other.uuid)) {
+        this.uuid = data().deepCopy(fields()[16].schema(), other.uuid);
+        fieldSetFlags()[16] = true;
+      }
+      if (isValidValue(fields()[17], other.fretronCode)) {
+        this.fretronCode = data().deepCopy(fields()[17].schema(), other.fretronCode);
+        fieldSetFlags()[17] = true;
       }
     }
 
@@ -1201,6 +1261,84 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'uuid' field.
+      * @return The value.
+      */
+    public java.lang.String getUuid() {
+      return uuid;
+    }
+
+    /**
+      * Sets the value of the 'uuid' field.
+      * @param value The value of 'uuid'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setUuid(java.lang.String value) {
+      validate(fields()[16], value);
+      this.uuid = value;
+      fieldSetFlags()[16] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'uuid' field has been set.
+      * @return True if the 'uuid' field has been set, false otherwise.
+      */
+    public boolean hasUuid() {
+      return fieldSetFlags()[16];
+    }
+
+
+    /**
+      * Clears the value of the 'uuid' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearUuid() {
+      uuid = null;
+      fieldSetFlags()[16] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'fretronCode' field.
+      * @return The value.
+      */
+    public java.lang.Integer getFretronCode() {
+      return fretronCode;
+    }
+
+    /**
+      * Sets the value of the 'fretronCode' field.
+      * @param value The value of 'fretronCode'.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder setFretronCode(java.lang.Integer value) {
+      validate(fields()[17], value);
+      this.fretronCode = value;
+      fieldSetFlags()[17] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'fretronCode' field has been set.
+      * @return True if the 'fretronCode' field has been set, false otherwise.
+      */
+    public boolean hasFretronCode() {
+      return fieldSetFlags()[17];
+    }
+
+
+    /**
+      * Clears the value of the 'fretronCode' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.LBSResult.Builder clearFretronCode() {
+      fretronCode = null;
+      fieldSetFlags()[17] = false;
+      return this;
+    }
+
     @Override
     public LBSResult build() {
       try {
@@ -1221,6 +1359,8 @@ public class LBSResult extends org.apache.avro.specific.SpecificRecordBase imple
         record.apiKey = fieldSetFlags()[13] ? this.apiKey : (java.lang.String) defaultValue(fields()[13]);
         record.consentProvider = fieldSetFlags()[14] ? this.consentProvider : (java.lang.String) defaultValue(fields()[14]);
         record.operator = fieldSetFlags()[15] ? this.operator : (java.lang.String) defaultValue(fields()[15]);
+        record.uuid = fieldSetFlags()[16] ? this.uuid : (java.lang.String) defaultValue(fields()[16]);
+        record.fretronCode = fieldSetFlags()[17] ? this.fretronCode : (java.lang.Integer) defaultValue(fields()[17]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

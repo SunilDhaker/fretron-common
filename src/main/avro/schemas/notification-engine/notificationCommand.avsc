@@ -208,6 +208,17 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+         "name": "emailTags",
+          "type": [
+            "null",
+            {
+              "type": "array",
+              "items": "string"
+            }
+          ],
+          "default": null
+       }
   ]
 }
