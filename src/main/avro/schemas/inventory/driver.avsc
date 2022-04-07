@@ -177,7 +177,15 @@
                                                           "string"
                                                         ],
                                                         "default": null
-                                                      }
+                                                      },
+    {
+      "name": "aadharNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
 
   ]
 }
