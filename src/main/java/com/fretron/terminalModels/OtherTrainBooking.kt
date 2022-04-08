@@ -5,10 +5,12 @@ import com.google.gson.GsonBuilder
 
 data class OtherTrainBooking(
     var operatorName: String?,
-    var quantity: StandardMeasurement?
+    var quantity: StandardMeasurement?,
+    var tripId : String? ,
+    var terminalId : String?
 ) {
 
-    constructor() : this(null, null)
+    constructor() : this(operatorName = null, quantity =  null , tripId = null , terminalId = null)
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)

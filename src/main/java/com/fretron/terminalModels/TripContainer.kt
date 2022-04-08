@@ -2,7 +2,7 @@ package com.fretron.terminalModels
 
 import com.google.gson.GsonBuilder
 
-data class TrainContainer(
+data class TripContainer(
     var containerNumber: String?,
     var containerId: String?,
     var originTerminal: ResourceInfo?,

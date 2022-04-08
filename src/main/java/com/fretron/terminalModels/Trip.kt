@@ -1,19 +1,18 @@
 package com.fretron.terminalModels
 
-import com.fretron.Model.ShipmentStage
 import com.fretron.Model.StandardMeasurement
 import com.google.gson.GsonBuilder
 
-data class TrainTrip(
+data class Trip(
     var uuid: String?,
     var orgId: String?,
     var status: String?,
     var tripType: String?,
-    var tripCategory: String?,
+    var containerizationType: String?,
     var tripNumber: String?,
     var etd: Long?,
     var originalEtd: Long?,
-    var stages: List<ShipmentStage>?,
+    var stages: List<TripStage>?,
     var trainNumber: String?,
     var trainOwner: String?,
     var capacityUtilizationType: List<String>?,
@@ -21,9 +20,8 @@ data class TrainTrip(
     var trainPossibleUtilization: StandardMeasurement?,
     var rRNumber: String?,
     var fNRNumber: String?,
-    var otherBooking: OtherTrainBooking?,
     var referenceTrainInfo: ReferenceTrainInfo?,
-    var containers: List<TrainContainer>?,
+    var containers: List<TripContainer>?,
     var consignments: List<TripCn>?,
     var shipments: List<TripSh>?
 ) {
@@ -32,7 +30,7 @@ data class TrainTrip(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null, null
+        null, null
     )
 
     override fun toString(): String {
