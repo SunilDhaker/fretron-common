@@ -7,10 +7,12 @@ data class OtherTrainBooking(
     var operatorName: String?,
     var quantity: StandardMeasurement?,
     var tripId : String? ,
-    var terminalId : String?
+    var terminalId : String?,
+    var uuid: String?
 ) {
 
-    constructor() : this(operatorName = null, quantity =  null , tripId = null , terminalId = null)
+    constructor() : this(operatorName = null, quantity =  null , tripId = null , terminalId = null,
+    uuid = null)
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
