@@ -176,6 +176,14 @@
         "com.fretron.Model.OrgOffice"
       ],
       "default": null
-    }
+    },
+    {
+          "name": "unPlannedTransShipmentReason",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+     }
   ]
 }
