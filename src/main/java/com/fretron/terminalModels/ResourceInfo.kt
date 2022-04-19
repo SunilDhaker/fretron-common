@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder
 
 data class ResourceInfo(
     var resourceId: String?,
-    val resourceType: String?,
+    var resourceType: String?,
     var resourceIdentifier: String?,
     var resourceExtId: String?
 ) {

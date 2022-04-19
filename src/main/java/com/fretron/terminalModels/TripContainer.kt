@@ -12,12 +12,14 @@ data class TripContainer(
     var shipmentInfo: ResourceInfo?,
     var currentAssignedResource: ResourceInfo?,
     var nextPossibleActions: List<String>?,
-    var urgencyType: String?
+    var urgencyType: String?,
+    var isSealed : Boolean?,
+    var sealNumber : String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null,
-        null, null, null, null
+        null, null, null, null , null ,null
     )
 
     override fun toString(): String {
