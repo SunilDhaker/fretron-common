@@ -23,14 +23,15 @@ data class Trip(
     var referenceTrainInfo: ReferenceTrainInfo?,
     var containers: List<TripContainer>?,
     var consignments: List<TripCn>?,
-    var shipments: List<TripSh>?
+    var shipments: List<TripSh>?,
+    var tripCreationDate : Long?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null
+        null, null , null
     )
 
     override fun toString(): String {
