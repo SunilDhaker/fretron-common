@@ -4,6 +4,9 @@ import com.google.gson.GsonBuilder
 
 data class TripContainer(
     var containerNumber: String?,
+    var containerType : String?,
+    var containerOwner:String?,
+    var containerSize:Int?,
     var containerId: String?,
     var originTerminal: ResourceInfo?,
     var destinationTerminal: ResourceInfo?,
@@ -18,7 +21,7 @@ data class TripContainer(
 ) {
 
     constructor() : this(
-        null, null, null, null, null, null,
+        null , null ,null, null, null, null, null, null, null,
         null, null, null, null , null ,null
     )
 
