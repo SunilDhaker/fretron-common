@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5060860785211793936L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"originLegId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFullyUtilized\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = -2475431062786830080L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SalesOrderMapping\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"fuMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LegWiseFuMapping\",\"fields\":[{\"name\":\"legId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fuLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"executionPlanId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"legStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"consignmentLineItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"originLegId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFullyUtilized\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"containerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orderId;
@@ -24,6 +24,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.lang.String source;
   @Deprecated public java.lang.String originLegId;
   @Deprecated public java.lang.Boolean isFullyUtilized;
+  @Deprecated public java.lang.String containerId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -45,8 +46,9 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
    * @param source The new value for source
    * @param originLegId The new value for originLegId
    * @param isFullyUtilized The new value for isFullyUtilized
+   * @param containerId The new value for containerId
    */
-  public SalesOrderMapping(java.lang.String uuid, java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity, java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings, java.lang.String consignmentLineItemId, java.lang.String source, java.lang.String originLegId, java.lang.Boolean isFullyUtilized) {
+  public SalesOrderMapping(java.lang.String uuid, java.lang.String orderId, java.lang.String lineItemId, java.lang.String legType, java.lang.String consignmentId, com.fretron.Model.StandardMeasurement quantity, java.util.List<com.fretron.Model.LegWiseFuMapping> fuMappings, java.lang.String consignmentLineItemId, java.lang.String source, java.lang.String originLegId, java.lang.Boolean isFullyUtilized, java.lang.String containerId) {
     this.uuid = uuid;
     this.orderId = orderId;
     this.lineItemId = lineItemId;
@@ -58,6 +60,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     this.source = source;
     this.originLegId = originLegId;
     this.isFullyUtilized = isFullyUtilized;
+    this.containerId = containerId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -75,6 +78,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     case 8: return source;
     case 9: return originLegId;
     case 10: return isFullyUtilized;
+    case 11: return containerId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -94,6 +98,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     case 8: source = (java.lang.String)value$; break;
     case 9: originLegId = (java.lang.String)value$; break;
     case 10: isFullyUtilized = (java.lang.Boolean)value$; break;
+    case 11: containerId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -275,6 +280,22 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'containerId' field.
+   * @return The value of the 'containerId' field.
+   */
+  public java.lang.String getContainerId() {
+    return containerId;
+  }
+
+  /**
+   * Sets the value of the 'containerId' field.
+   * @param value the value to set.
+   */
+  public void setContainerId(java.lang.String value) {
+    this.containerId = value;
+  }
+
+  /**
    * Creates a new SalesOrderMapping RecordBuilder.
    * @return A new SalesOrderMapping RecordBuilder
    */
@@ -318,6 +339,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.String source;
     private java.lang.String originLegId;
     private java.lang.Boolean isFullyUtilized;
+    private java.lang.String containerId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -377,6 +399,10 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
         this.isFullyUtilized = data().deepCopy(fields()[10].schema(), other.isFullyUtilized);
         fieldSetFlags()[10] = true;
       }
+      if (isValidValue(fields()[11], other.containerId)) {
+        this.containerId = data().deepCopy(fields()[11].schema(), other.containerId);
+        fieldSetFlags()[11] = true;
+      }
     }
 
     /**
@@ -429,6 +455,10 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       if (isValidValue(fields()[10], other.isFullyUtilized)) {
         this.isFullyUtilized = data().deepCopy(fields()[10].schema(), other.isFullyUtilized);
         fieldSetFlags()[10] = true;
+      }
+      if (isValidValue(fields()[11], other.containerId)) {
+        this.containerId = data().deepCopy(fields()[11].schema(), other.containerId);
+        fieldSetFlags()[11] = true;
       }
     }
 
@@ -896,6 +926,45 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'containerId' field.
+      * @return The value.
+      */
+    public java.lang.String getContainerId() {
+      return containerId;
+    }
+
+    /**
+      * Sets the value of the 'containerId' field.
+      * @param value The value of 'containerId'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder setContainerId(java.lang.String value) {
+      validate(fields()[11], value);
+      this.containerId = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'containerId' field has been set.
+      * @return True if the 'containerId' field has been set, false otherwise.
+      */
+    public boolean hasContainerId() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'containerId' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SalesOrderMapping.Builder clearContainerId() {
+      containerId = null;
+      fieldSetFlags()[11] = false;
+      return this;
+    }
+
     @Override
     public SalesOrderMapping build() {
       try {
@@ -915,6 +984,7 @@ public class SalesOrderMapping extends org.apache.avro.specific.SpecificRecordBa
         record.source = fieldSetFlags()[8] ? this.source : (java.lang.String) defaultValue(fields()[8]);
         record.originLegId = fieldSetFlags()[9] ? this.originLegId : (java.lang.String) defaultValue(fields()[9]);
         record.isFullyUtilized = fieldSetFlags()[10] ? this.isFullyUtilized : (java.lang.Boolean) defaultValue(fields()[10]);
+        record.containerId = fieldSetFlags()[11] ? this.containerId : (java.lang.String) defaultValue(fields()[11]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
