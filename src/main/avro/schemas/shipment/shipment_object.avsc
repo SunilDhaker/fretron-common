@@ -304,6 +304,15 @@
                                                     ],
                                              "default": null
 
-                                             }
+                                             },
+                                             {
+                                                                                        "name": "runningStatus",
+                                                                                        "type": [
+                                                                                                   "null",
+                                                                                                   "string"
+                                                                                                 ],
+                                                                                          "default": null
+
+                                                                                          }
     ]
   }
