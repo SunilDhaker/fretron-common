@@ -304,6 +304,24 @@
                                                     ],
                                              "default": null
 
-                                             }
+                                             },
+                                             {
+                                                                                        "name": "runningStatus",
+                                                                                        "type": [
+                                                                                                   "null",
+                                                                                                   "string"
+                                                                                                 ],
+                                                                                          "default": null
+
+                                                                                          },
+                                                                                                                                       {
+                                                                                                                                                                                  "name": "delayReason",
+                                                                                                                                                                                  "type": [
+                                                                                                                                                                                             "null",
+                                                                                                                                                                                             "string"
+                                                                                                                                                                                           ],
+                                                                                                                                                                                    "default": null
+
+                                                                                                                                                                                    }
     ]
   }
