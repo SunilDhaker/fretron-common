@@ -13,6 +13,7 @@ data class TripCn(
     var consignmentNumber: String?,
     var consignee: LiteBusinessPartner?,
     var consigner: LiteBusinessPartner?,
+    var customer : LiteBusinessPartner?,
     var originTerminal: ResourceInfo?,
     var destinationTerminal: ResourceInfo?,
     var currentTerminal: ResourceInfo?,
@@ -36,7 +37,7 @@ data class TripCn(
         null, null, null, null, null, null,
         null, null, null, null, null, null,
         null, null, null, null, null, null,
-        null, null, null, null, null, null
+        null, null, null, null, null, null ,null
     )
 
     override fun toString(): String {
