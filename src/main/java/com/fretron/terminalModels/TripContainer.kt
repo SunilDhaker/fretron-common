@@ -26,13 +26,15 @@ data class TripContainer(
     var status: String?,
     var expectedReceiveDate: Long?,
     var customerHandoffDate: Long?,
-    var depositDate: Long?
+    var depositDate: Long?,
+    var assignedOn: Long?,
+    var targetDeliveryDate: Long?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null, null,
         null, null, null, null, null, null, null, null, null, null,
-        null
+        null, null, null
     )
 
     override fun toString(): String {
