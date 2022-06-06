@@ -2,6 +2,7 @@ package com.fretron.terminalModels
 
 import com.fretron.Model.LitePosition
 import com.fretron.Model.StandardMeasurement
+import com.fretron.Model.Updates
 import com.google.gson.GsonBuilder
 
 data class Trip(
@@ -20,23 +21,24 @@ data class Trip(
     var trainActualCapacity: StandardMeasurement?,
     var trainPossibleUtilization: StandardMeasurement?,
     var rRNumber: String?,
-    var rrDate : Long?,
+    var rrDate: Long?,
     var fNRNumber: String?,
     var referenceTrainInfo: ReferenceTrainInfo?,
     var containers: List<TripContainer>?,
     var consignments: List<TripCn>?,
     var shipments: List<TripSh>?,
-    var tripCreationDate : Long?,
-    var imei : String? ,
-    var currentLocation : LitePosition? ,
-    var trackingStatus : String?
+    var tripCreationDate: Long?,
+    var imei: String?,
+    var currentLocation: LitePosition?,
+    var trackingStatus: String?,
+    var updates: Updates?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null , null , null ,null , null ,null
+        null, null, null, null, null, null, null, null
     )
 
     override fun toString(): String {

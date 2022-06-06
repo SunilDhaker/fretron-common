@@ -11,6 +11,10 @@ data class TripStage(
     var type: String?,
     var arrivalTime: Long?,
     var departureTime: Long?,
+    var loadingStartTime: Long?,
+    var loadingEndTime: Long?,
+    var unloadingStartTime: Long?,
+    var unloadingEndTime: Long?,
     var status: String?
 ) {
 
@@ -23,7 +27,11 @@ data class TripStage(
         type = null,
         arrivalTime = null,
         departureTime = null,
-        status = null
+        status = null,
+        loadingEndTime = null,
+        loadingStartTime = null,
+        unloadingEndTime = null,
+        unloadingStartTime = null
     )
 
     override fun toString(): String {
