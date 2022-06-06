@@ -39,3 +39,8 @@ data class TripContainer(
         return GsonBuilder().serializeNulls().create().toJson(this)
     }
 }
+
+
+enum class TripContainerStatus {
+    Active, InActive, Pending, Deposited
+}
