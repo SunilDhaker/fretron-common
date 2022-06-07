@@ -7,6 +7,7 @@ import com.google.gson.GsonBuilder
 
 data class TripCn(
     var uuid: String?,
+    var consignmentId : String? ,
     var orgId: String?,
     var externalId: String?,
     var tripId: String?,
@@ -34,7 +35,7 @@ data class TripCn(
 ) {
 
     constructor() : this(
-        null, null, null, null, null, null,
+        null , null, null, null, null, null, null,
         null, null, null, null, null, null,
         null, null, null, null, null, null,
         null, null, null, null, null, null ,null
