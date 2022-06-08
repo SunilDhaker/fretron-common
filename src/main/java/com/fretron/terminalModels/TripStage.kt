@@ -15,7 +15,8 @@ data class TripStage(
     var loadingEndTime: Long?,
     var unloadingStartTime: Long?,
     var unloadingEndTime: Long?,
-    var status: String?
+    var status: String?,
+    var secondaryStatus : String?
 ) {
 
     constructor() : this(
@@ -31,7 +32,8 @@ data class TripStage(
         loadingEndTime = null,
         loadingStartTime = null,
         unloadingEndTime = null,
-        unloadingStartTime = null
+        unloadingStartTime = null,
+        secondaryStatus = null
     )
 
     override fun toString(): String {
