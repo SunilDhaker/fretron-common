@@ -16,7 +16,9 @@ data class TripStage(
     var unloadingStartTime: Long?,
     var unloadingEndTime: Long?,
     var status: String?,
+    var secondaryStatus : String?,
     var eta:Long?
+
 ) {
 
     constructor() : this(
@@ -33,6 +35,7 @@ data class TripStage(
         loadingStartTime = null,
         unloadingEndTime = null,
         unloadingStartTime = null,
+        secondaryStatus = null,
         eta = null
     )
 
