@@ -22,4 +22,8 @@ data class ResourceInfo(
             throw NotAllowedException("Bad Request, Invalid resource info.")
         }
     }
+
+    fun isValid():Boolean{
+        return !(resourceId.isNullOrBlank() || resourceType.isNullOrBlank() || resourceIdentifier.isNullOrBlank())
+    }
 }

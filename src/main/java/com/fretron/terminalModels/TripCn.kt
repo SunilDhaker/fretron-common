@@ -7,7 +7,7 @@ import com.google.gson.GsonBuilder
 
 data class TripCn(
     var uuid: String?,
-    var consignmentId : String? ,
+    var consignmentId : String?,
     var orgId: String?,
     var externalId: String?,
     var tripId: String?,
@@ -19,8 +19,8 @@ data class TripCn(
     var destinationTerminal: ResourceInfo?,
     var currentTerminal: ResourceInfo?,
     var containerInfo: List<ResourceInfo>?,
-    var orderMappings: List<SalesOrderMapping>?,
-    var plannedMapping: List<SalesOrderMapping>?,
+    var orderMappings: MutableList<SalesOrderMapping> = mutableListOf(),
+    var plannedMapping: MutableList<SalesOrderMapping> = mutableListOf(),
     var pendingQuantity: StandardMeasurement?,
     var associatedShipments: List<String>?,
     var orderNumber: String?,
@@ -37,7 +37,7 @@ data class TripCn(
     constructor() : this(
         null , null, null, null, null, null, null,
         null, null, null, null, null, null,
-        null, null, null, null, null, null,
+        mutableListOf(), mutableListOf(), null, null, null, null,
         null, null, null, null, null, null ,null
     )
 
