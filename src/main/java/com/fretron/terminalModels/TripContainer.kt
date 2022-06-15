@@ -30,13 +30,14 @@ data class TripContainer(
     var assignedOn: Long?,
     var targetDeliveryDate: Long?,
     var stuffingAt:String?,
-    var deStuffingAt:String?
+    var deStuffingAt:String?,
+    var orgId : String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null, null,
         mutableListOf(), null, null, null, null, null, null, null, null, null,
-        null, null, null,null,null
+        null, null, null,null,null , null
     )
 
     override fun toString(): String {

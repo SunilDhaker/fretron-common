@@ -2,6 +2,30 @@ package com.fretron.terminalModels
 
 import com.google.gson.GsonBuilder
 
+//data class TripSh(
+//    var uuid: String?,
+//    var shipmentNumber: String?,
+//    var externalId: String?,
+//    var fuItemId: String?,
+//    var tripId : String?,
+//    var tripInfo: ResourceInfo?,
+//    var containerizationType: String?
+//) {
+//
+//}
+//
+//data class TripShStage(
+//    var terminalInfo: ResourceInfo?,
+//    var resourcePickup: List<ResourceInfo>,
+//    var resourceDropped: List<ResourceInfo>,
+//    var consignmentPickups: List<ResourceInfo>,
+//    var consignmentDropped: List<ResourceInfo>
+//
+//
+//) {
+//
+//}
+
 data class TripSh(
     var uuid: String?,
     var shipmentNumber: String?,
