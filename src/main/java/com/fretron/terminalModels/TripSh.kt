@@ -7,15 +7,16 @@ data class TripSh(
     var uuid: String?,
     var shipmentNumber: String?,
     var externalId: String?,
+    var orgId : String? ,
     var fuItemId: String?,
-    var stages: List<TripShStage>,
+    var stages: MutableList<TripShStage>,
     var tripInfo: ResourceInfo?,
     var containerizationType: String?,
     var partners : List<PartnerInfo>
 ) {
 
     constructor() : this(
-        null, null, null, null, emptyList(), null,
+        null, null , null, null, null, mutableListOf(), null,
         null , emptyList()
     )
 
