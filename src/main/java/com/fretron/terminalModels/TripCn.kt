@@ -41,6 +41,8 @@ data class TripCn(
         null, null, null, null, null, null ,null
     )
 
+
+
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
     }

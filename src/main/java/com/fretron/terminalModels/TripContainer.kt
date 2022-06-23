@@ -43,6 +43,14 @@ data class TripContainer(
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
     }
+
+    fun toResourceInfo() : ResourceInfo{
+        return ResourceInfo().also {
+            it.resourceId = containerId
+            it.resourceIdentifier = containerNumber
+            it.resourceType = "CONTAINER"
+        }
+    }
 }
 
 
