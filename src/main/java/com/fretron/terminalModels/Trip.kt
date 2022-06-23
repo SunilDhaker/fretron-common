@@ -44,4 +44,13 @@ data class Trip(
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
     }
+
+    fun toResourceInfo() : ResourceInfo{
+        return ResourceInfo().also {
+            it.resourceId = this.uuid
+            it.resourceIdentifier = this.tripNumber
+            it.resourceType = "Trip"
+            it.resourceExtId = this.tripNumber
+        }
+    }
 }
