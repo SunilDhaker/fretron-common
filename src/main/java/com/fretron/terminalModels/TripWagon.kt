@@ -29,6 +29,13 @@ data class TripWagon(
         mutableListOf(), null, null, null, null, null, null, null
 
     )
+    fun toResourceInfo() : ResourceInfo{
+        return ResourceInfo().also {
+            it.resourceId = wagonId
+            it.resourceIdentifier = wagonNumber
+            it.resourceType = "WAGON"
+        }
+    }
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)

@@ -23,6 +23,7 @@ data class LiteConsignment(
 ){
     constructor():this(uuid = null,consignmentNo = null,contractToParty = null,orderMappings = emptyList(), lineItems = emptyList(), loadInfo = null,consignmentDate = null,orderNo = null , consignee = null , consignor = null)
 
+
     override fun toString(): String {
         return JSONObject()
             .put("uuid",this.uuid ?: JSONObject.NULL)
