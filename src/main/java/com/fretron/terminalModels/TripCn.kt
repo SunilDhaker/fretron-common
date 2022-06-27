@@ -22,7 +22,7 @@ data class TripCn(
     var orderMappings: MutableList<SalesOrderMapping> = mutableListOf(),
     var plannedMapping: MutableList<SalesOrderMapping> = mutableListOf(),
     var pendingQuantity: StandardMeasurement?,
-    var associatedShipments: List<String>?,
+    var shipmentId: String?,
     var orderNumber: String?,
     var lineItems: List<ConsignmentLineItem>?,
     var nextPossibleActions: List<String>?,
