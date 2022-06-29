@@ -31,7 +31,8 @@ data class Trip(
     var imei: String?,
     var currentLocation: LitePosition?,
     var trackingStatus: String?,
-    var updates: Updates?
+    var updates: Updates?,
+    var utilizedQuantity:StandardMeasurement?=null
 ) {
 
     constructor() : this(
