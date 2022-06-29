@@ -12,12 +12,13 @@ data class TripSh(
     var stages: MutableList<TripShStage>,
     var tripInfo: ResourceInfo?,
     var containerizationType: String?,
-    var partners: List<PartnerInfo>
+    var partners: List<PartnerInfo>,
+    var status:String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, mutableListOf(), null,
-        null, emptyList()
+        null, emptyList(),null
     )
 
     fun toResourceInfo() : ResourceInfo{
