@@ -31,14 +31,15 @@ data class TripCn(
     var stuffingAt: String?,
     var deStuffingAt: String?,
     var scope: String?,
-    var urgencyType: String?
+    var urgencyType: String?,
+    var status: String?
 ) {
 
     constructor() : this(
         null , null, null, null, null, null, null,
         null, null, null, null, null, null,
         mutableListOf(), mutableListOf(), null, null, null, null,
-        null, null, null, null, null, null ,null
+        null, null, null, null, null, null ,null , null
     )
 
 
@@ -58,4 +59,9 @@ data class LiteBusinessPartner(
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
     }
+}
+
+
+enum class TripCnStatus{
+    Planned , OnTrip ,CustomerHandoff , Completed
 }
