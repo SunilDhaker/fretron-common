@@ -32,14 +32,15 @@ data class TripCn(
     var deStuffingAt: String?,
     var scope: String?,
     var urgencyType: String?,
-    var status: String?
+    var status: String?,
+    var targetDeliveryDate : Long?
 ) {
 
     constructor() : this(
         null , null, null, null, null, null, null,
         null, null, null, null, null, null,
         mutableListOf(), mutableListOf(), null, null, null, null,
-        null, null, null, null, null, null ,null , null
+        null, null, null, null, null, null ,null , null , null
     )
 
 
