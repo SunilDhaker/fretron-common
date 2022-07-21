@@ -17,7 +17,9 @@ data class TripStage(
     var unloadingEndTime: Long?,
     var status: String?,
     var secondaryStatus : String?,
-    var eta:Long?
+    var eta:Long?,
+    var inspectionEndTime:Long?,
+    var completedOn : Long?
 
 ) {
 
@@ -36,7 +38,8 @@ data class TripStage(
         unloadingEndTime = null,
         unloadingStartTime = null,
         secondaryStatus = null,
-        eta = null
+        eta = null,
+        inspectionEndTime =null , completedOn=null
     )
 
     override fun toString(): String {
