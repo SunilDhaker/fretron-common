@@ -63,13 +63,12 @@ enum class TripContainerStatus {
 
 data class ShipmentInfo(
     var resourceId: String?,
-    var resourceType: String?,
     var resourceIdentifier: String?,
     var resourceExtId: String?,
     var vendor : LiteBusinessPartner? ,
     var vehicleRegistrationNumber : String?
 ) {
-    constructor() : this(null, null, null, null , null , null)
+    constructor() : this(null,  null, null , null , null)
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
@@ -77,13 +76,13 @@ data class ShipmentInfo(
 
     @Throws(NotAllowedException::class)
     fun validateOrThrow() {
-        if (resourceId.isNullOrBlank() || resourceType.isNullOrBlank() || resourceIdentifier.isNullOrBlank()) {
+        if (resourceId.isNullOrBlank()  || resourceIdentifier.isNullOrBlank()) {
             throw NotAllowedException("Bad Request, Invalid resource info.")
         }
     }
 
     fun isValid(): Boolean {
-        return !(resourceId.isNullOrBlank() || resourceType.isNullOrBlank() || resourceIdentifier.isNullOrBlank())
+        return !(resourceId.isNullOrBlank()  || resourceIdentifier.isNullOrBlank())
     }
 
 }

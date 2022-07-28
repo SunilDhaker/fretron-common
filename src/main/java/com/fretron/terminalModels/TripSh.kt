@@ -13,20 +13,44 @@ data class TripSh(
     var tripInfo: ResourceInfo?,
     var containerizationType: String?,
     var partners: List<PartnerInfo>,
-    var status:String?
+    var status: String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, mutableListOf(), null,
-        null, emptyList(),null
+        null, emptyList(), null
     )
 
-    fun toResourceInfo() : ResourceInfo{
+    fun toResourceInfo(): ResourceInfo {
         return ResourceInfo().also {
             it.resourceId = uuid
             it.resourceIdentifier = shipmentNumber
             it.resourceType = "SHIPMENT"
             it.resourceExtId = externalId
+        }
+    }
+
+    fun toShipmentInfo(): ShipmentInfo {
+        return ShipmentInfo().also {
+            it.resourceId = uuid
+            it.resourceIdentifier = shipmentNumber
+            it.resourceExtId = externalId
+            it.vehicleRegistrationNumber = null
+            if (partners.firstOrNull()?.partner != null) {
+                val p = partners.first().partner!!
+                it.vendor = LiteBusinessPartner().apply {
+                    this.uuid = p.getUuid()
+                    this.externalId = p.getExternalId()
+                    this.placeId = if (p.getPlaces().isNullOrEmpty()) null else p.getPlaces()[0]?.getPlaceId()
+                    this.placeName = if (p.getPlaces().isNullOrEmpty()) null else p.getPlaces()[0]?.getName()
+                    this.placeExternalId =
+                        if (p.getPlaces().isNullOrEmpty()) null else p.getPlaces()[0]?.getExternalId()
+                    this.name = p.getName()
+                    this.address = if (p.getPlaces().isNullOrEmpty()) null else p.getPlaces()[0]?.getAddress()
+                }
+
+            }
+
         }
     }
 
