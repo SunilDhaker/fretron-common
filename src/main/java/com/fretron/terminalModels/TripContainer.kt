@@ -1,6 +1,7 @@
 package com.fretron.terminalModels
 
 import com.google.gson.GsonBuilder
+import javax.ws.rs.NotAllowedException
 
 //status : Active , InActive , Pending , Deposited
 /*
@@ -17,7 +18,7 @@ data class TripContainer(
     var destinationTerminal: ResourceInfo?,
     var tripInfo: ResourceInfo?,
     var consignments: MutableList<LiteConsignment>,
-    var shipmentInfo: ResourceInfo?,
+    var shipmentInfo: ShipmentInfo?,
     var currentAssignedResource: ResourceInfo?,
     var nextPossibleActions: List<String>?,
     var urgencyType: String?,
@@ -29,22 +30,23 @@ data class TripContainer(
     var depositDate: Long?,
     var assignedOn: Long?,
     var targetDeliveryDate: Long?,
-    var stuffingAt:String?,
-    var deStuffingAt:String?,
-    var orgId : String?
+    var stuffingAt: String?,
+    var deStuffingAt: String?,
+    var orgId: String?
+
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null, null,
         mutableListOf(), null, null, null, null, null, null, null, null, null,
-        null, null, null,null,null , null
+        null, null, null, null, null, null
     )
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
     }
 
-    fun toResourceInfo() : ResourceInfo{
+    fun toResourceInfo(): ResourceInfo {
         return ResourceInfo().also {
             it.resourceId = containerId
             it.resourceIdentifier = containerNumber
@@ -56,4 +58,32 @@ data class TripContainer(
 
 enum class TripContainerStatus {
     Active, InActive, Pending, Deposited
+}
+
+
+data class ShipmentInfo(
+    var resourceId: String?,
+    var resourceType: String?,
+    var resourceIdentifier: String?,
+    var resourceExtId: String?,
+    var vendor : LiteBusinessPartner? ,
+    var vehicleRegistrationNumber : String?
+) {
+    constructor() : this(null, null, null, null , null , null)
+
+    override fun toString(): String {
+        return GsonBuilder().serializeNulls().create().toJson(this)
+    }
+
+    @Throws(NotAllowedException::class)
+    fun validateOrThrow() {
+        if (resourceId.isNullOrBlank() || resourceType.isNullOrBlank() || resourceIdentifier.isNullOrBlank()) {
+            throw NotAllowedException("Bad Request, Invalid resource info.")
+        }
+    }
+
+    fun isValid(): Boolean {
+        return !(resourceId.isNullOrBlank() || resourceType.isNullOrBlank() || resourceIdentifier.isNullOrBlank())
+    }
+
 }

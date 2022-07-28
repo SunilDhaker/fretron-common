@@ -18,9 +18,10 @@ data class LiteConsignment(
     var lineItems : List<ConsignmentLineItem>,
     var consignmentDate : Long?,
     var orderNo : String?,
-    var quantity:StandardMeasurement?=null
+    var quantity:StandardMeasurement?=null,
+    var scope : String?
 ){
-    constructor():this(uuid = null,consignmentNo = null,contractToParty = null,orderMappings = emptyList(), lineItems = emptyList(),consignmentDate = null,orderNo = null , consignee = null , consignor = null)
+    constructor():this(uuid = null,consignmentNo = null,contractToParty = null,orderMappings = emptyList(), lineItems = emptyList(),consignmentDate = null,orderNo = null , consignee = null , consignor = null , scope = null)
 
 
     override fun toString(): String {
@@ -34,6 +35,7 @@ data class LiteConsignment(
             .put("lineItems",JSONArray(this.lineItems.toString()))
             .put("consignmentDate",this.consignmentDate ?: JSONObject.NULL)
             .put("orderNo",this.orderNo ?: JSONObject.NULL)
+            .put("scope",this.scope ?: JSONObject.NULL)
             .put("quantity",if(this.quantity!=null) JSONObject(this.quantity.toString()) else  JSONObject.NULL)
             .toString()
     }
