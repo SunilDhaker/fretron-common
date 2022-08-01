@@ -21,12 +21,13 @@ data class TripWagon(
     var isSealed: Boolean?,
     var sealNumber: String?,
     var status: String?,
-    var orgId: String?
+    var orgId: String?,
+    var urgencyType : String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null ,0.0,null, null, null,
-        mutableListOf(), null, null, null, null, null, null, null
+        mutableListOf(), null, null, null, null, null, null, null , null
 
     )
     fun toResourceInfo() : ResourceInfo{

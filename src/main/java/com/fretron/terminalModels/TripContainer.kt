@@ -57,7 +57,7 @@ data class TripContainer(
 
 
 enum class TripContainerStatus {
-    Active, InActive, Pending, Deposited
+    Draft, Active, InActive, Pending, Deposited
 }
 
 
