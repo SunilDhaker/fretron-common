@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder
 data class TripSh(
     var uuid: String?,
     var shipmentNumber: String?,
+    var shipmentDate : Long? ,
     var externalId: String?,
     var orgId: String?,
     var fuItemId: String?,
@@ -17,7 +18,7 @@ data class TripSh(
 ) {
 
     constructor() : this(
-        null, null, null, null, null, mutableListOf(), null,
+        null, null , null, null, null, null, mutableListOf(), null,
         null, emptyList(), null
     )
 
