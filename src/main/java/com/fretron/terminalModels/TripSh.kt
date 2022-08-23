@@ -14,12 +14,13 @@ data class TripSh(
     var tripInfo: ResourceInfo?,
     var containerizationType: String?,
     var partners: List<PartnerInfo>,
-    var status: String?
+    var status: String?,
+    var isTripDTChanged : Boolean
 ) {
 
     constructor() : this(
         null, null , null, null, null, null, mutableListOf(), null,
-        null, emptyList(), null
+        null, emptyList(), null , false
     )
 
     fun toResourceInfo(): ResourceInfo {
