@@ -20,7 +20,7 @@ data class TripCn(
     var originTerminal: TerminalInfo?,
     var destinationTerminal: TerminalInfo?,
     var currentTerminal: TerminalInfo?,
-    var containerInfo: List<ResourceInfo>?,
+    var containerInfo: List<ResourceInfo>,
     var orderMappings: MutableList<SalesOrderMapping> = mutableListOf(),
     var plannedMapping: MutableList<SalesOrderMapping> = mutableListOf(),
     var pendingQuantity: StandardMeasurement?,
@@ -40,7 +40,7 @@ data class TripCn(
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
-        null, null, null, null, null, null,
+        null, null, null, null, null, emptyList(),
         mutableListOf(), mutableListOf(), null, null, null, null,
         null, null, null, null, null, null, null, null, null
     )
