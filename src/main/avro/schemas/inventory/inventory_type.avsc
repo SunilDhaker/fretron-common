@@ -88,6 +88,14 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "assignmentType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
