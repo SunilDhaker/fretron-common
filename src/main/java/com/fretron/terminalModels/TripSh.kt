@@ -1,6 +1,7 @@
 package com.fretron.terminalModels
 
 import com.fretron.Model.BuisnessPartner
+import com.fretron.Model.ResourceAlert
 import com.google.gson.GsonBuilder
 
 data class TripSh(
@@ -15,12 +16,13 @@ data class TripSh(
     var containerizationType: String?,
     var partners: List<PartnerInfo>,
     var status: String?,
-    var isTripDTChanged : Boolean
+    var isTripDTChanged : Boolean,
+    var alerts : List<ResourceAlert>
 ) {
 
     constructor() : this(
         null, null , null, null, null, null, mutableListOf(), null,
-        null, emptyList(), null , false
+        null, emptyList(), null , false , mutableListOf()
     )
 
     fun toResourceInfo(): ResourceInfo {
