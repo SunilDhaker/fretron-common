@@ -161,6 +161,23 @@
                             "string"
                           ],
                           "default": null
-                        }
+                        },
+      {
+        "name": "controllingBranchId",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+                    "name": "gateOutTime",
+                    "type": [
+                      "null",
+                      "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+                    "default": null
+                  }
     ]
   }
