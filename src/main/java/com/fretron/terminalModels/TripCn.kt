@@ -35,14 +35,16 @@ data class TripCn(
     var scope: String?,
     var urgencyType: String?,
     var status: String?,
-    var targetDeliveryDate: Long?
-) {
+    var targetDeliveryDate: Long?,
+    var legType: String?
+
+    ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null, emptyList(),
         mutableListOf(), mutableListOf(), null, null, null, null,
-        null, null, null, null, null, null, null, null, null
+        null, null, null, null, null, null, null, null, null , null
     )
 
 
