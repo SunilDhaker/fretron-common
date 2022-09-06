@@ -19,7 +19,8 @@ data class TripStage(
     var secondaryStatus : String?,
     var eta:Long?,
     var inspectionEndTime:Long?,
-    var completedOn : Long?
+    var completedOn : Long?,
+    var outgoingStatus : String?=null
 
 ) {
 
