@@ -16,7 +16,7 @@ data class TripStage(
     var unloadingStartTime: Long?,
     var unloadingEndTime: Long?,
     var status: String?,
-    var secondaryStatus : String?,
+    var incomingStatus : String?,
     var eta:Long?,
     var inspectionEndTime:Long?,
     var completedOn : Long?,
@@ -38,7 +38,7 @@ data class TripStage(
         loadingStartTime = null,
         unloadingEndTime = null,
         unloadingStartTime = null,
-        secondaryStatus = null,
+        incomingStatus = null,
         eta = null,
         inspectionEndTime =null , completedOn=null
     )
