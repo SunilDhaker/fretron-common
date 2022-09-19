@@ -32,14 +32,15 @@ data class Trip(
     var currentLocation: LitePosition?,
     var trackingStatus: String?,
     var updates: Updates?,
-    var utilizedQuantity:StandardMeasurement?=null
+    var utilizedQuantity:StandardMeasurement?=null,
+    var remarks : List<String>
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null, null, null, null, null, null, null
+        null, null, null, null, null, null, null, null , null , mutableListOf<String>()
     )
 
     override fun toString(): String {
