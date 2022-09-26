@@ -10,7 +10,7 @@ fun CustomFields.RecalculateIndexValue() {
     val valueType = this.getValueType()
     try {
         when (valueType) {
-            "string" -> {
+            "string","text" -> {
                 if (this.getFieldKey() != null && this.getFieldKey() != "") {
                     indexedField.add(this.getFieldKey() + "_" + this.getValue())
                     this.setIndexedValue(indexedField)
