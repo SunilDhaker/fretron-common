@@ -322,6 +322,14 @@
                                                                                                                                                                                            ],
                                                                                                                                                                                     "default": null
 
-                                                                                                                                                                                    }
+                                                                                                                                                                                    },
+            {
+                    "name": "billingStatus",
+                    "type": [
+                      "null",
+                      "string"
+                    ],
+                    "default": null
+                  }
     ]
   }
