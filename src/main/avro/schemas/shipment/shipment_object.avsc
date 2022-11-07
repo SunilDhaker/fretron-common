@@ -330,6 +330,42 @@
                       "string"
                     ],
                     "default": null
+                  },
+        {
+            "name": "delayReasonLastUpdateTime",
+            "type": [
+              "null",
+              "long"
+            ],
+            "logicalType": "timestamp-millis",
+            "default": null
+          },
+        {
+                    "name": "delayReasonUpdateDueTime",
+                    "type": [
+                      "null",
+                      "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+                    "default": null
+                  },
+        {
+                    "name": "delayReasonUpdateExpiryTime",
+                    "type": [
+                      "null",
+                      "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+                    "default": null
+                  },
+        {
+                    "name": "syncUpExpiryTime",
+                    "type": [
+                      "null",
+                      "long"
+                    ],
+                    "logicalType": "timestamp-millis",
+                    "default": null
                   }
     ]
   }
