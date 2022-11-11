@@ -219,6 +219,15 @@
             }
           ],
           "default": null
-       }
+       },
+    {
+      "name": "scheduleTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    }
   ]
 }
