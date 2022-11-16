@@ -33,14 +33,15 @@ data class Trip(
     var trackingStatus: String?,
     var updates: Updates?,
     var utilizedQuantity:StandardMeasurement?=null,
-    var remarks : List<String>
+    var remarks : List<String>,
+    var finalTripNumber: String?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null, null, null, null, null, null, null , null , mutableListOf<String>()
+        null, null, null, null, null, null, null, null , null , mutableListOf<String>() , null
     )
 
     override fun toString(): String {
