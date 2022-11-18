@@ -242,6 +242,22 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "whatsappContent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "whatsappMessageStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
