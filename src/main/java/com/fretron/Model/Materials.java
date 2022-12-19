@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Materials extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4326542766706070953L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1831929806611773976L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Materials\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measuredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -31,6 +31,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   @Deprecated public java.lang.String materialGroupId;
   @Deprecated public java.lang.String materialDescription;
   @Deprecated public java.lang.String partnerName;
+  @Deprecated public java.lang.Double measuredQuantity;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -59,8 +60,9 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
    * @param materialGroupId The new value for materialGroupId
    * @param materialDescription The new value for materialDescription
    * @param partnerName The new value for partnerName
+   * @param measuredQuantity The new value for measuredQuantity
    */
-  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates, java.lang.String materialType, java.lang.String materialGroup, java.lang.String controlCode, java.lang.String division, java.lang.String taxCode, java.lang.String partnerId, java.lang.String linkedMaterialId, java.lang.String materialGroupId, java.lang.String materialDescription, java.lang.String partnerName) {
+  public Materials(java.lang.String uuid, java.lang.String externalId, java.lang.String name, java.lang.String orgId, java.lang.String measurementType, java.lang.String unitOfMeasurement, java.lang.Double pricePerUnit, com.fretron.Model.Updates updates, java.lang.String materialType, java.lang.String materialGroup, java.lang.String controlCode, java.lang.String division, java.lang.String taxCode, java.lang.String partnerId, java.lang.String linkedMaterialId, java.lang.String materialGroupId, java.lang.String materialDescription, java.lang.String partnerName, java.lang.Double measuredQuantity) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.name = name;
@@ -79,6 +81,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     this.materialGroupId = materialGroupId;
     this.materialDescription = materialDescription;
     this.partnerName = partnerName;
+    this.measuredQuantity = measuredQuantity;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -103,6 +106,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 15: return materialGroupId;
     case 16: return materialDescription;
     case 17: return partnerName;
+    case 18: return measuredQuantity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +133,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     case 15: materialGroupId = (java.lang.String)value$; break;
     case 16: materialDescription = (java.lang.String)value$; break;
     case 17: partnerName = (java.lang.String)value$; break;
+    case 18: measuredQuantity = (java.lang.Double)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -422,6 +427,22 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
   }
 
   /**
+   * Gets the value of the 'measuredQuantity' field.
+   * @return The value of the 'measuredQuantity' field.
+   */
+  public java.lang.Double getMeasuredQuantity() {
+    return measuredQuantity;
+  }
+
+  /**
+   * Sets the value of the 'measuredQuantity' field.
+   * @param value the value to set.
+   */
+  public void setMeasuredQuantity(java.lang.Double value) {
+    this.measuredQuantity = value;
+  }
+
+  /**
    * Creates a new Materials RecordBuilder.
    * @return A new Materials RecordBuilder
    */
@@ -472,6 +493,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
     private java.lang.String materialGroupId;
     private java.lang.String materialDescription;
     private java.lang.String partnerName;
+    private java.lang.Double measuredQuantity;
 
     /** Creates a new Builder */
     private Builder() {
@@ -559,6 +581,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         this.partnerName = data().deepCopy(fields()[17].schema(), other.partnerName);
         fieldSetFlags()[17] = true;
       }
+      if (isValidValue(fields()[18], other.measuredQuantity)) {
+        this.measuredQuantity = data().deepCopy(fields()[18].schema(), other.measuredQuantity);
+        fieldSetFlags()[18] = true;
+      }
     }
 
     /**
@@ -639,6 +665,10 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       if (isValidValue(fields()[17], other.partnerName)) {
         this.partnerName = data().deepCopy(fields()[17].schema(), other.partnerName);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.measuredQuantity)) {
+        this.measuredQuantity = data().deepCopy(fields()[18].schema(), other.measuredQuantity);
+        fieldSetFlags()[18] = true;
       }
     }
 
@@ -1379,6 +1409,45 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
       return this;
     }
 
+    /**
+      * Gets the value of the 'measuredQuantity' field.
+      * @return The value.
+      */
+    public java.lang.Double getMeasuredQuantity() {
+      return measuredQuantity;
+    }
+
+    /**
+      * Sets the value of the 'measuredQuantity' field.
+      * @param value The value of 'measuredQuantity'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder setMeasuredQuantity(java.lang.Double value) {
+      validate(fields()[18], value);
+      this.measuredQuantity = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'measuredQuantity' field has been set.
+      * @return True if the 'measuredQuantity' field has been set, false otherwise.
+      */
+    public boolean hasMeasuredQuantity() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'measuredQuantity' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Materials.Builder clearMeasuredQuantity() {
+      measuredQuantity = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
     @Override
     public Materials build() {
       try {
@@ -1405,6 +1474,7 @@ public class Materials extends org.apache.avro.specific.SpecificRecordBase imple
         record.materialGroupId = fieldSetFlags()[15] ? this.materialGroupId : (java.lang.String) defaultValue(fields()[15]);
         record.materialDescription = fieldSetFlags()[16] ? this.materialDescription : (java.lang.String) defaultValue(fields()[16]);
         record.partnerName = fieldSetFlags()[17] ? this.partnerName : (java.lang.String) defaultValue(fields()[17]);
+        record.measuredQuantity = fieldSetFlags()[18] ? this.measuredQuantity : (java.lang.Double) defaultValue(fields()[18]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
