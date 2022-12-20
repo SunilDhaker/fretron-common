@@ -125,6 +125,11 @@
                                         "string"
                                       ],
                                       "default": null
-                                    }
+                                    },
+                                                             {
+                                                                                      "name": "measuredQuantity",
+                                                                                      "type": ["null","double"],
+                                                                                      "default": null
+                                                                                    }
   ]
  }

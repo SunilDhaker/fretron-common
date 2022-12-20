@@ -157,6 +157,22 @@
                                  }
                                ],
                                "default": null
-                             }
+                             },
+              {
+                           "name": "areaName",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         },
+              {
+                           "name": "areaId",
+                           "type": [
+                             "null",
+                             "string"
+                           ],
+                           "default": null
+                         }
   ]
 }

@@ -219,6 +219,23 @@
             }
           ],
           "default": null
-       }
+       },
+    {
+      "name": "scheduleTime",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "whatsappContent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }
