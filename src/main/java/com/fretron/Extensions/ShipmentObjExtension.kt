@@ -1,5 +1,6 @@
 package com.fretron.Extensions
 
+import com.fretron.Model.BuisnessPartner
 import com.fretron.Model.ShipmentObject
 
 

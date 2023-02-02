@@ -1,6 +1,7 @@
 package com.fretron.Extensions
 
 import com.fretron.Model.Consignment
+import com.fretron.Model.Updates
 
 fun Consignment.clean(){
     this.getConsignee()?.clean()
@@ -15,7 +16,12 @@ fun  Consignment.deepClean(){
      this.clean()
      this.getBillToParty()?.deepClean()
      this.getContractToParty()?.deepClean()
-//     this.getCustomFields()?.forEach { field->
-//         field.setAccessType(null)
-//     }
+     this.getConsignee().clean()
+     this.getConsignee()?.cleanWithBoundary()
+     this.getConsigner().cleanWithBoundary()
+     this.getUpdates().clean()
+}
+
+fun Updates.clean(){
+    this.setChanges(null)
 }
