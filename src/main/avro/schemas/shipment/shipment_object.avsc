@@ -366,6 +366,22 @@
                     ],
                     "logicalType": "timestamp-millis",
                     "default": null
-                  }
+                  },
+                        {
+                          "name": "locationTrackingStatus",
+                          "type": [
+                            "null",
+                            "string"
+                          ],
+                          "default": null
+                        },
+                {
+                  "name": "delayTrackingStatus",
+                  "type": [
+                    "null",
+                    "string"
+                  ],
+                  "default": null
+                }
     ]
   }
