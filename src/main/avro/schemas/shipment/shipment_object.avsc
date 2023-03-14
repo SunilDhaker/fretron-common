@@ -382,6 +382,15 @@
                     "string"
                   ],
                   "default": null
-                }
+                },
+                      {
+                        "name": "lastDelayCalculationTime",
+                        "type": [
+                          "null",
+                          "long"
+                        ],
+                        "logicalType": "timestamp-millis",
+                        "default": null
+                      }
     ]
   }
