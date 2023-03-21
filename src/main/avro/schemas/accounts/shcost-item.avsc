@@ -1,0 +1,62 @@
+
+
+{
+  "namespace": "com.fretron.Model",
+  "name": "ShipmentCostLineItem",
+  "type": "record",
+  "fields": [
+
+    {
+      "name": "amount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "charge",
+      "type": [
+        "null",
+        "com.fretron.Model.ChartsOfAccountLite"
+      ],
+      "default": null
+    },
+    {
+      "name": "billId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billItemId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billStatus",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
+
+
+
+
+
+
+
+

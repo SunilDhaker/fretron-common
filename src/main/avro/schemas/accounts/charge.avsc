@@ -1,0 +1,70 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "Charge",
+  "type": "record",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rateUnit",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "rate",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "base",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "amount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "amountByVendor",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "chartsOfAccount",
+      "type": [
+        "null",
+        "com.fretron.Model.ChartsOfAccountLite"
+      ],
+      "default": null
+    }
+
+  ]
+}
