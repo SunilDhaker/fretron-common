@@ -24,9 +24,9 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.commercehub.gradle.plugin:gradle-avro-plugin:0.10.0"
-
     }
 }
+
 compileKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
@@ -38,13 +38,12 @@ compileTestKotlin {
     }
 }
 
-
-
 repositories {
 
 //     maven { url "http://packages.confluent.io/maven/" }
     maven { url "https://repo.maven.apache.org/maven2" }
 }
+
 dependencies {
 
     //kotlin
@@ -55,7 +54,6 @@ dependencies {
     compile "org.json:json:20170516"
     compile "io.jsonwebtoken:jjwt:0.6.0"
     compile "com.google.code.gson:gson:2.8.5"
-
 
     //logging
     compile "log4j:log4j:1.2.17"
@@ -82,10 +80,10 @@ dependencies {
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'Common',
-                'Implementation-Version': version,
+                'Implementation-Version': archiveVersion,
                 'Main-Class': 'integrationTests.CommonRunner'
     }
-    baseName = project.name + '-all'
+    archivesBaseName = project.name + '-all'
     from sourceSets.test.output
 
     //collect all dependencies

@@ -461,6 +461,14 @@
 			"name": "category",
 			"type": ["null", "string"],
 			"default": null
+		},
+		{
+			"name": "division",
+			"type": [
+				"null",
+				"string"
+			],
+			"default": null
 		}
 	]
 }

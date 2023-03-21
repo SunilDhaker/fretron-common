@@ -34,7 +34,15 @@
                                  				"double"
                                  			],
                    "default": null
-         }
+         },
+    {
+      "name": "containers",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    }
 
   ]
 }

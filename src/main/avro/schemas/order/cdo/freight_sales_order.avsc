@@ -280,6 +280,14 @@
                              }
                              ],
                 "default": null
-             }
+             },
+    {
+      "name": "transportationMode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }
