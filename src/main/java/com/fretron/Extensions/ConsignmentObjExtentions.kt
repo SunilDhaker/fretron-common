@@ -29,12 +29,12 @@ fun Updates.clean(){
 
 
 fun EnrichedConsignment.clean(){
-    this.getConsignment().clean()
-    this.getConsignment().getContractToParty().cleanWithBoundary()
-    this.getConsignment().getBillToParty().cleanWithBoundary()
-    this.getConsignment().getConsignee().cleanWithBoundary()
-    this.getConsignment().getConsigner().cleanWithBoundary()
-    this.getConsignment().setOrderMappings(mutableListOf())
+    this.getConsignment()?.clean()
+    this.getConsignment()?.getContractToParty()?.cleanWithBoundary()
+    this.getConsignment()?.getBillToParty()?.cleanWithBoundary()
+    this.getConsignment()?.getConsignee()?.cleanWithBoundary()
+    this.getConsignment()?.getConsigner()?.cleanWithBoundary()
+    this.getConsignment()?.setOrderMappings(mutableListOf())
     this.getConsignment()?.getPod()?.setDeliveryItems(mutableListOf())
     this.getAssociatedShipments()?.forEach {
         it.clean()
