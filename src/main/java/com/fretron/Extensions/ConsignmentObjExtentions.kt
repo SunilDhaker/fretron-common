@@ -30,6 +30,7 @@ fun Updates.clean(){
 
 fun EnrichedConsignment.clean(){
     this.getConsignment()?.clean()
+    this.getConsignment()?.setLineItems(mutableListOf())
     this.getConsignment()?.getContractToParty()?.cleanWithBoundary()
     this.getConsignment()?.getBillToParty()?.cleanWithBoundary()
     this.getConsignment()?.getConsignee()?.cleanWithBoundary()
