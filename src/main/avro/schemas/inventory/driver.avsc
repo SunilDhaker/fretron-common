@@ -185,6 +185,15 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "dob",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
     }
 
   ]
