@@ -194,6 +194,14 @@
       "default": null
     },
     {
+      "name": "isWhatsAppQuotaOver",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
       "name": "userType",
       "type": [
         "null",
