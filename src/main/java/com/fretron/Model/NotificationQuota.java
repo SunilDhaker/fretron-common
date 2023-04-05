@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8268933449515796800L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"emailWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"smsWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastSentSmsWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastSentEmailWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = 1246734196490576359L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationQuota\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emailAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"emailCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastUpdate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isSmsWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isEmailWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"emailWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"smsWarningSnoozeTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"lastSentSmsWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastSentEmailWarningType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"whatsappAmount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"whatsappCurrentUses\",\"type\":[\"null\",\"long\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -31,6 +31,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   @Deprecated public java.lang.Long smsWarningSnoozeTill;
   @Deprecated public java.lang.String lastSentSmsWarningType;
   @Deprecated public java.lang.String lastSentEmailWarningType;
+  @Deprecated public java.lang.Long whatsappAmount;
+  @Deprecated public java.lang.Long whatsappCurrentUses;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -59,8 +61,10 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
    * @param smsWarningSnoozeTill The new value for smsWarningSnoozeTill
    * @param lastSentSmsWarningType The new value for lastSentSmsWarningType
    * @param lastSentEmailWarningType The new value for lastSentEmailWarningType
+   * @param whatsappAmount The new value for whatsappAmount
+   * @param whatsappCurrentUses The new value for whatsappCurrentUses
    */
-  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers, java.lang.Long emailWarningSnoozeTill, java.lang.Long smsWarningSnoozeTill, java.lang.String lastSentSmsWarningType, java.lang.String lastSentEmailWarningType) {
+  public NotificationQuota(java.lang.String uuid, java.lang.String orgId, java.lang.Long emailAmount, java.lang.Long smsAmount, java.lang.Long emailCurrentUses, java.lang.Long smsCurrentUses, java.lang.Long from, java.lang.Long till, java.lang.Long lastUpdate, java.lang.String type, java.lang.Boolean isSmsWarningSent, java.lang.Boolean isEmailWarningSent, java.util.List<java.lang.String> emails, java.util.List<java.lang.String> mobileNumbers, java.lang.Long emailWarningSnoozeTill, java.lang.Long smsWarningSnoozeTill, java.lang.String lastSentSmsWarningType, java.lang.String lastSentEmailWarningType, java.lang.Long whatsappAmount, java.lang.Long whatsappCurrentUses) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.emailAmount = emailAmount;
@@ -79,6 +83,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     this.smsWarningSnoozeTill = smsWarningSnoozeTill;
     this.lastSentSmsWarningType = lastSentSmsWarningType;
     this.lastSentEmailWarningType = lastSentEmailWarningType;
+    this.whatsappAmount = whatsappAmount;
+    this.whatsappCurrentUses = whatsappCurrentUses;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -103,6 +109,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 15: return smsWarningSnoozeTill;
     case 16: return lastSentSmsWarningType;
     case 17: return lastSentEmailWarningType;
+    case 18: return whatsappAmount;
+    case 19: return whatsappCurrentUses;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -129,6 +137,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     case 15: smsWarningSnoozeTill = (java.lang.Long)value$; break;
     case 16: lastSentSmsWarningType = (java.lang.String)value$; break;
     case 17: lastSentEmailWarningType = (java.lang.String)value$; break;
+    case 18: whatsappAmount = (java.lang.Long)value$; break;
+    case 19: whatsappCurrentUses = (java.lang.Long)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -422,6 +432,38 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
   }
 
   /**
+   * Gets the value of the 'whatsappAmount' field.
+   * @return The value of the 'whatsappAmount' field.
+   */
+  public java.lang.Long getWhatsappAmount() {
+    return whatsappAmount;
+  }
+
+  /**
+   * Sets the value of the 'whatsappAmount' field.
+   * @param value the value to set.
+   */
+  public void setWhatsappAmount(java.lang.Long value) {
+    this.whatsappAmount = value;
+  }
+
+  /**
+   * Gets the value of the 'whatsappCurrentUses' field.
+   * @return The value of the 'whatsappCurrentUses' field.
+   */
+  public java.lang.Long getWhatsappCurrentUses() {
+    return whatsappCurrentUses;
+  }
+
+  /**
+   * Sets the value of the 'whatsappCurrentUses' field.
+   * @param value the value to set.
+   */
+  public void setWhatsappCurrentUses(java.lang.Long value) {
+    this.whatsappCurrentUses = value;
+  }
+
+  /**
    * Creates a new NotificationQuota RecordBuilder.
    * @return A new NotificationQuota RecordBuilder
    */
@@ -471,6 +513,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
     private java.lang.Long smsWarningSnoozeTill;
     private java.lang.String lastSentSmsWarningType;
     private java.lang.String lastSentEmailWarningType;
+    private java.lang.Long whatsappAmount;
+    private java.lang.Long whatsappCurrentUses;
 
     /** Creates a new Builder */
     private Builder() {
@@ -555,6 +599,14 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         this.lastSentEmailWarningType = data().deepCopy(fields()[17].schema(), other.lastSentEmailWarningType);
         fieldSetFlags()[17] = true;
       }
+      if (isValidValue(fields()[18], other.whatsappAmount)) {
+        this.whatsappAmount = data().deepCopy(fields()[18].schema(), other.whatsappAmount);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.whatsappCurrentUses)) {
+        this.whatsappCurrentUses = data().deepCopy(fields()[19].schema(), other.whatsappCurrentUses);
+        fieldSetFlags()[19] = true;
+      }
     }
 
     /**
@@ -634,6 +686,14 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       if (isValidValue(fields()[17], other.lastSentEmailWarningType)) {
         this.lastSentEmailWarningType = data().deepCopy(fields()[17].schema(), other.lastSentEmailWarningType);
         fieldSetFlags()[17] = true;
+      }
+      if (isValidValue(fields()[18], other.whatsappAmount)) {
+        this.whatsappAmount = data().deepCopy(fields()[18].schema(), other.whatsappAmount);
+        fieldSetFlags()[18] = true;
+      }
+      if (isValidValue(fields()[19], other.whatsappCurrentUses)) {
+        this.whatsappCurrentUses = data().deepCopy(fields()[19].schema(), other.whatsappCurrentUses);
+        fieldSetFlags()[19] = true;
       }
     }
 
@@ -1339,6 +1399,84 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
       return this;
     }
 
+    /**
+      * Gets the value of the 'whatsappAmount' field.
+      * @return The value.
+      */
+    public java.lang.Long getWhatsappAmount() {
+      return whatsappAmount;
+    }
+
+    /**
+      * Sets the value of the 'whatsappAmount' field.
+      * @param value The value of 'whatsappAmount'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setWhatsappAmount(java.lang.Long value) {
+      validate(fields()[18], value);
+      this.whatsappAmount = value;
+      fieldSetFlags()[18] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'whatsappAmount' field has been set.
+      * @return True if the 'whatsappAmount' field has been set, false otherwise.
+      */
+    public boolean hasWhatsappAmount() {
+      return fieldSetFlags()[18];
+    }
+
+
+    /**
+      * Clears the value of the 'whatsappAmount' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearWhatsappAmount() {
+      whatsappAmount = null;
+      fieldSetFlags()[18] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'whatsappCurrentUses' field.
+      * @return The value.
+      */
+    public java.lang.Long getWhatsappCurrentUses() {
+      return whatsappCurrentUses;
+    }
+
+    /**
+      * Sets the value of the 'whatsappCurrentUses' field.
+      * @param value The value of 'whatsappCurrentUses'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder setWhatsappCurrentUses(java.lang.Long value) {
+      validate(fields()[19], value);
+      this.whatsappCurrentUses = value;
+      fieldSetFlags()[19] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'whatsappCurrentUses' field has been set.
+      * @return True if the 'whatsappCurrentUses' field has been set, false otherwise.
+      */
+    public boolean hasWhatsappCurrentUses() {
+      return fieldSetFlags()[19];
+    }
+
+
+    /**
+      * Clears the value of the 'whatsappCurrentUses' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationQuota.Builder clearWhatsappCurrentUses() {
+      whatsappCurrentUses = null;
+      fieldSetFlags()[19] = false;
+      return this;
+    }
+
     @Override
     public NotificationQuota build() {
       try {
@@ -1361,6 +1499,8 @@ public class NotificationQuota extends org.apache.avro.specific.SpecificRecordBa
         record.smsWarningSnoozeTill = fieldSetFlags()[15] ? this.smsWarningSnoozeTill : (java.lang.Long) defaultValue(fields()[15]);
         record.lastSentSmsWarningType = fieldSetFlags()[16] ? this.lastSentSmsWarningType : (java.lang.String) defaultValue(fields()[16]);
         record.lastSentEmailWarningType = fieldSetFlags()[17] ? this.lastSentEmailWarningType : (java.lang.String) defaultValue(fields()[17]);
+        record.whatsappAmount = fieldSetFlags()[18] ? this.whatsappAmount : (java.lang.Long) defaultValue(fields()[18]);
+        record.whatsappCurrentUses = fieldSetFlags()[19] ? this.whatsappCurrentUses : (java.lang.Long) defaultValue(fields()[19]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

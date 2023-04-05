@@ -157,6 +157,24 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "whatsappAmount",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "whatsappCurrentUses",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
     }
   ]
 }
+
+
