@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class NotificationCounter extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 1746093484751164375L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCounter\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"event\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"emailCount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isEmailThrottled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSmsThrottled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emailThrottledTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"smsThrottledTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isEmailThrottledWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSmsThrottledWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 6303916855023369960L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"NotificationCounter\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subscriber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"event\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"startTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"emailCount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"smsCount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"whatsappCount\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isEmailThrottled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSmsThrottled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isWhatsappThrottled\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"emailThrottledTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"whatsappThrottledTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"smsThrottledTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"isEmailThrottledWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSmsThrottledWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isWhatsappThrottledWarningSent\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String subscriber;
@@ -19,12 +19,16 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
   @Deprecated public java.lang.Long startTime;
   @Deprecated public java.lang.Long emailCount;
   @Deprecated public java.lang.Long smsCount;
+  @Deprecated public java.lang.Long whatsappCount;
   @Deprecated public java.lang.Boolean isEmailThrottled;
   @Deprecated public java.lang.Boolean isSmsThrottled;
+  @Deprecated public java.lang.Boolean isWhatsappThrottled;
   @Deprecated public java.lang.Long emailThrottledTill;
+  @Deprecated public java.lang.Long whatsappThrottledTill;
   @Deprecated public java.lang.Long smsThrottledTill;
   @Deprecated public java.lang.Boolean isEmailThrottledWarningSent;
   @Deprecated public java.lang.Boolean isSmsThrottledWarningSent;
+  @Deprecated public java.lang.Boolean isWhatsappThrottledWarningSent;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -41,26 +45,34 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
    * @param startTime The new value for startTime
    * @param emailCount The new value for emailCount
    * @param smsCount The new value for smsCount
+   * @param whatsappCount The new value for whatsappCount
    * @param isEmailThrottled The new value for isEmailThrottled
    * @param isSmsThrottled The new value for isSmsThrottled
+   * @param isWhatsappThrottled The new value for isWhatsappThrottled
    * @param emailThrottledTill The new value for emailThrottledTill
+   * @param whatsappThrottledTill The new value for whatsappThrottledTill
    * @param smsThrottledTill The new value for smsThrottledTill
    * @param isEmailThrottledWarningSent The new value for isEmailThrottledWarningSent
    * @param isSmsThrottledWarningSent The new value for isSmsThrottledWarningSent
+   * @param isWhatsappThrottledWarningSent The new value for isWhatsappThrottledWarningSent
    */
-  public NotificationCounter(java.lang.String uuid, java.lang.String subscriber, java.lang.String event, java.lang.Long startTime, java.lang.Long emailCount, java.lang.Long smsCount, java.lang.Boolean isEmailThrottled, java.lang.Boolean isSmsThrottled, java.lang.Long emailThrottledTill, java.lang.Long smsThrottledTill, java.lang.Boolean isEmailThrottledWarningSent, java.lang.Boolean isSmsThrottledWarningSent) {
+  public NotificationCounter(java.lang.String uuid, java.lang.String subscriber, java.lang.String event, java.lang.Long startTime, java.lang.Long emailCount, java.lang.Long smsCount, java.lang.Long whatsappCount, java.lang.Boolean isEmailThrottled, java.lang.Boolean isSmsThrottled, java.lang.Boolean isWhatsappThrottled, java.lang.Long emailThrottledTill, java.lang.Long whatsappThrottledTill, java.lang.Long smsThrottledTill, java.lang.Boolean isEmailThrottledWarningSent, java.lang.Boolean isSmsThrottledWarningSent, java.lang.Boolean isWhatsappThrottledWarningSent) {
     this.uuid = uuid;
     this.subscriber = subscriber;
     this.event = event;
     this.startTime = startTime;
     this.emailCount = emailCount;
     this.smsCount = smsCount;
+    this.whatsappCount = whatsappCount;
     this.isEmailThrottled = isEmailThrottled;
     this.isSmsThrottled = isSmsThrottled;
+    this.isWhatsappThrottled = isWhatsappThrottled;
     this.emailThrottledTill = emailThrottledTill;
+    this.whatsappThrottledTill = whatsappThrottledTill;
     this.smsThrottledTill = smsThrottledTill;
     this.isEmailThrottledWarningSent = isEmailThrottledWarningSent;
     this.isSmsThrottledWarningSent = isSmsThrottledWarningSent;
+    this.isWhatsappThrottledWarningSent = isWhatsappThrottledWarningSent;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -73,12 +85,16 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
     case 3: return startTime;
     case 4: return emailCount;
     case 5: return smsCount;
-    case 6: return isEmailThrottled;
-    case 7: return isSmsThrottled;
-    case 8: return emailThrottledTill;
-    case 9: return smsThrottledTill;
-    case 10: return isEmailThrottledWarningSent;
-    case 11: return isSmsThrottledWarningSent;
+    case 6: return whatsappCount;
+    case 7: return isEmailThrottled;
+    case 8: return isSmsThrottled;
+    case 9: return isWhatsappThrottled;
+    case 10: return emailThrottledTill;
+    case 11: return whatsappThrottledTill;
+    case 12: return smsThrottledTill;
+    case 13: return isEmailThrottledWarningSent;
+    case 14: return isSmsThrottledWarningSent;
+    case 15: return isWhatsappThrottledWarningSent;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -93,12 +109,16 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
     case 3: startTime = (java.lang.Long)value$; break;
     case 4: emailCount = (java.lang.Long)value$; break;
     case 5: smsCount = (java.lang.Long)value$; break;
-    case 6: isEmailThrottled = (java.lang.Boolean)value$; break;
-    case 7: isSmsThrottled = (java.lang.Boolean)value$; break;
-    case 8: emailThrottledTill = (java.lang.Long)value$; break;
-    case 9: smsThrottledTill = (java.lang.Long)value$; break;
-    case 10: isEmailThrottledWarningSent = (java.lang.Boolean)value$; break;
-    case 11: isSmsThrottledWarningSent = (java.lang.Boolean)value$; break;
+    case 6: whatsappCount = (java.lang.Long)value$; break;
+    case 7: isEmailThrottled = (java.lang.Boolean)value$; break;
+    case 8: isSmsThrottled = (java.lang.Boolean)value$; break;
+    case 9: isWhatsappThrottled = (java.lang.Boolean)value$; break;
+    case 10: emailThrottledTill = (java.lang.Long)value$; break;
+    case 11: whatsappThrottledTill = (java.lang.Long)value$; break;
+    case 12: smsThrottledTill = (java.lang.Long)value$; break;
+    case 13: isEmailThrottledWarningSent = (java.lang.Boolean)value$; break;
+    case 14: isSmsThrottledWarningSent = (java.lang.Boolean)value$; break;
+    case 15: isWhatsappThrottledWarningSent = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -200,6 +220,22 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'whatsappCount' field.
+   * @return The value of the 'whatsappCount' field.
+   */
+  public java.lang.Long getWhatsappCount() {
+    return whatsappCount;
+  }
+
+  /**
+   * Sets the value of the 'whatsappCount' field.
+   * @param value the value to set.
+   */
+  public void setWhatsappCount(java.lang.Long value) {
+    this.whatsappCount = value;
+  }
+
+  /**
    * Gets the value of the 'isEmailThrottled' field.
    * @return The value of the 'isEmailThrottled' field.
    */
@@ -232,6 +268,22 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'isWhatsappThrottled' field.
+   * @return The value of the 'isWhatsappThrottled' field.
+   */
+  public java.lang.Boolean getIsWhatsappThrottled() {
+    return isWhatsappThrottled;
+  }
+
+  /**
+   * Sets the value of the 'isWhatsappThrottled' field.
+   * @param value the value to set.
+   */
+  public void setIsWhatsappThrottled(java.lang.Boolean value) {
+    this.isWhatsappThrottled = value;
+  }
+
+  /**
    * Gets the value of the 'emailThrottledTill' field.
    * @return The value of the 'emailThrottledTill' field.
    */
@@ -245,6 +297,22 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
    */
   public void setEmailThrottledTill(java.lang.Long value) {
     this.emailThrottledTill = value;
+  }
+
+  /**
+   * Gets the value of the 'whatsappThrottledTill' field.
+   * @return The value of the 'whatsappThrottledTill' field.
+   */
+  public java.lang.Long getWhatsappThrottledTill() {
+    return whatsappThrottledTill;
+  }
+
+  /**
+   * Sets the value of the 'whatsappThrottledTill' field.
+   * @param value the value to set.
+   */
+  public void setWhatsappThrottledTill(java.lang.Long value) {
+    this.whatsappThrottledTill = value;
   }
 
   /**
@@ -296,6 +364,22 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
   }
 
   /**
+   * Gets the value of the 'isWhatsappThrottledWarningSent' field.
+   * @return The value of the 'isWhatsappThrottledWarningSent' field.
+   */
+  public java.lang.Boolean getIsWhatsappThrottledWarningSent() {
+    return isWhatsappThrottledWarningSent;
+  }
+
+  /**
+   * Sets the value of the 'isWhatsappThrottledWarningSent' field.
+   * @param value the value to set.
+   */
+  public void setIsWhatsappThrottledWarningSent(java.lang.Boolean value) {
+    this.isWhatsappThrottledWarningSent = value;
+  }
+
+  /**
    * Creates a new NotificationCounter RecordBuilder.
    * @return A new NotificationCounter RecordBuilder
    */
@@ -333,12 +417,16 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
     private java.lang.Long startTime;
     private java.lang.Long emailCount;
     private java.lang.Long smsCount;
+    private java.lang.Long whatsappCount;
     private java.lang.Boolean isEmailThrottled;
     private java.lang.Boolean isSmsThrottled;
+    private java.lang.Boolean isWhatsappThrottled;
     private java.lang.Long emailThrottledTill;
+    private java.lang.Long whatsappThrottledTill;
     private java.lang.Long smsThrottledTill;
     private java.lang.Boolean isEmailThrottledWarningSent;
     private java.lang.Boolean isSmsThrottledWarningSent;
+    private java.lang.Boolean isWhatsappThrottledWarningSent;
 
     /** Creates a new Builder */
     private Builder() {
@@ -375,29 +463,45 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
         this.smsCount = data().deepCopy(fields()[5].schema(), other.smsCount);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.isEmailThrottled)) {
-        this.isEmailThrottled = data().deepCopy(fields()[6].schema(), other.isEmailThrottled);
+      if (isValidValue(fields()[6], other.whatsappCount)) {
+        this.whatsappCount = data().deepCopy(fields()[6].schema(), other.whatsappCount);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isSmsThrottled)) {
-        this.isSmsThrottled = data().deepCopy(fields()[7].schema(), other.isSmsThrottled);
+      if (isValidValue(fields()[7], other.isEmailThrottled)) {
+        this.isEmailThrottled = data().deepCopy(fields()[7].schema(), other.isEmailThrottled);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.emailThrottledTill)) {
-        this.emailThrottledTill = data().deepCopy(fields()[8].schema(), other.emailThrottledTill);
+      if (isValidValue(fields()[8], other.isSmsThrottled)) {
+        this.isSmsThrottled = data().deepCopy(fields()[8].schema(), other.isSmsThrottled);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.smsThrottledTill)) {
-        this.smsThrottledTill = data().deepCopy(fields()[9].schema(), other.smsThrottledTill);
+      if (isValidValue(fields()[9], other.isWhatsappThrottled)) {
+        this.isWhatsappThrottled = data().deepCopy(fields()[9].schema(), other.isWhatsappThrottled);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.isEmailThrottledWarningSent)) {
-        this.isEmailThrottledWarningSent = data().deepCopy(fields()[10].schema(), other.isEmailThrottledWarningSent);
+      if (isValidValue(fields()[10], other.emailThrottledTill)) {
+        this.emailThrottledTill = data().deepCopy(fields()[10].schema(), other.emailThrottledTill);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.isSmsThrottledWarningSent)) {
-        this.isSmsThrottledWarningSent = data().deepCopy(fields()[11].schema(), other.isSmsThrottledWarningSent);
+      if (isValidValue(fields()[11], other.whatsappThrottledTill)) {
+        this.whatsappThrottledTill = data().deepCopy(fields()[11].schema(), other.whatsappThrottledTill);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.smsThrottledTill)) {
+        this.smsThrottledTill = data().deepCopy(fields()[12].schema(), other.smsThrottledTill);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.isEmailThrottledWarningSent)) {
+        this.isEmailThrottledWarningSent = data().deepCopy(fields()[13].schema(), other.isEmailThrottledWarningSent);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.isSmsThrottledWarningSent)) {
+        this.isSmsThrottledWarningSent = data().deepCopy(fields()[14].schema(), other.isSmsThrottledWarningSent);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isWhatsappThrottledWarningSent)) {
+        this.isWhatsappThrottledWarningSent = data().deepCopy(fields()[15].schema(), other.isWhatsappThrottledWarningSent);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -431,29 +535,45 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
         this.smsCount = data().deepCopy(fields()[5].schema(), other.smsCount);
         fieldSetFlags()[5] = true;
       }
-      if (isValidValue(fields()[6], other.isEmailThrottled)) {
-        this.isEmailThrottled = data().deepCopy(fields()[6].schema(), other.isEmailThrottled);
+      if (isValidValue(fields()[6], other.whatsappCount)) {
+        this.whatsappCount = data().deepCopy(fields()[6].schema(), other.whatsappCount);
         fieldSetFlags()[6] = true;
       }
-      if (isValidValue(fields()[7], other.isSmsThrottled)) {
-        this.isSmsThrottled = data().deepCopy(fields()[7].schema(), other.isSmsThrottled);
+      if (isValidValue(fields()[7], other.isEmailThrottled)) {
+        this.isEmailThrottled = data().deepCopy(fields()[7].schema(), other.isEmailThrottled);
         fieldSetFlags()[7] = true;
       }
-      if (isValidValue(fields()[8], other.emailThrottledTill)) {
-        this.emailThrottledTill = data().deepCopy(fields()[8].schema(), other.emailThrottledTill);
+      if (isValidValue(fields()[8], other.isSmsThrottled)) {
+        this.isSmsThrottled = data().deepCopy(fields()[8].schema(), other.isSmsThrottled);
         fieldSetFlags()[8] = true;
       }
-      if (isValidValue(fields()[9], other.smsThrottledTill)) {
-        this.smsThrottledTill = data().deepCopy(fields()[9].schema(), other.smsThrottledTill);
+      if (isValidValue(fields()[9], other.isWhatsappThrottled)) {
+        this.isWhatsappThrottled = data().deepCopy(fields()[9].schema(), other.isWhatsappThrottled);
         fieldSetFlags()[9] = true;
       }
-      if (isValidValue(fields()[10], other.isEmailThrottledWarningSent)) {
-        this.isEmailThrottledWarningSent = data().deepCopy(fields()[10].schema(), other.isEmailThrottledWarningSent);
+      if (isValidValue(fields()[10], other.emailThrottledTill)) {
+        this.emailThrottledTill = data().deepCopy(fields()[10].schema(), other.emailThrottledTill);
         fieldSetFlags()[10] = true;
       }
-      if (isValidValue(fields()[11], other.isSmsThrottledWarningSent)) {
-        this.isSmsThrottledWarningSent = data().deepCopy(fields()[11].schema(), other.isSmsThrottledWarningSent);
+      if (isValidValue(fields()[11], other.whatsappThrottledTill)) {
+        this.whatsappThrottledTill = data().deepCopy(fields()[11].schema(), other.whatsappThrottledTill);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.smsThrottledTill)) {
+        this.smsThrottledTill = data().deepCopy(fields()[12].schema(), other.smsThrottledTill);
+        fieldSetFlags()[12] = true;
+      }
+      if (isValidValue(fields()[13], other.isEmailThrottledWarningSent)) {
+        this.isEmailThrottledWarningSent = data().deepCopy(fields()[13].schema(), other.isEmailThrottledWarningSent);
+        fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.isSmsThrottledWarningSent)) {
+        this.isSmsThrottledWarningSent = data().deepCopy(fields()[14].schema(), other.isSmsThrottledWarningSent);
+        fieldSetFlags()[14] = true;
+      }
+      if (isValidValue(fields()[15], other.isWhatsappThrottledWarningSent)) {
+        this.isWhatsappThrottledWarningSent = data().deepCopy(fields()[15].schema(), other.isWhatsappThrottledWarningSent);
+        fieldSetFlags()[15] = true;
       }
     }
 
@@ -692,6 +812,45 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
     }
 
     /**
+      * Gets the value of the 'whatsappCount' field.
+      * @return The value.
+      */
+    public java.lang.Long getWhatsappCount() {
+      return whatsappCount;
+    }
+
+    /**
+      * Sets the value of the 'whatsappCount' field.
+      * @param value The value of 'whatsappCount'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder setWhatsappCount(java.lang.Long value) {
+      validate(fields()[6], value);
+      this.whatsappCount = value;
+      fieldSetFlags()[6] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'whatsappCount' field has been set.
+      * @return True if the 'whatsappCount' field has been set, false otherwise.
+      */
+    public boolean hasWhatsappCount() {
+      return fieldSetFlags()[6];
+    }
+
+
+    /**
+      * Clears the value of the 'whatsappCount' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder clearWhatsappCount() {
+      whatsappCount = null;
+      fieldSetFlags()[6] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'isEmailThrottled' field.
       * @return The value.
       */
@@ -705,9 +864,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setIsEmailThrottled(java.lang.Boolean value) {
-      validate(fields()[6], value);
+      validate(fields()[7], value);
       this.isEmailThrottled = value;
-      fieldSetFlags()[6] = true;
+      fieldSetFlags()[7] = true;
       return this;
     }
 
@@ -716,7 +875,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'isEmailThrottled' field has been set, false otherwise.
       */
     public boolean hasIsEmailThrottled() {
-      return fieldSetFlags()[6];
+      return fieldSetFlags()[7];
     }
 
 
@@ -726,7 +885,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearIsEmailThrottled() {
       isEmailThrottled = null;
-      fieldSetFlags()[6] = false;
+      fieldSetFlags()[7] = false;
       return this;
     }
 
@@ -744,9 +903,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setIsSmsThrottled(java.lang.Boolean value) {
-      validate(fields()[7], value);
+      validate(fields()[8], value);
       this.isSmsThrottled = value;
-      fieldSetFlags()[7] = true;
+      fieldSetFlags()[8] = true;
       return this;
     }
 
@@ -755,7 +914,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'isSmsThrottled' field has been set, false otherwise.
       */
     public boolean hasIsSmsThrottled() {
-      return fieldSetFlags()[7];
+      return fieldSetFlags()[8];
     }
 
 
@@ -765,7 +924,46 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearIsSmsThrottled() {
       isSmsThrottled = null;
-      fieldSetFlags()[7] = false;
+      fieldSetFlags()[8] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isWhatsappThrottled' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsWhatsappThrottled() {
+      return isWhatsappThrottled;
+    }
+
+    /**
+      * Sets the value of the 'isWhatsappThrottled' field.
+      * @param value The value of 'isWhatsappThrottled'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder setIsWhatsappThrottled(java.lang.Boolean value) {
+      validate(fields()[9], value);
+      this.isWhatsappThrottled = value;
+      fieldSetFlags()[9] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isWhatsappThrottled' field has been set.
+      * @return True if the 'isWhatsappThrottled' field has been set, false otherwise.
+      */
+    public boolean hasIsWhatsappThrottled() {
+      return fieldSetFlags()[9];
+    }
+
+
+    /**
+      * Clears the value of the 'isWhatsappThrottled' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder clearIsWhatsappThrottled() {
+      isWhatsappThrottled = null;
+      fieldSetFlags()[9] = false;
       return this;
     }
 
@@ -783,9 +981,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setEmailThrottledTill(java.lang.Long value) {
-      validate(fields()[8], value);
+      validate(fields()[10], value);
       this.emailThrottledTill = value;
-      fieldSetFlags()[8] = true;
+      fieldSetFlags()[10] = true;
       return this;
     }
 
@@ -794,7 +992,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'emailThrottledTill' field has been set, false otherwise.
       */
     public boolean hasEmailThrottledTill() {
-      return fieldSetFlags()[8];
+      return fieldSetFlags()[10];
     }
 
 
@@ -804,7 +1002,46 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearEmailThrottledTill() {
       emailThrottledTill = null;
-      fieldSetFlags()[8] = false;
+      fieldSetFlags()[10] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'whatsappThrottledTill' field.
+      * @return The value.
+      */
+    public java.lang.Long getWhatsappThrottledTill() {
+      return whatsappThrottledTill;
+    }
+
+    /**
+      * Sets the value of the 'whatsappThrottledTill' field.
+      * @param value The value of 'whatsappThrottledTill'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder setWhatsappThrottledTill(java.lang.Long value) {
+      validate(fields()[11], value);
+      this.whatsappThrottledTill = value;
+      fieldSetFlags()[11] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'whatsappThrottledTill' field has been set.
+      * @return True if the 'whatsappThrottledTill' field has been set, false otherwise.
+      */
+    public boolean hasWhatsappThrottledTill() {
+      return fieldSetFlags()[11];
+    }
+
+
+    /**
+      * Clears the value of the 'whatsappThrottledTill' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder clearWhatsappThrottledTill() {
+      whatsappThrottledTill = null;
+      fieldSetFlags()[11] = false;
       return this;
     }
 
@@ -822,9 +1059,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setSmsThrottledTill(java.lang.Long value) {
-      validate(fields()[9], value);
+      validate(fields()[12], value);
       this.smsThrottledTill = value;
-      fieldSetFlags()[9] = true;
+      fieldSetFlags()[12] = true;
       return this;
     }
 
@@ -833,7 +1070,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'smsThrottledTill' field has been set, false otherwise.
       */
     public boolean hasSmsThrottledTill() {
-      return fieldSetFlags()[9];
+      return fieldSetFlags()[12];
     }
 
 
@@ -843,7 +1080,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearSmsThrottledTill() {
       smsThrottledTill = null;
-      fieldSetFlags()[9] = false;
+      fieldSetFlags()[12] = false;
       return this;
     }
 
@@ -861,9 +1098,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setIsEmailThrottledWarningSent(java.lang.Boolean value) {
-      validate(fields()[10], value);
+      validate(fields()[13], value);
       this.isEmailThrottledWarningSent = value;
-      fieldSetFlags()[10] = true;
+      fieldSetFlags()[13] = true;
       return this;
     }
 
@@ -872,7 +1109,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'isEmailThrottledWarningSent' field has been set, false otherwise.
       */
     public boolean hasIsEmailThrottledWarningSent() {
-      return fieldSetFlags()[10];
+      return fieldSetFlags()[13];
     }
 
 
@@ -882,7 +1119,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearIsEmailThrottledWarningSent() {
       isEmailThrottledWarningSent = null;
-      fieldSetFlags()[10] = false;
+      fieldSetFlags()[13] = false;
       return this;
     }
 
@@ -900,9 +1137,9 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return This builder.
       */
     public com.fretron.Model.NotificationCounter.Builder setIsSmsThrottledWarningSent(java.lang.Boolean value) {
-      validate(fields()[11], value);
+      validate(fields()[14], value);
       this.isSmsThrottledWarningSent = value;
-      fieldSetFlags()[11] = true;
+      fieldSetFlags()[14] = true;
       return this;
     }
 
@@ -911,7 +1148,7 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       * @return True if the 'isSmsThrottledWarningSent' field has been set, false otherwise.
       */
     public boolean hasIsSmsThrottledWarningSent() {
-      return fieldSetFlags()[11];
+      return fieldSetFlags()[14];
     }
 
 
@@ -921,7 +1158,46 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
       */
     public com.fretron.Model.NotificationCounter.Builder clearIsSmsThrottledWarningSent() {
       isSmsThrottledWarningSent = null;
-      fieldSetFlags()[11] = false;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'isWhatsappThrottledWarningSent' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsWhatsappThrottledWarningSent() {
+      return isWhatsappThrottledWarningSent;
+    }
+
+    /**
+      * Sets the value of the 'isWhatsappThrottledWarningSent' field.
+      * @param value The value of 'isWhatsappThrottledWarningSent'.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder setIsWhatsappThrottledWarningSent(java.lang.Boolean value) {
+      validate(fields()[15], value);
+      this.isWhatsappThrottledWarningSent = value;
+      fieldSetFlags()[15] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isWhatsappThrottledWarningSent' field has been set.
+      * @return True if the 'isWhatsappThrottledWarningSent' field has been set, false otherwise.
+      */
+    public boolean hasIsWhatsappThrottledWarningSent() {
+      return fieldSetFlags()[15];
+    }
+
+
+    /**
+      * Clears the value of the 'isWhatsappThrottledWarningSent' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.NotificationCounter.Builder clearIsWhatsappThrottledWarningSent() {
+      isWhatsappThrottledWarningSent = null;
+      fieldSetFlags()[15] = false;
       return this;
     }
 
@@ -935,12 +1211,16 @@ public class NotificationCounter extends org.apache.avro.specific.SpecificRecord
         record.startTime = fieldSetFlags()[3] ? this.startTime : (java.lang.Long) defaultValue(fields()[3]);
         record.emailCount = fieldSetFlags()[4] ? this.emailCount : (java.lang.Long) defaultValue(fields()[4]);
         record.smsCount = fieldSetFlags()[5] ? this.smsCount : (java.lang.Long) defaultValue(fields()[5]);
-        record.isEmailThrottled = fieldSetFlags()[6] ? this.isEmailThrottled : (java.lang.Boolean) defaultValue(fields()[6]);
-        record.isSmsThrottled = fieldSetFlags()[7] ? this.isSmsThrottled : (java.lang.Boolean) defaultValue(fields()[7]);
-        record.emailThrottledTill = fieldSetFlags()[8] ? this.emailThrottledTill : (java.lang.Long) defaultValue(fields()[8]);
-        record.smsThrottledTill = fieldSetFlags()[9] ? this.smsThrottledTill : (java.lang.Long) defaultValue(fields()[9]);
-        record.isEmailThrottledWarningSent = fieldSetFlags()[10] ? this.isEmailThrottledWarningSent : (java.lang.Boolean) defaultValue(fields()[10]);
-        record.isSmsThrottledWarningSent = fieldSetFlags()[11] ? this.isSmsThrottledWarningSent : (java.lang.Boolean) defaultValue(fields()[11]);
+        record.whatsappCount = fieldSetFlags()[6] ? this.whatsappCount : (java.lang.Long) defaultValue(fields()[6]);
+        record.isEmailThrottled = fieldSetFlags()[7] ? this.isEmailThrottled : (java.lang.Boolean) defaultValue(fields()[7]);
+        record.isSmsThrottled = fieldSetFlags()[8] ? this.isSmsThrottled : (java.lang.Boolean) defaultValue(fields()[8]);
+        record.isWhatsappThrottled = fieldSetFlags()[9] ? this.isWhatsappThrottled : (java.lang.Boolean) defaultValue(fields()[9]);
+        record.emailThrottledTill = fieldSetFlags()[10] ? this.emailThrottledTill : (java.lang.Long) defaultValue(fields()[10]);
+        record.whatsappThrottledTill = fieldSetFlags()[11] ? this.whatsappThrottledTill : (java.lang.Long) defaultValue(fields()[11]);
+        record.smsThrottledTill = fieldSetFlags()[12] ? this.smsThrottledTill : (java.lang.Long) defaultValue(fields()[12]);
+        record.isEmailThrottledWarningSent = fieldSetFlags()[13] ? this.isEmailThrottledWarningSent : (java.lang.Boolean) defaultValue(fields()[13]);
+        record.isSmsThrottledWarningSent = fieldSetFlags()[14] ? this.isSmsThrottledWarningSent : (java.lang.Boolean) defaultValue(fields()[14]);
+        record.isWhatsappThrottledWarningSent = fieldSetFlags()[15] ? this.isWhatsappThrottledWarningSent : (java.lang.Boolean) defaultValue(fields()[15]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
