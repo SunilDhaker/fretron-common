@@ -10,12 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 43807612114887236L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentCostLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ChartsOfAccountLite\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountPath\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -217304369659276319L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentCostLineItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Charge\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rateUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"base\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amountByVendor\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"chartsOfAccount\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ChartsOfAccountLite\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountPath\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Double amount;
   @Deprecated public java.lang.String consignmentId;
-  @Deprecated public com.fretron.Model.ChartsOfAccountLite charge;
+  @Deprecated public com.fretron.Model.Charge charge;
   @Deprecated public java.lang.String billId;
   @Deprecated public java.lang.String billItemId;
   @Deprecated public java.lang.String billStatus;
@@ -36,7 +36,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
    * @param billItemId The new value for billItemId
    * @param billStatus The new value for billStatus
    */
-  public ShipmentCostLineItem(java.lang.Double amount, java.lang.String consignmentId, com.fretron.Model.ChartsOfAccountLite charge, java.lang.String billId, java.lang.String billItemId, java.lang.String billStatus) {
+  public ShipmentCostLineItem(java.lang.Double amount, java.lang.String consignmentId, com.fretron.Model.Charge charge, java.lang.String billId, java.lang.String billItemId, java.lang.String billStatus) {
     this.amount = amount;
     this.consignmentId = consignmentId;
     this.charge = charge;
@@ -65,7 +65,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
     switch (field$) {
     case 0: amount = (java.lang.Double)value$; break;
     case 1: consignmentId = (java.lang.String)value$; break;
-    case 2: charge = (com.fretron.Model.ChartsOfAccountLite)value$; break;
+    case 2: charge = (com.fretron.Model.Charge)value$; break;
     case 3: billId = (java.lang.String)value$; break;
     case 4: billItemId = (java.lang.String)value$; break;
     case 5: billStatus = (java.lang.String)value$; break;
@@ -109,7 +109,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
    * Gets the value of the 'charge' field.
    * @return The value of the 'charge' field.
    */
-  public com.fretron.Model.ChartsOfAccountLite getCharge() {
+  public com.fretron.Model.Charge getCharge() {
     return charge;
   }
 
@@ -117,7 +117,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
    * Sets the value of the 'charge' field.
    * @param value the value to set.
    */
-  public void setCharge(com.fretron.Model.ChartsOfAccountLite value) {
+  public void setCharge(com.fretron.Model.Charge value) {
     this.charge = value;
   }
 
@@ -203,8 +203,8 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
 
     private java.lang.Double amount;
     private java.lang.String consignmentId;
-    private com.fretron.Model.ChartsOfAccountLite charge;
-    private com.fretron.Model.ChartsOfAccountLite.Builder chargeBuilder;
+    private com.fretron.Model.Charge charge;
+    private com.fretron.Model.Charge.Builder chargeBuilder;
     private java.lang.String billId;
     private java.lang.String billItemId;
     private java.lang.String billStatus;
@@ -233,7 +233,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
         fieldSetFlags()[2] = true;
       }
       if (other.hasChargeBuilder()) {
-        this.chargeBuilder = com.fretron.Model.ChartsOfAccountLite.newBuilder(other.getChargeBuilder());
+        this.chargeBuilder = com.fretron.Model.Charge.newBuilder(other.getChargeBuilder());
       }
       if (isValidValue(fields()[3], other.billId)) {
         this.billId = data().deepCopy(fields()[3].schema(), other.billId);
@@ -364,7 +364,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
       * Gets the value of the 'charge' field.
       * @return The value.
       */
-    public com.fretron.Model.ChartsOfAccountLite getCharge() {
+    public com.fretron.Model.Charge getCharge() {
       return charge;
     }
 
@@ -373,7 +373,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
       * @param value The value of 'charge'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentCostLineItem.Builder setCharge(com.fretron.Model.ChartsOfAccountLite value) {
+    public com.fretron.Model.ShipmentCostLineItem.Builder setCharge(com.fretron.Model.Charge value) {
       validate(fields()[2], value);
       this.chargeBuilder = null;
       this.charge = value;
@@ -393,12 +393,12 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
      * Gets the Builder instance for the 'charge' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.fretron.Model.ChartsOfAccountLite.Builder getChargeBuilder() {
+    public com.fretron.Model.Charge.Builder getChargeBuilder() {
       if (chargeBuilder == null) {
         if (hasCharge()) {
-          setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.newBuilder(charge));
+          setChargeBuilder(com.fretron.Model.Charge.newBuilder(charge));
         } else {
-          setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.newBuilder());
+          setChargeBuilder(com.fretron.Model.Charge.newBuilder());
         }
       }
       return chargeBuilder;
@@ -409,7 +409,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.fretron.Model.ShipmentCostLineItem.Builder setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.Builder value) {
+    public com.fretron.Model.ShipmentCostLineItem.Builder setChargeBuilder(com.fretron.Model.Charge.Builder value) {
       clearCharge();
       chargeBuilder = value;
       return this;
@@ -560,7 +560,7 @@ public class ShipmentCostLineItem extends org.apache.avro.specific.SpecificRecor
         if (chargeBuilder != null) {
           record.charge = this.chargeBuilder.build();
         } else {
-          record.charge = fieldSetFlags()[2] ? this.charge : (com.fretron.Model.ChartsOfAccountLite) defaultValue(fields()[2]);
+          record.charge = fieldSetFlags()[2] ? this.charge : (com.fretron.Model.Charge) defaultValue(fields()[2]);
         }
         record.billId = fieldSetFlags()[3] ? this.billId : (java.lang.String) defaultValue(fields()[3]);
         record.billItemId = fieldSetFlags()[4] ? this.billItemId : (java.lang.String) defaultValue(fields()[4]);

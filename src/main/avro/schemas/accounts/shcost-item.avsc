@@ -25,7 +25,7 @@
       "name": "charge",
       "type": [
         "null",
-        "com.fretron.Model.ChartsOfAccountLite"
+        "com.fretron.Model.Charge"
       ],
       "default": null
     },
