@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 240095798803074411L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentCost\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"applicability\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distributionBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ShipmentCostLineItem\",\"fields\":[{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Charge\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rateUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"base\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amountByVendor\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"chartsOfAccount\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ChartsOfAccountLite\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountPath\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",\"ChartsOfAccountLite\"],\"default\":null},{\"name\":\"vendor\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LiteBusinessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstn\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billFeedingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 1851401216771565935L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ShipmentCost\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"shipmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"applicability\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distributionBasis\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lineItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ShipmentCostLineItem\",\"fields\":[{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"consignmentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Charge\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rateUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"rate\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"base\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"amountByVendor\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"chartsOfAccount\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ChartsOfAccountLite\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accountPath\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"charge\",\"type\":[\"null\",\"Charge\"],\"default\":null},{\"name\":\"vendor\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"LiteBusinessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstn\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"billId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billItemId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billFeedingType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String orgId;
@@ -20,7 +20,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String applicability;
   @Deprecated public java.lang.String distributionBasis;
   @Deprecated public java.util.List<com.fretron.Model.ShipmentCostLineItem> lineItems;
-  @Deprecated public com.fretron.Model.ChartsOfAccountLite charge;
+  @Deprecated public com.fretron.Model.Charge charge;
   @Deprecated public com.fretron.Model.LiteBusinessPartner vendor;
   @Deprecated public java.lang.String billId;
   @Deprecated public java.lang.String billItemId;
@@ -52,7 +52,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
    * @param billFeedingType The new value for billFeedingType
    * @param updates The new value for updates
    */
-  public ShipmentCost(java.lang.String uuid, java.lang.String orgId, java.lang.String shipmentId, java.lang.Double amount, java.lang.String applicability, java.lang.String distributionBasis, java.util.List<com.fretron.Model.ShipmentCostLineItem> lineItems, com.fretron.Model.ChartsOfAccountLite charge, com.fretron.Model.LiteBusinessPartner vendor, java.lang.String billId, java.lang.String billItemId, java.lang.String billStatus, java.lang.String billFeedingType, com.fretron.Model.Updates updates) {
+  public ShipmentCost(java.lang.String uuid, java.lang.String orgId, java.lang.String shipmentId, java.lang.Double amount, java.lang.String applicability, java.lang.String distributionBasis, java.util.List<com.fretron.Model.ShipmentCostLineItem> lineItems, com.fretron.Model.Charge charge, com.fretron.Model.LiteBusinessPartner vendor, java.lang.String billId, java.lang.String billItemId, java.lang.String billStatus, java.lang.String billFeedingType, com.fretron.Model.Updates updates) {
     this.uuid = uuid;
     this.orgId = orgId;
     this.shipmentId = shipmentId;
@@ -102,7 +102,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
     case 4: applicability = (java.lang.String)value$; break;
     case 5: distributionBasis = (java.lang.String)value$; break;
     case 6: lineItems = (java.util.List<com.fretron.Model.ShipmentCostLineItem>)value$; break;
-    case 7: charge = (com.fretron.Model.ChartsOfAccountLite)value$; break;
+    case 7: charge = (com.fretron.Model.Charge)value$; break;
     case 8: vendor = (com.fretron.Model.LiteBusinessPartner)value$; break;
     case 9: billId = (java.lang.String)value$; break;
     case 10: billItemId = (java.lang.String)value$; break;
@@ -229,7 +229,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
    * Gets the value of the 'charge' field.
    * @return The value of the 'charge' field.
    */
-  public com.fretron.Model.ChartsOfAccountLite getCharge() {
+  public com.fretron.Model.Charge getCharge() {
     return charge;
   }
 
@@ -237,7 +237,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
    * Sets the value of the 'charge' field.
    * @param value the value to set.
    */
-  public void setCharge(com.fretron.Model.ChartsOfAccountLite value) {
+  public void setCharge(com.fretron.Model.Charge value) {
     this.charge = value;
   }
 
@@ -376,8 +376,8 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String applicability;
     private java.lang.String distributionBasis;
     private java.util.List<com.fretron.Model.ShipmentCostLineItem> lineItems;
-    private com.fretron.Model.ChartsOfAccountLite charge;
-    private com.fretron.Model.ChartsOfAccountLite.Builder chargeBuilder;
+    private com.fretron.Model.Charge charge;
+    private com.fretron.Model.Charge.Builder chargeBuilder;
     private com.fretron.Model.LiteBusinessPartner vendor;
     private com.fretron.Model.LiteBusinessPartner.Builder vendorBuilder;
     private java.lang.String billId;
@@ -431,7 +431,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
         fieldSetFlags()[7] = true;
       }
       if (other.hasChargeBuilder()) {
-        this.chargeBuilder = com.fretron.Model.ChartsOfAccountLite.newBuilder(other.getChargeBuilder());
+        this.chargeBuilder = com.fretron.Model.Charge.newBuilder(other.getChargeBuilder());
       }
       if (isValidValue(fields()[8], other.vendor)) {
         this.vendor = data().deepCopy(fields()[8].schema(), other.vendor);
@@ -809,7 +809,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
       * Gets the value of the 'charge' field.
       * @return The value.
       */
-    public com.fretron.Model.ChartsOfAccountLite getCharge() {
+    public com.fretron.Model.Charge getCharge() {
       return charge;
     }
 
@@ -818,7 +818,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'charge'.
       * @return This builder.
       */
-    public com.fretron.Model.ShipmentCost.Builder setCharge(com.fretron.Model.ChartsOfAccountLite value) {
+    public com.fretron.Model.ShipmentCost.Builder setCharge(com.fretron.Model.Charge value) {
       validate(fields()[7], value);
       this.chargeBuilder = null;
       this.charge = value;
@@ -838,12 +838,12 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
      * Gets the Builder instance for the 'charge' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.fretron.Model.ChartsOfAccountLite.Builder getChargeBuilder() {
+    public com.fretron.Model.Charge.Builder getChargeBuilder() {
       if (chargeBuilder == null) {
         if (hasCharge()) {
-          setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.newBuilder(charge));
+          setChargeBuilder(com.fretron.Model.Charge.newBuilder(charge));
         } else {
-          setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.newBuilder());
+          setChargeBuilder(com.fretron.Model.Charge.newBuilder());
         }
       }
       return chargeBuilder;
@@ -854,7 +854,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.fretron.Model.ShipmentCost.Builder setChargeBuilder(com.fretron.Model.ChartsOfAccountLite.Builder value) {
+    public com.fretron.Model.ShipmentCost.Builder setChargeBuilder(com.fretron.Model.Charge.Builder value) {
       clearCharge();
       chargeBuilder = value;
       return this;
@@ -1197,7 +1197,7 @@ public class ShipmentCost extends org.apache.avro.specific.SpecificRecordBase im
         if (chargeBuilder != null) {
           record.charge = this.chargeBuilder.build();
         } else {
-          record.charge = fieldSetFlags()[7] ? this.charge : (com.fretron.Model.ChartsOfAccountLite) defaultValue(fields()[7]);
+          record.charge = fieldSetFlags()[7] ? this.charge : (com.fretron.Model.Charge) defaultValue(fields()[7]);
         }
         if (vendorBuilder != null) {
           record.vendor = this.vendorBuilder.build();
