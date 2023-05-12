@@ -127,6 +127,17 @@
       "default": null
     },
     {
+      "name": "allowedCustomerZone",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomerZone"
+        }
+      ],
+      "default": null
+    },
+    {
       "name": "orderBranch",
       "type": [
         "null",
@@ -207,6 +218,14 @@
           "type": "array",
           "items": "com.fretron.Model.PeriodicQuantity"
         }
+      ],
+      "default": null
+    },
+    {
+      "name": "costSummary",
+      "type": [
+        "null",
+        "com.fretron.Model.CostSummary"
       ],
       "default": null
     }

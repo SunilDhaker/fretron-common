@@ -10,12 +10,12 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -391036633609318977L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"number\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -9097481045125381671L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"ResourceInfo\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public java.lang.String uuid;
-  @Deprecated public java.lang.String type;
-  @Deprecated public java.lang.String number;
+  @Deprecated public java.lang.String resourceId;
+  @Deprecated public java.lang.String resourceType;
+  @Deprecated public java.lang.String resourceIdentifier;
   @Deprecated public java.lang.String externalId;
 
   /**
@@ -27,15 +27,15 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
 
   /**
    * All-args constructor.
-   * @param uuid The new value for uuid
-   * @param type The new value for type
-   * @param number The new value for number
+   * @param resourceId The new value for resourceId
+   * @param resourceType The new value for resourceType
+   * @param resourceIdentifier The new value for resourceIdentifier
    * @param externalId The new value for externalId
    */
-  public ResourceInfo(java.lang.String uuid, java.lang.String type, java.lang.String number, java.lang.String externalId) {
-    this.uuid = uuid;
-    this.type = type;
-    this.number = number;
+  public ResourceInfo(java.lang.String resourceId, java.lang.String resourceType, java.lang.String resourceIdentifier, java.lang.String externalId) {
+    this.resourceId = resourceId;
+    this.resourceType = resourceType;
+    this.resourceIdentifier = resourceIdentifier;
     this.externalId = externalId;
   }
 
@@ -43,9 +43,9 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return uuid;
-    case 1: return type;
-    case 2: return number;
+    case 0: return resourceId;
+    case 1: return resourceType;
+    case 2: return resourceIdentifier;
     case 3: return externalId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -55,60 +55,60 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: uuid = (java.lang.String)value$; break;
-    case 1: type = (java.lang.String)value$; break;
-    case 2: number = (java.lang.String)value$; break;
+    case 0: resourceId = (java.lang.String)value$; break;
+    case 1: resourceType = (java.lang.String)value$; break;
+    case 2: resourceIdentifier = (java.lang.String)value$; break;
     case 3: externalId = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
 
   /**
-   * Gets the value of the 'uuid' field.
-   * @return The value of the 'uuid' field.
+   * Gets the value of the 'resourceId' field.
+   * @return The value of the 'resourceId' field.
    */
-  public java.lang.String getUuid() {
-    return uuid;
+  public java.lang.String getResourceId() {
+    return resourceId;
   }
 
   /**
-   * Sets the value of the 'uuid' field.
+   * Sets the value of the 'resourceId' field.
    * @param value the value to set.
    */
-  public void setUuid(java.lang.String value) {
-    this.uuid = value;
+  public void setResourceId(java.lang.String value) {
+    this.resourceId = value;
   }
 
   /**
-   * Gets the value of the 'type' field.
-   * @return The value of the 'type' field.
+   * Gets the value of the 'resourceType' field.
+   * @return The value of the 'resourceType' field.
    */
-  public java.lang.String getType() {
-    return type;
+  public java.lang.String getResourceType() {
+    return resourceType;
   }
 
   /**
-   * Sets the value of the 'type' field.
+   * Sets the value of the 'resourceType' field.
    * @param value the value to set.
    */
-  public void setType(java.lang.String value) {
-    this.type = value;
+  public void setResourceType(java.lang.String value) {
+    this.resourceType = value;
   }
 
   /**
-   * Gets the value of the 'number' field.
-   * @return The value of the 'number' field.
+   * Gets the value of the 'resourceIdentifier' field.
+   * @return The value of the 'resourceIdentifier' field.
    */
-  public java.lang.String getNumber() {
-    return number;
+  public java.lang.String getResourceIdentifier() {
+    return resourceIdentifier;
   }
 
   /**
-   * Sets the value of the 'number' field.
+   * Sets the value of the 'resourceIdentifier' field.
    * @param value the value to set.
    */
-  public void setNumber(java.lang.String value) {
-    this.number = value;
+  public void setResourceIdentifier(java.lang.String value) {
+    this.resourceIdentifier = value;
   }
 
   /**
@@ -159,9 +159,9 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<ResourceInfo>
     implements org.apache.avro.data.RecordBuilder<ResourceInfo> {
 
-    private java.lang.String uuid;
-    private java.lang.String type;
-    private java.lang.String number;
+    private java.lang.String resourceId;
+    private java.lang.String resourceType;
+    private java.lang.String resourceIdentifier;
     private java.lang.String externalId;
 
     /** Creates a new Builder */
@@ -175,16 +175,16 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
      */
     private Builder(com.fretron.Model.ResourceInfo.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.uuid)) {
-        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
+      if (isValidValue(fields()[0], other.resourceId)) {
+        this.resourceId = data().deepCopy(fields()[0].schema(), other.resourceId);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.type)) {
-        this.type = data().deepCopy(fields()[1].schema(), other.type);
+      if (isValidValue(fields()[1], other.resourceType)) {
+        this.resourceType = data().deepCopy(fields()[1].schema(), other.resourceType);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.number)) {
-        this.number = data().deepCopy(fields()[2].schema(), other.number);
+      if (isValidValue(fields()[2], other.resourceIdentifier)) {
+        this.resourceIdentifier = data().deepCopy(fields()[2].schema(), other.resourceIdentifier);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.externalId)) {
@@ -199,16 +199,16 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
      */
     private Builder(com.fretron.Model.ResourceInfo other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.uuid)) {
-        this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
+      if (isValidValue(fields()[0], other.resourceId)) {
+        this.resourceId = data().deepCopy(fields()[0].schema(), other.resourceId);
         fieldSetFlags()[0] = true;
       }
-      if (isValidValue(fields()[1], other.type)) {
-        this.type = data().deepCopy(fields()[1].schema(), other.type);
+      if (isValidValue(fields()[1], other.resourceType)) {
+        this.resourceType = data().deepCopy(fields()[1].schema(), other.resourceType);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.number)) {
-        this.number = data().deepCopy(fields()[2].schema(), other.number);
+      if (isValidValue(fields()[2], other.resourceIdentifier)) {
+        this.resourceIdentifier = data().deepCopy(fields()[2].schema(), other.resourceIdentifier);
         fieldSetFlags()[2] = true;
       }
       if (isValidValue(fields()[3], other.externalId)) {
@@ -218,118 +218,118 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
     }
 
     /**
-      * Gets the value of the 'uuid' field.
+      * Gets the value of the 'resourceId' field.
       * @return The value.
       */
-    public java.lang.String getUuid() {
-      return uuid;
+    public java.lang.String getResourceId() {
+      return resourceId;
     }
 
     /**
-      * Sets the value of the 'uuid' field.
-      * @param value The value of 'uuid'.
+      * Sets the value of the 'resourceId' field.
+      * @param value The value of 'resourceId'.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder setUuid(java.lang.String value) {
+    public com.fretron.Model.ResourceInfo.Builder setResourceId(java.lang.String value) {
       validate(fields()[0], value);
-      this.uuid = value;
+      this.resourceId = value;
       fieldSetFlags()[0] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'uuid' field has been set.
-      * @return True if the 'uuid' field has been set, false otherwise.
+      * Checks whether the 'resourceId' field has been set.
+      * @return True if the 'resourceId' field has been set, false otherwise.
       */
-    public boolean hasUuid() {
+    public boolean hasResourceId() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'uuid' field.
+      * Clears the value of the 'resourceId' field.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder clearUuid() {
-      uuid = null;
+    public com.fretron.Model.ResourceInfo.Builder clearResourceId() {
+      resourceId = null;
       fieldSetFlags()[0] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'type' field.
+      * Gets the value of the 'resourceType' field.
       * @return The value.
       */
-    public java.lang.String getType() {
-      return type;
+    public java.lang.String getResourceType() {
+      return resourceType;
     }
 
     /**
-      * Sets the value of the 'type' field.
-      * @param value The value of 'type'.
+      * Sets the value of the 'resourceType' field.
+      * @param value The value of 'resourceType'.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder setType(java.lang.String value) {
+    public com.fretron.Model.ResourceInfo.Builder setResourceType(java.lang.String value) {
       validate(fields()[1], value);
-      this.type = value;
+      this.resourceType = value;
       fieldSetFlags()[1] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'type' field has been set.
-      * @return True if the 'type' field has been set, false otherwise.
+      * Checks whether the 'resourceType' field has been set.
+      * @return True if the 'resourceType' field has been set, false otherwise.
       */
-    public boolean hasType() {
+    public boolean hasResourceType() {
       return fieldSetFlags()[1];
     }
 
 
     /**
-      * Clears the value of the 'type' field.
+      * Clears the value of the 'resourceType' field.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder clearType() {
-      type = null;
+    public com.fretron.Model.ResourceInfo.Builder clearResourceType() {
+      resourceType = null;
       fieldSetFlags()[1] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'number' field.
+      * Gets the value of the 'resourceIdentifier' field.
       * @return The value.
       */
-    public java.lang.String getNumber() {
-      return number;
+    public java.lang.String getResourceIdentifier() {
+      return resourceIdentifier;
     }
 
     /**
-      * Sets the value of the 'number' field.
-      * @param value The value of 'number'.
+      * Sets the value of the 'resourceIdentifier' field.
+      * @param value The value of 'resourceIdentifier'.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder setNumber(java.lang.String value) {
+    public com.fretron.Model.ResourceInfo.Builder setResourceIdentifier(java.lang.String value) {
       validate(fields()[2], value);
-      this.number = value;
+      this.resourceIdentifier = value;
       fieldSetFlags()[2] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'number' field has been set.
-      * @return True if the 'number' field has been set, false otherwise.
+      * Checks whether the 'resourceIdentifier' field has been set.
+      * @return True if the 'resourceIdentifier' field has been set, false otherwise.
       */
-    public boolean hasNumber() {
+    public boolean hasResourceIdentifier() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'number' field.
+      * Clears the value of the 'resourceIdentifier' field.
       * @return This builder.
       */
-    public com.fretron.Model.ResourceInfo.Builder clearNumber() {
-      number = null;
+    public com.fretron.Model.ResourceInfo.Builder clearResourceIdentifier() {
+      resourceIdentifier = null;
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -377,9 +377,9 @@ public class ResourceInfo extends org.apache.avro.specific.SpecificRecordBase im
     public ResourceInfo build() {
       try {
         ResourceInfo record = new ResourceInfo();
-        record.uuid = fieldSetFlags()[0] ? this.uuid : (java.lang.String) defaultValue(fields()[0]);
-        record.type = fieldSetFlags()[1] ? this.type : (java.lang.String) defaultValue(fields()[1]);
-        record.number = fieldSetFlags()[2] ? this.number : (java.lang.String) defaultValue(fields()[2]);
+        record.resourceId = fieldSetFlags()[0] ? this.resourceId : (java.lang.String) defaultValue(fields()[0]);
+        record.resourceType = fieldSetFlags()[1] ? this.resourceType : (java.lang.String) defaultValue(fields()[1]);
+        record.resourceIdentifier = fieldSetFlags()[2] ? this.resourceIdentifier : (java.lang.String) defaultValue(fields()[2]);
         record.externalId = fieldSetFlags()[3] ? this.externalId : (java.lang.String) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {

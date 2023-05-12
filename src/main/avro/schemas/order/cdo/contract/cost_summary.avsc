@@ -1,0 +1,63 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "CostSummary",
+  "type": "record",
+  "fields": [
+    {
+      "name": "consignor",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignee",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "origin",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "destination",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "vehicleType",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "sourceOfVehicle",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "movementCategory",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    }
+  ]
+}

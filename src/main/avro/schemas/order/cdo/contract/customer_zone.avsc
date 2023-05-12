@@ -1,10 +1,10 @@
 {
   "namespace": "com.fretron.Model",
-  "name": "ResourceInfo",
+  "name": "CustomerZone",
   "type": "record",
   "fields": [
     {
-      "name": "resourceId",
+      "name": "uuid",
       "type": [
         "null",
         "string"
@@ -12,7 +12,7 @@
       "default": null
     },
     {
-      "name": "resourceType",
+      "name": "partnerId",
       "type": [
         "null",
         "string"
@@ -20,7 +20,7 @@
       "default": null
     },
     {
-      "name": "resourceIdentifier",
+      "name": "zoneName",
       "type": [
         "null",
         "string"
@@ -28,10 +28,13 @@
       "default": null
     },
     {
-      "name": "externalId",
+      "name": "hubs",
       "type": [
         "null",
-        "string"
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ResourceInfo"
+        }
       ],
       "default": null
     }

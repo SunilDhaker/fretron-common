@@ -1,0 +1,146 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "CostLane",
+  "type": "record",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "contractId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "customerLaneId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignor",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignee",
+      "type": [
+        "null",
+        "com.fretron.Model.BuisnessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "origin",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+      "name": "destination",
+      "type": [
+        "null",
+        "com.fretron.Model.Place"
+      ],
+      "default": null
+    },
+    {
+      "name": "loadType",
+      "type": [
+        "null",
+        "com.fretron.Model.LoadType"
+      ],
+      "default": null
+    },
+    {
+      "name": "freightUOM",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "freightRate",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "sharePercentage",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "quantityPeriod",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "totalQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    },
+    {
+      "name": "periodicQuantity",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.PeriodicQuantity"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "sourceOfVehicle",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "movementCategory",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
