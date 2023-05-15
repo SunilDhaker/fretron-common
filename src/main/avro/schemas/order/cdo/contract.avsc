@@ -587,7 +587,7 @@
       "default": null
     },
     {
-      "name": "quantityOverUseLimit",
+      "name": "estimatedQuantityTolerance",
       "type": [
         "null",
         "double"
@@ -615,6 +615,14 @@
       "type": [
         "null",
         "com.fretron.Model.Employee"
+      ],
+      "default": null
+    },
+    {
+      "name": "consignmentRule",
+      "type": [
+        "null",
+        "com.fretron.Model.ConsignmentRule"
       ],
       "default": null
     }

@@ -1,0 +1,40 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "ConsignmentRule",
+  "type": "record",
+  "fields": [
+    {
+      "name": "min",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "max",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "uom",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "limitViolationReason",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+
+  ]
+}
