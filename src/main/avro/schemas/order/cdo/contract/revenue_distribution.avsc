@@ -1,0 +1,23 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "RevenueDistribution",
+  "type": "record",
+  "fields": [
+    {
+      "name": "contractSupportBranchShareRule",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "businessSupportBranchShareRule",
+      "type": [
+        "null",
+        "com.fretron.Model.CostRule"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "CheckListItem",
+  "type": "record",
+  "fields": [
+
+    {
+      "name": "actionName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "isApplicable",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isCompleted",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isSystemGenerated",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    }
+
+
+  ]
+}

@@ -555,42 +555,10 @@
       "default": null
     },
     {
-      "name": "contractSupportBranchShareRule",
+      "name": "revenueDistribution",
       "type": [
         "null",
-        "com.fretron.Model.CostRule"
-      ],
-      "default": null
-    },
-    {
-      "name": "businessSupportBranchShareRule",
-      "type": [
-        "null",
-        "com.fretron.Model.CostRule"
-      ],
-      "default": null
-    },
-    {
-      "name": "quantityEstimationRule",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "quantityEstimatedBy",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "estimatedQuantityTolerance",
-      "type": [
-        "null",
-        "double"
+        "com.fretron.Model.RevenueDistribution"
       ],
       "default": null
     },
@@ -603,10 +571,10 @@
       "default": null
     },
     {
-      "name": "estimatedQuantity",
+      "name": "quantityEstimation",
       "type": [
         "null",
-        "com.fretron.Model.StandardMeasurement"
+        "com.fretron.Model.QuantityEstimation"
       ],
       "default": null
     },
@@ -623,6 +591,17 @@
       "type": [
         "null",
         "com.fretron.Model.ConsignmentRule"
+      ],
+      "default": null
+    },
+    {
+      "name": "checkList",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CheckListItem"
+        }
       ],
       "default": null
     }

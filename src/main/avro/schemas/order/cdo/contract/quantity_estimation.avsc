@@ -1,0 +1,39 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "QuantityEstimation",
+  "type": "record",
+  "fields": [
+    {
+      "name": "quantityEstimationRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "quantityEstimatedBy",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "estimatedQuantityTolerance",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "estimatedQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    }
+  ]
+}
