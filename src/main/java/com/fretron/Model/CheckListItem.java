@@ -10,13 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6024720805376876975L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckListItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"actionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isCompleted\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSystemGenerated\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
+  private static final long serialVersionUID = 3278029452066807561L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CheckListItem\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"actionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isCompleted\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSystemGenerated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isMandatoryOnVerification\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String actionName;
   @Deprecated public java.lang.Boolean isApplicable;
   @Deprecated public java.lang.Boolean isCompleted;
   @Deprecated public java.lang.Boolean isSystemGenerated;
+  @Deprecated public java.lang.Boolean isMandatoryOnVerification;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -31,12 +32,14 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
    * @param isApplicable The new value for isApplicable
    * @param isCompleted The new value for isCompleted
    * @param isSystemGenerated The new value for isSystemGenerated
+   * @param isMandatoryOnVerification The new value for isMandatoryOnVerification
    */
-  public CheckListItem(java.lang.String actionName, java.lang.Boolean isApplicable, java.lang.Boolean isCompleted, java.lang.Boolean isSystemGenerated) {
+  public CheckListItem(java.lang.String actionName, java.lang.Boolean isApplicable, java.lang.Boolean isCompleted, java.lang.Boolean isSystemGenerated, java.lang.Boolean isMandatoryOnVerification) {
     this.actionName = actionName;
     this.isApplicable = isApplicable;
     this.isCompleted = isCompleted;
     this.isSystemGenerated = isSystemGenerated;
+    this.isMandatoryOnVerification = isMandatoryOnVerification;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -47,6 +50,7 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
     case 1: return isApplicable;
     case 2: return isCompleted;
     case 3: return isSystemGenerated;
+    case 4: return isMandatoryOnVerification;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -59,6 +63,7 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
     case 1: isApplicable = (java.lang.Boolean)value$; break;
     case 2: isCompleted = (java.lang.Boolean)value$; break;
     case 3: isSystemGenerated = (java.lang.Boolean)value$; break;
+    case 4: isMandatoryOnVerification = (java.lang.Boolean)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -128,6 +133,22 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'isMandatoryOnVerification' field.
+   * @return The value of the 'isMandatoryOnVerification' field.
+   */
+  public java.lang.Boolean getIsMandatoryOnVerification() {
+    return isMandatoryOnVerification;
+  }
+
+  /**
+   * Sets the value of the 'isMandatoryOnVerification' field.
+   * @param value the value to set.
+   */
+  public void setIsMandatoryOnVerification(java.lang.Boolean value) {
+    this.isMandatoryOnVerification = value;
+  }
+
+  /**
    * Creates a new CheckListItem RecordBuilder.
    * @return A new CheckListItem RecordBuilder
    */
@@ -163,6 +184,7 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.Boolean isApplicable;
     private java.lang.Boolean isCompleted;
     private java.lang.Boolean isSystemGenerated;
+    private java.lang.Boolean isMandatoryOnVerification;
 
     /** Creates a new Builder */
     private Builder() {
@@ -191,6 +213,10 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
         this.isSystemGenerated = data().deepCopy(fields()[3].schema(), other.isSystemGenerated);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.isMandatoryOnVerification)) {
+        this.isMandatoryOnVerification = data().deepCopy(fields()[4].schema(), other.isMandatoryOnVerification);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -214,6 +240,10 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[3], other.isSystemGenerated)) {
         this.isSystemGenerated = data().deepCopy(fields()[3].schema(), other.isSystemGenerated);
         fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.isMandatoryOnVerification)) {
+        this.isMandatoryOnVerification = data().deepCopy(fields()[4].schema(), other.isMandatoryOnVerification);
+        fieldSetFlags()[4] = true;
       }
     }
 
@@ -373,6 +403,45 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'isMandatoryOnVerification' field.
+      * @return The value.
+      */
+    public java.lang.Boolean getIsMandatoryOnVerification() {
+      return isMandatoryOnVerification;
+    }
+
+    /**
+      * Sets the value of the 'isMandatoryOnVerification' field.
+      * @param value The value of 'isMandatoryOnVerification'.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckListItem.Builder setIsMandatoryOnVerification(java.lang.Boolean value) {
+      validate(fields()[4], value);
+      this.isMandatoryOnVerification = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'isMandatoryOnVerification' field has been set.
+      * @return True if the 'isMandatoryOnVerification' field has been set, false otherwise.
+      */
+    public boolean hasIsMandatoryOnVerification() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'isMandatoryOnVerification' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.CheckListItem.Builder clearIsMandatoryOnVerification() {
+      isMandatoryOnVerification = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public CheckListItem build() {
       try {
@@ -381,6 +450,7 @@ public class CheckListItem extends org.apache.avro.specific.SpecificRecordBase i
         record.isApplicable = fieldSetFlags()[1] ? this.isApplicable : (java.lang.Boolean) defaultValue(fields()[1]);
         record.isCompleted = fieldSetFlags()[2] ? this.isCompleted : (java.lang.Boolean) defaultValue(fields()[2]);
         record.isSystemGenerated = fieldSetFlags()[3] ? this.isSystemGenerated : (java.lang.Boolean) defaultValue(fields()[3]);
+        record.isMandatoryOnVerification = fieldSetFlags()[4] ? this.isMandatoryOnVerification : (java.lang.Boolean) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
