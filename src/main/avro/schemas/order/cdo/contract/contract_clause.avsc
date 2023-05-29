@@ -1,10 +1,10 @@
 {
   "namespace": "com.fretron.Model",
-  "name": "QuantityEstimation",
+  "name": "ContractClause",
   "type": "record",
   "fields": [
     {
-      "name": "estimationCalculationRule",
+      "name": "name",
       "type": [
         "null",
         "string"
@@ -12,7 +12,7 @@
       "default": null
     },
     {
-      "name": "quantityEstimatedBy",
+      "name": "clauseNumber",
       "type": [
         "null",
         "string"
@@ -20,7 +20,7 @@
       "default": null
     },
     {
-      "name": "quantityPeriod",
+      "name": "pageNumber",
       "type": [
         "null",
         "string"
@@ -28,13 +28,26 @@
       "default": null
     },
     {
-      "name": "periodicQuantity",
+      "name": "text",
       "type": [
         "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.PeriodicQuantity"
-        }
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "customerClauseNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "isApplicable",
+      "type": [
+        "null",
+        "boolean"
       ],
       "default": null
     }

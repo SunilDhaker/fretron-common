@@ -604,6 +604,39 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "allowedConsignmentPSNTypes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "allowedShipmentPSNTypes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "clause",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ContractClause"
+        }
+      ],
+      "default": null
     }
 
 

@@ -195,14 +195,6 @@
       "default": null
     },
     {
-      "name": "quantityPeriod",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
       "name": "totalQuantity",
       "type": [
         "null",
@@ -211,13 +203,10 @@
       "default": null
     },
     {
-      "name": "periodicQuantity",
+      "name": "quantityEstimation",
       "type": [
         "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.PeriodicQuantity"
-        }
+        "com.fretron.Model.QuantityEstimation"
       ],
       "default": null
     },

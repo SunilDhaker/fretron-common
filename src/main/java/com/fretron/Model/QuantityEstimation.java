@@ -10,13 +10,13 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6027254983481155187L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QuantityEstimation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"quantityEstimationRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityEstimatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"estimatedQuantityTolerance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"estimatedQuantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}");
+  private static final long serialVersionUID = 4651495382218926866L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"QuantityEstimation\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"estimationCalculationRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityEstimatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityPeriod\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"periodicQuantity\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PeriodicQuantity\",\"fields\":[{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
-  @Deprecated public java.lang.String quantityEstimationRule;
+  @Deprecated public java.lang.String estimationCalculationRule;
   @Deprecated public java.lang.String quantityEstimatedBy;
-  @Deprecated public java.lang.Double estimatedQuantityTolerance;
-  @Deprecated public com.fretron.Model.StandardMeasurement estimatedQuantity;
+  @Deprecated public java.lang.String quantityPeriod;
+  @Deprecated public java.util.List<com.fretron.Model.PeriodicQuantity> periodicQuantity;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -27,26 +27,26 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
 
   /**
    * All-args constructor.
-   * @param quantityEstimationRule The new value for quantityEstimationRule
+   * @param estimationCalculationRule The new value for estimationCalculationRule
    * @param quantityEstimatedBy The new value for quantityEstimatedBy
-   * @param estimatedQuantityTolerance The new value for estimatedQuantityTolerance
-   * @param estimatedQuantity The new value for estimatedQuantity
+   * @param quantityPeriod The new value for quantityPeriod
+   * @param periodicQuantity The new value for periodicQuantity
    */
-  public QuantityEstimation(java.lang.String quantityEstimationRule, java.lang.String quantityEstimatedBy, java.lang.Double estimatedQuantityTolerance, com.fretron.Model.StandardMeasurement estimatedQuantity) {
-    this.quantityEstimationRule = quantityEstimationRule;
+  public QuantityEstimation(java.lang.String estimationCalculationRule, java.lang.String quantityEstimatedBy, java.lang.String quantityPeriod, java.util.List<com.fretron.Model.PeriodicQuantity> periodicQuantity) {
+    this.estimationCalculationRule = estimationCalculationRule;
     this.quantityEstimatedBy = quantityEstimatedBy;
-    this.estimatedQuantityTolerance = estimatedQuantityTolerance;
-    this.estimatedQuantity = estimatedQuantity;
+    this.quantityPeriod = quantityPeriod;
+    this.periodicQuantity = periodicQuantity;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
   // Used by DatumWriter.  Applications should not call.
   public java.lang.Object get(int field$) {
     switch (field$) {
-    case 0: return quantityEstimationRule;
+    case 0: return estimationCalculationRule;
     case 1: return quantityEstimatedBy;
-    case 2: return estimatedQuantityTolerance;
-    case 3: return estimatedQuantity;
+    case 2: return quantityPeriod;
+    case 3: return periodicQuantity;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -55,28 +55,28 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: quantityEstimationRule = (java.lang.String)value$; break;
+    case 0: estimationCalculationRule = (java.lang.String)value$; break;
     case 1: quantityEstimatedBy = (java.lang.String)value$; break;
-    case 2: estimatedQuantityTolerance = (java.lang.Double)value$; break;
-    case 3: estimatedQuantity = (com.fretron.Model.StandardMeasurement)value$; break;
+    case 2: quantityPeriod = (java.lang.String)value$; break;
+    case 3: periodicQuantity = (java.util.List<com.fretron.Model.PeriodicQuantity>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
 
   /**
-   * Gets the value of the 'quantityEstimationRule' field.
-   * @return The value of the 'quantityEstimationRule' field.
+   * Gets the value of the 'estimationCalculationRule' field.
+   * @return The value of the 'estimationCalculationRule' field.
    */
-  public java.lang.String getQuantityEstimationRule() {
-    return quantityEstimationRule;
+  public java.lang.String getEstimationCalculationRule() {
+    return estimationCalculationRule;
   }
 
   /**
-   * Sets the value of the 'quantityEstimationRule' field.
+   * Sets the value of the 'estimationCalculationRule' field.
    * @param value the value to set.
    */
-  public void setQuantityEstimationRule(java.lang.String value) {
-    this.quantityEstimationRule = value;
+  public void setEstimationCalculationRule(java.lang.String value) {
+    this.estimationCalculationRule = value;
   }
 
   /**
@@ -96,35 +96,35 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
   }
 
   /**
-   * Gets the value of the 'estimatedQuantityTolerance' field.
-   * @return The value of the 'estimatedQuantityTolerance' field.
+   * Gets the value of the 'quantityPeriod' field.
+   * @return The value of the 'quantityPeriod' field.
    */
-  public java.lang.Double getEstimatedQuantityTolerance() {
-    return estimatedQuantityTolerance;
+  public java.lang.String getQuantityPeriod() {
+    return quantityPeriod;
   }
 
   /**
-   * Sets the value of the 'estimatedQuantityTolerance' field.
+   * Sets the value of the 'quantityPeriod' field.
    * @param value the value to set.
    */
-  public void setEstimatedQuantityTolerance(java.lang.Double value) {
-    this.estimatedQuantityTolerance = value;
+  public void setQuantityPeriod(java.lang.String value) {
+    this.quantityPeriod = value;
   }
 
   /**
-   * Gets the value of the 'estimatedQuantity' field.
-   * @return The value of the 'estimatedQuantity' field.
+   * Gets the value of the 'periodicQuantity' field.
+   * @return The value of the 'periodicQuantity' field.
    */
-  public com.fretron.Model.StandardMeasurement getEstimatedQuantity() {
-    return estimatedQuantity;
+  public java.util.List<com.fretron.Model.PeriodicQuantity> getPeriodicQuantity() {
+    return periodicQuantity;
   }
 
   /**
-   * Sets the value of the 'estimatedQuantity' field.
+   * Sets the value of the 'periodicQuantity' field.
    * @param value the value to set.
    */
-  public void setEstimatedQuantity(com.fretron.Model.StandardMeasurement value) {
-    this.estimatedQuantity = value;
+  public void setPeriodicQuantity(java.util.List<com.fretron.Model.PeriodicQuantity> value) {
+    this.periodicQuantity = value;
   }
 
   /**
@@ -159,11 +159,10 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<QuantityEstimation>
     implements org.apache.avro.data.RecordBuilder<QuantityEstimation> {
 
-    private java.lang.String quantityEstimationRule;
+    private java.lang.String estimationCalculationRule;
     private java.lang.String quantityEstimatedBy;
-    private java.lang.Double estimatedQuantityTolerance;
-    private com.fretron.Model.StandardMeasurement estimatedQuantity;
-    private com.fretron.Model.StandardMeasurement.Builder estimatedQuantityBuilder;
+    private java.lang.String quantityPeriod;
+    private java.util.List<com.fretron.Model.PeriodicQuantity> periodicQuantity;
 
     /** Creates a new Builder */
     private Builder() {
@@ -176,24 +175,21 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
      */
     private Builder(com.fretron.Model.QuantityEstimation.Builder other) {
       super(other);
-      if (isValidValue(fields()[0], other.quantityEstimationRule)) {
-        this.quantityEstimationRule = data().deepCopy(fields()[0].schema(), other.quantityEstimationRule);
+      if (isValidValue(fields()[0], other.estimationCalculationRule)) {
+        this.estimationCalculationRule = data().deepCopy(fields()[0].schema(), other.estimationCalculationRule);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.quantityEstimatedBy)) {
         this.quantityEstimatedBy = data().deepCopy(fields()[1].schema(), other.quantityEstimatedBy);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.estimatedQuantityTolerance)) {
-        this.estimatedQuantityTolerance = data().deepCopy(fields()[2].schema(), other.estimatedQuantityTolerance);
+      if (isValidValue(fields()[2], other.quantityPeriod)) {
+        this.quantityPeriod = data().deepCopy(fields()[2].schema(), other.quantityPeriod);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.estimatedQuantity)) {
-        this.estimatedQuantity = data().deepCopy(fields()[3].schema(), other.estimatedQuantity);
+      if (isValidValue(fields()[3], other.periodicQuantity)) {
+        this.periodicQuantity = data().deepCopy(fields()[3].schema(), other.periodicQuantity);
         fieldSetFlags()[3] = true;
-      }
-      if (other.hasEstimatedQuantityBuilder()) {
-        this.estimatedQuantityBuilder = com.fretron.Model.StandardMeasurement.newBuilder(other.getEstimatedQuantityBuilder());
       }
     }
 
@@ -203,60 +199,59 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
      */
     private Builder(com.fretron.Model.QuantityEstimation other) {
             super(SCHEMA$);
-      if (isValidValue(fields()[0], other.quantityEstimationRule)) {
-        this.quantityEstimationRule = data().deepCopy(fields()[0].schema(), other.quantityEstimationRule);
+      if (isValidValue(fields()[0], other.estimationCalculationRule)) {
+        this.estimationCalculationRule = data().deepCopy(fields()[0].schema(), other.estimationCalculationRule);
         fieldSetFlags()[0] = true;
       }
       if (isValidValue(fields()[1], other.quantityEstimatedBy)) {
         this.quantityEstimatedBy = data().deepCopy(fields()[1].schema(), other.quantityEstimatedBy);
         fieldSetFlags()[1] = true;
       }
-      if (isValidValue(fields()[2], other.estimatedQuantityTolerance)) {
-        this.estimatedQuantityTolerance = data().deepCopy(fields()[2].schema(), other.estimatedQuantityTolerance);
+      if (isValidValue(fields()[2], other.quantityPeriod)) {
+        this.quantityPeriod = data().deepCopy(fields()[2].schema(), other.quantityPeriod);
         fieldSetFlags()[2] = true;
       }
-      if (isValidValue(fields()[3], other.estimatedQuantity)) {
-        this.estimatedQuantity = data().deepCopy(fields()[3].schema(), other.estimatedQuantity);
+      if (isValidValue(fields()[3], other.periodicQuantity)) {
+        this.periodicQuantity = data().deepCopy(fields()[3].schema(), other.periodicQuantity);
         fieldSetFlags()[3] = true;
       }
-      this.estimatedQuantityBuilder = null;
     }
 
     /**
-      * Gets the value of the 'quantityEstimationRule' field.
+      * Gets the value of the 'estimationCalculationRule' field.
       * @return The value.
       */
-    public java.lang.String getQuantityEstimationRule() {
-      return quantityEstimationRule;
+    public java.lang.String getEstimationCalculationRule() {
+      return estimationCalculationRule;
     }
 
     /**
-      * Sets the value of the 'quantityEstimationRule' field.
-      * @param value The value of 'quantityEstimationRule'.
+      * Sets the value of the 'estimationCalculationRule' field.
+      * @param value The value of 'estimationCalculationRule'.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder setQuantityEstimationRule(java.lang.String value) {
+    public com.fretron.Model.QuantityEstimation.Builder setEstimationCalculationRule(java.lang.String value) {
       validate(fields()[0], value);
-      this.quantityEstimationRule = value;
+      this.estimationCalculationRule = value;
       fieldSetFlags()[0] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'quantityEstimationRule' field has been set.
-      * @return True if the 'quantityEstimationRule' field has been set, false otherwise.
+      * Checks whether the 'estimationCalculationRule' field has been set.
+      * @return True if the 'estimationCalculationRule' field has been set, false otherwise.
       */
-    public boolean hasQuantityEstimationRule() {
+    public boolean hasEstimationCalculationRule() {
       return fieldSetFlags()[0];
     }
 
 
     /**
-      * Clears the value of the 'quantityEstimationRule' field.
+      * Clears the value of the 'estimationCalculationRule' field.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder clearQuantityEstimationRule() {
-      quantityEstimationRule = null;
+    public com.fretron.Model.QuantityEstimation.Builder clearEstimationCalculationRule() {
+      estimationCalculationRule = null;
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -301,114 +296,79 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
     }
 
     /**
-      * Gets the value of the 'estimatedQuantityTolerance' field.
+      * Gets the value of the 'quantityPeriod' field.
       * @return The value.
       */
-    public java.lang.Double getEstimatedQuantityTolerance() {
-      return estimatedQuantityTolerance;
+    public java.lang.String getQuantityPeriod() {
+      return quantityPeriod;
     }
 
     /**
-      * Sets the value of the 'estimatedQuantityTolerance' field.
-      * @param value The value of 'estimatedQuantityTolerance'.
+      * Sets the value of the 'quantityPeriod' field.
+      * @param value The value of 'quantityPeriod'.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder setEstimatedQuantityTolerance(java.lang.Double value) {
+    public com.fretron.Model.QuantityEstimation.Builder setQuantityPeriod(java.lang.String value) {
       validate(fields()[2], value);
-      this.estimatedQuantityTolerance = value;
+      this.quantityPeriod = value;
       fieldSetFlags()[2] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'estimatedQuantityTolerance' field has been set.
-      * @return True if the 'estimatedQuantityTolerance' field has been set, false otherwise.
+      * Checks whether the 'quantityPeriod' field has been set.
+      * @return True if the 'quantityPeriod' field has been set, false otherwise.
       */
-    public boolean hasEstimatedQuantityTolerance() {
+    public boolean hasQuantityPeriod() {
       return fieldSetFlags()[2];
     }
 
 
     /**
-      * Clears the value of the 'estimatedQuantityTolerance' field.
+      * Clears the value of the 'quantityPeriod' field.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder clearEstimatedQuantityTolerance() {
-      estimatedQuantityTolerance = null;
+    public com.fretron.Model.QuantityEstimation.Builder clearQuantityPeriod() {
+      quantityPeriod = null;
       fieldSetFlags()[2] = false;
       return this;
     }
 
     /**
-      * Gets the value of the 'estimatedQuantity' field.
+      * Gets the value of the 'periodicQuantity' field.
       * @return The value.
       */
-    public com.fretron.Model.StandardMeasurement getEstimatedQuantity() {
-      return estimatedQuantity;
+    public java.util.List<com.fretron.Model.PeriodicQuantity> getPeriodicQuantity() {
+      return periodicQuantity;
     }
 
     /**
-      * Sets the value of the 'estimatedQuantity' field.
-      * @param value The value of 'estimatedQuantity'.
+      * Sets the value of the 'periodicQuantity' field.
+      * @param value The value of 'periodicQuantity'.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder setEstimatedQuantity(com.fretron.Model.StandardMeasurement value) {
+    public com.fretron.Model.QuantityEstimation.Builder setPeriodicQuantity(java.util.List<com.fretron.Model.PeriodicQuantity> value) {
       validate(fields()[3], value);
-      this.estimatedQuantityBuilder = null;
-      this.estimatedQuantity = value;
+      this.periodicQuantity = value;
       fieldSetFlags()[3] = true;
       return this;
     }
 
     /**
-      * Checks whether the 'estimatedQuantity' field has been set.
-      * @return True if the 'estimatedQuantity' field has been set, false otherwise.
+      * Checks whether the 'periodicQuantity' field has been set.
+      * @return True if the 'periodicQuantity' field has been set, false otherwise.
       */
-    public boolean hasEstimatedQuantity() {
+    public boolean hasPeriodicQuantity() {
       return fieldSetFlags()[3];
     }
 
-    /**
-     * Gets the Builder instance for the 'estimatedQuantity' field and creates one if it doesn't exist yet.
-     * @return This builder.
-     */
-    public com.fretron.Model.StandardMeasurement.Builder getEstimatedQuantityBuilder() {
-      if (estimatedQuantityBuilder == null) {
-        if (hasEstimatedQuantity()) {
-          setEstimatedQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder(estimatedQuantity));
-        } else {
-          setEstimatedQuantityBuilder(com.fretron.Model.StandardMeasurement.newBuilder());
-        }
-      }
-      return estimatedQuantityBuilder;
-    }
 
     /**
-     * Sets the Builder instance for the 'estimatedQuantity' field
-     * @param value The builder instance that must be set.
-     * @return This builder.
-     */
-    public com.fretron.Model.QuantityEstimation.Builder setEstimatedQuantityBuilder(com.fretron.Model.StandardMeasurement.Builder value) {
-      clearEstimatedQuantity();
-      estimatedQuantityBuilder = value;
-      return this;
-    }
-
-    /**
-     * Checks whether the 'estimatedQuantity' field has an active Builder instance
-     * @return True if the 'estimatedQuantity' field has an active Builder instance
-     */
-    public boolean hasEstimatedQuantityBuilder() {
-      return estimatedQuantityBuilder != null;
-    }
-
-    /**
-      * Clears the value of the 'estimatedQuantity' field.
+      * Clears the value of the 'periodicQuantity' field.
       * @return This builder.
       */
-    public com.fretron.Model.QuantityEstimation.Builder clearEstimatedQuantity() {
-      estimatedQuantity = null;
-      estimatedQuantityBuilder = null;
+    public com.fretron.Model.QuantityEstimation.Builder clearPeriodicQuantity() {
+      periodicQuantity = null;
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -417,14 +377,10 @@ public class QuantityEstimation extends org.apache.avro.specific.SpecificRecordB
     public QuantityEstimation build() {
       try {
         QuantityEstimation record = new QuantityEstimation();
-        record.quantityEstimationRule = fieldSetFlags()[0] ? this.quantityEstimationRule : (java.lang.String) defaultValue(fields()[0]);
+        record.estimationCalculationRule = fieldSetFlags()[0] ? this.estimationCalculationRule : (java.lang.String) defaultValue(fields()[0]);
         record.quantityEstimatedBy = fieldSetFlags()[1] ? this.quantityEstimatedBy : (java.lang.String) defaultValue(fields()[1]);
-        record.estimatedQuantityTolerance = fieldSetFlags()[2] ? this.estimatedQuantityTolerance : (java.lang.Double) defaultValue(fields()[2]);
-        if (estimatedQuantityBuilder != null) {
-          record.estimatedQuantity = this.estimatedQuantityBuilder.build();
-        } else {
-          record.estimatedQuantity = fieldSetFlags()[3] ? this.estimatedQuantity : (com.fretron.Model.StandardMeasurement) defaultValue(fields()[3]);
-        }
+        record.quantityPeriod = fieldSetFlags()[2] ? this.quantityPeriod : (java.lang.String) defaultValue(fields()[2]);
+        record.periodicQuantity = fieldSetFlags()[3] ? this.periodicQuantity : (java.util.List<com.fretron.Model.PeriodicQuantity>) defaultValue(fields()[3]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
