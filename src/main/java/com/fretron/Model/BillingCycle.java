@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -813297059615810125L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BillingCycle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"billingRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billEligibilityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billQuantityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"graceDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"billSplitRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billClubRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minGuaranteeKM\",\"type\":[\"null\",\"double\"],\"default\":null}]}");
+  private static final long serialVersionUID = -5529665474999974915L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BillingCycle\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"billingRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billEligibilityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billQuantityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"graceDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"billSplitRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billClubRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minGuaranteeKM\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"billingSubmissionRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String type;
   @Deprecated public java.util.List<java.lang.Integer> weekDays;
@@ -25,6 +25,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
   @Deprecated public java.lang.String billSplitRule;
   @Deprecated public java.lang.String billClubRule;
   @Deprecated public java.lang.Double minGuaranteeKM;
+  @Deprecated public java.lang.String billingSubmissionRule;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -47,8 +48,9 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
    * @param billSplitRule The new value for billSplitRule
    * @param billClubRule The new value for billClubRule
    * @param minGuaranteeKM The new value for minGuaranteeKM
+   * @param billingSubmissionRule The new value for billingSubmissionRule
    */
-  public BillingCycle(java.lang.String type, java.util.List<java.lang.Integer> weekDays, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.Integer> monthDays, java.lang.String billingRule, java.lang.String billEligibilityRule, java.lang.String billQuantityRule, java.lang.Integer graceDays, java.lang.String billSplitRule, java.lang.String billClubRule, java.lang.Double minGuaranteeKM) {
+  public BillingCycle(java.lang.String type, java.util.List<java.lang.Integer> weekDays, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.Integer> monthDays, java.lang.String billingRule, java.lang.String billEligibilityRule, java.lang.String billQuantityRule, java.lang.Integer graceDays, java.lang.String billSplitRule, java.lang.String billClubRule, java.lang.Double minGuaranteeKM, java.lang.String billingSubmissionRule) {
     this.type = type;
     this.weekDays = weekDays;
     this.dayHours = dayHours;
@@ -61,6 +63,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     this.billSplitRule = billSplitRule;
     this.billClubRule = billClubRule;
     this.minGuaranteeKM = minGuaranteeKM;
+    this.billingSubmissionRule = billingSubmissionRule;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -79,6 +82,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     case 9: return billSplitRule;
     case 10: return billClubRule;
     case 11: return minGuaranteeKM;
+    case 12: return billingSubmissionRule;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -99,6 +103,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     case 9: billSplitRule = (java.lang.String)value$; break;
     case 10: billClubRule = (java.lang.String)value$; break;
     case 11: minGuaranteeKM = (java.lang.Double)value$; break;
+    case 12: billingSubmissionRule = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -296,6 +301,22 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
   }
 
   /**
+   * Gets the value of the 'billingSubmissionRule' field.
+   * @return The value of the 'billingSubmissionRule' field.
+   */
+  public java.lang.String getBillingSubmissionRule() {
+    return billingSubmissionRule;
+  }
+
+  /**
+   * Sets the value of the 'billingSubmissionRule' field.
+   * @param value the value to set.
+   */
+  public void setBillingSubmissionRule(java.lang.String value) {
+    this.billingSubmissionRule = value;
+  }
+
+  /**
    * Creates a new BillingCycle RecordBuilder.
    * @return A new BillingCycle RecordBuilder
    */
@@ -339,6 +360,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
     private java.lang.String billSplitRule;
     private java.lang.String billClubRule;
     private java.lang.Double minGuaranteeKM;
+    private java.lang.String billingSubmissionRule;
 
     /** Creates a new Builder */
     private Builder() {
@@ -399,6 +421,10 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
         this.minGuaranteeKM = data().deepCopy(fields()[11].schema(), other.minGuaranteeKM);
         fieldSetFlags()[11] = true;
       }
+      if (isValidValue(fields()[12], other.billingSubmissionRule)) {
+        this.billingSubmissionRule = data().deepCopy(fields()[12].schema(), other.billingSubmissionRule);
+        fieldSetFlags()[12] = true;
+      }
     }
 
     /**
@@ -454,6 +480,10 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
       if (isValidValue(fields()[11], other.minGuaranteeKM)) {
         this.minGuaranteeKM = data().deepCopy(fields()[11].schema(), other.minGuaranteeKM);
         fieldSetFlags()[11] = true;
+      }
+      if (isValidValue(fields()[12], other.billingSubmissionRule)) {
+        this.billingSubmissionRule = data().deepCopy(fields()[12].schema(), other.billingSubmissionRule);
+        fieldSetFlags()[12] = true;
       }
     }
 
@@ -925,6 +955,45 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'billingSubmissionRule' field.
+      * @return The value.
+      */
+    public java.lang.String getBillingSubmissionRule() {
+      return billingSubmissionRule;
+    }
+
+    /**
+      * Sets the value of the 'billingSubmissionRule' field.
+      * @param value The value of 'billingSubmissionRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.BillingCycle.Builder setBillingSubmissionRule(java.lang.String value) {
+      validate(fields()[12], value);
+      this.billingSubmissionRule = value;
+      fieldSetFlags()[12] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'billingSubmissionRule' field has been set.
+      * @return True if the 'billingSubmissionRule' field has been set, false otherwise.
+      */
+    public boolean hasBillingSubmissionRule() {
+      return fieldSetFlags()[12];
+    }
+
+
+    /**
+      * Clears the value of the 'billingSubmissionRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.BillingCycle.Builder clearBillingSubmissionRule() {
+      billingSubmissionRule = null;
+      fieldSetFlags()[12] = false;
+      return this;
+    }
+
     @Override
     public BillingCycle build() {
       try {
@@ -941,6 +1010,7 @@ public class BillingCycle extends org.apache.avro.specific.SpecificRecordBase im
         record.billSplitRule = fieldSetFlags()[9] ? this.billSplitRule : (java.lang.String) defaultValue(fields()[9]);
         record.billClubRule = fieldSetFlags()[10] ? this.billClubRule : (java.lang.String) defaultValue(fields()[10]);
         record.minGuaranteeKM = fieldSetFlags()[11] ? this.minGuaranteeKM : (java.lang.Double) defaultValue(fields()[11]);
+        record.billingSubmissionRule = fieldSetFlags()[12] ? this.billingSubmissionRule : (java.lang.String) defaultValue(fields()[12]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

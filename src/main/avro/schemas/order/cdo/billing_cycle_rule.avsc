@@ -110,6 +110,14 @@
         "double"
       ],
       "default": null
+    },
+    {
+      "name": "billingSubmissionRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
