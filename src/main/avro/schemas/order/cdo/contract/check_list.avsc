@@ -35,6 +35,14 @@
         "boolean"
       ],
       "default": null
+    },
+    {
+      "name": "isMandatoryOnVerification",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
 
 
