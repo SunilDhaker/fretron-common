@@ -217,6 +217,14 @@
         "com.fretron.Model.CostSummary"
       ],
       "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
   ]
 }
