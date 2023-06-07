@@ -236,6 +236,14 @@
         "double"
       ],
       "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     }
 
   ]
