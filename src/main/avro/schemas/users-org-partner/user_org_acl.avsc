@@ -1,74 +1,122 @@
-
 {
-"namespace" : "com.fretron.Model",
-"type" : "record",
-"name" : "UserOrgACL",
-"fields" :[
-{"name" : "uuid", "type" : ["null","string"], "default" : null},
-{"name" : "orgUuid", "type" : ["null","string"], "default" : null},
-{"name" : "userUuid", "type" : ["null","string"], "default" : null},
- {
-        "name": "name",
-         "type": ["null" , "string"],
-         "default" : null
-   },
-   {
-         "name": "email",
-          "type": ["null" , "string"],
-           "default" : null
-   },
-   {
-         "name": "mobileNumber",
-          "type": ["null" , "string"],
-          "default" : null
-   },
-   {
-         "name": "externalId",
-                     "type": [
-                       "null",
-                       "string"
-                     ],
-              "default": null
-       },
-{"name" : "accessLevel", "type" : ["null","string"], "default" : null},
-{"name" : "relationType", "type" : ["null","string"], "default" : null},
-  {
-           "name": "role",
-           "type":[ "null","com.fretron.Model.Role"],
-            "default":null
-    },
-     {
-             "name":"isDirty",
-                "type": ["null","boolean"],
-                "default":null
-         },
-
-      {
-           "name": "status",
-                     "type": [
-                           "null",
-                            "string"
-                               ],
-                      "default": null
-      },
-       {
-           "name": "roles",
-            "type": [
-                 "null",
-                 {
-                   "type": "array",
-                   "items": "com.fretron.Model.Role"
-                 }
-               ],
-            "default": null
-       },
+  "namespace": "com.fretron.Model",
+  "type": "record",
+  "name": "UserOrgACL",
+  "fields": [
     {
-                        "name": "updates",
-                        "type": [
-                          "null",
-                          "com.fretron.Model.Updates"
-                        ],
-                        "default": null
-                      }
-]
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgUuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "userUuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "email",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "mobileNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "accessLevel",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "relationType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "role",
+      "type": [
+        "null",
+        "com.fretron.Model.Role"
+      ],
+      "default": null
+    },
+    {
+      "name": "isDirty",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "roles",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Role"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    }
+  ]
 }
