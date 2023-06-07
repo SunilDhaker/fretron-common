@@ -654,6 +654,15 @@
       }],
       "default": null
     }
+    ,
+    {
+      "name": "margin",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    }
 
 
   ]
