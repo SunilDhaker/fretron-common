@@ -214,9 +214,29 @@
       "name": "costSummary",
       "type": [
         "null",
-        "com.fretron.Model.CostSummary"
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CostSummary"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "marginSelection",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "margin",
+      "type": [
+        "null",
+        "double"
       ],
       "default": null
     }
+
   ]
 }

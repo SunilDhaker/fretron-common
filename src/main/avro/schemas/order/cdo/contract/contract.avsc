@@ -645,6 +645,14 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "alerts",
+      "type": ["null",{
+        "type": "array",
+        "items": "com.fretron.Model.ResourceAlert"
+      }],
+      "default": null
     }
 
 
