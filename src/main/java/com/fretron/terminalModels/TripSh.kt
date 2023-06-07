@@ -17,12 +17,13 @@ data class TripSh(
     var partners: List<PartnerInfo>,
     var status: String?,
     var isTripDTChanged : Boolean,
-    var alerts : List<ResourceAlert>
+    var alerts : List<ResourceAlert>,
+    var shipmentCostNumber : String?
 ) {
 
     constructor() : this(
         null, null , null, null, null, null, mutableListOf(), null,
-        null, emptyList(), null , false , mutableListOf()
+        null, emptyList(), null , false , mutableListOf(),null
     )
 
     fun toResourceInfo(): ResourceInfo {
