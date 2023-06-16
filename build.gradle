@@ -88,6 +88,8 @@ task fatJar(type: Jar) {
     }
     with jar
     exclude('META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA')
+    duplicatesStrategy = 'INCLUDE'
+
 }
 
 
