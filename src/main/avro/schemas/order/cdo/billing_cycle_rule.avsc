@@ -11,59 +11,113 @@
       ],
       "default": null
     },
-       {
-           "name": "weekDays",
-               "type": [
-                              "null",
-                               {
-                                 "type": "array",
-                                 "items": "int"
-                               }
-                             ],
-               "default":null
-         },
-
-          {
-                   "name": "dayHours",
-                    "type": [
-                                   "null",
-                                    {
-                                      "type": "array",
-                                      "items": "int"
-                                    }
-                                  ],
-                    "default":null
-              },
-              {
-                        "name": "timesOfDay",
-                         "type": [
-                                        "null",
-                                         {
-                                           "type": "array",
-                                           "items": "long"
-                                         }
-                                       ],
-                         "default":null
-             },
-             {
-                      "name": "monthDays",
-                       "type": [
-                                                "null",
-                                                 {
-                                                   "type": "array",
-                                                   "items": "int"
-                                                 }
-                                               ],
-                        "default":null
-              },
-              {
-                    "name": "billingRule",
-                    "type": [
-                      "null",
-                      "string"
-                    ],
-                    "default": null
-                  }
-
+    {
+      "name": "weekDays",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "int"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "dayHours",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "int"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "timesOfDay",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "long"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "monthDays",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "int"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "billingRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billEligibilityRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billQuantityRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "graceDays",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "billSplitRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billClubRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "minGuaranteeKM",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "billingSubmissionRule",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }

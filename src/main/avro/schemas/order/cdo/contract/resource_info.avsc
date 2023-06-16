@@ -1,34 +1,10 @@
 {
   "namespace": "com.fretron.Model",
+  "name": "ResourceInfo",
   "type": "record",
-  "name": "PaymentRules",
   "fields": [
     {
-      "name": "whenClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "whenNoClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "graceDays",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "paymentDateRule",
+      "name": "resourceId",
       "type": [
         "null",
         "string"
@@ -36,7 +12,23 @@
       "default": null
     },
     {
-      "name": "paymentDueRule",
+      "name": "resourceType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "resourceIdentifier",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
       "type": [
         "null",
         "string"
@@ -45,6 +37,3 @@
     }
   ]
 }
-
-
-

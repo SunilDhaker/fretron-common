@@ -1,34 +1,10 @@
 {
   "namespace": "com.fretron.Model",
+  "name": "QuantityEstimation",
   "type": "record",
-  "name": "PaymentRules",
   "fields": [
     {
-      "name": "whenClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "whenNoClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "graceDays",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "paymentDateRule",
+      "name": "estimationCalculationRule",
       "type": [
         "null",
         "string"
@@ -36,15 +12,31 @@
       "default": null
     },
     {
-      "name": "paymentDueRule",
+      "name": "quantityEstimatedBy",
       "type": [
         "null",
         "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "quantityPeriod",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "periodicQuantity",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.PeriodicQuantity"
+        }
       ],
       "default": null
     }
   ]
 }
-
-
-

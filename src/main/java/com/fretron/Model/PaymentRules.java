@@ -10,11 +10,14 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8215228269104427060L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentRules\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null}]}");
+  private static final long serialVersionUID = -7961550118772574308L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PaymentRules\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null},{\"name\":\"graceDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"paymentDateRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"paymentDueRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public com.fretron.Model.PaymentCondition whenClaimApplicable;
   @Deprecated public com.fretron.Model.PaymentCondition whenNoClaimApplicable;
+  @Deprecated public java.lang.Integer graceDays;
+  @Deprecated public java.lang.String paymentDateRule;
+  @Deprecated public java.lang.String paymentDueRule;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -27,10 +30,16 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
    * All-args constructor.
    * @param whenClaimApplicable The new value for whenClaimApplicable
    * @param whenNoClaimApplicable The new value for whenNoClaimApplicable
+   * @param graceDays The new value for graceDays
+   * @param paymentDateRule The new value for paymentDateRule
+   * @param paymentDueRule The new value for paymentDueRule
    */
-  public PaymentRules(com.fretron.Model.PaymentCondition whenClaimApplicable, com.fretron.Model.PaymentCondition whenNoClaimApplicable) {
+  public PaymentRules(com.fretron.Model.PaymentCondition whenClaimApplicable, com.fretron.Model.PaymentCondition whenNoClaimApplicable, java.lang.Integer graceDays, java.lang.String paymentDateRule, java.lang.String paymentDueRule) {
     this.whenClaimApplicable = whenClaimApplicable;
     this.whenNoClaimApplicable = whenNoClaimApplicable;
+    this.graceDays = graceDays;
+    this.paymentDateRule = paymentDateRule;
+    this.paymentDueRule = paymentDueRule;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -39,6 +48,9 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: return whenClaimApplicable;
     case 1: return whenNoClaimApplicable;
+    case 2: return graceDays;
+    case 3: return paymentDateRule;
+    case 4: return paymentDueRule;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -49,6 +61,9 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
     switch (field$) {
     case 0: whenClaimApplicable = (com.fretron.Model.PaymentCondition)value$; break;
     case 1: whenNoClaimApplicable = (com.fretron.Model.PaymentCondition)value$; break;
+    case 2: graceDays = (java.lang.Integer)value$; break;
+    case 3: paymentDateRule = (java.lang.String)value$; break;
+    case 4: paymentDueRule = (java.lang.String)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -83,6 +98,54 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
    */
   public void setWhenNoClaimApplicable(com.fretron.Model.PaymentCondition value) {
     this.whenNoClaimApplicable = value;
+  }
+
+  /**
+   * Gets the value of the 'graceDays' field.
+   * @return The value of the 'graceDays' field.
+   */
+  public java.lang.Integer getGraceDays() {
+    return graceDays;
+  }
+
+  /**
+   * Sets the value of the 'graceDays' field.
+   * @param value the value to set.
+   */
+  public void setGraceDays(java.lang.Integer value) {
+    this.graceDays = value;
+  }
+
+  /**
+   * Gets the value of the 'paymentDateRule' field.
+   * @return The value of the 'paymentDateRule' field.
+   */
+  public java.lang.String getPaymentDateRule() {
+    return paymentDateRule;
+  }
+
+  /**
+   * Sets the value of the 'paymentDateRule' field.
+   * @param value the value to set.
+   */
+  public void setPaymentDateRule(java.lang.String value) {
+    this.paymentDateRule = value;
+  }
+
+  /**
+   * Gets the value of the 'paymentDueRule' field.
+   * @return The value of the 'paymentDueRule' field.
+   */
+  public java.lang.String getPaymentDueRule() {
+    return paymentDueRule;
+  }
+
+  /**
+   * Sets the value of the 'paymentDueRule' field.
+   * @param value the value to set.
+   */
+  public void setPaymentDueRule(java.lang.String value) {
+    this.paymentDueRule = value;
   }
 
   /**
@@ -121,6 +184,9 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
     private com.fretron.Model.PaymentCondition.Builder whenClaimApplicableBuilder;
     private com.fretron.Model.PaymentCondition whenNoClaimApplicable;
     private com.fretron.Model.PaymentCondition.Builder whenNoClaimApplicableBuilder;
+    private java.lang.Integer graceDays;
+    private java.lang.String paymentDateRule;
+    private java.lang.String paymentDueRule;
 
     /** Creates a new Builder */
     private Builder() {
@@ -147,6 +213,18 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
       if (other.hasWhenNoClaimApplicableBuilder()) {
         this.whenNoClaimApplicableBuilder = com.fretron.Model.PaymentCondition.newBuilder(other.getWhenNoClaimApplicableBuilder());
       }
+      if (isValidValue(fields()[2], other.graceDays)) {
+        this.graceDays = data().deepCopy(fields()[2].schema(), other.graceDays);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.paymentDateRule)) {
+        this.paymentDateRule = data().deepCopy(fields()[3].schema(), other.paymentDateRule);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.paymentDueRule)) {
+        this.paymentDueRule = data().deepCopy(fields()[4].schema(), other.paymentDueRule);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -165,6 +243,18 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
         fieldSetFlags()[1] = true;
       }
       this.whenNoClaimApplicableBuilder = null;
+      if (isValidValue(fields()[2], other.graceDays)) {
+        this.graceDays = data().deepCopy(fields()[2].schema(), other.graceDays);
+        fieldSetFlags()[2] = true;
+      }
+      if (isValidValue(fields()[3], other.paymentDateRule)) {
+        this.paymentDateRule = data().deepCopy(fields()[3].schema(), other.paymentDateRule);
+        fieldSetFlags()[3] = true;
+      }
+      if (isValidValue(fields()[4], other.paymentDueRule)) {
+        this.paymentDueRule = data().deepCopy(fields()[4].schema(), other.paymentDueRule);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -315,6 +405,123 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
       return this;
     }
 
+    /**
+      * Gets the value of the 'graceDays' field.
+      * @return The value.
+      */
+    public java.lang.Integer getGraceDays() {
+      return graceDays;
+    }
+
+    /**
+      * Sets the value of the 'graceDays' field.
+      * @param value The value of 'graceDays'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder setGraceDays(java.lang.Integer value) {
+      validate(fields()[2], value);
+      this.graceDays = value;
+      fieldSetFlags()[2] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'graceDays' field has been set.
+      * @return True if the 'graceDays' field has been set, false otherwise.
+      */
+    public boolean hasGraceDays() {
+      return fieldSetFlags()[2];
+    }
+
+
+    /**
+      * Clears the value of the 'graceDays' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder clearGraceDays() {
+      graceDays = null;
+      fieldSetFlags()[2] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'paymentDateRule' field.
+      * @return The value.
+      */
+    public java.lang.String getPaymentDateRule() {
+      return paymentDateRule;
+    }
+
+    /**
+      * Sets the value of the 'paymentDateRule' field.
+      * @param value The value of 'paymentDateRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder setPaymentDateRule(java.lang.String value) {
+      validate(fields()[3], value);
+      this.paymentDateRule = value;
+      fieldSetFlags()[3] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'paymentDateRule' field has been set.
+      * @return True if the 'paymentDateRule' field has been set, false otherwise.
+      */
+    public boolean hasPaymentDateRule() {
+      return fieldSetFlags()[3];
+    }
+
+
+    /**
+      * Clears the value of the 'paymentDateRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder clearPaymentDateRule() {
+      paymentDateRule = null;
+      fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'paymentDueRule' field.
+      * @return The value.
+      */
+    public java.lang.String getPaymentDueRule() {
+      return paymentDueRule;
+    }
+
+    /**
+      * Sets the value of the 'paymentDueRule' field.
+      * @param value The value of 'paymentDueRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder setPaymentDueRule(java.lang.String value) {
+      validate(fields()[4], value);
+      this.paymentDueRule = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'paymentDueRule' field has been set.
+      * @return True if the 'paymentDueRule' field has been set, false otherwise.
+      */
+    public boolean hasPaymentDueRule() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'paymentDueRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.PaymentRules.Builder clearPaymentDueRule() {
+      paymentDueRule = null;
+      fieldSetFlags()[4] = false;
+      return this;
+    }
+
     @Override
     public PaymentRules build() {
       try {
@@ -329,6 +536,9 @@ public class PaymentRules extends org.apache.avro.specific.SpecificRecordBase im
         } else {
           record.whenNoClaimApplicable = fieldSetFlags()[1] ? this.whenNoClaimApplicable : (com.fretron.Model.PaymentCondition) defaultValue(fields()[1]);
         }
+        record.graceDays = fieldSetFlags()[2] ? this.graceDays : (java.lang.Integer) defaultValue(fields()[2]);
+        record.paymentDateRule = fieldSetFlags()[3] ? this.paymentDateRule : (java.lang.String) defaultValue(fields()[3]);
+        record.paymentDueRule = fieldSetFlags()[4] ? this.paymentDueRule : (java.lang.String) defaultValue(fields()[4]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

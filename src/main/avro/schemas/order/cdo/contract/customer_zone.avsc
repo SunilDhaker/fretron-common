@@ -1,34 +1,10 @@
 {
   "namespace": "com.fretron.Model",
+  "name": "CustomerZone",
   "type": "record",
-  "name": "PaymentRules",
   "fields": [
     {
-      "name": "whenClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "whenNoClaimApplicable",
-      "type": [
-        "null",
-        "com.fretron.Model.PaymentCondition"
-      ],
-      "default": null
-    },
-    {
-      "name": "graceDays",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "paymentDateRule",
+      "name": "uuid",
       "type": [
         "null",
         "string"
@@ -36,15 +12,31 @@
       "default": null
     },
     {
-      "name": "paymentDueRule",
+      "name": "partnerId",
       "type": [
         "null",
         "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "zoneName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "hubs",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ResourceInfo"
+        }
       ],
       "default": null
     }
   ]
 }
-
-
-

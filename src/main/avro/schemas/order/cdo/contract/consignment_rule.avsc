@@ -1,34 +1,26 @@
 {
   "namespace": "com.fretron.Model",
+  "name": "ConsignmentRule",
   "type": "record",
-  "name": "PaymentRules",
   "fields": [
     {
-      "name": "whenClaimApplicable",
+      "name": "min",
       "type": [
         "null",
-        "com.fretron.Model.PaymentCondition"
+        "double"
       ],
       "default": null
     },
     {
-      "name": "whenNoClaimApplicable",
+      "name": "max",
       "type": [
         "null",
-        "com.fretron.Model.PaymentCondition"
+        "double"
       ],
       "default": null
     },
     {
-      "name": "graceDays",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "paymentDateRule",
+      "name": "uom",
       "type": [
         "null",
         "string"
@@ -36,15 +28,13 @@
       "default": null
     },
     {
-      "name": "paymentDueRule",
+      "name": "limitViolationReason",
       "type": [
         "null",
         "string"
       ],
       "default": null
     }
+
   ]
 }
-
-
-

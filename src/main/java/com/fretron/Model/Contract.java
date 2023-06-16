@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Contract extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6778098292853250721L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contract\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"validFrom\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"validTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractStartDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOffice\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measuredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"areaName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"areaId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"customer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.","string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",\"Geometry\"],\"default\":null},{\"name\":\"controllingBranchId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Contact\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"parentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstn\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"aadharNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"voterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"","name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LiteCustomFields\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null}]}}],\"default\":null},{\"name\":\"verificationStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"firmType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"verificationTicketId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"termsOfPayment\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"estimatedContractQuantity\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"estimatedAmountINR\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedConsigner\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedConsignee\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedBillToParties\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"CustomFields\"}],\"default\":null},{\"name\":\"allowedOrderBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedCustomerLoadTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LoadType\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"bodyTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chassisTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategories\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"allowedPaymentCollectionBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedPayers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedBillingBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedLoadType\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LoadType\"}],\"default\":null},{\"name\":\"routes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Route\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"wayPoints\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tollCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollCost\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"petrolPumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"hospitals\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"serviceCenters\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Toll\",\"fields\":[{\"","name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"costs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Cost\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customCosts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Cost\"}],\"default\":null},{\"name\":\"isPrimary\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"allowedTransportationServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"allowedConsignmentBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"payerRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billToPartyRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingBranchRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"paymentResponsibleBranchRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransportMaterials\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"lineItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractLineItem\",\"fields\":[{\"name\":\"billToParty\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"consignee\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"consignor\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"payer\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"billingBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"collectionBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"consignmentBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"contractBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"deliveryBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"customerLoadType\",\"type\":[\"null\",\"LoadType\"],\"default\":null},{\"name\":\"loadType\",\"type\":[\"null\",\"LoadType\"],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"materialService\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"lineItemNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderCalculationRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transitDays\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weightUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"packageUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"noOfPackage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"orderItemAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"client\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractUUID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customerMaterial\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"freightChargeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightChargeRate\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"lineItemMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractItemMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"origins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"destinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"allowedCustomerMaterials\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"isDirectAssignmentAllowed\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"liftingEndDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"additionalCosts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CostRule\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"billingCycle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BillingCycle\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"billingRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"paymentRules\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentRules\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null}]}],\"default\":null},{\"name\":\"pricingTableIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}");
+  private static final long serialVersionUID = -7879923953141955245L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Contract\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"validFrom\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"validTill\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractStartDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"contractType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"salesOffice\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"OrgOffice\",\"fields\":[{\"name\":\"_id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"geoLocation\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Contact\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"emails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumbers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branchName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"regionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Updates\",\"fields\":[{\"name\":\"forwardReasons\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"time\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"sourceOfInformation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"forwardedFrom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"revision\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"traceID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"changes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ChangeUpdate\",\"fields\":[{\"name\":\"currentValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"lastValue\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"regionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"zoneId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"officeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Materials\",\"fields\":[{\"name\":\"uuid\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measurementType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurement\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pricePerUnit\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"materialType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroup\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"controlCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"taxCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"linkedMaterialId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialGroupId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"materialDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"measuredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LiteCustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"definitionId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"areaName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"areaId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"customer\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BuisnessPartner\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.","string\":\"String\"}],\"default\":null},{\"name\":\"fretronId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"geoFence\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"GeoJsonFence\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"properties\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Properties\",\"fields\":[{\"name\":\"catagory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"level\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customeFields\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}],\"default\":null},{\"name\":\"geometry\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Geometry\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"coordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null}]}],\"default\":null},{\"name\":\"metadata\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"MetaData\",\"fields\":[{\"name\":\"clazz\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isFavorite\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}],\"default\":null}]}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Place\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"center\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Location\",\"fields\":[{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"}]}],\"default\":null},{\"name\":\"centerCoordinates\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"double\"}],\"default\":null},{\"name\":\"suggestedRadius\",\"type\":\"double\",\"default\":null},{\"name\":\"viewport\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ViewPort\",\"fields\":[{\"name\":\"northeast\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"southwest\",\"type\":[\"null\",\"Location\"],\"default\":null}]}],\"default\":null},{\"name\":\"source\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"addedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"placeId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"hubId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"state\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"district\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"subDistrict\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"boundary\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":{\"type\":\"array\",\"items\":\"double\"}}}],\"default\":null},{\"name\":\"places\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"accessibility\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isOwned\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"geoJsonBoundry\",\"type\":[\"null\",\"Geometry\"],\"default\":null},{\"name\":\"controllingBranchId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"contacts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Contact\"}],\"default\":null},{\"name\":\"location\",\"type\":[\"null\",\"Location\"],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isPortalEnabled\",\"type\":\"boolean\",\"default\":false},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"panNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"group\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PartnerGroup\",\"fields\":[{\"name\":\"partnerType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"route\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CustomFields\",\"fields\":[{\"name\":\"fieldType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"fieldKey\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"multiple\",\"type\":\"boolean\",\"default\":false},{\"name\":\"isRemark\",\"type\":\"boolean\",\"default\":false},{\"name\":\"remark\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"required\",\"type\":\"boolean\",\"default\":false},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"options\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"indexedValue\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"valueType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"input\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"accessType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"parentId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"gstn\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"aadharNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"voterId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Document\",\"fields\":[{\"","name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"isExpirable\",\"type\":[\"null\",\"boolean\"]},{\"name\":\"expireDate\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"docPath\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"downloadUrl\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"previewString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LiteCustomFields\"}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null}]}}],\"default\":null},{\"name\":\"verificationStatus\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"firmType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"verificationTicketId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"termsOfPayment\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractTerms\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"estimatedContractQuantity\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Measurement\",\"fields\":[{\"name\":\"measurmentType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"unitOfMeasurment\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"plannedLoadQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualLoadedQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"netQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"grossQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"standardQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"actualDeliveredQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"shortage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"frieghtDeductableQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"claimQuantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"temperature\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"density\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"moisture\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"estimatedAmountINR\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"allowedVehicleTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedConsigner\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedConsignee\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedBillToParties\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedMaterial\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"CustomFields\"}],\"default\":null},{\"name\":\"allowedOrderBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedCustomerLoadTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"LoadType\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"partnerExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategory\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"numberOfWheels\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"passingCapacityMT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"passingCapacityCFT\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"bodyType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"chassisType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"dimensionString\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxLength\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxLength\",\"type\":\"boolean\",\"default\":false},{\"name\":\"minHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMinHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"maxHeight\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"includeMaxHeight\",\"type\":\"boolean\",\"default\":false},{\"name\":\"bodyTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"chassisTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"vehicleCategories\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}}],\"default\":null},{\"name\":\"allowedPaymentCollectionBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedPayers\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"BuisnessPartner\"}],\"default\":null},{\"name\":\"allowedBillingBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"allowedLoadType\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"LoadType\"}],\"default\":null},{\"name\":\"routes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Route\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"origin\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"destination\",\"type\":[\"null\",\"Place\"],\"default\":null},{\"name\":\"wayPoints\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"totalTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"vehicleId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"polyline\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"tollCount\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollCost\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"petrolPumps\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"hospitals\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"serviceCenters\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"tollDetails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Toll\",\"fields\":[{\"","name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"costs\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Cost\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"isCustom\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"customCosts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Cost\"}],\"default\":null},{\"name\":\"isPrimary\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"allowedTransportationServices\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"allowedConsignmentBranches\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"OrgOffice\"}],\"default\":null},{\"name\":\"payerRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billToPartyRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billingBranchRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"paymentResponsibleBranchRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"paymentBranchSelectionRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"reason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"allowedTransportMaterials\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"lineItems\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractLineItem\",\"fields\":[{\"name\":\"billToParty\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"consignee\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"consignor\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"payer\",\"type\":[\"null\",\"BuisnessPartner\"],\"default\":null},{\"name\":\"billingBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"collectionBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"consignmentBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"contractBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"deliveryBranch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"customerLoadType\",\"type\":[\"null\",\"LoadType\"],\"default\":null},{\"name\":\"loadType\",\"type\":[\"null\",\"LoadType\"],\"default\":null},{\"name\":\"material\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"materialService\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"lineItemNo\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orderCalculationRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"transitDays\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"userName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weightUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"packageUnit\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"noOfPackage\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"orderItemAmount\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"quantity\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"client\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractUUID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractExternalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customerMaterial\",\"type\":[\"null\",\"Materials\"],\"default\":null},{\"name\":\"freightChargeType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"freightChargeRate\",\"type\":[\"null\",\"double\"],\"default\":null}]}}],\"default\":null},{\"name\":\"lineItemMappings\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractItemMapping\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null},{\"name\":\"origins\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"destinations\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Place\"}],\"default\":null},{\"name\":\"allowedCustomerMaterials\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"Materials\"}],\"default\":null},{\"name\":\"isDirectAssignmentAllowed\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"liftingEndDuration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"additionalCosts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CostRule\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"value\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"billingCycle\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"BillingCycle\",\"fields\":[{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"monthDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"billingRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billEligibilityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billQuantityRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"graceDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"billSplitRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"billClubRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"minGuaranteeKM\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"billingSubmissionRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"paymentRules\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentRules\",\"fields\":[{\"name\":\"whenClaimApplicable\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"PaymentCondition\",\"fields\":[{\"name\":\"duration\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"paymentMode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"creditLimit\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null},{\"name\":\"whenNoClaimApplicable\",\"type\":[\"null\",\"PaymentCondition\"],\"default\":null},{\"name\":\"graceDays\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"paymentDateRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"paymentDueRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"pricingTableIds\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"category\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"division\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"trackingModes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"marginRateType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\"",":null},{\"name\":\"customerContractNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"contractDescription\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"referenceInfo\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ResourceInfo\",\"fields\":[{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceIdentifier\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"trackingPreference\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"documents\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"revenueDistribution\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"RevenueDistribution\",\"fields\":[{\"name\":\"contractSupportBranchShareRule\",\"type\":[\"null\",\"CostRule\"],\"default\":null},{\"name\":\"businessSupportBranchShareRule\",\"type\":[\"null\",\"CostRule\"],\"default\":null}]}],\"default\":null},{\"name\":\"amountEstimatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityEstimation\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"QuantityEstimation\",\"fields\":[{\"name\":\"estimationCalculationRule\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityEstimatedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"quantityPeriod\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"periodicQuantity\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"PeriodicQuantity\",\"fields\":[{\"name\":\"from\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"till\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"quantity\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"StandardMeasurement\",\"fields\":[{\"name\":\"weight\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"volume\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"packageMeasurement\",\"type\":[\"null\",\"Measurement\"],\"default\":null},{\"name\":\"trucks\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"containers\",\"type\":[\"null\",\"double\"],\"default\":null}]}],\"default\":null}]}}],\"default\":null}]}],\"default\":null},{\"name\":\"owner\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Employee\",\"fields\":[{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}]},{\"name\":\"designation\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"branch\",\"type\":[\"null\",\"OrgOffice\"],\"default\":null},{\"name\":\"department\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Department\",\"fields\":[{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"externalId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"orgId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null}]}],\"default\":null},{\"name\":\"address\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"email\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateEmails\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"mobileNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"alternateMobileNumber\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"customFields\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"CustomFields\"}],\"default\":null},{\"name\":\"updates\",\"type\":[\"null\",\"Updates\"],\"default\":null},{\"name\":\"associatedUserId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"employeeCode\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"consignmentRule\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"ConsignmentRule\",\"fields\":[{\"name\":\"min\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"max\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"uom\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"limitViolationReason\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}],\"default\":null},{\"name\":\"checkList\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"CheckListItem\",\"fields\":[{\"name\":\"actionName\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isCompleted\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isSystemGenerated\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"isMandatoryOnVerification\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"allowedConsignmentPSNTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"allowedShipmentPSNTypes\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"clause\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ContractClause\",\"fields\":[{\"name\":\"name\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"clauseNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"pageNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"text\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"customerClauseNumber\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"isApplicable\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}}],\"default\":null},{\"name\":\"alerts\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"ResourceAlert\",\"fields\":[{\"name\":\"description\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"status\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"closedBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"snoozTime\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"createdAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"updatedAt\",\"type\":[\"null\",\"long\"],\"default\":null,\"logicalType\":\"timestamp-millis\"},{\"name\":\"issueId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"createdBy\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null}]}}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String uuid;
   @Deprecated public java.lang.String externalId;
@@ -48,6 +48,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.lang.String billToPartyRule;
   @Deprecated public java.lang.String billingBranchRule;
   @Deprecated public java.lang.String paymentResponsibleBranchRule;
+  @Deprecated public java.lang.String paymentBranchSelectionRule;
   @Deprecated public java.lang.String status;
   @Deprecated public java.lang.String reason;
   @Deprecated public java.util.List<com.fretron.Model.Materials> allowedTransportMaterials;
@@ -64,6 +65,23 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
   @Deprecated public java.util.List<java.lang.String> pricingTableIds;
   @Deprecated public java.lang.String category;
   @Deprecated public java.lang.String division;
+  @Deprecated public java.util.List<java.lang.String> trackingModes;
+  @Deprecated public java.lang.String marginRateType;
+  @Deprecated public java.lang.String customerContractNumber;
+  @Deprecated public java.lang.String contractDescription;
+  @Deprecated public com.fretron.Model.ResourceInfo referenceInfo;
+  @Deprecated public java.lang.String trackingPreference;
+  @Deprecated public java.util.List<java.lang.String> documents;
+  @Deprecated public com.fretron.Model.RevenueDistribution revenueDistribution;
+  @Deprecated public java.lang.String amountEstimatedBy;
+  @Deprecated public com.fretron.Model.QuantityEstimation quantityEstimation;
+  @Deprecated public com.fretron.Model.Employee owner;
+  @Deprecated public com.fretron.Model.ConsignmentRule consignmentRule;
+  @Deprecated public java.util.List<com.fretron.Model.CheckListItem> checkList;
+  @Deprecated public java.util.List<java.lang.String> allowedConsignmentPSNTypes;
+  @Deprecated public java.util.List<java.lang.String> allowedShipmentPSNTypes;
+  @Deprecated public java.util.List<com.fretron.Model.ContractClause> clause;
+  @Deprecated public java.util.List<com.fretron.Model.ResourceAlert> alerts;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -109,6 +127,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
    * @param billToPartyRule The new value for billToPartyRule
    * @param billingBranchRule The new value for billingBranchRule
    * @param paymentResponsibleBranchRule The new value for paymentResponsibleBranchRule
+   * @param paymentBranchSelectionRule The new value for paymentBranchSelectionRule
    * @param status The new value for status
    * @param reason The new value for reason
    * @param allowedTransportMaterials The new value for allowedTransportMaterials
@@ -125,8 +144,25 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
    * @param pricingTableIds The new value for pricingTableIds
    * @param category The new value for category
    * @param division The new value for division
+   * @param trackingModes The new value for trackingModes
+   * @param marginRateType The new value for marginRateType
+   * @param customerContractNumber The new value for customerContractNumber
+   * @param contractDescription The new value for contractDescription
+   * @param referenceInfo The new value for referenceInfo
+   * @param trackingPreference The new value for trackingPreference
+   * @param documents The new value for documents
+   * @param revenueDistribution The new value for revenueDistribution
+   * @param amountEstimatedBy The new value for amountEstimatedBy
+   * @param quantityEstimation The new value for quantityEstimation
+   * @param owner The new value for owner
+   * @param consignmentRule The new value for consignmentRule
+   * @param checkList The new value for checkList
+   * @param allowedConsignmentPSNTypes The new value for allowedConsignmentPSNTypes
+   * @param allowedShipmentPSNTypes The new value for allowedShipmentPSNTypes
+   * @param clause The new value for clause
+   * @param alerts The new value for alerts
    */
-  public Contract(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.Long validFrom, java.lang.Long validTill, java.lang.Long contractDate, java.lang.Long contractStartDate, java.lang.String contractType, java.lang.String contractNumber, com.fretron.Model.OrgOffice salesOffice, com.fretron.Model.BuisnessPartner customer, java.util.List<com.fretron.Model.ContractTerms> termsOfPayment, java.lang.Long createdAt, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.Measurement> estimatedContractQuantity, java.lang.Double estimatedAmountINR, java.util.List<java.lang.String> allowedVehicleTypes, java.util.List<com.fretron.Model.BuisnessPartner> allowedConsigner, java.util.List<com.fretron.Model.BuisnessPartner> allowedConsignee, java.util.List<com.fretron.Model.BuisnessPartner> allowedBillToParties, java.util.List<java.lang.String> allowedMaterial, java.util.List<com.fretron.Model.CustomFields> customFields, java.util.List<com.fretron.Model.OrgOffice> allowedOrderBranches, java.util.List<com.fretron.Model.LoadType> allowedCustomerLoadTypes, java.util.List<com.fretron.Model.OrgOffice> allowedPaymentCollectionBranches, java.util.List<com.fretron.Model.BuisnessPartner> allowedPayers, java.util.List<com.fretron.Model.OrgOffice> allowedBillingBranches, java.util.List<com.fretron.Model.LoadType> allowedLoadType, java.util.List<com.fretron.Model.Route> routes, java.util.List<com.fretron.Model.Materials> allowedTransportationServices, java.util.List<com.fretron.Model.OrgOffice> allowedConsignmentBranches, java.lang.String payerRule, java.lang.String billToPartyRule, java.lang.String billingBranchRule, java.lang.String paymentResponsibleBranchRule, java.lang.String status, java.lang.String reason, java.util.List<com.fretron.Model.Materials> allowedTransportMaterials, java.util.List<com.fretron.Model.ContractLineItem> lineItems, java.util.List<com.fretron.Model.ContractItemMapping> lineItemMappings, java.util.List<com.fretron.Model.Place> origins, java.util.List<com.fretron.Model.Place> destinations, java.util.List<com.fretron.Model.Materials> allowedCustomerMaterials, java.lang.Boolean isDirectAssignmentAllowed, java.lang.Long liftingEndDuration, java.util.List<com.fretron.Model.CostRule> additionalCosts, com.fretron.Model.BillingCycle billingCycle, com.fretron.Model.PaymentRules paymentRules, java.util.List<java.lang.String> pricingTableIds, java.lang.String category, java.lang.String division) {
+  public Contract(java.lang.String uuid, java.lang.String externalId, java.lang.String orgId, java.lang.Long validFrom, java.lang.Long validTill, java.lang.Long contractDate, java.lang.Long contractStartDate, java.lang.String contractType, java.lang.String contractNumber, com.fretron.Model.OrgOffice salesOffice, com.fretron.Model.BuisnessPartner customer, java.util.List<com.fretron.Model.ContractTerms> termsOfPayment, java.lang.Long createdAt, com.fretron.Model.Updates updates, java.util.List<com.fretron.Model.Measurement> estimatedContractQuantity, java.lang.Double estimatedAmountINR, java.util.List<java.lang.String> allowedVehicleTypes, java.util.List<com.fretron.Model.BuisnessPartner> allowedConsigner, java.util.List<com.fretron.Model.BuisnessPartner> allowedConsignee, java.util.List<com.fretron.Model.BuisnessPartner> allowedBillToParties, java.util.List<java.lang.String> allowedMaterial, java.util.List<com.fretron.Model.CustomFields> customFields, java.util.List<com.fretron.Model.OrgOffice> allowedOrderBranches, java.util.List<com.fretron.Model.LoadType> allowedCustomerLoadTypes, java.util.List<com.fretron.Model.OrgOffice> allowedPaymentCollectionBranches, java.util.List<com.fretron.Model.BuisnessPartner> allowedPayers, java.util.List<com.fretron.Model.OrgOffice> allowedBillingBranches, java.util.List<com.fretron.Model.LoadType> allowedLoadType, java.util.List<com.fretron.Model.Route> routes, java.util.List<com.fretron.Model.Materials> allowedTransportationServices, java.util.List<com.fretron.Model.OrgOffice> allowedConsignmentBranches, java.lang.String payerRule, java.lang.String billToPartyRule, java.lang.String billingBranchRule, java.lang.String paymentResponsibleBranchRule, java.lang.String paymentBranchSelectionRule, java.lang.String status, java.lang.String reason, java.util.List<com.fretron.Model.Materials> allowedTransportMaterials, java.util.List<com.fretron.Model.ContractLineItem> lineItems, java.util.List<com.fretron.Model.ContractItemMapping> lineItemMappings, java.util.List<com.fretron.Model.Place> origins, java.util.List<com.fretron.Model.Place> destinations, java.util.List<com.fretron.Model.Materials> allowedCustomerMaterials, java.lang.Boolean isDirectAssignmentAllowed, java.lang.Long liftingEndDuration, java.util.List<com.fretron.Model.CostRule> additionalCosts, com.fretron.Model.BillingCycle billingCycle, com.fretron.Model.PaymentRules paymentRules, java.util.List<java.lang.String> pricingTableIds, java.lang.String category, java.lang.String division, java.util.List<java.lang.String> trackingModes, java.lang.String marginRateType, java.lang.String customerContractNumber, java.lang.String contractDescription, com.fretron.Model.ResourceInfo referenceInfo, java.lang.String trackingPreference, java.util.List<java.lang.String> documents, com.fretron.Model.RevenueDistribution revenueDistribution, java.lang.String amountEstimatedBy, com.fretron.Model.QuantityEstimation quantityEstimation, com.fretron.Model.Employee owner, com.fretron.Model.ConsignmentRule consignmentRule, java.util.List<com.fretron.Model.CheckListItem> checkList, java.util.List<java.lang.String> allowedConsignmentPSNTypes, java.util.List<java.lang.String> allowedShipmentPSNTypes, java.util.List<com.fretron.Model.ContractClause> clause, java.util.List<com.fretron.Model.ResourceAlert> alerts) {
     this.uuid = uuid;
     this.externalId = externalId;
     this.orgId = orgId;
@@ -162,6 +198,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     this.billToPartyRule = billToPartyRule;
     this.billingBranchRule = billingBranchRule;
     this.paymentResponsibleBranchRule = paymentResponsibleBranchRule;
+    this.paymentBranchSelectionRule = paymentBranchSelectionRule;
     this.status = status;
     this.reason = reason;
     this.allowedTransportMaterials = allowedTransportMaterials;
@@ -178,6 +215,23 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     this.pricingTableIds = pricingTableIds;
     this.category = category;
     this.division = division;
+    this.trackingModes = trackingModes;
+    this.marginRateType = marginRateType;
+    this.customerContractNumber = customerContractNumber;
+    this.contractDescription = contractDescription;
+    this.referenceInfo = referenceInfo;
+    this.trackingPreference = trackingPreference;
+    this.documents = documents;
+    this.revenueDistribution = revenueDistribution;
+    this.amountEstimatedBy = amountEstimatedBy;
+    this.quantityEstimation = quantityEstimation;
+    this.owner = owner;
+    this.consignmentRule = consignmentRule;
+    this.checkList = checkList;
+    this.allowedConsignmentPSNTypes = allowedConsignmentPSNTypes;
+    this.allowedShipmentPSNTypes = allowedShipmentPSNTypes;
+    this.clause = clause;
+    this.alerts = alerts;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -219,22 +273,40 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     case 32: return billToPartyRule;
     case 33: return billingBranchRule;
     case 34: return paymentResponsibleBranchRule;
-    case 35: return status;
-    case 36: return reason;
-    case 37: return allowedTransportMaterials;
-    case 38: return lineItems;
-    case 39: return lineItemMappings;
-    case 40: return origins;
-    case 41: return destinations;
-    case 42: return allowedCustomerMaterials;
-    case 43: return isDirectAssignmentAllowed;
-    case 44: return liftingEndDuration;
-    case 45: return additionalCosts;
-    case 46: return billingCycle;
-    case 47: return paymentRules;
-    case 48: return pricingTableIds;
-    case 49: return category;
-    case 50: return division;
+    case 35: return paymentBranchSelectionRule;
+    case 36: return status;
+    case 37: return reason;
+    case 38: return allowedTransportMaterials;
+    case 39: return lineItems;
+    case 40: return lineItemMappings;
+    case 41: return origins;
+    case 42: return destinations;
+    case 43: return allowedCustomerMaterials;
+    case 44: return isDirectAssignmentAllowed;
+    case 45: return liftingEndDuration;
+    case 46: return additionalCosts;
+    case 47: return billingCycle;
+    case 48: return paymentRules;
+    case 49: return pricingTableIds;
+    case 50: return category;
+    case 51: return division;
+    case 52: return trackingModes;
+    case 53: return marginRateType;
+    case 54: return customerContractNumber;
+    case 55: return contractDescription;
+    case 56: return referenceInfo;
+    case 57: return trackingPreference;
+    case 58: return documents;
+    case 59: return revenueDistribution;
+    case 60: return amountEstimatedBy;
+    case 61: return quantityEstimation;
+    case 62: return owner;
+    case 63: return consignmentRule;
+    case 64: return checkList;
+    case 65: return allowedConsignmentPSNTypes;
+    case 66: return allowedShipmentPSNTypes;
+    case 67: return clause;
+    case 68: return alerts;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -278,22 +350,40 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     case 32: billToPartyRule = (java.lang.String)value$; break;
     case 33: billingBranchRule = (java.lang.String)value$; break;
     case 34: paymentResponsibleBranchRule = (java.lang.String)value$; break;
-    case 35: status = (java.lang.String)value$; break;
-    case 36: reason = (java.lang.String)value$; break;
-    case 37: allowedTransportMaterials = (java.util.List<com.fretron.Model.Materials>)value$; break;
-    case 38: lineItems = (java.util.List<com.fretron.Model.ContractLineItem>)value$; break;
-    case 39: lineItemMappings = (java.util.List<com.fretron.Model.ContractItemMapping>)value$; break;
-    case 40: origins = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 41: destinations = (java.util.List<com.fretron.Model.Place>)value$; break;
-    case 42: allowedCustomerMaterials = (java.util.List<com.fretron.Model.Materials>)value$; break;
-    case 43: isDirectAssignmentAllowed = (java.lang.Boolean)value$; break;
-    case 44: liftingEndDuration = (java.lang.Long)value$; break;
-    case 45: additionalCosts = (java.util.List<com.fretron.Model.CostRule>)value$; break;
-    case 46: billingCycle = (com.fretron.Model.BillingCycle)value$; break;
-    case 47: paymentRules = (com.fretron.Model.PaymentRules)value$; break;
-    case 48: pricingTableIds = (java.util.List<java.lang.String>)value$; break;
-    case 49: category = (java.lang.String)value$; break;
-    case 50: division = (java.lang.String)value$; break;
+    case 35: paymentBranchSelectionRule = (java.lang.String)value$; break;
+    case 36: status = (java.lang.String)value$; break;
+    case 37: reason = (java.lang.String)value$; break;
+    case 38: allowedTransportMaterials = (java.util.List<com.fretron.Model.Materials>)value$; break;
+    case 39: lineItems = (java.util.List<com.fretron.Model.ContractLineItem>)value$; break;
+    case 40: lineItemMappings = (java.util.List<com.fretron.Model.ContractItemMapping>)value$; break;
+    case 41: origins = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 42: destinations = (java.util.List<com.fretron.Model.Place>)value$; break;
+    case 43: allowedCustomerMaterials = (java.util.List<com.fretron.Model.Materials>)value$; break;
+    case 44: isDirectAssignmentAllowed = (java.lang.Boolean)value$; break;
+    case 45: liftingEndDuration = (java.lang.Long)value$; break;
+    case 46: additionalCosts = (java.util.List<com.fretron.Model.CostRule>)value$; break;
+    case 47: billingCycle = (com.fretron.Model.BillingCycle)value$; break;
+    case 48: paymentRules = (com.fretron.Model.PaymentRules)value$; break;
+    case 49: pricingTableIds = (java.util.List<java.lang.String>)value$; break;
+    case 50: category = (java.lang.String)value$; break;
+    case 51: division = (java.lang.String)value$; break;
+    case 52: trackingModes = (java.util.List<java.lang.String>)value$; break;
+    case 53: marginRateType = (java.lang.String)value$; break;
+    case 54: customerContractNumber = (java.lang.String)value$; break;
+    case 55: contractDescription = (java.lang.String)value$; break;
+    case 56: referenceInfo = (com.fretron.Model.ResourceInfo)value$; break;
+    case 57: trackingPreference = (java.lang.String)value$; break;
+    case 58: documents = (java.util.List<java.lang.String>)value$; break;
+    case 59: revenueDistribution = (com.fretron.Model.RevenueDistribution)value$; break;
+    case 60: amountEstimatedBy = (java.lang.String)value$; break;
+    case 61: quantityEstimation = (com.fretron.Model.QuantityEstimation)value$; break;
+    case 62: owner = (com.fretron.Model.Employee)value$; break;
+    case 63: consignmentRule = (com.fretron.Model.ConsignmentRule)value$; break;
+    case 64: checkList = (java.util.List<com.fretron.Model.CheckListItem>)value$; break;
+    case 65: allowedConsignmentPSNTypes = (java.util.List<java.lang.String>)value$; break;
+    case 66: allowedShipmentPSNTypes = (java.util.List<java.lang.String>)value$; break;
+    case 67: clause = (java.util.List<com.fretron.Model.ContractClause>)value$; break;
+    case 68: alerts = (java.util.List<com.fretron.Model.ResourceAlert>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -859,6 +949,22 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'paymentBranchSelectionRule' field.
+   * @return The value of the 'paymentBranchSelectionRule' field.
+   */
+  public java.lang.String getPaymentBranchSelectionRule() {
+    return paymentBranchSelectionRule;
+  }
+
+  /**
+   * Sets the value of the 'paymentBranchSelectionRule' field.
+   * @param value the value to set.
+   */
+  public void setPaymentBranchSelectionRule(java.lang.String value) {
+    this.paymentBranchSelectionRule = value;
+  }
+
+  /**
    * Gets the value of the 'status' field.
    * @return The value of the 'status' field.
    */
@@ -1115,6 +1221,278 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
   }
 
   /**
+   * Gets the value of the 'trackingModes' field.
+   * @return The value of the 'trackingModes' field.
+   */
+  public java.util.List<java.lang.String> getTrackingModes() {
+    return trackingModes;
+  }
+
+  /**
+   * Sets the value of the 'trackingModes' field.
+   * @param value the value to set.
+   */
+  public void setTrackingModes(java.util.List<java.lang.String> value) {
+    this.trackingModes = value;
+  }
+
+  /**
+   * Gets the value of the 'marginRateType' field.
+   * @return The value of the 'marginRateType' field.
+   */
+  public java.lang.String getMarginRateType() {
+    return marginRateType;
+  }
+
+  /**
+   * Sets the value of the 'marginRateType' field.
+   * @param value the value to set.
+   */
+  public void setMarginRateType(java.lang.String value) {
+    this.marginRateType = value;
+  }
+
+  /**
+   * Gets the value of the 'customerContractNumber' field.
+   * @return The value of the 'customerContractNumber' field.
+   */
+  public java.lang.String getCustomerContractNumber() {
+    return customerContractNumber;
+  }
+
+  /**
+   * Sets the value of the 'customerContractNumber' field.
+   * @param value the value to set.
+   */
+  public void setCustomerContractNumber(java.lang.String value) {
+    this.customerContractNumber = value;
+  }
+
+  /**
+   * Gets the value of the 'contractDescription' field.
+   * @return The value of the 'contractDescription' field.
+   */
+  public java.lang.String getContractDescription() {
+    return contractDescription;
+  }
+
+  /**
+   * Sets the value of the 'contractDescription' field.
+   * @param value the value to set.
+   */
+  public void setContractDescription(java.lang.String value) {
+    this.contractDescription = value;
+  }
+
+  /**
+   * Gets the value of the 'referenceInfo' field.
+   * @return The value of the 'referenceInfo' field.
+   */
+  public com.fretron.Model.ResourceInfo getReferenceInfo() {
+    return referenceInfo;
+  }
+
+  /**
+   * Sets the value of the 'referenceInfo' field.
+   * @param value the value to set.
+   */
+  public void setReferenceInfo(com.fretron.Model.ResourceInfo value) {
+    this.referenceInfo = value;
+  }
+
+  /**
+   * Gets the value of the 'trackingPreference' field.
+   * @return The value of the 'trackingPreference' field.
+   */
+  public java.lang.String getTrackingPreference() {
+    return trackingPreference;
+  }
+
+  /**
+   * Sets the value of the 'trackingPreference' field.
+   * @param value the value to set.
+   */
+  public void setTrackingPreference(java.lang.String value) {
+    this.trackingPreference = value;
+  }
+
+  /**
+   * Gets the value of the 'documents' field.
+   * @return The value of the 'documents' field.
+   */
+  public java.util.List<java.lang.String> getDocuments() {
+    return documents;
+  }
+
+  /**
+   * Sets the value of the 'documents' field.
+   * @param value the value to set.
+   */
+  public void setDocuments(java.util.List<java.lang.String> value) {
+    this.documents = value;
+  }
+
+  /**
+   * Gets the value of the 'revenueDistribution' field.
+   * @return The value of the 'revenueDistribution' field.
+   */
+  public com.fretron.Model.RevenueDistribution getRevenueDistribution() {
+    return revenueDistribution;
+  }
+
+  /**
+   * Sets the value of the 'revenueDistribution' field.
+   * @param value the value to set.
+   */
+  public void setRevenueDistribution(com.fretron.Model.RevenueDistribution value) {
+    this.revenueDistribution = value;
+  }
+
+  /**
+   * Gets the value of the 'amountEstimatedBy' field.
+   * @return The value of the 'amountEstimatedBy' field.
+   */
+  public java.lang.String getAmountEstimatedBy() {
+    return amountEstimatedBy;
+  }
+
+  /**
+   * Sets the value of the 'amountEstimatedBy' field.
+   * @param value the value to set.
+   */
+  public void setAmountEstimatedBy(java.lang.String value) {
+    this.amountEstimatedBy = value;
+  }
+
+  /**
+   * Gets the value of the 'quantityEstimation' field.
+   * @return The value of the 'quantityEstimation' field.
+   */
+  public com.fretron.Model.QuantityEstimation getQuantityEstimation() {
+    return quantityEstimation;
+  }
+
+  /**
+   * Sets the value of the 'quantityEstimation' field.
+   * @param value the value to set.
+   */
+  public void setQuantityEstimation(com.fretron.Model.QuantityEstimation value) {
+    this.quantityEstimation = value;
+  }
+
+  /**
+   * Gets the value of the 'owner' field.
+   * @return The value of the 'owner' field.
+   */
+  public com.fretron.Model.Employee getOwner() {
+    return owner;
+  }
+
+  /**
+   * Sets the value of the 'owner' field.
+   * @param value the value to set.
+   */
+  public void setOwner(com.fretron.Model.Employee value) {
+    this.owner = value;
+  }
+
+  /**
+   * Gets the value of the 'consignmentRule' field.
+   * @return The value of the 'consignmentRule' field.
+   */
+  public com.fretron.Model.ConsignmentRule getConsignmentRule() {
+    return consignmentRule;
+  }
+
+  /**
+   * Sets the value of the 'consignmentRule' field.
+   * @param value the value to set.
+   */
+  public void setConsignmentRule(com.fretron.Model.ConsignmentRule value) {
+    this.consignmentRule = value;
+  }
+
+  /**
+   * Gets the value of the 'checkList' field.
+   * @return The value of the 'checkList' field.
+   */
+  public java.util.List<com.fretron.Model.CheckListItem> getCheckList() {
+    return checkList;
+  }
+
+  /**
+   * Sets the value of the 'checkList' field.
+   * @param value the value to set.
+   */
+  public void setCheckList(java.util.List<com.fretron.Model.CheckListItem> value) {
+    this.checkList = value;
+  }
+
+  /**
+   * Gets the value of the 'allowedConsignmentPSNTypes' field.
+   * @return The value of the 'allowedConsignmentPSNTypes' field.
+   */
+  public java.util.List<java.lang.String> getAllowedConsignmentPSNTypes() {
+    return allowedConsignmentPSNTypes;
+  }
+
+  /**
+   * Sets the value of the 'allowedConsignmentPSNTypes' field.
+   * @param value the value to set.
+   */
+  public void setAllowedConsignmentPSNTypes(java.util.List<java.lang.String> value) {
+    this.allowedConsignmentPSNTypes = value;
+  }
+
+  /**
+   * Gets the value of the 'allowedShipmentPSNTypes' field.
+   * @return The value of the 'allowedShipmentPSNTypes' field.
+   */
+  public java.util.List<java.lang.String> getAllowedShipmentPSNTypes() {
+    return allowedShipmentPSNTypes;
+  }
+
+  /**
+   * Sets the value of the 'allowedShipmentPSNTypes' field.
+   * @param value the value to set.
+   */
+  public void setAllowedShipmentPSNTypes(java.util.List<java.lang.String> value) {
+    this.allowedShipmentPSNTypes = value;
+  }
+
+  /**
+   * Gets the value of the 'clause' field.
+   * @return The value of the 'clause' field.
+   */
+  public java.util.List<com.fretron.Model.ContractClause> getClause() {
+    return clause;
+  }
+
+  /**
+   * Sets the value of the 'clause' field.
+   * @param value the value to set.
+   */
+  public void setClause(java.util.List<com.fretron.Model.ContractClause> value) {
+    this.clause = value;
+  }
+
+  /**
+   * Gets the value of the 'alerts' field.
+   * @return The value of the 'alerts' field.
+   */
+  public java.util.List<com.fretron.Model.ResourceAlert> getAlerts() {
+    return alerts;
+  }
+
+  /**
+   * Sets the value of the 'alerts' field.
+   * @param value the value to set.
+   */
+  public void setAlerts(java.util.List<com.fretron.Model.ResourceAlert> value) {
+    this.alerts = value;
+  }
+
+  /**
    * Creates a new Contract RecordBuilder.
    * @return A new Contract RecordBuilder
    */
@@ -1184,6 +1562,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     private java.lang.String billToPartyRule;
     private java.lang.String billingBranchRule;
     private java.lang.String paymentResponsibleBranchRule;
+    private java.lang.String paymentBranchSelectionRule;
     private java.lang.String status;
     private java.lang.String reason;
     private java.util.List<com.fretron.Model.Materials> allowedTransportMaterials;
@@ -1202,6 +1581,28 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     private java.util.List<java.lang.String> pricingTableIds;
     private java.lang.String category;
     private java.lang.String division;
+    private java.util.List<java.lang.String> trackingModes;
+    private java.lang.String marginRateType;
+    private java.lang.String customerContractNumber;
+    private java.lang.String contractDescription;
+    private com.fretron.Model.ResourceInfo referenceInfo;
+    private com.fretron.Model.ResourceInfo.Builder referenceInfoBuilder;
+    private java.lang.String trackingPreference;
+    private java.util.List<java.lang.String> documents;
+    private com.fretron.Model.RevenueDistribution revenueDistribution;
+    private com.fretron.Model.RevenueDistribution.Builder revenueDistributionBuilder;
+    private java.lang.String amountEstimatedBy;
+    private com.fretron.Model.QuantityEstimation quantityEstimation;
+    private com.fretron.Model.QuantityEstimation.Builder quantityEstimationBuilder;
+    private com.fretron.Model.Employee owner;
+    private com.fretron.Model.Employee.Builder ownerBuilder;
+    private com.fretron.Model.ConsignmentRule consignmentRule;
+    private com.fretron.Model.ConsignmentRule.Builder consignmentRuleBuilder;
+    private java.util.List<com.fretron.Model.CheckListItem> checkList;
+    private java.util.List<java.lang.String> allowedConsignmentPSNTypes;
+    private java.util.List<java.lang.String> allowedShipmentPSNTypes;
+    private java.util.List<com.fretron.Model.ContractClause> clause;
+    private java.util.List<com.fretron.Model.ResourceAlert> alerts;
 
     /** Creates a new Builder */
     private Builder() {
@@ -1363,75 +1764,162 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
         this.paymentResponsibleBranchRule = data().deepCopy(fields()[34].schema(), other.paymentResponsibleBranchRule);
         fieldSetFlags()[34] = true;
       }
-      if (isValidValue(fields()[35], other.status)) {
-        this.status = data().deepCopy(fields()[35].schema(), other.status);
+      if (isValidValue(fields()[35], other.paymentBranchSelectionRule)) {
+        this.paymentBranchSelectionRule = data().deepCopy(fields()[35].schema(), other.paymentBranchSelectionRule);
         fieldSetFlags()[35] = true;
       }
-      if (isValidValue(fields()[36], other.reason)) {
-        this.reason = data().deepCopy(fields()[36].schema(), other.reason);
+      if (isValidValue(fields()[36], other.status)) {
+        this.status = data().deepCopy(fields()[36].schema(), other.status);
         fieldSetFlags()[36] = true;
       }
-      if (isValidValue(fields()[37], other.allowedTransportMaterials)) {
-        this.allowedTransportMaterials = data().deepCopy(fields()[37].schema(), other.allowedTransportMaterials);
+      if (isValidValue(fields()[37], other.reason)) {
+        this.reason = data().deepCopy(fields()[37].schema(), other.reason);
         fieldSetFlags()[37] = true;
       }
-      if (isValidValue(fields()[38], other.lineItems)) {
-        this.lineItems = data().deepCopy(fields()[38].schema(), other.lineItems);
+      if (isValidValue(fields()[38], other.allowedTransportMaterials)) {
+        this.allowedTransportMaterials = data().deepCopy(fields()[38].schema(), other.allowedTransportMaterials);
         fieldSetFlags()[38] = true;
       }
-      if (isValidValue(fields()[39], other.lineItemMappings)) {
-        this.lineItemMappings = data().deepCopy(fields()[39].schema(), other.lineItemMappings);
+      if (isValidValue(fields()[39], other.lineItems)) {
+        this.lineItems = data().deepCopy(fields()[39].schema(), other.lineItems);
         fieldSetFlags()[39] = true;
       }
-      if (isValidValue(fields()[40], other.origins)) {
-        this.origins = data().deepCopy(fields()[40].schema(), other.origins);
+      if (isValidValue(fields()[40], other.lineItemMappings)) {
+        this.lineItemMappings = data().deepCopy(fields()[40].schema(), other.lineItemMappings);
         fieldSetFlags()[40] = true;
       }
-      if (isValidValue(fields()[41], other.destinations)) {
-        this.destinations = data().deepCopy(fields()[41].schema(), other.destinations);
+      if (isValidValue(fields()[41], other.origins)) {
+        this.origins = data().deepCopy(fields()[41].schema(), other.origins);
         fieldSetFlags()[41] = true;
       }
-      if (isValidValue(fields()[42], other.allowedCustomerMaterials)) {
-        this.allowedCustomerMaterials = data().deepCopy(fields()[42].schema(), other.allowedCustomerMaterials);
+      if (isValidValue(fields()[42], other.destinations)) {
+        this.destinations = data().deepCopy(fields()[42].schema(), other.destinations);
         fieldSetFlags()[42] = true;
       }
-      if (isValidValue(fields()[43], other.isDirectAssignmentAllowed)) {
-        this.isDirectAssignmentAllowed = data().deepCopy(fields()[43].schema(), other.isDirectAssignmentAllowed);
+      if (isValidValue(fields()[43], other.allowedCustomerMaterials)) {
+        this.allowedCustomerMaterials = data().deepCopy(fields()[43].schema(), other.allowedCustomerMaterials);
         fieldSetFlags()[43] = true;
       }
-      if (isValidValue(fields()[44], other.liftingEndDuration)) {
-        this.liftingEndDuration = data().deepCopy(fields()[44].schema(), other.liftingEndDuration);
+      if (isValidValue(fields()[44], other.isDirectAssignmentAllowed)) {
+        this.isDirectAssignmentAllowed = data().deepCopy(fields()[44].schema(), other.isDirectAssignmentAllowed);
         fieldSetFlags()[44] = true;
       }
-      if (isValidValue(fields()[45], other.additionalCosts)) {
-        this.additionalCosts = data().deepCopy(fields()[45].schema(), other.additionalCosts);
+      if (isValidValue(fields()[45], other.liftingEndDuration)) {
+        this.liftingEndDuration = data().deepCopy(fields()[45].schema(), other.liftingEndDuration);
         fieldSetFlags()[45] = true;
       }
-      if (isValidValue(fields()[46], other.billingCycle)) {
-        this.billingCycle = data().deepCopy(fields()[46].schema(), other.billingCycle);
+      if (isValidValue(fields()[46], other.additionalCosts)) {
+        this.additionalCosts = data().deepCopy(fields()[46].schema(), other.additionalCosts);
         fieldSetFlags()[46] = true;
+      }
+      if (isValidValue(fields()[47], other.billingCycle)) {
+        this.billingCycle = data().deepCopy(fields()[47].schema(), other.billingCycle);
+        fieldSetFlags()[47] = true;
       }
       if (other.hasBillingCycleBuilder()) {
         this.billingCycleBuilder = com.fretron.Model.BillingCycle.newBuilder(other.getBillingCycleBuilder());
       }
-      if (isValidValue(fields()[47], other.paymentRules)) {
-        this.paymentRules = data().deepCopy(fields()[47].schema(), other.paymentRules);
-        fieldSetFlags()[47] = true;
+      if (isValidValue(fields()[48], other.paymentRules)) {
+        this.paymentRules = data().deepCopy(fields()[48].schema(), other.paymentRules);
+        fieldSetFlags()[48] = true;
       }
       if (other.hasPaymentRulesBuilder()) {
         this.paymentRulesBuilder = com.fretron.Model.PaymentRules.newBuilder(other.getPaymentRulesBuilder());
       }
-      if (isValidValue(fields()[48], other.pricingTableIds)) {
-        this.pricingTableIds = data().deepCopy(fields()[48].schema(), other.pricingTableIds);
-        fieldSetFlags()[48] = true;
-      }
-      if (isValidValue(fields()[49], other.category)) {
-        this.category = data().deepCopy(fields()[49].schema(), other.category);
+      if (isValidValue(fields()[49], other.pricingTableIds)) {
+        this.pricingTableIds = data().deepCopy(fields()[49].schema(), other.pricingTableIds);
         fieldSetFlags()[49] = true;
       }
-      if (isValidValue(fields()[50], other.division)) {
-        this.division = data().deepCopy(fields()[50].schema(), other.division);
+      if (isValidValue(fields()[50], other.category)) {
+        this.category = data().deepCopy(fields()[50].schema(), other.category);
         fieldSetFlags()[50] = true;
+      }
+      if (isValidValue(fields()[51], other.division)) {
+        this.division = data().deepCopy(fields()[51].schema(), other.division);
+        fieldSetFlags()[51] = true;
+      }
+      if (isValidValue(fields()[52], other.trackingModes)) {
+        this.trackingModes = data().deepCopy(fields()[52].schema(), other.trackingModes);
+        fieldSetFlags()[52] = true;
+      }
+      if (isValidValue(fields()[53], other.marginRateType)) {
+        this.marginRateType = data().deepCopy(fields()[53].schema(), other.marginRateType);
+        fieldSetFlags()[53] = true;
+      }
+      if (isValidValue(fields()[54], other.customerContractNumber)) {
+        this.customerContractNumber = data().deepCopy(fields()[54].schema(), other.customerContractNumber);
+        fieldSetFlags()[54] = true;
+      }
+      if (isValidValue(fields()[55], other.contractDescription)) {
+        this.contractDescription = data().deepCopy(fields()[55].schema(), other.contractDescription);
+        fieldSetFlags()[55] = true;
+      }
+      if (isValidValue(fields()[56], other.referenceInfo)) {
+        this.referenceInfo = data().deepCopy(fields()[56].schema(), other.referenceInfo);
+        fieldSetFlags()[56] = true;
+      }
+      if (other.hasReferenceInfoBuilder()) {
+        this.referenceInfoBuilder = com.fretron.Model.ResourceInfo.newBuilder(other.getReferenceInfoBuilder());
+      }
+      if (isValidValue(fields()[57], other.trackingPreference)) {
+        this.trackingPreference = data().deepCopy(fields()[57].schema(), other.trackingPreference);
+        fieldSetFlags()[57] = true;
+      }
+      if (isValidValue(fields()[58], other.documents)) {
+        this.documents = data().deepCopy(fields()[58].schema(), other.documents);
+        fieldSetFlags()[58] = true;
+      }
+      if (isValidValue(fields()[59], other.revenueDistribution)) {
+        this.revenueDistribution = data().deepCopy(fields()[59].schema(), other.revenueDistribution);
+        fieldSetFlags()[59] = true;
+      }
+      if (other.hasRevenueDistributionBuilder()) {
+        this.revenueDistributionBuilder = com.fretron.Model.RevenueDistribution.newBuilder(other.getRevenueDistributionBuilder());
+      }
+      if (isValidValue(fields()[60], other.amountEstimatedBy)) {
+        this.amountEstimatedBy = data().deepCopy(fields()[60].schema(), other.amountEstimatedBy);
+        fieldSetFlags()[60] = true;
+      }
+      if (isValidValue(fields()[61], other.quantityEstimation)) {
+        this.quantityEstimation = data().deepCopy(fields()[61].schema(), other.quantityEstimation);
+        fieldSetFlags()[61] = true;
+      }
+      if (other.hasQuantityEstimationBuilder()) {
+        this.quantityEstimationBuilder = com.fretron.Model.QuantityEstimation.newBuilder(other.getQuantityEstimationBuilder());
+      }
+      if (isValidValue(fields()[62], other.owner)) {
+        this.owner = data().deepCopy(fields()[62].schema(), other.owner);
+        fieldSetFlags()[62] = true;
+      }
+      if (other.hasOwnerBuilder()) {
+        this.ownerBuilder = com.fretron.Model.Employee.newBuilder(other.getOwnerBuilder());
+      }
+      if (isValidValue(fields()[63], other.consignmentRule)) {
+        this.consignmentRule = data().deepCopy(fields()[63].schema(), other.consignmentRule);
+        fieldSetFlags()[63] = true;
+      }
+      if (other.hasConsignmentRuleBuilder()) {
+        this.consignmentRuleBuilder = com.fretron.Model.ConsignmentRule.newBuilder(other.getConsignmentRuleBuilder());
+      }
+      if (isValidValue(fields()[64], other.checkList)) {
+        this.checkList = data().deepCopy(fields()[64].schema(), other.checkList);
+        fieldSetFlags()[64] = true;
+      }
+      if (isValidValue(fields()[65], other.allowedConsignmentPSNTypes)) {
+        this.allowedConsignmentPSNTypes = data().deepCopy(fields()[65].schema(), other.allowedConsignmentPSNTypes);
+        fieldSetFlags()[65] = true;
+      }
+      if (isValidValue(fields()[66], other.allowedShipmentPSNTypes)) {
+        this.allowedShipmentPSNTypes = data().deepCopy(fields()[66].schema(), other.allowedShipmentPSNTypes);
+        fieldSetFlags()[66] = true;
+      }
+      if (isValidValue(fields()[67], other.clause)) {
+        this.clause = data().deepCopy(fields()[67].schema(), other.clause);
+        fieldSetFlags()[67] = true;
+      }
+      if (isValidValue(fields()[68], other.alerts)) {
+        this.alerts = data().deepCopy(fields()[68].schema(), other.alerts);
+        fieldSetFlags()[68] = true;
       }
     }
 
@@ -1584,71 +2072,148 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
         this.paymentResponsibleBranchRule = data().deepCopy(fields()[34].schema(), other.paymentResponsibleBranchRule);
         fieldSetFlags()[34] = true;
       }
-      if (isValidValue(fields()[35], other.status)) {
-        this.status = data().deepCopy(fields()[35].schema(), other.status);
+      if (isValidValue(fields()[35], other.paymentBranchSelectionRule)) {
+        this.paymentBranchSelectionRule = data().deepCopy(fields()[35].schema(), other.paymentBranchSelectionRule);
         fieldSetFlags()[35] = true;
       }
-      if (isValidValue(fields()[36], other.reason)) {
-        this.reason = data().deepCopy(fields()[36].schema(), other.reason);
+      if (isValidValue(fields()[36], other.status)) {
+        this.status = data().deepCopy(fields()[36].schema(), other.status);
         fieldSetFlags()[36] = true;
       }
-      if (isValidValue(fields()[37], other.allowedTransportMaterials)) {
-        this.allowedTransportMaterials = data().deepCopy(fields()[37].schema(), other.allowedTransportMaterials);
+      if (isValidValue(fields()[37], other.reason)) {
+        this.reason = data().deepCopy(fields()[37].schema(), other.reason);
         fieldSetFlags()[37] = true;
       }
-      if (isValidValue(fields()[38], other.lineItems)) {
-        this.lineItems = data().deepCopy(fields()[38].schema(), other.lineItems);
+      if (isValidValue(fields()[38], other.allowedTransportMaterials)) {
+        this.allowedTransportMaterials = data().deepCopy(fields()[38].schema(), other.allowedTransportMaterials);
         fieldSetFlags()[38] = true;
       }
-      if (isValidValue(fields()[39], other.lineItemMappings)) {
-        this.lineItemMappings = data().deepCopy(fields()[39].schema(), other.lineItemMappings);
+      if (isValidValue(fields()[39], other.lineItems)) {
+        this.lineItems = data().deepCopy(fields()[39].schema(), other.lineItems);
         fieldSetFlags()[39] = true;
       }
-      if (isValidValue(fields()[40], other.origins)) {
-        this.origins = data().deepCopy(fields()[40].schema(), other.origins);
+      if (isValidValue(fields()[40], other.lineItemMappings)) {
+        this.lineItemMappings = data().deepCopy(fields()[40].schema(), other.lineItemMappings);
         fieldSetFlags()[40] = true;
       }
-      if (isValidValue(fields()[41], other.destinations)) {
-        this.destinations = data().deepCopy(fields()[41].schema(), other.destinations);
+      if (isValidValue(fields()[41], other.origins)) {
+        this.origins = data().deepCopy(fields()[41].schema(), other.origins);
         fieldSetFlags()[41] = true;
       }
-      if (isValidValue(fields()[42], other.allowedCustomerMaterials)) {
-        this.allowedCustomerMaterials = data().deepCopy(fields()[42].schema(), other.allowedCustomerMaterials);
+      if (isValidValue(fields()[42], other.destinations)) {
+        this.destinations = data().deepCopy(fields()[42].schema(), other.destinations);
         fieldSetFlags()[42] = true;
       }
-      if (isValidValue(fields()[43], other.isDirectAssignmentAllowed)) {
-        this.isDirectAssignmentAllowed = data().deepCopy(fields()[43].schema(), other.isDirectAssignmentAllowed);
+      if (isValidValue(fields()[43], other.allowedCustomerMaterials)) {
+        this.allowedCustomerMaterials = data().deepCopy(fields()[43].schema(), other.allowedCustomerMaterials);
         fieldSetFlags()[43] = true;
       }
-      if (isValidValue(fields()[44], other.liftingEndDuration)) {
-        this.liftingEndDuration = data().deepCopy(fields()[44].schema(), other.liftingEndDuration);
+      if (isValidValue(fields()[44], other.isDirectAssignmentAllowed)) {
+        this.isDirectAssignmentAllowed = data().deepCopy(fields()[44].schema(), other.isDirectAssignmentAllowed);
         fieldSetFlags()[44] = true;
       }
-      if (isValidValue(fields()[45], other.additionalCosts)) {
-        this.additionalCosts = data().deepCopy(fields()[45].schema(), other.additionalCosts);
+      if (isValidValue(fields()[45], other.liftingEndDuration)) {
+        this.liftingEndDuration = data().deepCopy(fields()[45].schema(), other.liftingEndDuration);
         fieldSetFlags()[45] = true;
       }
-      if (isValidValue(fields()[46], other.billingCycle)) {
-        this.billingCycle = data().deepCopy(fields()[46].schema(), other.billingCycle);
+      if (isValidValue(fields()[46], other.additionalCosts)) {
+        this.additionalCosts = data().deepCopy(fields()[46].schema(), other.additionalCosts);
         fieldSetFlags()[46] = true;
       }
-      this.billingCycleBuilder = null;
-      if (isValidValue(fields()[47], other.paymentRules)) {
-        this.paymentRules = data().deepCopy(fields()[47].schema(), other.paymentRules);
+      if (isValidValue(fields()[47], other.billingCycle)) {
+        this.billingCycle = data().deepCopy(fields()[47].schema(), other.billingCycle);
         fieldSetFlags()[47] = true;
       }
-      this.paymentRulesBuilder = null;
-      if (isValidValue(fields()[48], other.pricingTableIds)) {
-        this.pricingTableIds = data().deepCopy(fields()[48].schema(), other.pricingTableIds);
+      this.billingCycleBuilder = null;
+      if (isValidValue(fields()[48], other.paymentRules)) {
+        this.paymentRules = data().deepCopy(fields()[48].schema(), other.paymentRules);
         fieldSetFlags()[48] = true;
       }
-      if (isValidValue(fields()[49], other.category)) {
-        this.category = data().deepCopy(fields()[49].schema(), other.category);
+      this.paymentRulesBuilder = null;
+      if (isValidValue(fields()[49], other.pricingTableIds)) {
+        this.pricingTableIds = data().deepCopy(fields()[49].schema(), other.pricingTableIds);
         fieldSetFlags()[49] = true;
       }
-      if (isValidValue(fields()[50], other.division)) {
-        this.division = data().deepCopy(fields()[50].schema(), other.division);
+      if (isValidValue(fields()[50], other.category)) {
+        this.category = data().deepCopy(fields()[50].schema(), other.category);
         fieldSetFlags()[50] = true;
+      }
+      if (isValidValue(fields()[51], other.division)) {
+        this.division = data().deepCopy(fields()[51].schema(), other.division);
+        fieldSetFlags()[51] = true;
+      }
+      if (isValidValue(fields()[52], other.trackingModes)) {
+        this.trackingModes = data().deepCopy(fields()[52].schema(), other.trackingModes);
+        fieldSetFlags()[52] = true;
+      }
+      if (isValidValue(fields()[53], other.marginRateType)) {
+        this.marginRateType = data().deepCopy(fields()[53].schema(), other.marginRateType);
+        fieldSetFlags()[53] = true;
+      }
+      if (isValidValue(fields()[54], other.customerContractNumber)) {
+        this.customerContractNumber = data().deepCopy(fields()[54].schema(), other.customerContractNumber);
+        fieldSetFlags()[54] = true;
+      }
+      if (isValidValue(fields()[55], other.contractDescription)) {
+        this.contractDescription = data().deepCopy(fields()[55].schema(), other.contractDescription);
+        fieldSetFlags()[55] = true;
+      }
+      if (isValidValue(fields()[56], other.referenceInfo)) {
+        this.referenceInfo = data().deepCopy(fields()[56].schema(), other.referenceInfo);
+        fieldSetFlags()[56] = true;
+      }
+      this.referenceInfoBuilder = null;
+      if (isValidValue(fields()[57], other.trackingPreference)) {
+        this.trackingPreference = data().deepCopy(fields()[57].schema(), other.trackingPreference);
+        fieldSetFlags()[57] = true;
+      }
+      if (isValidValue(fields()[58], other.documents)) {
+        this.documents = data().deepCopy(fields()[58].schema(), other.documents);
+        fieldSetFlags()[58] = true;
+      }
+      if (isValidValue(fields()[59], other.revenueDistribution)) {
+        this.revenueDistribution = data().deepCopy(fields()[59].schema(), other.revenueDistribution);
+        fieldSetFlags()[59] = true;
+      }
+      this.revenueDistributionBuilder = null;
+      if (isValidValue(fields()[60], other.amountEstimatedBy)) {
+        this.amountEstimatedBy = data().deepCopy(fields()[60].schema(), other.amountEstimatedBy);
+        fieldSetFlags()[60] = true;
+      }
+      if (isValidValue(fields()[61], other.quantityEstimation)) {
+        this.quantityEstimation = data().deepCopy(fields()[61].schema(), other.quantityEstimation);
+        fieldSetFlags()[61] = true;
+      }
+      this.quantityEstimationBuilder = null;
+      if (isValidValue(fields()[62], other.owner)) {
+        this.owner = data().deepCopy(fields()[62].schema(), other.owner);
+        fieldSetFlags()[62] = true;
+      }
+      this.ownerBuilder = null;
+      if (isValidValue(fields()[63], other.consignmentRule)) {
+        this.consignmentRule = data().deepCopy(fields()[63].schema(), other.consignmentRule);
+        fieldSetFlags()[63] = true;
+      }
+      this.consignmentRuleBuilder = null;
+      if (isValidValue(fields()[64], other.checkList)) {
+        this.checkList = data().deepCopy(fields()[64].schema(), other.checkList);
+        fieldSetFlags()[64] = true;
+      }
+      if (isValidValue(fields()[65], other.allowedConsignmentPSNTypes)) {
+        this.allowedConsignmentPSNTypes = data().deepCopy(fields()[65].schema(), other.allowedConsignmentPSNTypes);
+        fieldSetFlags()[65] = true;
+      }
+      if (isValidValue(fields()[66], other.allowedShipmentPSNTypes)) {
+        this.allowedShipmentPSNTypes = data().deepCopy(fields()[66].schema(), other.allowedShipmentPSNTypes);
+        fieldSetFlags()[66] = true;
+      }
+      if (isValidValue(fields()[67], other.clause)) {
+        this.clause = data().deepCopy(fields()[67].schema(), other.clause);
+        fieldSetFlags()[67] = true;
+      }
+      if (isValidValue(fields()[68], other.alerts)) {
+        this.alerts = data().deepCopy(fields()[68].schema(), other.alerts);
+        fieldSetFlags()[68] = true;
       }
     }
 
@@ -3123,6 +3688,45 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     }
 
     /**
+      * Gets the value of the 'paymentBranchSelectionRule' field.
+      * @return The value.
+      */
+    public java.lang.String getPaymentBranchSelectionRule() {
+      return paymentBranchSelectionRule;
+    }
+
+    /**
+      * Sets the value of the 'paymentBranchSelectionRule' field.
+      * @param value The value of 'paymentBranchSelectionRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setPaymentBranchSelectionRule(java.lang.String value) {
+      validate(fields()[35], value);
+      this.paymentBranchSelectionRule = value;
+      fieldSetFlags()[35] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'paymentBranchSelectionRule' field has been set.
+      * @return True if the 'paymentBranchSelectionRule' field has been set, false otherwise.
+      */
+    public boolean hasPaymentBranchSelectionRule() {
+      return fieldSetFlags()[35];
+    }
+
+
+    /**
+      * Clears the value of the 'paymentBranchSelectionRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearPaymentBranchSelectionRule() {
+      paymentBranchSelectionRule = null;
+      fieldSetFlags()[35] = false;
+      return this;
+    }
+
+    /**
       * Gets the value of the 'status' field.
       * @return The value.
       */
@@ -3136,9 +3740,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setStatus(java.lang.String value) {
-      validate(fields()[35], value);
+      validate(fields()[36], value);
       this.status = value;
-      fieldSetFlags()[35] = true;
+      fieldSetFlags()[36] = true;
       return this;
     }
 
@@ -3147,7 +3751,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'status' field has been set, false otherwise.
       */
     public boolean hasStatus() {
-      return fieldSetFlags()[35];
+      return fieldSetFlags()[36];
     }
 
 
@@ -3157,7 +3761,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearStatus() {
       status = null;
-      fieldSetFlags()[35] = false;
+      fieldSetFlags()[36] = false;
       return this;
     }
 
@@ -3175,9 +3779,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setReason(java.lang.String value) {
-      validate(fields()[36], value);
+      validate(fields()[37], value);
       this.reason = value;
-      fieldSetFlags()[36] = true;
+      fieldSetFlags()[37] = true;
       return this;
     }
 
@@ -3186,7 +3790,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'reason' field has been set, false otherwise.
       */
     public boolean hasReason() {
-      return fieldSetFlags()[36];
+      return fieldSetFlags()[37];
     }
 
 
@@ -3196,7 +3800,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearReason() {
       reason = null;
-      fieldSetFlags()[36] = false;
+      fieldSetFlags()[37] = false;
       return this;
     }
 
@@ -3214,9 +3818,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setAllowedTransportMaterials(java.util.List<com.fretron.Model.Materials> value) {
-      validate(fields()[37], value);
+      validate(fields()[38], value);
       this.allowedTransportMaterials = value;
-      fieldSetFlags()[37] = true;
+      fieldSetFlags()[38] = true;
       return this;
     }
 
@@ -3225,7 +3829,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'allowedTransportMaterials' field has been set, false otherwise.
       */
     public boolean hasAllowedTransportMaterials() {
-      return fieldSetFlags()[37];
+      return fieldSetFlags()[38];
     }
 
 
@@ -3235,7 +3839,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearAllowedTransportMaterials() {
       allowedTransportMaterials = null;
-      fieldSetFlags()[37] = false;
+      fieldSetFlags()[38] = false;
       return this;
     }
 
@@ -3253,9 +3857,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setLineItems(java.util.List<com.fretron.Model.ContractLineItem> value) {
-      validate(fields()[38], value);
+      validate(fields()[39], value);
       this.lineItems = value;
-      fieldSetFlags()[38] = true;
+      fieldSetFlags()[39] = true;
       return this;
     }
 
@@ -3264,7 +3868,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'lineItems' field has been set, false otherwise.
       */
     public boolean hasLineItems() {
-      return fieldSetFlags()[38];
+      return fieldSetFlags()[39];
     }
 
 
@@ -3274,7 +3878,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearLineItems() {
       lineItems = null;
-      fieldSetFlags()[38] = false;
+      fieldSetFlags()[39] = false;
       return this;
     }
 
@@ -3292,9 +3896,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setLineItemMappings(java.util.List<com.fretron.Model.ContractItemMapping> value) {
-      validate(fields()[39], value);
+      validate(fields()[40], value);
       this.lineItemMappings = value;
-      fieldSetFlags()[39] = true;
+      fieldSetFlags()[40] = true;
       return this;
     }
 
@@ -3303,7 +3907,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'lineItemMappings' field has been set, false otherwise.
       */
     public boolean hasLineItemMappings() {
-      return fieldSetFlags()[39];
+      return fieldSetFlags()[40];
     }
 
 
@@ -3313,7 +3917,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearLineItemMappings() {
       lineItemMappings = null;
-      fieldSetFlags()[39] = false;
+      fieldSetFlags()[40] = false;
       return this;
     }
 
@@ -3331,9 +3935,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setOrigins(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[40], value);
+      validate(fields()[41], value);
       this.origins = value;
-      fieldSetFlags()[40] = true;
+      fieldSetFlags()[41] = true;
       return this;
     }
 
@@ -3342,7 +3946,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'origins' field has been set, false otherwise.
       */
     public boolean hasOrigins() {
-      return fieldSetFlags()[40];
+      return fieldSetFlags()[41];
     }
 
 
@@ -3352,7 +3956,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearOrigins() {
       origins = null;
-      fieldSetFlags()[40] = false;
+      fieldSetFlags()[41] = false;
       return this;
     }
 
@@ -3370,9 +3974,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setDestinations(java.util.List<com.fretron.Model.Place> value) {
-      validate(fields()[41], value);
+      validate(fields()[42], value);
       this.destinations = value;
-      fieldSetFlags()[41] = true;
+      fieldSetFlags()[42] = true;
       return this;
     }
 
@@ -3381,7 +3985,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'destinations' field has been set, false otherwise.
       */
     public boolean hasDestinations() {
-      return fieldSetFlags()[41];
+      return fieldSetFlags()[42];
     }
 
 
@@ -3391,7 +3995,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearDestinations() {
       destinations = null;
-      fieldSetFlags()[41] = false;
+      fieldSetFlags()[42] = false;
       return this;
     }
 
@@ -3409,9 +4013,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setAllowedCustomerMaterials(java.util.List<com.fretron.Model.Materials> value) {
-      validate(fields()[42], value);
+      validate(fields()[43], value);
       this.allowedCustomerMaterials = value;
-      fieldSetFlags()[42] = true;
+      fieldSetFlags()[43] = true;
       return this;
     }
 
@@ -3420,7 +4024,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'allowedCustomerMaterials' field has been set, false otherwise.
       */
     public boolean hasAllowedCustomerMaterials() {
-      return fieldSetFlags()[42];
+      return fieldSetFlags()[43];
     }
 
 
@@ -3430,7 +4034,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearAllowedCustomerMaterials() {
       allowedCustomerMaterials = null;
-      fieldSetFlags()[42] = false;
+      fieldSetFlags()[43] = false;
       return this;
     }
 
@@ -3448,9 +4052,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setIsDirectAssignmentAllowed(java.lang.Boolean value) {
-      validate(fields()[43], value);
+      validate(fields()[44], value);
       this.isDirectAssignmentAllowed = value;
-      fieldSetFlags()[43] = true;
+      fieldSetFlags()[44] = true;
       return this;
     }
 
@@ -3459,7 +4063,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'isDirectAssignmentAllowed' field has been set, false otherwise.
       */
     public boolean hasIsDirectAssignmentAllowed() {
-      return fieldSetFlags()[43];
+      return fieldSetFlags()[44];
     }
 
 
@@ -3469,7 +4073,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearIsDirectAssignmentAllowed() {
       isDirectAssignmentAllowed = null;
-      fieldSetFlags()[43] = false;
+      fieldSetFlags()[44] = false;
       return this;
     }
 
@@ -3487,9 +4091,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setLiftingEndDuration(java.lang.Long value) {
-      validate(fields()[44], value);
+      validate(fields()[45], value);
       this.liftingEndDuration = value;
-      fieldSetFlags()[44] = true;
+      fieldSetFlags()[45] = true;
       return this;
     }
 
@@ -3498,7 +4102,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'liftingEndDuration' field has been set, false otherwise.
       */
     public boolean hasLiftingEndDuration() {
-      return fieldSetFlags()[44];
+      return fieldSetFlags()[45];
     }
 
 
@@ -3508,7 +4112,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearLiftingEndDuration() {
       liftingEndDuration = null;
-      fieldSetFlags()[44] = false;
+      fieldSetFlags()[45] = false;
       return this;
     }
 
@@ -3526,9 +4130,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setAdditionalCosts(java.util.List<com.fretron.Model.CostRule> value) {
-      validate(fields()[45], value);
+      validate(fields()[46], value);
       this.additionalCosts = value;
-      fieldSetFlags()[45] = true;
+      fieldSetFlags()[46] = true;
       return this;
     }
 
@@ -3537,7 +4141,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'additionalCosts' field has been set, false otherwise.
       */
     public boolean hasAdditionalCosts() {
-      return fieldSetFlags()[45];
+      return fieldSetFlags()[46];
     }
 
 
@@ -3547,7 +4151,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearAdditionalCosts() {
       additionalCosts = null;
-      fieldSetFlags()[45] = false;
+      fieldSetFlags()[46] = false;
       return this;
     }
 
@@ -3565,10 +4169,10 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setBillingCycle(com.fretron.Model.BillingCycle value) {
-      validate(fields()[46], value);
+      validate(fields()[47], value);
       this.billingCycleBuilder = null;
       this.billingCycle = value;
-      fieldSetFlags()[46] = true;
+      fieldSetFlags()[47] = true;
       return this;
     }
 
@@ -3577,7 +4181,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'billingCycle' field has been set, false otherwise.
       */
     public boolean hasBillingCycle() {
-      return fieldSetFlags()[46];
+      return fieldSetFlags()[47];
     }
 
     /**
@@ -3621,7 +4225,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     public com.fretron.Model.Contract.Builder clearBillingCycle() {
       billingCycle = null;
       billingCycleBuilder = null;
-      fieldSetFlags()[46] = false;
+      fieldSetFlags()[47] = false;
       return this;
     }
 
@@ -3639,10 +4243,10 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setPaymentRules(com.fretron.Model.PaymentRules value) {
-      validate(fields()[47], value);
+      validate(fields()[48], value);
       this.paymentRulesBuilder = null;
       this.paymentRules = value;
-      fieldSetFlags()[47] = true;
+      fieldSetFlags()[48] = true;
       return this;
     }
 
@@ -3651,7 +4255,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'paymentRules' field has been set, false otherwise.
       */
     public boolean hasPaymentRules() {
-      return fieldSetFlags()[47];
+      return fieldSetFlags()[48];
     }
 
     /**
@@ -3695,7 +4299,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
     public com.fretron.Model.Contract.Builder clearPaymentRules() {
       paymentRules = null;
       paymentRulesBuilder = null;
-      fieldSetFlags()[47] = false;
+      fieldSetFlags()[48] = false;
       return this;
     }
 
@@ -3713,9 +4317,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setPricingTableIds(java.util.List<java.lang.String> value) {
-      validate(fields()[48], value);
+      validate(fields()[49], value);
       this.pricingTableIds = value;
-      fieldSetFlags()[48] = true;
+      fieldSetFlags()[49] = true;
       return this;
     }
 
@@ -3724,7 +4328,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'pricingTableIds' field has been set, false otherwise.
       */
     public boolean hasPricingTableIds() {
-      return fieldSetFlags()[48];
+      return fieldSetFlags()[49];
     }
 
 
@@ -3734,7 +4338,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearPricingTableIds() {
       pricingTableIds = null;
-      fieldSetFlags()[48] = false;
+      fieldSetFlags()[49] = false;
       return this;
     }
 
@@ -3752,9 +4356,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setCategory(java.lang.String value) {
-      validate(fields()[49], value);
+      validate(fields()[50], value);
       this.category = value;
-      fieldSetFlags()[49] = true;
+      fieldSetFlags()[50] = true;
       return this;
     }
 
@@ -3763,7 +4367,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'category' field has been set, false otherwise.
       */
     public boolean hasCategory() {
-      return fieldSetFlags()[49];
+      return fieldSetFlags()[50];
     }
 
 
@@ -3773,7 +4377,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearCategory() {
       category = null;
-      fieldSetFlags()[49] = false;
+      fieldSetFlags()[50] = false;
       return this;
     }
 
@@ -3791,9 +4395,9 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return This builder.
       */
     public com.fretron.Model.Contract.Builder setDivision(java.lang.String value) {
-      validate(fields()[50], value);
+      validate(fields()[51], value);
       this.division = value;
-      fieldSetFlags()[50] = true;
+      fieldSetFlags()[51] = true;
       return this;
     }
 
@@ -3802,7 +4406,7 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       * @return True if the 'division' field has been set, false otherwise.
       */
     public boolean hasDivision() {
-      return fieldSetFlags()[50];
+      return fieldSetFlags()[51];
     }
 
 
@@ -3812,7 +4416,845 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
       */
     public com.fretron.Model.Contract.Builder clearDivision() {
       division = null;
-      fieldSetFlags()[50] = false;
+      fieldSetFlags()[51] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'trackingModes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getTrackingModes() {
+      return trackingModes;
+    }
+
+    /**
+      * Sets the value of the 'trackingModes' field.
+      * @param value The value of 'trackingModes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setTrackingModes(java.util.List<java.lang.String> value) {
+      validate(fields()[52], value);
+      this.trackingModes = value;
+      fieldSetFlags()[52] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'trackingModes' field has been set.
+      * @return True if the 'trackingModes' field has been set, false otherwise.
+      */
+    public boolean hasTrackingModes() {
+      return fieldSetFlags()[52];
+    }
+
+
+    /**
+      * Clears the value of the 'trackingModes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearTrackingModes() {
+      trackingModes = null;
+      fieldSetFlags()[52] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'marginRateType' field.
+      * @return The value.
+      */
+    public java.lang.String getMarginRateType() {
+      return marginRateType;
+    }
+
+    /**
+      * Sets the value of the 'marginRateType' field.
+      * @param value The value of 'marginRateType'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setMarginRateType(java.lang.String value) {
+      validate(fields()[53], value);
+      this.marginRateType = value;
+      fieldSetFlags()[53] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'marginRateType' field has been set.
+      * @return True if the 'marginRateType' field has been set, false otherwise.
+      */
+    public boolean hasMarginRateType() {
+      return fieldSetFlags()[53];
+    }
+
+
+    /**
+      * Clears the value of the 'marginRateType' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearMarginRateType() {
+      marginRateType = null;
+      fieldSetFlags()[53] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'customerContractNumber' field.
+      * @return The value.
+      */
+    public java.lang.String getCustomerContractNumber() {
+      return customerContractNumber;
+    }
+
+    /**
+      * Sets the value of the 'customerContractNumber' field.
+      * @param value The value of 'customerContractNumber'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setCustomerContractNumber(java.lang.String value) {
+      validate(fields()[54], value);
+      this.customerContractNumber = value;
+      fieldSetFlags()[54] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'customerContractNumber' field has been set.
+      * @return True if the 'customerContractNumber' field has been set, false otherwise.
+      */
+    public boolean hasCustomerContractNumber() {
+      return fieldSetFlags()[54];
+    }
+
+
+    /**
+      * Clears the value of the 'customerContractNumber' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearCustomerContractNumber() {
+      customerContractNumber = null;
+      fieldSetFlags()[54] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'contractDescription' field.
+      * @return The value.
+      */
+    public java.lang.String getContractDescription() {
+      return contractDescription;
+    }
+
+    /**
+      * Sets the value of the 'contractDescription' field.
+      * @param value The value of 'contractDescription'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setContractDescription(java.lang.String value) {
+      validate(fields()[55], value);
+      this.contractDescription = value;
+      fieldSetFlags()[55] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'contractDescription' field has been set.
+      * @return True if the 'contractDescription' field has been set, false otherwise.
+      */
+    public boolean hasContractDescription() {
+      return fieldSetFlags()[55];
+    }
+
+
+    /**
+      * Clears the value of the 'contractDescription' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearContractDescription() {
+      contractDescription = null;
+      fieldSetFlags()[55] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'referenceInfo' field.
+      * @return The value.
+      */
+    public com.fretron.Model.ResourceInfo getReferenceInfo() {
+      return referenceInfo;
+    }
+
+    /**
+      * Sets the value of the 'referenceInfo' field.
+      * @param value The value of 'referenceInfo'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setReferenceInfo(com.fretron.Model.ResourceInfo value) {
+      validate(fields()[56], value);
+      this.referenceInfoBuilder = null;
+      this.referenceInfo = value;
+      fieldSetFlags()[56] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'referenceInfo' field has been set.
+      * @return True if the 'referenceInfo' field has been set, false otherwise.
+      */
+    public boolean hasReferenceInfo() {
+      return fieldSetFlags()[56];
+    }
+
+    /**
+     * Gets the Builder instance for the 'referenceInfo' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.ResourceInfo.Builder getReferenceInfoBuilder() {
+      if (referenceInfoBuilder == null) {
+        if (hasReferenceInfo()) {
+          setReferenceInfoBuilder(com.fretron.Model.ResourceInfo.newBuilder(referenceInfo));
+        } else {
+          setReferenceInfoBuilder(com.fretron.Model.ResourceInfo.newBuilder());
+        }
+      }
+      return referenceInfoBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'referenceInfo' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contract.Builder setReferenceInfoBuilder(com.fretron.Model.ResourceInfo.Builder value) {
+      clearReferenceInfo();
+      referenceInfoBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'referenceInfo' field has an active Builder instance
+     * @return True if the 'referenceInfo' field has an active Builder instance
+     */
+    public boolean hasReferenceInfoBuilder() {
+      return referenceInfoBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'referenceInfo' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearReferenceInfo() {
+      referenceInfo = null;
+      referenceInfoBuilder = null;
+      fieldSetFlags()[56] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'trackingPreference' field.
+      * @return The value.
+      */
+    public java.lang.String getTrackingPreference() {
+      return trackingPreference;
+    }
+
+    /**
+      * Sets the value of the 'trackingPreference' field.
+      * @param value The value of 'trackingPreference'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setTrackingPreference(java.lang.String value) {
+      validate(fields()[57], value);
+      this.trackingPreference = value;
+      fieldSetFlags()[57] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'trackingPreference' field has been set.
+      * @return True if the 'trackingPreference' field has been set, false otherwise.
+      */
+    public boolean hasTrackingPreference() {
+      return fieldSetFlags()[57];
+    }
+
+
+    /**
+      * Clears the value of the 'trackingPreference' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearTrackingPreference() {
+      trackingPreference = null;
+      fieldSetFlags()[57] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'documents' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getDocuments() {
+      return documents;
+    }
+
+    /**
+      * Sets the value of the 'documents' field.
+      * @param value The value of 'documents'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setDocuments(java.util.List<java.lang.String> value) {
+      validate(fields()[58], value);
+      this.documents = value;
+      fieldSetFlags()[58] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'documents' field has been set.
+      * @return True if the 'documents' field has been set, false otherwise.
+      */
+    public boolean hasDocuments() {
+      return fieldSetFlags()[58];
+    }
+
+
+    /**
+      * Clears the value of the 'documents' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearDocuments() {
+      documents = null;
+      fieldSetFlags()[58] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'revenueDistribution' field.
+      * @return The value.
+      */
+    public com.fretron.Model.RevenueDistribution getRevenueDistribution() {
+      return revenueDistribution;
+    }
+
+    /**
+      * Sets the value of the 'revenueDistribution' field.
+      * @param value The value of 'revenueDistribution'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setRevenueDistribution(com.fretron.Model.RevenueDistribution value) {
+      validate(fields()[59], value);
+      this.revenueDistributionBuilder = null;
+      this.revenueDistribution = value;
+      fieldSetFlags()[59] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'revenueDistribution' field has been set.
+      * @return True if the 'revenueDistribution' field has been set, false otherwise.
+      */
+    public boolean hasRevenueDistribution() {
+      return fieldSetFlags()[59];
+    }
+
+    /**
+     * Gets the Builder instance for the 'revenueDistribution' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.RevenueDistribution.Builder getRevenueDistributionBuilder() {
+      if (revenueDistributionBuilder == null) {
+        if (hasRevenueDistribution()) {
+          setRevenueDistributionBuilder(com.fretron.Model.RevenueDistribution.newBuilder(revenueDistribution));
+        } else {
+          setRevenueDistributionBuilder(com.fretron.Model.RevenueDistribution.newBuilder());
+        }
+      }
+      return revenueDistributionBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'revenueDistribution' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contract.Builder setRevenueDistributionBuilder(com.fretron.Model.RevenueDistribution.Builder value) {
+      clearRevenueDistribution();
+      revenueDistributionBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'revenueDistribution' field has an active Builder instance
+     * @return True if the 'revenueDistribution' field has an active Builder instance
+     */
+    public boolean hasRevenueDistributionBuilder() {
+      return revenueDistributionBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'revenueDistribution' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearRevenueDistribution() {
+      revenueDistribution = null;
+      revenueDistributionBuilder = null;
+      fieldSetFlags()[59] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'amountEstimatedBy' field.
+      * @return The value.
+      */
+    public java.lang.String getAmountEstimatedBy() {
+      return amountEstimatedBy;
+    }
+
+    /**
+      * Sets the value of the 'amountEstimatedBy' field.
+      * @param value The value of 'amountEstimatedBy'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setAmountEstimatedBy(java.lang.String value) {
+      validate(fields()[60], value);
+      this.amountEstimatedBy = value;
+      fieldSetFlags()[60] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'amountEstimatedBy' field has been set.
+      * @return True if the 'amountEstimatedBy' field has been set, false otherwise.
+      */
+    public boolean hasAmountEstimatedBy() {
+      return fieldSetFlags()[60];
+    }
+
+
+    /**
+      * Clears the value of the 'amountEstimatedBy' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearAmountEstimatedBy() {
+      amountEstimatedBy = null;
+      fieldSetFlags()[60] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'quantityEstimation' field.
+      * @return The value.
+      */
+    public com.fretron.Model.QuantityEstimation getQuantityEstimation() {
+      return quantityEstimation;
+    }
+
+    /**
+      * Sets the value of the 'quantityEstimation' field.
+      * @param value The value of 'quantityEstimation'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setQuantityEstimation(com.fretron.Model.QuantityEstimation value) {
+      validate(fields()[61], value);
+      this.quantityEstimationBuilder = null;
+      this.quantityEstimation = value;
+      fieldSetFlags()[61] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'quantityEstimation' field has been set.
+      * @return True if the 'quantityEstimation' field has been set, false otherwise.
+      */
+    public boolean hasQuantityEstimation() {
+      return fieldSetFlags()[61];
+    }
+
+    /**
+     * Gets the Builder instance for the 'quantityEstimation' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.QuantityEstimation.Builder getQuantityEstimationBuilder() {
+      if (quantityEstimationBuilder == null) {
+        if (hasQuantityEstimation()) {
+          setQuantityEstimationBuilder(com.fretron.Model.QuantityEstimation.newBuilder(quantityEstimation));
+        } else {
+          setQuantityEstimationBuilder(com.fretron.Model.QuantityEstimation.newBuilder());
+        }
+      }
+      return quantityEstimationBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'quantityEstimation' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contract.Builder setQuantityEstimationBuilder(com.fretron.Model.QuantityEstimation.Builder value) {
+      clearQuantityEstimation();
+      quantityEstimationBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'quantityEstimation' field has an active Builder instance
+     * @return True if the 'quantityEstimation' field has an active Builder instance
+     */
+    public boolean hasQuantityEstimationBuilder() {
+      return quantityEstimationBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'quantityEstimation' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearQuantityEstimation() {
+      quantityEstimation = null;
+      quantityEstimationBuilder = null;
+      fieldSetFlags()[61] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'owner' field.
+      * @return The value.
+      */
+    public com.fretron.Model.Employee getOwner() {
+      return owner;
+    }
+
+    /**
+      * Sets the value of the 'owner' field.
+      * @param value The value of 'owner'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setOwner(com.fretron.Model.Employee value) {
+      validate(fields()[62], value);
+      this.ownerBuilder = null;
+      this.owner = value;
+      fieldSetFlags()[62] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'owner' field has been set.
+      * @return True if the 'owner' field has been set, false otherwise.
+      */
+    public boolean hasOwner() {
+      return fieldSetFlags()[62];
+    }
+
+    /**
+     * Gets the Builder instance for the 'owner' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.Employee.Builder getOwnerBuilder() {
+      if (ownerBuilder == null) {
+        if (hasOwner()) {
+          setOwnerBuilder(com.fretron.Model.Employee.newBuilder(owner));
+        } else {
+          setOwnerBuilder(com.fretron.Model.Employee.newBuilder());
+        }
+      }
+      return ownerBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'owner' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contract.Builder setOwnerBuilder(com.fretron.Model.Employee.Builder value) {
+      clearOwner();
+      ownerBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'owner' field has an active Builder instance
+     * @return True if the 'owner' field has an active Builder instance
+     */
+    public boolean hasOwnerBuilder() {
+      return ownerBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'owner' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearOwner() {
+      owner = null;
+      ownerBuilder = null;
+      fieldSetFlags()[62] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'consignmentRule' field.
+      * @return The value.
+      */
+    public com.fretron.Model.ConsignmentRule getConsignmentRule() {
+      return consignmentRule;
+    }
+
+    /**
+      * Sets the value of the 'consignmentRule' field.
+      * @param value The value of 'consignmentRule'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setConsignmentRule(com.fretron.Model.ConsignmentRule value) {
+      validate(fields()[63], value);
+      this.consignmentRuleBuilder = null;
+      this.consignmentRule = value;
+      fieldSetFlags()[63] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'consignmentRule' field has been set.
+      * @return True if the 'consignmentRule' field has been set, false otherwise.
+      */
+    public boolean hasConsignmentRule() {
+      return fieldSetFlags()[63];
+    }
+
+    /**
+     * Gets the Builder instance for the 'consignmentRule' field and creates one if it doesn't exist yet.
+     * @return This builder.
+     */
+    public com.fretron.Model.ConsignmentRule.Builder getConsignmentRuleBuilder() {
+      if (consignmentRuleBuilder == null) {
+        if (hasConsignmentRule()) {
+          setConsignmentRuleBuilder(com.fretron.Model.ConsignmentRule.newBuilder(consignmentRule));
+        } else {
+          setConsignmentRuleBuilder(com.fretron.Model.ConsignmentRule.newBuilder());
+        }
+      }
+      return consignmentRuleBuilder;
+    }
+
+    /**
+     * Sets the Builder instance for the 'consignmentRule' field
+     * @param value The builder instance that must be set.
+     * @return This builder.
+     */
+    public com.fretron.Model.Contract.Builder setConsignmentRuleBuilder(com.fretron.Model.ConsignmentRule.Builder value) {
+      clearConsignmentRule();
+      consignmentRuleBuilder = value;
+      return this;
+    }
+
+    /**
+     * Checks whether the 'consignmentRule' field has an active Builder instance
+     * @return True if the 'consignmentRule' field has an active Builder instance
+     */
+    public boolean hasConsignmentRuleBuilder() {
+      return consignmentRuleBuilder != null;
+    }
+
+    /**
+      * Clears the value of the 'consignmentRule' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearConsignmentRule() {
+      consignmentRule = null;
+      consignmentRuleBuilder = null;
+      fieldSetFlags()[63] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'checkList' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.CheckListItem> getCheckList() {
+      return checkList;
+    }
+
+    /**
+      * Sets the value of the 'checkList' field.
+      * @param value The value of 'checkList'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setCheckList(java.util.List<com.fretron.Model.CheckListItem> value) {
+      validate(fields()[64], value);
+      this.checkList = value;
+      fieldSetFlags()[64] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'checkList' field has been set.
+      * @return True if the 'checkList' field has been set, false otherwise.
+      */
+    public boolean hasCheckList() {
+      return fieldSetFlags()[64];
+    }
+
+
+    /**
+      * Clears the value of the 'checkList' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearCheckList() {
+      checkList = null;
+      fieldSetFlags()[64] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'allowedConsignmentPSNTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAllowedConsignmentPSNTypes() {
+      return allowedConsignmentPSNTypes;
+    }
+
+    /**
+      * Sets the value of the 'allowedConsignmentPSNTypes' field.
+      * @param value The value of 'allowedConsignmentPSNTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setAllowedConsignmentPSNTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[65], value);
+      this.allowedConsignmentPSNTypes = value;
+      fieldSetFlags()[65] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'allowedConsignmentPSNTypes' field has been set.
+      * @return True if the 'allowedConsignmentPSNTypes' field has been set, false otherwise.
+      */
+    public boolean hasAllowedConsignmentPSNTypes() {
+      return fieldSetFlags()[65];
+    }
+
+
+    /**
+      * Clears the value of the 'allowedConsignmentPSNTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearAllowedConsignmentPSNTypes() {
+      allowedConsignmentPSNTypes = null;
+      fieldSetFlags()[65] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'allowedShipmentPSNTypes' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.String> getAllowedShipmentPSNTypes() {
+      return allowedShipmentPSNTypes;
+    }
+
+    /**
+      * Sets the value of the 'allowedShipmentPSNTypes' field.
+      * @param value The value of 'allowedShipmentPSNTypes'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setAllowedShipmentPSNTypes(java.util.List<java.lang.String> value) {
+      validate(fields()[66], value);
+      this.allowedShipmentPSNTypes = value;
+      fieldSetFlags()[66] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'allowedShipmentPSNTypes' field has been set.
+      * @return True if the 'allowedShipmentPSNTypes' field has been set, false otherwise.
+      */
+    public boolean hasAllowedShipmentPSNTypes() {
+      return fieldSetFlags()[66];
+    }
+
+
+    /**
+      * Clears the value of the 'allowedShipmentPSNTypes' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearAllowedShipmentPSNTypes() {
+      allowedShipmentPSNTypes = null;
+      fieldSetFlags()[66] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'clause' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.ContractClause> getClause() {
+      return clause;
+    }
+
+    /**
+      * Sets the value of the 'clause' field.
+      * @param value The value of 'clause'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setClause(java.util.List<com.fretron.Model.ContractClause> value) {
+      validate(fields()[67], value);
+      this.clause = value;
+      fieldSetFlags()[67] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'clause' field has been set.
+      * @return True if the 'clause' field has been set, false otherwise.
+      */
+    public boolean hasClause() {
+      return fieldSetFlags()[67];
+    }
+
+
+    /**
+      * Clears the value of the 'clause' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearClause() {
+      clause = null;
+      fieldSetFlags()[67] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'alerts' field.
+      * @return The value.
+      */
+    public java.util.List<com.fretron.Model.ResourceAlert> getAlerts() {
+      return alerts;
+    }
+
+    /**
+      * Sets the value of the 'alerts' field.
+      * @param value The value of 'alerts'.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder setAlerts(java.util.List<com.fretron.Model.ResourceAlert> value) {
+      validate(fields()[68], value);
+      this.alerts = value;
+      fieldSetFlags()[68] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'alerts' field has been set.
+      * @return True if the 'alerts' field has been set, false otherwise.
+      */
+    public boolean hasAlerts() {
+      return fieldSetFlags()[68];
+    }
+
+
+    /**
+      * Clears the value of the 'alerts' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.Contract.Builder clearAlerts() {
+      alerts = null;
+      fieldSetFlags()[68] = false;
       return this;
     }
 
@@ -3867,30 +5309,68 @@ public class Contract extends org.apache.avro.specific.SpecificRecordBase implem
         record.billToPartyRule = fieldSetFlags()[32] ? this.billToPartyRule : (java.lang.String) defaultValue(fields()[32]);
         record.billingBranchRule = fieldSetFlags()[33] ? this.billingBranchRule : (java.lang.String) defaultValue(fields()[33]);
         record.paymentResponsibleBranchRule = fieldSetFlags()[34] ? this.paymentResponsibleBranchRule : (java.lang.String) defaultValue(fields()[34]);
-        record.status = fieldSetFlags()[35] ? this.status : (java.lang.String) defaultValue(fields()[35]);
-        record.reason = fieldSetFlags()[36] ? this.reason : (java.lang.String) defaultValue(fields()[36]);
-        record.allowedTransportMaterials = fieldSetFlags()[37] ? this.allowedTransportMaterials : (java.util.List<com.fretron.Model.Materials>) defaultValue(fields()[37]);
-        record.lineItems = fieldSetFlags()[38] ? this.lineItems : (java.util.List<com.fretron.Model.ContractLineItem>) defaultValue(fields()[38]);
-        record.lineItemMappings = fieldSetFlags()[39] ? this.lineItemMappings : (java.util.List<com.fretron.Model.ContractItemMapping>) defaultValue(fields()[39]);
-        record.origins = fieldSetFlags()[40] ? this.origins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[40]);
-        record.destinations = fieldSetFlags()[41] ? this.destinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[41]);
-        record.allowedCustomerMaterials = fieldSetFlags()[42] ? this.allowedCustomerMaterials : (java.util.List<com.fretron.Model.Materials>) defaultValue(fields()[42]);
-        record.isDirectAssignmentAllowed = fieldSetFlags()[43] ? this.isDirectAssignmentAllowed : (java.lang.Boolean) defaultValue(fields()[43]);
-        record.liftingEndDuration = fieldSetFlags()[44] ? this.liftingEndDuration : (java.lang.Long) defaultValue(fields()[44]);
-        record.additionalCosts = fieldSetFlags()[45] ? this.additionalCosts : (java.util.List<com.fretron.Model.CostRule>) defaultValue(fields()[45]);
+        record.paymentBranchSelectionRule = fieldSetFlags()[35] ? this.paymentBranchSelectionRule : (java.lang.String) defaultValue(fields()[35]);
+        record.status = fieldSetFlags()[36] ? this.status : (java.lang.String) defaultValue(fields()[36]);
+        record.reason = fieldSetFlags()[37] ? this.reason : (java.lang.String) defaultValue(fields()[37]);
+        record.allowedTransportMaterials = fieldSetFlags()[38] ? this.allowedTransportMaterials : (java.util.List<com.fretron.Model.Materials>) defaultValue(fields()[38]);
+        record.lineItems = fieldSetFlags()[39] ? this.lineItems : (java.util.List<com.fretron.Model.ContractLineItem>) defaultValue(fields()[39]);
+        record.lineItemMappings = fieldSetFlags()[40] ? this.lineItemMappings : (java.util.List<com.fretron.Model.ContractItemMapping>) defaultValue(fields()[40]);
+        record.origins = fieldSetFlags()[41] ? this.origins : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[41]);
+        record.destinations = fieldSetFlags()[42] ? this.destinations : (java.util.List<com.fretron.Model.Place>) defaultValue(fields()[42]);
+        record.allowedCustomerMaterials = fieldSetFlags()[43] ? this.allowedCustomerMaterials : (java.util.List<com.fretron.Model.Materials>) defaultValue(fields()[43]);
+        record.isDirectAssignmentAllowed = fieldSetFlags()[44] ? this.isDirectAssignmentAllowed : (java.lang.Boolean) defaultValue(fields()[44]);
+        record.liftingEndDuration = fieldSetFlags()[45] ? this.liftingEndDuration : (java.lang.Long) defaultValue(fields()[45]);
+        record.additionalCosts = fieldSetFlags()[46] ? this.additionalCosts : (java.util.List<com.fretron.Model.CostRule>) defaultValue(fields()[46]);
         if (billingCycleBuilder != null) {
           record.billingCycle = this.billingCycleBuilder.build();
         } else {
-          record.billingCycle = fieldSetFlags()[46] ? this.billingCycle : (com.fretron.Model.BillingCycle) defaultValue(fields()[46]);
+          record.billingCycle = fieldSetFlags()[47] ? this.billingCycle : (com.fretron.Model.BillingCycle) defaultValue(fields()[47]);
         }
         if (paymentRulesBuilder != null) {
           record.paymentRules = this.paymentRulesBuilder.build();
         } else {
-          record.paymentRules = fieldSetFlags()[47] ? this.paymentRules : (com.fretron.Model.PaymentRules) defaultValue(fields()[47]);
+          record.paymentRules = fieldSetFlags()[48] ? this.paymentRules : (com.fretron.Model.PaymentRules) defaultValue(fields()[48]);
         }
-        record.pricingTableIds = fieldSetFlags()[48] ? this.pricingTableIds : (java.util.List<java.lang.String>) defaultValue(fields()[48]);
-        record.category = fieldSetFlags()[49] ? this.category : (java.lang.String) defaultValue(fields()[49]);
-        record.division = fieldSetFlags()[50] ? this.division : (java.lang.String) defaultValue(fields()[50]);
+        record.pricingTableIds = fieldSetFlags()[49] ? this.pricingTableIds : (java.util.List<java.lang.String>) defaultValue(fields()[49]);
+        record.category = fieldSetFlags()[50] ? this.category : (java.lang.String) defaultValue(fields()[50]);
+        record.division = fieldSetFlags()[51] ? this.division : (java.lang.String) defaultValue(fields()[51]);
+        record.trackingModes = fieldSetFlags()[52] ? this.trackingModes : (java.util.List<java.lang.String>) defaultValue(fields()[52]);
+        record.marginRateType = fieldSetFlags()[53] ? this.marginRateType : (java.lang.String) defaultValue(fields()[53]);
+        record.customerContractNumber = fieldSetFlags()[54] ? this.customerContractNumber : (java.lang.String) defaultValue(fields()[54]);
+        record.contractDescription = fieldSetFlags()[55] ? this.contractDescription : (java.lang.String) defaultValue(fields()[55]);
+        if (referenceInfoBuilder != null) {
+          record.referenceInfo = this.referenceInfoBuilder.build();
+        } else {
+          record.referenceInfo = fieldSetFlags()[56] ? this.referenceInfo : (com.fretron.Model.ResourceInfo) defaultValue(fields()[56]);
+        }
+        record.trackingPreference = fieldSetFlags()[57] ? this.trackingPreference : (java.lang.String) defaultValue(fields()[57]);
+        record.documents = fieldSetFlags()[58] ? this.documents : (java.util.List<java.lang.String>) defaultValue(fields()[58]);
+        if (revenueDistributionBuilder != null) {
+          record.revenueDistribution = this.revenueDistributionBuilder.build();
+        } else {
+          record.revenueDistribution = fieldSetFlags()[59] ? this.revenueDistribution : (com.fretron.Model.RevenueDistribution) defaultValue(fields()[59]);
+        }
+        record.amountEstimatedBy = fieldSetFlags()[60] ? this.amountEstimatedBy : (java.lang.String) defaultValue(fields()[60]);
+        if (quantityEstimationBuilder != null) {
+          record.quantityEstimation = this.quantityEstimationBuilder.build();
+        } else {
+          record.quantityEstimation = fieldSetFlags()[61] ? this.quantityEstimation : (com.fretron.Model.QuantityEstimation) defaultValue(fields()[61]);
+        }
+        if (ownerBuilder != null) {
+          record.owner = this.ownerBuilder.build();
+        } else {
+          record.owner = fieldSetFlags()[62] ? this.owner : (com.fretron.Model.Employee) defaultValue(fields()[62]);
+        }
+        if (consignmentRuleBuilder != null) {
+          record.consignmentRule = this.consignmentRuleBuilder.build();
+        } else {
+          record.consignmentRule = fieldSetFlags()[63] ? this.consignmentRule : (com.fretron.Model.ConsignmentRule) defaultValue(fields()[63]);
+        }
+        record.checkList = fieldSetFlags()[64] ? this.checkList : (java.util.List<com.fretron.Model.CheckListItem>) defaultValue(fields()[64]);
+        record.allowedConsignmentPSNTypes = fieldSetFlags()[65] ? this.allowedConsignmentPSNTypes : (java.util.List<java.lang.String>) defaultValue(fields()[65]);
+        record.allowedShipmentPSNTypes = fieldSetFlags()[66] ? this.allowedShipmentPSNTypes : (java.util.List<java.lang.String>) defaultValue(fields()[66]);
+        record.clause = fieldSetFlags()[67] ? this.clause : (java.util.List<com.fretron.Model.ContractClause>) defaultValue(fields()[67]);
+        record.alerts = fieldSetFlags()[68] ? this.alerts : (java.util.List<com.fretron.Model.ResourceAlert>) defaultValue(fields()[68]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

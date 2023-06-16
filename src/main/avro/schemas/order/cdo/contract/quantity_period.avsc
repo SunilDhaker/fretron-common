@@ -1,0 +1,33 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "PeriodicQuantity",
+  "type": "record",
+  "fields": [
+    {
+      "name": "from",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "till",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "quantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    }
+  ]
+}
