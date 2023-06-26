@@ -12,7 +12,8 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'kotlin'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+
 }
 
 group = 'com.fretron'
