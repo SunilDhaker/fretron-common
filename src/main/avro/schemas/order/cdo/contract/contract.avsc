@@ -653,6 +653,14 @@
         "items": "com.fretron.Model.ResourceAlert"
       }],
       "default": null
+    },
+    {
+      "name": "isDieselEscalationApplicable",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
     ,
     {
