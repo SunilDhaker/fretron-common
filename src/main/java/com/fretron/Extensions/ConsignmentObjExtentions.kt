@@ -1,6 +1,7 @@
 package com.fretron.Extensions
 
 import com.fretron.Model.Consignment
+import com.fretron.Model.EnrichedConsignment
 import com.fretron.Model.Updates
 
 fun Consignment.clean(){
@@ -24,4 +25,19 @@ fun  Consignment.deepClean(){
 
 fun Updates.clean(){
     this.setChanges(null)
+}
+
+
+fun EnrichedConsignment.clean(){
+    this.getConsignment()?.clean()
+    this.getConsignment()?.setLineItems(mutableListOf())
+    this.getConsignment()?.getContractToParty()?.cleanWithBoundary()
+    this.getConsignment()?.getBillToParty()?.cleanWithBoundary()
+    this.getConsignment()?.getConsignee()?.cleanWithBoundary()
+    this.getConsignment()?.getConsigner()?.cleanWithBoundary()
+    this.getConsignment()?.setOrderMappings(mutableListOf())
+    this.getConsignment()?.getPod()?.setDeliveryItems(mutableListOf())
+    this.getAssociatedShipments()?.forEach {
+        it.clean()
+    }
 }
