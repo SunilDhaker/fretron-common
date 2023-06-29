@@ -3,133 +3,165 @@
   "type": "record",
   "name": "Materials",
   "fields": [
-  {
-        "name": "uuid",
-        "type": "string",
-        "default": null
-  },
-  {
-         "name": "externalId",
-         "type": ["null","string"],
-         "default": null
-  },
-  {
-          "name": "name",
-          "type": ["null","string"],
-          "default": null
-  },
-  {
-        "name": "orgId",
-        "type": ["null","string"],
-        "default": null
-      },
-       {
-              "name": "measurementType",
-              "type": ["null","string"],
-              "default": null
-            },
-             {
-                          "name": "unitOfMeasurement",
-                          "type": ["null","string"],
-                          "default": null
-                        },
-                         {
-                                                  "name": "pricePerUnit",
-                                                  "type": ["null","double"],
-                                                  "default": null
-                                                },
-   {
-       "name": "updates",
-       "type": [
-         "null",
-         "com.fretron.Model.Updates"
-       ],
-       "default": null
-     },
-     {
-        "name": "materialType",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-       {
-          "name": "materialGroup",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        },
-       {
-          "name": "controlCode",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        },
-               {
-                  "name": "division",
-                  "type": [
-                    "null",
-                    "string"
-                  ],
-                  "default": null
-                },
-                               {
-                                  "name": "taxCode",
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ],
-                                  "default": null
-                                },
-           {
-              "name": "partnerId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-           {
-              "name": "linkedMaterialId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-           {
-              "name": "materialGroupId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-                       {
-                          "name": "materialDescription",
-                          "type": [
-                            "null",
-                            "string"
-                          ],
-                          "default": null
-                        },
-                                   {
-                                      "name": "partnerName",
-                                      "type": [
-                                        "null",
-                                        "string"
-                                      ],
-                                      "default": null
-                                    },
-                                                             {
-                                                                                      "name": "measuredQuantity",
-                                                                                      "type": ["null","double"],
-                                                                                      "default": null
-                                                                                    }
+    {
+      "name": "uuid",
+      "type": "string",
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "measurementType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "unitOfMeasurement",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "pricePerUnit",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialGroup",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "controlCode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "division",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "taxCode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "partnerId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "linkedMaterialId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialGroupId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialDescription",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "partnerName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "measuredQuantity",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "companyCodes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    }
   ]
- }
+}
