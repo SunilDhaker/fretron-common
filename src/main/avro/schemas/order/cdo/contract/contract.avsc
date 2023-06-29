@@ -670,6 +670,14 @@
         "double"
       ],
       "default": null
+    },
+    {
+      "name": "isDirectOrderCreationAllowed",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
 
 

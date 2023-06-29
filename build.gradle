@@ -9,7 +9,7 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.commercehub.gradle.plugin:gradle-avro-plugin:0.99.99"
+        classpath "com.commercehub.gradle.plugin:gradle-avro-plugin:0.10.0"
     }
 }
 
