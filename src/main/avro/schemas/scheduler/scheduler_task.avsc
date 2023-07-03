@@ -126,7 +126,18 @@
                    }
                  ],
                  "default": null
-          }
+          },
+          {
+                         "name": "datesOfMonth",
+                          "type": [
+                                         "null",
+                                          {
+                                            "type": "array",
+                                            "items": "int"
+                                          }
+                                        ],
+                          "default":null
+                    }
 
   ]
 }

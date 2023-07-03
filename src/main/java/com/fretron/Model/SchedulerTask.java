@@ -10,8 +10,8 @@ import org.apache.avro.specific.SpecificData;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 2108568359521080257L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SchedulerTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"action\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"actionData\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isAutoSchedulable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"scheduleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeOfDay\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"interval\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"registeredTopics\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null}]}");
+  private static final long serialVersionUID = -3764702701555195800L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"SchedulerTask\",\"namespace\":\"com.fretron.Model\",\"fields\":[{\"name\":\"taskId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceId\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"resourceType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"action\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"actionData\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"scheduleTime\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"isAutoSchedulable\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"scheduleType\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"timeOfDay\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"weekDays\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"interval\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"dayHours\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null},{\"name\":\"timesOfDay\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"long\"}],\"default\":null},{\"name\":\"registeredTopics\",\"type\":[\"null\",{\"type\":\"array\",\"items\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}],\"default\":null},{\"name\":\"datesOfMonth\",\"type\":[\"null\",{\"type\":\"array\",\"items\":\"int\"}],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.String taskId;
   @Deprecated public java.lang.String resourceId;
@@ -27,6 +27,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.util.List<java.lang.Integer> dayHours;
   @Deprecated public java.util.List<java.lang.Long> timesOfDay;
   @Deprecated public java.util.List<java.lang.String> registeredTopics;
+  @Deprecated public java.util.List<java.lang.Integer> datesOfMonth;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -51,8 +52,9 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
    * @param dayHours The new value for dayHours
    * @param timesOfDay The new value for timesOfDay
    * @param registeredTopics The new value for registeredTopics
+   * @param datesOfMonth The new value for datesOfMonth
    */
-  public SchedulerTask(java.lang.String taskId, java.lang.String resourceId, java.lang.String resourceType, java.lang.String action, java.lang.String actionData, java.lang.Long scheduleTime, java.lang.Boolean isAutoSchedulable, java.lang.String scheduleType, java.lang.Long timeOfDay, java.util.List<java.lang.Integer> weekDays, java.lang.Long interval, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.String> registeredTopics) {
+  public SchedulerTask(java.lang.String taskId, java.lang.String resourceId, java.lang.String resourceType, java.lang.String action, java.lang.String actionData, java.lang.Long scheduleTime, java.lang.Boolean isAutoSchedulable, java.lang.String scheduleType, java.lang.Long timeOfDay, java.util.List<java.lang.Integer> weekDays, java.lang.Long interval, java.util.List<java.lang.Integer> dayHours, java.util.List<java.lang.Long> timesOfDay, java.util.List<java.lang.String> registeredTopics, java.util.List<java.lang.Integer> datesOfMonth) {
     this.taskId = taskId;
     this.resourceId = resourceId;
     this.resourceType = resourceType;
@@ -67,6 +69,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     this.dayHours = dayHours;
     this.timesOfDay = timesOfDay;
     this.registeredTopics = registeredTopics;
+    this.datesOfMonth = datesOfMonth;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -87,6 +90,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     case 11: return dayHours;
     case 12: return timesOfDay;
     case 13: return registeredTopics;
+    case 14: return datesOfMonth;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -109,6 +113,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     case 11: dayHours = (java.util.List<java.lang.Integer>)value$; break;
     case 12: timesOfDay = (java.util.List<java.lang.Long>)value$; break;
     case 13: registeredTopics = (java.util.List<java.lang.String>)value$; break;
+    case 14: datesOfMonth = (java.util.List<java.lang.Integer>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -338,6 +343,22 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'datesOfMonth' field.
+   * @return The value of the 'datesOfMonth' field.
+   */
+  public java.util.List<java.lang.Integer> getDatesOfMonth() {
+    return datesOfMonth;
+  }
+
+  /**
+   * Sets the value of the 'datesOfMonth' field.
+   * @param value the value to set.
+   */
+  public void setDatesOfMonth(java.util.List<java.lang.Integer> value) {
+    this.datesOfMonth = value;
+  }
+
+  /**
    * Creates a new SchedulerTask RecordBuilder.
    * @return A new SchedulerTask RecordBuilder
    */
@@ -383,6 +404,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
     private java.util.List<java.lang.Integer> dayHours;
     private java.util.List<java.lang.Long> timesOfDay;
     private java.util.List<java.lang.String> registeredTopics;
+    private java.util.List<java.lang.Integer> datesOfMonth;
 
     /** Creates a new Builder */
     private Builder() {
@@ -451,6 +473,10 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
         this.registeredTopics = data().deepCopy(fields()[13].schema(), other.registeredTopics);
         fieldSetFlags()[13] = true;
       }
+      if (isValidValue(fields()[14], other.datesOfMonth)) {
+        this.datesOfMonth = data().deepCopy(fields()[14].schema(), other.datesOfMonth);
+        fieldSetFlags()[14] = true;
+      }
     }
 
     /**
@@ -514,6 +540,10 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       if (isValidValue(fields()[13], other.registeredTopics)) {
         this.registeredTopics = data().deepCopy(fields()[13].schema(), other.registeredTopics);
         fieldSetFlags()[13] = true;
+      }
+      if (isValidValue(fields()[14], other.datesOfMonth)) {
+        this.datesOfMonth = data().deepCopy(fields()[14].schema(), other.datesOfMonth);
+        fieldSetFlags()[14] = true;
       }
     }
 
@@ -1063,6 +1093,45 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
       return this;
     }
 
+    /**
+      * Gets the value of the 'datesOfMonth' field.
+      * @return The value.
+      */
+    public java.util.List<java.lang.Integer> getDatesOfMonth() {
+      return datesOfMonth;
+    }
+
+    /**
+      * Sets the value of the 'datesOfMonth' field.
+      * @param value The value of 'datesOfMonth'.
+      * @return This builder.
+      */
+    public com.fretron.Model.SchedulerTask.Builder setDatesOfMonth(java.util.List<java.lang.Integer> value) {
+      validate(fields()[14], value);
+      this.datesOfMonth = value;
+      fieldSetFlags()[14] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'datesOfMonth' field has been set.
+      * @return True if the 'datesOfMonth' field has been set, false otherwise.
+      */
+    public boolean hasDatesOfMonth() {
+      return fieldSetFlags()[14];
+    }
+
+
+    /**
+      * Clears the value of the 'datesOfMonth' field.
+      * @return This builder.
+      */
+    public com.fretron.Model.SchedulerTask.Builder clearDatesOfMonth() {
+      datesOfMonth = null;
+      fieldSetFlags()[14] = false;
+      return this;
+    }
+
     @Override
     public SchedulerTask build() {
       try {
@@ -1081,6 +1150,7 @@ public class SchedulerTask extends org.apache.avro.specific.SpecificRecordBase i
         record.dayHours = fieldSetFlags()[11] ? this.dayHours : (java.util.List<java.lang.Integer>) defaultValue(fields()[11]);
         record.timesOfDay = fieldSetFlags()[12] ? this.timesOfDay : (java.util.List<java.lang.Long>) defaultValue(fields()[12]);
         record.registeredTopics = fieldSetFlags()[13] ? this.registeredTopics : (java.util.List<java.lang.String>) defaultValue(fields()[13]);
+        record.datesOfMonth = fieldSetFlags()[14] ? this.datesOfMonth : (java.util.List<java.lang.Integer>) defaultValue(fields()[14]);
         return record;
       } catch (Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);
