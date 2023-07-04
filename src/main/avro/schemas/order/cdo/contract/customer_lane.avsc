@@ -238,6 +238,14 @@
       "default": null
     },
     {
+      "name": "marginType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
       "name": "status",
       "type": [
         "null",
