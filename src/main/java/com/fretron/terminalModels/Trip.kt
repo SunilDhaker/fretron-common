@@ -1,5 +1,7 @@
 package com.fretron.terminalModels
 
+import com.fretron.Model.CustomFields
+import com.fretron.Model.LiteCustomFields
 import com.fretron.Model.LitePosition
 import com.fretron.Model.StandardMeasurement
 import com.fretron.Model.Updates
@@ -34,14 +36,16 @@ data class Trip(
     var updates: Updates?,
     var utilizedQuantity:StandardMeasurement?=null,
     var remarks : List<String>,
-    var finalTripNumber: String?
+    var finalTripNumber: String?,
+    var customFields: List<CustomFields>?
 ) {
 
     constructor() : this(
         null, null, null, null, null, null, null, null,
         null, null, null, null, null,
         null, null, null, null, null,
-        null, null, null, null, null, null, null, null , null , mutableListOf<String>() , null
+        null, null, null, null, null,
+        null, null, null , null , mutableListOf<String>() , null,null
     )
 
     override fun toString(): String {
