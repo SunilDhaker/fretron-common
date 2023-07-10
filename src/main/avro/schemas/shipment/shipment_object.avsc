@@ -19,6 +19,17 @@
         "default": null
       },
       {
+        "name": "orderNumbers",
+        "type": [
+           "null",
+             {
+               "type": "array",
+               "items": "string"
+             }
+        ],
+        "default": null
+      },
+      {
         "name": "equipments",
         "type": [
           "null",
