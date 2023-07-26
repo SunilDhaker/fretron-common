@@ -96,6 +96,14 @@
         "string"
       ],
       "default": null
-    }
+    },
+    {
+       "name": "accessoryName",
+          "type": [
+            "null",
+            "string"
+          ],
+          "default": null
+        }
   ]
 }
