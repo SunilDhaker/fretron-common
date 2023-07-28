@@ -103,6 +103,14 @@
       "default": null
     },
     {
+      "name": "isWhatsappWarningSent",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
       "name": "emails",
       "type": [
         "null",
@@ -143,6 +151,15 @@
       "default": null
     },
     {
+      "name": "whatsappWarningSnoozeTill",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
       "name": "lastSentSmsWarningType",
       "type": [
         "null",
@@ -157,6 +174,32 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "lastSentwhatsappWarningType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "whatsappAmount",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "whatsappCurrentUses",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
     }
   ]
 }
+
+

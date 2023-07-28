@@ -74,105 +74,113 @@
     },
     {
       "name": "externalId",
-       "type": [
-                 "null",
-                  "string"
-                      ],
-         "default": null
-     },
-     {
-       "name": "branchName",
-        "type": [
-                      "null",
-                       "string"
-                           ],
-         "default": null
-      },
-      {
-        "name": "regionName",
-         "type": [
-                       "null",
-                        "string"
-                            ],
-         "default": null
-       },
-       {
-         "name": "zoneName",
-          "type": [
-                              "null",
-                               "string"
-                                   ],
-         "default": null
-       },
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "branchName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "regionName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "zoneName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "regionId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "zoneId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "officeType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "materialServices",
+      "type": [
+        "null",
         {
-           "name": "updates",
-            "type": [
-                        "null",
-                       "com.fretron.Model.Updates"
-                               ],
-             "default": null
-         },
-            {
-               "name": "regionId",
-               "type": [
-                 "null",
-                 "string"
-               ],
-               "default": null
-             },
-              {
-                           "name": "zoneId",
-                           "type": [
-                             "null",
-                             "string"
-                           ],
-                           "default": null
-                         },
-                 {
-                    "name": "officeType",
-                    "type": [
-                     "null",
-                     "string"
-                              ],
-                    "default": null
-                 },
-                 {
-                       "name": "materialServices",
-                       "type": [
-                         "null",
-                         {
-                           "type": "array",
-                           "items": "com.fretron.Model.Materials"
-                         }
-                       ],
-                       "default": null
-                     },
-                     {
-                               "name": "customFields",
-                               "type": [
-                                 "null",
-                                 {
-                                   "type": "array",
-                                   "items": "com.fretron.Model.LiteCustomFields"
-                                 }
-                               ],
-                               "default": null
-                             },
-              {
-                           "name": "areaName",
-                           "type": [
-                             "null",
-                             "string"
-                           ],
-                           "default": null
-                         },
-              {
-                           "name": "areaId",
-                           "type": [
-                             "null",
-                             "string"
-                           ],
-                           "default": null
-                         }
+          "type": "array",
+          "items": "com.fretron.Model.Materials"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.LiteCustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "areaName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "areaId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "companyCode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }

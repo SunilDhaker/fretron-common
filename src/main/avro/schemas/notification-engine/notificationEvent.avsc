@@ -236,6 +236,14 @@
       "default": null
     },
     {
+      "name": "isWhatsappQuotaOver",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
       "name": "userType",
       "type": [
         "null",

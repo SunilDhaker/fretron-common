@@ -87,143 +87,152 @@
       "default": false
     },
     {
-          "name": "address",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        },
-            {
-              "name": "externalId",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-            {
-                     "name": "updates",
-                     "type": [
-                       "null",
-                       "com.fretron.Model.Updates"
-                     ],
-                     "default": null
-                   },
-                     {
-                         "name": "status",
-                         "type": [
-                           "null",
-                           "string"
-                         ],
-                         "default": null
-                       },
-                       {
-                             "name": "panNumber",
-                             "type": [
-                               "null",
-                               "string"
-                             ],
-                             "default": null
-                           },
-                            {
-                                                "name": "group",
-                                                "type": [
-                                                  "null",
-                                                  "com.fretron.Model.PartnerGroup"
-                                                ],
-                                                "default": null
-                                              },
-                                              {
-                                                      "name": "route",
-                                                       "type": [
-                                                        "null",
-                                                       {
-                                                        "type": "array",
-                                                        "items": "string"
-                                                                  }
-                                                                  ],
-                                                         "default": null
-                                               },
-                                                {
-                                                               "name": "customFields",
-                                                               "type": [
-                                                                 "null",
-                                                                 {
-                                                                   "type": "array",
-                                                                   "items": "com.fretron.Model.CustomFields"
-                                                                 }
-                                                               ],
-                                                               "default": null
-                                                           },
+      "name": "address",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
     {
-          "name": "parentId",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        }
-    ,
+      "name": "externalId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
     {
-          "name": "gstn",
-          "type": [
-            "null",
-            "string"
-          ],
-          "default": null
-        },
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "panNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "group",
+      "type": [
+        "null",
+        "com.fretron.Model.PartnerGroup"
+      ],
+      "default": null
+    },
+    {
+      "name": "route",
+      "type": [
+        "null",
         {
-              "name": "aadharNo",
-              "type": [
-                "null",
-                "string"
-              ],
-              "default": null
-            },
-                {
-                      "name": "voterId",
-                      "type": [
-                        "null",
-                        "string"
-                      ],
-                      "default": null
-                    },
-                        {
-                          "name": "documents",
-                          "type": [
-                            "null",
-                            {
-                              "type": "array",
-                              "items": "com.fretron.Model.Document"
-                            }
-                          ],
-                          "default": null
-                        },
-                        {
-                              "name": "verificationStatus",
-                              "type": [
-                                "null",
-                                "string"
-                              ],
-                              "default": null
-                            },
-                                                {
-                                                      "name": "firmType",
-                                                      "type": [
-                                                        "null",
-                                                        "string"
-                                                      ],
-                                                      "default": null
-                                                    },
-                                                    {
-                                                          "name": "verificationTicketId",
-                                                          "type": [
-                                                            "null",
-                                                            "string"
-                                                          ],
-                                                          "default": null
-                                                        }
-
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "parentId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "gstn",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "aadharNo",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "voterId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "documents",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.Document"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "verificationStatus",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "firmType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "verificationTicketId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "companyCodes",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    }
   ]
 }

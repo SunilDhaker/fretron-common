@@ -53,6 +53,14 @@
       "default": null
     },
     {
+      "name": "whatsappCount",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
       "name": "isEmailThrottled",
       "type": [
         "null",
@@ -69,7 +77,24 @@
       "default": null
     },
     {
+      "name": "isWhatsappThrottled",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
       "name": "emailThrottledTill",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "whatsappThrottledTill",
       "type": [
         "null",
         "long"
@@ -96,6 +121,14 @@
     },
     {
       "name": "isSmsThrottledWarningSent",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "isWhatsappThrottledWarningSent",
       "type": [
         "null",
         "boolean"

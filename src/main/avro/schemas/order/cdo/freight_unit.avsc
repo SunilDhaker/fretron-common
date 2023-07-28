@@ -3,111 +3,119 @@
   "name": "FreightUnit",
   "type": "record",
   "fields": [
-   {
-     "name": "uuid",
+    {
+      "name": "uuid",
       "type": [
-                  "null",
-                  "string"
-                ],
+        "null",
+        "string"
+      ],
       "default": null
     },
     {
-       "name": "orgId",
-       "type": [
-                 "null",
-                 "string"
-                    ],
-       "default": null
+      "name": "orgId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
     },
     {
-       "name": "auctionQuantity",
-       "type": [
-                  "null",
-                  "com.fretron.Model.StandardMeasurement"
-               ],
-       "default": null
-     } ,
-     {
-          "name": "allocatedQuantity",
-           "type": [
-                      "null",
-                       "com.fretron.Model.StandardMeasurement"
-                   ],
-         "default": null
+      "name": "auctionQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
     },
     {
-        "name": "totalQuantity",
-         "type": [
-                   "null",
-                    "com.fretron.Model.StandardMeasurement"
-                  ],
-         "default": null
-     },
-     {
-        "name": "allowedLoadTypes",
-         "type": [
-                  "null",
-                   {
-                     "type": "array",
-                      "items": "com.fretron.Model.LoadType"
-                    }
-                                       ],
-         "default": null
-      },
-      {
-         "name": "lineItems",
-          "type": [
-                            "null",
-                            {
-                              "type": "array",
-                              "items": "com.fretron.Model.FreightUnitLineItem"
-                            }
-                          ],
-          "default": null
-      },
-      {
-        "name": "updates",
-         "type": [
-                          "null",
-                          "com.fretron.Model.Updates"
-                        ],
-        "default": null
-      },
-      {
-        "name": "type",
-        "type": [
-                        "null",
-                        "string"
-                      ],
-        "default": null
-       },
-       {
-                "name": "customFields",
-                "type": [
-                            "null",
-                        {
-                           "type": "array",
-                          "items": "com.fretron.Model.CustomFields"
-                        }
-                        ],
-                     "default": null
-       },
-      {
-          "name": "documentDate",
-           "type": [
-                               "null",
-                                "long"
-                             ],
-          "logicalType": "timestamp-millis",
-           "default": null
-        },
+      "name": "allocatedQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    },
+    {
+      "name": "totalQuantity",
+      "type": [
+        "null",
+        "com.fretron.Model.StandardMeasurement"
+      ],
+      "default": null
+    },
+    {
+      "name": "allowedLoadTypes",
+      "type": [
+        "null",
         {
-          "name": "documentNumber",
-          "type": [
-                         "null",
-                         "string"
-                            ],
-          "default": null
+          "type": "array",
+          "items": "com.fretron.Model.LoadType"
         }
+      ],
+      "default": null
+    },
+    {
+      "name": "lineItems",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.FreightUnitLineItem"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "customFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.CustomFields"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "documentDate",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "documentNumber",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "companyCode",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
   ]
 }
