@@ -260,7 +260,41 @@
         "string"
       ],
       "default": null
+    },
+    {
+      "name": "indexFields",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "allowAnyOrigin",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "allowAnyDestination",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "allowAnyTransportService",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
     }
-
   ]
 }
