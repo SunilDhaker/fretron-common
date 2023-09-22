@@ -178,6 +178,24 @@
                     ],
                     "logicalType": "timestamp-millis",
                     "default": null
-                  }
+                  },
+                  {
+                          "name": "preActWtTime",
+                          "type": [
+                            "null",
+                            "long"
+                          ],
+                          "logicalType": "timestamp-millis",
+                          "default": null
+                        },
+                        {
+                                "name": "postActWtTime",
+                                "type": [
+                                  "null",
+                                  "long"
+                                ],
+                                "logicalType": "timestamp-millis",
+                                "default": null
+                              }
     ]
   }
