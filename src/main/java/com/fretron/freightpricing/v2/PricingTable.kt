@@ -3,7 +3,6 @@ package com.fretron.freightpricing.v2
 
 import com.fretron.Logger.Log
 import com.google.gson.GsonBuilder
-import org.json.JSONArray
 import org.json.JSONObject
 import javax.ws.rs.NotAllowedException
 
@@ -14,7 +13,7 @@ data class Field(
     var fieldPath: String?,
     var keyType: String?,
     var fieldType: String?,
-    var target : String?
+    var target: String?
 )
 
 data class PricingTable(
@@ -26,7 +25,7 @@ data class PricingTable(
     var validFrom: Long?, //new
     var validTill: Long?, //new
     var queryFormat: TableConditions?,
-    var allowAnyExceptForField: String?,
+    var fallbackFieldId: String?,
     var applicableChargeTypes: MutableList<ResultantCharge>?,
     var segments: List<Segment>
 ) {
@@ -35,12 +34,12 @@ data class PricingTable(
         uuid = null,
         name = null,
         orgId = null,
-        targetType = null ,
+        targetType = null,
         secondaryTargets = mutableListOf(),
         validFrom = null,
         validTill = null,
         queryFormat = null,
-        allowAnyExceptForField = null,
+        fallbackFieldId = null,
         applicableChargeTypes = null,
         segments = mutableListOf()
     )
@@ -56,8 +55,8 @@ data class Segment(
     var uuid: String?,
     var validFrom: Long?,
     var validTill: Long?
-){
-    constructor(): this(
+) {
+    constructor() : this(
         uuid = null,
         validFrom = null,
         validTill = null
@@ -68,18 +67,18 @@ data class Segment(
     }
 
     fun validateOrThrow() {
-        try{
-            if(this.uuid == null){
+        try {
+            if (this.uuid == null) {
                 throw NotAllowedException("Invalid Segment")
             }
 
-            if(this.validFrom!! < 0 || this.validTill!! < 0){
+            if (this.validFrom!! < 0 || this.validTill!! < 0) {
                 throw NotAllowedException("date value cannot be negative")
             }
-            if(this.validFrom!! >= this.validTill!!){
+            if (this.validFrom!! >= this.validTill!!) {
                 throw NotAllowedException("Valid from should be less than valid till")
             }
-        }catch (e: Exception){
+        } catch (e: Exception) {
             Log.error(Log.exceptionStack(e))
             throw e
         }
@@ -97,29 +96,19 @@ data class PricingConditionRecord(
     var chargeTypes: MutableList<ResultantCharge>?, // charge types values defined while declaring pricing table
     var validFrom: Long?,
     var validTill: Long?,
-    var segmentId : String?
+    var segmentId: String?
 ) {
 
-    constructor() : this(null, null, null, null, null, null, null, null , null ,null)
+    constructor() : this(null, null, null, null, null, null, null, null, null, null)
 
     override fun toString(): String {
-        return JSONObject()
-            .put("priceTableId", this.priceTableId ?: JSONObject.NULL)
-            .put(
-                "conditionValues",
-                if (this.conditionValues != null) JSONArray(this.conditionValues.toString()) else JSONArray()
-            )
-            .put("fieldValueIndex", this.fieldValueIndex ?: JSONObject.NULL)
-            .put("fixedRanges", if (this.fixedRanges != null) JSONArray(this.fixedRanges.toString()) else JSONArray())
-            .put("uuid", this.uuid ?: JSONObject.NULL)
-            .put("orgId", this.orgId ?: JSONObject.NULL)
-            .put("chargeTypes", if (this.chargeTypes != null) JSONArray(this.chargeTypes.toString()) else JSONArray())
-            .toString()
+        return GsonBuilder().serializeNulls().create().toJson(this)
     }
 }
-fun MutableList<ConditionField>.ensureDisplayValue(){
+
+fun MutableList<ConditionField>.ensureDisplayValue() {
     this.forEach {
-        if(it.displayValue.isNullOrEmpty() && it.value.isNullOrEmpty().not()){
+        if (it.displayValue.isNullOrEmpty() && it.value.isNullOrEmpty().not()) {
             it.displayValue = mutableListOf()
             it.displayValue?.addAll(it.value!!)
             Log.info("after ensure display value ${it.displayValue}")
@@ -133,8 +122,9 @@ data class ConditionField(
     var keyType: String?, //path ??
     var fieldType: String?, //system,custom(treat as custom field), expression
     var fieldName: String?, //name
-    var valueSelectionType : String?, //single, multiple
-    var scaleApplicable : Boolean?, //true,false (applicable on range fields)
+    var target: String?,
+    var valueSelectionType: String?, //single, multiple
+    var scaleApplicable: Boolean?, //true,false (applicable on range fields)
     var type: String?, // field/FixedRange/Range (field=textValue, FixedRange: User Input like date & number., Range: Single Range Selection from predefined ranges while define table  )
     var uuid: String?,
     var allowMissing: Boolean?,
@@ -143,35 +133,22 @@ data class ConditionField(
     var ranges: List<NamedRanges>?  // In case of dynamic continues ranges.(lessThanX, graterThanX, equalToZ) FieldPath == RouteKm  ->  (name , min , max)
 
 ) {
-    constructor() : this( null, null, null, null  ,null,null, false, null , null, null , null ,null,null   )
+    constructor() : this(null, null, null, null, null, null, null, false, null, null, null, null, null, null)
+
     override fun toString(): String {
-        return JSONObject()
-            .put("type", this.type ?: JSONObject.NULL)
-            .put("fieldPath", this.fieldPath ?: JSONObject.NULL)
-            .put("uuid", this.uuid ?: JSONObject.NULL)
-            .put("allowMissing", this.allowMissing ?: JSONObject.NULL)
-            .put("value", this.value ?: JSONObject.NULL)
-            .put(
-                "displayValue",
-                if (this.displayValue != null) JSONArray(this.displayValue.toString()) else JSONArray()
-            )
-            .put("ranges", this.ranges ?: JSONObject.NULL)
-            .toString()
+        return GsonBuilder().serializeNulls().create().toJson(this)
     }
 }
-
-
-
 
 
 data class FixedRanges(
     var uuid: String?,
     var min: Any?,
     var max: Any?,
-    var includeMin : Boolean?,
-    var excludeMax : Boolean?
+    var includeMin: Boolean?,
+    var excludeMax: Boolean?
 ) {
-    constructor() : this(null, null, null , null , null)
+    constructor() : this(null, null, null, null, null)
 
     override fun toString(): String {
         return JSONObject()
@@ -188,15 +165,15 @@ data class NamedRanges(
     var name: String?,
     var minValue: String?,
     var maxValue: String?,
-    var includeMin : Boolean,
-    var excludeMax : Boolean
+    var includeMin: Boolean,
+    var excludeMax: Boolean
 
 ) {
 
     constructor() : this(
         name = null,
         minValue = null,
-        maxValue = null ,
+        maxValue = null,
         includeMin = true,
         excludeMax = true
     )
@@ -225,19 +202,8 @@ data class TableConditions(
             .toString()
     }
 }
-/*
-     6-9 - 50000 20% Of quantity  =(50000 * 6/9)
-*    3-5    3000/3    1=1000 , capValue (4000)
-*    1000 * 4.5 = (4500,4000)
-*
-* */
-// 3-5        ( 4.5/maxAmount) * amount
-/*
-  If scaleApplicable == true
-    rate or amount = rate or amount / scaleValue) , capValue.
-* Else scaleApplicable = false
-*   rate or amount
-* */
+
+
 data class ResultantCharge(
     var uuid: String?,
     var name: String?,
@@ -249,23 +215,44 @@ data class ResultantCharge(
     var baseValueRule: String?,
     var isDeleted: Boolean,
     var scaleApplicable: Boolean?, //only allowed when charge type is fixed
-    var capValue : Double?,
-    var scaleConditionId : String?, //Used to select condition capValue
-    var scaleValue : Double? //
-){
-    constructor(): this(
-        uuid=null,
+    var capValue: Double?,
+    var scaleConditionId: String?, //Used to select condition capValue
+    var scaleValue: Double? //
+) {
+    constructor() : this(
+        uuid = null,
         name = null,
         isCalculated = false,
-        rate = null, rateUnit= null,
-        amount= null,
-        baseValue= null,
-        baseValueRule= null,
-        isDeleted= false,
-        scaleApplicable= null,
-        capValue= null,
-        scaleConditionId= null,
-        scaleValue= null
+        rate = null, rateUnit = null,
+        amount = null,
+        baseValue = null,
+        baseValueRule = null,
+        isDeleted = false,
+        scaleApplicable = null,
+        capValue = null,
+        scaleConditionId = null,
+        scaleValue = null
+    )
+
+    override fun toString(): String {
+        return GsonBuilder().serializeNulls().create().toJson(this)
+    }
+}
+
+
+data class PricingTableMeta(
+    var uuid: String?,
+    var targets: List<String>,
+    var segment: Segment?,
+    var fields: List<ConditionField>,
+    var fallbackFieldId: String?
+) {
+    constructor() : this(
+        uuid = null,
+        targets = mutableListOf(),
+        segment = null,
+        fields = mutableListOf(),
+        fallbackFieldId = null
     )
 
     override fun toString(): String {
