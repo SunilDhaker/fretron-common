@@ -212,26 +212,25 @@ data class ResultantCharge(
     var rateUnit: String?,
     var amount: Double?,
     var baseValue: Double?,
-    var baseValueRule: String?,
-    var isDeleted: Boolean,
     var scaleApplicable: Boolean?, //only allowed when charge type is fixed
     var capValue: Double?,
     var scaleConditionId: String?, //Used to select condition capValue
-    var scaleValue: Double? //
+    var scaleValue: Double?,
+    var type: String?
 ) {
     constructor() : this(
         uuid = null,
         name = null,
         isCalculated = false,
-        rate = null, rateUnit = null,
+        rate = null,
+        rateUnit = null,
         amount = null,
         baseValue = null,
-        baseValueRule = null,
-        isDeleted = false,
         scaleApplicable = null,
         capValue = null,
         scaleConditionId = null,
-        scaleValue = null
+        scaleValue = null,
+        type = null
     )
 
     override fun toString(): String {
