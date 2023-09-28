@@ -124,7 +124,6 @@ data class ConditionField(
     var fieldName: String?, //name
     var target: String?,
     var valueSelectionType: String?, //single, multiple
-    var scaleApplicable: Boolean?, //true,false (applicable on range fields)
     var type: String?, // field/FixedRange/Range (field=textValue, FixedRange: User Input like date & number., Range: Single Range Selection from predefined ranges while define table  )
     var uuid: String?,
     var allowMissing: Boolean?,
@@ -133,7 +132,7 @@ data class ConditionField(
     var ranges: List<NamedRanges>?  // In case of dynamic continues ranges.(lessThanX, graterThanX, equalToZ) FieldPath == RouteKm  ->  (name , min , max)
 
 ) {
-    constructor() : this(null, null, null, null, null, null, null, false, null, null, null, null, null, null)
+    constructor() : this(null, null, null, null, null, null, null, null, null, null, null, null, null)
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
@@ -212,10 +211,7 @@ data class ResultantCharge(
     var rateUnit: String?,
     var amount: Double?,
     var baseValue: Double?,
-    var scaleApplicable: Boolean?, //only allowed when charge type is fixed
-    var capValue: Double?,
-    var scaleConditionId: String?, //Used to select condition capValue
-    var scaleValue: Double?,
+    var baseUnit : String?,
     var type: String?
 ) {
     constructor() : this(
@@ -226,10 +222,7 @@ data class ResultantCharge(
         rateUnit = null,
         amount = null,
         baseValue = null,
-        scaleApplicable = null,
-        capValue = null,
-        scaleConditionId = null,
-        scaleValue = null,
+        baseUnit = null,
         type = null
     )
 
