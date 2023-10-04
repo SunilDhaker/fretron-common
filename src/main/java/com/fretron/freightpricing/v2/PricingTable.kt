@@ -27,7 +27,8 @@ data class PricingTable(
     var queryFormat: TableConditions?,
     var fallbackFieldId: String?,
     var applicableChargeTypes: MutableList<ResultantCharge>?,
-    var segments: List<Segment>
+    var segments: List<Segment>,
+    var status : String?
 ) {
 
     constructor() : this(
@@ -41,7 +42,8 @@ data class PricingTable(
         queryFormat = null,
         fallbackFieldId = null,
         applicableChargeTypes = null,
-        segments = mutableListOf()
+        segments = mutableListOf(),
+        status = PricingTableStatus.Active.toString()
     )
 
     override fun toString(): String {
@@ -96,10 +98,11 @@ data class PricingConditionRecord(
     var chargeTypes: MutableList<ResultantCharge>?, // charge types values defined while declaring pricing table
     var validFrom: Long?,
     var validTill: Long?,
-    var segmentId: String?
+    var segmentId: String?,
+    var status : String?
 ) {
 
-    constructor() : this(null, null, null, null, null, null, null, null, null, null)
+    constructor() : this(null, null, null, null, null, null, null, null, null, null ,ConditionRecordStatus.Active.toString())
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
@@ -252,5 +255,12 @@ data class PricingTableMeta(
     }
 }
 
+
+enum class PricingTableStatus{
+    Active ,InActive , Deleted
+}
+enum class ConditionRecordStatus{
+    Active ,InActive , Deleted
+}
 
 
