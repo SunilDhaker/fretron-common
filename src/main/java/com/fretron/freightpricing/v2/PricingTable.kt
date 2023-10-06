@@ -22,13 +22,14 @@ data class PricingTable(
     var name: String?,
     var orgId: String?,
     var target: String?,
-    var secondaryTargets: MutableList<String>, //new
+    var secondaryTargets: List<String>, //new
     var validFrom: Long?, //new
     var validTill: Long?, //new
     var queryFormat: TableConditions?,
     var fallbackFieldId: String?,
     var applicableCharges: MutableList<ResultantCharge>?,
-    var segments: List<Segment>
+    var segments: List<Segment>,
+    var status : String?
 ) {
 
     constructor() : this(
@@ -42,7 +43,8 @@ data class PricingTable(
         queryFormat = null,
         fallbackFieldId = null,
         applicableCharges = null,
-        segments = mutableListOf()
+        segments = mutableListOf(),
+        status = PricingTableStatus.Active.toString()
     )
 
     override fun toString(): String {
@@ -97,10 +99,11 @@ data class PricingConditionRecord(
     var chargeTypes: List<ResultantCharge>?, // charge types values defined while declaring pricing table
     var validFrom: Long?,
     var validTill: Long?,
-    var segmentId: String?
+    var segmentId: String?,
+    var status : String?
 ) {
 
-    constructor() : this(null, null, null, null, null, null, null, null, null, null)
+    constructor() : this(null, null, null, null, null, null, null, null, null, null ,ConditionRecordStatus.Active.toString())
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
@@ -204,26 +207,19 @@ data class ResultantCharge(
     var rateUnit: String?,
     var amount: Double?,
     var baseValue: Double?,
-    var baseValueRule: String?,
-    var isDeleted: Boolean,
-    var scaleApplicable: Boolean?, //only allowed when charge type is fixed
-    var capValue: Double?,
-    var scaleConditionId: String?, //Used to select condition capValue
-    var scaleValue: Double? //
+    var baseUnit : String?,
+    var type: String?
 ) {
     constructor() : this(
         uuid = null,
         name = null,
         isCalculated = false,
-        rate = null, rateUnit = null,
+        rate = null,
+        rateUnit = null,
         amount = null,
         baseValue = null,
-        baseValueRule = null,
-        isDeleted = false,
-        scaleApplicable = null,
-        capValue = null,
-        scaleConditionId = null,
-        scaleValue = null
+        baseUnit = null,
+        type = null
     )
 
     override fun toString(): String {
@@ -252,5 +248,12 @@ data class PricingTableMeta(
     }
 }
 
+
+enum class PricingTableStatus{
+    Active ,InActive , Deleted
+}
+enum class ConditionRecordStatus{
+    Active ,InActive , Deleted
+}
 
 
