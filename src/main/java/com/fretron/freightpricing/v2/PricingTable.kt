@@ -8,25 +8,26 @@ import javax.ws.rs.NotAllowedException
 
 
 data class Field(
-    var name: String?,
-    var valueType: String?,
-    var fieldPath: String?,
-    var keyType: String?,
-    var fieldType: String?,
-    var target: String?
+    var displayName: String?,
+    var key: String?, //path
+    var keyType: String?, //exp
+    var valueType: String?, //text,number,date
+    var entity: String?, //system, custom, scripted
+    var target: String?,
+    var supportedTypes : List<String>  //Text,FixedRange,NamedRange
 )
 
 data class PricingTable(
     var uuid: String?,
     var name: String?,
     var orgId: String?,
-    var targetType: String?,
+    var target: String?,
     var secondaryTargets: MutableList<String>, //new
     var validFrom: Long?, //new
     var validTill: Long?, //new
     var queryFormat: TableConditions?,
     var fallbackFieldId: String?,
-    var applicableChargeTypes: MutableList<ResultantCharge>?,
+    var applicableCharges: MutableList<ResultantCharge>?,
     var segments: List<Segment>
 ) {
 
@@ -34,13 +35,13 @@ data class PricingTable(
         uuid = null,
         name = null,
         orgId = null,
-        targetType = null,
+        target = null,
         secondaryTargets = mutableListOf(),
         validFrom = null,
         validTill = null,
         queryFormat = null,
         fallbackFieldId = null,
-        applicableChargeTypes = null,
+        applicableCharges = null,
         segments = mutableListOf()
     )
 
@@ -88,12 +89,12 @@ data class Segment(
 //segmentNo
 data class PricingConditionRecord(
     var priceTableId: String?, // pricing table to which this is linked
-    var conditionValues: MutableList<ConditionField>?, // values in query format(table conditions)
-    var fieldValueIndex: MutableList<String>?, //indexed values
-    var fixedRanges: MutableList<FixedRanges>?, // Ask
+    var conditionValues: List<ConditionField>?, // values in query format(table conditions)
+    var fieldValueIndex: List<String>?, //indexed values
+    var fixedRanges: List<FixedRanges>?, // Ask
     var uuid: String?,
     var orgId: String?,
-    var chargeTypes: MutableList<ResultantCharge>?, // charge types values defined while declaring pricing table
+    var chargeTypes: List<ResultantCharge>?, // charge types values defined while declaring pricing table
     var validFrom: Long?,
     var validTill: Long?,
     var segmentId: String?
@@ -106,34 +107,25 @@ data class PricingConditionRecord(
     }
 }
 
-fun MutableList<ConditionField>.ensureDisplayValue() {
-    this.forEach {
-        if (it.displayValue.isNullOrEmpty() && it.value.isNullOrEmpty().not()) {
-            it.displayValue = mutableListOf()
-            it.displayValue?.addAll(it.value!!)
-            Log.info("after ensure display value ${it.displayValue}")
-        }
-    }
-}
+
 
 data class ConditionField(
+    var key: String?, // fleetInfo.vehicle.vehicleRegistrationNumber
+    var keyType: String?,
     var valueType: String?, //text/number/date
-    var fieldPath: String?, // fleetInfo.vehicle.vehicleRegistrationNumber
-    var keyType: String?, //path ??
-    var fieldType: String?, //system,custom(treat as custom field), expression
+    var entity: String?, //system,custom(treat as custom field), expression
     var fieldName: String?, //name
     var target: String?,
     var valueSelectionType: String?, //single, multiple
-    var scaleApplicable: Boolean?, //true,false (applicable on range fields)
     var type: String?, // field/FixedRange/Range (field=textValue, FixedRange: User Input like date & number., Range: Single Range Selection from predefined ranges while define table  )
     var uuid: String?,
     var allowMissing: Boolean?,
-    var value: List<String>?, // condition value.
-    var displayValue: MutableList<String>?, // used to display value on UI, Field Name will be mapped here...
+    var values: List<String>?, // condition value.
+    var valueDisplayNames: List<String>?, // used to display value on UI, Field Name will be mapped here...
     var ranges: List<NamedRanges>?  // In case of dynamic continues ranges.(lessThanX, graterThanX, equalToZ) FieldPath == RouteKm  ->  (name , min , max)
 
 ) {
-    constructor() : this(null, null, null, null, null, null, null, false, null, null, null, null, null, null)
+    constructor() : this(null, null, null, null, null, null, null, null, null, null, null, null, null)
 
     override fun toString(): String {
         return GsonBuilder().serializeNulls().create().toJson(this)
