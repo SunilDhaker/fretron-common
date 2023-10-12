@@ -2,15 +2,14 @@
   "namespace": "com.fretron.Model",
   "name": "Contract",
   "type": "record",
-  "fields": [
-    {
-      "name": "uuid",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
+  "fields": [{
+    "name": "uuid",
+    "type": [
+      "null",
+      "string"
+    ],
+    "default": null
+  },
     {
       "name": "externalId",
       "type": [
@@ -136,10 +135,7 @@
     },
     {
       "name": "estimatedAmountINR",
-      "type": [
-        "null",
-        "double"
-      ],
+      "type": ["null", "double"],
       "default": null
     },
     {
@@ -208,6 +204,12 @@
       ],
       "default": null
     },
+
+
+
+
+
+
     {
       "name": "allowedOrderBranches",
       "type": [
@@ -309,58 +311,32 @@
     },
     {
       "name": "payerRule",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
       "name": "billToPartyRule",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
       "name": "billingBranchRule",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
       "name": "paymentResponsibleBranchRule",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "paymentBranchSelectionRule",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
       "name": "status",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
       "name": "reason",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
@@ -430,12 +406,9 @@
       "default": null
     },
     {
-      "name": "isDirectAssignmentAllowed",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
+      "name":"isDirectAssignmentAllowed",
+      "type": ["null","boolean"],
+      "default":null
     },
     {
       "name": "liftingEndDuration",
@@ -486,10 +459,7 @@
     },
     {
       "name": "category",
-      "type": [
-        "null",
-        "string"
-      ],
+      "type": ["null", "string"],
       "default": null
     },
     {
@@ -499,195 +469,6 @@
         "string"
       ],
       "default": null
-    },
-    {
-      "name": "trackingModes",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "marginRateType",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "customerContractNumber",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "contractDescription",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "referenceInfo",
-      "type": [
-        "null",
-        "com.fretron.Model.ResourceInfo"
-      ],
-      "default": null
-    },
-    {
-      "name": "trackingPreference",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "documents",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "revenueDistribution",
-      "type": [
-        "null",
-        "com.fretron.Model.RevenueDistribution"
-      ],
-      "default": null
-    },
-    {
-      "name": "amountEstimatedBy",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "quantityEstimation",
-      "type": [
-        "null",
-        "com.fretron.Model.QuantityEstimation"
-      ],
-      "default": null
-    },
-    {
-      "name": "owner",
-      "type": [
-        "null",
-        "com.fretron.Model.Employee"
-      ],
-      "default": null
-    },
-    {
-      "name": "consignmentRule",
-      "type": [
-        "null",
-        "com.fretron.Model.ConsignmentRule"
-      ],
-      "default": null
-    },
-    {
-      "name": "checkList",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.CheckListItem"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "allowedConsignmentPSNTypes",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "allowedShipmentPSNTypes",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "string"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "clause",
-      "type": [
-        "null",
-        {
-          "type": "array",
-          "items": "com.fretron.Model.ContractClause"
-        }
-      ],
-      "default": null
-    },
-    {
-      "name": "alerts",
-      "type": ["null",{
-        "type": "array",
-        "items": "com.fretron.Model.ResourceAlert"
-      }],
-      "default": null
-    },
-    {
-      "name": "isDieselEscalationApplicable",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
     }
-    ,
-    {
-      "name": "margin",
-      "type": [
-        "null",
-        "double"
-      ],
-      "default": null
-    },
-    {
-      "name": "isDirectOrderCreationAllowed",
-      "type": [
-        "null",
-        "boolean"
-      ],
-      "default": null
-    },
-    {
-      "name": "marginType",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    }
-
-
   ]
 }
