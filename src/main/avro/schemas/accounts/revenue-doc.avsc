@@ -1,0 +1,121 @@
+
+
+{
+  "namespace": "com.fretron.Model",
+  "name": "RevenueDoc",
+  "type": "record",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "orgId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shipmentId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "amount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "applicability",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "distributionBasis",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "lineItems",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ShipmentCostLineItem"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "charge",
+      "type": [
+        "null",
+        "com.fretron.Model.Charge"
+      ],
+      "default": null
+    },
+    {
+      "name": "customer",
+      "type": [
+        "null",
+        "com.fretron.Model.LiteBusinessPartner"
+      ],
+      "default": null
+    },
+    {
+      "name": "billId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billItemId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billStatus",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "billFeedingType",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "updates",
+      "type": [
+        "null",
+        "com.fretron.Model.Updates"
+      ],
+      "default": null
+    }
+
+
+  ]
+}
+
+
+
