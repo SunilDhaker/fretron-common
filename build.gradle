@@ -1,22 +1,5 @@
-apply plugin: 'java'
-apply plugin: 'maven'
-apply plugin: 'kotlin'
-
-group = 'com.fretron'
-version = '1.0-SNAPSHOT'
-
-description = """"""
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-
 buildscript {
-    ext.kotlin_version = '1.3.61'
+    ext.kotlin_version = '1.6.10'
     repositories {
         mavenCentral()
         jcenter()
@@ -26,92 +9,112 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.commercehub.gradle.plugin:gradle-avro-plugin:0.99.99"
+        classpath "com.commercehub.gradle.plugin:gradle-avro-plugin:0.10.0"
     }
+}
+
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+
+}
+
+group = 'com.fretron'
+version = '1.0-SNAPSHOT'
+description = """"""
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
+
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
 repositories {
-
-//     maven { url "http://packages.confluent.io/maven/" }
-    maven { url "https://repo.maven.apache.org/maven2" }
+    maven {
+        url "https://repo.maven.apache.org/maven2"
+    }
 }
 
 dependencies {
-
     //kotlin
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
-    //data parsing
-    compile "org.apache.avro:avro:1.8.1"
-    compile "org.json:json:20170516"
-    compile "io.jsonwebtoken:jjwt:0.6.0"
-    compile "com.google.code.gson:gson:2.8.5"
-
-    //logging
-    compile "log4j:log4j:1.2.17"
-    compile "org.slf4j:slf4j-simple:1.7.25"
-    compile "org.apache.logging.log4j:log4j-core:2.11.0"
-    compile "org.apache.logging.log4j:log4j-api:2.11.0"
-
-    compile "io.prometheus:simpleclient:0.0.11"
-    compile "io.prometheus:simpleclient_hotspot:0.0.11"
-    compile "io.prometheus:simpleclient_servlet:0.0.11"
+    api "org.apache.avro:avro:1.8.1"
+    api "org.json:json:20170516"
+    api "io.jsonwebtoken:jjwt:0.6.0"
+    api "com.google.code.gson:gson:2.8.5"
 
     //logging
-    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.12'
-//    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.1.1'
-    compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version:'2.0'
-    compile group: 'org.glassfish', name: 'javax.json', version:'1.0.4'
+    api "log4j:log4j:1.2.17"
+    api "org.slf4j:slf4j-simple:1.7.25"
+    api "org.apache.logging.log4j:log4j-core:2.11.0"
+    api "org.apache.logging.log4j:log4j-api:2.11.0"
+    api "io.prometheus:simpleclient:0.0.11"
+    api "io.prometheus:simpleclient_hotspot:0.0.11"
+    api "io.prometheus:simpleclient_servlet:0.0.11"
+
+    //logging
+    api group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.12'
+
+    api group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0'
+    api group: 'org.glassfish', name: 'javax.json', version: '1.0.4'
 
     //test
-    testCompile group: 'junit', name: 'junit', version:'4.12'
-
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
-
 
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'Common',
-                'Implementation-Version': archiveVersion,
+                'Implementation-Version': version,
                 'Main-Class': 'integrationTests.CommonRunner'
     }
-    archivesBaseName = project.name + '-all'
+    archiveBaseName.set("${project.name}-all")
     from sourceSets.test.output
-
     //collect all dependencies
-    from { configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) } }
+    from {
+        configurations.testRuntimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
     with jar
-    exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
+    exclude('META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA')
+    duplicatesStrategy = 'INCLUDE'
+
 }
 
-task renewAvro {
 
+
+task renewAvro {
     doLast {
         delete "src/main/java/com/fretron/Model"
         copy {
-            from "build/avro/com/fretron/Model"
-            into "src/main/java/com/fretron/Model"
+            from "build/avro/com/fretron/Model" into "src/main/java/com/fretron/Model"
         }
     }
 }
+
 
 task generateAvro(type: com.commercehub.gradle.plugin.avro.GenerateAvroJavaTask) {
     source("src/main/avro")
     include("**/**/*.avsc")
     outputDir = file("build/avro")
 }
-
-
 renewAvro.dependsOn generateAvro
 build.dependsOn renewAvro
+
+
+
