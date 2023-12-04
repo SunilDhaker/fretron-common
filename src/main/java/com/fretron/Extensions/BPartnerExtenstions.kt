@@ -21,6 +21,6 @@ fun BuisnessPartner.deepClean(){
 fun BuisnessPartner.cleanWithBoundary(){
     this.clean()
     this.getPlaces()?.forEach {
-        it.clean()
+        it?.clean()
     }
 }

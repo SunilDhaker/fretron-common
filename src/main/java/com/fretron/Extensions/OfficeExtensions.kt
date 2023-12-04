@@ -6,7 +6,7 @@ fun OrgOffice.clean(){
     this.setUpdates(null)
     this.setGeoLocation(null)
     this.getContacts()?.forEach { contact->
-            contact.clean()
+            contact?.clean()
     }
     this.setUpdatedBy(null)
 }

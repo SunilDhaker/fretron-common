@@ -17,10 +17,10 @@ fun  Consignment.deepClean(){
      this.clean()
      this.getBillToParty()?.deepClean()
      this.getContractToParty()?.deepClean()
-     this.getConsignee().clean()
+     this.getConsignee()?.clean()
      this.getConsignee()?.cleanWithBoundary()
-     this.getConsigner().cleanWithBoundary()
-     this.getUpdates().clean()
+     this.getConsigner()?.cleanWithBoundary()
+     this.getUpdates()?.clean()
 }
 
 fun Updates.clean(){
@@ -38,6 +38,6 @@ fun EnrichedConsignment.clean(){
     this.getConsignment()?.setOrderMappings(mutableListOf())
     this.getConsignment()?.getPod()?.setDeliveryItems(mutableListOf())
     this.getAssociatedShipments()?.forEach {
-        it.clean()
+        it?.clean()
     }
 }
