@@ -343,7 +343,15 @@
                    "string"
                  ],
                  "default": null
-               }
+               },
+               {
+                       "name": "invoiceStatus",
+                       "type": [
+                         "null",
+                         "string"
+                       ],
+                       "default": null
+                     }
 
     ]
   }

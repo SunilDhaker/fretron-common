@@ -1,0 +1,53 @@
+{
+  "namespace": "com.fretron.Model",
+  "name": "LiteBusinessPartner",
+  "type": "record",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "name",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "externalId",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+
+    {
+      "name": "type",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "gstn",
+      "type": ["null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "group",
+      "type": [
+        "null",
+        "com.fretron.Model.PartnerGroup"
+      ],
+      "default": null
+    }
+
+  ]
+}

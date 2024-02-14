@@ -16,3 +16,11 @@ fun BuisnessPartner.deepClean(){
     this.setGeoFence(null)
     this.setRoute(null)
 }
+
+
+fun BuisnessPartner.cleanWithBoundary(){
+    this.clean()
+    this.getPlaces()?.forEach {
+        it.clean()
+    }
+}

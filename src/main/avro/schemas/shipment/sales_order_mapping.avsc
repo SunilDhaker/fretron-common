@@ -90,7 +90,15 @@
          "name":"isFullyUtilized",
           "type": ["null","boolean"],
           "default":null
-      }
+      },
+    {
+      "name": "containerId",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
 
 
   ]

@@ -21,6 +21,28 @@
         }
       ],
       "default": null
+    },
+    {
+      "name": "shCosts",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.ShipmentCost"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "revenueDocs",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "com.fretron.Model.RevenueDoc"
+        }
+      ],
+      "default": null
     }
   ]
 }
